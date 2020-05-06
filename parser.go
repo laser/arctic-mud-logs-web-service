@@ -89,6 +89,8 @@ var compiled = []*regexp.Regexp{
 	regexp.MustCompile(`You get an .* from the corpse of (\w+)\.`),
 }
 
+var clan = regexp.MustCompile(`<(\w+)> .*here`)
+
 var excluded = map[string]interface{}{
 	"A":       struct{}{},
 	"someone": struct{}{},
@@ -98,18 +100,29 @@ var excluded = map[string]interface{}{
 	"You":     struct{}{},
 }
 
+type Meta struct {
+	CharNames []string `json:"character_names"`
+	ClanNames []string `json:"clan_names"`
+}
+
 func main() {
-	x := make(map[string]interface{})
+	charNamesSet := make(map[string]interface{})
+	clanNamesSet := make(map[string]interface{})
 
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		line := scanner.Text()
 
+		m1 := clan.FindStringSubmatch(line)
+		if len(m1) > 0 {
+			clanNamesSet[m1[1]] = struct{}{}
+		}
+
 		for idx := range compiled {
-			submatch := compiled[idx].FindStringSubmatch(line)
-			if len(submatch) > 0 {
-				if _, ok := excluded[submatch[1]]; !ok {
-					x[submatch[1]] = struct{}{}
+			m2 := compiled[idx].FindStringSubmatch(line)
+			if len(m2) > 0 {
+				if _, ok := excluded[m2[1]]; !ok {
+					charNamesSet[m2[1]] = struct{}{}
 				}
 			}
 		}
@@ -117,12 +130,20 @@ func main() {
 
 	check(scanner.Err())
 
-	var y []string
-	for idx := range x {
-		y = append(y, idx)
+	m := Meta{
+		CharNames: []string{},
+		ClanNames: []string{},
 	}
 
-	b, err := json.Marshal(y)
+	for idx := range clanNamesSet {
+		m.ClanNames = append(m.ClanNames, idx)
+	}
+
+	for idx := range charNamesSet {
+		m.CharNames = append(m.CharNames, idx)
+	}
+
+	b, err := json.Marshal(&m)
 	check(err)
 
 	_, err = os.Stdout.Write(b)
