@@ -1,0 +1,784 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 741-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='741'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Can't even kill a drunk canuck!</font></b>
+<p>
+POV: 
+Kelly<p>
+Log Rating:
+2.6111<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Poor Skorpio gets toasted and successfully evades vicious PJ by RGBs.
+
+Log from: http://pollux.ldz.lv/~punk/upload/index.php</i>
+<p>
+<p>
+
+LUCKY SKORPIO<br />
+PoV: Kelly<br />
+Date: 11-10-2003<br />
+Notes: failed kill on it <br />
+<br />
+<br />
+<br />
+589H 94V 17301187X 5609C Exits:NESW&gt; s<br />
+Vingaard Avenue South<br />
+<br />
+589H 93V 17301187X 5609C Exits:NESW&gt; w<br />
+Traveler's Lodge<br />
+Skorpio the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 2 duplicate images.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+589H 92V 17301187X 5609C Exits:NESW&gt; bash skorpio <br />
+st<br />
+You crash into Skorpio in a bone crunching bash, sending him sprawling to the <br />
+ground.<br />
+***** YEAH! YOU BASH Skorpio! *****<br />
+<br />
+589H 92V 17301187X 5609C [Kelly:Perfect] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Isengrim tells your group 'imho eto tipa trap'<br />
+<br />
+589H 92V 17301187X 5609C [Kelly:Perfect] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Skorpio steps aside as Shieglyn attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+589H 92V 17301187X 5609C [Kelly:Perfect] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Isengrim flies in from the south.<br />
+A knight of the sword looks at Shieglyn and yells  'There's the scoundrel!'<br />
+<br />
+589H 92V 17301187X 5609C [Kelly:Perfect] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Lord Calof arrives from the south.<br />
+A bodyguard arrives from the south.<br />
+A bodyguard arrives from the south.<br />
+A bodyguard arrives from the south.<br />
+A bodyguard looks at Shieglyn and yells  'There's the scoundrel!'<br />
+A bodyguard looks at Shieglyn and yells  'There's the scoundrel!'<br />
+A bodyguard looks at Shieglyn and yells  'There's the scoundrel!'<br />
+A knight of the sword looks at Shieglyn and yells  'There's the scoundrel!'<br />
+A bodyguard misses Shieglyn with his hit.<br />
+A bodyguard hits Shieglyn extremely hard.<br />
+A bodyguard hits Shieglyn extremely hard.<br />
+A knight of the sword misses Shieglyn with his slash.<br />
+A knight of the sword massacres Shieglyn with his slash.<br />
+Shieglyn misses Skorpio and destroys an image instead.<br />
+You cleave Skorpio extremely hard.<br />
+Skorpio pierces YOU extremely hard.<br />
+Lord Calof massacres Shieglyn with his hit.<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Isengrim tries to bash Skorpio, but he passes right through his image and falls.<br />
+Isengrim slowly fades into existence.<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+Fanor focuses harshly on Skorpio and utters some strange words.<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; <br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+574H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Good] Exits:NESW&gt; bash <br />
+skorpio <br />
+st<br />
+<br />
+Isengrim massacres Skorpio with his cleave.<br />
+Lord Calof massacres Shieglyn with his hit.<br />
+A bodyguard hits Shieglyn extremely hard.<br />
+A bodyguard hits Shieglyn extremely hard.<br />
+A bodyguard hits Shieglyn extremely hard.<br />
+A bodyguard massacres Shieglyn with his hit.<br />
+A knight of the sword massacres Shieglyn with his slash.<br />
+A knight of the sword massacres Shieglyn with his slash.<br />
+Shieglyn massacres Skorpio with his stab.<br />
+You miss Skorpio with your cleave.<br />
+Skorpio pierces YOU extremely hard.<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio oohs and ahhs, as if he is really, really impressed.<br />
+You are already standing.<br />
+Fanor focuses harshly on Skorpio and utters some strange words.<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; You try <br />
+to bash Skorpio, but you miss and tumble forward onto your face.<br />
+missed bash.<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio says 'pj'<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio says 'pk'<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+Shieglyn stands up.<br />
+^^^^^ Shieglyn STANDS UP! ^^^^^<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio says 'pk'<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+Shieglyn panics, and attempts to flee.<br />
+Shieglyn flies east.<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+554H 92V 17301187X 5609C [Kelly:V.Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A knight of the sword slashes Isengrim very hard.<br />
+A knight of the sword slashes Isengrim extremely hard.<br />
+Isengrim massacres Skorpio with his cleave.<br />
+You miss Skorpio with your cleave.<br />
+Skorpio massacres YOU with his pierce.<br />
+A bodyguard hits Isengrim extremely hard.<br />
+A bodyguard misses Isengrim with his hit.<br />
+A bodyguard hits Isengrim extremely hard.<br />
+Lord Calof annihilates Isengrim with his hit.<br />
+<br />
+530H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Isengrim stands up.<br />
+^^^^^ Isengrim STANDS UP! ^^^^^<br />
+<br />
+530H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio steps aside as Isengrim attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+530H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; bash <br />
+skorpio <br />
+st<br />
+<br />
+Skorpio says 'pj'<br />
+<br />
+530H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio says 'pj'<br />
+<br />
+530H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; TICK IN <br />
+10 SECONDS.<br />
+<br />
+Lord Calof annihilates Isengrim with his hit.<br />
+Lord Calof massacres Isengrim with his hit.<br />
+A bodyguard hits Isengrim very hard.<br />
+A bodyguard massacres Isengrim with his hit.<br />
+A bodyguard hits Isengrim extremely hard.<br />
+A bodyguard hits Isengrim extremely hard.<br />
+A knight of the sword massacres Isengrim with his slash.<br />
+Isengrim annihilates Skorpio with his cleave.<br />
+You massacre Skorpio with your cleave.<br />
+Skorpio massacres YOU with his pierce.<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+Skorpio says 'die'<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; <br />
+A bodyguard looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; You <br />
+stand up.<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Good] Exits:NESW&gt; You <br />
+crash into Skorpio in a bone crunching bash, sending him sprawling to the ground.<br />
+***** YEAH! YOU BASH Skorpio! *****<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+509H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Lord Calof massacres Isengrim with his hit.<br />
+Lord Calof annihilates Isengrim with his hit.<br />
+A bodyguard misses Isengrim with his hit.<br />
+A bodyguard hits Isengrim extremely hard.<br />
+A bodyguard massacres Isengrim with his hit.<br />
+A bodyguard misses Isengrim with his hit.<br />
+A knight of the sword slashes Isengrim extremely hard.<br />
+Isengrim massacres Skorpio with his cleave.<br />
+You massacre Skorpio with your cleave.<br />
+Skorpio pierces YOU extremely hard.<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Fanor focuses on Isengrim and utters some strange words.<br />
+Fanor -- HEALS ---&gt; Isengrim.<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim stands up.<br />
+^^^^^ Isengrim STANDS UP! ^^^^^<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim smirks.<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim panics, and attempts to flee.<br />
+Isengrim flies north.<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Lord Calof leaves west.<br />
+A bodyguard leaves west.<br />
+A bodyguard leaves west.<br />
+A bodyguard leaves west.<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim flies in from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim crashes into Skorpio in a thundering collision, knocking him to the ground!<br />
+******** Skorpio BASHED! ********<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; bash <br />
+skorpio <br />
+st<br />
+<br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+491H 92V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim massacres Skorpio with his cleave.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+You miss Skorpio with your cleave.<br />
+Skorpio pierces YOU very hard.<br />
+<br />
+481H 123V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Shieglyn flies in from the east.<br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+481H 123V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; You are <br />
+already standing.<br />
+<br />
+481H 123V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; You try to <br />
+bash Skorpio, but you miss and tumble forward onto your face.<br />
+missed bash.<br />
+<br />
+481H 123V 17301187X 5609C [Kelly:Good] [Skorpio:Fair] Exits:NESW&gt; <br />
+Isengrim massacres Skorpio with his cleave.<br />
+A knight of the sword massacres YOU with his slash.<br />
+You miss Skorpio with your cleave.<br />
+Skorpio massacres YOU with his pierce.<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; <br />
+Shieglyn says 'heal'<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; <br />
+A knight of the sword looks at Isengrim and yells  'There's the scoundrel!'<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; <br />
+Fanor focuses on Shieglyn and utters some strange words.<br />
+Fanor -- HEALS ---&gt; Shieglyn.<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; bash <br />
+skorpio <br />
+st<br />
+<br />
+Isengrim says 'yeah yeah pk it is'<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; <br />
+Shieglyn crashes into Skorpio in a thundering collision, knocking him to the ground!<br />
+******** Skorpio BASHED! ********<br />
+<br />
+433H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Fair] Exits:NESW&gt; <br />
+Shieglyn massacres Skorpio with his stab.<br />
+Isengrim massacres Skorpio with his cleave.<br />
+A knight of the sword massacres YOU with his slash.<br />
+A knight of the sword massacres YOU with his slash.<br />
+You miss Skorpio with your cleave.<br />
+Skorpio massacres YOU with his pierce.<br />
+Skorpio appears to be in two places at once, after they strike with their dagger.<br />
+Skorpio is surrounded by 2 duplicate images.<br />
+<br />
+351H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; <br />
+Skorpio steps aside as Isengrim attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+351H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; You stand <br />
+up.<br />
+<br />
+351H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; You try to <br />
+bash Skorpio, but you miss and tumble forward onto your face.<br />
+missed bash.<br />
+<br />
+351H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at Shieglyn and yells  'There's the scoundrel!'<br />
+<br />
+351H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; <br />
+Shieglyn misses Skorpio and destroys an image instead.<br />
+Isengrim misses Skorpio and destroys an image instead.<br />
+A knight of the sword massacres YOU with his slash.<br />
+You massacre Skorpio with your cleave.<br />
+Skorpio pierces YOU extremely hard.<br />
+Skorpio appears to be in two places at once, after they strike with their dagger.<br />
+Skorpio is surrounded by 2 duplicate images.<br />
+<br />
+308H 123V 17301187X 5609C [Kelly:Fair] [Skorpio:Bad] Exits:NESW&gt; bash <br />
+skorpio <br />
+st<br />
+<br />
+Shieglyn misses Skorpio and destroys an image instead.<br />
+Isengrim massacres Skorpio with his cleave.<br />
+A knight of the sword massacres YOU with his slash.<br />
+You massacre Skorpio with your cleave.<br />
+Skorpio massacres YOU with his pierce.<br />
+<br />
+253H 123V 17301187X 5609C [Kelly:Bad] [Skorpio:V.Bad] Exits:NESW&gt; <br />
+Fanor focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Bad] Exits:NESW&gt; <br />
+Isengrim stands up.<br />
+^^^^^ Isengrim STANDS UP! ^^^^^<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Bad] Exits:NESW&gt; <br />
+Skorpio stands up.<br />
+^^^^^ Skorpio STANDS UP! ^^^^^<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [Skorpio:V.Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at Shieglyn and yells  'There's the scoundrel!'<br />
+Isengrim tries to bash Skorpio, but he passes right through his image and falls.<br />
+Skorpio grabs a glowing scroll of recall.<br />
+Skorpio recites a glowing scroll of recall.<br />
+Skorpio disappears.<br />
+You direct your attention to a knight of the sword.<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [a knight of the sword:Perfect] <br />
+Exits:NESW&gt; You stand up.<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [a knight of the sword:Perfect] <br />
+Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [a knight of the sword:Perfect] <br />
+Exits:NESW&gt; You are already standing.<br />
+<br />
+586H 123V 17301187X 5609C [Kelly:V.Good] [a knight of the sword:Perfect] <br />
+Exits:NESW&gt; <br />
+You massacre a knight of the sword with your cleave.<br />
+A knight of the sword slashes YOU very hard.<br />
+<br />
+574H 123V 17300736X 5609C [Kelly:V.Good] [a knight of the sword:V.Good] <br />
+Exits:NESW&gt; st <br />
+flee<br />
+You are already standing.<br />
+<br />
+574H 123V 17300736X 5609C [Kelly:V.Good] [a knight of the sword:V.Good] <br />
+Exits:NESW&gt; You flee head over heels.<br />
+The Lodge's Cafe<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='741'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=741">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="741">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

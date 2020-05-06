@@ -1,0 +1,987 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 667-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='667'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Reafe rip</font></b>
+<p>
+POV: 
+Alleq<p>
+Log Rating:
+1.4000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some retaliation is always good</i>
+<p>
+<p>
+
+281H 20V 2135303X 10956C Mem:3 Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A gnomish citizen is wandering around.<br />
+A gnomish citizen is wandering around.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Hots the Female Minotaur is standing here.<br />
+Philth the Female Kender is standing here. (flying) (invisible)<br />
+Toot the Male Half Elf is standing here. (flying)<br />
+Reafe Dragontooth, A Breath of Wild Fire is standing here. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 20V 2135303X 10956C Mem:3 Exits:ESW&gt; w<br />
+A troll arrives from the east.<br />
+The Mayor's Office<br />
+    This is the mayor's office. Two large cabinets are attached to the<br />
+walls containing thousands of books. A wooden table and a few chairs are<br />
+standing here. A red curtain leads north into the planning room and to the<br />
+east lies the registration room.<br />
+The corpse of the gnomish mayor is lying here.<br />
+A troll stands here grinning broadly.<br />
+Hots the Female Minotaur is standing here.<br />
+Philth the Female Kender is standing here. (flying) (invisible)<br />
+Toot the Male Half Elf is standing here. (flying)<br />
+Reafe Dragontooth, A Breath of Wild Fire is standing here. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; order all.gargoyle ki reafe<br />
+c 'lightning bolt' reafe<br />
+A gargoyle delivers a quick snap kick to Reafe. Reafe staggers and tries to recover.<br />
+You issue the order 'ki reafe'.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; You utter the words, 'lightning bolt'<br />
+You miss Reafe and destroy an image instead.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+Lara gives a troll an order.<br />
+A troll CRASHES into Reafe in a thundering collision, knocking him to the ground!<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+Hots leaves north.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+A troll massacres Reafe with its crush.<br />
+A troll is chilled, as it swings at Reafe.<br />
+A gargoyle massacres Reafe with its claw.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+A gargoyle pierces Reafe extremely hard.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+A gargoyle massacres Reafe with its claw.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+Reafe misses a gargoyle with his pierce.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+Lara utters the words, 'sfugwahuq gsgrul'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+A gargoyle is struck by a spray of vibrant green!<br />
+Philth is blasted by a spray of scintillating blue!<br />
+Toot is caught in a spray of radiant yellow!<br />
+Toot SEEMS WEAKER<br />
+Reafe is caught in a spray of radiant yellow!<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+Philth panics, and attempts to flee.<br />
+Philth flies east.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; <br />
+A gargoyle delivers a quick snap kick to Reafe. Reafe staggers and tries to recover.<br />
+Philth flies in from the east.<br />
+A troll delivers a quick snap kick to Reafe. Reafe staggers and tries to recover.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; c 'lightning bolt' reafe<br />
+<br />
+Toot panics, and attempts to flee.<br />
+Toot flies east.<br />
+<br />
+281H 19V 2135303X 10956C Mem:3 Exits:NE&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Reafe with full impact.<br />
+<br />
+281H 19V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Philth appears to be dancing around the room.<br />
+<br />
+281H 19V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Lara misses a gargoyle with her pierce.<br />
+A troll misses Reafe with its crush.<br />
+A troll misses Reafe with its crush.<br />
+A gargoyle massacres Reafe with its claw.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+A gargoyle pierces Reafe very hard.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+A gargoyle massacres Reafe with its claw.<br />
+Reafe's iceshield does him little good as a gargoyle takes a swing at him.<br />
+Reafe is dead! R.I.P.<br />
+The death cry of Reafe echoes from somewhere nearby...<br />
+Lipoli stops following Reafe.<br />
+Toot stops following Reafe.<br />
+Philth stops following Reafe.<br />
+<br />
+281H 19V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Toot flies in from the east.<br />
+<br />
+281H 19V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Toot flies north.<br />
+<br />
+281H 19V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Philth tries to backstab you, but she misses and destroys your image.<br />
+Philth slowly fades into existence.<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:V.Good] Mem:4 Exits:NE&gt; <br />
+Lara gets a very large pile of coins from the corpse of Reafe.<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:V.Good] Mem:4 Exits:NE&gt; get all corpse<br />
+<br />
+Lara gets an odd shaped magnifying glass from the corpse of Reafe.<br />
+Lara gets a doublet dagger from the corpse of Reafe.<br />
+Lara gets a metallic belt from the corpse of Reafe.<br />
+Lara gets an ancient tattered cloak from the corpse of Reafe.<br />
+Lara gets a torc inlaid with fire-jewels from the corpse of Reafe.<br />
+Lara gets a rhinoceros beetle's carapace from the corpse of Reafe.<br />
+Lara gets a smokey red satchel from the corpse of Reafe.<br />
+Lara gets a wand of twisted bands of wood from the corpse of Reafe.<br />
+Lara gets a milky potion of see invisible from the corpse of Reafe.<br />
+Lara gets a glowing scroll of recall from the corpse of Reafe.<br />
+Lara gets a potion of golden sap from the corpse of Reafe.<br />
+Lara gets a potion of golden sap from the corpse of Reafe.<br />
+Lara gets a glowing scroll of recall from the corpse of Reafe.<br />
+Lara gets a vial of deep blue liquid from the corpse of Reafe.<br />
+Lara gets a cloudy gray potion from the corpse of Reafe.<br />
+Lara gets a cloudy gray potion from the corpse of Reafe.<br />
+Lara gets a waterskin from the corpse of Reafe.<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:V.Good] Mem:4 Exits:NE&gt; <br />
+Lara utters the words, 'sfugwahuq gsgrul'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+Philth is caught in a spray of radiant yellow!<br />
+A gargoyle is struck by a spray of vibrant green!<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:Good] Mem:4 Exits:NE&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:Good] Mem:4 Exits:NE&gt; c 'hold person'<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+281H 19V 2135303X 10956C [Me:Perfect] [Philth:Good] Mem:4 Exits:NE&gt; <br />
+A gargoyle tries to kick Lara but misses and destroys an image.<br />
+Philth misses you and destroys an image.<br />
+Philth misses you with her pierce.<br />
+A gargoyle misses Lara with its claw.<br />
+A gargoyle misses Lara with its pierce.<br />
+A gargoyle misses Lara with its claw.<br />
+A gargoyle looks really sick, and shivers uncomfortably.<br />
+<br />
+281H 49V 2135303X 10956C [Me:Perfect] [Philth:Good] Mem:4 Exits:NE&gt; <br />
+Philth panics, and attempts to flee.<br />
+<br />
+281H 49V 2135303X 10956C Mem:4 Exits:NE&gt; <br />
+Lara utters the words, 'sfugwahuq gsgrul'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+A gargoyle is struck by a spray of vibrant green!<br />
+A gargoyle is stunned, but will likely regain consciousness again.<br />
+<br />
+281H 49V 2135303X 10956C Mem:4 Exits:NE&gt; c 'lightning bolt' philth<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 49V 2135303X 10956C Mem:4 Exits:NE&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+The curtain is open.<br />
+Toot the Male Half Elf is standing here. (flying)<br />
+Looking east:<br />
+You see nothing special.<br />
+A secretary is SITTING here trying to look good.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 49V 2135303X 10956C Mem:4 Exits:NE&gt; n<br />
+sca<br />
+The Planning Room<br />
+    Important decisions and difficult plans are done here. The mayor and<br />
+his advisors use this room to perform such tasks. A huge round table is<br />
+standing here and four bulky chairs are put around it. Through a red<br />
+curtain you can see the mayor's office to the south.<br />
+The corpse of a wise advisor is lying here. [2]<br />
+Toot the Male Half Elf is standing here. (flying)<br />
+<br />
+281H 48V 2135303X 10956C Mem:4 Exits:S&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+The curtain is open.<br />
+A gargoyle is lying here, stunned.<br />
+A troll stands here grinning broadly.<br />
+Lara the Female Half Elf is standing here, fighting a gargoyle. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 48V 2135303X 10956C Mem:4 Exits:S&gt; <br />
+A gargoyle stops following you.<br />
+<br />
+281H 48V 2135303X 10956C Mem:4 Exits:S&gt; c 'lightning bolt' toot<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Toot with full impact.<br />
+<br />
+281H 48V 2135303X 10956C [Me:Perfect] [Toot:Awful] Mem:5 Exits:S&gt; <br />
+You smite Toot very hard.<br />
+You clonk Toot hard with your gavel and yell 'Quiet!'<br />
+SILENCED ===&gt; Toot &lt;=== SILENCED<br />
+Toot misses you with his pierce.<br />
+Toot misses you with his crush.<br />
+<br />
+281H 48V 2135303X 10956C [Me:Perfect] [Toot:Awful] Mem:5 Exits:S&gt; <br />
+Toot panics, and attempts to flee.<br />
+Toot flies south.<br />
+<br />
+281H 48V 2135303X 10956C Mem:5 Exits:S&gt; <br />
+Lara flies in from the south.<br />
+<br />
+281H 48V 2135303X 10956C Mem:5 Exits:S&gt; s<br />
+c 'lightning bolt' toot<br />
+<br />
+Lara flies south.<br />
+<br />
+281H 48V 2135303X 10956C Mem:5 Exits:S&gt; The Mayor's Office<br />
+    This is the mayor's office. Two large cabinets are attached to the<br />
+walls containing thousands of books. A wooden table and a few chairs are<br />
+standing here. A red curtain leads north into the planning room and to the<br />
+east lies the registration room.<br />
+A stone statue stands before you.<br />
+The corpse of the gnomish mayor is lying here.<br />
+<br />
+281H 47V 2135303X 10956C Mem:5 Exits:NE&gt; Who should the spell be cast upon?<br />
+<br />
+281H 47V 2135303X 10956C Mem:5 Exits:NE&gt; e<br />
+c 'lightning bolt' toot<br />
+Registration Room<br />
+    A small desk stands in the middle of the room. New citizens and guests<br />
+can register themselves here, and the jobs and other tasks are distributed<br />
+here as well. The mayor's office lies to the west and the waiting room is<br />
+to the south. The floor lies in the east.<br />
+Lara the Female Half Elf is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+A secretary is SITTING here trying to look good.<br />
+<br />
+281H 46V 2135303X 10956C Mem:5 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+281H 46V 2135303X 10956C Mem:5 Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A gnomish citizen is wandering around.<br />
+A gnomish citizen is wandering around.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 46V 2135303X 10956C Mem:5 Exits:ESW&gt; <br />
+Lara flies west.<br />
+<br />
+281H 46V 2135303X 10956C Mem:5 Exits:ESW&gt; e<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. The registration<br />
+room lies to the west, and the floor continues north and south.<br />
+A gnomish citizen is wandering around.<br />
+A gnomish citizen is wandering around.<br />
+<br />
+281H 45V 2135303X 10956C Mem:5 Exits:NSW&gt; gt he's silenced<br />
+You tell your group 'he's silenced'<br />
+<br />
+281H 45V 2135303X 10956C Mem:5 Exits:NSW&gt; s<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. The floor<br />
+continues north and south.<br />
+<br />
+281H 44V 2135303X 10956C Mem:5 Exits:NS&gt; s<br />
+A Second Floor Corner<br />
+    You are rounding the south-west corner of the second floor. Small<br />
+streams of water are running down the rocky walls, and some oil lanterns<br />
+light the room a bit. Through small holes you have a beautiful view on<br />
+Sancrist. The floor continues north and east.<br />
+<br />
+281H 43V 2135303X 10956C Mem:5 Exits:NE&gt; w<br />
+Alas, you cannot go that way...<br />
+<br />
+281H 43V 2135303X 10956C Mem:5 Exits:NE&gt; e<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. To the south you<br />
+can see a balcony. The floor continues east and west.<br />
+<br />
+281H 42V 2135303X 10956C Mem:5 Exits:ESW&gt; sc<br />
+You are Alleq Ismine, Weaver O' the Art, a level 30 Mage.<br />
+You are rank 1.<br />
+You are 40 years old.<br />
+You have 281(281) hit and 42(127) movement points.<br />
+You are influenced by the red moon, Lunitari.<br />
+The warmth of good envelopes your soul.<br />
+You have scored 147864697 exp, and have 10956(180000) steel coins.<br />
+You need 2135303 more experience to advance.<br />
+You have died 12 horrible deaths.<br />
+You have been connected for 53 minute(s).<br />
+You have been playing for 15 day(s), 2 hour(s) and 4 minute(s).<br />
+You are standing.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    fly<br />
+    clairvoyance<br />
+    improved invisibility<br />
+    fireshield<br />
+    strength<br />
+    invisibility<br />
+    detect scry<br />
+    mirror image (2 images)<br />
+    blur<br />
+    antimagic shell<br />
+    shield<br />
+    detect magic<br />
+    detect invisibility<br />
+    continual light<br />
+<br />
+281H 42V 2135303X 10956C Mem:5 Exits:ESW&gt; ae<br />
+gt he's silenced<br />
+Huh?!<br />
+<br />
+281H 42V 2135303X 10956C Mem:5 Exits:ESW&gt; You tell your group 'he's silenced'<br />
+<br />
+281H 42V 2135303X 10956C Mem:5 Exits:ESW&gt; e<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. To the south you<br />
+can see a balcony. The floor continues east and west.<br />
+<br />
+281H 41V 2135303X 10956C Mem:5 Exits:ESW&gt; sa<br />
+<br />
+Lara tells your group 'where?'<br />
+<br />
+281H 41V 2135303X 10956C Mem:5 Exits:ESW&gt; Yes, but WHAT do you want to say?<br />
+<br />
+281H 41V 2135303X 10956C Mem:5 Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 41V 2135303X 10956C Mem:5 Exits:ESW&gt; e<br />
+sca<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. To the south you<br />
+can see a balcony. The floor continues east and west.<br />
+<br />
+281H 40V 2135303X 10956C Mem:5 Exits:ESW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+A gnomish guard stands here, protecting his home.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 40V 2135303X 10956C Mem:5 Exits:ESW&gt; e<br />
+sca<br />
+A Second Floor Corner<br />
+    You are rounding the south-east corner of the second floor. Small<br />
+streams of water are running down the rocky walls, and some oil lanterns<br />
+light the room a bit. Through small holes you have a beautiful view on<br />
+Sancrist. The floor continues north and west.<br />
+<br />
+281H 39V 2135303X 10956C Mem:5 Exits:NW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 39V 2135303X 10956C Mem:5 Exits:NW&gt; n<br />
+sca<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. The floor<br />
+continues north and south.<br />
+<br />
+281H 38V 2135303X 10956C Mem:5 Exits:NS&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 38V 2135303X 10956C Mem:5 Exits:NS&gt; n<br />
+sca<br />
+The Second Floor<br />
+    You are standing on the second floor. Small streams of water are<br />
+running down the rocky walls, and some oil lanterns light the room a bit.<br />
+Through small holes you have a beautiful view on Sancrist. The floor<br />
+continues to the north and south, and in the west you can see a pipe<br />
+reaching down into the first level of the mountain.<br />
+<br />
+281H 37V 2135303X 10956C Mem:5 Exits:NSW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You can see the entrance to the transportation pipe.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 37V 2135303X 10956C Mem:5 Exits:NSW&gt; w<br />
+In the Pipe<br />
+    This is the continuation of the huge pipe. The walls of the tube are<br />
+very smooth and you can see that it ends in a large net lying under you.<br />
+You slide down the pipe.<br />
+<br />
+281H 36V 2135303X 10956C Mem:5 Exits:D&gt; <br />
+You slide down the pipe.<br />
+The Receiving Net<br />
+    You arrive in the receiving net very safe, and you are glad that the<br />
+gnomes are such good engineers. To the west you can see the gnomeflinger<br />
+control room.<br />
+A short gnome helps you getting out of the net.<br />
+<br />
+281H 36V 2135303X 10956C Mem:5 Exits:W&gt; c 'lightning bolt' tooth<br />
+c 'lightning bolt' toot<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 36V 2135303X 10956C Mem:5 Exits:W&gt; Who should the spell be cast upon?<br />
+<br />
+281H 36V 2135303X 10956C Mem:5 Exits:W&gt; w<br />
+c 'lightning bolt' toot<br />
+Gnomeflinger Control Room<br />
+    You are standing in the incredible gnomeflinger control room. This room<br />
+is used to 'send' people to the various levels of Mount Nevermind with the<br />
+help of gnomish catapults, called gnomeflingers. On every level you can see<br />
+a net hanging on the wall to catch the flying individuals. Towering over<br />
+your head you can see a tremendous dome supporting the crater lake. Four<br />
+wooden levers are attached to the northern control wall. Small passageways<br />
+lead out of this room to the west and south.<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; TICK IN 16 SECONDS.<br />
+c 'lightning bolt' toot<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; c 'lightning bolt' toot<br />
+c 'lightning bolt' toot<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; <br />
+Lara tells your group 'where?'<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; gt im at flinger<br />
+You tell your group 'im at flinger'<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; c 'lightning bolt' toot<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; c 'lightning bolt' toot<br />
+<br />
+Toot flies in from the east.<br />
+<br />
+281H 35V 2135303X 10956C Mem:5 Exits:SW&gt; You utter the words, 'lightning bolt'<br />
+Your lightning bolt shatters Toot to pieces.<br />
+You receive 0 experience.<br />
+Toot is dead! R.I.P.<br />
+<br />
+281H 35V 2135303X 10956C [Me:Perfect] [Toot:Dying] Mem:6 Exits:SW&gt; c 'lightning bolt' toot<br />
+<br />
+The death cry of Toot echoes from somewhere nearby...<br />
+<br />
+281H 35V 2135303X 10956C Mem:6 Exits:SW&gt; gt got him<br />
+get all corpse<br />
+Who should the spell be cast upon?<br />
+<br />
+281H 65V 2135303X 10956C Mem:5 Exits:SW&gt; You tell your group 'got him'<br />
+<br />
+281H 65V 2135303X 10956C Mem:5 Exits:SW&gt; You get a small functional hammer from the corpse of Toot.<br />
+You get a talon dagger from the corpse of Toot.<br />
+You get a pile of coins from the corpse of Toot.<br />
+There were 37 coins.<br />
+You get a leg of lamb from the corpse of Toot.<br />
+You get a leg of lamb from the corpse of Toot.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='667'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=667">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="667">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

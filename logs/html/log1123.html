@@ -1,0 +1,934 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1123-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1123'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Grouch RULES</font></b>
+<p>
+POV: 
+Grouch<p>
+Log Rating:
+1.4667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Pathetic attempt to pk garbages solo.</i>
+<p>
+<p>
+
+s<br />
+Passage Near the Tower<br />
+    The sound of your heavy footsteps greets your ears with a deafening<br />
+roar as you walk through the small confines of the passageway between the<br />
+courtyards. The nearby presence of the outer curtain wall and the tower<br />
+itself make this area seem almost prison like. Shaking off the sudden<br />
+feeling of claustrophobia, you turn your attention to the heavy steel door<br />
+to your east which appears to provide entrance to the tower. The passageway<br />
+continues to your north and to your south exits into a secluded and dark<br />
+corner.<br />
+<br />
+381H 47V 0C Mem:1 Exits:N(E)S&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+The door is closed.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+381H 47V 0C Mem:1 Exits:N(E)S&gt; open door e<br />
+Ok.<br />
+<br />
+381H 47V 0C Mem:1 Exits:NES&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+The door is open.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+381H 47V 0C Mem:1 Exits:NES&gt; e<br />
+Guard Room<br />
+    You stand in the center of a large guard room, capable of holding up to<br />
+fifty knights in times of war. Looking up above you, you notice that there<br />
+appears to be no discernible ceiling to the room you are standing in.<br />
+Pondering this prospect, you realize that the outer portion of the tower is<br />
+hollow and stretches clear to the top of the tower itself. An iron door is<br />
+west of here, and a passage to the north leads deeper into the Tower.<br />
+<br />
+381H 46V 0C Mem:1 Exits:NW&gt; close door w<br />
+Ok.<br />
+<br />
+381H 46V 0C Mem:1 Exits:N(W)&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+The door is closed.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+381H 46V 0C Mem:1 Exits:N(W)&gt; n<br />
+Dragon Traps<br />
+    Numerous slits line the walls to the east, designed to allow knights to<br />
+attack with bow or lance those in the chamber beyond, yet remain protected.<br />
+Peering through the slits, you see an immense, blasted room, with broad<br />
+passages leading north and south. To the north is a solid door.<br />
+<br />
+381H 45V 0C Mem:1 Exits:NS&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+The door is open.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+381H 45V 0C Mem:1 Exits:NS&gt; n<br />
+scan<br />
+s<br />
+Northwest Staircase<br />
+    An intricately carved spiral staircase rises into the ceiling at the<br />
+center of this bare stone room. A semi-circular barricade defends the<br />
+staircase from assult from the south. Passage out of the tower can be<br />
+gained through the hallway to the south.<br />
+A long sword has been left here.<br />
+The corpse of a knight of the crown is lying here.<br />
+<br />
+381H 44V 0C Mem:1 Exits:SU&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+The door is open.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Sir Tillarius is standing here. (flying)<br />
+Attai, Garbage Dreadnaught is standing here. (flying)<br />
+Miss Mahha d'Harm, Drunk Garbage is resting here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Raystar, Garbage Superstar is resting here. (flying)<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+381H 44V 0C Mem:1 Exits:SU&gt; Dragon Traps<br />
+    Numerous slits line the walls to the east, designed to allow knights to<br />
+attack with bow or lance those in the chamber beyond, yet remain protected.<br />
+Peering through the slits, you see an immense, blasted room, with broad<br />
+passages leading north and south. To the north is a solid door.<br />
+<br />
+381H 43V 0C Mem:1 Exits:NS&gt; <br />
+Your studies complete, you put away your tablets with a smile.<br />
+<br />
+0C Exits:NS&gt; s<br />
+Guard Room<br />
+    You stand in the center of a large guard room, capable of holding up to<br />
+fifty knights in times of war. Looking up above you, you notice that there<br />
+appears to be no discernible ceiling to the room you are standing in.<br />
+Pondering this prospect, you realize that the outer portion of the tower is<br />
+hollow and stretches clear to the top of the tower itself. An iron door is<br />
+west of here, and a passage to the north leads deeper into the Tower.<br />
+<br />
+64V 0C Exits:N(W)&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+The door is closed.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+64V 0C Exits:N(W)&gt; quaff brewed<br />
+You quaff a brewed potion which dissolves.<br />
+Cool flames emanate from all parts of your body.<br />
+<br />
+64V 0C Exits:N(W)&gt; quaff brewed<br />
+You quaff a brewed potion which dissolves.<br />
+You are surrounded by 3 duplicate images.<br />
+<br />
+64V 0C Exits:N(W)&gt; n<br />
+Dragon Traps<br />
+    Numerous slits line the walls to the east, designed to allow knights to<br />
+attack with bow or lance those in the chamber beyond, yet remain protected.<br />
+Peering through the slits, you see an immense, blasted room, with broad<br />
+passages leading north and south. To the north is a solid door.<br />
+<br />
+63V 0C Exits:NS&gt; n<br />
+Northwest Staircase<br />
+    An intricately carved spiral staircase rises into the ceiling at the<br />
+center of this bare stone room. A semi-circular barricade defends the<br />
+staircase from assult from the south. Passage out of the tower can be<br />
+gained through the hallway to the south.<br />
+A long sword has been left here. [2]<br />
+<br />
+62V 0C Exits:SU&gt; u<br />
+Northwest Staircase<br />
+    The staircase before you appears to have once led up into the tower.<br />
+Now all that remains is a crumbling hole in the ceiling. Hallways lead<br />
+south and east from here. Torches hang in sconces on the walls providing<br />
+light. Still, you feel as though you are walking into darkness with each<br />
+step. Stairs lead down into darkness below you.<br />
+The corpse of a knight of the crown is lying here. [4]<br />
+Sir Tillarius is standing here. (flying)<br />
+Attai, Garbage Dreadnaught is standing here. (flying)<br />
+Miss Mahha d'Harm, Drunk Garbage is resting here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Raystar, Garbage Superstar is resting here. (flying)<br />
+<br />
+61V 0C Exits:ESD&gt; c 'ins'<br />
+You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+61V 0C Mem:4 Exits:ESD&gt; <br />
+Raystar stands up.<br />
+<br />
+61V 0C Mem:4 Exits:ESD&gt; c 'ice'<br />
+<br />
+You step aside as Attai tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+61V 0C [Me:Perfect] [Attai:Perfect] Mem:4 Exits:ESD&gt; <br />
+Raystar misses you and destroys an image.<br />
+<br />
+61V 0C [Me:Perfect] [Attai:Perfect] Mem:4 Exits:ESD&gt; <br />
+Mahha stands up.<br />
+<br />
+61V 0C [Me:Perfect] [Attai:Perfect] Mem:4 Exits:ESD&gt; <br />
+Your swarm of insects covers Tillarius, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Attai, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Mahha, leaving bloody bites over her flesh.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Mahha slowly fades into existence.<br />
+Mahha misses you with her whip.<br />
+Tillarius misses you and destroys an image.<br />
+Tillarius misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Attai pierces YOU extremely hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+You massacre Attai with your smite.<br />
+<br />
+320H 61V 0C [Me:Good] [Attai:Good] Mem:4 Exits:ESD&gt; You utter the words, 'ice storm'<br />
+Tillarius is shredded by shards of ice.<br />
+Attai is shredded by shards of ice.<br />
+Mahha is shredded by shards of ice.<br />
+Raystar is shredded by shards of ice.<br />
+<br />
+320H 61V 0C [Me:Good] [Attai:Good] Mem:5 Exits:ESD&gt; <br />
+Mahha focuses harshly on you and utters the words, 'silence'.<br />
+<br />
+320H 61V 0C [Me:Good] [Attai:Good] Mem:5 Exits:ESD&gt; c 'ins'<br />
+<br />
+Tillarius seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Attai, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Mahha, leaving bloody bites over her flesh.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Tillarius massacres YOU with his slash.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+Tillarius slashes YOU hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Attai pierces YOU.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+<br />
+227H 61V 0C [Me:Fair] [Attai:Fair] Mem:5 Exits:ESD&gt; <br />
+You feel ribs crack as you are kicked in the chest by Raystar.<br />
+<br />
+206H 61V 0C [Me:Fair] [Attai:Fair] Mem:5 Exits:ESD&gt; You lost your concentration!<br />
+Mahha focuses on Raystar and utters some strange words.<br />
+Mahha heals Raystar.<br />
+<br />
+<br />
+Attai stands up.<br />
+<br />
+206H 61V 0C [Me:Fair] [Attai:Fair] Mem:6 Exits:ESD&gt; <br />
+You step aside as Attai tries to bash you, causing him to tumble and fall face down.<br />
+You step aside as Tillarius tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+206H 61V 0C [Me:Fair] [Attai:Fair] Mem:6 Exits:ESD&gt; <br />
+Your swarm of insects covers Tillarius, leaving bloody bites over his flesh.<br />
+Attai seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Mahha, leaving bloody bites over her flesh.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Tillarius slashes YOU extremely hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+Tillarius slashes YOU very hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Attai pierces YOU extremely hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+<br />
+107H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; quaff sap<br />
+Huh?!<br />
+<br />
+107H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; You slowly quaff a potion of golden sap, licking out the last sticky drop.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+You watch your body become blurry and unfocused.<br />
+<br />
+159H 61V 0C [Me:Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; sta<br />
+You are already standing.<br />
+<br />
+159H 61V 0C [Me:Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; <br />
+Mahha focuses on Tillarius and utters some strange words.<br />
+Mahha heals Tillarius.<br />
+<br />
+159H 61V 0C [Me:Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; <br />
+You feel ribs crack as you are kicked in the chest by Raystar.<br />
+<br />
+146H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; <br />
+Tillarius seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Attai, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Mahha, leaving bloody bites over her flesh.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Tillarius slashes YOU hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+Tillarius misses you with his slash.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Attai pierces YOU very hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You smite Attai extremely hard.<br />
+<br />
+67H 61V 0C [Me:Awful] [Attai:Fair] Mem:6 Exits:ESD&gt; quaff sap<br />
+You slowly quaff a potion of golden sap, licking out the last sticky drop.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+You watch your body become blurry and unfocused.<br />
+<br />
+115H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:6 Exits:ESD&gt; c 'word' me<br />
+Your casting is disrupted by the fighting!<br />
+<br />
+115H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:7 Exits:ESD&gt; <br />
+Raystar kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+104H 61V 0C [Me:V.Bad] [Attai:Fair] Mem:7 Exits:ESD&gt; c 'word' me<br />
+You utter the words, 'word of recall'<br />
+Clerk's Office<br />
+    Here you can rent a room for the evening or however long you intend to<br />
+stay. The clerk assures you that the sheets are clean and the towels are as<br />
+soft as a noble's behind.<br />
+A main-gauche belonging to a Palace Guard lies here.<br />
+A rapier belonging to a Palace guard lies here.<br />
+A tabard lies here in a crumpled heap.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A valuable looking key lies here...it glows dimly<br />
+The jailer's keys have been left here.<br />
+Assorted keys dangle from an iron loop here.<br />
+A small wooden chest rests here.<br />
+A golden key on a thin chain lies here...it hums softly<br />
+A letter written on thin parchment has been left here.<br />
+A small metallic canteen has been dropped here. [11]<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+<br />
+**SECONDS LATER**<br />
+<br />
+50V 0C Mem:8 Exits:SU&gt; u<br />
+Northwest Staircase<br />
+    The staircase before you appears to have once led up into the tower.<br />
+Now all that remains is a crumbling hole in the ceiling. Hallways lead<br />
+south and east from here. Torches hang in sconces on the walls providing<br />
+light. Still, you feel as though you are walking into darkness with each<br />
+step. Stairs lead down into darkness below you.<br />
+The corpse of a knight of the crown is lying here. [4]<br />
+Sir Tillarius is standing here. (flying)<br />
+Attai, Garbage Dreadnaught is standing here. (flying)<br />
+Miss Mahha d'Harm, Drunk Garbage is resting here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Raystar, Garbage Superstar is resting here. (flying)<br />
+<br />
+49V 0C Mem:8 Exits:ESD&gt; c 'ins'<br />
+You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+49V 0C Mem:9 Exits:ESD&gt; c 'ice'<br />
+<br />
+Raystar stands up.<br />
+<br />
+49V 0C Mem:9 Exits:ESD&gt; <br />
+You step aside as Tillarius tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+49V 0C [Me:Perfect] [Tillarius:V.Good] Mem:9 Exits:ESD&gt; <br />
+Tillarius seems unaffected by your swarm of insects.<br />
+Attai seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Mahha, leaving bloody bites over her flesh.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Mahha slowly fades into existence.<br />
+Mahha misses you with her whip.<br />
+Attai pierces YOU hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+Tillarius slashes YOU very hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+You smite Tillarius extremely hard.<br />
+<br />
+318H 49V 0C [Me:Good] [Tillarius:V.Good] Mem:9 Exits:ESD&gt; You utter the words, 'ice storm'<br />
+Tillarius is shredded by shards of ice.<br />
+Attai is shredded by shards of ice.<br />
+Mahha is shredded by shards of ice.<br />
+Raystar is shredded by shards of ice.<br />
+<br />
+318H 49V 0C [Me:Good] [Tillarius:Good] Mem:10 Exits:ESD&gt; <br />
+You step aside as Attai tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+318H 49V 0C [Me:Good] [Tillarius:Good] Mem:10 Exits:ESD&gt; <br />
+Mahha stands up.<br />
+<br />
+318H 49V 0C [Me:Good] [Tillarius:Good] Mem:10 Exits:ESD&gt; <br />
+Tillarius seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Attai, leaving bloody bites over his flesh.<br />
+Mahha seems unaffected by your swarm of insects.<br />
+Raystar seems unaffected by your swarm of insects.<br />
+Raystar massacres YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Mahha whips YOU very hard.<br />
+Mahha burns as she passes through your fire shield.<br />
+Mahha is chilled as she passes through your freezing aura.<br />
+Attai pierces YOU very hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+Tillarius slashes YOU hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Fair] Mem:10 Exits:ESD&gt; c 'ice'<br />
+<br />
+Mahha focuses on Tillarius and utters the words, 'cure critical'.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Good] Mem:10 Exits:ESD&gt; <br />
+Raystar tries to sweep your legs, but you avoid the attack.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Good] Mem:10 Exits:ESD&gt; You utter the words, 'ice storm'<br />
+Tillarius is shredded by shards of ice.<br />
+Attai is shredded by shards of ice.<br />
+Mahha is shredded by shards of ice.<br />
+Raystar is shredded by shards of ice.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Fair] Mem:12 Exits:ESD&gt; <br />
+Tillarius stands up.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Fair] Mem:12 Exits:ESD&gt; <br />
+You step aside as Tillarius tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+236H 49V 0C [Me:Fair] [Tillarius:Fair] Mem:12 Exits:ESD&gt; c 'word' me<br />
+<br />
+Your swarm of insects covers Tillarius, leaving bloody bites over his flesh.<br />
+Attai seems unaffected by your swarm of insects.<br />
+Mahha seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Raystar, leaving bloody bites over his flesh.<br />
+Raystar's cleave cuts you deep.<br />
+Raystar annihilates YOU with his cleave.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Raystar massacres YOU with his pierce.<br />
+Raystar burns as he passes through your fire shield.<br />
+Raystar is chilled as he passes through your freezing aura.<br />
+Attai pierces YOU very hard.<br />
+Attai burns as he passes through your fire shield.<br />
+Attai is chilled as he passes through your freezing aura.<br />
+Tillarius slashes YOU extremely hard.<br />
+Tillarius burns as he passes through your fire shield.<br />
+Tillarius is chilled as he passes through your freezing aura.<br />
+<br />
+140H 49V 0C [Me:V.Bad] [Tillarius:Fair] Mem:12 Exits:ESD&gt; <br />
+Mahha focuses on Tillarius and utters the words, 'cure critical'.<br />
+<br />
+140H 49V 0C [Me:V.Bad] [Tillarius:Good] Mem:12 Exits:ESD&gt; c 'word' me<br />
+c 'word' me<br />
+<br />
+Attai stands up.<br />
+<br />
+140H 49V 0C [Me:V.Bad] [Tillarius:Good] Mem:12 Exits:ESD&gt; You utter the words, 'word of recall'<br />
+Clerk's Office<br />
+    Here you can rent a room for the evening or however long you intend to<br />
+stay. The clerk assures you that the sheets are clean and the towels are as<br />
+soft as a noble's behind.<br />
+A main-gauche belonging to a Palace Guard lies here.<br />
+A rapier belonging to a Palace guard lies here.<br />
+A tabard lies here in a crumpled heap.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A valuable looking key lies here...it glows dimly<br />
+The jailer's keys have been left here.<br />
+Assorted keys dangle from an iron loop here.<br />
+A small wooden chest rests here.<br />
+A golden key on a thin chain lies here...it hums softly<br />
+A letter written on thin parchment has been left here.<br />
+A small metallic canteen has been dropped here. [11]<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1123'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1123">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1123">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

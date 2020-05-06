@@ -1,0 +1,817 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1537-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1537'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Teranga Norril Ravie RIP</font></b>
+<p>
+POV: 
+Donnie<p>
+Log Rating:
+1.6667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Corey tricks us into getting flagged so we have to zone and load him spells.</i>
+<p>
+<p>
+
+366H 87V 5549307X 0C Mem:3 Exits:D&gt; <br />
+Yamoto climbs up the ladder through a hatch to the outside.<br />
+<br />
+366H 87V 5549307X 0C Mem:3 Exits:D&gt; <br />
+You relax and stop marching.<br />
+<br />
+379H 112V 5549307X 0C Mem:2 Exits:D&gt; climb ladderYou climb the ladder through the hatch to the top of the tower.<br />
+Atop a Tall Stone Tower<br />
+    Ocean winds from the Blood Sea blow in strongly from the east. The top<br />
+of the tower is crenelated and has an imposing view of the surrounding<br />
+land. The muddy village of Waterspan just below the tower to the west seems<br />
+insignificant from this height as the terrain stretches on in all<br />
+directions. To the east the Blood Sea can be seen, the waters pounding the<br />
+shore not too far from the palisade surrounding the village.<br />
+The corpse of a red dragonarmy archer is lying here. [2]<br />
+A set of leather pouches have been left on the ground.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Sir Norril Wyrmslayer, Yau Yeng Knight of the Sword is standing here, fighting Captain Serrina.<br />
+Topher Howat, Mentat Son of the Solamnic Forces is standing here, fighting Captain Serrina. (flying)<br />
+Lord Ravie Shanata, Noble Crown Knight of the Old Code is sitting here, fighting Captain Serrina. (flying)<br />
+Lord Oppai Silentstar, High Clerist of the Knights of Solamnia is standing here. (flying)<br />
+Teranga, Love Slave of Princess Isabella is standing here, fighting Captain Serrina.<br />
+Captain Serrina is sitting here, fighting Topher.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Beric crawls up to the top of the tower from a hatch in the floor.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Ramsay crawls up to the top of the tower from a hatch in the floor.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Meekus crawls up to the top of the tower from a hatch in the floor.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Lee crawls up to the top of the tower from a hatch in the floor.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Yamoto massacres Teranga with his slash.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Beric crashes into Topher in a thundering collision, knocking him to the ground!<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Lee focuses harshly on Teranga and utters some strange words.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Teranga heroically rescues Topher.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Oppai gets a scroll from his chest.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Grauth crawls up to the top of the tower from a hatch in the floor.<br />
+Grauth kneels down and studies the ground.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Oppai stops using a glowing red ruby.<br />
+Oppai grabs a glowing scroll of recall.<br />
+Oppai recites a glowing scroll of recall.<br />
+Oppai disappears.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Tywin crawls up to the top of the tower from a hatch in the floor.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Grauth crashes into Teranga in a thundering collision, knocking him to the ground!<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; groYour group of 8 members consists of:<br />
+  Yamoto           perfect   rested    fighting   Y   N    Y    Y     0    0<br />
+  Ramsay           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Tywin            perfect   rested    standing   Y   N    Y    Y     0    0<br />
+  Lee              perfect   rested    standing   Y   Y    N    Y     1    7<br />
+  Meekus           perfect   rested    standing   Y   Y    N    Y     0    1<br />
+  Grauth           perfect   rested    fighting   Y   N    N    Y     0    0<br />
+  Donnie           v.good    rested    standing   Y   Y    N    Y     1    2<br />
+  Beric            perfect   rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Grauth massacres Teranga with his crush.<br />
+Beric massacres Teranga with his cleave.<br />
+Teranga massacres Beric with his slash.<br />
+Teranga wavers under Yamoto's mighty slash!<br />
+Yamoto obliterates Teranga with his slash.<br />
+Yamoto massacres Teranga with his slash.<br />
+Norril massacres Captain Serrina with his cleave.<br />
+Captain Serrina obliterates Topher with her slash.<br />
+Topher massacres Captain Serrina with his cleave.<br />
+Topher misses Captain Serrina with his slash.<br />
+Ravie cleaves Captain Serrina extremely hard.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Meekus slowly fades into existence.<br />
+Meekus massacres Teranga with his pierce.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Ravie stands up.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; <br />
+Ravie tries in vain to disarm Captain Serrina's weapon.<br />
+<br />
+379H 111V 5549307X 0C Mem:2&gt; cast 'harm' terangaYou utter the words, 'harm'<br />
+You grab Teranga, who screams in pain.<br />
+Teranga is incapacitated and will slowly die, if not aided.<br />
+Teranga lies suffering on the ground till no blood is left in his body.<br />
+You receive 0 experience.<br />
+Teranga is dead! R.I.P.<br />
+The death cry of Teranga echoes from somewhere nearby...<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Norril stops using a black stone.<br />
+Norril grabs a glowing scroll of recall.<br />
+Norril recites a glowing scroll of recall.<br />
+Topher disappears.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+**Yamoto: or not<br />
+Lee utters some strange words.<br />
+Lee slowly fades into existence.<br />
+Norril is shredded by shards of ice.<br />
+Ravie is shredded by shards of ice.<br />
+Captain Serrina is shredded by shards of ice.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Tywin massacres Norril with his slash.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Ramsay crashes into Ravie in a thundering collision, knocking him to the ground!<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Yamoto massacres Norril with his slash.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Yamoto massacres Norril with his slash.<br />
+Yamoto slashes Norril hard.<br />
+Ramsay massacres Ravie with his crush.<br />
+Tywin slashes Norril extremely hard.<br />
+Tywin cleaves Norril extremely hard.<br />
+Lee barely crushes Norril.<br />
+Captain Serrina annihilates Norril with her slash.<br />
+Norril massacres Captain Serrina with his cleave.<br />
+Ravie massacres Captain Serrina with his cleave.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; get all teranga<br />
+Grauth has lost his link.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; <br />
+Meekus gets a very large pile of coins from the corpse of Teranga.<br />
+<br />
+379H 111V 5549307X 0C Mem:3&gt; Meekus misses Norril with his pierce.<br />
+You get a symbol engraved sword from the corpse of Teranga.<br />
+You get a crystal bracelet from the corpse of Teranga.<br />
+You get a filthy leather wrist guard from the corpse of Teranga.<br />
+You get a jewelled black belt from the corpse of Teranga.<br />
+You get a pair of black leather sleeves from the corpse of Teranga.<br />
+You get green granite gauntlets from the corpse of Teranga.<br />
+You get thin golden dragonscale boots from the corpse of Teranga.<br />
+You get a pair of green leather leggings from the corpse of Teranga.<br />
+You get a metallic dragon helm from the corpse of Teranga.<br />
+You get some glistening bronze armour from the corpse of Teranga.<br />
+You get an amulet of hunting from the corpse of Teranga.<br />
+You get a golden dwarven ring from the corpse of Teranga.<br />
+You get a silver dwarven ring from the corpse of Teranga.<br />
+You get a griffon feather from the corpse of Teranga.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Pitcher : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Pelt : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Cube : You can't carry that mucast 'harm' norrilch weight.<br />
+Axe : You can't carry that much weight.<br />
+You get a very large pile of coins from the corpse of Teranga.<br />
+There were 2222 coins.<br />
+Barrel : You can't carry that much weight.<br />
+Vest : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+379H 111V 5549307X 2222C Mem:3&gt; You utter the words, 'harm'<br />
+You grab Norril, who screams in pain.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Ravie steps aside as Beric attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Lee focuses harshly on Norril and utters some strange words.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Tywin attempts to impair Norril, but he is outmaneuvered instead.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Yamoto attacks Norril with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; gro<br />
+Grauth has reconnected.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+There is lightning in the sky.<br />
+Beric massacres Ravie with his cleave.<br />
+Meekus misses Norril with his pierce.<br />
+Yamoto massacres Norril with his slash.<br />
+Yamoto slashes Norril.<br />
+Ramsay annihilates Ravie with his crush.<br />
+Tywin massacres Norril with his slash.<br />
+Tywin cleaves Norril very hard.<br />
+Captain Serrina annihilates Norril with her slash.<br />
+Norril massacres Captain Serrina with his cleave.<br />
+Ravie misses Captain Serrina with his cleave.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Grauth crashes into Ravie in a thundering collision, knocking him to the ground!<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; Your group of 8 members consists of:<br />
+  Yamoto           perfect   rested    fighting   Y   N    Y    Y     0    0<br />
+  Ramsay           perfect   rested    fighting   Y   N    N    Y     0    0<br />
+  Tywin            perfect   rested    fighting   Y   N    Y    Y     0    0<br />
+  Lee              perfect   rested    fighting   Y   N    N    Y     1    9<br />
+  Meekus           perfect   rested    fighting   Y   N    N    Y     0    1<br />
+  Grauth           perfect   rested    fighting   Y   N    N    Y     0    0<br />
+  Donnie           v.good    rested    standing   Y   Y    N    Y     1    5<br />
+  Beric            v.good    rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; <br />
+Captain Serrina stands up.<br />
+Meekus focuses harshly on Norril and utters some strange words.<br />
+The sound of bones cracking echoes as Meekus's force bolt slams into Norril.<br />
+<br />
+379H 111V 5549307X 2222C Mem:5&gt; cast 'harm' norrilYou utter the words, 'harm'<br />
+You grab Norril, who collapses in pain, then dies.<br />
+You receive 0 experience.<br />
+Norril is dead! R.I.P.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+The death cry of Norril echoes from somewhere nearby...<br />
+Oppai stops following Norril.<br />
+Ravie steps aside as Ramsay attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Lee gets a very large pile of coins from the corpse of Norril.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Tywin slashes Ravie extremely hard.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Yamoto massacres Ravie with his slash.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Yamoto annihilates Ravie with his slash.<br />
+Yamoto slashes Ravie extremely hard.<br />
+Tywin slashes Ravie very hard.<br />
+Tywin massacres Ravie with his cleave.<br />
+Captain Serrina obliterates Ravie with her slash.<br />
+Grauth annihilates Ravie with his crush.<br />
+Beric massacres Ravie with his cleave.<br />
+Ramsay crushes Ravie extremely hard.<br />
+Ravie is mortally wounded, and will die soon, if not aided.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; get all norril<br />
+Beric stands up.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; Meekus massacres Ravie with his pierce.<br />
+You receive 0 experience.<br />
+Ravie is dead! R.I.P.<br />
+Axe : You can't carry that much weight.<br />
+Wristguard : You can't carry that much weight.<br />
+Bracelet : You can't carry that much weight.<br />
+Belt : You can't carry that much weight.<br />
+Robes : You can't carry that much weight.<br />
+Shield : You can't carry that much weight.<br />
+Plates : You can't carry that much weight.<br />
+Gauntlets : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Anklets : You can't carry that much weight.<br />
+Headband : You can't carry that much weight.<br />
+Plate : You can't carry that much weight.<br />
+Symbol : You can't carry that much weight.<br />
+Cape : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Stone : You can't carry that much weight.<br />
+Sphere : You can't carry that much weight.<br />
+Barrel : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Key : You can't carry that much weight.<br />
+Quarterstaff : You can't carry that much weight.<br />
+Pike : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Jewel : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Axe : You can't carry that much weight.<br />
+Flail : You can't carry that much weight.<br />
+Quarterstaff : You can't carry that much weight.<br />
+Gadget : You can't carry that much weight.<br />
+Bag : You can't carry that much weight.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+The death cry of Ravie echoes from somewhere nearby...<br />
+Ravie sinks gently to the ground.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Lee gets a large pile of coins from the corpse of Ravie.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Kro shouts 'Leave now and forever hold your peace!'<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Captain Serrina massacres Tywin with her slash.<br />
+Captain Serrina annihilates Tywin with her slash.<br />
+Tywin slashes Captain Serrina hard.<br />
+Tywin misses Captain Serrina with his cleave.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Beric gets a white snowy eagle feather from the corpse of Ravie.<br />
+Beric gets a bardiche with a silver half moon blade from the corpse of Ravie.<br />
+Beric gets an ancient iron bracer from the corpse of Ravie.<br />
+Beric gets a runed brass wristguard from the corpse of Ravie.<br />
+Beric gets a jade belt from the corpse of Ravie.<br />
+Beric gets a regal red cape from the corpse of Ravie.<br />
+Beric gets a berserker shield from the corpse of Ravie.<br />
+Beric gets a pair of dark black bracers from the corpse of Ravie.<br />
+Beric gets a pair of draconian gauntlets from the corpse of Ravie.<br />
+Beric gets a pair of steel plated boots from the corpse of Ravie.<br />
+Beric gets some black legplates of the Lily from the corpse of Ravie.<br />
+Beric gets a suit of white plate mail from the corpse of Ravie.<br />
+Beric gets a gold-plated pendant from the corpse of Ravie.<br />
+Beric gets the ring of the wolf from the corpse of Ravie.<br />
+Beric gets a cracked ruby from the corpse of Ravie.<br />
+Beric gets a rough edged axe from the corpse of Ravie.<br />
+Beric gets a torch from the corpse of Ravie.<br />
+Beric gets a useless looking gadget from the corpse of Ravie.<br />
+Beric gets a crafted aspen staff from the corpse of Ravie.<br />
+Beric gets a portable keg from the corpse of Ravie.<br />
+Beric gets a charred long sword from the corpse of Ravie.<br />
+Beric gets a pair of soft black leather boots from the corpse of Ravie.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Yamoto gets a spiked war axe from the corpse of Norril.<br />
+Yamoto gets a runed brass wristguard from the corpse of Norril.<br />
+Yamoto gets a mithril bracelet from the corpse of Norril.<br />
+Yamoto gets a ruby encrusted belt from the corpse of Norril.<br />
+Yamoto gets a shield of the Black Watch from the corpse of Norril.<br />
+Yamoto gets a headband adorned with eagle's feathers from the corpse of Norril.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; groYour group of 8 members consists of:<br />
+  Yamoto           perfect   rested    standing   Y   N    Y    Y     0    0<br />
+  Ramsay           perfect   rested    sitting    Y   N    N    Y     0    0<br />
+  Tywin            good      rested    fighting   Y   N    Y    Y     0    0<br />
+  Lee              perfect   rested    standing   Y   Y    N    Y     1    9<br />
+  Meekus           perfect   rested    standing   Y   N    N    Y     0    2<br />
+  Grauth           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Donnie           v.good    rested    standing   Y   Y    N    Y     1    7<br />
+  Beric            v.good    rested    standing   Y   N    N    Y     0    0<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Grauth gets the grey robes of the Thorn from the corpse of Norril.<br />
+Grauth gets a set of silver arm plates from the corpse of Norril.<br />
+Grauth gets a pair of silver dwarven gauntlets from the corpse of Norril.<br />
+Grauth is zapped by a gleaming silver pair of boots and instantly drops it.<br />
+Grauth gets a set of silver anklets from the corpse of Norril.<br />
+Grauth gets a suit of white plate mail from the corpse of Norril.<br />
+Grauth is zapped by a holy symbol of Kiri-Jolith and instantly drops it.<br />
+Grauth gets a shimmering silver cape from the corpse of Norril.<br />
+Grauth gets a blue ring from the corpse of Norril.<br />
+Grauth gets a black ice ring from the corpse of Norril.<br />
+Grauth gets a black stone from the corpse of Norril.<br />
+Grauth gets an ancient sphere from the corpse of Norril.<br />
+Grauth gets a sturdy wooden barrel from the corpse of Norril.<br />
+Grauth gets a glowing scroll of recall from the corpse of Norril.<br />
+Grauth gets a golden key to the city from the corpse of Norril.<br />
+Grauth gets an oaken quarterstaff from the corpse of Norril.<br />
+Grauth is zapped by an elven pike and instantly drops it.<br />
+Grauth gets a scroll of identify from the corpse of Norril.<br />
+Grauth gets a putrid potion from the corpse of Norril.<br />
+Grauth gets a putrid potion from the corpse of Norril.<br />
+Grauth gets a stunning red jewel from the corpse of Norril.<br />
+Grauth gets a loaf of waybread from the corpse of Norril.<br />
+Grauth gets a hearthguard's axe from the corpse of Norril.<br />
+Grauth gets a chain flail from the corpse of Norril.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Lee gets a blackened chest from the corpse of Ravie.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Captain Serrina steps aside as Grauth attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+379H 111V 5549307X 2222C Mem:7&gt; <br />
+Lee gets an oaken quarterstaff from the corpse of Norril.<br />
+Lee gets a useless looking gadget from the corpse of Norril.<br />
+Lee gets a black bearskin bag from the corpse of Norril.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1537'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1537">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1537">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

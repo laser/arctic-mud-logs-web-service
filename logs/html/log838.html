@@ -1,0 +1,645 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 838-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='838'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Dark Moons dying</font></b>
+<p>
+POV: 
+Mazish/Malin<p>
+Log Rating:
+-2.0714<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Two Dark Moons R.I.P</i>
+<p>
+<p>
+
+Flexer was soloing on his &quot;unknown&quot; ranger. We caught him while he was<br />
+trying to xp.<br />
+<br />
+387H 134V 5212130X 1373C Exits:EW&gt; <br />
+**Quinthanalas: w<br />
+<br />
+387H 134V 5212130X 1373C Exits:EW&gt; w<br />
+Quinthanalas kneels down and studies the ground.<br />
+A Dark Cave<br />
+Lord Balaka, Slavemaster of Takhisis Child Labor N Shoe Co. is standing here. (flying)<br />
+Quinthanalas Quel'Thalas, Qualinesti Renshai is standing here. (flying)<br />
+Rynnakm, Rampant Frewt of the Renshai is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Virtue Of Takhisis, Pure Evil is standing here. (flying)<br />
+Bowing the Male Kender is standing here, fighting a young black dragon. (flying)<br />
+A young black dragon is standing here, fighting Bowing.<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; <br />
+Rynnakm focuses harshly on Bowing and utters some strange words.<br />
+Bowing is paralyzed!<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; <br />
+Virtue crashes into Bowing in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; <br />
+Quinthanalas massacres Bowing with his shoot.<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; <br />
+Quinthanalas massacres Bowing with his shoot.<br />
+Quinthanalas shoots Bowing extremely hard.<br />
+Virtue massacres Bowing with her crush.<br />
+A young black dragon claws Bowing hard.<br />
+A young black dragon claws Bowing hard.<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; <br />
+Rynnakm looks at Bowing.<br />
+<br />
+387H 132V 5212130X 1373C Exits:NESW&gt; cast 'bli' bowing<br />
+You utter the words, 'blindness'<br />
+Bowing seems to be blinded!<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; <br />
+Rynnakm smacks his lips.<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; <br />
+Quinthanalas massacres Bowing with his shoot.<br />
+Virtue massacres Bowing with her crush.<br />
+A young black dragon claws Bowing hard.<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; <br />
+Quinthanalas crashes into Bowing in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; <br />
+Rynnakm focuses harshly on Bowing and utters some strange words.<br />
+Rynnakm sends a chilling blast of air at Bowing, giving him a severe case of frostbite.<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; w alone<br />
+<br />
+Virtue crashes into Bowing in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 132V 5212130X 1373C Mem:2 Exits:NESW&gt; Mouth of the Cave<br />
+<br />
+387H 130V 5212130X 1373C Mem:2 Exits:EW&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+387H 130V 5212130X 1373C Mem:2 Exits:EW&gt; e<br />
+A Dark Cave<br />
+The corpse of Bowing is lying here.<br />
+Lord Balaka, Slavemaster of Takhisis Child Labor N Shoe Co. is standing here. (flying)<br />
+Quinthanalas Quel'Thalas, Qualinesti Renshai is standing here. (flying)<br />
+Rynnakm, Rampant Frewt of the Renshai is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Virtue Of Takhisis, Pure Evil is standing here. (flying)<br />
+A young black dragon is curled up in a corner, waiting for the unsuspecting.<br />
+A young black dragon misses you with his claw.<br />
+<br />
+387H 128V 5212130X 1373C [Me:Perfect] [a young black dragon:Fair] Mem:2 Exits:NESW&gt; exam bowing<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a short sword<br />
+a honed dwarven battleaxe<br />
+an imp skin pouch (invisible)<br />
+a heavy woolen robe<br />
+some midnight leather sleeves<br />
+some charred black gloves<br />
+a shining silver plate<br />
+a necklace of silver chain<br />
+a tiger ring<br />
+the seal of the Silver Circle Guard<br />
+a large pile of coins<br />
+a torch<br />
+an ebony shield<br />
+a finely forged longsword<br />
+a dwarven crossbow<br />
+a milky potion of see invisible<br />
+a bottle [2]<br />
+a piece of sweet bread [7]<br />
+a glowing scroll of recall..it glows dimly<br />
+a scroll of recall<br />
+------------------------------------------------------------<br />
+Aldur was seen wandering around Kal. We had two naked theives waiting on him.<br />
+He brought Maleki in for backup but all he did was rescue and assist us in<br />
+the stabbing.<br />
+<br />
+<br />
+381H 186V 1433741X 3771C Exits:NESW&gt; !<br />
+Aldur is flailing around too much.  Oh well.<br />
+<br />
+381H 186V 1433741X 3771C Exits:NESW&gt; <br />
+**Lorelei: maleki<br />
+<br />
+381H 186V 1433741X 3771C Exits:NESW&gt; !<br />
+Aldur is flailing around too much.  Oh well.<br />
+<br />
+381H 186V 1433741X 3771C Exits:NESW&gt; <br />
+Lorelei panics, and attempts to flee.<br />
+Lorelei leaves south.<br />
+<br />
+381H 186V 1433741X 3771C Exits:NESW&gt; !<br />
+Aldur looks behind himself just in time to avoid your poor attempt at a backstab.<br />
+<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; !<br />
+<br />
+You pierce Aldur extremely hard.<br />
+Aldur appears noticeably weaker.<br />
+You pierce Aldur very hard.<br />
+Aldur misses you with his hit.<br />
+<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; <br />
+Lorelei appears to be dancing around the room.<br />
+<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; <br />
+Lorelei appears to be dancing around the room.<br />
+<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; <br />
+Lorelei appears to be dancing around the room.<br />
+<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; st<br />
+fle<br />
+381H 186V 1433741X 3771C [Malin:Perfect] [Aldur:Fair] Exits:NESW&gt; You flee head over heels.<br />
+Shop O' Wonder<br />
+A small bag has been dropped here.<br />
+A piece of rolled-up paper lies here.<br />
+The old wizard waits impatiently for you to make your purchase.<br />
+<br />
+381H 185V 1433741X 3771C Exits:N&gt; You're not fighting, why bother fleeing?<br />
+<br />
+381H 185V 1433741X 3771C Exits:N&gt; n<br />
+Market Street West<br />
+Lorelei Le'Grande, Royal Dwarven Assassin is standing here, fighting Aldur.<br />
+A hill giant is roaming around looking for something to kill.<br />
+Aldur the Male Gnome is standing here, fighting Lorelei. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Sir Maleki, Darkmoon S.W.A.T. is standing here.<br />
+<br />
+381H 184V 1433741X 3771C Exits:NESW&gt; ba aldur<br />
+Aldur is flailing around too much.  Oh well.<br />
+<br />
+381H 184V 1433741X 3771C Exits:NESW&gt; <br />
+Maleki heroically rescues Aldur.<br />
+<br />
+381H 184V 1433741X 3771C Exits:NESW&gt; !<br />
+Aldur twists around to see you place an emerald hilted dagger in his back.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+Aldur focuses harshly on you and utters some strange words.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+You pierce Aldur extremely hard.<br />
+You miss Aldur with your pierce.<br />
+Lorelei pierces Maleki very hard.<br />
+Lorelei bruises Maleki with her pierce.<br />
+Maleki massacres Lorelei with his cleave.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+Lorelei panics, and attempts to flee.<br />
+Lorelei leaves south.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+Lorelei arrives from the south.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; <br />
+Lorelei appears to be dancing around the room.<br />
+<br />
+381H 184V 1433741X 3771C [Malin:Perfect] [Aldur:Awful] Exits:NESW&gt; fle<br />
+You flee head over heels.<br />
+Market Street West<br />
+<br />
+381H 183V 1433741X 3771C Exits:NESW&gt; Your blood freezes as you hear someone's death cry.<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+381H 181V 1433741X 3771C Exits:NESW&gt; e<br />
+Market Street West<br />
+A long sword has been left here.<br />
+A shield is lying on the ground.<br />
+A flowing white robe rests here.<br />
+The corpse of Aldur is lying here.<br />
+Lorelei Le'Grande, Royal Dwarven Assassin is standing here.<br />
+Sir Maleki, Darkmoon S.W.A.T. is standing here.<br />
+<br />
+381H 180V 1433741X 3771C Exits:NESW&gt; <br />
+Maleki gets a black witch's robe from the corpse of Aldur.<br />
+Maleki gets a pair of magi boots from the corpse of Aldur.<br />
+Maleki is zapped by a dark grey hood of the Thorn and instantly drops it.<br />
+Maleki is zapped by an engraved ring of Nuitari and instantly drops it.<br />
+Maleki gets a large iron shield from the corpse of Aldur.<br />
+Maleki gets a blank scroll from the corpse of Aldur.<br />
+Maleki gets a leg of lamb from the corpse of Aldur.<br />
+Maleki gets a leg of lamb from the corpse of Aldur.<br />
+Maleki gets a leg of lamb from the corpse of Aldur.<br />
+Maleki gets a glowing scroll of recall from the corpse of Aldur.<br />
+Maleki gets a glowing scroll of recall from the corpse of Aldur.<br />
+Maleki gets a glowing scroll of recall from the corpse of Aldur.<br />
+Maleki gets a glowing scroll of recall from the corpse of Aldur.<br />
+Maleki gets a scribed scroll from the corpse of Aldur.<br />
+Maleki gets an apple from the corpse of Aldur.<br />
+Maleki gets an apple from the corpse of Aldur.<br />
+Maleki gets an apple from the corpse of Aldur.<br />
+Maleki gets an apple from the corpse of Aldur.<br />
+Maleki gets a scribed scroll from the corpse of Aldur.<br />
+Maleki gets a small wooden chest from the corpse of Aldur.<br />
+Maleki gets a red steel bracer from the corpse of Aldur.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='838'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=838">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="838">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

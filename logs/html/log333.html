@@ -1,0 +1,849 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 333-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='333'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Magra R.I.P.</font></b>
+<p>
+POV: 
+Elyana<p>
+Log Rating:
+1.7143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Magra randomed some low level mage and we decided to use a flag</i>
+<p>
+<p>
+
+279H 160V 15669914X 236C Exits:ESW&gt; groupYour group of 3 members consists of:<br />
+  Elyana           perfect   rested    standing   Y   N    N     1    0<br />
+  Drakken          v.bad     rested    standing   N   N    N     1    2<br />
+  Vassago          perfect   rested    standing   N   N    N     0    0<br />
+<br />
+279H 160V 15669914X 236C Exits:ESW&gt; <br />
+**Drakken: got him<br />
+<br />
+279H 160V 15669914X 236C Exits:ESW&gt; c 'h p' MagraWho should the spell be cast upon?<br />
+<br />
+279H 160V 15669914X 236C Exits:ESW&gt; <br />
+A Palanthanian guard arrives from the south.<br />
+<br />
+279H 160V 15669914X 236C Exits:ESW&gt; sVassago arrives from the north.<br />
+Anatole's Amazing Artifacts<br />
+Oasic the Male Hill Dwarf is standing here. (flying)<br />
+Alchais the Male High Elf is standing here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; gt held ?<br />
+Xtal tells you 'recalled it held'<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; You tell your group 'held ?'<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; <br />
+Xtal tells you 'recalled it held'<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; <br />
+**Drakken: now what?<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; <br />
+Xtal tells you 'nm'<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; buy plain.recallbuy plain.recall<br />
+Vassago buys a scroll of recall.<br />
+<br />
+279H 159V 15669914X 236C Exits:NE&gt; The apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 159V 15669914X 211C Exits:NE&gt; <br />
+Xtal flies in from the east.<br />
+<br />
+279H 159V 15669914X 211C Exits:NE&gt; buy plain.recallThe apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 159V 15669914X 186C Exits:NE&gt; <br />
+Vassago buys a scroll of recall.<br />
+<br />
+279H 159V 15669914X 186C Exits:NE&gt; buy plain.recallbuy plain.recallThe apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 159V 15669914X 161C Exits:NE&gt; <br />
+Vassago buys a scroll of recall.<br />
+<br />
+279H 159V 15669914X 161C Exits:NE&gt; eThe apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 159V 15669914X 136C Exits:NE&gt; eeThe apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 159V 15669914X 111C Exits:NE&gt; <br />
+Vassago buys a scroll of recall.<br />
+<br />
+279H 159V 15669914X 111C Exits:NE&gt; eVassago arrives from the west.<br />
+Alchemical Lab<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A Palanthanian guard is here serving and protecting the citizens of Palanthas.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+279H 158V 15669914X 111C Exits:EW&gt; Vassago arrives from the west.<br />
+Mages' Study<br />
+An orrery is mounted on a stand here...it glows blue<br />
+The Captain of the Palanthas Guard is here ensuring the safety of the populace.<br />
+Magra, Robin Hood is resting here.<br />
+. . . has a tough exterior.<br />
+Drakken the Male High Elf is standing here.<br />
+. . . is followed by a hovering ball of light.<br />
+Tym the Male Theiwar Dwarf is standing here.<br />
+Ie Shinzagura, Beta Pledge of Kappa Cracka Ded is resting here. (flying) (invisible)<br />
+Fibinachi Falconscribe, Unleashing the Power of Douedan Lightning over Krynn is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Anatole the Amazing is here to teach you the ways of magic.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; Alas, you cannot go that way...<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; Alas, you cannot go that way...<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+The captain of the Palanthas guard leaves west.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Xtal flies in from the west.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Tym looks at Magra.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Magra says 'elite'<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Drakken sits down and rests.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Xtal grabs a scroll of recall.<br />
+Xtal recites a scroll of recall.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; rec recall magraYou stop using a large first-aid kit.<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+The magic fails!<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Vassago grabs a scroll of recall.<br />
+Vassago recites a scroll of recall.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Fibinachi rolls on the floor in a fit of laughter.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; rec recall magra<br />
+A Palanthanian guard arrives from the west.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Xtal grabs a scroll of recall.<br />
+Xtal recites a scroll of recall.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Drakken looks at Magra.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+The magic fails!<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; <br />
+Vassago grabs a scroll of recall.<br />
+Vassago recites a scroll of recall.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; wwwbuy plain.recallbuy plain.recallbuy plain.recall<br />
+Xtal grabs a scroll of recall.<br />
+Xtal recites a scroll of recall.<br />
+Magra disappears.<br />
+<br />
+279H 157V 15669914X 111C Exits:W&gt; Vassago arrives from the east.<br />
+Alchemical Lab<br />
+A Palanthanian guard is here serving and protecting the citizens of Palanthas.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+279H 156V 15669914X 111C Exits:EW&gt; Vassago arrives from the east.<br />
+Anatole's Amazing Artifacts<br />
+The Captain of the Palanthas Guard is here ensuring the safety of the populace.<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+279H 155V 15669914X 111C Exits:NE&gt; Alas, you cannot go that way...<br />
+<br />
+279H 155V 15669914X 111C Exits:NE&gt; The apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 155V 15669914X 86C Exits:NE&gt; c 'relo' magraThe apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 155V 15669914X 61C Exits:NE&gt; The apprentice tells you 'Pleasure doing business with you.  That'll be 25 steel coins.'<br />
+You now have a scroll of recall.<br />
+<br />
+279H 155V 15669914X 36C Exits:NE&gt; <br />
+**Drakken: now what?<br />
+<br />
+279H 155V 15669914X 36C Exits:NE&gt; You utter the words, 'relocate'<br />
+Banquet Hall<br />
+Magra, Robin Hood is resting here.<br />
+. . . has a tough exterior.<br />
+A palace guard is here watching you closely.<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; <br />
+**Vassago: recalled<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; gt Banquet HallYou tell your group 'Banquet Hall'<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; <br />
+**Vassago: where<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; <br />
+Xtal tells you 'go get him boy'<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; <br />
+Magra says 'hi'<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; <br />
+**Drakken: dammit<br />
+<br />
+279H 155V 15669914X 36C Mem:3 Exits:NE&gt; gt A palace guard is here watching you closely.You tell your group 'A palace guard is here watching you closely.'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; peerYou peer around you.<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; memSpells currently memorized:<br />
+1: [ 1]blur                 [ 7]magic missile       <br />
+2: [ 1]continual light      [ 1]invisibility         [ 3]shocking grasp      <br />
+   [ 2]silence              [ 1]strength            <br />
+3: [ 1]fly                  [ 7]lightning bolt      <br />
+4: [ 2]acid blast           [ 5]hold person          [ 1]improved invisibilit<br />
+5: [ 8]force bolt           [ 4]locate object       <br />
+6: [ 1]antimagic shell      [ 3]mirror image         [ 2]relocate            <br />
+7: [ 2]calm                 [ 2]conjure elemental    [ 1]glitterdust         <br />
+   [ 3]mass invisibility   <br />
+8: [ 3]clairvoyance         [ 2]cloud kill           [ 1]detect scry         <br />
+   [ 1]wizard eye          <br />
+9: [ 5]energy drain         [ 1]recharge            <br />
+<br />
+Spells being memorized:<br />
+6: [ 1]relocate            <br />
+<br />
+You estimate your studies will complete in 2 hours.<br />
+<br />
+Spells left: 1-0 2-0 3-0 4-0 5-0 6-1 7-0 8-0 9-0<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; forg 'a b'acid blast: You forget this spell.<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; <br />
+Magra says 'u gonna kill me or what'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; <br />
+Vassago arrives from the north.<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; mem 'has'haste: added to your list<br />
+<br />
+279H 160V 15669914X 36C Mem:3 Exits:NE&gt; restYou rest your tired bones but stay aloft.<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; gt stopgt stopYou tell your group 'stop'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; You tell your group 'stop'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+Magra says 'ha ha'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; gt ill hasteYou tell your group 'ill haste'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; groupYour group of 3 members consists of:<br />
+  Elyana           perfect   rested    resting    Y   N    N     1    1<br />
+  Drakken          v.bad     rested    resting    N   N    N     1    0<br />
+  Vassago          perfect   rested    standing   N   N    N     0    0<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+Magra says 'get ie and solare too'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+**Vassago: davai toka bystro<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; groupYour group of 3 members consists of:<br />
+  Elyana           perfect   rested    resting    Y   N    N     1    1<br />
+  Drakken          v.bad     rested    resting    N   N    N     1    0<br />
+  Vassago          perfect   rested    standing   N   N    N     0    0<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+**Vassago: hold low<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; gt i knowYou tell your group 'i know'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; groupYour group of 3 members consists of:<br />
+  Elyana           perfect   rested    resting    Y   N    N     1    1<br />
+  Drakken          v.bad     rested    standing   N   N    N     1    0<br />
+  Vassago          perfect   rested    standing   N   N    N     0    0<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+Vassago looks at Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; gt tick You tell your group 'tick '<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+Magra shows Vassago his massive biceps.<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; lBanquet Hall<br />
+Vassago Faceless, Demon of the Light is standing here.<br />
+Magra, Robin Hood is resting here.<br />
+. . . has a tough exterior.<br />
+A palace guard is here watching you closely.<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; gt dunno about guardsYou tell your group 'dunno about guards'<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+**Vassago: poh<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; lBanquet Hall<br />
+Vassago Faceless, Demon of the Light is standing here.<br />
+Magra, Robin Hood is resting here.<br />
+. . . has a tough exterior.<br />
+A palace guard is here watching you closely.<br />
+<br />
+279H 160V 15669914X 36C Mem:1 Exits:NE&gt; <br />
+Your studies complete, you close your spellbook with a smile.<br />
+mem<br />
+279H 160V 15669914X 36C Exits:NE&gt; Spells currently memorized:<br />
+1: [ 1]blur                 [ 7]magic missile       <br />
+2: [ 1]continual light      [ 1]invisibility         [ 3]shocking grasp      <br />
+   [ 2]silence              [ 1]strength            <br />
+3: [ 1]fly                  [ 7]lightning bolt      <br />
+4: [ 1]acid blast           [ 1]haste                [ 5]hold person         <br />
+   [ 1]improved invisibilit<br />
+5: [ 8]force bolt           [ 4]locate object       <br />
+6: [ 1]antimagic shell      [ 3]mirror image         [ 3]relocate            <br />
+st7: [ 2]calm                 [ 2]conjure elemental    [ 1]glitterdust         <br />
+   [ 3]mass invisibility   <br />
+8: [ 3]clairvoyance         [ 2]cloud kill           [ 1]detect scry         <br />
+   [ 1]wizard eye          <br />
+9: [ 5]energy drain         [ 1]recharge            <br />
+<br />
+<br />
+Spells left: 1-0 2-0 3-0 4-0 5-0 6-1 7-0 8-0 9-0<br />
+<br />
+279H 160V 15669914X 36C Exits:NE&gt; <br />
+Magra says 'lets just be friends'<br />
+<br />
+279H 160V 15669914X 36C Exits:NE&gt; You stand up.<br />
+<br />
+279H 160V 15669914X 36C Exits:NE&gt; <br />
+    As Magra throws the bag of stones, a voice in the distance whispers:<br />
+                       The axes turn, the spells rebel,<br />
+                  Allow nothing to pierce this mortal shell.<br />
+Magra smiles as the air around him solidifies.<br />
+Magra's skin thickens into a protective bark.<br />
+<br />
+279H 160V 15669914X 36C Exits:NE&gt; gt bahsYou tell your group 'bahs'<br />
+<br />
+279H 160V 15669914X 36C Exits:NE&gt; c 'hast' vassagoYou utter the words, 'haste'<br />
+Vassago starts to fidget.<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; gt bash<br />
+Magra says 'haste baby'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; gt bash<br />
+Magra says 'haste'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; You tell your group 'bash'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; You tell your group 'bash'<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; c 'f b' Magra<br />
+Vassago crashes into Magra in a thundering collision, knocking him to the ground!<br />
+<br />
+279H 160V 15669914X 36C Mem:2 Exits:NE&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:4 Exits:NE&gt; <br />
+Vassago massacres Magra with his slash.<br />
+Vassago slashes Magra extremely hard.<br />
+<br />
+279H 160V 15669914X 36C Mem:4 Exits:NE&gt; c 'f b' MagraYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:5 Exits:NE&gt; <br />
+Vassago massacres Magra with his slash.<br />
+Magra slashes Vassago very hard.<br />
+<br />
+279H 160V 15669914X 36C Mem:5 Exits:NE&gt; c 'f b' Magra<br />
+Vassago crashes into Magra in a thundering collision, knocking him to the ground!<br />
+<br />
+279H 160V 15669914X 36C Mem:5 Exits:NE&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:6 Exits:NE&gt; <br />
+Vassago slashes Magra extremely hard.<br />
+Vassago massacres Magra with his slash.<br />
+Magra slashes Vassago hard.<br />
+<br />
+279H 160V 15669914X 36C Mem:6 Exits:NE&gt; c 'f b' Magra<br />
+Vassago crashes into Magra in a thundering collision, knocking him to the ground!<br />
+<br />
+279H 160V 15669914X 36C Mem:6 Exits:NE&gt; c 'f b' MagraVassago slashes Magra extremely hard.<br />
+Vassago massacres Magra with his slash.<br />
+Magra slashes Vassago.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:7 Exits:NE&gt; c 'f b' Magra<br />
+Vassago crashes into Magra in a thundering collision, knocking him to the ground!<br />
+<br />
+279H 160V 15669914X 36C Mem:7 Exits:NE&gt; <br />
+Vassago massacres Magra with his slash.<br />
+Vassago slashes Magra extremely hard.<br />
+Magra slashes Vassago hard.<br />
+<br />
+279H 160V 15669914X 36C Mem:7 Exits:NE&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Magra.<br />
+<br />
+279H 160V 15669914X 36C Mem:9 Exits:NE&gt; c 'f b' Magra<br />
+Magra steps aside as Vassago attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+279H 160V 15669914X 36C Mem:9 Exits:NE&gt; <br />
+Vassago massacres Magra with his slash.<br />
+Vassago massacres Magra with his slash.<br />
+You receive 0 experience.<br />
+Magra is dead! R.I.P.<br />
+get coins corpseexa corpseThe death cry of Magra echoes from somewhere nearby...<br />
+<br />
+279H 160V 15669914X 36C Mem:9 Exits:NE&gt; Who should the spell be cast upon?<br />
+<br />
+279H 160V 15669914X 36C Mem:9 Exits:NE&gt; Who should the spell be cast upon?<br />
+<br />
+279H 160V 15669914X 36C Mem:9 Exits:NE&gt; You get a pile of coins from the corpse of Magra.<br />
+There were 23 coins.<br />
+<br />
+279H 160V 15669914X 59C Mem:9 Exits:NE&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a thin steel sword<br />
+a grey leather bracer..it glows blue<br />
+a jeweled bracer<br />
+a black bandit's pack<br />
+a fire-blasted shield..it glows blue..it glows dimly<br />
+dark leather sleeves..it glows blue<br />
+a pair of draconian gauntlets<br />
+a pair of purple silk pants..it glows blue<br />
+get all 1.corpsea ragged leather ring..it glows blue<br />
+the ring of cruelty..it glows blue..it hums softly<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue [2]<br />
+a loaf of hymox bread [4]<br />
+a small bag of white stones [4]<br />
+some pixie dust..it glows blue..it glows dimly<br />
+a loaf of hymox bread<br />
+a large first-aid kit<br />
+an enchanted barrel..it glows blue..it glows dimly<br />
+an iron ration<br />
+<br />
+279H 160V 15669914X 59C Mem:9 Exits:NE&gt; <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='333'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=333">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="333">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

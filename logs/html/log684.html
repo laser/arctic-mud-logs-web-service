@@ -1,0 +1,938 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 684-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='684'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+How to Mage Bomb Bomb!</font></b>
+<p>
+POV: 
+Jesse<p>
+Log Rating:
+2.4828<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+The valiant defenders of Dun Mir defeat the attacking rabble.</i>
+<p>
+<p>
+
+538H 126V 1X 1969C Exits:NESW&gt; <br />
+Dain leaves south.<br />
+Liit flies south.<br />
+Mytto leaves south.<br />
+Alexandros leaves south.<br />
+Elyana flies south.<br />
+You follow Dain south.<br />
+Tamiol arrives from the north.<br />
+Goka arrives from the north.<br />
+Glinon arrives from the north.<br />
+A Passage Within The Gate House<br />
+Glinon the Male Minotaur is standing here. (red aura)<br />
+Goka 'Ll the Blood Sea Randomers is standing here.<br />
+Tamiol Piterskiy is standing here. (red aura)<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here. (flying) (invisible) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Alexandros Phillip Magnus, Master Pain is standing here. (invisible)<br />
+Mytto, Still Standing is standing here. (red aura)<br />
+. . . has a metallic luster.<br />
+Liit the Male Hill Dwarf is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Dain, Soon Gone and Forgotten is standing here.<br />
+. . . is surrounded by a shimmering light.<br />
+Dhaliwal the Dark is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Ildarius the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Denise Demonic, Daughter of Darkness is standing here. (flying) (invisible) (red aura)<br />
+. . . is surrounded by a white mist.<br />
+Duulket the Male Human is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Hocus the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Duulket flies north.<br />
+Dhaliwal flies north.<br />
+Denise flies north.<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Elyana tells your group 'WIZ EYE: teleports IN: Dhaliwal'<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Dain utters some strange words.<br />
+Dain slowly fades into existence.<br />
+Ildarius is shredded by shards of ice.<br />
+Hocus is shredded by shards of ice.<br />
+A wizard eye is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+A wizard eye is dead! R.I.P.<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+The death cry of a wizard eye echoes from somewhere nearby...<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Duulket flies in from the north.<br />
+Dhaliwal flies in from the north.<br />
+Denise flies in from the north.<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Duulket steps aside as Goka attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Elyana tells your group 'WIZ EYE - ENTERED - NORTH: Dain Liit Mytto Alexandros Jesse Tamiol Goka Glinon'<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; ass<br />
+Elyana tells your group 'WIZ EYE - LEFT - NORTH: Duulket Dhaliwal Denise'<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Elyana slowly fades into existence.<br />
+Elyana misses Denise and destroys an image instead.<br />
+Elyana misses Dhaliwal and destroys an image instead.<br />
+Elyana misses Duulket and destroys an image instead.<br />
+Ildarius is caught in a spray of shimmering red!<br />
+Hocus is hit by a spray of gleaming indigo!<br />
+<br />
+538H 125V 1X 1969C Exits:N(ESW)&gt; You attempt to assist Dain.<br />
+<br />
+You reach back and deftly pluck three arrows from your quiver, notch them<br />
+into your bow and send the trio arcing high into the air!<br />
+<br />
+You annihilate Ildarius with your shoot.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+Duulket panics, and attempts to flee.<br />
+Duulket flies north.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+An arrow flies from above and thunks harmlessly into the ground.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+Mytto whips Ildarius extremely hard.<br />
+Mytto is burned, as she swings at Ildarius.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+Duulket flies in from the north.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+An arrow sings through the air from above and thunks into Dhaliwal's leg!<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+Duulket steps aside as Tamiol attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:Perfect] [Ildarius:Fair] Exits:N(ESW)&gt; <br />
+An arrow sings through the air from above and thunks into Hocus's leg!<br />
+Tamiol misses Duulket and destroys an image instead.<br />
+Duulket massacres Tamiol with his smite.<br />
+Mytto whips Ildarius very hard.<br />
+Mytto is burned, as she swings at Ildarius.<br />
+You annihilate Ildarius with your shoot.<br />
+You annihilate Ildarius with your shoot.<br />
+Elyana misses Denise and destroys an image instead.<br />
+Hocus slowly fades into existence.<br />
+Hocus bruises Dain with his hit.<br />
+Dain misses Ildarius with his pierce.<br />
+Ildarius drains Dain extremely hard.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:V.Good] [Ildarius:V.Bad] Exits:N(ESW)&gt; <br />
+Duulket panics, and attempts to flee.<br />
+Duulket flies north.<br />
+<br />
+538H 125V 1X 1969C [Me:Perfect] [Dain:V.Good] [Ildarius:V.Bad] Exits:N(ESW)&gt; <br />
+Denise utters some strange words.<br />
+Denise conjures a writhing mass of inky black tentacles!<br />
+Glinon screams in pain as inky black tentacles constrict him.<br />
+Goka screams in pain as inky black tentacles constrict him.<br />
+Tamiol screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Denise destroys Elyana's mirror images.<br />
+Elyana screams in pain as inky black tentacles constrict her.<br />
+Alexandros screams in pain as inky black tentacles constrict him.<br />
+Mytto screams in pain as inky black tentacles constrict her.<br />
+Liit screams in pain as inky black tentacles constrict him.<br />
+Dain screams in pain as inky black tentacles constrict him.<br />
+Hocus screams in pain as inky black tentacles constrict him.<br />
+<br />
+508H 125V 1X 1969C [Me:V.Good] [Dain:Good] [Ildarius:V.Bad] Exits:N(ESW)&gt; <br />
+Duulket flies in from the north.<br />
+<br />
+508H 125V 1X 1969C [Me:V.Good] [Dain:Good] [Ildarius:V.Bad] Exits:N(ESW)&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Duulket is struck by a spray of vibrant green!<br />
+Denise is struck by a spray of vibrant green!<br />
+Elyana misses Dhaliwal and destroys an image instead.<br />
+A spray of indigo flows over Ildarius, ripping out his mind.<br />
+You receive 0 experience.<br />
+Ildarius is dead! R.I.P.<br />
+Hocus is caught in a spray of bright orange!<br />
+Hocus is stunned, but will likely regain consciousness again.<br />
+<br />
+508H 125V 1X 1969C [Me:V.Good] [Ildarius:Dying] Exits:N(ESW)&gt; <br />
+The death cry of Ildarius echoes from somewhere nearby...<br />
+<br />
+508H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Duulket utters some strange words.<br />
+Duulket's hands issue a spray of prismatic color!<br />
+Glinon is struck by a spray of murky violet!<br />
+Goka is caught in a spray of shimmering red!<br />
+Tamiol is caught in a spray of shimmering red!<br />
+You are struck by a spray of vibrant green!<br />
+You feel a slight chill.<br />
+Elyana is caught in a spray of radiant yellow!<br />
+Elyana seems weaker.<br />
+Alexandros is blasted by a spray of scintillating blue!<br />
+Alexandros is caught in a spray of bright orange!<br />
+Alexandros seems to be blinded!<br />
+Mytto is struck by a spray of murky violet!<br />
+Liit is hit by a spray of gleaming indigo!<br />
+Liit's face goes blank and he begins to drool.<br />
+Dain is struck by a spray of vibrant green!<br />
+Dain is caught in a spray of radiant yellow!<br />
+A spray of violet strikes Hocus, melting him into a lifeless paste.<br />
+Hocus is dead! R.I.P.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Good] Exits:N(ESW)&gt; <br />
+Dain utters some strange words.<br />
+Dain destroys Duulket's mirror images.<br />
+Duulket is shredded by shards of ice.<br />
+Dain destroys Denise's mirror images.<br />
+Denise appears to grow stronger.<br />
+Denise manages to avoid the brunt of the storm.<br />
+Dain destroys Dhaliwal's mirror images.<br />
+Dhaliwal is shredded by shards of ice.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Fair] Exits:N(ESW)&gt; <br />
+The death cry of Hocus echoes from somewhere nearby...<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Fair] Exits:N(ESW)&gt; <br />
+Liit gets a pile of coins from the corpse of Hocus.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Fair] Exits:N(ESW)&gt; ass<br />
+You annihilate Duulket with your shoot.<br />
+You annihilate Duulket with your shoot.<br />
+Liit bruises Denise with his bludgeon.<br />
+Liit is burned, as he swings at Denise.<br />
+Liit is chilled, as he swings at Denise.<br />
+Alexandros shoots Denise very hard.<br />
+Alexandros shoots Denise extremely hard.<br />
+Tamiol crushes Denise hard.<br />
+Tamiol is burned, as he swings at Denise.<br />
+Tamiol is chilled, as he swings at Denise.<br />
+Goka crushes Denise.<br />
+Goka is burned, as he swings at Denise.<br />
+Goka is chilled, as he swings at Denise.<br />
+Glinon slashes Denise hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon misses Denise with his claw.<br />
+Dhaliwal misses Elyana with her bludgeon.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; You can't do that while fighting.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Mytto utters some strange words.<br />
+Mytto heals Mytto.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Dhaliwal gets an earthen mace from the corpse of Ildarius.<br />
+Dhaliwal gets the black staff of shadows from the corpse of Ildarius.<br />
+Dhaliwal gets a glowing adamantite bracelet from the corpse of Ildarius.<br />
+Dhaliwal gets an intricately twined gold bracelet from the corpse of Ildarius.<br />
+Dhaliwal gets a plain component pouch from the corpse of Ildarius.<br />
+Dhaliwal gets a pointy straw hat from the corpse of Ildarius.<br />
+Dhaliwal gets a small platinum talisman from the corpse of Ildarius.<br />
+Dhaliwal gets a small platinum talisman from the corpse of Ildarius.<br />
+Dhaliwal gets a small ring of energy from the corpse of Ildarius.<br />
+Dhaliwal gets a small ring of energy from the corpse of Ildarius.<br />
+Dhaliwal gets a large pile of coins from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets a cup from the corpse of Ildarius.<br />
+Dhaliwal gets an empty potion bottle from the corpse of Ildarius.<br />
+Dhaliwal gets an empty potion bottle from the corpse of Ildarius.<br />
+Dhaliwal gets an empty potion bottle from the corpse of Ildarius.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Goka stands up.<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Goka crashes into Duulket in a thundering collision, knocking him to the ground!<br />
+<br />
+468H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Denise utters some strange words.<br />
+Denise conjures a writhing mass of inky black tentacles!<br />
+Glinon screams in pain as inky black tentacles constrict him.<br />
+Goka screams in pain as inky black tentacles constrict him.<br />
+Tamiol screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Elyana screams in pain as inky black tentacles constrict her.<br />
+Alexandros screams in pain as inky black tentacles constrict him.<br />
+Mytto screams in pain as inky black tentacles constrict her.<br />
+Liit screams in pain as inky black tentacles constrict him.<br />
+Dain screams in pain as inky black tentacles constrict him.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Dain utters some strange words.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Bad] Exits:N(ESW)&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Duulket is struck by a spray of vibrant green!<br />
+Denise is caught in a spray of radiant yellow!<br />
+Denise is struck by a spray of vibrant green!<br />
+Dhaliwal is caught in a spray of bright orange!<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:V.Bad] Exits:N(ESW)&gt; <br />
+Tamiol stands up.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:V.Bad] Exits:N(ESW)&gt; <br />
+You annihilate Duulket with your shoot.<br />
+Duulket misses Elyana with his smite.<br />
+Liit misses Denise with his bludgeon.<br />
+Alexandros shoots Denise hard.<br />
+Alexandros shoots Denise very hard.<br />
+Tamiol crushes Denise.<br />
+Tamiol is burned, as he swings at Denise.<br />
+Tamiol is chilled, as he swings at Denise.<br />
+Goka misses Denise with his crush.<br />
+Glinon slashes Denise very hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon misses Denise with his claw.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Awful] Exits:N(ESW)&gt; <br />
+Mytto focuses harshly on Duulket and utters some strange words.<br />
+Duulket shudders with agony as pain lashes and clamps down on his soul.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Awful] Exits:N(ESW)&gt; <br />
+Tamiol panics, and attempts to flee.<br />
+Tamiol leaves north.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Fair] [Duulket:Awful] Exits:N(ESW)&gt; <br />
+Dhaliwal focuses harshly on Elyana and utters some strange words.<br />
+The sound of bones cracking echoes as Dhaliwal's force bolt slams into Elyana.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Elyana:Bad] [Duulket:Awful] Exits:N(ESW)&gt; <br />
+Dain focuses harshly on Duulket and utters some strange words.<br />
+Duulket dies a fiery death as Dain enshrouds him in a cloak of flame.<br />
+You receive 0 experience.<br />
+Duulket is dead! R.I.P.<br />
+<br />
+439H 125V 1X 1969C [Me:Good] [Duulket:Dying] Exits:N(ESW)&gt; <br />
+The death cry of Duulket echoes from somewhere nearby...<br />
+Nasir stops following Duulket.<br />
+Dhaliwal stops following Duulket.<br />
+Denise stops following Duulket.<br />
+<br />
+439H 125V 1X 1969C Exits:N(ESW)&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Glinon is caught in a spray of shimmering red!<br />
+Goka is blasted by a spray of scintillating blue!<br />
+You are caught in a spray of shimmering red!<br />
+You feel a slight chill.<br />
+Elyana is caught in a spray of shimmering red!<br />
+Elyana seems weaker.<br />
+Alexandros is caught in a spray of shimmering red!<br />
+Mytto is caught in a spray of shimmering red!<br />
+Liit is hit by a spray of gleaming indigo!<br />
+Dain is struck by a spray of vibrant green!<br />
+<br />
+382H 125V 1X 1969C [Me:Fair] [Elyana:V.Bad] [Denise:Fair] Exits:N(ESW)&gt; ass<br />
+Glinon gets a large pile of coins from the corpse of Duulket.<br />
+<br />
+382H 125V 1X 1969C [Me:Fair] [Elyana:V.Bad] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Denise is struck by a spray of murky violet!<br />
+Dhaliwal is caught in a spray of radiant yellow!<br />
+Dhaliwal seems weaker.<br />
+<br />
+382H 125V 1X 1969C [Me:Fair] [Elyana:V.Bad] [Denise:Fair] Exits:N(ESW)&gt; You can't do that while fighting.<br />
+<br />
+382H 125V 1X 1969C [Me:Fair] [Elyana:V.Bad] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Dain slowly fades into existence.<br />
+Dain misses Denise with his pierce.<br />
+Mytto misses Denise with her whip.<br />
+You massacre Denise with your shoot.<br />
+You shoot Denise extremely hard.<br />
+Alexandros shoots Denise hard.<br />
+Alexandros shoots Denise very hard.<br />
+Alexandros shoots Denise.<br />
+Goka misses Denise with his crush.<br />
+Glinon slashes Denise very hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon misses Denise with his claw.<br />
+<br />
+382H 125V 1X 1969C [Me:Fair] [Elyana:V.Bad] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Glinon divides 256 coins equally among the group members present.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Bad] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Alexandros tells your group 'im blind'<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Bad] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Dhaliwal gets a pair of silver spectacles from the corpse of Duulket.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Bad] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Mytto focuses on Elyana and utters some strange words.<br />
+Mytto heals Elyana.<br />
+Goka gets a small vial from the corpse of Duulket.<br />
+Goka gets a skull flail from the corpse of Duulket.<br />
+Goka gets a length of rope and pouch from the corpse of Duulket.<br />
+Goka gets a hooded black woolen robe from the corpse of Duulket.<br />
+Goka gets a pair of rope sandals from the corpse of Duulket.<br />
+Goka gets a black and red woolen robe from the corpse of Duulket.<br />
+Goka gets a granite asp's tooth from the corpse of Duulket.<br />
+Goka gets a frozen potion from the corpse of Duulket.<br />
+Goka gets a frozen potion from the corpse of Duulket.<br />
+Goka gets a brass dragonscale battle orb from the corpse of Duulket.<br />
+Goka gets a glowing scroll of recall from the corpse of Duulket.<br />
+Goka gets a glowing scroll of recall from the corpse of Duulket.<br />
+Goka gets a two-handed sword, stained black with blood from the corpse of Duulket.<br />
+Goka gets a waterskin from the corpse of Duulket.<br />
+Goka gets a waterskin from the corpse of Duulket.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Dain gets a waterskin from the corpse of Duulket.<br />
+Dain gets a waterskin from the corpse of Duulket.<br />
+Dain gets a glowing scroll of recall from the corpse of Duulket.<br />
+Dain gets a magic pouch from the corpse of Duulket.<br />
+Dain gets a waterskin from the corpse of Duulket.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Denise gets a vial from her satchel.<br />
+Dain focuses harshly on Denise and utters some strange words.<br />
+Dain's spell causes a deafening fist of air to pummel Denise!<br />
+A mirror shield in use by Denise is destroyed.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Denise quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Denise...<br />
+Denise heals Denise.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Good] Exits:N(ESW)&gt; <br />
+Tamiol arrives from the north.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Good] Exits:N(ESW)&gt; <br />
+Elyana focuses harshly on Denise and utters some strange words.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Denise.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:V.Good] Exits:N(ESW)&gt; <br />
+You shoot Denise extremely hard.<br />
+You shoot Denise extremely hard.<br />
+Alexandros shoots Denise hard.<br />
+Alexandros shoots Denise extremely hard.<br />
+Goka crushes Denise.<br />
+Goka is burned, as he swings at Denise.<br />
+Goka is chilled, as he swings at Denise.<br />
+Glinon slashes Denise hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon misses Denise with his claw.<br />
+Dhaliwal misses Elyana with her bludgeon.<br />
+Denise misses Elyana with her pierce.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Alexandros tells your group 'im blind'<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Dhaliwal panics, and attempts to flee.<br />
+Dhaliwal flies north.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:Fair] Exits:N(ESW)&gt; get all corpse<br />
+Tamiol grabs a glowing scroll of recall.<br />
+Tamiol recites a glowing scroll of recall.<br />
+Tamiol disappears.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:Fair] Exits:N(ESW)&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+382H 125V 1X 2001C [Me:Fair] [Elyana:V.Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Glinon is caught in a spray of bright orange!<br />
+Goka is blasted by a spray of scintillating blue!<br />
+You are caught in a spray of shimmering red!<br />
+You feel a slight chill.<br />
+Elyana is struck by a spray of murky violet!<br />
+Alexandros is caught in a spray of radiant yellow!<br />
+Mytto is caught in a spray of shimmering red!<br />
+Liit is hit by a spray of gleaming indigo!<br />
+Dain is caught in a spray of radiant yellow!<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Mytto focuses on Glinon and utters some strange words.<br />
+Mytto heals Glinon.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Dain panics, and attempts to flee.<br />
+Dain leaves north.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+You massacre Denise with your shoot.<br />
+You shoot Denise extremely hard.<br />
+Alexandros misses Denise with his shoot.<br />
+Alexandros shoots Denise very hard.<br />
+Goka misses Denise with his crush.<br />
+Glinon slashes Denise hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon claws Denise hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Elyana barely claws Denise.<br />
+Elyana is burned, as she swings at Denise.<br />
+Elyana is chilled, as she swings at Denise.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Liit grabs a glowing scroll of recall.<br />
+Liit recites a glowing scroll of recall.<br />
+Liit disappears.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Alexandros tells your group 'heal me plz'<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Glinon delivers a quick snap kick to Denise. Denise staggers and tries to recover.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Fair] Exits:N(ESW)&gt; <br />
+Elyana focuses harshly on Denise and utters some strange words.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Denise.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Bad] Exits:N(ESW)&gt; <br />
+Goka drops a frozen potion.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:Bad] Exits:N(ESW)&gt; <br />
+You miss Denise with your shoot.<br />
+You massacre Denise with your shoot.<br />
+Alexandros shoots Denise very hard.<br />
+Alexandros shoots Denise hard.<br />
+Goka misses Denise with his crush.<br />
+Glinon slashes Denise hard.<br />
+Glinon is burned, as he swings at Denise.<br />
+Glinon is chilled, as he swings at Denise.<br />
+Glinon misses Denise with his claw.<br />
+Denise misses Elyana with her pierce.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Denise gets a scroll from her satchel.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Dain arrives from the north.<br />
+<br />
+355H 125V 1X 2001C [Me:Fair] [Elyana:Good] [Denise:V.Bad] Exits:N(ESW)&gt; <br />
+Denise sinks gently to the ground.<br />
+Denise removes the dark orb from her grasp, appearing weak and hollow.<br />
+Denise grabs a glowing scroll of recall.<br />
+Denise recites a glowing scroll of recall.<br />
+Denise disappears. 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='684'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=684">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="684">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

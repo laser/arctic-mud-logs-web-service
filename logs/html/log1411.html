@@ -1,0 +1,1386 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1411-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1411'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Cicelo rip</font></b>
+<p>
+POV: 
+Sambo<p>
+Log Rating:
+1.6665<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Peaceful zoning rudely interrupted when Cicero collided with a not so lonely barbarian.</i>
+<p>
+<p>
+
+<br />
+You are carrying:<br />
+a small wooden chest<br />
+a small brown bottle [6]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+an iron ration [3]<br />
+a hooded lantern<br />
+a bottle of firebreather [3]<br />
+a waterskin [4]<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; You simply fail to reach your mouth!<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; <br />
+Byr tells you '8 here'<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; You stand up.<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; You tell Byr 'shall i move?'<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt;<br />
+Byr tells you 'u in position or close?'<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; You are carrying:<br />
+a small wooden chest<br />
+a small brown bottle [6]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+an iron ration [3]<br />
+a hooded lantern<br />
+a bottle of firebreather [3]<br />
+a waterskin [4]<br />
+<br />
+570H 129V 5619259X 22C Exits:E&gt; Wall Road<br />
+     This road runs north-south along side of the city walls. The walls are<br />
+quite sturdy, made of huge flagstones to protect the city from foreign<br />
+assaults. Most of the homes are also located along the wall road, but most<br />
+of the doors are locked and you aren't interested in them anyway.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+570H 128V 5619259X 22C Exits:NSW&gt; Intersection of Market Street and Wall Road<br />
+     You are at the intersection of Market Street and Wall Road. Market<br />
+Street runs east-west through Kalaman, while Wall Road runs along the<br />
+inside of the city wall. Market Street is the busiest street in Kalaman;<br />
+many of the shops and stands are located here.<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; Wall Road<br />
+     This road runs north-south along side of the city walls. The walls are<br />
+quite sturdy, made of huge flagstones to protect the city from foreign<br />
+assaults. Most of the homes are also located along the wall road, but most<br />
+of the doors are locked and you aren't interested in them anyway.<br />
+<br />
+570H 126V 5619259X 22C Exits:NS&gt; Alas, you cannot go that way...<br />
+<br />
+570H 126V 5619259X 22C Exits:NS&gt; Intersection of Market Street and Wall Road<br />
+     You are at the intersection of Market Street and Wall Road. Market<br />
+Street runs east-west through Kalaman, while Wall Road runs along the<br />
+inside of the city wall. Market Street is the busiest street in Kalaman;<br />
+many of the shops and stands are located here.<br />
+<br />
+570H 125V 5619259X 22C Exits:NESW&gt; Market Street East<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not too far to the west through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is to the northwest, and<br />
+Lord Calof's mansion; both are on the other side of Vingaard Avenue.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+570H 124V 5619259X 22C Exits:EW&gt; Market Street East<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not too far to the west through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is to the northwest, and<br />
+Lord Calof's mansion; both are on the other side of Vingaard Avenue.<br />
+<br />
+570H 123V 5619259X 22C Exits:NESW&gt; Market Street East<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not too far to the west through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is to the northwest, and<br />
+Lord Calof's mansion; both are on the other side of Vingaard Avenue.<br />
+Hamilton Way is to the north; it will take you to the cityguard<br />
+headquarters and the Academy of Fighting Arts.  To the south is the<br />
+beautiful boutique of Celeste, reknown all over Ansalon.<br />
+<br />
+570H 122V 5619259X 22C Exits:NESW&gt; Market Street East<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not too far to the west through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is to the northwest, and<br />
+Lord Calof's mansion; both are on the other side of Vingaard Avenue.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+570H 121V 5619259X 22C Exits:NEW&gt; Market Street East<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the west and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+<br />
+570H 120V 5619259X 22C Exits:NESW&gt; Market Square of Kalaman<br />
+     This square is the busiest part of the city. People of all kinds walk<br />
+the city square of Kalaman. Shoppers, merchants and wagons go through this<br />
+square non-stop all day long. The air is filled with the smell of food,<br />
+spice and anything else you can think of. It is almost impossible to<br />
+stretch your arms here without hitting something or someone.<br />
+<br />
+570H 119V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the east and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+570H 118V 5619259X 22C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+570H 118V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south. Directly to the<br />
+south, you see a magic shop of strange and interesting artifacts.<br />
+<br />
+570H 117V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+nA tired traveller is looking around for the town's inn.<br />
+<br />
+570H 116V 5619259X 22C Exits:NESW&gt; Path of the Holy<br />
+     This is a small north-south path that takes you to the Temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The temple is just to the northwest, and Market<br />
+Street is to the south.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+Lord Calof is here pondering over some political matters.<br />
+<br />
+570H 115V 5619259X 22C Exits:NS&gt; <br />
+Byr tells you 'wait a few'<br />
+<br />
+570H 115V 5619259X 22C Exits:NS&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+570H 114V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south. Directly to the<br />
+south, you see a magic shop of strange and interesting artifacts.<br />
+<br />
+570H 113V 5619259X 22C Exits:NESW&gt; The General Store<br />
+     Any basic equipment you need on your journeys can be found in this<br />
+shop. All around you, you see stacks and piles of supplies. Equipment of<br />
+various types, hang along the walls waiting to be purchased. A sign is here<br />
+showing a listing of what is for sale.<br />
+The shopkeeper stands here awaiting your decision.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+570H 112V 5619259X 22C Exits:S&gt; You tell Byr 'im at general store'<br />
+<br />
+570H 112V 5619259X 22C Exits:S&gt; <br />
+Byr tells you 'k'<br />
+<br />
+570H 112V 5619259X 22C Exits:S&gt; The General Store<br />
+     Any basic equipment you need on your journeys can be found in this<br />
+shop. All around you, you see stacks and piles of supplies. Equipment of<br />
+various types, hang along the walls waiting to be purchased. A sign is here<br />
+showing a listing of what is for sale.<br />
+The shopkeeper stands here awaiting your decision.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+570H 112V 5619259X 22C Exits:S&gt; Mortals<br />
+-------<br />
+Cicero Dume, Ancient Spear of the Blood Seas<br />
+<br />
+Total visible people : 1        Total people online  : 91<br />
+<br />
+570H 129V 5619259X 22C Exits:S&gt; Mortals<br />
+-------<br />
+Cicero Dume, Ancient Spear of the Blood Seas<br />
+charge cicero<br />
+Total visible people : 1        Total people online  : 91<br />
+<br />
+570H 129V 5619259X 22C Exits:S&gt; You couldn't find what you were looking for.<br />
+<br />
+570H 129V 5619259X 22C Exits:S&gt; <br />
+Byr tells you 'k get rdy'<br />
+<br />
+570H 129V 5619259X 22C Exits:S&gt; <br />
+Byr tells you 'go to spot'<br />
+<br />
+570H 129V 5619259X 22C Exits:S&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south. Directly to the<br />
+south, you see a magic shop of strange and interesting artifacts.<br />
+<br />
+570H 128V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Slyther shouts 'LvL 17 DK seeking Groupage and Prime/Offie Long Blades, paying well'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; You tell Byr 'i am armed'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'k'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; It tastes like whiskey.<br />
+You feel drunk.<br />
+You simply fail to reach your mouth!<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; You tell Byr 'triggered on cicero'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'nods'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'hmm artie rested again'<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the south.<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves east.<br />
+<br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+570H 127V 5619259X 22C Exits:NESW&gt; <br />
+A Kalaman cityguard arrives from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'he stood'<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+A tired traveller arrives from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the east.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves east.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+A tired traveller leaves north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the east.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves south.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Lord Calof arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the south.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+A Kalaman cityguard leaves north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo leaves east.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; You tell Byr 'calof here'<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Lord Calof leaves west.<br />
+A bodyguard leaves west.<br />
+A bodyguard leaves west.<br />
+A bodyguard leaves west.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; You tell Byr 'gone now'<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'nods fuck him'<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Medri flies in from the west.<br />
+A sylph flies in from the west.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Byr tells you 'incoming'<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Medri flies north.<br />
+A sylph flies north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; <br />
+Cicero flies in from the north.<br />
+Humax flies in from the north.<br />
+Artie flies in from the north.<br />
+Gordon flies in from the north.<br />
+Mezzanine flies in from the north.<br />
+Aime flies in from the north.<br />
+Rojany flies in from the north.<br />
+Hipho flies in from the north.<br />
+<br />
+570H 129V 5619259X 22C Exits:NESW&gt; You barrel into Cicero, knocking him to the ground.<br />
+<br />
+570H 129V 5619259X 22C [Me:Perfect] [Cicero:V.Good] Exits:NESW&gt; <br />
+You miss Cicero with your cleave.<br />
+Cicero massacres YOU with his cleave.<br />
+<br />
+537H 129V 5619259X 22C [Me:V.Good] [Cicero:V.Good] Exits:NESW&gt; <br />
+Hipho heroically rescues Cicero.<br />
+<br />
+537H 129V 5619259X 22C [Me:V.Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+You are sent sprawling as Mezzanine crashes into you.<br />
+<br />
+512H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt;<br />
+Maxmillian flies in from the east.<br />
+Kamisama flies in from the east.<br />
+Koharo flies in from the east.<br />
+Hakimm flies in from the east.<br />
+Humax stops using a frozen short sword.<br />
+Humax grabs a glowing scroll of recall.<br />
+Humax recites a glowing scroll of recall.<br />
+Humax disappears.<br />
+<br />
+512H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Maxmillian stabs Artie very hard.<br />
+<br />
+512H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Artie stops using a cold lantern.<br />
+Artie stops using the holy sceptre of the Kingpriest.<br />
+Artie grabs a glowing scroll of recall.<br />
+Artie recites a glowing scroll of recall.<br />
+Artie disappears.<br />
+<br />
+512H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Cicero steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+512H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Koharo misses Cicero with his slash.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Cicero annihilates Koharo with his cleave.<br />
+Mezzanine massacres YOU with his slash.<br />
+You miss Hipho with your cleave.<br />
+Hipho massacres YOU with his drain.<br />
+Hipho massacres YOU with his cleave.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Zinris flies in from the east.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Laureen flies in from the east.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Hipho unsuccessfully tries to save Cicero.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Kamisama cleaves Cicero extremely hard.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Rold flies in from the east.<br />
+Anabel flies in from the east.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Jarmo arrives from the east.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt;<br />
+Zinris focuses harshly on Cicero and utters some strange words.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Laureen crashes into Cicero in a thundering collision, knocking him to the ground!<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+Aime focuses harshly on Koharo and utters some strange words.<br />
+Flesh burns as Aime enshrouds Koharo in a cloak of flames.<br />
+<br />
+435H 129V 5619259X 22C [Me:Good] [Hipho:Perfect] Exits:NESW&gt; <br />
+*Whoosh!* Laureen's slash almost decapitates Cicero!<br />
+Kamisama massacres Cicero with his cleave.<br />
+Koharo misses Cicero with his slash.<br />
+Koharo cleaves Cicero very hard.<br />
+Cicero massacres Koharo with his cleave.<br />
+Mezzanine massacres YOU with his slash.<br />
+You cleave Hipho extremely hard.<br />
+Hipho massacres YOU with his drain.<br />
+Hipho massacres YOU with his cleave.<br />
+Maxmillian stabs Cicero extremely hard.<br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+Hakimm slowly fades into existence.<br />
+The sound of bones cracking echoes as Hakimm's force bolt slams into Kamisama.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Hipho:V.Good] Exits:NESW&gt; <br />
+Jarmo leaves east.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Hipho:V.Good] Exits:NESW&gt; <br />
+Hipho stops using a bloody minotaur hand axe.<br />
+Hipho grabs a glowing scroll of recall.<br />
+Hipho recites a glowing scroll of recall.<br />
+Hipho disappears.<br />
+You direct your attention to Mezzanine.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Mezzanine:Good] Exits:NESW&gt; <br />
+Cicero steps aside as Rold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Mezzanine:Good] Exits:NESW&gt; <br />
+Rold steps aside as Gordon attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Mezzanine:Good] Exits:NESW&gt; <br />
+Pterkf arrives from the east.<br />
+Mezzanine grabs a glowing scroll of recall.<br />
+Mezzanine recites a glowing scroll of recall.<br />
+Mezzanine disappears.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama focuses his purity on Cicero's leg!<br />
+Kamisama forces Cicero to the ground.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; charge<br />
+Zinris focuses harshly on Cicero and utters some strange words.<br />
+Zinris slowly fades into existence.<br />
+Cicero cries out in pain as Zinris grabs him.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Anabel focuses harshly on Cicero and utters some strange words.<br />
+Cicero cries out in pain as Anabel grabs him.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; charge hipho<br />
+Silvia flies in from the east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Koharo stands up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Cicero steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Gordon whips Rold very hard.<br />
+Rold misses Cicero with his slash.<br />
+Maxmillian massacres Cicero with his stab.<br />
+Laureen massacres Cicero with his slash.<br />
+Kamisama cleaves Cicero extremely hard.<br />
+Koharo misses Cicero with his slash.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Cicero annihilates Koharo with his cleave.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Jarmo arrives from the east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; Maxmillian focuses his purity on Cicero's leg!<br />
+Maxmillian forces Cicero to the ground.<br />
+Hakimm focuses harshly on Cicero and utters some strange words.<br />
+Cicero freezes in place.<br />
+You stand up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You are already standing.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt;<br />
+Pterkf leaves west.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+Aime stops using a delicate crystal ball.<br />
+Aime grabs a glowing scroll of recall.<br />
+Aime recites a glowing scroll of recall.<br />
+Aime disappears.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Yukow flies in from the west.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Yukow flies east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Anabel focuses harshly on Cicero and utters some strange words.<br />
+Cicero cries out in pain as Anabel grabs him.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Gordon misses Rold with his whip.<br />
+Rold massacres Cicero with his slash.<br />
+Maxmillian stabs Cicero extremely hard.<br />
+Laureen massacres Cicero with his slash.<br />
+Kamisama cleaves Cicero extremely hard.<br />
+Koharo massacres Cicero with his slash.<br />
+Cicero is stunned, but will likely regain consciousness again.<br />
+Koharo massacres Cicero with his cleave.<br />
+Cicero is dead! R.I.P.<br />
+The death cry of Cicero echoes from somewhere nearby...<br />
+Humax stops following Cicero.<br />
+Xanatos stops following Cicero.<br />
+Artie stops following Cicero.<br />
+Dralan stops following Cicero.<br />
+Gordon stops following Cicero.<br />
+Mezzanine stops following Cicero.<br />
+Aime stops following Cicero.<br />
+Rojany stops following Cicero.<br />
+Hipho stops following Cicero.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama gets a very large pile of coins from the corpse of Cicero.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Zinris gets Frostreaver from the corpse of Cicero.<br />
+Zinris gets a mithril bracelet from the corpse of Cicero.<br />
+Zinris gets an indigo leather scabbard from the corpse of Cicero.<br />
+Zinris gets a set of face rippers from the corpse of Cicero.<br />
+Zinris gets a pair of charred black plate boots from the corpse of Cicero.<br />
+Zinris gets dual anklets of gold from the corpse of Cicero.<br />
+Zinris gets a skull mask from the corpse of Cicero.<br />
+Zinris gets a suit of solid silver platemail from the corpse of Cicero.<br />
+Zinris gets a diamond inlaid choker from the corpse of Cicero.<br />
+Zinris gets a pearl and onyx medallion from the corpse of Cicero.<br />
+Zinris gets a small draconian ring from the corpse of Cicero.<br />
+Zinris gets the ring of the forge from the corpse of Cicero.<br />
+Zinris gets an oaken quarterstaff from the corpse of Cicero.<br />
+Zinris gets a thick, bloodstained chain from the corpse of Cicero.<br />
+Zinris gets an ebony shield from the corpse of Cicero.<br />
+Zinris gets a blue potion of remove poison from the corpse of Cicero.<br />
+Zinris gets a blue potion of remove poison from the corpse of Cicero.<br />
+Zinris gets a milky potion of see invisible from the corpse of Cicero.<br />
+Zinris gets an enchanted rat bone charm from the corpse of Cicero.<br />
+Zinris gets a small canteen from the corpse of Cicero.<br />
+Zinris gets a small canteen from the corpse of Cicero.<br />
+Zinris gets a small canteen from the corpse of Cicero.<br />
+Zinris gets a pearl-handled knife from the corpse of Cicero.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Laureen gets a portable keg from the corpse of Cicero.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold stands up.<br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+Hakimm slowly fades into existence.<br />
+The sound of bones cracking echoes as Hakimm's force bolt slams into Kamisama.<br />
+Gordon stands up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold crashes into Gordon in a thundering collision, knocking him to the ground!<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; Assist whom?<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Corleone shouts 'is it possible to get like 10 levels, if doing a quest like pax?'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm misses Kamisama with his hit.<br />
+Kamisama cleaves Hakimm very hard.<br />
+Rold massacres Gordon with his slash.<br />
+Gordon massacres Rold with his whip.<br />
+Koharo stands up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Maxmillian stabs Zinris very hard.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rojany steps aside as Laureen attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Zinris focuses harshly on Gordon and utters some strange words.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You massacre Gordon with your cleave.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Good] Exits:NESW&gt; <br />
+Anabel focuses harshly on Gordon and utters some strange words.<br />
+Gordon cries out in pain as Anabel grabs him.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; <br />
+Jarmo says 'KLOOT!'<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; <br />
+Jarmo says 'KLOOT!'<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt;<br />
+Rojany steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; <br />
+Koharo misses Rojany with his slash.<br />
+Koharo misses Rojany with his cleave.<br />
+You cleave Gordon extremely hard.<br />
+Laureen misses Rojany with his slash.<br />
+Rojany massacres Laureen with his drain.<br />
+Maxmillian stabs Zinris extremely hard.<br />
+Kamisama cleaves Hakimm extremely hard.<br />
+Rold massacres Gordon with his slash.<br />
+Gordon misses Rold with his whip.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt;<br />
+Zinris panics, and attempts to flee.<br />
+Zinris flies north.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; Anabel focuses harshly on Gordon and utters some strange words.<br />
+Gordon cries out in pain as Anabel grabs him.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+Gordon gets a scroll from his pouch.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Rold:V.Good] [Gordon:Fair] Exits:NESW&gt; <br />
+Gordon grabs a glowing scroll of recall.<br />
+Gordon recites a glowing scroll of recall.<br />
+Gordon disappears.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+The sound of bones cracking echoes as Hakimm's force bolt slams into Kamisama.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Pterkf arrives from the west.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Koharo misses Rojany with his slash.<br />
+Koharo cleaves Rojany very hard.<br />
+Laureen slashes Rojany extremely hard.<br />
+Rojany misses Laureen with his drain.<br />
+Kamisama cleaves Hakimm extremely hard.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+The corpse of Cicero is lying here.<br />
+Pterkf, Nameless Garbage is standing here.<br />
+Jarmo the Male Human is standing here.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Lady Anabel Ahma, Takhisis Minion is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+Laureen the Male Hylar Dwarf is sitting here, fighting Rojany. (flying)<br />
+Hakimm the Male Human is standing here, fighting Kamisama. (flying)<br />
+Koharo Maelstrom is sitting here, fighting Rojany. (flying)<br />
+Lord Kamisama, Divine Avatar is standing here, fighting Hakimm. (flying)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rojany the Male Wild Elf is standing here, fighting Laureen. (flying)<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Laureen stands up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold says 'dont'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Laureen crashes into Rojany in a thundering collision, knocking him to the ground!<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Artie shouts 'renshai style recall trigs'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+The sound of bones cracking echoes as Hakimm's force bolt slams into Kamisama.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama attempts to strike at Hakimm with his glaive.<br />
+Kamisama cleaves Hakimm hard.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rojany steps aside as Rold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Maxmillian misses Kamisama with his stab.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; ass laureen<br />
+Maxmillian stabs Kamisama hard.<br />
+Rold annihilates Rojany with his slash.<br />
+Koharo massacres Rojany with his slash.<br />
+Koharo cleaves Rojany extremely hard.<br />
+Laureen massacres Rojany with his slash.<br />
+Rojany misses Laureen with his drain.<br />
+Kamisama cleaves Hakimm very hard.<br />
+Koharo stands up.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; You massacre Rojany with your cleave.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:Fair] Exits:NESW&gt; <br />
+Zinris flies in from the north.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:Fair] Exits:NESW&gt; ass<br />
+Anabel crushes Rojany extremely hard.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:Fair] Exits:NESW&gt; get all corpse<br />
+Kamisama says 'bash hakimm'<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:Fair] Exits:NESW&gt; <br />
+Anabel crushes Rojany extremely hard.<br />
+You massacre Rojany with your cleave.<br />
+Maxmillian misses Kamisama with his stab.<br />
+Rold massacres Rojany with his slash.<br />
+Koharo misses Rojany with his slash.<br />
+Koharo massacres Rojany with his cleave.<br />
+Laureen massacres Rojany with his slash.<br />
+Rojany misses Laureen with his drain.<br />
+Kamisama cleaves Hakimm extremely hard.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; charge<br />
+Silvia focuses harshly on Rojany and utters some strange words.<br />
+Flesh burns as Silvia enshrouds Rojany in a cloak of flames.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Koharo stops using a bloody minotaur hand axe.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; You charge at Rojany, but he managed to move away.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Zinris focuses harshly on Rojany and utters some strange words.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Maxmillian focuses his purity on Kamisama's leg!<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Koharo starts using a black shield of Lemish as a shield.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Rojany stands up.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Camille flies in from the east.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+Hakimm aims a magic missile at Kamisama, who staggers under the blow.<br />
+Hakimm aims a magic missile at Kamisama, who staggers under the blow.<br />
+Hakimm aims a magic missile at Kamisama, who staggers under the blow.<br />
+Hakimm aims a magic missile at Kamisama, who staggers under the blow.<br />
+Hakimm aims a magic missile at Kamisama, who staggers under the blow.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Rold stands up.<br />
+<br />
+349H 129V 5619259X 22C [Me:Fair] [Laureen:Good] [Rojany:V.Bad] Exits:NESW&gt; <br />
+Rojany grabs a glowing scroll of recall.<br />
+Rojany recites a glowing scroll of recall.<br />
+Rojany disappears.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Maxmillian misses Kamisama with his stab.<br />
+Kamisama cleaves Hakimm very hard.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Camille says 'damn'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; l<br />
+Kamisama says 'heal me'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm focuses harshly on Kamisama and utters some strange words.<br />
+Kamisama is caught in some of Hakimm's acid!<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold says 'fuck'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Camille flies south.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Maxmillian misses Kamisama with his stab.<br />
+Kamisama cleaves Hakimm extremely hard.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama says 'bash him'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold now follows Maxmillian.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Maxmillian attempts to strike at Kamisama with his rapier.<br />
+Maxmillian misses Kamisama with his stab.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama panics, and attempts to flee.<br />
+Kamisama flies east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Laureen now follows Maxmillian.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+The corpse of Cicero is lying here.<br />
+Zinris the Male Gnome is standing here. (flying) (invisible)<br />
+Pterkf, Nameless Garbage is standing here.<br />
+Jarmo the Male Human is standing here.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Lady Anabel Ahma, Takhisis Minion is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+Laureen the Male Hylar Dwarf is standing here. (flying)<br />
+Hakimm the Male Human is standing here. (flying)<br />
+Koharo Maelstrom is standing here. (flying)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold says 'stop'<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Liria arrives from the east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt;<br />
+Kamisama flies in from the east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Liria leaves west.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; But they're not fighting anyone!<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; But they're not fighting anyone!<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Pterkf focuses on Kamisama and utters some strange words.<br />
+Pterkf heals Kamisama.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm flies east.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+The corpse of Cicero is lying here.<br />
+Lord Kamisama, Divine Avatar is standing here. (flying)<br />
+Zinris the Male Gnome is standing here. (flying) (invisible)<br />
+Pterkf, Nameless Garbage is standing here.<br />
+Jarmo the Male Human is standing here.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Lady Anabel Ahma, Takhisis Minion is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+Laureen the Male Hylar Dwarf is standing here. (flying)<br />
+Koharo Maelstrom is standing here. (flying)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+349H 129V 5619259X 22C Exits:NESW&gt; <br />
+The rain has stopped.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Zinris now follows Maxmillian.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm flies in from the east.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold says 'just 1 man'<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+A pigeon arrives from the east.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Kamisama cleaves Hakimm extremely hard.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Pterkf now follows Rold.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; You now follow Maxmillian.<br />
+Kamisama cleaves Hakimm very hard.<br />
+Hakimm slowly fades into existence.<br />
+Hakimm misses Kamisama with his hit.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm panics, and attempts to flee.<br />
+Hakimm flies south.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Rold says 'stop'<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+A black silk teddy briefly glows blue.<br />
+Maxmillian lays his hands on Koharo and utters a prayer.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Azar arrives from the east.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+The corpse of Cicero is lying here.<br />
+Azar the Male Half Elf is standing here. (invisible)<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Lord Kamisama, Divine Avatar is standing here. (flying)<br />
+Zinris the Male Gnome is standing here. (flying) (invisible)<br />
+Pterkf, Nameless Garbage is standing here.<br />
+Jarmo the Male Human is standing here.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Lady Anabel Ahma, Takhisis Minion is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+Laureen the Male Hylar Dwarf is standing here.<br />
+Koharo Maelstrom is standing here. (flying)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Koharo nods solemnly.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Hakimm flies in from the south.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Azar now follows Maxmillian.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Pterkf focuses on Koharo and utters some strange words.<br />
+Pterkf heals Koharo.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; You are carrying:<br />
+a small wooden chest<br />
+a small brown bottle [6]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+an iron ration [3]<br />
+a hooded lantern<br />
+a bottle of firebreather [3]<br />
+a waterskin [4]<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Zinris looks at Azar.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+You are now a member of Maxmillian's group.<br />
+<br />
+369H 129V 5619259X 22C Exits:NESW&gt; <br />
+Zinris pretends to wap the ground with an imaginary walking stick.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1411'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1411">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1411">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

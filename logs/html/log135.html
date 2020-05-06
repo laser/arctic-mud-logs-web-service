@@ -1,0 +1,781 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 135-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='135'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Friendly duel</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+-5.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Padme Hew vs Rannos Machina Orome Grome
+
+Rules of engagement : Recall at v.bad condition, no flame shroud, no lightning storm, no call lightning, no elemental fist.. no frags that is.</i>
+<p>
+<p>
+
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; <br />
+Padme says 'coming?'<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; <br />
+Padme laughs heartily.<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; nod<br />
+You nod solemnly.<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; <br />
+Machina arrives from the east.<br />
+Rannos arrives from the east.<br />
+Grome arrives from the east.<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; <br />
+Padme slowly fades into existence.<br />
+Padme annihilates Machina with her stab.<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; <br />
+Padme annihilates Machina with her stab.<br />
+Machina bruises Padme with his bludgeon.<br />
+<br />
+345H 73V 13145140X 86C Mem:5 Exits:ES&gt; cast 'insect swarm'<br />
+You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+345H 73V 13145140X 86C Mem:7 Exits:ES&gt; <br />
+Rannos tries to sweep Padme's legs, but misses badly.<br />
+<br />
+345H 73V 13145140X 86C Mem:7 Exits:ES&gt; <br />
+Orome flies in from the east.<br />
+<br />
+345H 73V 13145140X 86C Mem:7 Exits:ES&gt; <br />
+You step aside as Machina tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Good] Mem:7 Exits:ES&gt; #10 SECONDS TO TICK<br />
+<br />
+Grome tries to bash you, but he passes right through your image.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Good] Mem:7 Exits:ES&gt; <br />
+Orome seems unaffected by your swarm of insects.<br />
+Grome seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Machina, leaving bloody bites over his flesh.<br />
+Orome slowly fades into existence.<br />
+Orome misses you and destroys an image.<br />
+Orome misses you and destroys an image.<br />
+Grome misses you with his crush.<br />
+You slash Machina extremely hard.<br />
+Rannos bruises Padme with his cleave.<br />
+Padme obliterates Machina with her stab.<br />
+Machina bruises Padme with his bludgeon.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:7 Exits:ES&gt; cast 'insect swarm'<br />
+<br />
+Padme stops using a small black rose.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:7 Exits:ES&gt; You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+Padme stops using a black shield of Lemish.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; <br />
+Padme gets a staff from her scabbard.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; <br />
+Padme starts holding a gleaming ironwood staff.<br />
+<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; <br />
+Rannos tries to bash you, but he passes right through your image.<br />
+The images around you fade out of existance.<br />
+<br />
+345H 73V 13145140X 86C [Me:Perfect] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; <br />
+Your swarm of insects covers Orome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+Orome seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Machina, leaving bloody bites over his flesh.<br />
+Orome bruises YOU with his shoot.<br />
+Orome bruises YOU with his shoot.<br />
+STONE SKIN  WORE OFF !!!<br />
+Grome bruises YOU with his crush.<br />
+Rannos misses Padme with his cleave.<br />
+Padme annihilates Machina with her stab.<br />
+Padme annihilates Machina with her drain.<br />
+Machina bruises Padme with his bludgeon.<br />
+<br />
+342H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; cast 'insect swarm'<br />
+<br />
+Padme comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+342H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:8 Exits:ES&gt; Your casting is disrupted by the fighting!<br />
+<br />
+342H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:10 Exits:ES&gt; <br />
+--&gt; Machina &lt;-- stands up!<br />
+<br />
+342H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:10 Exits:ES&gt; cast 'insect swarm'<br />
+<br />
+Your swarm of insects covers Orome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+Orome seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Rannos seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Machina, leaving bloody bites over his flesh.<br />
+Orome massacres Padme with his shoot.<br />
+Padme massacres Orome with her stab.<br />
+Padme annihilates Orome with her drain.<br />
+Grome MASSACRES YOU with his crush.<br />
+Rannos massacres Padme with his cleave.<br />
+Machina bludgeons Padme extremely hard.<br />
+--&gt; Grome &lt;-- stands up!<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:10 Exits:ES&gt; <br />
+You step aside as Grome tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:10 Exits:ES&gt; Your casting is disrupted by the fighting!<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; #TICK<br />
+<br />
+You step aside as Machina tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; <br />
+Orome panics, and attempts to flee.<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; <br />
+Padme comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; cast 'insect swarm'<br />
+No more 'insect swarm' spell left!<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; <br />
+--&gt; Rannos &lt;-- stands up!<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; <br />
+Orome flies in from the south.<br />
+<br />
+335H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; <br />
+Orome slowly fades into existence.<br />
+Orome shoots YOU extremely hard.<br />
+<br />
+316H 73V 13145140X 86C [Me:V.Good] [Padme:V.Good] [Machina:Fair] Mem:12 Exits:ES&gt; cast 'ice storm'<br />
+<br />
+Orome seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Orome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+Orome shoots YOU extremely hard.<br />
+Grome massacres Padme with his crush.<br />
+Padme obliterates Grome with her stab.<br />
+Padme massacres Grome with her drain.<br />
+Rannos massacres Padme with his cleave.<br />
+Machina bludgeons Padme extremely hard.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Good] [Machina:Fair] Mem:12 Exits:ES&gt; You utter the words, 'ice storm'<br />
+Orome is shredded by shards of ice.<br />
+Grome is shredded by shards of ice.<br />
+Rannos is shredded by shards of ice.<br />
+Machina is shredded by shards of ice.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Good] [Machina:Fair] Mem:13 Exits:ES&gt; <br />
+Padme comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Good] [Machina:Fair] Mem:13 Exits:ES&gt; <br />
+Maeldun shouts 'Tingle, tingle.'<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Good] [Machina:Fair] Mem:13 Exits:ES&gt; cast 'stone skin' padme<br />
+<br />
+Orome seems unaffected by your swarm of insects.<br />
+Grome seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Orome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Rannos seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Machina, leaving bloody bites over his flesh.<br />
+Orome massacres Padme with his shoot.<br />
+Padme massacres Orome with her stab.<br />
+Padme massacres Orome with her drain.<br />
+Grome crushes Padme very hard.<br />
+Rannos massacres Padme with his cleave.<br />
+Machina bludgeons Padme very hard.<br />
+Orome panics, and attempts to flee.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:13 Exits:ES&gt; You utter the words, 'stone skin'<br />
+Padme's skin turns grey and granite-like.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; <br />
+--&gt; Machina &lt;-- stands up!<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; <br />
+--&gt; Grome &lt;-- stands up!<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; <br />
+Orome flies in from the south.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; <br />
+You step aside as Rannos tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+297H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; <br />
+Orome slowly fades into existence.<br />
+Orome shoots YOU extremely hard.<br />
+<br />
+277H 73V 13145140X 86C [Me:Good] [Padme:Fair] [Machina:Bad] Mem:15 Exits:ES&gt; cast 'stone skin' me<br />
+<br />
+Your swarm of insects covers Orome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Grome, leaving bloody bites over his flesh.<br />
+Your swarm of insects covers Rannos, leaving bloody bites over his flesh.<br />
+Machina seems unaffected by your swarm of insects.<br />
+The swarm of insects dissipates.<br />
+Orome shoots YOU extremely hard.<br />
+Orome shoots YOU extremely hard.<br />
+Padme annihilates Machina with her stab.<br />
+Padme massacres Machina with her drain.<br />
+Grome bruises Padme with his crush.<br />
+Rannos misses Padme with his cleave.<br />
+Machina bruises Padme with his bludgeon.<br />
+<br />
+238H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:15 Exits:ES&gt; You utter the words, 'stone skin'<br />
+Your skin hardens into a stone-like substance.<br />
+<br />
+238H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:16 Exits:ES&gt; <br />
+Machina BASHED YOU !!!<br />
+<br />
+218H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:16 Exits:ES&gt; <br />
+Padme says 'get out machina'<br />
+<br />
+218H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:16 Exits:ES&gt; stand<br />
+The swarm of insects dissipates.<br />
+Orome bruises YOU with his shoot.<br />
+Orome bruises YOU with his shoot.<br />
+Padme annihilates Machina with her stab.<br />
+Padme massacres Machina with her drain.<br />
+Grome misses Padme with his crush.<br />
+Rannos bruises Padme with his cleave.<br />
+Machina bruises Padme with his bludgeon.<br />
+<br />
+216H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:16 Exits:ES&gt; <br />
+--&gt; Rannos &lt;-- stands up!<br />
+<br />
+216H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:V.Bad] Mem:16 Exits:ES&gt; <br />
+Orome bruises YOU with his shoot.<br />
+Orome bruises YOU with his shoot.<br />
+Padme annihilates Machina with her stab.<br />
+Padme massacres Machina with her drain.<br />
+Grome bruises Padme with his crush.<br />
+You MISS Machina with your slash.<br />
+Rannos cleaves Padme very hard.<br />
+Machina massacres Padme with his bludgeon.<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Padme:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Grome heroically rescues Machina.<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Machina gets a scroll from his chest.<br />
+<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Machina stops using a battle banner of the dragonarmies.<br />
+Machina grabs a glowing scroll of recall.<br />
+Machina recites a glowing scroll of recall.<br />
+Machina disappears.<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Orome panics, and attempts to flee.<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Rannos gets a scroll from his chest.<br />
+<br />
+214H 73V 13145140X 86C [Me:Fair] [Machina:Awful] Mem:16 Exits:ES&gt; <br />
+Padme annihilates Grome with her stab.<br />
+Padme massacres Grome with her drain.<br />
+Grome barely crushes Padme.<br />
+Rannos massacres Padme with his cleave.<br />
+<br />
+214H 73V 13145140X 86C Mem:16 Exits:ES&gt; You stand up.<br />
+<br />
+214H 73V 13145140X 86C Mem:16 Exits:ES&gt; <br />
+Orome flies in from the east.<br />
+<br />
+214H 73V 13145140X 86C Mem:16 Exits:ES&gt; <br />
+Grome strikes Padme's weapon, nearly disarming it.<br />
+<br />
+214H 73V 13145140X 86C Mem:16 Exits:ES&gt; cast 'cone of cold' rannos<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Rannos, freezing him.<br />
+<br />
+214H 73V 13145140X 86C Mem:17 Exits:ES&gt; <br />
+Orome slowly fades into existence.<br />
+Orome bruises YOU with his shoot.<br />
+<br />
+213H 73V 13145140X 86C [Me:Fair] [Orome:V.Bad] Mem:17 Exits:ES&gt; <br />
+Orome bruises YOU with his shoot.<br />
+You slash Orome extremely hard.<br />
+Padme annihilates Grome with her stab.<br />
+Padme massacres Grome with her drain.<br />
+Grome crushes Padme extremely hard.<br />
+Rannos misses Padme with his cleave.<br />
+<br />
+212H 73V 13145140X 86C [Me:Fair] [Orome:V.Bad] Mem:17 Exits:ES&gt; <br />
+Grome panics, and attempts to flee.<br />
+Grome leaves south.<br />
+<br />
+212H 73V 13145140X 86C [Me:Fair] [Orome:V.Bad] Mem:17 Exits:ES&gt; cast 'cone of cold' rannos<br />
+<br />
+Padme comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+212H 73V 13145140X 86C Mem:17 Exits:ES&gt; You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Rannos, freezing him.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; <br />
+Rannos heroically rescues Orome.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; <br />
+Padme annihilates Rannos with her stab.<br />
+Padme drains Rannos extremely hard.<br />
+Rannos cleaves Padme extremely hard.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; cast 'stone skin' padme<br />
+<br />
+Padme panics, and attempts to flee.<br />
+Padme flies east.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; Who should the spell be cast upon?<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; <br />
+Rannos gets a scroll from his chest.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; <br />
+Padme flies in from the east.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; <br />
+Rannos stops using a cracked ruby.<br />
+Rannos grabs a glowing scroll of recall.<br />
+Rannos recites a glowing scroll of recall.<br />
+Rannos disappears.<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; cast 'stone skin' padme<br />
+<br />
+Orome says 'we lose'<br />
+<br />
+212H 73V 13145140X 86C Mem:18 Exits:ES&gt; You utter the words, 'stone skin'<br />
+Padme's skin turns grey and granite-like.<br />
+<br />
+212H 73V 13145140X 86C Mem:20 Exits:ES&gt; m<br />
+<br />
+Padme glances at Orome.<br />
+<br />
+212H 73V 13145140X 86C Mem:20 Exits:ES&gt; <br />
+Orome says 'that was fun'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='135'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=135">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="135">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

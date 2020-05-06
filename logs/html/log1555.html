@@ -1,0 +1,734 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1555-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1555'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+And this is why you don't random a BSP at home...</font></b>
+<p>
+POV: 
+Suffering<p>
+Log Rating:
+1.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+138V 1X 1768C Exits:S&gt;<br />
+<br />
+Coors tells your group 'brukal bashed me'<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+<br />
+Coors tells your group 'in MAGIC SHOP'<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+<br />
+Coors tells your group 'in MAGIC SHOP'<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+<br />
+Coors tells your group 'in MAGIC SHOP'<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+<br />
+Coors tells your group 'in MAGIC SHOP'<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+st<br />
+You are already standing.<br />
+<br />
+138V 1X 1768C Exits:S&gt;<br />
+s<br />
+The Temple of Kalaman<br />
+<br />
+137V 1X 1768C Exits:NEW&gt;<br />
+e<br />
+e<br />
+Courtyard to the Temple<br />
+<br />
+136V 1X 1768C Exits:NESW&gt;<br />
+s<br />
+Path of the Holy<br />
+A knight of Solamnia stands here keeping watch over the surrounding area.<br />
+<br />
+135V 1X 1768C Exits:NSW&gt;<br />
+s<br />
+<br />
+Rupert flies south.<br />
+<br />
+135V 1X 1768C Exits:NSW&gt;<br />
+e<br />
+Path of the Holy<br />
+Rupert, Analyzing the Mad is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+A little girl is playing around in the street.<br />
+<br />
+134V 1X 1768C Exits:NS&gt;<br />
+e<br />
+Market Street West<br />
+A little girl is playing around in the street.<br />
+<br />
+133V 1X 1768C Exits:NESW&gt;<br />
+<br />
+Rupert flies east.<br />
+<br />
+133V 1X 1768C Exits:NESW&gt;<br />
+Market Street West<br />
+Rupert, Analyzing the Mad is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+132V 1X 1768C Exits:NESW&gt;<br />
+w<br />
+Market Street West<br />
+<br />
+131V 1X 1768C Exits:NESW&gt;<br />
+s<br />
+<br />
+Coors tells your group 'COME'<br />
+<br />
+131V 1X 1768C Exits:NESW&gt;<br />
+Market Street West<br />
+<br />
+130V 1X 1768C Exits:NESW&gt;<br />
+<br />
+Rupert flies south.<br />
+<br />
+130V 1X 1768C Exits:NESW&gt;<br />
+Shop O' Wonder<br />
+Someone left his purple robe here.<br />
+A human skull helm inlaid with silver runes lies here.<br />
+A small ring lies here, its copper surface gleaming softly.<br />
+Someone seems to have left their cloak lying upon the ground here.<br />
+A dark long sword lies here on the ground.<br />
+A human skull helm inlaid with silver runes lies here.<br />
+A small greyish metal figure lies in the dust forgotten.<br />
+A small pruning knife lies discarded upon the ground.<br />
+A large white box made of wood is sitting on the ground here.<br />
+A large canteen has been left here.<br />
+A small bag has been dropped here.<br />
+A dwarven ball and chain lies here...it hums softly<br />
+A dark crystal ball lies here...it glows dimly<br />
+A small pouch with two straps for the wrist lies here.<br />
+Barely visible on the ground is a large leather belt.<br />
+A pair of soft leather moccasins lie on the ground, forgotten.<br />
+Some banded mail leggings lie here.<br />
+A pair of chain mail gauntlets lie here.<br />
+Some banded mail sleeves lie here.<br />
+Some turtle has left his shell lying here.<br />
+A suit of white plate mail lies in a heap here.<br />
+A cloak etched with holy symbols lies here.<br />
+The corpse of Penci is lying here.<br />
+Pressed firmly into the ground, a steel coin lies oppressed.<br />
+Rupert, Analyzing the Mad is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Coors Deathbringer, Born of Pirate Blood is sitting here, fighting Brukal. (flying)<br />
+Brukal the Clan Destroyer is standing here, fighting Coors.<br />
+The old wizard waits impatiently for you to make your purchase.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Brukal misses Coors with his crush.<br />
+Coors massacres Brukal with her cleave.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Korlan slashes Brukal very hard.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Jiles misses Brukal with his stab.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Mikashal flies in from the north.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+bite brukal<br />
+<br />
+--&gt; Coors &lt;-- stands up!<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Brukal --&gt; BASHES --&gt; Coors &lt;-- BASHED!<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+A blood frenzy overcomes you as you savagely tear into Brukal, ripping a chunk from his flesh.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:Fair] Exits:N&gt;<br />
+<br />
+Rupert slowly fades into existence.<br />
+Rupert misses Brukal with his drain.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:Fair] Exits:N&gt;<br />
+swar<br />
+<br />
+Brukal bleeds profusely from his wounds.<br />
+Rupert misses Brukal with his drain.<br />
+Rupert slashes Brukal extremely hard.<br />
+You massacre Brukal with your cleave.<br />
+You cleave Brukal extremely hard.<br />
+Jiles massacres Brukal with his stab.<br />
+Jiles misses Brukal with his slash.<br />
+Korlan massacres Brukal with his slash.<br />
+Korlan massacres Brukal with his stab.<br />
+Brukal misses Coors with his crush.<br />
+Coors cleaves Brukal very hard.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:Bad] Exits:N&gt;<br />
+<br />
+Mikashal bludgeons Brukal extremely hard.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:Bad] Exits:N&gt;<br />
+<br />
+Korlan attacks Brukal with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:Bad] Exits:N&gt;<br />
+<br />
+Jiles suddenly lunges forward, slamming his skull into Brukal's face with a sickening crunch.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:V.Bad] Exits:N&gt;<br />
+You send a swarm of flying piranha at Brukal.<br />
+Your piranha tear into Brukal.<br />
+Your piranha tear into Brukal.<br />
+Your piranha tear into Brukal.<br />
+Your piranha tear into Brukal.<br />
+Your piranha tear into Brukal.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Coors:Good] [Brukal:V.Bad] Exits:N&gt;<br />
+bite<br />
+<br />
+Brukal bleeds profusely from his wounds.<br />
+Mikashal bludgeons Brukal hard.<br />
+Rupert drains Brukal extremely hard.<br />
+Rupert slashes Brukal very hard.<br />
+You massacre Brukal with your cleave.<br />
+You massacre Brukal with your cleave.<br />
+Jiles misses Brukal with his stab.<br />
+Jiles misses Brukal with his slash.<br />
+Korlan massacres Brukal with his slash.<br />
+Korlan stabs Brukal extremely hard.<br />
+Brukal crushes Coors extremely hard.<br />
+Coors massacres Brukal with her cleave.<br />
+Brukal is stunned, but will likely regain consciousness again.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+<br />
+You hear a splat as Rupert's kick wildy misses Brukal, causing his face to meet the ground.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+<br />
+Mikashal panics, and attempts to flee.<br />
+Mikashal flies north.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+<br />
+Jiles growls.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+You can not use bite just yet.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+sa poor guy<br />
+<br />
+Ahmed flies in from the north.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+You say 'poor guy'<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Awful] Exits:N&gt;<br />
+<br />
+Ahmed hits Brukal very hard.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+examine corpse<br />
+get coin corpse<br />
+Brukal is dead! R.I.P.<br />
+<br />
+129V 1X 1768C [Me:Perfect] [Brukal:Dying] Exits:N&gt;<br />
+<br />
+The death cry of Brukal echoes from somewhere nearby...<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Coors gets a very large pile of coins from the corpse of Brukal.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a black stone<br />
+a ceremonial crystal mace<br />
+a blood red captain's sash<br />
+a purple velvet robe<br />
+a dark black shield..it glows dimly<br />
+a pair of dark black bracers..it glows dimly<br />
+a pair of dark black boots..it glows dimly<br />
+a pair of stained leather leggings<br />
+a charred helm and visor<br />
+some spiked leather body armor<br />
+a lucky bone charm..it glows dimly<br />
+a shiny dwarven ring<br />
+a large first-aid kit<br />
+a loaf of waybread [2]<br />
+an enchanted barrel..it glows dimly<br />
+a small wooden chest<br />
+<br />
+129V 1X 1768C Exits:N&gt;<br />
+<br />
+Coors divides 3120 coins equally among the group members present.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+You feel up to using bite again.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+Coors gets a black stone from the corpse of Brukal.<br />
+Coors gets a ceremonial crystal mace from the corpse of Brukal.<br />
+Coors gets a blood red captain's sash from the corpse of Brukal.<br />
+Coors gets a purple velvet robe from the corpse of Brukal.<br />
+Coors gets a dark black shield from the corpse of Brukal.<br />
+Coors gets a pair of dark black bracers from the corpse of Brukal.<br />
+Coors gets a pair of dark black boots from the corpse of Brukal.<br />
+Coors gets a pair of stained leather leggings from the corpse of Brukal.<br />
+Coors gets a charred helm and visor from the corpse of Brukal.<br />
+Coors gets some spiked leather body armor from the corpse of Brukal.<br />
+Coors gets a lucky bone charm from the corpse of Brukal.<br />
+Coors gets a shiny dwarven ring from the corpse of Brukal.<br />
+Coors gets a large first-aid kit from the corpse of Brukal.<br />
+Coors gets a loaf of waybread from the corpse of Brukal.<br />
+Coors gets a loaf of waybread from the corpse of Brukal.<br />
+Coors gets an enchanted barrel from the corpse of Brukal.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+Jiles gets a small wooden chest from the corpse of Brukal.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+Mikashal flies in from the north.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+Jiles smacks his lips.<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+<br />
+--&gt; Rupert &lt;-- stands up!<br />
+<br />
+129V 1X 2288C Exits:N&gt;<br />
+gro<br />
+<br />
+Jiles says 'toss mace'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1555'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1555">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1555">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

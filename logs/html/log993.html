@@ -1,0 +1,669 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 993-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='993'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Vinoe Recalls Twice in one Fight!</font></b>
+<p>
+POV: 
+Rakkor<p>
+Log Rating:
+3.7500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Karne, Savier, and Mancer pay the price for being overconfident.  Rakkor loots some Mysidian gear that was stolen earlier.</i>
+<p>
+<p>
+
+582H 150V 1917117X 725C Exits:NW&gt; <br />
+Greer flies west.<br />
+You follow Greer west.<br />
+Southwestern Avenue<br />
+A sword belonging to a Solamnic Knight is here.<br />
+A heavy two-handed sword has been left here unattended.<br />
+A tight necklace made from garnet lies on the floor...it hums softly<br />
+<br />
+582H 149V 1917117X 725C Exits:ES&gt; <br />
+Vinoa flies in from the south.<br />
+Vinoa kneels down and studies the ground.<br />
+Mancer flies in from the south.<br />
+Savier arrives from the south.<br />
+Karne flies in from the south.<br />
+<br />
+582H 149V 1917117X 725C Exits:ES&gt; <br />
+Paus slowly fades into existence.<br />
+Paus crashes into Vinoa in a thundering collision, knocking her to the ground!<br />
+<br />
+582H 149V 1917117X 725C Exits:ES&gt; <br />
+Karne focuses harshly on you and utters some strange words.<br />
+<br />
+582H 149V 1917117X 725C Exits:ES&gt; <br />
+Greer steps aside as Savier attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+582H 149V 1917117X 725C Exits:ES&gt; a<br />
+You crash into Savier in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+(Savier was a little slow this time, maybe his triggers are broken)<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Perfect] [Savier:V.Good] Exits:ES&gt; <br />
+Fira focuses harshly on Greer and utters some strange words.<br />
+Greer wavers under the impact of the lightning bolt sent by Fira.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Good] Exits:ES&gt; <br />
+Koda utters some strange words.<br />
+Karne is shredded by shards of ice.<br />
+Savier is shredded by shards of ice.<br />
+Mancer is shredded by shards of ice.<br />
+Fira is shredded by shards of ice.<br />
+Vinoa is shredded by shards of ice.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Good] Exits:ES&gt; <br />
+Mytor crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Good] Exits:ES&gt; <br />
+Mytor slashes Mancer extremely hard.<br />
+Koda crushes Karne very hard.<br />
+Karne slowly fades into existence.<br />
+You massacre Savier with your stab.<br />
+Greer massacres Savier with his crush.<br />
+Paus bludgeons Vinoa very hard.<br />
+Vinoa crushes Paus extremely hard.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Good] Exits:ES&gt; <br />
+Karne focuses harshly on Greer and utters some strange words.<br />
+The sound of bones cracking echoes as Karne's force bolt slams into Greer.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Good] Exits:ES&gt; <br />
+Fira focuses harshly on Greer and utters some strange words.<br />
+Greer wavers under the impact of the lightning bolt sent by Fira.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Fair] [Savier:Good] Exits:ES&gt; <br />
+Koda utters some strange words.<br />
+Karne is shredded by shards of ice.<br />
+Savier is shredded by shards of ice.<br />
+Mancer is shredded by shards of ice.<br />
+Fira is shredded by shards of ice.<br />
+Vinoa is shredded by shards of ice.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Fair] [Savier:Fair] Exits:ES&gt; <br />
+Mytor slashes Mancer very hard.<br />
+You massacre Savier with your stab.<br />
+Savier cleaves Greer extremely hard.<br />
+Greer massacres Savier with his crush.<br />
+Paus bludgeons Vinoa extremely hard.<br />
+Vinoa crushes Paus extremely hard.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Fair] [Savier:Fair] Exits:ES&gt; <br />
+Vinoa steps aside as Paus attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Fair] [Savier:Fair] Exits:ES&gt; <br />
+Greer utters some strange words.<br />
+Greer heals Greer.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Fair] Exits:ES&gt; z<br />
+Karne panics, and attempts to flee.<br />
+Karne flies south.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Fair] Exits:ES&gt; z<br />
+You crash into Fira in a bone crunching bash, sending her <br />
+sprawling to the ground.<br />
+<br />
+(Savier still sitting, had to bash something.  Little mage girl looked like a good target)<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Fair] Exits:ES&gt; <br />
+Karne flies in from the south.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Fair] Exits:ES&gt; <br />
+Koda crushes Mancer hard.<br />
+Mytor slashes Mancer extremely hard.<br />
+Fira bludgeons Koda hard.<br />
+Mancer whips Koda very hard.<br />
+You massacre Savier with your stab.<br />
+Savier cleaves Greer extremely hard.<br />
+Paus massacres Vinoa with his bludgeon.<br />
+Vinoa massacres Paus with her crush.<br />
+Koda utters some strange words.<br />
+Karne is shredded by shards of ice.<br />
+Savier is shredded by shards of ice.<br />
+Mancer is shredded by shards of ice.<br />
+Fira is shredded by shards of ice.<br />
+Vinoa is shredded by shards of ice.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Bad] Exits:ES&gt; <br />
+Karne focuses harshly on Koda and utters some strange words.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Bad] Exits:ES&gt; <br />
+Savier stands up.<br />
+<br />
+(He stands up and just stands there.  Doesn't bash anyone.  Maybe he was afk)<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Bad] Exits:ES&gt; <br />
+Greer focuses harshly on Karne and utters some strange words.<br />
+Karne freezes in place.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Bad] Exits:ES&gt; a<br />
+<br />
+Vinoa sinks gently to the ground.<br />
+Vinoa stops using a small down feather.<br />
+Vinoa grabs a glowing scroll of recall.<br />
+Vinoa recites a glowing scroll of recall.<br />
+Fira disappears.<br />
+<br />
+(Thanks Vinoa, I didn't want a 5vs5 fight anyway)<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:V.Good] [Savier:Bad] Exits:ES&gt; <br />
+Mytor slashes Mancer very hard.<br />
+You stab Savier extremely hard.<br />
+Savier massacres Greer with his cleave.<br />
+Paus massacres Vinoa with his bludgeon.<br />
+Vinoa massacres Paus with her crush.<br />
+Mancer stands up.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Koda utters some strange words.<br />
+Karne is shredded by shards of ice.<br />
+Savier is shredded by shards of ice.<br />
+Mancer is shredded by shards of ice.<br />
+Vinoa is shredded by shards of ice.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Mytor crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Paus stands up.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Vinoa steps aside as Paus attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; You crash into Savier in a bone crunching bash, sending him <br />
+sprawling to the ground.<br />
+<br />
+(Better bash him before he comes back from being afk)<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Mytor slashes Mancer very hard.<br />
+You massacre Savier with your stab.<br />
+Savier cleaves Greer extremely hard.<br />
+Paus massacres Vinoa with his bludgeon.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:V.Bad] Exits:ES&gt; <br />
+Koda utters some strange words.<br />
+Karne is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+Karne is dead! R.I.P.<br />
+Savier is shredded by shards of ice.<br />
+Mancer is shredded by shards of ice.<br />
+Vinoa is shredded by shards of ice.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+The death cry of Karne echoes from somewhere nearby...<br />
+Karne stops following Vinoa.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+Greer gets a pile of coins from the corpse of Karne.<br />
+<br />
+582H 149V 1917117X 725C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+Greer divides 15 coins equally among the group members present.<br />
+<br />
+582H 149V 1917117X 728C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+Vinoa grabs a glowing scroll of recall.<br />
+Vinoa recites a glowing scroll of recall.<br />
+Vinoa disappears.<br />
+<br />
+(Vinoe actually spent half of the entire fight reciting recall scrolls)<br />
+<br />
+582H 149V 1917117X 728C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+Mytor massacres Mancer with his slash.<br />
+Mancer is stunned, but will likely regain consciousness again.<br />
+You massacre Savier with your stab.<br />
+Savier cleaves Greer extremely hard.<br />
+<br />
+582H 149V 1917117X 728C [Me:Perfect] [Greer:Good] [Savier:Awful] Exits:ES&gt; <br />
+Koda utters some strange words.<br />
+Savier is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+Savier is dead! R.I.P.<br />
+Mancer is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+Mancer is dead! R.I.P.<br />
+<br />
+(Ouch, and I haven't even been touched.)<br />
+<br />
+582H 149V 1917117X 728C [Me:Perfect] [Savier:Dying] Exits:ES&gt; <br />
+The death cry of Mancer echoes from somewhere nearby...<br />
+The death cry of Savier echoes from somewhere nearby...<br />
+Mytor gets a very large pile of coins from the corpse of Savier.<br />
+<br />
+582H 149V 1917117X 728C Exits:ES&gt; <br />
+Mytor divides 3400 coins equally among the group members present.<br />
+<br />
+582H 149V 1917117X 1408C Exits:ES&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+582H 149V 1917117X 1408C Exits:ES&gt; corpse (here) : <br />
+a shimmering alexandrite<br />
+a skull-capped mithril battleaxe..it glows dimly<br />
+a red steel bracer<br />
+an ancient shield of the silver serpent<br />
+a pair of charred platemail sleeves<br />
+a pair of soldier's boots<br />
+a copper dwarven ring<br />
+a pair of green boots<br />
+a wooden shield<br />
+a bloody minotaur hand axe<br />
+a gem encrusted bastard sword..it glows dimly<br />
+an ancient solamnic ring<br />
+a small canteen [4]<br />
+an iron ration [3]<br />
+a glowing scroll of recall..it glows dimly<br />
+Paus stands up.<br />
+<br />
+<br />
+*****<br />
+<br />
+<br />
+582H 160V 1917117X 2348C Exits:ES&gt; exam<br />
+Greer tells your group 'good job guys'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='993'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=993">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="993">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

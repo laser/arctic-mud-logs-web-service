@@ -1,0 +1,764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1916-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1916'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Newb lose 5 trying to CR BSP Massrip</font></b>
+<p>
+POV: 
+Kensi<p>
+Log Rating:
+1.6666<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+BSP had several deaths at Tero. NEWB came in and got a kill on Goka. They realized that BSP had gear inside still and came back to loot. Unfortunately for them, BSP had just CR'ed and healed up as they entered.</i>
+<p>
+<p>
+
+674H 144V 6363765X 0C Mem:2 Exits:(E)D&gt; <br />
+Noselacri says 'we crd everything?'<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)D&gt; <br />
+Jaz tells your group 'looted bringer?'<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+A fire salamander arrives from the south.<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Someone steps aside as Jaffa attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Someone steps aside as Malice attempts a bash, stumbles, and falls flat on her <br />
+face.<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; res<br />
+Vorlan MASSACRES someone with his slash.<br />
+<br />
+674H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; c<br />
+Someone utters some strange words.<br />
+Someone's hands send forth blinding rays of sunlight!<br />
+Sharpe slowly fades into existence.<br />
+A fire salamander withers as a ray of sunlight sent by Sharpe engulfs it!<br />
+* * * * *&gt;&gt;&gt;A fire salamander BLINDED!&lt;&lt;&lt;* * * * *<br />
+You wither as a ray of sunlight engulfs you!<br />
+You feel a slight chill.<br />
+* * * * *&gt;&gt;&gt;Noselacri BLINDED!&lt;&lt;&lt;* * * * *<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Fair] [Sharpe:Perfect] Mem:2 Exits:(E)SD&gt; <br />
+Noselacri stops watching you.<br />
+Jaz stops watching you.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Fair] [Sharpe:Perfect] Mem:2 Exits:(E)SD&gt; <br />
+Izso utters some strange words.<br />
+Izso's hands send forth blinding rays of sunlight!<br />
+A fire salamander withers as a ray of sunlight sent by Izso engulfs it!<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:V.Good] Mem:2 Exits:(E)<br />
+The rally cry fades.<br />
+Purly slowly fades into existence.<br />
+Purly misses Izso with his hit.<br />
+Huck misses Izso with his hit.<br />
+Durcias misses Izso with his cleave.<br />
+Arork slowly fades into existence.<br />
+Arork misses Izso with his slash.<br />
+Jaz misses Sharpe with her bludgeon.<br />
+Goka MASSACRES Sharpe with his stab.<br />
+Ryan slowly fades into existence.<br />
+Ryan whips Sharpe hard.<br />
+You slash Sharpe extremely hard.<br />
+Kazooka slashes Sharpe very hard.<br />
+Sharpe bruises a fire salamander with his hit.<br />
+A fire salamander misses Sharpe with its hit.<br />
+Vorlan MASSACRES someone with his slash.<br />
+Vorlan stabs someone extremely hard.<br />
+Malice MASSACRES someone with her slash.<br />
+Malice MASSACRES someone with her slash.<br />
+Jaffa MASSACRES someone with his stab.<br />
+Jaffa pierces someone extremely hard.<br />
+Caasi slowly fades into existence.<br />
+Caasi misses Jaffa with his bludgeon.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; af <br />
+Goka crashes into Sharpe in a thundering collision, knocking him to the ground!<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; leg<br />
+Arork crashes into Izso in a thundering collision, knocking him to the ground!<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; s<br />
+Give <br />
+your self a chance to recover.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; resc<br />
+Noselacri utters some strange words.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt;  <br />
+Sharpe steps aside as Kazooka attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; iz<br />
+Vorlan attacks Caasi with lightning fast series of attacks that leaves him <br />
+defenseless.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Awful] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; s<br />
+Ryan utters some strange words.<br />
+A fire salamander is torn to pieces by hundreds of shards of ice.<br />
+A fire salamander is dead! R.I.P.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [a fire salamander:Dying] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; o<br />
+<br />
+The death cry of a fire salamander echoes from somewhere nearby...<br />
+A fire salamander stops following Purly.<br />
+A fire salamander transcends this world and enters another plane.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [Jaz:V.Good] [Sharpe:Fair] Mem:2 Exits:(E)SD&gt; What a <br />
+self-sacrificing act! You're such a hero!<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [Purly:Bad] Mem:2 Exits:(E)SD&gt; <br />
+Purly misses you with his hit.<br />
+You MASSACRE Purly with your slash.<br />
+Sharpe misses Jaz with his hit.<br />
+Huck misses Izso with his hit.<br />
+Durcias cleaves Izso extremely hard.<br />
+Arork misses Izso with his slash.<br />
+Jaz bludgeons Sharpe hard.<br />
+Izso misses Sharpe with his hit.<br />
+Goka MASSACRES Sharpe with his stab.<br />
+Kazooka slashes Sharpe extremely hard.<br />
+Vorlan MASSACRES Caasi with his slash.<br />
+Vorlan MASSACRES Caasi with his stab.<br />
+Malice MASSACRES Caasi with her slash.<br />
+Caasi is dead! R.I.P.<br />
+The death cry of Caasi echoes from somewhere nearby...<br />
+Caasi stops following Sharpe.<br />
+<br />
+641H 144V 6363765X 0C [Me:V.Good] [Purly:V.Bad] Mem:2 Exits:(E)SD&gt; ra<br />
+Purly flies down.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; ll<br />
+Durcias panics, and attempts to flee.<br />
+Durcias flies south.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Jaffa stands up.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Malice gives you a great steel helm.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt;<br />
+Malice stands up.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD<br />
+Malice looks really sad as she stops using the sword, she turns her head,<br />
+but before she does you see a single tear streaming down her cheek.<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; k<br />
+Noselacri utters some strange words.<br />
+Noselacri's hands send forth blinding rays of sunlight!<br />
+<br />
+641H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; i <br />
+Huck utters some strange words.<br />
+Your body is torn by huge pieces of ice.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Izso:Fair] [Huck:Fair] Mem:2 Exits:(E)SD&gt; <br />
+Jaffa tells your group 'tick in 10'<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Izso:Fair] [Huck:Fair] Mem:2 Exits:(E)SD&gt; #TICK-10<br />
+[3<br />
+Ryan utters some strange words.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Izso:Fair] [Huck:V.Bad] Mem:2 Exits:(E)SD&gt; af le<br />
+Vorlan attempts to impair Huck, but he is outmaneuvered instead.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Izso:Fair] [Huck:V.Bad] Mem:2 Exits:(E)SD&gt; gs<br />
+Huh?!<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Izso:Fair] [Huck:V.Bad] Mem:2 Exits:(E)SD&gt; <br />
+Vorlan MASSACRES Huck with his slash.<br />
+Vorlan MASSACRES Huck with his stab.<br />
+Jaffa stabs Huck extremely hard.<br />
+Jaffa pierces Huck very hard.<br />
+Malice hits Huck extremely hard.<br />
+Malice MASSACRES Huck with her slash.<br />
+Huck is dead! R.I.P.<br />
+Sharpe misses Jaz with his hit.<br />
+Arork misses Izso with his slash.<br />
+Jaz bludgeons Sharpe hard.<br />
+Izso barely hits Sharpe.<br />
+Goka MASSACRES Sharpe with his stab.<br />
+Kazooka slashes Sharpe extremely hard.<br />
+Sharpe is mortally wounded, and will die soon, if not aided.<br />
+The death cry of Huck echoes from somewhere nearby...<br />
+Huck stops following Sharpe.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Goka gets a very large pile of coins from the corpse of Huck.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; j pur<br />
+Arork unsuccessfully tries to save Sharpe.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; ly<br />
+<br />
+Kazooka stands up.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; You couldn't find what you were looking for.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; !<br />
+Jaz focuses on Jaffa and utters some strange words.<br />
+Jaz ---&gt; HEALS ---&gt; Jaffa<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Noselacri utters some strange words.<br />
+Noselacri's hands send forth blinding rays of sunlight!<br />
+* * * * *&gt;&gt;&gt;Arork BLINDED!&lt;&lt;&lt;* * * * *<br />
+Noselacri turns Sharpe to ashes with brilliant rays of sunlight.<br />
+Sharpe is dead! R.I.P.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+You couldn't find what you were looking for.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; !<br />
+<br />
+The death cry of Sharpe echoes from somewhere nearby...<br />
+Durcias stops following Sharpe.<br />
+Arork stops following Sharpe.<br />
+Kazooka gets a large pile of coins from the corpse of Sharpe.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; !<br />
+You couldn't find what you were looking for.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; !You couldn't find what you were looking for.<br />
+Izso stands up.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+<br />
+Izso utters some strange words.<br />
+Izso's hands send forth blinding rays of sunlight!<br />
+Someone utters some strange words.<br />
+Ryan slowly fades into existence.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; !You couldn't find what you were looking for.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+<br />
+Goka gets a bright ball of light from the corpse of Sharpe.<br />
+Goka gets some pixie dust from the corpse of Sharpe.<br />
+Goka gets some pixie dust from the corpse of Sharpe.<br />
+Goka gets some pixie dust from the corpse of Sharpe.<br />
+Goka gets a loaf of rye bread from the corpse of Sharpe.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; <br />
+Purly flies in from below.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt; You attempt to strike at Purly with your <br />
+halberd.<br />
+You MASSACRE Purly with your slash.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:V.Bad] Mem:2 Exits:(E)SD&gt; !<br />
+<br />
+You MASSACRE Purly with your slash.<br />
+Ryan whips Arork extremely hard.<br />
+Arork misses Izso with his slash.<br />
+Vorlan MASSACRES Arork with his slash.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:Awful] Mem:2 Exits:(E)Saf legs<br />
+Arork steps aside as Jaffa attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:Awful] Mem:2 Exits:(E)SD&gt; <br />
+<br />
+Goka crashes into Arork in a thundering collision, knocking him to the ground!<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:Awful] Mem:2 Exits:(E)SD&gt; <br />
+Kazooka crashes into Purly in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:Awful] Mem:2 Exits<br />
+Izso utters some strange words.<br />
+Izso ---&gt; HEALS ---&gt; Izso<br />
+Ryan utters some strange words.<br />
+Purly is torn to pieces by hundreds of shards of ice.<br />
+Purly is dead! R.I.P.<br />
+<br />
+600H 144V 6363765X 0C [Me:Good] [Purly:Dying] Mem:2 Exits:(E)SD&gt; resThe death cry of Purly <br />
+echoes from somewhere nearby...<br />
+Arork stops following Purly.<br />
+Durcias stops following Purly.<br />
+You couldn't find what you were looking for.<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt;<br />
+Jaz focuses on Ryan and utters some strange words.<br />
+Jaz ---&gt; HEALS ---&gt; Ryan<br />
+<br />
+600H 144V 6363765X 0C Mem:2 Exits:(E)SD&gt;Goka stabs Arork extremely hard.<br />
+Jaffa MASSACRES Arork with his stab.<br />
+Jaffa pierces Arork extremely hard.<br />
+Vorlan ANNIHILATES Arork with his slash.<br />
+Vorlan MASSACRES Arork with his stab.<br />
+Arork is incapacitated and will slowly die, if not aided.<br />
+Arork lies helplessly on the ground and suffers.<br />
+Arork is incapacitated and will slowly die, if not aided.<br />
+You must focus on the battle close at hand.<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt;#TICK!!!<br />
+resc izso<br />
+Malice ANNIHILATES Arork with her hit.<br />
+Arork is dead! R.I.P.<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt; <br />
+<br />
+The death cry of Arork echoes from somewhere nearby...<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt; rBut nobody is fighting him.<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt; esc<br />
+gro<br />
+<br />
+Noselacri gets a staff of carved wood from the corpse of Caasi.<br />
+Noselacri gets an intricately twined gold bracelet from the corpse of Caasi.<br />
+Noselacri gets a vine belt from the corpse of Caasi.<br />
+Noselacri is zapped by a heavy black robe with silver embroidery and instantly <br />
+drops it.<br />
+Noselacri gets a pair of worn snakeskin pants from the corpse of Caasi.<br />
+Noselacri gets a headband adorned with eagle's feathers from the corpse of <br />
+Caasi.<br />
+Noselacri gets a miner's tunic from the corpse of Caasi.<br />
+Noselacri gets a necklace made of finger bones from the corpse of Caasi.<br />
+Noselacri is zapped by a necklace of gnomish ears and instantly drops it.<br />
+Noselacri gets a green hag's ring from the corpse of Caasi.<br />
+Noselacri gets a clear crystal sceptre from the corpse of Caasi.<br />
+Noselacri gets a glowing scroll of recall from the corpse of Caasi.<br />
+Noselacri gets a furry white cloak from the corpse of Caasi.<br />
+Noselacri gets a furry white cloak from the corpse of Caasi.<br />
+Noselacri gets a feathered headdress from the corpse of Caasi.<br />
+Noselacri gets a crystal shard necklace from the corpse of Caasi.<br />
+Noselacri gets an enchanted rat bone charm from the corpse of Caasi.<br />
+Noselacri gets a long hooded cloak from the corpse of Caasi.<br />
+Noselacri is zapped by a bottle of eyeballs and instantly drops it.<br />
+Noselacri gets a small wooden chest from the corpse of Caasi.<br />
+Noselacri gets a bright ball of light from the corpse of Caasi.<br />
+Noselacri gets a torch from the corpse of Caasi.<br />
+sNoselacri gets a dwarven holy symbol from the corpse of Caasi.<br />
+Noselacri gets a crystal shard necklace from the corpse of Caasi.<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt; co<br />
+You couldn't find what you were looking for.<br />
+<br />
+621H 149V 6363765X 0C Mem:1 Exits:(E)SD&gt; Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Vorlan           good      rested    standing   Y   N    N    Y     0    2<br />
+  Goka             good      rested    standing   Y   N    N    Y     0    0<br />
+  Jaffa            perfect   rested    sitting    Y   N    N    Y     0    0<br />
+  Malice           v.good    rested    standing   Y   N    N    Y     0    0<br />
+  Jaz              good      rested    standing   Y   N    N    Y     0    9<br />
+  Ryan             perfect   rested    standing   Y   N    N    Y     0   11<br />
+  Kensi            v.good    rested    standing   Y   N    N    Y     1    1<br />
+  Izso             perfect   rested    standing   Y   N    N    Y     1   29<br />
+  Kazooka          v.good    rested    standing   Y   N    N    Y     0    0<br />
+  Noselacri        good      rested    standing   Y   N    N    Y     1   11<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1916'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1916">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1916">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

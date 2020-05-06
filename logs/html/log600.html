@@ -1,0 +1,980 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 600-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='600'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Cyrax/Ghoose R.I.P</font></b>
+<p>
+POV: 
+Windals<p>
+Log Rating:
+-2.7143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Had Cyrax highlighted as pker so logged on to kill him...  Saw him walking around with Ghoose, and only pkers group with pkers right?  They both were naked but they deserved to die...</i>
+<p>
+<p>
+
+Start logging: 29.05.2003 22:53<br />
+<br />
+207H 48V 369183X 454C Mem:1 Exits:S&gt; lThe Master Mages Laboratory<br />
+    The laboratory is large and bright, quite unlike many others you have<br />
+seen in your time. Two large stone tables occupy the centre of the room and<br />
+carry literally hundreds of spell components. A large bookcase contains<br />
+papers and notes on every magical subject.<br />
+A large set of robes lay upon the floor.<br />
+A small white die lies here.<br />
+An orrery is mounted on a stand here.<br />
+Olipa the Male Gnome is resting here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Cyrax the Male Gnome is standing here.<br />
+Ghoose the Male High Elf is standing here. (invisible)<br />
+A black-robed priest of Hiddukel is here, trying to find his temple.<br />
+An attractive guild guard stands here, watching everyone warily.<br />
+The master mage is standing here, making little balls of light dance around.<br />
+<br />
+207H 48V 369183X 454C Mem:1 Exits:S&gt; <br />
+Olipa looks at Cyrax.<br />
+<br />
+207H 48V 369183X 454C Mem:1 Exits:S&gt; <br />
+A priest of Hiddukel arrives from the south.<br />
+<br />
+207H 48V 369183X 454C Mem:1 Exits:S&gt; <br />
+Ghoose utters the words, 'teleport'.<br />
+Ghoose turns into smoke and is blown away.<br />
+<br />
+207H 48V 369183X 454C Mem:1 Exits:S&gt; <br />
+Olipa closes his spellbook with a content look on his face.<br />
+Your studies complete, you close your spellbook with a smile.<br />
+Cyrax closes his spellbook with a content look on his face.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; <br />
+Cyrax utters the words, 'teleport'.<br />
+Cyrax turns into smoke and is blown away.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; <br />
+Kxzis tells you 'ahh what names ?'<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; <br />
+Olipa stands up.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; <br />
+Olipa flies south.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; tell kxzis well they telepored cyrax/ghooseYou tell Kxzis 'well they telepored cyrax/ghoose'<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; lThe Master Mages Laboratory<br />
+    The laboratory is large and bright, quite unlike many others you have<br />
+seen in your time. Two large stone tables occupy the centre of the room and<br />
+carry literally hundreds of spell components. A large bookcase contains<br />
+papers and notes on every magical subject.<br />
+A large set of robes lay upon the floor.<br />
+A small white die lies here.<br />
+An orrery is mounted on a stand here.<br />
+A black-robed priest of Hiddukel is here, trying to find his temple.<br />
+A black-robed priest of Hiddukel is here, trying to find his temple.<br />
+An attractive guild guard stands here, watching everyone warily.<br />
+The master mage is standing here, making little balls of light dance around.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; stYou stand up.<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; <br />
+Kxzis tells you 'nod'<br />
+<br />
+207H 75V 369183X 454C Exits:S&gt; c 'tele' darvinusYou utter the words, 'teleport'<br />
+You disappear in a puff of smoke!<br />
+Along the Northern Wall<br />
+    An imposing wall stretches east and west, protecting the city from<br />
+attack. A narrow trail runs along the base of the wall outside the city<br />
+allowing foot traffic to pass. To the west, a finger of stone reaches up<br />
+from the corner of the wall.<br />
+A mercenary stands here, protecting New Tarsis under orders from the Thane.<br />
+A stray pet dog pauses to sniff something on the ground.<br />
+<br />
+207H 75V 369183X 454C Mem:3 Exits:EW&gt; <br />
+Kxzis tells you 'i dont member u though lol who dis'<br />
+<br />
+207H 75V 369183X 454C Mem:3 Exits:EW&gt; reply gokaYou tell Kxzis 'goka'<br />
+<br />
+207H 75V 369183X 454C Mem:3 Exits:EW&gt; sAlas, you cannot go that way...<br />
+<br />
+207H 75V 369183X 454C Mem:3 Exits:EW&gt; eAlong the North Wall<br />
+    A formidable wall of heavy grey stone blocks stretches from east to<br />
+west, protecting the city from attack. Along the foot of the wall, a narrow<br />
+patch leads off into the shadows. To the east, guards stand watch over the<br />
+city's north gate.<br />
+<br />
+207H 74V 369183X 454C Mem:3 Exits:EW&gt; eThe Northern Gate Of Tarsis<br />
+    An impressive wall of freshly chiselled stone stretches to the east and<br />
+west, guarding the city of Tarsis. In its center is a large oaken gate<br />
+topped by a small rampart and flanked on either side by wall-mounted<br />
+torches. There is a small plaque, crafted in steel, set into the wall.<br />
+A Tarsian guard stands here, turning away undesirables from the city.<br />
+A Tarsian guard stands here, turning away undesirables from the city.<br />
+<br />
+207H 73V 369183X 454C Mem:3 Exits:NESW&gt; <br />
+Kxzis tells you 'ahh nod'<br />
+<br />
+207H 73V 369183X 454C Mem:3 Exits:NESW&gt; sNorth Main Street<br />
+    Main Street roils with the hurly-burly of a new born city. The new<br />
+pavement lets heavy traffic move too fast for real safety. The street<br />
+continues northward to the gate and south into the city proper.<br />
+A stray pet dog pauses to sniff something on the ground.<br />
+A carrion crow scavenges in the rubble, looking for food.<br />
+<br />
+207H 72V 369183X 454C Mem:3 Exits:NSW&gt; sNorth Main Street<br />
+    Main Street is a busy place. The new pavement means heavy traffic,<br />
+often moving a bit too fast for pedestrians. The street continues to the<br />
+north and south.<br />
+<br />
+207H 71V 369183X 454C Mem:3 Exits:NES&gt; sNorth Main Street<br />
+    Main Street bustles with activity as the citizens of New Tarsis get on<br />
+with their lives. Here and there a peddler offers his wares. Occasionally,<br />
+one might catch a glimpse of a mage's robes as he passes unhindered through<br />
+the crowds. The traffic seems heavier to the south.<br />
+<br />
+207H 70V 369183X 454C Mem:3 Exits:NS&gt; sNorth Main Street<br />
+    North Main Street, once a muddy path, is now a brightly lighted, busy<br />
+thoroughfare. New Tarsis Square lies to the south, while markets and other<br />
+new buildings cluster to the east and west.<br />
+A piece of meat lies on the ground.<br />
+A mercenary stands here, protecting New Tarsis under orders from the Thane.<br />
+<br />
+207H 69V 369183X 454C Mem:3 Exits:NESW&gt; <br />
+Kxzis tells you 'hang on'<br />
+<br />
+207H 69V 369183X 454C Mem:3 Exits:NESW&gt; sNew Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A small grey rat scurries for cover as you approach.<br />
+<br />
+207H 68V 369183X 454C Mem:3 Exits:NESW&gt; wwWestern Way<br />
+    The bustle of horsecarts, merchants and townspeople moving along this<br />
+wide street marks it as a main arterial to the business areas of Tarsis.<br />
+The great fountain in the central square splashes noisly to the east, while<br />
+from the north come the sounds of tradesmen hawking their wares.<br />
+<br />
+207H 67V 369183X 454C Mem:3 Exits:NEW&gt; wWestern Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean street runs east-west. From the east the unmistakable sounds and<br />
+smells of commerce. The hurly-burly of the city fades out further to the<br />
+west.<br />
+<br />
+207H 66V 369183X 454C Mem:3 Exits:EW&gt; Western Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean, straight street runs east and west between the prosperous looking<br />
+buildings on either side.<br />
+The corpse of a Tarsian peasant is lying here.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+<br />
+207H 65V 369183X 454C Mem:3 Exits:ESW&gt; nAlas, you cannot go that way...<br />
+<br />
+207H 65V 369183X 454C Mem:3 Exits:ESW&gt; wWestern Way<br />
+    In what once was one of the worst areas of destruction, there is now a<br />
+wide, straight, clean street leading west out of the city. To the north is<br />
+Academy Square, a center of learning.<br />
+<br />
+207H 64V 369183X 454C Mem:3 Exits:NEWD&gt; nAcademy Square<br />
+    A thoroughly pleasant spot, this clearing is carpeted in ornamental<br />
+grasses, fragrant herbs, and perennials. A simple but elegant sundial<br />
+occupies a central position in the intersection. Running through the<br />
+greenery are stone footpaths leading to buildings north, east and west.<br />
+<br />
+207H 63V 369183X 454C Mem:3 Exits:NESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Virga the Rainmaker eyes the sky carefully.<br />
+Looking east:<br />
+You see nothing special.<br />
+Kyruth the Male Minotaur is standing here.<br />
+Megraff the Male Wild Elf is resting here.<br />
+Ghoose the Male High Elf is resting here. (invisible)<br />
+Darvinus the master mage is here, looking for students.<br />
+Looking south:<br />
+A gap between two burned out buildings opens onto a narrow path.<br />
+Looking west:<br />
+You see nothing special.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 63V 369183X 454C Mem:3 Exits:NESW&gt; wAcademy of Ars Sanctissimus<br />
+    Groups of monks huddle around tall desks studying and writing. In the<br />
+corners several monks are discussing theology among themselves. Vaulting<br />
+above, arched beams reach toward the heavens. At the far end of the room, a<br />
+small, glowing altar to Paladine flickers in votive candlelight.<br />
+A tasty looking sandwich is here.<br />
+A delicious roasted turkey leg has been dropped here.<br />
+A bottle of hammered bronze has been discarded here. [2]<br />
+Assorted keys dangle from an iron loop here.<br />
+A brass lamp gleams dully.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+<br />
+207H 62V 369183X 454C Mem:3 Exits:E&gt; reYou rest your tired bones but stay aloft.<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; <br />
+Xaroth shouts 'anyone seen cabre?'<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; reply they teleported to tarsisYou tell Kxzis 'they teleported to tarsis'<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; lAcademy of Ars Sanctissimus<br />
+    Groups of monks huddle around tall desks studying and writing. In the<br />
+corners several monks are discussing theology among themselves. Vaulting<br />
+above, arched beams reach toward the heavens. At the far end of the room, a<br />
+small, glowing altar to Paladine flickers in votive candlelight.<br />
+A tasty looking sandwich is here.<br />
+A delicious roasted turkey leg has been dropped here.<br />
+A bottle of hammered bronze has been discarded here. [2]<br />
+Assorted keys dangle from an iron loop here.<br />
+A brass lamp gleams dully.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; sacnHuh?!<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 62V 369183X 454C Mem:1 Exits:E&gt; <br />
+Your studies complete, you close your spellbook with a smile.<br />
+<br />
+207H 89V 369183X 454C Exits:E&gt; stYou stand up.<br />
+<br />
+207H 89V 369183X 454C Exits:E&gt; lAcademy of Ars Sanctissimus<br />
+    Groups of monks huddle around tall desks studying and writing. In the<br />
+corners several monks are discussing theology among themselves. Vaulting<br />
+above, arched beams reach toward the heavens. At the far end of the room, a<br />
+small, glowing altar to Paladine flickers in votive candlelight.<br />
+A tasty looking sandwich is here.<br />
+A delicious roasted turkey leg has been dropped here.<br />
+A bottle of hammered bronze has been discarded here. [2]<br />
+Assorted keys dangle from an iron loop here.<br />
+A brass lamp gleams dully.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+<br />
+207H 89V 369183X 454C Exits:E&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 89V 369183X 454C Exits:E&gt; escanAcademy Square<br />
+    A thoroughly pleasant spot, this clearing is carpeted in ornamental<br />
+grasses, fragrant herbs, and perennials. A simple but elegant sundial<br />
+occupies a central position in the intersection. Running through the<br />
+greenery are stone footpaths leading to buildings north, east and west.<br />
+<br />
+207H 88V 369183X 454C Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+Virga the Rainmaker eyes the sky carefully.<br />
+Looking east:<br />
+You see nothing special.<br />
+Ghoose the Male High Elf is standing here. (invisible)<br />
+Darvinus the master mage is here, looking for students.<br />
+Looking south:<br />
+A gap between two burned out buildings opens onto a narrow path.<br />
+Looking west:<br />
+You see nothing special.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 88V 369183X 454C Exits:NESW&gt; <br />
+Cyrax arrives from the south.<br />
+<br />
+207H 88V 369183X 454C Exits:NESW&gt; sWestern Way<br />
+    In what once was one of the worst areas of destruction, there is now a<br />
+wide, straight, clean street leading west out of the city. To the north is<br />
+Academy Square, a center of learning.<br />
+Sanzo the Male Wild Elf is standing here.<br />
+<br />
+207H 87V 369183X 454C Exits:NEWD&gt; eWestern Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean, straight street runs east and west between the prosperous looking<br />
+buildings on either side.<br />
+The corpse of a Tarsian peasant is lying here.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+<br />
+207H 86V 369183X 454C Exits:ESW&gt; eWestern Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean street runs east-west. From the east the unmistakable sounds and<br />
+smells of commerce. The hurly-burly of the city fades out further to the<br />
+west.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; cYou must specify a spell name.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; c 'h m' ghooseWho should the spell be cast upon?<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; <br />
+Ghoose arrives from the west.<br />
+Cyrax arrives from the west.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; <br />
+Ghoose leaves east.<br />
+Cyrax leaves east.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 85V 369183X 454C Exits:EW&gt; eWestern Way<br />
+    The bustle of horsecarts, merchants and townspeople moving along this<br />
+wide street marks it as a main arterial to the business areas of Tarsis.<br />
+The great fountain in the central square splashes noisly to the east, while<br />
+from the north come the sounds of tradesmen hawking their wares.<br />
+<br />
+207H 84V 369183X 454C Exits:NEW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The town square and fountain lie to the east.<br />
+A Tarsian peasant cleans up the streets.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 84V 369183X 454C Exits:NEW&gt; escanNew Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets.<br />
+<br />
+207H 83V 369183X 454C Exits:NESW&gt; Looking north:<br />
+North Main Street arrows straight toward the north gate.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+Looking east:<br />
+Eastern Avenue runs directly towards the far gate.<br />
+Looking south:<br />
+South Main Street bustles with commerce.<br />
+A small grey rat scurries for cover as you approach.<br />
+A small grey rat scurries for cover as you approach.<br />
+Looking west:<br />
+Western Avenue runs off toward Westgate and the seabed beyond.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+207H 83V 369183X 454C Exits:NESW&gt; sSouth Main Street<br />
+    This was one of the first sections of Tarsis to be rebuilt. The newly<br />
+paved street has begun to accumulate the litter of a living city, as heavy<br />
+traffic comes through daily. To the north is Tarsis Square, and to the<br />
+south areas of commerce.<br />
+Cyrax the Male Gnome is standing here.<br />
+Ghoose the Male High Elf is standing here. (invisible)<br />
+A small grey rat scurries for cover as you approach.<br />
+A small grey rat scurries for cover as you approach.<br />
+<br />
+207H 82V 369183X 454C Exits:NESW&gt; sscsanSouth Main Street<br />
+    This once was an area for turning oxcarts. Now it is one of the main<br />
+thoroughfares in and out of Tarsis. Heat ripples out from the building to<br />
+the west, along with the clang of metal upon metal.<br />
+A shield is lying on the ground.<br />
+A Tarsian peasant whistles happily on his way to work.<br />
+<br />
+207H 81V 369183X 454C Exits:NESW&gt; Huh?!<br />
+<br />
+207H 81V 369183X 454C Exits:NESW&gt; wNew Tarsis Forge<br />
+    A simple forge glows redly where the back of the smithy abuts the<br />
+smokehouse to the north and a foot-driven bellows stands ready to heat the<br />
+fire to white. Several barrels of liquid along the far wall gleam in the<br />
+dimness. One large anvil in the center of the room focuses all activity<br />
+around it. Hung neatly on hooks are the various hammers, tongs, chisels,<br />
+and aprons necessary to the smith's trade.<br />
+A waterskin lies discarded on the ground.<br />
+Tormak the armourer stops pumping his bellows as you approach.<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxWho should the spell be cast upon?<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxWho should the spell be cast upon?<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxWho should the spell be cast upon?<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxWho should the spell be cast upon?<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxWho should the spell be cast upon?<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; <br />
+Ghoose arrives from the east.<br />
+Cyrax arrives from the east.<br />
+<br />
+207H 80V 369183X 454C Exits:E&gt; c 'h m' cyraxYou utter the words, 'hold monster'<br />
+Cyrax freezes in place.<br />
+<br />
+207H 80V 369183X 454C Mem:3 Exits:E&gt; c 'h m' ghoose<br />
+Ghoose focuses harshly on you and utters the words, 'hold person'.<br />
+<br />
+207H 80V 369183X 454C Mem:3 Exits:E&gt; You utter the words, 'hold monster'<br />
+<br />
+207H 80V 369183X 454C Mem:5 Exits:E&gt; c 'h m' ghoose<br />
+Cyrax wiggles his bottom.<br />
+<br />
+207H 80V 369183X 454C Mem:5 Exits:E&gt; <br />
+Ghoose focuses harshly on you and utters the words, 'hold person'.<br />
+<br />
+207H 80V 369183X 454C Mem:5 Exits:E&gt; You utter the words, 'hold monster'<br />
+Ghoose freezes in place.<br />
+<br />
+207H 80V 369183X 454C Mem:6 Exits:E&gt; cast 'lightning bolt' ghooseYou utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ghoose with full impact.<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:Fair] Mem:7 Exits:E&gt; cast 'acid blast'<br />
+Ghoose says 'whats this for'<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:Fair] Mem:7 Exits:E&gt; <br />
+You bruise Ghoose with your hit.<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:Fair] Mem:7 Exits:E&gt; You utter the words, 'acid blast'<br />
+Some of your acid hits Ghoose!<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:V.Bad] Mem:8 Exits:E&gt; <br />
+Cyrax says 'yeah'<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:V.Bad] Mem:8 Exits:E&gt; say pkerscast 'lightning bolt'You say 'pkers'<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:V.Bad] Mem:8 Exits:E&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ghoose with full impact.<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:Awful] Mem:9 Exits:E&gt; <br />
+Cyrax says 'no'<br />
+<br />
+207H 80V 369183X 454C [Windals:Perfect] [Ghoose:Awful] Mem:9 Exits:E&gt; c 'sho'<br />
+Ghoose shakes his head.<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Ghoose:Awful] Mem:9 Exits:E&gt; You utter the words, 'shocking grasp'<br />
+Ghoose dies while looking rather shocked.<br />
+You receive 0 experience.<br />
+Ghoose is dead! R.I.P.<br />
+exam corpse<br />
+207H 102V 369183X 454C [Ghoose:Dying] Mem:9 Exits:E&gt; <br />
+The death cry of Ghoose echoes from somewhere nearby...<br />
+Cyrax stops following Ghoose.<br />
+Ghoose now follows Cyrax.<br />
+Cyrax is the new leader of Ghoose's group.<br />
+Ghoose stops following Cyrax.<br />
+<br />
+207H 102V 369183X 454C Mem:9 Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a short sword<br />
+<br />
+207H 102V 369183X 454C Mem:9 Exits:E&gt; cast 'lightning bolt' cyraxYou utter the words, 'lightning bolt'<br />
+The lightning bolt hits Cyrax with full impact.<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Cyrax:Fair] Mem:10 Exits:E&gt; <br />
+You bruise Cyrax with your hit.<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Cyrax:Fair] Mem:10 Exits:E&gt; cast 'acid blast'You utter the words, 'acid blast'<br />
+Some of your acid hits Cyrax!<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Cyrax:V.Bad] Mem:11 Exits:E&gt; <br />
+You feel yourself exposed.<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Cyrax:V.Bad] Mem:11 Exits:E&gt; cast 'lightning bolt'<br />
+Kalisto arrives from the east.<br />
+<br />
+207H 102V 369183X 454C [Windals:Perfect] [Cyrax:V.Bad] Mem:11 Exits:E&gt; You bruise Cyrax with your hit.<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Cyrax with full impact.<br />
+Cyrax is mortally wounded, and will die soon, if not aided.<br />
+<br />
+207H 102V 369183X 454C [Cyrax:Dying] Mem:11 Exits:E&gt; cast 'magic missile'You utter the words, 'magic missile'<br />
+The magic missile tears away the remaining life of Cyrax.<br />
+You receive 0 experience.<br />
+Cyrax is dead! R.I.P.<br />
+exam corpse<br />
+207H 102V 369183X 454C [Cyrax:Dying] Mem:12 Exits:E&gt; <br />
+Kalisto gets a short sword from the corpse of Ghoose.<br />
+<br />
+207H 102V 369183X 454C [Cyrax:Dying] Mem:12 Exits:E&gt; <br />
+The death cry of Cyrax echoes from somewhere nearby...<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; <br />
+Kieko arrives from the east.<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; l<br />
+Kalisto leaves east.<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; <br />
+Tormak the armourer says 'I don't trade with someone I can't see!'<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; New Tarsis Forge<br />
+    A simple forge glows redly where the back of the smithy abuts the<br />
+smokehouse to the north and a foot-driven bellows stands ready to heat the<br />
+fire to white. Several barrels of liquid along the far wall gleam in the<br />
+dimness. One large anvil in the center of the room focuses all activity<br />
+around it. Hung neatly on hooks are the various hammers, tongs, chisels,<br />
+and aprons necessary to the smith's trade.<br />
+The corpse of Cyrax is lying here.<br />
+The corpse of Ghoose is lying here.<br />
+A waterskin lies discarded on the ground.<br />
+Kieko the Male Gnome is standing here. (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Tormak the armourer stops pumping his bellows as you approach.<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; <br />
+Kieko leaves east.<br />
+<br />
+207H 102V 369183X 454C Mem:12 Exits:E&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='600'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=600">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="600">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

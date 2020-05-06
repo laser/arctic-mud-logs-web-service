@@ -1,0 +1,784 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1461-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1461'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Raen rip</font></b>
+<p>
+POV: 
+Dagam<p>
+Log Rating:
+-0.6250<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Went for Marran and found a new evil.</i>
+<p>
+<p>
+
+326H 58V 1X 0C Mem:2 Exits:ED&gt; look room<br />
+Prison Camp Entrance<br />
+    The path slowly slopes upward to the base of a large mountain. At the<br />
+base is a large iron door. It is guarded by a few soldiers whose armor<br />
+bears the emblem of the Dark Queen. They tense at your approach, eyeing you<br />
+with suspicion and mistrust.<br />
+A foot soldier stands here protecting the entrance.<br />
+A foot soldier stands here protecting the entrance.<br />
+A warrior is here scouting the area.<br />
+A warrior is here scouting the area.<br />
+<br />
+326H 58V 1X 0C Mem:2 Exits:ED&gt; group<br />
+Your group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Hipho            good      rested    standing   Y   N    N    N     2    0<br />
+  Xanatos          good      rested    standing   Y   Y    N    N     1    3<br />
+  Cicero           v.good    rested    standing   Y   N    N    N     0    0<br />
+  Dagam            v.good    rested    standing   Y   Y    Y    Y     1    2<br />
+<br />
+326H 58V 1X 0C Mem:2 Exits:ED&gt; <br />
+Cicero flies in from the east.<br />
+A dragonarmy foot soldier spins and tries to kick Cicero, but Cicero dodges out of the way.<br />
+A dragonarmy foot soldier misses Cicero with his slash.<br />
+A dragonarmy scout delivers a quick snap kick to Cicero. Cicero staggers and tries to recover.<br />
+Cicero steps aside as a dragonarmy scout attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+326H 58V 1X 0C Mem:2 Exits:ED&gt; d<br />
+Prison Entrance<br />
+<br />
+326H 56V 1X 0C Mem:2 Exits:WU&gt; look room<br />
+Prison Entrance<br />
+    You have entered the dragonarmy's prison. The tunnel has been carved<br />
+directly into the mountain; you suspect dwarven personnel were &quot;hired&quot; for<br />
+the job. The hallways are dimly lit, the torches being sparse down the long<br />
+corridors of the complex.<br />
+<br />
+326H 56V 1X 0C Mem:2 Exits:WU&gt; w<br />
+Dimly Lit Hall<br />
+<br />
+326H 55V 1X 0C Mem:2 Exits:(N)E(S)W&gt; w<br />
+Dimly Lit Hall<br />
+<br />
+326H 54V 1X 0C Mem:2 Exits:EW&gt; w<br />
+Dimly Lit Hall<br />
+<br />
+326H 53V 1X 0C Mem:2 Exits:NES&gt; n<br />
+Corridor Intersection<br />
+<br />
+326H 52V 1X 0C Mem:2 Exits:NSW&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A tall hungry guard protects his food.<br />
+A tall hungry guard protects his food.<br />
+A tall hungry guard protects his food.<br />
+A short dragonarmy officer sits alone here, eating quietly.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 52V 1X 0C Mem:2 Exits:NSW&gt; n<br />
+Stone Stairwell<br />
+<br />
+326H 51V 1X 0C Mem:2 Exits:SD&gt; scan<br />
+<br />
+Hipho tells your group 'd'<br />
+<br />
+326H 51V 1X 0C Mem:2 Exits:SD&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 51V 1X 0C Mem:2 Exits:SD&gt; d<br />
+A Choice Of Paths<br />
+<br />
+326H 50V 1X 0C Mem:2 Exits:NSWU&gt; u<br />
+Stone Stairwell<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; group<br />
+Your group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Hipho            good      fatigued  standing   Y   N    N    N     2    0<br />
+  Xanatos          good      rested    standing   Y   Y    N    N     1    3<br />
+  Cicero           v.good    rested    standing   Y   N    N    N     0    0<br />
+  Dagam            v.good    rested    standing   Y   Y    Y    Y     1    2<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; who brief<br />
+Immortals<br />
+---------<br />
+[Ret  32] Styrene the Male Hylar Dwarf<br />
+<br />
+Heroes<br />
+------<br />
+[Hero 31] Redux<br />
+<br />
+Mortals<br />
+-------<br />
+Kalis                Locki                      Shicane                    <br />
+Afixa                Tralfric                   Ezekiel                    <br />
+Bota                 Chels                      Nasol                      <br />
+Wallo                Arigam                     Marran                     <br />
+Tarquain             Shael                      Krout                      <br />
+Hetland              Flaven                     Lextor                     <br />
+Albido               Bamit                      Dias                       <br />
+Sparda               Ilian                      Neko                       <br />
+Axi                  Chaka                      Karat                      <br />
+Punta                Sonni                      Birra                      <br />
+Xanatos              Alura                      Khelous                    <br />
+Mys                  Raen                       Yama                       <br />
+<br />
+ [return for more, q to stop]<br />
+Hipho                Barrett                    Horton                     <br />
+Bloomer              Surculus                   Dagam                      <br />
+Orome                Sansaba                    Kos                        <br />
+Blur                 Ana                        Winni                      <br />
+Cicero               Gramling                   Tessa                      <br />
+Ruhinris             Toora                      Sempre                     <br />
+Purly                Tafa                       Goro                       <br />
+Sariel               Chiggles                   Aku                        <br />
+Arabel               Gaerun                                                <br />
+<br />
+Total visible people : 72        Total people online  : 72<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; <br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; group<br />
+Your group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Hipho            good      fatigued  standing   Y   N    N    N     2    0<br />
+  Xanatos          good      rested    standing   Y   Y    N    N     1    3<br />
+  Cicero           v.good    rested    standing   Y   N    N    N     0    0<br />
+  Dagam            v.good    rested    standing   Y   Y    Y    Y     1    2<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; st<br />
+You are already standing.<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; <br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; <br />
+Marran flies in from below.<br />
+Raen flies in from below.<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; look room<br />
+Stone Stairwell<br />
+    The corridor comes to an end. There is a large stone stairwell that<br />
+leads downward. The stairwell is well lit; there are many torches on the<br />
+walls illuminating the area, which smells of sweat and grime. Apparently,<br />
+the slaves are herded up these steps daily.<br />
+Raen the Female Hill Dwarf is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Marran Strannik is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+326H 49V 1X 0C Mem:2 Exits:SD&gt; c 'flame shroud' marran<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Marran in a cloak of flames.<br />
+<br />
+326H 49V 1X 0C [Dagam:V.Good] [Marran:Good] Mem:3 Exits:SD&gt; <br />
+Hipho flies in from the south.<br />
+<br />
+326H 49V 1X 0C [Dagam:V.Good] [Marran:Good] Mem:3 Exits:SD&gt; <br />
+Marran stops using an earthen mace.<br />
+Marran grabs a glowing scroll of recall.<br />
+Marran recites a glowing scroll of recall.<br />
+Marran disappears.<br />
+<br />
+326H 49V 1X 0C Mem:3 Exits:SD&gt; <br />
+Raen flies south.<br />
+<br />
+326H 49V 1X 0C Mem:3 Exits:SD&gt; <br />
+Chaka tells you 'ready?'<br />
+<br />
+326H 49V 1X 0C Mem:3 Exits:SD&gt; s<br />
+c 'paralysis' raen<br />
+Corridor Intersection<br />
+Xanatos A'Kul, Blood Sea Champion of the Abyss is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Raen the Female Hill Dwarf is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; You utter the words, 'paralysis'<br />
+Raen is paralyzed!<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Xanatos looks at Raen.<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Xanatos focuses harshly on Raen and utters some strange words.<br />
+The sound of bones cracking echoes as Xanatos's force bolt slams into Raen.<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; look raen<br />
+c 'flame shroud' raen<br />
+<br />
+Hipho tells your group 'bag charles'<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Cicero flies in from the south.<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; You see nothing special about her.<br />
+Raen the young adult female hill dwarf has quite a few wounds (bandaged) (invisible).<br />
+<br />
+Raen is using:<br />
+&lt;worn on finger&gt;           a twinkling stone ring..it glows blue..it glows dimly<br />
+&lt;worn on finger&gt;           a fairy skull ring<br />
+&lt;worn around neck&gt;         a necklace of draconian teeth..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         a dinosaur tooth necklace..it glows blue<br />
+&lt;worn on head&gt;             an ornate headdress..it glows blue<br />
+&lt;worn on feet&gt;             a pair of leather moccasins<br />
+&lt;worn on hands&gt;            some oakenwood gloves<br />
+&lt;worn as shield&gt;           an aspen shield<br />
+&lt;worn about body&gt;          a multicolored cloak..it glows dimly<br />
+&lt;worn around right wrist&gt;  a small ruby band (invisible)..it glows blue<br />
+&lt;worn around left wrist&gt;   a transparent fishscale bracelet (invisible)<br />
+&lt;used in primary hand&gt;     a shaman's staff..it glows blue<br />
+&lt;held in secondary hand&gt;   a holy symbol made of oak..it glows blue<br />
+<br />
+326H 48V 1X 0C Mem:3 Exits:NSW&gt; A thin dragonarmy officer arrives from the south.<br />
+Trigger {~&lt;} removed.<br />
+A patrol guard arrives from the south.<br />
+A patrol guard arrives from the south.<br />
+A thin dragonarmy officer appears to be tracking someone.<br />
+A thin dragonarmy officer delivers a quick snap kick to Cicero. Cicero staggers and tries to recover.<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Raen in a cloak of flames.<br />
+<br />
+326H 48V 1X 0C Mem:4 Exits:NSW&gt; <br />
+You step aside as a patrol guard tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Perfect] Mem:4 Exits:NSW&gt; c 'flame shroud' raen<br />
+<br />
+A patrol guard delivers a vicious kick to Cicero's face. Blood flies as his head snaps back.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Perfect] Mem:4 Exits:NSW&gt; <br />
+Cicero panics, and attempts to flee.<br />
+Cicero flies south.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Perfect] Mem:4 Exits:NSW&gt; <br />
+A patrol guard MISSES YOU with his slash.<br />
+You bludgeon a patrol guard very hard.<br />
+Xanatos pierces Raen extremely hard.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Hipho tells your group 'why go solo'<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Cicero flies in from the south.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Cicero flies north.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Xanatos focuses harshly on Raen and utters some strange words.<br />
+Brains splatter on you as Xanatos's force bolt shatters Raen's skull.<br />
+You receive 0 experience.<br />
+Raen is dead! R.I.P.<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+The death cry of Raen echoes from somewhere nearby...<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; Who should the spell be cast upon?<br />
+<br />
+326H 48V 1X 0C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; get all corpse<br />
+You get a holy symbol made of oak from the corpse of Raen.<br />
+You get a shaman's staff from the corpse of Raen.<br />
+You get a transparent fishscale bracelet from the corpse of Raen.<br />
+You get a small ruby band from the corpse of Raen.<br />
+You get a burlap belt pouch from the corpse of Raen.<br />
+You get a multicolored cloak from the corpse of Raen.<br />
+You get an aspen shield from the corpse of Raen.<br />
+You get some oakenwood gloves from the corpse of Raen.<br />
+You get a pair of leather moccasins from the corpse of Raen.<br />
+You get a pair of brown leather pants from the corpse of Raen.<br />
+You get an ornate headdress from the corpse of Raen.<br />
+You get a bone vest from the corpse of Raen.<br />
+Necklace : You can't carry that much weight.<br />
+You get a necklace of draconian teeth from the corpse of Raen.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get a large pile of coins from the corpse of Raen.<br />
+There were 595 coins.<br />
+Ring : You can't carry that much weight.<br />
+Robe : You can't carry that much weight.<br />
+Ball : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Pork : You can't carry that much weight.<br />
+Mandolin : You can't carry that much weight.<br />
+<br />
+326H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+A patrol guard MISSES YOU with his slash.<br />
+<br />
+326H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+A thin dragonarmy officer kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+316H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+You step aside as a patrol guard tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+316H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Hipho flies in from the north.<br />
+<br />
+316H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+Xanatos gets a dinosaur tooth necklace from the corpse of Raen.<br />
+Xanatos gets a fairy skull ring from the corpse of Raen.<br />
+Xanatos is zapped by a twinkling stone ring and instantly drops it.<br />
+Xanatos gets a fairy skull ring from the corpse of Raen.<br />
+Xanatos gets a shimmering green robe from the corpse of Raen.<br />
+Xanatos gets a bright ball of light from the corpse of Raen.<br />
+Xanatos gets a large hide waterskin from the corpse of Raen.<br />
+Xanatos gets a large piece of pork chop from the corpse of Raen.<br />
+Xanatos is zapped by an old mandolin and instantly drops it.<br />
+<br />
+316H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; gt i just waited there for you guys<br />
+You tell your group 'i just waited there for you guys'<br />
+<br />
+316H 48V 1X 595C [Dagam:V.Good] [a patrol guard:Good] Mem:4 Exits:NSW&gt; <br />
+A patrol guard slashes YOU hard.<br />
+A patrol guard is chilled as he passes through your freezing aura.<br />
+A thin dragonarmy officer pierces YOU hard.<br />
+A thin dragonarmy officer is chilled as he passes through your freezing aura.<br />
+A patrol guard MISSES YOU with his slash.<br />
+You bludgeon a patrol guard very hard.<br />
+<br />
+299H 48V 1X 595C [Dagam:Good] [a patrol guard:Fair] Mem:4 Exits:NSW&gt; <br />
+Hipho gets a twinkling stone ring.<br />
+<br />
+299H 48V 1X 595C [Dagam:Good] [a patrol guard:Fair] Mem:4 Exits:NSW&gt; &gt; Added Raen to evil.<br />
+Mandolin : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+<br />
+299H 48V 1X 595C [Dagam:Good] [a patrol guard:Fair] Mem:4 Exits:NSW&gt; <br />
+Hipho gets an old mandolin.<br />
+Hipho gets the corpse of Raen.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1461'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1461">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1461">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

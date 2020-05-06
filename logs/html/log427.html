@@ -1,0 +1,709 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 427-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='427'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Ilendil turns mute.</font></b>
+<p>
+POV: 
+Roe<p>
+Log Rating:
+-0.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Ilendil was angry at me for messing up his triggers, and he began to say mean things to me. Then he died.</i>
+<p>
+<p>
+
+427H 58V 10414715X 610C Exits:NSU&gt; n<br />
+Solace Square<br />
+A large fountain sits in the middle of the road, taking up space.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Ilendil the Forsaken is standing here. (invisible)<br />
+An old beggar hobbles along here looking for handouts.<br />
+<br />
+427H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+<br />
+Ohtazz flies in from the south.<br />
+Lilac flies in from the south.<br />
+<br />
+427H 57V 10414715X 610C Exits:NESWU&gt; Ilendil quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+427H 57V 10414715X 610C [Me:Perfect] [Ilendil:Perfect] Exits:NESWU&gt; <br />
+Ohtazz flies up.<br />
+Lilac flies up.<br />
+<br />
+427H 57V 10414715X 610C [Me:Perfect] [Ilendil:Perfect] Exits:NESWU&gt; <br />
+Angyl flies in from the south.<br />
+<br />
+427H 57V 10414715X 610C [Me:Perfect] [Ilendil:Perfect] Exits:NESWU&gt; <br />
+You pierce Ilendil very hard.<br />
+You pierce Ilendil hard.<br />
+Ilendil slowly fades into existence.<br />
+Ilendil pierces YOU extremely hard.<br />
+Ilendil misses you with his pierce.<br />
+Angyl flies up.<br />
+<br />
+413H 57V 10414715X 610C [Me:V.Good] [Ilendil:V.Good] Exits:NESWU&gt; <br />
+Ilendil panics, and attempts to flee.<br />
+Ilendil leaves east.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+backstab ilendil<br />
+You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; backstab ilendil<br />
+<br />
+Erdrick flies in from above.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; You couldn't find what you were looking for.<br />
+<br />
+413H 57V 10414715X 610C Exits:NESWU&gt; e<br />
+Eastern Avenue<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+You sense a life form.<br />
+<br />
+413H 56V 10414715X 610C Exits:EWU&gt; backstab ilendil<br />
+Ilendil makes a strange sound, as you place a dark adamantite dagger in his back.<br />
+<br />
+413H 56V 10414715X 610C [Me:V.Good] [Ilendil:Fair] Exits:EWU&gt; <br />
+Erdrick flies in from the west.<br />
+<br />
+413H 56V 10414715X 610C [Me:V.Good] [Ilendil:Fair] Exits:EWU&gt; <br />
+You pierce Ilendil extremely hard.<br />
+You pierce Ilendil hard.<br />
+Ilendil slowly fades into existence.<br />
+Ilendil comes out of hiding.<br />
+Ilendil misses you with his pierce.<br />
+Ilendil misses you with his pierce.<br />
+<br />
+413H 56V 10414715X 610C [Me:V.Good] [Ilendil:Fair] Exits:EWU&gt; <br />
+Erdrick looks at Ilendil.<br />
+<br />
+413H 56V 10414715X 610C [Me:V.Good] [Ilendil:Fair] Exits:EWU&gt; fl<br />
+You flee head over heels.<br />
+The Temple of Solace<br />
+<br />
+413H 55V 10414715X 610C Exits:ESD&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A humble cleric of Paladine kneels here in silent prayer.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+Erdrick, Dragon Warrior Ninja is standing here. (flying)<br />
+Ilendil the Forsaken is standing here.<br />
+<br />
+413H 55V 10414715X 610C Exits:ESD&gt; env dark.dagger<br />
+sneak<br />
+You stealthily dip the dagger in a toxic concoction of your own making.<br />
+<br />
+413H 55V 10414715X 610C Exits:ESD&gt; You begin moving quietly.<br />
+<br />
+413H 55V 10414715X 610C Exits:ESD&gt; d<br />
+Eastern Avenue<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Erdrick, Dragon Warrior Ninja is standing here. (flying)<br />
+Ilendil the Forsaken is standing here.<br />
+<br />
+413H 54V 10414715X 610C Exits:EWU&gt; backstab ilendil<br />
+<br />
+Erdrick focuses harshly on Ilendil and utters some strange words.<br />
+Ilendil freezes in place.<br />
+<br />
+413H 54V 10414715X 610C Exits:EWU&gt; Ilendil twists around to see you place a dark adamantite dagger in his back.<br />
+Ilendil appears noticeably weaker.<br />
+<br />
+413H 54V 10414715X 610C [Me:V.Good] [Ilendil:V.Bad] Exits:EWU&gt; fl<br />
+fl<br />
+env dark.dagger<br />
+sneak<br />
+<br />
+You pierce Ilendil hard.<br />
+You pierce Ilendil very hard.<br />
+<br />
+413H 54V 10414715X 610C [Me:V.Good] [Ilendil:Awful] Exits:EWU&gt; You flee head over heels.<br />
+Eastern Avenue<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A beggar is here, begging you for a loaf of bread for supper.<br />
+<br />
+413H 53V 10414715X 610C Exits:NEW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+413H 53V 10414715X 610C Exits:NEW&gt; You stealthily dip the dagger in a toxic concoction of your own making.<br />
+<br />
+413H 53V 10414715X 610C Exits:NEW&gt; You begin moving quietly.<br />
+<br />
+413H 53V 10414715X 610C Exits:NEW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+A janitor is walking around, cleaning up.<br />
+Looking east:<br />
+You see nothing special.<br />
+A citizen of Solace moves quickly about.<br />
+A citizen of Solace moves quickly about.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Erdrick, Dragon Warrior Ninja is standing here. (flying)<br />
+Ilendil the Forsaken is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 53V 10414715X 610C Exits:NEW&gt; w<br />
+Eastern Avenue<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Erdrick, Dragon Warrior Ninja is standing here. (flying)<br />
+Ilendil the Forsaken is standing here.<br />
+<br />
+413H 52V 10414715X 610C Exits:EWU&gt; backstab ilendil<br />
+<br />
+Erdrick flies west.<br />
+<br />
+413H 52V 10414715X 610C Exits:EWU&gt; Ilendil makes a strange sound but is suddenly very silent, as you place a dark adamantite dagger in his back.<br />
+You receive 0 experience.<br />
+Ilendil is dead! R.I.P.<br />
+<br />
+413H 52V 10414715X 610C [Me:V.Good] [Ilendil:Dying] Exits:EWU&gt; <br />
+The death cry of Ilendil echoes from somewhere nearby...<br />
+<br />
+413H 52V 10414715X 610C Exits:EWU&gt; g all corpse<br />
+<br />
+Erdrick flies in from the west.<br />
+<br />
+413H 52V 10414715X 610C Exits:EWU&gt; You get a dinosaur tooth from the corpse of Ilendil.<br />
+You get a red metallic javelin from the corpse of Ilendil.<br />
+You get a blackened spiked bracer from the corpse of Ilendil.<br />
+You get a white dragonarmy bracer from the corpse of Ilendil.<br />
+Belt : You can't carry that much weight.<br />
+Cloak : You can't carry that much weight.<br />
+You get a pair of elfin gauntlets from the corpse of Ilendil.<br />
+Leggings : You can't carry that much weight.<br />
+Cap : You can't carry that much weight.<br />
+Byrnie : You can't carry that much weight.<br />
+Neckguard : You can't carry that much weight.<br />
+Neckchain : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get a large pile of coins from the corpse of Ilendil.<br />
+There were 326 coins.<br />
+You get an entire loaf of bread from the corpse of Ilendil.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; gt 5 secs till tic<br />
+You are not a member of a group.<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; puta ll pants<br />
+Huh?!<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; g all corpse<br />
+Belt : You can't carry that much weight.<br />
+Cloak : You can't carry that much weight.<br />
+Leggings : You can't carry that much weight.<br />
+Cap : You can't carry that much weight.<br />
+Byrnie : You can't carry that much weight.<br />
+Neckguard : You can't carry that much weight.<br />
+Neckchain : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; put all pants<br />
+You put an entire loaf of bread in some black satin pants with deep pockets.<br />
+You put a pair of elfin gauntlets in some black satin pants with deep pockets.<br />
+You put a white dragonarmy bracer in some black satin pants with deep pockets.<br />
+A blackened spiked bracer won't fit.<br />
+A red metallic javelin won't fit.<br />
+You put a dinosaur tooth in some black satin pants with deep pockets.<br />
+A large first-aid kit won't fit.<br />
+You put a waterskin in some black satin pants with deep pockets.<br />
+You put a milky potion of see invisible in some black satin pants with deep pockets.<br />
+You put a scroll of recall in some black satin pants with deep pockets.<br />
+You put a scroll of recall in some black satin pants with deep pockets.<br />
+You put a scroll of recall in some black satin pants with deep pockets.<br />
+You put a scroll of recall in some black satin pants with deep pockets.<br />
+A scroll of recall won't fit.<br />
+A scroll of recall won't fit.<br />
+A suit of spiked copper plate won't fit.<br />
+A blue potion of remove poison won't fit.<br />
+An iron ration won't fit.<br />
+An iron ration won't fit.<br />
+A small canteen won't fit.<br />
+A small canteen won't fit.<br />
+A small canteen won't fit.<br />
+A small canteen won't fit.<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; 'loot<br />
+You say 'loot'<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; g all corpse<br />
+You get a black sword belt from the corpse of Ilendil.<br />
+Cloak : You can't carry that much weight.<br />
+You get a pair of black leather leggings from the corpse of Ilendil.<br />
+Cap : You can't carry that much weight.<br />
+Byrnie : You can't carry that much weight.<br />
+Neckguard : You can't carry that much weight.<br />
+Neckchain : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get an entire loaf of bread from the corpse of Ilendil.<br />
+Bread : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Lantern : You can't carry that much weight.<br />
+<br />
+413H 52V 10414715X 936C Exits:EWU&gt; <br />
+Erdrick gets a cloak of a chimera from the corpse of Ilendil.<br />
+Erdrick gets a flat black velvet cap from the corpse of Ilendil.<br />
+Erdrick gets a dark red leather byrnie from the corpse of Ilendil.<br />
+Erdrick gets a black neckguard from the corpse of Ilendil.<br />
+Erdrick gets the seal of the white dragonarmy from the corpse of Ilendil.<br />
+Erdrick gets the seal of the white dragonarmy from the corpse of Ilendil.<br />
+Erdrick gets an entire loaf of bread from the corpse of Ilendil.<br />
+Erdrick gets a milky potion of see invisible from the corpse of Ilendil.<br />
+Erdrick gets a hooded lantern from the corpse of Ilendil.<br />
+Erdrick gets a small wooden chest from the corpse of Ilendil.<br />
+Erdrick gets a large waterskin from the corpse of Ilendil.<br />
+Erdrick gets a bullseye lantern from the corpse of Ilendil.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='427'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=427">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="427">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

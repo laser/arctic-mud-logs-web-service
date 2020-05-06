@@ -1,0 +1,814 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What would be the single best change for Arctic?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>Remove sheafs<br>
+<input type=radio value=1 name=voteid>Remove rent decay<br>
+<input type=radio value=2 name=voteid>Add more spells/skills to current classes<br>
+<input type=radio value=3 name=voteid>Add more zones<br>
+<input type=radio value=4 name=voteid>Add a new class<br>
+<input type=radio value=5 name=voteid>Other<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=145><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2317-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='209.234.171.41' and logid='2317'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+MAGE BOMB GO BOOM!!!</font></b>
+<p>
+POV: 
+Over<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+BOOOOOOM!!!!</i>
+<p>
+<p>
+
+1800-887 2887 susuki leo<br />
+<br />
+Moop flies east.<br />
+Telia flies east.<br />
+Tao flies east.<br />
+Yaza flies east.<br />
+You follow Yaza east.<br />
+Lanlanlen flies in from the west.<br />
+Maxe flies in from the west.<br />
+An Ancient Tunnel<br />
+    The age-old mining tunnel comes to an abrupt halt here at the base of a<br />
+steep cliff. The walls of the north, east, and south contain deep holes,<br />
+which at one time stored beautiful gems and veins of precious metals. A<br />
+ledge at the top of the cliff appears three to four minotaurs above.<br />
+Whatever is up there is well secluded from what lives in the holes here.<br />
+The ancient tunnel slants lightly upwards to the west.<br />
+A long rope hangs down from the cliff.<br />
+&lt;MAEL&gt; Maxe Padington is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+&lt;MAEL&gt; Lanlanlen Lipetskiy, Stunning Beauty of the Black Tentacles is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+&lt;MAEL&gt; Yaza Yaza Yaza is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;MAEL&gt; Tao Tza is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;MAEL&gt; Telia Tarn, Twin Sister of the Maelstrom is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+&lt;MAEL&gt; Moop Luze is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+&lt;WNR&gt; Eclipz Hart is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;Otlw&gt; Stax the Male Hylar Dwarf is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a medallion of Paladine.<br />
+&lt;Otlw&gt; Henna, Black Leather Queen of all Grumpy Old Men is standing here. (flying) (invisible)<br />
+&lt;Otlw&gt; Gram the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+You see the outline of a life form here, carrying: a pair of magical boots.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; You stop following Yaza.<br />
+You now follow Moop.<br />
+You are still a group member.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; <br />
+Li comes out of hiding.<br />
+Li crashes into Telia in a thundering collision, knocking her to the ground!<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; <br />
+Yaza utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Yaza conjures a writhing mass of inky black tentacles!<br />
+Yaza slowly fades into existence.<br />
+Yaza destroys Eclipz's mirror images.<br />
+Eclipz screams in pain as inky black tentacles constrict him.<br />
+Stax screams in pain as inky black tentacles constrict him.<br />
+Gorass ducks out of the way of Yaza's attack.<br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Gram screams in pain as inky black tentacles constrict him.<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; <br />
+Lanlanlen utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Lanlanlen conjures a writhing mass of inky black tentacles!<br />
+Eclipz screams in pain as inky black tentacles constrict him.<br />
+Stax screams in pain as inky black tentacles constrict him.<br />
+Gorass ducks out of the way of Lanlanlen's attack.<br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Gram screams in pain as inky black tentacles constrict him.<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; <br />
+Maxe focuses harshly on Henna and utters the words, 'lightning bolt'.<br />
+Henna wavers under the impact of the lightning bolt sent by Maxe.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; <br />
+Gram focuses on Gorass and utters some strange words.<br />
+Gorass disappears.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:3 Exits:W&gt; c 'f b' henna<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Henna.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; <br />
+Eclipz utters the words, 'relocate'.<br />
+Eclipz disappears in a puff of smoke.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; <br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Stax screams in pain as inky black tentacles constrict him.<br />
+Yaza hits the tentacles constricting Henna instead!<br />
+<br />
+Li misses Telia with his smite.<br />
+Telia bludgeons Li hard.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; <br />
+Tao focuses harshly on Gram and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Tao's force bolt slams into Gram.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; c 'f b' henna<br />
+<br />
+Yaza utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Yaza conjures a writhing mass of inky black tentacles!<br />
+Stax screams in pain as inky black tentacles constrict him.<br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Gram screams in pain as inky black tentacles constrict him.<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; <br />
+Lanlanlen utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Lanlanlen conjures a writhing mass of inky black tentacles!<br />
+Stax screams in pain as inky black tentacles constrict him.<br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Gram screams in pain as inky black tentacles constrict him.<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; <br />
+Maxe focuses harshly on Gram and utters the words, 'lightning bolt'.<br />
+Gram wavers under the impact of the lightning bolt sent by Maxe.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:4 Exits:W&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Henna.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Gram focuses on Stax and utters some strange words.<br />
+Stax disappears.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Henna screams in pain as inky black tentacles constrict her.<br />
+Li misses Telia with his smite.<br />
+Telia bludgeons Li very hard.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Moop utters the words, 'saxzf xafe ghji'.<br />
+Moop slowly fades into existence.<br />
+Henna is stunned momentarily, recovering quickly.<br />
+Gram is stunned momentarily, recovering quickly.<br />
+Li is stunned momentarily, recovering quickly.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Henna attempts to break free of the black tentacles, but fails!<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; c 'f b' henna<br />
+<br />
+Tao focuses harshly on Gram and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Tao's force bolt slams into Gram.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Telia stands up.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Telia utters the words, 'monster summoning'.<br />
+A gargoyle appears in a puff of smoke!<br />
+Li crashes into Yaza in a thundering collision, knocking him to the ground!<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; <br />
+Maxe focuses harshly on Gram and utters the words, 'lightning bolt'.<br />
+Gram wavers under the impact of the lightning bolt sent by Maxe.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:5 Exits:W&gt; Henna screams in pain as inky black tentacles constrict her.<br />
+Moop hits the tentacles constricting Henna instead!<br />
+<br />
+Yaza bludgeons Henna hard.<br />
+Gram bludgeons Yaza extremely hard.<br />
+Telia gracefully steps aside as Li attacks!<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Henna.<br />
+Gram utters some strange words.<br />
+Gram disappears.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+Moop utters the words, 'saxzf xafe ghji'.<br />
+Henna is stunned momentarily, recovering quickly.<br />
+Li is stunned momentarily, recovering quickly.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+Telia utters the words, 'zahlhif gsgrul'.<br />
+Telia's hands issue a spray of color!<br />
+Henna is caught in a spray of shimmering red!<br />
+Henna is caught in a spray of radiant yellow!<br />
+Henna is stunned, but will likely regain consciousness again.<br />
+Henna seems weaker.<br />
+Li is caught in a spray of radiant yellow!<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+Lanlanlen utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Lanlanlen conjures a writhing mass of inky black tentacles!<br />
+Henna is strangled to death by the writhing black tentacles.<br />
+You receive 0 experience.<br />
+Henna is dead! R.I.P.<br />
+take pile corpse<br />
+exa corpse<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+The death cry of Henna echoes from somewhere nearby...<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+Maxe gets a very large pile of coins from the corpse of Henna.<br />
+<br />
+416H 192V 4227743X 0.00% 2782C Mem:6 Exits:W&gt; <br />
+Maxe divides 4088 coins equally among the group members present.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; <br />
+Li misses Telia with his smite.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; <br />
+Maxe is zapped by a tamarack staff and instantly drops it.<br />
+Maxe gets a glowing bracer from the corpse of Henna.<br />
+Maxe gets a bracelet of threaded rose petals from the corpse of Henna.<br />
+Maxe gets a plain component pouch from the corpse of Henna.<br />
+Maxe gets a belt of seashells from the corpse of Henna.<br />
+Maxe gets a sky blue robe etched with golden runes from the corpse of Henna.<br />
+Maxe gets a black leather buckler from the corpse of Henna.<br />
+Maxe gets some oakenwood gloves from the corpse of Henna.<br />
+Maxe gets a pair of rope sandals from the corpse of Henna.<br />
+Maxe gets a pair of baggy bronze dragon scale pants from the corpse of Henna.<br />
+Maxe gets an adamantite diadem from the corpse of Henna.<br />
+Maxe gets a faded green robe from the corpse of Henna.<br />
+Maxe gets an obsidian aspen leaf from the corpse of Henna.<br />
+Maxe gets a glowing golden amulet from the corpse of Henna.<br />
+Maxe gets a small quartz ring from the corpse of Henna.<br />
+Maxe gets a shriveled beholder's eyestalk from the corpse of Henna.<br />
+Maxe gets a tiny crystal prism from the corpse of Henna.<br />
+Maxe gets an iridescent hummingbird feather from the corpse of Henna.<br />
+Maxe gets a patch of poisonous crimson moss from the corpse of Henna.<br />
+Maxe gets a warhammer from the corpse of Henna.<br />
+Maxe gets a plain component pouch from the corpse of Henna.<br />
+Maxe gets a glowing scroll of recall from the corpse of Henna.<br />
+Maxe gets a dwarven miner's pack from the corpse of Henna.<br />
+Maxe gets a ceramic flask from the corpse of Henna.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; o hill bash gram<br />
+You couldn't find anyone to order around.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; take all corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:6 Exits:W&gt; <br />
+Li tries to bash you, but he passes right through your image.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Good] Mem:6 Exits:W&gt; <br />
+Telia utters the words, 'zahlhif gsgrul'.<br />
+Telia's hands issue a spray of color!<br />
+Li is caught in a spray of radiant yellow!<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Good] Mem:6 Exits:W&gt; <br />
+Yaza stands up.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Good] Mem:6 Exits:W&gt; <br />
+Moop focuses harshly on Li and utters the words, 'lightning bolt'.<br />
+Moop slowly fades into existence.<br />
+Li wavers under the impact of the lightning bolt sent by Moop.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Good] Mem:6 Exits:W&gt; <br />
+Lanlanlen focuses harshly on Li and utters the words, 'lightning bolt'.<br />
+Li wavers under the impact of the lightning bolt sent by Lanlanlen.<br />
+Yaza utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Yaza conjures a writhing mass of inky black tentacles!<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Fair] Mem:6 Exits:W&gt; <br />
+Tao focuses harshly on Li and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Tao's force bolt slams into Li.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Fair] Mem:6 Exits:W&gt; <br />
+Yaza misses Li with his bludgeon.<br />
+You miss Li with your bludgeon.<br />
+Li misses Telia with his smite.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Fair] Mem:6 Exits:W&gt; <br />
+Maxe focuses harshly on Li and utters the words, 'lightning bolt'.<br />
+Li wavers under the impact of the lightning bolt sent by Maxe.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Bad] Mem:6 Exits:W&gt; c 'f b' gram<br />
+Who should the spell be cast upon?<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Bad] Mem:6 Exits:W&gt; <br />
+Moop focuses harshly on Li and utters the words, 'lightning bolt'.<br />
+Moop slowly fades into existence.<br />
+Li wavers under the impact of the lightning bolt sent by Moop.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:V.Bad] Mem:6 Exits:W&gt; c 'f b' li<br />
+<br />
+Lanlanlen focuses harshly on Li and utters the words, 'lightning bolt'.<br />
+Li wavers under the impact of the lightning bolt sent by Lanlanlen.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Awful] Mem:6 Exits:W&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Li.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Awful] Mem:7 Exits:W&gt; <br />
+Yaza utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Yaza conjures a writhing mass of inky black tentacles!<br />
+Li screams in pain as inky black tentacles constrict him.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Telia:V.Good] [Li:Awful] Mem:7 Exits:W&gt; <br />
+Tao focuses harshly on Li and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Tao's force bolt slams into Li.<br />
+Li is mortally wounded, and will die soon, if not aided.<br />
+Li suffers from lack of blood, and the lack of a beating heart...<br />
+You receive 0 experience.<br />
+Li is dead! R.I.P.<br />
+take pile corpse<br />
+exa corpse<br />
+Telia focuses harshly on Li and utters the words, 'force bolt'.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C [Me:Perfect] [Li:Dying] Mem:7 Exits:W&gt; c 'f b' li<br />
+<br />
+The death cry of Li echoes from somewhere nearby...<br />
+Li sinks gently to the ground.<br />
+Ajik stops following Li.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:7 Exits:W&gt; take all corpse<br />
+<br />
+Maxe gets a very large pile of coins from the corpse of Li.<br />
+<br />
+416H 192V 4227743X 0.00% 3366C Mem:7 Exits:W&gt; <br />
+Maxe divides 5852 coins equally among the group members present.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; <br />
+Maxe gets a bent sterling scepter from the corpse of Li.<br />
+Maxe gets a chain flail from the corpse of Li.<br />
+Maxe gets a silver solamnic bracelet from the corpse of Li.<br />
+Maxe gets a ceremonial scabbard from the corpse of Li.<br />
+Maxe gets an elven cloak from the corpse of Li.<br />
+Maxe gets a shield of the Black Watch from the corpse of Li.<br />
+Maxe is zapped by a pair of bloody butcher's gloves and instantly drops it.<br />
+Maxe gets a pair of magical boots from the corpse of Li.<br />
+Maxe gets a pair of mithril leg braces from the corpse of Li.<br />
+Maxe gets a bighorn sheep skull from the corpse of Li.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; Lanlanlen gets a carved dragon bone breastplate from the corpse of Li.<br />
+Lanlanlen is zapped by a scintillating ioun of darkness and instantly drops it.<br />
+Lanlanlen gets a smokey glass charm from the corpse of Li.<br />
+Lanlanlen gets a carved stone seal from the corpse of Li.<br />
+Lanlanlen gets a cloth belt pack from the corpse of Li.<br />
+Lanlanlen gets a short mithril hand-axe from the corpse of Li.<br />
+Lanlanlen gets a bronze bottle from the corpse of Li.<br />
+Lanlanlen gets a bronze bottle from the corpse of Li.<br />
+Lanlanlen gets a smoked Tarsis ham from the corpse of Li.<br />
+Lanlanlen gets a smoked Tarsis ham from the corpse of Li.<br />
+Lanlanlen gets a smoked Tarsis ham from the corpse of Li.<br />
+Lanlanlen gets a smoked Tarsis ham from the corpse of Li.<br />
+Lanlanlen gets a glowing scroll of recall from the corpse of Li.<br />
+Lanlanlen gets a glowing scroll of recall from the corpse of Li.<br />
+Lanlanlen gets a glowing scroll of recall from the corpse of Li.<br />
+Lanlanlen gets a glowing scroll of recall from the corpse of Li.<br />
+Lanlanlen gets a glowing scroll of recall from the corpse of Li.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; Who should the spell be cast upon?<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; <br />
+Lanlanlen is zapped by a scintillating ioun of darkness and instantly drops it.<br />
+Lanlanlen gets a pair of bloody butcher's gloves.<br />
+Lanlanlen gets the corpse of Li.<br />
+Lanlanlen gets a tamarack staff.<br />
+Lanlanlen gets a quartz crystal sphere.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; l<br />
+An Ancient Tunnel<br />
+    The age-old mining tunnel comes to an abrupt halt here at the base of a<br />
+steep cliff. The walls of the north, east, and south contain deep holes,<br />
+which at one time stored beautiful gems and veins of precious metals. A<br />
+ledge at the top of the cliff appears three to four minotaurs above.<br />
+Whatever is up there is well secluded from what lives in the holes here.<br />
+The ancient tunnel slants lightly upwards to the west.<br />
+Your eyes fall upon a scintillating ioun of dark crystal...it glows blue..it hums softly<br />
+The corpse of Henna is lying here.<br />
+A long rope hangs down from the cliff.<br />
+A gargoyle is standing here. (invisible)<br />
+&lt;MAEL&gt; Maxe Padington is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+&lt;MAEL&gt; Lanlanlen Lipetskiy, Stunning Beauty of the Black Tentacles is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+&lt;MAEL&gt; Yaza Yaza Yaza is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;MAEL&gt; Tao Tza is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+&lt;MAEL&gt; Telia Tarn, Twin Sister of the Maelstrom is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+&lt;MAEL&gt; Moop Luze is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+<br />
+416H 192V 4227743X 0.00% 4202C Mem:7 Exits:W&gt; cheer<br />
+You give a resounding cheer.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='209.234.171.41' and logid='2317'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2317">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2317">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="209.234.171.41">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,966 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>How many times have you been spooned by another Arctic player?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>0<br>
+<input type=radio value=1 name=voteid>1<br>
+<input type=radio value=2 name=voteid>2-5<br>
+<input type=radio value=3 name=voteid>5-10<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=144><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2298-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='209.234.171.41' and logid='2298'-->
+
+<!-- PHP Generated Message: IP in db-->
+
+<p>
+<b><font size="3">
+Over R.I.P.</font></b>
+<p>
+POV: 
+Osiah<p>
+Log Rating:
+3.1000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Over dies for fucking with newbies. He charmed vikha 4x that day or so. And vikha is a BRAND new player who has only played for 4days or so</i>
+<p>
+<p>
+
+Vikha is a new player who pzc kept fucking with all day<br />
+Its fucks like this that keep the playerbase down.<br />
+<br />
+<br />
+Heroes<br />
+------<br />
+[Ret  31]  Bro<br />
+[Ret  31]  Bugg, the Male Insect<br />
+<br />
+Mortals<br />
+-------<br />
+&lt;BST&gt;  Angoria Gore, Smeared Beast<br />
+&lt;FURY&gt; Julius the Male Human<br />
+&lt;LoS&gt;  Trenidy<br />
+       Theon the Male Human<br />
+       Grish Nakh<br />
+       Stabby the Male Kender<br />
+       Kemper the Male Qualinesti<br />
+&lt;PZC&gt;  Vikha the Male Kagonesti<br />
+&lt;LoS&gt;  Sir Riven Swiftblade, Seeker of the Lance<br />
+       Kardge the Male Goblin<br />
+&lt;PZC&gt;  Weeblo the Male Human<br />
+&lt;STH&gt;  Valen Is Legend<br />
+       Xiao Xiao Itazuradaisuki<br />
+       Vyngur, Solamnic Pick'ling Agent<br />
+       Redbull the Male Minotaur<br />
+<br />
+ [return for more, q to stop]<br />
+       Lillias the Female Silvanesti<br />
+       Xsesive the Male Goblin<br />
+&lt;PZC&gt;  Over Kill, Negotiator of Peaceful Solutions<br />
+&lt;BST&gt;  Lord Casper, Death's Beastly Friend<br />
+&lt;MYTH&gt; Solja Boy<br />
+&lt;FURY&gt; Gater, The Psychosocial<br />
+&lt;MAEL&gt; Poon Moopington<br />
+       A Male Human<br />
+&lt;WNR&gt;  Lark, Small, Fierce Weenor<br />
+&lt;LoS&gt;  Mitzipixin Nixipiztim Fun to Rescue<br />
+       Ab the Male Human<br />
+       Farnsworth the Male Kender<br />
+&lt;LoS&gt;  Renith the Male Minotaur<br />
+&lt;FURY&gt; Layla the Female Kagonesti<br />
+       Aurora the Female Half Elf<br />
+&lt;BST&gt;  Maxim the Male Human<br />
+<br />
+Total visible people : 33        Total people online  : 33<br />
+<br />
+476H 36V 1X 25.00% 874C Exits:WD&gt; #OK NEW TICKSIZE SET<br />
+<br />
+Riven closes his prayerbook with a content look on his face.<br />
+The clouds block your view of Solinari.<br />
+The clouds block your view of Lunitari.<br />
+The clouds block your view of Nuitari.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha WTF<br />
+You tell Vikha 'WTF'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; <br />
+Riven utters some strange words.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; <br />
+Renith utters some strange words.<br />
+Renith shudders slightly and glows with a fiery light.<br />
+Riven shudders slightly and glows with a fiery light.<br />
+You shudder slightly and start to glow with a fiery light.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha dont clan <br />
+Riven utters some strange words.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha dont clan PZC<br />
+You tell Vikha 'dont clan PZC'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha this is john<br />
+You tell Vikha 'this is john'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha <br />
+Vikha tells you 'i dont know this guy charmed me'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha <br />
+Renith utters some strange words.<br />
+Renith briefly glows red, then blue.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; tel vikha <br />
+Riven tells your group 'use red as kw'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; reply over?<br />
+You tell Vikha 'over?'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; <br />
+Riven utters some strange words.<br />
+Blaze the bronze dragon now follows Riven.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; <br />
+Riven gives Blaze the bronze dragon an order.<br />
+Blaze the bronze dragon spreads his wings and begins to fly.<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt; <br />
+Vikha tells you 'ya'<br />
+<br />
+476H 61V 1X 25.00% 874C Exits:WD&gt;<br />
+You say 'recall target over'<br />
+<br />
+<br />
+_______So we recall to help vikha_________________________<br />
+<br />
+652H 137V 10753203X 0.00% 753C Exits:ESW&gt; e a;sca;w<br />
+It is pitch black.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+652H 135V 10753203X 0.00% 753C Exits:NESW&gt; Looking north:<br />
+It is pitch black.<br />
+&lt;MAEL&gt; Khez the Male Hylar Dwarf is resting here. (flying)<br />
+&lt;PZC&gt; Vikha the Male Kagonesti is standing here. (flying) (invisible)<br />
+&lt;PZC&gt; Over Kill, Negotiator of Peaceful Solutions is standing here. (flying)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;MAEL&gt; Tana Maelstrom, Swirling the Fake Pirates is standing here.<br />
+The stronghold's innkeeper is standing here, giving you a suspicious look.<br />
+Looking east:<br />
+It is pitch black.<br />
+Looking south:<br />
+It is pitch black.<br />
+Looking west:<br />
+It is pitch black.<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+A duck is quacking happily here.<br />
+A beautiful swan is gracefully swimming around the pond.<br />
+A duck is quacking happily here.<br />
+Looking up:<br />
+It is pitch black.<br />
+Looking down:<br />
+It is pitch black.<br />
+<br />
+652H 135V 10753203X 0.00% 753C Exits:NESW&gt; A Small Pond in the Park<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+A duck is quacking happily here.<br />
+A beautiful swan is gracefully swimming around the pond.<br />
+A duck is quacking happily here.<br />
+<br />
+652H 133V 10753203X 0.00% 753C Exits:ESW&gt; <br />
+Gater tells you 'it's only dk/mt. scout and mitzipixin and i'm leaving rooms during combat'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; tel bugg im bashing over, <br />
+Renith utters some strange words.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; l e<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; <br />
+Bugg tells you 'hey vikha is pzc'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; tel bugg he charmed him<br />
+You tell Bugg 'he charmed him'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; tel bugg and made him tag<br />
+You tell Bugg 'and made him tag'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; tel bugg vikha is a lvl 15 newbie who started 4 days ago<br />
+You tell Bugg 'vikha is a lvl 15 newbie who started 4 days <br />
+ago'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; tel bugg its my brother<br />
+You tell Bugg 'its my brother'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; l e<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; l e<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; l eye<br />
+You do not see that here.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:ESW&gt; s<br />
+Renith flies in from the north.<br />
+Slam flies in from the north.<br />
+Veterans Park<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 154V 10753203X 0.00% 753C Exits:NES&gt; s<br />
+Renith flies in from the north.<br />
+Slam flies in from the north.<br />
+Veterans Park<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; eq<br />
+You are using:<br />
+&lt;worn on finger&gt;           a ring of protection..it glows dimly<br />
+&lt;worn on finger&gt;           an olivine ring..it glows dimly<br />
+&lt;worn around neck&gt;         a black neckguard of the Lily<br />
+&lt;worn around neck&gt;         a white necklace of large beads..it glows dimly<br />
+&lt;worn on head&gt;             a bighorn sheep skull<br />
+&lt;worn on legs&gt;             a skirt of tasses<br />
+&lt;worn on feet&gt;             a pair of rope sandals<br />
+&lt;worn on hands&gt;            some spiked black gauntlets of the Lily<br />
+&lt;worn as shield&gt;           a black shield of Lemish<br />
+&lt;worn about waist&gt;         a heavy black belt<br />
+&lt;used in primary hand&gt;     a honed dwarven battleaxe<br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; say keep spam sticks on it<br />
+You say 'keep spam sticks on it'<br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; who<br />
+Heroes<br />
+------<br />
+[Ret  31]  Bro<br />
+[Ret  31]  Bugg, the Male Insect<br />
+<br />
+Mortals<br />
+-------<br />
+&lt;FURY&gt; Layla the Female Kagonesti<br />
+       Xiao Xiao Itazuradaisuki<br />
+       A Male Human<br />
+       Kemper the Male Qualinesti<br />
+&lt;FURY&gt; Gater, The Psychosocial<br />
+       Redbull the Male Minotaur<br />
+&lt;MAEL&gt; Tana Maelstrom, Swirling the Fake Pirates<br />
+&lt;LoS&gt;  Mitzipixin Nixipiztim Fun to Rescue<br />
+       Grish Nakh<br />
+       Theon the Male Human<br />
+       Pashka the Male Kender<br />
+       Drauhk the Male Human<br />
+       Ab the Male Human<br />
+&lt;LoS&gt;  Renith the Male Minotaur<br />
+&lt;PZC&gt;  Weeblo the Male Human<br />
+<br />
+ [return for more, q to stop]<br />
+&lt;MAEL&gt; Khez the Male Hylar Dwarf<br />
+       Stabby the Male Kender<br />
+&lt;HOC&gt;  Slam Ming, Samurai Warrior<br />
+&lt;BST&gt;  Lord Casper, Death's Beastly Friend<br />
+       Lillias the Female Silvanesti<br />
+&lt;FURY&gt; Julius the Male Human<br />
+&lt;WNR&gt;  Lark, Small, Fierce Weenor<br />
+&lt;PZC&gt;  Vikha the Male Kagonesti<br />
+       Xsesive the Male Goblin<br />
+       Gorthaur the Male Human<br />
+&lt;STH&gt;  Lady Tiana Starlight, Battle Valkyrie of Paladine<br />
+&lt;PZC&gt;  Over Kill, Negotiator of Peaceful Solutions<br />
+       Farnsworth the Male Kender<br />
+&lt;LoS&gt;  Osiah the Male Kagonesti<br />
+<br />
+Total visible people : 31        Total people online  : 31<br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; <br />
+<br />
+652H 152V 10753203X 0.00% 753C Exits:NS&gt; #OK NEW TICKSIZE SET<br />
+#OK NEW TICKSIZE SET<br />
+<br />
+Renith smiles as he finishes his meditation.<br />
+The rising sun barely lights the dark and cloudy sky.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; who<br />
+Heroes<br />
+------<br />
+[Ret  31]  Bro<br />
+[Ret  31]  Bugg, the Male Insect<br />
+<br />
+Mortals<br />
+-------<br />
+       Gorthaur the Male Human<br />
+&lt;BST&gt;  Lord Casper, Death's Beastly Friend<br />
+       Pashka the Male Kender<br />
+&lt;MAEL&gt; Tana Maelstrom, Swirling the Fake Pirates<br />
+       Redbull the Male Minotaur<br />
+&lt;WNR&gt;  Lark, Small, Fierce Weenor<br />
+&lt;HOC&gt;  Slam Ming, Samurai Warrior<br />
+&lt;FURY&gt; Gater, The Psychosocial<br />
+&lt;PZC&gt;  Vikha the Male Kagonesti<br />
+&lt;PZC&gt;  Weeblo the Male Human<br />
+       Xsesive the Male Goblin<br />
+       Drauhk the Male Human<br />
+&lt;STH&gt;  Lady Tiana Starlight, Battle Valkyrie of Paladine<br />
+       Xiao Xiao Itazuradaisuki<br />
+       Grish Nakh<br />
+<br />
+ [return for more, q to stop]<br />
+       Kemper the Male Qualinesti<br />
+       Theon the Male Human<br />
+       Stabby the Male Kender<br />
+&lt;LoS&gt;  Renith the Male Minotaur<br />
+       Ab the Male Human<br />
+       Lillias the Female Silvanesti<br />
+&lt;PZC&gt;  Over Kill, Negotiator of Peaceful Solutions<br />
+&lt;MAEL&gt; Khez the Male Hylar Dwarf<br />
+       Farnsworth the Male Kender<br />
+&lt;LoS&gt;  Osiah the Male Kagonesti<br />
+&lt;FURY&gt; Julius the Male Human<br />
+&lt;LoS&gt;  Mitzipixin Nixipiztim Fun to Rescue<br />
+&lt;FURY&gt; Layla the Female Kagonesti<br />
+&lt;BST&gt;  Gris Lee Remanes<br />
+<br />
+Total visible people : 31        Total people online  : 31<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; say you have summon<br />
+You say 'you have summon'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; say ?<br />
+You say '?'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; <br />
+Vikha flies in from the north.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; <br />
+Renith nods solemnly.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l<br />
+Veterans Park<br />
+&lt;PZC&gt; Vikha the Male Kagonesti is standing here. (flying) (invisible)<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l vikha<br />
+You see nothing special about him.<br />
+&lt;PZC&gt; Vikha the young adult male kagonesti has some small wounds and bruises (invisible).<br />
+Neophyte of Peaceful Zoning Clan.<br />
+<br />
+Vikha is using:<br />
+&lt;worn around neck&gt;         a flowing royal blue cape<br />
+&lt;worn around neck&gt;         a chain mail gorget<br />
+&lt;worn on body&gt;             a black breast plate of the Lily<br />
+&lt;worn on head&gt;             a great helm<br />
+&lt;worn on legs&gt;             some black legplates of the Lily<br />
+&lt;worn on feet&gt;             a pair of shiny black boots<br />
+&lt;worn on hands&gt;            gloves of righteousness<br />
+&lt;worn on arms&gt;             some banded mail sleeves<br />
+&lt;worn about body&gt;          a backpack<br />
+&lt;worn around right wrist&gt;  a diamond-studded wristband<br />
+&lt;worn around left wrist&gt;   a blue ochre bracer<br />
+&lt;used in primary hand&gt;     a broad dwarven battle-axe<br />
+&lt;used in secondary hand&gt;   a silver shortsword<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; say clan leave<br />
+You say 'clan leave'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l n<br />
+You see nothing special.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l<br />
+Veterans Park<br />
+&lt;PZC&gt; Vikha the Male Kagonesti is standing here. (flying) (invisible)<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l<br />
+Veterans Park<br />
+&lt;PZC&gt; Vikha the Male Kagonesti is standing here. (flying) (invisible)<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+&lt;LoS&gt; Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; s<br />
+Renith has left your clan.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; say type clan leave<br />
+You say 'type clan leave'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; say not you<br />
+You say 'not you'<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; clan inv renith<br />
+You have invited Renith to join your clan.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; l<br />
+Veterans Park<br />
+Vikha the Male Kagonesti is standing here. (flying) (invisible)<br />
+&lt;HOC&gt; Slam Ming, Samurai Warrior is standing here. (flying)<br />
+Renith the Male Minotaur is standing here. (flying)<br />
+. . . has an earthen hue.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; <br />
+Over appears before Vikha in a puff of smoke.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; bas over<br />
+You try to bash Over, but you pass through his image and <br />
+fall to the ground.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Perfect] Exits:NS&gt; <br />
+You miss Over and destroy an image instead.<br />
+Over misses you with his crush.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Perfect] Exits:NS&gt; <br />
+Slam crashes into Over in a thundering collision, knocking him to the ground!<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:V.Good] Exits:NS&gt; <br />
+Renith focuses harshly on Over and utters some strange words.<br />
+Renith throws a handful of sticks at Over, but they turn into snakes in midflight!<br />
+Renith's spell misses Over and destroys a sphere instead.<br />
+Over screams in pain as a snake tears into his flesh.<br />
+Renith misses Over and destroys an image instead.<br />
+Renith misses Over and destroys an image instead.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:V.Good] Exits:NS&gt; st<br />
+<br />
+Slam slashes Over extremely hard.<br />
+You _MASSACRE_ Over with your cleave.<br />
+Over misses you with his crush.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Good] Exits:NS&gt; bas<br />
+<br />
+Renith focuses harshly on Over and utters some strange words.<br />
+Renith throws a handful of sticks at Over, but they turn into snakes in midflight!<br />
+Renith's spell misses Over and destroys a sphere instead.<br />
+Renith's spell misses Over and destroys a sphere instead.<br />
+Over screams in pain as a snake tears into his flesh.<br />
+Over screams in pain as a snake tears into his flesh.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Fair] Exits:NS&gt; You stand up.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Fair] Exits:NS&gt; You crash into Over in a bone <br />
+crunching bash, sending him sprawling to the ground.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Fair] Exits:NS&gt; <br />
+Slam slashes Over extremely hard.<br />
+You _MASSACRE_ Over with your cleave.<br />
+Over misses you with his crush.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Fair] Exits:NS&gt; <br />
+Over steps aside as Slam attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Fair] Exits:NS&gt; bas<br />
+Slam massacres Over with his slash.<br />
+You cleave Over extremely hard.<br />
+Over misses you with his crush.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Bad] Exits:NS&gt; bas<br />
+<br />
+Renith focuses harshly on Over and utters some strange words.<br />
+Over shudders with agony as pain lashes and clamps down on his soul.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:V.Bad] Exits:NS&gt; You crash into Over in a bone <br />
+crunching bash, sending him sprawling to the ground.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:V.Bad] Exits:NS&gt; <br />
+Slam slashes Over extremely hard.<br />
+You _MASSACRE_ Over with your cleave.<br />
+Over misses you with his crush.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Awful] Exits:NS&gt; <br />
+Slam stands up.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Awful] Exits:NS&gt; get<br />
+Over steps aside as Slam attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Awful] Exits:NS&gt; get all over<br />
+!<br />
+!<br />
+<br />
+Renith focuses harshly on Over and utters some strange words.<br />
+Over shudders with agony as pain lashes and clamps down on his soul.<br />
+<br />
+652H 156V 10753203X 0.00% 753C [Me:Perfect] [Over:Awful] Exits:NS&gt; !<br />
+!<br />
+!<br />
+<br />
+Slam slashes Over extremely hard.<br />
+Over is incapacitated and will slowly die, if not aided.<br />
+You --ANNIHILATE-- Over with your cleave.<br />
+You receive 0 experience.<br />
+Over is dead! R.I.P.<br />
+The death cry of Over echoes from somewhere nearby...<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; get sheaf<br />
+<br />
+Renith gets a very large pile of coins from the corpse of Over.<br />
+<br />
+652H 156V 10753203X 0.00% 753C Exits:NS&gt; You get a sterling ornate orb from the corpse of Over.<br />
+You get a gaseous hammer from the corpse of Over.<br />
+You get a glass bracelet from the corpse of Over.<br />
+You get a ragged leather belt from the corpse of Over.<br />
+You get a comfortable blue robe from the corpse of Over.<br />
+You get a shield of granite from the corpse of Over.<br />
+You get a pair of ivory vambraces from the corpse of Over.<br />
+You are zapped by gloves of righteousness and instantly drop it.<br />
+You get a pair of grey leather boots from the corpse of Over.<br />
+You get some heavy sand colored pants from the corpse of Over.<br />
+You get a silver-streaked black hood from the corpse of Over.<br />
+You get an embroidered white robe from the corpse of Over.<br />
+You get an alligator scale necklace from the corpse of Over.<br />
+You get a ring of the dweomer from the corpse of Over.<br />
+You get a ring of the dweomer from the corpse of Over.<br />
+You get a backpack from the corpse of Over.<br />
+You get a brick of cheese from the corpse of Over.<br />
+You get a scroll of recall from the corpse of Over.<br />
+You get a small wooden chest from the corpse of Over.<br />
+You get a glowing scroll of recall from the corpse of Over.<br />
+You get a glowing scroll of recall from the corpse of Over.<br />
+You get a glowing scroll of recall from the corpse of Over.<br />
+You get a glowing scroll of recall from the corpse of Over.<br />
+You get a backpack from the corpse of Over.<br />
+You get a small canteen from the corpse of Over.<br />
+You get a small canteen from the corpse of Over.<br />
+You get a large waterskin from the corpse of Over.<br />
+You get a large waterskin from the corpse of Over.<br />
+Renith divides 5514 coins equally among the group members present.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='209.234.171.41' and logid='2298'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2298">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2298">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="209.234.171.41">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

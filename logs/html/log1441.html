@@ -1,0 +1,751 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1441-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1441'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kalaman Rapid Response Team</font></b>
+<p>
+POV: 
+Cicero<p>
+Log Rating:
+1.7500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Enemy nearly desecreated our fair city but the KRRT responding in excellent time, the guards were executed for taking bribes and treason</i>
+<p>
+<p>
+
+nvictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+629H 99V 352C Exits:NESW&gt; gt target murcielago<br />
+You tell your group 'target murcielago'<br />
+<br />
+629H 99V 352C Exits:NESW&gt; gt target murcielago<br />
+You tell your group 'target murcielago'<br />
+<br />
+629H 99V 352C Exits:NESW&gt; n<br />
+Invictus flies in from the south.<br />
+Obi flies in from the south.<br />
+Sonddre arrives from the south.<br />
+Grem flies in from the south.<br />
+Market Square of Kalaman<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+629H 98V 352C Exits:NESW&gt; <br />
+A Kalaman cityguard leaves south.<br />
+<br />
+629H 98V 352C Exits:NESW&gt; w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Market Street West<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+629H 97V 352C Exits:NESW&gt; w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Market Street West<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+629H 96V 352C Exits:NESW&gt; w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Market Street West<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+629H 95V 352C Exits:NESW&gt; w<br />
+w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Market Street West<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+629H 94V 352C Exits:ESW&gt; w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Market Street West<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+629H 93V 352C Exits:EW&gt; w<br />
+w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Intersection of Market Street and Wall Road<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+629H 92V 352C Exits:NESW&gt; w<br />
+Invictus flies in from the east.<br />
+Obi flies in from the east.<br />
+Sonddre arrives from the east.<br />
+Grem flies in from the east.<br />
+Western City Gates<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is standing here. (invisible)<br />
+Obi Wan, Pirate of the Crimson Seas is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A little girl is playing around in the street.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+<br />
+629H 91V 352C Exits:EW&gt; w<br />
+<br />
+Obi crashes into Murcielago in a thundering collision, knocking him to the ground!<br />
+<br />
+629H 91V 352C Exits:EW&gt; w<br />
+Sonddre slowly fades into existence.<br />
+Murcielago steps aside as Sonddre attempts a bash, stumbles, and falls flat on his face.<br />
+Invictus flies in from the east.<br />
+Grem flies in from the east.<br />
+It is pitch black.<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+<br />
+<br />
+629H 78V 352C Exits:EW&gt; e<br />
+Invictus flies in from the west.<br />
+Grem flies in from the west.<br />
+Western City Gates<br />
+Grem Lin, Mischievous Spirit of the Blood Sea is standing here. (flying)<br />
+Invictus, Massive Gnome of the Blood Sea is standing here. (flying)<br />
+Sonddre, Sea Otter Surprise is sitting here, fighting Murcielago.<br />
+Obi Wan, Pirate of the Crimson Seas is standing here, fighting Murcielago. (flying)<br />
+Murcielago Lagartijo is sitting here, fighting Obi. (flying)<br />
+. . . is enveloped in flames.<br />
+A little girl is playing around in the street.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A Kalaman gateguard looks at Sonddre and yells  'There's the scoundrel!'<br />
+A Kalaman gateguard looks at Sonddre and yells  'There's the scoundrel!'<br />
+A Kalaman gateguard looks at Sonddre and yells  'There's the scoundrel!'<br />
+A Kalaman gateguard looks at Sonddre and yells  'There's the scoundrel!'<br />
+<br />
+629H 77V 352C Exits:EW&gt; bas murcielago<br />
+You try to bash Murcielago, but you miss and tumble forward onto your face.<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Fair] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Fair] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Fair] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Fair] Exits:EW&gt; <br />
+Grem focuses harshly on Murcielago and utters some strange words.<br />
+Murcielago withers as a ray of sunlight sent by Grem engulfs him!<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Bad] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+629H 77V 352C [Obi:V.Good] [Murcielago:Bad] Exits:EW&gt; <br />
+You massacre Murcielago with your slash.<br />
+You feel intense pain as you swing through Murcielago's flaming aura.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+Sonddre misses Murcielago with his crush.<br />
+Obi massacres Murcielago with his drain.<br />
+Obi is burned, as he swings at Murcielago.<br />
+Murcielago misses Obi with his pierce.<br />
+<br />
+609H 77V 352C [Obi:V.Good] [Murcielago:V.Bad] Exits:EW&gt; st<br />
+bas murcielago<br />
+<br />
+Obi crashes into Murcielago in a thundering collision, knocking him to the ground!<br />
+<br />
+609H 77V 352C [Obi:V.Good] [Murcielago:V.Bad] Exits:EW&gt; <br />
+Sonddre stands up.<br />
+<br />
+609H 77V 352C [Obi:V.Good] [Murcielago:V.Bad] Exits:EW&gt; <br />
+Murcielago steps aside as Sonddre attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+609H 77V 352C [Obi:V.Good] [Murcielago:V.Bad] Exits:EW&gt; <br />
+You massacre Murcielago with your slash.<br />
+You feel intense pain as you swing through Murcielago's flaming aura.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+Sonddre massacres Murcielago with his crush.<br />
+Sonddre is burned, as he swings at Murcielago.<br />
+Obi massacres Murcielago with his drain.<br />
+Obi is burned, as he swings at Murcielago.<br />
+Murcielago barely pierces Obi.<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+Grem focuses on Sonddre and utters some strange words.<br />
+Grem heals Sonddre.<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+Ahmed tells your group 'he left but'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+Invictus misses Murcielago with her cleave.<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+Ahmed tells your group 'hes in city'<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; You stand up.<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; g all corpse<br />
+You try to bash Murcielago, but you miss and tumble forward onto your face.<br />
+<br />
+589H 77V 352C [Obi:V.Good] [Murcielago:Awful] Exits:EW&gt; <br />
+Invictus massacres Murcielago with her cleave.<br />
+Invictus is burned, as she swings at Murcielago.<br />
+You receive 0 experience.<br />
+Murcielago is dead! R.I.P.<br />
+g all.coins corpse<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+The death cry of Murcielago echoes from somewhere nearby...<br />
+<br />
+589H 77V 352C Exits:EW&gt; <br />
+Grem gets a very large pile of coins from the corpse of Murcielago.<br />
+<br />
+589H 77V 352C Exits:EW&gt; <br />
+Grem divides 11140 coins equally among the group members present.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; <br />
+Ahmed tells your group 'in vingaard'<br />
+<br />
+589H 77V 2580C Exits:EW&gt; gt ripped it<br />
+<br />
+Obi gets a brass dragonscale battle orb from the corpse of Murcielago.<br />
+Obi gets a small golden trident from the corpse of Murcielago.<br />
+Obi gets a thin bronze bracelet from the corpse of Murcielago.<br />
+Obi gets a glass bracelet from the corpse of Murcielago.<br />
+Obi gets a small component pouch from the corpse of Murcielago.<br />
+Obi gets a fine silk belt-pouch from the corpse of Murcielago.<br />
+Obi gets the robe of Galan Dracos from the corpse of Murcielago.<br />
+Obi gets a sapphire shield from the corpse of Murcielago.<br />
+Obi is zapped by a pair of pitch black gloves and instantly drops it.<br />
+Obi gets a pair of magic shoes from the corpse of Murcielago.<br />
+Obi gets anklets of woven palladium from the corpse of Murcielago.<br />
+Obi gets a pair of silver spectacles from the corpse of Murcielago.<br />
+Obi gets an embroidered white robe from the corpse of Murcielago.<br />
+Obi gets the amulet of Kul from the corpse of Murcielago.<br />
+Obi gets a black pearl amulet from the corpse of Murcielago.<br />
+Obi is zapped by a glass ring filled with mercury and instantly drops it.<br />
+Obi gets a glittering golden ring from the corpse of Murcielago.<br />
+Obi gets a putrid potion from the corpse of Murcielago.<br />
+Obi gets a putrid potion from the corpse of Murcielago.<br />
+Obi gets a putrid potion from the corpse of Murcielago.<br />
+Obi gets a glowing scroll of recall from the corpse of Murcielago.<br />
+Obi gets a glowing scroll of recall from the corpse of Murcielago.<br />
+Obi gets a glowing scroll of recall from the corpse of Murcielago.<br />
+Obi gets a glowing scroll of recall from the corpse of Murcielago.<br />
+Obi gets a small block of granite from the corpse of Murcielago.<br />
+Obi gets a colorful mushroom from the corpse of Murcielago.<br />
+Obi is zapped by a set of demon wings and instantly drops it.<br />
+Obi gets an improved empty potion bottle from the corpse of Murcielago.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; <br />
+A Kalaman gateguard tries to sweep Sonddre's legs, but misses badly.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; <br />
+A Kalaman gateguard delivers a quick snap kick to Sonddre. Sonddre staggers and tries to recover.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; <br />
+A Kalaman gateguard delivers a quick snap kick to Sonddre. Sonddre staggers and tries to recover.<br />
+Sonddre stands up.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; <br />
+A Kalaman gateguard delivers a vicious kick to Sonddre's face. Blood flies as his head snaps back.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; gt ripped it<br />
+<br />
+Sonddre crushes a Kalaman gateguard extremely hard.<br />
+A Kalaman gateguard slashes Sonddre extremely hard.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard slashes Sonddre extremely hard.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+A Kalaman gateguard massacres Sonddre with his slash.<br />
+A Kalaman gateguard misses Sonddre with his slash.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; gt ripped it<br />
+<br />
+Sonddre gets a clay lantern from the corpse of Murcielago.<br />
+Sonddre gets a dagger from the corpse of Murcielago.<br />
+Sonddre gets a glazed sandstone jug from the corpse of Murcielago.<br />
+Sonddre gets a glazed sandstone jug from the corpse of Murcielago.<br />
+Sonddre gets a cloth belt pack from the corpse of Murcielago.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; st<br />
+<br />
+Invictus gets a set of demon wings.<br />
+Invictus gets a glass ring filled with mercury.<br />
+Invictus gets a pair of pitch black gloves.<br />
+Invictus gets a sheaf of spellbook pages.<br />
+<br />
+589H 77V 2580C Exits:EW&gt; g all<br />
+<br />
+Obi massacres a Kalaman gateguard with his drain.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1441'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1441">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1441">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

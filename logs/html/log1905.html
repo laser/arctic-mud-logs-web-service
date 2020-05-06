@@ -1,0 +1,2428 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1905-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1905'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+BSP Vs Newb</font></b>
+<p>
+POV: 
+Kensi<p>
+Log Rating:
+3.4444<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+10v10 Fight, BSP gets the win</i>
+<p>
+<p>
+
+<br />
+<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Cylas            perfect   rested    standing   Y   Y    N    Y     0    2<br />
+  Kensi            v.good    rested    standing   Y   Y    N    Y     2    0<br />
+  Demeter          perfect   rested    standing   Y   Y    N    Y     1    0<br />
+  Solaris          perfect   rested    standing   Y   Y    N    Y     0    4<br />
+  Malice           perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Remodnar         perfect   rested    resting    Y   Y    N    Y     0    0<br />
+  Goka             perfect   rested    standing   Y   Y    Y    Y     1    0<br />
+  Ryan             perfect   rested    standing   Y   Y    N    Y     0    1<br />
+  Kazooka          perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Desu             perfect   rested    standing   Y   Y    N    Y     0    0<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; g<br />
+Desu gets a potion from his chest.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; <br />
+Kazooka quaffs a brewed potion.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; t <br />
+Desu quaffs a brewed potion.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; le<br />
+Demeter quaffs a brewed potion.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; t's go<br />
+<br />
+Solaris utters some strange words.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; gYou tell your group 'let's go'<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; <br />
+Goka quaffs a brewed potion.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; ro<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Cylas            perfect   rested    standing   Y   Y    N    Y     0    2<br />
+  Kensi            v.good    rested    standing   Y   Y    N    Y     2    0<br />
+  Demeter          perfect   rested    standing   Y   Y    N    Y     1    0<br />
+  Solaris          perfect   rested    standing   Y   Y    N    Y     0    5<br />
+  Malice           perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Remodnar         perfect   rested    resting    Y   Y    N    Y     0    0<br />
+  Goka             perfect   rested    standing   Y   Y    Y    Y     1    0<br />
+  Ryan             perfect   rested    standing   Y   Y    N    Y     0    1<br />
+  Kazooka          perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Desu             perfect   rested    standing   Y   Y    N    Y     0    0<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; <br />
+Malice quaffs a brewed potion.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; <br />
+Warner arrives from the north.<br />
+<br />
+587H 146V 6600001X 300C Exits:N&gt; <br />
+Cylas flies north.<br />
+You follow Cylas north.<br />
+Demeter flies in from the south.<br />
+Solaris flies in from the south.<br />
+Malice flies in from the south.<br />
+Goka flies in from the south.<br />
+Ryan flies in from the south.<br />
+Kazooka flies in from the south.<br />
+Desu flies in from the south.<br />
+A Small Clearing in the Park<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is standing here. (flying) <br />
+(invisible) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Furos Angros is standing here. (flying) (invisible) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is standing here. (flying) (invisible) (red aura)<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here. (flying) <br />
+(invisible) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Deraj Bug Boi is standing here. (flying) (invisible)<br />
+&lt;Newb&gt; Dilger the Male Human is standing here. (flying) (invisible) (white aura)<br />
+&lt;Newb&gt; Fupa Time is standing here. (flying) (invisible) (red aura)<br />
+. . . has a granite appearance.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Warner arrives from the south.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Demeter slowly fades into existence.<br />
+Demeter crashes into Gerald in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Goka slowly fades into existence.<br />
+Goka crashes into Omar in a thundering collision, knocking him to the ground!<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Kazooka slowly fades into existence.<br />
+Deraj steps aside as Kazooka attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Warner leaves east.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Fupa slowly fades into existence.<br />
+Fupa misses Solaris and destroys an image instead.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Desu slowly fades into existence.<br />
+Desu MASSACRES Omar with his smite.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Dilger slowly fades into existence.<br />
+Dilger bruises Kazooka with his cleave.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Dast flies in from the north.<br />
+Gijho flies in from the north.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; l<br />
+<br />
+Vida slowly fades into existence.<br />
+Vida bruises Malice with her pierce.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Cylas utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Ryan utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; A Small Clearing in the Park<br />
+A whirling tornado rips through the area! [2]<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is standing here. (flying) (invisible) (white aura)<br />
+. . . is enveloped in flames.<br />
+Dast the Male Half Elf is standing here. (flying) (invisible) (white aura)<br />
+. . . is enveloped in flames.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is sitting here, fighting Deraj. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here. (flying) <br />
+(invisible) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Omar. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here, fighting Vida. <br />
+(flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Fupa. (flying) (invisible) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Cylas Luze is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is sitting here, fighting <br />
+Demeter. (flying) (invisible) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is standing here. (flying) (invisible) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is sitting here, fighting Goka. (flying) <br />
+(invisible) (red aura)<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here, fighting Malice. <br />
+(flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Deraj Bug Boi is standing here, fighting Kazooka. (flying) (invisible)<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting Solaris. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Dast utters some strange words.<br />
+Dast sweeps his hands and glittering particles of dust fill the air.<br />
+Desu is covered with glittering dust.<br />
+Kazooka is covered with glittering dust.<br />
+Ryan appears as his is covered in glittering dust.<br />
+Goka is covered with glittering dust.<br />
+Malice is covered with glittering dust.<br />
+Solaris appears as his is covered in glittering dust.<br />
+Demeter is covered with glittering dust.<br />
+You appear as you are covered in glittering dust.<br />
+Cylas appears as his is covered in glittering dust.<br />
+A pigeon is covered with glittering dust.<br />
+* * * &gt;&gt; A pigeon is BLINDED! &lt;&lt; * * *<br />
+A pigeon is covered with glittering dust.<br />
+* * * &gt;&gt; A pigeon is BLINDED! &lt;&lt; * * *<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Deraj utters some strange words.<br />
+Deraj conjures a rapidly growing mass of thorny vines.<br />
+Solaris becomes entangled in the vines!<br />
+A pigeon becomes entangled in the vines!<br />
+A pigeon becomes entangled in the vines!<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+You feel enlightened.<br />
+You step in front of Fupa's assault on Solaris.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Furos slowly fades into existence.<br />
+Furos bruises Demeter with his crush.<br />
+<br />
+587H 144V 6600001X 300C Exits:NESW&gt; <br />
+Gijho utters some strange words.<br />
+Gijho conjures a writhing mass of inky black tentacles!<br />
+Gijho slowly fades into existence.<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Ryan is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Malice is TENTED &lt; * * * * *<br />
+Gijho destroys Solaris's mirror images.<br />
+* * * * * &gt; Solaris is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+------ * * * * * &gt;&gt;&gt; You're TENTED &lt;&lt;&lt; * * * * * -----<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+A pigeon is strangled to death by the writhing black tentacles.<br />
+A pigeon is dead! R.I.P.<br />
+A pigeon is strangled to death by the writhing black tentacles.<br />
+A pigeon is dead! R.I.P.<br />
+<br />
+578H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Perfect] Exits:NESW&gt; <br />
+The death cry of a pigeon echoes from somewhere nearby...<br />
+The death cry of a pigeon echoes from somewhere nearby...<br />
+<br />
+578H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Perfect] Exits:NESW&gt; <br />
+***&gt;&gt; Gerald Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Furos Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Vida Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gijho Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Dast Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+Dast slowly fades into existence.<br />
+Dast misses Cylas with his pierce.<br />
+Dast bruises Cylas with his pierce.<br />
+Cylas's spell misses Dast and destroys a sphere instead.<br />
+Cylas bludgeons Gijho hard.<br />
+Cylas is burned, as he swings at Gijho.<br />
+Cylas's staff glows pink.<br />
+A staff hits Gijho with an arctic blast, giving him a severe case of frostbite.<br />
+You barely stab Gijho.<br />
+You feel intense pain as you swing through Gijho's flaming aura.<br />
+Ryan claws Gijho hard.<br />
+Ryan is burned, as she swings at Gijho.<br />
+Gijho misses Desu with his bludgeon.<br />
+Furos bruises Demeter with his crush.<br />
+Furos bruises Demeter with his crush.<br />
+Vida bruises Malice with her pierce.<br />
+Vida bruises Malice with her pierce.<br />
+Malice bruises Vida with her crush.<br />
+The darkness flowing from Nightbringer hits Vida with force!<br />
+Malice bruises Vida with her crush.<br />
+Dilger bruises Kazooka with his cleave.<br />
+Desu ANNIHILATES Omar with his smite.<br />
+Desu MASSACRES Omar with his pierce.<br />
+Fupa bruises Solaris with his slash.<br />
+Fupa stabs Solaris hard.<br />
+Kazooka slashes Deraj extremely hard.<br />
+Goka MASSACRES Omar with his cleave.<br />
+Goka MASSACRES Omar with his cleave.<br />
+Omar bruises Goka with his slash.<br />
+Omar bruises Goka with his slash.<br />
+Omar MASSACRES Goka with his slash.<br />
+Demeter bruises Gerald with his stab.<br />
+Demeter bruises Gerald with his stab.<br />
+Gerald bruises Demeter with his slash.<br />
+Gerald misses Demeter with his slash.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Vida focuses her purity on Malice's arm!<br />
+Vida forces Malice to drop her weapon.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Gerald stands up.<br />
+Omar gets a small pile of coins from the corpse of a pigeon.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Kazooka stands up.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Fupa attacks Solaris with lightning fast series of attacks that leaves him <br />
+defenseless.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Kazooka crashes into Deraj in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Malice gets Nightbringer.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Malice crashes into Vida in a thundering collision, knocking her to the ground!<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; l<br />
+<br />
+Desu charges into Omar, but he manages to stay standing.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Omar points a redstone ring at Omar.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; A Small Clearing in the <br />
+Park<br />
+The corpse of a pigeon is lying here. [2]<br />
+A whirling tornado rips through the area! [2]<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is standing here, fighting Desu. (flying) (white aura)<br />
+. . . is enveloped in flames.<br />
+Dast the Male Half Elf is standing here, fighting Cylas. (flying) (white aura)<br />
+. . . is enveloped in flames.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Deraj. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting Gijho. <br />
+(flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Omar. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here, fighting Vida. <br />
+(flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Fupa. (flying) (invisible) (white aura)<br />
+. . . is entangled in a mass of thorny vines.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting Gijho. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is standing here, fighting <br />
+Demeter. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is standing here, fighting Demeter. (flying) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is sitting here, fighting Goka. (flying) (red aura)<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is sitting here, fighting Malice. <br />
+(flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Deraj Bug Boi is sitting here, fighting Kazooka. (flying)<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting Solaris. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Aeetes flies in from the south.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Aeetes focuses on Omar and utters some strange words.<br />
+Aeetes ---&gt; HEALS ---&gt; Omar<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Gerald heroically rescues Gijho.<br />
+<br />
+576H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Dast utters some strange words.<br />
+Dast conjures a writhing mass of inky black tentacles!<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Ryan is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Malice is TENTED &lt; * * * * *<br />
+* * * * * &gt; Solaris is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+You scream in pain as inky black tentacles constrict you.<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+<br />
+567H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Solaris attempts to move, but he cannot break free of the vines!<br />
+<br />
+567H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Cylas utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+567H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; re<br />
+Ryan utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+567H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; <br />
+Solaris attempts to move, but he cannot break free of the vines!<br />
+<br />
+567H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; sc <br />
+Gijho utters some strange words.<br />
+Gijho conjures a writhing mass of inky black tentacles!<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Ryan is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Malice is TENTED &lt; * * * * *<br />
+* * * * * &gt; Solaris is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+------ * * * * * &gt;&gt;&gt; You're TENTED &lt;&lt;&lt; * * * * * -----<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+<br />
+555H 144V 6600001X 300C [Me:V.Good] [Desu:V.Good] [Gijho:Fair] Exits:NESW&gt; so<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Deraj Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Furos Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Furos Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Aeetes Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Deraj Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+You step in front of Solaris and direct your attacks at Fupa.<br />
+What a self-sacrificing act! You're such a hero!<br />
+Fupa bruises YOU with his slash.<br />
+You raise your shield and block Fupa's blow.<br />
+You deflect part of Fupa's blow with your shield.<br />
+Fupa bruises YOU with his slash.<br />
+You bruise Fupa with your stab.<br />
+Aeetes hits the tentacles constricting Cylas instead!<br />
+<br />
+Gerald slashes Ryan hard.<br />
+Gerald is chilled, as he swings at Ryan.<br />
+Furos bruises Demeter with his crush.<br />
+Furos MASSACRES Demeter with his crush.<br />
+Vida pierces Malice exlartremely hard.<br />
+Vida MASSACRES Malice with her pierce.<br />
+Malice misses Vida with her hit.<br />
+Dilger misses Kazooka with his cleave.<br />
+Desu MASSACRES Omar with his smite.<br />
+Desu MASSACRES Omar with his pierce.<br />
+Desu MASSACRES Omar with his smite.<br />
+Kazooka MASSACRES Deraj with his slash.<br />
+Kazooka MASSACRES Deraj with his slash.<br />
+Deraj misses Kazooka with his slash.<br />
+Omar slashes Goka extremely hard.<br />
+Omar hits the tentacles constricting Goka instead!<br />
+<br />
+Omar MASSACRES Goka with his slash.<br />
+Gerald heroically rescues Gijho.<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Demeter attempts to break free of the black tentacles, but fails!<br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; is<br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+<br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Fupa gazes at you with a look of evilness.<br />
+You feel a slight chill.<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Solaris utters some strange words.<br />
+Solaris slowly fades into existence.<br />
+Solaris comes out of hiding.<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Aeetes steps aside as Malice attempts a bash, stumbles, and falls flat on her <br />
+face.<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Demeter attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; resc mali<br />
+Aeetes focuses on Gijho and utters some strange words.<br />
+Aeetes ---&gt; HEALS ---&gt; Gijho<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; ce<br />
+<br />
+Gerald heroically rescues Deraj.<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; <br />
+Cylas attempts to break free of the black tentacles, but fails!<br />
+<br />
+553H 144V 6600001X 300C [Me:V.Good] [Fupa:Good] Exits:NESW&gt; A small whirlwind crashes into <br />
+Furos, pummeling his entire body.<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Vida Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+Deraj attempts to scream, but no sound is produced as he is caught<br />
+up in a tornado and torn to shreds.<br />
+Deraj is dead! R.I.P.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Dast Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gerald Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gerald Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Vida Hit by Tornado &lt;&lt;***<br />
+Gerald deftly steps in front of Aeetes, pushing into the frey.<br />
+Gerald heroically rescues Aeetes.<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+Demeter screams in pain as inky black tentacles constrict him.<br />
+Gerald deflects part of Solaris's blow with his shield.<br />
+Solaris pierces Gerald.<br />
+Solaris misses Gerald with his pierce.<br />
+Gerald slashes Solaris.<br />
+Kazooka barely slashes Gerald.<br />
+You deflect part of Fupa's blow with your shield.<br />
+Fupa bruises YOU with his slash.<br />
+Fupa bruises YOU with his stab.<br />
+Fupa bruises YOU with his slash.<br />
+You stab Fupa extremely hard.<br />
+Ryan misses Gerald with her claw.<br />
+Dast bruises Cylas with his pierce.<br />
+Cylas's spell misses Dast and destroys a sphere instead.<br />
+Dast hits the tentacles constricting Cylas instead!<br />
+<br />
+Gijho bruises Desu with his bludgeon.<br />
+Furos MASSACRES Demeter with his crush.<br />
+Vida MASSACRES Malice with her pierce.<br />
+Malice misses Vida with her hit.<br />
+Desu MASSACRES Omar with his smite.<br />
+Desu MASSACRES Omar with his pierce.<br />
+Desu ANNIHILATES Omar with his smite.<br />
+Omar hits the tentacles constricting Goka instead!<br />
+<br />
+Omar slashes Goka extremely hard.<br />
+The death cry of Deraj echoes from somewhere nearby...<br />
+Deraj stops following Aeetes.<br />
+What a self-sacrificing act! You're such a hero!<br />
+<br />
+550H 144V 6600001X 300C [Me:V.Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+550H 144V 6600001X 300C [Me:V.Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Dilger gets a very large pile of coins from the corpse of Deraj.<br />
+<br />
+550H 144V 6600001X 300C [Me:V.Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Goka attempts to break free of the black tentacles, but fails!<br />
+<br />
+550H 144V 6600001X 300C [Me:V.Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Gijho utters some strange words.<br />
+Gijho conjures a writhing mass of inky black tentacles!<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Ryan is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Malice is TENTED &lt; * * * * *<br />
+* * * * * &gt; Solaris is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+------ * * * * * &gt;&gt;&gt; You're TENTED &lt;&lt;&lt; * * * * * -----<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+A Kalaman cityguard arrives from the west.<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Solaris utters some strange words.<br />
+* * * * *&gt;&gt;&gt;Dast IS STUNNED!&lt;&lt;&lt;* * * * *<br />
+Kazooka crashes into Dast in a thundering collision, knocking him to the ground!<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Omar stands up.<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Omar suddenly lunges forward, slamming his skull into Goka's face with a <br />
+sickening crunch.<br />
+Desu swings madly at Omar with the quester rod, knocking him to the ground.<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Demeter attempts to break free of the black tentacles, but fails!<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Malice stands up.<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; l<br />
+<br />
+Vida stands up.<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Cylas tells your group 'im tented'<br />
+<br />
+540H 144V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+You spasm as Fupa places his hand on your chest and drains your life-force.<br />
+The room grows colder as a dark shadow descends upon you.<br />
+<br />
+500H 28V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; <br />
+Malice crashes into Vida in a thundering collision, knocking her to the ground!<br />
+<br />
+500H 28V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; af <br />
+Aeetes gets a quartz crystal sphere.<br />
+<br />
+500H 28V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; p<br />
+Gerald focuses his purity on your arm!<br />
+Gerald forces you to drop your weapon.<br />
+<br />
+500H 28V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; ri<br />
+Ryan utters some strange words.<br />
+<br />
+500H 28V 6600001X 300C [Me:Good] [Gerald:Fair] Exits:NESW&gt; m<br />
+***&gt;&gt; Aeetes Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Dast Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Furos Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Vida Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gijho Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Furos Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; a Kalaman cityguard Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Aeetes Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+You step in front of Solaris and direct your attacks at a Kalaman cityguard.<br />
+What a self-sacrificing act! You're such a hero!<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+--&gt; STONE SKIN &lt;-- WORE OFF<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+You miss a Kalaman cityguard with your hit.<br />
+Gerald slashes YOU very hard.ar<br />
+Gerald slashes YOU extremely hard.<br />
+Kazooka slashes Gerald extremely hard.<br />
+Kazooka slashes Gerald hard.<br />
+Fupa slashes YOU extremely hard.<br />
+Fupa stabs YOU very hard.<br />
+Fupa slashes YOU extremely hard.<br />
+Aeetes hits the tentacles constricting Cylas instead!<br />
+<br />
+Furos MASSACRES Demeter with his crush.<br />
+Furos crushes Demeter extremely hard.<br />
+Vida MASSACRES Malice with her pierce.<br />
+Vida pierces Malice very hard.<br />
+Malice misses Vida with her hit.<br />
+Malice misses Vida with her hit.<br />
+Dilger misses Kazooka with his cleave.<br />
+Desu ANNIHILATES Omar with his smite.<br />
+Desu misses Omar with his pierce.<br />
+Goka MASSACRES Omar with his cleave.<br />
+Goka ANNIHILATES Omar with his cleave.<br />
+Omar MASSACRES Goka with his slash.<br />
+Omar slashes Goka extremely hard.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+<br />
+423H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; y<br />
+Remodnar flies in from the south.<br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+<br />
+423H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Demeter tells your group 'gay tent'<br />
+<br />
+423H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Aeetes focuses on Vida and utters some strange words.<br />
+Aeetes ---&gt; HEALS ---&gt; Vida<br />
+<br />
+423H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Remodnar focuses on Goka and utters some strange words.<br />
+Remodnar ---&gt; HEALS ---&gt; Goka<br />
+<br />
+423H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Gijho utters some strange words.<br />
+Gijho conjures a writhing mass of inky black tentacles!<br />
+* * * * * &gt; Remodnar is TENTED &lt; * * * * *<br />
+* * * * * &gt; A Kalaman cityguard is TENTED &lt; * * * * *<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Ryan is TENTED &lt; * * * * *<br />
+* * * * * &gt; Goka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Malice is TENTED &lt; * * * * *<br />
+* * * * * &gt; Solaris is TENTED &lt; * * * * *<br />
+* * * * * &gt; Demeter is TENTED &lt; * * * * *<br />
+------ * * * * * &gt;&gt;&gt; You're TENTED &lt;&lt;&lt; * * * * * -----<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Goka panics, and attempts to flee.<br />
+Goka flies north.<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+You step in front of Fupa's assault on Solaris.<br />
+Fupa attacks with lightning fast series of attacks that leaves you defenseless.<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good]Exits:NESW&gt; <br />
+Gerald gets a long steel pike.<br />
+Gerald gets the corpse of a pigeon.<br />
+Gerald gets the corpse of a pigeon.<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt;<br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] l<br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+<br />
+Dilger attempts to focus on Kazooka and fails horribly.<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Cylas attempts to break free of the black tentacles, but fails!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+Demeter crashes into Gerald in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+406H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Good] Exits:NESW&gt; <br />
+***&gt;&gt; Dast Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Dilger Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Aeetes Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gerald Hit by Tornado &lt;&lt;***<br />
+Omar deftly ducks out of the way of the attack.<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+The violent funnel dissipates.<br />
+The violent funnel dissipates.<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+Omar hits the tentacles constricting Desu instead!<br />
+<br />
+Omar bruises Desu with his slash.<br />
+Omar bruises Desu with his slash.<br />
+Remodnar slowly fades into existence.<br />
+Remodnar whips Gijho.<br />
+Remodnar is burned, as he swings at Gijho.<br />
+You raise your shield and block a Kalaman cityguard's blow.<br />
+You miss a Kalaman cityguard with your hit.<br />
+Gerald slashes YOU extremely hard.<br />
+Gerald slashes YOU hard.<br />
+Fupa MASSACRES YOU with his slash.<br />
+Fupa stabs YOU extremely hard.<br />
+Fupa MASSACRES YOU with his slash.<br />
+Ryan misses Gerald with her claw.<br />
+Furos MASSACRES Demeter with his crush.<br />
+Vida MASSACRES Malice with her pierce.<br />
+Malice misses Vida with her hit.<br />
+Malice misses Vida with her hit.<br />
+Dilger misses Kazooka with his cleave.<br />
+Demeter ANNIHILATES Gerald with his stab.<br />
+Ryan utters some strange words.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+*Vida stands up.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Kazooka tells your group 'tented'<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Aeetes focuses on Gerald and utters some strange words.<br />
+Aeetes ---&gt; HEALS ---&gt; Gerald<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Goka flies in from the north.<br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Remodnar focuses on Cylas and utters some strange words.<br />
+Remodnar ---&gt; HEALS ---&gt; Cylas<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Omar steps aside as Goka attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Solaris utters some strange words.<br />
+* * * * *&gt;&gt;&gt;Gijho IS STUNNED!&lt;&lt;&lt;* * * * *<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; l<br />
+<br />
+Furos quaffs an unmarked brown vial.<br />
+Furos grimaces briefly but soon recovers.<br />
+Furos ---&gt; HEALS ---&gt; Furos<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Omar points a redstone ring at Omar.<br />
+Omar's skin turns grey and granite-like.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Vida stands up.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Vida panics, and attempts to flee.<br />
+Vida flies east.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Furos crashes into Demeter in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Dilger focuses his purity on Kazooka's arm!<br />
+Dilger forces Kazooka to drop his weapon.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Cylas attempts to break free of the black tentacles, but fails!<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; But nobody is fighting <br />
+her.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Gerald stands up.<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Desu attempts to break free of the black tentacles, but fails!<br />
+<br />
+317H 28V 6600001X 300C [Me:Fair] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+The violent funnel dissipates.<br />
+The violent funnel dissipates.<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Cylas is TENTED &lt; * * * * *<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+Goka bruises Omar with his cleave.<br />
+Omar hits the tentacles constricting Desu instead!<br />
+<br />
+Omar hits the tentacles constricting Desu instead!<br />
+<br />
+Omar MASSACRES Desu with his slash.<br />
+A Kalaman cityguard MASSACRES YOU with his slash.<br />
+A Kalaman cityguard dodges your attack!<br />
+You trip and attack Gerald!<br />
+Gerald dodges your attack!<br />
+You trip and attack Cylas!<br />
+You miss Cylas with your hit.<br />
+Gerald slashes YOU extremely hard.<br />
+Gerald slashes YOU extremely hard.<br />
+Cylas misses Gerald with his bludgeon.<br />
+Fupa misses you with his slash.<br />
+Fupa MASSACRES YOU with his stab.<br />
+Fupa slashes YOU extremely hard.<br />
+Furos ANNIHILATES Demeter with his crush.<br />
+Furos MASSACRES Demeter with his crush.<br />
+Dilger misses Kazooka with his cleave.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Ryan utters some strange worgrds.<br />
+Dast is torn to pieces by hundreds of shards of ice.<br />
+Dast is dead! R.I.P.<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+The death cry of Dast echoes from somewhere nearby...<br />
+Dast stops following Aeetes.<br />
+Gijho stops following Dast.<br />
+Gijho now follows Aeetes.<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; o<br />
+<br />
+Cylas utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Gerald heroically rescues Omar.<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+Goka stands up.<br />
+Aeetes utters some strange words.<br />
+Aeetes ---&gt; HEALS ---&gt; Aeetes<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Solaris utters some strange words.<br />
+* * * * *&gt;&gt;&gt;Furos IS STUNNED!&lt;&lt;&lt;* * * * *<br />
+* * * * *&gt;&gt;&gt;Omar IS STUNNED!&lt;&lt;&lt;* * * * *<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Vida flies in from the east.<br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Remodnar focuses on Solaris and utters some strange words.<br />
+Remodnar ---&gt; HEALS ---&gt; Solaris<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; A Small Clearing in the <br />
+Park<br />
+A whirling tornado rips through the area!<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here. (flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Gerald. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here, fighting Gijho. (flying) (red <br />
+aura)<br />
+. . . is outlined with a dim aura.<br />
+A Kalaman cityguard is standing here, fighting YOU. (white aura)<br />
+&lt;Newb&gt; Aeetes of Colchis, Pharoah of the Ancient World is standing here, <br />
+fighting Cylas. (flying) (white aura)<br />
+. . . has a metallic luster.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is sitting here, fighting Desu. (flying) (white aura)<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting Gerald. <br />
+(flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Gijho. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Demeter the Fisher King is sitting here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting Gerald. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is standing here, fighting Goka. <br />
+(flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is lying here, stunned. (flying) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is lying here, stunned. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting YOU. (flying) (red aura)<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Desu attempts to break free of the black tentacles, but fails!<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; A Small Clearing in the <br />
+Park<br />
+A whirling tornado rips through the area!<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here. (flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Gerald. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here, fighting Gijho. (flying) (red <br />
+aura)<br />
+. . . has a granite appearance.<br />
+A Kalaman cityguard is standing here, fighting YOU. (white aura)<br />
+&lt;Newb&gt; Aeetes of Colchis, Pharoah of the Ancient World is standing here, <br />
+fighting Cylas. (flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is sitting here, fighting Desu. (flying) (white aura)<br />
+. . . is enveloped in flames.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting Gerald. <br />
+(flying) (white aura)<br />
+. . . is surrounded by a white mist.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Gijho. (flying) (white aura)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;BSP&gt; Demeter the Fisher King is sitting here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting Gerald. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is standing here, fighting Goka. <br />
+(flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is lying here, stunned. (flying) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is lying here, stunned. (flying) (red aurag)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting YOU. (flying) (red aura)<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt;  A Small Clearing in the <br />
+Park<br />
+A whirling tornado rips through the area!<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here. (flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Gerald. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here, fighting Gijho. (flying) (red <br />
+aura)<br />
+. . . has a metallic luster.<br />
+A Kalaman cityguard is standing here, fighting YOU. (white aura)<br />
+&lt;Newb&gt; Aeetes of Colchis, Pharoah of the Ancient World is standing here, <br />
+fighting Cylas. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is sitting here, fighting Desu. (flying) (white aura)<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standinalg here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting Gerald. <br />
+(flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Gijho. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Demeter the Fisher King is sitting here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting Gerald. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is standing here, fighting Goka. <br />
+(flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is lying here, stunned. (flying) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is lying here, stunned. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting YOU. (flying) (red aura)<br />
+<br />
+222H 28V 6600001X 300C [Me:[1lmV.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; Your group of 10 members <br />
+consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Cylas            v.good    rested    fighting   Y   N    N    Y     0    4<br />
+  Kensi            V.BAD     exhausted fighting   Y   N    N    Y     2    0<br />
+  Demeter          bad       rested    fighting   Y   N    N    Y     1    0<br />
+  Solaris          v.good    rested    fighting   Y   N    N    Y     0   10<br />
+  Malice           fair      rested    standing   Y   N    N    Y     0    0<br />
+  Remodnar         v.good    rested    fighting   Y   N    N    Y     0    6<br />
+  Goka             v.good    rested    fighting   Y   N    Y    Y  [3 co2m   1    0<br />
+  Ryan             good      rested    fighting   Y   N    N    Y     0    5<br />
+  Kazooka          good      rested    fighting   Y   N    N    Y     0    0<br />
+  Desu             good      rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Desu attempts to break free of the black tentacles, but fails!<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; rpse<br />
+<br />
+Malice wields Nightbringer.<br />
+As Malice wields Nightbringer, it glows red and causes her to grin evilly.<br />
+<br />
+222H 28V 6600001X 300C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; You get an arcane <br />
+dagger from the corpse of Dast.<br />
+You get a plain component pouch from the corpse of Dast.<br />
+You get a cloth belt pack from the corpse of Dast.<br />
+You get a comfortable blue robe from the corpse of Dast.<br />
+You get a pair of leather sleeves from the corpse of Dast.<br />
+You get a pair of colourful spellcasting gloves from the corpse of Dast.<br />
+You get some fluffy rabbit fur boots from the corpse of Dast.<br />
+You get a silver-streaked black hood from the corpse of Dast.<br />
+You get the armor of the renegade mage from the corpse of Dast.<br />
+You get a string of illusionist's beads from the corpse of Dast.<br />
+You get a mystic gold medallion from the corpse of Dast.<br />
+You get an ancient jade ring from the corpse of Dast.<br />
+You get an ancient jade ring from the corpse of Dast.<br />
+You get a very large pile of coins from the corpse of Dast.<br />
+There were 4578 coins.<br />
+You get a slice of birthday cake from the corpse of Dast.<br />
+You get a slice of birthday cake from the corpse of Dast.<br />
+You get a slice of birthday cake from the corpse of Dast.<br />
+You get a cup from the corpse of Dast.<br />
+You get a cup from the corpse of Dast.<br />
+You get a cup from the corpse of Dast.<br />
+You get a bronze shield from the corpse of Dast.<br />
+You get a scroll of recall from the corpse of DastfYou get a scroll of recall from the corpse of Dast.<br />
+You get a jug of oil from the corpse of Dast.<br />
+You get a jug of oil from the corpse of Dast.<br />
+<br />
+222H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; le<br />
+Fupa focuses harshly on you and utters some strange words.<br />
+A painful wrath courses through your soul and clamps on.<br />
+Pain tears at your being, but your soul withstands most of it.<br />
+<br />
+186H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; e<br />
+Demeter stands up.<br />
+<br />
+186H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+Demeter panics, and attempts to flee.<br />
+Demeter flies east.<br />
+<br />
+186H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+<br />
+Vida grabs a moist blue-green scroll.<br />
+Vida recites a moist blue-green scroll.<br />
+<br />
+186H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; <br />
+***&gt;&gt; a Kalaman cityguard Hit by Tornado &lt;&lt;***<br />
+You return to your normal fighting style.<br />
+Vida deftly steps in front of Gijho, pushing into the frey.<br />
+Vida heroically rescues Gijho.<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+* * * * * &gt; Desu is TENTED &lt; * * * * *<br />
+Solaris misses Vida with his pierce.<br />
+Vida pierces Solaris hard.<br />
+Gerald blocks Goka's blow with a quick raise of his shield.<br />
+Gerald blocks Goka's blow with a quick raise of his shield.<br />
+Gerald slashes Goka very hard.<br />
+Gerald misses Goka with his slash.<br />
+You miss a Kalaman cityguard with your hit.<br />
+A Kalaman cityguard MASSACRES YOU with his slash.<br />
+Dilger misses Kazooka with his cleave.<br />
+Desu bruises Omar with his smite.<br />
+Desu bruises Omar with his pierce.<br />
+Desu bruises Omar with his smite.<br />
+Dilger strikes at Kazooka, but misses completely.<br />
+<br />
+162H 28V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Fair] Exits:NESW&gt; You flee head over <br />
+heels.<br />
+Shrine of Nature<br />
+The master druid is here in a deep meditation. (white aura)<br />
+A cityguard stands here, keeping a wary eye out for troublemakers. (white aura)<br />
+<br />
+162H 26V 6600001X 4878C Exits:N&gt; lay m<br />
+Desu tells your group 'TENTED'<br />
+<br />
+162H 26V 6600001X 4878C Exits:N&gt; e<br />
+You are currently unable to use that skill!<br />
+<br />
+162H 26V 6600001X 4878C Exits:N&gt; sco<br />
+You are Sir Kensi Brainbuster, High Templar of the Dark <br />
+Order, a level 30 Paladin.<br />
+You are a Clansman in Blood Sea Pirates.<br />
+You are rank 4. You have completed 0% of your next rank.<br />
+You are 35 years old.<br />
+You have 162(605) hit and 26(146) movement points.<br />
+Your behaviour has been Good.<br />
+Your soul is complete and unwavering in devotion to your deity.<br />
+You have scored 83399999 exp, and have 4878(0) steel coins.<br />
+You need 6600001 more experience to advance.<br />
+You have died 9 horrible deaths.<br />
+You have been connected for 19 minute(s).<br />
+You have been playing for 4 day(s), 19 hour(s) and 35 minute(s).<br />
+Paladine's glory shines in your mind through the power of your prayer.<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+You are following Cylas.<br />
+You are guarding Solaris.<br />
+You are affected by the following:<br />
+    tornado<br />
+    avenging faith<br />
+    black mantle<br />
+    tornado<br />
+    glitterdust<br />
+    tornado<br />
+    resist electricity<br />
+    resist heat<br />
+    high prayer<br />
+    bless<br />
+    crusade<br />
+    holy vision<br />
+    resist cold<br />
+    holy arms<br />
+    protection from evil<br />
+    fly<br />
+    aura of glory<br />
+<br />
+162H 26V 6600001X 4878C Exits:N&gt; n<br />
+A Small Clearing in the Park<br />
+A whirling tornado rips through the area!<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;Newb&gt; Vida Dragonbane, Knight of the Lance is standing here, fighting Solaris. <br />
+(flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here, fighting Gerald. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here, fighting Gijho. (flying) (red <br />
+aura)<br />
+. . . has a metallic luster.<br />
+A Kalaman cityguard is standing here, fighting Ryan. (white aura)<br />
+&lt;Newb&gt; Aeetes of Colchis, Pharoah of the Ancient World is standing here, <br />
+fighting Cylas. (flying) (white aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Gijho, Toy Soldier is sitting here, fighting Desu. (flying) (white aura)<br />
+. . . is enveloped in flames.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Omar. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting Gerald. <br />
+(flying) (white aura)<br />
+. . . is surrounded by a white mist.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here, <br />
+fighting Vida. (flying) (white aura)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting Gerald. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is sitting here, fighting Goka. <br />
+(flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;Newb&gt; Furos Angros is sitting here, fighting Ryan. (flying) (red aura)<br />
+&lt;Newb&gt; Omar, Freak of Nature is sitting here, fighting Desu. (flying) (red aura)<br />
+. . . has a granite appearance.<br />
+&lt;Newb&gt; Dilger the Male Human is standing here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+&lt;Newb&gt; Fupa Time is standing here, fighting Ryan. (flying) (red aura)<br />
+A Kalaman cityguard looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Fupa attacks Ryan with lightning fast series of attacks that leaves her <br />
+defenseless.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Desu tries to barrel into Omar, but ends up falling flat on his face.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Demeter flies in from the north.<br />
+A Kalaman cityguard looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+***&gt;&gt; a Kalaman cityguard Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Aeetes Hit by Tornado &lt;&lt;***<br />
+Vida deftly steps in front of Gijho, pushing into the frey.<br />
+Vida heroically rescues Gijho.<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+Remodnar misses Vida with his whip.<br />
+Vida bruises Remodnar with her pierce.<br />
+Fupa slashes Ryan very hard.<br />
+Fupa is chilled, as he swings at Ryan.<br />
+Fupa stabs Ryan hard.<br />
+Fupa is chilled, as he swings at Ryan.<br />
+A Kalaman cityguard slashes Ryan extremely hard.<br />
+A Kalaman cityguard is chilled, as he swings at Ryan.<br />
+Goka cleaves Gerald extremely hard.<br />
+Gerald misses Goka with his slash.<br />
+Dilger misses Kazooka with his cleave.<br />
+Desu bruises Omar with his smite.<br />
+Desu bruises Omar with his pierce.<br />
+Desu MASSACRES Omar with his smite.<br />
+Omar is mortally wounded, and will die soon, if not aided.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Malice crashes into Furos in a thundering collision, knocking him to the ground!<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Demeter crashes into Furos in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Solaris focuses harshly on Vida and utters some strange words.<br />
+The sound of bones cracking echoes as Solaris's force bolt slams into Vida.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; r<br />
+Kazooka attempts to break free of the black tentacles, but fails!<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; es<br />
+Gerald stands up.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; <br />
+Gerald panics, and attempts to flee.<br />
+Gerald flies west.<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; c rya<br />
+Cylas tells your group 'tick in about 10'<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; n<br />
+<br />
+Gerald flies in from the west.<br />
+A Kalaman cityguard looks at Gijho and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6600001X 4878C Exits:NESW&gt; gWhat a self-sacrificing act! You're such a hero!<br />
+<br />
+162H 24V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Awful] Exits:NESW&gt; t he#TICK-10<br />
+<br />
+Gerald bruises Remodnar with his slash.<br />
+<br />
+162H 24V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Awful] Exits:NESW&gt; al<br />
+Cylas focuses harshly on Aeetes and utters some strange words.<br />
+Flesh burns as Cylas enshrouds Aeetes in a cloak of flames.<br />
+<br />
+162H 24V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Awful] Exits:NESW&gt;<br />
+A Kalaman cityguard arrives from the east.<br />
+A Kalaman cityguard looks at Gerald and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Awful] Exits:NESW&gt; <br />
+Aeetes breaks an enchanted rabbit-bone wand.<br />
+Aeetes disappears.<br />
+<br />
+162H 24V 6600001X 4878C [Me:V.Bad] [a Kalaman cityguard:Awful] Exits:NESW&gt; <br />
+***&gt;&gt; a Kalaman cityguard Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Gerald Hit by Tornado &lt;&lt;***<br />
+A Kalaman cityguard attempts to scream, but no sound is produced as he is caught<br />
+up in a tornado and torn to shreds.<br />
+You lost 1156 experience for being a part of that!<br />
+A Kalaman cityguard is dead! R.I.P.<br />
+***&gt;&gt; Gijho Hit by Tornado &lt;&lt;***<br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+* * * * * &gt; Kazooka is TENTED &lt; * * * * *<br />
+Cylas misses a Kalaman cityguard with his bludgeon.<br />
+A Kalaman cityguard bruises Cylas with his slash.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+A Kalaman cityguard bruises Cylas with his slash.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+Gerald bruises Remodnar with his slash.<br />
+Ryan claws Furos extremely hard.<br />
+Demeter MASSACRES Furos with his stab.<br />
+Malice MASSACRES Furos with her crush.<br />
+The darkness flowing from Nightbringer hits Furos[th force!<br />
+Malice ANNIHILATES Furos with her crush.<br />
+Remodnar misses Vida with his whip.<br />
+Vida bruises Remodnar with her pierce.<br />
+Fupa slashes Ryan extremely hard.<br />
+Fupa is chilled, as he swings at Ryan.<br />
+Fupa stabs Ryan hard.<br />
+Fupa is chilled, as he swings at Ryan.<br />
+Dilger bruises Kazooka with his cleave.<br />
+Desu OBLITERATES Omar with his smite.<br />
+Omar is dead! R.I.P.<br />
+The death cry of Omar echoes from somewhere nearby...<br />
+Omar sinks gently to the ground.<br />
+The death cry of a Kalaman cityguard echoes from somewhere nearby...<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; <br />
+Desu gets a long sword from the corpse of a Kalaman cityguard.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; fle<br />
+Ryan focuses on Desu and utters some strange words.<br />
+Desu's skin turns grey and granite-like.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; e<br />
+Dilger attempts to strike at Kazooka with his goad.<br />
+Dilger bruises Kazooka with his cleave.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt;<br />
+Demeter tells your group 'bash their healer'<br />
+<br />
+162H 24V 6601157X 4878C Exit<br />
+Kazooka crashes into Fupa in a thundering collision, knocking him to the ground!<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; g <br />
+Vida panics, and attempts to flee.<br />
+Vida flies north.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; <br />
+Goka crashes into Furos in a thundering collision, knocking him to the ground!<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; all co<br />
+Malice heroically rescues Ryan.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; rpse<br />
+Gerald gets a pile from his corpse.<br />
+Cylas gets a sunburst engraved longsword from the corpse of Omar.<br />
+Cylas gets a thick malachite inlaid blade from the corpse of Omar.<br />
+Cylas gets a white dragonwing cloak from the corpse of Omar.<br />
+Cylas gets a pair of spiked battle armets from the corpse of Omar.<br />
+Cylas gets a pair of the weaponsmaster's gloves from the corpse of Omar.<br />
+Cylas gets greaves of stone giant strength from the corpse of Omar.<br />
+Cylas is zapped by a revenant's skull and instantly drops it.<br />
+Cylas gets a suit of charred black battle armor from the corpse of Omar.<br />
+Cylas gets an ashen stone ring from the corpse of Omar.<br />
+Cylas gets a redstone ring from the corpse of Omar.<br />
+Cylas gets a large pile of coins from the corpse of Omar.<br />
+Cylas gets a slice of birthday cake from the corpse of Omar.<br />
+Cylas gets a slice of birthday cake from the corpse of Omar.<br />
+Cylas gets a slice of birthday cake from the corpse of Omar.<br />
+Cylas gets a glowing scroll of recall from the corpse of Omar.<br />
+Cylas gets a thick-bladed short sword from the corpse of Omar.<br />
+Cylas gets a gnome skull from the corpse of Omar.<br />
+Cylas gets a charred helm and visor from the corpse of Omar.<br />
+Cylas gets an adamantite javelin from the corpse of Omar.<br />
+Cylas gets a pitch black robe from the corpse of Omar.<br />
+Cylas gets a pair of charcoal black boots from the corpse of Omar.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; <br />
+The corpse doesn't seem to have what you are looking <br />
+for.<br />
+<br />
+162H 24V 6601157X 4878C Exits:NESW&gt; pu<br />
+Cylas divides 260 coins equally among the group members present.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+***&gt;&gt; Fupa Hit by Tornado &lt;&lt;***<br />
+Fupa slashes Malice very hard.<br />
+Fupa stabs Malice very hard.<br />
+Malice ANNIHILATES Fupa with her crush.<br />
+Malice OBLITERATES Fupa with her crush.<br />
+Goka MASSACRES Furos with his cleave.<br />
+Remodnar misses Gerald with his whip.<br />
+Desu MASSACRES Gijho with his smite.<br />
+Desu is burned, as he swings at Gijho.<br />
+Desu MASSACRES Gijho with his pierce.<br />
+Desu is burned, as he swings at Gijho.<br />
+Gijho is mortally wounded, and will die soon, if not aided.<br />
+Desu OBLITERATES Gijho with his smite.<br />
+Desu is burned, as he swings at Gijho.<br />
+Gijho is dead! R.I.P.<br />
+Cylas bludgeons a Kalaman cityguard extremely hard.<br />
+Cylas's staff glows pink.<br />
+A staff hits a Kalaman cityguard with an arctic blast, giving him a severe case <br />
+of frostbite.<br />
+A Kalaman cityguard bruises Cylas with his slash.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+A Kalaman cityguard bruises Cylas with his slash.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+Gerald bruises Remodnar with his slash.<br />
+Kazooka misses Dilger with his hit.<br />
+Demteter ANNIHILATES Furos with his stab.<br />
+Demeter MASSACRES Furos with his stab.<br />
+Dilger misses Kazooka with his cleave.<br />
+The death cry of Gijho echoes from somewhere nearby...<br />
+Desu gets a jeweled sceptre from the corpse of Gijho.<br />
+Desu gets an aspen staff from the corpse of Gijho.<br />
+Desu gets a rhodochrosite bracelet from the corpse of Gijho.<br />
+Desu gets a charred leather apron from the corpse of Gijho.<br />
+Desu gets a heavy black cloak with silvery runes from the corpse of Gijho.<br />
+Desu gets a pair of ivory gauntlets from the corpse of Gijho.<br />
+Desu gets a pair of blue shoes from the corpse of Gijho.<br />
+Desu gets some heavy sand colored pants from the corpse of Gijho.<br />
+Desu gets an obsidian crown from the corpse of Gijho.<br />
+Desu gets a crimson cloak inlaid with threads of marble from the corpse of <br />
+Gijho.<br />
+Desu gets a small draconian ring from the corpse of Gijho.<br />
+Desu gets a small quartz ring from the corpse of Gijho.<br />
+Desu gets a very large pile of coins from the corpse of Gijho.<br />
+Desu gets a mirror shield from the corpse of Gijho.<br />
+Desu gets a milky potion of see invisible from the corpse of Gijho.<br />
+Desu gets a glowing scroll of recall from the corpse of Gijho.<br />
+Desu gets a glowing scroll of recall from the corpse of Gijho.<br />
+Desu gets a glowing sc roll of recall from the corpse of Gijho.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; al<br />
+Klandestine flies in from the west.<br />
+A Kalaman cityguard looks at Gerald and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; l chest<br />
+<br />
+Ryan focuses on Desu and utters some strange words.<br />
+Desu's skin turns grey and granite-like.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; gYou can't find that container.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt;  al<br />
+Desu stands up.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+Malice crashes into Furos in a thundering collision, knocking him to the ground!<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; l co<br />
+Cylas utters some strange words.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; rpse<br />
+A Kalaman cityguard looks at Gerald and yells  'There's the scoundrel!'<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+You get a glowing scroll of recall from the corpse <br />
+of Gijho.<br />
+You get a bronze shield from the corpse of Gijho.<br />
+You get a golden ass from the corpse of Gijho.<br />
+You get a jug of oil from the corpse of Gijho.<br />
+You get a hooded lantern from the corpse of Gijho.<br />
+Lantern : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+Desu MASSACRES Dilger with his smite.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; res<br />
+Dilger gets a hooded lantern from the corpse of Gijho.<br />
+Dilger gets a small wooden chest from the corpse of Gijho.<br />
+Dilger gets a scroll of recall from the corpse of Gijho.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+Kazooka crashes into Dilger in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; <br />
+Gerald sinks gently to the ground.<br />
+Gerald stops using a white snowy eagle feather.<br />
+Gerald grabs a glowing scroll of recall.<br />
+Gerald recites a glowing scroll of recall.<br />
+Furos disappears.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; c solaris<br />
+But nobody is fighting him.<br />
+<br />
+162H 24V 6601157X 4904C Exits:NESW&gt; l<br />
+#OK NEW TICKSIZE SET<br />
+#TICKER IS NOW OFF.<br />
+#TICKER IS NOW ON.<br />
+#OK NEW TICKSIZE SET<br />
+#TICKER IS NOW ON.<br />
+<br />
+The violent funnel dissipates.<br />
+Desu MASSACRES Dilger with his smite.<br />
+Desu MASSACRES Dilger with his pierce.<br />
+Desu ANNIHILATES Dilger with his smite.<br />
+Klandestine misses Cylas with her hit.<br />
+Fupa slashes Malice very hard.<br />
+Fupa stabs Malice very hard.<br />
+Malice ANNIHILATES Fupa with her crush.<br />
+The darkness flowing from Nightbringer hits Fupa with force!<br />
+Malice ANNIHILATES Fupa with her crush.<br />
+Fupa is dead! R.I.P.<br />
+Remodnar misses Gerald with his whip.<br />
+A Kalaman cityguard bruises Cylas with his slash.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+A Kalaman cityguard slashes Cylas hard.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+Gerald slashes Remodnar extremely hard.<br />
+Kazooka misses Dilger with his hit.<br />
+Kazooka hits Dilger.<br />
+Dilger cleaves Kazooka very hard.<br />
+The death cry of Fupa echoes from somewhere nearby...<br />
+The darkness marks the end of another day.<br />
+You feel less protected.<br />
+The radiance surrounding you fades away.<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; <br />
+Solaris focuses harshly on Gerald and utters some strange words.<br />
+Solaris slowly fades into existence.<br />
+Solaris comes out of hiding.<br />
+The sound of bones cracking echoes as Solaris's force bolt slams into Gerald.<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; a#TICK!!!<br />
+s<br />
+Desu yells a battle cry and fights like a madman!<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW<br />
+Demeter crashes into Gerald in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt;g <br />
+Ryan utters some strange words.<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; all <br />
+Klandestine utters some strange words.<br />
+Klandestine disappears in a puff of smoke.<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; cA Small Clearing in the Park<br />
+The corpse of Fupa is lying here.<br />
+The corpse of Gijho is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A bloody skull, covered in rotten flesh is here...it glows blue<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+The corpse of Omar is lying here.<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A Kalaman cityguard is standing here, fighting Cylas. (white aura)<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is sitting here, fighting <br />
+Remodnar. (white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is standing here. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here, fighting Gerald. (flying) (red <br />
+aura)<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Desu Luze is standing here, fightinorg Dilger. (flying) (red aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Dilger. (flying) (white <br />
+aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here. <br />
+(flying) (white aura)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting a Kalaman cityguard. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;Newb&gt; Dilger the Male Human is sitting here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; pse<br />
+<br />
+Kazooka crashes into Gerald in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+172H 55V 6601157X 4904C Exits:NESW&gt; Rapier : You can't carry that many items.<br />
+Broadsword : You can't carry that many items.<br />
+Guard : You can't carry that many items.<br />
+Guard : You can't carry that many items.<br />
+Scabbard : You can't carry that many items.<br />
+Tabard : You can't carry that many items.<br />
+Bracers : You can't carry that many items.<br />
+Boots : You can't carry that many items.<br />
+Skull : You can't carry that many items.<br />
+Plate : You can't carry that many items.<br />
+Medallion : You can't carry that many items.<br />
+Scarf : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+You get a large pile of coins from the corpse of Fupa.<br />
+There were 323 coins.<br />
+Die : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Lantern : You can't carry that many items.<br />
+Barrel : You can't carry that many items.<br />
+Amulet : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Cylas utters some strange words.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; resc ma<br />
+A Kalaman cityguard looks at Gerald and yells  'There's the scoundrel!'<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; lice<br />
+Desu slams into Remodnar and pushes him out of the way of battle.<br />
+Desu ANNIHILATES Dilger with his smite.<br />
+Gerald bruises Desu with his slash.<br />
+Desu ANNIHILATES Dilger with his smite.<br />
+Desu MASSACRES Dilger with his pierce.<br />
+Desu ANNIHILATES Dilger with his smite.<br />
+Demeter ANNIHILATES Gerald with his stab.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+A Kalaman cityguard slashes Cylas very hard.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+A Kalaman cityguard slashes Cylas extremely hard.<br />
+A Kalaman cityguard is chilled, as he swings at Cylas.<br />
+Kazooka misses Dilger with his hit.<br />
+Dilger blocks Kazooka's blow with a quick raise of his shield.<br />
+Dilger cleaves Kazooka very hard.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+<br />
+Solaris focuses harshly on Gerald and utters some strange words.<br />
+Solaris slowly fades into existence.<br />
+Solaris comes out of hiding.<br />
+The sound of bones cracking echoes as Solaris's force bolt slams into Gerald.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; But nobody is fighting her.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; l<br />
+<br />
+Remodnar focuses on Demeter and utters some strange words.<br />
+Remodnar ---&gt; HEALS ---&gt; Demeter<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Dilger steps aside as Goka attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Ryan utters some strange words.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; A Small Clearing in the Park<br />
+The corpse of Fupa is lying here.<br />
+The corpse of Gijho is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A bloody skull, covered in rotten flesh is here...it glows blue<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+The corpse of Omar is lying here.<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A Kalaman cityguard is standing here, fighting Cylas. (white aura)<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is sitting here, fighting Desu. <br />
+(white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is sitting here, fighting Dilger. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Dilger. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Dilger. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting a Kalaman <br />
+cityguard. (flying) (white aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here. <br />
+(flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting a Kalaman cityguard. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;Newb&gt; Dilger the Male Human is sitting here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Kazooka is zapped by an iridescent black rapier and instantly drops it.<br />
+Kazooka gets a black broadsword from the corpse of Fupa.<br />
+Kazooka gets a copper wrist guard from the corpse of Fupa.<br />
+Kazooka gets a solid steel wrist guard from the corpse of Fupa.<br />
+Kazooka gets a ceremonial scabbard from the corpse of Fupa.<br />
+Kazooka gets a black skull tabard from the corpse of Fupa.<br />
+Kazooka is zapped by black metal bracers studded with rubies and instantly drops <br />
+it.<br />
+Kazooka gets a pair of woodsman's boots from the corpse of Fupa.<br />
+Kazooka is zapped by a bloody centaur skull and instantly drops it.<br />
+Kazooka is zapped by a dark metal plate and instantly drops it.<br />
+Kazooka gets a bullywug medallion from the corpse of Fupa.<br />
+Kazooka gets an embroidered purple scarf from the corpse of Fupa.<br />
+Kazooka gets a royal signet ring from the corpse of Fupa.<br />
+Kazooka is zapped by a dull brass ring and instantly drops it.<br />
+Kazooka gets a gleaming silver die[ELE2]<br />
+Kazooka gets a glowing scroll of recall from the corpse of Fupa.<br />
+Kazooka gets a glowing scroll of recall from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a scroll with a brown ribbon from the corpse of Fupa.<br />
+Kazooka gets a wrist lantern from the corpse of Fupa.<br />
+Kazooka gets an enchanted barrel from the corpse of Fupa.<br />
+Kazooka gets a merchant amulet from the corpse of Fupa.<br />
+Kazooka gets a stained grey pouch from the corpse of Fupa.<br />
+Kazooka gets a grey leather pouch from the corpse of Fupa.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; l<br />
+A Small Clearing in the Park<br />
+A dull brass ring lies here, forgotten...it glows blue<br />
+A plate of dark metal lies on the ground.<br />
+A bloody skull lies on the ground, grinning.<br />
+A pair of black metals bracers studded with fine rubies have been left here...it <br />
+glows blue..it glows dimly<br />
+An iridescent black rapier lies glittering on the ground...it glows blue<br />
+The corpse of Fupa is lying here.<br />
+The corpse of Gijho is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A bloody skull, covered in rotten flesh is here...it glows blue<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+The corpse of Omar is lying here.<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A Kalaman cityguard is standing here, fighting Cylas. (white aura)<br />
+&lt;Newb&gt; Gerald, Krynn's Most Famous Cliff Jumper is sitting here, fighting Desu. <br />
+(white aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here, fighting Gerald. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is sitting here, fighting Dilger. (flying) <br />
+(white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here. (flying) (red aura)<br />
+. . . is outlined with a dim aura.<br />
+&lt;BSP&gt; Desu Luze is standing here, fighting Dilger. (flying) (red aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here, fighting Dilger. (flying) (white <br />
+aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here, fighting a Kalaman <br />
+cityguard. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here. <br />
+(flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Cylas Luze is standing here, fighting a Kalaman cityguard. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;Newb&gt; Dilger the Male Human is sitting here, fighting Kazooka. (flying) (white <br />
+aura)<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Desu rushes forward and lets fly a barbaric YAWP.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Desu charges into Dilger, but he manages to stay standing.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Desu heroically rescues Kazooka.<br />
+Desu MASSACRES a Kalaman cityguard with his smite.<br />
+Dilger bruises Desu with his cleave.<br />
+Desu MASSACRES a Kalaman cityguard with his smite.<br />
+Desu MASSACRES a Kalaman cityguard with his pierce.<br />
+Desu MASSACRES a Kalaman cityguard with his smite.<br />
+A Kalaman cityguard is dead! R.I.P.<br />
+Goka MASSACRES Dilger with his cleave.<br />
+Goka cleaves Dilger extremely hard.<br />
+Gerald bruises Desu with his slash.<br />
+Demeter MASSACRES Gerald with his stab.<br />
+The death cry of a Kalaman cityguard echoes from somewhere nearby...<br />
+Dilger gets a long sword from the corpse of a Kalaman cityguard.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Solaris focuses harshly on Gerald and utters some strange words.<br />
+Solaris slowly fades into existence.<br />
+Solaris comes out of hiding.<br />
+Brains splatter on you as Solaris's force bolt shatters Gerald's skull.<br />
+Gerald is dead! R.I.P.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; k<br />
+The death cry of Gerald echoes from somewhere nearby...<br />
+A bronze dragon stops following Gerald.<br />
+Dilger stands up.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; <br />
+Kazooka gets a very large pile of coins from the corpse of Gerald.<br />
+<br />
+172H 55V 6601157X 5227C Exits:NESW&gt; i <br />
+Kazooka divides 1760 coins equally among the group members present.<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt; ge<br />
+Demeter crashes into Dilger in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt; ral<br />
+Ryan utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt; #TICK+10<br />
+<br />
+Malice ANNIHILATES Dilger with her crush.<br />
+<br />
+172H 55V 6601157X 5403C Exitsg<br />
+Cylas focuses harshly on Dilger and utters some strange words.<br />
+Cylas slowly fades into existence.<br />
+Cylas points to the forest and the roots and vines tear Dilger to pieces!<br />
+Dilger is dead! R.I.P.<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt; <br />
+The death cry of Dilger echoes from somewhere nearby...<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt;  al<br />
+Kazooka gets a malevolent hooked beast goad from the corpse of Dilger.<br />
+Kazooka gets a very large pile of coins from the corpse of Dilger.<br />
+<br />
+172H 55V 6601157X 5403C Exits:NESW&gt; l co<br />
+Kazooka divides 5330 coins equally among the group members present.<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; rpse<br />
+Huh?!<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; <br />
+Solaris gets a bronze shield from the corpse of Dilger.<br />
+Solaris gets some glistening bronze armour from the corpse of Dilger.<br />
+Solaris gets a long sword from the corpse of Dilger.<br />
+Solaris gets a scroll of recall from the corpse of Dilger.<br />
+Solaris gets a small wooden chest from the corpse of Dilger.<br />
+Solaris gets a hooded lantern from the corpse of Dilger.<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; i<br />
+You are carrying:<br />
+a hooded lantern<br />
+a jug of oil<br />
+a golden ass..it glows blue..it glows dimly<br />
+a bronze shield<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a jug of oil [2]<br />
+a scroll of recall..it glows blue [2]<br />
+a bronze shield<br />
+a cup [3]<br />
+a slice of birthday cake [3]<br />
+an ancient jade ring..it glows blue [2]<br />
+a mystic gold medallion..it glows blue..it glows dimly<br />
+a string of illusionist's beads..it glows blue..it hums softly<br />
+the armor of the renegade mage..it glows blue..it glows dimly<br />
+a silver-streaked black hood..it glows blue<br />
+some fluffy rabbit fur boots..it glows blue<br />
+a pair of colourful spellcasting gloves..it glows blue<br />
+a pair of leather sleeves..it glows blue<br />
+a comfortable blue robe..it glows blue<br />
+a cloth belt pack..it glows blue<br />
+a plain component pouch..it glows blue<br />
+an arcane dagger..it glows blue..it hums softly<br />
+a glowing scroll of recall..it glows blue..it glows dimly [3]<br />
+a wooden shield<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; l<br />
+A Small Clearing in the Park<br />
+The corpse of Dilger is lying here.<br />
+A swarm of insects fills the area.<br />
+The corpse of Gerald is lying here.<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+A dull brass ring lies here, forgotten...it glows blue<br />
+A plate of dark metal lies on the ground.<br />
+A bloody skull lies on the ground, grinning.<br />
+A pair of black metals bracers studded with fine rubies have been left here...it <br />
+glows blue..it glows dimly<br />
+An iridescent black rapier lies glittering on the ground...it glows blue<br />
+The corpse of Fupa is lying here.<br />
+The corpse of Gijho is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A bloody skull, covered in rotten flesh is here...it glows blue<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+The corpse of Omar is lying here.<br />
+The corpse of Dast is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+A blade made from silver lies here...it glows blue..it hums softly<br />
+The corpse of Deraj is lying here.<br />
+A decaying vine rests on the ground...it glows blue<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+&lt;BSP&gt; Demeter the Fisher King is standing here. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Goka the Male Hylar Dwarf is sitting here. (flying) (white aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Remodnar Eht Reredrum is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Desu Luze is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+&lt;BSP&gt; Kazooka, BSP Flunkie is standing here. (flying) (white aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Ryan Pipes, Crusader in the Blood Sea is standing here. (flying) (white <br />
+aura)<br />
+. . . is surrounded by a white mist.<br />
+&lt;BSP&gt; Malice Warmonger, Far Beyond Driven is standing here. (flying) (red aura)<br />
+. . . is outlined with a glittery dust.<br />
+&lt;BSP&gt; Lord Solaris Majere, Bravest Pirate of the Blood Seas is standing here. <br />
+(flying) (invisible) (white aura)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;BSP&gt; Cylas Luze is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; <br />
+Goka stands up.<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; <br />
+Demeter nods solemnly.<br />
+<br />
+172H 55V 6601157X 5936C Exits:NESW&gt; sco<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1905'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1905">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1905">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

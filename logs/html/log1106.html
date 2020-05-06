@@ -1,0 +1,721 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1106-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1106'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kills in Palanthas</font></b>
+<p>
+POV: 
+Manny<p>
+Log Rating:
+-2.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+Chantar flies in from the north.<br />
+Obso flies in from the north.<br />
+<br />
+547H 95V 10720501X 3648C Exits:NS&gt; <br />
+Taps tells your group 'clerics?'<br />
+<br />
+547H 95V 10720501X 3648C Exits:NS&gt; bash chantar<br />
+<br />
+Taps focuses harshly on Obso and utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Huge flames burn Obso from above.<br />
+<br />
+547H 95V 10720501X 3648C Exits:NS&gt; <br />
+Chantar focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+547H 95V 10720501X 3648C Exits:NS&gt; bash chantar<br />
+You crash into Chantar in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+547H 95V 10720501X 3648C [Manny:Perfect] [Chantar:V.Good] Exits:NS&gt; <br />
+Obso deftly steps in front of Chantar, pushing into the frey.<br />
+Obso heroically rescues Chantar.<br />
+Obso raise his shield and blocks your blow.<br />
+Obso slowly fades into existence.<br />
+Obso stabs YOU extremely hard.<br />
+Taps misses Obso with his pierce.<br />
+<br />
+532H 95V 10720501X 3648C [Manny:V.Good] [Obso:Good] Exits:NS&gt; <br />
+Aier drinks from a golden chalice.<br />
+Aier shines with a holy light.<br />
+<br />
+532H 95V 10720501X 3648C [Manny:V.Good] [Obso:Good] Exits:NS&gt; <br />
+Aier crashes into Obso in a thundering collision, knocking him to the ground!<br />
+<br />
+532H 95V 10720501X 3648C [Manny:V.Good] [Obso:Fair] Exits:NS&gt; <br />
+Taps focuses harshly on Obso and utters some strange words.<br />
+Huge flames burn Obso from above.<br />
+<br />
+532H 95V 10720501X 3648C [Manny:V.Good] [Obso:Fair] Exits:NS&gt; <br />
+Aier massacres Obso with her claw.<br />
+You massacre Obso with your claw.<br />
+Obso stabs YOU hard.<br />
+<br />
+525H 95V 10720501X 3648C [Manny:V.Good] [Obso:Fair] Exits:NS&gt; gt laff fighting us<br />
+Taps focuses harshly on Obso and utters some strange words.<br />
+Flesh burns as Taps enshrouds Obso in a cloak of flames.<br />
+You try to bash Chantar, but you miss and tumble forward onto your face.<br />
+<br />
+525H 95V 10720501X 3648C [Manny:V.Good] [Obso:Bad] Exits:NS&gt; <br />
+Chantar misses you with his hit.<br />
+Aier claws Obso extremely hard.<br />
+You massacre Obso with your claw.<br />
+Obso stabs YOU extremely hard.<br />
+<br />
+505H 95V 10720501X 3648C [Manny:V.Good] [Obso:V.Bad] Exits:NS&gt; st<br />
+<br />
+Obso steps aside as Aier attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+505H 95V 10720501X 3648C [Manny:V.Good] [Obso:V.Bad] Exits:NS&gt; <br />
+Taps focuses harshly on Obso and utters some strange words.<br />
+Flesh burns as Taps enshrouds Obso in a cloak of flames.<br />
+<br />
+505H 95V 10720501X 3648C [Manny:V.Good] [Obso:V.Bad] Exits:NS&gt; <br />
+Chantar stands up.<br />
+<br />
+505H 95V 10720501X 3648C [Manny:V.Good] [Obso:V.Bad] Exits:NS&gt; <br />
+Chantar focuses on Obso and utters some strange words.<br />
+Chantar heals Obso.<br />
+<br />
+505H 95V 10720501X 3648C [Manny:V.Good] [Obso:V.Good] Exits:NS&gt; <br />
+Aier madly twirls a black three taloned claw and chain.<br />
+There is a sickening SHLUCK as the talons hook deep<br />
+into Obso's flesh!<br />
+Aier cackles gleefully then with a mighty tug yanks out more flesh!<br />
+Aier massacres Obso with her claw.<br />
+You claw Obso very hard.<br />
+Obso stabs YOU extremely hard.<br />
+Obso stands up.<br />
+487H 95V 10720501X 3648C [Manny:Good] [Obso:Good] Exits:NS&gt; <br />
+Obso gets a scroll from his chest.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Obso:Good] Exits:NS&gt; <br />
+Obso grabs a scroll of recall.<br />
+Obso recites a scroll of recall.<br />
+Obso disappears.<br />
+You direct your attention to Chantar.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:V.Good] Exits:NS&gt; bash<br />
+You tell your group 'laff fighting us'<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:V.Good] Exits:NS&gt; You stand up.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:V.Good] Exits:NS&gt; You try to bash Chantar, but you miss and tumble forward ont<br />
+o your face.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:V.Good] Exits:NS&gt; <br />
+Taps focuses harshly on Chantar and utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Flesh burns as Taps enshrouds Chantar in a cloak of flames.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:Good] Exits:NS&gt; <br />
+You claw Chantar extremely hard.<br />
+Chantar misses you with his hit.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:Fair] Exits:NS&gt; <br />
+Aier stands up.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Chantar:Fair] Exits:NS&gt; <br />
+Chantar panics, and attempts to flee.<br />
+Chantar flies north.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Chantar flies in from the north.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Chantar focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Aier flies south.<br />
+Taps flies south.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Dre arrives from the south.<br />
+Hindukush flies in from the south.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; st<br />
+<br />
+Dre leaves north.<br />
+Hindukush flies north.<br />
+Aier flies in from the south.<br />
+Taps flies in from the south.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Aier crashes into Chantar in a thundering collision, knocking him to the ground!<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Taps focuses harshly on Chantar and utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Flesh burns as Taps enshrouds Chantar in a cloak of flames.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; You stand up.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; <br />
+Aier massacres Chantar with her claw.<br />
+Chantar misses Aier with his hit.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; bash chantar<br />
+You try to bash Chantar, but you miss and tumble forward onto your face.<br />
+<br />
+487H 95V 10720501X 3648C [Aier:Perfect] [Chantar:V.Bad] Exits:NS&gt; <br />
+Taps focuses harshly on Chantar and utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Taps sends a chilling blast of air at Chantar, giving him a severe case of frostbite.<br />
+<br />
+487H 95V 10720501X 3648C [Aier:Perfect] [Chantar:V.Bad] Exits:NS&gt; <br />
+You miss Chantar with your claw.<br />
+Aier massacres Chantar with her claw.<br />
+Chantar misses Aier with his hit.<br />
+<br />
+487H 95V 10720501X 3648C [Aier:Perfect] [Chantar:Awful] Exits:NS&gt; <br />
+Aier crashes into Chantar in a thundering collision, knocking him to the ground!<br />
+<br />
+487H 95V 10720501X 3648C [Aier:Perfect] [Chantar:Awful] Exits:NS&gt; st<br />
+Taps focuses harshly on Chantar and utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Taps sends a chilling blast of air at Chantar, giving him a severe case of frostbite.<br />
+Chantar is stunned, but will likely regain consciousness again.<br />
+<br />
+487H 95V 10720501X 3648C [Chantar:Awful] Exits:NS&gt; <br />
+Dre arrives from the north.<br />
+Hindukush flies in from the north.<br />
+<br />
+487H 95V 10720501X 3648C [Chantar:Awful] Exits:NS&gt; <br />
+You massacre Chantar with your claw.<br />
+You receive 0 experience.<br />
+Chantar is dead! R.I.P.<br />
+Aier madly twirls a black three taloned claw and chain.<br />
+There is a sickening SHLUCK as the talons hook deep<br />
+into Chantar's flesh!<br />
+Aier cackles gleefully then with a mighty tug yanks out more flesh!<br />
+The death cry of Chantar echoes from somewhere nearby...<br />
+Obso stops following Chantar.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; #   {1} now aliases {bash dre} in [default] group <br />
+You stand up.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; bash dre<br />
+<br />
+Dre focuses harshly on Aier and utters some strange words.<br />
+<br />
+487H 95V 10720501X 3648C Exits:NS&gt; You crash into Dre in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+487H 95V 10720501X 3648C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Hindukush slowly fades into existence.<br />
+You are sent sprawling as Hindukush crashes into you.<br />
+<br />
+465H 95V 10720501X 3648C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Hindukush massacres YOU with his slash.<br />
+You massacre Dre with your claw.<br />
+Dre misses you with his claw.<br />
+Taps gets a very large pile of coins from the corpse of Chantar.<br />
+<br />
+444H 95V 10720501X 3648C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Taps divides 1158 coins equally among the group members present.<br />
+<br />
+444H 95V 10720501X 4034C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Aier tells your group 'DRE HINDUKUSH PASSED ME'<br />
+<br />
+444H 95V 10720501X 4034C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Aier tells your group 'DRE HINDUKUSH PASSED ME'<br />
+<br />
+444H 95V 10720501X 4034C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Dre steps aside as Aier attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+444H 95V 10720501X 4034C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Taps says 'loot'<br />
+<br />
+444H 95V 10720501X 4034C [Manny:Good] [Dre:Good] Exits:NS&gt; <br />
+Aier massacres Dre with her claw.<br />
+Hindukush slashes YOU extremely hard.<br />
+You claw Dre extremely hard.<br />
+Dre misses you with his claw.<br />
+<br />
+426H 95V 10720501X 4034C [Manny:Good] [Dre:Fair] Exits:NS&gt; <br />
+Taps utters some strange words.<br />
+Taps slowly fades into existence.<br />
+Hindukush is shredded by shards of ice.<br />
+Dre is shredded by shards of ice.<br />
+<br />
+426H 95V 10720501X 4034C [Manny:Good] [Dre:Bad] Exits:NS&gt; st<br />
+bash<br />
+<br />
+Hindukush grabs a glowing scroll of recall.<br />
+Hindukush recites a glowing scroll of recall.<br />
+Dre disappears.<br />
+You direct your attention to Hindukush.<br />
+<br />
+426H 95V 10720501X 4034C [Manny:Good] [Hindukush:V.Good] Exits:NS&gt; <br />
+You claw Hindukush extremely hard.<br />
+Taps misses Hindukush with his pierce.<br />
+Hindukush massacres YOU with his slash.<br />
+<br />
+402H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; <br />
+Aier stands up.<br />
+<br />
+402H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; <br />
+Aier crashes into Hindukush in a thundering collision, knocking him to the ground!<br />
+<br />
+402H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; You stand up.<br />
+<br />
+402H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; You try to bash Hindukush, but you miss and tumble forward o<br />
+nto your face.<br />
+<br />
+402H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; <br />
+Aier massacres Hindukush with her claw.<br />
+You massacre Hindukush with your claw.<br />
+Taps pierces Hindukush extremely hard.<br />
+Hindukush slashes YOU extremely hard.<br />
+<br />
+384H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Good] Exits:NS&gt; st<br />
+<br />
+Taps focuses harshly on Hindukush and utters some strange words.<br />
+Taps's spell causes a deafening fist of air to pummel Hindukush!<br />
+<br />
+384H 95V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; <br />
+Aier madly twirls a black three taloned claw and chain.<br />
+There is a sickening SHLUCK as the talons hook deep<br />
+into Hindukush's flesh!<br />
+Aier cackles gleefully then with a mighty tug yanks out more flesh!<br />
+Aier massacres Hindukush with her claw.<br />
+You miss Hindukush with your claw.<br />
+Hindukush misses you with his slash.<br />
+<br />
+398H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; bash<br />
+<br />
+Hindukush steps aside as Aier attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+Taps focuses harshly on Hindukush and utters some strange words.<br />
+Taps's spell causes a deafening fist of air to pummel Hindukush!<br />
+<br />
+398H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; Aier massacres Hindukush with her claw.<br />
+You should probably stand up!<br />
+You massacre Hindukush with your claw.<br />
+Hindukush massacres YOU with his slash.<br />
+You stand up.<br />
+<br />
+369H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; You try to bash Hindukush, but you miss and tumble forward <br />
+onto your face.<br />
+<br />
+369H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; <br />
+Maeve arrives from the south.<br />
+<br />
+369H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; <br />
+Maeve leaves north.<br />
+<br />
+369H 119V 10720501X 4034C [Manny:Fair] [Hindukush:Fair] Exits:NS&gt; <br />
+Hindukush grabs a glowing scroll of recall.<br />
+Hindukush recites a glowing scroll of recall.<br />
+Hindukush disappears.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1106'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1106">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1106">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

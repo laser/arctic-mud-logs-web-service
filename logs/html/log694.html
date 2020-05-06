@@ -1,0 +1,748 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 694-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='694'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Ronk dies</font></b>
+<p>
+POV: 
+Gabol<p>
+Log Rating:
+2.4444<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Ronk get's hazed and killed</i>
+<p>
+<p>
+
+Lara flies west.<br />
+You follow Lara west.<br />
+The Edge of a Cliff<br />
+Civni Calaquendi, Shining Hunter is standing here. (flying) (invisible)<br />
+Samppi the Fishing Duckling is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Onnilas, Gloucester's Runglish Teacher is standing here. (flying)<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Lara Lust, Lady with an Appetite is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ronk, Gnomish Legion of Doom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Hume, Destroyer of Worlds is standing here. (flying) (invisible)<br />
+Ausirien Blackmane is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Weeping softly, a beautiful elf with blue skin sits upon the ground.<br />
+<br />
+278H 89V 22880773X 2499C Mem:1 Exits:NE&gt; <br />
+Samppi focuses harshly on Ronk and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Samppi's force bolt slams into Ronk.<br />
+<br />
+278H 89V 22880773X 2499C Mem:1 Exits:NE&gt; <br />
+Samppi misses Ronk with his whip.<br />
+Ronk slowly fades into existence.<br />
+Ronk massacres Samppi with his slash.<br />
+Samppi's fireshield does him little good as Ronk takes a swing at him.<br />
+Ronk slashes Samppi extremely hard.<br />
+Samppi's fireshield does him little good as Ronk takes a swing at him.<br />
+Lara closes her spellbook with a content look on her face.<br />
+&Auml;garen focuses harshly on Ronk and utters some strange words.<br />
+With a dumb look on his face, Ronk tries to concentrate.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Hume sinks gently to the ground.<br />
+Hume stops using a papal cross.<br />
+Hume grabs a glowing scroll of recall.<br />
+Hume recites a glowing scroll of recall.<br />
+Hume disappears.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; <br />
+Ronk flies in from the south.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Lara utters the words, 'sfugwahuq gsgrul'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+Lara slowly fades into existence.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Ronk gets a scroll from his chest.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Ausirien holds a bronze bracelet inset with stones high so everyone can see it.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; cast 'hold person' loony<br />
+Who should the spell be cast upon?<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Ausirien utters some strange words.<br />
+Ausirien disappears.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Civni slowly fades into existence.<br />
+Ronk steps aside as Civni attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Ronk panics, and attempts to flee.<br />
+Ronk flies north.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; cast 'hold person' ronk<br />
+Who should the spell be cast upon?<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+&Auml;garen flies north.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Onnilas flies north.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Samppi flies north.<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; <br />
+Lara utters the words, 'sfugwahuq gsgrul'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+<br />
+278H 119V 22880773X 2499C Exits:NE&gt; n<br />
+On a Ledge Midway Up the Mountain<br />
+Samppi the Fishing Duckling is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Onnilas, Gloucester's Runglish Teacher is standing here. (flying)<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 117V 22880773X 2499C Exits:U&gt; cast 'hold person' ronk<br />
+Who should the spell be cast upon?<br />
+<br />
+<br />
+278H 117V 22880773X 2499C Exits:U&gt; n<br />
+Alas, you cannot go that way...<br />
+<br />
+278H 117V 22880773X 2499C Exits:U&gt; <br />
+&Auml;garen flies up.<br />
+<br />
+278H 117V 22880773X 2499C Exits:U&gt; <br />
+Onnilas flies up.<br />
+<br />
+278H 117V 22880773X 2499C Exits:U&gt; u<br />
+Climbing the Mountainside<br />
+Onnilas, Gloucester's Runglish Teacher is standing here. (flying)<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 115V 22880773X 2499C Exits:U&gt; <br />
+**Onnilas: doesnt matter<br />
+<br />
+278H 115V 22880773X 2499C Exits:U&gt; <br />
+&Auml;garen flies up.<br />
+<br />
+278H 115V 22880773X 2499C Exits:U&gt; u<br />
+Climbing the Mountainside<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 113V 22880773X 2499C Exits:W&gt; u<br />
+Alas, you cannot go that way...<br />
+<br />
+278H 113V 22880773X 2499C Exits:W&gt; <br />
+&Auml;garen flies west.<br />
+<br />
+278H 113V 22880773X 2499C Exits:W&gt; w<br />
+On the Mountainside<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 111V 22880773X 2499C Exits:U&gt; <br />
+&Auml;garen flies up.<br />
+<br />
+278H 111V 22880773X 2499C Exits:U&gt; w<br />
+Alas, you cannot go that way...<br />
+<br />
+278H 111V 22880773X 2499C Exits:U&gt; u<br />
+<br />
+278H 109V 22880773X 2499C Exits:U&gt; u<br />
+On a Large Open Ledge<br />
+<br />
+278H 107V 22880773X 2499C Exits:N&gt; n<br />
+Entrance to the Cave<br />
+<br />
+278H 105V 22880773X 2499C Exits:NS&gt; <br />
+Samppi flies in from the south.<br />
+<br />
+278H 105V 22880773X 2499C Exits:NS&gt; <br />
+Onnilas flies in from the south.<br />
+<br />
+278H 105V 22880773X 2499C Exits:NS&gt; l<br />
+Entrance to the Cave<br />
+Onnilas, Gloucester's Runglish Teacher is standing here. (flying)<br />
+Samppi the Fishing Duckling is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+<br />
+278H 105V 22880773X 2499C Exits:NS&gt; n<br />
+You get the creepy feeling that you're being watched.<br />
+Inside the Cave<br />
+Chanting a prayer to her Queen, a woman dressed in all black is here.<br />
+A huge, ferocious draconian crouches here, fiercely baring its claws.<br />
+<br />
+278H 103V 22880773X 2499C Exits:NS&gt; <br />
+Samppi flies in from the south.<br />
+<br />
+278H 103V 22880773X 2499C Exits:NS&gt; <br />
+Onnilas flies in from the south.<br />
+A cleric of Takhisis focuses harshly on Onnilas and utters some strange words.<br />
+A cleric of Takhisis bludgeons Onnilas hard.<br />
+A large kapak draconian claws Onnilas extremely hard.<br />
+<br />
+278H 103V 22880773X 2499C Exits:NS&gt; n<br />
+Deeper Inside the Cave<br />
+Ronk, Gnomish Legion of Doom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+278H 101V 22880773X 2499C Exits:NS&gt; <br />
+Samppi flies in from the south.<br />
+<br />
+278H 101V 22880773X 2499C Exits:NS&gt; n<br />
+The Back of the Cave<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; <br />
+Ronk flies in from the south.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; <br />
+**Lara: oh well<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; l<br />
+The Back of the Cave<br />
+Ronk, Gnomish Legion of Doom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&Auml;garen the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; <br />
+&Auml;garen flies south.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; <br />
+&Auml;garen flies in from the south.<br />
+<br />
+278H 99V 22880773X 2499C Exits:S&gt; cast 'hold person' ronk<br />
+You utter the words, 'hold person'<br />
+Ronk &lt;-------- FREEZED<br />
+<br />
+278H 99V 22880773X 2499C Mem:2 Exits:S&gt; <br />
+&Auml;garen massacres Ronk with his slash.<br />
+<br />
+278H 99V 22880773X 2499C Mem:2 Exits:S&gt; <br />
+Onnilas flies in from the south.<br />
+<br />
+278H 99V 22880773X 2499C Mem:2 Exits:S&gt; <br />
+Ronk steps aside as Onnilas attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+278H 99V 22880773X 2499C Mem:2 Exits:S&gt; cast 'force bolt' ronk<br />
+<br />
+Onnilas massacres Ronk with his bludgeon.<br />
+&Auml;garen massacres Ronk with his slash.<br />
+<br />
+278H 99V 22880773X 2499C Mem:2 Exits:S&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Ronk.<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; <br />
+Samppi flies in from the south.<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; <br />
+Samppi focuses harshly on Ronk and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Samppi's force bolt slams into Ronk.<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; cast 'force bolt' ronk<br />
+<br />
+&Auml;garen focuses his purity on Ronk's leg!<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; <br />
+Civni flies in from the south.<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; <br />
+**Lara: all recall<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; <br />
+Onnilas bludgeons Ronk extremely hard.<br />
+&Auml;garen slashes Ronk.<br />
+<br />
+278H 99V 22880773X 2499C Mem:3 Exits:S&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Ronk.<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; <br />
+Ronk steps aside as Civni attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; <br />
+**Samppi: NO<br />
+&Auml;garen attempts to strike at Ronk with his sword.<br />
+&Auml;garen massacres Ronk with his slash.<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; <br />
+STANDS -----&gt; Onnilas &lt;----- STANDS<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; <br />
+Ronk steps aside as Onnilas attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; cast 'force bolt' ronk<br />
+<br />
+Civni slashes Ronk very hard.<br />
+Onnilas massacres Ronk with his bludgeon.<br />
+&Auml;garen slams the crossguard of his sword into Ronk's face!<br />
+<br />
+278H 99V 22880773X 2499C Mem:5 Exits:S&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Ronk.<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; <br />
+**&Auml;garen: killing ronk<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; <br />
+&Auml;garen attempts to strike at Ronk with his sword.<br />
+&Auml;garen massacres Ronk with his slash.<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; cast 'force bolt' ronk<br />
+<br />
+**Samppi: KILL<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; <br />
+Samppi focuses harshly on Ronk and utters the words, 'magic missile'.<br />
+Ronk's shield protects him from Samppi's magic missiles.<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; <br />
+Civni slashes Ronk hard.<br />
+Onnilas massacres Ronk with his bludgeon.<br />
+&Auml;garen expertly slashes Ronk with his sword!<br />
+You receive 0 experience.<br />
+Ronk is dead! R.I.P.<br />
+The death cry of Ronk echoes from somewhere nearby...<br />
+Ronk sinks gently to the ground.<br />
+<br />
+278H 99V 22880773X 2499C Mem:6 Exits:S&gt; get all corpse<br />
+You get a very large pile of coins from the corpse of Ronk.<br />
+COINS LOOTED -------&gt; 2483<br />
+<br />
+278H 99V 22880773X 4982C Mem:6 Exits:S&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a mithril main-gauche..it glows blue..it glows dimly<br />
+a thick sword of defense..it glows blue<br />
+an adamantite bracer..it glows blue..it glows dimly<br />
+a skirt of silver dragonscales tasses..it glows blue<br />
+a pair of spun mithril sleeves..it glows blue<br />
+a pair of black taloned gauntlets..it glows blue..it glows dimly<br />
+a pair of wicked black boots..it glows blue<br />
+a cuisse of silver dragonscale..it glows blue<br />
+a crown made of a silver dragon's skull..it glows blue<br />
+a fulgurite plate..it glows blue..it glows dimly<br />
+a dragon tooth necklace..it glows blue<br />
+a diamond collar..it glows blue<br />
+a ring of gnomish power..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly [3]<br />
+a large dwarven shield<br />
+Fuddle's ring..it glows blue<br />
+a colorful mushroom [2]<br />
+a large jug (invisible)<br />
+a fine vallenwood chest<br />
+a leather belt pouch<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='694'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=694">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="694">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1277-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1277'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Taking out the trash.</font></b>
+<p>
+POV: 
+Ruth<p>
+Log Rating:
+1.2000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+A little cleaner. Turt dies trying to be sneaky. Sarah and Aneyo try poof tactics, but pay the price</i>
+<p>
+<p>
+
+  Matrim smirks.<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; t aneyo come<br />
+You tell Aneyo 'come'<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; <br />
+Matrim says 'should we kill the guards now?'<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; t aneyo bring it bitch<br />
+You tell Aneyo 'bring it bitch'<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; gt nah<br />
+You tell your group 'nah'<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; <br />
+Sarah appears before you in a puff of smoke.<br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+An insane cityguard tries to kick Sarah but misses and destroys an image.<br />
+An insane cityguard tries to kick Sarah but misses and destroys an image.<br />
+Sarah steps aside as an insane cityguard attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; <br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+Sarah bludgeons an insane cityguard extremely hard.<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt;<br />
+Sarah bludgeons an insane cityguard extremely hard.<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; <br />
+Aneyo tells you 'wehre?'<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; <br />
+Matrim slowly fades into existence.<br />
+Matrim comes out of hiding.<br />
+Matrim misses Sarah with his pierce.<br />
+<br />
+395H 20V 2174048X 2636C Mem:3&gt; k sarah<br />
+You miss Sarah and destroy an image instead.<br />
+<br />
+395H 20V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Perfect] Mem:3&gt; <br />
+An insane cityguard delivers a vicious kick to Sarah's face. Blood flies as her head snaps back.<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard misses Sarah with his hit.<br />
+You miss Sarah with your stab.<br />
+Matrim misses Sarah with his pierce.<br />
+Matrim pierces Sarah extremely hard.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Good] [Sarah:V.Good] Mem:3&gt; aven head<br />
+<br />
+Sarah grabs a glowing scroll of recall.<br />
+Sarah recites a glowing scroll of recall.<br />
+<br />
+Sarah grabs a glowing scroll of recall.<br />
+Sarah recites a glowing scroll of recall.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Good] [Sarah:V.Good] Mem:3&gt; <br />
+An insane cityguard crashes into Sarah in a thundering collision, knocking her to the ground!<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Good] [Sarah:V.Good] Mem:3&gt; You mess up the targetting and focus on the torso instead.<br />
+You focus your purity on Sarah's body!<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Good] [Sarah:V.Good] Mem:3&gt; <br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard misses Sarah with his hit.<br />
+You stab Sarah extremely hard.<br />
+Matrim massacres Sarah with his pierce.<br />
+Matrim massacres Sarah with his pierce.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+Sarah bludgeons an insane cityguard very hard.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Fair] Mem:3&gt; <br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Fair] Mem:3&gt; <br />
+An insane cityguard stands up.<br />
+395H 42V 2174048X 2636C [an insane cityguard:Good] [Sarah:V.G<br />
+395H 42V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Fair] Mem:3&gt; str<br />
+<br />
+An insane cityguard spins and tries to kick Sarah, but Sarah dodges out of the way.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Fair] Mem:3&gt; <br />
+Matrim attempts to unbalance Sarah, but she quickly avoids him.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Fair] [Sarah:Fair] Mem:3&gt; An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard barely hits Sarah.<br />
+You stab Sarah extremely hard.<br />
+Matrim massacres Sarah with his pierce.<br />
+Matrim massacres Sarah with his pierce.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+Sarah bludgeons an insane cityguard hard.<br />
+You attempt to strike at Sarah with your partisan.<br />
+You miss Sarah with your stab.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Bad] [Sarah:Bad] Mem:3&gt; avenleg<br />
+<br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+Matrim attempts to unbalance Sarah, but she quickly avoids him.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Bad] [Sarah:Bad] Mem:3&gt; aven leg<br />
+<br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:Bad] [Sarah:Bad] Mem:3&gt; <br />
+An insane cityguard spins and tries to kick Sarah, but Sarah dodges out of the way.<br />
+An insane cityguard staggers about confused! <br />
+395H 42V 2174048X 2636C [an insane cityguard:Bad] [Sarah:Bad] Mem:3&gt; <br />
+An insane cityguard spins and tries to kick Sarah, but Sarah dodges out of the way.<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard hits Sarah hard.<br />
+You miss Sarah with your stab.<br />
+Matrim massacres Sarah with his pierce.<br />
+Matrim massacres Sarah with his pierce.<br />
+An insane cityguard hits Sarah.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+Sarah bludgeons an insane cityguard very hard.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; Give your self a chance to recover.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; Give your self a chance to recover.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; <br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+Sarah stands up.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; str<br />
+You strike at Sarah, but miss her completely.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; <br />
+Matrim attempts to unbalance Sarah, but she quickly avoids him.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt;395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; <br />
+Sarah utters some strange words.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:V.Bad] Mem:3&gt; <br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard staggers about confused!<br />
+An insane cityguard misses Sarah with his hit.<br />
+You miss Sarah with your stab.<br />
+Matrim misses Sarah with his pierce.<br />
+Matrim pierces Sarah extremely hard.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+An insane cityguard misses Sarah with his hit.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; str<br />
+<br />
+An insane cityguard tries to sweep Sarah's legs, but misses badly.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; <br />
+An insane cityguard delivers a vicious kick to Sarah's face. Blood flies as her head snaps back.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; <br />
+An insane cityguard delivers a vicious kick to Sarah's face. Blood flies as her head snaps back.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; You strike at Sarah, but miss her completely.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; str<br />
+<br />
+Matrim attempts to unbalance Sarah, but she quickly avoids him.<br />
+<br />
+395H 42V 2174048X 2636C [an insane cityguard:V.Bad] [Sarah:Awful] Mem:3&gt; <br />
+An insane cityguard staggers about confused! An insane cityguard staggers about confused!<br />
+An insane cityguard misses Sarah with his hit.<br />
+You stab Sarah hard.<br />
+Matrim massacres Sarah with his pierce.<br />
+Matrim pierces Sarah extremely hard.<br />
+Sarah is mortally wounded, and will die soon, if not aided.<br />
+An insane cityguard hits Sarah hard.<br />
+You receive 0 experience.<br />
+Sarah is dead! R.I.P.<br />
+The death cry of Sarah echoes from somewhere nearby...<br />
+<br />
+395H 42V 2174048X 2636C Mem:3&gt; <br />
+An insane cityguard tries to sweep Matrim's legs, but misses badly.<br />
+<br />
+395H 42V 2174048X 2636C Mem:3&gt; gac<br />
+<br />
+An insane cityguard tries to sweep Matrim's legs, but misses badly.<br />
+<br />
+395H 42V 2174048X 2636C Mem:3&gt; You couldn't find what you were looking for.<br />
+<br />
+395H 42V 2174048X 2636C Mem:3&gt; Matrim gets a very large pile of coins from the corpse of Sarah.<br />
+You get an ornately carved staff from the corpse of Sarah.<br />
+You get a runed bracelet from the corpse of Sarah.<br />
+You get a plain component pouch from the corpse of Sarah.<br />
+You get a thick silver robe from the corpse of Sarah.<br />
+You get a purple silk dress from the corpse of Sarah.<br />
+You get a small quartz ring from the corpse of Sarah.<br />
+You get a steel chainmail shirt from the corpse of Sarah.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+An insane cityguard staggers about confused!<br />
+<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+Apple : You can't carry that much weight.<br />
+You get a grimy bone carved die from the corpse of Sarah.<br />
+Sack : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Robe : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Dagger : You can't carry that many items.<br />
+Beads : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+<br />
+395H 42V 2174048X 2636C Mem:3&gt; <br />
+Matrim steps aside as an insane cityguard attempts a bash, stumbles, and falls flat on his face.<br />
+Matrim gets a shiny red apple from the corpse of Sarah.<br />
+Matrim gets a shiny red apple from the corpse of Sarah.<br />
+Matrim gets a shiny red apple from the corpse of Sarah.<br />
+Matrim gets a shiny red apple from the corpse of Sarah.<br />
+Matrim gets a shiny red apple from the corpse of Sarah.<br />
+Matrim gets a shoulder sack from the corpse of Sarah.<br />
+Matrim gets a small canteen from the corpse of Sarah.<br />
+Matrim gets a long grey robe from the corpse of Sarah.<br />
+Matrim gets a waterskin from the corpse of Sarah.<br />
+Matrim gets a waterskin from the corpse of Sarah.<br />
+Matrim gets a crystal shard necklace from the corpse of Sarah.<br />
+Matrim gets a crystal shard necklace from the corpse of Sarah.<br />
+Matrim gets a blue hilted dagger from the corpse of Sarah.<br />
+Matrim gets a string of illusionist's beads from the corpse of Sarah.<br />
+Matrim gets a crystal shard necklace from the corpse of Sarah.<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; <br />
+A glowing portal opens in front of you, and Aneyo steps from it.<br />
+<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; <br />
+Matrim slowly fades into existence.<br />
+Matrim comes out of hiding.<br />
+Matrim gives his fang a quick thrust and twist, as he strikes Aneyo in the back with it.<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; k aneyo<br />
+You stab Aneyo extremely hard.<br />
+<br />
+395H 64V 2172880X 2636C [Matrim:Perfect] [Aneyo:V.Bad] Mem:2&gt; <br />
+You stab Aneyo extremely hard.<br />
+Matrim massacres Aneyo with his pierce.<br />
+Matrim pierces Aneyo extremely hard.<br />
+Aneyo misses Matrim with her drain.<br />
+Their opponent, making them recoil momentarily in horror.<br />
+<br />
+395H 64V 2172880X 2636C [Matrim:Perfect] [Aneyo:Awful] Mem:2&gt; <br />
+Aneyo focuses harshly on Matrim and utters some strange words.<br />
+<br />
+395H 64V 2172880X 2636C [Matrim:Perfect] [Aneyo:Awful] Mem:2&gt; <br />
+A pech stops following Aneyo. You stab Aneyo very hard.<br />
+Aneyo is stunned, but will likely regain consciousness again.<br />
+Matrim obliterates Aneyo with his pierce.<br />
+You receive 0 experience. Aneyo is dead! R.I.P.<br />
+The death cry of Aneyo echoes from somewhere nearby...<br />
+<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; <br />
+Matrim gets a large pile of coins from the corpse of Aneyo.<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; gac<br />
+Tome : You can't carry that many items.<br />
+Rod : You can't carry that many items.<br />
+Robe : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Charm : You can't carry that many items.<br />
+Necklace : You can't carry that many items.<br />
+Pear : You can't carry that many items.<br />
+Pear : You can't carry that many items.<br />
+Sinew : You can't carry that many items.<br />
+<br />
+395H 64V 2172880X 2636C Mem:2&gt; o horse get all corpse<br />
+a white pegasus gets a rotted academic tome from the corpse of Aneyo.<br />
+a white pegasus gets the rod of terror from the corpse of Aneyo.<br />
+A white pegasus is zapped by a black witch's robe and instantly drops it.<br />
+a white pegasus gets a leather shield with metal straps from the corpse of Aneyo.<br />
+a white pegasus gets a lucky bone charm from the corpse of Aneyo.<br />
+a white pegasus gets a necklace made of finger bones from the corpse of Aneyo.<br />
+a white pegasus gets a golden pear from the corpse of Aneyo.<br />
+a white pegasus gets a golden pear from the corpse of Aneyo.<br />
+a white pegasus gets cured ape sinew from the corpse of Aneyo. 95H 130V 2172880X 2636C &gt; <br />
+               ** ****** ****<br />
+            ** ***     *****  **<br />
+           ** **      *     ***  *<br />
+           *    ** **   *   *  * **<br />
+          *  ** * *          *     *<br />
+          *  *    **            * * *<br />
+         * * ** *     *   ******  *<br />
+          *   * * **  ***     *  * *<br />
+            *  *  * **********  *** *<br />
+             *****   *     *   * * *<br />
+                    *   * *<br />
+                   *  * *  *<br />
+                  *  *  **  *<br />
+                  * **   * *<br />
+                    *  * *<br />
+                    * *  **<br />
+                   **     ****<br />
+                  ***  * *    ****<br />
+        ********** ** *   ** *   *********<br />
+             _____ ___   ___  __  __<br />
+            |  ___/ _  / _ |  /  |<br />
+            | |_ | | | | | | | |/| |<br />
+            |  _|| |_| | |_| | |  | |<br />
+            |_|   ___/ ___/|_|  |_|<br />
+<br />
+        The mud has crashed. Please try again later.<br />
+<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1277'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1277">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1277">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

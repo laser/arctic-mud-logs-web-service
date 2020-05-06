@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 874-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='874'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Mooh R.I.P.</font></b>
+<p>
+POV: 
+Korian<p>
+Log Rating:
+-0.3846<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+no need to thank me</i>
+<p>
+<p>
+
+266H 97V 7573591X 644C Exits:NESW&gt; <br />
+Svein flies east.<br />
+You follow Svein east.<br />
+A tiny faerie flies in from the west.<br />
+Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the east and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+A tiny, shimmering faerie hovers near you.<br />
+Svein the Male Wild Elf is standing here. (flying)<br />
+You sense a life form.<br />
+Mr. Mooh Slothmouth, Reject of Mt. Nevermind is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+<br />
+266H 96V 7573591X 644C Exits:NESW&gt; c 'para' loshar<br />
+Mooh focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+266H 96V 7573591X 644C Exits:NESW&gt; <br />
+Loshar slowly fades into existence.<br />
+You step aside as Loshar tries to bash you, causing her to tumble and fall face down.<br />
+<br />
+266H 96V 7573591X 644C [Korian:Perfect] [Loshar:Perfect] Exits:NESW&gt; <br />
+Svein crashes into Mooh in a thundering collision, knocking him to the ground!<br />
+<br />
+266H 96V 7573591X 644C [Korian:Perfect] [Loshar:Perfect] Exits:NESW&gt; You utter the words, 'paralysis'<br />
+Loshar is paralyzed!<br />
+<br />
+266H 96V 7573591X 644C [Korian:Perfect] [Loshar:Perfect] Mem:3 Exits:NESW&gt; <br />
+Svein cleaves Mooh hard.<br />
+Mooh slowly fades into existence.<br />
+Mooh bludgeons Svein hard.<br />
+<br />
+266H 96V 7573591X 644C [Korian:Perfect] [Loshar:Perfect] Mem:3 Exits:NESW&gt; flflflYou flee head over heels.<br />
+Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south. Directly to the<br />
+south, you see a magic shop of strange and interesting artifacts.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+266H 95V 7573591X 644C Mem:3 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+266H 95V 7573591X 644C Mem:3 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+266H 95V 7573591X 644C Mem:3 Exits:NESW&gt; eMarket Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the east and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+A tiny, shimmering faerie hovers near you.<br />
+Svein the Male Wild Elf is standing here, fighting Mooh. (flying)<br />
+Loshar Korenth, Bovonic Basher of Impermissible Prowess is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Mr. Mooh Slothmouth, Reject of Mt. Nevermind is sitting here, fighting Svein. (flying)<br />
+. . . has a metallic luster.<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; <br />
+Svein cleaves Mooh hard.<br />
+Mooh bludgeons Svein very hard.<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; c 'para' moohYou utter the words, 'paralysis'<br />
+The magic fails!<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; <br />
+**Svein: kill mooh up<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; <br />
+Mooh steps aside as Svein attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; c 'para' mooh<br />
+Svein cleaves Mooh very hard.<br />
+Mooh misses Svein with his bludgeon.<br />
+<br />
+266H 94V 7573591X 644C Mem:3 Exits:NESW&gt; You utter the words, 'paralysis'<br />
+The magic fails!<br />
+<br />
+266H 94V 7573591X 644C Mem:4 Exits:NESW&gt; <br />
+Mooh stands up.<br />
+<br />
+266H 94V 7573591X 644C Mem:4 Exits:NESW&gt; <br />
+Mooh focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+266H 94V 7573591X 644C Mem:4 Exits:NESW&gt; c 'flame' mooh<br />
+Svein cleaves Mooh hard.<br />
+<br />
+266H 94V 7573591X 644C Mem:4 Exits:NESW&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Mooh in a cloak of flames.<br />
+<br />
+266H 94V 7573591X 644C Mem:5 Exits:NESW&gt; <br />
+Mooh focuses harshly on Svein and utters some strange words.<br />
+Svein stands up.<br />
+<br />
+266H 94V 7573591X 644C Mem:5 Exits:NESW&gt; <br />
+Svein crashes into Mooh in a thundering collision, knocking him to the ground!<br />
+<br />
+266H 94V 7573591X 644C Mem:5 Exits:NESW&gt; c 'flame' mooh<br />
+Svein cleaves Mooh very hard.<br />
+<br />
+266H 94V 7573591X 644C Mem:5 Exits:NESW&gt; c 'flame' moohYou utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Mooh in a cloak of flames.<br />
+<br />
+266H 94V 7573591X 644C Mem:6 Exits:NESW&gt; <br />
+Svein cleaves Mooh very hard.<br />
+Mooh bludgeons Svein very hard.<br />
+<br />
+266H 94V 7573591X 644C Mem:6 Exits:NESW&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Mooh in a cloak of flames.<br />
+<br />
+266H 94V 7573591X 644C Mem:6 Exits:NESW&gt; c 'flame' mooh<br />
+Svein cleaves Mooh very hard.<br />
+Mooh bludgeons Svein very hard.<br />
+<br />
+266H 94V 7573591X 644C Mem:6 Exits:NESW&gt; <br />
+Mooh steps aside as Svein attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+266H 94V 7573591X 644C Mem:6 Exits:NESW&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Mooh in a cloak of flames.<br />
+<br />
+266H 94V 7573591X 644C Mem:7 Exits:NESW&gt; <br />
+Svein cleaves Mooh extremely hard.<br />
+You receive 0 experience.<br />
+Mooh is dead! R.I.P.<br />
+The death cry of Mooh echoes from somewhere nearby...<br />
+Loshar stops following Mooh.<br />
+Mooh now follows Loshar.<br />
+Loshar is the new leader of Mooh's group.<br />
+Mooh stops following Loshar.<br />
+<br />
+266H 94V 7573591X 644C Mem:7 Exits:NESW&gt; get all corpseYou get a small black orb from the corpse of Mooh.<br />
+You get a metal quarterstaff from the corpse of Mooh.<br />
+You get a copper wrist guard from the corpse of Mooh.<br />
+You get a grey leather bracer from the corpse of Mooh.<br />
+You get a belt of seashells from the corpse of Mooh.<br />
+You get a purple robe from the corpse of Mooh.<br />
+You get a large bronze shield from the corpse of Mooh.<br />
+You get a pair of grey leather boots from the corpse of Mooh.<br />
+You get a pair of dwarven greaves from the corpse of Mooh.<br />
+You get a black ice visor from the corpse of Mooh.<br />
+You get a spun silver vest from the corpse of Mooh.<br />
+You get a necklace of draconian teeth from the corpse of Mooh.<br />
+You get a jade pendant from the corpse of Mooh.<br />
+You get a silver runed ring from the corpse of Mooh.<br />
+You get a platinum dragon signet ring from the corpse of Mooh.<br />
+You get a pile of coins from the corpse of Mooh.<br />
+There were 31 coins.<br />
+You get a glowing scroll of recall from the corpse of Mooh.<br />
+Scroll : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+Censer : You can't carry that many items.<br />
+Cloak : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+Flask : You can't carry that many items.<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; <br />
+Svein stands up.<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; gt go on losharYou tell your group 'go on loshar'<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; lMarket Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the east and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+The corpse of Mooh is lying here.<br />
+A tiny, shimmering faerie hovers near you.<br />
+Svein the Male Wild Elf is standing here. (flying)<br />
+Loshar Korenth, Bovonic Basher of Impermissible Prowess is sitting here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; <br />
+Loshar yawns.<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; <br />
+Svein crashes into Loshar in a thundering collision, knocking her to the ground!<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; c 'flame' loshar<br />
+Svein cleaves Loshar very hard.<br />
+Loshar slashes Svein extremely hard.<br />
+<br />
+266H 94V 7573591X 675C Mem:7 Exits:NESW&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Loshar in a cloak of flames.<br />
+<br />
+266H 94V 7573591X 675C Mem:8 Exits:NESW&gt; c 'ice'<br />
+Svein misses Loshar with his cleave.<br />
+Loshar slashes Svein very hard.<br />
+<br />
+266H 94V 7573591X 675C Mem:8 Exits:NESW&gt; You utter the words, 'ice storm'<br />
+Loshar is shredded by shards of ice.<br />
+<br />
+266H 94V 7573591X 675C [Svein:Good] [Loshar:Fair] Mem:9 Exits:NESW&gt; c 'para'<br />
+Loshar stands up.<br />
+<br />
+266H 94V 7573591X 675C [Svein:Good] [Loshar:Fair] Mem:9 Exits:NESW&gt; <br />
+Loshar sinks gently to the ground.<br />
+Loshar stops using a small down feather.<br />
+Loshar grabs a scroll of recall.<br />
+Loshar recites a scroll of recall.<br />
+Loshar disappears.<br />
+<br />
+266H 94V 7573591X 675C Mem:9 Exits:NESW&gt; <br />
+The cloud-veiled sky becomes even darker as the sun sets.<br />
+Your skin softens.<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; lMarket Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is just to the east and the bazaars are to the north and<br />
+south. It really is very busy here.<br />
+The corpse of Mooh is lying here.<br />
+A tiny, shimmering faerie hovers near you.<br />
+Svein the Male Wild Elf is standing here. (flying)<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; <br />
+**Svein: fuck<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; gt pfftYou tell your group 'pfft'<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; gt lootYou tell your group 'loot'<br />
+<br />
+266H 113V 7573591X 675C Mem:8 Exits:NESW&gt; exa corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a glowing ice crystal..it glows blue..it glows dimly<br />
+a pouch<br />
+a piece of sweet bread..it glows blue [16]<br />
+a chest made of bones (invisible)..it glows blue<br />
+a brass censer<br />
+a heavy cloak<br />
+a large pouch<br />
+a backpack..it glows blue<br />
+a flask of clear liquid..it glows blue
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='874'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=874">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="874">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

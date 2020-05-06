@@ -1,0 +1,776 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1290-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1290'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Crappy PK</font></b>
+<p>
+POV: 
+Visara<p>
+Log Rating:
+1.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+650H 140V 19338634X 0C Exits:NESW&gt; n<br />
+You kneel down and study the ground.<br />
+You can't seem to find any tracks.<br />
+Traders Street<br />
+A coin has been left here.<br />
+Ramirez Blackthorn, Hiway Kender is standing here. (flying) (invisible)<br />
+Bastian Se, Outlawed Shadow Beast is standing here. (flying)<br />
+Rewer the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+A Balifor watchman watches for trouble in the city.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; <br />
+A Balifor watchman leaves south.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; <br />
+Solly flies in from the north.<br />
+Syre flies in from the north.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; <br />
+Rewer flies west.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; <br />
+Amaranta arrives from the south.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; fol so<br />
+Solly flies north.<br />
+Syre flies north.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; fol solly<br />
+Amaranta starts following you.<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; fol solly<br />
+I see no person by that name here!<br />
+<br />
+650H 139V 19338634X 0C Exits:NSW&gt; n<br />
+You kneel down and study the ground.<br />
+Your victim's tracks end here.<br />
+Amaranta arrives from the south.<br />
+An Intersection<br />
+A small hoopak has been stuck in the ground...it hums softly<br />
+Ramirez Blackthorn, Hiway Kender is standing here. (flying) (invisible)<br />
+Bastian Se, Outlawed Shadow Beast is standing here. (flying)<br />
+Amaranta Buendia, Outlaw Daughter of Makondo is standing here. (invisible)<br />
+Syre the Male Human is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Solly, First Mage is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Aces High, Blood Sea Hand of Death is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Fuuj Sickle, Blood Sea Confectionist of Doom is standing here. (flying)<br />
+Leij the Saint is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Sanka the Male Human is standing here. (flying)<br />
+<br />
+650H 138V 19338634X 0C Exits:NESW&gt; <br />
+Syre focuses harshly on Sanka and utters some strange words.<br />
+Sanka is caught in some of Syre's acid!<br />
+<br />
+650H 138V 19338634X 0C Exits:NESW&gt; f<br />
+Leij focuses harshly on Syre and utters some strange words.<br />
+Syre appears to grow stronger.<br />
+Syre grabs at Leij.<br />
+<br />
+650H 138V 19338634X 0C Exits:NESW&gt; <br />
+Solly focuses harshly on Sanka and utters some strange words.<br />
+Sanka wavers under the impact of the lightning bolt sent by Solly.<br />
+<br />
+650H 138V 19338634X 0C Exits:NESW&gt; ll<br />
+You crash into Fuuj in a bone crunching bash, <br />
+sending him sprawling to the ground.<br />
+<br />
+650H 138V 19338634X 0C [Me:V.Good] [Fuuj:Good] Exits:NESW&gt; <br />
+Aces focuses harshly on Solly and utters some strange words.<br />
+Aces slowly fades into existence.<br />
+The sound of bones cracking echoes as Aces's force bolt slams into Solly.<br />
+<br />
+650H 138V 19338634X 0C [Me:V.Good] [Fuuj:Good] Exits:NESW&gt; <br />
+Ramirez slowly fades into existence.<br />
+Sanka steps aside as Ramirez attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+650H 138V 19338634X 0C [Me:V.Good] [Fuuj:Good] Exits:NESW&gt; <br />
+Bastian massacres Fuuj with his shoot.<br />
+<br />
+650H 138V 19338634X 0C [Me:V.Good] [Fuuj:Good] Exits:NESW&gt; gr<br />
+Bastian shoots Fuuj extremely hard.<br />
+Bastian massacres Fuuj with his shoot.<br />
+Ramirez massacres Sanka with his cleave.<br />
+Aces crushes Solly extremely hard.<br />
+Aces is burned, as he swings at Solly.<br />
+Solly is dead! R.I.P.<br />
+You massacre Fuuj with your pierce.<br />
+Fuuj massacres YOU with his drain.<br />
+Syre misses Sanka with his hit.<br />
+Sanka slashes Syre extremely hard.<br />
+Sanka is burned, as he swings at Syre.<br />
+The death cry of Solly echoes from somewhere nearby...<br />
+Solly sinks gently to the ground.<br />
+Rewer stops following Solly.<br />
+Syre stops following Solly.<br />
+Blaah stops following Solly.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; gro for<br />
+Amaranta gets a very large pile of coins from the corpse of Solly.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; gro form<br />
+fol soll<br />
+Syre focuses harshly on Sanka and utters some strange words.<br />
+Sanka wavers under the impact of the lightning bolt sent by Syre.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; fol solly<br />
+<br />
+Leij focuses harshly on Syre and utters some strange words.<br />
+Leij calls fire down from the heavens and sears Syre.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; <br />
+Amaranta gets a dragon's selfstone from the corpse of Solly.<br />
+Amaranta gets a moon staff from the corpse of Solly.<br />
+Amaranta gets a runed bracelet from the corpse of Solly.<br />
+Amaranta gets a large pouch from the corpse of Solly.<br />
+Amaranta gets a demonic cape from the corpse of Solly.<br />
+Amaranta gets a pair of leather sleeves from the corpse of Solly.<br />
+Amaranta gets the boots of the elven magi from the corpse of Solly.<br />
+Amaranta gets a pair of leather pants from the corpse of Solly.<br />
+Amaranta gets a silver-streaked black hood from the corpse of Solly.<br />
+Amaranta gets a pair of succubus wings from the corpse of Solly.<br />
+Amaranta gets an alligator scale necklace from the corpse of Solly.<br />
+Amaranta gets a tarnished silver ring from the corpse of Solly.<br />
+Amaranta gets a slimy dark green potion from the corpse of Solly.<br />
+Amaranta gets a rotted academic tome from the corpse of Solly.<br />
+Amaranta gets a loaf of waybread from the corpse of Solly.<br />
+Amaranta gets a loaf of waybread from the corpse of Solly.<br />
+Amaranta gets a loaf of waybread from the corpse of Solly.<br />
+Amaranta gets a loaf of waybread from the corpse of Solly.<br />
+Amaranta gets a small wooden chest from the corpse of Solly.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; bas<br />
+Aces utters some strange words.<br />
+<br />
+623H 138V 19338634X 0C [Me:V.Good] [Fuuj:Fair] Exits:NESW&gt; bash aces<br />
+<br />
+Bastian annihilates Fuuj with his shoot.<br />
+Bastian massacres Fuuj with his shoot.<br />
+Ramirez massacres Sanka with his cleave.<br />
+You massacre Fuuj with your pierce.<br />
+Fuuj massacres YOU with his drain.<br />
+Bastian gets a milky potion of see invisible from the corpse of Solly.<br />
+Bastian gets a milky potion of see invisible from the corpse of Solly.<br />
+Bastian gets an ornate carving knife from the corpse of Solly.<br />
+Bastian gets a yellow potion from the corpse of Solly.<br />
+Bastian gets a leather jacket from the corpse of Solly.<br />
+Bastian gets a bronze bottle from the corpse of Solly.<br />
+Bastian gets a bronze bottle from the corpse of Solly.<br />
+Bastian gets a scroll of recall from the corpse of Solly.<br />
+Bastian gets a scroll of recall from the corpse of Solly.<br />
+Bastian gets a scroll of recall from the corpse of Solly.<br />
+Bastian gets a scroll of recall from the corpse of Solly.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Fuuj:Fair] Exits:NESW&gt; <br />
+Sanka utters some strange words.<br />
+Sanka disappears.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Fuuj:Fair] Exits:NESW&gt; Amaranta is now a member of your <br />
+group.<br />
+Fuuj stands up.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Fuuj:Fair] Exits:NESW&gt; <br />
+Amaranta tries to bash Aces, but she passes right through his image and falls.<br />
+Amaranta slowly fades into existence.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Fuuj:Fair] Exits:NESW&gt; I see no person by that name here!<br />
+Leij focuses harshly on Syre and utters some strange words.<br />
+Leij calls fire down from the heavens and sears Syre.<br />
+Fuuj stops using a black stone.<br />
+Fuuj grabs a glowing scroll of recall.<br />
+Fuuj recites a glowing scroll of recall.<br />
+Fuuj disappears.<br />
+<br />
+602H 138V 19338634X 0C Exits:NESW&gt; You try to bash Aces, but you pass through his image <br />
+and fall to the ground.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:V.Good] Exits:NESW&gt; <br />
+Ramirez stands up.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:V.Good] Exits:NESW&gt; <br />
+Ramirez slowly fades into existence.<br />
+Ramirez crashes into Aces in a thundering collision, knocking him to the ground!<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:Good] Exits:NESW&gt; <br />
+Solly arrives from the south.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:Good] Exits:NESW&gt; <br />
+Ramirez massacres Aces with his cleave.<br />
+Ramirez is burned, as he swings at Aces.<br />
+You miss Aces and destroy an image instead.<br />
+Leij crushes Syre hard.<br />
+Leij is burned, as he swings at Syre.<br />
+Syre misses Leij with his hit.<br />
+Amaranta misses Aces with her crush.<br />
+Aces crushes Amaranta very hard.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:Good] Exits:NESW&gt; <br />
+Bastian annihilates Aces with his shoot.<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:Fair] Exits:NESW&gt; <br />
+Syre focuses harshly on Aces and utters some strange words.<br />
+Syre shoots webs at Aces but narrowly misses him!<br />
+<br />
+602H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:Fair] Exits:NESW&gt; <br />
+Bastian massacres Aces with his shoot.<br />
+Ramirez massacres Aces with his cleave.<br />
+Ramirez is burned, as he swings at Aces.<br />
+You massacre Aces with your pierce.<br />
+You feel intense pain as you swing through Aces's flaming aura.<br />
+Amaranta massacres Aces with her crush.<br />
+Amaranta is burned, as she swings at Aces.<br />
+Aces misses Amaranta with his crush.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Amaranta:V.Good] [Aces:V.Bad] Exits:NESW&gt; <br />
+Leij focuses on Aces and utters some strange words.<br />
+Aces disappears.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; st<br />
+bash le<br />
+Syre focuses harshly on Leij and utters some strange words.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; bash leij<br />
+Amaranta stands up.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; bash leij<br />
+You stand up.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; You crash into Leij in a bone crunching bash, <br />
+sending him sprawling to the ground.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Good] Exits:NESW&gt; <br />
+Solly looks at Leij.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Good] Exits:NESW&gt; <br />
+Bastian annihilates Leij with his shoot.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Good] Exits:NESW&gt; <br />
+Bastian massacres Leij with his shoot.<br />
+Bastian shoots Leij extremely hard.<br />
+Bastian massacres Leij with his shoot.<br />
+You massacre Leij with your pierce.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Fair] Exits:NESW&gt; <br />
+Ramirez slowly fades into existence.<br />
+Leij steps aside as Ramirez attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Fair] Exits:NESW&gt; <br />
+Amaranta slowly fades into existence.<br />
+Leij steps aside as Amaranta attempts a bash, stumbles, and falls flat on her <br />
+face.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Fair] Exits:NESW&gt; <br />
+Syre focuses harshly on Leij and utters some strange words.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Fair] Exits:NESW&gt; <br />
+Promina slowly fades into existence.<br />
+Promina comes out of hiding.<br />
+Promina massacres Leij with her shoot.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Fair] Exits:NESW&gt; bash<br />
+<br />
+Promina massacres Leij with her shoot.<br />
+Promina annihilates Leij with her shoot.<br />
+Amaranta crushes Leij extremely hard.<br />
+The darkness flowing from Nightbringer hits Leij with force!<br />
+Ramirez massacres Leij with his cleave.<br />
+Bastian shoots Leij extremely hard.<br />
+Bastian massacres Leij with his shoot.<br />
+You massacre Leij with your pierce.<br />
+Leij crushes Syre hard.<br />
+Leij is burned, as he swings at Syre.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Awful] Exits:NESW&gt; <br />
+Wen arrives from the south.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Awful] Exits:NESW&gt; <br />
+Wen leaves west.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Syre:Fair] [Leij:Awful] Exits:NESW&gt; <br />
+Syre focuses harshly on Leij and utters some strange words.<br />
+Syre reveals with a shock that Leij has left his body.<br />
+You receive 0 experience.<br />
+Leij is dead! R.I.P.<br />
+<br />
+589H 138V 19338634X 0C [Me:Good] [Leij:Dying] Exits:NESW&gt; <br />
+The death cry of Leij echoes from somewhere nearby...<br />
+Leij sinks gently to the ground.<br />
+Sanka stops following Leij.<br />
+Fuuj stops following Leij.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; <br />
+Bastian gets a warhammer from the corpse of Leij.<br />
+Bastian gets a gleaming silver bracer from the corpse of Leij.<br />
+Bastian gets a pure white bracer from the corpse of Leij.<br />
+Bastian gets a grey silken robe from the corpse of Leij.<br />
+Bastian gets a pair of blue gloves from the corpse of Leij.<br />
+Bastian gets a feathered headdress from the corpse of Leij.<br />
+Bastian gets a gleaming mithril necklace inlaid with diamonds from the corpse of <br />
+Leij.<br />
+Bastian gets a small quartz ring from the corpse of Leij.<br />
+Bastian gets a bright ball of light from the corpse of Leij.<br />
+Bastian gets a large pile of coins from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+Bastian gets a loaf of waybread from the corpse of Leij.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; <br />
+Promina starts following you.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; <br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a loaf of waybread from the corpse of Leij.<br />
+Solly gets a pair of spectacular hematite armbands from the corpse of Leij.<br />
+Solly gets a pinnated leaf of an oak from the corpse of Leij.<br />
+Solly gets a flimsy gray wand from the corpse of Leij.<br />
+Solly gets a waterskin from the corpse of Leij.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; g al<br />
+Solly leaves west.<br />
+<br />
+589H 138V 19338634X 0C Exits:NESW&gt; l<br />
+An Intersection<br />
+The corpse of Leij is lying here.<br />
+The corpse of Solly is lying here.<br />
+A small hoopak has been stuck in the ground...it hums softly<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Ramirez Blackthorn, Hiway Kender is sitting here. (flying)<br />
+Bastian Se, Outlawed Shadow Beast is standing here. (flying)<br />
+Amaranta Buendia, Outlaw Daughter of Makondo is sitting here.<br />
+Syre the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1290'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1290">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1290">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,816 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 352-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='352'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Templar vs Dark Knight this wipe</font></b>
+<p>
+POV: 
+Omen<p>
+Log Rating:
+2.2272<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Honor duels between two buffest representatives of templars and dark knights, oh well if Omen only had 50hp more like Aspros and used mithril rapier instead of Nightbringer.</i>
+<p>
+<p>
+
+You are using:<br />
+&lt;worn on finger&gt;           the black knight's insignia<br />
+&lt;worn on finger&gt;           the black knight's insignia<br />
+&lt;worn around neck&gt;         an inverted cross<br />
+&lt;worn around neck&gt;         an inverted cross<br />
+&lt;worn on body&gt;             the dark plates of Takhisis..it hums softly<br />
+&lt;worn on head&gt;             a skull helm of Takhisis..it hums softly<br />
+&lt;worn on legs&gt;             a pair of unfinished mithril legplates..it hums softly<br />
+&lt;worn on feet&gt;             chaos sollerets<br />
+&lt;worn on hands&gt;            a pair of red dragon scale gauntlets<br />
+&lt;worn on arms&gt;             a set of demon skin armbands..it hums softly<br />
+&lt;worn about body&gt;          a thin, light green robe..it glows dimly<br />
+&lt;worn about waist&gt;         a girdle with a human skull buckle<br />
+&lt;worn around right wrist&gt;  a diamond encrusted bracer<br />
+&lt;worn around left wrist&gt;   a bracelet of dragon teeth (invisible)..it glows dimly<br />
+&lt;used in primary hand&gt;     Nightbringer<br />
+&lt;used in secondary hand&gt;   a gleaming ironwood staff..it glows dimly<br />
+<br />
+Aspros is using:<br />
+&lt;worn on finger&gt;           a redstone ring<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a platinum necklace..it glows dimly<br />
+&lt;worn around neck&gt;         a moonstone pendant..it glows dimly<br />
+&lt;worn on body&gt;             a suit of glimmering adamantite platemail..it glows dimly<br />
+&lt;worn on head&gt;             a frosted tin helm..it glows dimly<br />
+&lt;worn on legs&gt;             a silver tuille<br />
+&lt;worn on feet&gt;             a pair of combat sollerets<br />
+&lt;worn on hands&gt;            a pair of silver dragon scale gauntlets<br />
+&lt;worn on arms&gt;             a pair of bornite dwarven sleeves<br />
+&lt;worn as shield&gt;           Maza's traditional bronze shield<br />
+&lt;worn about body&gt;          a white dragonwing cloak<br />
+&lt;worn about waist&gt;         a silver fauld<br />
+&lt;worn around right wrist&gt;  a diamond bracelet<br />
+&lt;worn around left wrist&gt;   a diamond bracelet<br />
+&lt;used in primary hand&gt;     the mighty sword of Huma<br />
+&lt;held in secondary hand&gt;   a black stone<br />
+<br />
+<br />
+<br />
+First duel, with following rules:<br />
+<br />
+1) No charmies<br />
+2) No lay or drain<br />
+<br />
+<br />
+533H 143V 1851621X 0C Exits:ES&gt; <br />
+Aspros flies in from the east.<br />
+<br />
+533H 143V 1851621X 0C Exits:ES&gt; <br />
+Aspros focuses harshly on you and utters some strange words.<br />
+You scream in agony as Aspros makes your evil soul suffer.<br />
+<br />
+533H 143V 1851621X 0C Exits:ES&gt; ki aspros<br />
+You annihilate Aspros with your crush.<br />
+<br />
+533H 143V 1851621X 0C [Me:Perfect] [Aspros:V.Good] Exits:ES&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+Aspros deflects part of Omen's with his shield.<br />
+Aspros swings his shield in an arc and smacks you right in the head.<br />
+You massacre Aspros with your drain.<br />
+<br />
+502H 143V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ES&gt; gaze<br />
+Aspros focuses his purity on your arm!<br />
+Aspros forces you to drop your weapon.<br />
+<br />
+502H 143V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ES&gt; <br />
+Aspros massacres YOU with his slash.<br />
+Aspros raise his shield and blocks your blow.<br />
+Aspros raise his shield and blocks your blow.<br />
+You feel less righteous.<br />
+Your eyes sting slightly before going back to normal.<br />
+<br />
+484H 169V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ES&gt; <br />
+You gaze at Aspros with all the evilness you can muster.<br />
+<br />
+484H 169V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ES&gt; g mace<br />
+Aspros is zapped by Nightbringer and instantly drops it.<br />
+<br />
+484H 169V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ES&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You miss Aspros with your hit.<br />
+You miss Aspros with your drain.<br />
+<br />
+451H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; wie mace<br />
+Aspros focuses harshly on you and utters some strange words.<br />
+<br />
+451H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; <br />
+You miss Aspros with your hit.<br />
+You massacre Aspros with your drain.<br />
+<br />
+451H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; <br />
+You get Nightbringer.<br />
+<br />
+451H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; <br />
+You can't seem to wield anything at the moment.<br />
+<br />
+451H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+418H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You miss Aspros with your hit.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+418H 169V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ES&gt; wie mace<br />
+You start using the mace.<br />
+As you pick up the mace, it briefly glows red and sends a wave of power up<br />
+your arm.<br />
+<br />
+385H 169V 1851621X 0C [Me:Fair] [Aspros:Good] Exits:ES&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You massacre Aspros with your crush.<br />
+Aspros deflects part of Omen's with his shield.<br />
+You drain Aspros extremely hard.<br />
+<br />
+345H 169V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ES&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+314H 169V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ES&gt; <br />
+You annihilate Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+314H 169V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ES&gt; <br />
+Aspros focuses his purity on your leg!<br />
+Aspros focuses on your legs, but is thwarted by your quickness.<br />
+<br />
+314H 169V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ES&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+277H 169V 1851621X 0C [Me:Fair] [Aspros:Bad] Exits:ES&gt; gaz<br />
+You weakly gaze at Aspros.<br />
+<br />
+277H 169V 1851621X 0C [Me:Fair] [Aspros:Bad] Exits:ES&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+244H 169V 1851621X 0C [Me:Bad] [Aspros:Bad] Exits:ES&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+You massacre Aspros with your drain.<br />
+<br />
+208H 169V 1851621X 0C [Me:V.Bad] [Aspros:V.Bad] Exits:ES&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+175H 169V 1851621X 0C [Me:V.Bad] [Aspros:V.Bad] Exits:ES&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+145H 169V 1851621X 0C [Me:V.Bad] [Aspros:V.Bad] Exits:ES&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+118H 169V 1851621X 0C [Me:V.Bad] [Aspros:V.Bad] Exits:ES&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You massacre Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+79H 169V 1851621X 0C [Me:Awful] [Aspros:V.Bad] Exits:ES&gt; flee<br />
+You flee head over heels.<br />
+<br />
+<br />
+<br />
+Second duel, same rules, but no offence spells<br />
+<br />
+<br />
+<br />
+540H 161V 1851621X 0C Exits:EW&gt; <br />
+Harbor of Kalaman<br />
+Aspros Sanarapis, Maza's Laundry Service is standing here. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+A black rat with beady eyes scurries along the dock.<br />
+<br />
+540H 160V 1851621X 0C Exits:ESW&gt; ki aspros<br />
+You are magically prevented from attacking!<br />
+<br />
+540H 160V 1851621X 0C Exits:ESW&gt; ki aspros<br />
+You are magically prevented from attacking!<br />
+<br />
+540H 160V 1851621X 0C Exits:ESW&gt; ki aspros<br />
+You annihilate Aspros with your crush.<br />
+<br />
+540H 160V 1851621X 0C [Me:Perfect] [Aspros:V.Good] Exits:ESW&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+510H 160V 1851621X 0C [Me:V.Good] [Aspros:V.Good] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You massacre Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+You massacre Aspros with your drain.<br />
+<br />
+478H 160V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ESW&gt; <br />
+Aspros attempts to focuses on you and fails horribly.<br />
+<br />
+478H 160V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+445H 160V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ESW&gt; gaz<br />
+You gaze at Aspros with all the evilness you can muster.<br />
+<br />
+445H 160V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ESW&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+423H 160V 1851621X 0C [Me:Good] [Aspros:Good] Exits:ESW&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You massacre Aspros with your crush.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+386H 160V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros focuses his purity on your leg!<br />
+Aspros forces you to the ground.<br />
+<br />
+386H 160V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+342H 160V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ESW&gt; st<br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros annihilates YOU with his slash.<br />
+<br />
+305H 160V 1851621X 0C [Me:Fair] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+256H 160V 1851621X 0C [Me:Bad] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+Aspros raise his shield and blocks your blow.<br />
+<br />
+172H 160V 1851621X 0C [Me:V.Bad] [Aspros:Fair] Exits:ESW&gt;<br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros annihilates YOU with his slash.<br />
+<br />
+172H 160V 1851621X 0C [Me:V.Bad] [Aspros:Fair] Exits:ESW&gt; <br />
+You stand up.<br />
+<br />
+172H 160V 1851621X 0C [Me:V.Bad] [Aspros:Fair] Exits:ESW&gt; flee<br />
+You flee head over heels.<br />
+<br />
+<br />
+<br />
+<br />
+Third duel, same rules as the first duel<br />
+<br />
+<br />
+<br />
+<br />
+538H 154V 1851621X 0C Exits:EW&gt; <br />
+Aspros Sanarapis, Maza's Laundry Service is standing here. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+538H 153V 1851621X 0C Exits:ESW&gt; ki aspros<br />
+You are magically prevented from attacking!<br />
+<br />
+538H 153V 1851621X 0C Exits:ESW&gt; ki aspros<br />
+You annihilate Aspros with your crush.<br />
+<br />
+538H 153V 1851621X 0C [Me:V.Good] [Aspros:V.Good] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+You miss Aspros with your drain.<br />
+<br />
+505H 153V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ESW&gt; <br />
+You annihilate Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+505H 153V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ESW&gt; <br />
+Aspros focuses harshly on you and utters some strange words.<br />
+You scream in agony as Aspros makes your evil soul suffer.<br />
+<br />
+505H 153V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ESW&gt; gaz<br />
+You weakly gaze at Aspros.<br />
+<br />
+505H 153V 1851621X 0C [Me:V.Good] [Aspros:Good] Exits:ESW&gt; <br />
+You massacre Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+505H 153V 1851621X 0C [Me:V.Good] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros focuses harshly on you and utters some strange words.<br />
+Aspros makes your soul hurt and suffer!<br />
+<br />
+437H 153V 1851621X 0C [Me:Good] [Aspros:Fair] Exits:ESW&gt; <br />
+You annihilate Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+It starts to rain.<br />
+Your eyes tingle as a sense of darkness returns to you.<br />
+<br />
+451H 161V 1851621X 0C [Me:Good] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros attempts to focuses on you and fails horribly.<br />
+<br />
+451H 161V 1851621X 0C [Me:Good] [Aspros:Fair] Exits:ESW&gt; gaz<br />
+You gaze at Aspros with all the evilness you can muster.<br />
+<br />
+451H 161V 1851621X 0C [Me:Good] [Aspros:Fair] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You massacre Aspros with your drain.<br />
+<br />
+419H 161V 1851621X 0C [Me:Good] [Aspros:Bad] Exits:ESW&gt; <br />
+Aspros focuses his purity on your arm!<br />
+Aspros forces you to remove your holdable.<br />
+<br />
+419H 161V 1851621X 0C [Me:Good] [Aspros:Bad] Exits:ESW&gt; <br />
+A sailor arrives from the east.<br />
+<br />
+419H 161V 1851621X 0C [Me:Good] [Aspros:Bad] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+<br />
+384H 161V 1851621X 0C [Me:Fair] [Aspros:Bad] Exits:ESW&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+358H 161V 1851621X 0C [Me:Fair] [Aspros:Bad] Exits:ESW&gt; hold ironwood.staff<br />
+You can't seem to hold anything at the moment.<br />
+<br />
+358H 161V 1851621X 0C [Me:Fair] [Aspros:Bad] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+<br />
+327H 161V 1851621X 0C [Me:Fair] [Aspros:V.Bad] Exits:ESW&gt; i<br />
+You are carrying:<br />
+a gleaming ironwood staff..it glows dimly<br />
+a dwarven miner's pack<br />
+<br />
+327H 161V 1851621X 0C [Me:Fair] [Aspros:V.Bad] Exits:ESW&gt; <br />
+Aspros strikes at you, but misses completely.<br />
+<br />
+327H 161V 1851621X 0C [Me:Fair] [Aspros:V.Bad] Exits:ESW&gt; hold ironwood.staff<br />
+You can't seem to hold anything at the moment.<br />
+<br />
+327H 161V 1851621X 0C [Me:Fair] [Aspros:V.Bad] Exits:ESW&gt; <br />
+Aspros annihilates YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+You whisper the dark words, and the mace emits the blackest of darkness.<br />
+<br />
+289H 161V 1851621X 0C [Me:Fair] [Aspros:V.Bad] Exits:ESW&gt; <br />
+Aspros attempts to strike at you with his sword.<br />
+Aspros massacres YOU with his slash.<br />
+<br />
+259H 161V 1851621X 0C [Me:Bad] [Aspros:V.Bad] Exits:ESW&gt; hold ironwood.staff<br />
+You can't seem to hold anything at the moment.<br />
+<br />
+259H 161V 1851621X 0C [Me:Bad] [Aspros:V.Bad] Exits:ESW&gt; <br />
+Aspros massacres YOU with his slash.<br />
+You annihilate Aspros with your crush.<br />
+<br />
+224H 161V 1851621X 0C [Me:Bad] [Aspros:V.Bad] Exits:ESW&gt; hold ironwood.staff<br />
+You can't seem to hold anything at the moment.<br />
+<br />
+224H 161V 1851621X 0C [Me:Bad] [Aspros:V.Bad] Exits:ESW&gt; <br />
+Aspros panics, and attempts to flee.<br />
+Aspros flies east.<br />
+<br />
+224H 161V 1851621X 0C Exits:ESW&gt; sc<br />
+You are Omen of Your Death, Legacy Offence Powerhouse, a level 30 Dark Knight.<br />
+You are of the 9th rank.<br />
+You are 24 years old.<br />
+You have 224(540) hit and 161(161) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 168148379 exp, and have 66748(413477) steel coins.<br />
+You have scored 32349155 rank experience.<br />
+You need 1851621 more experience to advance.<br />
+You have died 5 horrible deaths.<br />
+You have been connected for 13 minute(s).<br />
+You have been playing for 5 day(s), 5 hour(s) and 11 minute(s).<br />
+You are standing.<br />
+You are flying.<br />
+You are following Aspros.<br />
+You are affected by the following:<br />
+    unholy might<br />
+    bless<br />
+    protection from good<br />
+    cloak of shadows<br />
+    nightvision<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='352'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=352">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="352">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

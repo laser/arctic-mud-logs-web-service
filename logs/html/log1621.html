@@ -1,0 +1,970 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1621-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1621'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+title thief vs trash cleric</font></b>
+<p>
+POV: 
+noplpo<p>
+Log Rating:
+-0.5883<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+why does everyone want to kill noplpo?</i>
+<p>
+<p>
+
+<br />
+299H 93V 310677X 405C Exits:ESW&gt; <br />
+Oddie arrives from the east.<br />
+<br />
+299H 93V 310677X 405C Exits:ESW&gt; <br />
+Francis shouts 'Smells like gun powder here...hrmm'<br />
+<br />
+299H 93V 310677X 405C Exits:ESW&gt; <br />
+Oddie comes out of hiding.<br />
+Suddenly Oddie stabs you in the back.<br />
+That Really did HURT!<br />
+<br />
+234H 93V 310677X 405C [Noplpo:Good] [Oddie:Perfect] Exits:ESW&gt; <br />
+Oddie pierces YOU very hard.<br />
+Oddie pierces YOU hard.<br />
+You miss Oddie with your bludgeon.<br />
+<br />
+214H 93V 310677X 405C [Noplpo:Fair] [Oddie:Perfect] Exits:ESW&gt; rofl<br />
+You roll on the floor in a fit of laughter.<br />
+<br />
+214H 93V 310677X 405C [Noplpo:Fair] [Oddie:Perfect] Exits:ESW&gt; east<br />
+east<br />
+You can't do that while fighting.<br />
+<br />
+214H 93V 310677X 405C [Noplpo:Fair] [Oddie:Perfect] Exits:ESW&gt; <br />
+Oddie panics, and attempts to flee.<br />
+Oddie leaves east.<br />
+<br />
+214H 93V 310677X 405C Exits:ESW&gt; It is pitch black.<br />
+Oddie Ball is standing here.<br />
+<br />
+214H 91V 310677X 405C Exits:ESW&gt; east<br />
+eastIt is pitch black.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+214H 89V 310677X 405C Exits:SW&gt; Alas, you cannot go that way...<br />
+<br />
+214H 89V 310677X 405C Exits:SW&gt; south<br />
+south<br />
+It is pitch black.<br />
+You sense that you are not alone.<br />
+<br />
+214H 88V 310677X 405C Exits:N(E)SW&gt; Cemetery<br />
+     The grass beneath your feet is yellowish and dead looking. Old<br />
+headstones can be seen to the west and south. Rotting trees block your view<br />
+of the sky and cast multiple dark shadows around you. You can hear squeeks<br />
+and groans and moans from around you, but you can't identify where they are<br />
+coming from. To the east lies an ancient concrete wall, topped with<br />
+spiked iron bars.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+214H 87V 310677X 405C Exits:NSW&gt; south<br />
+It is pitch black.<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+214H 85V 310677X 405C Exits:NW&gt; west<br />
+It is pitch black.<br />
+The corpse of a raccoon is lying here decomposing.<br />
+A raccoon scurries about among some tombstones.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+214H 83V 310677X 405C Exits:NEW&gt; west<br />
+west<br />
+It is pitch black.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+214H 81V 310677X 405C Exits:EW&gt; #TICK<br />
+west<br />
+It is pitch black.<br />
+A raccoon scurries about among some tombstones.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+214H 79V 310677X 405C Exits:NE&gt; Alas, you cannot go that way...<br />
+<br />
+214H 79V 310677X 405C Exits:NE&gt; c 'cur c' me<br />
+You utter the words, 'cure critical'<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+299H 106V 310677X 405C Mem:3 Exits:NE&gt; east<br />
+It is pitch black.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+299H 104V 310677X 405C Mem:3 Exits:EW&gt; east<br />
+It is pitch black.<br />
+The corpse of a raccoon is lying here decomposing.<br />
+A raccoon scurries about among some tombstones.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+Oddie arrives from the north.<br />
+<br />
+299H 102V 310677X 405C Mem:3 Exits:NEW&gt; c 'blind' oddie<br />
+Oddie comes out of hiding.<br />
+Oddie tried to backstab you, but you avoid him.<br />
+<br />
+299H 102V 310677X 405C [Noplpo:Perfect] [Oddie:Perfect] Mem:3 Exits:NEW&gt; <br />
+Oddie pierces YOU hard.<br />
+Oddie misses you with his pierce.<br />
+You miss Oddie with your bludgeon.<br />
+<br />
+291H 102V 310677X 405C [Noplpo:V.Good] [Oddie:Perfect] Mem:3 Exits:NEW&gt; You utter the words, 'blindness'<br />
+Oddie seems to be blinded!<br />
+<br />
+291H 102V 310677X 405C [Noplpo:V.Good] [Oddie:Perfect] Mem:4 Exits:NEW&gt; <br />
+Oddie misses you with his pierce.<br />
+Oddie pierces YOU very hard.<br />
+Oddie panics, and attempts to flee.<br />
+Oddie leaves north.<br />
+<br />
+280H 102V 310677X 405C Mem:4 Exits:NEW&gt; north<br />
+It is pitch black.<br />
+The corpse of a rat is lying here decomposing.<br />
+<br />
+280H 100V 310677X 405C Mem:4 Exits:NES&gt; east<br />
+Cemetery<br />
+     The grass beneath your feet is yellowish and dead looking. Old<br />
+headstones can be seen to the west and south. Rotting trees block your view<br />
+of the sky and cast multiple dark shadows around you. You can hear squeeks<br />
+and groans and moans from around you, but you can't identify where they are<br />
+coming from. To the east lies an ancient concrete wall, topped with<br />
+spiked iron bars.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+280H 98V 310677X 405C Mem:4 Exits:NSW&gt; north<br />
+It is pitch black.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+You sense that you are not alone.<br />
+<br />
+280H 97V 310677X 405C Mem:4 Exits:N(E)SW&gt; north<br />
+It is pitch black.<br />
+<br />
+280H 96V 310677X 405C Mem:4 Exits:SW&gt; south<br />
+fol oddie<br />
+It is pitch black.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+You sense that you are not alone.<br />
+<br />
+280H 95V 310677X 405C Mem:4 Exits:N(E)SW&gt; I see no person by that name here!<br />
+<br />
+280H 95V 310677X 405C Mem:4 Exits:N(E)SW&gt; west<br />
+It is pitch black.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+280H 94V 310677X 405C Mem:3 Exits:NESW&gt; west<br />
+It is pitch black.<br />
+Oddie Ball is standing here.<br />
+<br />
+280H 92V 310677X 405C Mem:4 Exits:NE(S)W&gt; fol oddie<br />
+You now follow Oddie.<br />
+<br />
+280H 92V 310677X 405C Mem:4 Exits:NE(S)W&gt; <br />
+Oddie leaves north.<br />
+You follow Oddie north.<br />
+It is pitch black.<br />
+Oddie Ball is standing here.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+280H 90V 310677X 405C Mem:4 Exits:ESW&gt; l oddie<br />
+You see nothing special about him.<br />
+Oddie the young adult male half elf is in an excellent condition.<br />
+<br />
+280H 90V 310677X 405C Mem:4 Exits:ESW&gt; c 'harm' oddie<br />
+You utter the words, 'harm'<br />
+You grab Oddie, who screams in pain.<br />
+<br />
+280H 90V 310677X 405C [Noplpo:V.Good] [Oddie:Good] Mem:6 Exits:ESW&gt; <br />
+You bludgeon Oddie hard.<br />
+Oddie pierces YOU hard.<br />
+Oddie bruises YOU with his pierce.<br />
+<br />
+269H 90V 310677X 405C [Noplpo:Good] [Oddie:Good] Mem:6 Exits:ESW&gt; <br />
+Oddie panics, and attempts to flee.<br />
+Oddie leaves east.<br />
+<br />
+269H 90V 310677X 405C Mem:6 Exits:ESW&gt; e<br />
+It is pitch black.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+269H 88V 310677X 405C Mem:6 Exits:ESW&gt; e<br />
+It is pitch black.<br />
+<br />
+269H 86V 310677X 405C Mem:6 Exits:SW&gt; s<br />
+It is pitch black.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+You sense that you are not alone.<br />
+<br />
+269H 85V 310677X 405C Mem:6 Exits:N(E)SW&gt; grab ball<br />
+You light a bright ball of light and hold it.<br />
+<br />
+269H 85V 310677X 405C Mem:6 Exits:N(E)SW&gt; w<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+A pile of steel coins.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A rotting corpse shuffles around you. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+A raccoon gets a pile of coins.<br />
+<br />
+269H 84V 310677X 405C Mem:3 Exits:NESW&gt; <br />
+Oddie arrives from the south.<br />
+<br />
+269H 84V 310677X 405C Mem:3 Exits:NESW&gt; rest<br />
+A rotting corpse arrives from the north.<br />
+You sit down and rest your tired bones.<br />
+<br />
+269H 84V 310677X 405C Mem:2 Exits:NESW&gt; med<br />
+Distractions nag at you as you try to focus on your prayers.<br />
+<br />
+269H 84V 310677X 405C Mem:1 Exits:NESW&gt; <br />
+Oddie leaves south.<br />
+<br />
+269H 84V 310677X 405C Mem:1 Exits:NESW&gt; #10 SECONDS TO TICK<br />
+<br />
+269H 84V 310677X 405C Mem:1 Exits:NESW&gt; #TICK<br />
+A rotting corpse leaves north.<br />
+<br />
+269H 84V 310677X 405C Mem:1 Exits:NESW&gt; <br />
+Your studies complete, you close your prayerbook with a smile.<br />
+The sky is getting cloudy.<br />
+The white aura around your body fades.<br />
+<br />
+287H 116V 310677X 405C Exits:NESW&gt; st<br />
+You stop meditating and stand up.<br />
+<br />
+287H 116V 310677X 405C Exits:NESW&gt; east<br />
+Inside the Cemetery<br />
+     You are standing upon the cemetery grass, which has become parched<br />
+with the passage of time and the curse that was laid upon this place.<br />
+Rotting trees block your view of the sky, and cast multiple dark shadows<br />
+around you. You hear squeaks and groans from around you, and you get the<br />
+feeling of being watched. A concrete wall extends to the north and south,<br />
+you see a rusty gate to the east.<br />
+Oddie Ball is standing here.<br />
+scan<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+287H 115V 310677X 405C Exits:N(E)SW&gt; <br />
+You follow Oddie west.<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+Oddie Ball is standing here.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+287H 114V 310677X 405C Exits:NESW&gt; c 'harm' oddie<br />
+You utter the words, 'harm'<br />
+You grab Oddie, who screams in pain.<br />
+<br />
+287H 114V 310677X 405C [Noplpo:V.Good] [Oddie:Fair] Mem:2 Exits:NESW&gt; <br />
+Oddie panics, and attempts to flee.<br />
+Oddie leaves south.<br />
+<br />
+287H 114V 310677X 405C Mem:2 Exits:NESW&gt; <br />
+Poseidon shouts 'forming high group you know you want some'<br />
+<br />
+287H 114V 310677X 405C Mem:2 Exits:NESW&gt; s<br />
+Cemetery<br />
+     A few headstones are scattered about here haphazardly. The grass below<br />
+your feet is yellow and dead looking. Trees grow high above your head,<br />
+their branches intermingling and blocking out the sky. Shapes move about at<br />
+the edges of your field of vision, but vanish when you look directly at<br />
+them. You hear weird noises from all around you, but you can't identify the<br />
+source of them. An ancient stone crypt lies to the west and to the east is<br />
+is a small path leading to a gate.<br />
+The corpse of a rat is lying here decomposing.<br />
+<br />
+287H 112V 310677X 405C Mem:3 Exits:NES&gt; north<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+Oddie Ball is standing here.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+287H 110V 310677X 405C Mem:2 Exits:NESW&gt; c 'harm' oddie<br />
+You utter the words, 'harm'<br />
+You grab Oddie, who screams in pain.<br />
+<br />
+287H 110V 310677X 405C [Noplpo:V.Good] [Oddie:V.Bad] Mem:3 Exits:NESW&gt; flee<br />
+You bludgeon Oddie hard.<br />
+Oddie misses you with his pierce.<br />
+Oddie misses you with his pierce.<br />
+<br />
+287H 110V 310677X 405C [Noplpo:V.Good] [Oddie:V.Bad] Mem:3 Exits:NESW&gt; You flee head over heels.<br />
+Inside the Cemetery<br />
+     You are standing upon the cemetery grass, which has become parched<br />
+with the passage of time and the curse that was laid upon this place.<br />
+Rotting trees block your view of the sky, and cast multiple dark shadows<br />
+around you. You hear squeaks and groans from around you, and you get the<br />
+feeling of being watched. A concrete wall extends to the north and south,<br />
+you see a rusty gate to the east.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+287H 109V 310677X 405C Mem:5 Exits:N(E)SW&gt; west<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+You sense that you are not alone.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+287H 108V 310677X 405C Mem:3 Exits:NESW&gt; <br />
+You follow Oddie south.<br />
+Cemetery<br />
+     A few headstones are scattered about here haphazardly. The grass below<br />
+your feet is yellow and dead looking. Trees grow high above your head,<br />
+their branches intermingling and blocking out the sky. Shapes move about at<br />
+the edges of your field of vision, but vanish when you look directly at<br />
+them. You hear weird noises from all around you, but you can't identify the<br />
+source of them. An ancient stone crypt lies to the west and to the east is<br />
+is a small path leading to a gate.<br />
+The corpse of a rat is lying here decomposing.<br />
+Oddie Ball is standing here.<br />
+<br />
+287H 106V 310677X 405C Mem:5 Exits:NES&gt; <br />
+Oddie leaves south.<br />
+You follow Oddie south.<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+south lies a concrete wall, topped by spiked iron bars.<br />
+The corpse of a raccoon is lying here decomposing.<br />
+Oddie Ball is standing here.<br />
+<br />
+287H 104V 310677X 405C Mem:5 Exits:NEW&gt; c 'k a' oddie<br />
+You utter the words, 'know alignment'<br />
+Oddie has a balanced soul.<br />
+Oddie has a powerful white aura around his soul.<br />
+<br />
+287H 104V 310677X 405C Mem:6 Exits:NEW&gt; <br />
+Oddie laughs heartily.<br />
+<br />
+287H 104V 310677X 405C Mem:6 Exits:NEW&gt; west<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+south lies a concrete wall, topped by spiked iron bars.<br />
+A rotting corpse shuffles around you. (red aura)<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+<br />
+287H 102V 310677X 405C Mem:6 Exits:EW&gt; <br />
+A rotting corpse leaves east.<br />
+<br />
+287H 102V 310677X 405C Mem:6 Exits:EW&gt; east<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+south lies a concrete wall, topped by spiked iron bars.<br />
+The corpse of a raccoon is lying here decomposing.<br />
+A rotting corpse shuffles around you. (red aura)<br />
+You sense that you are not alone.<br />
+<br />
+287H 100V 310677X 405C Mem:6 Exits:NEW&gt; east<br />
+Cemetery<br />
+     The cemetery grass beneath your feet was once lush and green but now<br />
+is parched and yellow. Large trees grow up around you, their branches<br />
+intermingling with each other and blocking out the sky. You hear strange<br />
+noises around you and see moving shapes out of the corners of your eyes. To<br />
+the east and south lies a concrete wall topped by spiked iron bars.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+A skeleton stands here grinning at you. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+287H 98V 310677X 405C Mem:6 Exits:NW&gt; north<br />
+west<br />
+Cemetery<br />
+     The grass beneath your feet is yellowish and dead looking. Old<br />
+headstones can be seen to the west and south. Rotting trees block your view<br />
+of the sky and cast multiple dark shadows around you. You can hear squeeks<br />
+and groans and moans from around you, but you can't identify where they are<br />
+coming from. To the east lies an ancient concrete wall, topped with<br />
+spiked iron bars.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+287H 96V 310677X 405C Mem:6 Exits:NSW&gt; Cemetery<br />
+     A few headstones are scattered about here haphazardly. The grass below<br />
+your feet is yellow and dead looking. Trees grow high above your head,<br />
+their branches intermingling and blocking out the sky. Shapes move about at<br />
+the edges of your field of vision, but vanish when you look directly at<br />
+them. You hear weird noises from all around you, but you can't identify the<br />
+source of them. An ancient stone crypt lies to the west and to the east is<br />
+is a small path leading to a gate.<br />
+The corpse of a rat is lying here decomposing.<br />
+<br />
+287H 94V 310677X 405C Mem:6 Exits:NES&gt; north<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+The ghoul cringes away from you as you approach. (red aura)<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+287H 92V 310677X 405C Mem:3 Exits:NESW&gt; rest<br />
+You sit down and rest your tired bones.<br />
+<br />
+287H 92V 310677X 405C Mem:1 Exits:NESW&gt; <br />
+Oddie leaves west.<br />
+<br />
+287H 92V 310677X 405C Mem:1 Exits:NESW&gt; tell oddie not looking good for you friend<br />
+You tell Oddie 'not looking good for you friend'<br />
+<br />
+287H 92V 310677X 405C Mem:1 Exits:NESW&gt; #10 SECONDS TO TICK<br />
+Deakon shouts 'basher looking for group'<br />
+<br />
+287H 92V 310677X 405C Mem:1 Exits:NESW&gt; <br />
+Oddie tells you 'blind about gone fool'<br />
+<br />
+287H 92V 310677X 405C Mem:1 Exits:NESW&gt; #TICK<br />
+Your studies complete, you close your prayerbook with a smile.<br />
+<br />
+299H 116V 310677X 405C Exits:NESW&gt; st<br />
+You stand up.<br />
+<br />
+299H 116V 310677X 405C Exits:NESW&gt; west<br />
+Outside the Crypt<br />
+     You stand upon yellowish and dead looking grass. Trees above you block<br />
+out your view of the sky and cast long shadows around you. To the south you<br />
+see an ancient crypt built to house the people who could pay for such<br />
+accomodations. A small concrete door can be seen on the face of the crypt.<br />
+Due to subsidence, the base of the door has sunk into the ground about two<br />
+feet below where you stand.<br />
+Oddie Ball is standing here.<br />
+<br />
+299H 114V 310677X 405C Exits:NE(S)W&gt; <br />
+You follow Oddie north.<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+north lies a concrete wall, topped by spiked iron bars.<br />
+Oddie Ball is standing here.<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+299H 112V 310677X 405C Exits:ESW&gt; c 'harm ' oddie<br />
+You follow Oddie east.<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+north lies a concrete wall, topped by spiked iron bars.<br />
+Oddie Ball is standing here.<br />
+A feral rat looks at you hungrily with glowing red eyes. (red aura)<br />
+A rotting corpse shuffles around you. (red aura)<br />
+<br />
+299H 110V 310677X 405C Exits:ESW&gt; You utter the words, 'harm'<br />
+You grab Oddie, who screams in pain.<br />
+<br />
+299H 110V 310677X 405C [Noplpo:Perfect] [Oddie:Awful] Mem:3 Exits:ESW&gt; <br />
+A ghoul arrives from the south.<br />
+<br />
+299H 110V 310677X 405C [Noplpo:Perfect] [Oddie:Awful] Mem:3 Exits:ESW&gt; <br />
+Oddie panics, and attempts to flee.<br />
+Oddie leaves west.<br />
+<br />
+299H 110V 310677X 405C Mem:3 Exits:ESW&gt; west<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye. To the<br />
+north lies a concrete wall, topped by spiked iron bars.<br />
+A rotting corpse shuffles around you. (red aura)<br />
+A large maggot crawls around, looking for dead flesh to eat. (red aura)<br />
+<br />
+299H 108V 310677X 405C Mem:3 Exits:ESW&gt; south<br />
+Outside the Crypt<br />
+     You stand upon yellowish and dead looking grass. Trees above you block<br />
+out your view of the sky and cast long shadows around you. To the south you<br />
+see an ancient crypt built to house the people who could pay for such<br />
+accomodations. A small concrete door can be seen on the face of the crypt.<br />
+Due to subsidence, the base of the door has sunk into the ground about two<br />
+feet below where you stand.<br />
+Oddie Ball is standing here.<br />
+<br />
+299H 106V 310677X 405C Mem:3 Exits:NE(S)W&gt; c 'harm' oddie<br />
+Oddie leaves east.<br />
+You follow Oddie east.<br />
+Cemetery<br />
+     Old headstones in ragged rows run in all directions here. The grass<br />
+below your feet has become parched with time and the curse that was laid<br />
+upon the cemetery. Many trees grow around you, their branches intermingling<br />
+and blocking out the sky above you. Shadows cast by the trees dance around<br />
+you and you see shapes moving about out of the corner of your eye.<br />
+Oddie Ball is standing here.<br />
+A raccoon scurries about among some tombstones.<br />
+<br />
+299H 104V 310677X 405C Mem:2 Exits:NESW&gt; You utter the words, 'harm'<br />
+You grab Oddie, who collapses in pain, then dies.<br />
+You receive 0 experience.<br />
+Oddie is dead! R.I.P.<br />
+<br />
+299H 104V 310677X 405C [Oddie:Dying] Mem:3 Exits:NESW&gt; <br />
+The death cry of Oddie echoes from somewhere nearby...<br />
+You stop following Oddie.<br />
+<br />
+299H 104V 310677X 405C Mem:3 Exits:NESW&gt; exam corpse<br />
+get coins corpse<br />
+exam corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a vicious kryss dagger..it glows red<br />
+a rogue's dirk<br />
+a set of kender pouches [2]<br />
+a pair of green boots<br />
+a flat black velvet cap<br />
+a suit of silent leather armor<br />
+a small copper ring<br />
+an entire loaf of bread [3]<br />
+a large waterskin<br />
+a crimson dust covered chest
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1621'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1621">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1621">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

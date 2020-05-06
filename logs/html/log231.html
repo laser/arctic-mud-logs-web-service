@@ -1,0 +1,2440 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 231-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='231'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Renshai vs. RoT</font></b>
+<p>
+POV: 
+Heo<p>
+Log Rating:
+4.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+First fight between the clans is a win for renshai. Battle took place in kalaman. </i>
+<p>
+<p>
+
+	     431H 138V 2468950X 320C Exits:NSW&gt; s <br />
+             Cho kneels down and studies the ground. <br />
+             A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. <br />
+             Aquemini Thug Pirate, Kneight Reiduz of the Taladas Rebels is standing here. (flying) <br />
+             A translucent being hovers in the air here. (invisible) <br />
+             Smagma the Female Half Elf is standing here. (flying) (red aura) <br />
+             . . . is followed by a hovering ball of light. <br />
+             Epien the Female Theiwar Dwarf is standing here. (flying) (red aura) <br />
+             Ayr Elemental is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Khin the Male Hylar Dwarf is standing here. (flying) <br />
+             Angie Chu Lee is standing here. (flying) <br />
+             . . . is outlined with a dim aura. <br />
+             Blake the Male High Elf is standing here. (flying) <br />
+             Nimnogg, Taladas Rebels' SuperGnome is standing here. (flying) <br />
+             . . . is followed by a hovering ball of light. <br />
+             Eplur, Taladas Rebel's Sergeant-at-Arms is standing here. (flying) <br />
+             bash lexi <br />
+             bash lexi <br />
+             Kaleero the Male High Elf is standing here. <br />
+<br />
+             431H 137V 2468950X 320C Exits:NEW&gt; <br />
+             Smagma gives an invisible stalker an order. <br />
+             An invisible stalker slowly fades into existence. <br />
+             An invisible stalker misses Cho with its hit. <br />
+<br />
+             431H 137V 2468950X 320C Exits:NEW&gt; You crash into Lexi in a bone crunching bash, sending him sprawling to the<br />
+             ground. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Lund slowly fades into existence. <br />
+             Lund crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Gee charges at Lexi, but he managed to move away. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Smagma steps aside as Port attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Ayin crashes into Angie in a thundering collision, knocking her to the ground! <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Eaiu focuses harshly on Lexi and utters the words, 'hold person'. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Ryfe focuses harshly on Khin and utters the words, 'hold person'. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Eplur steps aside as Vez attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Lexi steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             431H 137V 2468950X 320C [Heo:Perfect] [Lexi:V.Good] Exits:NEW&gt; <br />
+             Solana crushes Lexi very hard. <br />
+             Vez slashes Eplur hard. <br />
+             Eplur massacres Vez with his cleave. <br />
+             Ayin crushes Angie very hard. <br />
+             Angie crushes Ayin hard. <br />
+             Port massacres Smagma with his slash. <br />
+             Gee massacres Lexi with his pierce. <br />
+             Lund cleaves Smagma very hard. <br />
+             Smagma misses Lund with her hit. <br />
+             You stab Lexi extremely hard. <br />
+             Lexi slashes YOU very hard. <br />
+             An invisible stalker misses Cho with its hit. <br />
+             Cho slashes an invisible stalker extremely hard. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters the words, 'hold person'. <br />
+             Eaiu freezes in place. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Lexi steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Khin crashes into Lund in a thundering collision, knocking him to the ground! <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Tikk steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; quaff hymox.potion <br />
+<br />
+             Kaleero focuses harshly on you and utters some strange words. <br />
+             Kaleero shoots webs at you but narrowly misses! <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Aquemini crashes into Eaiu in a thundering collision, knocking him to the ground! <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Tikk focuses harshly on Lexi and utters some strange words. <br />
+             Tikk sends a chilling blast of air at Lexi, giving him a severe case of frostbite. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Fair] Exits:NEW&gt; <br />
+             Ayin steps aside as Eplur attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Fair] Exits:NEW&gt; <br />
+             Epien stops using a short sword. <br />
+             Epien grabs a scribed scroll. <br />
+<br />
+             417H 137V 2468950X 320C [Heo:V.Good] [Lexi:Fair] Exits:NEW&gt; <br />
+             Aquemini slashes Eaiu very hard. <br />
+             Ayr slashes Tikk hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Solana massacres Lexi with her crush. <br />
+             Vez massacres Eplur with his slash. <br />
+             Eplur cleaves Vez extremely hard. <br />
+             Ayin crushes Angie very hard. <br />
+             Angie crushes Ayin hard. <br />
+             Port misses Smagma with his slash. <br />
+             Gee pierces Lexi extremely hard. <br />
+             Lund cleaves Smagma extremely hard. <br />
+             Smagma misses Lund with her hit. <br />
+             You stab Lexi extremely hard. <br />
+             Lexi slashes YOU very hard. <br />
+             An invisible stalker hits Cho extremely hard. <br />
+             Cho slashes an invisible stalker extremely hard. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Mange gives his shortsword a quick thrust and twist, as he strikes Nimnogg in the back with it. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Kaleero focuses harshly on Tikk and utters the words, 'silence'. <br />
+             Tikk focuses harshly on Lexi and utters some strange words. <br />
+             Tikk sends a chilling blast of air at Lexi, giving him a severe case of frostbite. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Smagma stands up. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; Smagma panics, and attempts to flee. <br />
+             Smagma flies north. <br />
+             You quaff a potion of hymox which dissolves. <br />
+             You suddenly feel FAST! <br />
+             You feel stronger. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Lexi stands up. <br />
+             Angie stands up. <br />
+             Port stands up. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Gee swings madly at Lexi with a spear of the hunter, knocking him to the ground. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; bash <br />
+<br />
+             Vez stands up. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; You try to bash Lexi, but you miss and tumble<br />
+             forward onto your face. <br />
+<br />
+             405H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Epien pierces YOU. <br />
+<br />
+             399H 137V 2468950X 320C [Heo:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Epien pierces YOU hard. <br />
+             Lund cleaves Khin hard. <br />
+             Mange pierces Nimnogg hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Ayr slashes Tikk very hard. <br />
+             Khin massacres Lund with his cleave. <br />
+             Solana crushes Lexi hard. <br />
+             Vez slashes Eplur extremely hard. <br />
+             Eplur cleaves Vez hard. <br />
+             Ayin barely crushes Angie. <br />
+             Angie crushes Ayin hard. <br />
+             Gee massacres Lexi with his pierce. <br />
+             You massacre Lexi with your stab. <br />
+             An invisible stalker hits Cho hard. <br />
+             Cho slashes an invisible stalker extremely hard. <br />
+             An invisible stalker panics, and attempts to flee. <br />
+             An invisible stalker leaves west. <br />
+             Solana stands up. <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Tikk and utters the words, 'hold person'. <br />
+             Tikk freezes in place. <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; st <br />
+<br />
+             Solana crashes into Lexi in a thundering collision, knocking him to the ground! <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Cho stands up. <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Angie steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Smagma flies in from the north. <br />
+<br />
+             390H 137V 2468950X 320C [Heo:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Cho crashes into Lexi in a thundering collision, knocking him to the ground! <br />
+             Lexi is stunned, but will likely regain consciousness again. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Mange panics, and attempts to flee. <br />
+             Mange flies east. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Khin crashes into Tikk in a thundering collision, knocking him to the ground! <br />
+             Ayr stands up. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Eaiu steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Smagma focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Smagma. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Gatir yells 'go team go' <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Kaleero focuses harshly on Gee and utters the words, 'silence'. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:Awful] Exits:NEW&gt; <br />
+             Angie focuses on Lexi and utters some strange words. <br />
+             Angie heals Lexi. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:V.Good] Exits:NEW&gt; <br />
+             Eplur steps aside as Vez attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:V.Good] Exits:NEW&gt; <br />
+             Aquemini crashes into Eaiu in a thundering collision, knocking him to the ground! <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:V.Good] Exits:NEW&gt; <br />
+             Eplur stands up. <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:V.Good] Exits:NEW&gt; <br />
+             Eplur crashes into Ayin in a thundering collision, knocking her to the ground! <br />
+<br />
+             390H 137V 2468950X 320C [Lexi:V.Good] Exits:NEW&gt; <br />
+             Cho slashes Lexi extremely hard. <br />
+             Epien pierces YOU very hard. <br />
+             Lund cleaves Khin hard. <br />
+             Aquemini massacres Eaiu with his slash. <br />
+             Ayr slashes Tikk extremely hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Solana massacres Lexi with her crush. <br />
+             Vez slashes Eplur hard. <br />
+             Eplur cleaves Vez extremely hard. <br />
+             Ayin crushes Angie very hard. <br />
+             Gee pierces Lexi extremely hard. <br />
+             You stab Lexi very hard. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; bash <br />
+<br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Nimnogg. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; TICK IN 5 SECONDS. <br />
+<br />
+             Epien panics, and attempts to flee. <br />
+             Epien flies east. <br />
+             Ryfe utters the words, 'prar'. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Blake focuses harshly on Tikk and utters some strange words. <br />
+             Tikk wavers under the impact of the lightning bolt sent by Blake. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Smagma focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Smagma. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Kaleero focuses harshly on Tikk and utters the words, 'silence'. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Gatir yells 'not my team tho!' <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Good] Exits:NEW&gt; <br />
+             Gee charges into Lexi, but he manages to stay standing. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Fair] Exits:NEW&gt; Lexi slashes Cho very hard. <br />
+             Cho massacres Lexi with his slash. <br />
+             Lund cleaves Khin very hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Ayr slashes Tikk. <br />
+             Khin massacres Lund with his cleave. <br />
+             Solana crushes Lexi extremely hard. <br />
+             Vez barely slashes Eplur. <br />
+             Eplur massacres Vez with his cleave. <br />
+             Ayin crushes Angie very hard. <br />
+             Angie misses Ayin with her crush. <br />
+             Gee pierces Lexi very hard. <br />
+             You should probably stand up! <br />
+             You stab Lexi extremely hard. <br />
+             You stand up. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Fair] Exits:NEW&gt; You crash into Lexi in a bone crunching bash,<br />
+             sending him sprawling to the ground. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Lexi steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Lund stands up. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Nimnogg. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Lund crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Port crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Lexi steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Blake focuses harshly on Tikk and utters some strange words. <br />
+             Tikk wavers under the impact of the lightning bolt sent by Blake. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Ayr stands up. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Tikk steps aside as Khin attempts a bash, stumbles, and falls flat on his face. <br />
+             Tikk steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Vez stands up. <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             Eplur crashes into Ayin in a thundering collision, knocking her to the ground! <br />
+<br />
+             377H 137V 2468950X 320C [Cho:V.Good] [Lexi:Bad] Exits:NEW&gt; <br />
+             You feel slow. <br />
+             Port massacres Smagma with his slash. <br />
+             Smagma misses Lund with her hit. <br />
+             Lexi slashes Cho very hard. <br />
+             Cho massacres Lexi with his slash. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Ayr slashes Tikk extremely hard. <br />
+             Khin cleaves Lund hard. <br />
+             Solana crushes Lexi very hard. <br />
+             Vez slashes Eplur extremely hard. <br />
+             Eplur cleaves Vez extremely hard. <br />
+             Ayin crushes Angie very hard. <br />
+             Angie crushes Ayin extremely hard. <br />
+             Gee massacres Lexi with his pierce. <br />
+             You stab Lexi extremely hard. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Eaiu stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Aquemini crashes into Eaiu in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Tikk tells your group 'held' <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Ryfe focuses on Eaiu and utters some strange words. <br />
+             Ryfe heals Eaiu. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Nimnogg. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Blake focuses harshly on Tikk and utters some strange words. <br />
+             Tikk wavers under the impact of the lightning bolt sent by Blake. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Eaiu has lost his link. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Eaiu has reconnected. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:V.Bad] Exits:NEW&gt; <br />
+             Port slashes Smagma extremely hard. <br />
+             Smagma misses Lund with her hit. <br />
+             Lexi misses Cho with his slash. <br />
+             Cho massacres Lexi with his slash. <br />
+             Lund cleaves Khin very hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Eaiu bludgeons Aquemini very hard. <br />
+             Ayr slashes Tikk extremely hard. <br />
+             Khin cleaves Lund very hard. <br />
+             Solana crushes Lexi extremely hard. <br />
+             Vez slashes Eplur extremely hard. <br />
+             Eplur cleaves Vez extremely hard. <br />
+             Ayin misses Angie with her crush. <br />
+             Angie misses Ayin with her hit. <br />
+             Gee pierces Lexi extremely hard. <br />
+             You massacre Lexi with your stab. <br />
+             Kaleero leaves west. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Exits:NEW&gt; c 'dispel mag' tikk <br />
+<br />
+             Eplur steps aside as Vez attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Exits:NEW&gt; <br />
+             Solana stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Exits:NEW&gt; You utter the words, 'dispel magic' <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             Eaiu wavers under the impact of the lightning bolt sent by Nimnogg. <br />
+             Smagma steps aside as Port attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Cho stands up. <br />
+             Lund crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Lexi steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Blake focuses harshly on Tikk and utters some strange words. <br />
+             Tikk wavers under the impact of the lightning bolt sent by Blake. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Khin stands up. <br />
+             Ayr stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Khin crashes into Lund in a thundering collision, knocking him to the ground! <br />
+             Tikk steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Ryfe focuses harshly on Angie and utters the words, 'hold person'. <br />
+<br />
+             388H 140V 2468950X 320C [Cho:V.Good] [Lexi:Awful] Mem:3 Exits:NEW&gt; <br />
+             Port slashes Smagma extremely hard. <br />
+             Smagma misses Lund with her hit. <br />
+             Lexi massacres Cho with his slash. <br />
+             Cho slashes Lexi extremely hard. <br />
+             Lexi is mortally wounded, and will die soon, if not aided. <br />
+             Lund cleaves Khin very hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Eaiu misses Aquemini with his bludgeon. <br />
+             Ayr slashes Tikk extremely hard. <br />
+             Khin massacres Lund with his cleave. <br />
+             Solana annihilates Lexi with her crush. <br />
+             You receive 0 experience. <br />
+             Lexi is dead! R.I.P. <br />
+             Vez misses Eplur with his slash. <br />
+             Eplur massacres Vez with his cleave. <br />
+             Ayin barely crushes Angie. <br />
+             The death cry of Lexi echoes from somewhere nearby... <br />
+             Lexi now follows Eplur. <br />
+             Eplur is the new leader of Lexi's group. <br />
+             Ayin steps aside as Eplur attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Epien arrives from the east. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Gee gets a runed sickle from the corpse of Lexi. <br />
+             Gee gets a belt of seashells from the corpse of Lexi. <br />
+             Gee gets some sickly yellow robes from the corpse of Lexi. <br />
+             Gee gets a large aspen leaf shield from the corpse of Lexi. <br />
+             Gee gets bands of sapling leaves from the corpse of Lexi. <br />
+             Gee gets a pair of woodsman's boots from the corpse of Lexi. <br />
+             Gee gets a pair of stained leather leggings from the corpse of Lexi. <br />
+             Gee gets a shirt of autumn leaves from the corpse of Lexi. <br />
+             Gee gets a beaded leather necklace from the corpse of Lexi. <br />
+             Gee gets an amber necklace from the corpse of Lexi. <br />
+             Gee gets a fairy skull ring from the corpse of Lexi. <br />
+             Gee gets a black runed ring from the corpse of Lexi. <br />
+             Gee gets a crystal gemstone from the corpse of Lexi. <br />
+             Gee gets a large pile of coins from the corpse of Lexi. <br />
+             Gee gets Mishakal's White potion from the corpse of Lexi. <br />
+             Gee gets a flimsy gray wand from the corpse of Lexi. <br />
+             Gee gets a flimsy gray wand from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a glowing scroll of recall from the corpse of Lexi. <br />
+             Gee gets a red satin armguard from the corpse of Lexi. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Solana gets a beaded leather necklace from the corpse of Lexi. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Gee charges at Epien, but she managed to move away. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Tikk stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             The sound of bones cracking echoes as Nimnogg's force bolt slams into Eaiu. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Epien panics, and attempts to flee. <br />
+             Epien leaves east. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Aquemini crashes into Eaiu in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Blake focuses harshly on Eaiu and utters some strange words. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Ayin crashes into Angie in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Port massacres Smagma with his slash. <br />
+             Smagma misses Lund with her hit. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Aquemini slashes Eaiu very hard. <br />
+             Eaiu bludgeons Aquemini hard. <br />
+             Ayr slashes Tikk very hard. <br />
+             Khin misses Lund with his cleave. <br />
+             Vez slashes Eplur extremely hard. <br />
+             Eplur massacres Vez with his cleave. <br />
+             Ayin massacres Angie with her crush. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Epien quickly thrusts a serrated dagger at Gee from behind, but somehow falls short of her target. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Mange flies in from the east. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Vez stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Solana crashes into Eplur in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Mange quickly thrusts an onyx shortsword at Nimnogg from behind, but somehow falls short of his target. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; bash aquimini <br />
+<br />
+             Port stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; You couldn't find what you were looking for. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             The sound of bones cracking echoes as Nimnogg's force bolt slams into Eaiu. <br />
+             Cho stands up. <br />
+             Port crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Tikk panics, and attempts to flee. <br />
+             Tikk flies north. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; group <br />
+             Your group of 12 members consists of: <br />
+             Member Hits Move Position Fly Inv Water Light Mem <br />
+             ------------------------------------------------------------------------ <br />
+             Heo v.good rested standing Y N N 0 3 <br />
+             Vez fair rested fighting Y N N 0 0 <br />
+             Solana perfect rested fighting Y N N 0 0 <br />
+             Eaiu awful rested fighting Y N N 1 8 <br />
+             Ryfe perfect rested standing Y N N 0 6 <br />
+             Cho v.good rested standing Y N N 2 0 <br />
+             Port perfect rested fighting Y N N 0 0 <br />
+             Mange perfect rested fighting Y N N 0 0 <br />
+             Lund fair rested fighting Y N N 0 0 <br />
+             Ayin good rested fighting Y N N 0 1 <br />
+             Gee perfect rested fighting Y N N 0 0 <br />
+             Tikk awful rested standing Y N N 0 8 <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Eplur steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Ayr stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Cho massacres Eplur with his slash. <br />
+             Mange pierces Nimnogg extremely hard. <br />
+             Solana crushes Eplur very hard. <br />
+             Epien misses Gee with her pierce. <br />
+             Gee pierces Epien extremely hard. <br />
+             Port misses Smagma with his slash. <br />
+             Smagma misses Lund with her hit. <br />
+             Lund cleaves Khin hard. <br />
+             Aquemini slashes Eaiu extremely hard. <br />
+             Eaiu bludgeons Aquemini hard. <br />
+             Khin massacres Lund with his cleave. <br />
+             Vez slashes Eplur extremely hard. <br />
+             Eplur cleaves Vez extremely hard. <br />
+             Ayin crushes Angie hard. <br />
+             Angie misses Ayin with her hit. <br />
+             Lund steps aside as Khin attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; lay tikk <br />
+<br />
+             Epien panics, and attempts to flee. <br />
+             Epien leaves north. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; You couldn't find what you were looking for. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Blake focuses harshly on Eaiu and utters some strange words. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+             Blake aims a magic missile at Eaiu, who staggers under the blow. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Eaiu stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Aquemini crashes into Ryfe in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Nimnogg focuses harshly on Eaiu and utters some strange words. <br />
+             Brains splatter on you as Nimnogg's force bolt shatters Eaiu's skull. <br />
+             Eaiu is dead! R.I.P. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Mange panics, and attempts to flee. <br />
+             Mange flies west. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             The death cry of Eaiu echoes from somewhere nearby... <br />
+             Eaiu stops following you. <br />
+             Vez recites a glowing scroll of recall. <br />
+             Vez disappears. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Lund gets a black wood staff from the corpse of Eaiu. <br />
+             Lund gets a gleaming silver bracer from the corpse of Eaiu. <br />
+             Lund gets a vine belt from the corpse of Eaiu. <br />
+             Lund gets a pitch black robe from the corpse of Eaiu. <br />
+             Lund gets a ring of thorns from the corpse of Eaiu. <br />
+             Lund gets a silk ribbon from the corpse of Eaiu. <br />
+             Lund gets a large pile of coins from the corpse of Eaiu. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Lund stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Lund crashes into Smagma in a thundering collision, knocking her to the ground! <br />
+             Smagma is stunned, but will likely regain consciousness again. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Ayr crashes into Ayin in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Ayr slashes Ayin extremely hard. <br />
+             Eplur massacres Solana with his cleave. <br />
+             Aquemini slashes Ryfe extremely hard. <br />
+             Ryfe bludgeons Aquemini extremely hard. <br />
+             Cho slashes Eplur extremely hard. <br />
+             Solana massacres Eplur with her crush. <br />
+             Port massacres Smagma with his slash. <br />
+             You receive 0 experience. <br />
+             Smagma is dead! R.I.P. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Ayin crushes Angie extremely hard. <br />
+             Angie misses Ayin with her hit. <br />
+             The death cry of Smagma echoes from somewhere nearby... <br />
+             Angie stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Gee swings madly at Eplur with a spear of the hunter, knocking him to the ground. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Solana is zapped by a leather wrist band and instantly drops it. <br />
+             Solana is zapped by a leather wrist band and instantly drops it. <br />
+             Solana is zapped by a long leather shawl and instantly drops it. <br />
+             Solana is zapped by a wooden shield and instantly drops it. <br />
+             Solana is zapped by a pair of leather sleeves and instantly drops it. <br />
+             Solana is zapped by a pair of leather gloves and instantly drops it. <br />
+             Solana is zapped by a pair of leather boots and instantly drops it. <br />
+             Solana is zapped by a pair of leather pants and instantly drops it. <br />
+             Solana is zapped by a leather cap and instantly drops it. <br />
+             Solana is zapped by a leather jacket and instantly drops it. <br />
+             Solana is zapped by a flowing royal blue cape and instantly drops it. <br />
+             Solana is zapped by a flowing royal blue cape and instantly drops it. <br />
+             Solana gets a pile of coins from the corpse of Smagma. <br />
+             Solana gets an iron ration from the corpse of Smagma. <br />
+             Solana gets an iron ration from the corpse of Smagma. <br />
+             Solana gets an iron ration from the corpse of Smagma. <br />
+             Solana gets a small canteen from the corpse of Smagma. <br />
+             Solana gets a small canteen from the corpse of Smagma. <br />
+             Solana gets a small canteen from the corpse of Smagma. <br />
+             Solana gets a scroll of recall from the corpse of Smagma. <br />
+             Solana gets a scroll of recall from the corpse of Smagma. <br />
+             Solana gets a scroll of recall from the corpse of Smagma. <br />
+             Solana gets a colorful mushroom from the corpse of Smagma. <br />
+             Solana gets an ice pick from the corpse of Smagma. <br />
+             Solana gets a scroll of recall from the corpse of Smagma. <br />
+             Solana gets a backpack from the corpse of Smagma. <br />
+             Solana gets an iron ration from the corpse of Smagma. <br />
+             Solana gets a small canteen from the corpse of Smagma. <br />
+             Solana gets a small canteen from the corpse of Smagma. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Eplur steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Tikk flies in from the north. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Tikk utters some strange words. <br />
+             Tikk comes out of hiding. <br />
+             Aquemini is shredded by shards of ice. <br />
+             Ayr is shredded by shards of ice. <br />
+             Khin is shredded by shards of ice. <br />
+             Angie is shredded by shards of ice. <br />
+             Blake is shredded by shards of ice. <br />
+             Nimnogg is shredded by shards of ice. <br />
+             Eplur is shredded by shards of ice. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; <br />
+             Cho stands up. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; bash eplur <br />
+<br />
+             Cho crashes into Eplur in a thundering collision, knocking him to the ground! <br />
+             Eplur steps aside as Port attempts a bash, stumbles, and falls flat on his face. <br />
+             Mange flies in from the west. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; You try to bash Eplur, but you miss and tumble forward onto your face.<br />
+<br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:Bad] Mem:3 Exits:NEW&gt; <br />
+             You miss Eplur with your stab. <br />
+             Port slashes Eplur extremely hard. <br />
+             Blake pierces Tikk. <br />
+             Tikk crushes Aquemini very hard. <br />
+             Gee massacres Eplur with his pierce. <br />
+             Ayr massacres Ayin with his slash. <br />
+             Eplur massacres Solana with his cleave. <br />
+             Aquemini slashes Ryfe extremely hard. <br />
+             Ryfe bludgeons Aquemini very hard. <br />
+             Cho slashes Eplur very hard. <br />
+             Solana massacres Eplur with her crush. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Ayin crushes Angie. <br />
+             Angie misses Ayin with her hit. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Blake gets a flowing royal blue cape. <br />
+             Blake gets a flowing royal blue cape. <br />
+             Blake gets a leather jacket. <br />
+             Blake gets a leather cap. <br />
+             Blake gets a pair of leather pants. <br />
+             Blake gets a pair of leather boots. <br />
+             Blake gets a pair of leather gloves. <br />
+             Blake gets a pair of leather sleeves. <br />
+             Blake gets a wooden shield. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Khin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; st <br />
+<br />
+             Nimnogg focuses harshly on Tikk and utters some strange words. <br />
+             The sound of bones cracking echoes as Nimnogg's force bolt slams into Tikk. <br />
+             Tikk steps aside as Khin attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             bash lexi <br />
+             bash lexi <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Kaleero arrives from the west. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Lexi leaves north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Kaleero leaves north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Blake focuses harshly on Tikk and utters some strange words. <br />
+             Blake aims a magic missile at Tikk, who staggers under the blow. <br />
+             Blake aims a magic missile at Tikk, who staggers under the blow. <br />
+             Blake aims a magic missile at Tikk, who staggers under the blow. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Aquemini crashes into Ryfe in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Tikk panics, and attempts to flee. <br />
+             Tikk flies east. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Kaleero arrives from the north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:V.Good] [Eplur:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             You miss Eplur with your stab. <br />
+             Port massacres Eplur with his slash. <br />
+             Gee massacres Eplur with his pierce. <br />
+             Ayr slashes Ayin very hard. <br />
+             Eplur massacres Solana with his cleave. <br />
+             Aquemini slashes Ryfe very hard. <br />
+             Cho slashes Eplur extremely hard. <br />
+             Solana massacres Eplur with her crush. <br />
+             Lund cleaves Khin very hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Ayin crushes Angie. <br />
+             Angie misses Ayin with her hit. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Angie steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Nimnogg grabs a scroll of recall. <br />
+             Nimnogg recites a scroll of recall. <br />
+             Nimnogg disappears. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Solana stands up. <br />
+             Khin steps aside as Lund attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Eplur steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Eaiu arrives from the west. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             bash lexi <br />
+             bash lexi <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; bash khin <br />
+<br />
+             Mange pierces Khin hard. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Epien arrives from the north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Lexi leaves north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Angie panics, and attempts to flee. <br />
+             Angie flies north. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Epien tried to backstab Eaiu, but nearly cut her own finger. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; <br />
+             Gee charges into Epien, but she manages to stay standing. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; Port stands up. <br />
+             You stand up. <br />
+<br />
+             388H 140V 2468950X 320C [Solana:Good] [Eplur:Awful] Mem:3 Exits:NEW&gt; Epien misses Eaiu with her pierce. <br />
+             Eaiu misses Epien with his hit. <br />
+             Ayin crushes Ayr. <br />
+             Mange pierces Khin very hard. <br />
+             You miss Eplur with your stab. <br />
+             Port slashes Eplur extremely hard. <br />
+             Gee massacres Eplur with his pierce. <br />
+             Eplur is stunned, but will likely regain consciousness again. <br />
+             Ayr slashes Ayin extremely hard. <br />
+             Aquemini slashes Ryfe extremely hard. <br />
+             Ryfe bludgeons Aquemini extremely hard. <br />
+             Cho annihilates Eplur with his slash. <br />
+             You receive 0 experience. <br />
+             Eplur is dead! R.I.P. <br />
+             Lund cleaves Khin very hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             The death cry of Eplur echoes from somewhere nearby... <br />
+             Eplur sinks gently to the ground. <br />
+             Port crashes into Blake in a thundering collision, knocking him to the ground! <br />
+             You couldn't find what you were looking for. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; Cho gets a black granite axe from the corpse of Eplur. <br />
+             Cho gets a silver and platinum etched bracer from the corpse of Eplur. <br />
+             Cho gets a jade bracelet from the corpse of Eplur. <br />
+             Cho is zapped by a gold belt and instantly drops it. <br />
+             Cho gets a bronze shield from the corpse of Eplur. <br />
+             Cho gets a pair of steel armplates inlaid with ebony from the corpse of Eplur. <br />
+             Cho gets a pair of dwarven gloves from the corpse of Eplur. <br />
+             Cho gets a pair of black boots from the corpse of Eplur. <br />
+             Cho gets a skirt of tasses from the corpse of Eplur. <br />
+             Cho gets a dark red visor from the corpse of Eplur. <br />
+             Cho gets a suit of solid silver platemail from the corpse of Eplur. <br />
+             Cho gets a crystal shard necklace from the corpse of Eplur. <br />
+             Cho is zapped by a bloody axe shaped medallion and instantly drops it. <br />
+             Cho gets a black pearl inlaid ring from the corpse of Eplur. <br />
+             Cho gets a blue steel ring from the corpse of Eplur. <br />
+             Cho gets a very large pile of coins from the corpse of Eplur. <br />
+             Cho gets a bloody minotaur hand axe from the corpse of Eplur. <br />
+             Cho gets a suede bag from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a leg of lamb frost <br />
+             m the corpse of Eplur. <br />
+             Cho gets a leg of lamb from the corpse of Eplur. <br />
+             Cho gets a small bag from the corpse of Eplur. <br />
+             Cho gets a hooded lantern from the corpse of Eplur. <br />
+             Cho gets a bronze bottle from the corpse of Eplur. <br />
+             Cho gets a bronze bottle from the corpse of Eplur. <br />
+             You couldn't find what you were looking for. <br />
+<br />
+             388H 140V 2468950X 320C Mem:3 Exits:NEW&gt; You try to bash Khin, but you miss and tumble forward onto your face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Eaiu panics, and attempts to flee. <br />
+             Eaiu leaves north. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Khin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Ayin steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             bash lexi <br />
+             bash lexi <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Lund steps aside as Khin attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Lexi leaves north. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Angie flies in from the north. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Aquemini crashes into Ryfe in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Epien leaves east. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             You stab Khin extremely hard. <br />
+             Port massacres Blake with his slash. <br />
+             Blake misses Port with his pierce. <br />
+             Ayin massacres Ayr with her crush. <br />
+             Mange pierces Khin very hard. <br />
+             Ayr massacres Ayin with his slash. <br />
+             Aquemini slashes Ryfe hard. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Epien arrives from the east. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Tikk flies in from the east. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Epien quickly thrusts a serrated dagger at Tikk from behind, but somehow falls short of her target. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Angie flies west. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Ayr steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Lund stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Solana stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; bash aquemini <br />
+<br />
+             Solana heroically rescues Ryfe. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Tikk grabs a glowing scroll of recall. <br />
+             Tikk recites a glowing scroll of recall. <br />
+             Tikk disappears. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Cho crashes into Epien in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Gee gets a bronze bottle from the corpse of Eplur. <br />
+             Gee gets a bronze bottle from the corpse of Eplur. <br />
+             Gee gets a bronze bottle from the corpse of Eplur. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Kaleero gets a small wooden chest from the corpse of Eplur. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Fair] [Khin:Fair] Mem:3 Exits:NEW&gt; <br />
+             Cho slashes Epien extremely hard. <br />
+             Epien misses Cho with her pierce. <br />
+             Aquemini slashes Solana hard. <br />
+             Solana crushes Aquemini extremely hard. <br />
+             You miss Khin with your stab. <br />
+             Port massacres Blake with his slash. <br />
+             Blake misses Port with his pierce. <br />
+             Ayin crushes Ayr extremely hard. <br />
+             Mange pierces Khin extremely hard. <br />
+             Ayr slashes Ayin extremely hard. <br />
+             Lund misses Khin with his cleave. <br />
+             Khin cleaves Lund extremely hard. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Blake stands up. <br />
+             Port crashes into Blake in a thundering collision, knocking him to the ground! <br />
+             Gee misses Khin with his pierce. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; You stand up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; You couldn't find what you were looking for. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; Ayr stands up. <br />
+             You crash into Aquemini in a bone crunching bash, sending him sprawling to the ground. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Ayin steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Khin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Lund crashes into Khin in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange panics, and attempts to flee. <br />
+             Mange flies west. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Ryfe stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Gee misses Khin with his pierce. <br />
+             Cho massacres Epien with his slash. <br />
+             Epien pierces Cho. <br />
+             Aquemini barely slashes Solana. <br />
+             Solana annihilates Aquemini with her crush. <br />
+             You miss Khin with your stab. <br />
+             Port misses Blake with his slash. <br />
+             Ayin massacres Ayr with her crush. <br />
+             Ayr slashes Ayin hard. <br />
+             Lund cleaves Khin hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange flies in from the west. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Kaleero gets a pair of steel gauntlets from the corpse of Eaiu. <br />
+             Kaleero gets a set of voluminous robes from the corpse of Eaiu. <br />
+             Kaleero gets a sable cloak from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+             Kaleero gets a glowing scroll of recall from the corpse of Eaiu. <br />
+             Kaleero gets a glowing scroll of recall from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+             Kaleero gets a crystal shard necklace from the corpse of Eaiu. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Gee tries to barrel into Epien, but ends up falling flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Aquemini steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Ayr steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange flies east. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Epien steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; bash <br />
+<br />
+             Mange flies in from the east. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:Bad] Mem:3 Exits:NEW&gt; <br />
+             Gee massacres Khin with his pierce. <br />
+             Cho slashes Epien extremely hard. <br />
+             Epien misses Cho with her pierce. <br />
+             Aquemini misses Solana with his slash. <br />
+             Solana massacres Aquemini with her crush. <br />
+             You stab Khin very hard. <br />
+             Port slashes Blake extremely hard. <br />
+             Blake misses Port with his pierce. <br />
+             Ayin crushes Ayr extremely hard. <br />
+             Ayr slashes Ayin. <br />
+             Lund massacres Khin with his cleave. <br />
+             Khin cleaves Lund very hard. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Epien stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Port crashes into Blake in a thundering collision, knocking him to the ground! <br />
+             Blake is stunned, but will likely regain consciousness again. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Gatir arrives from the north. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; You try to bash Khin, but you miss and<br />
+             tumble forward onto your face. <br />
+             Epien panics, and attempts to flee. <br />
+             Epien leaves west. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Ayr stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Cho steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; st <br />
+<br />
+             Khin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Aquemini stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Aquemini crashes into Solana in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Khin crashes into Lund in a thundering collision, knocking him to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; TICK IN 5 SECONDS. <br />
+<br />
+             Cho massacres Ayr with his slash. <br />
+             Gee pierces Khin extremely hard. <br />
+             Aquemini misses Solana with his slash. <br />
+             Solana massacres Aquemini with her crush. <br />
+             You miss Khin with your stab. <br />
+             Port annihilates Blake with his slash. <br />
+             You receive 0 experience. <br />
+             Blake is dead! R.I.P. <br />
+             Ayin crushes Ayr extremely hard. <br />
+             Ayr slashes Ayin extremely hard. <br />
+             Lund misses Khin with his cleave. <br />
+             Khin cleaves Lund extremely hard. <br />
+             The death cry of Blake echoes from somewhere nearby... <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Kaleero gets a large pile of coins from the corpse of Blake. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Gatir says 'hoho' <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Epien arrives from the west. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Epien tried to backstab Ryfe, but nearly cut her own finger. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; st <br />
+<br />
+             Gee stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Cho stands up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Gee charges into Khin, but he manages to stay standing. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             Cho crashes into Epien in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; <br />
+             *Gatir logging <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:V.Bad] Mem:3 Exits:NEW&gt; flee <br />
+<br />
+             Epien pierces Ryfe very hard. <br />
+             Ryfe massacres Epien with his bludgeon. <br />
+             Cho slashes Ayr extremely hard. <br />
+             Gee pierces Khin very hard. <br />
+             Aquemini slashes Solana extremely hard. <br />
+             Solana massacres Aquemini with her crush. <br />
+             You stab Khin very hard. <br />
+             Ayin crushes Ayr extremely hard. <br />
+             Ayr slashes Ayin very hard. <br />
+             Lund cleaves Khin hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             Epien steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; <br />
+             Mange appears to be dancing around the room. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; <br />
+             Port gets a silver shortsword from the corpse of Blake. <br />
+             Port gets a wooden shield from the corpse of Blake. <br />
+             Port gets a pair of leather sleeves from the corpse of Blake. <br />
+             Port gets a pair of leather gloves from the corpse of Blake. <br />
+             Port gets a pair of leather boots from the corpse of Blake. <br />
+             Port gets a pair of leather pants from the corpse of Blake. <br />
+             Port gets a leather cap from the corpse of Blake. <br />
+             Port gets a leather jacket from the corpse of Blake. <br />
+             Port gets a flowing royal blue cape from the corpse of Blake. <br />
+             Port gets a flowing royal blue cape from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+             Port gets a roasted turkey leg from the corpse of Blake. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; <br />
+             Port crashes into Epien in a thundering collision, knocking her to the ground! <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; <br />
+             *Gatir neutral <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; You stand up. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; You are already standing. <br />
+<br />
+             388H 140V 2468950X 320C [Lund:V.Bad] [Khin:Awful] Mem:3 Exits:NEW&gt; Ayr stands up. <br />
+             You flee head over heels. <br />
+             A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. You feel unfriendly eyes <br />
+             watching you. <br />
+<br />
+             388H 139V 2468950X 320C Mem:3 Exits:EW&gt; sca <br />
+             Looking north: <br />
+             You see nothing special. <br />
+             Looking east: <br />
+             You see nothing special. <br />
+             Epien the Female Theiwar Dwarf is sitting here, fighting Ryfe. (red aura) <br />
+             Gatir, Carnage Gatekeeper is standing here. (invisible) <br />
+             Mange the Male Goblin is standing here. (flying) <br />
+             Kaleero the Male High Elf is standing here. <br />
+             Gee Isme is standing here, fighting Khin. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ayin the Female High Elf is sitting here, fighting Ayr. (flying) <br />
+             . . . has a tough exterior. <br />
+             Lund the Male Wild Elf is sitting here, fighting Khin. (flying) (red aura) <br />
+             Port O'Bello is standing here, fighting Epien. (flying) <br />
+             Cho Schmoe, Average Tank is standing here, fighting Ayr. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ryfe the Male Hylar Dwarf is standing here, fighting Epien. (flying) <br />
+             Solana Brutane, Fist of Legend is sitting here, fighting Aquemini. (flying) <br />
+             Aquemini Thug Pirate, Kneight Reiduz of the Taladas Rebels is standing here, fighting Solana. (flying) <br />
+             Ayr Elemental is standing here, fighting Ayin. (flying) <br />
+             . . . has a tough exterior. <br />
+             Khin the Male Hylar Dwarf is standing here, fighting Lund. (flying) <br />
+             Looking south: <br />
+             You see nothing special. <br />
+             Looking west: <br />
+             You see nothing special. <br />
+             Looking up: <br />
+             You see nothing special. <br />
+             Looking down: <br />
+             You see nothing special. <br />
+<br />
+             388H 139V 2468950X 320C Mem:3 Exits:EW&gt; <br />
+             You feel less righteous. <br />
+<br />
+             399H 140V 2468950X 320C Mem:2 Exits:EW&gt; e <br />
+             A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. <br />
+             The corpse of Blake is lying here. <br />
+             A small medallion in the shape of an axe lies here. <br />
+             A flexible gold belt lies here. <br />
+             The corpse of Eplur is lying here. <br />
+             A long shawl made of a darkened leather rests here. <br />
+             A wrist band made of leather has been left here. [2] <br />
+             The corpse of Smagma is lying here. <br />
+             The corpse of Eaiu is lying here. <br />
+             The corpse of Lexi is lying here. <br />
+             Epien the Female Theiwar Dwarf is standing here, fighting Mange. (red aura) <br />
+             Gatir, Carnage Gatekeeper is standing here. (invisible) <br />
+             Mange the Male Goblin is standing here, fighting Epien. (flying) <br />
+             Kaleero the Male High Elf is standing here. <br />
+             Gee Isme is standing here, fighting Khin. <br />
+             . . . has a tough exterior. <br />
+             Ayin the Female High Elf is sitting here, fighting Ayr. (flying) <br />
+             . . . has a tough exterior. <br />
+             Lund the Male Wild Elf is sitting here, fighting Khin. (flying) (red aura) <br />
+             Port O'Bello is standing here, fighting Epien. (flying) <br />
+             Cho Schmoe, Average Tank is standing here, fighting Ayr. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ryfe the Male Hylar Dwarf is sitting here, fighting Epien. (flying) <br />
+             Solana Brutane, Fist of Legend is sitting here, fighting Aquemini. (flying) <br />
+             Aquemini Thug Pirate, Kneight Reiduz of the Taladas Rebels is standing here, fighting Solana. (flying) <br />
+             Ayr Elemental is standing here, fighting Ayin. (flying) <br />
+             . . . has a tough exterior. <br />
+             Khin the Male Hylar Dwarf is standing here, fighting Lund. (flying) <br />
+<br />
+             399H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Lund stands up. <br />
+<br />
+             399H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             You are sent sprawling as Khin crashes into you. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Lund crashes into Khin in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Solana stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; lay lund <br />
+<br />
+             Solana crashes into Aquemini in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayr quaffs Mishakal's White potion. <br />
+             Ayr smiles suddenly and has never looked better. <br />
+             Ayr heals Ayr. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayin steps aside as Ayr attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:Perfect] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             You miss Khin with your stab. <br />
+             Epien misses Mange with her pierce. <br />
+             Mange pierces Epien extremely hard. <br />
+             Port slashes Epien very hard. <br />
+             You receive 0 experience. <br />
+             Epien is dead! R.I.P. <br />
+             Cho slashes Ayr very hard. <br />
+             Gee massacres Khin with his pierce. <br />
+             Aquemini bruises Solana with his slash. <br />
+             Solana annihilates Aquemini with her crush. <br />
+             Ayin massacres Ayr with her crush. <br />
+             Ayr massacres Ayin with his slash. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Khin cleaves Lund extremely hard. <br />
+             The death cry of Epien echoes from somewhere nearby... <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Kaleero gets a large pile of coins from the corpse of Epien. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayin panics, and attempts to flee. <br />
+             Ayin flies north. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Gee gets a scribed scroll from the corpse of Epien. <br />
+             Gee gets a serrated dagger from the corpse of Epien. <br />
+             Gee gets a short sword from the corpse of Epien. <br />
+             Gee gets an iron ration from the corpse of Epien. <br />
+             Gee gets an iron ration from the corpse of Epien. <br />
+             Gee gets a scroll of recall from the corpse of Epien. <br />
+             Gee gets a long sword from the corpse of Epien. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; st <br />
+<br />
+             Mange flies east. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Kaleero leaves west. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; bash <br />
+<br />
+             Mange flies in from the east. <br />
+<br />
+             383H 139V 2468950X 320C [Lund:V.Good] [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayr slashes Cho hard. <br />
+             You miss Khin with your stab. <br />
+             Cho slashes Ayr extremely hard. <br />
+             Gee misses Khin with his pierce. <br />
+             Aquemini misses Solana with his slash. <br />
+             Solana crushes Aquemini extremely hard. <br />
+             Lund cleaves Khin extremely hard. <br />
+             Khin is incapacitated and will slowly die, if not aided. <br />
+             Mange flies west. <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Cho crashes into Ayr in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayin flies in from the north. <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Syphen shouts 'any friends or foes of phyraliar give me a tell.......' <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Awful] Mem:2 Exits:NEW&gt; You can't do that while sitting. <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayin crashes into Khin in a devastating bash, killing him mercilessly. <br />
+             You receive 0 experience. <br />
+             Khin is dead! R.I.P. <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Dying] Mem:2 Exits:NEW&gt; <br />
+             Gee drops an iron ration. <br />
+             Gee drops an iron ration. <br />
+             Gee drops an iron ration. <br />
+<br />
+             383H 139V 2468950X 320C [Khin:Dying] Mem:2 Exits:NEW&gt; The death cry of Khin echoes from somewhere nearby... <br />
+             You stand up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Mange flies in from the west. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; Ayr steps aside as Port attempts a bash, stumbles, and falls flat on his<br />
+             face. <br />
+             You couldn't find what you were looking for. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; st <br />
+<br />
+             Solana gets a woodsman's axe from the corpse of Khin. <br />
+             Solana gets a copper wrist guard from the corpse of Khin. <br />
+             Solana gets a copper wrist guard from the corpse of Khin. <br />
+             Solana gets a red guardian robe from the corpse of Khin. <br />
+             Solana gets a pile of coins from the corpse of Khin. <br />
+             Solana gets a scroll of recall from the corpse of Khin. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Narg shouts 'Any restore clerics on?' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You are already standing. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Solana says 'leave gatir' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Port misses Ayr with his slash. <br />
+             Ayr slashes Cho very hard. <br />
+             Cho slashes Ayr very hard. <br />
+             Aquemini misses Solana with his slash. <br />
+             Solana massacres Aquemini with her crush. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; get all corpse <br />
+<br />
+             Gee gets a leather belt pouch from the corpse of Khin. <br />
+             Gee gets a large iron shield from the corpse of Khin. <br />
+             Gee gets a blue potion of remove poison from the corpse of Khin. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You get brass dragonscale sleeves from the corpse of Khin. <br />
+             You get a pair of work gloves from the corpse of Khin. <br />
+             You get a pair of knight's spurs from the corpse of Khin. <br />
+             You get a pair of elven chain leggings from the corpse of Khin. <br />
+             You get a black helm and morion from the corpse of Khin. <br />
+             You get a chainmail halter from the corpse of Khin. <br />
+             You get a black neckguard from the corpse of Khin. <br />
+             You get a light medallion from the corpse of Khin. <br />
+             You get a small grey ring from the corpse of Khin. <br />
+             You get a small grey ring from the corpse of Khin. <br />
+             You get a bottle from the corpse of Khin. <br />
+             You get a bottle from the corpse of Khin. <br />
+             You get a milky potion of see invisible from the corpse of Khin. <br />
+             Potion : You can't carry that many items. <br />
+             Potion : You can't carry that many items. <br />
+             Potion : You can't carry that many items. <br />
+             Keg : You can't carry that many items. <br />
+             Potion : You can't carry that many items. <br />
+             Bread : You can't carry that many items. <br />
+             Potion : You can't carry that many items. <br />
+             Leg : You can't carry that many items. <br />
+             Lamp : You can't carry that many items. <br />
+             Bag : You can't carry that many items. <br />
+             Crystal : You can't carry that many items. <br />
+             Bag : You can't carry that many items. <br />
+             Chest : You can't carry that many items. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Aquemini stands up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; bash aquemini <br />
+<br />
+             Lund slowly fades into existence. <br />
+             Lund crashes into Ayr in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gee swings madly at Ayr with a spear of the hunter, knocking him to the ground. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You crash into Aquemini in a bone crunching bash, sending him<br />
+             sprawling to the ground. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ryfe stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Mange pierces Aquemini very hard. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ryfe bludgeons Ayr hard. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ryfe bludgeons Ayr extremely hard. <br />
+             Mange pierces Aquemini extremely hard. <br />
+             You stab Aquemini extremely hard. <br />
+             Gee massacres Ayr with his pierce. <br />
+             Lund massacres Ayr with his cleave. <br />
+             Port massacres Ayr with his slash. <br />
+             Ayr slashes Cho hard. <br />
+             Cho massacres Ayr with his slash. <br />
+             Aquemini misses Solana with his slash. <br />
+             Solana crushes Aquemini hard. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Gatir says 'i am not assistng' <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Aquemini steps aside as Solana attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Aquemini steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Port stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; <br />
+             Ayr steps aside as Port attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             383H 139V 2468950X 320C [Solana:Good] [Aquemini:Awful] Mem:2 Exits:NEW&gt; bash ayr <br />
+<br />
+             Ayin misses Aquemini with her crush. <br />
+             Ryfe misses Ayr with his bludgeon. <br />
+             Mange pierces Aquemini extremely hard. <br />
+             Aquemini is stunned, but will likely regain consciousness again. <br />
+             You massacre Aquemini with your stab. <br />
+             You receive 0 experience. <br />
+             Aquemini is dead! R.I.P. <br />
+             Gee misses Ayr with his pierce. <br />
+             Lund cleaves Ayr extremely hard. <br />
+             Port misses Ayr with his slash. <br />
+             Ayr slashes Cho hard. <br />
+             Cho slashes Ayr extremely hard. <br />
+             The death cry of Aquemini echoes from somewhere nearby... <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ayr steps aside as Cho attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gatir says 'just logging from neutral position' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You try to bash Ayr, but you miss and tumble forward onto your face. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:Bad] Mem:2 Exits:NEW&gt; <br />
+             You miss Ayr with your stab. <br />
+             Ryfe bludgeons Ayr extremely hard. <br />
+             Gee misses Ayr with his pierce. <br />
+             Lund cleaves Ayr extremely hard. <br />
+             Port slashes Ayr extremely hard. <br />
+             Ayr slashes Cho extremely hard. <br />
+             Cho slashes Ayr extremely hard. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; st <br />
+<br />
+             Mange nods at Gatir. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Solana stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Ayr stands up. <br />
+             Ayr steps aside as Ayin attempts a bash, stumbles, and falls flat on her face. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Solana crashes into Ayr in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Gee tries to barrel into Ayr, but ends up falling flat on his face. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Ayr steps aside as Lund attempts a bash, stumbles, and falls flat on his face. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Port stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; <br />
+             Port crashes into Ayr in a thundering collision, knocking him to the ground! <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:V.Bad] Mem:2 Exits:NEW&gt; c 'h p' <br />
+<br />
+             Solana massacres Ayr with her crush. <br />
+             Ayin crushes Ayr hard. <br />
+             You miss Ayr with your stab. <br />
+             Ryfe bludgeons Ayr very hard. <br />
+             Gee misses Ayr with his pierce. <br />
+             Lund massacres Ayr with his cleave. <br />
+             Port massacres Ayr with his slash. <br />
+             Ayr slashes Cho extremely hard. <br />
+             Cho slashes Ayr extremely hard. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:Awful] Mem:2 Exits:NEW&gt; <br />
+             Cho stands up. <br />
+<br />
+             383H 139V 2468950X 320C [Cho:Good] [Ayr:Awful] Mem:2 Exits:NEW&gt; <br />
+             Cho crashes into Ayr in a devastating bash, killing him mercilessly. <br />
+             You receive 0 experience. <br />
+             Ayr is dead! R.I.P. <br />
+<br />
+             383H 139V 2468950X 320C [Ayr:Dying] Mem:2 Exits:NEW&gt; <br />
+             The death cry of Ayr echoes from somewhere nearby... <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; l <br />
+             You stand up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; Unexpected end of input: <br />
+             You must specify a character to perform that action on. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. <br />
+             The corpse of Ayr is lying here. <br />
+             The corpse of Aquemini is lying here. <br />
+             The corpse of Khin is lying here. <br />
+             An iron ration has been discarded here. [3] <br />
+             The corpse of Epien is lying here. <br />
+             The corpse of Blake is lying here. <br />
+             A small medallion in the shape of an axe lies here. <br />
+             A flexible gold belt lies here. <br />
+             The corpse of Eplur is lying here. <br />
+             A long shawl made of a darkened leather rests here. <br />
+             A wrist band made of leather has been left here. [2] <br />
+             The corpse of Smagma is lying here. <br />
+             The corpse of Eaiu is lying here. <br />
+             The corpse of Lexi is lying here. <br />
+             Mange the Male Goblin is standing here. (flying) <br />
+             Ayin the Female High Elf is sitting here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Gatir, Carnage Gatekeeper is standing here. (invisible) <br />
+             Gee Isme is sitting here. <br />
+             . . . has a tough exterior. <br />
+             Lund the Male Wild Elf is sitting here. (flying) (invisible) (red aura) <br />
+             Port O'Bello is standing here. (flying) <br />
+             Cho Schmoe, Average Tank is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ryfe the Male Hylar Dwarf is standing here. (flying) <br />
+             Solana Brutane, Fist of Legend is standing here. (flying) <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ayin stands up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; put all chest <br />
+<br />
+             Solana gets a pile of coins from the corpse of Ayr. <br />
+             Gee stands up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You put a milky potion of see invisible in a small wooden chest. <br />
+             You put a bottle in a small wooden chest. <br />
+             You put a bottle in a small wooden chest. <br />
+             You put a small grey ring in a small wooden chest. <br />
+             You put a small grey ring in a small wooden chest. <br />
+             You put a light medallion in a small wooden chest. <br />
+             You put a black neckguard in a small wooden chest. <br />
+             You put a chainmail halter in a small wooden chest. <br />
+             You put a black helm and morion in a small wooden chest. <br />
+             You put a pair of elven chain leggings in a small wooden chest. <br />
+             You put a pair of knight's spurs in a small wooden chest. <br />
+             You put a pair of work gloves in a small wooden chest. <br />
+             Brass dragonscale sleeves won't fit. <br />
+             A large emerald ring won't fit. <br />
+             You put a glowing scroll of recall in a small wooden chest. <br />
+             A small canteen won't fit. <br />
+             A large wooden barrel won't fit. <br />
+             A light medallion won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A bright ball of light won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A small canteen won't fit. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Lund stands up. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gee tells your group 'loot it up boys!' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; get all corpse <br />
+             You get a slender mithril sabre from the corpse of Ayr. <br />
+             You get a brass dwarven wristplate from the corpse of Ayr. <br />
+             You get a copper wrist guard from the corpse of Ayr. <br />
+             You get an imp skin pouch from the corpse of Ayr. <br />
+             You get a timberwolf pelt from the corpse of Ayr. <br />
+             Shield : You can't carry that much weight. <br />
+             Vambraces : You can't carry that much weight. <br />
+             You get a pair of wool mittens from the corpse of Ayr. <br />
+             Boots : You can't carry that much weight. <br />
+             Leggings : You can't carry that much weight. <br />
+             You get a dark red visor from the corpse of Ayr. <br />
+             Armour : You can't carry that much weight. <br />
+             Charm : You can't carry that much weight. <br />
+             Medallion : You can't carry that much weight. <br />
+             Ring : You can't carry that much weight. <br />
+             Rock : You can't carry that much weight. <br />
+             Bread : You can't carry that much weight. <br />
+             Scroll : You can't carry that much weight. <br />
+             Bread : You can't carry that much weight. <br />
+             Bread : You can't carry that much weight. <br />
+             Scroll : You can't carry that much weight. <br />
+             Flask : You can't carry that much weight. <br />
+             Flask : You can't carry that much weight. <br />
+             Flask : You can't carry that much weight. <br />
+             Canteen : You can't carry that much weight. <br />
+             Canteen : You can't carry that much weight. <br />
+             Chest : You can't carry that much weight. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Tikk tells your group 'sorry guys' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gatir says 'sux my friends ost:(' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ayin gets a carved marble shield from the corpse of Ayr. <br />
+             Ayin gets vambraces of the night from the corpse of Ayr. <br />
+             Ayin gets a pair of worn cloth boots from the corpse of Ayr. <br />
+             Ayin gets a pair of stained leather leggings from the corpse of Ayr. <br />
+             Ayin gets a crystalline armour from the corpse of Ayr. <br />
+             Ayin gets a lucky bone charm from the corpse of Ayr. <br />
+             Ayin gets a pearl and onyx medallion from the corpse of Ayr. <br />
+             Ayin gets a cold golden ring from the corpse of Ayr. <br />
+             Ayin gets a small sandstone rock from the corpse of Ayr. <br />
+             Ayin gets an entire loaf of bread from the corpse of Ayr. <br />
+             Ayin gets a glowing scroll of recall from the corpse of Ayr. <br />
+             Ayin gets a piece of sweet bread from the corpse of Ayr. <br />
+             Ayin gets a piece of sweet bread from the corpse of Ayr. <br />
+             Ayin gets a glowing scroll of recall from the corpse of Ayr. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ryfe gets a small wooden chest from the corpse of Epien. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Mange gets a copper flask from the corpse of Ayr. <br />
+             Mange gets a copper flask from the corpse of Ayr. <br />
+             Mange gets a copper flask from the corpse of Ayr. <br />
+             Mange gets a small canteen from the corpse of Ayr. <br />
+             Mange gets a small canteen from the corpse of Ayr. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Tikk tells your group 'i had to recall' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; put all chest <br />
+             A dark red visor won't fit. <br />
+             A pair of wool mittens won't fit. <br />
+             A timberwolf pelt won't fit. <br />
+             An imp skin pouch won't fit. <br />
+             A copper wrist guard won't fit. <br />
+             A brass dwarven wristplate won't fit. <br />
+             A slender mithril sabre won't fit. <br />
+             Brass dragonscale sleeves won't fit. <br />
+             A large emerald ring won't fit. <br />
+             A small canteen won't fit. <br />
+             A large wooden barrel won't fit. <br />
+             A light medallion won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A bright ball of light won't fit. <br />
+             A scroll of recall won't fit. <br />
+             A small canteen won't fit. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Kaleero arrives from the west. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gatir tips his hat to you. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Kaleero gets an enchanted chest from the corpse of Ayr. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ayin drops a piece of sweet bread. <br />
+             Ayin drops a piece of sweet bread. <br />
+             Ayin drops an entire loaf of bread. <br />
+             Ayin drops a piece of sweet bread. <br />
+             Ayin drops a piece of sweet bread. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Lund tells your group 'fuck eaiu died' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gatir leaves north. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Kaleero leaves west. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Cho tells your group 'who died' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Port tells your group 'get here ant loot' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ryfe gets a small sandstone rock from the corpse of Aquemini. <br />
+             Ryfe gets a wicked double-bladed sword from the corpse of Aquemini. <br />
+             Ryfe gets a wooden shield from the corpse of Aquemini. <br />
+             Ryfe gets a large first-aid kit from the corpse of Aquemini. <br />
+             Ryfe gets a lord's burial robe from the corpse of Aquemini. <br />
+             Ryfe gets a small canteen from the corpse of Aquemini. <br />
+             Ryfe gets a small canteen from the corpse of Aquemini. <br />
+             Ryfe gets a small green scroll from the corpse of Aquemini. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; gt loot <br />
+             You tell your group 'loot' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; group <br />
+<br />
+             Mange drops a copper flask. <br />
+             Mange drops a copper flask. <br />
+             Mange drops a copper flask. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; Your group of 11 members consists of: <br />
+             Member Hits Move Position Fly Inv Water Light Mem <br />
+             ------------------------------------------------------------------------ <br />
+             Heo good rested standing Y N N 0 2 <br />
+             Vez fair rested standing Y N N 0 0 <br />
+             Solana good rested standing Y N N 0 0 <br />
+             Ryfe fair rested standing Y N N 0 8 <br />
+             Cho good rested standing Y N N 2 0 <br />
+             Port perfect rested standing Y N N 0 0 <br />
+             Mange perfect rested standing Y N N 0 0 <br />
+             Lund v.good rested standing Y Y N 0 0 <br />
+             Ayin good rested standing Y N N 0 1 <br />
+             Gee perfect rested standing N N N 0 0 <br />
+             Tikk awful rested resting N N N 0 4 <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             A Kalaman cityguard arrives from the east. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Kaleero arrives from the west. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Kaleero leaves east. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; l <br />
+             A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. <br />
+             A copper drinking flask lies here, abandoned. [3] <br />
+             A small roll of bread lies here. [2] <br />
+             A loaf of bread lies here. <br />
+             A small roll of bread lies here. [2] <br />
+             The corpse of Ayr is lying here. <br />
+             The corpse of Aquemini is lying here. <br />
+             The corpse of Khin is lying here. <br />
+             An iron ration has been discarded here. [3] <br />
+             The corpse of Epien is lying here. <br />
+             The corpse of Blake is lying here. <br />
+             A small medallion in the shape of an axe lies here. <br />
+             A flexible gold belt lies here. <br />
+             The corpse of Eplur is lying here. <br />
+             A long shawl made of a darkened leather rests here. <br />
+             A wrist band made of leather has been left here. [2] <br />
+             The corpse of Smagma is lying here. <br />
+             The corpse of Eaiu is lying here. <br />
+             The corpse of Lexi is lying here. <br />
+             A cityguard of Kalaman looks about for signs of trouble. <br />
+             Mange the Male Goblin is standing here. (flying) <br />
+             Ayin the Female High Elf is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Gee Isme is standing here. <br />
+             . . . has a tough exterior. <br />
+             Lund the Male Wild Elf is standing here. (flying) (invisible) (red aura) <br />
+             Port O'Bello is standing here. (flying) <br />
+             Cho Schmoe, Average Tank is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ryfe the Male HylTICK IN 5 SECONDS. <br />
+             ar Dwarf is standing here. (flying) <br />
+             Solana Brutane, Fist of Legend is standing here. (flying) <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Gee drops a bronze bottle. <br />
+             Gee drops a bronze bottle. <br />
+             Gee drops a bronze bottle. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Mange gets a sturdy maul from the corpse of Aquemini. <br />
+             Mange gets an ice reaver from the corpse of Aquemini. <br />
+             Mange gets a large golden hammer from the corpse of Aquemini. <br />
+             Mange gets a small mandolin from the corpse of Aquemini. <br />
+             Mange gets a small green scroll from the corpse of Aquemini. <br />
+             Mange gets a small green scroll from the corpse of Aquemini. <br />
+             Mange gets a small green scroll from the corpse of Aquemini. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; gt all loot <br />
+<br />
+             A Kalaman cityguard leaves west. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; inv <br />
+             You tell your group 'all loot' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; You are carrying: <br />
+             a dark red visor <br />
+             a pair of wool mittens <br />
+             a timberwolf pelt <br />
+             an imp skin pouch(invisible) <br />
+             a copper wrist guard <br />
+             a brass dwarven wristplate <br />
+             a slender mithril sabre <br />
+             brass dragonscale sleeves <br />
+             a large emerald ring..it glows dimly <br />
+             a small canteen <br />
+             a large wooden barrel <br />
+             a light medallion..it glows dimly <br />
+             a scroll of recall [2] <br />
+             a bright ball of light..it glows dimly <br />
+             a scroll of recall <br />
+             a small wooden chest <br />
+             a small canteen <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Vez tells your group 'where at' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Ayin gets a small green scroll from the corpse of Aquemini. <br />
+             Ayin gets a small green scroll from the corpse of Aquemini. <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Cho tells your group 'i hope we got a log of that' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Lund tells your group 'kaleero looted' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Lund tells your group 'kaleero looted' <br />
+<br />
+             383H 139V 2468950X 320C Mem:2 Exits:NEW&gt; <br />
+             Timer now at 60 secs. <br />
+             Timer now at 60 secs. <br />
+             Port tells your group 'make charmies and loot' <br />
+<br />
+             394H 140V 2468950X 320C Mem:1 Exits:NEW&gt; <br />
+             Ayin gets a milky potion of see invisible from the corpse of Khin. <br />
+             Ayin gets a milky potion of see invisible from the corpse of Khin. <br />
+             Ayin gets a milky potion of see invisible from the corpse of Khin. <br />
+<br />
+             394H 140V 2468950X 320C Mem:1 Exits:NEW&gt; gt I logged <br />
+             You tell your group 'I logged' <br />
+<br />
+             394H 140V 2468950X 320C Mem:1 Exits:NEW&gt; l <br />
+             A Dark Alley <br />
+             The alley is dark and filthy. Trash is littered all over the place. <br />
+             This place is so different from the rest of the town, you would think you <br />
+             were in another lesser city. The city really needs to clean up this <br />
+             section, but people are afraid of the crime here. <br />
+             A bottle of hammered bronze has been discarded here. [3] <br />
+             A copper drinking flask lies here, abandoned. [3] <br />
+             A small roll of bread lies here. [2] <br />
+             A loaf of bread lies here. <br />
+             A small roll of bread lies here. [2] <br />
+             The corpse of Ayr is lying here. <br />
+             The corpse of Aquemini is lying here. <br />
+             The corpse of Khin is lying here. <br />
+             An iron ration has been discarded here. [3] <br />
+             The corpse of Epien is lying here. <br />
+             The corpse of Blake is lying here. <br />
+             A small medallion in the shape of an axe lies here. <br />
+             A flexible gold belt lies here. <br />
+             The corpse of Eplur is lying here. <br />
+             A long shawl made of a darkened leather rests here. <br />
+             A wrist band made of leather has been left here. [2] <br />
+             The corpse of Smagma is lying here. <br />
+             The corpse of Eaiu is lying here. <br />
+             The corpse of Lexi is lying here. <br />
+             Mange the Male Goblin is standing here. (flying) <br />
+             Ayin the Female High Elf is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Gee Isme is standing here. <br />
+             . . . has a tough exterior. <br />
+             Lund the Male Wild Elf is standing here. (flying) (invisible) (red aura) <br />
+             Port O'Bello is standing here. (flying) <br />
+             Cho Schmoe, Average Tank is standing here. (flying) <br />
+             . . . has a tough exterior. <br />
+             Ryfe the Male Hylar Dwarf is standing here. (flying) <br />
+             Solana Brutane, Fist of Legend is standing here. (flying) 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='231'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=231">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="231">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

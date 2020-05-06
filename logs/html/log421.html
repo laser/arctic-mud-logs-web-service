@@ -1,0 +1,806 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 421-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='421'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Oy Oy Oy</font></b>
+<p>
+POV: 
+Nero<p>
+Log Rating:
+-1.6363<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Oy talks shit. Oy loses his friend.</i>
+<p>
+<p>
+
+576H 75V 7769652X 719C Exits:EW&gt; e<br />
+Outer Courtyard<br />
+    This vast expanse of grass and bushes surrounds the High Clerist Tower.<br />
+A small trail has been worn in the grass where horses and people have tread<br />
+while making their way back and forth between the north and south gates.<br />
+The courtyard continues to the south and west.<br />
+Tyrus the Male High Elf is standing here. (flying) (invisible)<br />
+Oy the Male Hylar Dwarf is standing here, fighting a Knight of the Crown.<br />
+A Knight of the Crown is standing here, fighting Oy.<br />
+A Knight of the Crown utters some strange words.<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; bas oy<br />
+Oy crushes a Knight of the Crown extremely hard.<br />
+Oy slashes a Knight of the Crown extremely hard.<br />
+A Knight of the Crown misses Oy with his hit.<br />
+You try to bash Oy, but you miss and tumble forward onto your face.<br />
+<br />
+576H 74V 7769652X 719C [Me:Perfect] [a Knight of the Crown:V.Bad] [Oy:Good] Exits:SW&gt; <br />
+Tyrus focuses harshly on a Knight of the Crown and utters some strange words.<br />
+<br />
+576H 74V 7769652X 719C [Me:Perfect] [a Knight of the Crown:V.Bad] [Oy:Good] Exits:SW&gt; <br />
+You massacre Oy with your stab.<br />
+Oy crushes a Knight of the Crown very hard.<br />
+Oy slashes a Knight of the Crown hard.<br />
+A Knight of the Crown misses Oy with his hit.<br />
+<br />
+576H 74V 7769652X 719C [Me:Perfect] [a Knight of the Crown:V.Bad] [Oy:Good] Exits:SW&gt; <br />
+Tyrus focuses harshly on a Knight of the Crown and utters some strange words.<br />
+<br />
+576H 74V 7769652X 719C [Me:Perfect] [a Knight of the Crown:V.Bad] [Oy:Good] Exits:SW&gt; <br />
+Oy panics, and attempts to flee.<br />
+Oy leaves west.<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; <br />
+A Knight of the Crown leaves west.<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; <br />
+**Draven: naw wait on kena<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; st<br />
+bas<br />
+You stand up.<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; You couldn't find what you were looking for.<br />
+<br />
+576H 74V 7769652X 719C Exits:SW&gt; w<br />
+Outer Courtyard<br />
+    This vast expanse of grass and bushes surrounds the High Clerist Tower.<br />
+A small trail has been worn in the grass where horses and people have tread<br />
+while making their way back and forth between the north and south gates.<br />
+The courtyard continues to the east and west.<br />
+A Knight of the Crown is standing here, fighting Oy.<br />
+Oy the Male Hylar Dwarf is standing here, fighting a Knight of the Crown.<br />
+<br />
+576H 73V 7769652X 719C Exits:EW&gt; bas oy<br />
+You crash into Oy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+576H 73V 7769652X 719C [Me:Perfect] [a Knight of the Crown:Awful] [Oy:Good] Exits:EW&gt; <br />
+Tyrus flies in from the east.<br />
+A Knight of the Crown utters some strange words.<br />
+A Knight of the Crown is surrounded by a white aura.<br />
+<br />
+576H 73V 7769652X 719C [Me:Perfect] [a Knight of the Crown:Awful] [Oy:Good] Exits:EW&gt; <br />
+You massacre Oy with your stab.<br />
+A Knight of the Crown hits Oy extremely hard.<br />
+Oy crushes a Knight of the Crown extremely hard.<br />
+Oy slashes a Knight of the Crown very hard.<br />
+A Knight of the Crown is incapacitated and will slowly die, if not aided.<br />
+<br />
+576H 73V 7769652X 719C [Me:Perfect] [a Knight of the Crown:Dying] [Oy:Fair] Exits:EW&gt; <br />
+You massacre Oy with your stab.<br />
+Oy massacres a Knight of the Crown with his crush.<br />
+A Knight of the Crown is dead! R.I.P.<br />
+The death cry of a Knight of the Crown echoes from somewhere nearby...<br />
+<br />
+576H 73V 7769652X 719C [Me:Perfect] [Oy:Fair] Exits:EW&gt; <br />
+Oy stands up.<br />
+<br />
+576H 73V 7769652X 719C [Me:Perfect] [Oy:Fair] Exits:EW&gt; <br />
+Oy kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+568H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+568H 73V 7769652X 719C [Me:V.Good] [Oy:Good] Exits:EW&gt; bas <br />
+You crash into Oy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+568H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU extremely hard.<br />
+Oy slashes YOU very hard.<br />
+You massacre Oy with your stab.<br />
+<br />
+538H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+538H 73V 7769652X 719C [Me:V.Good] [Oy:Good] Exits:EW&gt; <br />
+Oy crushes YOU hard.<br />
+Oy misses you with his slash.<br />
+You massacre Oy with your stab.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Tyrus focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy misses you with his crush.<br />
+Oy misses you with his slash.<br />
+You massacre Oy with your stab.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy stands up.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy tries to sweep your legs, but you avoid the attack.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; bas oy<br />
+You crash into Oy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+528H 73V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU very hard.<br />
+Oy misses you with his slash.<br />
+You massacre Oy with your stab.<br />
+<br />
+516H 73V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+516H 73V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy misses you with his crush.<br />
+Oy misses you with his slash.<br />
+You massacre Oy with your stab.<br />
+<br />
+537H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU extremely hard.<br />
+Oy misses you with his slash.<br />
+You massacre Oy with your stab.<br />
+<br />
+522H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy stands up.<br />
+<br />
+522H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy stops using a darkened iron long sword.<br />
+<br />
+522H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; bas oy<br />
+You try to bash Oy, but you miss and tumble forward onto your face.<br />
+<br />
+522H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy starts using a shield of the Black Lily as a shield.<br />
+<br />
+522H 106V 7769652X 719C [Me:V.Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy massacres YOU with his crush.<br />
+You massacre Oy with your stab.<br />
+<br />
+501H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU extremely hard.<br />
+You massacre Oy with your stab.<br />
+<br />
+484H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+You step aside as Oy tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+484H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; st<br />
+You stand up.<br />
+<br />
+484H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; disarm<br />
+Oy misses you with his crush.<br />
+You massacre Oy with your stab.<br />
+You fail to disarm Oy's weapon.<br />
+<br />
+484H 106V 7769652X 719C [Me:Good] [Oy:Bad] Exits:EW&gt; <br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+484H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU very hard.<br />
+You massacre Oy with your stab.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; bas oy<br />
+You try to bash Oy, but you miss and tumble forward onto your face.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy gets a ruby from his chest.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy stands up.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy lights a cracked ruby and holds it.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+471H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU extremely hard.<br />
+You massacre Oy with your stab.<br />
+You stop following Draven.<br />
+You now follow Kajan.<br />
+<br />
+451H 106V 7769652X 719C [Me:Good] [Oy:Fair] Exits:EW&gt; st<br />
+bas oy<br />
+<br />
+Oy massacres YOU with his crush.<br />
+You massacre Oy with your stab.<br />
+Tyrus focuses on Oy and utters some strange words.<br />
+<br />
+426H 106V 7769652X 719C [Me:Fair] [Oy:Fair] Exits:EW&gt; You stand up.<br />
+<br />
+426H 106V 7769652X 719C [Me:Fair] [Oy:Fair] Exits:EW&gt; You crash into Oy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+426H 106V 7769652X 719C [Me:Fair] [Oy:Fair] Exits:EW&gt; <br />
+Oy crushes YOU very hard.<br />
+You massacre Oy with your stab.<br />
+<br />
+413H 106V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:EW&gt; <br />
+Tyrus focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+413H 106V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:EW&gt; flee<br />
+<br />
+Oy misses you with his crush.<br />
+You massacre Oy with your stab.<br />
+<br />
+413H 106V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:EW&gt; <br />
+Tyrus focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+413H 106V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:EW&gt; Oy stands up.<br />
+You flee head over heels.<br />
+Outer Courtyard<br />
+    This vast expanse of grass and bushes surrounds the High Clerist Tower.<br />
+A small trail has been worn in the grass where horses and people have tread<br />
+while making their way back and forth between the north and south gates.<br />
+The courtyard continues to the south and west.<br />
+<br />
+413H 105V 7769652X 719C Exits:SW&gt; w<br />
+Outer Courtyard<br />
+    This vast expanse of grass and bushes surrounds the High Clerist Tower.<br />
+A small trail has been worn in the grass where horses and people have tread<br />
+while making their way back and forth between the north and south gates.<br />
+The courtyard continues to the east and west.<br />
+The corpse of a Knight of the Crown is lying here.<br />
+Tyrus the Male High Elf is standing here. (flying) (invisible)<br />
+Oy the Male Hylar Dwarf is standing here.<br />
+<br />
+413H 104V 7769652X 719C Exits:EW&gt; bas tyrus<br />
+You crash into Tyrus in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+413H 104V 7769652X 719C [Me:Fair] [Tyrus:V.Good] Exits:EW&gt; <br />
+You massacre Tyrus with your stab.<br />
+Tyrus slowly fades into existence.<br />
+Tyrus misses you with his crush.<br />
+<br />
+413H 104V 7769652X 719C [Me:Fair] [Tyrus:Good] Exits:EW&gt; <br />
+You are sent sprawling as Oy crashes into you.<br />
+<br />
+397H 104V 7769652X 719C [Me:Fair] [Tyrus:Good] Exits:EW&gt; <br />
+Oy massacres YOU with his crush.<br />
+You annihilate Tyrus with your stab.<br />
+Tyrus misses you with his crush.<br />
+<br />
+372H 104V 7769652X 719C [Me:Fair] [Tyrus:Fair] Exits:EW&gt; st<br />
+<br />
+Oy crushes YOU extremely hard.<br />
+You massacre Tyrus with your stab.<br />
+Tyrus crushes YOU.<br />
+<br />
+347H 104V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:EW&gt; <br />
+Tyrus stands up.<br />
+<br />
+347H 104V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:EW&gt; <br />
+**Alexandros: did he cast on it on entry?<br />
+<br />
+347H 104V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:EW&gt; <br />
+You step aside as Oy tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+347H 104V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:EW&gt; flee<br />
+<br />
+Tyrus panics, and attempts to flee.<br />
+You direct your attention to Oy.<br />
+Tyrus flies east.<br />
+<br />
+347H 104V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:EW&gt; <br />
+You stab Oy extremely hard.<br />
+Oy massacres YOU with his crush.<br />
+<br />
+325H 104V 7769652X 719C [Me:Fair] [Oy:V.Bad] Exits:EW&gt; flee<br />
+You stand up.<br />
+<br />
+325H 104V 7769652X 719C [Me:Fair] [Oy:V.Bad] Exits:EW&gt; You flee head over heels.<br />
+Outer Courtyard<br />
+    This vast expanse of grass and bushes surrounds the High Clerist Tower.<br />
+A small trail has been worn in the grass where horses and people have tread<br />
+while making their way back and forth between the north and south gates.<br />
+The courtyard continues to the south and west.<br />
+Tyrus the Male High Elf is standing here. (flying)<br />
+<br />
+325H 103V 7769652X 719C Exits:SW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+325H 103V 7769652X 719C Exits:SW&gt; bas tyrus<br />
+You crash into Tyrus in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+325H 103V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:SW&gt; <br />
+**Kuuz: dunno<br />
+<br />
+325H 103V 7769652X 719C [Me:Fair] [Tyrus:Bad] Exits:SW&gt; <br />
+You annihilate Tyrus with your stab.<br />
+Tyrus misses you with his crush.<br />
+<br />
+325H 103V 7769652X 719C [Me:Fair] [Tyrus:V.Bad] Exits:SW&gt; <br />
+Oy arrives from the west.<br />
+<br />
+325H 103V 7769652X 719C [Me:Fair] [Tyrus:V.Bad] Exits:SW&gt; <br />
+You step aside as Oy tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+325H 103V 7769652X 719C [Me:Fair] [Tyrus:V.Bad] Exits:SW&gt; <br />
+Oy misses you with his crush.<br />
+You annihilate Tyrus with your stab.<br />
+Tyrus crushes YOU hard.<br />
+The rain has stopped.<br />
+Oy's crystal flickers briefly.<br />
+<br />
+337H 136V 7769652X 719C [Me:Fair] [Tyrus:Awful] Exits:SW&gt; bas tyrus<br />
+<br />
+**Belegorn: didn't agro honas on entry<br />
+<br />
+337H 136V 7769652X 719C [Me:Fair] [Tyrus:Awful] Exits:SW&gt; <br />
+Tyrus stands up.<br />
+<br />
+337H 136V 7769652X 719C [Me:Fair] [Tyrus:Awful] Exits:SW&gt; You crash into Tyrus in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+337H 136V 7769652X 719C [Me:Fair] [Tyrus:Awful] Exits:SW&gt; <br />
+Oy crushes YOU extremely hard.<br />
+You massacre Tyrus with your stab.<br />
+You receive 0 experience.<br />
+Tyrus is dead! R.I.P.<br />
+The death cry of Tyrus echoes from somewhere nearby...<br />
+Tyrus stops following Oy.<br />
+A small horse stops following Tyrus.<br />
+You direct your attention to Oy.<br />
+<br />
+321H 136V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:SW&gt; get all corpse<br />
+bas oy<br />
+<br />
+**Kuuz: nope<br />
+<br />
+321H 136V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:SW&gt; <br />
+Oy stands up.<br />
+<br />
+321H 136V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:SW&gt; <br />
+Oy gets a very large pile of coins from the corpse of Tyrus.<br />
+<br />
+321H 136V 7769652X 719C [Me:Fair] [Oy:Bad] Exits:SW&gt; <br />
+You stab Oy extremely hard.<br />
+Oy crushes YOU extremely hard.<br />
+Oy gets a steel hammer from the corpse of Tyrus.<br />
+Oy gets a small leather beltpouch from the corpse of Tyrus.<br />
+Oy gets a shield encrusted with malachites from the corpse of Tyrus.<br />
+Oy gets some weathered sheepskin gloves from the corpse of Tyrus.<br />
+Oy gets a pair of plain leather boots from the corpse of Tyrus.<br />
+Oy gets a pair of ivory anklets from the corpse of Tyrus.<br />
+Oy gets a dark steel breastplate from the corpse of Tyrus.<br />
+Oy gets a bright ball of light from the corpse of Tyrus.<br />
+Oy gets a large first-aid kit from the corpse of Tyrus.<br />
+Oy gets a clear potion of invisibility from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets a piece of sweet bread from the corpse of Tyrus.<br />
+Oy gets some pixie dust from the corpse of Tyrus.<br />
+Oy gets a dwarven holy symbol from the corpse of Tyrus.<br />
+Oy gets a portable keg from the corpse of Tyrus.<br />
+<br />
+304H 136V 7769652X 719C [Me:Fair] [Oy:V.Bad] Exits:SW&gt; <br />
+Oy panics, and attempts to flee.<br />
+Oy leaves west.<br />
+<br />
+304H 136V 7769652X 719C Exits:SW&gt; w<br />
+You get a small wooden chest from the corpse of Tyrus.<br />
+You get a stable note for a percheron from the corpse of Tyrus.<br />
+You get a stable note for a clydesdale from the corpse of Tyrus.<br />
+<br />
+304H 136V 7769652X 719C Exits:SW&gt; bas oy<br />
+You couldn't find what you were looking for.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='421'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=421">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="421">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

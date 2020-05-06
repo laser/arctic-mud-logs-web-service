@@ -1,0 +1,790 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 298-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='298'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wrath of Kon vs RGB's</font></b>
+<p>
+POV: 
+Krovax<p>
+Log Rating:
+2.4614<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+I let Oleg waist all his holds on my leet wild elf saves<br />
+and then I get jiggy wit it. Reason why I was playing around<br />
+with 100 evils on and 0 goodguys is because I wanted to test<br />
+out my new stabber the Wrath of Kon that I got from tourney,<br />
+there wern't any evil bashers on till after Klara died the<br />
+first time so I was pretty safe, and I was pretty nakid eq<br />
+wise.<br />
+<br />
+436H 184V 12039546X 11676C Exits:NESW&gt; n<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. Just to the north, you see the busy city square and<br />
+Kalaman's own open air bazaar is to the east and west. Looking southward,<br />
+you see the Traveler's Lodge, where most visitors to Kalaman stay.<br />
+back klara Klara<br />
+[PK: doing back klara ON Klara ]<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+436H 183V 12039546X 11676C Exits:NESW&gt; <br />
+Klara ---&gt; Focuses HARSHLY on YOU<br />
+Klara slowly fades into existence.<br />
+YOU'RE HIT. A lightning bolt from Klara has reached its goal.<br />
+<br />
+380H 183V 12039546X 11676C [Krovax:Good] [Klara:Good] Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+380H 183V 12039546X 11676C [Krovax:Good] [Klara:Good] Exits:NESW&gt; <br />
+Klara **MISSES** you with her whip.<br />
+You pierce Klara extremely hard.<br />
+You pierce Klara very hard.<br />
+<br />
+380H 183V 12039546X 11676C [Krovax:Good] [Klara:Good] Exits:NESW&gt; fle<br />
+You flee head over heels.<br />
+Open Air Bazaar of Kalaman<br />
+     This is the famous open air bazaar of Kalaman. Many merchants travel<br />
+from far away places to do business at the bazaar. It is very crowded here.<br />
+Many of the citizens come here to shop or to just browse around. Some of<br />
+the items being sold are quite interesting, but you can't think of any uses<br />
+you would have for them.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+380H 182V 12039546X 11676C Exits:NE&gt; e<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. Just to the north, you see the busy city square and<br />
+Kalaman's own open air bazaar is to the east and west. Looking southward,<br />
+you see the Traveler's Lodge, where most visitors to Kalaman stay.<br />
+back klara Klara<br />
+[PK: doing back klara ON Klara ]<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+380H 181V 12039546X 11676C Exits:NESW&gt; Klara makes a strange sound, as you place the Wrath of Kon in her back.<br />
+<br />
+380H 181V 12039546X 11676C [Krovax:Good] [Klara:V.Bad] Exits:NESW&gt; fle<br />
+<br />
+Klara ---&gt; Focuses HARSHLY on YOU<br />
+YOU'RE HIT. A lightning bolt from Klara has reached its goal.<br />
+<br />
+331H 181V 12039546X 11676C [Krovax:Good] [Klara:V.Bad] Exits:NESW&gt; <br />
+You **MISS** Klara with your pierce.<br />
+You pierce Klara extremely hard.<br />
+<br />
+331H 181V 12039546X 11676C [Krovax:Good] [Klara:V.Bad] Exits:NESW&gt; You flee head over heels.<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+<br />
+331H 180V 12039546X 11676C Exits:NESW&gt; n<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. Just to the north, you see the busy city square and<br />
+Kalaman's own open air bazaar is to the east and west. Looking southward,<br />
+you see the Traveler's Lodge, where most visitors to Kalaman stay.<br />
+back klara Klara<br />
+[PK: doing back klara ON Klara ]<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+331H 179V 12039546X 11676C Exits:NESW&gt; Klara reaches behind herself quickly, only to discover your deadly trident in her back<br />
+.<br />
+Klara is dead! R.I.P.<br />
+<br />
+331H 179V 12039546X 11676C [Klara:Dying] Exits:NESW&gt; <br />
+The death cry of Klara echoes from somewhere nearby...<br />
+Byaka stops following Klara.<br />
+<br />
+331H 179V 12039546X 11676C Exits:NESW&gt; get all corpse<br />
+You get a very large pile of coins from the corpse of Klara.<br />
+There were 2104 coins.<br />
+<br />
+331H 179V 12039546X 13780C Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a three-headed whip..it hums softly<br />
+a glass bracelet..it glows dimly<br />
+a fine silver string (invisible)..it glows dimly<br />
+a plain component pouch<br />
+a leather belt with a copper buckle<br />
+a shimmering green robe<br />
+a pair of black ice arm guards<br />
+a pair of leather boots<br />
+a pair of thin white pants (invisible)<br />
+a pair of snail shell earrings<br />
+a black robe of shadows<br />
+an enchanted spiked collar..it glows dimly<br />
+a black pearl amulet..it glows dimly<br />
+a fine silver string (invisible)..it glows dimly<br />
+the ring of the wolf<br />
+a smear of green mud<br />
+a blue potion of remove poison [2]<br />
+an earthen mace<br />
+a colorful mushroom<br />
+a large first-aid kit<br />
+<br />
+ [return for more, q to stop]<br />
+331H 179V 12039546X 13780C Exits:NESW&gt; get all corpse<br />
+You get a three-headed whip from the corpse of Klara.<br />
+You get a glass bracelet from the corpse of Klara.<br />
+You get a fine silver string from the corpse of Klara.<br />
+You get a plain component pouch from the corpse of Klara.<br />
+You get a leather belt with a copper buckle from the corpse of Klara.<br />
+You get a shimmering green robe from the corpse of Klara.<br />
+You get a pair of black ice arm guards from the corpse of Klara.<br />
+You get a pair of leather boots from the corpse of Klara.<br />
+You are zapped by a pair of thin white pants and instantly drop it.<br />
+You get a pair of snail shell earrings from the corpse of Klara.<br />
+You get a black robe of shadows from the corpse of Klara.<br />
+You get an enchanted spiked collar from the corpse of Klara.<br />
+You get a black pearl amulet from the corpse of Klara.<br />
+You get a fine silver string from the corpse of Klara.<br />
+You get the ring of the wolf from the corpse of Klara.<br />
+You get a smear of green mud from the corpse of Klara.<br />
+You get a blue potion of remove poison from the corpse of Klara.<br />
+You get a blue potion of remove poison from the corpse of Klara.<br />
+You get an earthen mace from the corpse of Klara.<br />
+You get a colorful mushroom from the corpse of Klara.<br />
+You get a large first-aid kit from the corpse of Klara.<br />
+You get a small marble gnomish device from the corpse of Klara.<br />
+You get a small canteen from the corpse of Klara.<br />
+You get a small canteen from the corpse of Klara.<br />
+You get a small canteen from the corpse of Klara.<br />
+You get a hermit's pack from the corpse of Klara.<br />
+You get a green marble chest from the corpse of Klara.<br />
+You get a scroll of recall from the corpse of Klara.<br />
+You get a scroll of recall from the corpse of Klara.<br />
+Scroll : You can't carry that many items.<br />
+Mushroom : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Barrel : You can't carry that many items.<br />
+<br />
+<br />
+Later at hiding spot.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+The XXX is open.<br />
+Medjub the Male Human is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; <br />
+A yellowish-green cloud billows into the room.<br />
+<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; st<br />
+You stand up.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; xxxx device<br />
+You crumble the device between your fingers.  Dust falls to the ground.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; in<br />
+You are carrying:<br />
+a colorful mushroom [2]<br />
+a glowing scroll of recall..it glows dimly<br />
+a blackened chest<br />
+a bottle<br />
+a potion of golden sap..it glows dimly<br />
+a weatherbeaten rucksack<br />
+a demonic cape<br />
+a black ice sphere<br />
+a blue potion of remove poison<br />
+a green marble chest<br />
+a blue potion of remove poison [2]<br />
+a black pearl amulet..it glows dimly<br />
+a leather belt with a copper buckle<br />
+a small marble gnomish device [3]<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; xxxx device<br />
+You crumble the device between your fingers.  Dust falls to the ground.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; xxxx device<br />
+You crumble the device between your fingers.  Dust falls to the ground.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; #10 SECONDS TO TICK<br />
+quaff blue<br />
+You desperately quaff a blue potion of remove poison.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; <br />
+The yellowish-green cloud thins out.<br />
+<br />
+436H 185V 12039546X 13080C Exits:D&gt; xxxx<br />
+rent<br />
+You do something neat.<br />
+The Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A shimmering white disc floats here.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A iron key lies here.<br />
+A small red key lies here.<br />
+Rosen, The Wandering Circus Clown is resting here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+436H 185V 12039546X 13080C Exits:N&gt;rent<br />
+<br />
+Rosen gives you 10000 steel coins.<br />
+<br />
+436H 185V 12039546X 23080C Exits:N&gt; <br />
+Klara **MISSES** you with her hit.<br />
+<br />
+436H 185V 12039546X 23080C [Krovax:Perfect] [Klara:Perfect] Exits:N&gt; Rosen gives you 10000 steel coins.<br />
+You can't do that while fighting.<br />
+<br />
+436H 185V 12039546X 33080C [Krovax:Perfect] [Klara:Perfect] Exits:N&gt; #TICK<br />
+You can't do that while fighting.<br />
+You pierce Klara extremely hard.<br />
+You pierce Klara extremely hard.<br />
+Rosen looks at you.<br />
+<br />
+433H 185V 12039546X 33080C [Krovax:V.Good] [Klara:Good] Exits:N&gt; You can't do that while figh<br />
+433H 185V 12039546X 33080C [Krovax:V.Good] [Klara:Good] Exits:N&gt; A stout bouncer looks about and yells 'Take it outside you h<br />
+ooligans!'<br />
+A stout bouncer tosses you right out of the room with a mighty heave.<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+st<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+back klara Klara<br />
+Klara comes tumbling into the room, as if tossed from somewhere else.<br />
+Sorry, but you cannot do that here!<br />
+<br />
+433H 185V 12039546X 33080C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+433H 185V 12039546X 33080C Exits:NESW&gt; fle<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+433H 184V 12039546X 33080C Exits:NESW&gt; e<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+433H 184V 12039546X 33080C Exits:NESW&gt; You are already standing.<br />
+<br />
+433H 184V 12039546X 33080C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+433H 184V 12039546X 33080C Exits:NESW&gt; n<br />
+n<br />
+You're not fighting, why bother fleeing?<br />
+(In the middle of deciding to run away I decide to just fuckit and kill Klara one more time <br />
+so I go back)<br />
+433H 184V 12039546X 33080C Exits:NESW&gt; Imperial Diner<br />
+     This is a rather nice family diner. The ambiance is quite romantic; a<br />
+stage is set near the back for bands to play on occasionally. The food here<br />
+is also quite good. You can either dine here or order a take-out. A sign is<br />
+here showing a listing of what is for sale.<br />
+A waitress is here ready to take your order.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+433H 183V 12039546X 33080C Exits:W&gt; w<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+A shimmering white disc floats here.<br />
+Rosen, The Wandering Circus Clown is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+433H 182V 12039546X 33080C Exits:NESW&gt; w<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+back klara Klara<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+433H 181V 12039546X 33080C Exits:NESW&gt; Klara twists around to see you place the Wrath of Kon in her back.<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [Klara:Bad] Exits:NESW&gt; rent<br />
+fle<br />
+<br />
+You pierce Klara extremely hard.<br />
+You pierce Klara very hard.<br />
+Klara **MISSES** you with her hit.<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [Klara:V.Bad] Exits:NESW&gt; <br />
+Medjub appears before Klara in a puff of smoke.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [Klara:V.Bad] Exits:NESW&gt; fle<br />
+<br />
+Klara panics, and attempts to flee.<br />
+You direct your attention to a knight of the sword.<br />
+Klara flies east.<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [a knight of the sword:Perfect] Exits:NESW&gt; <br />
+Keeraw arrives from the east.<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [a knight of the sword:Perfect] Exits:NESW&gt; <br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [a knight of the sword:Perfect] Exits:NESW&gt; <br />
+Rosen tells you 'sorry.'<br />
+<br />
+433H 181V 12039546X 33080C [Krovax:V.Good] [a knight of the sword:Perfect] Exits:NESW&gt;You flee head over heels.<br />
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+back klara Klara<br />
+[PK: doing back klara ON Klara ]<br />
+Klara Hroft, Red Goblin Mistress is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+             <br />
+433H 181V 12039546X 33080 Exits:NESW&gt; Klara reaches behind herself quickly, only to discover your deadly trident in her back<br />
+.<br />
+Klara is dead! R.I.P.<br />
+<br />
+433H 181V 12039546X 33080C [Klara:Dying] Exits:NESW&gt; <br />
+The death cry of Klara echoes from somewhere nearby...<br />
+Byaka stops following Klara.<br />
+Medjub stops following Klara.<br />
+<br />
+At this point I ran ultra fast to solace while Medjub and Solare where trying to relo to me <br />
+and managed to rent. Krovax 2, Rgb 0 woohoo.                                                                                                                                                                                                                                                                                                                                                                                    
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='298'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=298">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="298">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

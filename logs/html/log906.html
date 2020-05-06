@@ -1,0 +1,853 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 906-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='906'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Some wilds decided to go solo too</font></b>
+<p>
+POV: 
+Kazbek<p>
+Log Rating:
+-0.7142<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Oonagh/Myte</i>
+<p>
+<p>
+
+246H 112V 14818041X 36C Exits:EW&gt; <br />
+<br />
+**Kafaya: s<br />
+<br />
+246H 112V 14818041X 36C Exits:EW&gt; <br />
+gt go<br />
+Berg flies south.<br />
+You follow Berg south.<br />
+Secluded Grove<br />
+An apple rests on the ground.<br />
+A decaying vine rests on the ground.<br />
+Oonagh Lepus, Arcticus Malcontented Guardian is standing here. (flying)<br />
+c 'f b' Oonagh. . . has a tough exterior.<br />
+Janix tends to this grove while muttering to himself.<br />
+<br />
+246H 110V 14818041X 36C &gt; <br />
+<br />
+Meeks slowly fades into existence.<br />
+Meeks crashes into Oonagh in a thundering collision, knocking her to the ground!<br />
+<br />
+246H 110V 14818041X 36C &gt; You tell your group 'go'<br />
+<br />
+246H 110V 14818041X 36C &gt; <br />
+c 'f b' OonaghYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Oonagh.<br />
+**Stimpson: go<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+Meeks massacres Oonagh with his slash.<br />
+Oonagh misses Meeks with her hit.<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+Oonagh steps aside as Kafaya attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+Stimpson focuses harshly on Oonagh and utters some strange words.<br />
+Stimpson slowly fades into existence.<br />
+Oonagh screams in pain as lightning from Stimpson penetrates her.<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+<br />
+Oonagh steps aside as Berg attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+<br />
+Oonagh steps aside as Krag attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+246H 110V 14818041X 36C Mem:2&gt; <br />
+c 'h p' OonaghKrag cleaves Oonagh extremely hard.<br />
+Berg pierces Oonagh extremely hard.<br />
+Kafaya massacres Oonagh with his crush.<br />
+Meeks massacres Oonagh with his slash.<br />
+Oonagh misses Meeks with her hit.<br />
+You utter the words, 'force bolt'<br />
+Your force bolt shatters Oonagh's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Oonagh is dead! R.I.P.<br />
+exa corpse<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+<br />
+The death cry of Oonagh echoes from somewhere nearby...<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+<br />
+Stimpson begins resting but stays aloft.<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+Who should the spell be cast upon?<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+some oakenwood gloves<br />
+a large leaf<br />
+a rotted, gnarled staff<br />
+a jade bracelet..it glows dimly<br />
+a red steel bracer<br />
+a blue canvas belt<br />
+a blue guardian robe<br />
+a black ice shield..it glows dimly<br />
+a pair of plain leather sleeves<br />
+a pair of supple leather boots<br />
+a pair of plain leather leggings<br />
+a leather sallet<br />
+a set of voluminous robes<br />
+a small tin ring<br />
+a black runed ring<br />
+the eye of an umber hulk..it glows dimly<br />
+get all corpsea medallion of Mishakal..it glows dimly<br />
+a loop of jailer's keys<br />
+a ring of cell keys<br />
+a loop of jailer's keys<br />
+<br />
+ [more]<br />
+<br />
+Kafaya stands up.<br />
+Berg stands up.<br />
+Stimpson smacks his lips.<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+get all corpse<br />
+Stimpson gets a large leaf from the corpse of Oonagh.<br />
+<br />
+get all corpse246H 110V 14818041X 36C Mem:3&gt; <br />
+You are zapped by some oakenwood gloves and instantly drop it.<br />
+You get a rotted, gnarled staff from the corpse of Oonagh.<br />
+You get a jade bracelet from the corpse of Oonagh.<br />
+You get a red steel bracer from the corpse of Oonagh.<br />
+You get a blue canvas belt from the corpse of Oonagh.<br />
+You get a blue guardian robe from the corpse of Oonagh.<br />
+You get a black ice shield from the corpse of Oonagh.<br />
+You are zapped by a pair of plain leather sleeves and instantly drop it.<br />
+You get a pair of supple leather boots from the corpse of Oonagh.<br />
+You are zapped by a pair of plain leather leggings and instantly drop it.<br />
+You get a leather sallet from the corpse of Oonagh.<br />
+You get a set of voluminous robes from the corpse of Oonagh.<br />
+You get a small tin ring from the corpse of Oonagh.<br />
+You get a black runed ring from the corpse of Oonagh.<br />
+You get the eye of an umber hulk from the corpse of Oonagh.<br />
+You get a medallion of Mishakal from the corpse of Oonagh.<br />
+You get a loop of jailer's keys from the corpse of Oonagh.<br />
+You get a ring of cell keys from the corpse of Oonagh.<br />
+You get a loop of jailer's keys from the corpse of Oonagh.<br />
+You get a chain of keys from the corpse of Oonagh.<br />
+You get a ring of cell keys from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a glowing scroll of recall from the corpse of Oonagh.<br />
+You get a short sword from the corpse of Oonagh.<br />
+You get a grey stone from the corpse of Oonagh.<br />
+You are zapped by a crystalline armour and instantly drop it.<br />
+Krag stands up.<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+246H 110V 14818041X 36C Mem:3&gt; <br />
+<br />
+The lightning has stopped.<br />
+You feel yourself exposed.<br />
+<br />
+246H 126V 14818041X 36C Mem:2&gt; <br />
+<br />
+Krag gets a waterskin from his chest.<br />
+Krag gets a waterskin from his chest.<br />
+Krag gets a waterskin from his chest.<br />
+Krag gets a waterskin from his chest.<br />
+<br />
+246H 126V 14818041X 36C Mem:2&gt; <br />
+Meeks gets a jug from his chest.<br />
+<br />
+246H 126V 14818041X 36C Mem:2&gt; <br />
+<br />
+Stimpson stands up.<br />
+<br />
+246H 126V 14818041X 36C Mem:2&gt; <br />
+Krag gets a crystalline armour.<br />
+Krag gets a pair of plain leather leggings.<br />
+Krag gets a pair of plain leather sleeves.<br />
+Krag gets some oakenwood gloves.<br />
+Krag gets the corpse of Oonagh.<br />
+Krag gets an apple.<br />
+<br />
+ [ ... later ... ]<br />
+<br />
+Macduff flies in from the west.<br />
+The Temple of Healing Arts<br />
+A small roll of bread lies here. [11]<br />
+Dragn the Male Half Elf is resting here.<br />
+Fira Dawn, Crimson Angel is standing here. (flying) (invisible)<br />
+Sengir the Male Wild Elf is standing here. (flying)<br />
+Carlton the Male Hylar Dwarf is standing here. (flying)<br />
+Clem the Female Hylar Dwarf is standing here. (flying)<br />
+Myte the Male Minotaur is resting here. (flying)<br />
+The master healer stands here, radiating goodness and power.<br />
+<br />
+246H 73V 13800525X 235C Exits:W&gt; <br />
+<br />
+Clem laughs heartily.<br />
+<br />
+246H 73V 13800525X 235C Exits:W&gt; <br />
+<br />
+Macduff grabs a scroll of recall.<br />
+Macduff recites a scroll of recall.<br />
+<br />
+246H 73V 13800525X 235C Exits:W&gt; <br />
+<br />
+Fira looks at Dragn.<br />
+<br />
+246H 73V 13800525X 235C Exits:W&gt; <br />
+<br />
+Fira closes her spellbook with a content look on her face.<br />
+The guildmaster sniffs sadly.<br />
+<br />
+246H 98V 13800525X 235C Exits:W&gt; <br />
+<br />
+Macduff grabs a scroll of recall.<br />
+Macduff recites a scroll of recall.<br />
+Myte disappears.<br />
+<br />
+246H 98V 13800525X 235C Exits:W&gt; <br />
+c 'dim door' myte<br />
+Fira utters the words, 'dimension door'.<br />
+A glowing portal opens, and Fira steps through it.<br />
+<br />
+246H 98V 13800525X 235C Exits:W&gt; <br />
+You utter the words, 'dimension door'<br />
+You nearly retch as the powerful odor reaches your nose.<br />
+The Solace Dump<br />
+Fira Dawn, Crimson Angel is standing here. (invisible)<br />
+Myte the Male Minotaur is resting here. (flying)<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+c 'h p' MyteFira focuses harshly on Myte and utters the words, 'hold person'.<br />
+You utter the words, 'hold person'<br />
+Myte freezes in place.<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+l myteFira looks at Myte.<br />
+You see nothing special about him.<br />
+Myte the young adult male minotaur is in an excellent condition.<br />
+<br />
+Myte is using:<br />
+&lt;worn on head&gt;             an iron eyepatch inlaid with emeralds..it glows dimly<br />
+&lt;worn on feet&gt;             some boots of the plainsmen<br />
+&lt;worn about body&gt;          a seeker's robe<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+<br />
+**Macduff: where<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+gt we fine on 2<br />
+**Fira: dump<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+You tell your group 'we fine on 2'<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+gt or notYou tell your group 'or not'<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+lThe Solace Dump<br />
+Fira Dawn, Crimson Angel is standing here. (invisible)<br />
+Myte the Male Minotaur is resting here. (flying)<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+<br />
+**Macduff: k<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+<br />
+Fira says 'just go'<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+<br />
+Fira focuses harshly on Myte and utters the words, 'force bolt'.<br />
+Fira slowly fades into existence.<br />
+The sound of bones cracking echoes as Fira's force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+<br />
+Fira massacres Myte with her crush.<br />
+<br />
+246H 98V 13800525X 235C Mem:3 Exits:N&gt; <br />
+c 'f b' MyteYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:5 Exits:N&gt; <br />
+<br />
+Atrayu arrives from the north.<br />
+<br />
+246H 98V 13800525X 235C Mem:5 Exits:N&gt; <br />
+<br />
+**Macduff: where is dump from square<br />
+<br />
+246H 98V 13800525X 235C Mem:5 Exits:N&gt; <br />
+c 'f b' Myte<br />
+Fira focuses harshly on Myte and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Fira's force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:5 Exits:N&gt; <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:6 Exits:N&gt; <br />
+<br />
+Atrayu rummages through the rubble.<br />
+<br />
+246H 98V 13800525X 235C Mem:6 Exits:N&gt; <br />
+c 'f b' Myte<br />
+Atrayu gets a waterskin.<br />
+Atrayu gets a sharp short sword.<br />
+Atrayu gets a rusty knife.<br />
+<br />
+246H 98V 13800525X 235C Mem:6 Exits:N&gt; <br />
+<br />
+Fira focuses harshly on Myte and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Fira's force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:6 Exits:N&gt; <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:7 Exits:N&gt; <br />
+<br />
+Felona arrives from the north.<br />
+<br />
+246H 98V 13800525X 235C Mem:7 Exits:N&gt; <br />
+c 'f b' Myte<br />
+Fira focuses harshly on Myte and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Fira's force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:7 Exits:N&gt; <br />
+<br />
+Atrayu rummages through the rubble.<br />
+<br />
+246H 98V 13800525X 235C Mem:7 Exits:N&gt; <br />
+<br />
+Felona says 'cry'<br />
+<br />
+246H 98V 13800525X 235C Mem:7 Exits:N&gt; <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+c 'f b' Myte<br />
+Atrayu gets a waterskin.<br />
+Atrayu gets a waterskin.<br />
+Atrayu gets an entire loaf of bread.<br />
+Atrayu gets a waterskin.<br />
+Atrayu gets an entire loaf of bread.<br />
+Atrayu gets a large torch.<br />
+Atrayu gets a rusty knife.<br />
+Atrayu gets a rusty knife.<br />
+Atrayu gets an old gleaming key.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Felona bursts into tears.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Atrayu rummages through the rubble.<br />
+Atrayu pulls a hooded lantern up from the rubble.<br />
+Atrayu pulls an entire loaf of bread up from the rubble.<br />
+Atrayu pulls a waterskin up from the rubble.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Fira crushes Myte extremely hard.<br />
+You receive 0 experience.<br />
+Myte is dead! R.I.P.<br />
+exa corpseThe death cry of Myte echoes from somewhere nearby...<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+Who should the spell be cast upon?<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+get all corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a black sledgehammer<br />
+a brass dwarven wristplate [2]<br />
+a chain belt<br />
+a seeker's robe<br />
+some red dragon scale sleeves<br />
+a pair of black suede gloves<br />
+some boots of the plainsmen<br />
+a pair of ebony greaves<br />
+an iron eyepatch inlaid with emeralds..it glows dimly<br />
+some thick leather armour<br />
+a silver and gold banded ring<br />
+a golden dwarven ring<br />
+a large waterskin [3]<br />
+a large wooden barrel<br />
+a glowing scroll of recall..it glows dimly<br />
+an entire loaf of bread<br />
+a small wooden chest<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+You get a black sledgehammer from the corpse of Myte.<br />
+You get a brass dwarven wristplate from the corpse of Myte.<br />
+You get a brass dwarven wristplate from the corpse of Myte.<br />
+You get a chain belt from the corpse of Myte.<br />
+You get a seeker's robe from the corpse of Myte.<br />
+You get some red dragon scale sleeves from the corpse of Myte.<br />
+You get a pair of black suede gloves from the corpse of Myte.<br />
+You get some boots of the plainsmen from the corpse of Myte.<br />
+Greaves : You can't carry that much weight.<br />
+You get an iron eyepatch inlaid with emeralds from the corpse of Myte.<br />
+Armour : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Barrel : You can't carry that much weight.<br />
+You get a glowing scroll of recall from the corpse of Myte.<br />
+Bread : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Felona says 'was pkilled'<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Felona leaves north.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+<br />
+Fira gets a pair of ebony greaves from the corpse of Myte.<br />
+Fira is zapped by some thick leather armour and instantly drops it.<br />
+Some thick leather armour falls in amongst the rubble.<br />
+Fira gets a silver and gold banded ring from the corpse of Myte.<br />
+Fira gets a golden dwarven ring from the corpse of Myte.<br />
+Fira gets a large waterskin from the corpse of Myte.<br />
+Fira gets a large waterskin from the corpse of Myte.<br />
+Fira gets a large waterskin from the corpse of Myte.<br />
+Fira gets a large wooden barrel from the corpse of Myte.<br />
+Fira gets an entire loaf of bread from the corpse of Myte.<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+gt wowo alot hpsYou tell your group 'wowo alot hps'<br />
+<br />
+246H 98V 13800525X 235C Mem:8 Exits:N&gt; <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='906'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=906">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="906">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

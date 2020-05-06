@@ -1,0 +1,889 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1888-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1888'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Stabu RIP</font></b>
+<p>
+POV: 
+Ehux<p>
+Log Rating:
+0.1250<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+trash log</i>
+<p>
+<p>
+
+256H 122V 12813313X 628C Exits:NESW&gt; <br />
+An annoying pigeon flies in from the north.<br />
+Abeba shouts 'any really evil 30 level mages around?'<br />
+<br />
+256H 122V 12813313X 628C Exits:NESW&gt; <br />
+A Solamnic Knight of the Crown arrives from the north.<br />
+<br />
+256H 122V 12813313X 628C Exits:NESW&gt; <br />
+An annoying pigeon flies east.<br />
+<br />
+256H 122V 12813313X 628C Exits:NESW&gt; relo anatole<br />
+You utter the words, 'relocate'<br />
+Mages' Study<br />
+Somebody carelessly left a pair of gold laced leather sandals here.<br />
+A large iron key lies here.<br />
+A rotting little tome is here.<br />
+An orrery is mounted on a stand here.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A travelling bard is here enjoying the sights and sounds of the city.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+Anatole the Amazing is here to teach you the ways of magic.<br />
+A young knight of the Aurinite Order stands before you, its armor shining.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+<br />
+256H 122V 12813313X 628C Mem:2 Exits:W&gt; loc horned<br />
+You utter the words, 'locate object'<br />
+An open-faced horned helm equipped by Stabu.<br />
+<br />
+256H 122V 12813313X 628C Mem:2 Exits:W&gt; <br />
+A Palanthian guard leaves west.<br />
+<br />
+256H 122V 12813313X 628C Mem:2 Exits:W&gt; w<br />
+Alchemical Lab<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A Knight of Solamnia walks briskly through the crowd.<br />
+A citizen of Palanthas is here going about his business.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+256H 121V 12813313X 628C Mem:4 Exits:EW&gt; w<br />
+Anatole's Amazing Artifacts<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+256H 120V 12813313X 628C Mem:4 Exits:NE&gt; n<br />
+Sword Street<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+<br />
+256H 119V 12813313X 628C Mem:4 Exits:ESW&gt; e<br />
+Sword Street<br />
+A mighty clydesdale stands before you.<br />
+<br />
+256H 118V 12813313X 628C Mem:4 Exits:ESW&gt; Huh?!<br />
+<br />
+256H 118V 12813313X 628C Mem:4 Exits:ESW&gt; s<br />
+The Ebullient Elephant Inn<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+256H 117V 12813313X 628C Mem:4 Exits:NU&gt; sca<br />
+Looking north:<br />
+A mighty clydesdale stands before you.<br />
+Looking east:<br />
+Looking south:<br />
+Looking west:<br />
+Looking up:<br />
+&lt;Apoc&gt; Klok Wise Drake, Apocalyptic General, King of Spelling is resting here.<br />
+&lt;Apoc&gt; Afa the Female Gnome is resting here.<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+Looking down:<br />
+<br />
+256H 117V 12813313X 628C Mem:4 Exits:NU&gt; n<br />
+Sword Street<br />
+A mighty clydesdale stands before you.<br />
+<br />
+256H 116V 12813313X 628C Mem:4 Exits:ESW&gt; e<br />
+Intersection: Sword Street and Southern Avenue<br />
+<br />
+256H 115V 12813313X 628C Mem:4 Exits:NESW&gt; relo stabu<br />
+You utter the words, 'relocate'<br />
+The Practice Room<br />
+Stabu the Male Goblin is standing here.<br />
+A tall man clad in brown leathers walks about as he instructs his students.<br />
+<br />
+256H 115V 12813313X 628C Mem:5 Exits:N&gt; <br />
+Stabu thrusts a dark adamantite dagger into your back.<br />
+That Really did HURT!<br />
+<br />
+181H 115V 12813313X 628C [Ehux:Fair] [Stabu:Good] Mem:5 Exits:N&gt; ed stabu<br />
+You utter the words, 'energy drain'<br />
+You drain Stabu of some of his energy.<br />
+<br />
+255H 126V 12813313X 628C [Ehux:V.Good] [Stabu:Fair] Mem:7 Exits:N&gt; <br />
+Stabu pierces YOU hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu pierces YOU hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+<br />
+236H 126V 12813313X 628C [Ehux:V.Good] [Stabu:Fair] Mem:7 Exits:N&gt; <br />
+Stabu panics, and attempts to flee.<br />
+Stabu leaves north.<br />
+<br />
+236H 126V 12813313X 628C Mem:7 Exits:N&gt; <br />
+Stabu arrives from the north.<br />
+<br />
+236H 126V 12813313X 628C Mem:7 Exits:N&gt; <br />
+Stabu lunges at you with a dark adamantite dagger, but you easily avoid his attempt to backstab you.<br />
+<br />
+236H 126V 12813313X 628C [Ehux:V.Good] [Stabu:Fair] Mem:7 Exits:N&gt; <br />
+Stabu pierces YOU extremely hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu pierces YOU extremely hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu dodges your attack!<br />
+<br />
+204H 126V 12813313X 628C [Ehux:Good] [Stabu:Fair] Mem:7 Exits:N&gt; ed stabu<br />
+You utter the words, 'energy drain'<br />
+You make a feeble attempt at draining Stabu.<br />
+<br />
+204H 126V 12813313X 628C [Ehux:Good] [Stabu:Fair] Mem:9 Exits:N&gt; <br />
+Stabu pierces YOU very hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu pierces YOU hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu panics, and attempts to flee.<br />
+Stabu leaves north.<br />
+<br />
+184H 126V 12813313X 628C Mem:9 Exits:N&gt; <br />
+Stabu arrives from the north.<br />
+<br />
+184H 126V 12813313X 628C Mem:9 Exits:N&gt; ed stabu<br />
+You utter the words, 'energy drain'<br />
+You make a feeble attempt at draining Stabu.<br />
+<br />
+184H 126V 12813313X 628C [Ehux:Fair] [Stabu:Bad] Mem:10 Exits:N&gt; <br />
+Stabu panics, and attempts to flee.<br />
+Stabu leaves north.<br />
+<br />
+184H 126V 12813313X 628C Mem:10 Exits:N&gt; <br />
+Stabu arrives from the north.<br />
+<br />
+184H 126V 12813313X 628C Mem:10 Exits:N&gt; <br />
+Stabu lunges at you with a dark adamantite dagger, but you easily avoid his attempt to backstab you.<br />
+<br />
+184H 126V 12813313X 628C [Ehux:Fair] [Stabu:Bad] Mem:10 Exits:N&gt; <br />
+Stabu pierces YOU extremely hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+Stabu pierces YOU.<br />
+Stabu burns as he passes through your fire shield.<br />
+You whip Stabu hard.<br />
+<br />
+159H 126V 12813313X 628C [Ehux:Fair] [Stabu:V.Bad] Mem:10 Exits:N&gt; fb stabu<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Stabu.<br />
+<br />
+159H 126V 12813313X 628C [Ehux:Fair] [Stabu:V.Bad] Mem:11 Exits:N&gt; fb stabu<br />
+<br />
+Stabu pierces YOU very hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+<br />
+145H 126V 12813313X 628C [Ehux:Fair] [Stabu:Awful] Mem:11 Exits:N&gt; <br />
+Stabu stops using a black adamantite shortsword.<br />
+Stabu grabs a glowing scroll of recall.<br />
+Stabu recites a glowing scroll of recall.<br />
+Stabu disappears.<br />
+<br />
+145H 126V 12813313X 628C Mem:11 Exits:N&gt; Who should the spell be cast upon?<br />
+<br />
+145H 126V 12813313X 628C Mem:11 Exits:N&gt; relo stabu<br />
+You can't remember how to cast that spell!<br />
+<br />
+145H 126V 12813313X 628C Mem:11 Exits:N&gt; n<br />
+A Large Hall<br />
+A delicious loaf of bread rests upon the ground. [3]<br />
+A tin hooded lantern has been left here.<br />
+A shifty-eyed man motions you over to a corner.<br />
+A heavily cloaked man leans against the southern wall. (invisible)<br />
+<br />
+158H 125V 12813313X 628C Mem:10 Exits:NES&gt; e<br />
+A Tight Passageway<br />
+<br />
+158H 124V 12813313X 628C Mem:10 Exits:EW&gt; e<br />
+The Palanthas Sewers<br />
+<br />
+158H 123V 12813313X 628C Mem:10 Exits:N&gt; e<br />
+Alas, you cannot go that way...<br />
+<br />
+158H 123V 12813313X 628C Mem:10 Exits:N&gt; n<br />
+The Palanthas Sewers<br />
+<br />
+158H 122V 12813313X 628C Mem:10 Exits:NS&gt; n<br />
+An Intersection of Tunnels<br />
+A large black beetle scurries around you.<br />
+<br />
+158H 121V 12813313X 628C Mem:10 Exits:ESW&gt; <br />
+A large black beetle flies east.<br />
+<br />
+158H 121V 12813313X 628C Mem:10 Exits:ESW&gt; open grate<br />
+Ok.<br />
+<br />
+158H 121V 12813313X 628C Mem:10 Exits:ESWU&gt; u<br />
+City Dump<br />
+<br />
+158H 120V 12813313X 628C Mem:10 Exits:W&gt; w<br />
+Sword Street<br />
+A Knight of Solamnia walks briskly through the crowd.<br />
+<br />
+158H 119V 12813313X 628C Mem:10 Exits:NES&gt; w<br />
+Alas, you cannot go that way...<br />
+<br />
+158H 119V 12813313X 628C Mem:10 Exits:NES&gt; s<br />
+Sword Street<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+<br />
+158H 118V 12813313X 628C Mem:10 Exits:NE&gt; e<br />
+Intersection: Sword Street and Southwestern Avenue<br />
+<br />
+158H 117V 12813313X 628C Mem:10 Exits:NESW&gt; e<br />
+Sword Street<br />
+<br />
+158H 116V 12813313X 628C Mem:10 Exits:ESW&gt; e<br />
+Sword Street<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A mighty clydesdale stands before you.<br />
+<br />
+158H 115V 12813313X 628C Mem:10 Exits:ESW&gt; s<br />
+The Ebullient Elephant Inn<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+158H 114V 12813313X 628C Mem:10 Exits:NU&gt; u<br />
+Clerk's Office<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A tunic made from black cloth lies here.<br />
+A tunic made from a single piece of leather has been left here.<br />
+A few strands of horse hair have been left here.<br />
+A dirty and stained skullcap rests upon the floor.<br />
+Stabu the Male Goblin is resting here.<br />
+&lt;Apoc&gt; Klok Wise Drake, Apocalyptic General, King of Spelling is resting here.<br />
+&lt;Apoc&gt; Afa the Female Gnome is resting here.<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+<br />
+158H 113V 12813313X 628C Mem:10 Exits:D&gt; ki stabu<br />
+You whip Stabu extremely hard.<br />
+<br />
+158H 113V 12813313X 628C [Ehux:Fair] [Stabu:Awful] Mem:10 Exits:D&gt; <br />
+You massacre Stabu with your whip.<br />
+Stabu pierces YOU very hard.<br />
+Stabu burns as he passes through your fire shield.<br />
+<br />
+144H 113V 12813313X 628C [Ehux:Fair] [Stabu:Awful] Mem:10 Exits:D&gt; <br />
+Stabu stands up.<br />
+<br />
+144H 113V 12813313X 628C [Ehux:Fair] [Stabu:Awful] Mem:10 Exits:D&gt; <br />
+Stabu panics, and attempts to flee.<br />
+Stabu leaves down.<br />
+<br />
+144H 113V 12813313X 628C Mem:10 Exits:D&gt; d<br />
+The Ebullient Elephant Inn<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+144H 112V 12813313X 628C Mem:10 Exits:NU&gt; n<br />
+Sword Street<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A mighty clydesdale stands before you.<br />
+<br />
+144H 111V 12813313X 628C Mem:10 Exits:ESW&gt; w<br />
+Sword Street<br />
+<br />
+144H 110V 12813313X 628C Mem:10 Exits:ESW&gt; <br />
+A streetsweeper arrives from the east.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+238H 126V 12813313X 628C Exits:W&gt; You apply bandages to your wounds and hope for the best.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; <br />
+A Knight of Solamnia leaves west.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; <br />
+A citizen arrives from the west.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; <br />
+A travelling bard leaves west.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; l<br />
+Mages' Study<br />
+Somebody carelessly left a pair of gold laced leather sandals here.<br />
+A large iron key lies here.<br />
+A rotting little tome is here.<br />
+An orrery is mounted on a stand here.<br />
+A citizen of Palanthas is here going about his business.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+Anatole the Amazing is here to teach you the ways of magic.<br />
+A young knight of the Aurinite Order stands before you, its armor shining.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; sta<br />
+You stand up.<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; sca<br />
+Looking north:<br />
+Looking east:<br />
+Looking south:<br />
+Looking west:<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A travelling bard is here enjoying the sights and sounds of the city.<br />
+A Knight of Solamnia walks briskly through the crowd.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+Looking up:<br />
+Looking down:<br />
+<br />
+252H 126V 12813313X 628C Exits:W&gt; loc horned<br />
+You utter the words, 'locate object'<br />
+<br />
+252H 126V 12813313X 628C Mem:2 Exits:W&gt; sco<br />
+You are Ehux, Devout member of the Honor Guard Redrobed Conclave, a level 29 Mage.<br />
+You are an Elder in Honor Guard.<br />
+You are 27 years old.<br />
+You have 252(256) hit and 126(126) movement points.<br />
+You are influenced by the red moon, Lunitari.<br />
+You have scored 57186687 exp, and have 628(51331) steel coins.<br />
+You need 12813313 more experience to advance.<br />
+You have died 13 horrible deaths.<br />
+You have been connected for 36 minute(s).<br />
+You have been playing for 12 day(s), 17 hour(s) and 55 minute(s).<br />
+Your equipment is currently being concealed.<br />
+You are standing.<br />
+Your wounds have been bandaged.<br />
+You are affected by the following:<br />
+    fireshield<br />
+    blur<br />
+    detect invisibility<br />
+<br />
+252H 126V 12813313X 628C Mem:2 Exits:W&gt; relo stabu<br />
+You utter the words, 'relocate'<br />
+A Small Alcove<br />
+The corpse of Tylon, Cleric of Paladine is lying here.<br />
+Stabu the Male Goblin is resting here. (invisible)<br />
+<br />
+252H 126V 12813313X 628C Mem:4 Exits:W&gt; lb stabu<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Stabu with full impact.<br />
+Stabu is stunned, but will likely regain consciousness again.<br />
+<br />
+252H 126V 12813313X 628C [Stabu:Awful] Mem:5 Exits:W&gt; <br />
+You whip Stabu extremely hard.<br />
+You receive 0 experience.<br />
+DEATHTRIG<br />
+Stabu is dead! R.I.P.<br />
+The death cry of Stabu echoes from somewhere nearby...<br />
+<br />
+252H 126V 12813313X 628C Mem:5 Exits:W&gt; loot 1<br />
+You get a large pile of coins from the corpse of Stabu.<br />
+There were 730 coins.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; They don't seem to be here.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; You get a black adamantite shortsword from the corpse of Stabu.<br />
+You get a dark adamantite dagger from the corpse of Stabu.<br />
+You get a red steel bracer from the corpse of Stabu.<br />
+You get a burlap belt pouch from the corpse of Stabu.<br />
+You get an orange vest from the corpse of Stabu.<br />
+You get some soft leather boots from the corpse of Stabu.<br />
+Helm : You can't carry that much weight.<br />
+You get a silver robe from the corpse of Stabu.<br />
+You get a crystal shard necklace from the corpse of Stabu.<br />
+Pearl : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Key : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Dagger : You can't carry that much weight.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; You belong to no group.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; inv<br />
+You are carrying:<br />
+a crystal shard necklace..it glows dimly<br />
+a silver robe<br />
+some soft leather boots<br />
+an orange vest<br />
+a burlap belt pouch<br />
+a red steel bracer<br />
+a dark adamantite dagger<br />
+a black adamantite shortsword..it glows dimly<br />
+a piece of fresh baked bread [4]<br />
+a small grey ring..it glows dimly<br />
+a large black mace..it hums softly<br />
+a pair of blue gloves<br />
+a glowing scroll of recall..it glows dimly<br />
+a dark hammer..it hums softly<br />
+a black pearl<br />
+a blindfold<br />
+a ceremonial scabbard<br />
+a yellow potion [4]<br />
+a shark tooth necklace<br />
+a thick woolen coat<br />
+a large wooden barrel<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; c 'f d'<br />
+You utter the words, 'floating disc'<br />
+You conjure a floating disc of magical energy.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; put all disc<br />
+loot 1<br />
+You put a crystal shard necklace in a floating disc.<br />
+You put a silver robe in a floating disc.<br />
+You put some soft leather boots in a floating disc.<br />
+You put an orange vest in a floating disc.<br />
+You put a burlap belt pouch in a floating disc.<br />
+You put a red steel bracer in a floating disc.<br />
+You put a dark adamantite dagger in a floating disc.<br />
+You put a black adamantite shortsword in a floating disc.<br />
+You put a piece of fresh baked bread in a floating disc.<br />
+You put a piece of fresh baked bread in a floating disc.<br />
+You put a piece of fresh baked bread in a floating disc.<br />
+You put a piece of fresh baked bread in a floating disc.<br />
+You put a small grey ring in a floating disc.<br />
+You put a large black mace in a floating disc.<br />
+You put a pair of blue gloves in a floating disc.<br />
+You put a glowing scroll of recall in a floating disc.<br />
+You put a dark hammer in a floating disc.<br />
+You put a black pearl in a floating disc.<br />
+You put a blindfold in a floating disc.<br />
+You put a ceremonial scabbard in a floating disc.<br />
+You put a yellow potion in a floating disc.<br />
+You put a yellow potion in a floating disc.<br />
+You put a yellow potion in a floating disc.<br />
+You put a yellow potion in a floating disc.<br />
+You put a shark tooth necklace in a floating disc.<br />
+You put a thick woolen coat in a floating disc.<br />
+You put a large wooden barrel in a floating disc.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; You get an open-faced horned helm from the corpse of Stabu.<br />
+You get a black pearl from the corpse of Stabu.<br />
+You get a wooden ring from the corpse of Stabu.<br />
+You get an iron crypt key from the corpse of Stabu.<br />
+You get a glowing scroll of recall from the corpse of Stabu.<br />
+You get a small wooden chest from the corpse of Stabu.<br />
+You get a granite dagger from the corpse of Stabu.<br />
+<br />
+252H 126V 12813313X 1358C Mem:5 Exits:W&gt; relo mirus<br />
+You utter the words, 'relocate'<br />
+Your disc follows you.<br />
+A Room Devoted to Solinari<br />
+A swirling red disc floats here.<br />
+An elite member of the Caergothian guard is on temple patrol here.<br />
+A transparent figure stands here at Solinari's bidding.<br />
+<br />
+252H 126V 12813313X 1358C Mem:4 Exits:W&gt; <br />
+You suddenly notice that your body is in focus once again.<br />
+<br />
+256H 126V 12813313X 1358C Mem:3 Exits:W&gt; re<br />
+You sit down and rest your tired bones.<br />
+<br />
+256H 126V 12813313X 1358C Mem:1 Exits:W&gt; <br />
+#buffer write stabu.txt<br />
+#OK. WRITING BUFFER TO 'stabu.txt'<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1888'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1888">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1888">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

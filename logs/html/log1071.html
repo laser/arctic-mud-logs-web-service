@@ -1,0 +1,842 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1071-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1071'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+The Empire Strikes Back</font></b>
+<p>
+POV: 
+Owie<p>
+Log Rating:
+3.1250<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+The Empire, bent on revenge, locates the secret rebel stronghold.  Thus, the price of protecting Coops from his own corrosively potent scumminess.</i>
+<p>
+<p>
+
+318H 98V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; south<br />
+Guen flies in from the north.<br />
+Neeoo arrives from the north.<br />
+Koda arrives from the north.<br />
+Breoni arrives from the north.<br />
+Breoni kneels down and studies the ground.<br />
+Wall Road<br />
+Breoni, Empires Border Runner, The Taco Fiend is standing here.<br />
+Koda Chrome, Imperial Prophet is standing here.<br />
+Neeoo the Imperial Chocolate Muffin is standing here.<br />
+Guen the Male Half Elf is standing here. (flying)<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+318H 97V 1660186X 1204C [**Breoni:Perfect**] Exits:NSW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Alisaan Alu'Zhen, Mystic Magi of the Banana Clan is standing here. (flying)<br />
+A huge, hulking barbarian approaches you, scowling.<br />
+Toren Tohz is standing here.<br />
+Wakki Tzakki, Waking Up To a Souvlaki is standing here. (flying) (invisible)<br />
+Satya Kai is standing here. (flying) (invisible)<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+318H 97V 1660186X 1204C [**Breoni:Perfect**] Exits:NSW&gt; north<br />
+Guen flies in from the south.<br />
+Neeoo arrives from the south.<br />
+Koda arrives from the south.<br />
+Breoni arrives from the south.<br />
+Breoni kneels down and studies the ground.<br />
+Intersection of Market Street and Wall Road<br />
+Breoni, Empires Border Runner, The Taco Fiend is standing here.<br />
+Koda Chrome, Imperial Prophet is standing here.<br />
+Neeoo the Imperial Chocolate Muffin is standing here.<br />
+Guen the Male Half Elf is standing here. (flying)<br />
+<br />
+318H 96V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; <br />
+Guen says 'here.'<br />
+<br />
+318H 96V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard of Kalaman stands here, guarding the eastern gates.<br />
+A cityguard of Kalaman stands here, guarding the eastern gates.<br />
+A cityguard of Kalaman stands here, guarding the eastern gates.<br />
+A cityguard of Kalaman stands here, guarding the eastern gates.<br />
+Looking south:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+318H 96V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; nod<br />
+You nod solemnly.<br />
+<br />
+318H 96V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; gt in barbs<br />
+You tell your group 'in barbs'<br />
+<br />
+318H 96V 1660186X 1204C [**Breoni:Perfect**] Exits:NESW&gt; west<br />
+Guen flies in from the east.<br />
+Neeoo arrives from the east.<br />
+Koda arrives from the east.<br />
+Breoni arrives from the east.<br />
+Breoni kneels down and studies the ground.<br />
+Market Street East<br />
+Breoni, Empires Border Runner, The Taco Fiend is standing here.<br />
+Koda Chrome, Imperial Prophet is standing here.<br />
+Neeoo the Imperial Chocolate Muffin is standing here.<br />
+Guen the Male Half Elf is standing here. (flying)<br />
+<br />
+318H 95V 1660186X 1204C [**Breoni:Perfect**] Exits:EW&gt; <br />
+Neeoo says 'ok'<br />
+<br />
+318H 95V 1660186X 1204C [**Breoni:Perfect**] Exits:EW&gt; <br />
+Neeoo tells your group 'chris'<br />
+<br />
+318H 95V 1660186X 1204C [**Breoni:Perfect**] Exits:EW&gt; <br />
+Alisaan flies in from the east.<br />
+Toren arrives from the east.<br />
+Wakki flies in from the east.<br />
+<br />
+318H 95V 1660186X 1204C [**Breoni:Perfect**] Exits:EW&gt; <br />
+Guen quickly thrusts a jagged-backed curved dagger at Wakki from behind, but somehow falls short of his target.<br />
+<br />
+318H 95V 1660186X 1204C [**Breoni:Perfect**] Exits:EW&gt; <br />
+Satya slowly fades into existence.<br />
+Satya thrusts a black fang of a shadow beast into your back.<br />
+That Really did HURT!<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+You stop watching Breoni.<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+Neeoo tells your group 'stab wakki'<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+Breoni swings madly at Wakki with a broad bladed two-handed sword, knocking him to the ground.<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+Alisaan focuses harshly on Neeoo and utters the words, 'hold person'.<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+Wakki steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+141H 95V 1660186X 1204C [Owie:Bad] [Satya:Perfect] Exits:EW&gt; <br />
+Neeoo massacres Wakki with his cleave.<br />
+Breoni massacres Wakki with his slash.<br />
+Satya pierces YOU extremely hard.<br />
+Satya slashes YOU very hard.<br />
+You crush Satya hard.<br />
+Guen massacres Wakki with his pierce.<br />
+Guen misses Wakki with his claw.<br />
+Wakki misses Guen with his smite.<br />
+<br />
+108H 95V 1660186X 1204C [Owie:V.Bad] [Satya:V.Good] Exits:EW&gt; c 'heal' self<br />
+You utter the words, 'heal'<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+313H 95V 1660186X 1204C [Owie:V.Good] [Satya:V.Good] Mem:9 Exits:EW&gt; <br />
+Koda utters some strange words.<br />
+Wakki is shredded by shards of ice.<br />
+Toren is shredded by shards of ice.<br />
+Alisaan is shredded by shards of ice.<br />
+Satya is shredded by shards of ice.<br />
+<br />
+313H 95V 1660186X 1204C [Owie:V.Good] [Satya:Good] Mem:9 Exits:EW&gt; <br />
+Satya panics, and attempts to flee.<br />
+Satya flies west.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Alisaan focuses harshly on Neeoo and utters the words, 'hold person'.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Wakki stands up.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Wakki focuses harshly on Neeoo and utters the words, 'hold person'.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Toren massacres Koda with his slash.<br />
+Toren pierces Koda very hard.<br />
+Koda misses Wakki with his bludgeon.<br />
+Neeoo cleaves Wakki very hard.<br />
+Breoni slashes Wakki very hard.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Satya appears to be dancing around the room.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Guen appears to be dancing around the room.<br />
+<br />
+313H 95V 1660186X 1204C Mem:9 Exits:EW&gt; <br />
+Satya slowly fades into existence.<br />
+Satya thrusts a black fang of a shadow beast into your back.<br />
+That Really did HURT!<br />
+<br />
+161H 95V 1660186X 1204C [Owie:Fair] [Satya:Good] Mem:9 Exits:EW&gt; <br />
+Koda utters some strange words.<br />
+Satya is shredded by shards of ice.<br />
+Wakki is shredded by shards of ice.<br />
+Toren is shredded by shards of ice.<br />
+Alisaan is shredded by shards of ice.<br />
+<br />
+161H 95V 1660186X 1204C [Owie:Fair] [Satya:Fair] Mem:9 Exits:EW&gt; <br />
+Breoni swings madly at Wakki with a broad bladed two-handed sword, cutting him a deep wound.<br />
+<br />
+161H 95V 1660186X 1204C [Owie:Fair] [Satya:Fair] Mem:9 Exits:EW&gt; c 'heal' self<br />
+Your casting is disrupted by the fighting!<br />
+!<br />
+<br />
+161H 95V 1660186X 1204C [Owie:Fair] [Satya:Fair] Mem:13 Exits:EW&gt; <br />
+You utter the words, 'heal'<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+314H 95V 1660186X 1204C [Owie:V.Good] [Satya:Fair] Mem:17 Exits:EW&gt; <br />
+Alisaan focuses harshly on Koda and utters some strange words.<br />
+The sound of bones cracking echoes as Alisaan's force bolt slams into Koda.<br />
+<br />
+314H 95V 1660186X 1204C [Owie:V.Good] [Satya:Fair] Mem:17 Exits:EW&gt; <br />
+Satya pierces YOU extremely hard.<br />
+Satya slashes YOU extremely hard.<br />
+Wakki smites Breoni very hard.<br />
+Toren massacres Koda with his slash.<br />
+Toren pierces Koda very hard.<br />
+Neeoo cleaves Wakki extremely hard.<br />
+Breoni massacres Wakki with his slash.<br />
+Neeoo stands up.<br />
+<br />
+276H 95V 1660186X 1204C [Owie:Good] [Satya:Fair] Mem:17 Exits:EW&gt; <br />
+Neeoo crashes into Wakki in a thundering collision, knocking him to the ground!<br />
+<br />
+276H 95V 1660186X 1204C [Owie:Good] [Satya:Fair] Mem:17 Exits:EW&gt; <br />
+Satya panics, and attempts to flee.<br />
+<br />
+276H 95V 1660186X 1204C Mem:17 Exits:EW&gt; <br />
+Koda utters some strange words.<br />
+Wakki is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+Wakki is dead! R.I.P.<br />
+watch breoniget all.coins corpseToren is shredded by shards of ice.<br />
+Alisaan is shredded by shards of ice.<br />
+<br />
+276H 95V 1660186X 1204C Mem:17 Exits:EW&gt; <br />
+The death cry of Wakki echoes from somewhere nearby...<br />
+<br />
+276H 95V 1660186X 1204C Mem:17 Exits:EW&gt; You now watch Breoni.<br />
+<br />
+276H 95V 1660186X 1204C [**Breoni:V.Good**] Mem:17 Exits:EW&gt; <br />
+Alisaan panics, and attempts to flee.<br />
+Alisaan flies west.<br />
+You get a large pile of coins from the corpse of Wakki.<br />
+There were 385 coins.<br />
+split 385<br />
+276H 95V 1660186X 1589C [**Breoni:V.Good**] Mem:17 Exits:EW&gt; <br />
+Koda misses Toren with his bludgeon.<br />
+Toren massacres Koda with his slash.<br />
+Toren pierces Koda extremely hard.<br />
+You are hungry.<br />
+You divide 385 coins equally among the group members present.<br />
+<br />
+279H 102V 1660186X 1281C [**Breoni:V.Good**] Mem:16 Exits:EW&gt; <br />
+Toren panics, and attempts to flee.<br />
+Toren leaves east.<br />
+<br />
+279H 102V 1660186X 1281C [**Breoni:V.Good**] Mem:16 Exits:EW&gt; <br />
+Satya slowly fades into existence.<br />
+Satya tried to backstab you, but you avoid her.<br />
+<br />
+279H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:16 Exits:EW&gt; <br />
+You stop watching Breoni.<br />
+<br />
+279H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:16 Exits:EW&gt; c 'heal' self<br />
+You utter the words, 'heal'<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+318H 102V 1660186X 1281C [Owie:Perfect] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Lachlan shouts 'book decorated with fancy copper charms for sale, min bid 2k, questions ignored, you come to me'<br />
+<br />
+318H 102V 1660186X 1281C [Owie:Perfect] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Satya massacres YOU with her pierce.<br />
+Satya slashes YOU extremely hard.<br />
+<br />
+272H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Neeoo gets a mithril cube from the corpse of Wakki.<br />
+Neeoo gets a ruby-encrusted battle flail from the corpse of Wakki.<br />
+Neeoo gets an ivory bracelet from the corpse of Wakki.<br />
+Neeoo gets a blue beaded bracelet from the corpse of Wakki.<br />
+Neeoo gets a large waterskin from the corpse of Wakki.<br />
+Neeoo gets a light black robe from the corpse of Wakki.<br />
+Neeoo gets some rugged bandit's boots from the corpse of Wakki.<br />
+Neeoo gets a pair of ivory anklets from the corpse of Wakki.<br />
+Neeoo gets a delicate platinum tiara from the corpse of Wakki.<br />
+Neeoo gets a gleaming mithril necklace inlaid with diamonds from the corpse of Wakki.<br />
+Neeoo gets a jade pendant from the corpse of Wakki.<br />
+Neeoo gets a pink diamond ring from the corpse of Wakki.<br />
+Neeoo gets a large black key from the corpse of Wakki.<br />
+<br />
+272H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Neeoo crashes into Satya in a thundering collision, knocking her to the ground!<br />
+<br />
+272H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Koda utters some strange words.<br />
+Satya is shredded by shards of ice.<br />
+<br />
+272H 102V 1660186X 1281C [Owie:Good] [Satya:Fair] Mem:20 Exits:EW&gt; <br />
+Breoni comes to your rescue! You're thankful, but a bit dazed.<br />
+ass Breoni<br />
+272H 102V 1660186X 1281C Mem:20 Exits:EW&gt; You crush Satya extremely hard.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Fair] Mem:20 Exits:EW&gt; c 'harm' <br />
+Guen massacres Satya with his pierce.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Bad] Mem:20 Exits:EW&gt; <br />
+Guen massacres Satya with his pierce.<br />
+Guen misses Satya with his claw.<br />
+You crush Satya extremely hard.<br />
+Satya pierces Breoni extremely hard.<br />
+Satya slashes Breoni extremely hard.<br />
+Breoni massacres Satya with his slash.<br />
+Koda misses Satya with his bludgeon.<br />
+Neeoo misses Satya with his cleave.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:V.Bad] Mem:20 Exits:EW&gt; <br />
+Koda focuses harshly on Satya and utters some strange words.<br />
+Huge flames burn Satya from above.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; <br />
+Breoni gets a spun silver vest from the corpse of Wakki.<br />
+Breoni gets a marble ring from the corpse of Wakki.<br />
+Breoni gets a blue crystal staff from the corpse of Wakki.<br />
+Breoni gets a piece of sweet bread from the corpse of Wakki.<br />
+Breoni gets a glowing scroll of recall from the corpse of Wakki.<br />
+Breoni gets an emerald ring from the corpse of Wakki.<br />
+Breoni gets a magic broom from the corpse of Wakki.<br />
+Breoni gets a bright red apple from the corpse of Wakki.<br />
+Breoni gets a small wooden chest from the corpse of Wakki.<br />
+Breoni gets a pair of plain leather boots from the corpse of Wakki.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; <br />
+Your mind goes blank as you fail to concentrate on the spell.<br />
+!<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; <br />
+A Kalaman cityguard arrives from the west.<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; c 'harm' <br />
+You can't remember how to cast that spell!<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; You can't remember how to cast that spell!<br />
+<br />
+272H 102V 1660186X 1281C [Breoni:V.Good] [Satya:Awful] Mem:20 Exits:EW&gt; <br />
+Guen pierces Satya extremely hard.<br />
+Guen misses Satya with his claw.<br />
+Satya pierces Breoni extremely hard.<br />
+Satya misses Breoni with her slash.<br />
+Breoni massacres Satya with his slash.<br />
+Satya is incapacitated and will slowly die, if not aided.<br />
+Neeoo annihilates Satya with his cleave.<br />
+You receive 0 experience.<br />
+Satya is dead! R.I.P.<br />
+get all Satya<br />
+The death cry of Satya echoes from somewhere nearby...<br />
+Satya sinks gently to the ground.<br />
+Alisaan stops following Satya.<br />
+Toren stops following Satya.<br />
+Rasputin stops following Satya.<br />
+<br />
+272H 102V 1660186X 1281C Mem:20 Exits:EW&gt; <br />
+You get a poinard from the corpse of Satya.<br />
+You get a black fang of a shadow beast from the corpse of Satya.<br />
+You get a crimson glass bracelet from the corpse of Satya.<br />
+You get a crimson glass bracelet from the corpse of Satya.<br />
+You get a kender belt from the corpse of Satya.<br />
+You get a shimmering green robe from the corpse of Satya.<br />
+You get a pair of dwarven gloves from the corpse of Satya.<br />
+You get a pair of dark elven skin boots from the corpse of Satya.<br />
+You get some black breeches from the corpse of Satya.<br />
+You get a black domino from the corpse of Satya.<br />
+You get a suit of solid silver platemail from the corpse of Satya.<br />
+You get a bloody axe shaped medallion from the corpse of Satya.<br />
+You get a smokey glass charm from the corpse of Satya.<br />
+You get a silver barbed ring from the corpse of Satya.<br />
+You get a blood red crystal ring from the corpse of Satya.<br />
+You get a large pile of coins from the corpse of Satya.<br />
+There were 493 coins.<br />
+split 493<br />
+Pack : You can't carry that much weight.<br />
+You get a large first-aid kit from the corpse of Satya.<br />
+You get a scroll of recall from the corpse of Satya.<br />
+You get a strip of dik-dik jerky from the corpse of Satya.<br />
+You get a scroll of recall from the corpse of Satya.<br />
+Jug : You can't carry that much weight.<br />
+You get a shadow chest from the corpse of Satya.<br />
+<br />
+272H 102V 1660186X 1774C Mem:20 Exits:EW&gt; <br />
+You can't split 493 evenly among the people in the room: splitting 490 instead.<br />
+You divide 490 coins equally among the group members present.<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; l<br />
+Market Street East<br />
+The corpse of Satya is lying here.<br />
+The corpse of Wakki is lying here.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+Guen the Male Half Elf is standing here. (flying)<br />
+Breoni, Empires Border Runner, The Taco Fiend is standing here.<br />
+Koda Chrome, Imperial Prophet is standing here.<br />
+Neeoo the Imperial Chocolate Muffin is standing here.<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; get all 1.corpse<br />
+get all 2.corpse<br />
+Pack : You can't carry that much weight.<br />
+Jug : You can't carry that much weight.<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; 'okay<br />
+You say 'okay'<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; <br />
+Neeoo laughs heartily.<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; 'fly us<br />
+You say 'fly us'<br />
+<br />
+272H 102V 1660186X 1382C Mem:20 Exits:EW&gt; west<br />
+Guen flies in from the east.<br />
+Neeoo arrives from the east.<br />
+Koda arrives from the east.<br />
+Breoni arrives from the east.<br />
+Market Street East<br />
+Breoni, Empires Border Runner, The Taco Fiend is standing here.<br />
+Koda Chrome, Imperial Prophet is standing here.<br />
+Neeoo the Imperial Chocolate Muffin is standing here.<br />
+Guen the Male Half Elf is standing here. (flying)<br />
+<br />
+272H 101V 1660186X 1382C Mem:20 Exits:NESW&gt; <br />
+Neeoo tells your group 'owned'<br />
+<br />
+272H 101V 1660186X 1382C Mem:20 Exits:NESW&gt; <br />
+Koda says 'nice'<br />
+<br />
+272H 101V 1660186X 1382C Mem:20 Exits:NESW&gt; 'now<br />
+You say 'now'<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1071'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1071">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1071">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

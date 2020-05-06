@@ -1,0 +1,738 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1095-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1095'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+The fall of Wild unknowns!</font></b>
+<p>
+POV: 
+Vittu<p>
+Log Rating:
+-2.9546<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+PK! 4 vs. 1. Only 2 survives! I was one of em :) [edit -- drunk savage randoms some newbies ]</i>
+<p>
+<p>
+
+502H 144V 3756331X 0C Exits:ESW&gt; <br />
+Zieg flies in from the west.<br />
+Hraf flies in from the west.<br />
+Dexoro flies in from the west.<br />
+Caution flies in from the west.<br />
+A stallion arrives from the west.<br />
+A clydesdale arrives from the west.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; lOn a Cool Road<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+Caution the Male Half Elf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Dexoro the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Hraf the Male Gnome is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Zieg the Male Hill Dwarf is standing here. (flying)<br />
+Mordecai the Male Gnome is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Spean the Male Wild Elf is standing here. (flying) (invisible)<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; <br />
+Zieg rests in the shade of the apple tree.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; <br />
+Hraf rests in the shade of the apple tree.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; <br />
+Dexoro rests in the shade of the apple tree.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; stenven javelinbackstab ziegYou stand up.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; You stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; Zieg reaches behind himself quickly, only to discover your deadly spine in his back.<br />
+You receive 0 experience.<br />
+get coins corpseexam corpsesneakZieg is dead! R.I.P.<br />
+<br />
+502H 144V 3756331X 0C [Me:Perfect] [Zieg:Dying] Exits:ESW&gt; <br />
+The death cry of Zieg echoes from somewhere nearby...<br />
+Hraf stops following Zieg.<br />
+Zieg now follows Hraf.<br />
+Hraf is the new leader of Zieg's group.<br />
+Zieg stops following Hraf.<br />
+Dexoro stops following Zieg.<br />
+Dexoro now follows Hraf.<br />
+<br />
+502H 144V 3756331X 0C Exits:ESW&gt; You get a large pile of coins from the corpse of Zieg.<br />
+There were 341 coins.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a large flanged mace<br />
+a cloth belt pack<br />
+some embroidered desert sleeves<br />
+felt-lined leather boots<br />
+some embroidered desert leggings<br />
+a braided leather headband<br />
+a green leather plate<br />
+a brightly colored, beaded necklace<br />
+a necklace made of finger bones<br />
+a piece of sweet bread [9]<br />
+a large hide waterskin<br />
+a waterskin [2]<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You begin moving quietly.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; enven javelinbackstab hraf<br />
+Hraf stands up.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; Hraf twists around to see you place a crimson dragon's spine javelin in his back.<br />
+Hraf appears noticeably weaker.<br />
+You receive 0 experience.<br />
+get coins corpseexam corpsesneakHraf is dead! R.I.P.<br />
+<br />
+502H 144V 3756331X 341C [Me:Perfect] [Hraf:Dying] Exits:ESW&gt; <br />
+Mordecai rests in the shade of the apple tree.<br />
+<br />
+502H 144V 3756331X 341C [Me:Perfect] [Hraf:Dying] Exits:ESW&gt; <br />
+Dexoro gets a large flanged mace from the corpse of Zieg.<br />
+Dexoro gets a cloth belt pack from the corpse of Zieg.<br />
+Dexoro gets some embroidered desert sleeves from the corpse of Zieg.<br />
+Dexoro gets felt-lined leather boots from the corpse of Zieg.<br />
+Dexoro gets some embroidered desert leggings from the corpse of Zieg.<br />
+Dexoro gets a braided leather headband from the corpse of Zieg.<br />
+Dexoro gets a green leather plate from the corpse of Zieg.<br />
+Dexoro gets a brightly colored, beaded necklace from the corpse of Zieg.<br />
+<br />
+502H 144V 3756331X 341C [Me:Perfect] [Hraf:Dying] Exits:ESW&gt; <br />
+The death cry of Hraf echoes from somewhere nearby...<br />
+Dexoro stops following Hraf.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; <br />
+Dexoro stands up.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; <br />
+Mordecai stands up.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; <br />
+Caution gets a large first-aid kit from the corpse of Hraf.<br />
+Caution gets a short sword from the corpse of Hraf.<br />
+Caution gets a grey leather pouch from the corpse of Hraf.<br />
+Caution gets supple leather mittens from the corpse of Hraf.<br />
+Caution gets felt-lined leather boots from the corpse of Hraf.<br />
+Caution gets a pair of spectacles from the corpse of Hraf.<br />
+Caution gets a black velvet doublet from the corpse of Hraf.<br />
+Caution gets an ice bear pelt from the corpse of Hraf.<br />
+Caution gets a gleaming mithril necklace inlaid with diamonds from the corpse of Hraf.<br />
+Caution gets a large pile of coins from the corpse of Hraf.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; <br />
+Dexoro grabs a scroll of recall.<br />
+Dexoro recites a scroll of recall.<br />
+Dexoro disappears.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; enven javelinbackstab dexoro<br />
+Mordecai flies east.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a heart-shaped ring<br />
+a glowing sandstone ring..it glows dimly<br />
+a bottle of rat poison<br />
+a clearly empty flask (invisible)<br />
+a scroll of recall [2]<br />
+a bronze bottle<br />
+a scroll of recall [3]<br />
+a small component pouch<br />
+a small wooden chest [2]<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You begin moving quietly.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; lOn a Cool Road<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+Caution the Male Half Elf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Spean the Male Wild Elf is standing here. (flying) (invisible)<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; enven javelinbackstab speanYou stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; Spean twists around to see you place a crimson dragon's spine javelin in his back.<br />
+Spean appears noticeably weaker.<br />
+<br />
+502H 144V 3756331X 341C [Me:Perfect] [Spean:Fair] Exits:ESW&gt; fade westsneake<br />
+Spean stops using his broadsword and sheaths it carefully.<br />
+Spean grabs a glowing scroll of recall.<br />
+Spean recites a glowing scroll of recall.<br />
+Spean disappears.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; backstab speanFoothills of the Khalkists<br />
+<br />
+502H 142V 3756331X 341C Exits:EW&gt; You begin moving quietly.<br />
+<br />
+502H 142V 3756331X 341C Exits:EW&gt; On a Cool Road<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+Caution the Male Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+502H 140V 3756331X 341C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+502H 140V 3756331X 341C Exits:ESW&gt; enven javelinbackstab caution<br />
+The rising sun proclaims a new day.<br />
+The clouds disappear.<br />
+You are hungry.<br />
+You are thirsty.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; You stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; Caution twists around to see you place a crimson dragon's spine javelin in his back.<br />
+<br />
+502H 144V 3756331X 341C [Me:Perfect] [Caution:V.Bad] Exits:ESW&gt; fade westsneakebackstab caution<br />
+Caution panics, and attempts to flee.<br />
+Caution flies west.<br />
+<br />
+502H 144V 3756331X 341C Exits:ESW&gt; wFoothills of the Khalkists<br />
+Caution the Male Half Elf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+502H 142V 3756331X 341C Exits:EW&gt; backstab cautionYou begin moving quietly.<br />
+<br />
+502H 142V 3756331X 341C Exits:EW&gt; On a Cool Road<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+<br />
+502H 140V 3756331X 341C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+502H 140V 3756331X 341C Exits:ESW&gt; Foothills of the Khalkists<br />
+A small metallic canteen has been dropped here. [3]<br />
+A large torch. [2]<br />
+A large piece of pork chop is here. [5]<br />
+A large torch.<br />
+A small metallic canteen has been dropped here. [4]<br />
+A large piece of pork chop is here.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A small pouch of spell components lies here.<br />
+A bright red apple has been left here.<br />
+A large white box made of wood is sitting on the ground here.<br />
+A short sword lies here.<br />
+A leather pouch has been left here unattended.<br />
+A pair of supple leather mittens lies abandoned.<br />
+A pair of felt-lined leather boots stands with laces undone.<br />
+A pair of spectacles sits here, in danger of being trod on.<br />
+A black velvet doublet lies crumpled on the ground.<br />
+The tanned skin of one of the ice bears of the tundra has been left here.<br />
+A necklace inlaid with diamonds lies forgotten on the ground.<br />
+Caution the Male Half Elf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+502H 138V 3756331X 341C Exits:EW&gt; Caution makes a strange sound but is suddenly very silent, as you place a crimson dragon's spine javelin in his back.<br />
+You receive 0 experience.<br />
+get coins corpseexam corpsesneakCaution is dead! R.I.P.<br />
+<br />
+502H 138V 3756331X 341C [Me:Perfect] [Caution:Dying] Exits:EW&gt; <br />
+The death cry of Caution echoes from somewhere nearby...<br />
+A stallion stops following Caution.<br />
+<br />
+502H 138V 3756331X 341C Exits:EW&gt; eYou get a very large pile of coins from the corpse of Caution.<br />
+There were 1309 coins.<br />
+<br />
+502H 138V 3756331X 1650C Exits:EW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a jagged-edged halberd<br />
+a gold and diamond wedding band<br />
+<br />
+502H 138V 3756331X 1650C Exits:EW&gt; You begin moving quietly.<br />
+<br />
+502H 138V 3756331X 1650C Exits:EW&gt; On a Cool Road<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+<br />
+502H 136V 3756331X 1650C Exits:ESW&gt; <br />
+Spean tells you 'got a small penis?'<br />
+<br />
+502H 136V 3756331X 1650C Exits:ESW&gt; <br />
+Caution shouts 'vittu you fucker'<br />
+<br />
+502H 136V 3756331X 1650C Exits:ESW&gt; shout actually vittu does mean fuck, actually do not attack me while im in bad mood! not even with 5 man group!You shout 'actually vittu does mean fuck, actually do not attack me while im in bad mood! not even with 5 man group!'<br />
+<br />
+502H 136V 3756331X 1650C Exits:ESW&gt; <br />
+You are hungry.<br />
+You are thirsty.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; lOn a Cool Road<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; exam corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a heart-shaped ring<br />
+a glowing sandstone ring..it glows dimly<br />
+a bottle of rat poison<br />
+a clearly empty flask (invisible)<br />
+a scroll of recall [2]<br />
+a bronze bottle<br />
+a scroll of recall [3]<br />
+a small component pouch<br />
+a small wooden chest [2]<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; get chest corpseYou get a small wooden chest from the corpse of Hraf.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; exam chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a bronze bottle [5]<br />
+a smoked Tarsis ham [10]<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; drop chestYou drop a small wooden chest.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; get chest corpseYou get a small wooden chest from the corpse of Hraf.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; exam chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a bottle of firebreather [9]<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; drop chestYou drop a small wooden chest.<br />
+<br />
+502H 143V 3756331X 1650C Exits:ESW&gt; lOn a Cool Road<br />
+A small wooden chest rests here. [2]<br />
+The corpse of Hraf is lying here.<br />
+The corpse of Zieg is lying here.<br />
+A wooden signpost has been hammered into the ground here.<br />
+A large tree of ripe apples grows here.<br />
+A mighty clydesdale stands before you.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1095'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1095">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1095">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

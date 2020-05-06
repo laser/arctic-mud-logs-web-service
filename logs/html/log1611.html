@@ -1,0 +1,754 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1611-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1611'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+More trashlogs: addy and ambre rip</font></b>
+<p>
+POV: 
+Uhnirhu<p>
+Log Rating:
+2.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Bukowski falls for ingenious tactics.. doesnt manage to form sentences
+this time
+</i>
+<p>
+<p>
+
+291H 94V 5933895X 32C Mem:1 Exits:SW&gt; ord all.bozak bash addy<br />
+You issue the order 'bash addy'.<br />
+<br />
+291H 94V 5933895X 32C Mem:1 Exits:SW&gt; ord all.bozak bash addy<br />
+You issue the order 'bash addy'.<br />
+<br />
+291H 94V 5933895X 32C Mem:1 Exits:SW&gt; <br />
+Addy arrives from the west.<br />
+<br />
+291H 94V 5933895X 32C Mem:1 Exits:SW&gt; ord all.bozak bash addy<br />
+Suddenly Addy stabs you in the back.<br />
+That Really did HURT!<br />
+<br />
+187H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Perfect] Mem:1 Exits:SW&gt; <br />
+That's some fast typing. Better take a break.<br />
+<br />
+187H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Perfect] Mem:1 Exits:SW&gt; <br />
+Addy pierces YOU extremely hard.<br />
+Addy misses you with his pierce.<br />
+You miss Addy with your hit.<br />
+<br />
+172H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Perfect] Mem:1 Exits:SW&gt; ord all.bozak bash addy<br />
+A bozak hatchling crashes into Addy in a thundering collision, knocking him to the ground!<br />
+Addy steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+Addy steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+You issue the order 'bash addy'.<br />
+<br />
+172H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Good] Mem:1 Exits:SW&gt; c 'para'<br />
+You utter the words, 'paralysis'<br />
+<br />
+172H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Good] Mem:1 Exits:SW&gt; <br />
+A bozak hatchling misses Addy with his claw.<br />
+A bozak hatchling misses Addy with his claw.<br />
+A bozak hatchling misses Addy with his claw.<br />
+Addy pierces YOU very hard.<br />
+Addy pierces YOU hard.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Good] Mem:1 Exits:SW&gt; c 'para'<br />
+You utter the words, 'paralysis'<br />
+Addy is paralyzed!<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Good] Mem:2 Exits:SW&gt;<br />
+A bozak hatchling claws Addy extremely hard.<br />
+A bozak hatchling claws Addy hard.<br />
+A bozak hatchling claws Addy very hard.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Good] Mem:2 Exits:SW&gt; ord all.bozak sta<br />
+ord all.bozak bash<br />
+You are not a member of a group.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Good] Mem:2 Exits:SW&gt; <br />
+A bozak hatchling stands up.<br />
+A bozak hatchling stands up.<br />
+You issue the order 'sta'.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Good] Mem:2 Exits:SW&gt; c 'flame' <br />
+A bozak hatchling crashes into Addy in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Addy in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Addy in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash'.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Good] Mem:2 Exits:SW&gt; <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Addy in a cloak of flames.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Fair] Mem:3 Exits:SW&gt; <br />
+A bozak hatchling claws Addy very hard.<br />
+A bozak hatchling claws Addy extremely hard.<br />
+A bozak hatchling claws Addy very hard.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:Fair] Mem:3 Exits:SW&gt; c 'flame' <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Addy in a cloak of flames.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Bad] Mem:3 Exits:SW&gt; <br />
+A bozak hatchling claws Addy very hard.<br />
+A bozak hatchling claws Addy hard.<br />
+A bozak hatchling claws Addy very hard.<br />
+<br />
+150H 94V 5933895X 32C [Uhnirhu:Fair] [Addy:V.Bad] Mem:3 Exits:SW&gt; c 'flame' <br />
+ord all.bozak bash<br />
+c 'flame' <br />
+A bozak hatchling claws Addy hard.<br />
+A bozak hatchling misses Addy with his claw.<br />
+A bozak hatchling claws Addy.<br />
+Addy pierces YOU extremely hard.<br />
+Addy pierces YOU hard.<br />
+You miss Addy with your hit.<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Addy in a cloak of flames.<br />
+<br />
+134H 119V 5933895X 32C [Uhnirhu:Bad] [Addy:Awful] Mem:4 Exits:SW&gt; <br />
+Addy has lost his link.<br />
+<br />
+134H 119V 5933895X 32C [Uhnirhu:Bad] [Addy:Awful] Mem:4 Exits:SW&gt; <br />
+A bozak hatchling misses Addy with his claw.<br />
+A bozak hatchling claws Addy very hard.<br />
+A bozak hatchling misses Addy with his claw.<br />
+Addy pierces YOU extremely hard.<br />
+Addy pierces YOU hard.<br />
+<br />
+110H 119V 5933895X 32C [Uhnirhu:V.Bad] [Addy:Awful] Mem:4 Exits:SW&gt; <br />
+Addy steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+Addy steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+Addy steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+You issue the order 'bash'.<br />
+<br />
+110H 119V 5933895X 32C [Uhnirhu:V.Bad] [Addy:Awful] Mem:5 Exits:SW&gt; <br />
+You utter the words, 'flame shroud'<br />
+Addy dies a fiery death as you enshroud him in a cloak of burning flames.<br />
+You receive 0 experience.<br />
+Addy is dead! R.I.P.<br />
+get all.coins corpse<br />
+110H 119V 5933895X 32C [Addy:Dying] Mem:5 Exits:SW&gt; <br />
+The death cry of Addy echoes from somewhere nearby...<br />
+<br />
+110H 119V 5933895X 32C Mem:5 Exits:SW&gt; get all 1.corpse<br />
+rec recall<br />
+They don't seem to be here.<br />
+<br />
+110H 119V 5933895X 32C Mem:5 Exits:SW&gt; <br />
+You get a large pile of coins from the corpse of Addy.<br />
+There were 371 coins.<br />
+<br />
+<br />
+110H 119V 5933895X 403C Mem:5 Exits:SW&gt; <br />
+You get a hooked draconian shortsword from the corpse of Addy.<br />
+You get a mithril spear from the corpse of Addy.<br />
+You get a snakeskin belt from the corpse of Addy.<br />
+You get a cloak of darkness from the corpse of Addy.<br />
+You get a putrid potion from the corpse of Addy.<br />
+You get a putrid potion from the corpse of Addy.<br />
+You get a putrid potion from the corpse of Addy.<br />
+You get a putrid potion from the corpse of Addy.<br />
+You get an entire loaf of bread from the corpse of Addy.<br />
+You get a portable keg from the corpse of Addy.<br />
+You get a small wooden chest from the corpse of Addy.<br />
+<br />
+110H 119V 5933895X 403C Mem:5 Exits:SW&gt; <br />
+You recite a glowing scroll of recall which dissolves.<br />
+Merideth the innkeeper tells you 'Care for a room for the night? Ours are the best for furlongs<br />
+around!'<br />
+The Inn's Reception<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+The janitor arrives from the south.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+A Solace peacekeeper leaves south.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+Ambre flies in from below.<br />
+sit<br />
+Zues arrives from below.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+You take a seat in mid-air.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; scl<br />
+Huh?!<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; l<br />
+The Solace Adventurer's Guild<br />
+An arrow pointing down floats nearby...it glows dimly<br />
+Zues the Male Minotaur is standing here.<br />
+Ambre OceanShield, Island Warrior is standing here. (flying)<br />
+A janitor is walking around, cleaning up.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; sta<br />
+You stand up.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; l<br />
+The Solace Adventurer's Guild<br />
+An arrow pointing down floats nearby...it glows dimly<br />
+Zues the Male Minotaur is standing here.<br />
+Ambre OceanShield, Island Warrior is standing here. (flying)<br />
+A janitor is walking around, cleaning up.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; l zues<br />
+The janitor leaves down.<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+You see nothing special about him.<br />
+Zues the young adult male minotaur is in an excellent condition.<br />
+<br />
+Zues is using:<br />
+&lt;worn around neck&gt;         a lucky bone charm..it glows dimly<br />
+&lt;worn about body&gt;          a white silk robe<br />
+<br />
+291H 134V 5933895X 73C Mem:4 Exits:NSD&gt; <br />
+You are sent sprawling as Ambre crashes into you.<br />
+<br />
+274H 134V 5933895X 73C [Uhnirhu:V.Good] [Ambre:Perfect] Mem:4 Exits:NSD&gt; <br />
+Ambre massacres YOU with her slash.<br />
+You miss Ambre with your hit.<br />
+<br />
+248H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Perfect] Mem:4 Exits:NSD&gt;<br />
+The guild guard looks at Ambre and yells  'There's the scoundrel!'<br />
+<br />
+248H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Perfect] Mem:4 Exits:NSD&gt; <br />
+The guild guard massacres Ambre with his hit.<br />
+The guild guard massacres Ambre with his hit.<br />
+Ambre massacres YOU with her slash.<br />
+You miss Ambre with your hit.<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Good] Mem:4 Exits:NSD&gt; sta<br />
+You are not a member of a group.<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Good] Mem:4 Exits:NSD&gt; c 'para' ambre<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Good] Mem:4 Exits:NSD&gt; <br />
+You stand up.<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Good] Mem:4 Exits:NSD&gt; <br />
+You utter the words, 'paralysis'<br />
+Ambre is paralyzed!<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Good] Mem:5 Exits:NSD&gt; <br />
+The guild guard obliterates Ambre with his hit.<br />
+The guild guard annihilates Ambre with his hit.<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Fair] Mem:5 Exits:NSD&gt; c 'flame' ambre<br />
+The guild guard looks at Ambre and yells  'There's the scoundrel!'<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Fair] Mem:5 Exits:NSD&gt; <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Ambre in a cloak of flames.<br />
+<br />
+224H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Fair] Mem:5 Exits:NSD&gt; c 'flame' ambre<br />
+The guild guard annihilates Ambre with his hit.<br />
+The guild guard annihilates Ambre with his hit.<br />
+<br />
+237H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:Bad] Mem:5 Exits:NSD&gt; <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Ambre in a cloak of flames.<br />
+<br />
+237H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:V.Bad] Mem:6 Exits:NSD&gt; <br />
+The guild guard looks at Ambre and yells  'There's the scoundrel!'<br />
+<br />
+237H 134V 5933895X 73C [Uhnirhu:Good] [Ambre:V.Bad] Mem:6 Exits:NSD&gt; <br />
+The guild guard annihilates Ambre with his hit.<br />
+Ambre slashes YOU extremely hard.<br />
+<br />
+218H 134V 5933895X 73C [Uhnirhu:Fair] [Ambre:Awful] Mem:6 Exits:NSD&gt; <br />
+A Solace peacekeeper arrives from the south.<br />
+The guild guard looks at Ambre and yells  'There's the scoundrel!'<br />
+<br />
+218H 134V 5933895X 73C [Uhnirhu:Fair] [Ambre:Awful] Mem:6 Exits:NSD&gt; <br />
+The janitor arrives from the south.<br />
+A Solace peacekeeper looks at Ambre and yells  'There's the scoundrel!'<br />
+The guild guard looks at Ambre and yells  'There's the scoundrel!'<br />
+<br />
+218H 134V 5933895X 73C [Uhnirhu:Fair] [Ambre:Awful] Mem:6 Exits:NSD&gt; c 'flame' ambre<br />
+<br />
+218H 134V 5933895X 73C [Uhnirhu:Fair] [Ambre:Awful] Mem:7 Exits:NSD&gt; <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Ambre in a cloak of flames.<br />
+<br />
+218H 134V 5933895X 73C [Uhnirhu:Fair] [Ambre:Awful] Mem:7 Exits:NSD&gt; <br />
+A Solace peacekeeper massacres Ambre with his slash.<br />
+A Solace peacekeeper massacres Ambre with his slash.<br />
+Ambre is incapacitated and will slowly die, if not aided.<br />
+The guild guard obliterates Ambre with his hit.<br />
+You receive 0 experience.<br />
+Ambre is dead! R.I.P.<br />
+get all.coins corpse<br />
+The death cry of Ambre echoes from somewhere nearby...<br />
+Ambre sinks gently to the ground.<br />
+Zues stops following Ambre.<br />
+Ambre now follows Zues.<br />
+Zues is the new leader of Ambre's group.<br />
+Ambre stops following Zues.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; get all 1.corpse<br />
+They don't seem to be here.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; <br />
+Ambre arrives from below.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; <br />
+Ambre gets a small down feather from the corpse of Ambre.<br />
+Ambre gets a green hilted machete from the corpse of Ambre.<br />
+Ambre gets a red steel bracer from the corpse of Ambre.<br />
+Ambre gets a seeker's robe from the corpse of Ambre.<br />
+Ambre gets an ancient shield of the silver serpent from the corpse of Ambre.<br />
+Ambre gets some red dragon scale sleeves from the corpse of Ambre.<br />
+Ambre gets some spiked minotaur gauntlets from the corpse of Ambre.<br />
+Ambre gets a pair of green boots from the corpse of Ambre.<br />
+Ambre gets a pair of dwarven greaves from the corpse of Ambre.<br />
+Ambre gets a Gargoyle helmet and visor from the corpse of Ambre.<br />
+Ambre gets a blue steel brassiere from the corpse of Ambre.<br />
+Ambre gets a dinosaur tooth necklace from the corpse of Ambre.<br />
+Ambre gets a ring of accuracy from the corpse of Ambre.<br />
+Ambre gets a ring of accuracy from the corpse of Ambre.<br />
+Ambre gets a large pile of coins from the corpse of Ambre.<br />
+Ambre gets an entire loaf of bread from the corpse of Ambre.<br />
+Ambre gets an entire loaf of bread from the corpse of Ambre.<br />
+Ambre gets a black stone from the corpse of Ambre.<br />
+Ambre gets an enormous honey glazed ham from the corpse of Ambre.<br />
+Ambre gets a putrid potion from the corpse of Ambre.<br />
+Ambre gets a putrid potion from the corpse of Ambre.<br />
+Ambre gets a putrid potion from the corpse of Ambre.<br />
+Ambre gets a putrid potion from the corpse of Ambre.<br />
+Ambre gets an evil teddy bear from the corpse of Ambre.<br />
+Ambre gets a copper banded shield from the corpse of Ambre.<br />
+Ambre gets a sergeant's cape from the corpse of Ambre.<br />
+Ambre gets a large first-aid kit from the corpse of Ambre.<br />
+Ambre gets green granite gauntlets from the corpse of Ambre.<br />
+Ambre gets a torch from the corpse of Ambre.<br />
+Ambre gets a small wooden chest from the corpse of Ambre.<br />
+Ambre gets a portable keg from the corpse of Ambre.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; rec recall<br />
+Ambre leaves down.<br />
+<br />
+218H 134V 5933895X 73C Mem:7 Exits:NSD&gt; <br />
+You recite a glowing scroll of recall which dissolves.<br />
+The Reception<br />
+A tall and strong bouncer, hired to protect Danara's customers, stands here.<br />
+Danara the receptionist sits here looking bored.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1611'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1611">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1611">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

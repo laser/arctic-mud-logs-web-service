@@ -1,0 +1,755 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 923-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='923'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Mayaw RIP</font></b>
+<p>
+POV: 
+Scelesta<p>
+Log Rating:
+0.5501<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Wilds show off the dams they received after beating Scelesta down. But we all know that afking is bad!</i>
+<p>
+<p>
+
+191H 42V 1360242X 219C Exits:N&gt; rec recall mayaw<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+<br />
+191H 42V 1360242X 219C Exits:N&gt; <br />
+Yukon grabs a scroll of recall.<br />
+Yukon recites a scroll of recall.<br />
+<br />
+191H 42V 1360242X 219C Exits:N&gt; <br />
+Yukon grabs a scroll of recall.<br />
+Yukon recites a scroll of recall.<br />
+Mayaw disappears.<br />
+<br />
+191H 42V 1360242X 219C Exits:N&gt; c 'd d' mayaw<br />
+You utter the words, 'dimension door'<br />
+The Barbarians' Battlefield<br />
+    The tall waving grass stands here, as if planted from a far removed<br />
+plain. You can see the barbarian warmaster standing here. The walls of this<br />
+place stand like large trees, their bark only slightly tinged with the<br />
+marks of battle, fire and soot. You can see that Guild Road lies to the<br />
+south.<br />
+Mayaw the Male Theiwar Dwarf is resting here. (invisible)<br />
+A brooding guild guard looks around fiercely.<br />
+A fearsome barbarian warrior is here, sharpening his blade in silence.<br />
+<br />
+191H 42V 1360242X 219C Mem:3 Exits:S&gt; rec recall mayaw<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+<br />
+<br />
+-----------------------------------------------------------------------<br />
+Yukon grabs a scroll of recall.<br />
+Yukon recites a scroll of recall.<br />
+<br />
+191H 49V 1360242X 84C Mem:1 Exits:S&gt; rec recall mayaw<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Mayaw disappears.<br />
+<br />
+191H 49V 1360242X 84C Mem:1 Exits:S&gt; st<br />
+c 'd d' mayaw<br />
+<br />
+Yukon leaves south.<br />
+<br />
+191H 49V 1360242X 84C Mem:1 Exits:S&gt; You stand up.<br />
+<br />
+191H 49V 1360242X 84C Mem:2 Exits:S&gt; You can't remember how to cast that spell!<br />
+<br />
+191H 49V 1360242X 84C Mem:2 Exits:S&gt; s<br />
+Guild Road<br />
+    Guild road leads both east and west. To the east are some very large<br />
+buildings and halls, home of apprentices and masters alike. Sounds of<br />
+combat and spell casting are thick in the air.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+191H 69V 1360242X 84C Mem:1 Exits:NEW&gt; w<br />
+w<br />
+Dock Road<br />
+    The fresh sea breeze blows cold against your unguarded face, its salty<br />
+odour bringing with it the smell of the fisherman's catch. The deep blue<br />
+ocean rolls its waves gently against the wooden jetties and piers. The<br />
+slapping of water on wood is the only sound that can be heard above the<br />
+wailing of hungry sea birds. The road leads along the sea-front, passing<br />
+between small boats and rotting wooden shacks that house the hardy<br />
+fishermen.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+--------------------------WANDERING------------------------------<br />
+<br />
+You utter the words, 'dimension door'<br />
+Dock Road<br />
+    A this point, Dock Road stretches inland to the east and is bounded by<br />
+the sea to the west. Looking towards the western horizon, you see a vast<br />
+expanse of crystal clear blue water. As the road moves inland to the east,<br />
+it enters a small residential section where you see a number of badly<br />
+beaten and somewhat dilapidated old houses.<br />
+Mayaw the Male Theiwar Dwarf is resting here. (invisible)<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+146H 48V 1360242X 84C Mem:3 Exits:NEW&gt; c 'f b' mayaw<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mayaw.<br />
+<br />
+146H 48V 1360242X 84C [Scelesta:Good] [Mayaw:Good] Mem:4 Exits:NEW&gt; <br />
+You pierce Mayaw extremely hard.<br />
+Mayaw slowly fades into existence.<br />
+Mayaw crushes YOU extremely hard.<br />
+<br />
+131H 48V 1360242X 84C [Scelesta:Fair] [Mayaw:Good] Mem:4 Exits:NEW&gt; c 'f b' mayaw<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mayaw.<br />
+<br />
+131H 48V 1360242X 84C [Scelesta:Fair] [Mayaw:Fair] Mem:5 Exits:NEW&gt; c 'l b'<br />
+<br />
+Mayaw crushes YOU extremely hard.<br />
+<br />
+112H 48V 1360242X 84C [Scelesta:Fair] [Mayaw:Fair] Mem:5 Exits:NEW&gt; You miss Mayaw with your pier<br />
+ce.<br />
+Mayaw crushes YOU very hard.<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Mayaw with full impact.<br />
+<br />
+100H 48V 1360242X 84C [Scelesta:Fair] [Mayaw:Fair] Mem:6 Exits:NEW&gt; c 'l b'<br />
+<br />
+Mayaw crushes YOU very hard.<br />
+<br />
+89H 48V 1360242X 84C [Scelesta:Bad] [Mayaw:Fair] Mem:6 Exits:NEW&gt; Your casting is disrupted by th<br />
+e fighting!<br />
+<br />
+89H 48V 1360242X 84C [Scelesta:Bad] [Mayaw:Fair] Mem:6 Exits:NEW&gt; c 'l b'<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Mayaw with full impact.<br />
+<br />
+89H 48V 1360242X 84C [Scelesta:Bad] [Mayaw:Fair] Mem:7 Exits:NEW&gt; c 'l b'<br />
+<br />
+Mayaw crushes YOU extremely hard.<br />
+<br />
+71H 48V 1360242X 84C [Scelesta:V.Bad] [Mayaw:Fair] Mem:7 Exits:NEW&gt; You utter the words, 'lightni<br />
+ng bolt'<br />
+The lightning bolt hits Mayaw with full impact.<br />
+<br />
+71H 48V 1360242X 84C [Scelesta:V.Bad] [Mayaw:Bad] Mem:7 Exits:NEW&gt; c 'l b'<br />
+<br />
+Mayaw crushes YOU extremely hard.<br />
+<br />
+52H 48V 1360242X 84C [Scelesta:V.Bad] [Mayaw:Bad] Mem:7 Exits:NEW&gt; You can't remember how to cast<br />
+ that spell!<br />
+<br />
+52H 48V 1360242X 84C [Scelesta:V.Bad] [Mayaw:Bad] Mem:7 Exits:NEW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+A wealthy woman strolls along the docks here with her husband.<br />
+An upper class citizen walks slowly here with his wife.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+A huge, loud pelican stands here, eyeing the water for a fish to catch.<br />
+A large grey seagull perches here, ready to take flight.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Yukon the Male Theiwar Dwarf is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+52H 48V 1360242X 84C [Scelesta:V.Bad] [Mayaw:Bad] Mem:7 Exits:NEW&gt; flee<br />
+flee<br />
+You flee head over heels.<br />
+Dock Road<br />
+    The fresh sea breeze blows cold against your unguarded face, its salty<br />
+odour bringing with it the smell of the fisherman's catch. The deep blue<br />
+ocean rolls its waves gently against the wooden jetties and piers. The<br />
+slapping of water on wood is the only sound that can be heard above the<br />
+wailing of hungry sea birds. The road leads along the sea-front, to the<br />
+east and west, passing small boats and rotting wooden shacks that house the<br />
+hardy fishermen.<br />
+Yukon the Male Theiwar Dwarf is standing here.<br />
+<br />
+52H 47V 1360242X 84C Mem:7 Exits:ESW&gt; sca<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+52H 47V 1360242X 84C Mem:7 Exits:ESW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Mayaw the Male Theiwar Dwarf is resting here.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+52H 47V 1360242X 84C Mem:7 Exits:ESW&gt; <br />
+Yukon leaves east.<br />
+<br />
+52H 47V 1360242X 84C Mem:7 Exits:ESW&gt; e<br />
+Dock Road<br />
+    A this point, Dock Road stretches inland to the east and is bounded by<br />
+the sea to the west. Looking towards the western horizon, you see a vast<br />
+expanse of crystal clear blue water. As the road moves inland to the east,<br />
+it enters a small residential section where you see a number of badly<br />
+beaten and somewhat dilapidated old houses.<br />
+Yukon the Male Theiwar Dwarf is standing here.<br />
+Mayaw the Male Theiwar Dwarf is resting here.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+52H 46V 1360242X 84C Mem:7 Exits:NEW&gt; <br />
+Yukon focuses harshly on Mayaw and utters the words, 'acid blast'.<br />
+Mayaw is caught in some of Yukon's acid!<br />
+<br />
+52H 46V 1360242X 84C Mem:7 Exits:NEW&gt; c 'acid' mayaw<br />
+You utter the words, 'acid blast'<br />
+Some of your acid hits Mayaw!<br />
+<br />
+52H 46V 1360242X 84C Mem:8 Exits:NEW&gt; <br />
+Yukon misses Mayaw with his hit.<br />
+Mayaw slowly fades into existence.<br />
+Mayaw crushes Yukon extremely hard.<br />
+<br />
+52H 46V 1360242X 84C Mem:8 Exits:NEW&gt; c 'acid' mayaw<br />
+<br />
+Yukon focuses harshly on Mayaw and utters the words, 'lightning bolt'.<br />
+Mayaw wavers under the impact of the lightning bolt sent by Yukon.<br />
+<br />
+52H 46V 1360242X 84C Mem:8 Exits:NEW&gt; You utter the words, 'acid blast'<br />
+Some of your acid hits Mayaw!<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; <br />
+Mayaw crushes Yukon extremely hard.<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; c 'acid' mayaw<br />
+c 'm m' mayaw<br />
+You can't remember how to cast that spell!<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+Mayaw crushes Yukon extremely hard.<br />
+You utter the words, 'magic missile'<br />
+You watch with selfpride as the magic missile hits Mayaw.<br />
+You watch with selfpride as the magic missile hits Mayaw.<br />
+You watch with selfpride as the magic missile hits Mayaw.<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; <br />
+Yukon focuses harshly on Mayaw and utters the words, 'lightning bolt'.<br />
+Mayaw wavers under the impact of the lightning bolt sent by Yukon.<br />
+Mayaw is incapacitated and will slowly die, if not aided.<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+get all corpse<br />
+get all corpse<br />
+What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; What are you trying to get from?<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+get all corpse<br />
+<br />
+Yukon panics, and attempts to flee.<br />
+Mayaw lies suffering on the ground till no blood is left in his body.<br />
+You receive 0 experience.<br />
+Mayaw is dead! R.I.P.<br />
+Yukon leaves east.<br />
+<br />
+52H 46V 1360242X 84C Mem:9 Exits:NEW&gt; get all corpse<br />
+The death cry of Mayaw echoes from somewhere nearby...<br />
+You get a black mace of the Skull from the corpse of Mayaw.<br />
+You get a set of light blue prayer beads from the corpse of Mayaw.<br />
+You get a grey leather bracer from the corpse of Mayaw.<br />
+You get a small miner's pouch from the corpse of Mayaw.<br />
+You get an alb from the corpse of Mayaw.<br />
+You get a brass dragonscale shield from the corpse of Mayaw.<br />
+You get a pair of shiny iron gauntlets from the corpse of Mayaw.<br />
+You get a pair of ergothian battle armor greaves from the corpse of Mayaw.<br />
+You get a crown of turtle scales from the corpse of Mayaw.<br />
+You get a hooded red chasuble from the corpse of Mayaw.<br />
+You get an engraved gold necklace from the corpse of Mayaw.<br />
+You get a red tinged circular medallion from the corpse of Mayaw.<br />
+You get a silk ribbon from the corpse of Mayaw.<br />
+You get a silk ribbon from the corpse of Mayaw.<br />
+You get a star sapphire from the corpse of Mayaw.<br />
+You get a large pile of coins from the corpse of Mayaw.<br />
+There were 771 coins.<br />
+Feather : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+Symbol : You can't carry that many items.<br />
+Robe : You can't carry that many items.<br />
+Charm : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Necklace : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+<br />
+52H 46V 1360242X 855C Mem:9 Exits:NEW&gt; Feather : You can't carry that many items<br />
+<br />
+Yukon gets a giant goatsucker feather from the corpse of Mayaw.<br />
+Yukon gets a pouch of healing herbs from the corpse of Mayaw.<br />
+get all<br />
+Yukon is zapped by a holy symbol of Mishakal and instantly drops it.<br />
+Yukon gets a white silk robe from the corpse of Mayaw.<br />
+Yukon gets a silver charm from the corpse of Mayaw.<br />
+Yukon gets a large hide waterskin from the corpse of Mayaw.<br />
+Yukon gets a green metal ring from the corpse of Mayaw.<br />
+Yukon gets a piece of sweet bread from the corpse of Mayaw.<br />
+Yukon gets a fairy skull ring from the corpse of Mayaw.<br />
+Yukon gets a glowing scroll of recall from the corpse of Mayaw.<br />
+Yukon gets a necklace of gnomish ears from the corpse of Mayaw.<br />
+Yukon gets a yellow potion from the corpse of Mayaw.<br />
+Yukon gets a scroll of recall from the corpse of Mayaw.<br />
+Yukon gets a crystal shard necklace from the corpse of Mayaw.<br />
+Yukon gets a crystal shard necklace from the corpse of Mayaw.<br />
+Yukon gets a crystal shard necklace from the corpse of Mayaw.<br />
+Yukon gets a large hide waterskin from the corpse of Mayaw.<br />
+Yukon gets a colorful scroll from the corpse of Mayaw.<br />
+<br />
+52H 46V 1360242X 855C Mem:9 Exits:NEW&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='923'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=923">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="923">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

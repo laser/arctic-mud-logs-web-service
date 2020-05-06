@@ -1,0 +1,952 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 719-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='719'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Randomers Die</font></b>
+<p>
+POV: 
+Tort<p>
+Log Rating:
+-0.1667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+XH 119V 1X 835C Mem:1 Exits:NSW&gt; An Intersection<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; You utter the words, 'hold person'<br />
+HOLD left: 1<br />
+Faar freezes in place.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+look<br />
+<br />
+Faar says 'why'<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; An Intersection<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; l faar<br />
+cast 'hold person' dominique<br />
+You see nothing special about him.<br />
+Faar the young adult male minotaur has some small wounds and bruises.<br />
+<br />
+Faar is using:<br />
+&lt;worn on finger&gt;           a small copper ring<br />
+&lt;worn on body&gt;             an etched suit of armor<br />
+&lt;worn on legs&gt;             some iron greaves<br />
+&lt;worn on arms&gt;             a pair of copper chain sleeves<br />
+&lt;worn about body&gt;          a backpack<br />
+&lt;worn about waist&gt;         a red leather scabbard<br />
+&lt;worn around right wrist&gt;  a copper wrist guard<br />
+&lt;worn around left wrist&gt;   a blue ochre bracer<br />
+&lt;used in primary hand&gt;     a ruby axe..it hums softly<br />
+&lt;used in secondary hand&gt;   a thin ice axe..it hums softly<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; look<br />
+cast 'hold person' dominique<br />
+An Intersection<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; scan<br />
+cast 'hold person' dominique<br />
+Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+A Balifor watchman watches for trouble in the city.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; <br />
+Faar says 'why you hold me man'<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; 'randoming<br />
+cast 'hold person' dominique<br />
+You say 'randoming'<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; scan<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+A Balifor watchman watches for trouble in the city.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+scan<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+TICK IN 10 SECONDS.<br />
+Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+A Balifor watchman watches for trouble in the city.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; <br />
+Faar says 'no i didnt'<br />
+<br />
+XH 118V 1X 835C Mem:1 Exits:NESW&gt; cast 'silence' faar<br />
+You utter the words, 'silence'<br />
+SILENCE left: 0<br />
+Faar suddenly becomes very quiet.<br />
+<br />
+XH 118V 1X 835C Mem:2 Exits:NESW&gt; look<br />
+An Intersection<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 118V 1X 835C Mem:2 Exits:NESW&gt; <br />
+A Balifor watchman arrives from the east.<br />
+<br />
+XH 118V 1X 835C Mem:2 Exits:NESW&gt; <br />
+Faar bursts into tears.<br />
+<br />
+XH 118V 1X 835C Mem:2 Exits:NESW&gt; <br />
+The rising sun barely lights the dark and cloudy sky.<br />
+Timer now at 61 secs.<br />
+<br />
+XH 152V 1X 835C Mem:1 Exits:NESW&gt; cast 'hold person' dominique<br />
+scan<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 152V 1X 835C Mem:1 Exits:NESW&gt; Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+A small and weak looking horse is here awaiting its master.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 152V 1X 835C Mem:1 Exits:NESW&gt; s<br />
+scan<br />
+n<br />
+Traders Street<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+XH 151V 1X 835C Mem:1 Exits:NSW&gt; Looking north:<br />
+Clumps of travellers discuss their final destination.<br />
+A Balifor watchman watches for trouble in the city.<br />
+Faar the Male Minotaur is standing here.<br />
+Looking east:<br />
+An elegant home is set slightly off the street.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+Looking west:<br />
+Commerce seems to taper off as the guild houses begin.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 151V 1X 835C Mem:1 Exits:NSW&gt; An Intersection<br />
+A Balifor watchman watches for trouble in the city.<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 150V 1X 835C Mem:1 Exits:NESW&gt; scan<br />
+Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+A small and weak looking horse is here awaiting its master.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 150V 1X 835C Mem:1 Exits:NESW&gt; w<br />
+scan<br />
+e<br />
+Dock Road<br />
+<br />
+XH 149V 1X 835C Mem:1 Exits:NEW&gt; Looking north:<br />
+You see nothing special.<br />
+A merchant walks along the docks here, looking to make his way to the city.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+A large grey seagull perches here, ready to take flight.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Balifor watchman watches for trouble in the city.<br />
+Faar the Male Minotaur is standing here.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 149V 1X 835C Mem:1 Exits:NEW&gt; An Intersection<br />
+A Balifor watchman watches for trouble in the city.<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 148V 1X 835C Mem:1 Exits:NESW&gt; look<br />
+An Intersection<br />
+A Balifor watchman watches for trouble in the city.<br />
+Faar the Male Minotaur is standing here.<br />
+<br />
+XH 148V 1X 835C Mem:1 Exits:NESW&gt; <br />
+A Balifor watchman leaves north.<br />
+<br />
+XH 148V 1X 835C Mem:1 Exits:NESW&gt; cast 'force bolt' faar<br />
+You can't remember how to cast that spell!<br />
+<br />
+XH 148V 1X 835C Mem:1 Exits:NESW&gt; cast 'lightning bolt' faar<br />
+You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 5<br />
+The lightning bolt hits Faar with full impact.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Fair] Mem:1 Exits:NESW&gt; cast 'lightning bolt'<br />
+<br />
+You bludgeon Faar hard.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Fair] Mem:1 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 4<br />
+The lightning bolt hits Faar with full impact.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Fair] Mem:2 Exits:NESW&gt; cast 'lightning bolt'<br />
+You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 3<br />
+The lightning bolt hits Faar with full impact.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Awful] Mem:3 Exits:NESW&gt; <br />
+Dominique arrives from the south.<br />
+DOMINIQUE - Entered from the - SOUTH.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Awful] Mem:3 Exits:NESW&gt; fol faar<br />
+<br />
+Dominique recites a scroll of recall.<br />
+Faar disappears.<br />
+<br />
+XH 148V 1X 835C Mem:3 Exits:NESW&gt; I see no person by that name here!<br />
+<br />
+XH 148V 1X 835C Mem:3 Exits:NESW&gt; cast 'hold person' dominique<br />
+You utter the words, 'hold person'<br />
+HOLD left: 0<br />
+Dominique freezes in place.<br />
+<br />
+XH 148V 1X 835C Mem:3 Exits:NESW&gt; cast 'relocate' faar<br />
+You utter the words, 'relocate'<br />
+RELOCATE left: 1<br />
+The Public Sitting Area<br />
+Faar the Male Minotaur is standing here.<br />
+A banshee paces the room highly agitated.<br />
+<br />
+XH 148V 1X 835C Mem:4 Exits:ES&gt; <br />
+A wandering banshee leaves south.<br />
+<br />
+XH 148V 1X 835C Mem:4 Exits:ES&gt; cast 'lightning bolt' faar<br />
+You cannot concentrate enough to cast!<br />
+<br />
+XH 148V 1X 835C Mem:4 Exits:ES&gt; cast 'lightning bolt' faar<br />
+You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 2<br />
+Your lightning bolt shatters Faar to pieces.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Faar is dead! R.I.P.<br />
+<br />
+XH 148V 1X 835C [Me:Perfect] [Faar:Dying] Mem:5 Exits:ES&gt; <br />
+The death cry of Faar echoes from somewhere nearby...<br />
+Dominique stops following Faar.<br />
+<br />
+XH 148V 1X 835C Mem:5 Exits:ES&gt; g all corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+XH 148V 1X 835C Mem:5 Exits:ES&gt; You get a thin ice axe from the corpse of Faar.<br />
+You get a ruby axe from the corpse of Faar.<br />
+You get a blue ochre bracer from the corpse of Faar.<br />
+You get a copper wrist guard from the corpse of Faar.<br />
+You get a red leather scabbard from the corpse of Faar.<br />
+You get a backpack from the corpse of Faar.<br />
+You get a pair of copper chain sleeves from the corpse of Faar.<br />
+You get some iron greaves from the corpse of Faar.<br />
+You get an etched suit of armor from the corpse of Faar.<br />
+You get a small copper ring from the corpse of Faar.<br />
+You get a large first-aid kit from the corpse of Faar.<br />
+Pie : You can't carry that many items.<br />
+Pie : You can't carry that many items.<br />
+Pie : You can't carry that many items.<br />
+Pie : You can't carry that many items.<br />
+Torch : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Kit : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+<br />
+XH 148V 1X 835C Mem:5 Exits:ES&gt; TICK IN 10 SECONDS.<br />
+l in corpse<br />
+corpse (here) : <br />
+a pork pie [4]<br />
+a torch<br />
+a scroll of recall<br />
+a large first-aid kit<br />
+a small canteen [4]<br />
+<br />
+XH 148V 1X 835C Mem:5 Exits:ES&gt; e<br />
+e<br />
+e<br />
+A Dilapidated Hall<br />
+<br />
+XH 147V 1X 835C Mem:5 Exits:ESW&gt; Entryway of a Dilapidated House<br />
+<br />
+XH 146V 1X 835C Mem:5 Exits:EW&gt; dro kit<br />
+A Side Street<br />
+<br />
+XH 145V 1X 835C Mem:5 Exits:NW&gt; You drop a large first-aid kit.<br />
+<br />
+XH 145V 1X 835C Mem:5 Exits:NW&gt; dro greaves<br />
+You drop some iron greaves.<br />
+<br />
+XH 145V 1X 835C Mem:5 Exits:NW&gt; dro armor<br />
+n<br />
+n<br />
+You drop an etched suit of armor.<br />
+<br />
+XH 145V 1X 835C Mem:5 Exits:NW&gt; n<br />
+e<br />
+A Side Street<br />
+<br />
+XH 144V 1X 835C Mem:5 Exits:NS&gt; Dock Road<br />
+A pale woman wearing the armor of the Knights of the Skull lurks here.<br />
+<br />
+XH 143V 1X 835C Mem:5 Exits:ESW&gt; The rising sun proclaims a new day.<br />
+Alas, you cannot go that way...<br />
+<br />
+XH 153V 1X 835C Mem:4 Exits:ESW&gt; Dock Road<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+XH 152V 1X 835C Mem:4 Exits:NEW&gt; <br />
+Faar arrives from the east.<br />
+FAAR - Entered from the - EAST.<br />
+<br />
+XH 152V 1X 835C Mem:4 Exits:NEW&gt; <br />
+You are no longer a member of Zara's group.<br />
+You stop following Zara.<br />
+Faar leaves west.<br />
+<br />
+XH 152V 1X 835C Mem:4 Exits:NEW&gt; e<br />
+An Intersection<br />
+Dominique the Male High Elf is standing here.<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+XH 151V 1X 835C Mem:4 Exits:NESW&gt; cast 'lightning bolt' dominique<br />
+You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 1<br />
+The lightning bolt hits Dominique with full impact.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Fair] Mem:4 Exits:NESW&gt; <br />
+You bludgeon Dominique hard.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Fair] Mem:4 Exits:NESW&gt; cast 'lightning bolt'<br />
+You utter the words, 'lightning bolt'<br />
+LIGHTNING left: 0<br />
+The lightning bolt hits Dominique with full impact.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Awful] Mem:5 Exits:NESW&gt; <br />
+Dominique sighs loudly.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Awful] Mem:5 Exits:NESW&gt; <br />
+Faar arrives from the west.<br />
+FAAR - Entered from the - WEST.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Awful] Mem:5 Exits:NESW&gt; cast 'magic missile'<br />
+<br />
+Faar leaves north.<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Awful] Mem:5 Exits:NESW&gt; You utter the words, 'magic missile'<br />
+MAGIC left: 1<br />
+You watch with selfpride as the magic missile hits Dominique.<br />
+You watch with selfpride as the magic missile hits Dominique.<br />
+Dominique is incapacitated and will slowly die, if not aided.<br />
+The magic missile tears away the remaining life of Dominique.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Dominique is dead! R.I.P.<br />
+<br />
+<br />
+XH 151V 1X 835C [Me:Perfect] [Dominique:Dying] Mem:6 Exits:NESW&gt; <br />
+The death cry of Dominique echoes from somewhere nearby...<br />
+<br />
+XH 151V 1X 835C Mem:6 Exits:NESW&gt; g all corpse<br />
+cast 'magic missile' faar<br />
+You get a large pile of coins from the corpse of Dominique.<br />
+There were 945 coins.<br />
+split 945<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; You get the twisted merchant's staff from the corpse of Dominique.<br />
+You get a thin jeweled belt from the corpse of Dominique.<br />
+You get a loaf of bread from the corpse of Dominique.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; cast 'magic missile' faar<br />
+You belong to no group.<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; look<br />
+Who should the spell be cast upon?<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; scan<br />
+cast 'magic missile' faar<br />
+An Intersection<br />
+The corpse of Dominique is lying here.<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; Looking north:<br />
+The road leads to the outskirts of the northern part of town.<br />
+Faar the Male Minotaur is standing here.<br />
+A Balifor watchman watches for trouble in the city.<br />
+A small and weak looking horse is here awaiting its master.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+Looking east:<br />
+An inspector pokes through a newly arrived shipment of goods.<br />
+Looking south:<br />
+The narrow road extends into the heart of Port Balifor.<br />
+Looking west:<br />
+A large group of sailors share a raucous tale.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+XH 151V 1X 1780C Mem:6 Exits:NESW&gt; n<br />
+cast 'magic missile' faar<br />
+The North Gate of Port Balifor<br />
+Faar the Male Minotaur is standing here.<br />
+A Balifor watchman watches for trouble in the city.<br />
+A small and weak looking horse is here awaiting its master.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+XH 150V 1X 1780C Mem:6 Exits:NS&gt; You utter the words, 'magic missile'<br />
+MAGIC left: 0<br />
+You watch with selfpride as the magic missile hits Faar.<br />
+You watch with selfpride as the magic missile hits Faar.<br />
+Faar is mortally wounded, and will die soon, if not aided.<br />
+The magic missile tears away the remaining life of Faar.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Faar is dead! R.I.P.<br />
+<br />
+XH 150V 1X 1780C [Me:Perfect] [Faar:Dying] Mem:6 Exits:NS&gt; <br />
+The death cry of Faar echoes from somewhere nearby...<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='719'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=719">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="719">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

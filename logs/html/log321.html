@@ -1,0 +1,1394 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 321-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='321'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Renshai dies fast</font></b>
+<p>
+POV: 
+Grome<p>
+Log Rating:
+1.1352<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+604H 131V 38243067X 174C Exits:NESWU&gt; <br />
+Solare tells your group 'they did it again'<br />
+<br />
+604H 131V 38243067X 174C Exits:NESWU&gt; <br />
+Gnu flies in from the north.<br />
+Oshiot flies in from the north.<br />
+Rellik arrives from the north.<br />
+Rellik kneels down and studies the ground.<br />
+Alotta flies in from the north.<br />
+Emili flies in from the north.<br />
+Talrum flies in from the north.<br />
+Zeel flies in from the north.<br />
+Kylie flies in from the north.<br />
+Cobadon flies in from the north.<br />
+Tikk flies in from the north.<br />
+Rev flies in from the north.<br />
+<br />
+604H 131V 38243067X 174C Exits:NESWU&gt; <br />
+Scat slowly fades into existence.<br />
+Scat gives his javelin a quick thrust and twist, as he strikes Alotta in the back with it.<br />
+<br />
+604H 131V 38243067X 174C Exits:NESWU&gt; <br />
+Radi flies north.<br />
+Kurik flies north.<br />
+Effren flies north.<br />
+Scur flies north.<br />
+You follow Radi north.<br />
+Dyna flies in from the south.<br />
+Northern Avenue<br />
+    You are on Northern Avenue. The road twists and turns here, cutting<br />
+through the dense vallenwood forest. High overhead, the limbs mesh to form<br />
+a thick green canopy. The avenue continues north, while you see and hear<br />
+Solace Square to the south. A small clearing opens to the west. Looking<br />
+east, you see a large vallenwood that has a building nestled among its<br />
+strong limbs. A small stairway spirals down around the trunk, ending at the<br />
+edge of the road. A small sign is posted next to the stairway.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Dyna, Always in the Kitchen for TeamFluff is standing here. (flying)<br />
+Scur the Male Minotaur is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Kurik Ko Wild Aussie Scum is standing here. (flying)<br />
+Radi the Female Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+A citizen of Solace moves quickly about.<br />
+A citizen of Solace moves quickly about.<br />
+<br />
+604H 130V 38243067X 174C Exits:NSWU&gt; <br />
+Radi flies south.<br />
+Kurik flies south.<br />
+Effren flies south.<br />
+Scur flies south.<br />
+You follow Radi south.<br />
+Dyna flies in from the north.<br />
+Solace Square<br />
+    Solace Square is a large clearing that is surrounded on all sides by<br />
+huge vallenwood trees. These trees stretch far above the ground and their<br />
+limbs provide cover and shelter to the inhabitants of Solace. The clearing<br />
+here rises slightly towards the center of the square, providing a high spot<br />
+in the center. Small roads have been cut into the dense forest to the<br />
+north, south, east, and west. On one edge of the square, there is a huge<br />
+vallenwood which is home to what appears to be a guild hall of some sorts.<br />
+A small spiral stairway leads up around the trunk of the tree and into the<br />
+thick limbs which house the guild hall.<br />
+a steaming slice of pizza is lying here. [25]<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A large fountain sits in the middle of the road, taking up space.<br />
+Dyna, Always in the Kitchen for TeamFluff is standing here. (flying)<br />
+Scur the Male Minotaur is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Kurik Ko Wild Aussie Scum is standing here. (flying)<br />
+Radi the Female Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Rev Brightblade, Renshai Action-Hero is standing here. (flying)<br />
+Tikk Tock, Father Time's Backdoor Lover is standing here. (flying)<br />
+Cobadon, Renshai Regulator is standing here. (flying)<br />
+Kylie the Female Gnome is standing here. (flying)<br />
+Sir Zeel, Renshai's Back and Ready for War is standing here. (flying)<br />
+Talrum Mir, Renshai Environmentalist is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Emili Renshai, Master of TeamPodonki is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Alotta Bass, Renshai Thumper is standing here, fighting Scat. (flying)<br />
+Rellik Ramiro Burning a Wild path to Renshai. is standing here.<br />
+Oshiot I. Gotago, Late Renshai is standing here. (flying)<br />
+Gnu Wei of the Renshai is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A citizen of Solace moves quickly about.<br />
+A stray dog slowly moves about the area, sniffing the nearby trees.<br />
+Scat Ter, Then Run For Your Life is standing here, fighting Alotta. (flying)<br />
+An old beggar hobbles along here looking for handouts. (flying)<br />
+<br />
+604H 129V 38243067X 174C Exits:NESWU&gt; <br />
+Kurik tells your group 'next time they move go straight away'<br />
+<br />
+604H 129V 38243067X 174C Exits:NESWU&gt; <br />
+Fluff tells your group 'did what'<br />
+<br />
+604H 129V 38243067X 174C Exits:NESWU&gt; <br />
+Dyna slashes Tikk extremely hard.<br />
+<br />
+604H 129V 38243067X 174C Exits:NESWU&gt; <br />
+Radi utters some strange words.<br />
+Radi's hands send forth blinding rays of sunlight!<br />
+Radi slowly fades into existence.<br />
+Rev withers as a ray of sunlight sent by Radi engulfs her!<br />
+Tikk withers as a ray of sunlight sent by Radi engulfs him!<br />
+Cobadon withers as a ray of sunlight sent by Radi engulfs him!<br />
+Kylie withers as a ray of sunlight sent by Radi engulfs her!<br />
+Zeel withers as a ray of sunlight sent by Radi engulfs him!<br />
+Zeel seems to be blinded!<br />
+Talrum withers as a ray of sunlight sent by Radi engulfs her!<br />
+Emili withers as a ray of sunlight sent by Radi engulfs her!<br />
+Alotta withers as a ray of sunlight sent by Radi engulfs her!<br />
+Alotta seems to be blinded!<br />
+Rellik withers as a ray of sunlight sent by Radi engulfs him!<br />
+Oshiot withers as a ray of sunlight sent by Radi engulfs him!<br />
+Gnu withers as a ray of sunlight sent by Radi engulfs him!<br />
+A Solace citizen withers as a ray of sunlight sent by Radi engulfs her!<br />
+A Solace citizen panics, and attempts to flee.<br />
+A Solace citizen leaves west.<br />
+Radi turns a stray dog to ashes with brilliant rays of sunlight.<br />
+You receive 1 experience.<br />
+A stray dog is dead! R.I.P.<br />
+Radi turns an old beggar to ashes with brilliant rays of sunlight.<br />
+You receive 0 experience.<br />
+An old beggar is dead! R.I.P.<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; <br />
+The death cry of an old beggar echoes from somewhere nearby...<br />
+The dog lets out a whimper and then is quiet.<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Kurik crashes into Emili in a thundering collision, knocking her to the ground!<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Solare tells your group 'they moved'<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Scur crashes into Emili in a thundering collision, knocking her to the ground!<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; <br />
+bash emili<br />
+<br />
+Suntz flies in from above.<br />
+<br />
+604H 129V 38243066X 174C Exits:NESWU&gt; You crash into Emili in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Tikk utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Ie flies in from above.<br />
+Fluff flies in from above.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Rellik tries to bash Suntz, but he passes right through his image and falls.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Talrum tries to bash Ie, but she passes right through his image and falls.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Suntz utters some strange words.<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned momentarily, recovering quickly.<br />
+Zeel is stunned momentarily, recovering quickly.<br />
+Talrum is stunned momentarily, recovering quickly.<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Alotta is stunned momentarily, recovering quickly.<br />
+Rellik is stunned momentarily, recovering quickly.<br />
+Oshiot is stunned momentarily, recovering quickly.<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+604H 129V 38243066X 174C [Radi:Perfect] [Emili:Fair] Exits:NESWU&gt; <br />
+Fluff screams as a swarm of insects engulfs her.<br />
+Tikk destroys Suntz's mirror images.<br />
+Suntz screams as a swarm of insects engulfs him.<br />
+Dyna screams as a swarm of insects engulfs him.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Scur screams as a swarm of insects engulfs him.<br />
+Effren screams as a swarm of insects engulfs him.<br />
+Kurik seems unaffected by Tikk's swarm of insects.<br />
+Radi screams as a swarm of insects engulfs her.<br />
+Scat seems unaffected by Tikk's swarm of insects.<br />
+Dyna deftly steps in front of Radi, pushing into the frey.<br />
+Dyna heroically rescues Radi.<br />
+Dyna deftly steps in front of Radi, pushing into the frey.<br />
+Dyna heroically rescues Radi.<br />
+Dyna deftly steps in front of Radi, pushing into the frey.<br />
+Dyna heroically rescues Radi.<br />
+Dyna deftly steps in front of Radi, pushing into the frey.<br />
+Dyna heroically rescues Radi.<br />
+Talrum cleaves Dyna extremely hard.<br />
+Dyna slashes Talrum very hard.<br />
+Zeel misses Dyna with his cleave.<br />
+Rellik crushes Dyna hard.<br />
+Rev slashes Dyna extremely hard.<br />
+Effren massacres Tikk with his slash.<br />
+Fluff crushes Tikk extremely hard.<br />
+Ie slowly fades into existence.<br />
+Ie bludgeons Talrum extremely hard.<br />
+You crush Emili hard.<br />
+Scur crushes Emili extremely hard.<br />
+Kurik cleaves Emili very hard.<br />
+Gnu misses Radi with his hit.<br />
+Oshiot misses Radi with his hit.<br />
+Emili barely bludgeons Radi.<br />
+Kylie misses Radi with her hit.<br />
+Cobadon cleaves Radi very hard.<br />
+Scat pierces Alotta very hard.<br />
+Scat slashes Alotta hard.<br />
+Fluff steps aside as Cobadon attempts a bash, stumbles, and falls flat on his face.<br />
+Effren focuses harshly on Alotta and utters some strange words.<br />
+<br />
+584H 129V 38243066X 174C [Radi:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Scat panics, and attempts to flee.<br />
+<br />
+584H 129V 38243066X 174C [Radi:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Kylie focuses harshly on Radi and utters some strange words.<br />
+Radi withers as a ray of sunlight sent by Kylie engulfs her!<br />
+Radi seems to be blinded!<br />
+<br />
+584H 129V 38243066X 174C [Radi:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned momentarily, recovering quickly.<br />
+Zeel is stunned momentarily, recovering quickly.<br />
+Talrum is stunned!<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Alotta is stunned momentarily, recovering quickly.<br />
+Rellik is stunned momentarily, recovering quickly.<br />
+Oshiot is stunned momentarily, recovering quickly.<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+584H 129V 38243066X 174C [Radi:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+st<br />
+<br />
+Alotta panics, and attempts to flee.<br />
+Alotta flies west.<br />
+<br />
+584H 129V 38243066X 174C [Radi:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Radi panics, and attempts to flee.<br />
+Radi flies west.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Revo flies in from above.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Revo flies north.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Revo flies in from the north.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Tikk utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+bash emili<br />
+<br />
+Tikk steps aside as Fluff attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+584H 129V 38243066X 174C [Grome:V.Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Revo screams as a swarm of insects engulfs him.<br />
+Scat screams as a swarm of insects engulfs him.<br />
+Fluff screams as a swarm of insects engulfs her.<br />
+Suntz screams as a swarm of insects engulfs him.<br />
+Dyna screams as a swarm of insects engulfs him.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Scur screams as a swarm of insects engulfs him.<br />
+Effren screams as a swarm of insects engulfs him.<br />
+Kurik screams as a swarm of insects engulfs him.<br />
+Revo seems unaffected by Tikk's swarm of insects.<br />
+Scat screams as a swarm of insects engulfs him.<br />
+Fluff screams as a swarm of insects engulfs her.<br />
+Suntz screams as a swarm of insects engulfs him.<br />
+Dyna seems unaffected by Tikk's swarm of insects.<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+Scur screams as a swarm of insects engulfs him.<br />
+Effren seems unaffected by Tikk's swarm of insects.<br />
+Kurik seems unaffected by Tikk's swarm of insects.<br />
+Scat pierces Tikk extremely hard.<br />
+Scat misses Tikk with his slash.<br />
+Revo cleaves Tikk extremely hard.<br />
+Emili bludgeons YOU very hard.<br />
+Dyna slashes Talrum hard.<br />
+Zeel misses Dyna with his cleave.<br />
+Rellik crushes Dyna extremely hard.<br />
+Rev barely slashes Dyna.<br />
+Fluff crushes Tikk extremely hard.<br />
+Suntz misses Rellik with his hit.<br />
+You crush Emili very hard.<br />
+Scur misses Emili with his crush.<br />
+Kurik cleaves Emili extremely hard.<br />
+Suntz utters some strange words.<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned momentarily, recovering quickly.<br />
+Zeel is stunned momentarily, recovering quickly.<br />
+Talrum is stunned momentarily, recovering quickly.<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Rellik is stunned momentarily, recovering quickly.<br />
+Oshiot is stunned momentarily, recovering quickly.<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+542H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Rev heroically rescues Talrum.<br />
+<br />
+542H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Oshiot utters some strange words.<br />
+Revo is shredded by shards of ice.<br />
+Scat is shredded by shards of ice.<br />
+Fluff is shredded by shards of ice.<br />
+Oshiot destroys Ie's mirror images.<br />
+Ie is shredded by shards of ice.<br />
+Suntz manages to avoid the brunt of the storm.<br />
+Dyna is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Scur is shredded by shards of ice.<br />
+Effren is shredded by shards of ice.<br />
+Kurik is shredded by shards of ice.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Effren attempts to strike at Tikk with his halberd.<br />
+Effren slashes Tikk extremely hard.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned!<br />
+Zeel is stunned momentarily, recovering quickly.<br />
+Talrum is stunned!<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Rellik is stunned momentarily, recovering quickly.<br />
+Oshiot is stunned momentarily, recovering quickly.<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Scat panics, and attempts to flee.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Solare utters some strange words.<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned momentarily, recovering quickly.<br />
+Zeel is stunned momentarily, recovering quickly.<br />
+Talrum is stunned momentarily, recovering quickly.<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Rellik is stunned!<br />
+Oshiot is stunned!<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Dyna focuses his purity on Rev's head!<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Tikk steps aside as Scur attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Emili steps aside as Kurik attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; You are already standing.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; <br />
+Scat flies in from the south.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Fair] Exits:NESWU&gt; You crash into Emili in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+520H 129V 38243066X 174C [Grome:Good] [Emili:Bad] Exits:NESWU&gt; <br />
+Scat screams as a swarm of insects engulfs him.<br />
+Tikk destroys Solare's mirror images.<br />
+Solare screams as a swarm of insects engulfs him.<br />
+Revo screams as a swarm of insects engulfs him.<br />
+Fluff seems unaffected by Tikk's swarm of insects.<br />
+Suntz seems unaffected by Tikk's swarm of insects.<br />
+Dyna screams as a swarm of insects engulfs him.<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+Scur seems unaffected by Tikk's swarm of insects.<br />
+Effren screams as a swarm of insects engulfs him.<br />
+Kurik screams as a swarm of insects engulfs him.<br />
+Scat screams as a swarm of insects engulfs him.<br />
+Solare seems unaffected by Tikk's swarm of insects.<br />
+Revo screams as a swarm of insects engulfs him.<br />
+Fluff screams as a swarm of insects engulfs her.<br />
+Suntz seems unaffected by Tikk's swarm of insects.<br />
+Dyna screams as a swarm of insects engulfs him.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Scur screams as a swarm of insects engulfs him.<br />
+Effren screams as a swarm of insects engulfs him.<br />
+Kurik screams as a swarm of insects engulfs him.<br />
+Effren deftly steps in front of Solare, pushing into the frey.<br />
+Effren heroically rescues Solare.<br />
+Effren slashes Talrum extremely hard.<br />
+Scat massacres Tikk with his pierce.<br />
+Scat misses Tikk with his slash.<br />
+Solare crushes Rev.<br />
+Dyna slashes Rev very hard.<br />
+Rev misses Dyna with her slash.<br />
+Gnu misses Suntz with his hit.<br />
+Cobadon cleaves Suntz very hard.<br />
+Revo massacres Tikk with his cleave.<br />
+Emili bludgeons YOU hard.<br />
+Zeel misses Dyna with his cleave.<br />
+Fluff crushes Tikk extremely hard.<br />
+You crush Emili hard.<br />
+Scur crushes Emili extremely hard.<br />
+Kurik cleaves Emili extremely hard.<br />
+Tikk misses Dyna with his bludgeon.<br />
+Tikk panics, and attempts to flee.<br />
+Tikk flies east.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Cobadon stands up.<br />
+Suntz utters some strange words.<br />
+A sudden wind rushes by you.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Cobadon crashes into Solare in a thundering collision, knocking him to the ground!<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Revo crashes into Oshiot in a thundering collision, knocking him to the ground!<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Radi flies in from the west.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+You hear the sound of an animal whimpering nearby, then silence.<br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Rev is hit by a spray of gleaming indigo!<br />
+Cobadon is blasted by a spray of scintillating blue!<br />
+Cobadon is hit by a spray of gleaming indigo!<br />
+Kylie is hit by a spray of gleaming indigo!<br />
+Zeel is struck by a spray of murky violet!<br />
+Talrum is struck by a spray of murky violet!<br />
+Emili is hit by a spray of gleaming indigo!<br />
+Rellik is caught in a spray of shimmering red!<br />
+Oshiot is blasted by a spray of scintillating blue!<br />
+Gnu is caught in a spray of bright orange!<br />
+Gnu is caught in a spray of shimmering red!<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+bash emili<br />
+<br />
+Dyna yells and leaps into the fray.<br />
+You fight with more accuracy.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:V.Bad] Exits:NESWU&gt; <br />
+Radi utters some strange words.<br />
+Radi's hands send forth blinding rays of sunlight!<br />
+Radi slowly fades into existence.<br />
+Rev withers as a ray of sunlight sent by Radi engulfs her!<br />
+Cobadon withers as a ray of sunlight sent by Radi engulfs him!<br />
+Kylie withers as a ray of sunlight sent by Radi engulfs her!<br />
+Zeel withers as a ray of sunlight sent by Radi engulfs him!<br />
+Talrum withers as a ray of sunlight sent by Radi engulfs her!<br />
+Emili withers as a ray of sunlight sent by Radi engulfs her!<br />
+Rellik withers as a ray of sunlight sent by Radi engulfs him!<br />
+Oshiot withers as a ray of sunlight sent by Radi engulfs him!<br />
+Oshiot seems to be blinded!<br />
+Gnu withers as a ray of sunlight sent by Radi engulfs him!<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Fluff stands up.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Merson arrives from the south.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+The insect swarm has been dissipated by the wind.<br />
+Radi bludgeons Rev hard.<br />
+Revo annihilates Oshiot with his cleave.<br />
+Effren massacres Talrum with his slash.<br />
+Solare misses Rev with his crush.<br />
+Dyna slashes Rev hard.<br />
+Rev misses Dyna with her slash.<br />
+Gnu misses Suntz with his hit.<br />
+Cobadon cleaves Suntz very hard.<br />
+Emili misses you with her bludgeon.<br />
+Zeel misses Dyna with his cleave.<br />
+You crush Emili hard.<br />
+Scur misses Emili with his crush.<br />
+Kurik cleaves Emili extremely hard.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Fluff flies east.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Suntz utters some strange words.<br />
+Merson is stunned!<br />
+Rev is stunned momentarily, recovering quickly.<br />
+Cobadon is stunned momentarily, recovering quickly.<br />
+Kylie is stunned momentarily, recovering quickly.<br />
+Zeel is stunned!<br />
+Talrum is stunned momentarily, recovering quickly.<br />
+Emili is stunned momentarily, recovering quickly.<br />
+Rellik is stunned momentarily, recovering quickly.<br />
+Oshiot is stunned momentarily, recovering quickly.<br />
+Gnu is stunned momentarily, recovering quickly.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Effren attempts to strike at Talrum with his halberd.<br />
+Effren slashes Talrum very hard.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Fluff flies in from the east.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Fluff flies south.<br />
+<br />
+486H 129V 38243066X 174C [Grome:Good] [Emili:Awful] Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Merson is caught in a spray of bright orange!<br />
+Merson seems to be blinded!<br />
+Merson is blasted by a spray of scintillating blue!<br />
+Merson freezes in place.<br />
+Rev is caught in a spray of shimmering red!<br />
+Cobadon is struck by a spray of murky violet!<br />
+Kylie is blasted by a spray of scintillating blue!<br />
+Zeel is struck by a spray of vibrant green!<br />
+Talrum is blasted by a spray of scintillating blue!<br />
+A spray of yellow shatters Emili into hundreds of yellowish pieces.<br />
+You receive 0 experience.<br />
+Emili is dead! R.I.P.<br />
+Rellik is caught in a spray of shimmering red!<br />
+Oshiot is caught in a spray of shimmering red!<br />
+Oshiot seems weaker.<br />
+Gnu is blasted by a spray of scintillating blue!<br />
+Gnu freezes in place.<br />
+<br />
+486H 129V 38243066X 174C [Emili:Dying] Exits:NESWU&gt; <br />
+The death cry of Emili echoes from somewhere nearby...<br />
+Emili sinks gently to the ground.<br />
+Emili stops following Gnu.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Scur stands up.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+st<br />
+<br />
+Dyna gets a very large pile of coins from the corpse of Emili.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Kurik stands up.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Alotta flies in from the west.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; Radi bludgeons Rev very hard.<br />
+Revo massacres Oshiot with his cleave.<br />
+Effren slashes Talrum extremely hard.<br />
+Solare misses Rev with his crush.<br />
+Dyna slashes Rev very hard.<br />
+Dyna blocks Rev's blow with a quick raise of his shield.<br />
+Cobadon cleaves Suntz very hard.<br />
+You couldn't find what you were looking for.<br />
+Kurik crashes into Alotta in a thundering collision, knocking her to the ground!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Fluff flies in from the south.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; You are already standing.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Rev gets a dark cudgel from the corpse of Emili.<br />
+Rev gets a sky blue robe etched with golden runes from the corpse of Emili.<br />
+Rev gets a white dragon scale shield from the corpse of Emili.<br />
+Rev gets a pair of supple leather boots from the corpse of Emili.<br />
+Rev gets a sky blue tunic from the corpse of Emili.<br />
+Rev gets a holy insignia of Paladine from the corpse of Emili.<br />
+Rev gets a spherical diamond pendant from the corpse of Emili.<br />
+Rev gets a silk ribbon from the corpse of Emili.<br />
+Rev gets a ring of carved bone from the corpse of Emili.<br />
+Rev gets an aeolipile from the corpse of Emili.<br />
+Rev gets a tattered tome etched with gold from the corpse of Emili.<br />
+Rev gets a ruby and diamond necklace from the corpse of Emili.<br />
+Rev gets a glowing scroll of recall from the corpse of Emili.<br />
+Rev gets a glowing scroll of recall from the corpse of Emili.<br />
+Rev gets a small wooden chest from the corpse of Emili.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Dyna gets an extra silvery potion from the corpse of Emili.<br />
+Dyna gets some fine coal dust from the corpse of Emili.<br />
+Dyna gets a large waterskin from the corpse of Emili.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Suntz utters some strange words.<br />
+Suntz's hands issue a spray of prismatic color!<br />
+Alotta is caught in a spray of shimmering red!<br />
+A spray of orange dissolves Merson into a pool of ochreous slime.<br />
+You receive 0 experience.<br />
+Merson is dead! R.I.P.<br />
+Rev is struck by a spray of murky violet!<br />
+Cobadon is caught in a spray of radiant yellow!<br />
+Cobadon is caught in a spray of bright orange!<br />
+Kylie is blasted by a spray of scintillating blue!<br />
+Zeel is caught in a spray of shimmering red!<br />
+Zeel seems weaker.<br />
+Talrum is struck by a spray of vibrant green!<br />
+Talrum is caught in a spray of shimmering red!<br />
+Rellik is struck by a spray of vibrant green!<br />
+Rellik is caught in a spray of shimmering red!<br />
+Oshiot is struck by a spray of vibrant green!<br />
+Gnu is hit by a spray of gleaming indigo!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Radi utters some strange words.<br />
+Radi heals Radi.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+The death cry of Merson echoes from somewhere nearby...<br />
+Revo crashes into Cobadon in a thundering collision, knocking him to the ground!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Effren attempts to strike at Talrum with his halberd.<br />
+Effren slashes Talrum very hard.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Quedmyer arrives from the west.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Rev steps aside as Fluff attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Quedmyer is hit by a spray of gleaming indigo!<br />
+Quedmyer's face goes blank and he begins to drool.<br />
+Alotta is caught in a spray of shimmering red!<br />
+Rev is caught in a spray of shimmering red!<br />
+Rev seems weaker.<br />
+Cobadon is blasted by a spray of scintillating blue!<br />
+Kylie is blasted by a spray of scintillating blue!<br />
+Kylie is struck by a spray of vibrant green!<br />
+Zeel is struck by a spray of vibrant green!<br />
+Talrum is caught in a spray of bright orange!<br />
+Rellik is blasted by a spray of scintillating blue!<br />
+A spray of indigo flows over Oshiot, ripping out his mind.<br />
+You receive 0 experience.<br />
+Oshiot is dead! R.I.P.<br />
+Gnu is struck by a spray of murky violet!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+The death cry of Oshiot echoes from somewhere nearby...<br />
+Oshiot stops following Gnu.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Dyna gets a pile of coins from the corpse of Oshiot.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Solare stands up.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+bash alotta<br />
+<br />
+Solare utters some strange words.<br />
+Solare conjures a writhing mass of inky black tentacles!<br />
+Quedmyer screams in pain as inky black tentacles constrict him.<br />
+Alotta screams in pain as inky black tentacles constrict her.<br />
+Rev screams in pain as inky black tentacles constrict her.<br />
+Cobadon screams in pain as inky black tentacles constrict him.<br />
+Kylie is strangled to death by the writhing black tentacles.<br />
+You receive 0 experience.<br />
+Kylie is dead! R.I.P.<br />
+Zeel screams in pain as inky black tentacles constrict him.<br />
+Talrum screams in pain as inky black tentacles constrict her.<br />
+Rellik screams in pain as inky black tentacles constrict him.<br />
+Gnu screams in pain as inky black tentacles constrict him.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Rev attempts to break free of the black tentacles, but fails!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; You try to bash Alotta, but you miss and tumble forward onto your face.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+The death cry of Kylie echoes from somewhere nearby...<br />
+Kylie stops following Gnu.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Scat flies in from the south.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Scat appears to be dancing around the room.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Talrum screams in pain as inky black tentacles constrict her.<br />
+Rev screams in pain as inky black tentacles constrict her.<br />
+Gnu screams in pain as inky black tentacles constrict him.<br />
+Zeel screams in pain as inky black tentacles constrict him.<br />
+Rellik screams in pain as inky black tentacles constrict him.<br />
+You crush Alotta hard.<br />
+Quedmyer misses Ie with his pierce.<br />
+Fluff crushes Rev extremely hard.<br />
+Kurik massacres Alotta with his cleave.<br />
+Alotta smites Kurik hard.<br />
+Effren hits the tentacles constricting Talrum instead!<br />
+<br />
+Dyna slashes Rev hard.<br />
+Cobadon misses Suntz with his cleave.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+st<br />
+<br />
+Rev attempts to break free of the black tentacles, but fails!<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Scur hits the tentacles constricting Rev instead!<br />
+<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Talrum attempts to break free of the black tentacles, but fails!<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+Quedmyer panics, and attempts to flee.<br />
+Quedmyer leaves west.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Fair] Exits:NESWU&gt; <br />
+bash alotta<br />
+<br />
+Suntz utters some strange words.<br />
+Suntz's hands issue a spray of prismatic color!<br />
+Alotta is caught in a spray of radiant yellow!<br />
+Alotta is caught in a spray of bright orange!<br />
+Rev is hit by a spray of gleaming indigo!<br />
+Cobadon is struck by a spray of vibrant green!<br />
+Zeel is caught in a spray of radiant yellow!<br />
+A spray of green strikes Talrum and she dies in agony.<br />
+You receive 0 experience.<br />
+Talrum is dead! R.I.P.<br />
+Rellik is caught in a spray of bright orange!<br />
+Gnu is struck by a spray of murky violet!<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:V.Bad] Exits:NESWU&gt; <br />
+The death cry of Talrum echoes from somewhere nearby...<br />
+Talrum stops following Gnu.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:V.Bad] Exits:NESWU&gt; <br />
+Kylie arrives from the north.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:V.Bad] Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Ie slowly fades into existence.<br />
+A spray of red rips Kylie into tiny crimson shreds.<br />
+You receive 0 experience.<br />
+Kylie is dead! R.I.P.<br />
+Alotta is caught in a spray of bright orange!<br />
+Rev is struck by a spray of murky violet!<br />
+Cobadon is struck by a spray of vibrant green!<br />
+Zeel is struck by a spray of murky violet!<br />
+Rellik is hit by a spray of gleaming indigo!<br />
+Rellik is caught in a spray of shimmering red!<br />
+Gnu is blasted by a spray of scintillating blue!<br />
+A spray of green strikes Gnu and he dies in agony.<br />
+You receive 0 experience.<br />
+Gnu is dead! R.I.P.<br />
+Effren gets a very large pile of coins from the corpse of Talrum.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:V.Bad] Exits:NESWU&gt; <br />
+The death cry of Kylie echoes from somewhere nearby...<br />
+The death cry of Gnu echoes from somewhere nearby...<br />
+Rellik stops following Gnu.<br />
+Gnu now follows Rellik.<br />
+Rellik is the new leader of Gnu's group.<br />
+Gnu stops following Rellik.<br />
+Alotta stops following Gnu.<br />
+Alotta now follows Rellik.<br />
+Zeel stops following Gnu.<br />
+Zeel now follows Rellik.<br />
+Cobadon stops following Gnu.<br />
+Cobadon now follows Rellik.<br />
+Tikk stops following Gnu.<br />
+Tikk now follows Rellik.<br />
+Rev stops following Gnu.<br />
+Rev now follows Rellik.<br />
+Dyna gets a very large pile of coins from the corpse of Gnu.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:V.Bad] Exits:NESWU&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of prismatic color!<br />
+Alotta is hit by a spray of gleaming indigo!<br />
+A spray of violet strikes Rev, melting her into a lifeless paste.<br />
+You receive 0 experience.<br />
+Rev is dead! R.I.P.<br />
+Cobadon is blasted by a spray of scintillating blue!<br />
+A spray of green strikes Zeel and he dies in agony.<br />
+You receive 0 experience.<br />
+Zeel is dead! R.I.P.<br />
+Rellik is struck by a spray of murky violet!<br />
+A spray of green strikes Rellik and he dies in agony.<br />
+You receive 0 experience.<br />
+Rellik is dead! R.I.P.<br />
+Effren gets a sandy grey quiver from the corpse of Gnu.<br />
+Effren gets a pair of supple leather arm guards from the corpse of Gnu.<br />
+Effren gets a pair of archer's gloves from the corpse of Gnu.<br />
+Effren gets a pair of leather boots from the corpse of Gnu.<br />
+Effren gets a pair of bright green dragonscale leggings from the corpse of Gnu.<br />
+Effren gets a pirate's eye patch from the corpse of Gnu.<br />
+Effren gets a sterling breastplate from the corpse of Gnu.<br />
+Effren gets a heavy wool cape from the corpse of Gnu.<br />
+Effren gets a large dark-wood bow from the corpse of Gnu.<br />
+Effren gets a flask of clear liquid from the corpse of Gnu.<br />
+Effren gets a small wooden chest from the corpse of Gnu.<br />
+<br />
+486H 129V 38243066X 174C [Kurik:Good] [Alotta:Awful] Exits:NESWU&gt; <br />
+Radi utters some strange words.<br />
+Radi's hands send forth blinding rays of sunlight!<br />
+Radi turns Alotta to ashes with brilliant rays of sunlight.<br />
+You receive 0 experience.<br />
+Alotta is dead! R.I.P.<br />
+Cobadon withers as a ray of sunlight sent by Radi engulfs him!<br />
+<br />
+486H 129V 38243066X 174C [Alotta:Dying] Exits:NESWU&gt; <br />
+The death cry of Rellik echoes from somewhere nearby...<br />
+Rev stops following Rellik.<br />
+Tikk stops following Rellik.<br />
+Cobadon stops following Rellik.<br />
+Zeel stops following Rellik.<br />
+Alotta stops following Rellik.<br />
+The death cry of Alotta echoes from somewhere nearby...<br />
+The death cry of Rev echoes from somewhere nearby...<br />
+The death cry of Zeel echoes from somewhere nearby...<br />
+Dyna gets a very large pile of coins from the corpse of Zeel.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Suntz misses Cobadon with his hit.<br />
+Suntz misses Cobadon with his hit.<br />
+Cobadon cleaves Suntz very hard.<br />
+Effren gets a black edged kitana from the corpse of Rev.<br />
+Effren gets an iron shield from the corpse of Rev.<br />
+Effren gets a pair of bronze vambraces from the corpse of Rev.<br />
+Effren gets a pair of bronze gauntlets from the corpse of Rev.<br />
+Effren gets a bronze helmet from the corpse of Rev.<br />
+Effren gets a suit of heavy brigandine from the corpse of Rev.<br />
+Effren gets a very large pile of coins from the corpse of Rev.<br />
+Effren gets a glowing scroll of recall from the corpse of Rev.<br />
+Effren gets a glowing scroll of recall from the corpse of Rev.<br />
+Effren gets a ruby and diamond necklace from the corpse of Rev.<br />
+Effren gets a tattered tome etched with gold from the corpse of Rev.<br />
+Effren gets an aeolipile from the corpse of Rev.<br />
+Effren gets a ring of carved bone from the corpse of Rev.<br />
+Effren gets a silk ribbon from the corpse of Rev.<br />
+Effren gets a spherical diamond pendant from the corpse of Rev.<br />
+Effren gets a holy insignia of Paladine from the corpse of Rev.<br />
+Effren gets a sky blue tunic from the corpse of Rev.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Dyna gets a small wooden chest from the corpse of Rev.<br />
+Dyna gets a pair of supple leather boots from the corpse of Rev.<br />
+Dyna gets a white dragon scale shield from the corpse of Rev.<br />
+Dyna gets a sky blue robe etched with golden runes from the corpse of Rev.<br />
+Dyna gets a dark cudgel from the corpse of Rev.<br />
+Dyna gets a bowl of Otik's spiced potatoes from the corpse of Rev.<br />
+Dyna gets a slice of pepperoni pizza from the corpse of Rev.<br />
+Dyna gets a slice of pepperoni pizza from the corpse of Rev.<br />
+Dyna gets a slice of pepperoni pizza from the corpse of Rev.<br />
+Dyna gets the Hammer of Kzzaz from the corpse of Rev.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Effren gets a large pile of coins from the corpse of Alotta.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Scur gets a slender spiked war axe from the corpse of Zeel.<br />
+Scur gets a bronze shield from the corpse of Zeel.<br />
+Scur gets a pair of bronze vambraces from the corpse of Zeel.<br />
+Scur gets a pair of bronze gauntlets from the corpse of Zeel.<br />
+Scur gets a bronze helmet from the corpse of Zeel.<br />
+Scur gets some crossed leather straps, adorned with spikes from the corpse of Zeel.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Fluff stands up.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Ie slowly fades into existence.<br />
+Cobadon is caught in a spray of radiant yellow!<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; You stand up.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; Solare tells your group 'Tic in 10!'<br />
+You couldn't find what you were looking for.<br />
+Radi gets a small wooden chest from the corpse of Rev.<br />
+Radi gets a small bag of flash powder from the corpse of Rev.<br />
+Radi gets a waterskin from the corpse of Rev.<br />
+Radi gets a waterskin from the corpse of Rev.<br />
+Radi gets a slice of pepperoni pizza from the corpse of Rev.<br />
+Radi gets a slice of pepperoni pizza from the corpse of Rev.<br />
+<br />
+486H 129V 38243066X 174C Exits:NESWU&gt; <br />
+A Solace peacekeeper arrives from the north.<br />
+A Solace peacekeeper says 'Aha!  There you are!'<br />
+A Solace peacekeeper crashes into Suntz in a thundering collision, knocking him to the ground!<br />
+Effren divides 2992 coins equally among the group members present.<br />
+Radi is zapped by a spiritual hammer and instantly drops it.<br />
+A spiritual hammer disintegrates.<br />
+Radi is zapped by some spiritual vambraces and instantly drops it.<br />
+Some spiritual vambraces disintegrates.<br />
+Radi is zapped by some spiritual gauntlets and instantly drops it.<br />
+Some spiritual gauntlets disintegrates.<br />
+Radi is zapped by some spiritual boots and instantly drops it.<br />
+Some spiritual boots disintegrates.<br />
+Radi is zapped by some spiritual greaves and instantly drops it.<br />
+Some spiritual greaves disintegrates.<br />
+Radi is zapped by a spiritual helmet and instantly drops it.<br />
+A spiritual helmet disintegrates.<br />
+Radi is zapped by some spiritual plate mail and instantly drops it.<br />
+Some spiritual plate mail disintegrates.<br />
+Radi gets a small wooden chest from the corpse of Alotta.<br />
+Radi gets a bright ball of light from the corpse of Alotta.<br />
+Radi gets a slice of pepperoni pizza from the corpse of Alotta.<br />
+Radi gets a glowing scroll of recall from the corpse of Alotta.<br />
+Radi gets a milky potion of see invisible from the corpse of Alotta.<br />
+Radi gets a milky potion of see invisible from the corpse of Alotta.<br />
+<br />
+486H 129V 38243066X 446C Exits:NESWU&gt; <br />
+A Solace peacekeeper arrives from above.<br />
+A Solace peacekeeper says 'Aha!  There you are!'<br />
+A Solace peacekeeper focuses harshly on Suntz and utters some strange words.<br />
+Flames leap from a Solace peacekeeper's fingertips and burn Suntz.<br />
+A plain component pouch in use by Suntz is destroyed.<br />
+A Solace peacekeeper massacres Suntz with his slash.<br />
+A Solace peacekeeper massacres Suntz with his slash.<br />
+A Solace peacekeeper massacres Suntz with his slash.<br />
+Ie bludgeons Cobadon very hard.<br />
+Cobadon cleaves Suntz extremely hard.<br />
+<br />
+486H 129V 38243066X 446C Exits:NESWU&gt; <br />
+A Solace peacekeeper arrives from the east.<br />
+A Solace peacekeeper says 'Aha!  There you are!'<br />
+A Solace peacekeeper focuses harshly on Suntz and utters some strange words.<br />
+Flames leap from a Solace peacekeeper's fingertips and burn Suntz.<br />
+A Solace peacekeeper massacres Suntz with his slash.<br />
+Suntz is dead! R.I.P.<br />
+The death cry of Suntz echoes from somewhere nearby...<br />
+Suntz stops following Solare.<br />
+Alotta arrives from the north.<br />
+Kurik gets a large pile of coins from the corpse of Suntz.<br />
+<br />
+486H 129V 38243066X 446C Exits:NESWU&gt; <br />
+Alotta leaves up.<br />
+<br />
+486H 129V 38243066X 446C Exits:NESWU&gt; <br />
+bash cobadon<br />
+<br />
+Revo crashes into Cobadon in a thundering collision, knocking him to the ground!<br />
+Cobadon is stunned, but will likely regain consciousness again.<br />
+<br />
+486H 129V 38243066X 446C Exits:NESWU&gt; Cobadon doesn't recover as you deliver the bash -- he is dead.<br />
+You receive 0 experience.<br />
+Cobadon is dead! R.I.P.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='321'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=321">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="321">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

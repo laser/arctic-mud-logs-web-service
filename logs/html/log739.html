@@ -1,0 +1,1386 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 739-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='739'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+A skirmish that could be worse!</font></b>
+<p>
+POV: 
+Mads<p>
+Log Rating:
+2.2143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+A morning fight happens south of the fabled High Clerist Tower, where many area spells fly away but only a few deaths occur! Santino says goodbye for his duplicated eq, thou!</i>
+<p>
+<p>
+
+36H 160V 1X 3306C Mem:4 Exits:EW&gt; <br />
+Holmes flies west.<br />
+Elyana flies west.<br />
+Lara flies west.<br />
+You follow Holmes west.<br />
+Memin flies in from the east.<br />
+The Knights' High Road<br />
+    Stretching out from horizon to horizon, the Knights' High Road passes<br />
+through the Solamnic Plain, connecting the city of Vingaard with the lord<br />
+city of Palanthas. The shining jewel of Solamnia, Palanthas lies far to the<br />
+west and north, beyond Westgate Pass in the Vingaard Mountains, while the<br />
+city of Vingaard lies east-south-east of here. The tall grasses of the<br />
+plains seem to go on forever, gently swaying back and forth with the<br />
+breeze. Barely visible far to the west are a few mountain peaks.<br />
+Memin, Conjurer and Father of Ankka's Ducklings is standing here. (flying) (invisible) (red aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Lara Ellypse, Prime Magi of the Fallen Glory is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Seq Rarufeefu, the Goblin King is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Isengrim the Male Wild Elf is sitting here, fighting Bienca. (flying)<br />
+. . . has a tough exterior.<br />
+Loony Mukta, Mhwaka Battle Badger is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Santino, the Prodigal Son is standing here, fighting Padme. (flying)<br />
+. . . has a tough exterior.<br />
+Teligbo, The Fire Gatherer and Wood Thrower is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Denise Demonic, Daughter of Darkness is standing here. (flying) (invisible) (red aura)<br />
+. . . is surrounded by a white mist.<br />
+You see the outline of a life form here, carrying: a silver banded locket; a glowing scroll of recall.<br />
+Lachplesis the Half Human is sitting here, fighting Goka. (flying)<br />
+. . . has a tough exterior.<br />
+Ankor, Friendly Paladin is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Nasir the Original Dumbass is sitting here, fighting Berkutas. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here, fighting Nasir. (flying) (invisible)<br />
+Goka 'Ll the Blood Sea Randomers is standing here, fighting Lachplesis. (flying)<br />
+Bienca, Golden Haired, One Of The Seven Angels is standing here, fighting Isengrim. (flying)<br />
+Viran Funny, Ruenglish Master is standing here. (red aura)<br />
+Padme the Queen Armadillo is sitting here, fighting Santino. (flying)<br />
+<br />
+436H 158V 1X 3306C Mem:4 Exits:NE&gt; <br />
+---------------&gt;&gt;&gt; BASHED BY &lt;&lt;--------------------------------&gt;&gt; Seq &lt;&lt;&lt;-------<br />
+<br />
+416H 158V 1X 3306C [Me:V.Good] [Seq:Perfect] Mem:4 Exits:NE&gt; <br />
+Teri comes out of hiding.<br />
+----&lt;&lt;Teri &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Elyana &lt;&lt;-----<br />
+<br />
+416H 158V 1X 3306C [Me:V.Good] [Seq:Perfect] Mem:4 Exits:NE&gt; <br />
+A warm glow surrounds Elyana as some of her wounds regenerate.<br />
+<br />
+416H 158V 1X 3306C [Me:V.Good] [Seq:Perfect] Mem:4 Exits:NE&gt; gro<br />
+<br />
+Holmes twists his ring nervously.<br />
+There is lightning in the sky.<br />
+Holmes shudders slightly and begins to glow from within.<br />
+<br />
+416H 158V 1X 3306C [Me:V.Good] [Seq:Perfect] Mem:4 Exits:NE&gt; <br />
+Holmes utters some strange words.<br />
+Holmes creates a lightning storm.<br />
+Holmes slowly fades into existence.<br />
+Seq screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Isengrim screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Loony screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Santino screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Teligbo screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Holmes destroys Denise's mirror images.<br />
+Denise screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Teri screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Lachplesis screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Ankor screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Nasir screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+<br />
+416H 158V 1X 3306C [Me:V.Good] [Seq:Good] Mem:4 Exits:NE&gt; <br />
+Denise utters some strange words.<br />
+Denise conjures a writhing mass of inky black tentacles!<br />
+Denise destroys Memin's mirror images.<br />
+Memin screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Denise destroys Lara's mirror images.<br />
+Lara screams in pain as inky black tentacles constrict her.<br />
+Elyana screams in pain as inky black tentacles constrict her.<br />
+Holmes screams in pain as inky black tentacles constrict him.<br />
+Berkutas screams in pain as inky black tentacles constrict him.<br />
+Goka screams in pain as inky black tentacles constrict him.<br />
+Bienca screams in pain as inky black tentacles constrict her.<br />
+Viran screams in pain as inky black tentacles constrict him.<br />
+Padme screams in pain as inky black tentacles constrict her.<br />
+<br />
+381H 158V 1X 3306C [Me:Good] [Seq:Good] Mem:4 Exits:NE&gt; <br />
+Memin utters some strange words.<br />
+Memin's hands issue a spray of color!<br />
+Seq is caught in a spray of radiant yellow!<br />
+Seq is caught in a spray of shimmering red!<br />
+Isengrim is caught in a spray of radiant yellow!<br />
+Loony is caught in a spray of radiant yellow!<br />
+Santino is caught in a spray of radiant yellow!<br />
+Santino is caught in a spray of shimmering red!<br />
+Teligbo is caught in a spray of shimmering red!<br />
+Denise is caught in a spray of radiant yellow!<br />
+Teri is caught in a spray of shimmering red!<br />
+Teri seems weaker.<br />
+Lachplesis is caught in a spray of radiant yellow!<br />
+Ankor is caught in a spray of shimmering red!<br />
+Nasir is caught in a spray of radiant yellow!<br />
+<br />
+381H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Loony utters the words, 'gjigrul'.<br />
+Loony's hands send forth blinding rays of sunlight!<br />
+Memin withers as a ray of sunlight sent by Loony engulfs him!<br />
+You wither as a ray of sunlight engulfs you!<br />
+Lara withers as a ray of sunlight sent by Loony engulfs her!<br />
+Elyana withers as a ray of sunlight sent by Loony engulfs her!<br />
+Holmes withers as a ray of sunlight sent by Loony engulfs him!<br />
+Berkutas withers as a ray of sunlight sent by Loony engulfs him!<br />
+Goka withers as a ray of sunlight sent by Loony engulfs him!<br />
+Bienca withers as a ray of sunlight sent by Loony engulfs her!<br />
+Viran withers as a ray of sunlight sent by Loony engulfs him!<br />
+Viran seems to be blinded!<br />
+Padme withers as a ray of sunlight sent by Loony engulfs her!<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Seq is hit by a spray of gleaming indigo!<br />
+Isengrim is struck by a spray of vibrant green!<br />
+Loony is caught in a spray of bright orange!<br />
+Santino is blasted by a spray of scintillating blue!<br />
+Teligbo is caught in a spray of radiant yellow!<br />
+Denise is blasted by a spray of scintillating blue!<br />
+Teri is caught in a spray of shimmering red!<br />
+Lachplesis is blasted by a spray of scintillating blue!<br />
+Lachplesis freezes in place.<br />
+Ankor is struck by a spray of vibrant green!<br />
+Nasir is caught in a spray of shimmering red!<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Goka &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Lachplesis &lt;&lt;-----<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Isengrim stands up.<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; stand<br />
+<br />
+Nasir stands up.<br />
+----&lt;&lt;Isengrim &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Lara &lt;&lt;-----<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Berkutas panics, and attempts to flee.<br />
+Berkutas flies north.<br />
+<br />
+347H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; gro<br />
+<br />
+Viran misses Denise with his slash.<br />
+Viran misses Denise with his slash.<br />
+Lara misses Denise with her bludgeon.<br />
+Lara misses Denise with her bludgeon.<br />
+Ankor misses Holmes with his slash.<br />
+Teligbo misses Holmes with his crush.<br />
+Holmes misses Seq with his bludgeon.<br />
+Teri misses Elyana with her crush.<br />
+Seq drains YOU extremely hard.<br />
+You bludgeon Seq extremely hard.<br />
+Padme slashes Santino very hard.<br />
+Padme misses Santino with her slash.<br />
+Santino massacres Padme with his slash.<br />
+Santino massacres Padme with his slash.<br />
+Bienca smites Isengrim very hard.<br />
+Bienca smites Isengrim extremely hard.<br />
+Goka massacres Lachplesis with his crush.<br />
+Goka crushes Lachplesis extremely hard.<br />
+<br />
+331H 158V 1X 3306C [Me:Good] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+---------------&gt;&gt;&gt; BASHED BY &lt;&lt;--------------------------------&gt;&gt; Teligbo &lt;&lt;&lt;-------<br />
+<br />
+306H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+---------------&gt;&gt;&gt; BASHED BY &lt;&lt;--------------------------------&gt;&gt; Seq &lt;&lt;&lt;-------<br />
+<br />
+286H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Santino &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Elyana &lt;&lt;-----<br />
+<br />
+286H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Holmes utters some strange words.<br />
+Holmes creates a lightning storm.<br />
+Seq screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Isengrim screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Loony screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Santino screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Teligbo screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Denise screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Teri screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Lachplesis screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Ankor screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Nasir screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+<br />
+286H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Memin is caught in a spray of bright orange!<br />
+You are caught in a spray of shimmering red!<br />
+Lara is blasted by a spray of scintillating blue!<br />
+Lara is caught in a spray of shimmering red!<br />
+Elyana is struck by a spray of murky violet!<br />
+Elyana is struck by a spray of vibrant green!<br />
+Holmes is struck by a spray of vibrant green!<br />
+Goka is caught in a spray of shimmering red!<br />
+Goka is caught in a spray of radiant yellow!<br />
+Bienca is hit by a spray of gleaming indigo!<br />
+Viran is caught in a spray of shimmering red!<br />
+Padme is caught in a spray of radiant yellow!<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+A warm glow surrounds Holmes as some of his wounds regenerate.<br />
+Ankor focuses his purity on Holmes's arm!<br />
+Ankor focuses on Holmes's arm, but is thwarted.<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Nasir &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Lara &lt;&lt;-----<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Bienca &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Isengrim &lt;&lt;-----<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Goka &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Lachplesis &lt;&lt;-----<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Loony panics, and attempts to flee.<br />
+Loony flies north.<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Padme stands up.<br />
+<br />
+228H 158V 1X 3306C [Me:Fair] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Nasir massacres Holmes with his stab.<br />
+Nasir is chilled, as he swings at Holmes.<br />
+Nasir stabs Holmes extremely hard.<br />
+Nasir is chilled, as he swings at Holmes.<br />
+Viran misses Denise with his slash.<br />
+Viran misses Denise with his slash.<br />
+Lara barely bludgeons Denise.<br />
+Lara is burned, as she swings at Denise.<br />
+Lara is chilled, as she swings at Denise.<br />
+Lara misses Denise with her bludgeon.<br />
+Memin misses Denise with his hit.<br />
+Memin misses Denise with his hit.<br />
+Ankor misses Holmes with his slash.<br />
+Teligbo crushes Holmes very hard.<br />
+Teligbo is chilled, as he swings at Holmes.<br />
+Teri crushes Elyana hard.<br />
+Teri is burned, as she swings at Elyana.<br />
+Elyana misses Teri with her pierce.<br />
+Elyana misses Teri with her pierce.<br />
+Seq drains YOU hard.<br />
+Seq drains YOU extremely hard.<br />
+You miss Seq with your bludgeon.<br />
+Padme slashes Santino extremely hard.<br />
+Padme slashes Santino extremely hard.<br />
+Santino massacres Padme with his slash.<br />
+Bienca smites Isengrim very hard.<br />
+Bienca smites Isengrim very hard.<br />
+Isengrim massacres Bienca with his cleave.<br />
+Isengrim massacres Bienca with his cleave.<br />
+Goka massacres Lachplesis with his crush.<br />
+Goka massacres Lachplesis with his crush.<br />
+<br />
+204H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Berkutas flies in from the north.<br />
+<br />
+204H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+---------------&gt;&gt;&gt; BASHED BY &lt;&lt;--------------------------------&gt;&gt; Seq &lt;&lt;&lt;-------<br />
+<br />
+184H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Teri stands up.<br />
+<br />
+184H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+A warm glow surrounds Elyana as some of her wounds regenerate.<br />
+Santino stands up.<br />
+----&lt;&lt;Teri &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Elyana &lt;&lt;-----<br />
+<br />
+184H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Santino &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Elyana &lt;&lt;-----<br />
+<br />
+184H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Memin utters some strange words.<br />
+Memin's hands issue a spray of color!<br />
+Seq is caught in a spray of shimmering red!<br />
+Isengrim is caught in a spray of radiant yellow!<br />
+Isengrim seems weaker.<br />
+Santino is caught in a spray of shimmering red!<br />
+Teligbo is caught in a spray of shimmering red!<br />
+Denise is caught in a spray of shimmering red!<br />
+Teri is caught in a spray of shimmering red!<br />
+Lachplesis is caught in a spray of radiant yellow!<br />
+Lachplesis seems weaker.<br />
+Ankor is caught in a spray of radiant yellow!<br />
+Nasir is caught in a spray of shimmering red!<br />
+<br />
+184H 158V 1X 3306C [Me:Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Berkutas is blasted by a spray of scintillating blue!<br />
+Memin is struck by a spray of murky violet!<br />
+Memin is caught in a spray of bright orange!<br />
+You are blasted by a spray of scintillating blue!<br />
+Lara is hit by a spray of gleaming indigo!<br />
+Lara is blasted by a spray of scintillating blue!<br />
+Elyana is blasted by a spray of scintillating blue!<br />
+Holmes is caught in a spray of shimmering red!<br />
+Goka is hit by a spray of gleaming indigo!<br />
+Bienca is blasted by a spray of scintillating blue!<br />
+Viran is hit by a spray of gleaming indigo!<br />
+Padme is struck by a spray of vibrant green!<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:Fair] Mem:4 Exits:NE&gt; <br />
+Elyana gets a vial from her chest.<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:Fair] Mem:4 Exits:NE&gt; stand<br />
+<br />
+Elyana quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Elyana...<br />
+Elyana heals Elyana.<br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Seq is hit by a spray of gleaming indigo!<br />
+Isengrim is struck by a spray of vibrant green!<br />
+Santino is struck by a spray of murky violet!<br />
+Teligbo is caught in a spray of bright orange!<br />
+Denise is blasted by a spray of scintillating blue!<br />
+Teri is struck by a spray of vibrant green!<br />
+Teri is caught in a spray of radiant yellow!<br />
+Lachplesis is caught in a spray of bright orange!<br />
+Ankor is struck by a spray of vibrant green!<br />
+Nasir is struck by a spray of murky violet!<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Bienca tells your group 'someone claired'<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Lara stands up.<br />
+Lara panics, and attempts to flee.<br />
+Lara flies east.<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Nasir gets a potion from his rucksack.<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Nasir quaffs an extra silvery potion.<br />
+Nasir heals Nasir.<br />
+<br />
+147H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Berkutas slowly fades into existence.<br />
+Berkutas crushes Denise hard.<br />
+Berkutas is burned, as he swings at Denise.<br />
+Berkutas is chilled, as he swings at Denise.<br />
+Berkutas crushes Denise hard.<br />
+Berkutas is burned, as he swings at Denise.<br />
+Berkutas is chilled, as he swings at Denise.<br />
+Nasir massacres Holmes with his stab.<br />
+Nasir is chilled, as he swings at Holmes.<br />
+Viran misses Denise with his slash.<br />
+Ankor slashes Holmes very hard.<br />
+Ankor is chilled, as he swings at Holmes.<br />
+Teligbo misses Holmes with his crush.<br />
+Teri crushes Elyana hard.<br />
+Teri is burned, as she swings at Elyana.<br />
+Seq drains YOU very hard.<br />
+You miss Seq with your bludgeon.<br />
+Padme massacres Santino with her slash.<br />
+Padme massacres Santino with her slash.<br />
+Santino slashes Padme very hard.<br />
+Santino slashes Padme extremely hard.<br />
+Bienca smites Isengrim extremely hard.<br />
+Isengrim cleaves Bienca extremely hard.<br />
+Isengrim massacres Bienca with his cleave.<br />
+Goka crushes Lachplesis extremely hard.<br />
+Goka massacres Lachplesis with his crush.<br />
+You step aside as Teligbo tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Holmes panics, and attempts to flee.<br />
+Holmes flies north.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Padme panics, and attempts to flee.<br />
+Padme flies east.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Bienca &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Isengrim &lt;&lt;-----<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Loony flies in from the north.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; fle<br />
+<br />
+You step aside as Seq tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; fle<br />
+fle<br />
+<br />
+Santino stands up.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; fle<br />
+<br />
+Loony focuses on Lachplesis and utters the words, 'heal'.<br />
+Loony heals Lachplesis.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Santino &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Elyana &lt;&lt;-----<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Memin utters some strange words.<br />
+Memin's hands issue a spray of color!<br />
+Loony is caught in a spray of shimmering red!<br />
+Seq is caught in a spray of shimmering red!<br />
+Isengrim is caught in a spray of radiant yellow!<br />
+Santino is caught in a spray of shimmering red!<br />
+Teligbo is caught in a spray of radiant yellow!<br />
+Teligbo seems weaker.<br />
+Denise is caught in a spray of shimmering red!<br />
+Teri is caught in a spray of radiant yellow!<br />
+Teri is caught in a spray of shimmering red!<br />
+Lachplesis is caught in a spray of shimmering red!<br />
+Ankor is caught in a spray of shimmering red!<br />
+Nasir is caught in a spray of radiant yellow!<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Padme flies in from the east.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Padme &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Santino &lt;&lt;-----<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Loony is caught in a spray of radiant yellow!<br />
+Seq is caught in a spray of bright orange!<br />
+Isengrim is struck by a spray of murky violet!<br />
+Santino is struck by a spray of murky violet!<br />
+Teligbo is blasted by a spray of scintillating blue!<br />
+Teligbo freezes in place.<br />
+Denise is blasted by a spray of scintillating blue!<br />
+Teri is caught in a spray of radiant yellow!<br />
+Teri seems weaker.<br />
+Lachplesis is hit by a spray of gleaming indigo!<br />
+Lachplesis's face goes blank and he begins to drool.<br />
+Ankor is struck by a spray of vibrant green!<br />
+Nasir is struck by a spray of murky violet!<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Lara flies in from the east.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Goka &gt;&gt;-----------&lt;&lt; BASHES &gt;&gt;------------&gt;&gt; Lachplesis &lt;&lt;-----<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Berkutas panics, and attempts to flee.<br />
+Berkutas flies east.<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Viran &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Denise &lt;&lt;-----<br />
+<br />
+133H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Padme slashes Santino extremely hard.<br />
+Padme slashes Santino very hard.<br />
+Nasir massacres Memin with his stab.<br />
+Memin's fireshield does him little good as Nasir takes a swing at him.<br />
+Nasir massacres Memin with his stab.<br />
+Memin's fireshield does him little good as Nasir takes a swing at him.<br />
+Ankor massacres Memin with his slash.<br />
+Ankor is burned, as he swings at Memin.<br />
+Loony misses Memin with his hit.<br />
+Santino slashes Elyana very hard.<br />
+Santino is burned, as he swings at Elyana.<br />
+Santino slashes Elyana very hard.<br />
+Santino is burned, as he swings at Elyana.<br />
+Viran slashes Denise hard.<br />
+Viran is burned, as he swings at Denise.<br />
+Viran is chilled, as he swings at Denise.<br />
+Viran misses Denise with his slash.<br />
+Teri crushes Elyana hard.<br />
+Teri is burned, as she swings at Elyana.<br />
+Seq drains YOU extremely hard.<br />
+Seq drains YOU very hard.<br />
+You bludgeon Seq very hard.<br />
+Bienca smites Isengrim extremely hard.<br />
+Bienca smites Isengrim extremely hard.<br />
+Isengrim massacres Bienca with his cleave.<br />
+Isengrim massacres Bienca with his cleave.<br />
+Goka massacres Lachplesis with his crush.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:V.Bad] Mem:4 Exits:NE&gt; <br />
+Lara utters some strange words.<br />
+Lara's hands issue a spray of prismatic color!<br />
+Loony is struck by a spray of murky violet!<br />
+Seq is hit by a spray of gleaming indigo!<br />
+Isengrim is struck by a spray of murky violet!<br />
+Santino is struck by a spray of murky violet!<br />
+Teligbo is caught in a spray of shimmering red!<br />
+Teligbo is caught in a spray of radiant yellow!<br />
+Denise is struck by a spray of murky violet!<br />
+Teri is caught in a spray of bright orange!<br />
+Lachplesis is hit by a spray of gleaming indigo!<br />
+Ankor is hit by a spray of gleaming indigo!<br />
+Ankor's face goes blank and he begins to drool.<br />
+Ankor is caught in a spray of shimmering red!<br />
+Ankor seems weaker.<br />
+Nasir is hit by a spray of gleaming indigo!<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Seq stands up.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Holmes flies in from the north.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+A warm glow surrounds Elyana as some of her wounds regenerate.<br />
+You step aside as Seq tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Teri stands up.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Denise gets a vial from her satchel.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Holmes utters some strange words.<br />
+Holmes creates a lightning storm.<br />
+Holmes slowly fades into existence.<br />
+Loony screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Seq screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Isengrim screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Santino screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Teligbo screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Denise screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Teri screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit her.<br />
+Lachplesis screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Ankor screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+Nasir screams in pain as the lightning bolts summoned by Holmes from the boiling clouds hit him.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Teri recites a glowing scroll of recall.<br />
+Teri disappears.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Denise quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Denise...<br />
+Denise heals Denise.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Memin takes both of his fists out of a black ball.<br />
+Memin grabs a glowing scroll of recall.<br />
+Memin recites a glowing scroll of recall.<br />
+Memin disappears.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Isengrim gets a flask from his satchel.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Isengrim desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Isengrim's body.<br />
+Isengrim stands up.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+----&lt;&lt;Isengrim &gt;&gt;-----------&lt;&lt; MISSES BASH ON &gt;&gt;------------&gt;&gt; Holmes &lt;&lt;-----<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; cast 'Heal' me <br />
+<br />
+<br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Loony is struck by a spray of vibrant green!<br />
+Seq is caught in a spray of radiant yellow!<br />
+Isengrim is caught in a spray of bright orange!<br />
+Isengrim is hit by a spray of gleaming indigo!<br />
+Santino is blasted by a spray of scintillating blue!<br />
+Santino is incapacitated and will slowly die, if not aided.<br />
+Teligbo is caught in a spray of bright orange!<br />
+Denise is struck by a spray of murky violet!<br />
+Denise is struck by a spray of vibrant green!<br />
+Lachplesis is struck by a spray of vibrant green!<br />
+Ankor is caught in a spray of radiant yellow!<br />
+Nasir is struck by a spray of murky violet!<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+<br />
+Viran stands up.<br />
+<br />
+102H 158V 1X 3306C [Me:V.Bad] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Holmes is hit by a spray of gleaming indigo!<br />
+Lara is caught in a spray of shimmering red!<br />
+Padme is struck by a spray of vibrant green!<br />
+You are struck by a spray of vibrant green!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Elyana is caught in a spray of shimmering red!<br />
+Goka is blasted by a spray of scintillating blue!<br />
+Bienca is blasted by a spray of scintillating blue!<br />
+Viran is blasted by a spray of scintillating blue!<br />
+<br />
+67H 158V 1X 3306C [Me:Awful] [Seq:Awful] Mem:4 Exits:NE&gt; <br />
+Ankor deftly steps in front of Loony, pushing into the frey.<br />
+Ankor heroically rescues Loony.<br />
+Ankor deftly steps in front of Loony, pushing into the frey.<br />
+Ankor heroically rescues Loony.<br />
+Holmes misses Ankor with his bludgeon.<br />
+Holmes bludgeons Ankor extremely hard.<br />
+Ankor slashes Holmes very hard.<br />
+Ankor is chilled, as he swings at Holmes.<br />
+Lara misses Ankor with her bludgeon.<br />
+Lara bludgeons Ankor hard.<br />
+Nasir massacres Elyana with his stab.<br />
+Elyana's fireshield does her little good as Nasir takes a swing at her.<br />
+Nasir massacres Elyana with his stab.<br />
+Elyana's fireshield does her little good as Nasir takes a swing at her.<br />
+Padme massacres Santino with her slash.<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Santino is dead! R.I.P.<br />
+Viran misses Denise with his slash.<br />
+Viran misses Denise with his slash.<br />
+Seq drains YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You bludgeon Seq extremely hard.<br />
+Seq is mortally wounded, and will die soon, if not aided.<br />
+Bienca smites Isengrim extremely hard.<br />
+Isengrim is mortally wounded, and will die soon, if not aided.<br />
+Bienca obliterates Isengrim with her smite.<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Isengrim is dead! R.I.P.<br />
+Goka crushes Lachplesis extremely hard.<br />
+Goka massacres Lachplesis with his crush.<br />
+The death cry of Isengrim echoes from somewhere nearby...<br />
+Isengrim stops following Nasir.<br />
+The death cry of Santino echoes from somewhere nearby...<br />
+Santino sinks gently to the ground.<br />
+Santino stops following Nasir.<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; <br />
+Bienca gets a pile of coins from the corpse of Santino.<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Holmes           fair      rested    fighting   Y   N    N     1    6<br />
+  Elyana           good      rested    fighting   Y   N    Y     1    8<br />
+  Padme            v.bad     rested    standing   Y   N    Y     0    0<br />
+  Viran            bad       rested    fighting   N   N    N     0    0<br />
+  Bienca           bad       rested    standing   Y   N    N     0    0<br />
+  Goka             fair      rested    fighting   Y   N    N     0    0<br />
+  Berkutas         v.good    rested    standing   Y   N    Y     0    0<br />
+  Lara             v.good    rested    fighting   Y   Y    N     1    3<br />
+  Mads             awful     rested    fighting   Y   N    N     0    4<br />
+  Memin            v.bad     rested    standing   Y   N    N     1    4<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; You stand up.<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; st<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Holmes           fair      rested    fighting   Y   N    N     1    6<br />
+  Elyana           good      rested    fighting   Y   N    Y     1    8<br />
+  Padme            v.bad     rested    standing   Y   N    Y     0    0<br />
+  Viran            bad       rested    fighting   N   N    N     0    0<br />
+  Bienca           bad       rested    standing   Y   N    N     0    0<br />
+  Goka             fair      rested    fighting   Y   N    N     0    0<br />
+  Berkutas         v.good    rested    standing   Y   N    Y     0    0<br />
+  Lara             v.good    rested    fighting   Y   Y    N     1    3<br />
+  Mads             awful     rested    fighting   Y   N    N     0    4<br />
+  Memin            v.bad     rested    standing   Y   N    N     1    4<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; fle<br />
+You are already standing.<br />
+<br />
+48H 158V 1X 3306C [Me:Awful] [Seq:Dying] Mem:4 Exits:NE&gt; fle<br />
+fle<br />
+You flee head over heels.<br />
+Seq suffers from lack of blood, and the lack of a beating heart...<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Seq is dead! R.I.P.<br />
+The Knights' High Road<br />
+    Stretching out from horizon to horizon, the Knights' High Road passes<br />
+through the Solamnic Plain, connecting the city of Vingaard with the lord<br />
+city of Palanthas. The shining jewel of Solamnia, Palanthas lies far to<br />
+the west and north, beyond Westgate Pass in the Vingaard Mountains, while<br />
+the city of Vingaard lies east-south-east of here. The tall grasses of the<br />
+plains seem to go on forever, gently swaying back and forth with the<br />
+breeze.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here. (flying)<br />
+<br />
+48H 156V 1X 3306C Mem:4 Exits:EW&gt; Your blood freezes as you hear someone's death cry.<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+48H 156V 1X 3306C Mem:4 Exits:EW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+48H 156V 1X 3306C Mem:4 Exits:EW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+48H 156V 1X 3306C Mem:4 Exits:EW&gt; cast 'Heal' me <br />
+~(~(~(~(~(~(~(~(~(~( Casting: HEAL ~(9~)~)~)~)~)~)~)~)~)~)<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+435H 156V 1X 3306C Mem:4 Exits:EW&gt; gro<br />
+<br />
+Berkutas flies west.<br />
+<br />
+436H 156V 1X 3306C Mem:4 Exits:EW&gt; gro<br />
+<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+Connected to host mud.arctic.orgW&gt; <br />
+<br />
+        @@       @@@@@@        @@@@@@@@@   @@@@@@@@@@@@  @@@@@@@  @@@@@@@@@<br />
+       @@@@     @@@@@@@@@     @@@@@@@@@   @@@@@@@@@@@@@@  @@@@@  @@@@@@@@@<br />
+      @@@@@@    @@@   @@@@   @@@@              @@@         @@@  @@@@<br />
+     @@@  @@@   @@@    @@@   @@@               @@@          @   @@@<br />
+    @@@@@@@@@@  @@@@@@@@@    @@@@              @@@         @@@  @@@@<br />
+   @@@     @@@  @@@    @@@    @@@@@@@@@        @@@        @@@@@  @@@@@@@@@<br />
+  @@@@     @@@@ @@@@    @@@@   @@@@@@@@@      @@@@@      @@@@@@@  @@@@@@@@@<br />
+        []==========================================================[]<br />
+          ||                A DikuMUD Variation                   ||<br />
+          ||  &lt;***]=======---   Based Upon:   ---=======[***&gt;     ||<br />
+          ||                                                      ||<br />
+          ||               DikuMUD I  (Gamma 0.0)                 ||<br />
+          ||                   A creation of:                     ||<br />
+          ||        Hans Henrik Staerfeldt,  Katja Nyboe,         ||<br />
+          ||   Tom Madsen, Michael Seifert, and Sebastian Hammer  ||<br />
+          ||                                                      ||<br />
+        []==========================================================[]<br />
+<br />
+ Notice: Arctic emphasizes roleplaying and a fantasy atmosphere. Please use<br />
+        character names suited for this. Abusive, vulgar, or unsuitable names<br />
+        could result in Immortal intervention. Consider this in char creation.<br />
+        Names with all capitals are discouraged.<br />
+<br />
+<br />
+Type 'start' to create a new character.<br />
+What is your character's name? mads<br />
+Password:<br />
+<br />
+<br />
+<br />
+You were last connected Sat Oct 11 07:58:54 2003 EDT from 80.198.106.2.<br />
+Reconnecting.<br />
+<br />
+436H 156V 1X 3306C Mem:4 Exits:EW&gt; gro<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Holmes           good      rested    standing   Y   Y    N     1    9<br />
+  Elyana           fair      rested    fighting   Y   N    Y     1   10<br />
+  Padme            awful     rested    standing   Y   N    Y     0    0<br />
+  Viran            v.bad     rested    standing   N   N    N     0    0<br />
+  Bienca           v.bad     rested    standing   Y   N    N     0    0<br />
+  Goka             fair      rested    standing   Y   N    N     0    0<br />
+  Berkutas         v.good    rested    fighting   Y   N    Y     0    0<br />
+  Lara             good      rested    fighting   Y   Y    N     1    6<br />
+  Mads             perfect   rested    standing   Y   N    N     0    4<br />
+  Memin            v.bad     rested    standing   Y   N    N     1    4<br />
+<br />
+436H 156V 1X 3306C Mem:4 Exits:EW&gt; w<br />
+The Knights' High Road<br />
+    Stretching out from horizon to horizon, the Knights' High Road passes<br />
+through the Solamnic Plain, connecting the city of Vingaard with the lord<br />
+city of Palanthas. The shining jewel of Solamnia, Palanthas lies far to the<br />
+west and north, beyond Westgate Pass in the Vingaard Mountains, while the<br />
+city of Vingaard lies east-south-east of here. The tall grasses of the<br />
+plains seem to go on forever, gently swaying back and forth with the<br />
+breeze. Barely visible far to the west are a few mountain peaks.<br />
+The corpse of Teligbo is lying here.<br />
+An ancient pair of gloves lie here.<br />
+A black ring of the Skull lies here, forgotten.<br />
+A horned mask made of black and gold colored adamantine metal lies here...it hums softly<br />
+A small horn made from purest ivory hangs in the air on a bed of magic here.<br />
+The corpse of Seq is lying here.<br />
+The corpse of Santino is lying here.<br />
+The corpse of Isengrim is lying here.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here, fighting Nasir. (flying)<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Lara Ellypse, Prime Magi of the Fallen Glory is standing here, fighting Nasir. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Padme the Queen Armadillo is standing here. (flying)<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here, fighting Nasir. (flying)<br />
+. . . is enveloped in flames.<br />
+Nasir the Original Dumbass is standing here, fighting Elyana. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Viran Funny, Ruenglish Master is standing here. (red aura)<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Nasir panics, and attempts to flee.<br />
+Nasir flies east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; cast 'Heal' padme <br />
+~(~(~(~(~(~(~(~(~(~( Casting: HEAL ~(-1~)~)~)~)~)~)~)~)~)~)<br />
+You heal Padme.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Padme flies east.<br />
+Viran leaves east.<br />
+Berkutas flies east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Nasir flies in from the east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; gro<br />
+<br />
+Padme flies in from the east.<br />
+Viran arrives from the east.<br />
+Berkutas flies in from the east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Viran leaves east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Nasir flies north.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Lara flies east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Lara flies in from the east.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Padme flies north.<br />
+Berkutas flies north.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Elyana flies north.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+A warm glow surrounds Holmes as some of his wounds regenerate.<br />
+<br />
+436H 154V 1X 3306C Mem:4 Exits:NE&gt; <br />
+Holmes flies north.<br />
+Lara flies north.<br />
+You follow Holmes north.<br />
+Near the Virkhus Hills<br />
+    The road continues from here, traveling to the north and south. The<br />
+vast Solamnic Plain stretches out into the eastern horizon, while the<br />
+Virkhus hills lie to the west and north. Tall grasses along side sway<br />
+gently in the wind. The Knights' High Road, the main link between Vingaard<br />
+to the east and Palanthas to the west, extends eastward far beyond your<br />
+vision. The road is wide and obviously heavily traveled, though traffic<br />
+seems to be dwindling as reports of war gain credibility.<br />
+Lara Ellypse, Prime Magi of the Fallen Glory is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here. (flying)<br />
+Padme the Queen Armadillo is standing here. (flying)<br />
+<br />
+436H 152V 1X 3306C Mem:4 Exits:NS&gt; <br />
+Lara flies north.<br />
+<br />
+436H 152V 1X 3306C Mem:4 Exits:NS&gt; Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Holmes           v.good    rested    standing   Y   Y    N     1    9<br />
+  Elyana           fair      rested    standing   Y   Y    Y     1   10<br />
+  Padme            v.good    rested    standing   Y   N    Y     0    0<br />
+  Viran            v.bad     fatigued  standing   N   N    N     0    0<br />
+  Bienca           v.bad     rested    standing   Y   N    N     0    0<br />
+  Goka             fair      rested    standing   Y   N    N     0    0<br />
+  Berkutas         v.good    rested    standing   Y   N    Y     0    0<br />
+  Lara             good      rested    standing   Y   Y    N     1    6<br />
+  Mads             perfect   rested    standing   Y   N    N     0    4<br />
+  Memin            v.bad     rested    standing   Y   N    N     1    4<br />
+<br />
+436H 152V 1X 3306C Mem:4 Exits:NS&gt; gro<br />
+<br />
+Memin tells your group 'looks like we lost :('<br />
+<br />
+436H 152V 1X 3306C Mem:4 Exits:NS&gt; Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Holmes           v.good    rested    standing   Y   Y    N     1    9<br />
+  Elyana           fair      rested    standing   Y   Y    Y     1   10<br />
+  Padme            v.good    rested    standing   Y   N    Y     0    0<br />
+  Viran            v.bad     fatigued  standing   N   N    N     0    0<br />
+  Bienca           v.bad     rested    standing   Y   N    N     0    0<br />
+  Goka             fair      rested    standing   Y   N    N     0    0<br />
+  Berkutas         v.good    rested    standing   Y   N    Y     0    0<br />
+  Lara             good      rested    standing   Y   Y    N     1    6<br />
+  Mads             perfect   rested    standing   Y   N    N     0    4<br />
+  Memin            v.bad     rested    standing   Y   N    N     1    4<br />
+<br />
+436H 152V 1X 3306C Mem:4 Exits:NS&gt; <br />
+Holmes flies north.<br />
+Padme flies north.<br />
+Berkutas flies north.<br />
+You follow Holmes north.<br />
+The Virkhus Hills<br />
+    These rolling hills lie just west of the Solamnic Plain, separating the<br />
+lowlands from the vast altitudes of the Vingaard Mountains farther west.<br />
+The road winds its way between the hills, gently rising and falling. To the<br />
+sides of the roads lie expansive grasslands, gently swaying in the breeze.<br />
+The air is clean and refreshing. The road extends westward through the<br />
+Virkhus hills, and south into the Solamnic Plains.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here. (flying)<br />
+Padme the Queen Armadillo is standing here. (flying)<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Lara Ellypse, Prime Magi of the Fallen Glory is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+436H 150V 1X 3306C Mem:4 Exits:SW&gt; <br />
+Lara utters some strange words.<br />
+Lara disappears in a puff of smoke.<br />
+<br />
+436H 150V 1X 3306C Mem:4 Exits:SW&gt; cast 'Heal' viram <br />
+<br />
+Holmes flies west.<br />
+Padme flies west.<br />
+Berkutas flies west.<br />
+You follow Holmes west.<br />
+Over the Virkhus Hills<br />
+    You stand atop one of the hilltops the road passes over, looking<br />
+around. Little is visible nearby other than the rolling grasslands and the<br />
+hills, many of which rise a bit higher. The road beneath your feet is very<br />
+worn and obviously heavily traveled. A breeze blows gently, delivering<br />
+fresh air scented lightly from the surrounding grasses. The road stretches<br />
+west through the hills towards the Vingaard Mountains, and east towards the<br />
+Solamnic Plains.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here. (flying)<br />
+Padme the Queen Armadillo is standing here. (flying)<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+436H 148V 1X 3306C Mem:4 Exits:EW&gt; Who should the spell be cast upon?<br />
+<br />
+436H 148V 1X 3306C Mem:4 Exits:EW&gt; cast 'Heal' viran <br />
+TICK IN 5 SECONDS.<br />
+Who should the spell be cast upon?<br />
+<br />
+436H 148V 1X 3306C Mem:4 Exits:EW&gt; gro<br />
+<br />
+Holmes flies west.<br />
+Padme flies west.<br />
+Berkutas flies west.<br />
+You follow Holmes west.<br />
+Over the Virkhus Hills<br />
+    You stand atop one of the hilltops the road passes over, looking<br />
+around. Little is visible nearby other than the rolling grasslands and the<br />
+hills, many of which rise a bit higher. The road beneath your feet is very<br />
+worn and obviously heavily traveled. A breeze blows gently, delivering<br />
+fresh air scented lightly from the surrounding grasses. The road stretches<br />
+east through the hills towards the Solamnic Plains, and west towards the<br />
+Vingaard Mountains.<br />
+Berkutas Steam, Third Incarnation of the Ruby Gleam is standing here. (flying)<br />
+Padme the Queen Armadillo is standing here. (flying)<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='739'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=739">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="739">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

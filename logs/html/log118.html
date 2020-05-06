@@ -1,0 +1,654 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 118-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='118'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Solare puffs in to help Shadow Zone!</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+4.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Solare kindly puffs in to help some difficult zoning.</i>
+<p>
+<p>
+
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; kick<br />
+<br />
+Solare appears before Miller in a puff of smoke.<br />
+<br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; You try to sweep Aegi<br />
+s's legs, but are unable to.<br />
+<br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; <br />
+Aegis steps aside as Khan attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; <br />
+Neve stands up.<br />
+<br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; <br />
+Aegis steps aside as Neve attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; <br />
+606H 120V 25726795X 1128C [Me:V.Good] [Aegis:Good] Exits:S&gt; <br />
+Jurthy massacres Aegis with his whip.<br />
+Jurthy is burned, as he swings at Aegis.<br />
+Urkonn annihilates Aegis with his shoot.<br />
+Urkonn annihilates Aegis with his shoot.<br />
+Markis annihilates Aegis with his shoot.<br />
+Markis annihilates Aegis with his shoot.<br />
+Xoff misses Aegis with his cleave.<br />
+Neve misses Aegis with his pierce.<br />
+Miller misses Aegis with his hit.<br />
+Khan massacres Aegis with his drain.<br />
+Aegis's fireshield does it little good as Khan takes a swing at it.<br />
+Walcanar hits YOU hard.<br />
+Walcanar massacres YOU with his hit.<br />
+Aegis annihilates YOU with its claw.<br />
+Aegis annihilates YOU with its claw.<br />
+You massacre Aegis with your slash.<br />
+You feel intense pain as you swing through Aegis's flaming aura.<br />
+You miss Aegis with your sting.<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Jurthy panics, and attempts to flee.<br />
+Jurthy flies south.<br />
+<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Urkonn tells your group 'poof'<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Aegis steps aside as Miller attempts a bash, stumbles, and falls flat on his face<br />
+.<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Aegis stands up.<br />
+Solare utters some strange words.<br />
+Delamar is stunned momentarily, recovering quickly.<br />
+Xoff is stunned momentarily, recovering quickly.<br />
+Neve is stunned momentarily, recovering quickly.<br />
+Miller is stunned momentarily, recovering quickly.<br />
+Markis is stunned momentarily, recovering quickly.<br />
+Urkonn is stunned momentarily, recovering quickly.<br />
+Khan is stunned momentarily, recovering quickly.<br />
+You are stunned for a moment, but recover immediately.<br />
+Aegis is stunned momentarily, recovering quickly.<br />
+Walcanar is stunned!<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Urkonn panics, and attempts to flee.<br />
+Urkonn flies south.<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Markis panics, and attempts to flee.<br />
+Markis flies south.<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; gt solare<br />
+You tell your group 'solare'<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; l<br />
+The Private Chambers of the Black Priest<br />
+You feel a strong wind blowing here.<br />
+A large wooden chest stands near the wardrobe.<br />
+Solare Isolato, Wildly Immalleable is standing here, fighting Delamar. (flying) (<br />
+invisible) (red aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Delamar, Death Slaad of The Rusty Lance is standing here, fighting Aegis.<br />
+. . . has a tough exterior.<br />
+Xoff, Sitting in the Shadows Looking for Love is sitting here, fighting Aegis. (f<br />
+lying)<br />
+Neve R. Where, Armadillo Overdrive is sitting here, fighting Aegis.<br />
+Miller, Genuine Apocalypse is sitting here, fighting Aegis.<br />
+Khan, Forever Following Koi's Shadow is sitting here, fighting Aegis. (flying) (r<br />
+ed aura)<br />
+Aegis is standing here, fighting YOU. (red aura)<br />
+. . . is enveloped in flames.<br />
+Walcanar is lying here, stunned. (red aura)<br />
+<br />
+470H 120V 25726147X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+The air suddenly ceases its violent rush.<br />
+Solare misses Delamar with his bludgeon.<br />
+Xoff misses Aegis with his cleave.<br />
+Neve massacres Aegis with his pierce.<br />
+Neve is burned, as he swings at Aegis.<br />
+Miller misses Aegis with his hit.<br />
+Khan massacres Aegis with his drain.<br />
+Aegis's fireshield does it little good as Khan takes a swing at it.<br />
+Aegis annihilates YOU with its claw.<br />
+You slash Aegis extremely hard.<br />
+You feel intense pain as you swing through Aegis's flaming aura.<br />
+You miss Aegis with your sting.<br />
+<br />
+411H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Xoff stands up.<br />
+<br />
+411H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; l<br />
+The Private Chambers of the Black Priest<br />
+A large wooden chest stands near the wardrobe.<br />
+Solare Isolato, Wildly Immalleable is standing here, fighting Delamar. (flying) (<br />
+invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Delamar, Death Slaad of The Rusty Lance is standing here, fighting Aegis.<br />
+. . . has a tough exterior.<br />
+Xoff, Sitting in the Shadows Looking for Love is standing here, fighting Aegis. (<br />
+flying)<br />
+Neve R. Where, Armadillo Overdrive is sitting here, fighting Aegis.<br />
+Miller, Genuine Apocalypse is sitting here, fighting Aegis.<br />
+Khan, Forever Following Koi's Shadow is sitting here, fighting Aegis. (flying) (r<br />
+ed aura)<br />
+Aegis is standing here, fighting YOU. (red aura)<br />
+. . . is enveloped in flames.<br />
+Walcanar is lying here, stunned. (red aura)<br />
+<br />
+411H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Urkonn tells your group 'flee '<br />
+<br />
+411H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Solare utters some strange words.<br />
+Solare conjures a writhing mass of inky black tentacles!<br />
+Delamar screams in pain as inky black tentacles constrict him.<br />
+Xoff screams in pain as inky black tentacles constrict him.<br />
+Neve screams in pain as inky black tentacles constrict him.<br />
+Miller screams in pain as inky black tentacles constrict him.<br />
+Khan screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Aegis screams in pain as inky black tentacles constrict it.<br />
+Walcanar screams in pain as inky black tentacles constrict him.<br />
+<br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Khan stands up.<br />
+<br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Khan panics, and attempts to flee.<br />
+Khan flies south.<br />
+<br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Neve stands up.<br />
+<br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Neve panics, and attempts to flee.<br />
+Neve leaves south.<br />
+<br />
+378H 120V 25725661X 1128C [Me:Fair] [Aegis:Fair] Exits:S&gt; <br />
+Aegis gasses you.<br />
+Walcanar screams in pain as inky black tentacles constrict him.<br />
+Delamar misses Aegis with his smite.<br />
+Xoff massacres Aegis with his cleave.<br />
+Xoff is burned, as he swings at Aegis.<br />
+Miller misses Aegis with his hit.<br />
+Aegis massacres YOU with its claw.<br />
+Aegis annihilates YOU with its claw.<br />
+You miss Aegis with your slash.<br />
+You miss Aegis with your sting.<br />
+<br />
+266H 120V 25725661X 1128C [Me:V.Bad] [Aegis:Fair] Exits:S&gt; l<br />
+<br />
+The Private Chambers of the Black Priest<br />
+A large wooden chest stands near the wardrobe.<br />
+Solare Isolato, Wildly Immalleable is standing here, fighting Delamar. (flying) (<br />
+invisible) (red aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Delamar, Death Slaad of The Rusty Lance is standing here, fighting Aegis.<br />
+. . . is followed by a hovering ball of light.<br />
+Xoff, Sitting in the Shadows Looking for Love is standing here, fighting Aegis. (<br />
+flying)<br />
+Miller, Genuine Apocalypse is sitting here, fighting Aegis.<br />
+Aegis is standing here, fighting YOU. (red aura)<br />
+. . . is enveloped in flames.<br />
+Walcanar is sitting here, fighting YOU. (red aura)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+<br />
+266H 120V 25725661X 1128C [Me:V.Bad] [Aegis:Fair] Exits:S&gt; quaff vial<br />
+You quickly gulp the juice down, praying not to retch before the magic takes!<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+666H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Delamar panics, and attempts to flee.<br />
+Delamar leaves south.<br />
+<br />
+666H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Miller stands up.<br />
+<br />
+666H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Miller grabs a glowing scroll of recall.<br />
+Miller recites a glowing scroll of recall.<br />
+Miller disappears.<br />
+<br />
+666H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Xoff panics, and attempts to flee.<br />
+Xoff flies south.<br />
+<br />
+666H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of prismatic color!<br />
+You are caught in a spray of bright orange!<br />
+Aegis is struck by a spray of vibrant green!<br />
+Walcanar is hit by a spray of gleaming indigo!<br />
+Walcanar's face goes blank and he begins to drool.<br />
+<br />
+633H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; l<br />
+The Private Chambers of the Black Priest<br />
+A large wooden chest stands near the wardrobe.<br />
+Solare Isolato, Wildly Immalleable is standing here, fighting YOU. (flying) (invi<br />
+sible) (red aura)<br />
+. . . is outlined with a dim aura.<br />
+Aegis is standing here, fighting YOU. (red aura)<br />
+. . . is enveloped in flames.<br />
+Walcanar is sitting here, fighting YOU. (red aura)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+<br />
+633H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; <br />
+Khan tells your group 'kill solare'<br />
+<br />
+633H 120V 25725661X 1128C [Me:V.Good] [Aegis:Fair] Exits:S&gt; fl<br />
+You flee head over heels.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='118'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=118">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="118">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

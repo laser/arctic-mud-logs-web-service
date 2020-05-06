@@ -1,0 +1,915 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1810-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1810'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+You shout 'Nowclan rules you'</font></b>
+<p>
+POV: 
+Avohir<p>
+Log Rating:
+-2.2353<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Nowclan rules joo</i>
+<p>
+<p>
+
+70H 72V 1508112X 395C Exits:SW&gt; <br />
+-----&gt;&gt;Xavier FLIES west!&lt;-------<br />
+-----&gt;&gt;Viron FLIES west!&lt;-------<br />
+-----&gt;&gt;Zuhra FLIES west!&lt;-------<br />
+-----&gt;&gt;Mikado FLIES west!&lt;-------<br />
+-----&gt;&gt;Gail FLIES west!&lt;-------<br />
+You follow Xavier west.<br />
+-----&gt;&gt;Llop FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Leis FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Cireles FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Jennings FLIES in from the east!&lt;-------<br />
+On a Path Along a Wall<br />
+Jennings, Ghost of Dreadlord's Father is standing here. (flying) (invisible)<br />
+Cireles the Male Minotaur is standing here. (flying) (invisible)<br />
+Leis the Male Hill Dwarf is standing here. (flying) (invisible)<br />
+Llop the Male Kagonesti is standing here. (flying) (invisible)<br />
+Gail the Female Gnome is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+470H 70V 1508112X 395C Exits:EW&gt; <br />
+-----&gt;&gt;Xavier FLIES west!&lt;-------<br />
+-----&gt;&gt;Viron FLIES west!&lt;-------<br />
+-----&gt;&gt;Zuhra FLIES west!&lt;-------<br />
+-----&gt;&gt;Mikado FLIES west!&lt;-------<br />
+-----&gt;&gt;Gail FLIES west!&lt;-------<br />
+You follow Xavier west.<br />
+-----&gt;&gt;Llop FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Leis FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Cireles FLIES in from the east!&lt;-------<br />
+-----&gt;&gt;Jennings FLIES in from the east!&lt;-------<br />
+In a Dark Tunnel<br />
+Jennings, Ghost of Dreadlord's Father is standing here. (flying) (invisible)<br />
+Cireles the Male Minotaur is standing here. (flying) (invisible)<br />
+Leis the Male Hill Dwarf is standing here. (flying) (invisible)<br />
+Llop the Male Kagonesti is standing here. (flying) (invisible)<br />
+Gail the Female Gnome is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;Out&gt; Zathoth the Male Minotaur is standing here. (flying)<br />
+&lt;Out&gt; Bondero the Male Hylar Dwarf is standing here. (flying)<br />
+&lt;Out&gt; Gaara Mor'yianthas, Plumber at Day, Wonderboi at Night is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Out&gt; Kolt the Male Kagonesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Out&gt; Zoni the Female Gnome is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+&lt;Out&gt; Alcor the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+&lt;Out&gt; Kaual the Male Kagonesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+470H 69V 1508112X 395C &gt; <br />
+Jennings slowly fades into existence.<br />
+----&gt;&gt;Jennings CRASHES INTO Alcor IN A THUNDERING COLLISION!, KNOCKING HIS ASS TO THE GROUND!&lt;-----<br />
+<br />
+470H 69V 1508112X 395C &gt; <br />
+Leis utters some strange words.<br />
+Leis refreshes everyone around him.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Mikado focuses harshly on Alcor and utters some strange words.<br />
+Alcor wavers under the impact of the lightning bolt sent by Mikado.<br />
+<br />
+470H 112V 1508112X 395C &gt; bash alcor<br />
+st<br />
+<br />
+Gail focuses harshly on Alcor and utters some strange words.<br />
+Gail slowly fades into existence.<br />
+Alcor cries out in pain as Gail grabs him.<br />
+<br />
+470H 112V 1508112X 395C &gt; -------&gt;&gt;YOU Missed BASH on Alcor!!!, AN FALL ON YOUR FACE!!!&lt;-------<br />
+<br />
+470H 112V 1508112X 395C [Jennings:Perfect] [Alcor:Fair] &gt; <br />
+Llop pecks Alcor hard.<br />
+Llop slowly fades into existence.<br />
+<br />
+470H 112V 1508112X 395C [Jennings:Perfect] [Alcor:Bad] &gt; <br />
+Cireles dives into Alcor and savagely bites him, tearing a huge chunk from his flesh.<br />
+Cireles slowly fades into existence.<br />
+<br />
+470H 112V 1508112X 395C [Jennings:Perfect] [Alcor:V.Bad] &gt; <br />
+Xavier focuses harshly on Alcor and utters some strange words.<br />
+The sound of bones cracking echoes as Xavier's force bolt slams into Alcor.<br />
+<br />
+470H 112V 1508112X 395C [Jennings:Perfect] [Alcor:Awful] &gt; <br />
+Zuhra focuses harshly on Alcor and utters some strange words.<br />
+Zuhra slowly fades into existence.<br />
+Alcor collapses and dies as Zuhra grabs him.<br />
+You receive 0 experience.<br />
+Alcor is dead! R.I.P.<br />
+<br />
+470H 112V 1508112X 395C [Alcor:Dying] &gt; <br />
+The death cry of Alcor echoes from somewhere nearby...<br />
+Alcor sinks gently to the ground.<br />
+Alcor stops following Kaual.<br />
+Zathoth gets a very large pile of coins from the corpse of Alcor.<br />
+470H 112V 1508112X 395C &gt; st<br />
+bas zoni<br />
+<br />
+Kaual gets a scroll from his belt.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Kaual grabs a glowing scroll of recall.<br />
+Kaual recites a glowing scroll of recall.<br />
+Kaual disappears.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Zathoth gets a ruby-encrusted battle flail from the corpse of Alcor.<br />
+Zathoth gets a jeweled bracer of the Skull from the corpse of Alcor.<br />
+Zathoth gets a set of light blue prayer beads from the corpse of Alcor.<br />
+Zathoth gets a pitch black robe from the corpse of Alcor.<br />
+Zathoth gets a dented and warped shield from the corpse of Alcor.<br />
+Zathoth gets a pair of golden arm braces from the corpse of Alcor.<br />
+Zathoth gets a pair of leather training boots from the corpse of Alcor.<br />
+Zathoth is zapped by a tainted silver diadem and instantly drops it.<br />
+Zathoth gets a hematite pendant from the corpse of Alcor.<br />
+Zathoth gets a fine cloth cloak from the corpse of Alcor.<br />
+Zathoth gets a pitch black obsidian ring from the corpse of Alcor.<br />
+Zathoth gets a clear crystal sceptre from the corpse of Alcor.<br />
+Zathoth gets a tablet of unending wisdom from the corpse of Alcor.<br />
+Zathoth gets a patterned cloak with stars and moons from the corpse of Alcor.<br />
+Zathoth gets a blue ochre bracer from the corpse of Alcor.<br />
+Zathoth gets the eyes of a baby basilisk from the corpse of Alcor.<br />
+Zathoth gets a bloody minotaur hand axe from the corpse of Alcor.<br />
+Zathoth gets a heavy cloak from the corpse of Alcor.<br />
+Zathoth gets a bright ball of light from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a loaf of waybread from the corpse of Alcor.<br />
+Zathoth gets a glass lightning jar from the corpse of Alcor.<br />
+Zathoth gets a blue feather from the corpse of Alcor.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+----&gt;&gt;Jennings CRASHES INTO Zoni IN A THUNDERING COLLISION!, KNOCKING HER ASS TO THE GROUND!&lt;-----<br />
+470H 112V 1508112X 395C &gt; <br />
+-----&gt;&gt;Zathoth FLIES south!&lt;-------<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Leis gets a small canteen from the corpse of Alcor.<br />
+Leis gets a small wooden chest from the corpse of Alcor.<br />
+Leis gets a scroll of recall from the corpse of Alcor.<br />
+Leis gets a glowing scroll of recall from the corpse of Alcor.<br />
+Leis gets a fine cloth cloak from the corpse of Alcor.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Gail focuses harshly on Zoni and utters some strange words.<br />
+Zoni cries out in pain as Gail grabs her.<br />
+Llop cleaves Zoni very hard.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Mikado focuses harshly on Zoni and utters some strange words.<br />
+Zoni wavers under the impact of the lightning bolt sent by Mikado.<br />
+Leis focuses harshly on Zoni and utters some strange words.<br />
+Leis slowly fades into existence.<br />
+Zoni appears to grow stronger.<br />
+Leis enshrouds Zoni in a cloak of flames, which has no effect.<br />
+<br />
+470H 112V 1508112X 395C &gt; st<br />
+<br />
+Cireles crushes Zoni hard.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Zuhra focuses harshly on Zoni and utters some strange words.<br />
+Zoni collapses and dies as Zuhra grabs her.<br />
+You receive 0 experience.<br />
+Zoni is dead! R.I.P.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+The death cry of Zoni echoes from somewhere nearby...<br />
+Zoni sinks gently to the ground.<br />
+Kolt gets a very large pile of coins from the corpse of Zoni.<br />
+<br />
+470H 112V 1508112X 395C &gt; bash zoni<br />
+<br />
+Kolt gets an eye surrounded by translucent black flames from the corpse of Zoni.<br />
+Kolt gets a sturdy staff of vallenwood from the corpse of Zoni.<br />
+Kolt is zapped by a jeweled bracer of the Skull and instantly drops it.<br />
+Kolt is zapped by a sleek black leather bracer and instantly drops it.<br />
+Kolt gets a length of rope and pouch from the corpse of Zoni.<br />
+Kolt is zapped by a black robe of the Thorn and instantly drops it.<br />
+Kolt is zapped by a large aspen leaf shield and instantly drops it.<br />
+Kolt gets a pair of finely crafted circlets from the corpse of Zoni.<br />
+Kolt is zapped by a pair of pitch black gloves and instantly drops it.<br />
+Kolt gets a pair of worn snakeskin pants from the corpse of Zoni.<br />
+Kolt gets an ornate headdress from the corpse of Zoni.<br />
+Kolt gets a heavy earthen plate from the corpse of Zoni.<br />
+Kolt gets a beaded leather necklace from the corpse of Zoni.<br />
+Kolt gets a beaded leather necklace from the corpse of Zoni.<br />
+Kolt gets a ring of brambles from the corpse of Zoni.<br />
+Kolt gets a twinkling stone ring from the corpse of Zoni.<br />
+Kolt gets a crystal shard necklace from the corpse of Zoni.<br />
+Kolt gets a glowing scroll of recall from the corpse of Zoni.<br />
+Kolt gets a glowing scroll of recall from the corpse of Zoni.<br />
+Kolt gets a glowing scroll of recall from the corpse of Zoni.<br />
+<br />
+470H 112V 1508112X 395C &gt; get all corpse<br />
+st<br />
+l<br />
+You stand up.<br />
+<br />
+470H 112V 1508112X 395C &gt; You are already standing.<br />
+<br />
+470H 112V 1508112X 395C &gt; You couldn't find what you were looking for.<br />
+You are already standing.<br />
+<br />
+470H 112V 1508112X 395C &gt; You couldn't find what you were looking for.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+470H 112V 1508112X 395C &gt; You are already standing.<br />
+In a Dark Tunnel<br />
+You see a pair of pitch black gloves lying upon the ground.<br />
+An enlarged aspen leaf rests in a heap here...it hums softly<br />
+A bundle of black cloth, radiating evil, is here.<br />
+A small loop of black leather is barely visible in the shadows here. (invisible)<br />
+A metal bracer shaped like a skull stares at you from a corner of the room...it glows dimly<br />
+The corpse of Zoni is lying here.<br />
+A quartz crystal sphere has been dropped here.<br />
+A tainted diadem has been discarded into a corner here.<br />
+The corpse of Alcor is lying here.<br />
+Jennings, Ghost of Dreadlord's Father is standing here. (flying)<br />
+Cireles the Male Minotaur is standing here. (flying)<br />
+Leis the Male Hill Dwarf is standing here. (flying)<br />
+Llop the Male Kagonesti is standing here. (flying)<br />
+Gail the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;Out&gt; Bondero the Male Hylar Dwarf is standing here. (flying)<br />
+&lt;Out&gt; Gaara Mor'yianthas, Plumber at Day, Wonderboi at Night is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Out&gt; Kolt the Male Kagonesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Xavier focuses harshly on Kolt and utters some strange words.<br />
+The sound of bones cracking echoes as Xavier's force bolt slams into Kolt.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Leis focuses harshly on Bondero and utters some strange words.<br />
+Flesh burns as Leis enshrouds Bondero in a cloak of flames.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Llop gets a tainted silver diadem.<br />
+<br />
+470H 112V 1508112X 395C &gt; <br />
+Gail focuses harshly on Kolt and utters some strange words.<br />
+Kolt cries out in pain as Gail grabs him.<br />
+<br />
+470H 112V 1508112X 395C &gt; bash gaara<br />
+-------&gt;&gt;YOU Missed BASH on Gaara!!!, AN FALL ON YOUR FACE!!!&lt;-------<br />
+<br />
+470H 112V 1508112X 395C [Avohir:Perfect] [Gaara:Good] &gt; <br />
+Llop gets a sleek black leather bracer.<br />
+<br />
+470H 112V 1508112X 395C [Avohir:Perfect] [Gaara:Good] &gt; <br />
+Cireles crushes Bondero hard.<br />
+<br />
+470H 112V 1508112X 395C [Avohir:Perfect] [Gaara:Good] &gt; <br />
+Llop misses Kolt with his cleave.<br />
+Zuhra is zapped by a pair of pitch black gloves and instantly drops it.<br />
+Zuhra is zapped by a large aspen leaf shield and instantly drops it.<br />
+Zuhra is zapped by a black robe of the Thorn and instantly drops it.<br />
+Zuhra is zapped by a jeweled bracer of the Skull and instantly drops it.<br />
+Zuhra gets the corpse of Zoni.<br />
+Zuhra gets a quartz crystal sphere.<br />
+Zuhra gets the corpse of Alcor.<br />
+<br />
+470H 112V 1508112X 395C [Avohir:Perfect] [Gaara:Good] &gt; <br />
+Llop misses Kolt with his cleave.<br />
+Llop misses Kolt with his cleave.<br />
+Cireles bruises Bondero with his crush.<br />
+Cireles bruises Bondero with his pierce.<br />
+You miss Gaara with your stab.<br />
+You miss Gaara with your stab.<br />
+Gaara Massassacress YOU with his cleave.<br />
+Gaara misses you with his claw.<br />
+Leis misses Bondero with his slash.<br />
+Bondero crushes Leis extremely hard.<br />
+Xavier bludgeons Kolt hard.<br />
+Kolt misses Xavier with his whip.<br />
+Kolt misses Xavier with his cleave.<br />
+<br />
+440H 112V 1508112X 395C [Avohir:V.Good] [Gaara:Good] &gt; st<br />
+<br />
+Kolt stops using a black ice raith.<br />
+Kolt grabs a glowing scroll of recall.<br />
+Kolt recites a glowing scroll of recall.<br />
+Kolt disappears.<br />
+<br />
+440H 112V 1508112X 395C [Avohir:V.Good] [Gaara:Good] &gt; <br />
+Gaara stops using a sapphire hilted foil.<br />
+Gaara grabs a scroll of recall.<br />
+Gaara recites a scroll of recall.<br />
+Gaara disappears.<br />
+<br />
+440H 112V 1508112X 395C &gt; bash<br />
+<br />
+Cireles dives into Bondero and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Mikado focuses harshly on Bondero and utters some strange words.<br />
+440H 112V 1508112X 395C &gt; l<br />
+Leis focuses harshly on Bondero and utters some strange words.<br />
+Flesh burns as Leis enshrouds Bondero in a cloak of flames.<br />
+You stand up.<br />
+<br />
+440H 112V 1508112X 395C &gt; You couldn't find what you were looking for.<br />
+<br />
+440H 112V 1508112X 395C &gt; In a Dark Tunnel<br />
+A metal bracer shaped like a skull stares at you from a corner of the room...it glows dimly<br />
+A bundle of black cloth, radiating evil, is here.<br />
+An enlarged aspen leaf rests in a heap here...it hums softly<br />
+You see a pair of pitch black gloves lying upon the ground.<br />
+Jennings, Ghost of Dreadlord's Father is standing here. (flying)<br />
+Cireles the Male Minotaur is standing here, fighting Bondero. (flying)<br />
+Leis the Male Hill Dwarf is standing here, fighting Bondero. (flying)<br />
+Llop the Male Kagonesti is standing here. (flying)<br />
+Gail the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;Out&gt; Bondero the Male Hylar Dwarf is standing here, fighting Leis. (flying)<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Gail focuses harshly on Bondero and utters some strange words.<br />
+Bondero cries out in pain as Gail grabs him.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Zuhra misses Bondero with her bludgeon.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Bondero bleeds profusely from his wounds.<br />
+Zuhra misses Bondero with her bludgeon.<br />
+Cireles misses Bondero with his crush.<br />
+Cireles pierces Bondero hard.<br />
+Cireles crushes Bondero very hard.<br />
+Bondero crushes Leis extremely hard.<br />
+440H 112V 1508112X 395C &gt; <br />
+Xavier bludgeons Bondero hard.<br />
+<br />
+440H 112V 1508112X 395C &gt; bash bondero<br />
+----&gt;&gt;YOU CRASH INTO Bondero IN A BONE CRUNCHING BASH!, SENDING HIM SPRAWLING TO THE GROUND!&lt;----<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:V.Bad] &gt; <br />
+Llop misses Bondero with his cleave.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:V.Bad] &gt; <br />
+Viron focuses harshly on Bondero and utters some strange words.<br />
+Viron slowly fades into existence.<br />
+Bondero cries out in pain as Viron grabs him.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:Awful] &gt; <br />
+Bondero steps aside as Jennings attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:Awful] &gt; <br />
+Cireles sends a swarm of flying piranha at Bondero.<br />
+A piranha tears into Bondero's flesh.<br />
+A piranha tears into Bondero's flesh.<br />
+A piranha tears into Bondero's flesh.<br />
+A piranha tears into Bondero's flesh.<br />
+A piranha tears into Bondero's flesh.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:Awful] &gt; <br />
+Mikado focuses harshly on Bondero and utters some strange words.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:Awful] &gt; st<br />
+<br />
+Leis focuses harshly on Bondero and utters some strange words.<br />
+Flesh burns as Leis enshrouds Bondero in a cloak of flames.<br />
+<br />
+440H 112V 1508112X 395C [Leis:Good] [Bondero:Awful] &gt; <br />
+Gail focuses harshly on Bondero and utters some strange words.<br />
+Bondero collapses and dies as Gail grabs him.<br />
+You receive 0 experience.<br />
+Bondero is dead! R.I.P.<br />
+<br />
+440H 112V 1508112X 395C [Bondero:Dying] &gt; <br />
+The death cry of Bondero echoes from somewhere nearby...<br />
+<br />
+440H 112V 1508112X 395C &gt; l<br />
+440H 112V 1508112X 395C &gt; In a Dark Tunnel<br />
+The corpse of Bondero is lying here.<br />
+A metal bracer shaped like a skull stares at you from a corner of the room...it glows dimly<br />
+A bundle of black cloth, radiating evil, is here.<br />
+An enlarged aspen leaf rests in a heap here...it hums softly<br />
+You see a pair of pitch black gloves lying upon the ground.<br />
+Jennings, Ghost of Dreadlord's Father is sitting here. (flying)<br />
+Cireles the Male Minotaur is standing here. (flying)<br />
+Leis the Male Hill Dwarf is standing here. (flying)<br />
+Llop the Male Kagonesti is standing here. (flying)<br />
+Gail the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Xavier gets the hammer of Kharas from the corpse of Bondero.<br />
+Xavier gets a three-strap leather bracer from the corpse of Bondero.<br />
+Xavier gets a three-strap leather bracer from the corpse of Bondero.<br />
+Xavier gets a girdle of storm giant strength from the corpse of Bondero.<br />
+Xavier gets a sleek, black cloak from the corpse of Bondero.<br />
+Xavier is zapped by a crystalline shield and instantly drops it.<br />
+Xavier gets a pair of spun mithril sleeves from the corpse of Bondero.<br />
+Xavier gets a pair of the weaponsmaster's gloves from the corpse of Bondero.<br />
+Xavier gets a pair of segmented black adamantite shin guards from the corpse of Bondero.<br />
+Xavier is zapped by the Queen's crown and instantly drops it.<br />
+Xavier gets a suit of red dragonscale plate from the corpse of Bondero.<br />
+Xavier gets a silver dwarven talisman from the corpse of Bondero.<br />
+Xavier gets a sleek, black cloak from the corpse of Bondero.<br />
+Xavier gets a red ring of the Dragon Highlord from the corpse of Bondero.<br />
+Xavier gets a very large pile of coins from the corpse of Bondero.<br />
+Xavier gets a roasted turkey leg from the corpse of Bondero.<br />
+Xavier gets a roasted turkey leg from the corpse of Bondero.<br />
+Xavier gets a roasted turkey leg from the corpse of Bondero.<br />
+Xavier gets a roasted turkey leg from the corpse of Bondero.<br />
+Xavier gets a bronze bottle from the corpse of Bondero.<br />
+Xavier gets a bronze bottle from the corpse of Bondero.<br />
+Xavier gets a bronze bottle from the corpse of Bondero.<br />
+Xavier gets a blue potion of remove poison from the corpse of Bondero.<br />
+Llop gets a chest made of bones from the corpse of Bondero.<br />
+<br />
+440H 112V 1508112X 395C &gt; get all corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Llop is zapped by a crystalline shield and instantly drops it.<br />
+<br />
+440H 112V 1508112X 395C &gt; l<br />
+<br />
+Llop is zapped by the Queen's crown and instantly drops it.<br />
+<br />
+440H 112V 1508112X 395C &gt; In a Dark Tunnel<br />
+The crown of Christine has been placed here.<br />
+A large shield fashioned from light purple crystal sits here.<br />
+The corpse of Bondero is lying here.<br />
+A metal bracer shaped like a skull stares at you from a corner of the room...it glows dimly<br />
+A bundle of black cloth, radiating evil, is here.<br />
+An enlarged aspen leaf rests in a heap here...it hums softly<br />
+You see a pair of pitch black gloves lying upon the ground.<br />
+Jennings, Ghost of Dreadlord's Father is sitting here. (flying)<br />
+Cireles the Male Minotaur is standing here. (flying)<br />
+Leis the Male Hill Dwarf is standing here. (flying)<br />
+Llop the Male Kagonesti is standing here. (flying)<br />
+Gail the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mikado Saenara, Peasant's Son is standing here. (flying) (invisible)<br />
+Zuhra the Female Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Viron the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Xavier the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+440H 112V 1508112X 395C &gt; <br />
+Xavier divides 3170 coins equally among the group members present.<br />
+<br />
+440H 112V 1508112X 712C &gt; <br />
+Viron gets the Queen's crown.<br />
+Viron gets a crystalline shield.<br />
+Viron gets a jeweled bracer of the Skull.<br />
+Viron gets a black robe of the Thorn.<br />
+Viron gets a large aspen leaf shield.<br />
+Viron gets a pair of pitch black gloves.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1810'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1810">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1810">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,844 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 406-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='406'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Elijah Evedur R.I.P.</font></b>
+<p>
+POV: 
+Niupta<p>
+Log Rating:
+0.6922<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+254H 176V 22962362X 25C Mem:3 Exits:W&gt; <br />
+Methuselah tells your group 'enriko elijah elyana evedur'<br />
+<br />
+254H 176V 22962362X 25C Mem:3 Exits:W&gt; gro<br />
+Your group of 5 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Chon             perfect   rested    standing   Y   N    N     0    1<br />
+  Methuselah       perfect   rested    fighting   N   N    N     0    0<br />
+  Niupta           perfect   rested    standing   Y   N    N     1    3<br />
+  Suntz            perfect   rested    standing   Y   Y    N     1    1<br />
+  Sartel           perfect   rested    resting    Y   N    N     0    0<br />
+<br />
+254H 176V 22962362X 25C Mem:3 Exits:W&gt; gt d of in?<br />
+You tell your group 'd of in?'<br />
+<br />
+254H 176V 22962362X 25C Mem:3 Exits:W&gt; gro<br />
+Your group of 5 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Chon             good      rested    fighting   Y   N    N     0    1<br />
+  Methuselah       perfect   rested    fighting   N   N    N     0    0<br />
+  Niupta           perfect   rested    standing   Y   N    N     1    3<br />
+  Suntz            perfect   rested    standing   Y   Y    N     1    1<br />
+  Sartel           perfect   rested    resting    Y   N    N     0    0<br />
+<br />
+254H 176V 22962362X 25C Mem:3 Exits:W&gt; w<br />
+Suntz flies in from the east.<br />
+Alchemical Lab<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+254H 175V 22962362X 25C Mem:4 Exits:EW&gt; w<br />
+<br />
+Chon tells your group 'come come'<br />
+<br />
+254H 175V 22962362X 25C Mem:4 Exits:EW&gt; Suntz flies in from the east.<br />
+Anatole's Amazing Artifacts<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+254H 174V 22962362X 25C Mem:4 Exits:NE&gt; n<br />
+Suntz flies in from the south.<br />
+Sword Street<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+254H 173V 22962362X 25C Mem:4 Exits:ESW&gt; e<br />
+Suntz flies in from the west.<br />
+Sword Street<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+Chon flies in from the south.<br />
+<br />
+254H 172V 22962362X 25C Mem:4 Exits:ESW&gt; s<br />
+<br />
+Suntz tells your group 'who is enriko?'<br />
+<br />
+254H 172V 22962362X 25C Mem:4 Exits:ESW&gt; Suntz flies in from the north.<br />
+The Ebullient Elephant Inn<br />
+A goblet rests here.<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Evedur of the Flook Brigade, part of the Anti-Chemosh Alliance is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+A gargoyle is standing here.<br />
+You see the outline of a life form here, carrying: a glowing scroll of recall.<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is sitting here, fighting Methuselah. (flying)<br />
+. . . is enveloped in flames.<br />
+Methuselah de Mesopotamia, old leprous Messiah is standing here, fighting Elyana.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Methuselah crashes into Elijah in a thundering collision, knocking him to the ground!<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Suntz utters the words, 'saxzf xafe ghji'.<br />
+Suntz slowly fades into existence.<br />
+Evedur is stunned momentarily, recovering quickly.<br />
+A gargoyle is stunned!<br />
+Elijah is stunned momentarily, recovering quickly.<br />
+Elyana is stunned momentarily, recovering quickly.<br />
+Floyd is stunned momentarily, recovering quickly.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Evedur gets a beads from her chest.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Chon flies in from the north.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Evedur violently throws a string of beads to the ground.<br />
+Evedur is surrounded by 3 duplicate images.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Chon focuses harshly on Elyana and utters the words, 'magic missile'.<br />
+Elyana's shield protects her from Chon's magic missiles.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; <br />
+Suntz misses Evedur and destroys an image instead.<br />
+Evedur misses Suntz with her pierce.<br />
+Elijah comes out of hiding.<br />
+Elijah misses Methuselah with his pierce.<br />
+Methuselah crushes Elyana very hard.<br />
+Methuselah is burned, as he swings at Elyana.<br />
+Elyana misses Methuselah with her crush.<br />
+<br />
+254H 171V 22962362X 25C Mem:4 Exits:NU&gt; ca 'l b'elijah<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Elijah with full impact.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Evedur panics, and attempts to flee.<br />
+Evedur flies up.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Evedur flies in from above.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; ca 'l b'elijah<br />
+<br />
+Chon focuses harshly on Elyana and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Chon's force bolt slams into Elyana.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Elyana steps aside as Methuselah attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Evedur focuses harshly on Chon and utters the words, 'lightning bolt'.<br />
+Evedur misses Chon and destroys an image instead.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Elyana stands up.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; <br />
+Evedur pierces Chon hard.<br />
+Chon misses Evedur with his hit.<br />
+Elijah misses Methuselah with his pierce.<br />
+Methuselah crushes Elyana hard.<br />
+Methuselah is burned, as he swings at Elyana.<br />
+Methuselah crushes Elyana.<br />
+Methuselah is burned, as he swings at Elyana.<br />
+Elyana misses Methuselah with her crush.<br />
+<br />
+254H 171V 22962362X 25C Mem:5 Exits:NU&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Elijah with full impact.<br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies up.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Suntz utters the words, 'sfugwahuq gsgrul'.<br />
+Suntz's hands issue a spray of prismatic color!<br />
+Suntz slowly fades into existence.<br />
+Evedur is hit by a spray of gleaming indigo!<br />
+A gargoyle is struck by a spray of murky violet!<br />
+Elijah is hit by a spray of gleaming indigo!<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; ca 'l b'elijah<br />
+<br />
+Methuselah stands up.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Elijah stands up.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Methuselah crashes into Elijah in a thundering collision, knocking him to the ground!<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Evedur panics, and attempts to flee.<br />
+Evedur flies north.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Methuselah crushes Elijah extremely hard.<br />
+Methuselah crushes Elijah very hard.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; You utter the words, 'lightning bolt'<br />
+Your lightning bolt shatters Elijah to pieces.<br />
+You receive 0 experience.<br />
+Elijah is dead! R.I.P.<br />
+g coins corpse<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+The death cry of Elijah echoes from somewhere nearby...<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Suntz utters the words, 'saxzf xafe ghji'.<br />
+Suntz slowly fades into existence.<br />
+A gargoyle is stunned momentarily, recovering quickly.<br />
+Floyd is stunned momentarily, recovering quickly.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; g all corpse<br />
+<br />
+Evedur flies in from the north.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Chon gets a blackened tome from the corpse of Elijah.<br />
+Chon gets a small mithril dagger from the corpse of Elijah.<br />
+Chon gets a jagged bracer from the corpse of Elijah.<br />
+Chon gets a thin bronze bracelet from the corpse of Elijah.<br />
+Chon gets a plain component pouch from the corpse of Elijah.<br />
+Chon gets a thick silver robe from the corpse of Elijah.<br />
+Chon gets some weathered sheepskin gloves from the corpse of Elijah.<br />
+Chon gets a pair of blue shoes from the corpse of Elijah.<br />
+Chon gets a black mage's robe from the corpse of Elijah.<br />
+Chon gets a long black stole, lined with red from the corpse of Elijah.<br />
+Chon gets a cloak of thieves from the corpse of Elijah.<br />
+Chon gets an engraved ring of Nuitari from the corpse of Elijah.<br />
+Chon gets a large pile of coins from the corpse of Elijah.<br />
+Chon gets a blank scroll from the corpse of Elijah.<br />
+Chon gets a blank scroll from the corpse of Elijah.<br />
+Chon gets a blank scroll from the corpse of Elijah.<br />
+Chon gets a large piece of pork chop from the corpse of Elijah.<br />
+Chon gets a large piece of pork chop from the corpse of Elijah.<br />
+Chon gets a large piece of pork chop from the corpse of Elijah.<br />
+Chon gets a large piece of pork chop from the corpse of Elijah.<br />
+Chon gets a glowing scroll of recall from the corpse of Elijah.<br />
+Chon gets a ceramic cup from the corpse of Elijah.<br />
+Chon gets a small wooden chest from the corpse of Elijah.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Suntz bludgeons a gargoyle extremely hard.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Evedur flies north.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Sartel tells your group 'down of what inn?'<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; ca 'l b'evedur<br />
+Who should the spell be cast upon?<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; <br />
+Suntz panics, and attempts to flee.<br />
+Suntz flies north.<br />
+<br />
+254H 171V 22962362X 25C Mem:6 Exits:NU&gt; n<br />
+<br />
+Chon flies north.<br />
+Methuselah leaves north.<br />
+You follow Chon north.<br />
+Sword Street<br />
+Methuselah de Mesopotamia, old leprous Messiah is standing here.<br />
+Chon the Male Theiwar Dwarf is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+<br />
+<br />
+***<br />
+<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Methuselah tells your group 'claired'<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; l<br />
+Sword Street<br />
+Khelin Dros, Bringing Forth the Eternal Darkness is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Chon the Male Theiwar Dwarf is standing here.<br />
+. . . is surrounded by 3 duplicate images.<br />
+Aloy the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Dario Speedwagon is standing here.<br />
+Methuselah de Mesopotamia, old leprous Messiah is standing here.<br />
+A stallion is standing here, pawing at the ground impatiently.<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Chon tells your group 'nod'<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Methuselah leaves south.<br />
+Dario leaves south.<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Methuselah arrives from the south.<br />
+Dario arrives from the south.<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Chon utters the words, 'monster summoning'.<br />
+Chon waves his hand, and the owlbear appears!<br />
+The owlbear now follows Chon.<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+A glowing portal opens in front of you, and Evedur steps from it.<br />
+<br />
+254H 174V 22944164X 6209C Mem:5 Exits:ESW&gt; ca 'mon'<br />
+You utter the words, 'monster summoning'<br />
+You wave your hand, and a grey wyvern appears!<br />
+A grey wyvern starts following you.<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Ironik shouts 'was needing help looking for zones around pal, level 19 temp, goodie'<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Khelin utters the words, 'monster summoning'.<br />
+Khelin waves his hand, and a manticore appears!<br />
+A manticore now follows Khelin.<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Chon releases the owlbear from his service.<br />
+The owlbear transcends this world and enters another plane.<br />
+The owlbear stops following Chon.<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Methuselah crashes into Evedur in a thundering collision, knocking her to the ground!<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Chon focuses harshly on Evedur and utters the words, 'force bolt'.<br />
+Chon comes out of hiding.<br />
+The sound of bones cracking echoes as Chon's force bolt slams into Evedur.<br />
+<br />
+254H 174V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Methuselah crushes Evedur extremely hard.<br />
+Evedur misses Methuselah with her pierce.<br />
+<br />
+254H 176V 22944164X 6209C Mem:5 Exits:ESW&gt; o wyvern ki evedur<br />
+<br />
+254H 176V 22944164X 6209C Mem:5 Exits:ESW&gt; <br />
+Dario barrels into Evedur, knocking her to the ground.<br />
+<br />
+254H 176V 22944164X 6209C Mem:5 Exits:ESW&gt; ca 'l b'evedur<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Evedur with full impact.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Aloy focuses harshly on Evedur and utters the words, 'lightning bolt'.<br />
+Aloy slowly fades into existence.<br />
+Evedur wavers under the impact of the lightning bolt sent by Aloy.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Chon focuses harshly on Evedur and utters the words, 'force bolt'.<br />
+Chon comes out of hiding.<br />
+The sound of bones cracking echoes as Chon's force bolt slams into Evedur.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Dario misses Evedur with his cleave.<br />
+Methuselah misses Evedur with his crush.<br />
+Evedur barely pierces Methuselah.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Khelin releases a manticore from his service.<br />
+A manticore transcends this world and enters another plane.<br />
+A manticore stops following Khelin.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; ca 'l b'evedur<br />
+<br />
+Methuselah crashes into Evedur in a thundering collision, knocking her to the ground!<br />
+Evedur is stunned, but will likely regain consciousness again.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Khelin utters the words, 'relocate'.<br />
+Khelin disappears in a puff of smoke.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Nobb flies in from the east.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Nobb flies west.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; You utter the words, 'lightning bolt'<br />
+Your lightning bolt shatters Evedur to pieces.<br />
+You receive 0 experience.<br />
+Evedur is dead! R.I.P.<br />
+g coins corpse<br />
+<br />
+254H 176V 22944164X 6209C [Me:Perfect] [Evedur:Dying] Mem:6 Exits:ESW&gt; <br />
+The death cry of Evedur echoes from somewhere nearby...<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Aloy gets a small green orb from the corpse of Evedur.<br />
+Aloy gets a short sword from the corpse of Evedur.<br />
+Aloy gets a translucent shroud from the corpse of Evedur.<br />
+Aloy gets a pair of leather sleeves from the corpse of Evedur.<br />
+Aloy gets a pair of leather gloves from the corpse of Evedur.<br />
+Aloy gets a pair of magi boots from the corpse of Evedur.<br />
+Aloy gets a pair of leather pants from the corpse of Evedur.<br />
+Aloy gets a large pile of coins from the corpse of Evedur.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; g all corpse<br />
+<br />
+Elyana flies in from the east.<br />
+Elijah flies in from the east.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Chon focuses harshly on Elyana and utters the words, 'magic missile'.<br />
+Chon misses Elyana and destroys an image instead.<br />
+Chon misses Elyana and destroys an image instead.<br />
+Chon misses Elyana and destroys an image instead.<br />
+Chon misses Elyana and destroys an image instead.<br />
+Elyana's shield protects her from Chon's magic missiles.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Elyana flies west.<br />
+Elijah flies west.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Dario gets a leather cap from the corpse of Evedur.<br />
+Dario gets a leather jacket from the corpse of Evedur.<br />
+Dario gets a ragged gray cloak from the corpse of Evedur.<br />
+Dario gets the amulet of Kul from the corpse of Evedur.<br />
+Dario gets a small red ring from the corpse of Evedur.<br />
+Dario gets a small red ring from the corpse of Evedur.<br />
+Dario gets a glowing scroll of recall from the corpse of Evedur.<br />
+Dario gets a large sack from the corpse of Evedur.<br />
+Dario gets a small wooden chest from the corpse of Evedur.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; ca 'l b'elyana<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; You couldn't find anyone to order around.<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+254H 176V 22944164X 6209C Mem:6 Exits:ESW&gt; <br />
+Chon tells your group 'kill em'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='406'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=406">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="406">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

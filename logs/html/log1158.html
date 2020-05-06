@@ -1,0 +1,930 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1158-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1158'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Iiek Rip.... Fight between Randomer scum and Outlaws</font></b>
+<p>
+POV: 
+Iiek<p>
+Log Rating:
+-0.8333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+After a attack on kaldean we attempted to fight manny and company when outlaws save the day.</i>
+<p>
+<p>
+
+<br />
+<br />
+You are sent sprawling as Manny crashes into you.<br />
+<br />
+293H 107V 16949414X 38C [Me:V.Good] [Manny:V.Good] Exits:NESW&gt; c 'blind' scipio manny<br />
+st<br />
+<br />
+Neeoo crashes into Manny in a thundering collision, knocking him to the ground!<br />
+<br />
+293H 107V 16949414X 38C [Me:V.Good] [Manny:V.Good] Exits:NESW&gt; <br />
+Neeoo massacres Manny with his cleave.<br />
+Manny whips YOU very hard.<br />
+You miss Manny with your hit.<br />
+<br />
+279H 107V 16949414X 38C [Me:V.Good] [Manny:Good] Exits:NESW&gt; st<br />
+<br />
+A drunken sailor arrives from the west.<br />
+<br />
+279H 107V 16949414X 38C [Me:V.Good] [Manny:Good] Exits:NESW&gt; <br />
+Shanker flies in from the south.<br />
+Shanker kneels down and studies the ground.<br />
+<br />
+279H 107V 16949414X 38C [Me:V.Good] [Manny:Good] Exits:NESW&gt; c 'blind' manny<br />
+<br />
+Kaldean flies in from the west.<br />
+<br />
+279H 107V 16949414X 38C [Me:V.Good] [Manny:Good] Exits:NESW&gt; <br />
+Shanker flies west.<br />
+<br />
+279H 107V 16949414X 38C [Me:V.Good] [Manny:Good] Exits:NESW&gt; <br />
+Neeoo cleaves Manny extremely hard.<br />
+Manny whips YOU extremely hard.<br />
+You miss Manny with your hit.<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; <br />
+Shanker flies in from the west.<br />
+Shanker kneels down and studies the ground.<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; <br />
+Kaldean crashes into Shanker in a thundering collision, knocking him to the ground!<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; You stand up.<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; You are already standing.<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Exits:NESW&gt; You utter the words, 'blindness'<br />
+Manny seems to be blinded!<br />
+<br />
+262H 107V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Kaldean slashes Shanker very hard.<br />
+Shanker slashes Kaldean extremely hard.<br />
+Neeoo massacres Manny with his cleave.<br />
+Manny whips YOU very hard.<br />
+You feel less righteous.<br />
+Shanker steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; l<br />
+The Tavern Square<br />
+    Before you stands tavern square, a meeting place of many people and<br />
+races. The cobbles have been freshly washed and there is an air of<br />
+peacefulness about the drinkers wandering into the inn to the south. A dark<br />
+alley leads to the north, a cobbled lane to the west. Death row and the<br />
+executioners block lead to the east. Far to the west lies high street and<br />
+the main shops of Balifor. A big painted sign swings from an iron clasp on<br />
+the tavern wall.<br />
+A young kender stands here, looking about curiously.<br />
+Shanker, a Man of Glory Ex Inferis is sitting here, fighting Kaldean. (flying)<br />
+. . . has a tough exterior.<br />
+Kaldean, Chaotic Archer is standing here, fighting Shanker. (flying)<br />
+. . . has a tough exterior.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Manny of Shadows is sitting here, fighting YOU. (flying)<br />
+Neeoo the Male Human is sitting here, fighting Manny. (flying)<br />
+. . . has a tough exterior.<br />
+A small and weak looking horse is here awaiting its master.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; gro<br />
+Your group of 3 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Neeoo            perfect   rested    fighting   Y   N    Y    Y     0    0<br />
+  Kaldean          v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Iiek             good      rested    fighting   Y   N    N    Y     0    2<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Kaldean slashes Shanker hard.<br />
+Shanker misses Kaldean with his slash.<br />
+Neeoo cleaves Manny extremely hard.<br />
+Manny misses you with his whip.<br />
+You miss Manny with your hit.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; l<br />
+<br />
+Manny stands up.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; The Tavern Square<br />
+    Before you stands tavern square, a meeting place of many people and<br />
+races. The cobbles have been freshly washed and there is an air of<br />
+peacefulness about the drinkers wandering into the inn to the south. A dark<br />
+alley leads to the north, a cobbled lane to the west. Death row and the<br />
+executioners block lead to the east. Far to the west lies high street and<br />
+the main shops of Balifor. A big painted sign swings from an iron clasp on<br />
+the tavern wall.<br />
+Shanker, a Man of Glory Ex Inferis is sitting here, fighting Kaldean. (flying)<br />
+. . . has a tough exterior.<br />
+Kaldean, Chaotic Archer is standing here, fighting Shanker. (flying)<br />
+. . . has a tough exterior.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Manny of Shadows is standing here, fighting YOU. (flying)<br />
+Neeoo the Male Human is sitting here, fighting Manny. (flying)<br />
+. . . has a tough exterior.<br />
+A small and weak looking horse is here awaiting its master.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+SCIPIO! stops following Manny.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Manny patiently twiddles his thumbs.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Kaldean crashes into Manny in a thundering collision, knocking him to the ground!<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Shanker stands up.<br />
+<br />
+262H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+You are sent sprawling as Shanker crashes into you.<br />
+<br />
+248H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; <br />
+Yoink arrives from the west.<br />
+<br />
+248H 109V 16949414X 38C [Me:Good] [Manny:Good] Mem:2 Exits:NESW&gt; st<br />
+<br />
+Kaldean misses Shanker with his slash.<br />
+Shanker slashes Kaldean extremely hard.<br />
+Neeoo massacres Manny with his cleave.<br />
+Manny whips YOU very hard.<br />
+You barely hit Manny.<br />
+<br />
+234H 109V 16949414X 38C [Me:Good] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Neeoo stands up.<br />
+<br />
+234H 109V 16949414X 38C [Me:Good] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Yoink leaves south.<br />
+<br />
+234H 109V 16949414X 38C [Me:Good] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Neeoo crashes into Shanker in a thundering collision, knocking him to the ground!<br />
+<br />
+234H 109V 16949414X 38C [Me:Good] [Manny:Fair] Mem:2 Exits:NESW&gt; c 'cure crit'<br />
+<br />
+Palatinus arrives from the south.<br />
+<br />
+234H 109V 16949414X 38C [Me:Good] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Kaldean barely slashes Shanker.<br />
+Shanker misses Kaldean with his slash.<br />
+Neeoo cleaves Manny extremely hard.<br />
+Manny whips YOU extremely hard.<br />
+You miss Manny with your hit.<br />
+<br />
+217H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Palatinus leaves west.<br />
+<br />
+217H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; You stand up.<br />
+<br />
+217H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+217H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Kaldean slashes Shanker extremely hard.<br />
+Shanker massacres Kaldean with his slash.<br />
+Neeoo massacres Manny with his cleave.<br />
+Manny whips YOU very hard.<br />
+<br />
+204H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Manny stands up.<br />
+<br />
+204H 109V 16949414X 38C [Me:Fair] [Manny:Fair] Mem:2 Exits:NESW&gt; <br />
+Manny panics, and attempts to flee.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Manny flies in from the north.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Kaldean crashes into Manny in a thundering collision, knocking him to the ground!<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Manny misses Kaldean with his whip.<br />
+Kaldean slashes Shanker hard.<br />
+Shanker massacres Kaldean with his slash.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Shanker steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Sanchez flies in from the west.<br />
+Dars flies in from the west.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Dars focuses harshly on Neeoo and utters some strange words.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; <br />
+Shanker stands up.<br />
+<br />
+204H 109V 16949414X 38C Mem:2 Exits:NESW&gt; c 'heal' me<br />
+You utter the words, 'heal'<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+305H 109V 16949414X 38C Mem:3 Exits:NESW&gt; <br />
+You are sent sprawling as Shanker crashes into you.<br />
+<br />
+291H 109V 16949414X 38C [Me:V.Good] [Kaldean:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Uguh arrives from the south.<br />
+<br />
+291H 109V 16949414X 38C [Me:V.Good] [Kaldean:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Sanchez slowly fades into existence.<br />
+Neeoo steps aside as Sanchez attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+291H 109V 16949414X 38C [Me:V.Good] [Kaldean:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; st<br />
+<br />
+Sanchez massacres Neeoo with his slash.<br />
+You miss Shanker with your hit.<br />
+Neeoo cleaves Shanker extremely hard.<br />
+Manny whips Kaldean hard.<br />
+Kaldean misses Shanker with his slash.<br />
+Shanker slashes Kaldean very hard.<br />
+<br />
+291H 109V 16949414X 38C [Me:V.Good] [Kaldean:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Dars utters some strange words.<br />
+Sanchez stops fighting Neeoo.<br />
+Manny stops fighting Kaldean.<br />
+Shanker stops fighting Kaldean.<br />
+Kaldean stops fighting Shanker.<br />
+You stop fighting Shanker.<br />
+Neeoo stops fighting Shanker.<br />
+A curious kender looks calmer.<br />
+A drunken sailor looks calmer.<br />
+A small horse looks calmer.<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; <br />
+Dars steps aside as Kaldean attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; <br />
+Sanchez stands up.<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; <br />
+Sanchez slowly fades into existence.<br />
+Sanchez crashes into Neeoo in a thundering collision, knocking him to the ground!<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; <br />
+Manny stands up.<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; l<br />
+<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Neeoo cleaves Sanchez extremely hard.<br />
+Kaldean misses Dars with his slash.<br />
+Dars slowly fades into existence.<br />
+Dars misses Kaldean with his hit.<br />
+<br />
+291H 109V 16949414X 38C Mem:3 Exits:NESW&gt; gt recal<br />
+<br />
+You are sent sprawling as Shanker crashes into you.<br />
+<br />
+277H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat arrives from the north.<br />
+<br />
+277H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat rubs up against Sanchez's leg.<br />
+Sanchez panics, and attempts to flee.<br />
+Sanchez flies west.<br />
+<br />
+277H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat rubs up against Manny's leg.<br />
+Manny says 'damn blind'<br />
+<br />
+277H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; c 'heal' neeoo<br />
+<br />
+Shanker massacres YOU with his slash.<br />
+You miss Shanker with your hit.<br />
+Kaldean slashes Dars very hard.<br />
+Dars misses Kaldean with his hit.<br />
+Sanchez flies in from the west.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Sanchez slowly fades into existence.<br />
+Sanchez crashes into Neeoo in a thundering collision, knocking him to the ground!<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; st<br />
+<br />
+Manny says 'this isnt fun'<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Archyme shouts 'what happened to the amount of people logged in?!? only like a year ago we had 3X this many people'<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat pounces on a piece of dirt.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; c 'heal' neeoo<br />
+<br />
+Kaldean stands up.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Kaldean panics, and attempts to flee.<br />
+Kaldean flies north.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Dars focuses harshly on Neeoo and utters some strange words.<br />
+Dars slowly fades into existence.<br />
+Dars sends a chilling blast of air at Neeoo, giving him a severe case of frostbite.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Kaldean flies in from the north.<br />
+<br />
+252H 109V 16949414X 38C [Me:Good] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Sanchez annihilates Neeoo with his slash.<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Neeoo cleaves Sanchez very hard.<br />
+Shanker massacres YOU with his slash.<br />
+You miss Shanker with your hit.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Neeoo steps aside as Sanchez attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat hunches down and hisses at something.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Manny steps aside as Kaldean attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Manny says 'DAMMIT UNBLIND'<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+A feral cat rubs up against Shanker's leg.<br />
+Shanker says 'yeah it sucks'<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Uguh looks at Neeoo.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+You step aside as Shanker tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Kaldean steps aside as Manny attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Dars focuses harshly on Neeoo and utters some strange words.<br />
+Dars slowly fades into existence.<br />
+Dars sends a chilling blast of air at Neeoo, giving him a severe case of frostbite.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Kaldean slashes Manny very hard.<br />
+Manny whips Kaldean very hard.<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Neeoo cleaves Sanchez extremely hard.<br />
+Shanker misses you with his slash.<br />
+You miss Shanker with your hit.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; <br />
+Sanchez stands up.<br />
+Neeoo steps aside as Sanchez attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; c 'heal' neeoo<br />
+You stand up.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; The Tavern Square<br />
+    Before you stands tavern square, a meeting place of many people and<br />
+races. The cobbles have been freshly washed and there is an air of<br />
+peacefulness about the drinkers wandering into the inn to the south. A dark<br />
+alley leads to the north, a cobbled lane to the west. Death row and the<br />
+executioners block lead to the east. Far to the west lies high street and<br />
+the main shops of Balifor. A big painted sign swings from an iron clasp on<br />
+the tavern wall.<br />
+Kaldean, Chaotic Archer is sitting here, fighting Manny. (flying)<br />
+. . . has a tough exterior.<br />
+A young kender stands here, looking about curiously.<br />
+Sanchez Ahma, Freedom Fighter is sitting here, fighting Neeoo. (flying)<br />
+A feral cat parades her territory and sniffs your leg.<br />
+Uguh the Male High Elf is standing here.<br />
+Dars the Male Gnome is standing here. (flying) (invisible)<br />
+Manny of Shadows is sitting here, fighting Kaldean. (flying)<br />
+Shanker, a Man of Glory Ex Inferis is sitting here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+Neeoo the Male Human is sitting here, fighting Sanchez. (flying)<br />
+. . . has a tough exterior.<br />
+A small and weak looking horse is here awaiting its master.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; You tell your group 'recall boyz'<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:3 Exits:NESW&gt; You utter the words, 'heal'<br />
+You heal Neeoo.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Dars focuses harshly on Neeoo and utters some strange words.<br />
+Dars slowly fades into existence.<br />
+Dars sends a chilling blast of air at Neeoo, giving him a severe case of frostbite.<br />
+<br />
+226H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Kaldean slashes Manny extremely hard.<br />
+Manny whips Kaldean extremely hard.<br />
+Sanchez annihilates Neeoo with his slash.<br />
+Neeoo massacres Sanchez with his cleave.<br />
+Shanker slashes YOU extremely hard.<br />
+Neeoo stands up.<br />
+<br />
+207H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Sanchez stands up.<br />
+<br />
+207H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; recite recall<br />
+<br />
+Neeoo sinks gently to the ground.<br />
+Neeoo stops using a grey owl's feather.<br />
+Neeoo grabs a glowing scroll of recall.<br />
+Neeoo recites a glowing scroll of recall.<br />
+Neeoo disappears.<br />
+<br />
+207H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Kaldean stands up.<br />
+<br />
+207H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Kaldean recites a glowing scroll of recall.<br />
+Kaldean disappears.<br />
+<br />
+207H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Sanchez slowly fades into existence.<br />
+You are sent sprawling as Sanchez crashes into you.<br />
+<br />
+184H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+A feral cat climbs in Shanker's lap.<br />
+Shanker stands up.<br />
+<br />
+184H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+A feral cat rubs up against Shanker's leg.<br />
+You step aside as Shanker tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+184H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Manny stands up.<br />
+<br />
+184H 109V 16949414X 38C [Me:Fair] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Sanchez annihilates YOU with his slash.<br />
+Sanchez annihilates YOU with his slash.<br />
+Shanker slashes YOU extremely hard.<br />
+You miss Shanker with your hit.<br />
+<br />
+88H 109V 16949414X 38C [Me:V.Bad] [Shanker:Good] Mem:5 Exits:NESW&gt; st<br />
+<br />
+A feral cat purrs contentedly.<br />
+<br />
+88H 109V 16949414X 38C [Me:V.Bad] [Shanker:Good] Mem:5 Exits:NESW&gt; recite recall<br />
+<br />
+Uguh looks at you.<br />
+<br />
+88H 109V 16949414X 38C [Me:V.Bad] [Shanker:Good] Mem:5 Exits:NESW&gt; <br />
+Dars utters some strange words.<br />
+Sanchez stops fighting you.<br />
+Shanker stops fighting you.<br />
+You stop fighting Shanker.<br />
+A curious kender looks calmer.<br />
+A feral cat looks calmer.<br />
+A drunken sailor looks calmer.<br />
+A small horse looks calmer.<br />
+<br />
+88H 109V 16949414X 38C Mem:5 Exits:NESW&gt; <br />
+Neeoo tells your group 'thanks'<br />
+<br />
+88H 109V 16949414X 38C Mem:5 Exits:NESW&gt; <br />
+Neeoo tells your group 'GET OUT'<br />
+<br />
+88H 109V 16949414X 38C Mem:5 Exits:NESW&gt; <br />
+A feral cat runs in circles chasing its tail.<br />
+<br />
+88H 109V 16949414X 38C Mem:5 Exits:NESW&gt; You stand up.<br />
+<br />
+88H 109V 16949414X 38C Mem:5 Exits:NESW&gt; <br />
+Sanchez slowly fades into existence.<br />
+You are sent sprawling as Sanchez crashes into you.<br />
+<br />
+65H 109V 16949414X 38C [Me:V.Bad] [Sanchez:Good] Mem:5 Exits:NESW&gt; <br />
+Shanker stands up.<br />
+<br />
+65H 109V 16949414X 38C [Me:V.Bad] [Sanchez:Good] Mem:5 Exits:NESW&gt; <br />
+You step aside as Shanker tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+65H 109V 16949414X 38C [Me:V.Bad] [Sanchez:Good] Mem:5 Exits:NESW&gt; Shanker slashes YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Sanchez annihilates YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Sanchez annihilates YOU with his slash.<br />
+You're dead.<br />
+Your skin softens.<br />
+You feel more vulnerable.<br />
+Your detect invisibility wears off.<br />
+You stop following someone.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+  
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1158'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1158">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1158">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

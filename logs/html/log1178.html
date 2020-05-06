@@ -1,0 +1,839 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1178-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1178'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Allur R.I.P.</font></b>
+<p>
+POV: 
+Aldur<p>
+Log Rating:
+2.1429<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+We decide to ambush Soran, but Allur decided to join the party. We saw eq loading so we decided to change target asap!</i>
+<p>
+<p>
+
+136V 22255499X 7597C Exits:NS&gt; <br />
+Lauriel tells your group 'WIZ EYE - ENTERED - SOUTH: Soran Allur'<br />
+<br />
+136V 22255499X 7597C Exits:NS&gt; n<br />
+e<br />
+The umber hulk arrives from the south.<br />
+A gargoyle arrives from the south.<br />
+Veterans Park<br />
+A gargoyle is standing here. (invisible)<br />
+The huge umber hulk lumbers towards you. (invisible)<br />
+You sense a life form.<br />
+Soran the Male Hill Dwarf is standing here. (flying) (invisible)<br />
+c 'force bolt' soran<br />
+. . . has a tough exterior.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+134V 22255499X 7597C Exits:NES&gt; The umber hulk arrives from the west.<br />
+A gargoyle arrives from the west.<br />
+A Small Clearing in the Park<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A gargoyle is standing here. (invisible)<br />
+The huge umber hulk lumbers towards you. (invisible)<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+132V 22255499X 7597C Exits:NESW&gt; <br />
+Lauriel tells your group 'WIZ EYE - LEFT - WEST: Soran Allur'<br />
+<br />
+132V 22255499X 7597C Exits:NESW&gt; <br />
+Santh gives the umber hulk an order.<br />
+<br />
+132V 22255499X 7597C Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+132V 22255499X 7597C Exits:NESW&gt; w<br />
+The umber hulk arrives from the east.<br />
+A gargoyle arrives from the east.<br />
+Veterans Park<br />
+A gargoyle is standing here. (invisible)<br />
+The huge umber hulk lumbers towards you. (invisible)<br />
+Allur the Insane, Inquisitor of Ii is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Soran the Male Hill Dwarf is standing here. (flying) (invisible)<br />
+c 'force bolt' soran<br />
+. . . is surrounded by a white mist.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+130V 22255499X 7597C Exits:NES&gt; <br />
+Lauriel focuses harshly on Soran and utters the words, 'force bolt'.<br />
+Lauriel slowly fades into existence.<br />
+The sound of bones cracking echoes as Lauriel's force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C Exits:NES&gt; s<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C Mem:2 Exits:NES&gt; n<br />
+<br />
+Lauriel misses Soran with her bludgeon.<br />
+Soran crushes Lauriel very hard.<br />
+Soran is burned, as he swings at Lauriel.<br />
+Allur drinks from a golden chalice.<br />
+Allur shines with a holy light.<br />
+<br />
+130V 22255499X 7597C Mem:2 Exits:NES&gt; <br />
+Santh focuses harshly on Soran and utters the words, 'force bolt'.<br />
+Santh slowly fades into existence.<br />
+The sound of bones cracking echoes as Santh's force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C Mem:2 Exits:NES&gt; <br />
+Soran panics, and attempts to flee.<br />
+Soran flies north.<br />
+<br />
+130V 22255499X 7597C Mem:2 Exits:NES&gt; <br />
+Allur slowly fades into existence.<br />
+Allur comes out of hiding.<br />
+Allur lunges at you with a crystal dagger, but you easily avoid her attempt to backstab you.<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Perfect] Mem:2 Exits:NES&gt; <br />
+Ihzurbli focuses harshly on Allur and utters the words, 'force bolt'.<br />
+Ihzurbli slowly fades into existence.<br />
+The sound of bones cracking echoes as Ihzurbli's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Good] Mem:2 Exits:NES&gt; <br />
+Lauriel tells your group 'WIZ EYE - ENTERED - WEST: Aldur Santh Meocre Ihzurbli'<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Good] Mem:2 Exits:NES&gt; You can't do that while fighting.<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Good] Mem:2 Exits:NES&gt; You can't do that while fighting.<br />
+Lauriel tells your group 'WIZ EYE - LEFT - WEST: Aldur Santh Meocre Ihzurbli'<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Good] Mem:2 Exits:NES&gt; <br />
+Soran flies in from the north.<br />
+c 'force bolt' soran<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Good] Mem:2 Exits:NES&gt; <br />
+Meocre focuses harshly on Allur and utters the words, 'force bolt'.<br />
+Meocre slowly fades into existence.<br />
+The sound of bones cracking echoes as Meocre's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C [Me:Perfect] [Allur:Fair] Mem:2 Exits:NES&gt; <br />
+Allur misses you and destroys an image.<br />
+You feel a sharp pain in your chest, as Allur's dagger breaks skin, creating a small flesh wound.<br />
+Allur pierces YOU extremely hard.<br />
+Allur burns as she passes through your fire shield.<br />
+You miss Allur with your pierce.<br />
+Lauriel focuses harshly on Soran and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Lauriel's force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C [Me:V.Good] [Allur:Fair] Mem:2 Exits:NES&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C [Me:V.Good] [Allur:Fair] Mem:3 Exits:NES&gt; <br />
+Santh focuses harshly on Soran and utters the words, 'force bolt'.<br />
+Santh slowly fades into existence.<br />
+The sound of bones cracking echoes as Santh's force bolt slams into Soran.<br />
+<br />
+130V 22255499X 7597C [Me:V.Good] [Allur:Fair] Mem:3 Exits:NES&gt; <br />
+Soran utters some strange words.<br />
+Ihzurbli is shredded by shards of ice.<br />
+Meocre is shredded by shards of ice.<br />
+A gargoyle appears to grow stronger.<br />
+A gargoyle manages to avoid the brunt of the storm.<br />
+The umber hulk is shredded by shards of ice.<br />
+Soran destroys Santh's mirror images.<br />
+Santh is shredded by shards of ice.<br />
+Lauriel is shredded by shards of ice.<br />
+A hill giant is shredded by shards of ice.<br />
+Soran destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+Your body is torn by huge pieces of ice.<br />
+A pigeon is torn to pieces by hundreds of shards of ice.<br />
+A pigeon is dead! R.I.P.<br />
+A pigeon is torn to pieces by hundreds of shards of ice.<br />
+A pigeon is dead! R.I.P.<br />
+A sailor is shredded by shards of ice.<br />
+A sailor is incapacitated and will slowly die, if not aided.<br />
+<br />
+130V 22255499X 7597C [Me:Good] [Allur:Fair] Mem:3 Exits:NES&gt; <br />
+The death cry of a pigeon echoes from somewhere nearby...<br />
+get all.coins corpse<br />
+examine corpse<br />
+The death cry of a pigeon echoes from somewhere nearby...<br />
+get all.coins corpse<br />
+examine corpse<br />
+<br />
+130V 22255499X 7597C [Me:Good] [Allur:Fair] Mem:3 Exits:NES&gt; c 'force bolt'<br />
+<br />
+A gargoyle slowly fades into existence.<br />
+A gargoyle spins and tries to kick Soran, but Soran dodges out of the way.<br />
+<br />
+130V 22255499X 7597C [Me:Good] [Allur:Fair] Mem:3 Exits:NES&gt; <br />
+Allur flies in from the south.<br />
+The umber hulk slowly fades into existence.<br />
+The umber hulk delivers a quick snap kick to Soran. Soran staggers and tries to recover.<br />
+A hill giant slowly fades into existence.<br />
+A hill giant tries to sweep Soran's legs, but misses badly.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; <br />
+Allur gets a small pile of coins from the corpse of a pigeon.<br />
+Ihzurbli focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Ihzurbli's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; c 'mirror image'<br />
+<br />
+Allur slowly fades into existence.<br />
+Allur pierces Ihzurbli extremely hard.<br />
+Allur pierces Ihzurbli extremely hard.<br />
+A hill giant hits Soran very hard.<br />
+A hill giant is chilled, as it swings at Soran.<br />
+A hill giant hits Soran very hard.<br />
+A hill giant is chilled, as it swings at Soran.<br />
+Santh misses Soran with her hit.<br />
+Santh makes a strange motion with her hand, then points her wand at Soran.<br />
+A magic missile released from a wand causes Soran to stagger under the blow.<br />
+A magic missile released from a wand causes Soran to stagger under the blow.<br />
+A magic missile released from a wand causes Soran to stagger under the blow.<br />
+A magic missile released from a wand causes Soran to stagger under the blow.<br />
+The umber hulk misses Soran with its hit.<br />
+A gargoyle claws Soran extremely hard.<br />
+A gargoyle appears to grow stronger.<br />
+Soran's iceshield does him little good as a gargoyle takes a swing at him.<br />
+Meocre misses Soran with her hit.<br />
+Lauriel massacres Soran with her bludgeon.<br />
+Lauriel is chilled, as she swings at Soran.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; The corpse doesn't seem to have what you are looking for.<br />
+Lauriel focuses harshly on Allur and utters the words, 'hold person'.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; Soran steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+Santh gives the umber hulk an order.<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+Soran panics, and attempts to flee.<br />
+Soran flies south.<br />
+Meocre focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Meocre's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; Santh focuses harshly on Allur and utters the words, 'force bolt'.<br />
+Santh slowly fades into existence.<br />
+The sound of bones cracking echoes as Santh's force bolt slams into Allur.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+130V 22255499X 7597C Mem:3 Exits:NES&gt; You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Allur quaffs Mishakal's White potion.<br />
+Allur smiles suddenly and has never looked better.<br />
+Allur heals Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; c 'force bolt' allur<br />
+<br />
+Allur flies in from the south.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Allur slowly fades into existence.<br />
+Allur comes out of hiding.<br />
+Allur quickly thrusts a crystal dagger at Ihzurbli from behind, but somehow falls short of her target.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Lauriel focuses harshly on Allur and utters the words, 'hold person'.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Santh gives the umber hulk an order.<br />
+Meocre focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Meocre's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Santh gives the umber hulk an order.<br />
+Allur steps aside as the umber hulk attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Ihzurbli focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Ihzurbli's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Santh focuses harshly on Allur and utters the words, 'force bolt'.<br />
+Santh slowly fades into existence.<br />
+The sound of bones cracking echoes as Santh's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; c 'force bolt' allur<br />
+<br />
+The umber hulk misses Allur with its hit.<br />
+Allur pierces Ihzurbli extremely hard.<br />
+Allur pierces Ihzurbli extremely hard.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Meocre focuses harshly on Allur and utters the words, 'hold person'.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Ihzurbli focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Ihzurbli's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; <br />
+Lauriel focuses harshly on Allur and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Lauriel's force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:4 Exits:NES&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Allur.<br />
+<br />
+130V 22255499X 7597C Mem:5 Exits:NES&gt; c 'force bolt' allur<br />
+<br />
+The umber hulk misses Allur with its hit.<br />
+Allur pierces Ihzurbli very hard.<br />
+Allur pierces Ihzurbli extremely hard.<br />
+<br />
+130V 22255499X 7597C Mem:5 Exits:NES&gt; TICK IN 7 SECONDS.<br />
+<br />
+Santh focuses harshly on Allur and utters the words, 'lightning bolt'.<br />
+Santh slowly fades into existence.<br />
+Allur wavers under the impact of the lightning bolt sent by Santh.<br />
+<br />
+130V 22255499X 7597C Mem:5 Exits:NES&gt; <br />
+Allur panics, and attempts to flee.<br />
+Allur flies south.<br />
+<br />
+130V 22255499X 7597C Mem:5 Exits:NES&gt; s<br />
+Who should the spell be cast upon?<br />
+<br />
+130V 22255499X 7597C Mem:5 Exits:NES&gt; A gargoyle arrives from the north.<br />
+Veterans Park<br />
+A gargoyle is standing here.<br />
+Allur the Insane, Inquisitor of Ii is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Soran the Male Hill Dwarf is standing here. (flying)<br />
+c 'force bolt' soran<br />
+. . . is surrounded by a white mist.<br />
+<br />
+128V 22255499X 7597C Mem:5 Exits:NS&gt; <br />
+Allur tries to backstab you, but she misses and destroys your image.<br />
+Allur slowly fades into existence.<br />
+Allur comes out of hiding.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:5 Exits:NS&gt; c 'force bolt' allur<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Soran.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:6 Exits:NS&gt; <br />
+Lauriel flies south.<br />
+A gargoyle leaves south.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:6 Exits:NS&gt; <br />
+Soran crushes YOU extremely hard.<br />
+Soran burns as he passes through your fire shield.<br />
+Allur misses you and destroys an image.<br />
+Allur misses you and destroys an image.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:6 Exits:NS&gt; c 'force bolt'<br />
+<br />
+Soran panics, and attempts to flee.<br />
+Soran flies south.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:6 Exits:NS&gt; <br />
+Lauriel flies in from the south.<br />
+A gargoyle arrives from the south.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Awful] Mem:6 Exits:NS&gt; <br />
+Santh focuses harshly on Allur and utters the words, 'lightning bolt'.<br />
+Santh slowly fades into existence.<br />
+Allur receives the full blast of a lightning bolt from Santh ... and is no more.<br />
+You receive 0 experience.<br />
+Allur is dead! R.I.P.<br />
+<br />
+128V 22255499X 7597C [Me:Good] [Allur:Dying] Mem:6 Exits:NS&gt; <br />
+The death cry of Allur echoes from somewhere nearby...<br />
+get all.coins corpse<br />
+examine corpse<br />
+<br />
+128V 22255499X 7597C Mem:6 Exits:NS&gt; <br />
+Bakhi tells you 'SC'<br />
+<br />
+128V 22255499X 7597C Mem:6 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+128V 22255499X 7597C Mem:6 Exits:NS&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+128V 22255499X 7597C Mem:6 Exits:NS&gt; You get a very large pile of coins from the corpse of Allur.<br />
+There were 1866 coins.<br />
+split 1866<br />
+<br />
+128V 22255499X 9463C Mem:6 Exits:NS&gt; <br />
+Ihzurbli is zapped by an ancient blood-colored dagger and instantly drops it.<br />
+Ihzurbli gets a crystal dagger from the corpse of Allur.<br />
+Ihzurbli gets a silver jeweled bracelet from the corpse of Allur.<br />
+Ihzurbli gets a braided silver bracelet from the corpse of Allur.<br />
+Ihzurbli is zapped by a black leather belt with dangling bones and instantly drops it.<br />
+Ihzurbli is zapped by a set of heavy black robes and instantly drops it.<br />
+Ihzurbli gets some midnight leather sleeves from the corpse of Allur.<br />
+Ihzurbli gets a pair of the weaponsmaster's gloves from the corpse of Allur.<br />
+Ihzurbli gets a set of shiny black boots from the corpse of Allur.<br />
+Ihzurbli gets a pair of cut-off pants from the corpse of Allur.<br />
+Ihzurbli is zapped by an executioner's hood and instantly drops it.<br />
+Ihzurbli gets a blood splattered inquisitor's robe from the corpse of Allur.<br />
+Ihzurbli gets a sleek, black cloak from the corpse of Allur.<br />
+Ihzurbli gets an ancient medallion from the corpse of Allur.<br />
+Ihzurbli gets a wedding ring from the corpse of Allur.<br />
+Ihzurbli is zapped by a black ring of dragons and instantly drops it.<br />
+Ihzurbli gets Mishakal's White potion from the corpse of Allur.<br />
+Ihzurbli gets a treant leaf potion from the corpse of Allur.<br />
+Ihzurbli gets a blue scroll from the corpse of Allur.<br />
+Ihzurbli gets a cloth belt pack from the corpse of Allur.<br />
+Ihzurbli gets a pouch from the corpse of Allur.<br />
+Ihzurbli gets a smoked Tarsis ham from the corpse of Allur.<br />
+Ihzurbli gets a smoked Tarsis ham from the corpse of Allur.<br />
+Ihzurbli gets a hooded lantern from the corpse of Allur.<br />
+Ihzurbli gets a set of lockpicks from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+Ihzurbli gets a strip of beef jerky from the corpse of Allur.<br />
+<br />
+128V 22255499X 9463C Mem:6 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a strip of beef jerky<br />
+a large first-aid kit<br />
+a pair of spectacular hematite armbands<br />
+a scroll of recall [3]<br />
+a rattler tooth<br />
+a small wooden chest<br />
+a small golden chalice<br />
+a blue potion of remove poison [2]<br />
+a pouch<br />
+<br />
+128V 22255499X 9463C Mem:6 Exits:NS&gt; <br />
+Lauriel gets a strip of beef jerky from the corpse of Allur.<br />
+Lauriel gets a large first-aid kit from the corpse of Allur.<br />
+Lauriel gets a pair of spectacular hematite armbands from the corpse of Allur.<br />
+Lauriel gets a scroll of recall from the corpse of Allur.<br />
+Lauriel gets a scroll of recall from the corpse of Allur.<br />
+Lauriel gets a scroll of recall from the corpse of Allur.<br />
+Lauriel gets a rattler tooth from the corpse of Allur.<br />
+Lauriel gets a small wooden chest from the corpse of Allur.<br />
+Lauriel gets a small golden chalice from the corpse of Allur.<br />
+Lauriel gets a blue potion of remove poison from the corpse of Allur.<br />
+Lauriel gets a blue potion of remove poison from the corpse of Allur.<br />
+Lauriel gets a pouch from the corpse of Allur.<br />
+<br />
+128V 22255499X 9463C Mem:6 Exits:NS&gt; You feel yourself exposed.<br />
+You can't split 1866 evenly among the people in the room; splitting 1865 instead.<br />
+You divide 1865 coins equally among the group members present.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1178'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1178">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1178">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

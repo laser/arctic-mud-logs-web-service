@@ -1,0 +1,890 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 29-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='29'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Helion, Kilee, Aphitisis Fight 5</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+5.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Helion, Kilee, Aphitisis vs. Frederic, Randi, Polanodun</i>
+<p>
+<p>
+
+Aristox says 'go for it'<br />
+<br />
+493H 140V 3184498X 12C Exits:NESWUD&gt;<br />
+Koi disappears.<br />
+<br />
+493H 140V 3184498X 12C Exits:NESWUD&gt;<br />
+Aphitisis leaves south.<br />
+You follow Aphitisis south.<br />
+In a Large Clearing<br />
+    The dense foliage parts here at this sizeable clearing in the center of<br />
+the jungle. Sunlight streams through from above unhindered, fully<br />
+illuminating your surroundings. The ground here is covered with a thin<br />
+layer of light green grass. The hot, humid atmosphere is filled with the<br />
+sounds of the local fauna going about their daily activities, instilling a<br />
+sense of harmony within you.<br />
+Kilee McGee, Bedeutend Fuhrer of Clan Fury is standing here.<br />
+Aphitisis, Death of The Rebels is standing here.<br />
+<br />
+493H 138V 3184498X 12C Exits:NESW&gt;<br />
+Aphitisis leaves south.<br />
+You follow Aphitisis south.<br />
+In a Dense Tropical Jungle<br />
+    You are within a dense tropical forest, filled with countless different<br />
+species of plant life. There is also evidence of unseen animal life, in the<br />
+form of the shuffling and chirping sounds that fill the humid air. Loose<br />
+brown dirt covers the ground, a stark contrast to the lush greenery around<br />
+you. The area is amply lit by the sunlight creeping through the treetops.<br />
+Kilee McGee, Bedeutend Fuhrer of Clan Fury is standing here.<br />
+Aphitisis, Death of The Rebels is standing here.<br />
+<br />
+493H 135V 3184498X 12C Exits:NEW&gt;<br />
+Aphitisis leaves west.<br />
+You follow Aphitisis west.<br />
+In a Dense Tropical Jungle<br />
+    The entire area is filled with dense tropical vegetation. The treetops<br />
+are block out a considerable amount of sunlight, though enough still creeps<br />
+through to allow ample visibility. The air is hot and humid, bordering on<br />
+uncomfortable. The sounds of birds chirping and animals shuffling about<br />
+fill the area, filling you with a sense of harmony.<br />
+Kilee McGee, Bedeutend Fuhrer of Clan Fury is standing here.<br />
+Aphitisis, Death of The Rebels is standing here.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Aphitisis utters some strange words.<br />
+Aphitisis's skin begins to shine like steel.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Polanodun arrives from the east.<br />
+Randi arrives from the east.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Kilee places a platinum and gold butterknife in Polanodun's back, resulting <br />
+in some strange noises and some blood.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt; You try to bash Polanodun, but you miss and <br />
+tumble forward onto your face.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Perfect] [Polanodun:Good] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Perfect] [Polanodun:Good] Exits:NE&gt;<br />
+You smite Polanodun extremely hard.<br />
+Kilee pierces Polanodun very hard.<br />
+Kilee pierces Polanodun hard.<br />
+Polanodun smites Kilee very hard.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+Randi massacres Kilee with his slash.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+<br />
+Frederic places a platinum and gold butterknife in Aphitisis's back, <br />
+resulting in some strange noises and some blood.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+Polanodun focuses harshly on Aphitisis and utters some strange words.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Good] Exits:NE&gt;<br />
+Frederic pierces Aphitisis extremely hard.<br />
+Frederic pierces Aphitisis very hard.<br />
+Aphitisis smites Frederic hard.<br />
+Randi misses Kilee with his slash.<br />
+You smite Polanodun very hard.<br />
+Kilee pierces Polanodun hard.<br />
+Kilee misses Polanodun with his pierce.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Frederic panics, and attempts to flee.<br />
+Frederic leaves east.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Kilee tells your group 'harm it'<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Aphitisis smites Polanodun extremely hard.<br />
+Polanodun focuses harshly on Aphitisis and utters some strange words.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:V.Good] [Polanodun:Fair] Exits:NE&gt; Aphitisis <br />
+bruises Polanodun with his smite.<br />
+Randi slashes Kilee hard.<br />
+You should probably stand up!<br />
+You smite Polanodun hard.<br />
+Kilee pierces Polanodun very hard.<br />
+Kilee pierces Polanodun very hard.<br />
+Randi swings madly at Kilee with a gnomish weed wacker, cutting him a deep <br />
+wound.<br />
+You stand up.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:Fair] Exits:NE&gt; You crash <br />
+into Polanodun in a bone crunching bash, sending him sprawling to the <br />
+ground.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:Fair] Exits:NE&gt;<br />
+Aphitisis smites Polanodun very hard.<br />
+Randi slashes Kilee very hard.<br />
+You smite Polanodun hard.<br />
+Kilee pierces Polanodun extremely hard.<br />
+Kilee pierces Polanodun hard.<br />
+Polanodun smites Kilee very hard.<br />
+Aphitisis tells your group '10 till tick'<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:V.Bad] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Polanodun and utters some strange words.<br />
+Polanodun cries out in pain as Aphitisis grabs him.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Good] [Polanodun:Awful] Exits:NE&gt;<br />
+Randi misses Kilee with his slash.<br />
+You smite Polanodun very hard.<br />
+Kilee pierces Polanodun very hard.<br />
+Kilee pierces Polanodun very hard.<br />
+Polanodun smites Kilee extremely hard.<br />
+<br />
+493H 132V 3184498X 12C [Kilee:Fair] [Polanodun:Awful] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Polanodun and utters some strange words.<br />
+Polanodun collapses and dies as Aphitisis grabs him.<br />
+Twinkling lights surround Polanodun and he disappears.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+You couldn't find what you were looking for.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Frederic places a platinum and gold butterknife in Aphitisis's back, <br />
+resulting in some strange noises and some blood.<br />
+<br />
+493H 132V 3184498X 12C Exits:NE&gt;<br />
+Frederic pierces Aphitisis very hard.<br />
+Frederic pierces Aphitisis.<br />
+Aphitisis misses Frederic with his smite.<br />
+Kilee pierces Randi very hard.<br />
+Kilee pierces Randi very hard.<br />
+Randi slashes Kilee hard.<br />
+The lightning has stopped.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Aphitisis utters some strange words.<br />
+Aphitisis heals Aphitisis.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+You crash into Frederic in a bone crunching bash, sending him sprawling to <br />
+the ground.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:V.Good] [Frederic:V.Good] Exits:NE&gt;<br />
+You smite Frederic very hard.<br />
+Frederic pierces Aphitisis very hard.<br />
+Frederic pierces Aphitisis very hard.<br />
+Kilee misses Randi with his pierce.<br />
+Kilee pierces Randi very hard.<br />
+Randi slashes Kilee very hard.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:V.Good] Exits:NE&gt;<br />
+Kilee panics, and attempts to flee.<br />
+Kilee leaves east.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:V.Good] Exits:NE&gt;<br />
+<br />
+Kilee arrives from the east.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:V.Good] Exits:NE&gt;<br />
+Randi misses Kilee with his slash.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:V.Good] Exits:NE&gt;<br />
+Randi slashes Kilee extremely hard.<br />
+Kilee pierces Randi extremely hard.<br />
+Kilee misses Randi with his pierce.<br />
+You smite Frederic hard.<br />
+Frederic pierces Aphitisis very hard.<br />
+Frederic pierces Aphitisis hard.<br />
+Aphitisis smites Frederic extremely hard.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:Good] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Frederic and utters some strange words.<br />
+Frederic cries out in pain as Aphitisis grabs him.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:Fair] Exits:NE&gt; You say <br />
+'JUST KILL FREDERIC'<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:Fair] Exits:NE&gt;<br />
+Kilee tells your group 'all target randi'<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:Fair] Exits:NE&gt;<br />
+Frederic stands up.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Good] [Frederic:Fair] Exits:NE&gt;<br />
+Randi slashes Kilee hard.<br />
+Kilee pierces Randi very hard.<br />
+Kilee pierces Randi hard.<br />
+You smite Frederic very hard.<br />
+Frederic barely pierces Aphitisis.<br />
+Frederic pierces Aphitisis hard.<br />
+<br />
+493H 140V 3184498X 12C [Aphitisis:Fair] [Frederic:Fair] Exits:NE&gt;<br />
+Frederic panics, and attempts to flee.<br />
+Frederic leaves east.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+You couldn't find what you were looking for.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Frederic arrives from the east.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Kilee tells your group 'all target randi'<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+You crash into Randi in a bone crunching bash, sending him sprawling to the <br />
+ground.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Aphitisis smites Randi extremely hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Frederic is continually trying to get behind you.<br />
+Hmmm...i wonder what he's up to?<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Aphitisis massacres Randi with his smite.<br />
+You miss Randi with your smite.<br />
+Randi misses Kilee with his slash.<br />
+Kilee massacres Randi with his pierce.<br />
+Kilee pierces Randi extremely hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Frederic leaves east.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Fair] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Randi and utters some strange words.<br />
+Randi cries out in pain as Aphitisis grabs him.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Bad] Exits:NE&gt;<br />
+<br />
+You smite Randi extremely hard.<br />
+Randi massacres Kilee with his slash.<br />
+Kilee massacres Randi with his pierce.<br />
+Kilee pierces Randi extremely hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:V.Bad] Exits:NE&gt; Randi stands up.<br />
+You say 'Hehe, good game!'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:V.Bad] Exits:NE&gt;<br />
+You say 'ITS OVER FOOLS'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:V.Bad] Exits:NE&gt;<br />
+Aphitisis barely smites Randi.<br />
+You miss Randi with your smite.<br />
+Randi slashes Kilee very hard.<br />
+Kilee pierces Randi hard.<br />
+Kilee pierces Randi extremely hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:V.Bad] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Randi and utters some strange words.<br />
+Randi cries out in pain as Aphitisis grabs him.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Awful] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Awful] Exits:NE&gt;<br />
+You try to bash Randi, but you miss and tumble forward onto your face.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Awful] Exits:NE&gt;<br />
+<br />
+Kilee tells your group 'fuck randi up'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Awful] Exits:NE&gt;<br />
+You smite Randi very hard.<br />
+Randi slashes Kilee extremely hard.<br />
+Kilee pierces Randi very hard.<br />
+Kilee pierces Randi hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Fair] [Randi:Awful] Exits:NE&gt;<br />
+Aphitisis focuses harshly on Randi and utters some strange words.<br />
+Randi cries out in pain as Aphitisis grabs him.<br />
+Randi is mortally wounded, and will die soon, if not aided.<br />
+<br />
+493H 140V 3184498X 12C [Randi:Dying] Exits:NE&gt;<br />
+Frederic arrives from the north.<br />
+<br />
+493H 140V 3184498X 12C [Randi:Dying] Exits:NE&gt;<br />
+Frederic appears to be dancing around the room.<br />
+<br />
+493H 140V 3184498X 12C [Randi:Dying] Exits:NE&gt;<br />
+You massacre Randi with your smite.<br />
+Twinkling lights surround Randi and he disappears.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Frederic places a platinum and gold butterknife in Kilee's back, resulting <br />
+in some strange noises and some blood.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Aphitisis utters some strange words.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+You stand up.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt; You crash into Frederic in a bone crunching <br />
+bash, sending him sprawling to the ground.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:V.Bad] [Frederic:Fair] Exits:NE&gt;<br />
+You smite Frederic extremely hard.<br />
+Frederic pierces Kilee extremely hard.<br />
+Frederic misses Kilee with his pierce.<br />
+Kilee pierces Frederic very hard.<br />
+Kilee pierces Frederic hard.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:V.Bad] [Frederic:Fair] Exits:NE&gt;<br />
+You massacre Frederic with your smite.<br />
+Frederic pierces Kilee hard.<br />
+Frederic barely pierces Kilee.<br />
+Kilee misses Frederic with his pierce.<br />
+Kilee pierces Frederic.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt;<br />
+You say 'Heal'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt; Your feeble <br />
+rescue efforts end in failure.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt;<br />
+Aphitisis says 'wtf'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt;<br />
+Kilee tells your group 'heal me'<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt;<br />
+Aphitisis focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:Bad] Exits:NE&gt;<br />
+You smite Frederic extremely hard.<br />
+Frederic pierces Kilee extremely hard.<br />
+Frederic misses Kilee with his pierce.<br />
+Kilee pierces Frederic very hard.<br />
+Kilee misses Frederic with his pierce.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:V.Bad] Exits:NE&gt;<br />
+Frederic stands up.<br />
+<br />
+493H 140V 3184498X 12C [Kilee:Awful] [Frederic:V.Bad] Exits:NE&gt;<br />
+<br />
+Frederic panics, and attempts to flee.<br />
+Frederic leaves north.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt; You couldn't find what you were looking <br />
+for.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+Kilee leaves north.<br />
+<br />
+493H 140V 3184498X 12C Exits:NE&gt;<br />
+You crash into Frederic in a bone crunching bash, sending him sprawling to <br />
+the ground.<br />
+<br />
+493H 140V 3184498X 12C [Helion:Perfect] [Frederic:V.Bad] Exits:NE&gt;<br />
+You smite Frederic extremely hard.<br />
+Frederic pierces YOU extremely hard.<br />
+You feel a sharp pain in your chest, as Frederic's knife breaks skin, <br />
+creating a small flesh wound.<br />
+Frederic pierces YOU very hard.<br />
+<br />
+456H 133V 3184498X 12C [Helion:V.Good] [Frederic:V.Bad] Exits:NE&gt;<br />
+Aphitisis tells your group '10 till tick'<br />
+<br />
+456H 133V 3184498X 12C [Helion:V.Good] [Frederic:V.Bad] Exits:NE&gt;<br />
+Aphitisis panics, and attempts to flee.<br />
+Aphitisis leaves east.<br />
+<br />
+456H 133V 3184498X 12C [Helion:V.Good] [Frederic:V.Bad] Exits:NE&gt;<br />
+You smite Frederic very hard.<br />
+Frederic pierces YOU extremely hard.<br />
+Frederic pierces YOU very hard.<br />
+<br />
+425H 133V 3184498X 12C [Helion:V.Good] [Frederic:V.Bad] Exits:NE&gt;<br />
+<br />
+Frederic stands up.<br />
+<br />
+425H 133V 3184498X 12C [Helion:V.Good] [Frederic:V.Bad] Exits:NE&gt; You tell <br />
+your group 'heal him!'<br />
+Frederic panics, and attempts to flee.<br />
+Frederic leaves north.<br />
+<br />
+425H 133V 3184498X 12C Exits:NE&gt;<br />
+Aphitisis arrives from the east.<br />
+<br />
+425H 133V 3184498X 12C Exits:NE&gt;<br />
+You couldn't find what you were looking for.<br />
+<br />
+425H 133V 3184498X 12C Exits:NE&gt;<br />
+You couldn't find what you were looking for.<br />
+<br />
+425H 133V 3184498X 12C Exits:NE&gt;<br />
+In a Dense Tropical Jungle<br />
+    You are in the midst of a densely-wooded jungle. Dozens of different<br />
+species of tropical flora abound here, and the atmosphere feels quite warm<br />
+and humid as you breathe it. The air is filled with the noises of various<br />
+unseen animals scurrying about. Rays of sunlight shine through the treetops<br />
+and light up the area amply.<br />
+<br />
+425H 130V 3184498X 12C Exits:NES&gt;<br />
+You couldn't find what you were looking for.<br />
+<br />
+425H 130V 3184498X 12C Exits:NES&gt;<br />
+Frederic arrives from the north.<br />
+<br />
+425H 130V 3184498X 12C Exits:NES&gt;<br />
+In a Dense Tropical Jungle<br />
+    The foliage in this area is of considerable density, and the treetops<br />
+above grow close together and block out much of the sky. However, enough<br />
+sunlight manages to creep through to light the area amply. You can hear the<br />
+sounds of animals scurrying about in their daily activities and birds<br />
+chirping merrily as they wing from tree to tree, but you are unable to find<br />
+visual proof of their presence.<br />
+Kilee McGee, Bedeutend Fuhrer of Clan Fury is standing here.<br />
+<br />
+425H 127V 3184498X 12C Exits:ES&gt;<br />
+Frederic tried to backstab Kilee, but nearly cut his own finger.<br />
+<br />
+425H 127V 3184498X 12C Exits:ES&gt;<br />
+Frederic misses Kilee with his pierce.<br />
+Frederic misses Kilee with his pierce.<br />
+Kilee pierces Frederic extremely hard.<br />
+Frederic is stunned, but will likely regain consciousness again.<br />
+Kilee massacres Frederic with his pierce.<br />
+Twinkling lights surround Frederic and he disappears.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='29'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=29">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="29">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

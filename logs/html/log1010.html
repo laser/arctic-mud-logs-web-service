@@ -1,0 +1,817 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1010-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1010'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Greer rips...again</font></b>
+<p>
+POV: 
+Vinoa<p>
+Log Rating:
+1.7857<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+die pillow soaker die </i>
+<p>
+<p>
+
+612H 85V 17479966X 2367C Exits:NUD&gt; Looking north:<br />
+You see nothing special.<br />
+Lord Haiden Hellbringer, Last Dragoon of the Empire is standing here. (flying)<br />
+Faldo Dumaine, Seventh Son of Agelor is standing here. (flying) (invisible)<br />
+Greer the Lonesome, Battle Cleric of the Imperial Guard is resting here. (flying)<br />
+Za the Male Kender is standing here. (flying)<br />
+A female elf clad in chain is here, searching the tunnels.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+612H 85V 17479966X 2367C Exits:NUD&gt; nbas greerTu flies in from the south.<br />
+Mancer flies in from the south.<br />
+Kaje flies in from the south.<br />
+A Dark Tunnel<br />
+    A long, dark tunnel once frequented by dwarven miners. The ore seems to<br />
+have ran out here, though and the tunnel has long been abandoned. The<br />
+tunnel leads off for a while, but ends in a solid wall of sheer bedrock,<br />
+which seals off the passage to the north.<br />
+A small iron axe has been discarded here.<br />
+A six foot shaft of wood with a large metal point rests here.<br />
+A long brown whip with a copper tip lies here.<br />
+A small black blade has been discarded here.<br />
+A large copper hammer lies here...it hums softly<br />
+Kaje the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Mancer, Evil Cleric of KoT is standing here. (flying) (invisible)<br />
+Tu Shay, KoT Engarde is standing here. (flying)<br />
+Lord Haiden Hellbringer, Last Dragoon of the Empire is standing here. (flying)<br />
+Faldo Dumaine, Seventh Son of Agelor is standing here. (flying) (invisible)<br />
+Greer the Lonesome, Battle Cleric of the Imperial Guard is resting here. (flying)<br />
+Za the Male Kender is standing here. (flying)<br />
+A female elf clad in chain is here, searching the tunnels.<br />
+<br />
+612H 83V 17479966X 2367C Exits:S&gt; <br />
+Za crashes into Kaje in a thundering collision, knocking her to the ground!<br />
+<br />
+612H 83V 17479966X 2367C Exits:S&gt; You crash into Greer in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:V.Good] Exits:S&gt; <br />
+Tu massacres Greer with his shoot.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:Good] Exits:S&gt; <br />
+Mancer focuses harshly on Greer and utters some strange words.<br />
+Mancer slowly fades into existence.<br />
+Greer cries out in pain as Mancer grabs him.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:Fair] Exits:S&gt; <br />
+Haiden crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+Mancer stops watching you.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:Fair] Exits:S&gt; <br />
+Haiden massacres Mancer with his slash.<br />
+Mancer slowly fades into existence.<br />
+Mancer whips Haiden very hard.<br />
+Tu massacres Greer with his shoot.<br />
+You massacre Greer with your crush.<br />
+Greer misses you with his crush.<br />
+Za slashes Kaje extremely hard.<br />
+Kaje misses Za with her whip.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:Fair] Exits:S&gt; <br />
+Faldo slowly fades into existence.<br />
+You step aside as Faldo tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+612H 83V 17479966X 2367C [Vinoa:Perfect] [Greer:Fair] Exits:S&gt; <br />
+Faldo slashes YOU extremely hard.<br />
+Haiden massacres Mancer with his slash.<br />
+Mancer misses Haiden with his whip.<br />
+Tu massacres Greer with his shoot.<br />
+Tu massacres Greer with his shoot.<br />
+You massacre Greer with your crush.<br />
+Greer crushes YOU extremely hard.<br />
+Za slashes Kaje extremely hard.<br />
+Kaje whips Za extremely hard.<br />
+<br />
+577H 83V 17479966X 2367C [Vinoa:V.Good] [Greer:V.Bad] Exits:S&gt; bas<br />
+Kaje stands up.<br />
+Greer stands up.<br />
+<br />
+577H 83V 17479966X 2367C [Vinoa:V.Good] [Greer:V.Bad] Exits:S&gt; Kaje gets a potion from her pouch.<br />
+You crash into Greer in a bone crunching bash, sending him sprawling to the ground.<br />
+Za heroically rescues Greer.<br />
+<br />
+577H 83V 17479966X 2367C [Vinoa:V.Good] [Za:V.Good] Exits:S&gt; <br />
+Kaje quaffs a metallic silver potion.<br />
+Kaje's skin begins to shine like steel.<br />
+<br />
+577H 83V 17479966X 2367C [Vinoa:V.Good] [Za:V.Good] Exits:S&gt; <br />
+Mancer steps aside as Haiden attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+577H 83V 17479966X 2367C [Vinoa:V.Good] [Za:V.Good] Exits:S&gt; <br />
+You crush Za extremely hard.<br />
+Za slashes YOU extremely hard.<br />
+Faldo misses you with his slash.<br />
+Haiden massacres Mancer with his slash.<br />
+Mancer whips Haiden hard.<br />
+Tu massacres Greer with his shoot.<br />
+Kaje misses Za with her whip.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:V.Good] Exits:S&gt; <br />
+Kaje utters some strange words.<br />
+Haiden is shredded by shards of ice.<br />
+Faldo is shredded by shards of ice.<br />
+Greer is shredded by shards of ice.<br />
+Za is shredded by shards of ice.<br />
+Milenna M'Loren appears to grow stronger.<br />
+Milenna M'Loren manages to avoid the brunt of the storm.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Faldo stands up.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Mancer steps aside as Faldo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Milenna M'Loren utters some strange words.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; grou<br />
+Mancer stands up.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; resc mancer<br />
+Mancer focuses harshly on Greer and utters some strange words.<br />
+Greer collapses and dies as Mancer grabs him.<br />
+You receive 0 experience.<br />
+Greer is dead! R.I.P.<br />
+get coins corpse<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+The death cry of Greer echoes from somewhere nearby...<br />
+Greer stops following Za.<br />
+Faldo stops following Greer.<br />
+Faldo now follows Za.<br />
+Haiden stops following Greer.<br />
+Haiden now follows Za.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Za gets a very large pile of coins from the corpse of Greer.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Tu misses Za with his shoot.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Good] Exits:S&gt; <br />
+Tu massacres Za with his shoot.<br />
+Tu shoots Za extremely hard.<br />
+Milenna M'Loren misses Kaje with her hit.<br />
+Milenna M'Loren hits Kaje extremely hard.<br />
+You massacre Za with your crush.<br />
+Za misses you with his slash.<br />
+Faldo misses you with his slash.<br />
+Haiden slashes Mancer extremely hard.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Fair] Exits:S&gt; get all corpseYour group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Vinoa            v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Tu               perfect   rested    fighting   Y   N    N    Y     0    0<br />
+  Mancer           fair      rested    fighting   Y   N    Y    Y     1    6<br />
+  Kaje             good      rested    fighting   Y   N    Y    Y     1    5<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Za:Fair] Exits:S&gt; What a self-sacrificing act! You're such a hero!<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Haiden:Good] Exits:S&gt; bas<br />
+Kaje gets a dwarven smasher from the corpse of Greer.<br />
+Kaje gets a red steel bracer from the corpse of Greer.<br />
+Kaje gets a charred leather apron from the corpse of Greer.<br />
+Kaje gets a black robe trimmed with silver from the corpse of Greer.<br />
+Kaje gets a set of thin steel brassards from the corpse of Greer.<br />
+Kaje gets a set of thin steel gauntlets from the corpse of Greer.<br />
+Kaje gets a pair of thin steel boots from the corpse of Greer.<br />
+Kaje gets a pair of thin steel cuisses from the corpse of Greer.<br />
+Kaje gets a wreath of silver leaves from the corpse of Greer.<br />
+Kaje gets a solid steel vest from the corpse of Greer.<br />
+Kaje gets a thin steel gorget from the corpse of Greer.<br />
+Kaje gets a glowing ring-sized orb from the corpse of Greer.<br />
+Kaje gets an obsidian ring from the corpse of Greer.<br />
+Kaje gets a corked bottle from the corpse of Greer.<br />
+Kaje gets a corked bottle from the corpse of Greer.<br />
+Kaje gets a corked bottle from the corpse of Greer.<br />
+Kaje gets a corked bottle from the corpse of Greer.<br />
+Kaje gets an elixir of health from the corpse of Greer.<br />
+Kaje gets an icy blue potion from the corpse of Greer.<br />
+Kaje gets a 'borrowed' kender ring from the corpse of Greer.<br />
+Kaje gets the wings of a silver serpent from the corpse of Greer.<br />
+Kaje gets a striated green marble staff from the corpse of Greer.<br />
+Kaje gets an intricately crafted silver locket from the corpse of Greer.<br />
+Kaje gets a large sack from the corpse of Greer.<br />
+Kaje gets a radiant potion from the corpse of Greer.<br />
+Kaje gets a glowing scroll of recall from the corpse of Greer.<br />
+Kaje gets a glowing scroll of recall from the corpse of Greer.<br />
+Kaje gets a glowing scroll of recall from the corpse of Greer.<br />
+Kaje gets a glowing scroll of recall from the corpse of Greer.<br />
+Kaje gets a large waterskin from the corpse of Greer.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Haiden:Good] Exits:S&gt; <br />
+Milenna M'Loren utters some strange words.<br />
+Haiden stands up.<br />
+<br />
+557H 83V 17479966X 2367C [Vinoa:V.Good] [Haiden:Good] Exits:S&gt; <br />
+Haiden misses you with his slash.<br />
+You crush Haiden extremely hard.<br />
+Tu massacres Za with his shoot.<br />
+Tu massacres Za with his shoot.<br />
+Milenna M'Loren's powerful hit makes Kaje double over in pain.<br />
+Milenna M'Loren massacres Kaje with her hit.<br />
+Milenna M'Loren massacres Kaje with her hit.<br />
+Za slashes YOU extremely hard.<br />
+Faldo slashes YOU extremely hard.<br />
+Kaje whips Za extremely hard.<br />
+Mancer utters some strange words.<br />
+Mancer heals Mancer.<br />
+Haiden crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Tu says 'owned'<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Za quaffs Mishakal's White potion.<br />
+Za smiles suddenly and has never looked better.<br />
+Za heals Za.<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Faldo stands up.<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; You get a small wooden chest from the corpse of Greer.<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; You crash into Haiden in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+522H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Za stops using a crystal gypsum flower.<br />
+Za grabs a thin glass wand.<br />
+Za waves a thin glass wand.<br />
+Kaje is shredded by shards of ice, discharged by a wand.<br />
+Mancer is shredded by shards of ice, discharged by a wand.<br />
+Tu is shredded by shards of ice, discharged by a wand.<br />
+Your body is torn by huge pieces of ice.<br />
+Haiden is shredded by shards of ice, discharged by a wand.<br />
+Faldo is shredded by shards of ice, discharged by a wand.<br />
+Milenna M'Loren appears to grow stronger.<br />
+Milenna M'Loren manages to avoid the brunt of the storm.<br />
+<br />
+499H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Kaje panics, and attempts to flee.<br />
+Kaje flies south.<br />
+<br />
+499H 83V 17479966X 2367C [Vinoa:Good] [Haiden:Good] Exits:S&gt; <br />
+Mancer whips Haiden very hard.<br />
+Haiden slashes YOU very hard.<br />
+You annihilate Haiden with your crush.<br />
+Tu massacres Za with his shoot.<br />
+Tu massacres Za with his shoot.<br />
+Za slashes YOU very hard.<br />
+Faldo slashes YOU very hard.<br />
+Faldo's longsword cleanly severs your arm, weakening you considerably.<br />
+<br />
+453H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Kaje flies in from the south.<br />
+<br />
+453H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Kaje focuses harshly on Za and utters some strange words.<br />
+Kaje sends a chilling blast of air at Za, giving him a severe case of frostbite.<br />
+<br />
+453H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Mancer steps aside as Faldo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+453H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Mancer misses Haiden with his whip.<br />
+Haiden misses you with his slash.<br />
+You massacre Haiden with your crush.<br />
+Tu massacres Za with his shoot.<br />
+Za slashes YOU extremely hard.<br />
+Faldo slashes YOU very hard.<br />
+<br />
+423H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; bas faldo<br />
+Kaje focuses harshly on Za and utters some strange words.<br />
+Huge flames burn Za from above.<br />
+<br />
+423H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; You crash into Faldo in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+423H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Za crashes into Kaje in a thundering collision, knocking her to the ground!<br />
+<br />
+423H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Milenna M'Loren focuses her purity on Za's leg!<br />
+Milenna M'Loren forces Za to the ground.<br />
+<br />
+423H 83V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Milenna M'Loren annihilates Za with her hit.<br />
+Milenna M'Loren annihilates Za with her hit.<br />
+Kaje misses Za with her whip.<br />
+Mancer misses Haiden with his whip.<br />
+Haiden slashes YOU extremely hard.<br />
+You massacre Haiden with your crush.<br />
+Tu misses Za with his shoot.<br />
+Za slashes YOU very hard.<br />
+Faldo slashes YOU extremely hard.<br />
+Mancer stands up.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Mancer focuses harshly on Haiden and utters some strange words.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Tu panics, and attempts to flee.<br />
+Tu flies south.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Haiden:Fair] Exits:S&gt; <br />
+Haiden stops using the eye of Valiance.<br />
+Haiden grabs a glowing scroll of recall.<br />
+Haiden recites a glowing scroll of recall.<br />
+Haiden disappears.<br />
+You direct your attention to Za.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Za:Fair] Exits:S&gt; <br />
+Tu flies in from the south.<br />
+Milenna M'Loren utters some strange words.<br />
+Milenna M'Loren is surrounded by a white aura.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Za:Fair] Exits:S&gt; <br />
+Tu massacres Za with his shoot.<br />
+<br />
+395H 107V 17479966X 2367C [Vinoa:Fair] [Za:Bad] Exits:S&gt; <br />
+Tu massacres Za with his shoot.<br />
+Tu massacres Za with his shoot.<br />
+You massacre Za with your crush.<br />
+Milenna M'Loren annihilates Za with her hit.<br />
+Milenna M'Loren massacres Za with her hit.<br />
+Kaje massacres Za with her whip.<br />
+Za slashes YOU hard.<br />
+Faldo slashes YOU extremely hard.<br />
+<br />
+367H 107V 17479966X 2367C [Vinoa:Fair] [Za:Awful] Exits:S&gt; bas<br />
+Mancer focuses harshly on Za and utters some strange words.<br />
+<br />
+367H 107V 17479966X 2367C [Vinoa:Fair] [Za:Awful] Exits:S&gt; You try to bash Za, but you miss and tumble forward onto your face.<br />
+<br />
+367H 107V 17479966X 2367C [Vinoa:Fair] [Za:Awful] Exits:S&gt; st<br />
+Tu misses Za with his shoot.<br />
+Tu massacres Za with his shoot.<br />
+You massacre Za with your crush.<br />
+Milenna M'Loren massacres Za with her hit.<br />
+You receive 0 experience.<br />
+Za is dead! R.I.P.<br />
+get coins corpseFaldo massacres YOU with his slash.<br />
+The death cry of Za echoes from somewhere nearby...<br />
+Haiden stops following Za.<br />
+Faldo stops following Za.<br />
+You direct your attention to Faldo.<br />
+<br />
+346H 107V 17479966X 2367C [Vinoa:Fair] [Faldo:Fair] Exits:S&gt; <br />
+Tu gets a thin glass wand from the corpse of Za.<br />
+Tu gets a sword of carved marble from the corpse of Za.<br />
+Tu gets a studded leather belt from the corpse of Za.<br />
+Tu gets a bronze shield from the corpse of Za.<br />
+Tu gets a pair of bronze vambraces from the corpse of Za.<br />
+Tu gets a pair of bronze gauntlets from the corpse of Za.<br />
+Tu gets a pair of hardened leather greaves from the corpse of Za.<br />
+Tu gets a bronze visor from the corpse of Za.<br />
+Tu gets a bronze breast plate from the corpse of Za.<br />
+Tu gets a crystal shard necklace from the corpse of Za.<br />
+Tu gets a very large pile of coins from the corpse of Za.<br />
+Tu gets a crystal gypsum flower from the corpse of Za.<br />
+Tu gets a glowing scroll of recall from the corpse of Za.<br />
+Tu gets a sealed scroll from the corpse of Za.<br />
+Tu gets a large first-aid kit from the corpse of Za.<br />
+Tu gets a dark elven hand crossbow from the corpse of Za.<br />
+Tu gets a merchant amulet from the corpse of Za.<br />
+Tu gets a glowing scroll of recall from the corpse of Za.<br />
+Tu gets a small wooden chest from the corpse of Za.<br />
+Tu gets a bronze shield from the corpse of Za.<br />
+<br />
+346H 107V 17479966X 2367C [Vinoa:Fair] [Faldo:Fair] Exits:S&gt; get all corpsebas<br />
+Mancer focuses harshly on Faldo and utters some strange words.<br />
+<br />
+346H 107V 17479966X 2367C [Vinoa:Fair] [Faldo:Fair] Exits:S&gt; <br />
+Tu massacres Faldo with his shoot.<br />
+<br />
+346H 107V 17479966X 2367C [Vinoa:Fair] [Faldo:Fair] Exits:S&gt; <br />
+Faldo stands up.<br />
+<br />
+346H 107V 17479966X 2367C [Vinoa:Fair] [Faldo:Fair] Exits:S&gt; <br />
+Kaje stands up.<br />
+Faldo stops using a cracked ruby.<br />
+Faldo grabs a glowing scroll of recall.<br />
+Faldo recites a glowing scroll of recall.<br />
+Faldo disappears.<br />
+<br />
+346H 107V 17479966X 2367C Exits:S&gt; <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1010'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1010">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1010">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,641 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 371-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='371'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Chon gets creative</font></b>
+<p>
+POV: 
+Chon<p>
+Log Rating:
+2.1818<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Did something I should have done long ago. Nothing personal Tim.</i>
+<p>
+<p>
+
+<br />
+264H 140V 6588541X 0C Exits:S&gt; rec ancient<br />
+You stop using a glowing ball of fire.<br />
+You grab a scroll of ancient power.<br />
+You recite a scroll of ancient power which dissolves.<br />
+A curious kender is stunned!<br />
+Jeremiah is stunned!<br />
+An attractive mercenary is stunned!<br />
+Petrin is stunned momentarily, recovering quickly.<br />
+<br />
+264H 121V 6588541X 0C Exits:S&gt; <br />
+Jeremiah yawns.<br />
+<br />
+264H 121V 6588541X 0C Exits:S&gt; <br />
+A Balifor watchman arrives from the south.<br />
+<br />
+264H 121V 6588541X 0C Exits:S&gt; sa heh<br />
+You say 'heh'<br />
+<br />
+264H 121V 6588541X 0C Exits:S&gt; <br />
+Tokin grabs a scroll of recall.<br />
+Tokin recites a scroll of recall.<br />
+Jeremiah disappears.<br />
+<br />
+264H 139V 6588541X 0C Exits:NSW&gt; <br />
+Knusuh tells your group 'where'<br />
+<br />
+264H 139V 6588541X 0C Exits:NSW&gt; l<br />
+YOU CAST -----------&gt; relocate<br />
+Kingfisher Way North<br />
+    You stand upon a firm, well-made cobblestone street in the northern<br />
+part of Tantallon. This portion of the street deviates slightly from the<br />
+norm; instead of buildings on both sides, there is only one to the west.<br />
+Glancing to the east, you see what appears to be a stockpile of waste and<br />
+junk, and the terrible odor coming from that direction confirms your<br />
+thoughts. The building to the west appears to have been vacated by its<br />
+owner, as there is a &quot;For Sale&quot; sign in the front window. Given the close<br />
+proximity to the town dump, it's not hard to figure out why nobody wants to<br />
+live there.<br />
+Jeremiah Saint, Devil May Cry is sitting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+<br />
+264H 139V 6588541X 0C Mem:3 Exits:NESW&gt; <br />
+Chal tells your group 'i think'<br />
+<br />
+264H 139V 6588541X 0C Mem:3 Exits:NESW&gt; <br />
+Chal tells your group 'in solace'<br />
+<br />
+264H 139V 6588541X 0C Mem:3 Exits:NESW&gt; <br />
+Knusuh tells your group 'where is it'<br />
+<br />
+264H 139V 6588541X 0C Mem:3 Exits:NESW&gt; <br />
+Chal tells your group 'tell us chon'<br />
+<br />
+264H 139V 6588541X 0C Mem:3 Exits:NESW&gt; c 'web' jeremiah<br />
+<br />
+264H 139V 6588541X 0C Mem:4 Exits:NESW&gt; <br />
+Jeremiah says 'sucks im hurt too'<br />
+<br />
+264H 139V 6588541X 0C Mem:4 Exits:NESW&gt; gt soloing it<br />
+Kingfisher Way North<br />
+    You stand upon a firm, well-made cobblestone street in the northern<br />
+part of Tantallon. This portion of the street deviates slightly from the<br />
+norm; instead of buildings on both sides, there is only one to the west.<br />
+Glancing to the east, you see what appears to be a stockpile of waste and<br />
+junk, and the terrible odor coming from that direction confirms your<br />
+thoughts. The building to the west appears to have been vacated by its<br />
+owner, as there is a &quot;For Sale&quot; sign in the front window. Given the close<br />
+proximity to the town dump, it's not hard to figure out why nobody wants to<br />
+live there.<br />
+You see the outline of a life form here, carrying: a fine silver string; a fine silver string; a crimson cloak inlaid with th<br />
+reads of marble; an opal shield; a red draconian bracelet; a fine silver string; a glowing scroll of recall; an enchanted bar<br />
+rel.<br />
+<br />
+264H 139V 6588541X 0C Mem:4 Exits:NESW&gt; YOU CAST -----------&gt; web<br />
+Your webbing narrowly misses him.<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; <br />
+Tokin tells your group 'wehre nate'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; <br />
+Tokin tells your group 'ww gates nate'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; You tell your group 'soloing it'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; <br />
+Chal tells your group 'dont know'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; <br />
+Knusuh tells your group 'where'<br />
+<br />
+Chal tells your group 'coming'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; <br />
+Knusuh tells your group 'is it'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; c 'm m' jeremiah<br />
+c 'f b'<br />
+c 'f b'<br />
+YOU CAST -----------&gt; magic missile<br />
+You miss Jeremiah and destroy an image instead.<br />
+You miss Jeremiah and destroy an image instead.<br />
+You miss Jeremiah and destroy an image instead.<br />
+Your missiles are mysteriously deflected.<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; c 'f b' jeremiah<br />
+<br />
+Knusuh tells your group 'where is it'<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; c 'f b' jeremiah<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+264H 139V 6588541X 0C Mem:5 Exits:NESW&gt; YOU CAST -----------&gt; force bolt<br />
+You miss Jeremiah and destroy an image instead.<br />
+<br />
+264H 139V 6588541X 0C [Chon:Perfect] [Jeremiah:Fair] Mem:6 Exits:NESW&gt; c 'f b' jeremiah<br />
+<br />
+Tokin tells your group 'gogo'<br />
+<br />
+264H 139V 6588541X 0C [Chon:Perfect] [Jeremiah:Fair] Mem:6 Exits:NESW&gt; c 'f b' jeremiah<br />
+<br />
+You bludgeon Jeremiah extremely hard.<br />
+You feel intense pain as you swing through Jeremiah's flaming aura.<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:6 Exits:NESW&gt; <br />
+Chal tells your group 'chon!'<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:6 Exits:NESW&gt; c 'f b' jeremiah<br />
+YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Jeremiah.<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:7 Exits:NESW&gt; c 'f b' jeremiah<br />
+<br />
+Tokin tells your group 'wher eis it'<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:7 Exits:NESW&gt; <br />
+Tokin tells your group 'wher eis it'<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:7 Exits:NESW&gt; <br />
+Tokin tells your group 'wher eis it'<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Fair] Mem:7 Exits:NESW&gt; c 'f b' jeremiah<br />
+YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Jeremiah.<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Awful] Mem:9 Exits:NESW&gt; c 'f b' jeremiah<br />
+<br />
+Jeremiah **MISSES** you with his crush.<br />
+<br />
+253H 139V 6588541X 0C [Chon:V.Good] [Jeremiah:Awful] Mem:9 Exits:NESW&gt; YOU CAST -----------&gt; force bolt<br />
+Your force bolt shatters Jeremiah's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+get pile.coins corpse<br />
+exa corpse<br />
+Jeremiah is dead! R.I.P.<br />
+<br />
+253H 139V 6588541X 0C [Jeremiah:Dying] Mem:10 Exits:NESW&gt; <br />
+The death cry of Jeremiah echoes from somewhere nearby...<br />
+<br />
+253H 139V 6588541X 0C Mem:10 Exits:NESW&gt; c 'f b' jeremiah<br />
+gt got it<br />
+get all corpse<br />
+<br />
+Knusuh tells your group 'rip?'<br />
+<br />
+253H 139V 6588541X 0C Mem:10 Exits:NESW&gt; You get a very large pile of coins from the corpse of Jeremiah.<br />
+There were 13228 coins.<br />
+<br />
+253H 139V 6588541X 13228C Mem:10 Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a first aid kit<br />
+a dwarven smasher..it glows blue<br />
+a fine silver string..it glows blue..it glows dimly<br />
+a red draconian bracelet..it glows dimly<br />
+a black leather beltpouch<br />
+a backpack of holding..it glows blue<br />
+an opal shield..it glows dimly<br />
+a pair of black ice arm guards<br />
+a pair of black boots<br />
+a pair of snail shell earrings<br />
+a black robe of shadows..it glows blue<br />
+a crimson cloak inlaid with threads of marble..it glows blue..it glows dimly<br />
+a cloak of thieves..it glows blue<br />
+a fine silver string..it glows blue..it glows dimly [2]<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a scroll with a brown ribbon..it glows blue [11]<br />
+an enchanted barrel..it glows blue..it glows dimly<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+Jeremiah arrives from the south.<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+Jeremiah leaves north.<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+Devyn tells you 'owned'<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+Chal tells your group 'dont battle till we here'<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; gt dead!<br />
+You tell your group 'dead!'<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+Jeremiah arrives from the north.<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; <br />
+A Knight of the Sword arrives from the north.<br />
+<br />
+264H 140V 6588541X 13228C Mem:9 Exits:NESW&gt; c 'f b' jeremiah<br />
+YOU CAST -----------&gt; force bolt<br />
+Your force bolt shatters Jeremiah's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+get pile.coins corpse<br />
+exa corpse<br />
+Jeremiah is dead! R.I.P.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='371'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=371">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="371">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

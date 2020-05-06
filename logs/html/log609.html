@@ -1,0 +1,2357 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 609-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='609'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+BSP and Wild amicably swap equipment.</font></b>
+<p>
+POV: 
+Tinotaur<p>
+Log Rating:
+2.5264<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+BSP and Wild meet on the road to conduct an improptu swap meet. Some archery equipment is traded for a nasty fleshy eye.</i>
+<p>
+<p>
+
+422H 128V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Nero flies east.<br />
+You follow Nero east.<br />
+The Knights' High Road<br />
+Denise Demonic, Daughter of Darkness is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Gozirra, the Wild Mothra Hunter is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Ojo the Bozo, Evil Clown is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Sindbad the Sailortaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a palladium ring; a frosted tin bracer; a frosted tin bracer; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+Nasir the Original Dumbass is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Darva the Male High Elf is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Seq the Ugly Goblin is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Seeros Starr, Wild Cranky Old Man is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Lianois Beansprout, Wildy Cooking Tofu is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Murphy McManus, Master of Malevolence is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Teraz Assante is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Gloucester, Group Leader, Pirate Captain and Spy Master is standing here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Kooz crashes into Ojo in a thundering collision, knocking him to the ground!<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+Teraz flies west.<br />
+Murphy flies west.<br />
+Lianois flies west.<br />
+Seeros flies west.<br />
+Seq flies west.<br />
+Darva flies west.<br />
+Nasir flies west.<br />
+Pahuta flies west.<br />
+Sindbad flies west.<br />
+Gozirra flies west.<br />
+Denise flies west.<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The road leads through the solamnic plains, heading toward Vingaard this way.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The Knights' High Road runs as far as you can see.<br />
+Denise Demonic, Daughter of Darkness is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Gozirra, the Wild Mothra Hunter is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Sindbad the Sailortaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a palladium ring; a frosted tin bracer; a frosted tin bracer; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+Nasir the Original Dumbass is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Darva the Male High Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Seq the Ugly Goblin is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Seeros Starr, Wild Cranky Old Man is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Lianois Beansprout, Wildy Cooking Tofu is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Murphy McManus, Master of Malevolence is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Teraz Assante is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Kooz massacres Ojo with his smite.<br />
+Ojo misses Kooz with his shoot.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+Your group of 12 members consists of:<br />
+  Nero             perfect   rested    standing   Y   N    N     0    0<br />
+  Gloucester       v.good    rested    standing   Y   N    N     1    3<br />
+  Tinotaur         perfect   rested    standing   Y   N    N     1    1<br />
+  Elyana           v.good    rested    standing   Y   Y    N     2    6<br />
+  Ursula           perfect   rested    standing   Y   N    N     1    0<br />
+  Onnilas          perfect   rested    standing   Y   N    N     0    0<br />
+  Uliah            perfect   rested    standing   Y   N    N     1    5<br />
+  Kooz             v.good    rested    fighting   Y   N    N     1    0<br />
+  Draven           perfect   rested    standing   Y   Y    N     1    4<br />
+  Lenore           perfect   rested    standing   Y   Y    N     0    0<br />
+  Bhul             perfect   rested    standing   Y   Y    N     0    0<br />
+  Skorpio          perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Teraz flies in from the west.<br />
+Murphy flies in from the west.<br />
+Lianois flies in from the west.<br />
+Seeros flies in from the west.<br />
+Seq flies in from the west.<br />
+Darva flies in from the west.<br />
+Nasir flies in from the west.<br />
+Pahuta flies in from the west.<br />
+Sindbad flies in from the west.<br />
+Gozirra flies in from the west.<br />
+Denise flies in from the west.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Lenore slowly fades into existence.<br />
+Lenore crashes into Gozirra in a thundering collision, knocking him to the ground!<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Teraz slowly fades into existence.<br />
+Teraz crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+Bhul slowly fades into existence.<br />
+Bhul crashes into Teraz in a thundering collision, knocking him to the ground!<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Onnilas comes out of hiding.<br />
+Onnilas annihilates Gozirra with his shoot.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Nero crashes into Nasir in a thundering collision, knocking him to the ground!<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Elyana misses Denise and destroys an image instead.<br />
+Gozirra is hit by a spray of gleaming indigo!<br />
+Sindbad is blasted by a spray of scintillating blue!<br />
+Sindbad freezes in place.<br />
+Sindbad is caught in a spray of shimmering red!<br />
+Elyana misses Pahuta and destroys an image instead.<br />
+Nasir is hit by a spray of gleaming indigo!<br />
+Darva is caught in a spray of radiant yellow!<br />
+Seq is caught in a spray of radiant yellow!<br />
+Seeros is hit by a spray of gleaming indigo!<br />
+Lianois is caught in a spray of shimmering red!<br />
+Elyana misses Murphy and destroys an image instead.<br />
+Teraz is struck by a spray of vibrant green!<br />
+Teraz is hit by a spray of gleaming indigo!<br />
+Ojo is struck by a spray of vibrant green!<br />
+Ojo is struck by a spray of murky violet!<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+Your group of 12 members consists of:<br />
+  Nero             perfect   rested    fighting   Y   N    N     0    0<br />
+  Gloucester       v.good    rested    standing   Y   N    N     1    3<br />
+  Tinotaur         perfect   rested    standing   Y   N    N     1    1<br />
+  Elyana           v.good    rested    fighting   Y   Y    N     2    8<br />
+  Ursula           v.good    rested    fighting   Y   N    N     1    0<br />
+  Onnilas          perfect   rested    fighting   Y   N    N     0    0<br />
+  Uliah            perfect   rested    standing   Y   N    N     1    5<br />
+  Kooz             v.good    rested    fighting   Y   N    N     1    0<br />
+  Draven           perfect   rested    standing   Y   Y    N     1    4<br />
+  Lenore           perfect   rested    fighting   Y   N    N     0    0<br />
+  Bhul             perfect   rested    fighting   Y   N    N     0    0<br />
+  Skorpio          perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Seeros focuses on Murphy and utters the words, 'cure critical'.<br />
+<br />
+422H 126V 1X 724C Mem:1 Exits:EW&gt;<br />
+<br />
+Pahuta utters some strange words.<br />
+Pahuta's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of vibrant green!<br />
+Skorpio is hit by a spray of gleaming indigo!<br />
+Bhul is caught in a spray of shimmering red!<br />
+Lenore is caught in a spray of shimmering red!<br />
+Draven is struck by a spray of murky violet!<br />
+Kooz is caught in a spray of radiant yellow!<br />
+Uliah is blasted by a spray of scintillating blue!<br />
+Onnilas is struck by a spray of murky violet!<br />
+Ursula is struck by a spray of vibrant green!<br />
+Pahuta misses Elyana and destroys an image instead.<br />
+You are blasted by a spray of scintillating blue!<br />
+Nero is caught in a spray of shimmering red!<br />
+Gloucester is caught in a spray of shimmering red!<br />
+Gloucester is caught in a spray of bright orange!<br />
+<br />
+396H 126V 1X 724C [Me:V.Good] [Elyana:V.Good] [Pahuta:Perfect] Mem:1 Exits:EW&gt;<br />
+You utter the words, 'sunray'<br />
+Your hands send forth blinding rays of sunlight!<br />
+You destroy Denise's mirror images.<br />
+Denise withers as a ray of sunlight engulfs her!<br />
+Gozirra withers as a ray of sunlight engulfs him!<br />
+Sindbad withers as a ray of sunlight engulfs him!<br />
+You destroy Pahuta's mirror images.<br />
+Pahuta withers as a ray of sunlight engulfs him!<br />
+Nasir withers as a ray of sunlight engulfs him!<br />
+Darva withers as a ray of sunlight engulfs him!<br />
+Seq withers as a ray of sunlight engulfs him!<br />
+Seeros withers as a ray of sunlight engulfs him!<br />
+Lianois withers as a ray of sunlight engulfs him!<br />
+You destroy Murphy's mirror images.<br />
+Murphy withers as a ray of sunlight engulfs him!<br />
+Teraz withers as a ray of sunlight engulfs him!<br />
+Teraz seems to be blinded!<br />
+Ojo withers as a ray of sunlight engulfs him!<br />
+<br />
+396H 126V 1X 724C [Me:V.Good] [Elyana:V.Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Skorpio is caught in a spray of bright orange!<br />
+Bhul is hit by a spray of gleaming indigo!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+Draven is struck by a spray of murky violet!<br />
+Kooz is caught in a spray of bright orange!<br />
+Uliah is struck by a spray of murky violet!<br />
+Onnilas is blasted by a spray of scintillating blue!<br />
+Ursula is caught in a spray of bright orange!<br />
+Elyana is caught in a spray of radiant yellow!<br />
+You are caught in a spray of bright orange!<br />
+Nero is blasted by a spray of scintillating blue!<br />
+Gloucester is caught in a spray of bright orange!<br />
+<br />
+376H 126V 1X 724C [Me:Good] [Elyana:Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Elyana steps aside as Lianois attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+376H 126V 1X 724C [Me:Good] [Elyana:Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Seq drops to his knees and grovels in the dirt to some unknown being.<br />
+They look pitiful and wretched, yet strangely empowered.<br />
+Seq prays.<br />
+<br />
+376H 126V 1X 724C [Me:Good] [Elyana:Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Elyana steps aside as Seq attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+376H 126V 1X 724C [Me:Good] [Elyana:Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Murphy utters some strange words.<br />
+Murphy's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of vibrant green!<br />
+Bhul is caught in a spray of bright orange!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+Draven is blasted by a spray of scintillating blue!<br />
+Kooz is struck by a spray of vibrant green!<br />
+Uliah is hit by a spray of gleaming indigo!<br />
+Onnilas is caught in a spray of bright orange!<br />
+Ursula is blasted by a spray of scintillating blue!<br />
+Elyana is struck by a spray of vibrant green!<br />
+You are caught in a spray of radiant yellow!<br />
+Nero is struck by a spray of murky violet!<br />
+Gloucester is struck by a spray of vibrant green!<br />
+<br />
+350H 126V 1X 724C [Me:Good] [Elyana:Good] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Darva utters some strange words.<br />
+Skorpio is shredded by shards of ice.<br />
+Bhul is shredded by shards of ice.<br />
+Lenore is shredded by shards of ice.<br />
+Darva destroys Draven's mirror images.<br />
+Draven is shredded by shards of ice.<br />
+Kooz appears to grow stronger.<br />
+Kooz manages to avoid the brunt of the storm.<br />
+Uliah is shredded by shards of ice.<br />
+Onnilas is shredded by shards of ice.<br />
+Ursula is shredded by shards of ice.<br />
+Darva destroys Elyana's mirror images.<br />
+Elyana is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Nero is shredded by shards of ice.<br />
+Gloucester is shredded by shards of ice.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Gloucester panics, and attempts to flee.<br />
+Gloucester flies west.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Ojo steps aside as Kooz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Uliah smites Pahuta hard.<br />
+Uliah is burned, as he swings at Pahuta.<br />
+Uliah smites Pahuta very hard.<br />
+Uliah is burned, as he swings at Pahuta.<br />
+Skorpio slashes Pahuta very hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Lianois massacres Elyana with his cleave.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Lianois massacres Elyana with his cleave.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Seq massacres Elyana with his drain.<br />
+Seq is burned, as he swings at Elyana.<br />
+Elyana misses Denise with her drain.<br />
+Elyana drains Denise.<br />
+Elyana is burned, as she swings at Denise.<br />
+Elyana is chilled, as she swings at Denise.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nasir massacres Nero with his cleave.<br />
+Nasir massacres Nero with his cleave.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Onnilas annihilates Gozirra with his shoot.<br />
+Bhul massacres Teraz with his crush.<br />
+Bhul crushes Teraz extremely hard.<br />
+Ursula blocks Teraz's blow with a quick raise of her shield.<br />
+Ursula slashes Teraz extremely hard.<br />
+Ursula slashes Teraz extremely hard.<br />
+Lenore misses Gozirra with her slash.<br />
+Lenore slashes Gozirra extremely hard.<br />
+Lenore is burned, as she swings at Gozirra.<br />
+Gozirra massacres Lenore with his stab.<br />
+Gozirra massacres Lenore with his stab.<br />
+Kooz massacres Ojo with his smite.<br />
+Kooz annihilates Ojo with his smite.<br />
+Ojo misses Kooz with his shoot.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Bad] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Uliah panics, and attempts to flee.<br />
+Uliah flies west.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Bad] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Lenore crashes into Gozirra in a thundering collision, knocking him to the ground!<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Bad] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Ursula stands up.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Bad] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Nasir steps aside as Nero attempts a bash, stumbles, and falls flat on his face.<br />
+Nasir stands up.<br />
+Elyana gets a potion from her chest.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Bad] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Nasir raises the horn of resounding and blows forth a fire storm.<br />
+Flames from the horn appear above Skorpio, but do him no harm.<br />
+Flames from the horn appear above Bhul, but do him no harm.<br />
+Huge flames burn Lenore from above.<br />
+Flames from the horn appear above Draven, but do him no harm.<br />
+Flames from the horn appear above Kooz, but do him no harm.<br />
+Flames from the horn appear above Onnilas, but do him no harm.<br />
+Huge flames burn Ursula from above.<br />
+A wooden shield in use by Ursula is destroyed.<br />
+Flames from the horn appear above Elyana, but do her no harm.<br />
+Flames from the horn appear above you, doing you no harm.<br />
+Flames from the horn appear above Nero, but do him no harm.<br />
+Elyana slowly quaffs a potion of golden sap, getting every drop.<br />
+Elyana begins to become blurry and hard to see.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Seeros focuses on Darva and utters the words, 'heal'.<br />
+Seeros heals Darva.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Draven utters some strange words.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Denise is caught in a spray of shimmering red!<br />
+Gozirra is struck by a spray of murky violet!<br />
+Sindbad is struck by a spray of murky violet!<br />
+Pahuta is hit by a spray of gleaming indigo!<br />
+Nasir is hit by a spray of gleaming indigo!<br />
+Darva is caught in a spray of shimmering red!<br />
+Seq is hit by a spray of gleaming indigo!<br />
+Seeros is struck by a spray of vibrant green!<br />
+Lianois is struck by a spray of murky violet!<br />
+Murphy is caught in a spray of shimmering red!<br />
+Teraz is blasted by a spray of scintillating blue!<br />
+Teraz is caught in a spray of bright orange!<br />
+Ojo is caught in a spray of radiant yellow!<br />
+Ojo is struck by a spray of vibrant green!<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:Fair] Mem:2 Exits:EW&gt;<br />
+<br />
+Pahuta desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Pahuta's body.<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+Your group of 12 members consists of:<br />
+  Nero             fair      rested    fighting   Y   N    N     0    0<br />
+  Gloucester       good      rested    standing   Y   N    N     0    4<br />
+  Tinotaur         good      rested    fighting   Y   N    N     1    2<br />
+  Elyana           fair      rested    fighting   Y   Y    N     2    8<br />
+  Ursula           good      rested    fighting   Y   N    N     1    0<br />
+  Onnilas          fair      rested    fighting   Y   N    N     0    0<br />
+  Uliah            fair      rested    standing   Y   N    N     1    5<br />
+  Kooz             fair      rested    fighting   Y   N    N     1    0<br />
+  Draven           bad       rested    fighting   Y   Y    N     1    6<br />
+  Lenore           fair      rested    fighting   Y   N    N     0    0<br />
+  Bhul             good      rested    fighting   Y   N    N     0    0<br />
+  Skorpio          fair      rested    fighting   Y   N    N     0    0<br />
+<br />
+335H 126V 1X 724C [Me:Good] [Elyana:Fair] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of murky violet!<br />
+Bhul is caught in a spray of shimmering red!<br />
+Bhul is blasted by a spray of scintillating blue!<br />
+Lenore is struck by a spray of vibrant green!<br />
+Draven is struck by a spray of murky violet!<br />
+Kooz is hit by a spray of gleaming indigo!<br />
+Onnilas is hit by a spray of gleaming indigo!<br />
+Ursula is struck by a spray of murky violet!<br />
+Elyana is blasted by a spray of scintillating blue!<br />
+Elyana is hit by a spray of gleaming indigo!<br />
+You are struck by a spray of murky violet!<br />
+Nero is blasted by a spray of scintillating blue!<br />
+<br />
+303H 126V 1X 724C [Me:Fair] [Elyana:V.Bad] [Pahuta:V.Good] Mem:2 Exits:EW&gt;<br />
+Lianois stands up.<br />
+You utter the words, 'heal'<br />
+You heal Elyana.<br />
+<br />
+303H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Skorpio quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Skorpio...<br />
+Skorpio heals Skorpio.<br />
+<br />
+303H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Ursula focuses her purity on Teraz's arm!<br />
+Ursula forces Teraz to drop his weapon.<br />
+<br />
+303H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Kooz stands up.<br />
+Darva utters some strange words.<br />
+Skorpio is shredded by shards of ice.<br />
+Bhul is shredded by shards of ice.<br />
+Lenore is shredded by shards of ice.<br />
+Draven is shredded by shards of ice.<br />
+Kooz appears to grow stronger.<br />
+Kooz manages to avoid the brunt of the storm.<br />
+Onnilas is shredded by shards of ice.<br />
+Ursula is shredded by shards of ice.<br />
+Elyana is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Nero is shredded by shards of ice.<br />
+<br />
+284H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+**Kooz: Melee claired<br />
+Kooz gets a vial from his handkerchief.<br />
+<br />
+284H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Kooz quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Kooz...<br />
+Kooz heals Kooz.<br />
+<br />
+284H 126V 1X 724C [Me:Fair] [Elyana:V.Good] [Pahuta:V.Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Ursula deftly steps in front of Elyana, pushing into the frey.<br />
+Ursula heroically rescues Elyana.<br />
+Ursula deftly steps in front of Elyana, pushing into the frey.<br />
+Ursula heroically rescues Elyana.<br />
+Ursula deftly steps in front of Elyana, pushing into the frey.<br />
+Ursula heroically rescues Elyana.<br />
+Ursula deftly steps in front of Elyana, pushing into the frey.<br />
+Ursula heroically rescues Elyana.<br />
+Ursula deftly steps in front of Elyana, pushing into the frey.<br />
+Ursula heroically rescues Elyana.<br />
+Darva misses Ursula with his bludgeon.<br />
+Ursula massacres Darva with her slash.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Ursula slashes Darva extremely hard.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Seeros misses Ursula with his bludgeon.<br />
+Seeros misses Ursula with his bludgeon.<br />
+Pahuta bludgeons Ursula.<br />
+Denise misses Ursula with her pierce.<br />
+Skorpio slashes Pahuta extremely hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Skorpio slashes Pahuta extremely hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Murphy misses Elyana with his pierce.<br />
+Lianois cleaves Elyana extremely hard.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Lianois massacres Elyana with his cleave.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Seq massacres Elyana with his drain.<br />
+Seq is burned, as he swings at Elyana.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nasir massacres Nero with his cleave.<br />
+Nasir cleaves Nero extremely hard.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Onnilas's bow crackles with electricity.<br />
+Gozirra wavers under the impact of a lightning bolt discharged by a bow.<br />
+Bhul massacres Teraz with his crush.<br />
+Bhul massacres Teraz with his crush.<br />
+Teraz misses Ursula with his hit.<br />
+Lenore slashes Gozirra extremely hard.<br />
+Lenore is burned, as she swings at Gozirra.<br />
+Lenore slashes Gozirra extremely hard.<br />
+Lenore is burned, as she swings at Gozirra.<br />
+Gozirra massacres Lenore with his stab.<br />
+Gozirra massacres Lenore with his stab.<br />
+Kooz annihilates Ojo with his smite.<br />
+Kooz massacres Ojo with his smite.<br />
+Ojo misses Kooz with his shoot.<br />
+<br />
+284H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Murphy utters some strange words.<br />
+Murphy's hands issue a spray of prismatic color!<br />
+Skorpio is caught in a spray of shimmering red!<br />
+Bhul is hit by a spray of gleaming indigo!<br />
+Lenore is struck by a spray of murky violet!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+Draven is caught in a spray of shimmering red!<br />
+Kooz is hit by a spray of gleaming indigo!<br />
+Onnilas is hit by a spray of gleaming indigo!<br />
+Ursula is hit by a spray of gleaming indigo!<br />
+Ursula is caught in a spray of bright orange!<br />
+Elyana is caught in a spray of bright orange!<br />
+You are struck by a spray of murky violet!<br />
+Nero is blasted by a spray of scintillating blue!<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Elyana utters some strange words.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Denise is hit by a spray of gleaming indigo!<br />
+Gozirra is struck by a spray of vibrant green!<br />
+Sindbad is caught in a spray of shimmering red!<br />
+Pahuta is caught in a spray of shimmering red!<br />
+Nasir is struck by a spray of murky violet!<br />
+Darva is struck by a spray of murky violet!<br />
+Seq is blasted by a spray of scintillating blue!<br />
+Seeros is caught in a spray of radiant yellow!<br />
+Seeros seems weaker.<br />
+Lianois is caught in a spray of radiant yellow!<br />
+Lianois seems weaker.<br />
+Murphy is blasted by a spray of scintillating blue!<br />
+Teraz is struck by a spray of vibrant green!<br />
+Ojo is struck by a spray of murky violet!<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Ojo gets a scroll from his chest.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Teraz steps aside as Bhul attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Gloucester flies in from the west.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Nasir crashes into Nero in a thundering collision, knocking him to the ground!<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Onnilas quaffs a teal potion.<br />
+Onnilas heals Onnilas.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Ojo stands up.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+**Draven: melee claired<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Draven quaffs a filled vial.<br />
+Draven appears rejuvenated.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Gloucester utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+260H 126V 1X 724C [Me:Fair] [Ursula:Fair] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Gloucester is struck by a spray of vibrant green!<br />
+Skorpio is hit by a spray of gleaming indigo!<br />
+Bhul is caught in a spray of bright orange!<br />
+Lenore is caught in a spray of bright orange!<br />
+Draven is struck by a spray of murky violet!<br />
+Kooz is struck by a spray of murky violet!<br />
+Kooz is hit by a spray of gleaming indigo!<br />
+Onnilas is hit by a spray of gleaming indigo!<br />
+Onnilas's face goes blank and he begins to drool.<br />
+Ursula is struck by a spray of murky violet!<br />
+Elyana is caught in a spray of radiant yellow!<br />
+You are caught in a spray of radiant yellow!<br />
+You feel weaker.<br />
+Nero is hit by a spray of gleaming indigo!<br />
+Nero's face goes blank and he begins to drool.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Kooz crashes into Ojo in a thundering collision, knocking him to the ground!<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+Your group of 12 members consists of:<br />
+  Nero             v.bad     rested    fighting   Y   N    N     0    0<br />
+  Gloucester       fair      rested    fighting   Y   N    N     1    6<br />
+  Tinotaur         fair      rested    fighting   Y   N    N     1    3<br />
+  Elyana           fair      rested    fighting   Y   Y    N     2   10<br />
+  Ursula           bad       rested    fighting   Y   N    N     1    0<br />
+  Onnilas          good      rested    fighting   Y   N    N     0    0<br />
+  Uliah            v.good    rested    standing   Y   N    N     1    6<br />
+  Kooz             good      rested    fighting   Y   N    N     1    0<br />
+  Draven           v.bad     rested    fighting   Y   Y    N     1    6<br />
+  Lenore           v.bad     rested    fighting   Y   N    N     0    0<br />
+  Bhul             fair      rested    fighting   Y   N    N     0    0<br />
+  Skorpio          good      rested    fighting   Y   N    N     0    0<br />
+Gozirra stands up.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+<br />
+Onnilas steps aside as Gozirra attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:3 Exits:EW&gt;<br />
+You utter the words, 'heal'<br />
+You heal Draven.<br />
+Seq stands up.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Seq crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:Bad] [Pahuta:Good] Mem:4 Exits:EW&gt;<br />
+<br />
+A small whirlwind crashes into Gozirra, pummeling his entire body.<br />
+A small whirlwind crashes into Nasir, pummeling his entire body.<br />
+A small whirlwind crashes into Darva, pummeling his entire body.<br />
+A small whirlwind crashes into Seeros, pummeling his entire body.<br />
+A small whirlwind crashes into Murphy, pummeling his entire body.<br />
+A small whirlwind crashes into Teraz, pummeling his entire body.<br />
+Gloucester barely bludgeons Denise.<br />
+Gloucester is burned, as he swings at Denise.<br />
+Gloucester is chilled, as he swings at Denise.<br />
+Darva bludgeons Ursula extremely hard.<br />
+Ursula massacres Darva with her slash.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Ursula massacres Darva with her slash.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Seeros misses Ursula with his bludgeon.<br />
+Seeros bludgeons Ursula very hard.<br />
+Draven bludgeons Pahuta hard.<br />
+Draven is burned, as he swings at Pahuta.<br />
+Draven bludgeons Pahuta hard.<br />
+Draven is burned, as he swings at Pahuta.<br />
+Skorpio slashes Pahuta extremely hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Skorpio slashes Pahuta extremely hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Lianois massacres Elyana with his cleave.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Lianois cleaves Elyana extremely hard.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Seq drains Elyana very hard.<br />
+Seq is burned, as he swings at Elyana.<br />
+Seq massacres Elyana with his drain.<br />
+Seq is burned, as he swings at Elyana.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+*Whoosh!* Nero's slash almost decapitates Nasir!<br />
+Nasir massacres Nero with his cleave.<br />
+Nasir massacres Nero with his cleave.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Onnilas annihilates Gozirra with his shoot.<br />
+Onnilas's bow crackles with electricity.<br />
+Gozirra wavers under the impact of a lightning bolt discharged by a bow.<br />
+Bhul massacres Teraz with his crush.<br />
+Bhul crushes Teraz extremely hard.<br />
+Teraz misses Ursula with his hit.<br />
+Lenore massacres Gozirra with her slash.<br />
+Lenore is burned, as she swings at Gozirra.<br />
+Gozirra stabs Lenore very hard.<br />
+Gozirra stabs Lenore extremely hard.<br />
+Kooz massacres Ojo with his smite.<br />
+Kooz massacres Ojo with his smite.<br />
+Ojo misses Kooz with his shoot.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Uliah flies in from the west.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Gozirra steps aside as Lenore attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Uliah focuses on Lenore and utters the words, 'heal'.<br />
+Uliah heals Lenore.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Bhul stands up.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Bhul quaffs a small vial.<br />
+Bhul heals Bhul.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Lianois crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Teraz stands up.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:Fair] Mem:4 Exits:EW&gt;<br />
+<br />
+Pahuta quaffs Mishakal's White potion.<br />
+Pahuta smiles suddenly and has never looked better.<br />
+Pahuta heals Pahuta.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Teraz panics, and attempts to flee.<br />
+Teraz flies east.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Nero quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Nero...<br />
+Nero heals Nero.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Nero stands up.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Seeros focuses on Denise and utters the words, 'heal'.<br />
+Seeros heals Denise.<br />
+Nasir crashes into Draven in a thundering collision, knocking him to the ground!<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Nero panics, and attempts to flee.<br />
+Nero flies east.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Gloucester utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+241H 126V 1X 724C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Uliah is caught in a spray of shimmering red!<br />
+Gloucester is struck by a spray of murky violet!<br />
+Skorpio is caught in a spray of shimmering red!<br />
+Bhul is caught in a spray of radiant yellow!<br />
+Bhul is caught in a spray of bright orange!<br />
+Lenore is struck by a spray of murky violet!<br />
+Draven is caught in a spray of radiant yellow!<br />
+Draven is struck by a spray of murky violet!<br />
+Kooz is struck by a spray of murky violet!<br />
+Kooz is caught in a spray of shimmering red!<br />
+Onnilas is caught in a spray of radiant yellow!<br />
+Ursula is blasted by a spray of scintillating blue!<br />
+Elyana is caught in a spray of shimmering red!<br />
+You are struck by a spray of murky violet!<br />
+You are hit by a spray of gleaming indigo!<br />
+Gozirra stands up.<br />
+<br />
+185H 126V 1X 724C [Me:Bad] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+Your group of 12 members consists of:<br />
+  Nero             v.good    rested    standing   Y   N    N     0    0<br />
+  Gloucester       bad       rested    fighting   Y   N    N     1    7<br />
+  Tinotaur         bad       rested    fighting   Y   N    N     1    4<br />
+  Elyana           v.bad     rested    fighting   Y   Y    N     2   10<br />
+  Ursula           v.bad     rested    fighting   Y   N    N     1    0<br />
+  Onnilas          good      rested    fighting   Y   N    N     0    0<br />
+  Uliah            v.good    rested    fighting   Y   N    N     1    7<br />
+  Kooz             fair      rested    fighting   Y   N    N     1    0<br />
+  Draven           fair      rested    fighting   Y   Y    N     1    7<br />
+  Lenore           good      rested    fighting   Y   N    N     0    0<br />
+  Bhul             good      rested    fighting   Y   Y    N     0    0<br />
+  Skorpio          fair      rested    fighting   Y   N    N     0    0<br />
+Gozirra giggles as he quickly quaffs a vial of sparkling pink liquid.<br />
+Gozirra heals Gozirra.<br />
+<br />
+185H 126V 1X 724C [Me:Bad] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+<br />
+Pahuta utters some strange words.<br />
+Pahuta's hands issue a spray of prismatic color!<br />
+Uliah is caught in a spray of bright orange!<br />
+Gloucester is blasted by a spray of scintillating blue!<br />
+Skorpio is struck by a spray of vibrant green!<br />
+Bhul is caught in a spray of radiant yellow!<br />
+Bhul seems weaker.<br />
+Lenore is blasted by a spray of scintillating blue!<br />
+Draven is blasted by a spray of scintillating blue!<br />
+Kooz is caught in a spray of bright orange!<br />
+Onnilas is caught in a spray of radiant yellow!<br />
+Ursula is caught in a spray of bright orange!<br />
+Elyana is blasted by a spray of scintillating blue!<br />
+You are caught in a spray of shimmering red!<br />
+<br />
+165H 126V 1X 724C [Me:V.Bad] [Ursula:V.Bad] [Pahuta:V.Good] Mem:4 Exits:EW&gt;<br />
+You utter the words, 'heal'<br />
+You heal Ursula.<br />
+<br />
+165H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:V.Good] Mem:6 Exits:EW&gt;<br />
+<br />
+A small whirlwind crashes into Sindbad, pummeling his entire body.<br />
+A small whirlwind crashes into Pahuta, pummeling his entire body.<br />
+A small whirlwind crashes into Nasir, pummeling his entire body.<br />
+A small whirlwind crashes into Darva, pummeling his entire body.<br />
+A small whirlwind crashes into Seeros, pummeling his entire body.<br />
+A small whirlwind crashes into Lianois, pummeling his entire body.<br />
+A small whirlwind crashes into Uliah, pummeling his entire body.<br />
+A small whirlwind crashes into Pahuta, pummeling his entire body.<br />
+A small whirlwind crashes into Darva, pummeling his entire body.<br />
+A small whirlwind crashes into Seeros, pummeling his entire body.<br />
+Ojo attempts to scream, but no sound is produced as he is caught<br />
+up in a tornado and torn to shreds.<br />
+You receive 0 experience.<br />
+Ojo is dead! R.I.P.<br />
+Nasir massacres Gloucester with his cleave.<br />
+Nasir is chilled, as he swings at Gloucester.<br />
+Nasir cleaves Gloucester extremely hard.<br />
+Nasir is chilled, as he swings at Gloucester.<br />
+Bhul crushes Denise hard.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Bhul crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Uliah smites Denise.<br />
+Uliah is burned, as he swings at Denise.<br />
+Uliah is chilled, as he swings at Denise.<br />
+Uliah smites Denise hard.<br />
+Uliah is burned, as he swings at Denise.<br />
+Uliah is chilled, as he swings at Denise.<br />
+Elyana misses Murphy with her drain.<br />
+Elyana massacres Murphy with her drain.<br />
+Elyana is burned, as she swings at Murphy.<br />
+Ursula massacres Darva with her slash.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Ursula massacres Darva with her slash.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Skorpio slashes Pahuta extremely hard.<br />
+Skorpio is burned, as he swings at Pahuta.<br />
+Murphy pierces Elyana extremely hard.<br />
+Murphy is burned, as he swings at Elyana.<br />
+Murphy pierces Elyana extremely hard.<br />
+Murphy is burned, as he swings at Elyana.<br />
+Lianois cleaves Elyana extremely hard.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Elyana is mortally wounded, and will die soon, if not aided.<br />
+Lianois obliterates Elyana with his cleave.<br />
+Lianois is burned, as he swings at Elyana.<br />
+Elyana is dead! R.I.P.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Lenore slashes Gozirra extremely hard.<br />
+Lenore is burned, as she swings at Gozirra.<br />
+Gozirra massacres Lenore with his stab.<br />
+Gozirra massacres Lenore with his stab.<br />
+The death cry of Ojo echoes from somewhere nearby...<br />
+The death cry of Elyana echoes from somewhere nearby...<br />
+Gozirra panics, and attempts to flee.<br />
+Gozirra flies west.<br />
+<br />
+165H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Murphy utters some strange words.<br />
+Murphy's hands issue a spray of prismatic color!<br />
+Murphy slowly fades into existence.<br />
+Uliah is caught in a spray of bright orange!<br />
+Gloucester is hit by a spray of gleaming indigo!<br />
+Skorpio is caught in a spray of radiant yellow!<br />
+Bhul is struck by a spray of murky violet!<br />
+Lenore is hit by a spray of gleaming indigo!<br />
+Draven is hit by a spray of gleaming indigo!<br />
+Draven is caught in a spray of shimmering red!<br />
+Kooz is caught in a spray of radiant yellow!<br />
+Onnilas is blasted by a spray of scintillating blue!<br />
+Ursula is caught in a spray of radiant yellow!<br />
+You are struck by a spray of vibrant green!<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Skorpio panics, and attempts to flee.<br />
+Skorpio flies east.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Seq gets a dwarven crossbow from the corpse of Ojo.<br />
+Seq gets a griffon's mane circlet from the corpse of Ojo.<br />
+Seq is zapped by a sterling bracer and instantly drops it.<br />
+Seq gets a pair of blue dragon scale sleeves from the corpse of Ojo.<br />
+Seq gets a pair of ergothian hunting gloves from the corpse of Ojo.<br />
+Seq gets a pair of charred black plate boots from the corpse of Ojo.<br />
+Seq gets anklets of woven palladium from the corpse of Ojo.<br />
+Seq gets some ergothian hunting armor from the corpse of Ojo.<br />
+Seq gets a silver dwarven talisman from the corpse of Ojo.<br />
+Seq is zapped by an alchemist's cloak and instantly drops it.<br />
+Seq gets a green nephaline ring from the corpse of Ojo.<br />
+Seq gets a ring of carved nephrite from the corpse of Ojo.<br />
+Seq gets a large pile of coins from the corpse of Ojo.<br />
+Seq gets a moist blue-green scroll from the corpse of Ojo.<br />
+Seq gets a glowing scroll of recall from the corpse of Ojo.<br />
+Seq gets a glowing scroll of recall from the corpse of Ojo.<br />
+Seq gets a hooded lantern from the corpse of Ojo.<br />
+Seq gets a fine vallenwood chest from the corpse of Ojo.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Seq gets the black staff of shadows from the corpse of Elyana.<br />
+Seq gets a dark blue wrist guard from the corpse of Elyana.<br />
+Seq gets a fragile silk ribbon from the corpse of Elyana.<br />
+Seq gets a plain component pouch from the corpse of Elyana.<br />
+Seq gets a studded leather belt from the corpse of Elyana.<br />
+Seq gets a heavy black cloak with silvery runes from the corpse of Elyana.<br />
+Seq gets a very large pile of coins from the corpse of Elyana.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Uliah focuses on Ursula and utters the words, 'heal'.<br />
+Uliah heals Ursula.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Lenore quaffs a swirling black potion.<br />
+Lenore heals Lenore.<br />
+Lenore stands up.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Onnilas is zapped by a pair of heavy leather gloves and instantly drops it.<br />
+Onnilas gets some black satin pants with deep pockets from the corpse of Elyana.<br />
+Onnilas gets a pair of silver spectacles from the corpse of Elyana.<br />
+Onnilas is zapped by some flowing black armor and instantly drops it.<br />
+Onnilas is zapped by a black cloak and instantly drops it.<br />
+Onnilas gets the amulet of Kul from the corpse of Elyana.<br />
+Onnilas gets a small coral ring from the corpse of Elyana.<br />
+Onnilas is zapped by a fiery red ring and instantly drops it.<br />
+Onnilas is zapped by a white dragonarmy war banner and instantly drops it.<br />
+Onnilas gets a thick aqua charm from the corpse of Elyana.<br />
+Onnilas gets a glowing scroll of recall from the corpse of Elyana.<br />
+Onnilas gets a glowing scroll of recall from the corpse of Elyana.<br />
+Onnilas gets a glowing scroll of recall from the corpse of Elyana.<br />
+Onnilas gets a large first-aid kit from the corpse of Elyana.<br />
+Onnilas is zapped by a loop of darkness and instantly drops it.<br />
+Onnilas gets a bowl of beef stew from the corpse of Elyana.<br />
+Onnilas gets a bowl of beef stew from the corpse of Elyana.<br />
+Onnilas gets a bowl of beef stew from the corpse of Elyana.<br />
+Onnilas gets a leg of lamb from the corpse of Elyana.<br />
+Onnilas gets a leg of lamb from the corpse of Elyana.<br />
+Onnilas gets a wand shaped like a foot from the corpse of Elyana.<br />
+Onnilas gets a small wooden chest from the corpse of Elyana.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Darva quaffs Mishakal's White potion.<br />
+Darva smiles suddenly and has never looked better.<br />
+Darva heals Darva.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Ursula stands up.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Ursula yells and leaps into the fray.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Nero flies in from the east.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Nero crashes into Nasir in a thundering collision, knocking him to the ground!<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Draven stands up.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Seeros focuses on Denise and utters the words, 'heal'.<br />
+Seeros heals Denise.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Bhul crashes into Seq in a thundering collision, knocking him to the ground!<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:V.Good] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Ursula quaffs a swirling black potion.<br />
+Ursula heals Ursula.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:Perfect] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Gozirra flies in from the west.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:Perfect] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+<br />
+Onnilas steps aside as Gozirra attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+146H 126V 1X 724C [Me:V.Bad] [Ursula:Perfect] [Pahuta:Good] Mem:6 Exits:EW&gt;<br />
+A small whirlwind crashes into Gozirra, pummeling his entire body.<br />
+A small whirlwind crashes into Denise, pummeling her entire body.<br />
+A small whirlwind crashes into Sindbad, pummeling his entire body.<br />
+A small whirlwind crashes into Seeros, pummeling his entire body.<br />
+A small whirlwind crashes into Lianois, pummeling his entire body.<br />
+A small whirlwind crashes into Gozirra, pummeling his entire body.<br />
+A small whirlwind crashes into Denise, pummeling her entire body.<br />
+A small whirlwind crashes into Pahuta, pummeling his entire body.<br />
+A small whirlwind crashes into Seq, pummeling his entire body.<br />
+A small whirlwind crashes into Lianois, pummeling his entire body.<br />
+Lianois cleaves Gloucester extremely hard.<br />
+Lianois is chilled, as he swings at Gloucester.<br />
+Gloucester is incapacitated and will slowly die, if not aided.<br />
+Lianois annihilates Gloucester with his cleave.<br />
+Lianois is chilled, as he swings at Gloucester.<br />
+Gloucester is dead! R.I.P.<br />
+Gozirra massacres Onnilas with his stab.<br />
+Seq slowly fades into existence.<br />
+Seq drains Bhul extremely hard.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Onnilas massacres Murphy with his shoot.<br />
+Kooz massacres Murphy with his smite.<br />
+Kooz is burned, as he swings at Murphy.<br />
+Kooz massacres Murphy with his smite.<br />
+Kooz is burned, as he swings at Murphy.<br />
+Lenore massacres Murphy with her slash.<br />
+Lenore is burned, as she swings at Murphy.<br />
+Lenore massacres Murphy with her slash.<br />
+Lenore is burned, as she swings at Murphy.<br />
+Murphy pierces Uliah hard.<br />
+Bhul crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Darva misses Ursula with his bludgeon.<br />
+Ursula slashes Darva extremely hard.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Ursula slashes Darva extremely hard.<br />
+Ursula is chilled, as she swings at Darva.<br />
+You bludgeon Pahuta hard.<br />
+You feel intense pain as you swing through Pahuta's flaming aura.<br />
+The death cry of Gloucester echoes from somewhere nearby...<br />
+Gloucester sinks gently to the ground.<br />
+Gloucester stops following Nero.<br />
+The metallic luster of your skin fades.<br />
+You are hungry.<br />
+You are thirsty.<br />
+Seeros looks really sick, and shivers uncomfortably.<br />
+Your group of 10 members consists of:<br />
+  Nero             v.good    rested    fighting   Y   N    N     0    0<br />
+  Tinotaur         v.bad     rested    fighting   Y   N    N     1   16<br />
+  Ursula           perfect   rested    fighting   Y   N    N     1    0<br />
+  Onnilas          fair      rested    fighting   Y   N    N     0    0<br />
+  Uliah            fair      rested    fighting   Y   N    N     1    9<br />
+  Kooz             bad       rested    fighting   Y   N    N     1    0<br />
+  Draven           v.bad     rested    fighting   Y   Y    N     1    8<br />
+  Lenore           v.good    rested    fighting   Y   N    N     0    0<br />
+  Bhul             fair      rested    fighting   Y   N    N     0    0<br />
+  Skorpio          fair      rested    standing   Y   N    N     0    0<br />
+<br />
+131H 114V 1X 724C [Me:V.Bad] [Ursula:Perfect] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+You quaff a small vial which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+420H 114V 1X 724C [Me:V.Good] [Ursula:Perfect] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of murky violet!<br />
+Nero is caught in a spray of bright orange!<br />
+Nero seems to be blinded!<br />
+Uliah is caught in a spray of bright orange!<br />
+Uliah is hit by a spray of gleaming indigo!<br />
+Bhul is caught in a spray of bright orange!<br />
+Lenore is hit by a spray of gleaming indigo!<br />
+Draven is caught in a spray of shimmering red!<br />
+Kooz is caught in a spray of shimmering red!<br />
+Onnilas is caught in a spray of bright orange!<br />
+Ursula is hit by a spray of gleaming indigo!<br />
+You are blasted by a spray of scintillating blue!<br />
+Kooz panics, and attempts to flee.<br />
+Kooz flies west.<br />
+<br />
+399H 114V 1X 724C [Me:V.Good] [Ursula:V.Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Ursula gets a large pile of coins from the corpse of Gloucester.<br />
+<br />
+399H 114V 1X 724C [Me:V.Good] [Ursula:V.Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Skorpio gets a white snowy eagle feather from the corpse of Gloucester.<br />
+Skorpio gets a warped staff from the corpse of Gloucester.<br />
+Skorpio gets a bracelet of threaded rose petals from the corpse of Gloucester.<br />
+Skorpio gets a runed topaz bracelet from the corpse of Gloucester.<br />
+Skorpio gets a leather purse from the corpse of Gloucester.<br />
+Skorpio gets a long flowing robe crafted of oak leaves from the corpse of Gloucester.<br />
+Skorpio is zapped by a pair of gold entwined sleeves and instantly drops it.<br />
+Skorpio gets a frozen crown of iron from the corpse of Gloucester.<br />
+Skorpio gets a rhinoceros beetle's carapace from the corpse of Gloucester.<br />
+Skorpio gets an obsidian aspen leaf from the corpse of Gloucester.<br />
+Skorpio gets a deep purple prism from the corpse of Gloucester.<br />
+Skorpio gets a silk ribbon from the corpse of Gloucester.<br />
+Skorpio gets a black runed ring from the corpse of Gloucester.<br />
+Skorpio gets a small vial from the corpse of Gloucester.<br />
+Skorpio gets a scribed scroll from the corpse of Gloucester.<br />
+Skorpio gets an empty potion bottle from the corpse of Gloucester.<br />
+Skorpio gets an empty potion bottle from the corpse of Gloucester.<br />
+Skorpio gets an empty potion bottle from the corpse of Gloucester.<br />
+Skorpio gets an empty potion bottle from the corpse of Gloucester.<br />
+Skorpio gets an empty potion bottle from the corpse of Gloucester.<br />
+Skorpio gets a glowing scroll of recall from the corpse of Gloucester.<br />
+Skorpio gets a glowing scroll of recall from the corpse of Gloucester.<br />
+Skorpio gets a glowing scroll of recall from the corpse of Gloucester.<br />
+Skorpio gets a glowing scroll of recall from the corpse of Gloucester.<br />
+Skorpio gets a glowing scroll of recall from the corpse of Gloucester.<br />
+<br />
+399H 114V 1X 724C [Me:V.Good] [Ursula:V.Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Pahuta utters some strange words.<br />
+Pahuta's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of vibrant green!<br />
+Nero is caught in a spray of shimmering red!<br />
+Uliah is caught in a spray of bright orange!<br />
+Bhul is struck by a spray of vibrant green!<br />
+Lenore is caught in a spray of bright orange!<br />
+Lenore seems to be blinded!<br />
+Lenore is struck by a spray of murky violet!<br />
+Draven is hit by a spray of gleaming indigo!<br />
+Onnilas is caught in a spray of radiant yellow!<br />
+Ursula is hit by a spray of gleaming indigo!<br />
+Ursula is struck by a spray of murky violet!<br />
+You are caught in a spray of bright orange!<br />
+<br />
+345H 114V 1X 724C [Me:Good] [Ursula:Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Onnilas gets a glowing scroll of recall from the corpse of Gloucester.<br />
+<br />
+345H 114V 1X 724C [Me:Good] [Ursula:Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Uliah focuses on Lenore and utters the words, 'heal'.<br />
+Uliah heals Lenore.<br />
+<br />
+345H 114V 1X 724C [Me:Good] [Ursula:Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Ursula divides 702 coins equally among the group members present.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Good] Mem:16 Exits:EW&gt;<br />
+<br />
+Draven utters some strange words.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Gozirra is hit by a spray of gleaming indigo!<br />
+Denise is struck by a spray of vibrant green!<br />
+Sindbad is hit by a spray of gleaming indigo!<br />
+Pahuta is struck by a spray of vibrant green!<br />
+Nasir is struck by a spray of vibrant green!<br />
+Darva is struck by a spray of murky violet!<br />
+Seq is struck by a spray of murky violet!<br />
+Seq is caught in a spray of shimmering red!<br />
+Seeros is hit by a spray of gleaming indigo!<br />
+Lianois is caught in a spray of shimmering red!<br />
+Murphy is caught in a spray of shimmering red!<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Gozirra steps aside as Lenore attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Darva utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Nasir steps aside as Nero attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Seq stands up.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Skorpio panics, and attempts to flee.<br />
+Skorpio flies west.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+<br />
+Draven steps aside as Lianois attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:16 Exits:EW&gt;<br />
+Your casting is disrupted by the fighting!<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+Nasir stands up.<br />
+<br />
+345H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+A small whirlwind crashes into Uliah, pummeling his entire body.<br />
+A small whirlwind crashes into you, pummeling your entire body.<br />
+A small whirlwind crashes into Denise, pummeling her entire body.<br />
+A small whirlwind crashes into Seeros, pummeling his entire body.<br />
+A small whirlwind crashes into Lianois, pummeling his entire body.<br />
+A small whirlwind crashes into Murphy, pummeling his entire body.<br />
+Murphy is incapacitated and will slowly die, if not aided.<br />
+A small whirlwind crashes into Uliah, pummeling his entire body.<br />
+A small whirlwind crashes into Sindbad, pummeling his entire body.<br />
+A small whirlwind crashes into Darva, pummeling his entire body.<br />
+Lianois cleaves Draven extremely hard.<br />
+Lianois is burned, as he swings at Draven.<br />
+Lianois cleaves Draven extremely hard.<br />
+Lianois is burned, as he swings at Draven.<br />
+Nasir cleaves Nero extremely hard.<br />
+Nasir massacres Nero with his cleave.<br />
+Gozirra massacres Onnilas with his stab.<br />
+Seq drains Bhul extremely hard.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Onnilas obliterates Murphy with his shoot.<br />
+You receive 0 experience.<br />
+Murphy is dead! R.I.P.<br />
+Bhul barely crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Bhul barely crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Ursula slashes Darva extremely hard.<br />
+Ursula is chilled, as she swings at Darva.<br />
+Seeros misses Ursula with his bludgeon.<br />
+Seeros misses Ursula with his bludgeon.<br />
+Sindbad misses Ursula with his cleave.<br />
+The death cry of Murphy echoes from somewhere nearby...<br />
+<br />
+330H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+Nasir quaffs a blue potion.<br />
+Nasir shudders slightly and looks uncomfortable.<br />
+Nasir heals Nasir.<br />
+<br />
+330H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+Nasir gets a large pile of coins from the corpse of Murphy.<br />
+<br />
+330H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+Seq crashes into Uliah in a thundering collision, knocking him to the ground!<br />
+Uliah is mortally wounded, and will die soon, if not aided.<br />
+<br />
+330H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+Your group of 10 members consists of:<br />
+  Nero             good      rested    fighting   Y   N    N     0    0<br />
+  Tinotaur         good      rested    fighting   Y   N    N     1   19<br />
+  Ursula           good      rested    fighting   Y   N    N     1    0<br />
+  Onnilas          fair      rested    fighting   Y   N    N     0    0<br />
+  Uliah            dying     rested    bleeding   N   N    N     1   10<br />
+  Kooz             bad       rested    standing   Y   N    N     1    0<br />
+  Draven           awful     rested    fighting   Y   Y    N     1    9<br />
+  Lenore           v.good    rested    sitting    Y   Y    N     0    0<br />
+  Bhul             bad       rested    fighting   Y   N    N     0    0<br />
+  Skorpio          fair      rested    standing   Y   N    N     0    0<br />
+<br />
+330H 114V 1X 802C [Me:Good] [Ursula:Good] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Nero is struck by a spray of vibrant green!<br />
+A spray of green strikes Uliah and he dies in agony.<br />
+Uliah is dead! R.I.P.<br />
+Bhul is struck by a spray of murky violet!<br />
+Lenore is caught in a spray of shimmering red!<br />
+A spray of red rips Draven into tiny crimson shreds.<br />
+Draven is dead! R.I.P.<br />
+Onnilas is caught in a spray of radiant yellow!<br />
+Ursula is caught in a spray of shimmering red!<br />
+Ursula is caught in a spray of radiant yellow!<br />
+Ursula seems weaker.<br />
+You are hit by a spray of gleaming indigo!<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:Fair] Mem:19 Exits:EW&gt;<br />
+<br />
+The death cry of Uliah echoes from somewhere nearby...<br />
+Uliah stops following Nero.<br />
+The death cry of Draven echoes from somewhere nearby...<br />
+Draven stops following Nero.<br />
+Nasir gets a large pile of coins from the corpse of Draven.<br />
+Pahuta quaffs Mishakal's White potion.<br />
+Pahuta smiles suddenly and has never looked better.<br />
+Pahuta heals Pahuta.<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Onnilas gets a wolf-emblazoned flag from the corpse of Draven.<br />
+Onnilas gets a rotting wooden staff from the corpse of Draven.<br />
+Onnilas gets a red steel bracer from the corpse of Draven.<br />
+Onnilas gets a red steel bracer from the corpse of Draven.<br />
+Onnilas gets a cloth belt pack from the corpse of Draven.<br />
+Onnilas gets a black skull tabard from the corpse of Draven.<br />
+Onnilas gets a small wooden shield from the corpse of Draven.<br />
+Onnilas gets a pair of black silk sleeves from the corpse of Draven.<br />
+Onnilas gets a pair of studded leather gloves from the corpse of Draven.<br />
+Onnilas gets some studded leather leggings from the corpse of Draven.<br />
+Onnilas gets an eelskin hood from the corpse of Draven.<br />
+Onnilas gets some bamboo armor from the corpse of Draven.<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nasir crashes into Nero in a thundering collision, knocking him to the ground!<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Ursula focuses her purity on Darva's head!<br />
+<br />
+296H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Pahuta utters some strange words.<br />
+Pahuta's hands issue a spray of prismatic color!<br />
+Nero is hit by a spray of gleaming indigo!<br />
+Bhul is blasted by a spray of scintillating blue!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+Onnilas is caught in a spray of shimmering red!<br />
+Ursula is blasted by a spray of scintillating blue!<br />
+You are caught in a spray of bright orange!<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+**Kooz: Ipu claired<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+You step aside as Sindbad tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros gets a ruined medal from the corpse of Draven.<br />
+Seeros gets a blood red cape from the corpse of Draven.<br />
+Seeros gets the ring of the wolf from the corpse of Draven.<br />
+Seeros gets a thick aqua charm from the corpse of Draven.<br />
+Seeros gets a potion of golden sap from the corpse of Draven.<br />
+Seeros gets a smoked Tarsis ham from the corpse of Draven.<br />
+Seeros gets a smoked Tarsis ham from the corpse of Draven.<br />
+Seeros gets a bronze bottle from the corpse of Draven.<br />
+Seeros gets a bronze bottle from the corpse of Draven.<br />
+Seeros gets a bronze bottle from the corpse of Draven.<br />
+Seeros gets a bronze bottle from the corpse of Draven.<br />
+Seeros gets a small wooden chest from the corpse of Draven.<br />
+Seeros gets a piece of sweet bread from the corpse of Draven.<br />
+Seeros gets a glowing scroll of recall from the corpse of Draven.<br />
+Seeros gets a cloth belt pack from the corpse of Draven.<br />
+Seeros gets a long black shield from the corpse of Draven.<br />
+Seeros gets a large first-aid kit from the corpse of Draven.<br />
+Seeros gets some loose brown sleeves from the corpse of Draven.<br />
+Seeros gets a sapphire shield from the corpse of Draven.<br />
+Seeros gets a pair of shark skin gloves from the corpse of Draven.<br />
+Seeros gets a pair of shark skin gloves from the corpse of Draven.<br />
+Seeros gets a glowing scroll of recall from the corpse of Draven.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a piece of sweet bread.<br />
+Seeros drops a bronze bottle.<br />
+Seeros drops a bronze bottle.<br />
+Seeros drops a bronze bottle.<br />
+Seeros drops a bronze bottle.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros drops a smoked Tarsis ham.<br />
+Seeros drops a smoked Tarsis ham.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros gets a scroll from his chest.<br />
+Seeros gets a glowing scroll of recall from the corpse of Draven.<br />
+Seeros gets a glowing scroll of recall from the corpse of Draven.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros gets a scroll from his chest.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seeros focuses on Denise and utters the words, 'heal'.<br />
+Seeros heals Denise.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Darva panics, and attempts to flee.<br />
+Darva flies east.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Bhul slowly quaffs a potion of golden sap, getting every drop.<br />
+Bhul begins to become blurry and hard to see.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Skorpio flies in from the west.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nero has lost his link.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+The violent funnel cloud rips through the area, hitting nothing.<br />
+A small whirlwind crashes into Nero, pummeling his entire body.<br />
+A small whirlwind crashes into Sindbad, pummeling his entire body.<br />
+Seeros attempts to scream, but no sound is produced as he is caught<br />
+up in a tornado and torn to shreds.<br />
+Seeros is dead! R.I.P.<br />
+A small whirlwind crashes into Lianois, pummeling his entire body.<br />
+The violent funnel dissipates.<br />
+Lenore slowly fades into existence.<br />
+Lenore slashes Denise very hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Onnilas annihilates Gozirra with his shoot.<br />
+Nasir cleaves Nero extremely hard.<br />
+Gozirra stabs Onnilas extremely hard.<br />
+Seq drains Bhul extremely hard.<br />
+Seq massacres Bhul with his drain.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero massacres Nasir with his slash.<br />
+Nero is burned, as he swings at Nasir.<br />
+Bhul crushes Denise hard.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Bhul crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Sindbad cleaves Ursula extremely hard.<br />
+The death cry of Seeros echoes from somewhere nearby...<br />
+Seeros sinks gently to the ground.<br />
+Gozirra stands up.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Skorpio gets a pile of coins from the corpse of Seeros.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seq gets a very large pile of coins from the corpse of Uliah.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Gozirra crashes into Onnilas in a thundering collision, knocking him to the ground!<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+Your group of 8 members consists of:<br />
+ *Nero             bad       rested    fighting   Y   N    N     0    0<br />
+  Tinotaur         fair      rested    fighting   Y   N    N     1   19<br />
+  Ursula           fair      rested    fighting   Y   N    N     1    0<br />
+  Onnilas          v.bad     rested    fighting   Y   N    N     0    0<br />
+  Kooz             bad       rested    standing   Y   N    N     1    0<br />
+  Lenore           good      rested    fighting   Y   N    N     0    0<br />
+  Bhul             v.bad     rested    fighting   Y   N    N     0    0<br />
+  Skorpio          fair      rested    standing   Y   N    N     0    0<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Ursula gets a cold lantern from the corpse of Seeros.<br />
+Ursula gets a black crystal staff from the corpse of Seeros.<br />
+Ursula gets an onyx bracelet from the corpse of Seeros.<br />
+Ursula gets a plain component pouch from the corpse of Seeros.<br />
+Ursula is zapped by a belt of bleached and yellowed skulls and instantly drops it.<br />
+Ursula gets a brown robe from the corpse of Seeros.<br />
+Ursula gets a small diamond shield from the corpse of Seeros.<br />
+Ursula gets a pair of misty white sleeves from the corpse of Seeros.<br />
+Ursula is zapped by black gauntlets of the Lily and instantly drops it.<br />
+Ursula gets a pair of supple leather boots from the corpse of Seeros.<br />
+Ursula is zapped by a set of power cuisses and instantly drops it.<br />
+Ursula gets a carved ivory mask from the corpse of Seeros.<br />
+Ursula is zapped by a hooded black chasuble and instantly drops it.<br />
+Ursula gets a gazer's eye from the corpse of Seeros.<br />
+Ursula is zapped by a skull shaped medallion and instantly drops it.<br />
+Ursula is zapped by a ring of the Skull and instantly drops it.<br />
+Ursula gets a glowing scroll of recall from the corpse of Seeros.<br />
+Ursula gets a glowing scroll of recall from the corpse of Seeros.<br />
+Ursula gets a glowing scroll of recall from the corpse of Seeros.<br />
+Ursula gets a long black shield from the corpse of Seeros.<br />
+Ursula gets a cloth belt pack from the corpse of Seeros.<br />
+Ursula gets a small wooden chest from the corpse of Seeros.<br />
+Ursula gets a blood red cape from the corpse of Seeros.<br />
+Ursula gets a ruined medal from the corpse of Seeros.<br />
+Ursula gets a glowing scroll of recall from the corpse of Seeros.<br />
+Ursula gets a vibrant volatile crimson potion from the corpse of Seeros.<br />
+Ursula gets a small circlet of bronze from the corpse of Seeros.<br />
+Ursula gets a crystal shard necklace from the corpse of Seeros.<br />
+Ursula gets a waterskin from the corpse of Seeros.<br />
+<br />
+273H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of murky violet!<br />
+Nero is struck by a spray of murky violet!<br />
+Bhul is blasted by a spray of scintillating blue!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+Onnilas is blasted by a spray of scintillating blue!<br />
+Ursula is caught in a spray of radiant yellow!<br />
+You are struck by a spray of vibrant green!<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Darva flies in from the east.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seq panics, and attempts to flee.<br />
+Seq flies east.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Lenore stands up.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Lenore gets a dusty crimson chest from the corpse of Seeros.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nero has reconnected.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seq flies in from the east.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Teraz flies in from the east.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Skorpio crashes into Seq in a thundering collision, knocking him to the ground!<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+The Knights' High Road<br />
+A black ring of the Skull lies here, forgotten.<br />
+A small skull, on a gold chain, rests here...it hums softly<br />
+A black chasuble rests here, crumpled in a heap.<br />
+A set of crimson red cuisses has been placed here.<br />
+Some gauntlets adorned with decorations of the Lily are here.<br />
+A collection of bleached and yellowed bones hung from a belt lies here.<br />
+The corpse of Seeros is lying here.<br />
+A smoked Tarsis ham fills the room with a savory aroma. [2]<br />
+A bottle of hammered bronze has been discarded here. [4]<br />
+A small roll of bread lies here. [6]<br />
+The corpse of Draven is lying here.<br />
+The corpse of Uliah is lying here.<br />
+The corpse of Murphy is lying here.<br />
+A whirling tornado rips through the area!<br />
+A pair of magnificant leather sleeves entwined with gold has been left here.<br />
+The corpse of Gloucester is lying here.<br />
+A small circle of blackness pulsates in the light. (invisible)..it glows dimly<br />
+A banner bearing the mark of the white dragonarmy rests here...it glows dimly<br />
+A ring which glows red as flame has been misplaced by its owner...it glows dimly<br />
+A pile of black cloth rests in a heap in a corner of the room here.<br />
+Some flowing black armor lies in a heap here...it hums softly<br />
+A pair of heavy leather gloves rests here.<br />
+A delicate cloak radiating light and magic lies on the floor nearby.<br />
+A bracer lined in solid sterling has been dropped on the floor.<br />
+The corpse of Elyana is lying here.<br />
+The corpse of Ojo is lying here.<br />
+A whirling tornado rips through the area!<br />
+A large two handed sword has been dropped here in the dirt.<br />
+Teraz Assante is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Seq the Ugly Goblin is sitting here, fighting Skorpio. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Darva the Male High Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Skorpio Dragonsbane, Stinging Fury of the Blood Sea is standing here, fighting Denise. (flying)<br />
+. . . has a tough exterior.<br />
+Gozirra, the Wild Mothra Hunter is standing here, fighting Onnilas. (flying)<br />
+. . . is enveloped in flames.<br />
+Nero Dume, Weapon of Mass Destruction is sitting here, fighting Nasir. (flying)<br />
+. . . has a tough exterior.<br />
+Denise Demonic, Daughter of Darkness is standing here, fighting Ursula. (flying)<br />
+. . . has a tough exterior.<br />
+Sindbad the Sailortaur is sitting here, fighting Ursula. (flying)<br />
+. . . has a tough exterior.<br />
+Pahuta Phu, Wild Maroon Dragon is standing here, fighting Ursula. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Nasir the Original Dumbass is standing here, fighting Nero. (flying)<br />
+. . . is enveloped in flames.<br />
+Lianois Beansprout, Wildy Cooking Tofu is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Bhul the Lethal Weapon is standing here, fighting Denise. (flying)<br />
+. . . has a tough exterior.<br />
+Lenore Nevermore, Tainted Love is standing here, fighting Denise. (flying)<br />
+. . . has a tough exterior.<br />
+Onnilas, Gloucester's Runglish Teacher is sitting here, fighting Gozirra. (flying)<br />
+. . . has a tough exterior.<br />
+Ursula Buendia, Hundred Years of Loneliness is standing here, fighting Denise. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Teraz flies west.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Coba flies in from the east.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Lianois stands up.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Coba flies west.<br />
+<br />
+247H 114V 1X 802C [Me:Fair] [Ursula:Fair] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+A small whirlwind crashes into Skorpio, pummeling his entire body.<br />
+A small whirlwind crashes into Lenore, pummeling her entire body.<br />
+A small whirlwind crashes into Ursula, pummeling her entire body.<br />
+A small whirlwind crashes into you, pummeling your entire body.<br />
+The violent funnel dissipates.<br />
+Darva bludgeons Skorpio very hard.<br />
+Seq slowly fades into existence.<br />
+Seq drains Skorpio extremely hard.<br />
+Seq drains Skorpio hard.<br />
+Skorpio slashes Denise very hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Skorpio slashes Denise very hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Ursula slashes Denise.<br />
+Ursula is burned, as she swings at Denise.<br />
+Ursula is chilled, as she swings at Denise.<br />
+Ursula slashes Denise hard.<br />
+Ursula is burned, as she swings at Denise.<br />
+Ursula is chilled, as she swings at Denise.<br />
+Lenore slashes Denise hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Lenore slashes Denise very hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Onnilas massacres Gozirra with his shoot.<br />
+Nasir cleaves Nero extremely hard.<br />
+Gozirra massacres Onnilas with his stab.<br />
+Gozirra massacres Onnilas with his stab.<br />
+Nero slashes Nasir extremely hard.<br />
+Nero is burned, as he swings at Nasir.<br />
+Nero misses Nasir with his slash.<br />
+Bhul crushes Denise.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Bhul crushes Denise hard.<br />
+Bhul is burned, as he swings at Denise.<br />
+Bhul is chilled, as he swings at Denise.<br />
+Sindbad massacres Ursula with his cleave.<br />
+<br />
+233H 114V 1X 802C [Me:Fair] [Ursula:Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Bhul panics, and attempts to flee.<br />
+Bhul flies west.<br />
+<br />
+233H 114V 1X 802C [Me:Fair] [Ursula:Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+Your group of 8 members consists of:<br />
+  Nero             v.bad     rested    fighting   Y   N    N     0    0<br />
+  Tinotaur         fair      rested    fighting   Y   N    N     1   19<br />
+  Ursula           bad       rested    fighting   Y   N    N     1    0<br />
+  Onnilas          awful     rested    fighting   Y   N    N     0    0<br />
+  Kooz             bad       rested    standing   Y   N    N     1    0<br />
+  Lenore           fair      rested    fighting   Y   N    N     0    0<br />
+  Bhul             awful     rested    standing   Y   N    N     0    0<br />
+  Skorpio          v.bad     rested    fighting   Y   N    N     0    0<br />
+<br />
+233H 114V 1X 802C [Me:Fair] [Ursula:Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nasir crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+Onnilas steps aside as Gozirra attempts a bash, stumbles, and falls flat on his face.<br />
+Pahuta focuses harshly on Ursula and utters the words, 'hold person'.<br />
+<br />
+233H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Skorpio is struck by a spray of vibrant green!<br />
+Nero is caught in a spray of bright orange!<br />
+Lenore is caught in a spray of shimmering red!<br />
+Lenore seems weaker.<br />
+Onnilas is blasted by a spray of scintillating blue!<br />
+Onnilas freezes in place.<br />
+Ursula is caught in a spray of radiant yellow!<br />
+Ursula seems weaker.<br />
+You are caught in a spray of shimmering red!<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Sindbad stands up.<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+There is lightning in the sky.<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nero stands up.<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Nero panics, and attempts to flee.<br />
+Nero flies east.<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+The sky is now cloudless.<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Sindbad quaffs a small vial.<br />
+Sindbad heals Sindbad.<br />
+Skorpio crashes into Seq in a thundering collision, knocking him to the ground!<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Sindbad crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+<br />
+217H 114V 1X 802C [Me:Fair] [Ursula:V.Bad] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+<br />
+Seq massacres Skorpio with his drain.<br />
+Skorpio slashes Denise hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Skorpio slashes Denise hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Ursula slashes Denise hard.<br />
+Ursula is burned, as she swings at Denise.<br />
+Ursula is chilled, as she swings at Denise.<br />
+Lenore slashes Denise very hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Lenore slashes Denise hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Gozirra annihilates Onnilas with his stab.<br />
+Sindbad annihilates Ursula with his cleave.<br />
+You bludgeon Pahuta hard.<br />
+You feel intense pain as you swing through Pahuta's flaming aura.<br />
+<br />
+209H 114V 1X 802C [Me:Bad] [Ursula:Awful] [Pahuta:V.Good] Mem:19 Exits:EW&gt;<br />
+You utter the words, 'word of recall'<br />
+Ursula disappears.<br />
+<br />
+209H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Gozirra stands up.<br />
+<br />
+209H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Gozirra crashes into Onnilas in a thundering collision, knocking him to the ground!<br />
+Pahuta focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Pahuta's force bolt slams into you.<br />
+<br />
+181H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Nero flies in from the east.<br />
+<br />
+181H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Denise gets a vial from her satchel.<br />
+Skorpio grabs a sealed scroll.<br />
+Skorpio recites a sealed scroll.<br />
+Skorpio heals Skorpio.<br />
+<br />
+181H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Denise quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Denise...<br />
+Denise heals Denise.<br />
+<br />
+181H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Nero flies west.<br />
+<br />
+181H 114V 1X 802C [Me:Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of color!<br />
+Skorpio is caught in a spray of radiant yellow!<br />
+Lenore is caught in a spray of radiant yellow!<br />
+A spray of red rips Onnilas into tiny crimson shreds.<br />
+Onnilas is dead! R.I.P.<br />
+You are caught in a spray of shimmering red!<br />
+<br />
+167H 114V 1X 802C [Me:V.Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+The violent funnel dissipates.<br />
+Seq massacres Skorpio with his drain.<br />
+Seq drains Skorpio extremely hard.<br />
+Skorpio slashes Denise hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Skorpio slashes Denise very hard.<br />
+Skorpio is burned, as he swings at Denise.<br />
+Skorpio is chilled, as he swings at Denise.<br />
+Lenore slashes Denise.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+Lenore slashes Denise very hard.<br />
+Lenore is burned, as she swings at Denise.<br />
+Lenore is chilled, as she swings at Denise.<br />
+The death cry of Onnilas echoes from somewhere nearby...<br />
+The hardened granite armour flows from around Onnilas's body and reforms<br />
+into a thin sheet.<br />
+<br />
+167H 114V 1X 802C [Me:V.Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+Your group of 7 members consists of:<br />
+  Nero             v.bad     rested    standing   Y   N    N     0    0<br />
+  Tinotaur         v.bad     rested    fighting   Y   N    N     1   22<br />
+  Ursula           awful     rested    sitting    Y   N    N     1    0<br />
+  Kooz             bad       rested    standing   Y   N    N     1    0<br />
+  Lenore           bad       rested    fighting   Y   N    N     0    0<br />
+  Bhul             awful     rested    standing   Y   N    N     0    0<br />
+  Skorpio          good      rested    fighting   Y   N    N     0    0<br />
+<br />
+167H 114V 1X 802C [Me:V.Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+<br />
+Darva utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+167H 114V 1X 802C [Me:V.Bad] [Pahuta:V.Good] Mem:22 Exits:EW&gt;<br />
+You flee head over heels.<br />
+The Knights' High Road<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+Looking north:<br />
+Some small farms can be seen amongst the wheat fields.<br />
+Looking east:<br />
+The road continues through the solamnic plains toward Vingaard.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The road continues away from civilization to the west.<br />
+Seq the Ugly Goblin is standing here, fighting Skorpio. (flying)<br />
+. . . has a tough exterior.<br />
+Darva the Male High Elf is standing here, fighting Skorpio. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Skorpio Dragonsbane, Stinging Fury of the Blood Sea is standing here, fighting Denise. (flying)<br />
+. . . has a tough exterior.<br />
+Gozirra, the Wild Mothra Hunter is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Denise Demonic, Daughter of Darkness is standing here, fighting Skorpio. (flying)<br />
+. . . has a metallic luster.<br />
+Sindbad the Sailortaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Pahuta Phu, Wild Maroon Dragon is standing here, fighting Skorpio. (flying)<br />
+. . . has a tough exterior.<br />
+Nasir the Original Dumbass is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Lianois Beansprout, Wildy Cooking Tofu is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You get a glowing scroll of recall from a crimson dust covered chest.<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+<br />
+Mohr shouts 'freaky weather today'<br />
+<br />
+167H 112V 1X 802C Mem:22 Exits:EW&gt;<br />
+You stop using a red dragonscale book.<br />
+You grab a glowing scroll of recall.<br />
+You recite a glowing scroll of recall which dissolves.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='609'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=609">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="609">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

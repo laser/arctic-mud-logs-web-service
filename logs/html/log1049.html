@@ -1,0 +1,710 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1049-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1049'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Gone Fishin'</font></b>
+<p>
+POV: 
+Allur<p>
+Log Rating:
+-0.8333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Went to get some flags, and got them. See other logs for result.</i>
+<p>
+<p>
+
+294H 142V 8767526X 151C Exits:NESW&gt; <br />
+Grogmir flies east.<br />
+Lauriel flies east.<br />
+A behir leaves east.<br />
+Jeesi flies east.<br />
+Finris flies east.<br />
+Sanchez flies east.<br />
+You follow Grogmir east.<br />
+An Apple Grove<br />
+A decaying vine rests on the ground...it glows blue<br />
+A iron key lies here.<br />
+A reptilian, snake-like monster moves about here.<br />
+Elis, Enigmatic Lover in Servitude is standing here. (flying)<br />
+Dzi e'Glyn, Elven Pilgrim from Wild East is standing here. (flying)<br />
+Eger, Da Chasseur is standing here. (flying)<br />
+Skellen the Good, the Bad and the Ugly is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+backstab Roohani<br />
+[PK: doing backstab ON Roohani ]<br />
+Roohani Shakti, Wandering Sufi of Krynn is standing here. (flying) (invisible)<br />
+Bakr, Wild Blood is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Belial the Beastial is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a glowing golden amulet; a crystal pendant; an obsidian crown.<br />
+Matsuhiro the Male Wild Elf is standing here. (flying)<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; Roohani twists around to see you place a black fang of a shadow beast in his back.<br />
+Sanchez ---&gt; BASHES ---&gt; Roohani<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Fair] Exits:W&gt; Stabbing -=&gt; roohani<br />
+backstab roohani<br />
+<br />
+Lauriel steps aside as Matsuhiro attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Fair] Exits:W&gt; <br />
+Lauriel gives a behir an order.<br />
+A behir bites Roohani extremely hard.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Fair] Exits:W&gt; <br />
+Finris focuses harshly on Roohani and utters some strange words.<br />
+Finris slowly fades into existence.<br />
+The sound of bones cracking echoes as Finris's force bolt slams into Roohani.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Bad] Exits:W&gt; <br />
+Elis deftly steps in front of Roohani, pushing into the frey.<br />
+Elis heroically rescues Roohani.<br />
+Sanchez misses Elis with his slash.<br />
+Elis slashes Sanchez very hard.<br />
+A behir bites Roohani extremely hard.<br />
+A behir pierces Roohani very hard.<br />
+A behir massacres Roohani with its bite.<br />
+Matsuhiro massacres Lauriel with his drain.<br />
+Matsuhiro slashes Lauriel extremely hard.<br />
+Lauriel pierces Matsuhiro.<br />
+You MASSACRE Roohani with your pierce.<br />
+You pierce Roohani extremely hard.<br />
+Roohani **MISSES** you with his hit.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Awful] Exits:W&gt; <br />
+Jeesi focuses harshly on Roohani and utters some strange words.<br />
+Jeesi calls up the roots and vines to whip Roohani.<br />
+Roohani is mortally wounded, and will die soon, if not aided.<br />
+Roohani suffers from lack of blood, and the lack of a beating heart...<br />
+You receive 0 experience.<br />
+get pile.coins corpse<br />
+exa corpse<br />
+Roohani is dead! R.I.P.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Dying] Exits:W&gt; <br />
+Lauriel focuses harshly on Roohani and utters some strange words.<br />
+<br />
+294H 140V 8767526X 151C [Me:Fair] [Roohani:Dying] Exits:W&gt; <br />
+The death cry of Roohani echoes from somewhere nearby...<br />
+Roohani stops following Matsuhiro.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; <br />
+Uzzi gets a very large pile of coins from the corpse of Roohani.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; <br />
+Skellen utters some strange words.<br />
+Skellen's form grows in height and mass, becoming huge.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; <br />
+Dzi massacres Lauriel with his slash.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; You couldn't find what you were looking for.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; Dzi massacres Lauriel with his slash.<br />
+Sanchez misses Elis with his slash.<br />
+Elis massacres Sanchez with his slash.<br />
+Matsuhiro massacres Lauriel with his drain.<br />
+Matsuhiro slashes Lauriel very hard.<br />
+env fang<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a small ruby band (invisible)..it glows blue<br />
+a thin golden wristband..it glows blue..it glows dimly<br />
+a belt of seashells..it glows blue..it glows dimly<br />
+a sky blue robe etched with golden runes..it glows blue<br />
+a shield of granite..it glows blue<br />
+a pair of black ice arm guards<br />
+a pair of silver spectacles..it glows blue<br />
+a frosted tin plate..it glows blue<br />
+a spherical diamond pendant..it glows blue<br />
+a white gold ring..it glows blue<br />
+a silver Solamnic signet ring..it glows blue<br />
+a bright ball of light..it glows dimly<br />
+a refreshing apple..it glows blue [3]<br />
+a suit of buckskin armor<br />
+a piece of sweet bread..it glows blue [6]<br />
+a sky blue robe etched with golden runes..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly [3]<br />
+a staff of the Speaker..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a crystal shard necklace..it glows dimly<br />
+<br />
+ [return for more, q to stop]Bakr massacres Lauriel with his shoot.<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; <br />
+Lauriel gets a small ruby band from the corpse of Roohani.<br />
+Lauriel gets a thin golden wristband from the corpse of Roohani.<br />
+Lauriel is zapped by a belt of seashells and instantly drops it.<br />
+Lauriel gets a sky blue robe etched with golden runes from the corpse of Roohani.<br />
+Lauriel gets a shield of granite from the corpse of Roohani.<br />
+Lauriel gets a pair of black ice arm guards from the corpse of Roohani.<br />
+Lauriel gets a pair of silver spectacles from the corpse of Roohani.<br />
+Lauriel gets a frosted tin plate from the corpse of Roohani.<br />
+Lauriel gets a spherical diamond pendant from the corpse of Roohani.<br />
+Lauriel gets a white gold ring from the corpse of Roohani.<br />
+Lauriel is zapped by a silver Solamnic signet ring and instantly drops it.<br />
+Lauriel gets a bright ball of light from the corpse of Roohani.<br />
+Lauriel gets a refreshing apple from the corpse of Roohani.<br />
+Lauriel gets a refreshing apple from the corpse of Roohani.<br />
+Lauriel gets a refreshing apple from the corpse of Roohani.<br />
+Lauriel gets a suit of buckskin armor from the corpse of Roohani.<br />
+Lauriel gets a piece of sweet bread from the corpse of Roohani.<br />
+Lauriel gets a piece of sweet bread from the corpse of Roohani.<br />
+Lauriel gets a piece of sweet bread from the corpse of Roohani.<br />
+Lauriel gets a piece of sweet bread from the corpse of Roohani.<br />
+<br />
+<br />
+294H 140V 8767526X 151C Exits:W&gt; <br />
+Skellen utters some strange words.<br />
+Skellen creates a lightning storm.<br />
+Skellen slowly fades into existence.<br />
+You are staggered by the many bolts of lightning which Skellen has summoned from the stormy sky.<br />
+That Really did HURT!<br />
+Sanchez screams in pain as the lightning bolts summoned by Skellen from the boiling clouds hit him.<br />
+Finris screams in pain as the lightning bolts summoned by Skellen from the boiling clouds hit him.<br />
+Jeesi screams in pain as the lightning bolts summoned by Skellen from the boiling clouds hit him.<br />
+A behir appears to grow stronger.<br />
+The lightning storm summoned by Skellen dances around a behir, but seem to have no other effect.<br />
+Lauriel screams in pain as the lightning bolts summoned by Skellen from the boiling clouds hit her.<br />
+Grogmir screams in pain as the lightning bolts summoned by Skellen from the boiling clouds hit him.<br />
+<br />
+193H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Finris gets a piece of sweet bread from the corpse of Roohani.<br />
+Finris gets a piece of sweet bread from the corpse of Roohani.<br />
+Finris gets a sky blue robe etched with golden runes from the corpse of Roohani.<br />
+Finris gets a glowing scroll of recall from the corpse of Roohani.<br />
+Finris gets a glowing scroll of recall from the corpse of Roohani.<br />
+Finris gets a glowing scroll of recall from the corpse of Roohani.<br />
+Finris gets a staff of the Speaker from the corpse of Roohani.<br />
+Finris gets a glowing scroll of recall from the corpse of Roohani.<br />
+Finris gets a glowing scroll of recall from the corpse of Roohani.<br />
+Finris gets a crystal shard necklace from the corpse of Roohani.<br />
+<br />
+193H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Uzzi utters some strange words.<br />
+Uzzi's hands issue a spray of color!<br />
+Uzzi slowly fades into existence.<br />
+Uzzi comes out of hiding.<br />
+You are caught in a spray of radiant yellow!<br />
+You feel weaker.<br />
+Sanchez is caught in a spray of radiant yellow!<br />
+Sanchez seems weaker.<br />
+Finris is caught in a spray of shimmering red!<br />
+Jeesi is caught in a spray of shimmering red!<br />
+A behir is caught in a spray of radiant yellow!<br />
+Lauriel is caught in a spray of radiant yellow!<br />
+Grogmir is caught in a spray of shimmering red!<br />
+Grogmir seems weaker.<br />
+Grogmir is caught in a spray of shimmering red!<br />
+<br />
+173H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Dzi ---&gt; BASHES ---&gt; Lauriel<br />
+<br />
+173H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Elis stops using a stone rose.<br />
+Elis grabs a glowing scroll of recall.<br />
+Elis recites a glowing scroll of recall.<br />
+Elis disappears.<br />
+<br />
+173H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Finris utters some strange words.<br />
+<br />
+173H 140V 8767526X 151C [Me:Bad] [Skellen:V.Good] Exits:W&gt; <br />
+Uzzi bludgeons YOU hard.<br />
+Grogmir misses Skellen with his pierce.<br />
+A behir bites Skellen extremely hard.<br />
+A behir pierces Skellen very hard.<br />
+Jeesi misses Skellen with his hit.<br />
+Skellen **MISSES** you with his bludgeon.<br />
+You pierce Skellen very hard.<br />
+You pierce Skellen very hard.<br />
+Bakr massacres Lauriel with his shoot.<br />
+Bakr massacres Lauriel with his shoot.<br />
+Lauriel is incapacitated and will slowly die, if not aided.<br />
+Bakr obliterates Lauriel with his shoot.<br />
+get pile.coins corpse<br />
+exa corpse<br />
+Lauriel is dead! R.I.P.<br />
+The death cry of Lauriel echoes from somewhere nearby...<br />
+Lauriel stops following Grogmir.<br />
+A behir stops following Lauriel.<br />
+A behir transcends this world and enters another plane.<br />
+&gt;&gt;===&gt; Matsuhiro STANDS UP &lt;===&lt;&lt;<br />
+<br />
+164H 140V 8767526X 151C [Me:V.Bad] [Skellen:Good] Exits:W&gt; <br />
+Belial gets a very large pile of coins from the corpse of Lauriel.<br />
+<br />
+164H 140V 8767526X 151C [Me:V.Bad] [Skellen:Good] Exits:W&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+<br />
+164H 140V 8767526X 151C [Me:V.Bad] [Skellen:Good] Exits:W&gt; env fang<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a short sword<br />
+a black skull tabard..it glows blue..it glows dimly<br />
+an obsidian amulet..it glows blue<br />
+a piece of sweet bread..it glows blue [4]<br />
+a suit of buckskin armor<br />
+a refreshing apple..it glows blue [3]<br />
+a bright ball of light..it glows dimly<br />
+a white gold ring..it glows blue<br />
+a spherical diamond pendant..it glows blue<br />
+a frosted tin plate..it glows blue<br />
+a pair of silver spectacles..it glows blue<br />
+a pair of black ice arm guards<br />
+a shield of granite..it glows blue<br />
+a sky blue robe etched with golden runes..it glows blue<br />
+a thin golden wristband..it glows blue..it glows dimly<br />
+a small ruby band (invisible)..it glows blue<br />
+a pork pie<br />
+a short sword<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a shiny red apple<br />
+<br />
+ [return for more, q to stop]Sanchez slashes Skellen very hard.<br />
+<br />
+<br />
+Bakr gets a short sword from the corpse of Lauriel.<br />
+Bakr gets a black skull tabard from the corpse of Lauriel.<br />
+Bakr gets an obsidian amulet from the corpse of Lauriel.<br />
+Bakr gets a piece of sweet bread from the corpse of Lauriel.<br />
+Bakr gets a piece of sweet bread from the corpse of Lauriel.<br />
+Bakr gets a piece of sweet bread from the corpse of Lauriel.<br />
+Bakr gets a piece of sweet bread from the corpse of Lauriel.<br />
+Bakr gets a suit of buckskin armor from the corpse of Lauriel.<br />
+Bakr gets a refreshing apple from the corpse of Lauriel.<br />
+Bakr gets a refreshing apple from the corpse of Lauriel.<br />
+Bakr gets a refreshing apple from the corpse of Lauriel.<br />
+Bakr gets a bright ball of light from the corpse of Lauriel.<br />
+Bakr gets a white gold ring from the corpse of Lauriel.<br />
+Bakr gets a spherical diamond pendant from the corpse of Lauriel.<br />
+Bakr gets a frosted tin plate from the corpse of Lauriel.<br />
+Bakr gets a pair of silver spectacles from the corpse of Lauriel.<br />
+Bakr gets a pair of black ice arm guards from the corpse of Lauriel.<br />
+Bakr gets a shield of granite from the corpse of Lauriel.<br />
+Bakr gets a sky blue robe etched with golden runes from the corpse of Lauriel.<br />
+Bakr gets a thin golden wristband from the corpse of Lauriel.<br />
+Bakr gets a small ruby band from the corpse of Lauriel.<br />
+Bakr gets a pork pie from the corpse of Lauriel.<br />
+Bakr gets a short sword from the corpse of Lauriel.<br />
+Bakr gets a glowing scroll of recall from the corpse of Lauriel.<br />
+Bakr gets a shiny red apple from the corpse of Lauriel.<br />
+Bakr gets a small canteen from the corpse of Lauriel.<br />
+Bakr gets a small canteen from the corpse of Lauriel.<br />
+Bakr gets a small canteen from the corpse of Lauriel.<br />
+Bakr gets a small canteen from the corpse of Lauriel.<br />
+Bakr gets a small canteen from the corpse of Lauriel.<br />
+<br />
+164H 140V 8767526X 151C [Me:V.Bad] [Skellen:Good] Exits:W&gt; recite recall<br />
+You stop using a dark red dagger.<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Vingaard Avenue South
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1049'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1049">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1049">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

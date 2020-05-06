@@ -1,0 +1,814 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 334-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='334'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Napas, Lorinda and Parnigar riped in Kalaman.</font></b>
+<p>
+POV: 
+Klara<p>
+Log Rating:
+3.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+284H 120V 29243778X 582C Mem:2 Exits:D&gt; <br />
+Napas flies down.<br />
+You follow Napas down.<br />
+A hill giant flies in from above.<br />
+Sorcerer's Lounge<br />
+A hill giant is roaming around looking for something to kill. (flying)<br />
+<br />
+284H 119V 29243778X 582C Mem:3 Exits:NU&gt; <br />
+Parnigar flies in from above.<br />
+Ronsy flies in from above.<br />
+<br />
+284H 119V 29243778X 582C Mem:3 Exits:NU&gt; <br />
+Parnigar crashes into Napas in a thundering collision, knocking him to the ground!<br />
+<br />
+284H 119V 29243778X 582C Mem:3 Exits:NU&gt; <br />
+Ronsy slowly fades into existence.<br />
+Ronsy crashes into Napas in a thundering collision, knocking him to the ground!<br />
+<br />
+284H 119V 29243778X 582C Mem:3 Exits:NU&gt; <br />
+Ronsy massacres Napas with his slash.<br />
+Parnigar misses Napas with his cleave.<br />
+Napas misses Parnigar with his whip.<br />
+<br />
+284H 119V 29243778X 582C Mem:3 Exits:NU&gt; c 'h p' parnigarYou utter the words, 'hold person'<br />
+<br />
+284H 119V 29243778X 582C Mem:4 Exits:NU&gt; <br />
+Lorinda arrives from the north.<br />
+<br />
+284H 119V 29243778X 582C Mem:4 Exits:NU&gt; <br />
+Ronsy slashes Napas extremely hard.<br />
+Parnigar cleaves Napas extremely hard.<br />
+Napas misses Parnigar with his whip.<br />
+<br />
+284H 119V 29243778X 582C Mem:4 Exits:NU&gt; c 'l b' parnigar<br />
+Lorinda utters some strange words.<br />
+A hill giant is shredded by shards of ice.<br />
+Lorinda destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+Your body is torn by huge pieces of ice.<br />
+Napas is shredded by shards of ice.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:Perfect] Mem:4 Exits:NU&gt; <br />
+Lee arrives from the north.<br />
+A hill giant delivers a vicious kick to Lorinda's face. Blood flies as her head snaps back.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:V.Good] Mem:4 Exits:NU&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Parnigar with full impact.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:V.Good] Mem:5 Exits:NU&gt; <br />
+Lee crashes into Parnigar in a thundering collision, knocking him to the ground!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:V.Good] Mem:5 Exits:NU&gt; c 'l b' lorinda<br />
+Lee misses Parnigar with his cleave.<br />
+Lorinda bruises a hill giant with her hit.<br />
+A hill giant massacres Lorinda with its crush.<br />
+A hill giant massacres Lorinda with its pierce.<br />
+Ronsy massacres Napas with his slash.<br />
+Parnigar massacres Napas with his cleave.<br />
+Napas misses Parnigar with his whip.<br />
+Ronsy crashes into Napas in a thundering collision, knocking him to the ground!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:Fair] Mem:5 Exits:NU&gt; <br />
+Zearin flies in from above.<br />
+A hill giant arrives from above.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:Fair] Mem:5 Exits:NU&gt; <br />
+Zearin gives a hill giant an order.<br />
+Ronsy steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:Fair] Mem:5 Exits:NU&gt; <br />
+Lorinda focuses harshly on Lee and utters the words, 'hold monster'.<br />
+Lee freezes in place.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Good] [Lorinda:Fair] Mem:5 Exits:NU&gt; c 'mirror'<br />
+Zearin utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Zearin conjures a writhing mass of inky black tentacles!<br />
+Lorinda screams in pain as inky black tentacles constrict her.<br />
+Ronsy screams in pain as inky black tentacles constrict him.<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+A hill giant screams in pain as inky black tentacles constrict it.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Fair] [Lorinda:Fair] Mem:5 Exits:NU&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Lorinda with full impact.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Fair] [Lorinda:V.Bad] Mem:6 Exits:NU&gt; c 'l b' lorinda<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+Zearin whips Lorinda very hard.<br />
+A hill giant hits Ronsy extremely hard.<br />
+A hill giant misses Ronsy with its hit.<br />
+A hill giant massacres Lorinda with its crush.<br />
+A hill giant massacres Lorinda with its pierce.<br />
+Ronsy massacres Napas with his slash.<br />
+Napas whips Parnigar very hard.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [a hill giant:Fair] [Lorinda:Awful] Mem:6 Exits:NU&gt; <br />
+Lorinda panics, and attempts to flee.<br />
+Lorinda leaves north.<br />
+<br />
+262H 119V 29243778X 582C Mem:6 Exits:NU&gt; <br />
+Zearin utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Zearin conjures a writhing mass of inky black tentacles!<br />
+Ronsy screams in pain as inky black tentacles constrict him.<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+A hill giant screams in pain as inky black tentacles constrict it.<br />
+<br />
+262H 119V 29243778X 582C Mem:6 Exits:NU&gt; You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Lorinda arrives from the north.<br />
+A hill giant stands up.<br />
+A hill giant delivers a vicious kick to Zearin's face. Blood flies as his head snaps back.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; c 'l b' lorinda<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+A hill giant misses Zearin and destroys an image instead.<br />
+A hill giant misses Zearin and destroys an image instead.<br />
+Zearin misses Ronsy with his whip.<br />
+A hill giant hits Ronsy extremely hard.<br />
+A hill giant misses Ronsy with its hit.<br />
+Ronsy massacres Napas with his slash.<br />
+Napas is dead! R.I.P.<br />
+The death cry of Napas echoes from somewhere nearby...<br />
+Zearin stops following Napas.<br />
+Napas now follows Zearin.<br />
+Zearin is the new leader of Napas's group.<br />
+Napas stops following Zearin.<br />
+Sindzo stops following Napas.<br />
+Sindzo now follows Zearin.<br />
+You stop following Napas.<br />
+You now follow Zearin.<br />
+A hill giant stops following Napas.<br />
+A hill giant transcends this world and enters another plane.<br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Lorinda gets a large pile of coins from the corpse of Napas.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+A hill giant delivers a vicious kick to Ronsy's face. Blood flies as his head snaps back.<br />
+Gawyn arrives from the north.<br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Gawyn leaves north.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Sindzo arrives from the north.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; c 'l b' lorinda<br />
+Parnigar rolls on the floor in a fit of laughter.<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; <br />
+Radagast shouts 'Maybe I should solo Brog to hit 11, then we can do the Underbelly of Balifor'<br />
+<br />
+262H 119V 29243778X 582C Mem:8 Exits:NU&gt; Zearin gives a hill giant an order.<br />
+A hill giant crashes into Ronsy in a thundering collision, knocking him to the ground!<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Lorinda with full impact.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; <br />
+Lorinda gets an earthen mace from the corpse of Napas.<br />
+Lorinda gets a three-headed whip from the corpse of Napas.<br />
+Lorinda gets a cloth belt pack from the corpse of Napas.<br />
+Lorinda gets some weathered sheepskin gloves from the corpse of Napas.<br />
+Lorinda gets a red leather facemask covered in silver runes from the corpse of Napas.<br />
+Lorinda gets a white robe from the corpse of Napas.<br />
+Lorinda gets a swamp dragontooth medallion from the corpse of Napas.<br />
+Lorinda gets some coarsely ground fire ants from the corpse of Napas.<br />
+Lorinda gets a glowing scroll of recall from the corpse of Napas.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; <br />
+Zearin gives a hill giant an order.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; <br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; <br />
+Lorinda panics, and attempts to flee.<br />
+Lorinda leaves up.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+Ronsy massacres a hill giant with his slash.<br />
+Zearin misses Ronsy with his whip.<br />
+A hill giant massacres Ronsy with its hit.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Zearin gives a hill giant an order.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Lorinda arrives from above.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; c 'f b' lorinda<br />
+Zearin gives a hill giant an order.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Zearin gives a hill giant an order.<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C Mem:9 Exits:NU&gt; <br />
+Lorinda focuses harshly on you and utters some strange words.<br />
+Lorinda misses you and destroys an image.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; Zearin gives a hill giant an order.<br />
+You can't remember how to cast that spell!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; You can't remember how to cast that spell!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Fair] Mem:9 Exits:NU&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Lorinda.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+Lorinda misses you with her hit.<br />
+Ronsy massacres a hill giant with his slash.<br />
+Zearin whips Ronsy.<br />
+A hill giant massacres Ronsy with its hit.<br />
+A hill giant massacres Ronsy with its hit.<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; c 'f b' lorinda<br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+262H 119V 29243778X 582C [Me:V.Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Zearin utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Zearin conjures a writhing mass of inky black tentacles!<br />
+Lorinda screams in pain as inky black tentacles constrict her.<br />
+Sindzo is strangled to death by the writhing black tentacles.<br />
+You receive 0 experience.<br />
+get coins corpseSindzo is dead! R.I.P.<br />
+Lee screams in pain as inky black tentacles constrict him.<br />
+Ronsy screams in pain as inky black tentacles constrict him.<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+Zearin destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+<br />
+237H 119V 29243778X 582C [Me:Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+The death cry of Sindzo echoes from somewhere nearby...<br />
+Lee stops following Sindzo.<br />
+Sindzo stops following Zearin.<br />
+<br />
+237H 119V 29243778X 582C [Me:Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Parnigar attempts to break free of the black tentacles, but fails!<br />
+<br />
+237H 119V 29243778X 582C [Me:Good] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Lorinda focuses harshly on you and utters some strange words.<br />
+Lorinda hits you with a chilling blast of cold air.  You're numb all over.<br />
+Ronsy stands up.<br />
+<br />
+191H 119V 29243778X 582C [Me:Fair] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Ronsy gets a scroll from his chest.<br />
+<br />
+191H 119V 29243778X 582C [Me:Fair] [Lorinda:Awful] Mem:10 Exits:NU&gt; <br />
+Ronsy grabs a glowing scroll of recall.<br />
+Ronsy recites a glowing scroll of recall.<br />
+Ronsy disappears.<br />
+<br />
+191H 119V 29243778X 582C [Me:Fair] [Lorinda:Awful] Mem:10 Exits:NU&gt; Your casting is disrupted by the fighting!<br />
+<br />
+191H 119V 29243778X 582C [Me:Fair] [Lorinda:Awful] Mem:12 Exits:NU&gt; c 'f b' lorindaYou feel yourself exposed.<br />
+Parnigar screams in pain as inky black tentacles constrict him.<br />
+Lee screams in pain as inky black tentacles constrict him.<br />
+Parnigar cleaves Lee extremely hard.<br />
+You get a large pile of coins from the corpse of Sindzo.<br />
+There were 159 coins.<br />
+split 159<br />
+203H 120V 29243778X 741C [Me:Fair] [Lorinda:Awful] Mem:12 Exits:NU&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Lorinda's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+get coins corpseLorinda is dead! R.I.P.<br />
+<br />
+203H 120V 29243778X 741C [Me:Fair] [Lorinda:Dying] Mem:14 Exits:NU&gt; <br />
+The death cry of Lorinda echoes from somewhere nearby...<br />
+Parnigar stops following Lorinda.<br />
+Lorinda now follows Parnigar.<br />
+Parnigar is the new leader of Lorinda's group.<br />
+Lorinda stops following Parnigar.<br />
+<br />
+203H 120V 29243778X 741C Mem:14 Exits:NU&gt; <br />
+Parnigar stands up.<br />
+<br />
+203H 120V 29243778X 741C Mem:14 Exits:NU&gt; <br />
+You are sent sprawling as Parnigar crashes into you.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Bad] Mem:14 Exits:NU&gt; <br />
+Zearin gives a hill giant an order.<br />
+Parnigar steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Bad] Mem:14 Exits:NU&gt; <br />
+Lee attempts to break free of the black tentacles, but fails!<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Bad] Mem:14 Exits:NU&gt; <br />
+Lee screams in pain as inky black tentacles constrict him.<br />
+A hill giant hits Parnigar extremely hard.<br />
+A hill giant hits Parnigar extremely hard.<br />
+You bludgeon Parnigar very hard.<br />
+Parnigar hits the tentacles constricting Lee instead!<br />
+<br />
+Lee attempts to break free of the black tentacles, but fails!<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:V.Bad] Mem:14 Exits:NU&gt; standflee<br />
+Zearin focuses harshly on Parnigar and utters the words, 'lightning bolt'.<br />
+Parnigar wavers under the impact of the lightning bolt sent by Zearin.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Lorinda arrives from the north.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Gawyn arrives from the north.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Gawyn leaves up.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Lorinda gets the corpse of Sindzo.<br />
+Lorinda gets a blue hilted dagger.<br />
+Lorinda gets a black iron hammer.<br />
+Lorinda gets spun silver leggings.<br />
+Lorinda gets a scroll of recall.<br />
+Lorinda gets a scroll of recall.<br />
+Lorinda gets a scroll of recall.<br />
+Lorinda gets a milky potion of see invisible.<br />
+Lorinda gets a scroll of recall.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Lorinda leaves north.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; stand<br />
+Lee screams in pain as inky black tentacles constrict him.<br />
+A hill giant hits Parnigar extremely hard.<br />
+A hill giant hits Parnigar extremely hard.<br />
+You miss Parnigar with your bludgeon.<br />
+Parnigar cleaves Lee very hard.<br />
+Lee misses Parnigar with his cleave.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; <br />
+Lee crashes into Parnigar in a thundering collision, knocking him to the ground!<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Lee:Good] [Parnigar:Awful] Mem:14 Exits:NU&gt; c 'l b'<br />
+Zearin focuses harshly on Parnigar and utters the words, 'force bolt'.<br />
+Brains splatter on you as Zearin's force bolt shatters Parnigar's skull.<br />
+You receive 0 experience.<br />
+get coins corpseParnigar is dead! R.I.P.<br />
+<br />
+187H 120V 29243778X 741C [Me:Fair] [Parnigar:Dying] Mem:14 Exits:NU&gt; <br />
+The death cry of Parnigar echoes from somewhere nearby...<br />
+Ronsy stops following Parnigar.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; get all corpseYou belong to no group.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; You stand up.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; You're not fighting, why bother fleeing?<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; You are already standing.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; uThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+187H 120V 29243778X 741C Mem:14 Exits:NU&gt; You get an ancient Solamnic voulge from the corpse of Parnigar.<br />
+You get a giant silver shield from the corpse of Parnigar.<br />
+You get a black, chain mesh hauberk from the corpse of Parnigar.<br />
+You get the eye of an umber hulk from the corpse of Parnigar.<br />
+You get a steel coin from the corpse of Parnigar.<br />
+There was 1 coin.<br />
+You get a scroll of recall from the corpse of Parnigar.<br />
+You get a large piece of pork chop from the corpse of Parnigar.<br />
+You get a large piece of pork chop from the corpse of Parnigar.<br />
+You get a large piece of pork chop from the corpse of Parnigar.<br />
+You get a large piece of pork chop from the corpse of Parnigar.<br />
+You get a bottle from the corpse of Parnigar.<br />
+You get a bottle from the corpse of Parnigar.<br />
+You get a bottle from the corpse of Parnigar.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='334'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=334">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="334">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

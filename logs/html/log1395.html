@@ -1,0 +1,810 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1395-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1395'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Krila finds some friends and get some revenge</font></b>
+<p>
+POV: 
+Krila<p>
+Log Rating:
+1.4285<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+Fid flies in from the north.<br />
+<br />
+502H 136V 10039494X 76C Exits:NESW&gt; <br />
+You try to bash Fid, but you pass through his image and fall to the ground.<br />
+<br />
+502H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Fid focuses harshly on Sanka and utters some strange words.<br />
+Sanka freezes in place.<br />
+<br />
+502H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Fidlas flies in from the north.<br />
+<br />
+502H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Fidlas utters some strange words.<br />
+You are stunned for a moment, but recover immediately.<br />
+Sanka is stunned momentarily, recovering quickly.<br />
+<br />
+502H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Fidlas claws YOU extremely hard.<br />
+bas fid<br />
+You miss Fid and destroy an image instead.<br />
+<br />
+482H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Fid focuses harshly on Sanka and utters some strange words.<br />
+The sound of bones cracking echoes as Fid's force bolt slams into Sanka.<br />
+<br />
+482H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+gst'<br />
+st<br />
+<br />
+Horiz flies in from the south.<br />
+<br />
+482H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Horiz appears to be dancing around the room.<br />
+<br />
+482H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+Fidlas utters some strange words.<br />
+Fidlas conjures a writhing mass of inky black tentacles!<br />
+Horiz screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Sanka screams in pain as inky black tentacles constrict him.<br />
+457H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+457H 136V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+<br />
+Sanka screams in pain as inky black tentacles constrict him.<br />
+Horiz misses Fidlas and destroys an image instead.<br />
+Horiz misses Fidlas and destroys an image instead.<br />
+You miss Fid with your crush.<br />
+<br />
+#TICK<br />
+bash fid<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+You can't do that while sitting.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+Huh?!478H 154V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+You stand up.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:Perfect] Exits:NESW&gt; <br />
+You crash into Fid in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+st<br />
+<br />
+Horiz flies in from the south.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Horiz appears to be dancing around the room.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; Away flies in from the south.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama misses Fidlas and destroys an image instead.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Kazbek flies in from the south.<br />
+Aldur flies in from the south.<br />
+Kilians flies in from the south.<br />
+Kilians crashes into Fidlas in a thundering collision, knocking him to the ground!<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Horiz appears to be dancing around the room.<br />
+Horiz appears to be dancing around the room.<br />
+<br />
+478H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Sanka screams in pain as inky black tentacles constrict him.<br />
+Kilians massacres Fidlas with his pierce.<br />
+Kilians is burned, as he swings at Fidlas.<br />
+Kjama misses Fidlas and destroys an image instead.<br />
+Kjama's sword begins to hum loudly.<br />
+A sword hits Fidlas with an arctic blast, giving him a severe case of frostbite.<br />
+Kjama massacres Fidlas with her slash.<br />
+Kjama appears to grow stronger.<br />
+Fidlas's fireshield does him little good as Kjama takes a swing at him.<br />
+Fidlas claws YOU very hard.<br />
+bas fid<br />
+You miss Fid and destroy an image instead.<br />
+Fid misses you with his bludgeon.465H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Away cleaves Fidlas extremely hard.<br />
+Away is burned, as he swings at Fidlas.<br />
+<br />
+465H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Kazbek focuses harshly on Fidlas and utters some strange words.<br />
+Kazbek slowly fades into existence.<br />
+The sound of bones cracking echoes as Kazbek's force bolt slams into Fidlas.<br />
+<br />
+465H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+bash fidlas<br />
+<br />
+Kjama focuses her purity on Fidlas's leg!<br />
+Kjama focuses on Fidlas's legs, but is thwarted.<br />
+<br />
+465H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; 465H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Sanka screams in pain as inky black tentacles constrict him.<br />
+Away massacres Fidlas with his cleave.<br />
+Away is burned, as he swings at Fidlas.<br />
+Kilians misses Fidlas with his pierce.<br />
+Kjama massacres Fidlas with her slash.<br />
+Kjama appears to grow stronger.<br />
+Fidlas's fireshield does him little good as Kjama takes a swing at him.<br />
+Kjama massacres Fidlas with her slash.<br />
+Kjama appears to grow stronger.<br />
+Fidlas's fireshield does him little good as Kjama takes a swing at him.<br />
+Fidlas misses you with his claw.<br />
+You crush Fid very hard.<br />
+Fid bludgeons YOU extremely hard.<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Aldur utters some strange words.<br />
+Aldur slowly fades into existence.<br />
+Horiz is stunned momentarily, recovering quickly.<br />
+Fidlas is stunned momentarily, recovering quickly.<br />
+Fid is stunned momentarily, recovering quickly.<br />
+You are stunned for a moment, but recover immediately.<br />
+Sanka is stunned momentarily, recovering quickly.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+<br />
+Fidlas steps aside as Away attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+Kazbek focuses harshly on Fidlas and utters some strange words.<br />
+Kazbek slowly fades into existence.<br />
+Brains splatter on you as Kazbek's force bolt shatters Fidlas's skull.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Fidlas is dead! R.I.P.<br />
+You are already standing.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:V.Good] Exits:NESW&gt; <br />
+The death cry of Fidlas echoes from somewhere nearby...<br />
+Fid stops following Fidlas.<br />
+Fidlas now follows Fid.<br />
+Fid is the new leader of Fidlas's group.<br />
+Fidlas stops following Fid.<br />
+You crash into Fid in a bone crunching bash, sending him sprawling to the ground.<br />
+Horiz gets a very large pile of coins from the corpse of Fidlas.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+Kjama gets a brass dragonscale battle orb from the corpse of Fidlas.<br />
+Kjama gets a set of long obsidian fingernails from the corpse of Fidlas.Kjama gets a rhodochrosite bracelet from the corpse of Fidlas.<br />
+Kjama gets a glass bracelet from the corpse of Fidlas.<br />
+Kjama gets a plain component pouch from the corpse of Fidlas.<br />
+Kjama gets a thick engraved silver belt from the corpse of Fidlas.<br />
+Kjama is zapped by a robe of the Gargoyle Clans and instantly drops it.<br />
+Kjama gets a small diamond shield from the corpse of Fidlas.<br />
+Kjama gets a pair of ivory gauntlets from the corpse of Fidlas.<br />
+Kjama is zapped by a pair of dark elven skin boots and instantly drops it.<br />
+Kjama gets an obsidian crown from the corpse of Fidlas.<br />
+Kjama is zapped by some flowing black armor and instantly drops it.<br />
+Kjama gets the decorated insignia of Lieutenant Je'hal from the corpse of Fidlas.<br />
+Kjama gets a sapphire heart pendant from the corpse of Fidlas.<br />
+Kjama is zapped by a copper band inscribed with wasps and instantly drops it.<br />
+Kjama gets a glittering golden ring from the corpse of Fidlas.<br />
+Kjama gets a long swordmaster's rapier from the corpse of Fidlas.<br />
+Kjama gets a large first-aid kit from the corpse of Fidlas.<br />
+Kjama gets a club embedded with claws from the corpse of Fidlas.<br />
+Kjama gets a suit of golden dwarven plate mail from the corpse of Fidlas.Kjama gets a lustrous steel battle-axe from the corpse of Fidlas.<br />
+Kjama gets a metallic belt from the corpse of Fidlas.<br />
+Kjama gets a platinum necklace from the corpse of Fidlas.<br />
+Kjama gets a wooden shield from the corpse of Fidlas.<br />
+Kjama gets a griffon feather from the corpse of Fidlas.<br />
+Kjama gets a white-trimmed purple robe from the corpse of Fidlas.<br />
+Kjama gets a fragile coral ring from the corpse of Fidlas.<br />
+Kjama gets a shiny dwarven ring from the corpse of Fidlas.<br />
+Kjama gets a first aid kit from the corpse of Fidlas.<br />
+Kjama gets a scroll of recall from the corpse of Fidlas.<br />
+Kjama gets a scroll of recall from the corpse of Fidlas.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Horiz gets a pair of baggy black pants from the corpse of Fidlas.<br />
+Horiz gets a small canteen from the corpse of Fidlas.Horiz gets a scroll of recall from the corpse of Fidlas.<br />
+<br />
+449H 154V 10039494X 76C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Horiz divides 1047 coins equally among the group members present.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Sanka attempts to break free of the black tentacles, but fails!<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama annihilates Horiz with her slash.<br />
+Kjama's sword begins to hum loudly.<br />
+A sword hits Horiz with an arctic blast, giving him a severe case of frostbite.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; 449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Kjama annihilates Horiz with her slash.<br />
+Aldur misses Horiz with his pierce.<br />
+Horiz misses Aldur and destroys an image instead.<br />
+Horiz misses Aldur and destroys an image instead.<br />
+You miss Fid with your crush.<br />
+Fid misses you with his bludgeon.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Sanka attempts to break free of the black tentacles, but fails!<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+st<br />
+<br />
+Aldur utters some strange words.<br />
+Horiz is stunned momentarily, recovering quickly.Fid is stunned momentarily, recovering quickly.<br />
+You are stunned for a moment, but recover immediately.<br />
+Sanka is stunned momentarily, recovering quickly.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies west.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+bash fid<br />
+st<br />
+<br />
+Kazbek gets a small canteen from the corpse of Fidlas.<br />
+Kazbek gets a small canteen from the corpse of Fidlas.<br />
+Kazbek gets a small canteen from the corpse of Fidlas.<br />
+Kazbek gets a small canteen from the corpse of Fidlas.<br />
+Kazbek gets a small canteen from the corpse of Fidlas.Kazbek gets a short sword from the corpse of Fidlas.<br />
+Kazbek gets a yellow potion from the corpse of Fidlas.<br />
+Kazbek gets a yellow potion from the corpse of Fidlas.<br />
+Kazbek gets a yellow potion from the corpse of Fidlas.<br />
+Kazbek gets a yellow potion from the corpse of Fidlas.<br />
+Kazbek gets a yellow potion from the corpse of Fidlas.<br />
+Kazbek gets a rusty crowbar from the corpse of Fidlas.<br />
+Kazbek gets a hematite pendant from the corpse of Fidlas.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Good] Exits:NESW&gt; <br />
+<br />
+Kazbek focuses harshly on Fid and utters some strange words.<br />
+Kazbek slowly fades into existence.<br />
+The sound of bones cracking echoes as Kazbek's force bolt slams into Fid.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Fair] Exits:NESW&gt; <br />
+<br />
+Kilians massacres Horiz with his pierce.<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Fair] Exits:NESW&gt; <br />
+<br />
+Kjama flies in from the west.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Fair] Exits:NESW&gt; <br />
+<br />
+Sanka screams in pain as inky black tentacles constrict him.<br />
+Kilians massacres Horiz with his pierce.<br />
+Horiz pierces Aldur extremely hard.<br />
+Horiz is burned, as he swings at Aldur.<br />
+Horiz pierces Aldur extremely hard.<br />
+Horiz is burned, as he swings at Aldur.<br />
+You crush Fid extremely hard.<br />
+Fid misses you with his bludgeon.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Fair] Exits:NESW&gt; <br />
+<br />
+Sanka attempts to break free of the black tentacles, but fails!<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Fair] Exits:NESW&gt; <br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama annihilates Fid with her slash.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+<br />
+Away stands up.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+<br />
+Sanka attempts to break free of the black tentacles, but fails!<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+You couldn't find what you were looking for.Aldur panics, and attempts to flee.<br />
+Aldur flies east.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+You are already standing.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+You try to bash Fid, but you miss and tumble forward onto your face.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+<br />
+Aldur flies in from the east.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Bad] Exits:NESW&gt; <br />
+Kjama annihilates Fid with her slash.<br />
+Kjama annihilates Fid with her slash.<br />
+You crush Fid extremely hard.<br />
+Horiz flies in from the south.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Awful] Exits:NESW&gt; <br />
+<br />
+Kazbek focuses harshly on Fid and utters some strange words.<br />
+Kazbek slowly fades into existence.<br />
+bas fid<br />
+Fid receives the full blast of a lightning bolt from Kazbek ... and is no more.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Fid is dead! R.I.P.<br />
+<br />
+449H 154V 10039494X 425C [Me:Good] [Fid:Dying] Exits:NESW&gt; <br />
+The death cry of Fid echoes from somewhere nearby...449H 154V 10039494X 425C Exits:NESW&gt; <br />
+Kjama gets a very large pile of coins from the corpse of Fid.<br />
+<br />
+449H 154V 10039494X 425C Exits:NESW&gt; <br />
+get all corpse<br />
+<br />
+Away gets an aspen staff from the corpse of Fid.<br />
+Away gets a plain golden bracelet from the corpse of Fid.<br />
+Away gets a large waterskin from the corpse of Fid.<br />
+Away gets a black skull tabard from the corpse of Fid.<br />
+Away gets a huge whalebone shield from the corpse of Fid.<br />
+Away gets a pair of waterlogged boots from the corpse of Fid.<br />
+Away gets a bone helm from the corpse of Fid.<br />
+Away gets ancient armor of wizardry from the corpse of Fid.<br />
+Away gets a crystal pendant from the corpse of Fid.<br />
+Away gets the amulet of Kul from the corpse of Fid.<br />
+Away gets an imperious diamond rod from the corpse of Fid.<br />
+Away gets a canvas backpack from the corpse of Fid.Away gets an iron ration from the corpse of Fid.<br />
+Away gets an iron ration from the corpse of Fid.<br />
+Away gets a mechanical hooded lantern from the corpse of Fid.<br />
+Away gets a thick silver robe from the corpse of Fid.<br />
+Away gets a black adamantite bardiche from the corpse of Fid.<br />
+Away gets a large piece of pork chop from the corpse of Fid.<br />
+Away gets a large piece of pork chop from the corpse of Fid.<br />
+Away gets a large piece of pork chop from the corpse of Fid.<br />
+Away gets a large piece of pork chop from the corpse of Fid.<br />
+Away gets a yellow potion from the corpse of Fid.<br />
+Away gets a misty potion from the corpse of Fid.<br />
+Away gets a waterskin from the corpse of Fid.<br />
+Away gets a waterskin from the corpse of Fid.<br />
+<br />
+449H 154V 10039494X 425C Exits:NESW&gt; 449H 154V 10039494X 425C Exits:NESW&gt; <br />
+<br />
+Kilians gets a sharp fauchard from the corpse of Fid.<br />
+Kilians gets a large waterskin from the corpse of Fid.<br />
+Kilians gets a camel pack from the corpse of Fid.<br />
+<br />
+449H 154V 10039494X 425C Exits:NESW&gt; <br />
+<br />
+Kazbek gets a copper band inscribed with wasps.<br />
+Kazbek gets some flowing black armor.<br />
+Kazbek gets a pair of dark elven skin boots.<br />
+Kazbek gets a robe of the Gargoyle Clans.<br />
+<br />
+449H 154V 10039494X 425C Exits:NESW&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1395'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1395">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1395">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

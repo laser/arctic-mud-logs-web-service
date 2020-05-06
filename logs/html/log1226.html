@@ -1,0 +1,691 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1226-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1226'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Taking out the garbage</font></b>
+<p>
+POV: 
+Aldur<p>
+Log Rating:
+-1.7500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some garbage unknown dies</i>
+<p>
+<p>
+
+132V 1X 851C Mem:2 Exits:NED&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Pi Ka Chu, Healing the Masses is standing here. (flying)<br />
+Teigan the Male Hylar Dwarf is standing here. (flying)<br />
+Rylan the Male Half Elf is standing here.<br />
+order all.hulk bash rylan<br />
+Bernard the Male Half Elf is standing here. (flying)<br />
+Gwyr the Male Human is standing here. (flying)<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+132V 1X 851C Mem:2 Exits:NED&gt; You issue the order 'bash rylan'.<br />
+<br />
+132V 1X 851C Mem:2 Exits:NED&gt; n<br />
+Path Along the Sea Cliff<br />
+The corpse of a burly minotaur guard is lying here.<br />
+Pi Ka Chu, Healing the Masses is standing here. (flying)<br />
+Teigan the Male Hylar Dwarf is standing here. (flying)<br />
+Rylan the Male Half Elf is standing here.<br />
+order all.hulk bash rylan<br />
+Bernard the Male Half Elf is standing here. (flying) (invisible)<br />
+Gwyr the Male Human is standing here. (flying)<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; The umber hulk slowly fades into existence.<br />
+The umber hulk crashes into Rylan in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash rylan'.<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; <br />
+Hash points a sphere towards Rylan and a flurry of snow pours forth.<br />
+<br />
+Rylan freezes in place.<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; <br />
+Luicia focuses harshly on Rylan and utters some strange words.<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; <br />
+Hash slowly fades into existence.<br />
+Hash crashes into Rylan in a thundering collision, knocking him to the ground!<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; <br />
+Hash slashes Rylan extremely hard.<br />
+The umber hulk massacres Rylan with its hit.<br />
+The umber hulk hits Rylan extremely hard.<br />
+<br />
+130V 1X 851C Mem:2 Exits:NSW&gt; c 'force bolt' rylan<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Rylan.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; c 'force bolt' rylan<br />
+<br />
+Gwyr heroically rescues Rylan.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; <br />
+Pi appears normal again after putting away her tattered tome.<br />
+Pi grabs a glowing scroll of recall.<br />
+Pi recites a glowing scroll of recall.<br />
+Pi disappears.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; <br />
+Luicia focuses harshly on Rylan and utters some strange words.<br />
+Luicia slowly fades into existence.<br />
+Huge flames burn Rylan from above.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; <br />
+The umber hulk steps aside as Teigan attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; <br />
+Teigan slashes the umber hulk very hard.<br />
+Luicia bludgeons Rylan very hard.<br />
+The umber hulk misses Gwyr with its hit.<br />
+The umber hulk misses Gwyr with its hit.<br />
+Gwyr stabs the umber hulk extremely hard.<br />
+Hash massacres Rylan with his slash.<br />
+<br />
+130V 1X 851C Mem:3 Exits:NSW&gt; c 'force bolt' rylan<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Rylan.<br />
+<br />
+130V 1X 851C Mem:4 Exits:NSW&gt; c 'force bolt' rylan<br />
+<br />
+	<br />
+<br />
+130V 1X 851C Mem:4 Exits:NSW&gt; order all.hulk bash<br />
+<br />
+Hash crashes into Rylan in a thundering collision, knocking him to the ground!<br />
+Luicia focuses harshly on Rylan and utters some strange words.<br />
+Huge flames burn Rylan from above.<br />
+<br />
+130V 1X 851C Mem:4 Exits:NSW&gt; <br />
+Teigan misses the umber hulk with his slash.<br />
+The umber hulk misses Gwyr with its hit.<br />
+The umber hulk misses Gwyr with its hit.<br />
+Gwyr stabs the umber hulk extremely hard.<br />
+Hash massacres Rylan with his slash.<br />
+<br />
+130V 1X 851C Mem:4 Exits:NSW&gt; <br />
+The umber hulk tries in vain to disarm Gwyr's weapon.<br />
+<br />
+130V 1X 851C Mem:4 Exits:NSW&gt; Gwyr stops using a dusty and tattered book.<br />
+Gwyr grabs a glowing scroll of recall.<br />
+Gwyr recites a glowing scroll of recall.<br />
+Gwyr disappears.<br />
+You utter the words, 'force bolt'<br />
+Your force bolt shatters Rylan's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Rylan is dead! R.I.P.<br />
+<br />
+130V 1X 851C Mem:5 Exits:NSW&gt; <br />
+The death cry of Rylan echoes from somewhere nearby...<br />
+get all.coins corpse<br />
+examine corpse<br />
+Rylan stops following Bernard.<br />
+<br />
+130V 1X 851C Mem:5 Exits:NSW&gt; <br />
+The umber hulk misses Teigan with its hit.<br />
+Teigan misses the umber hulk with his slash.<br />
+<br />
+130V 1X 851C Mem:5 Exits:NSW&gt; <br />
+Luicia gets a large pile of coins from the corpse of Rylan.<br />
+<br />
+130V 1X 851C Mem:5 Exits:NSW&gt; get all rylan<br />
+<br />
+Luicia gets an ancient yew bow from the corpse of Rylan.<br />
+Luicia gets some red dragon scale sleeves from the corpse of Rylan.<br />
+Luicia gets a pair of hunting gloves from the corpse of Rylan.<br />
+Luicia gets a pair of leather moccasins from the corpse of Rylan.<br />
+Luicia gets a pair of platinum gilt leg plates from the corpse of Rylan.<br />
+Luicia gets a silver inlaid helm from the corpse of Rylan.<br />
+Luicia gets a white gold ring from the corpse of Rylan.<br />
+<br />
+130V 1X 851C Mem:5 Exits:NSW&gt; <br />
+Luicia divides 555 coins equally among the group members present.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; Who should the spell be cast upon?<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; Teigan steps aside as the umber hulk attempts a bash, stumbles, and falls flat on its face.<br />
+You issue the order 'bash'.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a suit of padded red leather armor..it glows blue<br />
+an emerald-studded leather collar<br />
+a crystal shard necklace..it glows dimly<br />
+a wooden ring..it glows blue<br />
+a griffon feather..it glows blue..it glows dimly<br />
+an opal shield..it glows dimly<br />
+a gleaming steel broadsword..it glows blue<br />
+a scroll of recall..it glows blue<br />
+a solamnic broadsword<br />
+a necklace of fine gold chain<br />
+a piece of sweet bread..it glows blue [9]<br />
+a large first-aid kit<br />
+a large waterskin [4]<br />
+a crystal shard necklace..it glows dimly [5]<br />
+a short stick of incense(SUM1)C<br />
+a steel dagger with a dragon claw handle..it glows blue<br />
+a milky potion of see invisible..it glows blue<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; You get a suit of padded red leather armor from the corpse of Rylan.<br />
+You get an emerald-studded leather collar from the corpse of Rylan.<br />
+You get a crystal shard necklace from the corpse of Rylan.<br />
+You get a wooden ring from the corpse of Rylan.<br />
+You get a griffon feather from the corpse of Rylan.<br />
+Shield : You can't carry that much weight.<br />
+Sword : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Broadsword : You can't carry that much weight.<br />
+Necklace : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Kit : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Incense : You can't carry that much weight.<br />
+Dagger : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; <br />
+Teigan gets a scroll from his backpack.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; <br />
+The umber hulk misses Teigan with its hit.<br />
+Teigan slashes the umber hulk extremely hard.<br />
+Hash gets an opal shield from the corpse of Rylan.<br />
+Hash gets a gleaming steel broadsword from the corpse of Rylan.<br />
+Hash gets a scroll of recall from the corpse of Rylan.<br />
+Hash gets a solamnic broadsword from the corpse of Rylan.<br />
+Hash gets a necklace of fine gold chain from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+Hash gets a piece of sweet bread from the corpse of Rylan.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; <br />
+Hash crashes into Teigan in a thundering collision, knocking him to the ground!<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; TICK IN 7 SECONDS.<br />
+<br />
+Hash massacres Teigan with his slash.<br />
+The umber hulk misses Teigan with its hit.<br />
+Teigan slashes the umber hulk extremely hard.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; order all.hulk bash teigan<br />
+You issue the order 'bash teigan'.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; <br />
+Luicia focuses harshly on Teigan and utters some strange words.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; c 'force bolt' teigan<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Teigan.<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; c 'force bolt' teigan<br />
+<br />
+Rylan tells you 'wtf?'<br />
+<br />
+130V 1X 1036C Mem:5 Exits:NSW&gt; <br />
+Hash massacres Teigan with his slash.<br />
+The umber hulk misses Teigan with its hit.<br />
+Teigan misses the umber hulk with his slash.<br />
+The darkness marks the end of another day.<br />
+Timer now at 61 secs.<br />
+You are hungry.<br />
+<br />
+144V 1X 1036C Mem:12 Exits:NSW&gt; <br />
+Teigan stands up.<br />
+<br />
+144V 1X 1036C Mem:12 Exits:NSW&gt; <br />
+Hash points the eyes of a baby basilisk at Teigan.<br />
+Teigan grabs a glowing scroll of recall.<br />
+Teigan recites a glowing scroll of recall.<br />
+Teigan disappears.<br />
+<br />
+144V 1X 1036C Mem:12 Exits:NSW&gt; look<br />
+Who should the spell be cast upon?<br />
+<br />
+144V 1X 1036C Mem:12 Exits:NSW&gt; Path Along the Sea Cliff<br />
+The corpse of Rylan is lying here.<br />
+The corpse of a burly minotaur guard is lying here.<br />
+The umber hulk is sitting here. (flying)<br />
+Luicia the Female Human is standing here. (flying)<br />
+Hash the Male Human is standing here.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1226'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1226">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1226">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

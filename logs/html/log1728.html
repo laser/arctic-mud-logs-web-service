@@ -1,0 +1,939 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1728-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1728'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Bain/Rascal/Astair RIP</font></b>
+<p>
+POV: 
+Rojany<p>
+Log Rating:
+0.2143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some RGB's RIP</i>
+<p>
+<p>
+
+702H 160V 4602163X 572C Exits:E(W)&gt; <br />
+Xanatos places the key into a slot. Nothing happens.<br />
+<br />
+Xanatos grunts and turns a large wheel on the vault door.<br />
+<br />
+724H 160V 4602163X 572C Exits:E(W)&gt; <br />
+Xanatos grunts and slowly opens a heavy vault door.<br />
+<br />
+724H 160V 4602163X 572C Exits:EW&gt; <br />
+Xanatos flies west.<br />
+Jhuhng flies west.<br />
+Kylar flies west.<br />
+Rave flies west.<br />
+You follow Xanatos west.<br />
+Singe flies in from the east.<br />
+Beluga flies in from the east.<br />
+Hamtaro flies in from the east.<br />
+The Kharolis Mine Vault<br />
+    The air is stale in here. Solid rock walls have been cleanly carved and<br />
+every direction is solid rock with exception of the steel vault door. A dim<br />
+lamp over the vault door provides a light in here and you shudder realizing<br />
+that if you became trapped in here, that lamp would devour your air.<br />
+A well worn battle club lies here.<br />
+The eye of some creature has been strung on a leather cord and is lying here.<br />
+A small ring covered in dust is lying here...it glows dimly<br />
+A hammer made of solid obsidian lies here.<br />
+A full shield made of a gold, metallic color lies here...it glows dimly<br />
+A long, slender staff has been carelessly left on the ground.<br />
+A small circle of black stone engraved with runes hides in the shadows here.<br />
+A small ruby ring lies here, with some gold work on top.<br />
+A pair of draconian gauntlets lie here.<br />
+A tin hooded lantern has been left here.<br />
+A short, steel blade sits in the dirt.<br />
+A long length of chain lies here.<br />
+Hamtaro Hammiemon, Blood Sea Ancient Giant Golden Hamster is standing here. (flying) (invisible)<br />
+Beluga, Blood Sea Monster is standing here. (flying) (invisible)<br />
+. . . has a granite appearance.<br />
+You see the outline of a life form here, carrying: a blood red cape; a blood red cape.<br />
+Rave the Female Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kylar is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Jhuhng Wahn of the Blood Sea Pirates is standing here. (flying) (invisible)<br />
+Xanatos A'Kul, Blood Sea Champion of the Abyss is standing here. (flying) (invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Aune the Male Minotaur is sitting here. (flying) (invisible)<br />
+Bain, The Oppressed is sitting here. (flying) (invisible)<br />
+Rascal, Neraka Interceptor 1.2 is sitting here. (flying) (invisible)<br />
+Astair Crowley, Drunk as a Skunk is sitting here. (flying) (invisible)<br />
+Draegnius the Male Half Elf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; <br />
+Hamtaro slowly fades into existence.<br />
+Hamtaro crashes into Bain in a thundering collision, knocking him to the ground!<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; bas bain<br />
+Rave utters some strange words.<br />
+Rave calls to her god for sustenance and receives a bounty.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; <br />
+Xanatos utters some strange words.<br />
+Xanatos slowly fades into existence.<br />
+Xanatos comes out of hiding.<br />
+Aune is stunned momentarily, recovering quickly.<br />
+Bain is stunned!<br />
+Rascal is stunned momentarily, recovering quickly.<br />
+Astair is stunned momentarily, recovering quickly.<br />
+Draegnius is stunned momentarily, recovering quickly.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; You crash into Bain in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:V.Good] Exits:E&gt; bas bain<br />
+Jhuhng slowly fades into existence.<br />
+Jhuhng crashes into Rascal in a thundering collision, knocking him to the ground!<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:V.Good] Exits:E&gt; <br />
+Aune stops using an ornate twin-bladed battleaxe.<br />
+Aune grabs a glowing scroll of recall.<br />
+Aune recites a glowing scroll of recall.<br />
+Aune disappears.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:V.Good] Exits:E&gt; <br />
+Kylar focuses harshly on Bain and utters some strange words.<br />
+Kylar slowly fades into existence.<br />
+Bain cries out in pain as Kylar grabs him.<br />
+bash bain<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:Fair] Exits:E&gt; <br />
+Draegnius says 'recall'<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:Fair] Exits:E&gt; <br />
+Singe utters some strange words.<br />
+Singe conjures a writhing mass of inky black tentacles!<br />
+Singe slowly fades into existence.<br />
+Singe comes out of hiding.<br />
+Bain screams in pain as inky black tentacles constrict him.<br />
+Rascal screams in pain as inky black tentacles constrict him.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+Draegnius screams in pain as inky black tentacles constrict him.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:Fair] Exits:E&gt; <br />
+Bain screams in pain as inky black tentacles constrict him.<br />
+Singe claws Bain extremely hard.<br />
+Xanatos misses Draegnius with his pierce.<br />
+Jhuhng massacres Rascal with his drain.<br />
+You annihilate Bain with your slash.<br />
+Draegnius misses Xanatos and destroys an image instead.<br />
+Astair slowly fades into existence.<br />
+Astair misses Xanatos and destroys an image instead.<br />
+Rascal slashes Xanatos extremely hard.<br />
+Rascal is burned, as he swings at Xanatos.<br />
+Hamtaro massacres Bain with his bludgeon.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:Bad] Exits:E&gt; bas bain<br />
+Beluga focuses harshly on Bain and utters some strange words.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:Bad] Exits:E&gt; <br />
+Rave slowly fades into existence.<br />
+Rave annihilates Bain with her stab.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:V.Bad] Exits:E&gt; <br />
+Xanatos utters some strange words.<br />
+Xanatos conjures a writhing mass of inky black tentacles!<br />
+Bain screams in pain as inky black tentacles constrict him.<br />
+Rascal screams in pain as inky black tentacles constrict him.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+Draegnius screams in pain as inky black tentacles constrict him.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Hamtaro:Perfect] [Bain:V.Bad] Exits:E&gt; <br />
+Kylar focuses harshly on Bain and utters some strange words.<br />
+Bain cries out in pain as Kylar grabs him.<br />
+bash bainBain is stunned, but will likely regain consciousness again.<br />
+<br />
+724H 159V 4602163X 572C [Me:V.Good] [Bain:Awful] Exits:E&gt; <br />
+Rave hits the tentacles constricting Bain instead!<br />
+<br />
+Rave hits the tentacles constricting Bain instead!<br />
+<br />
+Singe massacres Bain with his claw.<br />
+You receive 0 experience.<br />
+Bain is dead! R.I.P.<br />
+get all.coins corpseJhuhng massacres Rascal with his drain.<br />
+Draegnius misses Xanatos and destroys an image instead.<br />
+Astair misses Xanatos and destroys an image instead.<br />
+Rascal slashes Xanatos extremely hard.<br />
+Rascal is burned, as he swings at Xanatos.<br />
+Hamtaro hits the tentacles constricting Bain instead!<br />
+<br />
+The death cry of Bain echoes from somewhere nearby...<br />
+Bain stops following Draegnius.<br />
+Singe utters some strange words.<br />
+Singe conjures a writhing mass of inky black tentacles!<br />
+Singe comes out of hiding.<br />
+Rascal screams in pain as inky black tentacles constrict him.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+Draegnius screams in pain as inky black tentacles constrict him.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; get all corpse<br />
+Draegnius stops using an orb of black flames.<br />
+Draegnius grabs a scroll of recall.<br />
+Draegnius recites a scroll of recall.<br />
+Draegnius disappears.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; <br />
+Beluga utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; You couldn't find what you were looking for.<br />
+Rascal stands up.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; You couldn't find what you were looking for.<br />
+Jhuhng crashes into Rascal in a thundering collision, knocking him to the ground!<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; Rave gets a queen's rapier from the corpse of Bain.<br />
+Rave gets a great war axe from the corpse of Bain.<br />
+Rave gets a wrist buckler from the corpse of Bain.<br />
+Rave gets a mithril bracelet from the corpse of Bain.<br />
+Rave gets a gleaming silver scabbard from the corpse of Bain.<br />
+Rave gets a pair of flaming phaethon wings from the corpse of Bain.<br />
+Rave gets a black quiver from the corpse of Bain.<br />
+Rave gets a pair of spiked battle armets from the corpse of Bain.<br />
+Rave gets a pair of dwarven gloves from the corpse of Bain.<br />
+Rave gets a majestic pair of riding boots from the corpse of Bain.<br />
+Rave gets a skirt of tasses from the corpse of Bain.<br />
+Rave gets a pair of sharpened steel horns from the corpse of Bain.<br />
+Rave is zapped by a suit of charred black battle armor and instantly drops it.<br />
+Rave gets an ancient medallion from the corpse of Bain.<br />
+Rave gets a dark tourmaline pendant from the corpse of Bain.<br />
+Rave gets a simple platinum ring from the corpse of Bain.<br />
+Rave gets a rune etched mithril ring from the corpse of Bain.<br />
+Rave gets a very large pile of coins from the corpse of Bain.<br />
+Rave gets a strip of armaboro jerky from the corpse of Bain.<br />
+Rave gets a strip of armaboro jerky from the corpse of Bain.<br />
+Rave gets a dark elven hand crossbow from the corpse of Bain.<br />
+Rave gets some rugged black leather breeches from the corpse of Bain.<br />
+Rave gets a wyvern claw from the corpse of Bain.<br />
+Rave gets a bloody minotaur hand axe from the corpse of Bain.<br />
+Rave gets a glowing scroll of recall from the corpse of Bain.<br />
+Rave gets a glowing scroll of recall from the corpse of Bain.<br />
+Rave gets a glowing scroll of recall from the corpse of Bain.<br />
+Rave gets an enchanted barrel from the corpse of Bain.<br />
+Rave gets a long hezrou spine from the corpse of Bain.<br />
+Rave gets a blue potion of remove poison from the corpse of Bain.<br />
+Rave gets a crimson dust covered chest from the corpse of Bain.<br />
+Rave gets a small canteen from the corpse of Bain.<br />
+Rave gets a small canteen from the corpse of Bain.<br />
+Rave gets a small canteen from the corpse of Bain.<br />
+Rave gets a small canteen from the corpse of Bain.<br />
+You couldn't find what you were looking for.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+Xanatos gets a crimson dust covered chest from the corpse of Bain.<br />
+<br />
+724H 159V 4602163X 572C Exits:E&gt; Rave divides 4640 coins equally among the group members present.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; <br />
+Rave slowly fades into existence.<br />
+Rave annihilates Rascal with her stab.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; <br />
+Beluga slowly fades into existence.<br />
+Rascal screams as a swarm of insects engulfs him.<br />
+Astair seems unaffected by Beluga's swarm of insects.<br />
+Beluga massacres Rascal with his slash.<br />
+Rave massacres Rascal with her stab.<br />
+Rave massacres Rascal with her slash.<br />
+Singe misses Rascal with his claw.<br />
+Jhuhng massacres Rascal with his drain.<br />
+Astair massacres Xanatos with his slash.<br />
+Astair is burned, as he swings at Xanatos.<br />
+Rascal slashes Xanatos extremely hard.<br />
+Rascal is burned, as he swings at Xanatos.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; bash rascalYou crash into Rascal in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:V.Bad] Exits:E&gt; <br />
+Singe utters some strange words.<br />
+Singe conjures a writhing mass of inky black tentacles!<br />
+Rascal screams in pain as inky black tentacles constrict him.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:V.Bad] Exits:E&gt; <br />
+Hamtaro crashes into Rascal in a thundering collision, knocking him to the ground!<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:V.Bad] Exits:E&gt; <br />
+Astair stands up.<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:V.Bad] Exits:E&gt; <br />
+Xanatos focuses harshly on Rascal and utters some strange words.<br />
+The sound of bones cracking echoes as Xanatos's force bolt slams into Rascal.<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:Awful] Exits:E&gt; <br />
+Kylar focuses harshly on Rascal and utters some strange words.<br />
+Rascal cries out in pain as Kylar grabs him.<br />
+<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Xanatos:Good] [Rascal:Awful] Exits:E&gt; <br />
+Beluga focuses harshly on Rascal and utters some strange words.<br />
+Rascal is frozen solid and blasted into pieces by a blue bolt from Beluga's hand.<br />
+You receive 0 experience.<br />
+Rascal is dead! R.I.P.<br />
+get all.coins corpse<br />
+724H 159V 4602163X 1152C [Me:V.Good] [Rascal:Dying] Exits:E&gt; <br />
+The death cry of Rascal echoes from somewhere nearby...<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; <br />
+Astair seems unaffected by Beluga's swarm of insects.<br />
+Beluga slashes Astair very hard.<br />
+Astair slashes Xanatos very hard.<br />
+Astair is burned, as he swings at Xanatos.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; <br />
+Rave gets a shimmering alexandrite from the corpse of Rascal.<br />
+Rave gets a three-strap leather bracer from the corpse of Rascal.<br />
+Rave gets a wrist buckler from the corpse of Rascal.<br />
+Rave gets a pile of coins from the corpse of Rascal.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; get all corpse<br />
+Astair gets a luck blade from the corpse of Rascal.<br />
+Astair gets a set of spell component pouches from the corpse of Rascal.<br />
+Astair is zapped by an ancient leather scabbard and instantly drops it.<br />
+Astair gets a white bear pelt from the corpse of Rascal.<br />
+Astair is zapped by a bright brass dragonscale shield and instantly drops it.<br />
+Astair is zapped by some brass dragonscale sleeves and instantly drops it.<br />
+Astair gets a pair of dwarven gloves from the corpse of Rascal.<br />
+Astair gets some river runner's boots from the corpse of Rascal.<br />
+Astair gets a pair of silver dragon scale leggings from the corpse of Rascal.<br />
+Astair gets an ancient medallion from the corpse of Rascal.<br />
+Astair gets a worn leather knapsack from the corpse of Rascal.<br />
+Astair gets a copper dwarven ring from the corpse of Rascal.<br />
+Astair gets a copper dwarven ring from the corpse of Rascal.<br />
+Astair gets a strip of armaboro jerky from the corpse of Rascal.<br />
+Astair gets a glowing scroll of recall from the corpse of Rascal.<br />
+Astair gets a glowing scroll of recall from the corpse of Rascal.<br />
+<br />
+724H 159V 4602163X 1152C Exits:E&gt; <br />
+Rave divides 16 coins equally among the group members present.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe gets a small canteen from the corpse of Rascal.<br />
+Singe gets a waterskin from the corpse of Rascal.<br />
+Singe gets a huge charred blacksmith's maul from the corpse of Rascal.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Rave slowly fades into existence.<br />
+Rave massacres Astair with her stab.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe utters some strange words.<br />
+Singe conjures a writhing mass of inky black tentacles!<br />
+Singe comes out of hiding.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; g all<br />
+Beluga focuses harshly on Astair and utters some strange words.<br />
+Xanatos focuses harshly on Astair and utters some strange words.<br />
+The sound of bones cracking echoes as Xanatos's force bolt slams into Astair.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Kylar focuses harshly on Astair and utters some strange words.<br />
+Astair cries out in pain as Kylar grabs him.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Astair attempts to break free of the black tentacles, but fails!<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Astair screams as a swarm of insects engulfs him.<br />
+Astair screams in pain as inky black tentacles constrict him.<br />
+Singe claws Astair very hard.<br />
+Rave hits the tentacles constricting Astair instead!<br />
+<br />
+Rave hits the tentacles constricting Astair instead!<br />
+<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Astair attempts to break free of the black tentacles, but fails!<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; You get some brass dragonscale sleeves.<br />
+You get a bright brass dragonscale shield.<br />
+You get an ancient leather scabbard.<br />
+You get the corpse of Rascal.<br />
+You are zapped by a suit of charred black battle armor and instantly drop it.<br />
+You can't seem to get that.<br />
+Corpse : You can't carry that much weight.<br />
+You get a well worn battle club.<br />
+You get a white dragon eye.<br />
+You get a small grey ring.<br />
+You get an obsidian hammer.<br />
+You get a large golden shield.<br />
+You get a black wood staff.<br />
+You get a black runed ring.<br />
+You get an insignia of house Tankreed.<br />
+You get a pair of draconian gauntlets.<br />
+You get a hooded lantern.<br />
+You get a hooked draconian shortsword.<br />
+Flail : You can't carry that much weight.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Hamtaro crashes into Astair in a thundering collision, knocking him to the ground!<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Astair steps aside as Jhuhng attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe focuses harshly on Astair and utters some strange words.<br />
+The sound of bones cracking echoes as Singe's force bolt slams into Astair.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; bash astaireYou couldn't find what you were looking for.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Rave focuses her purity on Astair's leg!<br />
+Rave forces Astair to the ground.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Beluga focuses harshly on Astair and utters some strange words.<br />
+Beluga sends a chilling blast of air at Astair, giving him a severe case of frostbite.<br />
+Xanatos focuses harshly on Astair and utters some strange words.<br />
+Brains splatter on you as Xanatos's force bolt shatters Astair's skull.<br />
+You receive 0 experience.<br />
+Astair is dead! R.I.P.<br />
+get all.coins corpseKylar focuses harshly on Astair and utters some strange words.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Rave hits the tentacles constricting Astair instead!<br />
+<br />
+The death cry of Astair echoes from somewhere nearby...<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe gets a pile of coins from the corpse of Astair.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe gets a broad bladed two-handed sword from the corpse of Astair.<br />
+Singe gets a glowing bracer from the corpse of Astair.<br />
+Singe gets a pewter ringlet from the corpse of Astair.<br />
+Singe gets a snakeskin belt from the corpse of Astair.<br />
+Singe gets a pair of woodsman's sleeves from the corpse of Astair.<br />
+Singe gets some granite theiwar gauntlets from the corpse of Astair.<br />
+Singe gets a pair of green boots from the corpse of Astair.<br />
+Singe gets an iron eyepatch inlaid with emeralds from the corpse of Astair.<br />
+Singe gets a leather breastplate from the corpse of Astair.<br />
+Singe gets a crimson pendant from the corpse of Astair.<br />
+Singe gets a bullywug medallion from the corpse of Astair.<br />
+Singe gets a shiny dwarven ring from the corpse of Astair.<br />
+Singe gets a copper dwarven ring from the corpse of Astair.<br />
+Singe gets a glowing scroll of recall from the corpse of Astair.<br />
+Singe gets a strip of armaboro jerky from the corpse of Astair.<br />
+<br />
+724H 159V 4602163X 1154C Exits:E&gt; <br />
+Singe divides 56 coins equally among the group members present.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Beluga gets a glowing scroll of recall from the corpse of Astair.<br />
+Beluga gets a copper dwarven ring from the corpse of Astair.<br />
+Beluga gets a copper dwarven ring from the corpse of Astair.<br />
+Beluga gets a worn leather knapsack from the corpse of Astair.<br />
+Beluga gets an ancient medallion from the corpse of Astair.<br />
+Beluga gets a pair of silver dragon scale leggings from the corpse of Astair.<br />
+Beluga gets some river runner's boots from the corpse of Astair.<br />
+Beluga gets a pair of dwarven gloves from the corpse of Astair.<br />
+Beluga gets a white bear pelt from the corpse of Astair.<br />
+Beluga gets a set of spell component pouches from the corpse of Astair.<br />
+Beluga gets a luck blade from the corpse of Astair.<br />
+Beluga gets a small brown bottle from the corpse of Astair.<br />
+Beluga gets a ceremonial scabbard from the corpse of Astair.<br />
+Beluga gets some pixie dust from the corpse of Astair.<br />
+Beluga gets some pixie dust from the corpse of Astair.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; invgHuh?!<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets a scroll of recall from the corpse of Astair.<br />
+Xanatos is zapped by an old mandolin and instantly drops it.<br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets some pixie dust from the corpse of Astair.<br />
+Xanatos gets a large piece of pork chop from the corpse of Astair.<br />
+Xanatos gets a large piece of pork chop from the corpse of Astair.<br />
+Xanatos gets a glowing scroll of recall from the corpse of Astair.<br />
+Xanatos gets a light medallion from the corpse of Astair.<br />
+Xanatos gets a bronze bottle from the corpse of Astair.<br />
+Xanatos gets a light medallion from the corpse of Astair.<br />
+Xanatos gets a crystal shard necklace from the corpse of Astair.<br />
+Xanatos gets a crystal shard necklace from the corpse of Astair.<br />
+Xanatos gets a two-handed battle axe from the corpse of Astair.<br />
+Kylar gets a small wooden chest from the corpse of Astair.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Singe utters some strange words.<br />
+Singe conjures a floating disc of magical energy.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Xanatos says 'OWNED'<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; inv<br />
+Hamtaro gets an old mandolin.<br />
+Hamtaro gets a suit of charred black battle armor.<br />
+Hamtaro gets a chain flail.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; You are carrying:<br />
+a hooked draconian shortsword<br />
+a hooded lantern<br />
+a pair of draconian gauntlets<br />
+an insignia of house Tankreed<br />
+a black runed ring<br />
+a black wood staff<br />
+a large golden shield..it glows dimly<br />
+an obsidian hammer<br />
+a small grey ring..it glows dimly<br />
+a white dragon eye<br />
+a well worn battle club<br />
+the corpse of Rascal<br />
+an ancient leather scabbard<br />
+a bright brass dragonscale shield..it glows dimly<br />
+some brass dragonscale sleeves<br />
+a glowing scroll of recall..it glows dimly [9]<br />
+Kyst's key<br />
+a small wooden chest<br />
+a leg of lamb [4]<br />
+a magical watering can<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Jhuhng stands up.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Jhuhng gets a blackened chest from the corpse of Astair.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; g allYou can't seem to get a floating disc.<br />
+Corpse : You can't carry that much weight.<br />
+You can't seem to get that.<br />
+Corpse : You can't carry that much weight.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+The swarm of insects dissipates.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Xanatos says 'hahaha'<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Singe utters some strange words.<br />
+Singe waves his hand, and the owlbear appears!<br />
+The owlbear now follows Singe.<br />
+<br />
+724H 159V 4602163X 1161C Exits:E&gt; <br />
+Xanatos says 'loot'<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1728'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1728">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1728">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

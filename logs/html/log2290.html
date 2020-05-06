@@ -1,0 +1,853 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>How many times have you been spooned by another Arctic player?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>0<br>
+<input type=radio value=1 name=voteid>1<br>
+<input type=radio value=2 name=voteid>2-5<br>
+<input type=radio value=3 name=voteid>5-10<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=144><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2290-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='209.234.171.41' and logid='2290'-->
+
+<!-- PHP Generated Message: IP in db-->
+
+<p>
+<b><font size="3">
+Doing us all a favor.</font></b>
+<p>
+POV: 
+Liza<p>
+Log Rating:
+2.4545<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+After a few small skirmishes with Mata and Curador, they recruited a third to try jump me.... so we evened the odds.</i>
+<p>
+<p>
+
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; <br />
+Mata arrives from the south.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; <br />
+Takin steps aside as Mata attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; <br />
+Curador flies in from the south.<br />
+Semaj flies in from the south.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; <br />
+Curador focuses harshly on Takin and utters the words, 'hold person'.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; <br />
+Takin stands up.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; c 'haste' shlomo<br />
+<br />
+Takin focuses harshly on Semaj and utters the words, 'silence'.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt;<br />
+<br />
+Mata slashes Takin very hard.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; gt come<br />
+<br />
+Semaj focuses harshly on Takin and utters some strange words.<br />
+Takin withers as a ray of sunlight sent by Semaj engulfs him!<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; You tell your group 'come'<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; c 'haste' shlomo<br />
+Who should the spell be cast upon?<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; c 'haste' shlomo<br />
+<br />
+Curador focuses harshly on Takin and utters the words, 'hold person'.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; c 'haste' shlomo<br />
+<br />
+Shlomo flies in from the south.<br />
+<br />
+387H 48V 392X 731C Mem:1 Exits:ESW&gt; You utter the words, 'haste'<br />
+Shlomo starts to fidget.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+Curador steps aside as Shlomo attempts a bash, stumbles, and falls flat on his face.<br />
+Takin focuses harshly on Semaj and utters the words, 'silence'.<br />
+Semaj suddenly goes quiet.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+<br />
+Shlomo drains Curador hard.<br />
+Shlomo drains Curador extremely hard.<br />
+Curador misses Shlomo with his hit.<br />
+Mata slashes Takin very hard.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+Semaj flies south.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+Mata stands up.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; cast 'prismatic spray'<br />
+<br />
+Mata crashes into Takin in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+Semaj flies in from the south.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; <br />
+Semaj smites Shlomo very hard.<br />
+<br />
+387H 48V 392X 731C Mem:2 Exits:ESW&gt; Shlomo stands up.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Semaj in a spray of bright orange!<br />
+You catch Curador in a spray of radiant yellow!<br />
+You hit Curador with a spray of gleaming indigo!<br />
+You catch Mata in a spray of radiant yellow!<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:2 Exits:ESW&gt; Curador steps aside as Shlomo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:2 Exits:ESW&gt; <br />
+You smite Semaj extremely hard.<br />
+Semaj smites Shlomo very hard.<br />
+Shlomo drains Curador hard.<br />
+Shlomo massacres Curador with his drain.<br />
+Curador misses Shlomo with his hit.<br />
+Mata slashes Takin very hard.<br />
+Takin misses Mata with his hit.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:2 Exits:ESW&gt; <br />
+Curador focuses harshly on Takin and utters the words, 'hold person'.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:2 Exits:ESW&gt; c 'h p' semaj<br />
+You utter the words, 'hold person'<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Semaj smites Shlomo very hard.<br />
+Shlomo drains Curador hard.<br />
+Mata slashes Takin very hard.<br />
+Takin misses Mata with his hit.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Semaj doesn't say a word.<br />
+Curador focuses harshly on Takin and utters the words, 'hold person'.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; c 'h p' curador<br />
+<br />
+Shlomo stands up.<br />
+Takin stands up.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+<br />
+Curador steps aside as Shlomo attempts a bash, stumbles, and falls flat on his face.<br />
+Takin utters some strange words.<br />
+You utter the words, 'hold person'<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Mata crashes into Takin in a thunder collision, knocking him to the ground.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Semaj massacres Shlomo with her smite.<br />
+Shlomo massacres Curador with his drain.<br />
+Shlomo drains Curador extremely hard.<br />
+Mata slashes Takin hard.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Curador focuses harshly on Takin and utters some strange words.<br />
+Takin cries out in pain as Curador grabs him.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; c 'h p' curador<br />
+You utter the words, 'hold person'<br />
+Curador freezes in place.<br />
+<br />
+387H 48V 392X 731C [Shlomo:V.Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Semaj smites Shlomo extremely hard.<br />
+Shlomo drains Curador hard.<br />
+Shlomo drains Curador extremely hard.<br />
+Mata slashes Takin hard.<br />
+Takin misses Mata with his hit.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Shlomo -----&gt; STANDS UP<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+Shlomo crashes into Curador in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+A Palanthian guard arrives from the west.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:V.Good] Mem:3 Exits:ESW&gt; <br />
+You smite Semaj very hard.<br />
+Semaj smites Shlomo extremely hard.<br />
+Shlomo massacres Curador with his drain.<br />
+Shlomo drains Curador very hard.<br />
+Mata slashes Takin extremely hard.<br />
+Takin misses Mata with his hit.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:3 Exits:ESW&gt; order gargoyle kill curador<br />
+<br />
+Shlomo crashes into Mata in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:3 Exits:ESW&gt; A gargoyle gives Curador a solid punch in the face.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:3 Exits:ESW&gt; cast 'force bolt' curador<br />
+<br />
+Takin has lost his link.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:3 Exits:ESW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Curador.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; <br />
+A gargoyle massacres Curador with its claw.<br />
+A gargoyle pierces Curador extremely hard.<br />
+Shlomo drains Curador extremely hard.<br />
+Shlomo massacres Curador with his drain.<br />
+Curador is incapacitated and will slowly die, if not aided.<br />
+Mata slashes Takin extremely hard.<br />
+Takin barely hits Mata.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; <br />
+A Palanthian guard leaves south.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; g all corpse<br />
+<br />
+Shlomo crashes into Curador in a devastating bash, killing him mercilessly.You receive 0 experience.<br />
+Curador is dead! R.I.P.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; g all corpse<br />
+g all corpse<br />
+<br />
+The death cry of Curador echoes from somewhere nearby...<br />
+Curador sinks gently to the ground.<br />
+Semaj stops following Curador.<br />
+Curador now follows Semaj.<br />
+Semaj is the new leader of Curador's group.<br />
+Curador stops following Semaj.<br />
+Mata stops following Curador.<br />
+Mata now follows Semaj.<br />
+Semaj gets a sparkling black bracelet from the corpse of Curador.<br />
+Semaj gets a scuffed black wrist guard from the corpse of Curador.<br />
+Semaj gets an elfin sword-belt from the corpse of Curador.<br />
+g all corpse<br />
+Semaj gets an ivory-colored leather backpack from the corpse of Curador.<br />
+Semaj gets a delicate platinum tiara from the corpse of Curador.<br />
+Semaj gets a frilly blouse with ivory buttons from the corpse of Curador.<br />
+Semaj gets some gypsy beads from the corpse of Curador.<br />
+Semaj gets some gypsy beads from the corpse of Curador.<br />
+Semaj gets a ring of finest silver from the corpse of Curador.<br />
+Semaj is zapped by a papal cross and instantly drops it.<br />
+Semaj gets a pile of coins from the corpse of Curador.<br />
+Semaj gets a putrid potion from the corpse of Curador.<br />
+Semaj gets a putrid potion from the corpse of Curador.<br />
+Semaj gets a putrid potion from the corpse of Curador.<br />
+Semaj gets a putrid potion from the corpse of Curador.<br />
+Semaj gets a scroll with a brown ribbon from the corpse of Curador.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exitg all corpse<br />
+s:ESW&gt; <br />
+Trick arrives from the east.<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; g all corpse<br />
+<br />
+Trick leaves south.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; You get a scroll with a brown ribbon from the corpse of Curador.<br />
+You get a scroll with a brown ribbon from the corpse of Curador.<br />
+You get a scroll with a brown ribbon from the corpse of Curador.<br />
+You get Ebon Fyr from the corpse of Curador.<br />
+You get a putrid potion from the corpse of Curador.<br />
+You get a putrid potion from the corpse of Curador.<br />
+You get a piece of sweet bread from the corpse of Curador.<br />
+You get a blackened chest from the corpse of Curador.<br />
+You get a milky potion of see invisible from the corpse of Curador.<br />
+You get a milky potion of see invisible from the corpse of Curador.<br />
+You get a milky potion of see invisible from the corpse of Curador.<br />
+You get a scroll of recall from the corpse of Curador.<br />
+You get a scroll of recall from the corpse of Curador.<br />
+You get a scroll of recall from the corpse of Curador.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; Shlomo drains Semaj hard.<br />
+Shlomo drains Semaj hard.<br />
+You miss Semaj with your smite.<br />
+Semaj smites Shlomo.<br />
+Mata slashes Takin extremely hard.<br />
+Takin misses Mata with his hit.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; <br />
+Takin has reconnected.<br />
+<br />
+387H 48V 392X 731C [Shlomo:Good] [Semaj:Good] Mem:4 Exits:ESW&gt; <br />
+Semaj panics, and attempts to flee.<br />
+Semaj flies east.<br />
+<br />
+387H 48V 392X 731C Mem:4 Exits:ESW&gt; <br />
+Mata stands up.<br />
+387H 48V 392X 731C Mem:4 Exits:ESW&gt; c 'h p' semaj<br />
+e<br />
+<br />
+Shlomo crashes into Mata in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 48V 392X 731C Mem:4 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+387H 48V 392X 731C Mem:4 Exits:ESW&gt; c 'h p' semaj<br />
+A gargoyle arrives from the west.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+A gargoyle is standing here.<br />
+A dolphin made of water flaps about here.<br />
+<br />
+387H 47V 392X 731C Mem:4 Exits:ESW&gt; Who should the spell be cast upon?<br />
+<br />
+387H 47V 392X 731C Mem:4 Exits:ESW&gt; <br />
+w<br />
+<br />
+387H 47V 392X 731C Mem:4 Exits:ESW&gt; A gargoyle arrives from the east.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. Asign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+A small cross is lying on the ground here...it glows dimly<br />
+The corpse of Curador is lying here.<br />
+A shield is lying on the ground.<br />
+A short sword lies here.<br />
+A gargoyle is standing here.<br />
+Shlomo, the Hammer is standing here, fighting Mata. (flying)<br />
+Mata the Male Minotaur is sitting here, fighting Takin.<br />
+&lt;LAZY&gt; Takin is sitting here, fighting Mata. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+387H 46V 392X 731C Mem:4 Exits:ESW&gt; c 'h p' mata<br />
+You utter the words, 'hold person'<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Takin stands up.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Shlomo drains Mata extremely hard.<br />
+Shlomo massacres Mata with his drain.<br />
+Mata slashes Takin hard.<br />
+Mata spins the helical blade of the sword of slumber around in front of their opponent.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; order gargoyle kill mata<br />
+c 'h p' mata<br />
+<br />
+Takin utters some strange words.<br />
+Takin heals Takin.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; #10 SECONDS TO TICK<br />
+A gargoyle gives Mata a solid punch in the face.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Shlomo crashes into Mata in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; You can't remember how to cast that spell!<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+A gargoyle massacres Mata with its claw.<br />
+A gargoyle pierces Mata extremely hard.<br />
+Shlomo drains Mata very hard.<br />
+Shlomo drains Mata extremely hard.<br />
+Mata slashes Takin hard.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; cast 'force bolt' mata<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mata.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Takin tells your group '10 SECONDS TO TICK'<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Takin focuses harshly on Mata and utters the words, 'hold person'.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; cast 'force bolt' mata<br />
+<br />
+A gargoyle misses Mata with its claw.<br />
+A gargoyle pierces Mata extremely hard.<br />
+Shlomo drains Mata extremely hard.<br />
+Shlomo drains Mata very hard.<br />
+Mata slashes Takin hard.<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; <br />
+Shlomo crashes into Mata in a thundering collision, knocking him to the ground!<br />
+<br />
+387H 46V 392X 731C Mem:5 Exits:ESW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mata.<br />
+<br />
+387H 46V 392X 731C Mem:6 Exits:ESW&gt; <br />
+Takin focuses harshly on Mata and utters the words, 'hold person'.<br />
+<br />
+387H 46V 392X 731C Mem:6 Exits:ESW&gt; <br />
+A gargoyle spins and tries to kick Mata, but Mata dodges out of the way.<br />
+<br />
+387H 46V 392X 731C Mem:6 Exits:ESW&gt; #TICK<br />
+<br />
+A gargoyle massacres Mata with its claw.<br />
+A gargoyle misses Mata with its pierce.<br />
+Shlomo massacres Mata with his drain.<br />
+Shlomo drains Mata extremely hard.<br />
+Mata slashes Takin very hard.<br />
+You feel less righteous.<br />
+<br />
+391H 53V 392X 731C Mem:5 Exits:ESW&gt; watch shlomo<br />
+You now watch Shlomo.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:V.Bad**] Mem:5 Exits:ESW&gt; cast 'force bolt' mata<br />
+<br />
+Takin focuses harshly on Mata and utters some strange words.<br />
+Mata cries out in pain as Takin grabs him.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:Awful**] Mem:5 Exits:ESW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mata.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:Awful**] Mem:6 Exits:ESW&gt; <br />
+Shlomo crashes into Mata in a thundering collision, knocking him to the ground!<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:Awful**] Mem:6 Exits:ESW&gt; <br />
+<br />
+A gargoyle misses Mata with its claw.<br />
+A gargoyle pierces Mata extremely hard.<br />
+Shlomo massacres Mata with his drain.<br />
+Mata slashes Takin hard.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:Awful**] Mem:6 Exits:ESW&gt; <br />
+A gargoyle delivers a quick snap kick to Mata. Mata staggers and tries to recover.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] [**Mata:Awful**] Mem:6 Exits:ESW&gt; g all corpse<br />
+<br />
+A gargoyle claws Mata extremely hard.<br />
+You receive 0 experience.<br />
+Mata is dead! R.I.P.<br />
+The death cry of Mata echoes from somewhere nearby...<br />
+Takin gets the sword of slumber from the corpse of Mata.<br />
+Takin gets a wrist lantern from the corpse of Mata.<br />
+Takin gets a blood red captain's sash from the corpse of Mata.<br />
+Takin gets a red and green striped minotaur's cloak from the corpse of Mata.<br />
+Takin gets a dark black shield from the corpse of Mata.<br />
+Takin gets a pair of ergothian hunting pants from the corpse of Mata.<br />
+Takin gets a dragonshelm from the corpse of Mata.<br />
+Takin gets a large reinforced double bandolier from the corpse of Mata.<br />
+Takin gets a golden collar from the corpse of Mata.<br />
+Takin gets a small grey ring from the corpse of Mata.<br />
+Takin gets a glowing red ruby from the corpse of Mata.<br />
+Takin gets a large pile of coins from the corpse of Mata.<br />
+Takin gets a bright ball of light from the corpse of Mata.<br />
+Takin gets a crimson dust covered chest from the corpse of Mata.<br />
+Takin gets a glowing scroll of recall from the corpse of Mata.<br />
+Takin gets a large waterskin from the corpse of Mata.<br />
+Takin gets a milky potion of see invisible from the corpse of Mata.<br />
+Takin gets a putrid potion from the corpse of Mata.<br />
+Takin gets a putrid potion from the corpse of Mata.<br />
+Takin gets a roasted turkey leg from the corpse of Mata.<br />
+Takin gets a scroll of recall from the corpse of Mata.<br />
+Takin gets a scroll of g all corpse<br />
+recall from the corpse of Mata.<br />
+Takin gets a scroll of recall from the corpse of Mata.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+391H 53V 392X 731C [**Shlomo:Good**] Mem:6 Exits:ESW&gt; g all corpse
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='209.234.171.41' and logid='2290'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2290">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2290">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="209.234.171.41">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

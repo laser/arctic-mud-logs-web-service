@@ -1,0 +1,987 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1064-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1064'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Turning the Tables</font></b>
+<p>
+POV: 
+Nol<p>
+Log Rating:
+0.7500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some old log with two twists.</i>
+<p>
+<p>
+
+292H 96V 15984751X 4199C Mem:9 Exits:NE&gt; e<br />
+c 'web' modo<br />
+Nearing the High Clerist Tower<br />
+Modo, The Crazy Canuck is resting here. (flying)<br />
+A knight's horse is standing here, carrying a Knight of the Sword.<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+A horse is tethered here.<br />
+<br />
+292H 94V 15984751X 4199C Mem:9 Exits:EW&gt; <br />
+Modo stands up.<br />
+<br />
+292H 94V 15984751X 4199C Mem:9 Exits:EW&gt; You utter the words, 'web'<br />
+You throw webbing all over Modo!<br />
+<br />
+292H 94V 15984751X 4199C Mem:9 Exits:EW&gt; <br />
+Modo tries to move, but he cannot break the webs around himself!<br />
+<br />
+292H 94V 15984751X 4199C Mem:9 Exits:EW&gt; look modo<br />
+c 'hold person' modo<br />
+You see nothing special about him.<br />
+Modo the adult male hylar dwarf is in an excellent condition.<br />
+<br />
+Modo is using:<br />
+&lt;worn on body&gt;             a silver breast plate<br />
+&lt;worn on head&gt;             a firm piece of colorful twine<br />
+&lt;worn on legs&gt;             some black legplates of the Lily<br />
+&lt;worn as shield&gt;           a sapphire shield..it glows dimly<br />
+&lt;used in primary hand&gt;     a crystalline sword<br />
+<br />
+292H 94V 15984751X 4199C Mem:9 Exits:EW&gt; You utter the words, 'hold person'<br />
+<br />
+292H 94V 15984751X 4199C Mem:10 Exits:EW&gt; <br />
+Modo tries to move, but he cannot break the webs around himself!<br />
+<br />
+292H 94V 15984751X 4199C Mem:10 Exits:EW&gt; TICK IN 10 SECONDS.<br />
+c 'hold person' modo<br />
+<br />
+Mlaah tells your group 'TICK IN 10'<br />
+<br />
+292H 94V 15984751X 4199C Mem:10 Exits:EW&gt; You utter the words, 'hold person'<br />
+<br />
+292H 94V 15984751X 4199C Mem:11 Exits:EW&gt; <br />
+Modo tries to move, but he cannot break the webs around himself!<br />
+<br />
+292H 94V 15984751X 4199C Mem:11 Exits:EW&gt; <br />
+Modo tries to move, but he cannot break the webs around himself!<br />
+<br />
+292H 94V 15984751X 4199C Mem:11 Exits:EW&gt; look west<br />
+You see nothing special.<br />
+<br />
+292H 94V 15984751X 4199C Mem:11 Exits:EW&gt; <br />
+Julien shouts 'when trying to kill someone, it might be wise not to aggro them in a room with five something massing guards..just food for thought. stupid fucks'<br />
+<br />
+292H 94V 15984751X 4199C Mem:11 Exits:EW&gt; r<br />
+You rest your tired bones but stay aloft.<br />
+<br />
+292H 94V 15984751X 4199C Mem:4 Exits:EW&gt; <br />
+<br />
+295H 127V 15984751X 4199C Mem:3 Exits:EW&gt; st<br />
+You stand up.<br />
+<br />
+295H 127V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+g crimson.egg chest<br />
+The Crossroads<br />
+A large sign has been hammered into the ground here.<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+A horse is tethered here.<br />
+A horse is tethered here.<br />
+A knight's horse stands here, waiting to charge into battle.<br />
+<br />
+295H 125V 15984751X 4199C Mem:8 Exits:ESW&gt; You get a splotched crimson egg from a small wooden chest.<br />
+<br />
+295H 125V 15984751X 4199C Mem:8 Exits:ESW&gt; w<br />
+Nearing the High Clerist Tower<br />
+Modo, The Crazy Canuck is standing here. (flying)<br />
+. . . is covered in sinewy strands of webbing.<br />
+A knight's horse is standing here, carrying a Knight of the Sword.<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+A horse is tethered here.<br />
+<br />
+295H 123V 15984751X 4199C Mem:8 Exits:EW&gt; look west<br />
+You see nothing special.<br />
+<br />
+295H 123V 15984751X 4199C Mem:8 Exits:EW&gt; w<br />
+w<br />
+Nearing the High Clerist Tower<br />
+<br />
+295H 121V 15984751X 4199C Mem:8 Exits:NE&gt; Alas, you cannot go that way...<br />
+<br />
+295H 121V 15984751X 4199C Mem:8 Exits:NE&gt; n<br />
+n<br />
+Nearing the High Clerist Tower<br />
+<br />
+295H 119V 15984751X 4199C Mem:8 Exits:NS&gt; Nearing the High Clerist Tower<br />
+A medium sized horse is here, awaiting a rider.<br />
+<br />
+295H 117V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+Outside High Clerist Tower<br />
+<br />
+295H 115V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+e<br />
+South Gate<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 113V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+Alas, you cannot go that way...<br />
+<br />
+295H 113V 15984751X 4199C Mem:8 Exits:NS&gt; e<br />
+Outer Courtyard<br />
+<br />
+295H 112V 15984751X 4199C Mem:8 Exits:NES&gt; e<br />
+Outer Courtyard<br />
+<br />
+295H 111V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+n<br />
+Outer Courtyard<br />
+<br />
+295H 110V 15984751X 4199C Mem:8 Exits:NW&gt; Alas, you cannot go that way...<br />
+<br />
+295H 110V 15984751X 4199C Mem:8 Exits:NW&gt; Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A knight of the sword has recently been placed on patrol here.<br />
+<br />
+295H 109V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+n<br />
+Outer Courtyard<br />
+A knight of the sword has recently been placed on patrol here.<br />
+<br />
+295H 108V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 107V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+Outer Courtyard<br />
+<br />
+295H 106V 15984751X 4199C Mem:8 Exits:SW&gt; Alas, you cannot go that way...<br />
+<br />
+295H 106V 15984751X 4199C Mem:8 Exits:SW&gt; w<br />
+w<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 105V 15984751X 4199C Mem:8 Exits:EW&gt; Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 104V 15984751X 4199C Mem:8 Exits:NES&gt; n<br />
+n<br />
+North Gate<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 103V 15984751X 4199C Mem:8 Exits:NS&gt; n<br />
+Outside High Clerist Tower<br />
+<br />
+295H 101V 15984751X 4199C Mem:8 Exits:SW&gt; n<br />
+Alas, you cannot go that way...<br />
+<br />
+295H 101V 15984751X 4199C Mem:8 Exits:SW&gt; Alas, you cannot go that way...<br />
+<br />
+295H 101V 15984751X 4199C Mem:8 Exits:SW&gt; w<br />
+n<br />
+Palanthas Highway<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+<br />
+295H 99V 15984751X 4199C Mem:8 Exits:NE&gt; n<br />
+Palanthas Highway<br />
+<br />
+295H 97V 15984751X 4199C Mem:8 Exits:NSW&gt; Palanthas Highway<br />
+<br />
+295H 95V 15984751X 4199C Mem:8 Exits:NES&gt; s<br />
+s<br />
+Palanthas Highway<br />
+<br />
+295H 93V 15984751X 4199C Mem:8 Exits:NSW&gt; Palanthas Highway<br />
+<br />
+295H 91V 15984751X 4199C Mem:8 Exits:NE&gt; s<br />
+e<br />
+Alas, you cannot go that way...<br />
+<br />
+295H 91V 15984751X 4199C Mem:8 Exits:NE&gt; Outside High Clerist Tower<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+<br />
+295H 89V 15984751X 4199C Mem:8 Exits:SW&gt; e<br />
+Alas, you cannot go that way...<br />
+<br />
+295H 89V 15984751X 4199C Mem:8 Exits:SW&gt; <br />
+Svidinaya flies SOUTH.<br />
+<br />
+295H 89V 15984751X 4199C Mem:8 Exits:SW&gt; <br />
+Scour shouts 'formed group 20ish looking for additional group members, also looking for some decent dkk/+wis equipment, have some cash/trades'<br />
+<br />
+295H 89V 15984751X 4199C Mem:8 Exits:SW&gt; s<br />
+North Gate<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 87V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+e<br />
+e<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 86V 15984751X 4199C Mem:8 Exits:NES&gt; Outer Courtyard<br />
+<br />
+295H 85V 15984751X 4199C Mem:8 Exits:EW&gt; Outer Courtyard<br />
+<br />
+295H 84V 15984751X 4199C Mem:8 Exits:SW&gt; w<br />
+w<br />
+Outer Courtyard<br />
+<br />
+295H 83V 15984751X 4199C Mem:8 Exits:EW&gt; l svidinaya<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 82V 15984751X 4199C Mem:8 Exits:NES&gt; You do not see that here.<br />
+<br />
+295H 82V 15984751X 4199C Mem:8 Exits:NES&gt; <br />
+Svidinaya flies in from the south.<br />
+<br />
+295H 82V 15984751X 4199C Mem:8 Exits:NES&gt; s<br />
+n<br />
+Northern Portcullis<br />
+A longsword has been left here.<br />
+A knight templar stands here guarding the gate.<br />
+A knight templar stands here guarding the gate.<br />
+<br />
+295H 81V 15984751X 4199C Mem:8 Exits:NE(S)W&gt; l svidinaya<br />
+Outer Courtyard<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 80V 15984751X 4199C Mem:8 Exits:NES&gt; You see nothing special about her.<br />
+Svidinaya the elder female wild elf is in an excellent condition.<br />
+<br />
+Svidinaya is using:<br />
+&lt;worn on body&gt;             a suit of studded leather armor<br />
+&lt;worn about body&gt;          a blue cotton robe<br />
+&lt;used in both hands&gt;       a two-handed sword<br />
+<br />
+295H 80V 15984751X 4199C Mem:8 Exits:NES&gt; <br />
+Svidinaya flies EAST.<br />
+<br />
+295H 80V 15984751X 4199C Mem:8 Exits:NES&gt; e<br />
+<br />
+Svidinaya flies in from the east.<br />
+<br />
+295H 80V 15984751X 4199C Mem:8 Exits:NES&gt; Outer Courtyard<br />
+<br />
+295H 79V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+Outer Courtyard<br />
+<br />
+295H 78V 15984751X 4199C Mem:8 Exits:SW&gt; w<br />
+w<br />
+Outer Courtyard<br />
+<br />
+295H 77V 15984751X 4199C Mem:8 Exits:EW&gt; <br />
+Svidinaya flies in from the west.<br />
+<br />
+295H 77V 15984751X 4199C Mem:8 Exits:EW&gt; Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 76V 15984751X 4199C Mem:8 Exits:NES&gt; e<br />
+Outer Courtyard<br />
+<br />
+295H 75V 15984751X 4199C Mem:8 Exits:EW&gt; <br />
+Svidinaya flies in from the east.<br />
+<br />
+295H 75V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+<br />
+Svidinaya flies WEST.<br />
+<br />
+295H 75V 15984751X 4199C Mem:8 Exits:EW&gt; Outer Courtyard<br />
+<br />
+295H 74V 15984751X 4199C Mem:8 Exits:SW&gt; w<br />
+Outer Courtyard<br />
+<br />
+295H 73V 15984751X 4199C Mem:8 Exits:EW&gt; w<br />
+Outer Courtyard<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 72V 15984751X 4199C Mem:8 Exits:NES&gt; <br />
+Svidinaya looks at you.<br />
+<br />
+295H 72V 15984751X 4199C Mem:8 Exits:NES&gt; <br />
+Svidinaya flies EAST.<br />
+<br />
+295H 72V 15984751X 4199C Mem:8 Exits:NES&gt; e<br />
+Outer Courtyard<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+<br />
+295H 71V 15984751X 4199C Mem:8 Exits:EW&gt; <br />
+Svidinaya looks at you.<br />
+<br />
+295H 71V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+<br />
+Svidinaya flies EAST.<br />
+<br />
+295H 71V 15984751X 4199C Mem:8 Exits:EW&gt; w<br />
+Outer Courtyard<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+<br />
+295H 70V 15984751X 4199C Mem:8 Exits:SW&gt; Outer Courtyard<br />
+<br />
+295H 69V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+Outer Courtyard<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+<br />
+295H 68V 15984751X 4199C Mem:8 Exits:SW&gt; <br />
+Svidinaya flies SOUTH.<br />
+<br />
+295H 68V 15984751X 4199C Mem:8 Exits:SW&gt; s<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 67V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+Outer Courtyard<br />
+A knight of the sword has recently been placed on patrol here.<br />
+<br />
+295H 66V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+s<br />
+Outer Courtyard<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+A knight of the sword has recently been placed on patrol here.<br />
+<br />
+295H 65V 15984751X 4199C Mem:8 Exits:NS&gt; Outer Courtyard<br />
+<br />
+295H 64V 15984751X 4199C Mem:8 Exits:NW&gt; w<br />
+Outer Courtyard<br />
+<br />
+295H 63V 15984751X 4199C Mem:8 Exits:EW&gt; w<br />
+s<br />
+Outer Courtyard<br />
+<br />
+295H 62V 15984751X 4199C Mem:8 Exits:NES&gt; South Gate<br />
+A Solamnic Knight of the Crown is here, patrolling the tower courtyard.<br />
+<br />
+295H 61V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+s<br />
+Outside High Clerist Tower<br />
+<br />
+295H 59V 15984751X 4199C Mem:8 Exits:NS&gt; Nearing the High Clerist Tower<br />
+A medium sized horse is here, awaiting a rider.<br />
+<br />
+295H 57V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+e<br />
+Nearing the High Clerist Tower<br />
+<br />
+295H 55V 15984751X 4199C Mem:8 Exits:NS&gt; Alas, you cannot go that way...<br />
+<br />
+295H 55V 15984751X 4199C Mem:8 Exits:NS&gt; s<br />
+e<br />
+Nearing the High Clerist Tower<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+<br />
+295H 53V 15984751X 4199C Mem:8 Exits:NE&gt; Nearing the High Clerist Tower<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+Modo, The Crazy Canuck is standing here. (flying)<br />
+. . . is covered in sinewy strands of webbing.<br />
+A knight's horse is standing here, carrying a Knight of the Sword.<br />
+A horse is tethered here.<br />
+<br />
+295H 51V 15984751X 4199C Mem:8 Exits:EW&gt; e<br />
+w<br />
+The Crossroads<br />
+A large sign has been hammered into the ground here.<br />
+Helion the Hero is standing here. (flying)<br />
+A poor refugee stands here, tired from his long days on the road.<br />
+A horse is tethered here.<br />
+A horse is tethered here.<br />
+A knight's horse stands here, waiting to charge into battle.<br />
+<br />
+295H 49V 15984751X 4199C Mem:8 Exits:ESW&gt; Nearing the High Clerist Tower<br />
+A solemn knight of the sword patrols the area for draconians.<br />
+Modo, The Crazy Canuck is standing here. (flying)<br />
+. . . is covered in sinewy strands of webbing.<br />
+A knight's horse is standing here, carrying a Knight of the Sword.<br />
+A horse is tethered here.<br />
+<br />
+295H 47V 15984751X 4199C Mem:8 Exits:EW&gt; <br />
+Modo tries to move, but he cannot break the webs around himself!<br />
+<br />
+295H 47V 15984751X 4199C Mem:8 Exits:EW&gt; TICK IN 10 SECONDS.<br />
+e<br />
+The Crossroads<br />
+A large sign has been hammered into the ground here.<br />
+A poor refugee stands here, tired from his long days on the road.<br />
+A horse is tethered here.<br />
+A horse is tethered here.<br />
+A knight's horse stands here, waiting to charge into battle.<br />
+<br />
+295H 45V 15984751X 4199C Mem:8 Exits:ESW&gt; e<br />
+scan<br />
+<br />
+Mlaah tells your group 'TICK IN 10'<br />
+<br />
+295H 45V 15984751X 4199C Mem:8 Exits:ESW&gt; A Highway Through the Plains<br />
+A horse is tethered here.<br />
+<br />
+295H 43V 15984751X 4199C Mem:8 Exits:EW&gt; Looking NORTH:<br />
+You see nothing special.<br />
+Looking EAST:<br />
+You see nothing special.<br />
+Looking SOUTH:<br />
+You see nothing special.<br />
+Looking WEST:<br />
+You see nothing special.<br />
+Helion the Hero is standing here. (flying)<br />
+A poor refugee stands here, tired from his long days on the road.<br />
+A horse is tethered here.<br />
+A horse is tethered here.<br />
+A knight's horse stands here, waiting to charge into battle.<br />
+Looking UP:<br />
+You see nothing special.<br />
+Looking DOWN:<br />
+You see nothing special.<br />
+<br />
+295H 43V 15984751X 4199C Mem:8 Exits:EW&gt; w<br />
+c 'hold person' helion<br />
+The Crossroads<br />
+A large sign has been hammered into the ground here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Chupubucabra the Male Half Elf is standing here. (flying)<br />
+. . . is in continual light.<br />
+Svidinaya the Female Wild Elf is standing here. (flying)<br />
+Helion the Hero is standing here. (flying)<br />
+A poor refugee stands here, tired from his long days on the road.<br />
+A horse is tethered here.<br />
+A horse is tethered here.<br />
+A knight's horse stands here, waiting to charge into battle.<br />
+<br />
+295H 41V 15984751X 4199C Mem:8 Exits:ESW&gt; You can't remember how to cast that spell!<br />
+<br />
+295H 41V 15984751X 4199C Mem:8 Exits:ESW&gt; <br />
+Helion flies WEST.<br />
+<br />
+295H 41V 15984751X 4199C Mem:8 Exits:ESW&gt; <br />
+Svidinaya tries to charge into you, but she passes through your image and falls to the ground.<br />
+<br />
+295H 41V 15984751X 4199C [Nol:Perfect] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+Helion flies in from the west.<br />
+<br />
+295H 41V 15984751X 4199C [Nol:Perfect] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+You're BASHED by Helion!<br />
+<br />
+288H 41V 15984751X 4199C [Nol:V.Good] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+Helion misses you and destroys an image.<br />
+Svidinaya misses you with her slash.<br />
+You miss Svidinaya with your hit.<br />
+<br />
+288H 41V 15984751X 4199C [Nol:V.Good] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+Chupubucabra issues the order 'kill nol'.<br />
+A beast of the creation claws YOU extremely hard.<br />
+A beast of the creation burns as he passes through your fire shield.<br />
+You feel ribs crack as you are kicked in the chest by a beast of the creation.<br />
+<br />
+262H 41V 15984355X 4199C [Nol:Good] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; recite plain.recall<br />
+<br />
+Chupubucabra focuses harshly on you and utters the words, 'force bolt'.<br />
+You feel ribs shatter as Chupubucabra's force bolt slams into you.<br />
+That Really did HURT!<br />
+<br />
+197H 41V 15984355X 4199C [Nol:Fair] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+A knight's horse arrives from the west, carrying a Knight of the Sword.<br />
+<br />
+197H 41V 15984355X 4199C [Nol:Fair] [Svidinaya:Perfect] Mem:8 Exits:ESW&gt; <br />
+A beast of the creation claws YOU very hard.<br />
+A beast of the creation burns as he passes through your fire shield.<br />
+A beast of the creation misses you and destroys an image.<br />
+A beast of the creation massacres YOU with his claw.<br />
+A beast of the creation burns as he passes through your fire shield.<br />
+A beast of the creation pierces YOU.<br />
+A beast of the creation burns as he passes through your fire shield.<br />
+Helion misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Svidinaya slashes YOU hard.<br />
+Svidinaya burns as she passes through your fire shield.<br />
+You miss Svidinaya with your hit.<br />
+<br />
+167H 71V 15983384X 4199C [Nol:Fair] [Svidinaya:V.Good] Mem:8 Exits:ESW&gt; <br />
+Chupubucabra focuses harshly on you and utters the words, 'force bolt'.<br />
+You feel ribs shatter as Chupubucabra's force bolt slams into you.<br />
+<br />
+126H 71V 15983384X 4199C [Nol:Bad] [Svidinaya:V.Good] Mem:8 Exits:ESW&gt; You stop using a shimmering alexandrite.<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Outside of Caergoth<br />
+An elderly farmer stands here, trying to sell you some fresh vegetables.<br />
+A scary figure made of straw and clothed in rags dances in the wind here.<br />
+<br />
+126H 71V 15983384X 4199C Mem:8 Exits:N&gt; st<br />
+<br />
+Chupubucabra appears before you in a puff of smoke.<br />
+<br />
+126H 71V 15983384X 4199C Mem:8 Exits:N&gt; <br />
+Chupubucabra focuses harshly on you and utters the words, 'force bolt'.<br />
+You feel ribs shatter as Chupubucabra's force bolt slams into you.<br />
+<br />
+89H 71V 15983384X 4199C [Nol:V.Bad] [Chupubucabra:Perfect] Mem:8 Exits:N&gt; You stand up.<br />
+<br />
+89H 71V 15983384X 4199C [Nol:V.Bad] [Chupubucabra:Perfect] Mem:8 Exits:N&gt; break egg<br />
+order beast bash chupubucabra<br />
+A beast of the creation starts following you.<br />
+You crack the egg.<br />
+A strange beast of the creation climbs out from the egg and grows at an<br />
+alarming rate of speed, soon it is taller than you are.<br />
+<br />
+89H 71V 15983384X 4199C  Chupubucabra:Perfect Mem:8 Exits:N&gt; A beast of the creation BASHES +++Chupubucabra+++<br />
+<br />
+89H 71V 15983384X 4199C [Nol:V.Bad] [Chupubucabra:V.Good] Mem:8 Exits:N&gt; g potion chest<br />
+You get a vial of sparkling pink liquid from a small wooden chest.<br />
+<br />
+89H 71V 15983384X 4199C [Nol:V.Bad] [Chupubucabra:V.Good] Mem:8 Exits:N&gt; <br />
+A beast of the creation massacres Chupubucabra with his claw.<br />
+Chupubucabra misses you with his bludgeon.<br />
+You bruise Chupubucabra with your hit.<br />
+<br />
+89H 71V 15983384X 4199C [Nol:V.Bad] [Chupubucabra:Good] Mem:8 Exits:N&gt; qua potion<br />
+c 'force bolt'<br />
+You quaff a vial of sparkling pink liquid, the bubbles tickle your palate.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+282H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Good] Mem:8 Exits:N&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Chupubucabra.<br />
+<br />
+282H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Fair] Mem:9 Exits:N&gt; c 'force bolt'<br />
+<br />
+A beast of the creation massacres Chupubucabra with his claw.<br />
+Chupubucabra misses you with his bludgeon.<br />
+<br />
+282H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Fair] Mem:9 Exits:N&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Chupubucabra.<br />
+<br />
+282H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:V.Bad] Mem:11 Exits:N&gt; order all.beast.creation bash<br />
+c 'force bolt'<br />
+<br />
+You feel yourself exposed.<br />
+A beast of the creation massacres Chupubucabra with his claw.<br />
+Chupubucabra bludgeons YOU hard.<br />
+Chupubucabra burns as he passes through your fire shield.<br />
+<br />
+272H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Awful] Mem:11 Exits:N&gt; <br />
+Chupubucabra stands up.<br />
+<br />
+272H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Awful] Mem:11 Exits:N&gt; <br />
+Chupubucabra slowly quaffs a potion of golden sap, getting every drop.<br />
+Chupubucabra begins to become blurry and hard to see.<br />
+<br />
+272H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Bad] Mem:11 Exits:N&gt; Chupubucabra steps aside as a beast of the creation attempts a bash, stumbles, and falls flat on his face.<br />
+You issue the order 'bash'.<br />
+<br />
+272H 71V 15983384X 4199C [Nol:V.Good] [Chupubucabra:Bad] Mem:11 Exits:N&gt; Chupubucabra utters the words, 'relocate'.<br />
+Chupubucabra disappears in a puff of smoke.<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1064'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1064">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1064">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

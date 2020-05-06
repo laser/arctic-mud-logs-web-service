@@ -1,0 +1,769 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1703-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1703'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Zippy rip</font></b>
+<p>
+POV: 
+Grishnakh<p>
+Log Rating:
+0.4000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+another kylarfollower</i>
+<p>
+<p>
+
+601H 101V 2292621X 0C Exits:NESW&gt; <br />
+Tuco flies north.<br />
+You follow Tuco north.<br />
+A Path Through the Camp<br />
+Genja, RGB Crash Bum Bang Beauty is standing here. (flying)<br />
+Cromat the Male Hylar Dwarf is standing here. (flying)<br />
+Clamp the Male Hill Dwarf is standing here. (flying) (invisible)<br />
+Tuco the Male Human is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Zippy the Male Minotaur is standing here, fighting a Knight of the Sword. (flying)<br />
+bash ZippyWeedy, The Choice of Perfection is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Seuss is standing here, fighting a Knight of the Sword. (flying)<br />
+A Knight of the Sword is standing here, fighting Seuss.<br />
+A Solamnic guard slashes Genja hard.<br />
+A Solamnic guard slashes Genja hard.<br />
+A Solamnic guard slashes YOU extremely hard.<br />
+A Knight of the Sword utters some strange words.<br />
+A Knight of the Sword is surrounded by a white aura.<br />
+<br />
+586H 99V 2292621X 0C [Grishnakh:V.Good] [a Solamnic guard:Perfect] Exits:NESW&gt; You crash into Zippy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+586H 99V 2292621X 0C [Grishnakh:V.Good] [a Solamnic guard:Perfect] Exits:NESW&gt; <br />
+Genja crashes into Seuss in a thundering collision, knocking him to the ground!<br />
+<br />
+586H 99V 2292621X 0C [Grishnakh:V.Good] [a Solamnic guard:Perfect] Exits:NESW&gt; <br />
+Tuco utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+Zippy is shredded by shards of ice.<br />
+Weedy is shredded by shards of ice.<br />
+Seuss is shredded by shards of ice.<br />
+A Knight of the Sword is shredded by shards of ice.<br />
+A Knight of the Sword is mortally wounded, and will die soon, if not aided.<br />
+<br />
+586H 99V 2292621X 0C [Grishnakh:V.Good] [a Solamnic guard:Good] Exits:NESW&gt; <br />
+Cromat turns Weedy's head to the side and sink his fangs into her neck.<br />
+<br />
+586H 99V 2292621X 0C [Grishnakh:V.Good] [a Solamnic guard:Good] Exits:NESW&gt; <br />
+Weedy smites Tuco extremely hard.<br />
+Weedy is burned, as she swings at Tuco.<br />
+Weedy is chilled, as she swings at Tuco.<br />
+Tuco bludgeons a Solamnic guard hard.<br />
+A Solamnic guard misses you with his slash.<br />
+You crush a Solamnic guard extremely hard.<br />
+A Solamnic guard misses Genja with his slash.<br />
+A Solamnic guard slashes Genja hard.<br />
+Genja massacres a Solamnic guard with her slash.<br />
+Zippy obliterates a Knight of the Sword with his cleave.<br />
+You receive 5465 experience.<br />
+A Knight of the Sword is dead! R.I.P.<br />
+get all.pile corpseexa corpseThe death cry of a Knight of the Sword echoes from somewhere nearby...<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Fair] Exits:NESW&gt; <br />
+Clamp focuses harshly on Seuss and utters some strange words.<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Fair] Exits:NESW&gt; <br />
+Seuss stands up.<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Fair] Exits:NESW&gt; <br />
+Cromat massacres a Solamnic guard with his crush.<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Fair] Exits:NESW&gt; <br />
+Seuss says 'eh?'<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Fair] Exits:NESW&gt; <br />
+Tuco utters some strange words.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+Zippy ducks out of the way of Tuco's attack.<br />
+Weedy is shredded by shards of ice.<br />
+Seuss is shredded by shards of ice.<br />
+<br />
+586H 99V 2286892X 0C [Grishnakh:V.Good] [a Solamnic guard:Bad] Exits:NESW&gt; bash Zippy<br />
+Seuss massacres Tuco with his crush.<br />
+Seuss is burned, as he swings at Tuco.<br />
+Seuss is chilled, as he swings at Tuco.<br />
+Cromat crushes a Solamnic guard extremely hard.<br />
+You receive 10421 experience.<br />
+A Solamnic guard is dead! R.I.P.<br />
+get all.pile corpseexa corpseWeedy smites Tuco very hard.<br />
+Weedy is burned, as she swings at Tuco.<br />
+Weedy is chilled, as she swings at Tuco.<br />
+A Solamnic guard misses you with his slash.<br />
+You crush a Solamnic guard extremely hard.<br />
+A Solamnic guard slashes Genja very hard.<br />
+The death cry of a Solamnic guard echoes from somewhere nearby...<br />
+<br />
+586H 99V 2276174X 0C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; You get a pile of coins from the corpse of a Solamnic guard.<br />
+There were 27 coins.<br />
+split 27<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; A Solamnic guard utters some strange words.<br />
+A brilliant aura surrounds a Solamnic guard.<br />
+You crash into Zippy in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+A Solamnic guard utters some strange words.<br />
+A brilliant aura surrounds a Solamnic guard.<br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Weedy utters some strange words.<br />
+Weedy heals Weedy.<br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Clamp focuses harshly on Seuss and utters some strange words.<br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Genja crashes into Seuss in a thundering collision, knocking him to the ground!<br />
+<br />
+586H 99V 2276174X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Zippy massacres YOU with his cleave.<br />
+Zippy cleaves YOU extremely hard.<br />
+Tuco bludgeons Weedy.<br />
+Genja slashes a Solamnic guard extremely hard.<br />
+A Solamnic guard is stunned, but will likely regain consciousness again.<br />
+Seuss massacres Tuco with his crush.<br />
+Seuss is burned, as he swings at Tuco.<br />
+Seuss is chilled, as he swings at Tuco.<br />
+A Solamnic guard misses you with his slash.<br />
+You massacre a Solamnic guard with your crush.<br />
+Tuco looks really sick, and shivers uncomfortably.<br />
+A Solamnic guard lays his hands on a Solamnic guard and utters a prayer.<br />
+A Solamnic guard misses Genja with his slash.<br />
+<br />
+558H 129V 2275828X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Cromat crashes into Weedy in a thundering collision, knocking her to the ground!<br />
+<br />
+558H 129V 2275828X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Tuco focuses harshly on Zippy and utters some strange words.<br />
+<br />
+558H 129V 2275828X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Clamp focuses harshly on Seuss and utters some strange words.<br />
+Seuss suddenly becomes very quiet.<br />
+<br />
+558H 129V 2275828X 27C [Grishnakh:V.Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+A Solamnic guard utters some strange words.<br />
+A Solamnic guard is surrounded by a white aura.<br />
+Cromat massacres Weedy with his crush.<br />
+A Solamnic guard misses Genja with his slash.<br />
+Zippy massacres YOU with his cleave.<br />
+Zippy cleaves YOU extremely hard.<br />
+Genja slashes a Solamnic guard extremely hard.<br />
+Seuss crushes Tuco extremely hard.<br />
+Seuss is burned, as he swings at Tuco.<br />
+Seuss is chilled, as he swings at Tuco.<br />
+Weedy smites Tuco extremely hard.<br />
+Weedy is burned, as she swings at Tuco.<br />
+Weedy is chilled, as she swings at Tuco.<br />
+A Solamnic guard misses you with his slash.<br />
+You massacre a Solamnic guard with your crush.<br />
+<br />
+515H 129V 2275482X 27C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; bash Zippy<br />
+Tuco gets a potion from his backpack.<br />
+<br />
+515H 129V 2275482X 27C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; Tuco quaffs a blue potion.<br />
+Tuco smiles as the healing hand of Mishakal is placed upon him.<br />
+Tuco heals Tuco.<br />
+Tuco looks better.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+515H 129V 2275482X 27C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+515H 129V 2275482X 27C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; You can't split 27 evenly among the people in the room; splitting 25 instead.<br />
+You divide 25 coins equally among the group members present.<br />
+<br />
+515H 129V 2275482X 7C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; You try to bash Zippy, but you miss and tumble forward onto your face.<br />
+<br />
+515H 129V 2275482X 7C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Clamp focuses on Tuco and utters some strange words.<br />
+Clamp heals Tuco.<br />
+Zippy stops using a gleaming pickaxe.<br />
+Zippy grabs a scroll of recall.<br />
+Zippy recites a scroll of recall.<br />
+Seuss disappears.<br />
+<br />
+515H 129V 2275482X 7C [Grishnakh:Good] [a Solamnic guard:V.Bad] Exits:NESW&gt; <br />
+Cromat massacres Weedy with his crush.<br />
+A Solamnic guard misses Genja with his slash.<br />
+Zippy misses you with his cleave.<br />
+Tuco bludgeons Weedy extremely hard.<br />
+A Solamnic guard gracefully steps aside as Genja attacks!<br />
+Weedy smites Tuco extremely hard.<br />
+Weedy is burned, as she swings at Tuco.<br />
+Weedy is chilled, as she swings at Tuco.<br />
+A Solamnic guard slashes YOU very hard.<br />
+You massacre a Solamnic guard with your crush.<br />
+<br />
+502H 129V 2275136X 7C [Grishnakh:Good] [a Solamnic guard:Awful] Exits:NESW&gt; <br />
+Weedy steps aside as Cromat attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+502H 129V 2275136X 7C [Grishnakh:Good] [a Solamnic guard:Awful] Exits:NESW&gt; <br />
+Tuco utters some strange words.<br />
+A Solamnic guard is shredded by shards of ice.<br />
+A Solamnic guard is torn to pieces by hundreds of shards of ice.<br />
+You receive 8684 experience.<br />
+A Solamnic guard is dead! R.I.P.<br />
+get all.pile corpseexa corpseZippy is shredded by shards of ice.<br />
+Weedy is shredded by shards of ice.<br />
+<br />
+502H 129V 2266452X 7C [a Solamnic guard:Dying] Exits:NESW&gt; <br />
+The death cry of a Solamnic guard echoes from somewhere nearby...<br />
+You direct your attention to Zippy.<br />
+<br />
+502H 129V 2266452X 7C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+Genja gets a pile of coins from the corpse of a Solamnic guard.<br />
+<br />
+502H 129V 2266452X 7C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+A Solamnic guard utters some strange words.<br />
+A Solamnic guard is surrounded by a white aura.<br />
+<br />
+502H 129V 2266452X 7C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+Weedy gets a scroll from her chest.<br />
+<br />
+502H 129V 2266452X 7C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+Genja divides 30 coins equally among the group members present.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+Weedy stops using a globe of radiance.<br />
+Weedy grabs a glowing scroll of recall.<br />
+Weedy recites a glowing scroll of recall.<br />
+Weedy disappears.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+Clamp tells your group '--&gt;&gt;2 heal(s) left &lt;&lt;--'<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Good] Exits:NESW&gt; <br />
+You massacre Zippy with your crush.<br />
+A Solamnic guard misses Genja with his slash.<br />
+Zippy misses you with his cleave.<br />
+Genja massacres a Solamnic guard with her slash.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; stThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; <br />
+Tuco focuses harshly on Zippy and utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+Huge flames burn Zippy from above.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; You stand up.<br />
+Zippy stands up.<br />
+<br />
+502H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; <br />
+You crush Zippy extremely hard.<br />
+A Solamnic guard misses Genja with his slash.<br />
+Zippy cleaves YOU extremely hard.<br />
+Genja massacres a Solamnic guard with her slash.<br />
+Zippy grabs a scroll of recall.<br />
+<br />
+482H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Fair] Exits:NESW&gt; <br />
+Genja crashes into Zippy in a thundering collision, knocking him to the ground!<br />
+<br />
+482H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Bad] Exits:NESW&gt; <br />
+Cromat stands up.<br />
+<br />
+482H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Bad] Exits:NESW&gt; <br />
+Zippy steps aside as Cromat attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+482H 129V 2266452X 13C [Grishnakh:Good] [Zippy:Bad] Exits:NESW&gt; bas zippy<br />
+Cromat massacres Zippy with his crush.<br />
+You crush Zippy extremely hard.<br />
+Genja gracefully steps aside as a Solamnic guard attacks!<br />
+Zippy massacres YOU with his cleave.<br />
+Genja slashes a Solamnic guard extremely hard.<br />
+<br />
+457H 129V 2266452X 13C [Grishnakh:Fair] [Zippy:V.Bad] Exits:NESW&gt; <br />
+Tuco focuses harshly on Zippy and utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+Huge flames burn Zippy from above.<br />
+<br />
+457H 129V 2266452X 13C [Grishnakh:Fair] [Zippy:V.Bad] Exits:NESW&gt; You try to bash Zippy, but you miss and tumble forward onto your face.<br />
+<br />
+457H 129V 2266452X 13C [Grishnakh:Fair] [Zippy:V.Bad] Exits:NESW&gt; <br />
+Clamp focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+608H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:V.Bad] Exits:NESW&gt; st<br />
+Cromat massacres Zippy with his crush.<br />
+You miss Zippy with your crush.<br />
+A Solamnic guard slashes Genja very hard.<br />
+Zippy massacres YOU with his cleave.<br />
+Genja slashes a Solamnic guard extremely hard.<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; <br />
+Zippy steps aside as Genja attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; <br />
+Tuco focuses harshly on Zippy and utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+Huge flames burn Zippy from above.<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; bas zippy<br />
+Clamp tells your group '--&gt;&gt;1 heal(s) left &lt;&lt;--'<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; <br />
+Cromat stands up.<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; <br />
+Zippy steps aside as Cromat attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+581H 129V 2266452X 13C [Grishnakh:V.Good] [Zippy:Awful] Exits:NESW&gt; <br />
+Cromat massacres Zippy with his crush.<br />
+Zippy is incapacitated and will slowly die, if not aided.<br />
+You annihilate Zippy with your crush.<br />
+You receive 0 experience.<br />
+Zippy is dead! R.I.P.<br />
+get all.pile corpseexa corpseA Solamnic guard misses Genja with his slash.<br />
+Genja massacres a Solamnic guard with her slash.<br />
+The death cry of Zippy echoes from somewhere nearby...<br />
+Zippy sinks gently to the ground.<br />
+<br />
+581H 129V 2266452X 13C Exits:NESW&gt; You stand up.<br />
+<br />
+581H 129V 2266452X 13C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+581H 129V 2266452X 13C Exits:NESW&gt; You get a large pile of coins from the corpse of Zippy.<br />
+There were 622 coins.<br />
+split 622<br />
+581H 129V 2266452X 635C Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a scroll of recall..it glows blue<br />
+a black adamantite bardiche..it glows blue<br />
+a granite bracer [2]<br />
+a black silk sash..it glows blue<br />
+a woodsman's cloak..it glows blue<br />
+a green leather quiver<br />
+some red dragon scale sleeves..it glows blue<br />
+a pair of spiked demi-gauntlets..it glows blue<br />
+a pair of lion skin boots<br />
+a helmet of ergothian battle armor..it glows blue<br />
+a polished plate of mithril..it glows dimly<br />
+a warlock's cloak<br />
+a crimson pendant..it glows blue..it hums softly<br />
+a malachite ring..it glows blue<br />
+a silver and gold banded ring..it glows blue<br />
+a gleaming pickaxe..it glows dimly<br />
+a silver-tinged blade..it glows blue..it glows dimly<br />
+a small wooden chest<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1703'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1703">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1703">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

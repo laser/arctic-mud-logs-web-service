@@ -1,0 +1,767 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1570-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1570'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Jerks die</font></b>
+<p>
+POV: 
+Aeglus<p>
+Log Rating:
+1.7143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+sotil and korpildksail are naked wtf</i>
+<p>
+<p>
+
+588H 149V 1X 742C Exits:NSW&gt; <br />
+Tremor flies in from the west.<br />
+<br />
+588H 149V 1X 742C Exits:NSW&gt; <br />
+Watunk crashes into Tremor in a thundering collision, knocking him to the ground!<br />
+<br />
+588H 149V 1X 742C Exits:NSW&gt; bash korpiklaniYou couldn't find what you were looking for.<br />
+<br />
+588H 149V 1X 742C Exits:NSW&gt; <br />
+Watunk massacres Tremor with his cleave.<br />
+Tremor misses Watunk with his smite.<br />
+<br />
+588H 149V 1X 742C Exits:NSW&gt; bas tremorYou try to bash Tremor, but you miss and tumble forward onto your face.<br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:V.Good] Exits:NSW&gt; st<br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:V.Good] Exits:NSW&gt; <br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:V.Good] Exits:NSW&gt; <br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:V.Good] Exits:NSW&gt; <br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:V.Good] Exits:NSW&gt;<br />
+You massacre Tremor with your cleave.<br />
+Watunk massacres Tremor with his cleave.<br />
+Tremor misses Watunk with his smite.<br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:Good] Exits:NSW&gt; <br />
+Watunk gives a white wolf an order.<br />
+A white wolf misses Tremor with his claw.<br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:Good] Exits:NSW&gt; <br />
+Tremor gets a scroll from his chest.<br />
+<br />
+588H 149V 1X 742C [Watunk:Perfect] [Tremor:Good] Exits:NSW&gt; <br />
+Tremor stops using a large first-aid kit.<br />
+Tremor grabs a glowing scroll of recall.<br />
+Tremor recites a glowing scroll of recall.<br />
+Tremor disappears.<br />
+<br />
+*****************************<br />
+<br />
+588H 159V 1X 742C Exits:NSW&gt; <br />
+Watunk crashes into Korpiklani in a thundering collision, knocking her to the ground!<br />
+<br />
+588H 159V 1X 742C Exits:NSW&gt; bash korpiklaniYou try to bash Korpiklani, but you miss and tumble forward onto your face.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Good] Exits:NSW&gt; st<br />
+Tark shouts 'any groups looking for a mage'<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Good] Exits:NSW&gt; <br />
+You massacre Korpiklani with your cleave.<br />
+Watunk massacres Korpiklani with his cleave.<br />
+Korpiklani misses Watunk with her hit.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:Fair] Exits:NSW&gt; bash korpiklani<br />
+You annihilate Korpiklani with your cleave.<br />
+Watunk massacres Korpiklani with his cleave.<br />
+Korpiklani misses Watunk with her hit.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:Bad] Exits:NSW&gt; <br />
+Watunk gives a white wolf an order.<br />
+A white wolf claws Korpiklani hard.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Bad] Exits:NSW&gt; <br />
+Korpiklani says 'wtf'<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Bad] Exits:NSW&gt; You stand up.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Bad] Exits:NSW&gt; You crash into Korpiklani in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+588H 159V 1X 742C [Watunk:Perfect] [Korpiklani:V.Bad] Exits:NSW&gt; <br />
+A white wolf claws Korpiklani very hard.<br />
+You annihilate Korpiklani with your cleave.<br />
+Watunk massacres Korpiklani with his cleave.<br />
+You receive 0 experience.<br />
+Korpiklani is dead! R.I.P.<br />
+The death cry of Korpiklani echoes from somewhere nearby...<br />
+<br />
+588H 159V 1X 742C Exits:NSW&gt; <br />
+Watunk gets a pile of coins from the corpse of Korpiklani.<br />
+<br />
+588H 159V 1X 742C Exits:NSW&gt; <br />
+Watunk divides 44 coins equally among the group members present.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; exa corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; rollYou roll your eyes.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; <br />
+Korpiklani arrives from the south.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; l<br />
+Watunk crashes into Korpiklani in a devastating bash, killing her mercilessly.<br />
+You receive 0 experience.<br />
+Korpiklani is dead! R.I.P.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; The death cry of Korpiklani echoes from somewhere nearby...<br />
+Path of the Holy<br />
+     This is a small north-south path that takes you to the temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The entrance to the temple is just to the west,<br />
+while to the north, you see the entrance to a quiet and peaceful park. You<br />
+can also go a bit south, and reach the busy market street.<br />
+The corpse of Korpiklani is lying here. [2]<br />
+An elegant wolf, its fur a snow white, roams here. (white aura)<br />
+Watunk Atunka, Confederate Militia is standing here. (flying) (white aura)<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; bash korpiklani<br />
+A street cleaner arrives from the north.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+588H 159V 1X 764C Exits:NSW&gt; bash korpiklaniYou couldn't find what you were looking for.<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; lPath of the Holy<br />
+     This is a small north-south path that takes you to the temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The entrance to the temple is just to the west,<br />
+while to the north, you see the entrance to a quiet and peaceful park. You<br />
+can also go a bit south, and reach the busy market street.<br />
+The corpse of Korpiklani is lying here. [2]<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+An elegant wolf, its fur a snow white, roams here. (white aura)<br />
+Watunk Atunka, Confederate Militia is standing here. (flying) (white aura)<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; l wYou see nothing special.<br />
+A cityguard of Kalaman looks about for signs of trouble. (white aura)<br />
+A little girl is playing around in the street.<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; <br />
+Korpiklani yells 'what the hell?'<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; <br />
+Korpiklani arrives from the south.<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; yell what the hellYou yell 'what the hell'<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; bash korpiklaniKorpiklani doesn't recover as you deliver the bash -- she is dead.<br />
+You receive 0 experience.<br />
+Korpiklani is dead! R.I.P.<br />
+<br />
+588H 161V 1X 764C [Korpiklani:Dying] Exits:NSW&gt; <br />
+The death cry of Korpiklani echoes from somewhere nearby...<br />
+<br />
+588H 161V 1X 764C Exits:NSW&gt; lPath of the Holy<br />
+     This is a small north-south path that takes you to the temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The entrance to the temple is just to the west,<br />
+while to the north, you see the entrance to a quiet and peaceful park. You<br />
+can also go a bit south, and reach the busy market street.<br />
+The corpse of Korpiklani is lying here. [3]<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+An elegant wolf, its fur a snow white, roams here. (white aura)<br />
+Watunk Atunka, Confederate Militia is standing here. (flying) (white aura)<br />
+<br />
+*****************************<br />
+<br />
+588H 160V 1X 764C Exits:NESW&gt; <br />
+Watunk flies west.<br />
+You follow Watunk west.<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+An elegant wolf, its fur a snow white, roams here. (white aura)<br />
+Watunk Atunka, Confederate Militia is standing here. (flying) (white aura)<br />
+Raoul Rodriguez, Surprisingly Confederate is sitting here, fighting Tremor. (flying) (red aura)<br />
+Tremor the Male Hylar Dwarf is standing here, fighting Raoul. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe. (white aura)<br />
+A knight of the sword looks at Raoul and yells  'There's the scoundrel!'<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Watunk crashes into Tremor in a thundering collision, knocking him to the ground!<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+A knight of the sword looks at Watunk and yells  'There's the scoundrel!'<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Watunk massacres Tremor with his cleave.<br />
+A knight of the sword massacres Raoul with his slash.<br />
+A knight of the sword massacres Raoul with his slash.<br />
+Raoul massacres Tremor with his pierce.<br />
+Raoul misses Tremor with his pierce.<br />
+Tremor smites Raoul very hard.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; bas tremorYou try to bash Tremor, but you miss and tumble forward onto your face.<br />
+<br />
+588H 159V 1X 764C [Raoul:Fair] [Tremor:Awful] Exits:NESW&gt; <br />
+Tarris flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+588H 159V 1X 764C [Raoul:Fair] [Tremor:Awful] Exits:NESW&gt; <br />
+Tarris flies south.<br />
+<br />
+588H 159V 1X 764C [Raoul:Fair] [Tremor:Awful] Exits:NESW&gt; st<br />
+Kulax flies in from the east.<br />
+A sylph arrives from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+588H 159V 1X 764C [Raoul:Fair] [Tremor:Awful] Exits:NESW&gt; <br />
+Kulax flies south.<br />
+A sylph leaves south.<br />
+<br />
+588H 159V 1X 764C [Raoul:Fair] [Tremor:Awful] Exits:NESW&gt; <br />
+You massacre Tremor with your cleave.<br />
+Watunk massacres Tremor with his cleave.<br />
+A knight of the sword massacres Raoul with his slash.<br />
+A knight of the sword massacres Raoul with his slash.<br />
+Raoul massacres Tremor with his pierce.<br />
+You receive 0 experience.<br />
+Tremor is dead! R.I.P.<br />
+The death cry of Tremor echoes from somewhere nearby...<br />
+Tremor sinks gently to the ground.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; get all corpse<br />
+Tark flies in from the south.<br />
+A knight of the sword utters some strange words.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Tark flies east.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Watunk gives a white wolf an order.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Raoul massacres a knight of the sword with his pierce.<br />
+Raoul pierces a knight of the sword very hard.<br />
+A knight of the sword annihilates Raoul with his slash.<br />
+A knight of the sword annihilates Raoul with his slash.<br />
+Raoul gets a large first-aid kit from the corpse of Tremor.<br />
+Raoul gets a chain flail from the corpse of Tremor.<br />
+Raoul gets a woodsman's bracer from the corpse of Tremor.<br />
+Raoul gets a thieves belt-pouch from the corpse of Tremor.<br />
+Raoul gets a shimmering green robe from the corpse of Tremor.<br />
+Raoul gets a fire-blasted shield from the corpse of Tremor.<br />
+Raoul is zapped by spun silver sleeves and instantly drops it.<br />
+Raoul gets a pair of draconian gauntlets from the corpse of Tremor.<br />
+Raoul gets a pair of green boots from the corpse of Tremor.<br />
+Raoul gets some black legplates of the Lily from the corpse of Tremor.<br />
+Raoul gets the eyes of a baby basilisk from the corpse of Tremor.<br />
+Raoul gets a black breast plate of the Lily from the corpse of Tremor.<br />
+Raoul gets a feathered bone charm from the corpse of Tremor.<br />
+Raoul gets a heavy bearskin cloak from the corpse of Tremor.<br />
+Raoul gets a ring of protection from the corpse of Tremor.<br />
+Raoul gets a large pile of coins from the corpse of Tremor.<br />
+Raoul gets a white chicken feather from the corpse of Tremor.<br />
+Raoul gets an iron ration from the corpse of Tremor.<br />
+Raoul gets a large waterskin from the corpse of Tremor.<br />
+Raoul gets a silver inlaid helm from the corpse of Tremor.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; Watunk gets a red dragon army breast plate from the corpse of Tremor.<br />
+Watunk gets a pair of thick dwarven boots from the corpse of Tremor.<br />
+Watunk gets a blackened chest from the corpse of Tremor.<br />
+Watunk is zapped by a set of demon wings and instantly drops it.<br />
+Watunk gets a small canteen from the corpse of Tremor.<br />
+Watunk gets a small canteen from the corpse of Tremor.<br />
+Watunk gets a small canteen from the corpse of Tremor.<br />
+Watunk gets a small canteen from the corpse of Tremor.<br />
+You stand up.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Raoul stands up.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Raoul panics, and attempts to flee.<br />
+Raoul flies west.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; get allYou get a set of demon wings.<br />
+You are zapped by spun silver sleeves and instantly drop it.<br />
+You get the corpse of Tremor.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Raoul flies in from the west.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+A knight of the sword attempts to focus on Raoul and fails horribly.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+A knight of the sword massacres Raoul with his slash.<br />
+A knight of the sword massacres Raoul with his slash.<br />
+Raoul pierces a knight of the sword hard.<br />
+Raoul pierces a knight of the sword very hard.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Raoul panics, and attempts to flee.<br />
+Raoul flies north.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Tremor arrives from the south.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+Watunk crashes into Tremor in a devastating bash, killing him mercilessly.<br />
+You receive 0 experience.<br />
+Tremor is dead! R.I.P.<br />
+<br />
+588H 159V 1X 764C Exits:NESW&gt; <br />
+The death cry of Tremor echoes from somewhere nearby...<br />
+<br />
+*****************************<br />
+<br />
+588H 149V 1X 264C Exits:NESW&gt; <br />
+Sotil flies in from the west.<br />
+<br />
+588H 149V 1X 264C Exits:NESW&gt; <br />
+Raoul slowly fades into existence.<br />
+Raoul gives his dagger a quick thrust and twist, as he strikes Sotil in the back with it.<br />
+<br />
+588H 149V 1X 264C Exits:NESW&gt; bas sotilYou crash into Sotil in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+588H 149V 1X 264C [Raoul:V.Bad] [Sotil:Bad] Exits:NESW&gt; <br />
+Watunk snorts loudly.<br />
+<br />
+588H 149V 1X 264C [Raoul:V.Bad] [Sotil:Bad] Exits:NESW&gt; <br />
+You massacre Sotil with your cleave.<br />
+Raoul massacres Sotil with his pierce.<br />
+Raoul pierces Sotil extremely hard.<br />
+Sotil misses Raoul with his hit.<br />
+<br />
+588H 149V 1X 264C [Raoul:V.Bad] [Sotil:V.Bad] Exits:NESW&gt; bas<br />
+You annihilate Sotil with your cleave.<br />
+Raoul misses Sotil with his pierce.<br />
+Raoul pierces Sotil very hard.<br />
+Sotil misses Raoul with his hit.<br />
+<br />
+588H 149V 1X 264C [Raoul:V.Bad] [Sotil:Awful] Exits:NESW&gt; <br />
+Watunk gives a white wolf an order.<br />
+A white wolf claws Sotil very hard.<br />
+Sotil is incapacitated and will slowly die, if not aided.<br />
+<br />
+588H 149V 1X 264C [Sotil:Dying] Exits:NESW&gt; Sotil doesn't recover as you deliver the bash -- he is dead.<br />
+You receive 0 experience.<br />
+Sotil is dead! R.I.P.<br />
+<br />
+588H 149V 1X 264C [Sotil:Dying] Exits:NESW&gt; <br />
+The death cry of Sotil echoes from somewhere nearby...
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1570'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1570">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1570">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

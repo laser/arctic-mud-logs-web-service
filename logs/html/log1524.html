@@ -1,0 +1,891 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1524-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1524'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Lusora + Mynaway RIP</font></b>
+<p>
+POV: 
+Grauth<p>
+Log Rating:
+1.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Spiderman and YAMOTO CANNON strike again!</i>
+<p>
+<p>
+
+617H 85V 13261178X 1017C Exits:NESW&gt; w<br />
+bas lusora<br />
+Yamoto flies in from the east.<br />
+Within the Barracks<br />
+    Rows of bunks are here stacked nearly up to the ceiling, the soldiers<br />
+get very little personal space here, other thank their bunk their only<br />
+possessions lie tucked away in small footlockers on the floor. Snores and<br />
+coughs can be heard all around from soldiers too battle weary to care about<br />
+you being here. The barrack continues north where more bunks are stacked<br />
+tall in monotonous rows.<br />
+The corpse of a tired soldier is lying here. [2]<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Lady Lusora, Dark Mystic of Zeboim, Sigil of Evil is standing here. (flying)<br />
+Mynaway the Male Human is standing here, fighting a tired soldier. (white aura)<br />
+A tired soldier is sitting here, fighting Mynaway.<br />
+A soldier is lying here trying to get some much needed rest.<br />
+A tired soldier stands up.<br />
+<br />
+617H 84V 13261178X 1017C Exits:NE&gt; You crash into Lusora in a bone crunching bash, sending her sp<br />
+rawling to the ground.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:Good] Exits:NE&gt; <br />
+Yamoto massacres Lusora with his slash.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:Good] Exits:NE&gt; <br />
+Mynaway strikes at a tired soldier, but misses completely.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:Good] Exits:NE&gt; <br />
+A tired soldier delivers a quick snap kick to Mynaway. Mynaway staggers and tries to recover.<br />
+Inky blackness flows into the room.<br />
+Yamoto massacres Lusora with his slash.<br />
+Yamoto massacres Lusora with his slash.<br />
+You massacre Lusora with your crush.<br />
+Lusora misses you with her hit.<br />
+Mynaway massacres a tired soldier with his stab.<br />
+Mynaway blocks a tired soldier's blow with a quick raise of his shield.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:Fair] Exits:NE&gt; <br />
+Yamoto attacks Lusora with lightning fast series of attacks that leaves her defenseless.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:Fair] Exits:NE&gt; <br />
+Inky blackness flows into the room.<br />
+Yamoto annihilates Lusora with his slash.<br />
+Yamoto massacres Lusora with his slash.<br />
+You annihilate Lusora with your crush.<br />
+Lusora misses you with her hit.<br />
+Mynaway massacres a tired soldier with his stab.<br />
+A tired soldier misses Mynaway with his hit.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:V.Bad] Exits:NE&gt; <br />
+A tired soldier spins and tries to kick Mynaway, but Mynaway dodges out of the way.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:V.Bad] Exits:NE&gt; <br />
+Yamoto gazes at Lusora with a look of evilness.<br />
+<br />
+617H 84V 13261178X 1017C [Grauth:V.Good] [Lusora:V.Bad] Exits:NE&gt; <br />
+Yamoto annihilates Lusora with his slash.<br />
+Yamoto slashes Lusora extremely hard.<br />
+You annihilate Lusora with your crush.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Lusora is dead! R.I.P.<br />
+Mynaway massacres a tired soldier with his stab.<br />
+A tired soldier misses Mynaway with his hit.<br />
+The death cry of Lusora echoes from somewhere nearby...<br />
+Lusora sinks gently to the ground.<br />
+Lusora stops following Mynaway.<br />
+<br />
+617H 84V 13261178X 1017C Exits:NE&gt; You get a very large pile of coins from the corpse of Lusora.<br />
+sp 2251<br />
+There were 2251 coins.<br />
+<br />
+617H 84V 13261178X 3268C Exits:NE&gt; You can't split 2251 evenly among the people in the room; spli<br />
+tting 2250 instead.<br />
+You divide 2250 coins equally among the group members present.<br />
+<br />
+617H 84V 13261178X 2143C Exits:NE&gt; l<br />
+Within the Barracks<br />
+    Rows of bunks are here stacked nearly up to the ceiling, the soldiers<br />
+get very little personal space here, other thank their bunk their only<br />
+possessions lie tucked away in small footlockers on the floor. Snores and<br />
+coughs can be heard all around from soldiers too battle weary to care about<br />
+you being here. The barrack continues north where more bunks are stacked<br />
+tall in monotonous rows.<br />
+The corpse of Lusora is lying here.<br />
+Inky darkness flows into the area. [2]<br />
+The corpse of a tired soldier is lying here. [2]<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Mynaway the Male Human is standing here, fighting a tired soldier. (white aura)<br />
+A tired soldier is standing here, fighting Mynaway.<br />
+A soldier is lying here trying to get some much needed rest.<br />
+<br />
+617H 84V 13261178X 2143C Exits:NE&gt; <br />
+Mynaway panics, and attempts to flee.<br />
+Mynaway leaves east.<br />
+<br />
+617H 84V 13261178X 2143C Exits:NE&gt; bas mynaway<br />
+You couldn't find what you were looking for.<br />
+<br />
+617H 84V 13261178X 2143C Exits:NE&gt; e<br />
+Yamoto flies in from the west.<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [2]<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+617H 83V 13261178X 2143C Exits:NESW&gt; bas mynaway<br />
+You couldn't find what you were looking for.<br />
+<br />
+617H 83V 13261178X 2143C Exits:NESW&gt; <br />
+Mynaway arrives from the east.<br />
+<br />
+617H 83V 13261178X 2143C Exits:NESW&gt; s<br />
+Yamoto flies in from the north.<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [2]<br />
+The corpse of a dragonarmy messenger is lying here.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+617H 82V 13261178X 2143C Exits:ND&gt; bas mynaway<br />
+<br />
+Mynaway arrives from the north.<br />
+<br />
+617H 82V 13261178X 2143C Exits:ND&gt; You crash into Mynaway in a bone crunching bash, sending him s<br />
+prawling to the ground.<br />
+<br />
+617H 82V 13261178X 2143C [Grauth:V.Good] [Mynaway:Fair] Exits:ND&gt; <br />
+You massacre Mynaway with your crush.<br />
+Mynaway stabs YOU very hard.<br />
+<br />
+623H 104V 13261178X 2143C [Grauth:V.Good] [Mynaway:Bad] Exits:ND&gt; <br />
+Yamoto annihilates Mynaway with his slash.<br />
+<br />
+623H 104V 13261178X 2143C [Grauth:V.Good] [Mynaway:V.Bad] Exits:ND&gt; <br />
+Yamoto annihilates Mynaway with his slash.<br />
+Yamoto slashes Mynaway extremely hard.<br />
+You annihilate Mynaway with your crush.<br />
+Mynaway misses you with his stab.<br />
+<br />
+623H 104V 13261178X 2143C [Grauth:V.Good] [Mynaway:Awful] Exits:ND&gt; #   {^Mynaway stands} now tri<br />
+ggers {bas} @ {5}<br />
+<br />
+bas<br />
+Mynaway stands up.<br />
+<br />
+623H 104V 13261178X 2143C [Grauth:V.Good] [Mynaway:Awful] Exits:ND&gt; You crash into Mynaway in a b<br />
+one crunching bash, sending him sprawling to the ground.<br />
+Mynaway is incapacitated and will slowly die, if not aided.<br />
+<br />
+623H 104V 13261178X 2143C [Mynaway:Dying] Exits:ND&gt; <br />
+Yamoto obliterates Mynaway with his slash.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Mynaway is dead! R.I.P.<br />
+The death cry of Mynaway echoes from somewhere nearby...<br />
+<br />
+623H 104V 13261178X 2143C Exits:ND&gt; <br />
+Yamoto flies north.<br />
+<br />
+623H 104V 13261178X 2143C Exits:ND&gt; # {^Mynaway stands} is no longer a action.<br />
+n<br />
+w<br />
+exa lusora<br />
+<br />
+Yamoto tells your group 'enough fucking bread'<br />
+<br />
+623H 104V 13261178X 2143C Exits:ND&gt; You get a very large pile of coins from the corpse of Mynaway<br />
+.<br />
+sp 4400<br />
+There were 4400 coins.<br />
+<br />
+623H 104V 13261178X 6543C Exits:ND&gt; It is pitch black.<br />
+Inky darkness flows into the area. [2]<br />
+<br />
+623H 103V 13261178X 6543C Exits:NESW&gt; It is pitch black.<br />
+The corpse of Lusora is lying here.<br />
+Inky darkness flows into the area. [2]<br />
+The corpse of a tired soldier is lying here. [2]<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+A tired soldier is standing here.<br />
+A soldier is lying here trying to get some much needed rest.<br />
+<br />
+623H 102V 13261178X 6543C Exits:NE&gt; It's a pretty ghastly sight! Searching through the remains, y<br />
+ou find:<br />
+corpse (here) : <br />
+some black breeches..it glows blue<br />
+a leather skullcap..it glows blue<br />
+a skull shaped medallion..it glows blue..it hums softly<br />
+a dark symbol of Zeboim..it glows blue<br />
+a black pearl..it glows blue<br />
+a ruby and platinum ring..it glows blue..it glows dimly<br />
+a loaf of waybread [17]<br />
+some pixie dust..it glows blue..it glows dimly [6]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a bright ball of light..it glows dimly<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a necklace of gnomish ears..it glows blue<br />
+a jade belt..it glows blue..it glows dimly<br />
+a clear potion of invisibility..it glows blue [4]<br />
+a scroll of recall..it glows blue [6]<br />
+a crimson dust covered chest<br />
+623H 102V 13261178X 6543C Exits:NE&gt; You divide 4400 coins equally among the group members present<br />
+.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; #Error: Unmatched braces!<br />
+# {^Lusora stands} is no longer a action.<br />
+get all lusora<br />
+You get some black breeches from the corpse of Lusora.<br />
+You get a leather skullcap from the corpse of Lusora.<br />
+You get a skull shaped medallion from the corpse of Lusora.<br />
+You get a dark symbol of Zeboim from the corpse of Lusora.<br />
+You get a black pearl from the corpse of Lusora.<br />
+You get a ruby and platinum ring from the corpse of Lusora.<br />
+You get a loaf of waybread from the corpse of Lusora.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Dust : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Ball : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Necklace : You can't carry that many items.<br />
+Belt : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; i<br />
+You are carrying:<br />
+a loaf of waybread<br />
+a ruby and platinum ring..it glows blue..it glows dimly<br />
+a black pearl..it glows blue<br />
+a dark symbol of Zeboim..it glows blue<br />
+a skull shaped medallion..it glows blue..it hums softly<br />
+a leather skullcap..it glows blue<br />
+some black breeches..it glows blue<br />
+a putrid potion [5]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [6]<br />
+a skull flail..it glows blue<br />
+a ceremonial crystal mace..it glows blue<br />
+a small canteen [2]<br />
+an elegant dagger..it glows blue<br />
+a sable cloak..it glows blue<br />
+a torch<br />
+a small vial of blood red water<br />
+a raw cod<br />
+a raw salmon<br />
+a raw sea bass [3]<br />
+a scroll of create fish..it glows blue<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; sa god<br />
+You say 'god'<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; drop cod<br />
+You drop a raw cod.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; drop bass<br />
+You drop a raw sea bass.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; drop bass<br />
+You drop a raw sea bass.<br />
+623H 102V 13261178X 4343C Exits:NE&gt; eat all<br />
+Your stomach refuses to eat a malachite ring!<br />
+Your stomach refuses to eat a malachite ring!<br />
+Your stomach refuses to eat a shimmering silver cape!<br />
+Your stomach refuses to eat a regal plate of steel!<br />
+Your stomach refuses to eat a spider crown!<br />
+Your stomach refuses to eat boots of speed!<br />
+Your stomach refuses to eat a pair of ice cold gauntlets!<br />
+Your stomach refuses to eat a pair of woodsman's sleeves!<br />
+Your stomach refuses to eat a spider shaped shield!<br />
+Your stomach refuses to eat a smokey red satchel!<br />
+Your stomach refuses to eat a girdle of storm giant strength!<br />
+Your stomach refuses to eat a spiked bronze bracer!<br />
+Your stomach refuses to eat a wrist buckler!<br />
+Your stomach refuses to eat the spider mace!<br />
+Your stomach refuses to eat a black stone!<br />
+You eat a loaf of waybread.<br />
+You are full.<br />
+Your stomach refuses to eat a ruby and platinum ring!<br />
+Your stomach refuses to eat a black pearl!<br />
+Your stomach refuses to eat a dark symbol of Zeboim!<br />
+Your stomach refuses to eat a skull shaped medallion!<br />
+Your stomach refuses to eat a leather skullcap!<br />
+Your stomach refuses to eat some black breeches!<br />
+Your stomach refuses to eat a putrid potion!<br />
+Your stomach refuses to eat a putrid potion!<br />
+Your stomach refuses to eat a putrid potion!<br />
+Your stomach refuses to eat a putrid potion!<br />
+Your stomach refuses to eat a putrid potion!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a glowing scroll of recall!<br />
+Your stomach refuses to eat a skull flail!<br />
+Your stomach refuses to eat a ceremonial crystal mace!<br />
+Your stomach refuses to eat a small canteen!<br />
+Your stomach refuses to eat a small canteen!<br />
+Your stomach refuses to eat an elegant dagger!<br />
+Your stomach refuses to eat a sable cloak!<br />
+Your stomach refuses to eat a torch!<br />
+Your stomach refuses to eat a small vial of blood red water!<br />
+You are too full to eat more!<br />
+Your stomach refuses to eat a scroll of create fish!<br />
+Yamoto gets a potion from his chest.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; drop bass<br />
+You drop a raw sea bass.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; l<br />
+<br />
+Yamoto gets a crimson dust covered chest from the corpse of Lusora.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; It is pitch black.<br />
+A fish has lost its way from the water and died here. [3]<br />
+A dead fish sits on the ground, stinking up the area.<br />
+The corpse of Lusora is lying here.<br />
+Inky darkness flows into the area. [2]<br />
+The corpse of a tired soldier is lying here. [2]<br />
+Inky darkness flows into the area. [2]<br />
+The corpse of a tired soldier is lying here. [2]<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+A tired soldier is standing here.<br />
+A soldier is lying here trying to get some much needed rest.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; exa lusora<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a loaf of waybread [16]<br />
+some pixie dust..it glows blue..it glows dimly [6]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a bright ball of light..it glows dimly<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a necklace of gnomish ears..it glows blue<br />
+a jade belt..it glows blue..it glows dimly<br />
+a clear potion of invisibility..it glows blue [4]<br />
+a scroll of recall..it glows blue [6]<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; <br />
+The inky blackness thins out.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; <br />
+Yamoto gets a staff from his chest.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; get necklace lusora<br />
+You get a necklace of gnomish ears from the corpse of Lusora.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; get necklace lusora<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; <br />
+The inky blackness thins out.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; get glowing lusora<br />
+You get a glowing scroll of recall from the corpse of Lusora.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; get glowing lusora<br />
+You get a glowing scroll of recall from the corpse of Lusora.<br />
+<br />
+623H 102V 13261178X 4343C Exits:NE&gt; e<br />
+s<br />
+Yamoto flies in from the west.<br />
+A Twisting Hallway<br />
+    Twisting on it's way through the ground floor of this building, the<br />
+hallway runs south to a stairway and east where it curves around the corner<br />
+of a mess hall. Two stone archways lead openly to the north and west, into<br />
+the soldiers' barracks. A chilling breeze runs through the hallway,<br />
+sweeping across the building through open windows.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+623H 101V 13261178X 4343C Exits:NESW&gt; Yamoto flies in from the north.<br />
+The Ground Floor<br />
+    Fresh air wafts in through an open window south, set within a stone<br />
+wall. Leading back down to the basement floor is a flight of stairs, and to<br />
+the north the hall continues on to a broad intersection. The east and west<br />
+walls hold a leaking wax candle each, keeping this area lit throughout the<br />
+night though they do little to heat the cold stone walls.<br />
+The corpse of Mynaway is lying here.<br />
+The corpse of a dragonarmy messenger is lying here.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; exa mynaway<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a black stone..it glows blue<br />
+an elven pike..it glows blue<br />
+a wrist buckler<br />
+a mithril bracelet..it glows blue<br />
+a ceremonial scabbard..it glows blue<br />
+a long hooded cloak<br />
+a red dragonarmy shield..it glows blue<br />
+a pair of woodsman's sleeves..it glows blue<br />
+a pair of silver dwarven gauntlets..it glows blue<br />
+a pair of leather boots<br />
+a regal suit of platemail..it glows blue<br />
+a dark tourmaline pendant..it glows blue<br />
+a golden collar..it glows blue..it glows dimly..it hums softly<br />
+a malachite ring..it glows blue [2]<br />
+a dark cudgel<br />
+a glowing scroll of recall..it glows blue..it glows dimly [3]<br />
+a scroll of recall..it glows blue<br />
+a pair of leather pants<br />
+a blackened chest..it glows blue<br />
+a crystal shard necklace..it glows dimly<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; sa haha<br />
+You say 'haha'<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; <br />
+Yamoto gets a blackened chest from the corpse of Mynaway.<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; get all mynaway<br />
+You get a black stone from the corpse of Mynaway.<br />
+Pike : You can't carry that many items.<br />
+Buckler : You can't carry that many items.<br />
+Bracelet : You can't carry that many items.<br />
+Scabbard : You can't carry that many items.<br />
+Cloak : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Sleeves : You can't carry that many items.<br />
+Gauntlets : You can't carry that many items.<br />
+Boots : You can't carry that many items.<br />
+Plate : You can't carry that many items.<br />
+Pendant : You can't carry that many items.<br />
+Collar : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Cudgel : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Pants : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; <br />
+Yamoto gets a wrist buckler from the corpse of Mynaway.<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt; sa DAMS YO<br />
+You say 'DAMS YO'<br />
+<br />
+623H 100V 13261178X 4343C Exits:ND&gt;
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1524'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1524">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1524">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

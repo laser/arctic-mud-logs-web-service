@@ -1,0 +1,943 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 829-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='829'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+DarkMoon's Die</font></b>
+<p>
+POV: 
+Rachel<p>
+Log Rating:
+2.6214<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+DM's attacked our group today.
+
+I have the flu, so I was in a bitter mood!</i>
+<p>
+<p>
+
+415H 109V 1X 52C Mem:6 Exits:NS&gt; <br />
+Tarken flies south.<br />
+Rhine flies south.<br />
+Giloth flies south.<br />
+Azelyn flies south.<br />
+Virtue flies south.<br />
+Helter flies south.<br />
+Arork flies south.<br />
+You follow Rhine south.<br />
+Rthanan flies in from the north.<br />
+Dolph flies in from the north.<br />
+Forest Lane<br />
+     The small street known as Forest Lane cuts north and south through the<br />
+city, twisting enough to avoid the looming mountains to the east that<br />
+neighbor the city.  Like the rest of the city, this street is chaotic and<br />
+dirty. Every once-in-a-while, a Lemish citizen will stop and glare at you,<br />
+his eyes filled with hatred.  As you travel down south, the street rises<br />
+gently, sloping over the small hill that the city was built on.<br />
+The corpse of a Lemish guard is lying here.<br />
+The corpse of Kensi, Darkmoons Dumb Tank is lying here.<br />
+Dolph N., Renshai Mariner is standing here. (flying)<br />
+Father Rthanan Shanahan, Ansalon Church of the Pzar-Fu is standing here. (flying) (invisible)<br />
+Arork D'orc, Renshai Bloodguard is standing here. (flying)<br />
+Helter Skelter, Renshai Champion of the Lunatic Fringe is standing here. (flying)<br />
+Virtue Of Takhisis, Pure Evil is standing here. (flying)<br />
+Lady Azelyn, Renshai Hurricane is standing here. (flying)<br />
+Giloth d'Mist, Renshai Thing is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Rhine Stone, The Renshai Cowboy is standing here. (flying) (invisible)<br />
+Tarken the Male Minotaur is standing here. (flying)<br />
+Bonham, Darkmoon's Led is standing here. (flying)<br />
+Rzai Ashley, Confused Darkmoon is standing here. (flying)<br />
+Maldrik the Male Hylar Dwarf is standing here. (flying)<br />
+Zieg, A Refreshing Addition to Darkmoon is standing here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+Iso, Dark Moon Hermit is standing here, fighting a Lemish guard. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Kensi, Darkmoons Dumb Tank is standing here, fighting a Lemish guard. (flying)<br />
+Lord Kaziem De Lumines is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a lucky bone charm.<br />
+Zanin, Dark Butcher of the Moon is sitting here, fighting a Lemish guard. (flying)<br />
+Trun Lei, Dark Moon Eclipse is standing here. (flying)<br />
+A Lemish guard is standing here, fighting Zanin.<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; <br />
+Arork crashes into Rzai in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; <br />
+Virtue crashes into Zanin in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; <br />
+Rhine slowly fades into existence.<br />
+Rhine crashes into Maldrik in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; <br />
+Trabzon gives Bonham a solid *BOP* over the head!<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; c 'prism'<br />
+<br />
+Helter crashes into Kensi in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C Mem:6 Exits:NW&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Bonham in a spray of bright orange!<br />
+You catch Rzai in a spray of shimmering red!<br />
+You catch Maldrik in a spray of radiant yellow!<br />
+You catch Zieg in a spray of radiant yellow!<br />
+You hit Iso with a spray of gleaming indigo!<br />
+You strike Kensi with a spray of murky violet!<br />
+You hit Kaziem with a spray of gleaming indigo!<br />
+You hit Trabzon with a spray of gleaming indigo!<br />
+You catch Zanin in a spray of shimmering red!<br />
+You blast Trun with a spray of scintillating blue!<br />
+Trun freezes in place.<br />
+You strike a Lemish guard with a spray of murky violet!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:V.Good] Mem:7 Exits:NW&gt; c 'prism'<br />
+<br />
+Dolph crashes into Trun in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:V.Good] Mem:7 Exits:NW&gt; <br />
+Azelyn utters some strange words.<br />
+Azelyn creates a lightning storm.<br />
+Bonham screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Rzai screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Maldrik screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Zieg screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Iso screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Kensi screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Kaziem screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Trabzon screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Zanin screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Trun screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+A Lemish guard screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:Good] Mem:7 Exits:NW&gt; <br />
+Giloth utters some strange words.<br />
+Giloth's hands send forth blinding rays of sunlight!<br />
+Giloth slowly fades into existence.<br />
+Bonham withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Rzai withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Maldrik withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Zieg withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Iso withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Kensi withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Kaziem withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Trabzon withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Zanin withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Zanin seems to be blinded!<br />
+Trun withers as a ray of sunlight sent by Giloth engulfs him!<br />
+A Lemish guard withers as a ray of sunlight sent by Giloth engulfs him!<br />
+A Lemish guard seems to be blinded!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:Good] Mem:7 Exits:NW&gt; <br />
+A Lemish guard delivers a vicious kick to Zanin's face. Blood flies as his head snaps back.<br />
+A Lemish guard's kick knocks Zanin back a few feet and he falls to the ground.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:Good] Mem:7 Exits:NW&gt; <br />
+Trabzon gets a scroll from his pouch.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:Good] Mem:7 Exits:NW&gt; c 'prism'<br />
+<br />
+Trabzon stops using a dark red dagger.<br />
+Trabzon grabs a glowing scroll of recall.<br />
+Trabzon recites a glowing scroll of recall.<br />
+Trabzon disappears.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Bonham:Good] Mem:7 Exits:NW&gt; <br />
+Bonham stops using a black stone.<br />
+Bonham grabs a glowing scroll of recall.<br />
+Bonham recites a glowing scroll of recall.<br />
+Bonham disappears.<br />
+You direct your attention to Trun.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Fair] Mem:7 Exits:NW&gt; <br />
+You crush Trun very hard.<br />
+Dolph massacres Trun with his slash.<br />
+Dolph slashes Trun very hard.<br />
+Kaziem misses you with his cleave.<br />
+Kaziem misses you with his slash.<br />
+Zieg misses you with his bludgeon.<br />
+Helter cleaves Kensi extremely hard.<br />
+Rhine massacres Maldrik with his slash.<br />
+Rhine massacres Maldrik with his slash.<br />
+Maldrik massacres Rhine with his cleave.<br />
+Virtue massacres Zanin with her crush.<br />
+Virtue smashes Zanin with an impressive blow from her hammer.<br />
+Zanin withers as a ray of sunlight engulfs him!<br />
+Virtue massacres Zanin with her crush.<br />
+Arork misses Rzai with his cleave.<br />
+Arork massacres Rzai with his cleave.<br />
+Rzai massacres Arork with his crush.<br />
+Iso crushes a Lemish guard very hard.<br />
+Kensi massacres a Lemish guard with his stab.<br />
+You receive 0 experience.<br />
+A Lemish guard is dead! R.I.P.<br />
+The death cry of a Lemish guard echoes from somewhere nearby...<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Bad] Mem:7 Exits:NW&gt; <br />
+Rzai steps aside as Arork attempts a bash, stumbles, and falls flat on his face.<br />
+Rhine crashes into Maldrik in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Bad] Mem:7 Exits:NW&gt; c 'prism'<br />
+<br />
+Kaziem gets a pile of coins from the corpse of a Lemish guard.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Bad] Mem:7 Exits:NW&gt; <br />
+Rthanan slowly fades into existence.<br />
+Rthanan misses Maldrik with his smite.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Bad] Mem:7 Exits:NW&gt; <br />
+Tarken crashes into Trun in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Bad] Mem:7 Exits:NW&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Rzai in a spray of bright orange!<br />
+You hit Maldrik with a spray of gleaming indigo!<br />
+You catch Zieg in a spray of bright orange!<br />
+You strike Iso with a spray of vibrant green!<br />
+You catch Kensi in a spray of bright orange!<br />
+You blast Kaziem with a spray of scintillating blue!<br />
+You strike Zanin with a spray of vibrant green!<br />
+You hit Zanin with a spray of gleaming indigo!<br />
+You strike Trun with a spray of murky violet!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:V.Bad] Mem:8 Exits:NW&gt; c 'prism'<br />
+<br />
+Iso utters some strange words.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:V.Bad] Mem:8 Exits:NW&gt; c 'prism'<br />
+<br />
+Azelyn utters some strange words.<br />
+Azelyn creates a lightning storm.<br />
+Rzai screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Maldrik screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Zieg screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Iso screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Some spiritual plate mail in use by Iso is destroyed.<br />
+A spiritual helmet in use by Iso is destroyed.<br />
+Some spiritual greaves in use by Iso is destroyed.<br />
+Some spiritual boots in use by Iso is destroyed.<br />
+Kensi screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Kaziem screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Zanin screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Trun screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Giloth utters some strange words.<br />
+Giloth's hands send forth blinding rays of sunlight!<br />
+Giloth slowly fades into existence.<br />
+Rzai withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Maldrik withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Giloth turns Zieg to ashes with brilliant rays of sunlight.<br />
+You receive 0 experience.<br />
+Zieg is dead! R.I.P.<br />
+Iso withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Kensi withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Kaziem withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Zanin withers as a ray of sunlight sent by Giloth engulfs him!<br />
+Trun withers as a ray of sunlight sent by Giloth engulfs him!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Awful] Mem:8 Exits:NW&gt; <br />
+Kaziem strikes at you, but misses completely.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Awful] Mem:8 Exits:NW&gt; <br />
+The death cry of Zieg echoes from somewhere nearby...<br />
+Zieg stops following Trun.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Trun:Awful] Mem:8 Exits:NW&gt; c 'prism'<br />
+gt tic.<br />
+gt tic.<br />
+<br />
+Giloth massacres Rzai with his crush.<br />
+Azelyn misses Rzai with her smite.<br />
+Zanin misses you and destroys an image.<br />
+Tarken massacres Trun with his cleave.<br />
+Tarken massacres Trun with his cleave.<br />
+You receive 0 experience.<br />
+Trun is dead! R.I.P.<br />
+Rthanan massacres Maldrik with his smite.<br />
+Kensi massacres Helter with his stab.<br />
+Kaziem misses you and destroys an image.<br />
+Kaziem misses you and destroys an image.<br />
+Helter cleaves Kensi extremely hard.<br />
+Rhine massacres Maldrik with his slash.<br />
+Rhine massacres Maldrik with his slash.<br />
+Maldrik massacres Rhine with his cleave.<br />
+Virtue massacres Zanin with her crush.<br />
+Arork misses Rzai with his cleave.<br />
+Arork massacres Rzai with his cleave.<br />
+Rzai massacres Arork with his crush.<br />
+The death cry of Trun echoes from somewhere nearby...<br />
+Zanin stops following Trun.<br />
+Trun now follows Zanin.<br />
+Zanin is the new leader of Trun's group.<br />
+Trun stops following Zanin.<br />
+Trabzon stops following Trun.<br />
+Trabzon now follows Zanin.<br />
+Kaziem stops following Trun.<br />
+Kaziem now follows Zanin.<br />
+Kensi stops following Trun.<br />
+Kensi now follows Zanin.<br />
+Iso stops following Trun.<br />
+Iso now follows Zanin.<br />
+Maldrik stops following Trun.<br />
+Maldrik now follows Zanin.<br />
+Rzai stops following Trun.<br />
+Rzai now follows Zanin.<br />
+Bonham stops following Trun.<br />
+Bonham now follows Zanin.<br />
+You direct your attention to Iso.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:V.Bad] Mem:8 Exits:NW&gt; <br />
+Maldrik steps aside as Rhine attempts a bash, stumbles, and falls flat on his face.<br />
+Rzai gets a scroll from his chest.<br />
+Virtue gets a very large pile of coins from the corpse of Trun.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:V.Bad] Mem:8 Exits:NW&gt; c 'prism'<br />
+<br />
+Rzai grabs a glowing scroll of recall.<br />
+Rzai recites a glowing scroll of recall.<br />
+Rzai disappears.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:V.Bad] Mem:8 Exits:NW&gt; <br />
+Virtue crashes into Zanin in a thundering collision, knocking him to the ground!<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:V.Bad] Mem:8 Exits:NW&gt; c 'prism'<br />
+Kensi stops using a shimmering alexandrite.<br />
+Kensi grabs a glowing scroll of recall.<br />
+Kensi recites a glowing scroll of recall.<br />
+Kensi disappears.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Maldrik in a spray of radiant yellow!<br />
+You catch Iso in a spray of shimmering red!<br />
+You catch Kaziem in a spray of shimmering red!<br />
+Your spray of violet melts Zanin into a lifeless paste.<br />
+You receive 0 experience.<br />
+Zanin is dead! R.I.P.<br />
+Rthanan gets a black crystal staff from the corpse of Trun.<br />
+Rthanan gets an icy white bracelet from the corpse of Trun.<br />
+Rthanan gets a night shadow bracelet from the corpse of Trun.<br />
+Rthanan gets a plain component pouch from the corpse of Trun.<br />
+Rthanan gets a jewelled black belt from the corpse of Trun.<br />
+Rthanan is zapped by a pitch black robe and instantly drops it.<br />
+Rthanan gets a pair of red dragonscale vambraces from the corpse of Trun.<br />
+Rthanan gets a pair of black boots from the corpse of Trun.<br />
+Rthanan gets tree bark armor from the corpse of Trun.<br />
+Rthanan gets a crystal pendant from the corpse of Trun.<br />
+Rthanan gets a lucky bone charm from the corpse of Trun.<br />
+Rthanan gets an emerald ring from the corpse of Trun.<br />
+Rthanan gets a ring of protection from the corpse of Trun.<br />
+Rthanan gets a sterling ornate orb from the corpse of Trun.<br />
+Rthanan is zapped by a skull shaped medallion and instantly drops it.<br />
+Rthanan gets a carefully folded note from the corpse of Trun.<br />
+Rthanan gets a bright ball of light from the corpse of Trun.<br />
+Rthanan gets a clear potion of invisibility from the corpse of Trun.<br />
+Rthanan gets a glowing scroll of recall from the corpse of Trun.<br />
+Rthanan gets a waterskin from the corpse of Trun.<br />
+Rthanan gets a waterskin from the corpse of Trun.<br />
+Rthanan gets a waterskin from the corpse of Trun.<br />
+Rthanan gets a small wooden chest from the corpse of Trun.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:Awful] Mem:10 Exits:NW&gt; <br />
+The death cry of Zanin echoes from somewhere nearby...<br />
+Bonham stops following Zanin.<br />
+Rzai stops following Zanin.<br />
+Maldrik stops following Zanin.<br />
+Iso stops following Zanin.<br />
+Kensi stops following Zanin.<br />
+Kaziem stops following Zanin.<br />
+Trabzon stops following Zanin.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Iso:Awful] Mem:10 Exits:NW&gt; c 'prism'<br />
+<br />
+Iso stops using a bright ball of light.<br />
+Iso grabs a glowing scroll of recall.<br />
+Iso recites a glowing scroll of recall.<br />
+Iso disappears.<br />
+You direct your attention to Kaziem.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Kaziem:Bad] Mem:10 Exits:NW&gt; <br />
+Azelyn gets a large pile of coins from the corpse of Zanin.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Kaziem:Bad] Mem:10 Exits:NW&gt; c 'prism'<br />
+<br />
+Azelyn utters some strange words.<br />
+Azelyn creates a lightning storm.<br />
+Maldrik screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+Kaziem screams in pain as the lightning bolts summoned by Azelyn from the boiling clouds hit him.<br />
+<br />
+415H 108V 1X 52C [Rachel:Perfect] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; <br />
+Azelyn misses Maldrik with her smite.<br />
+You miss Kaziem with your crush.<br />
+Rthanan smites Maldrik extremely hard.<br />
+Kaziem cleaves YOU extremely hard.<br />
+Kaziem burns as he passes through your fire shield.<br />
+Kaziem slashes YOU very hard.<br />
+Kaziem burns as he passes through your fire shield.<br />
+Rhine massacres Maldrik with his slash.<br />
+Rhine massacres Maldrik with his slash.<br />
+You receive 0 experience.<br />
+Maldrik is dead! R.I.P.<br />
+The death cry of Maldrik echoes from somewhere nearby...<br />
+Kaziem gets a very large pile of coins from the corpse of Maldrik.<br />
+<br />
+384H 108V 1X 52C [Rachel:V.Good] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; <br />
+Kaziem tries to focus on you, but he misses and destroys your image.<br />
+The images around you fade out of existance.<br />
+<br />
+384H 108V 1X 52C [Rachel:V.Good] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; <br />
+Arork stands up.<br />
+<br />
+384H 108V 1X 52C [Rachel:V.Good] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; <br />
+Arork cleaves Kaziem extremely hard.<br />
+<br />
+384H 108V 1X 52C [Rachel:V.Good] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; <br />
+Virtue crushes Kaziem extremely hard.<br />
+<br />
+384H 108V 1X 52C [Rachel:V.Good] [Kaziem:V.Bad] Mem:10 Exits:NW&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Kaziem with a spray of murky violet!<br />
+Kaziem panics, and attempts to flee.<br />
+Kaziem flies north.<br />
+<br />
+384H 108V 1X 52C Mem:11 Exits:NW&gt; <br />
+Rthanan gets a glowing scroll of recall from the corpse of Maldrik.<br />
+Rthanan gets a thick dwarven bracelet from the corpse of Maldrik.<br />
+<br />
+384H 108V 1X 52C Mem:11 Exits:NW&gt; <br />
+Giloth gets a heavy cuprite axe from the corpse of Maldrik.<br />
+Giloth gets a spiked bronze bracer from the corpse of Maldrik.<br />
+Giloth gets a leopard skin sash from the corpse of Maldrik.<br />
+Giloth gets a purple velvet robe from the corpse of Maldrik.<br />
+Giloth gets an apatite encrusted marble shield from the corpse of Maldrik.<br />
+Giloth is zapped by a pair of ebony engraved bracers and instantly drops it.<br />
+Giloth gets a pair of red dragon scale gloves from the corpse of Maldrik.<br />
+Giloth gets a pair of red oakleaf crested boots from the corpse of Maldrik.<br />
+Giloth gets a blue dragon scale skirt from the corpse of Maldrik.<br />
+Giloth is zapped by a black spiked helm and instantly drops it.<br />
+Giloth gets an alchemist's cloak from the corpse of Maldrik.<br />
+Giloth gets a chain of office from the corpse of Maldrik.<br />
+Giloth is zapped by a loop of darkness and instantly drops it.<br />
+Giloth gets a rune etched mithril ring from the corpse of Maldrik.<br />
+Giloth gets a scroll of recall from the corpse of Maldrik.<br />
+Giloth gets a reticulating wrist lantern from the corpse of Maldrik.<br />
+Giloth gets a glowing scroll of recall from the corpse of Maldrik.<br />
+Giloth gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Giloth gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Giloth gets a clear potion of invisibility from the corpse of Maldrik.<br />
+<br />
+384H 108V 1X 52C Mem:11 Exits:NW&gt; <br />
+Azelyn divides 200 coins equally among the group members present.<br />
+<br />
+384H 108V 1X 72C Mem:11 Exits:NW&gt; <br />
+The lightning has stopped.<br />
+<br />
+403H 147V 1X 72C Mem:10 Exits:NW&gt; <br />
+Azelyn gets a bulky dwarven backpack from the corpse of Trun.<br />
+<br />
+403H 147V 1X 72C Mem:10 Exits:NW&gt; <br />
+Rhine stands up.<br />
+<br />
+403H 147V 1X 72C Mem:10 Exits:NW&gt; <br />
+Arork is zapped by a granite armour and instantly drops it.<br />
+Arork gets a bloodstained steel battleaxe from the corpse of Maldrik.<br />
+Arork gets a large first-aid kit from the corpse of Maldrik.<br />
+Arork gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Arork gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Arork gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Arork gets a clear potion of invisibility from the corpse of Maldrik.<br />
+Arork gets a magical watering can from the corpse of Maldrik.<br />
+Arork gets a small wooden chest from the corpse of Maldrik.<br />
+Arork gets a green marble chest from the corpse of Maldrik.<br />
+<br />
+403H 147V 1X 72C Mem:10 Exits:NW&gt; <br />
+Azelyn gets a granite armour.<br />
+Azelyn gets a loop of darkness.<br />
+Azelyn gets a black spiked helm.<br />
+Azelyn gets a pair of ebony engraved bracers.<br />
+Azelyn is zapped by a skull shaped medallion and instantly drops it.<br />
+Azelyn gets a pitch black robe.<br />
+<br />
+403H 147V 1X 72C Mem:10 Exits:NW&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Virtue gets an adamantite axe from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+Virtue gets a goblet from the corpse of Zanin.<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Giloth nibbles on a roll of bread.<br />
+Virtue flies north.<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Arork gets a goblet from the corpse of Zanin.<br />
+Arork gets a goblet from the corpse of Zanin.<br />
+Arork gets a goblet from the corpse of Zanin.<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Giloth tells your group 'loot now'<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Helter gets a skull shaped medallion.<br />
+Helter gets the corpse of Maldrik.<br />
+Helter gets the corpse of Trun.<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; <br />
+Dolph gets a gnarled, mossy staff of wood and stone from the corpse of Zieg.<br />
+Dolph gets a cloth belt pack from the corpse of Zieg.<br />
+Dolph gets some studded leather sleeves from the corpse of Zieg.<br />
+Dolph gets some studded leather leggings from the corpse of Zieg.<br />
+Dolph gets a leather cap from the corpse of Zieg.<br />
+Dolph gets some studded leather armor from the corpse of Zieg.<br />
+Dolph gets an ancient solamnic ring from the corpse of Zieg.<br />
+Dolph gets a small pile of coins from the corpse of Zieg.<br />
+Dolph gets a large waterskin from the corpse of Zieg.<br />
+Dolph gets a small wooden chest from the corpse of Zieg.<br />
+Dolph gets a gnarled, mossy staff of wood and stone from the corpse of Zieg.<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; get all from corpse<br />
+<br />
+Rthanan tells your group 'loot'<br />
+<br />
+403H 147V 1X 72C Mem:11 Exits:NW&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; <br />
+Helter drops the corpse of Trun.<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; get all from 2.corpse<br />
+get all from 3.corpse<br />
+You can't remember how to cast that spell!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; You tell your group 'tic.'<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; You can't remember how to cast that spell!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; You can't remember how to cast that spell!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; You can't remember how to cast that spell!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; Your blood freezes as you hear someone's death cry.<br />
+You can't remember how to cast that spell!<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; get all from 4.corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+403H 147V 1X 72C Mem:13 Exits:NW&gt; gt that was ugly<br />
+You tell your group 'that was ugly'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='829'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=829">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="829">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

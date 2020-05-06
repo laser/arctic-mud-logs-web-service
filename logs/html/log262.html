@@ -1,0 +1,868 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 262-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='262'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Arket laughs to death</font></b>
+<p>
+POV: 
+Yair/Manthus<p>
+Log Rating:
+2.2918<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+People should know when to stop.</i>
+<p>
+<p>
+
+58H 131V 18403X 402C Exits:NESW&gt; The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 130V 18403X 402C Exits:N&gt; <br />
+Arket looks at you.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket laughs heartily.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket points at you and falls down laughing! How embarrassing!<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket mocks you.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; l arket<br />
+You see nothing special about him.<br />
+Arket the young adult male human is in an excellent condition.<br />
+<br />
+Arket is using:<br />
+&lt;worn around neck&gt;         a black neckguard<br />
+&lt;worn around neck&gt;         a holy symbol of Takhisis<br />
+&lt;worn on body&gt;             a suit of charred black battle armor..it glows dimly<br />
+&lt;worn on legs&gt;             a pair of platinum gilt leg plates<br />
+&lt;worn on feet&gt;             a pair of soft black leather boots<br />
+&lt;worn on hands&gt;            a pair of pure white gauntlets<br />
+&lt;worn on arms&gt;             a pair of copper arm plates<br />
+&lt;worn about body&gt;          a leather wrapped scabbard<br />
+&lt;worn about waist&gt;         a gold belt<br />
+&lt;worn around right wrist&gt;  a copper wrist guard<br />
+&lt;used in primary hand&gt;     a wicked double-bladed sword<br />
+&lt;used in secondary hand&gt;   a sharp steel dagger<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; boggle<br />
+<br />
+Tindarin shouts 'warrior and mage looking for cleric around level 22. Good/neut preferred'<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; You boggle at some nebulous concept.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; l<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; l /<br />
+*We dont random, we just have poor intel.<br />
+Yair the adult male high elf is in an excellent condition.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket looks at you.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket laughs heartily.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; 'what the fuck do you want?<br />
+You say 'what the fuck do you want?'<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; l<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; <br />
+Arket says 'to laugh'<br />
+<br />
+58H 156V 18403X 402C Exits:N&gt; l<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket laughs heartily.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket smirks.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket sits down and rests.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket taunts you.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; l<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is resting here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Lina shouts 'looking someone for duel with'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; 'i see you want to die<br />
+You say 'i see you want to die'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; #Ticker is now ON.<br />
+Arket smirks.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; l<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+Arket the Male Human is resting here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket waits in anticipation.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; wh<br />
+Lord Nexus, Arch Mage of the Conclave and Servant of the Realm<br />
+Tristram the Male High Elf<br />
+Jinx the Male Human<br />
+Sir Pepe el Pepito, Solamnic Knight of the Crown<br />
+Yair the Male High Elf<br />
+Casca the Male Half Elf<br />
+Kintessa the Female Human<br />
+Alko the Male Hill Dwarf<br />
+Gulcax the Male Human<br />
+Helene the Female Kender<br />
+Mucho the Male Gnome<br />
+Dirran Demonstalker, Iai God<br />
+Eveil the Female Wild Elf<br />
+Arket the Male Human<br />
+Sir Vashar, Mythical Swiss Army Knife of the Hacky<br />
+Aryx Solo, Mythical Minotaur<br />
+Silvan the Male Human<br />
+Asashi<br />
+Koupepe the Female High Elf<br />
+Tindarin the Female Hill Dwarf<br />
+Shaquzi, Black Killer Of Dark Moon<br />
+Loren the Female High Elf<br />
+<br />
+ [more]<br />
+Lina, Shieldblock<br />
+Jeremiah Saint, Devil May Cry<br />
+Kram the Male Theiwar Dwarf<br />
+Connan The Librarian Head, Head Hunter<br />
+Xernan Silverblade<br />
+Delmarno the Male Wild Elf<br />
+Kafei the Male High Elf<br />
+Mpazo the Male Hill Dwarf<br />
+Shritis the Male Theiwar Dwarf<br />
+Calin the Male Gnome<br />
+Stacey the Female High Elf<br />
+Kelba the Female High Elf<br />
+Nienna the Female Gnome<br />
+Lady Sanya Vey, Solamnic Sorceress, Order of the Sword<br />
+Hakusho the Male Theiwar Dwarf<br />
+Lord Watts Updoc, High Clerist of the Knights of Solamnia<br />
+Bacal Adhemar<br />
+Leon, Healer of Maza Spellcasters<br />
+Blyss Ter, Making Blood Boil<br />
+<br />
+Total visible people : 41        Total people online  : 41<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket stands up.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket says 'spells out'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Glorfindel has entered the game.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; t glorfindel whos arket?<br />
+You tell Glorfindel 'whos arket?'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Glorfindel tells you 'dunno'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; <br />
+Arket leaves north.<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; repl im gonna kill him<br />
+You tell Glorfindel 'im gonna kill him'<br />
+<br />
+58H 176V 18403X 402C Exits:N&gt; #10 SECONDS TO TICK<br />
+rent<br />
+                             a bottle : 1 coin/day<br />
+                  a small canteen [2] : 2 coins/day<br />
+                       an iron ration : 1 coin/day<br />
+                     a hooded lantern : 1 coin/day<br />
+The lodge manager tells you 'It will cost you 5 coins per day.'<br />
+The lodge manager tells you 'You will be able to rent for 973 days.'<br />
+The lodge manager stores your stuff in the safe, and shows you to your room.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 0<br />
+<br />
+#Connection lost<br />
+#Connecting to remote host.<br />
+#Remote hosts address: 128.6.224.101<br />
+#Trying to connect..<br />
+Connected to remote host<br />
+<br />
+<br />
+                               Welcome to<br />
+     ___<br />
+    (___)     @@@@@ @@@@@@@@@   @@@@@@@@ @@@@@@@@@@@ @@@@@@@ @@@@@@@@<br />
+     ==_     @@@@@@ @@@   @@@@ @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     =/.   @@@@@@@ @@@    @@@ @@@    @@@    @@@       @@@  @@@    @@@<br />
+     //-&quot;  @@@@ @@@ @@@   @@@@ @@@           @@@       @@@  @@@<br />
+ /--//==---@@  @@@ @@@@@@@@@  @@@           @@@       @@@  @@@<br />
+    \ | @@@@   @@@ @@@ @@@@   @@@    @@@    @@@       @@@  @@@    @@@<br />
+     \|@@@@@@@@@@@ @@@  @@@@  @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     |\@@@     @@@ @@@   @@@@  @@@@@@@@     @@@     @@@@@@@ @@@@@@@@<br />
+     | \<br />
+     | |/ O==========================================================O<br />
+     | |  | Based on DikuMUD I by Michael Seifert, Sebastian Hammer, |<br />
+    /| |  |   Hans Henrik Staerfeldt, Katja Nyboe, and Tom Madsen.   |<br />
+    \ |  |                                                          |<br />
+     \|  |        Mail may be directed to gods@mud.arctic.org       |<br />
+     |\  |                                                          |<br />
+     | \ |           ** Be sure to visit our web page! **           |<br />
+     | |/ |                 http://mud.arctic.org                    |<br />
+      |  O==========================================================O<br />
+    |<br />
+<br />
+Type 'start' to create a new character.<br />
+What is your character's name? manthus<br />
+Password: <br />
+<br />
+<br />
+<br />
+You were last connected Sat Jul 27 02:47:36 2002 EDT from 62.0.105.206.<br />
+<br />
+Welcome to Arctic.<br />
+<br />
+Arctic is a heavily modified DIKU with the experienced player in mind.<br />
+Our administration policy is not to interfere with mortal affairs.<br />
+Please bear that in mind when asking for assistance.<br />
+<br />
+*NOTE: We are currently in a beta code period. Please read the NEWS from<br />
+       Feb. 15th for more details.<br />
+<br />
+*** Press Enter: 1<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: You ran up charges of 108 steel in rent.<br />
+<br />
+Welcome to the land of Krynn.<br />
+<br />
+The Reception<br />
+A long strip of bark has been speared into the earth.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A ham hock with a large bite out of it is lying on the ground here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+247H 171V 28616056X 3391C Mem:3 Exits:N&gt; n<br />
+l<br />
+c 'h p' arket<br />
+Traveler's Lodge<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+247H 170V 28616056X 3391C Mem:3 Exits:NESW&gt; Traveler's Lodge<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+247H 170V 28616056X 3391C Mem:3 Exits:NESW&gt; scan<br />
+Who should the spell be cast upon?<br />
+247H 170V 28616056X 3391C Mem:3 Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+247H 170V 28616056X 3391C Mem:3 Exits:NESW&gt; #   {z} now aliases {chp arket} in [default] group <br />
+e<br />
+c 'h p' arket<br />
+Vingaard Avenue South<br />
+<br />
+247H 169V 28616056X 3391C Mem:3 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+247H 169V 28616056X 3391C Mem:3 Exits:NESW&gt; <br />
+The air around you loses its solidity.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; c 'imp'<br />
+<br />
+A knight of the sword arrives from the south.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; You utter the words, 'improved invisibility'<br />
+You vanish.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; <br />
+Arket arrives from the north.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; n<br />
+<br />
+A Kalaman cityguard leaves north.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; <br />
+Arket leaves west.<br />
+<br />
+250H 192V 28616056X 3391C Mem:2 Exits:NESW&gt; s<br />
+scan<br />
+Vingaard Avenue South<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A woman with a bag of groceries is making her way home.<br />
+<br />
+250H 191V 28616056X 3391C Mem:2 Exits:NESW&gt; c 'h p' arket<br />
+Vingaard Avenue South<br />
+A knight of Solamnia stands here keeping watch over the surrounding area.<br />
+<br />
+250H 190V 28616056X 3391C Mem:2 Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A woman with a bag of groceries is making her way home.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+A waitress is here ready to take your order.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Arket the Male Human is standing here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+250H 190V 28616056X 3391C Mem:2 Exits:NESW&gt; scan<br />
+Who should the spell be cast upon?<br />
+<br />
+250H 190V 28616056X 3391C Mem:2 Exits:NESW&gt; w<br />
+Looking north:<br />
+You see nothing special.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A woman with a bag of groceries is making her way home.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+A waitress is here ready to take your order.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Arket the Male Human is standing here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+250H 190V 28616056X 3391C Mem:2 Exits:NESW&gt; c 'h p' arket<br />
+<br />
+A knight of the sword leaves east.<br />
+<br />
+250H 190V 28616056X 3391C Mem:2 Exits:NESW&gt; Traveler's Lodge<br />
+Izuqrab the Male Hill Dwarf is standing here.<br />
+Arket the Male Human is standing here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+250H 189V 28616056X 3391C Mem:2 Exits:NESW&gt; <br />
+Izuqrab leaves east.<br />
+<br />
+250H 189V 28616056X 3391C Mem:2 Exits:NESW&gt; You utter the words, 'hold person'<br />
+Arket freezes in place.<br />
+<br />
+250H 189V 28616056X 3391C Mem:3 Exits:NESW&gt; c 'conjure ele'<br />
+You utter the words, 'conjure elemental'<br />
+You gesture, and a cloud of smoke appears!<br />
+Out of the smoke, a sylph emerges.<br />
+A sylph starts following you.<br />
+<br />
+250H 189V 28616056X 3391C Mem:4 Exits:NESW&gt; order sylph ki arket<br />
+c 'l b' arket<br />
+A sylph hits Arket hard.<br />
+<br />
+250H 189V 28616056X 3391C Mem:4 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Arket with full impact.<br />
+250H 189V 28616056X 3391C Mem:5 Exits:NESW&gt; c 'l b' arket<br />
+<br />
+A sylph hits Arket.<br />
+<br />
+250H 189V 28616056X 3391C Mem:5 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Arket with full impact.<br />
+<br />
+250H 189V 28616056X 3391C Mem:6 Exits:NESW&gt; c 'l b' arket<br />
+<br />
+A sylph hits Arket hard.<br />
+<br />
+250H 189V 28616056X 3391C Mem:6 Exits:NESW&gt; #10 SECONDS TO TICK<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Arket with full impact.<br />
+<br />
+250H 189V 28616056X 3391C Mem:6 Exits:NESW&gt; c 'l b' arket<br />
+<br />
+A sylph hits Arket.<br />
+<br />
+250H 189V 28616056X 3391C Mem:6 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Arket with full impact.<br />
+<br />
+250H 189V 28616056X 3391C Mem:7 Exits:NESW&gt; c 'l b' arket<br />
+<br />
+A sylph barely hits Arket.<br />
+<br />
+250H 189V 28616056X 3391C Mem:7 Exits:NESW&gt; fol arket<br />
+TICK TIMER RESET.<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Arket with full impact.<br />
+Arket is incapacitated and will slowly die, if not aided.<br />
+Arket lies suffering on the ground till no blood is left in his body.<br />
+You receive 0 experience.<br />
+Arket is dead! R.I.P.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='262'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=262">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="262">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

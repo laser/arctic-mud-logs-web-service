@@ -1,0 +1,625 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 301-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='301'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kanxi gets whats coming to him.</font></b>
+<p>
+POV: 
+Bacal<p>
+Log Rating:
+-2.8751<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Kanxi dies for crimes against NOW clan. Evil man - dead man.</i>
+<p>
+<p>
+
+444H 121V 11549326X 0C Mem:1 Exits:N&gt; st<br />
+You stand up.<br />
+<br />
+444H 121V 11549326X 0C Mem:3 Exits:N&gt; n<br />
+Guild Road<br />
+    The road leads east and west between the buildings and halls. To the<br />
+north is the mages' laboratory, while to the south is the clerics' sanctum.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+<br />
+444H 120V 11549326X 0C Mem:8 Exits:NESW&gt; e<br />
+Guild Road<br />
+    The road leads east and west between the buildings and halls. To the<br />
+north is the rangers' guild, while to the south is a large hall occupied by<br />
+druids.<br />
+A young kender stands here, looking about curiously.<br />
+<br />
+444H 119V 11549326X 0C Mem:8 Exits:NESW&gt; e<br />
+Guild Road<br />
+    The roads leads east and west between the buildings and halls. To the<br />
+north is the warriors' arena, where sounds of clashing weapons can be<br />
+heard. South of you, followers of Takhisis dressed in dark metal armor and<br />
+wielding dangerous long swords train against one another. Sparks fly from<br />
+bare metal in both directions.<br />
+A young kender stands here, looking about curiously.<br />
+Kanxi, the Lonesome Little Squirrel is sitting here, fighting Alcaran. (flying)<br />
+Prawl the Male Minotaur is sitting here, fighting Kanxi. (red aura)<br />
+Alcaran the Male Hill Dwarf is sitting here, fighting Kanxi. (flying)<br />
+Erand McManus, Boondock Saint is standing here, fighting Kanxi. (flying) (white <br />
+aura)<br />
+<br />
+444H 118V 11549326X 0C Mem:8 Exits:NESW&gt; g<br />
+You massacre Kanxi with your pierce.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:V.Good] [Kanxi:Good] Mem:8 <br />
+Exits:NESW&gt; <br />
+You massacre Kanxi with your pierce.<br />
+Prawl slashes Kanxi extremely hard.<br />
+Erand cleaves Kanxi extremely hard.<br />
+Alcaran slashes Kanxi extremely hard.<br />
+Kanxi massacres Alcaran with his cleave.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; ap<br />
+<br />
+You pierce Kanxi extremely hard.<br />
+Prawl slashes Kanxi extremely hard.<br />
+Erand cleaves Kanxi extremely hard.<br />
+Alcaran misses Kanxi with his slash.<br />
+Kanxi massacres Alcaran with his cleave.<br />
+You focus your purity on Kanxi's arm!<br />
+You force Kanxi to drop his weapon.<br />
+Erand focuses harshly on Kanxi and utters some strange words.<br />
+Kanxi freezes in place.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; <br />
+<br />
+Alcaran throws back his head and cackles with insane glee!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; <br />
+<br />
+Alcaran stands up.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; <br />
+<br />
+Alcaran crashes into Kanxi in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; <br />
+<br />
+Prawl stands up.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt;  <br />
+<br />
+Prawl crashes into Kanxi in a thundering collision, knocking him to the ground!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Fair] Mem:8 Exits:NESW&gt; get axe<br />
+<br />
+<br />
+You pierce Kanxi extremely hard.<br />
+Prawl slashes Kanxi hard.<br />
+Alcaran slashes Kanxi extremely hard.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Bad] Mem:8 Exits:NESW&gt; <br />
+ou are zapped by an executioner's axe and instantly drop it.<br />
+Erand crashes into Kanxi in a thundering collision, knocking him to the ground!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Bad] Mem:8 Exits:NESW&gt; <br />
+You massacre Kanxi with your pierce.<br />
+Prawl slashes Kanxi very hard.<br />
+Erand massacres Kanxi with his cleave.<br />
+Alcaran slashes Kanxi very hard.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:V.Bad] Mem:8 <br />
+Exits:NESW&gt; <br />
+Alcaran crashes into Kanxi in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:V.Bad] Mem:8 <br />
+Exits:NESW&gt; say ALCARAN LOOT AXE<br />
+You say 'ALCARAN LOOT AXE'<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:V.Bad] Mem:8 <br />
+Exits:NESW&gt; h<br />
+You utter the words, 'exorcism'<br />
+Kanxi shivers, and suffers from his evilness!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Awful] Mem:9 <br />
+Exits:NESW&gt; <br />
+Prawl gets an executioner's axe.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Awful] Mem:9 <br />
+Exits:NESW&gt; <br />
+Prawl slashes Kanxi extremely hard.<br />
+Erand cleaves Kanxi extremely hard.<br />
+Alcaran slashes Kanxi extremely hard.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Awful] Mem:9 <br />
+Exits:NESW&gt; h<br />
+Erand crashes into Kanxi in a thundering collision, knocking him to the ground!<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Alcaran:Good] [Kanxi:Awful] Mem:9 <br />
+Exits:NESW&gt; h<br />
+You utter the words, 'exorcism'<br />
+Kanxi is dissolved by your goodness.<br />
+You receive 0 experience.<br />
+Kanxi is dead! R.I.P.<br />
+<br />
+444H 118V 11549326X 0C [Me:V.Good] [Kanxi:Dying] Mem:11 Exits:NESW&gt; <br />
+The death cry of Kanxi echoes from somewhere nearby...<br />
+<br />
+444H 118V 11549326X 0C Mem:11 Exits:NESW&gt; get all corpse<br />
+You get a thin wolfskin belt from the <br />
+corpse of Kanxi.<br />
+You get a grey leather pouch from the corpse of Kanxi.<br />
+You get a pair of black ice arm guards from the corpse of Kanxi.<br />
+You get some weathered sheepskin gloves from the corpse of Kanxi.<br />
+You get a pair of bearskin boots from the corpse of Kanxi.<br />
+You get a black bear skull from the corpse of Kanxi.<br />
+You get some dented bronze chainmail from the corpse of Kanxi.<br />
+You get a petrified Brog eye from the corpse of Kanxi.<br />
+You get a 'borrowed' kender ring from the corpse of Kanxi.<br />
+You get a large pile of coins from the corpse of Kanxi.<br />
+There were 331 coins.<br />
+You get an elfin bottle from the corpse of Kanxi.<br />
+You get an elfin bottle from the corpse of Kanxi.<br />
+You get an elfin bottle from the corpse of Kanxi.<br />
+You get an elfin bottle from the corpse of Kanxi.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+You get a strip of dik-dik jerky from the corpse of Kanxi.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; <br />
+A curious kender arrives from the east.<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; put all chest<br />
+gYou put a strip of dik-dik jerky in <br />
+a green marble chest.<br />
+You put an elfin bottle in a green marble chest.<br />
+You put an elfin bottle in a green marble chest.<br />
+You put an elfin bottle in a green marble chest.<br />
+You put an elfin bottle in a green marble chest.<br />
+You put a 'borrowed' kender ring in a green marble chest.<br />
+You put a petrified Brog eye in a green marble chest.<br />
+Some dented bronze chainmail won't fit.<br />
+You put a black bear skull in a green marble chest.<br />
+You put a pair of bearskin boots in a green marble chest.<br />
+Some weathered sheepskin gloves won't fit.<br />
+A pair of black ice arm guards won't fit.<br />
+A grey leather pouch won't fit.<br />
+A thin wolfskin belt won't fit.<br />
+You put a silver elixir in a green marble chest.<br />
+A companion sword won't fit.<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; <br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+Erand gets an elfin bottle from the corpse of Kanxi.<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; <br />
+Alcaran says 'die!'<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; get all corpse<br />
+Chest : You can't carry that much <br />
+weight.<br />
+<br />
+444H 118V 11549326X 331C Mem:11 Exits:NESW&gt; <br />
+Prawl gets a small wooden chest from the corpse of Kanxi.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='301'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=301">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="301">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

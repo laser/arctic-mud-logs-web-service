@@ -1,0 +1,786 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 72-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='72'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+RGB wankers die</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Goblins attack some poor saps and pay!</i>
+<p>
+<p>
+
+212H 137V 8064200X 182C Exits:NESW&gt; Market Square of Kalaman<br />
+Margaz the Male High Elf is standing here, fighting Fasolt.<br />
+Byaka the Female Theiwar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Kirpykla the Female Gnome is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Fasolt Stonedsgard, Suicidal Priest is standing here, fighting Margaz. (flying)<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; <br />
+Taurran arrives from the east.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; bash<br />
+Anthon flies in from the south.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt;  ki<br />
+Maat arrives from the north.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; rp<br />
+Taurran leaves west.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; yk<br />
+Maat gives his dagger a quick thrust and twist, as he strikes Kirpykla in the back with it.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; la<br />
+<br />
+Vierna flies in from the south.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; <br />
+Byaka focuses harshly on Maat and utters some strange words.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; You crash into Kirpykla in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Bad] Exits:NESW&gt; <br />
+Vierna flies south.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Bad] Exits:NESW&gt; <br />
+Kirpykla steps aside as Anthon attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Bad] Exits:NESW&gt; <br />
+Anthon annihilates Kirpykla with his slash.<br />
+You massacre Kirpykla with your drain.<br />
+Maat bruises Kirpykla with his pierce.<br />
+Maat barely pierces Kirpykla.<br />
+Kirpykla misses Maat with her bludgeon.<br />
+Margaz misses Fasolt with his hit.<br />
+Fasolt misses Margaz with his hit.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Fasolt focuses harshly on Kirpykla and utters some strange words.<br />
+Kirpykla freezes in place.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Vierna flies in from the south.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Maat:Perfect] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Maat panics, and attempts to flee.<br />
+Maat leaves east.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Byaka focuses harshly on Fasolt and utters some strange words.<br />
+The sound of bones cracking echoes as Byaka's force bolt slams into Fasolt.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Vierna crashes into Byaka in a thundering collision, knocking her to the ground!<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Kirpykla:Awful] Exits:NESW&gt; bash <br />
+Maat arrives from the east.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Kirpykla:Awful] Exits:NESW&gt; <br />
+Vierna misses Byaka and destroys an image instead.<br />
+Byaka whips Vierna hard.<br />
+Anthon massacres Kirpykla with his slash.<br />
+You receive 0 experience.<br />
+Kirpykla is dead! R.I.P.<br />
+Margaz misses Fasolt with his hit.<br />
+The death cry of Kirpykla echoes from somewhere nearby...<br />
+Kirpykla stops following Byaka.<br />
+Jarven stops following Kirpykla.<br />
+Jarven now follows Byaka.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; <br />
+Maat gets a large pile of coins from the corpse of Kirpykla.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW<br />
+Fasolt focuses harshly on Vierna and utters some strange words.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt;<br />
+Maat gets a rotted, gnarled staff from the corpse of Kirpykla.<br />
+Maat gets a ragged leather bracelet from the corpse of Kirpykla.<br />
+Maat gets a ragged leather wrist guard from the corpse of Kirpykla.<br />
+Maat gets a plain component pouch from the corpse of Kirpykla.<br />
+Maat gets a leather waist pouch from the corpse of Kirpykla.<br />
+Maat gets a black skull tabard from the corpse of Kirpykla.<br />
+Maat gets a turtle shell shield from the corpse of Kirpykla.<br />
+Maat gets a pair of black cloth gloves from the corpse of Kirpykla.<br />
+Maat gets a pairof leather moccasins from the corpse of Kirpykla.<br />
+Maat gets an earthen plate from the corpse of Kirpykla.<br />
+Maat gets a long black stole, lined with red from the corpse of Kirpykla.<br />
+Maat gets a lucky bone charm from the corpse of Kirpykla.<br />
+Maat gets an emerald ring from the corpse of Kirpykla.<br />
+Maat gets a leg of lamb from the corpse of Kirpykla.<br />
+Maat gets a charred human skull from the corpse of Kirpykla.<br />
+Maat gets a small white die from the corpse of Kirpykla.<br />
+Maat gets a shadow chest from the corpse of Kirpykla.<br />
+Maat gets a glowing scroll of recall from the corpse of Kirpykla.<br />
+Maat gets a long grey robe from the corpse of Kirpykla.<br />
+Maat gets a backpack from the corpse of Kirpykla.<br />
+Maat gets a waterskin from the corpse of Kirpykla.<br />
+Maat gets a bright ball of light from the corpse of Kirpykla.<br />
+Maat gets a hooded lantern from the corpse of Kirpykla.<br />
+Maat gets a large first-aid kit from the corpse of Kirpykla.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; <br />
+<br />
+Margaz panics, and attempts to flee.<br />
+Margaz leaves west.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; lo<br />
+bash b<br />
+Maat leaves south.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; yakaThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; <br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; Sorry, but you cannot do that here!<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+212H 136V 8064200X 182C Exits:NESW&gt; You try to bash Byaka, but you miss and tumble forward onto your face.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:V.Good] Exits:NESW&gt; <br />
+Anthon stands up.<br />
+<br />
+212H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:V.Good] Exits:NESW&gt; <br />
+You massacre Byaka with your drain.<br />
+You feel intense pain as you swing through Byaka's flaming aura.<br />
+Vierna misses Byaka and destroys an image instead.<br />
+Byaka whips Vierna very hard.<br />
+Anthon tries to bash Byaka, but he passes right through her image and falls.<br />
+<br />
+192H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Good] Exits:NESW&gt; st<br />
+Margaz arrives from the west.<br />
+<br />
+192H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Good] Exits:NESW&gt; <br />
+bash<br />
+<br />
+Vierna crashes into Byaka in a thundering collision, knocking her to the ground!<br />
+<br />
+192H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Good] Exits:NESW&gt; <br />
+A knight of the rose arrives from the west.<br />
+<br />
+192H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Good] Exits:NESW&gt; <br />
+Anthon misses Byaka and destroys an image instead.<br />
+You massacre Byaka with your drain.<br />
+You feel intense pain as you swing through Byaka's flaming aura.<br />
+Vierna massacres Byaka with her slash.<br />
+Vierna is burned, as she swings at Byaka.<br />
+Byaka misses Vierna with her whip.<br />
+<br />
+172H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Fair] Exits:NESW&gt; <br />
+Tarazed arrives from the south.<br />
+A knight of the rose looks at Vierna and yells  'There's the scoundrel!'<br />
+<br />
+172H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Fair] Exits:NESW&gt; <br />
+Fasolt utters some strange words.<br />
+Fasolt heals Fasolt.<br />
+<br />
+172H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Fair] Exits:NESW&gt; <br />
+Tarazed leaves west.<br />
+<br />
+172H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Fair] Exits:NESW&gt; You stand up.<br />
+<br />
+172H 136V 8064200X 182C [Me:V.Bad] [Vierna:V.Good] [Byaka:Fair] Exits:NESW&gt; A knight of the rose massacres Vierna with his slash.<br />
+A knight of the rose massacres Vierna with his slash.<br />
+Anthon annihilates Byaka with his slash.<br />
+Anthon is burned, as he swings at Byaka.<br />
+You massacre Byaka with your drain.<br />
+You feel intense pain as you swing through Byaka's flaming aura.<br />
+Vierna massacres Byaka with her slash.<br />
+Vierna is burned, as she swings at Byaka.<br />
+Byaka misses Vierna with her whip.<br />
+You try to bash Byaka, but you miss and tumble forward onto your face.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:V.Bad] Exits:NESW&gt; <br />
+Anthon stands up.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:V.Bad] Exits:NESW&gt; <br />
+Byaka steps aside as Anthon attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:V.Bad] Exits:NESW&gt; <br />
+Fasolt focuses harshly on Vierna and utters some strange words.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:V.Bad] Exits:NESW&gt; <br />
+A knight of the rose looks at Vierna and yells  'There's the scoundrel!'<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:V.Bad] Exits:NESW&gt; <br />
+Margaz focuses harshly on Byaka and utters some strange words.<br />
+Byaka winces in pain as Margaz shreds her with a spray of thorns.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:Awful] Exits:NESW&gt; st<br />
+<br />
+Byaka steps aside as Vierna attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+152H 136V 8064200X 182C [Me:V.Bad] [Vierna:Good] [Byaka:Awful] Exits:NESW&gt; <br />
+A knight of the rose massacres Vierna with his slash.<br />
+A knight of the rose massacres Vierna with his slash.<br />
+Anthon annihilates Byaka with his slash.<br />
+Anthon is burned, as he swings at Byaka.<br />
+You annihilate Byaka with your drain.<br />
+You feel intense pain as you swing through Byaka's flaming aura.<br />
+You receive 0 experience.<br />
+Byaka is dead! R.I.P.<br />
+The death cry of Byaka echoes from somewhere nearby...<br />
+Jarven stops following Byaka.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; lo<br />
+<br />
+Fasolt focuses harshly on Vierna and utters some strange words.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; <br />
+Tarazed arrives from the west.<br />
+A knight of the rose utters some strange words.<br />
+A knight of the rose prays.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; b<br />
+Tarazed gets a long black whip with four heads from the corpse of Byaka.<br />
+Tarazed gets a thin bronze bracelet from the corpse of Byaka.<br />
+Tarazed gets a red draconian bracelet from the corpse of Byaka.<br />
+Tarazed gets a fine gossamer shroud from the corpse of Byaka.<br />
+Tarazed gets a pair of leather sleeves from the corpse of Byaka.<br />
+Tarazed gets a pair of leather gloves from the corpse of Byaka.<br />
+Tarazed gets a pair of shiny black boots from the corpse of Byaka.<br />
+Tarazed gets a pair of leather pants from the corpse of Byaka.<br />
+Tarazeash d gets a very large pile of coins from the corpse of Byaka.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; <br />
+Tarazed leaves west.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; jarven<br />
+<br />
+Margaz gets a leather skullcap from the corpse of Byaka.<br />
+Margaz gets an olivine ring from the corpse of Byaka.<br />
+Margaz gets a dead gypsy moth from the corpse of Byaka.<br />
+Margaz gets some volcanic ash from the corpse of Byaka.<br />
+Margaz gets a glowing scroll of recall from the corpse of Byaka.<br />
+Margaz gets an oak-handled mace from the corpse of Byaka.<br />
+Margaz gets a small canteen from the corpse of Byaka.<br />
+Margaz gets a scroll of recall from the corpse of Byaka.<br />
+Margaz gets a scroll of recall from the corpse of Byaka.<br />
+Margaz gets a scroll of recall from the corpse of Byaka.<br />
+Margaz gets a small canteen from the corpse of Byaka.<br />
+Margaz gets a small canteen from the corpse of Byaka.<br />
+Margaz gets a small wooden chest from the corpse of Byaka.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; <br />
+Vierna slashes a knight of the rose extremely hard.<br />
+A knight of the rose massacres Vierna with his slash.<br />
+A knight of the rose massacres Vierna with his slash.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; You stand up.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; Anthon stands up.<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; l<br />
+Market Square of Kalaman<br />
+The corpse of Byaka is lying here.<br />
+The corpse of Kirpykla is lying here.<br />
+A knight of the rose is standing here, fighting Vierna.<br />
+Margaz the Male High Elf is standing here.<br />
+Vierna Do'Urden, Daermon N'a'shezbaernon is sitting here, fighting a knight of the rose. (flying)<br />
+Anthon Fireforge, Undefined Shadow Being is standing here. (flying)<br />
+Fasolt Stonedsgard, Suicidal Priest is standing here. (flying)<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; <br />
+Fasolt laughs heartily.<br />
+<br />
+132H 136V 8064200X 182C Exits:NESW&gt; <br />
+Vierna slashes a knight of the rose extremely hard.<br />
+A knight of the rose annihilates Vierna with his slash.<br />
+A knight of the rose massacres Vierna with his slash.<br />
+Margaz looks really sick, and shivers uncomfortably.<br />
+Vierna stands up.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; <br />
+Fasolt says 'nice'<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; <br />
+A knight of the rose utters some strange words.<br />
+A knight of the rose is surrounded by a white aura.<br />
+Vierna panics, and attempts to flee.<br />
+Vierna flies east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; gro<br />
+Your group of 2 members consists of:<br />
+  Peoj             v.bad     rested    standing   Y   N    N     1    0<br />
+  Vierna           fair      rested    standing   Y   N    N     0    0<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; <br />
+Fasolt flies east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; l<br />
+<br />
+Vierna flies in from the east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; Market Square of Kalaman<br />
+The corpse of Byaka is lying here.<br />
+The corpse of Kirpykla is lying here.<br />
+Vierna Do'Urden, Daermon N'a'shezbaernon is standing here. (flying)<br />
+A senior ranking knight is here coordinating an exercise.<br />
+. . . is outlined with a dim aura.<br />
+Margaz the Male High Elf is standing here.<br />
+Anthon Fireforge, Undefined Shadow Being is standing here. (flying)<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; <br />
+Vierna flies east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; <br />
+Fasolt flies in from the east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; i<br />
+<br />
+Vierna flies in from the east.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; You are carrying:<br />
+a long diamond-edged blade<br />
+a dried, discarded snakeskin<br />
+a small wooden chest<br />
+a magical watering can<br />
+a well-crafted dagger<br />
+a large waterskin<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; l<br />
+Anthon now follows Fasolt.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; o<br />
+<br />
+Chemosh shouts 'open up your eyes, then you'll realize, here i stand with my everlasting love!'<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; ge<br />
+Vierna says 'heal'<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; t all<br />
+A knight of the rose massacres Vierna with his slash.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt;  2.co<br />
+A knight of the rose slashes Vierna extremely hard.<br />
+Vierna slashes a knight of the rose extremely hard.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; rpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+151H 144V 8064200X 182C Exits:NESW&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='72'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=72">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="72">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

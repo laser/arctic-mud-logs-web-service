@@ -1,0 +1,849 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 424-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='424'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Denise shows her power.</font></b>
+<p>
+POV: 
+Bienca<p>
+Log Rating:
+-0.8946<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Roar.</i>
+<p>
+<p>
+
+Cypher flies south.<br />
+Nia flies south.<br />
+Kodiak flies south.<br />
+Denise flies south.<br />
+Iill flies south.<br />
+You follow Cypher south.<br />
+Ghimish flies in from the north.<br />
+Before the Faerie Castle<br />
+    You leave the strange mushroom labyrinth and are greeted with an even<br />
+stranger sight. Before you lies a castle made of some spongy material you<br />
+have never seen before. The castle walls are painted in a rainbow pattern<br />
+that seems to undulate and spiral around the castle. As you try and<br />
+assimilate this unusual place, you are rudely interrupted.<br />
+The corpse of the imp is lying here. [2]<br />
+Ghimish the Male Gnome is standing here. (flying) (red aura)<br />
+Iill Firefoot, Blood Sea Dynamite is standing here. (flying) (invisible) (red aura)<br />
+Denise, One Woman Clan Clan is standing here. (flying) (invisible) (red aura)<br />
+Kodiak the Male Gnome is standing here. (flying) (invisible)<br />
+Nia the Queen Armadillo is standing here. (flying)<br />
+Cypher Man, Pzar Machine is standing here. (flying) (red aura)<br />
+. . . is outlined with a dim aura.<br />
+Makaay is standing here, fighting the imp. (flying)<br />
+Saladin the Male Human is standing here. (flying)<br />
+Loburd the Male Theiwar Dwarf is standing here. (flying) (red aura)<br />
+Teligbo the Male Hill Dwarf is standing here. (flying)<br />
+Barero, Holy Fist is standing here.<br />
+Selena the Female Gnome is standing here. (flying)<br />
+Edilo Heiler, Baker of the First Degree is standing here. (flying)<br />
+Arvar the Male Wild Elf is standing here. (flying)<br />
+bash Arvar<br />
+The imp is standing here, fighting Makaay. (red aura)<br />
+<br />
+469H 42V 3946719X 905C Exits:NS&gt; <br />
+Nia crashes into Arvar in a thundering collision, knocking him to the ground!<br />
+<br />
+469H 42V 3946719X 905C Exits:NS&gt; <br />
+Edilo gets a small pile of coins from the corpse of the imp.<br />
+<br />
+469H 42V 3946719X 905C Exits:NS&gt; <br />
+Iill appears to be dancing around the room.<br />
+<br />
+469H 42V 3946719X 905C Exits:NS&gt; You try to bash Arvar, but you miss and tumble forward onto your face.<br />
+stand<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Good] Exits:NS&gt; <br />
+Kodiak focuses harshly on Arvar and utters some strange words.<br />
+Kodiak slowly fades into existence.<br />
+Kodiak sends a chilling blast of air at Arvar, giving him a severe case of frostbite.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Good] Exits:NS&gt; <br />
+Denise focuses harshly on Arvar and utters some strange words.<br />
+Arvar freezes in place.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Good] Exits:NS&gt; <br />
+Loburd utters some strange words.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Good] Exits:NS&gt; <br />
+Ghimish crashes into Arvar in a thundering collision, knocking him to the ground!<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Good] Exits:NS&gt; <br />
+Teligbo shoots the imp extremely hard.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Good] Exits:NS&gt; <br />
+Iill slowly fades into existence.<br />
+Iill gives her dagger a quick thrust and twist, as she strikes Arvar in the back with it.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Fair] Exits:NS&gt; <br />
+Barero massacres the imp with his slash.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:Fair] Exits:NS&gt; <br />
+Barero massacres the imp with his slash.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill pierces Arvar extremely hard.<br />
+Teligbo massacres the imp with his shoot.<br />
+Ghimish massacres Arvar with his crush.<br />
+Ghimish's hammer begins to glow red hot as he strikes Arvar!<br />
+Arvar cries out in pain.<br />
+You massacre Arvar with your cleave.<br />
+Nia massacres Arvar with her slash.<br />
+Makaay massacres the imp with his crush.<br />
+The imp is dead! R.I.P.<br />
+The death cry of the imp echoes from somewhere nearby...<br />
+Makaay stops using a sturdy black iron mace.<br />
+Makaay grabs a glowing scroll of recall.<br />
+Makaay recites a glowing scroll of recall.<br />
+Makaay disappears.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Bad] Exits:NS&gt; <br />
+Edilo gets a small pile of coins from the corpse of the imp.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Bad] Exits:NS&gt; <br />
+Kodiak focuses harshly on Arvar and utters some strange words.<br />
+Kodiak slowly fades into existence.<br />
+Kodiak sends a chilling blast of air at Arvar, giving him a severe case of frostbite.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Bad] Exits:NS&gt; <br />
+Selena focuses harshly on Kodiak and utters some strange words.<br />
+Kodiak freezes in place.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Bad] Exits:NS&gt; TICK IN 10 SECONDS.<br />
+bash<br />
+<br />
+Loburd focuses on Arvar and utters some strange words.<br />
+Loburd heals Arvar.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:Perfect] [Arvar:V.Good] Exits:NS&gt; <br />
+Teligbo massacres Nia with his shoot.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:V.Good] Exits:NS&gt; <br />
+Teligbo misses Nia with his shoot.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill pierces Arvar very hard.<br />
+Ghimish massacres Arvar with his crush.<br />
+Ghimish's hammer begins to glow red hot as he strikes Arvar!<br />
+Arvar cries out in pain.<br />
+You massacre Arvar with your cleave.<br />
+Nia massacres Arvar with her slash.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Nia crashes into Arvar in a thundering collision, knocking him to the ground!<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; You stand up.<br />
+Barero stops using a crystal gypsum flower.<br />
+Barero grabs a scroll of recall.<br />
+Barero recites a scroll of recall.<br />
+Barero disappears.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; You crash into Arvar in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Ghimish utters the words, ' paste'.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Kodiak tells your group 'held'<br />
+Selena focuses harshly on Kodiak and utters some strange words.<br />
+Kodiak wavers under the impact of the lightning bolt sent by Selena.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Kodiak tells your group 'kill selena'<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Selena pierces Kodiak very hard.<br />
+Teligbo shoots Nia very hard.<br />
+Teligbo shoots Nia extremely hard.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill massacres Arvar with her pierce.<br />
+You cleave Arvar extremely hard.<br />
+Nia massacres Arvar with her slash.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Kodiak tells your group 'kill selena'<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Iill panics, and attempts to flee.<br />
+Iill flies north.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Denise focuses harshly on Arvar and utters some strange words.<br />
+Denise slowly fades into existence.<br />
+The sound of bones cracking echoes as Denise's force bolt slams into Arvar.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Bad] Exits:NS&gt; bash loburd<br />
+<br />
+Iill slowly fades into existence.<br />
+Iill gives her dagger a quick thrust and twist, as she strikes Arvar in the back with it.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Awful] Exits:NS&gt; <br />
+Loburd focuses on Arvar and utters some strange words.<br />
+Loburd heals Arvar.<br />
+<br />
+469H 42V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:V.Good] Exits:NS&gt; <br />
+Iill pierces Arvar extremely hard.<br />
+Iill pierces Arvar extremely hard.<br />
+Selena pierces Kodiak very hard.<br />
+Teligbo shoots Nia extremely hard.<br />
+Ghimish crushes Arvar extremely hard.<br />
+You massacre Arvar with your cleave.<br />
+Nia massacres Arvar with her slash.<br />
+Saladin closes his prayerbook with a content look on his face.<br />
+Timer now at 61 secs.<br />
+Nia's lantern flickers and goes out.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; <br />
+Nia crashes into Arvar in a thundering collision, knocking him to the ground!<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; You crash into Loburd in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; <br />
+Cypher focuses on Kodiak and utters some strange words.<br />
+Cypher heals Kodiak.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; <br />
+Arvar has lost his link.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; <br />
+Saladin utters some strange words.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Good] Exits:NS&gt; <br />
+Denise focuses harshly on Arvar and utters some strange words.<br />
+Denise slowly fades into existence.<br />
+The sound of bones cracking echoes as Denise's force bolt slams into Arvar.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Ghimish crashes into Arvar in a thundering collision, knocking him to the ground!<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:V.Good] [Arvar:Fair] Exits:NS&gt; <br />
+Loburd slowly fades into existence.<br />
+Loburd misses you with his bludgeon.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill massacres Arvar with her pierce.<br />
+Selena pierces Kodiak.<br />
+Teligbo shoots Nia extremely hard.<br />
+Teligbo shoots Nia extremely hard.<br />
+Ghimish misses Arvar with his crush.<br />
+You massacre Arvar with your cleave.<br />
+Nia massacres Arvar with her slash.<br />
+Arvar misses Nia with his cleave.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:Bad] Exits:NS&gt; bash<br />
+<br />
+Arvar has reconnected.<br />
+<br />
+482H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:Bad] Exits:NS&gt; <br />
+Loburd bludgeons YOU very hard.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill pierces Arvar extremely hard.<br />
+Selena pierces Kodiak hard.<br />
+Teligbo shoots Nia very hard.<br />
+Teligbo misses Nia with his shoot.<br />
+Ghimish massacres Arvar with his crush.<br />
+You massacre Arvar with your cleave.<br />
+Nia massacres Arvar with her slash.<br />
+Arvar cleaves Nia extremely hard.<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; <br />
+Kodiak tells your group 'bash selena'<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; <br />
+Kodiak tells your group 'bash selena'<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; <br />
+Denise says 'man youll die'<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; <br />
+Nia tells your group 'fine'<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; Nia tells your group 'haste me'<br />
+You try to bash Arvar, but you miss and tumble forward onto your face.<br />
+stand<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:V.Bad] Exits:NS&gt; <br />
+Arvar steps aside as Nia attempts a bash, stumbles, and falls flat on her face.<br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Denise slowly fades into existence.<br />
+Saladin is caught in a spray of bright orange!<br />
+Loburd is struck by a spray of murky violet!<br />
+Teligbo is caught in a spray of bright orange!<br />
+Selena is caught in a spray of shimmering red!<br />
+Edilo is struck by a spray of murky violet!<br />
+Arvar is blasted by a spray of scintillating blue!<br />
+Arvar is caught in a spray of radiant yellow!<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:Awful] Exits:NS&gt; <br />
+Selena panics, and attempts to flee.<br />
+Selena flies north.<br />
+<br />
+469H 72V 3946719X 905C [Me:V.Good] [Nia:Good] [Arvar:Awful] Exits:NS&gt; <br />
+Edilo barely bludgeons Denise.<br />
+Denise misses Saladin with her pierce.<br />
+Saladin bludgeons Denise extremely hard.<br />
+Saladin misses Denise with his sting.<br />
+Loburd bludgeons YOU hard.<br />
+Iill massacres Arvar with her pierce.<br />
+Iill pierces Arvar extremely hard.<br />
+Arvar is incapacitated and will slowly die, if not aided.<br />
+Teligbo massacres Nia with his shoot.<br />
+Ghimish annihilates Arvar with his crush.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+exa corpse<br />
+Arvar is dead! R.I.P.<br />
+The death cry of Arvar echoes from somewhere nearby...<br />
+Edilo stops following Arvar.<br />
+Arvar now follows Edilo.<br />
+Edilo is the new leader of Arvar's group.<br />
+Arvar stops following Edilo.<br />
+Selena stops following Arvar.<br />
+Selena now follows Edilo.<br />
+Barero stops following Arvar.<br />
+Barero now follows Edilo.<br />
+Teligbo stops following Arvar.<br />
+Teligbo now follows Edilo.<br />
+Loburd stops following Arvar.<br />
+Loburd now follows Edilo.<br />
+Saladin stops following Arvar.<br />
+Saladin now follows Edilo.<br />
+Makaay stops following Arvar.<br />
+Makaay now follows Edilo.<br />
+You direct your attention to Loburd.<br />
+Ghimish gets a great elven axe from the corpse of Arvar.<br />
+Ghimish gets a blackened spiked bracer from the corpse of Arvar.<br />
+Ghimish gets a spiked ice bracelet from the corpse of Arvar.<br />
+Ghimish gets a solid silver girdle from the corpse of Arvar.<br />
+Ghimish gets a crimson cape embroidered with gold from the corpse of Arvar.<br />
+Ghimish gets a crimson shield of the wyrmgaard from the corpse of Arvar.<br />
+Ghimish gets bracers of blinding strike from the corpse of Arvar.<br />
+Ghimish gets a pair of spiked sterling gauntlets from the corpse of Arvar.<br />
+Ghimish gets a pair of wicked black boots from the corpse of Arvar.<br />
+Ghimish gets a pair of stained leather leggings from the corpse of Arvar.<br />
+Ghimish gets a bighorn sheep skull from the corpse of Arvar.<br />
+Ghimish gets a suit of crimson banded mail from the corpse of Arvar.<br />
+Ghimish gets a necklace of grotesque charms from the corpse of Arvar.<br />
+Ghimish is zapped by an ancient solamnic ring and instantly drops it.<br />
+Ghimish gets a carved ivory ring from the corpse of Arvar.<br />
+Ghimish gets a large pile of coins from the corpse of Arvar.<br />
+Ghimish gets a steel key from the corpse of Arvar.<br />
+Ghimish gets a shield of holy light from the corpse of Arvar.<br />
+Ghimish gets a grungy brown loincloth from the corpse of Arvar.<br />
+Ghimish gets a sinewy bracer from the corpse of Arvar.<br />
+Ghimish gets some plump white berries from the corpse of Arvar.<br />
+Ghimish gets a large piece of pork chop from the corpse of Arvar.<br />
+Ghimish gets a large piece of pork chop from the corpse of Arvar.<br />
+Ghimish gets a large piece of pork chop from the corpse of Arvar.<br />
+Ghimish gets some spurred chitinous greaves from the corpse of Arvar.<br />
+Ghimish gets some spurred chitinous greaves from the corpse of Arvar.<br />
+Ghimish gets a long diamond-edged blade from the corpse of Arvar.<br />
+Ghimish gets a powerfully odorous musk gland from the corpse of Arvar.<br />
+Ghimish gets a glowing scroll of recall from the corpse of Arvar.<br />
+Ghimish gets a glowing scroll of recall from the corpse of Arvar.<br />
+Loburd stands up.<br />
+<br />
+459H 72V 3946719X 905C [Me:Good] [Loburd:Good] Exits:NS&gt; <br />
+Kodiak flies north.<br />
+<br />
+459H 72V 3946719X 905C [Me:Good] [Loburd:Good] Exits:NS&gt; <br />
+Loburd gets a scroll from his backpack.<br />
+<br />
+459H 72V 3946719X 905C [Me:Good] [Loburd:Good] Exits:NS&gt; <br />
+Loburd presses the button and the shields of the lantern clang shut.<br />
+Loburd grabs a glowing scroll of recall.<br />
+Loburd recites a glowing scroll of recall.<br />
+Loburd disappears.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Saladin stops using a jewel encrusted light crossbow.<br />
+Saladin grabs a glowing scroll of recall.<br />
+Saladin recites a glowing scroll of recall.<br />
+Saladin disappears.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Denise utters some strange words.<br />
+Denise's hands issue a spray of prismatic color!<br />
+Teligbo is caught in a spray of shimmering red!<br />
+Edilo is hit by a spray of gleaming indigo!<br />
+Edilo is caught in a spray of shimmering red!<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Teligbo stops using a fine long bow.<br />
+Teligbo grabs a scroll of recall.<br />
+Teligbo recites a scroll of recall.<br />
+Teligbo disappears.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Edilo stops using an engraved ivory staff.<br />
+Edilo grabs a glowing scroll of recall.<br />
+Edilo recites a glowing scroll of recall.<br />
+Edilo disappears.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; You stand up.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; Nia stands up.<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a plain white handkerchief<br />
+a silver pitcher<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Iill says 'good'<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Ghimish is zapped by an ancient solamnic ring and instantly drops it.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Selena flies in from the north.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; get all corpse<br />
+You get a plain white handkerchief from the corpse of Arvar.<br />
+You get a silver pitcher from the corpse of Arvar.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Kodiak flies in from the north.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Nia crashes into Selena in a thundering collision, knocking her to the ground!<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Kodiak flies south.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Iill appears to be dancing around the room.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Denise focuses harshly on Selena and utters some strange words.<br />
+Denise slowly fades into existence.<br />
+The sound of bones cracking echoes as Denise's force bolt slams into Selena.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Nia massacres Selena with her slash.<br />
+Selena misses Nia with her pierce.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Iill slowly fades into existence.<br />
+Iill massacres Selena with her pierce.<br />
+Selena is mortally wounded, and will die soon, if not aided.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Kodiak flies in from the south.<br />
+<br />
+459H 72V 3946719X 905C Exits:NS&gt; <br />
+Ghimish obliterates Selena with his crush.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+exa corpse<br />
+Selena is dead! R.I.P.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='424'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=424">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="424">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

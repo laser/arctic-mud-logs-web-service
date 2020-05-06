@@ -1,0 +1,861 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1712-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1712'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+a small fight in apoc town</font></b>
+<p>
+POV: 
+zhusk<p>
+Log Rating:
+2.1112<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+we ran to kal and faught a few of them some died rest fled.</i>
+<p>
+<p>
+
+Entrance to Veterans Park<br />
+     You are at the entrance to Kalaman's park. It was named Veteran's Park<br />
+to commemorate the fallen heroes of Kalaman's past. The park is the place<br />
+where citizens come to take their time off and enjoy the tranquility and<br />
+beauty the park offers. You can head west and enter the park or go east<br />
+onto Vingaard Avenue.<br />
+Rebela the Relentless is standing here. (flying)<br />
+Luther Head, Druid for Hire is standing here. (flying) (invisible)<br />
+. . . has a granite appearance.<br />
+Grimbold the Fierce, Relentless Marauder is standing here. (flying)<br />
+Mithor Sedai, Malevolent Madness is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+731H 84V 1X 7339C Exits:EW&gt; You couldn't find what you were looking for.<br />
+<br />
+731H 84V 1X 7339C Exits:EW&gt; !<br />
+<br />
+Mithor flies west.<br />
+Grimbold flies west.<br />
+You follow Mithor west.<br />
+Luther flies in from the east.<br />
+Rebela flies in from the east.<br />
+Veterans Park<br />
+     The park has many healthy trees growing alongside the small path you<br />
+are traveling on. It is very quiet and peaceful here; you listen to the<br />
+birds singing instead of the sounds of the marketplace in town.<br />
+Rebela the Relentless is standing here. (flying)<br />
+Luther Head, Druid for Hire is standing here. (flying) (invisible)<br />
+. . . has a granite appearance.<br />
+Grimbold the Fierce, Relentless Marauder is standing here. (flying)<br />
+Mithor Sedai, Malevolent Madness is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Regar the Ruthless, Apocalyptic Denizen of Hell is standing here. (flying)<br />
+Lucia Rashina, Beautiful Flower of Shining Light, Healing the Apocalypse is <br />
+standing here. (flying)<br />
+Lord Baley, Apocalyptic Knight is standing here. (flying)<br />
+<br />
+731H 83V 1X 7339C Exits:NES&gt; You crash into Baley in a bone crunching bash, sending him <br />
+sprawling to the ground.<br />
+<br />
+731H 83V 1X 7339C [Zhusk:Perfect] [Baley:V.Good] Exits:NES&gt; !<br />
+Rebela crashes into Lucia in a thundering collision, knocking her to the ground!<br />
+<br />
+731H 83V 1X 7339C [Zhusk:Perfect] [Baley:V.Good] Exits:NES&gt; !<br />
+<br />
+Mithor flies north.<br />
+Grimbold flies north.<br />
+Luther flies north.<br />
+<br />
+731H 83V 1X 7339C [Zhusk:Perfect] [Baley:V.Good] Exits:NES&gt; !<br />
+<br />
+Rebela's mightly cleave almost cuts Lucia in two.<br />
+Rebela annihilates Lucia with her cleave.<br />
+Rebela massacres Lucia with her cleave.<br />
+Lucia whips Rebela hard.<br />
+You crush Baley extremely hard.<br />
+Your hammer begins to glow red hot, nearly searing the flesh from your hand!<br />
+Baley is burned by your hammer.<br />
+Baley bruises YOU with his cleave.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Grimbold tells your group 'sure ran here fast'<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Mithor flies in from the north.<br />
+Grimbold flies in from the north.<br />
+Luther flies in from the north.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Grimbold crashes into Baley in a thundering collision, knocking him to the <br />
+ground!<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Regar slashes Rebela very hard.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Ory appears before Baley in a puff of smoke.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Mithor focuses harshly on Baley and utters some strange words.<br />
+Mithor slowly fades into existence.<br />
+The sound of bones cracking echoes as Mithor's force bolt slams into Baley.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Kee flies in from the north.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Luther utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Kankan tells your group 'they're back'<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Lucia steps aside as Rebela attempts a bash, stumbles, and falls flat on her <br />
+face.<br />
+<br />
+730H 83V 1X 7339C [Zhusk:V.Good] [Baley:Good] Exits:NES&gt; <br />
+Luther slowly fades into existence.<br />
+Ory seems unaffected by Luther's swarm of insects.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Baley screams as a swarm of insects engulfs him.<br />
+Luther misses Ory with his hit.<br />
+Ory misses Luther with his hit.<br />
+Regar massacres Rebela with his slash.<br />
+Grimbold annihilates Baley with his cleave.<br />
+Grimbold massacres Baley with his cleave.<br />
+Rebela massacres Lucia with her cleave.<br />
+Lucia whips Rebela very hard.<br />
+You crush Baley extremely hard.<br />
+You MASSACRE Baley with your crush.<br />
+Baley bruises YOU with his cleave.<br />
+Baley bruises YOU with his cleave.<br />
+<br />
+728H 83V 1X 7339C [Zhusk:V.Good] [Baley:Fair] Exits:NES&gt; st<br />
+bash<br />
+<br />
+Rebela steps aside as Regar attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+728H 83V 1X 7339C [Zhusk:V.Good] [Baley:Fair] Exits:NES&gt; <br />
+Ory utters some strange words.<br />
+Ory's hands issue a spray of color!<br />
+Luther is caught in a spray of shimmering red!<br />
+Grimbold is caught in a spray of radiant yellow!<br />
+Grimbold seems weaker.<br />
+Ory misses Mithor and destroys an image instead.<br />
+Rebela is caught in a spray of shimmering red!<br />
+You are caught in a spray of radiant yellow!<br />
+Mithor focuses harshly on Baley and utters some strange words.<br />
+The sound of bones cracking echoes as Mithor's force bolt slams into Baley.<br />
+<br />
+715H 83V 1X 7339C [Zhusk:V.Good] [Baley:Bad] Exits:NES&gt; <br />
+Luther utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+715H 83V 1X 7339C [Zhusk:V.Good] [Baley:Bad] Exits:NES&gt; You crash into Baley in a bone <br />
+crunching bash, sending him sprawling to the ground.<br />
+<br />
+715H 83V 1X 7339C [Zhusk:V.Good] [Baley:Bad] Exits:NES&gt; <br />
+Kee utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+715H 83V 1X 7339C [Zhusk:V.Good] [Baley:Bad] Exits:NES&gt; <br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Mithor seems unaffected by Kee's swarm of insects.<br />
+Rebela seems unaffected by Kee's swarm of insects.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Ory seems unaffected by Luther's swarm of insects.<br />
+Regar seems unaffected by Luther's swarm of insects.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Baley screams as a swarm of insects engulfs him.<br />
+Ory screams as a swarm of insects engulfs him.<br />
+Regar seems unaffected by Luther's swarm of insects.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Baley seems unaffected by Luther's swarm of insects.<br />
+Kee misses Grimbold with his slash.<br />
+Regar slashes Rebela very hard.<br />
+Grimbold massacres Baley with his cleave.<br />
+Grimbold massacres Baley with his cleave.<br />
+Rebela massacres Lucia with her cleave.<br />
+Lucia whips Rebela very hard.<br />
+You MASSACRE Baley with your crush.<br />
+Your hammer begins to glow red hot, nearly searing the flesh from your hand!<br />
+Baley is burned by your hammer.<br />
+You MASSACRE Baley with your crush.<br />
+Baley bruises YOU with his cleave.<br />
+Baley bruises YOU with his cleave.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; <br />
+--&gt; Lucia &lt;-- stands up!<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; <br />
+Baley steps aside as Grimbold attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; <br />
+--&gt; Rebela &lt;-- stands up!<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; st<br />
+b<br />
+Rebela crashes into Ory in a thundering collision, knocking him to the ground!<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; bash<br />
+Mithor focuses harshly on Baley and utters some strange words.<br />
+The sound of bones cracking echoes as Mithor's force bolt slams into Baley.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; bash <br />
+Luther utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; bash <br />
+Lucia utters some strange words.<br />
+Lucia heals Lucia.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; bash <br />
+You try to bash Baley, but you miss <br />
+and tumble forward onto your face.<br />
+<br />
+686H 83V 1X 7339C [Zhusk:V.Good] [Baley:Awful] Exits:NES&gt; <br />
+Ory seems unaffected by Luther's swarm of insects.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Baley screams as a swarm of insects engulfs him.<br />
+Grimbold seems unaffected by Kee's swarm of insects.<br />
+Mithor seems unaffected by Kee's swarm of insects.<br />
+Rebela screams as a swarm of insects engulfs her.<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+Ory screams as a swarm of insects engulfs him.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia seems unaffected by Luther's swarm of insects.<br />
+Baley screams as a swarm of insects engulfs him.<br />
+Baley is stunned, but will likely regain consciousness again.<br />
+Ory screams as a swarm of insects engulfs him.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+A horrible scream escapes Baley's lips as thousands of swarming insects<br />
+suck his life away.<br />
+You receive 0 experience.<br />
+Baley is dead! R.I.P.<br />
+Kee misses Grimbold with his slash.<br />
+Ory misses Luther with his hit.<br />
+Regar slashes Rebela hard.<br />
+Rebela massacres Lucia with her cleave.<br />
+The death cry of Baley echoes from somewhere nearby...<br />
+Ory stops following Baley.<br />
+Baley now follows Ory.<br />
+Ory is the new leader of Baley's group.<br />
+Baley stops following Ory.<br />
+Kee stops following Baley.<br />
+Kee now follows Ory.<br />
+Lucia stops following Baley.<br />
+Lucia now follows Ory.<br />
+Regar stops following Baley.<br />
+Regar now follows Ory.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; <br />
+Grimbold gets a skull-capped mithril battleaxe from the corpse of Baley.<br />
+Grimbold gets a spiked wrist buckler from the corpse of Baley.<br />
+Grimbold gets a spiked bronze bracer from the corpse of Baley.<br />
+Grimbold gets a black scabbard belt from the corpse of Baley.<br />
+Grimbold gets a shimmering blue dragon scale cloak from the corpse of Baley.<br />
+Grimbold gets a wooden shield of dragons from the corpse of Baley.<br />
+Grimbold gets a pair of steel armplates inlaid with ebony from the corpse of <br />
+Baley.<br />
+Grimbold gets a pair of the weaponsmaster's gloves from the corpse of Baley.<br />
+Grimbold gets a pair of black, steel-plated boots from the corpse of Baley.<br />
+Grimbold gets a set of pitch black greaves from the corpse of Baley.<br />
+Grimbold gets a suit of charred black battle armor from the corpse of Baley.<br />
+Grimbold gets an ancient medallion from the corpse of Baley.<br />
+Grimbold gets a black neckguard of the Lily from the corpse of Baley.<br />
+Grimbold gets a red ring of the Dragon Highlord from the corpse of Baley.<br />
+Grimbold gets a black ring of the Lily from the corpse of Baley.<br />
+Grimbold gets a very large pile of coins from the corpse of Baley.<br />
+Grimbold gets a black stone from the corpse of Baley.<br />
+Grimbold gets a blue scroll from the corpse of Baley.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Baley.<br />
+Grimbold gets a pair of pitch black gloves from the corpse of Baley.<br />
+Grimbold gets a chef's spoon from the corpse of Baley.<br />
+Grimbold gets a waterskin from the corpse of Baley.<br />
+Grimbold gets a small canteen from the corpse of Baley.<br />
+Grimbold gets a milky potion of see invisible from the corpse of Baley.<br />
+Grimbold gets a milky potion of see invisible from the corpse of Baley.<br />
+Grimbold gets a small canteen from the corpse of Baley.<br />
+Grimbold gets a small wooden chest from the corpse of Baley.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; st<br />
+<br />
+--&gt; Grimbold &lt;-- stands up!<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; <br />
+Rebela crashes into Lucia in a thundering collision, knocking her to the ground!<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; ba<br />
+Kee utters some strange words.<br />
+Kee disappears.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; bash <br />
+--&gt; Regar &lt;-- stands up!<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; bash luciYou stand up.<br />
+Mithor tells your group 'KANKAN COME'<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; bash lucia<br />
+You couldn't find what you were looking for.<br />
+You are already standing.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; Ory screams as a swarm of insects engulfs him.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia seems unaffected by Luther's swarm of insects.<br />
+Ory screams as a swarm of insects engulfs him.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia seems unaffected by Luther's swarm of insects.<br />
+Ory seems unaffected by Luther's swarm of insects.<br />
+Regar seems unaffected by Luther's swarm of insects.<br />
+Lucia seems unaffected by Luther's swarm of insects.<br />
+Luther misses Ory with his hit.<br />
+Ory misses Luther with his hit.<br />
+Regar misses Rebela with his slash.<br />
+Rebela massacres Lucia with her cleave.<br />
+Rebela massacres Lucia with her cleave.<br />
+Lucia misses Rebela with her whip.<br />
+You couldn't find what you were looking for.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; You are already standing.<br />
+<br />
+686H 83V 1X 7339C Exits:NES&gt; You try to bash Lucia, but you miss and tumble forward onto <br />
+your face.<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; <br />
+Luther focuses harshly on Ory and utters some strange words.<br />
+Huge flames burn Ory from above.<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; st<br />
+Mithor focuses harshly on Ory and utters some strange words.<br />
+Brains splatter on you as Mithor's force bolt shatters Ory's skull.<br />
+You receive 0 experience.<br />
+Ory is dead! R.I.P.<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; st<br />
+<br />
+The death cry of Ory echoes from somewhere nearby...<br />
+Regar stops following Ory.<br />
+Lucia stops following Ory.<br />
+Kee stops following Ory.<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; <br />
+Kankan tells your group 'hrm, they're still around'<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; <br />
+Kankan tells your group 'where'<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; <br />
+Lucia steps aside as Grimbold attempts a bash, stumbles, and falls flat on his <br />
+face.<br />
+<br />
+686H 83V 1X 7339C [Rebela:Good] [Lucia:Fair] Exits:NES&gt; bash reRegar screams as a swarm of insects <br />
+engulfs him.<br />
+Lucia seems unaffected by Luther's swarm of insects.<br />
+Regar screams as a swarm of insects engulfs him.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Regar seems unaffected by Luther's swarm of insects.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Luther misses Regar with his hit.<br />
+Grimbold massacres Lucia with his cleave.<br />
+Grimbold annihilates Lucia with his cleave.<br />
+You should probably stand up!<br />
+You MASSACRE Lucia with your crush.<br />
+Regar slashes Rebela hard.<br />
+Rebela massacres Lucia with her cleave.<br />
+Rebela massacres Lucia with her cleave.<br />
+Lucia misses Rebela with her whip.<br />
+You stand up.<br />
+Regar stops using a clear sphere.<br />
+Regar grabs a glowing scroll of recall.<br />
+Regar recites a glowing scroll of recall.<br />
+Regar disappears.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; bash re<br />
+Luther gets a large pile of coins from the corpse of Ory.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; bash re<br />
+Lucia steps aside as Rebela attempts a bash, stumbles, and falls flat on her <br />
+face.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; bash <br />
+Luther slowly fades into existence.<br />
+Luther misses Lucia with his hit.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; bash luc<br />
+--&gt; Grimbold &lt;-- stands up!<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; bash lucia<br />
+You try to bash Lucia, but you miss <br />
+and tumble forward onto your face.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; <br />
+Baley arrives from the east.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; <br />
+Baley gets a heavy cloak from the corpse of Ory.<br />
+Baley gets a pair of leather sleeves from the corpse of Ory.<br />
+Baley gets a pair of leather boots from the corpse of Ory.<br />
+Baley gets a pair of leather pants from the corpse of Ory.<br />
+Baley gets a leather cap from the corpse of Ory.<br />
+Baley gets a leather jacket from the corpse of Ory.<br />
+Baley gets an alligator scale necklace from the corpse of Ory.<br />
+Baley gets an alligator scale necklace from the corpse of Ory.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; st<br />
+Baley leaves east.<br />
+<br />
+693H 93V 1X 7339C [Rebela:Good] [Lucia:Awful] Exits:NES&gt; st<br />
+<br />
+Lucia grabs a glowing scroll of recall.<br />
+Lucia recites a glowing scroll of recall.<br />
+Lucia disappears.<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; <br />
+The swarm of insects dissipates.<br />
+The swarm of insects dissipates.<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; <br />
+--&gt; Rebela &lt;-- stands up!<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; <br />
+Kankan tells your group 'where'<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; b<br />
+Kankan tells your group 'where'<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; bashYou stand up.<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; l<br />
+Veterans Park<br />
+     The park has many healthy trees growing alongside the small path you<br />
+are traveling on. It is very quiet and peaceful here; you listen to the<br />
+birds singing instead of the sounds of the marketplace in town.<br />
+The corpse of Ory is lying here.<br />
+A sheaf of spellbook pages has been left here.<br />
+The corpse of Baley is lying here.<br />
+A swarm of insects fills the area. [2]<br />
+Luther Head, Druid for Hire is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Grimbold the Fierce, Relentless Marauder is standing here. (flying)<br />
+Mithor Sedai, Malevolent Madness is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Rebela the Relentless is standing here. (flying)<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; <br />
+The swarm of insects dissipates.<br />
+<br />
+693H 93V 1X 7339C Exits:NES&gt; <br />
+Rebela gets a sheaf of spellbook pages.<br />
+<br />
+and that was it exciting right?:P
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1712'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1712">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1712">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,857 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>How many times have you been spooned by another Arctic player?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>0<br>
+<input type=radio value=1 name=voteid>1<br>
+<input type=radio value=2 name=voteid>2-5<br>
+<input type=radio value=3 name=voteid>5-10<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=144><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2278-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='209.234.171.41' and logid='2278'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Cleirvoyance/Semaj RIP</font></b>
+<p>
+POV: 
+Kude<p>
+Log Rating:
+1.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Apoc tries a feeble attempt at pkill and enlist the help of PZC to try to finish the kill.. Baer yells 'i got dams buddy'</i>
+<p>
+<p>
+
+<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:2 Exits:NE&gt; gt goYou tell your group 'go'<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:2 Exits:NE&gt; gt gogt goYou tell your group 'go'<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:2 Exits:NE&gt; You tell your group 'go'<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:2 Exits:NE&gt; <br />
+Crunch flies north.<br />
+You follow Crunch north.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+&lt;PZC&gt; Dr. Cleirvoyance Yoo's Little Cleir Bear is standing here.<br />
+. . . has a metallic luster.<br />
+The Demon Marilith is here, writhing its snake-like tail.<br />
+&lt;Apoc&gt; Semaj the Female Gnome is standing here. (flying)<br />
+stup Semaj&lt;Apoc&gt; Baer, Spartan Warrior of the Apocalypse is standing here.<br />
+<br />
+392H 175V 1X 17.59% 1001C Mem:2 Exits:ESW&gt; You wiggle your fingers as you outline Semaj's head in the air.<br />
+The magic fails!<br />
+<br />
+392H 175V 1X 17.59% 1001C Mem:2 Exits:ESW&gt; gt oh ripyd<br />
+Crunch crashes into Semaj in a thundering collision, knocking her to the ground!<br />
+<br />
+392H 175V 1X 17.59% 1001C Mem:2 Exits:ESW&gt; <br />
+Crunch massacres Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+The white aura around your body fades.<br />
+The protective presence around you fades.<br />
+Murbella crashes into Cleirvoyance in a thundering collision, knocking him to the ground!<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:1 Exits:ESW&gt; <br />
+Rala focuses harshly on Baer and utters some strange words.<br />
+Baer freezes in place.<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:1 Exits:ESW&gt; <br />
+Xi comes out of hiding.<br />
+Xi cleaves Cleirvoyance extremely hard.<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:1 Exits:ESW&gt; <br />
+Riv swings madly at Cleirvoyance with a heavily battle scarred claymore, knocking him to the ground.<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:1 Exits:ESW&gt; You tell your group 'oh ripyd'<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:1 Exits:ESW&gt; ki semajYou massacre Semaj with your crush.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Good] Mem:1 Exits:ESW&gt; <br />
+You crush Semaj extremely hard.<br />
+Riv slashes Cleirvoyance extremely hard.<br />
+Xi misses Cleirvoyance with his cleave.<br />
+Xi cleaves Cleirvoyance extremely hard.<br />
+Murbella slashes Cleirvoyance very hard.<br />
+Cleirvoyance crushes Murbella very hard.<br />
+Crunch massacres Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Good] Mem:1 Exits:ESW&gt; <br />
+Rala focuses harshly on Baer and utters some strange words.<br />
+The sound of bones cracking echoes as Rala's force bolt slams into Baer.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Good] Mem:1 Exits:ESW&gt; <br />
+Xi dives into Cleirvoyance and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Good] Mem:1 Exits:ESW&gt; <br />
+Semaj gives the demon Marilith an order.<br />
+The demon Marilith crashes into Rala in a thundering collision, knocking her to the ground!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Good] Mem:1 Exits:ESW&gt; <br />
+Cleirvoyance bleeds profusely from his wounds.<br />
+The demon Marilith hits Rala very hard.<br />
+The demon Marilith is burned, as it swings at Rala.<br />
+The demon Marilith hits Rala extremely hard.<br />
+The demon Marilith is burned, as it swings at Rala.<br />
+Rala bludgeons Baer hard.<br />
+You crush Semaj extremely hard.<br />
+Riv massacres Cleirvoyance with his slash.<br />
+Xi cleaves Cleirvoyance hard.<br />
+Xi cleaves Cleirvoyance hard.<br />
+Murbella slashes Cleirvoyance very hard.<br />
+Cleirvoyance crushes Murbella hard.<br />
+Crunch misses Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+Crunch tells your group 'frag cleir'<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:1 Exits:ESW&gt; c 'stick' cleirvoyanceMurbella crashes into Baer in a thundering collision, knocking him to the ground!<br />
+You utter the words, 'sticks to snakes'<br />
+As you throw a handful of sticks at Cleirvoyance, they turn into snakes.<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Cleirvoyance stands up.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; c 'stick' cleirvoyance<br />
+Semaj stands up.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Cleirvoyance utters some strange words.<br />
+Cleirvoyance heals Cleirvoyance.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Semaj focuses on Baer and utters some strange words.<br />
+Semaj heals Baer.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Xi sends a swarm of flying piranha at Cleirvoyance.<br />
+A piranha tears into Cleirvoyance's flesh.<br />
+A piranha tears into Cleirvoyance's flesh.<br />
+A piranha tears into Cleirvoyance's flesh.<br />
+A piranha tears into Cleirvoyance's flesh.<br />
+A piranha tears into Cleirvoyance's flesh.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Riv appears to get angry for a second.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Crunch crashes into Semaj in a thundering collision, knocking her to the ground!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Cleirvoyance bleeds profusely from his wounds.<br />
+The demon Marilith hits Rala extremely hard.<br />
+The demon Marilith is burned, as it swings at Rala.<br />
+Rala bludgeons Baer hard.<br />
+Riv slashes Cleirvoyance extremely hard.<br />
+Xi cleaves Cleirvoyance hard.<br />
+Xi cleaves Cleirvoyance very hard.<br />
+Murbella slashes Cleirvoyance very hard.<br />
+Crunch massacres Semaj with his pierce.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; You utter the words, 'sticks to snakes'<br />
+As you throw a handful of sticks at Cleirvoyance, they turn into snakes.<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; c 'stick' cleirvoyance<br />
+Xi unsuccessfully tries to save Murbella.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Riv charges at Cleirvoyance, but he managed to move away.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Fair] Mem:2 Exits:ESW&gt; <br />
+Cleirvoyance bleeds profusely from his wounds.<br />
+The demon Marilith hits Rala hard.<br />
+The demon Marilith is burned, as it swings at Rala.<br />
+Rala bludgeons Baer hard.<br />
+Riv slashes Cleirvoyance very hard.<br />
+Xi cleaves Cleirvoyance hard.<br />
+Xi cleaves Cleirvoyance.<br />
+Murbella slashes Cleirvoyance very hard.<br />
+Cleirvoyance crushes Murbella very hard.<br />
+Crunch massacres Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:2 Exits:ESW&gt; <br />
+Cleirvoyance focuses harshly on Rala and utters some strange words.<br />
+Rala cries out in pain as Cleirvoyance grabs her.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:2 Exits:ESW&gt; c 'stick' cleirvoyance<br />
+The demon Marilith tries in vain to disarm Rala's weapon.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:2 Exits:ESW&gt; Murbella crashes into Cleirvoyance in a thundering collision, knocking him to the ground!<br />
+You utter the words, 'sticks to snakes'<br />
+As you throw a handful of sticks at Cleirvoyance, they turn into snakes.<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+Cleirvoyance screams in pain as a snake tears into his flesh.<br />
+The magic fails!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Xi dives into Cleirvoyance and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Rala stands up.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Rala panics, and attempts to flee.<br />
+Rala flies west.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Cleirvoyance bleeds profusely from his wounds.<br />
+Riv slashes Cleirvoyance extremely hard.<br />
+Cleirvoyance is incapacitated and will slowly die, if not aided.<br />
+Xi massacres Cleirvoyance with his cleave.<br />
+You receive 0 experience.<br />
+Cleirvoyance is dead! R.I.P.<br />
+get all.coins corpseCrunch massacres Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+The death cry of Cleirvoyance echoes from somewhere nearby...<br />
+Cleirvoyance stops following Semaj.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Crunch gets a very large pile of coins from the corpse of Cleirvoyance.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; get all corpseWho should the spell be cast upon?<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; Semaj gives the demon Marilith an order.<br />
+You get a skull capped mace from the corpse of Cleirvoyance.<br />
+You get a jade bracelet from the corpse of Cleirvoyance.<br />
+You get a grey leather bracer from the corpse of Cleirvoyance.<br />
+You get a leather traveling pack from the corpse of Cleirvoyance.<br />
+You get a goblin skin cloak from the corpse of Cleirvoyance.<br />
+You get some embroidered desert sleeves from the corpse of Cleirvoyance.<br />
+You get some worn dwarven gloves from the corpse of Cleirvoyance.<br />
+You get a pair of black satin boots from the corpse of Cleirvoyance.<br />
+You get some embroidered desert leggings from the corpse of Cleirvoyance.<br />
+You get a blackened steel barbute from the corpse of Cleirvoyance.<br />
+You get a furry white cloak from the corpse of Cleirvoyance.<br />
+You get a sheaf of spellbook pages from the corpse of Cleirvoyance.<br />
+You get a deep black robe from the corpse of Cleirvoyance.<br />
+You get an ornate headdress from the corpse of Cleirvoyance.<br />
+You get a pair of leather boots from the corpse of Cleirvoyance.<br />
+You get a fine gossamer shroud from the corpse of Cleirvoyance.<br />
+You get an ivory hilted dagger from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a sterling dinner bell from the corpse of Cleirvoyance.<br />
+You get a smear of acacia gum from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a long wooden hunting spear from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get a milky potion of see invisible from the corpse of Cleirvoyance.<br />
+You get an entire loaf of bread from the corpse of Cleirvoyance.<br />
+You get an entire loaf of bread from the corpse of Cleirvoyance.<br />
+You get a large waterskin from the corpse of Cleirvoyance.<br />
+You get a piece of sweet bread from the corpse of Cleirvoyance.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Keg : You can't carry that many items.<br />
+Sabre : You can't carry that many items.<br />
+Cinnamon : You can't carry that many items.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Semaj gives the demon Marilith an order.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Semaj stands up.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Bad] Mem:3 Exits:ESW&gt; <br />
+Crunch crashes into Semaj in a thundering collision, knocking her to the ground!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; groupYour group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Crunch           perfect   rested    fighting   Y   N    N    Y     0    0<br />
+  Riv              v.good    rested    standing   Y   N    N    Y     0    0<br />
+  Xi               perfect   rested    standing   N   N    Y    Y     0    0<br />
+  Rala             bad       rested    standing   Y   N    N    N     1    3<br />
+  Kude             perfect   rested    fighting   Y   N    Y    Y     1    3<br />
+  Murbella         v.good    rested    standing   Y   N    N    Y     0    0<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; <br />
+Rala flies in from the west.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; <br />
+Riv gets a piece of sweet bread from the corpse of Cleirvoyance.<br />
+Riv gets a piece of sweet bread from the corpse of Cleirvoyance.<br />
+Riv gets a scroll of recall from the corpse of Cleirvoyance.<br />
+Riv gets a portable keg from the corpse of Cleirvoyance.<br />
+Riv gets a blue steel sabre from the corpse of Cleirvoyance.<br />
+Riv gets a stick of cinnamon from the corpse of Cleirvoyance.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; <br />
+Your fingers prickle as your power returns.<br />
+Crunch annihilates Semaj with his pierce.<br />
+Semaj misses Crunch with her hit.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; drop all.milkyYou drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+You drop a milky potion of see invisible.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:V.Bad] Mem:3 Exits:ESW&gt; <br />
+Riv massacres Semaj with his slash.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Awful] Mem:3 Exits:ESW&gt; c 'cure critical' rala<br />
+Baer stands up.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Awful] Mem:3 Exits:ESW&gt; You utter the words, 'cure critical'<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Awful] Mem:4 Exits:ESW&gt; <br />
+Xi massacres Semaj with his cleave.<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Awful] Mem:4 Exits:ESW&gt; <br />
+Murbella crashes into Baer in a thundering collision, knocking him to the ground!<br />
+<br />
+392H 176V 1X 17.59% 1001C [Crunch:Perfect] [Semaj:Awful] Mem:4 Exits:ESW&gt; hex<br />
+Murbella slashes Baer extremely hard.<br />
+Baer crushes Murbella extremely hard.<br />
+Xi massacres Semaj with his cleave.<br />
+Xi cleaves Semaj extremely hard.<br />
+Semaj is incapacitated and will slowly die, if not aided.<br />
+Riv obliterates Semaj with his slash.<br />
+You receive 0 experience.<br />
+Semaj is dead! R.I.P.<br />
+get all.coins corpseThe death cry of Semaj echoes from somewhere nearby...<br />
+Semaj sinks gently to the ground.<br />
+Semaj stops following Baer.<br />
+The demon Marilith stops following Semaj.<br />
+The demon Marilith transcends this world and enters another plane.<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:4 Exits:ESW&gt; get all corpseYou couldn't find what you were looking for.<br />
+<br />
+392H 176V 1X 17.59% 1001C Mem:4 Exits:ESW&gt; Riv massacres Baer with his slash.<br />
+You get a very large pile of coins from the corpse of Semaj.<br />
+There were 1981 coins.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; assYou get a vine belt from the corpse of Semaj.<br />
+You get a brightly colored robe from the corpse of Semaj.<br />
+You get a shield of clear ice from the corpse of Semaj.<br />
+You get a pair of tanned leather pants from the corpse of Semaj.<br />
+You get a sky blue tunic from the corpse of Semaj.<br />
+You get a foul smelling ring from the corpse of Semaj.<br />
+You get a bright ball of light from the corpse of Semaj.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; You attempt to assist Riv.<br />
+You massacre Baer with your crush.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Good] Mem:4 Exits:ESW&gt; <br />
+Crunch gets a glowing scroll of recall from the corpse of Semaj.<br />
+Crunch gets a glowing scroll of recall from the corpse of Semaj.<br />
+Crunch gets a milky potion of see invisible from the corpse of Semaj.<br />
+Crunch gets a piece of sweet bread from the corpse of Semaj.<br />
+Crunch gets a clear potion of invisibility from the corpse of Semaj.<br />
+Crunch gets a clear potion of invisibility from the corpse of Semaj.<br />
+Crunch gets a clear potion of invisibility from the corpse of Semaj.<br />
+Crunch gets a crystal shard necklace from the corpse of Semaj.<br />
+Crunch gets a crystal shard necklace from the corpse of Semaj.<br />
+Crunch gets a crystal shard necklace from the corpse of Semaj.<br />
+Crunch gets a glowing scroll of recall from the corpse of Semaj.<br />
+Crunch gets a glowing scroll of recall from the corpse of Semaj.<br />
+Crunch gets a milky potion of see invisible from the corpse of Semaj.<br />
+Crunch gets a milky potion of see invisible from the corpse of Semaj.<br />
+Crunch gets a small wooden chest from the corpse of Semaj.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Good] Mem:4 Exits:ESW&gt; <br />
+Baer steps aside as Crunch attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Good] Mem:4 Exits:ESW&gt; <br />
+Xi massacres Baer with his cleave.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Good] Mem:4 Exits:ESW&gt; <br />
+Cleirvoyance arrives from the east.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Good] Mem:4 Exits:ESW&gt; <br />
+Xi cleaves Baer very hard.<br />
+Xi cleaves Baer extremely hard.<br />
+Crunch annihilates Baer with his pierce.<br />
+You crush Baer extremely hard.<br />
+Riv annihilates Baer with his slash.<br />
+Murbella slashes Baer extremely hard.<br />
+Baer crushes Murbella.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Fair] Mem:4 Exits:ESW&gt; <br />
+Cleirvoyance leaves south.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Fair] Mem:4 Exits:ESW&gt; <br />
+Rala focuses harshly on Baer and utters some strange words.<br />
+The sound of bones cracking echoes as Rala's force bolt slams into Baer.<br />
+<br />
+392H 176V 1X 17.59% 2982C [Murbella:V.Good] [Baer:Fair] Mem:4 Exits:ESW&gt; hex<br />
+Baer grabs a glowing scroll of recall.<br />
+Baer recites a glowing scroll of recall.<br />
+Baer disappears.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; <br />
+Cleirvoyance arrives from the south.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; <br />
+Cleirvoyance gets a wooden shield.<br />
+Cleirvoyance gets the corpse of Semaj.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets a milky potion of see invisible.<br />
+Cleirvoyance gets the corpse of Cleirvoyance.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; <br />
+Ripyd flies in from the east.<br />
+<br />
+392H 176V 1X 17.59% 2982C Mem:4 Exits:ESW&gt; <br />
+Ripyd flies south.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='209.234.171.41' and logid='2278'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2278">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2278">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="209.234.171.41">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

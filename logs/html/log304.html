@@ -1,0 +1,746 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 304-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='304'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+NOW rips</font></b>
+<p>
+POV: 
+Grome<p>
+Log Rating:
+0.8001<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Die.</i>
+<p>
+<p>
+
+<br />
+604H 105V 29628423X 4572C Exits:NESW&gt; <br />
+bash bacal<br />
+You crash into Bacal in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:Perfect] [Bacal:Fair] Exits:NESW&gt; <br />
+Kelpo comes tumbling into the room, as if tossed from somewhere else.<br />
+Prawl comes tumbling into the room, as if tossed from somewhere else.<br />
+You crush Bacal very hard.<br />
+Eatin pierces Bacal extremely hard.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal pierces Eatin hard.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Prawl grabs a glowing scroll of recall.<br />
+Prawl recites a glowing scroll of recall.<br />
+Prawl disappears.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Kelpo flies north.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Sunai arrives from the north.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Sunai leaves east.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+You massacre Bacal with your crush.<br />
+Bacal deflects part of Eatin's blow with his shield.<br />
+Eatin pierces Bacal hard.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal pierces Eatin hard.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+bash <br />
+<br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Kelpo comes tumbling into the room, as if tossed from somewhere else.<br />
+Prawl comes tumbling into the room, as if tossed from somewhere else.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; You crash into Bacal in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+You massacre Bacal with your crush.<br />
+Bacal blocks Eatin's blow with a quick raise of his shield.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal pierces Eatin very hard.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Kelpo flies north.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Prawl leaves north.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Fair] Exits:NESW&gt; <br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+Benicio slowly fades into existence.<br />
+The sound of bones cracking echoes as Benicio's force bolt slams into Bacal.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Bad] Exits:NESW&gt; <br />
+t kelpo hold on<br />
+<br />
+Prawl arrives from the north.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Bad] Exits:NESW&gt; <br />
+You massacre Bacal with your crush.<br />
+Bacal blocks Eatin's blow with a quick raise of his shield.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal misses Eatin with his pierce.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:V.Bad] Exits:NESW&gt; <br />
+bash prawl<br />
+<br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+The sound of bones cracking echoes as Benicio's force bolt slams into Bacal.<br />
+<br />
+604H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:V.Bad] Exits:NESW&gt; <br />
+You are sent sprawling as Prawl crashes into you.<br />
+<br />
+595H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:V.Bad] Exits:NESW&gt; <br />
+Prawl slashes YOU.<br />
+You massacre Bacal with your crush.<br />
+Bacal deflects part of Eatin's blow with his shield.<br />
+Eatin pierces Bacal very hard.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal pierces Eatin hard.<br />
+<br />
+590H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:V.Bad] Exits:NESW&gt; <br />
+st<br />
+bash<br />
+<br />
+Prawl slashes YOU hard.<br />
+You massacre Bacal with your crush.<br />
+Eatin pierces Bacal extremely hard.<br />
+Eatin misses Bacal with his sting.<br />
+Bacal misses Eatin with his pierce.<br />
+<br />
+581H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Awful] Exits:NESW&gt; <br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+Bacal wavers under the impact of the lightning bolt sent by Benicio.<br />
+<br />
+581H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Awful] Exits:NESW&gt; You tell Kelpo 'hold on'<br />
+<br />
+581H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Awful] Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+581H 105V 29628423X 4572C [Eatin:V.Good] [Bacal:Awful] Exits:NESW&gt; <br />
+Prawl heroically rescues Bacal.<br />
+<br />
+581H 105V 29628423X 4572C [Bacal:Awful] Exits:NESW&gt; You stand up.<br />
+<br />
+581H 105V 29628423X 4572C [Bacal:Awful] Exits:NESW&gt; You try to bash Bacal, but you miss and tumble forward onto your face.<br />
+<br />
+581H 105V 29628423X 4572C [Grome:V.Good] [Bacal:Awful] Exits:NESW&gt; <br />
+Bacal pierces YOU extremely hard.<br />
+Eatin pierces Prawl very hard.<br />
+Eatin misses Prawl with his sting.<br />
+Prawl slashes Eatin hard.<br />
+You massacre Bacal with your crush.<br />
+<br />
+585H 125V 29628423X 4572C [Grome:V.Good] [Bacal:Awful] Exits:NESW&gt; <br />
+Canopus tells your group 'they were in gp inn'<br />
+<br />
+585H 125V 29628423X 4572C [Grome:V.Good] [Bacal:Awful] Exits:NESW&gt; <br />
+bash bacal<br />
+<br />
+Benicio focuses harshly on Bacal and utters some strange words.<br />
+Bacal receives the full blast of a lightning bolt from Benicio ... and is no more.<br />
+You receive 0 experience.<br />
+Bacal is dead! R.I.P.<br />
+<br />
+------------------------------------------------------------------------------------------<br />
+<br />
+585H 87V 29628423X 5442C Exits:W&gt; <br />
+Eatin quickly thrusts an elegant dagger at Prawl from behind, but somehow falls short of his target.<br />
+<br />
+585H 87V 29628423X 5442C Exits:W&gt; <br />
+Eatin pierces Prawl extremely hard.<br />
+Eatin misses Prawl with his sting.<br />
+Prawl misses Eatin with his slash.<br />
+<br />
+585H 87V 29628423X 5442C Exits:W&gt; <br />
+bash prawl<br />
+You crash into Prawl in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+585H 87V 29628423X 5442C [Eatin:Good] [Prawl:Bad] Exits:W&gt; <br />
+Kelpo barely pierces Prawl.<br />
+<br />
+585H 87V 29628423X 5442C [Eatin:Good] [Prawl:Bad] Exits:W&gt; <br />
+Benicio focuses harshly on Prawl and utters some strange words.<br />
+Prawl wavers under the impact of the lightning bolt sent by Benicio.<br />
+<br />
+585H 87V 29628423X 5442C [Eatin:Good] [Prawl:V.Bad] Exits:W&gt; <br />
+Kelpo misses Prawl with his pierce.<br />
+You crush Prawl extremely hard.<br />
+Eatin massacres Prawl with his pierce.<br />
+Eatin misses Prawl with his sting.<br />
+Prawl slashes Eatin hard.<br />
+<br />
+585H 87V 29628423X 5442C [Eatin:Good] [Prawl:V.Bad] Exits:W&gt; <br />
+st<br />
+<br />
+Benicio focuses harshly on Prawl and utters some strange words.<br />
+Prawl wavers under the impact of the lightning bolt sent by Benicio.<br />
+<br />
+585H 87V 29628423X 5442C [Eatin:Good] [Prawl:V.Bad] Exits:W&gt; <br />
+bash prawl<br />
+<br />
+You crush Prawl very hard.<br />
+Eatin pierces Prawl extremely hard.<br />
+Eatin misses Prawl with his sting.<br />
+Prawl slashes Eatin.<br />
+<br />
+604H 104V 29628423X 5442C [Eatin:V.Good] [Prawl:V.Bad] Exits:W&gt; You are already standing.<br />
+Prawl stands up.<br />
+<br />
+604H 104V 29628423X 5442C [Eatin:V.Good] [Prawl:V.Bad] Exits:W&gt; You crash into Prawl in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+604H 104V 29628423X 5442C [Eatin:V.Good] [Prawl:Awful] Exits:W&gt; <br />
+Kelpo focuses harshly on Prawl and utters some strange words.<br />
+Prawl winces in pain as Kelpo shreds him with a spray of thorns.<br />
+<br />
+604H 104V 29628423X 5442C [Eatin:V.Good] [Prawl:Awful] Exits:W&gt; <br />
+say die slut<br />
+<br />
+You massacre Prawl with your crush.<br />
+Eatin pierces Prawl extremely hard.<br />
+Eatin misses Prawl with his sting.<br />
+Prawl slashes Eatin hard.<br />
+<br />
+604H 104V 29628423X 5442C [Eatin:Good] [Prawl:Awful] Exits:W&gt; <br />
+Benicio focuses harshly on Prawl and utters some strange words.<br />
+Benicio aims a magic missile at Prawl, who staggers under the blow.<br />
+Benicio aims a magic missile at Prawl, who staggers under the blow.<br />
+Prawl is mortally wounded, and will die soon, if not aided.<br />
+The magic missile sent by Benicio causes Prawl to stagger and collapse in a<br />
+lifeless heap.<br />
+You receive 0 experience.<br />
+Prawl is dead! R.I.P.<br />
+<br />
+604H 104V 29628423X 5442C [Prawl:Dying] Exits:W&gt; <br />
+The death cry of Prawl echoes from somewhere nearby...<br />
+Erand stops following Prawl.<br />
+<br />
+604H 104V 29628423X 5442C Exits:W&gt; <br />
+Kelpo gets a long sword from the corpse of Prawl.<br />
+Kelpo gets a bronze shield from the corpse of Prawl.<br />
+Kelpo gets a large pile of coins from the corpse of Prawl.<br />
+Kelpo gets a pork chop from the corpse of Prawl.<br />
+Kelpo gets a skull mask from the corpse of Prawl.<br />
+Kelpo gets a milky potion of see invisible from the corpse of Prawl.<br />
+Kelpo gets a pair of leather gloves from the corpse of Prawl.<br />
+Kelpo gets a waterskin from the corpse of Prawl.<br />
+Kelpo gets a waterskin from the corpse of Prawl.<br />
+Kelpo gets a waterskin from the corpse of Prawl.<br />
+<br />
+604H 104V 29628423X 5442C Exits:W&gt; <br />
+Kelpo divides 608 coins equally among the group members present.<br />
+<br />
+604H 104V 29628423X 5594C Exits:W&gt; You say 'die slut'<br />
+<br />
+---------------------------------------------------------------------------------------------<br />
+604H 63V 29628301X 5442C Exits:NSW&gt; <br />
+bash erand<br />
+<br />
+Kelpo comes tumbling into the room, as if tossed from somewhere else.<br />
+Erand comes tumbling into the room, as if tossed from somewhere else.<br />
+Kelpo tells your group 'killing'<br />
+<br />
+604H 63V 29628301X 5442C Exits:NSW&gt; <br />
+!<br />
+You crash into Erand in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+604H 63V 29628301X 5442C [Grome:Perfect] [Erand:Fair] Exits:NSW&gt; <br />
+Benicio focuses harshly on Erand and utters some strange words.<br />
+<br />
+604H 63V 29628301X 5442C [Grome:Perfect] [Erand:Fair] Exits:NSW&gt; <br />
+You massacre Erand with your crush.<br />
+Erand cleaves YOU very hard.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Fair] Exits:NSW&gt; <br />
+Kelpo misses Erand with his slash.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Fair] Exits:NSW&gt; <br />
+Benicio focuses harshly on Erand and utters some strange words.<br />
+Erand freezes in place.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Fair] Exits:NSW&gt; <br />
+A mercenary arrives from the south.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Fair] Exits:NSW&gt; <br />
+Kelpo slashes Erand hard.<br />
+You massacre Erand with your crush.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Bad] Exits:NSW&gt; <br />
+bash erand<br />
+<br />
+Kelpo focuses harshly on Erand and utters some strange words.<br />
+Erand winces in pain as Kelpo shreds him with a spray of thorns.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Bad] Exits:NSW&gt; You crash into Erand in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:V.Bad] Exits:NSW&gt; <br />
+Benicio focuses harshly on Erand and utters some strange words.<br />
+The sound of bones cracking echoes as Benicio's force bolt slams into Erand.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:V.Bad] Exits:NSW&gt; <br />
+You massacre Erand with your crush.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:V.Bad] Exits:NSW&gt; <br />
+A mercenary looks at Kelpo and yells  'There's the scoundrel!'<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:V.Bad] Exits:NSW&gt; <br />
+Kelpo focuses harshly on Erand and utters some strange words.<br />
+Erand winces in pain as Kelpo shreds him with a spray of thorns.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Awful] Exits:NSW&gt; <br />
+g all erand<br />
+<br />
+Benicio focuses harshly on Erand and utters some strange words.<br />
+The sound of bones cracking echoes as Benicio's force bolt slams into Erand.<br />
+<br />
+591H 63V 29628301X 5442C [Grome:V.Good] [Erand:Awful] Exits:NSW&gt; <br />
+A mercenary misses Kelpo with his hit.<br />
+You massacre Erand with your crush.<br />
+You receive 0 experience.<br />
+Erand is dead! R.I.P.<br />
+The death cry of Erand echoes from somewhere nearby...<br />
+<br />
+591H 63V 29628301X 5442C Exits:NSW&gt; <br />
+A glowing portal opens in front of Kelpo, and Xtal steps from it.<br />
+A mercenary tries to sweep Kelpo's legs, but misses badly.<br />
+<br />
+591H 63V 29628301X 5442C Exits:NSW&gt; <br />
+Kelpo focuses harshly on a mercenary and utters some strange words.<br />
+A mercenary winces in pain as Kelpo shreds him with a spray of thorns.<br />
+<br />
+591H 63V 29628301X 5442C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+591H 63V 29628301X 5442C Exits:NSW&gt; You get a woodsman's axe from the corpse of Erand.<br />
+You get a bronze shield from the corpse of Erand.<br />
+You get some padded rawhide armor from the corpse of Erand.<br />
+You get a short cloak from the corpse of Erand.<br />
+You get a small copper ring from the corpse of Erand.<br />
+You get a pile of coins from the corpse of Erand.<br />
+There were 12 coins.<br />
+You get a bright ball of light from the corpse of Erand.<br />
+You get a scroll with a brown ribbon from the corpse of Erand.<br />
+You get a scroll with a brown ribbon from the corpse of Erand.<br />
+You get a sextant from the corpse of Erand.<br />
+You get a scroll of recall from the corpse of Erand.<br />
+You get a scroll of recall from the corpse of Erand.<br />
+You get a small canteen from the corpse of Erand.<br />
+Ration : You can't carry that much weight.<br />
+Ration : You can't carry that much weight.<br />
+You get a small canteen from the corpse of Erand.<br />
+Canteen : You can't carry that much weight.<br />
+Canteen : You can't carry that much weight.<br />
+Canteen : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='304'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=304">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="304">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,861 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1026-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1026'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Restoring the Balance</font></b>
+<p>
+POV: 
+Elie<p>
+Log Rating:
+2.1429<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Seeing that the balance is being tilted to the side of Takhisis, Gilean decides that the Pirates will restore the balance.</i>
+<p>
+<p>
+
+330H 94V 11416186X 54C Mem:3 Exits:EW&gt; <br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+Katsumoto kneels down and studies the ground.<br />
+Khal kneels down and studies the ground.<br />
+A Cobbled Lane<br />
+Mancer, Evil Cleric of KoT is standing here. (white aura)<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; A Cobbled Lane<br />
+Lady Keila Stormborn, Iron Fist of the Krynn Liberation Army is standing here. (flying) (invisible) (white aura)<br />
+Rakkor the Brave, Krynn Liberation Army is standing here. (flying) (white aura)<br />
+Virae, Battle Maid is standing here. (flying) (white aura)<br />
+Machi, Silverback Gorilla In a Concrete Jungle is standing here. (flying) (invisible) (white aura)<br />
+. . . is surrounded by a white mist.<br />
+Khal the Male Wild Elf is standing here. (flying) (invisible) (red aura)<br />
+Finris, The High Level Mage Friend is standing here. (flying) (invisible)<br />
+Katsumoto, The Last Noodle is standing here. (flying) (invisible) (white aura)<br />
+. . . has a tough exterior.<br />
+Jut Lander, Steppe Mand, Sunflower Prince is standing here. (flying) (invisible) (white aura)<br />
+. . . has a tough exterior.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here. (flying) (red aura)<br />
+Mancer, Evil Cleric of KoT is standing here. (white aura)<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Virae cleaves Mancer hard.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Elyana tells your group 'mancer'<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Moe yells 'Wootang'<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Rakkor crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Elyana crashes into Mancer in a thundering collision, knocking him to the ground!<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Machi utters the words, 'ice storm'.<br />
+Machi slowly fades into existence.<br />
+Mancer is shredded by shards of ice.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Khal slowly fades into existence.<br />
+Mancer steps aside as Khal attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Katsumoto slowly fades into existence.<br />
+Katsumoto misses Mancer with his hit.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Finris focuses harshly on Mancer and utters some strange words.<br />
+Finris slowly fades into existence.<br />
+The sound of bones cracking echoes as Finris's force bolt slams into Mancer.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; <br />
+Katsumoto hits Mancer.<br />
+Khal slashes Mancer extremely hard.<br />
+Machi crushes Mancer extremely hard.<br />
+Elyana massacres Mancer with her cleave.<br />
+Elyana massacres Mancer with her cleave.<br />
+Rakkor massacres Mancer with his slash.<br />
+Virae cleaves Mancer very hard.<br />
+Mancer misses Virae with his hit.<br />
+<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; cast 'ice storm'<br />
+Keila focuses harshly on Mancer and utters some strange words.<br />
+Keila slowly fades into existence.<br />
+Keila comes out of hiding.<br />
+Keila turns Mancer to ashes with brilliant rays of sunlight.<br />
+You receive 0 experience.<br />
+Mancer is dead! R.I.P.<br />
+get all.pile corpseexa corpse<br />
+330H 93V 11416186X 54C Mem:3 Exits:NEW&gt; You utter the words, 'ice storm'<br />
+<br />
+330H 93V 11416186X 54C Mem:5 Exits:NEW&gt; <br />
+The death cry of Mancer echoes from somewhere nearby...<br />
+<br />
+330H 93V 11416186X 54C Mem:5 Exits:NEW&gt; <br />
+Jut gets a tattered tome etched with gold from the corpse of Mancer.<br />
+Jut gets a set of light blue prayer beads from the corpse of Mancer.<br />
+Jut gets the Aurinite king's bracer from the corpse of Mancer.<br />
+Jut gets a silver silk sash from the corpse of Mancer.<br />
+Jut gets a robe of Paladine from the corpse of Mancer.<br />
+Jut gets a grey lizard scale shield from the corpse of Mancer.<br />
+Jut gets some charred black gloves from the corpse of Mancer.<br />
+Jut gets some fur-trimmed boots from the corpse of Mancer.<br />
+Jut gets pearl and onyx greaves from the corpse of Mancer.<br />
+Jut gets a platinum gilt helm from the corpse of Mancer.<br />
+Jut gets a woodsman's vest from the corpse of Mancer.<br />
+Jut gets the cloak of Paladine from the corpse of Mancer.<br />
+Jut gets a golden dwarven talisman from the corpse of Mancer.<br />
+Jut gets a ring of carved bone from the corpse of Mancer.<br />
+Jut gets a silk ribbon from the corpse of Mancer.<br />
+Jut gets a very large pile of coins from the corpse of Mancer.<br />
+Jut gets a papal cross from the corpse of Mancer.<br />
+Jut gets a crystal gypsum flower from the corpse of Mancer.<br />
+Jut gets dual anklets of gold from the corpse of Mancer.<br />
+Jut gets a horn of resounding from the corpse of Mancer.<br />
+Jut gets a small wooden chest from the corpse of Mancer.<br />
+Jut gets an imp skin pouch from the corpse of Mancer.<br />
+Jut gets a flask of green liquid from the corpse of Mancer.<br />
+Jut gets a transparent fish skin robe from the corpse of Mancer.<br />
+Jut gets a blue potion of remove poison from the corpse of Mancer.<br />
+Jut gets a blue potion of remove poison from the corpse of Mancer.<br />
+Jut gets a flask of clear liquid from the corpse of Mancer.<br />
+Jut gets a radiant potion from the corpse of Mancer.<br />
+Jut gets a brewed potion from the corpse of Mancer.<br />
+Jut gets a bright ball of light from the corpse of Mancer.<br />
+Jut gets a magic pouch from the corpse of Mancer.<br />
+<br />
+330H 93V 11416186X 54C Mem:5 Exits:NEW&gt; <br />
+Jut divides 10960 coins equally among the group members present.<br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; <br />
+Katsumoto wields a mystic bow with both hands.<br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; <br />
+Jut tells your group 'fin'<br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; <br />
+Jut tells your group 'w'<br />
+<br />
+330H 93V 11416186X 1150C Mem:5 Exits:NEW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Cobbled Lane<br />
+Ryk, Modi's Last Soldier of KoT is standing here, fighting the draconian soldier. (flying) (white aura)<br />
+A mustang is here awaiting its rider.<br />
+The draconian soldier is standing here, fighting Ryk. (red aura)<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; gt kill noano<br />
+Virae cleaves Ryk extremely hard.<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; You tell your group 'kill noano'<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Virae cleaves Ryk hard.<br />
+The draconian soldier misses Ryk with his pierce.<br />
+Ryk barely hits the draconian soldier.<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Jut focuses harshly on Ryk and utters the words, 'yucandus ghafw'.<br />
+Jut slowly fades into existence.<br />
+Huge flames burn Ryk from above.<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Ryk grabs a scroll of recall.<br />
+Ryk recites a scroll of recall.<br />
+Ryk disappears.<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Khal tells your group 'w'<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Katsumoto tells your group 'find'<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana utters the words, 'p s'.<br />
+<br />
+330H 92V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Cobbled Lane<br />
+A draconian soldier is here, trying to impress his leader. (red aura)<br />
+The draconian soldier misses Virae with his pierce.<br />
+<br />
+330H 91V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+Four Lanes End<br />
+A stone fountain with an ugly draconian water statue stands here.<br />
+A short sword lies here. [3]<br />
+<br />
+330H 90V 11416186X 1150C Mem:5 Exits:NESW&gt; <br />
+Katsumoto tells your group 'FIND'<br />
+<br />
+330H 90V 11416186X 1150C Mem:5 Exits:NESW&gt; <br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+A Cobbled Lane<br />
+Virae, Battle Maid is standing here, fighting the draconian soldier. (flying) (white aura)<br />
+The draconian soldier is standing here, fighting Virae. (red aura)<br />
+<br />
+330H 89V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Tuinas shouts 'dark purple burial shroud for trade, lookin for armworn'<br />
+<br />
+330H 89V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+The draconian soldier misses Virae with his pierce.<br />
+Virae massacres the draconian soldier with her cleave.<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+330H 89V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Katsumoto tells your group 'slay'<br />
+<br />
+330H 89V 11416186X 1150C Mem:5 Exits:EW&gt; <br />
+Katsumoto massacres the draconian soldier with his shoot.<br />
+You receive 79 experience.<br />
+The draconian soldier is dead! R.I.P.<br />
+get all.pile corpseexa corpse<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+The death cry of the draconian soldier echoes from somewhere nearby...<br />
+<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Finris gets a short sword from the corpse of the draconian soldier.<br />
+Finris gets a rusty battered key from the corpse of the draconian soldier.<br />
+<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Khal flies in from the east.<br />
+<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+330H 89V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+A Cobbled Lane<br />
+The corpse of the draconian soldier is lying here.<br />
+A mustang is here awaiting its rider.<br />
+<br />
+330H 88V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Cobbled Lane<br />
+The corpse of the draconian soldier is lying here.<br />
+<br />
+330H 87V 11416107X 1150C Mem:5 Exits:EW&gt; get all 1.corpse<br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+A Cobbled Lane<br />
+The corpse of the draconian soldier is lying here.<br />
+A mustang is here awaiting its rider.<br />
+<br />
+330H 86V 11416107X 1150C Mem:5 Exits:EW&gt; You get a short sword from the corpse of the draconian soldier.<br />
+You get a rusty battered key from the corpse of the draconian soldier.<br />
+<br />
+330H 86V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+A Cobbled Lane<br />
+The corpse of Mancer is lying here.<br />
+<br />
+330H 85V 11416107X 1150C Mem:5 Exits:NEW&gt; scanexitLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A mustang is here awaiting its rider.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+330H 85V 11416107X 1150C Mem:5 Exits:NEW&gt; Obvious exits:<br />
+North - The Decaying Lane<br />
+East  - The East Gate of Neraka<br />
+West  - A Cobbled Lane<br />
+<br />
+330H 85V 11416107X 1150C Mem:5 Exits:NEW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Cobbled Lane<br />
+The corpse of the draconian soldier is lying here.<br />
+A mustang is here awaiting its rider.<br />
+<br />
+330H 84V 11416107X 1150C Mem:5 Exits:EW&gt; <br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Cobbled Lane<br />
+The corpse of the draconian soldier is lying here.<br />
+<br />
+330H 83V 11416107X 1150C Mem:5 Exits:EW&gt; drop key<br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+Four Lanes End<br />
+A stone fountain with an ugly draconian water statue stands here.<br />
+A short sword lies here. [3]<br />
+<br />
+330H 82V 11416107X 1150C Mem:5 Exits:NESW&gt; You drop a rusty battered key.<br />
+<br />
+330H 82V 11416107X 1150C Mem:5 Exits:NESW&gt; <br />
+Rakkor gets a pile from his chest.<br />
+<br />
+330H 82V 11416107X 1150C Mem:5 Exits:NESW&gt; <br />
+Elyana flies north.<br />
+You follow Elyana north.<br />
+A Cobbled Lane<br />
+<br />
+330H 81V 11416107X 1150C Mem:5 Exits:NSW&gt; <br />
+Elyana flies north.<br />
+You follow Elyana north.<br />
+A Cobbled Lane<br />
+<br />
+330H 80V 11416107X 1150C Mem:5 Exits:NESW&gt; drop sword<br />
+Elyana flies west.<br />
+You follow Elyana west.<br />
+A Forest Garden<br />
+(red aura) (flying) Naono the Female Human is here, resting comfortably on a clump of moss.<br />
+You see a slender elf here, cutting saplings to make them strong.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; You drop a short sword.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; scanexit<br />
+Jut tells your group 'tick in 10'<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Naono steps aside as Khal attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Naono stands up.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Keila focuses harshly on Naono and utters some strange words.<br />
+Keila slowly fades into existence.<br />
+Keila comes out of hiding.<br />
+Naono withers as a ray of sunlight sent by Keila engulfs her!<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Jut utters the words, 'ice storm'.<br />
+Jut slowly fades into existence.<br />
+Naono is shredded by shards of ice.<br />
+Lyiim, Master of the Woods manages to avoid the brunt of the storm.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; Obvious exits:<br />
+East  - A Cobbled Lane<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Elyana crashes into Naono in a thundering collision, knocking her to the ground!<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Katsumoto massacres Naono with his shoot.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Ryk flies in from the east.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Ryk flies east.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Rakkor massacres Naono with his slash.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Rakkor massacres Naono with his slash.<br />
+Katsumoto massacres Naono with his shoot.<br />
+Katsumoto massacres Naono with his shoot.<br />
+Elyana annihilates Naono with her cleave.<br />
+Jut massacres Naono with his pierce.<br />
+Khal slashes Naono very hard.<br />
+Naono pierces Khal extremely hard.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Machi focuses harshly on Naono and utters the words, 'yucandus ghafw'.<br />
+Machi slowly fades into existence.<br />
+Naono is consumed by flames, which suddenly appear above her.<br />
+You receive 0 experience.<br />
+Naono is dead! R.I.P.<br />
+get all.pile corpseexa corpse<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+The death cry of Naono echoes from somewhere nearby...<br />
+Naono's a cube of hardened granite reshapes into a cube of hardened<br />
+granite as she unwields it.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Virae gets a sleeveless black robe from the corpse of Naono.<br />
+Virae gets a very large pile of coins from the corpse of Naono.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Finris gets a crystal gypsum flower from the corpse of Naono.<br />
+Finris gets a cube of hardened granite from the corpse of Naono.<br />
+Finris gets a glowing bracer from the corpse of Naono.<br />
+Finris gets a backpack from the corpse of Naono.<br />
+Finris gets a black shield of dragon bone from the corpse of Naono.<br />
+Finris gets a pair of black ice arm guards from the corpse of Naono.<br />
+Finris gets a black ice visor from the corpse of Naono.<br />
+Finris gets a ragged gray cloak from the corpse of Naono.<br />
+Finris gets a black onyx ring from the corpse of Naono.<br />
+Finris gets a wooden ring from the corpse of Naono.<br />
+Finris gets a black spiked helm from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a blue potion of remove poison from the corpse of Naono.<br />
+Finris gets a crystal shard necklace from the corpse of Naono.<br />
+Finris gets a crystal shard necklace from the corpse of Naono.<br />
+Finris gets a crystal shard necklace from the corpse of Naono.<br />
+Finris gets a crystal shard necklace from the corpse of Naono.<br />
+Finris gets a crystal shard necklace from the corpse of Naono.<br />
+Finris gets a giant goatsucker feather from the corpse of Naono.<br />
+Finris gets a glowing scroll of recall from the corpse of Naono.<br />
+Finris gets a glowing scroll of recall from the corpse of Naono.<br />
+Finris gets a glowing scroll of recall from the corpse of Naono.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a glowing scroll of recall..it glows blue..it glows dimly [4]<br />
+a small canteen [4]<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Elyana gets a glowing scroll of recall from the corpse of Naono.<br />
+Elyana gets a glowing scroll of recall from the corpse of Naono.<br />
+Elyana gets a glowing scroll of recall from the corpse of Naono.<br />
+Elyana gets a glowing scroll of recall from the corpse of Naono.<br />
+Elyana gets a small canteen from the corpse of Naono.<br />
+Elyana gets a small canteen from the corpse of Naono.<br />
+Elyana gets a small canteen from the corpse of Naono.<br />
+Elyana gets a small canteen from the corpse of Naono.<br />
+<br />
+330H 78V 11416107X 1150C Mem:3 Exits:E&gt; <br />
+Elyana flies east.<br />
+You follow Elyana east.<br />
+A Cobbled Lane<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1026'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1026">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1026">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

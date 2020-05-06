@@ -1,0 +1,896 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 372-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='372'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+A Day in the Life of Chon Evanz</font></b>
+<p>
+POV: 
+Chon<p>
+Log Rating:
+0.9048<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Playing around with a wellspelled mage. To bad he sux more than I do.
+Sartel shows that barbs arnt completely worthless, and Kenzo threatens me for no reason.</i>
+<p>
+<p>
+
+261H 145V 8756921X 9405C Mem:2 Exits:EW&gt; A hill giant arrives from the east.<br />
+Havern Avenue<br />
+    You stand upon the central street which runs through the center of<br />
+Haven.  To the north of here you can see the training areas for many of<br />
+Haven's militia forces as well as adventurers.  Far to the north east, the<br />
+merchant district stands proudly displaying the wares from around the<br />
+continent brought in by numerous caravans.  To the south, in the distance<br />
+glimpses of the impressive temple of the seeker gods can be seen.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A tall guardian of the city stands here, watching the passerby.<br />
+<br />
+261H 144V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor flies in from the east.<br />
+order 2.giant bash melkor MelkorA hill giant arrives from the east.<br />
+A pech arrives from the east.<br />
+<br />
+261H 144V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+A Haven guardian leaves east.<br />
+<br />
+261H 144V 8756921X 9405C Mem:2 Exits:EW&gt; A hill giant tries to bash Melkor, but it passes right through his image and falls.<br />
+<br />
+261H 144V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor issues the order 'bash Chon'.<br />
+You step aside as a hill giant tries to bash you, causing it to tumble and fall face down.<br />
+<br />
+261H 144V 8756921X 9405C [Chon:Perfect] [a hill giant:Perfect] Mem:2 Exits:EW&gt; <br />
+Melkor focuses harshly on you and utters the words, 'magic missile'.<br />
+Melkor misses you and destroys an image.<br />
+Melkor misses you and destroys an image.<br />
+Your shield protects you from Melkor's magic missiles.<br />
+<br />
+261H 144V 8756921X 9405C [Chon:Perfect] [a hill giant:Perfect] Mem:2 Exits:EW&gt; fleYou flee head over heels.<br />
+Havern Avenue<br />
+    You stand upon the central street which runs through the center of<br />
+Haven.  To the north of here you can see the training areas for many of<br />
+Havens militia forces as well as adventureres.  Far to the north east, the<br />
+merchant district stands proudly displaying the wares from around the<br />
+continent brought in by numerous caravans.  To the south, in the distance<br />
+glimpses of the impressive temple of the seeker gods can be seen. The town<br />
+square appears to be just to the east of here.<br />
+A tall guardian of the city stands here, watching the passerby.<br />
+<br />
+261H 143V 8756921X 9405C Mem:2 Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A swarthy mercenary patrols the streets of Haven, looking for signs of trouble.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A small pigmy-like creature stands here.<br />
+A hill giant is sitting here.<br />
+Melkor the Male Gnome is standing here, fighting a hill giant. (flying) (invisible)<br />
+order 2.giant bash melkor Melkor. . . is followed by a hovering ball of light.<br />
+A hill giant is sitting here, fighting Melkor.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+261H 143V 8756921X 9405C Mem:2 Exits:EW&gt; You couldn't find anyone to order around.<br />
+<br />
+261H 143V 8756921X 9405C Mem:2 Exits:EW&gt; wHavern Avenue<br />
+    You stand upon the central street which runs through the center of<br />
+Haven.  To the north of here you can see the training areas for many of<br />
+Haven's militia forces as well as adventurers.  Far to the north east, the<br />
+merchant district stands proudly displaying the wares from around the<br />
+continent brought in by numerous caravans.  To the south, in the distance<br />
+glimpses of the impressive temple of the seeker gods can be seen.<br />
+A small pigmy-like creature stands here.<br />
+A hill giant is sitting here.<br />
+Melkor the Male Gnome is standing here, fighting a hill giant. (flying) (invisible)<br />
+order 2.giant bash melkor Melkor. . . appears duplicated.<br />
+A hill giant is sitting here, fighting Melkor.<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; A hill giant is busy doing something, try again in a moment.<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor issues the order 'bash Chon'.<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor panics, and attempts to flee.<br />
+Melkor flies east.<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; c 'd m' giant<br />
+Chemosh shouts 'Microsoft has CHOSEN ME to beta test it's windows media player 9 BETA in all it's stability and glory'<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; What should the spell be cast upon?<br />
+<br />
+261H 142V 8756921X 9405C Mem:2 Exits:EW&gt; eHavern Avenue<br />
+    You stand upon the central street which runs through the center of<br />
+Haven.  To the north of here you can see the training areas for many of<br />
+Havens militia forces as well as adventureres.  Far to the north east, the<br />
+merchant district stands proudly displaying the wares from around the<br />
+continent brought in by numerous caravans.  To the south, in the distance<br />
+glimpses of the impressive temple of the seeker gods can be seen. The town<br />
+square appears to be just to the east of here.<br />
+Melkor the Male Gnome is standing here. (flying) (invisible)<br />
+order 2.giant bash melkor Melkor. . . is followed by a hovering ball of light.<br />
+A tall guardian of the city stands here, watching the passerby.<br />
+<br />
+261H 141V 8756921X 9405C Mem:2 Exits:EW&gt; You couldn't find anyone to order around.<br />
+<br />
+261H 141V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor flies west.<br />
+<br />
+261H 141V 8756921X 9405C Mem:2 Exits:EW&gt; wHavern Avenue<br />
+    You stand upon the central street which runs through the center of<br />
+Haven.  To the north of here you can see the training areas for many of<br />
+Haven's militia forces as well as adventurers.  Far to the north east, the<br />
+merchant district stands proudly displaying the wares from around the<br />
+continent brought in by numerous caravans.  To the south, in the distance<br />
+glimpses of the impressive temple of the seeker gods can be seen.<br />
+Melkor the Male Gnome is standing here. (flying) (invisible)<br />
+order 2.giant bash melkor Melkor. . . appears duplicated.<br />
+A small pigmy-like creature stands here.<br />
+A hill giant is sitting here.<br />
+A hill giant is sitting here.<br />
+<br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor focuses harshly on you and utters the words, 'magic missile'.<br />
+Melkor misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Your shield protects you from Melkor's magic missiles.<br />
+<br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; c 'd m' giantWhat should the spell be cast upon?<br />
+<br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; order 2.giant stA hill giant stands up.<br />
+<br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor issues the order 'bash Chon'.<br />
+<br />
+261H 140V 8756921X 9405C Mem:2 Exits:EW&gt; <br />
+Melkor focuses harshly on you and utters the words, 'force bolt'.<br />
+You feel ribs shatter as Melkor's force bolt slams into you.<br />
+That Really did HURT!<br />
+<br />
+202H 140V 8756921X 9405C [Chon:Good] [Melkor:Perfect] Mem:2 Exits:EW&gt; order 2.giant bash melkorA hill giant crashes into Melkor in a thundering collision, knocking him to the ground!<br />
+<br />
+202H 140V 8756921X 9405C [Chon:Good] [Melkor:V.Good] Mem:2 Exits:EW&gt; <br />
+A hill giant massacres Melkor with its hit.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+A hill giant massacres Melkor with its cleave.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+A hill giant misses Melkor with its hit.<br />
+Melkor misses you with his bludgeon.<br />
+You bludgeon Melkor very hard.<br />
+You feel intense pain as you swing through Melkor's flaming aura.<br />
+<br />
+186H 140V 8756921X 9405C [Chon:Fair] [Melkor:Fair] Mem:2 Exits:EW&gt; c 'f b' melkorYou utter the words, 'force bolt'<br />
+You miss Melkor and destroy an image instead.<br />
+<br />
+186H 140V 8756921X 9405C [Chon:Fair] [Melkor:Fair] Mem:3 Exits:EW&gt; c 'f b' melkor<br />
+A hill giant spins and tries to kick Melkor, but Melkor dodges out of the way.<br />
+<br />
+186H 140V 8756921X 9405C [Chon:Fair] [Melkor:Fair] Mem:3 Exits:EW&gt; <br />
+A hill giant massacres Melkor with its hit.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+A hill giant massacres Melkor with its cleave.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+Melkor bludgeons YOU hard.<br />
+The lightning has stopped.<br />
+The demon Hezrou stops following you.<br />
+<br />
+199H 160V 8756921X 9405C [Chon:Good] [Melkor:Fair] Mem:3 Exits:EW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Melkor.<br />
+<br />
+199H 160V 8756921X 9405C [Chon:Good] [Melkor:V.Bad] Mem:4 Exits:EW&gt; c 'f b' melkor<br />
+A hill giant massacres Melkor with its hit.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+A hill giant massacres Melkor with its cleave.<br />
+A hill giant is burned, as it swings at Melkor.<br />
+Melkor bludgeons YOU.<br />
+<br />
+194H 160V 8756921X 9405C [Chon:Fair] [Melkor:Awful] Mem:4 Exits:EW&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Melkor's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Melkor is dead! R.I.P.<br />
+get pile.coins corpseexa corpse<br />
+194H 160V 8756921X 9405C [Melkor:Dying] Mem:5 Exits:EW&gt; <br />
+The death cry of Melkor echoes from somewhere nearby...<br />
+A hill giant stops following Melkor.<br />
+A hill giant transcends this world and enters another plane.<br />
+A pech stops following Melkor.<br />
+A pech transcends this world and enters another plane.<br />
+<br />
+<br />
+<br />
+Later<br />
+<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; <br />
+Orphan says 'we need help'<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; tel orphan got a offie for giant?You tell Orphan 'got a offie for giant?'<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; exa chestYou do not see that here.<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; lEntering the Village<br />
+    You are inside the village common, on the north side of it all.  All<br />
+around you, you see humans and elves hard at work building this half<br />
+finished village, most of whom are shirking away from you as you approach.<br />
+Some, however, are not.<br />
+A rolled up scroll with a brown ribbon has been left here. [2]<br />
+A small roll of bread lies here. [15]<br />
+A large chunk of a human lies decaying on the ground. [4]<br />
+A hill giant is roaming around looking for something to kill.<br />
+Jierk Upright, Four Pleasures In One is resting here.<br />
+Dakkon the Ruthless, One-Horned Mino is standing here.<br />
+Orphan, Unwanted Shot Glass of R.u.M. is resting here.<br />
+. . . is followed by a hovering ball of light.<br />
+Kenzo Takada, Holy Couturier of Neutrality is resting here. (flying)<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; <br />
+Kenzo says 'please leave... or I'll attackyou'<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; l kenzo*You are looking at tall massive elven cleric. He glanced at<br />
+*you to make sure that you don't need to make use of his<br />
+*art of healing, and than returned to his prayers. Some kind<br />
+*of white aura surrounds him, filling area with spirit of<br />
+*goodness, law, order and kindness. You suddenly realize<br />
+*that he is one of the Chosen Disciples of Mishakal, you<br />
+*heard about so much but never seen yet.<br />
+*-<br />
+Kenzo the elder male half elf is in an excellent condition.<br />
+<br />
+Kenzo is using:<br />
+&lt;worn on finger&gt;           a dark ring of the tower guard<br />
+&lt;worn on finger&gt;           a black pearl ring<br />
+&lt;worn around neck&gt;         a shimmering purple necklace..it glows dimly<br />
+&lt;worn on body&gt;             a spun silver vest<br />
+&lt;worn on head&gt;             a delicate platinum tiara<br />
+&lt;worn on feet&gt;             some fur-trimmed boots<br />
+&lt;worn on arms&gt;             some dark metallic sleeves<br />
+&lt;worn as shield&gt;           a death shield..it glows dimly<br />
+&lt;worn about body&gt;          a brightly colored robe..it glows dimly<br />
+&lt;worn about waist&gt;         a charred leather belt<br />
+&lt;worn as pouch&gt;            a plain component pouch<br />
+&lt;worn around right wrist&gt;  an ivory bracelet with a silver clasp<br />
+&lt;worn around left wrist&gt;   a crystal selenite bracer<br />
+&lt;used in primary hand&gt;     a ceremonial elven slingstaff<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; c 'haste' giantYou utter the words, 'haste'<br />
+A hill giant starts to fidget.<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; <br />
+Kenzo stands up.<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; <br />
+Orphan tells you 'no, sorry'<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; order giant bash kenzoKenzo steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+278H 160V 8636234X 8647C Mem:2 Exits:NESW&gt; c 'f b' kenzoYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kenzo.<br />
+<br />
+278H 160V 8636234X 8647C Mem:3 Exits:NESW&gt; c 'f b' kenzo<br />
+A hill giant hits Kenzo extremely hard.<br />
+A hill giant hits Kenzo extremely hard.<br />
+Kenzo massacres a hill giant with his whip.<br />
+<br />
+278H 160V 8636234X 8647C Mem:3 Exits:NESW&gt; order giant st<br />
+Dakkon says '......'<br />
+<br />
+278H 160V 8636234X 8647C Mem:3 Exits:NESW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kenzo.<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; order giant bash kenzo<br />
+A hill giant stands up.<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; <br />
+Orphan boggles at some nebulous concept.<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; <br />
+A hill giant misses Kenzo with its hit.<br />
+A hill giant hits Kenzo extremely hard.<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; <br />
+Dakkon says '..............'<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; <br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; A hill giant crashes into Kenzo in a thundering collision, knocking him to the ground!<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; <br />
+A hill giant hits Kenzo extremely hard.<br />
+A hill giant massacres Kenzo with its hit.<br />
+Kenzo whips a hill giant extremely hard.<br />
+<br />
+278H 160V 8636234X 8647C Mem:4 Exits:NESW&gt; c 'f b' kenzoYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kenzo.<br />
+<br />
+278H 160V 8636234X 8647C Mem:5 Exits:NESW&gt; c 'f b' kenzo<br />
+A hill giant massacres Kenzo with its hit.<br />
+Kenzo whips a hill giant extremely hard.<br />
+<br />
+278H 160V 8636234X 8647C Mem:5 Exits:NESW&gt; <br />
+Dakkon says '..................'<br />
+<br />
+278H 160V 8636234X 8647C Mem:5 Exits:NESW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kenzo.<br />
+<br />
+278H 160V 8636234X 8647C Mem:6 Exits:NESW&gt; c 'f b' kenzo<br />
+A hill giant delivers a vicious kick to Kenzo's face. Blood flies as his head snaps back.<br />
+Kenzo is mortally wounded, and will die soon, if not aided.<br />
+<br />
+278H 160V 8636234X 8647C Mem:6 Exits:NESW&gt; <br />
+A hill giant obliterates Kenzo with its hit.<br />
+Kenzo is dead! R.I.P.<br />
+get pile.coins corpseexa corpseThe death cry of Kenzo echoes from somewhere nearby...<br />
+Jierk stops following Kenzo.<br />
+Kenzo now follows Jierk.<br />
+Jierk is the new leader of Kenzo's group.<br />
+Kenzo stops following Jierk.<br />
+Dakkon stops following Kenzo.<br />
+Dakkon now follows Jierk.<br />
+Orphan stops following Kenzo.<br />
+Orphan now follows Jierk.<br />
+You stop following Kenzo.<br />
+<br />
+278H 160V 8636234X 8647C Mem:6 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+278H 160V 8636234X 8647C Mem:6 Exits:NESW&gt; You get a very large pile of coins from the corpse of Kenzo.<br />
+There were 1893 coins.<br />
+<br />
+278H 160V 8636234X 10540C Mem:6 Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a ceremonial elven slingstaff<br />
+a crystal selenite bracer<br />
+an ivory bracelet with a silver clasp<br />
+a plain component pouch<br />
+a charred leather belt<br />
+a brightly colored robe..it glows dimly<br />
+a death shield..it glows dimly<br />
+some dark metallic sleeves<br />
+some fur-trimmed boots<br />
+a delicate platinum tiara<br />
+a spun silver vest<br />
+a shimmering purple necklace..it glows dimly<br />
+a black pearl ring<br />
+a dark ring of the tower guard<br />
+get all corpsea bloodstone<br />
+a sample of cinnabar<br />
+a bright ball of light..it glows dimly<br />
+a glowing scroll of recall..it glows dimly<br />
+an intricately carved horn<br />
+a crystal shard necklace..it glows dimly<br />
+<br />
+ [return for more, q to stop]<br />
+278H 160V 8636234X 10540C Mem:6 Exits:NESW&gt; get all corpsetWhat are you trying to get from?<br />
+<br />
+278H 160V 8636234X 10540C Mem:6 Exits:NESW&gt; get all corpsetWhat are you trying to get from?<br />
+<br />
+278H 160V 8636234X 10540C Mem:6 Exits:NESW&gt; get all corpseYou get a ceremonial elven slingstaff from the corpse of Kenzo.<br />
+You get a crystal selenite bracer from the corpse of Kenzo.<br />
+You get an ivory bracelet with a silver clasp from the corpse of Kenzo.<br />
+You get a plain component pouch from the corpse of Kenzo.<br />
+You get a charred leather belt from the corpse of Kenzo.<br />
+You get a brightly colored robe from the corpse of Kenzo.<br />
+You get a death shield from the corpse of Kenzo.<br />
+You get some dark metallic sleeves from the corpse of Kenzo.<br />
+You get some fur-trimmed boots from the corpse of Kenzo.<br />
+You get a delicate platinum tiara from the corpse of Kenzo.<br />
+You get a spun silver vest from the corpse of Kenzo.<br />
+You get a shimmering purple necklace from the corpse of Kenzo.<br />
+You get a black pearl ring from the corpse of Kenzo.<br />
+You get a dark ring of the tower guard from the corpse of Kenzo.<br />
+You get a bloodstone from the corpse of Kenzo.<br />
+You get a sample of cinnabar from the corpse of Kenzo.<br />
+Ball : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Horn : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Bar : You can't carry that many items.<br />
+Bar : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+Later<br />
+<br />
+Port arrives from the north.<br />
+<br />
+278H 86V 8936251X 11059C Mem:1 Exits:NESWU&gt; Looking north:<br />
+You can see the northern gate far ahead.<br />
+Looking east:<br />
+You see a path leading up to the east gate.<br />
+Looking south:<br />
+You can see a path running towards the southern gate.<br />
+A janitor is walking around, cleaning up.<br />
+Looking west:<br />
+You see nothing special.<br />
+A stray dog slowly moves about the area, sniffing the nearby trees.<br />
+Looking up:<br />
+You see a ladder, going up into the guilds.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+Looking down:<br />
+Not surprisingly, you see dirt.<br />
+<br />
+278H 86V 8936251X 11059C Mem:1 Exits:NESWU&gt; A hill giant ---&gt; BASHES ---&gt; Port<br />
+<br />
+278H 86V 8936251X 11059C Mem:1 Exits:NESWU&gt; <br />
+A hill giant --ANNIHILATES-- Port with its slash.<br />
+<br />
+Port whips a hill giant.<br />
+<br />
+278H 86V 8936251X 11059C Mem:1 Exits:NESWU&gt; c 'f b' port<br />
+YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Port.<br />
+<br />
+278H 86V 8936251X 11059C Mem:3 Exits:NESWU&gt; c 'f b' port<br />
+<br />
+Khelin focuses harshly on Port and CAST -----------&gt; hold person.<br />
+<br />
+278H 86V 8936251X 11059C Mem:3 Exits:NESWU&gt; <br />
+A hill giant --ANNIHILATES-- Port with its slash.<br />
+Port whips a hill giant very hard.<br />
+<br />
+278H 86V 8936251X 11059C Mem:3 Exits:NESWU&gt; <br />
+Sartel charges at Port, but he managed to move away.<br />
+<br />
+278H 86V 8936251X 11059C Mem:3 Exits:NESWU&gt; <br />
+Quinefier flies in from the south.<br />
+<br />
+278H 86V 8936251X 11059C Mem:3 Exits:NESWU&gt; YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Port.278H 86V 8936251X 11059C Mem:4 Exits:NESWU&gt; c 'f b' port<br />
+<br />
+Quinefier flies east.<br />
+<br />
+278H 86V 8936251X 11059C Mem:4 Exits:NESWU&gt; <br />
+Khelin focuses harshly on Port and CAST -----------&gt; hold person.<br />
+ Port &lt;----- FREEZED<br />
+<br />
+278H 86V 8936251X 11059C Mem:4 Exits:NESWU&gt; <br />
+Sartel --ANNIHILATES-- Port with his slash.<br />
+A hill giant --ANNIHILATES-- Port with its slash.<br />
+Port says 'rofl'<br />
+<br />
+278H 86V 8936251X 11059C Mem:4 Exits:NESWU&gt; YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Port.<br />
+<br />
+278H 86V 8936251X 11059C Mem:5 Exits:NESWU&gt; get all port<br />
+<br />
+A hill giant delivers a vicious kick to Port's face. Blood flies as his head snaps back.<br />
+Sartel --ANNIHILATES-- Port with his slash.<br />
+A hill giant massacres Port with its slash.<br />
+A hill giant skillfully delivers another devastating slash to Port!<br />
+<br />
+278H 86V 8936251X 11059C Mem:5 Exits:NESWU&gt; get all port<br />
+Sartel heroically rescues a hill giant.<br />
+Sartel --ANNIHILATES-- Port with his slash.<br />
+Sartel --ANNIHILATES-- Port with his slash.<br />
+<br />
+278H 86V 8936251X 11059C Mem:5 Exits:NESWU&gt; YOU CAST -----------&gt; force bolt<br />
+You hear bones crack as your force bolt slams into Port.<br />
+<br />
+278H 86V 8936251X 11059C Mem:7 Exits:NESWU&gt; <br />
+Sartel swings madly at Port with a huge steel claymore, knocking him to the ground.<br />
+<br />
+278H 86V 8936251X 11059C Mem:7 Exits:NESWU&gt; <br />
+Sartel massacres Port with his slash.<br />
+Port is incapacitated and will slowly die, if not aided.<br />
+Sartel -* OBLITERATES *- Port with his slash.<br />
+You receive 0 experience.<br />
+get pile.coins corpse<br />
+exa corpse<br />
+Port is dead! R.I.P.<br />
+The death cry of Port echoes from somewhere nearby...<br />
+<br />
+278H 86V 8936251X 11059C Mem:7 Exits:NESWU&gt; get all port<br />
+<br />
+A stray dog savagely devours a corpse.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='372'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=372">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="372">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,639 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1664-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1664'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+BSP kills me!</font></b>
+<p>
+POV: 
+Brukal<p>
+Log Rating:
+1.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+If i cared, this would have sucked!</i>
+<p>
+<p>
+
+463H 150V 9145366X 60C Exits:D&gt; l<br />
+Clerk's Office<br />
+    Here you can rent a room for the evening or however long you intend to<br />
+stay. The clerk assures you that the sheets are clean and the towels are as<br />
+soft as a noble's behind.<br />
+A small crystal vial with bolts of energy swirling inside vibrates here...it glows blue<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A tiny wooden key is lying here.<br />
+Lord Martyr, Apocalyptic Doomsayer is resting here. (flying)<br />
+Relfex the Male High Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Chyko Ko, Scouting and Running to Death Traps is standing here. (invisible)<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; <br />
+463H 150V 9145366X 60C Exits:D&gt; 'there's a guy waiting down for me<br />
+You say 'there's a guy waiting down for me'<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+You sense that you are not alone.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; <br />
+Chyko sits down and rests.<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; 'lets see how quick his triggers are<br />
+You say 'lets see how quick his triggers are'<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; <br />
+Martyr says 'oh?'<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; st<br />
+You stand up.<br />
+<br />
+463H 150V 9145366X 60C Exits:D&gt; d<br />
+The Ebullient Elephant Inn<br />
+    This spacious tavern is full of customers. This is obviously a favorite<br />
+hangout of many of Palanthas's middle class citizens. There is a bar<br />
+against one wall and a staircase leading upstairs to the room clerk's<br />
+office. The only exit is back north to Sword Street.<br />
+You sense that you are not alone.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+463H 149V 9145366X 60C Exits:NU&gt; u<br />
+<br />
+Althalus slowly fades into existence.<br />
+Althalus comes out of hiding.<br />
+Suddenly Althalus stabs you in the back.<br />
+That Really did HURT!<br />
+<br />
+323H 149V 9145366X 60C [Brukal:Fair] [Althalus:Perfect] Exits:NU&gt; You can't do that while fighting.<br />
+<br />
+323H 149V 9145366X 60C [Brukal:Fair] [Althalus:Perfect] Exits:NU&gt; Althalus pierces YOU extremely hard.<br />
+Althalus pierces YOU extremely hard.<br />
+You miss Althalus with your stab.<br />
+<br />
+291H 149V 9145366X 60C [Brukal:Bad] [Althalus:Perfect] Exits:NU&gt; flee<br />
+You flee head over heels.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+Terro, The Death Pirate is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Larzus the Male Minotaur is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+You see the outline of a life form here, carrying: a blood red cape.<br />
+Rojany the Male Wild Elf is standing here. (flying)<br />
+The corpse of a pigeon is here, slowly animating. (invisible)<br />
+The corpse of a pigeon is here, slowly animating. (invisible)<br />
+The corpse of a pigeon is here, slowly animating.<br />
+Szezt, Sacred Ward of the Blood Sea, Hate, Inc. is standing here. (flying)<br />
+Ahmed Lipetskiy, Wind of the War from the Coast of Blood Sea is standing here. (flying) (invisible)<br />
+<br />
+291H 148V 9145366X 60C Exits:ESW&gt; <br />
+Terro barrels into you with his charge, but you manage to stay on your feet.<br />
+<br />
+260H 148V 9145366X 60C [Brukal:Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+****** BASHED *******<br />
+You are sent sprawling as Rojany crashes into you.<br />
+<br />
+235H 148V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Ahmed flies south.<br />
+Szezt flies south.<br />
+The corpse of a pigeon leaves south.<br />
+The corpse of a pigeon leaves south.<br />
+The corpse of a pigeon leaves south.<br />
+Dralan flies south.<br />
+A gargoyle flies south.<br />
+Larzus flies south.<br />
+<br />
+235H 148V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Szezt flies in from the south.<br />
+The corpse of a pigeon arrives from the south.<br />
+The corpse of a pigeon arrives from the south.<br />
+The corpse of a pigeon arrives from the south.<br />
+<br />
+235H 148V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Szezt issues the order 'kill brukal'.<br />
+The corpse of a pigeon slowly fades into existence.<br />
+The corpse of a pigeon misses you with its bite.<br />
+The corpse of a pigeon slowly fades into existence.<br />
+The corpse of a pigeon bites YOU.<br />
+The corpse of a pigeon misses you with its bite.<br />
+<br />
+230H 148V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+The corpse of a pigeon misses you with its bite.<br />
+The corpse of a pigeon misses you with its bite.<br />
+The corpse of a pigeon misses you with its bite.<br />
+Rojany massacres YOU with his slash.<br />
+Terro massacres YOU with his cleave.<br />
+You barely stab Terro.<br />
+Szezt closes his prayerbook with a content look on his face.<br />
+Althalus is continually trying to get behind you.<br />
+Hmmm...i wonder what he's up to?<br />
+<br />
+198H 150V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; get recall chest<br />
+recite recall<br />
+<br />
+Dralan flies in from the south.<br />
+A gargoyle flies in from the south.<br />
+<br />
+198H 150V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Dralan gives a gargoyle an order.<br />
+A gargoyle tries to sweep your legs, but you avoid the attack.<br />
+<br />
+198H 150V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Althalus slowly fades into existence.<br />
+Althalus massacres YOU with his pierce.<br />
+<br />
+166H 150V 9145366X 60C [Brukal:V.Bad] [Terro:Perfect] Exits:ESW&gt; <br />
+Althalus massacres YOU with his pierce.<br />
+Althalus massacres YOU with his pierce.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+A gargoyle massacres YOU with its claw.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+A gargoyle pierces YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+The corpse of a pigeon misses you with its bite.<br />
+The corpse of a pigeon misses you with its bite.<br />
+The corpse of a pigeon misses you with its bite.<br />
+Rojany massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Terro annihilates YOU with his cleave.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Terro with your stab.<br />
+<br />
+2H 150V 9145366X 60C [Brukal:Awful] [Terro:Perfect] Exits:ESW&gt; <br />
+Dralan focuses harshly on you and utters some strange words.<br />
+Dralan slowly fades into existence.<br />
+Dralan comes out of hiding.<br />
+Your skull explodes as someone's force bolt drives right through it.<br />
+You're dead.<br />
+<br />
+-11H 150V 9145366X 60C Exits:ESW&gt; You throw away your bloody bandages.<br />
+Your detect invisibility wears off.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: <br />
+Please select a number from the given list.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: <br />
+Please select a number from the given list.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1<br />
+<br />
+Welcome to the land of Krynn.<br />
+<br />
+Clerk's Office<br />
+    Here you can rent a room for the evening or however long you intend to<br />
+stay. The clerk assures you that the sheets are clean and the towels are as<br />
+soft as a noble's behind.<br />
+A small crystal vial with bolts of energy swirling inside vibrates here.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A tiny wooden key is lying here.<br />
+Lord Martyr, Apocalyptic Doomsayer is resting here. (flying)<br />
+Relfex the Male High Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a radiant pendant; some metal cleats; a glowing scroll of recall; a glo<br />
+wing scroll of recall; a large dark-wood bow; a feathered bone charm; a thick black torch.<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+<br />
+1H 145V 11785366X 0C Exits:D&gt; <br />
+Someone says 'HAHAHA'<br />
+<br />
+1H 145V 11785366X 0C Exits:D&gt; 'quick enough<br />
+You say 'quick enough'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1664'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1664">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1664">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,956 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 560-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='560'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Army of One</font></b>
+<p>
+POV: 
+Jane<p>
+Log Rating:
+2.3686<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Denise rips ladislaus as seen previously and tosses key items for Jane to prove his worth after being away for a while.  Kickass attitude by Denji.  Kudos,  thanks for the fun.</i>
+<p>
+<p>
+
+Ladislaus flies in from the north.<br />
+Denji arrives from the north.<br />
+<br />
+405H 126V 1X 0C Exits:NU&gt; <br />
+Ladislaus smites YOU very hard.<br />
+<br />
+393H 126V 1X 0C [Jane:V.Good] [Ladislaus:Perfect] Exits:NU&gt; u<br />
+You can't do that while fighting.<br />
+<br />
+393H 126V 1X 0C [Jane:V.Good] [Ladislaus:Perfect] Exits:NU&gt; <br />
+Ladislaus misses you with his smite.<br />
+You massacre Ladislaus with your pierce.<br />
+You massacre Ladislaus with your pierce.<br />
+<br />
+393H 126V 1X 0C [Jane:V.Good] [Ladislaus:Good] Exits:NU&gt; You can't do that while fighting.<br />
+<br />
+393H 126V 1X 0C [Jane:V.Good] [Ladislaus:Good] Exits:NU&gt; fle<br />
+You flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+393H 125V 1X 0C Exits:NS&gt; fle<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+393H 125V 1X 0C Exits:NS&gt; sn<br />
+You begin moving quietly.<br />
+<br />
+393H 125V 1X 0C Exits:NS&gt; s<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+Ladislaus, Blood Sea Rebellion is standing here. (flying)<br />
+<br />
+393H 124V 1X 0C Exits:NU&gt; back ladislaus<br />
+#   $starg is now set to {ladislaus} [local]<br />
+Ladislaus twists around to see you place a jagged-backed curved dagger in his back.<br />
+<br />
+393H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; <br />
+You pierce Ladislaus extremely hard.<br />
+You miss Ladislaus with your pierce.<br />
+Ladislaus smites YOU very hard.<br />
+<br />
+382H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; <br />
+Yair arrives from the north.<br />
+<br />
+382H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; <br />
+Denji pierces YOU extremely hard.<br />
+<br />
+366H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; flefle<br />
+<br />
+Yair leaves up.<br />
+<br />
+366H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; sn<br />
+PANIC! You couldn't escape!<br />
+<br />
+366H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; <br />
+Enher arrives from the north.<br />
+<br />
+366H 124V 1X 0C [Jane:V.Good] [Ladislaus:V.Bad] Exits:NU&gt; You flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+366H 123V 1X 0C Exits:NS&gt; You begin moving quietly.<br />
+<br />
+366H 123V 1X 0C Exits:NS&gt; s<br />
+<br />
+Agaren flies in from the north.<br />
+366H 123V 1X 0C Exits:NS&gt; <br />
+Agaren flies south.<br />
+<br />
+366H 123V 1X 0C Exits:NS&gt; x<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+Elyana Lipetskaya, BSD Minister of Peace is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Enher the Male High Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+Ladislaus, Blood Sea Rebellion is standing here. (flying)<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Enher leaves up.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; Ladislaus makes a strange sound but is suddenly very silent, as you pla<br />
+ce a jagged-backed curved dagger in his back.<br />
+You receive 0 experience.<br />
+Ladislaus is dead! R.I.P.<br />
+<br />
+366H 122V 1X 0C [Ladislaus:Dying] Exits:NU&gt; Yair arrives from above.<br />
+<br />
+366H 122V 1X 0C [Ladislaus:Dying] Exits:NU&gt; <br />
+The death cry of Ladislaus echoes from somewhere nearby...<br />
+Denji stops following Ladislaus.<br />
+Ladislaus now follows Denji.<br />
+Denji is the new leader of Ladislaus's group.<br />
+Ladislaus stops following Denji.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Yair leaves north.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Enher arrives from above.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Enher looks at you.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Enher leaves up.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Enher leaves up.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; get all corpse<br />
+<br />
+Denji gets a spiritual hammer from the corpse of Ladislaus.<br />
+Denji gets a wolf's head helm from the corpse of Ladislaus.<br />
+Denji gets a bright ball of light from the corpse of Ladislaus.<br />
+Denji gets a pile of coins from the corpse of Ladislaus.<br />
+Denji gets a small canteen from the corpse of Ladislaus.<br />
+Denji gets a small canteen from the corpse of Ladislaus.<br />
+Denji gets a small canteen from the corpse of Ladislaus.<br />
+Denji gets a small canteen from the corpse of Ladislaus.<br />
+Denji gets a glowing scroll of recall from the corpse of Ladislaus.<br />
+Denji gets a small wooden chest from the corpse of Ladislaus.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Agaren flies in from above.<br />
+366H 122V 1X 0C Exits:NU&gt; back elyana<br />
+#   $starg is now set to {elyana} [local]<br />
+<br />
+Elyana focuses harshly on you and utters some strange words.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; <br />
+Agaren stops following Denji.<br />
+Agaren now follows Elyana.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; You stealthily dip the dagger in a toxic concoction of your own making.<br />
+<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+366H 122V 1X 0C Exits:NU&gt; Elyana twists around to see you place a jagged-backed curved dagger in <br />
+her back.<br />
+<br />
+366H 122V 1X 0C [Jane:V.Good] [Elyana:V.Bad] Exits:NU&gt; <br />
+Denji massacres YOU with his pierce.<br />
+335H 122V 1X 0C [Jane:Good] [Elyana:V.Bad] Exits:NU&gt; <br />
+Bruce tells you 'bail from town'<br />
+<br />
+335H 122V 1X 0C [Jane:Good] [Elyana:V.Bad] Exits:NU&gt; <br />
+Yair arrives from the north.<br />
+<br />
+335H 122V 1X 0C [Jane:Good] [Elyana:V.Bad] Exits:NU&gt; fle<br />
+fle<br />
+fle<br />
+sn<br />
+<br />
+Denji pierces YOU extremely hard.<br />
+You massacre Elyana with your pierce.<br />
+You miss Elyana and destroy an image instead.<br />
+Elyana crushes YOU.<br />
+<br />
+309H 122V 1X 0C [Jane:Good] [Elyana:V.Bad] Exits:NU&gt; <br />
+Yair gapes.<br />
+<br />
+309H 122V 1X 0C [Jane:Good] [Elyana:V.Bad] Exits:NU&gt; <br />
+Agaren slashes YOU extremely hard.<br />
+<br />
+290H 122V 1X 0C [Jane:Fair] [Elyana:V.Bad] Exits:NU&gt; You flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master ofthis school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+290H 121V 1X 0C Exits:NS&gt; <br />
+Bruce tells you 'too much of em'<br />
+<br />
+290H 121V 1X 0C Exits:NS&gt; You're not fighting, why bother fleeing?<br />
+<br />
+290H 121V 1X 0C Exits:NS&gt; s<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+290H 121V 1X 0C Exits:NS&gt; x<br />
+You begin moving quietly.<br />
+<br />
+290H 121V 1X 0C Exits:NS&gt; Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Yair the Male Half Elf is standing here.Agaren the Male Human is standing here. (flying)<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+290H 120V 1X 0C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+290H 120V 1X 0C Exits:NU&gt; <br />
+Denji focuses harshly on you and utters some strange words.<br />
+Denji makes your soul hurt and suffer!<br />
+<br />
+224H 120V 1X 0C [Jane:Fair] [Denji:Perfect] Exits:NU&gt; <br />
+Agaren flies north.<br />
+<br />
+224H 120V 1X 0C [Jane:Fair] [Denji:Perfect] Exits:NU&gt; back denji<br />
+#   $starg is now set to {denji} [local]<br />
+You can't do that while fighting.<br />
+<br />
+224H 120V 1X 0C [Jane:Fair] [Denji:Perfect] Exits:NU&gt; fle<br />
+fleYou flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+224H 119V 1X 0C Exits:NS&gt; You're not fighting, why bother fleeing?<br />
+<br />
+224H 119V 1X 0C Exits:NS&gt; sn<br />
+You begin moving quietly.<br />
+<br />
+224H 119V 1X 0C Exits:NS&gt; s<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+224H 118V 1X 0C Exits:NU&gt; x<br />
+<br />
+Yair looks at you.<br />
+<br />
+224H 118V 1X 0C Exits:NU&gt; Denji makes a strange sound, as you place a jagged-backed curved dagger<br />
+ in his back.<br />
+<br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+Garet arrives from the north.<br />
+<br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+You massacre Denji with your pierce.<br />
+You pierce Denji extremely hard.<br />
+Denji misses you with his pierce.<br />
+<br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+Agaren flies in from the north.<br />
+<br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+Garet leaves north.<br />
+<br />
+224H 118V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; <br />
+Denji focuses harshly on you and utters some strange words.<br />
+Denji makes your soul hurt and suffer!<br />
+<br />
+190H 118V 1X 0C [Jane:Bad] [Denji:Fair] Exits:NU&gt; <br />
+Agaren focuses harshly on you and utters some strange words.<br />
+Agaren makes your soul hurt and suffer!<br />
+<br />
+140H 118V 1X 0C [Jane:V.Bad] [Denji:Fair] Exits:NU&gt; <br />
+Bruce tells you 'no worth it'<br />
+<br />
+140H 118V 1X 0C [Jane:V.Bad] [Denji:Fair] Exits:NU&gt; fle<br />
+fle<br />
+get small.vial pack;quaf small.vial<br />
+You flee head over heels.Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+140H 117V 1X 0C Exits:NS&gt; You're not fighting, why bother fleeing?<br />
+<br />
+140H 117V 1X 0C Exits:NS&gt; You get a small vial from a gnomish backpack.<br />
+<br />
+140H 117V 1X 0C Exits:NS&gt; sn<br />
+s<br />
+You quaff a small vial which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+400H 117V 1X 0C Exits:NS&gt; You begin moving quietly.<br />
+<br />
+400H 117V 1X 0C Exits:NS&gt; Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Agaren the Male Human is standing here. (flying)<br />
+Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+400H 116V 1X 0C Exits:NU&gt; back x<br />
+#   $starg is now set to {x} [local]<br />
+You couldn't find what you were looking for.<br />
+<br />
+400H 116V 1X 0C Exits:NU&gt; x<br />
+<br />
+Agaren focuses harshly on you and utters some strange words.<br />
+Agaren makes your soul hurt and suffer!<br />
+<br />
+328H 116V 1X 0C [Jane:Good] [Agaren:Perfect] Exits:NU&gt; You can't do that while fighting.<br />
+<br />
+328H 116V 1X 0C [Jane:Good] [Agaren:Perfect] Exits:NU&gt; <br />
+Garet arrives from the north.<br />
+<br />
+328H 116V 1X 0C [Jane:Good] [Agaren:Perfect] Exits:NU&gt; fle<br />
+fle<br />
+You flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+328H 115V 1X 0C Exits:NS&gt; s<br />
+You're not fighting, why bother fleeing?<br />
+328H 115V 1X 0C Exits:NS&gt; x<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Garet the Male Human is standing here.<br />
+Agaren the Male Human is standing here. (flying)<br />
+Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+328H 114V 1X 0C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+328H 114V 1X 0C Exits:NU&gt; <br />
+Garet leaves up.<br />
+<br />
+328H 114V 1X 0C Exits:NU&gt; <br />
+Denji pierces YOU extremely hard.<br />
+<br />
+313H 114V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; back denji<br />
+#   $starg is now set to {denji} [local]<br />
+You can't do that while fighting.<br />
+<br />
+313H 114V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; fle<br />
+fle<br />
+You flee head over heels.<br />
+Master's Office<br />
+     This is Zardonna's office and also the classroom of her small school.<br />
+There are two rows of seats set opposite her desk. A large blackboard and a<br />
+few shelves of old books and scrolls are also located in this rather dark<br />
+room.<br />
+A small roll of bread lies here.<br />
+An orrery is mounted on a stand here.<br />
+Garet the Male Human is standing here.<br />
+Husam the Male Gnome is resting here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Zardonna, the elven high sorceress is ready to teach her arts.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+313H 113V 1X 0C Exits:D&gt; You're not fighting, why bother fleeing?<br />
+<br />
+313H 113V 1X 0C Exits:D&gt; s<br />
+Alas, you cannot go that way...<br />
+<br />
+313H 113V 1X 0C Exits:D&gt; x<br />
+You couldn't find what you were looking for.<br />
+<br />
+313H 113V 1X 0C Exits:D&gt; d<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+313H 112V 1X 0C Exits:NU&gt; x<br />
+Denji quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+313H 112V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; <br />
+You massacre Denji with your pierce.You miss Denji with your pierce.<br />
+Denji misses you with his pierce.<br />
+<br />
+332H 135V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; <br />
+Agaren flies in from the north.<br />
+<br />
+332H 135V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; fle<br />
+fle<br />
+<br />
+Denji attempts to focuses on you and fails horribly.<br />
+<br />
+332H 135V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; sn<br />
+<br />
+Bruce arrives from the north.<br />
+332H 135V 1X 0C [Jane:Good] [Denji:Fair] Exits:NU&gt; <br />
+Agaren massacres YOU with his slash.<br />
+<br />
+301H 135V 1X 0C [Jane:Fair] [Denji:Fair] Exits:NU&gt; You flee head over heels.<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+301H 134V 1X 0C Exits:NS&gt; You're not fighting, why bother fleeing?<br />
+<br />
+301H 134V 1X 0C Exits:NS&gt; s<br />
+You begin moving quietly.<br />
+<br />
+301H 134V 1X 0C Exits:NS&gt; x<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Bruce the Female High Elf is standing here.<br />
+Agaren the Male Human is standing here. (flying)Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+301H 133V 1X 0C Exits:NU&gt; Denji makes a strange sound, as you place a jagged-backed curved dagger<br />
+ in his back.<br />
+<br />
+301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; <br />
+Garet arrives from above.<br />
+<br />
+301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; <br />
+Denji attempts to focuses on you and fails horribly.301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; <br />
+Garet looks at Denji.<br />
+<br />
+301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; <br />
+Bruce rolls on the floor in a fit of laughter.<br />
+<br />
+301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; fle<br />
+fle<br />
+fle<br />
+<br />
+Bruce leaves north.<br />
+<br />
+301H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; <br />
+Agaren massacres YOU with his slash.<br />
+<br />
+271H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; sn<br />
+<br />
+Agaren massacres YOU with his slash.<br />
+You miss Denji with your pierce.<br />
+You massacre Denji with your pierce.<br />
+Denji massacres YOU with his pierce.<br />
+<br />
+211H 133V 1X 0C [Jane:Fair] [Denji:V.Bad] Exits:NU&gt; You flee head over heels.Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+Bruce the Female High Elf is standing here.<br />
+<br />
+211H 132V 1X 0C Exits:NS&gt; s<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+211H 132V 1X 0C Exits:NS&gt; x<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+211H 132V 1X 0C Exits:NS&gt; You begin moving quietly.<br />
+<br />
+211H 132V 1X 0C Exits:NS&gt; Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+The corpse of Ladislaus is lying here.<br />
+Garet the Male Human is standing here.<br />
+Agaren the Male Human is standing here. (flying)Yair the Male Half Elf is standing here.<br />
+Master Denji, Legacy White Knight is standing here.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; Denji reaches behind himself quickly, only to discover your deadly dagg<br />
+er in his back.<br />
+You receive 0 experience.<br />
+Denji is dead! R.I.P.<br />
+<br />
+211H 131V 1X 0C [Denji:Dying] Exits:NU&gt; <br />
+The death cry of Denji echoes from somewhere nearby...<br />
+Elyana stops following Denji.<br />
+A griffon stops following Denji.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; <br />
+Bruce arrives from the north.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; <br />
+Garet looks at you.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; get all corpse<br />
+Agaren gets a very large pile of coins from the corpse of Denji.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; back agaren<br />
+#   $starg is now set to {agaren} [local]<br />
+<br />
+Agaren gets a black ice spear from the corpse of Denji.<br />
+Agaren gets some midnight leather sleeves from the corpse of Denji.<br />
+Agaren gets a pair of shiny iron gauntlets from the corpse of Denji.<br />
+Agaren gets a pair of woodsman's boots from the corpse of Denji.<br />
+Agaren gets a shining silver plate from the corpse of Denji.<br />
+Agaren gets a woodsman's ring from the corpse of Denji.<br />
+Agaren gets a green nephaline ring from the corpse of Denji.<br />
+Agaren gets a small wooden chest from the corpse of Denji.<br />
+Agaren gets a glowing scroll of recall from the corpse of Denji.<br />
+Agaren gets a small canteen from the corpse of Denji.<br />
+Agaren gets a small canteen from the corpse of Denji.<br />
+Agaren gets a small canteen from the corpse of Denji.<br />
+Agaren gets a small canteen from the corpse of Denji.<br />
+Agaren gets a bright ball of light from the corpse of Denji.<br />
+Agaren gets a wolf's head helm from the corpse of Denji.<br />
+Agaren gets a spiritual hammer from the corpse of Denji.Agaren gets a silver elixir from the corpse of Denji.<br />
+Agaren gets a flask of fluorescent green liquid from the corpse of Denji.<br />
+Agaren gets a piece of sweet bread from the corpse of Denji.<br />
+Agaren gets a piece of sweet bread from the corpse of Denji.<br />
+Agaren gets a piece of sweet bread from the corpse of Denji.<br />
+Agaren gets a milky potion of see invisible from the corpse of Denji.<br />
+Agaren gets a small wooden chest from the corpse of Denji.<br />
+Agaren gets a wooden shield from the corpse of Denji.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; <br />
+Bruce rolls on the floor in a fit of laughter.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; <br />
+Agaren flies north.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+211H 131V 1X 0C Exits:NU&gt; sn<br />
+Wyand flies in from above.<br />
+You begin moving quietly.<br />
+<br />
+Yair tells you 'nice job'<br />
+You say 'so very sad'<br />
+Bruce tells you 'go on man haha'<br />
+You shout 'the rest of you guys wanna play?'<br />
+Denji tells you 'obviously cant lay faster than you can stab cackle'<br />
+Denji tells you 'either way better than in sitting!'<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='560'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=560">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="560">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

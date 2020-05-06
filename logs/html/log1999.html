@@ -1,0 +1,897 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1999-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1999'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Orlandu dies stupidly again</font></b>
+<p>
+POV: 
+Alexis<p>
+Log Rating:
+1.7083<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Crispen tells you 'im the closest thing to a leader atm'
+</i>
+<p>
+<p>
+
+259H 53V 6581178X 2745C Mem:2 Exits:NESW&gt; Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+&lt;BSP&gt; Crispen Ash, Burning Flames of the Blood Sea is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here. (flying)<br />
+<br />
+259H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; s<br />
+You are sent sprawling as Orlandu crashes into you.<br />
+<br />
+233H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; <br />
+<br />
+A Kalaman cityguard arrives from the south.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+233H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+Orlandu crushes YOU very hard.<br />
+You miss Orlandu with your drain.<br />
+A Kalaman cityguard delivers a quick snap kick to Orlandu. Orlandu staggers and tries to recover.<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; <br />
+Crispen says 'no'<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; st<br />
+c 'flame'<br />
+<br />
+Crispen says 'its not evil'<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:V.Good] Mem:2 Exits:NESW&gt; <br />
+A citizen of Kalaman arrives from the north.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+A Kalaman cityguard slashes Orlandu very hard.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+Orlandu misses you with his crush.<br />
+You miss Orlandu with your drain.<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:Good] Mem:2 Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:Good] Mem:2 Exits:NESW&gt; You stand up.<br />
+<br />
+219H 52V 6581178X 2745C [Alexis:Good] [Orlandu:Good] Mem:2 Exits:NESW&gt; <br />
+You are sent sprawling as Orlandu crashes into you.<br />
+<br />
+193H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Good] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+193H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Good] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+193H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Good] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+Orlandu massacres YOU with his crush.<br />
+You miss Orlandu with your drain.<br />
+<br />
+165H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Fair] Mem:2 Exits:NESW&gt; st<br />
+<br />
+Crispen says 'dude bill'<br />
+<br />
+165H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Fair] Mem:2 Exits:NESW&gt; c 'flame'<br />
+<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+165H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Fair] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+Orlandu crushes YOU extremely hard.<br />
+You miss Orlandu with your drain.<br />
+<br />
+148H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Fair] Mem:2 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+148H 52V 6581178X 2745C [Alexis:Fair] [Orlandu:Fair] Mem:2 Exits:NESW&gt; Orlandu panics, and attempts to flee.<br />
+Orlandu flies east.<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; You stand up.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; c '<br />
+Orlandu flies in from the east.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; f<br />
+Orlandu flies west.<br />
+Crispen flies west.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; l<br />
+A buckskin gelding arrives from the south, carrying Fredrick.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; ame' or<br />
+A buckskin gelding leaves north, carrying Fredrick.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; landu<br />
+Who should the spell be cast upon?<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; <br />
+Crispen flies in from the west.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; shake<br />
+Crispen says 'who are you'<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; <br />
+You shake your head.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; say not smart<br />
+You say 'not smart'<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; <br />
+Crispen looks at you.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt; c 'cur ser'<br />
+A Kalaman cityguard leaves north.<br />
+<br />
+148H 52V 6581178X 2745C Mem:2 Exits:NESW&gt;  me<br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+189H 52V 6581178X 2745C Mem:3 Exits:NESW&gt; !<br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+239H 52V 6581178X 2745C Mem:5 Exits:NESW&gt; n<br />
+<br />
+Orlandu flies in from the west.<br />
+<br />
+239H 52V 6581178X 2745C Mem:5 Exits:NESW&gt; Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. Just to the north, you see the busy city square and<br />
+Kalaman's own open air bazaar is to the east and west. Looking southward,<br />
+you see the Traveler's Lodge, where most visitors to Kalaman stay.<br />
+<br />
+239H 51V 6581178X 2745C Mem:5 Exits:NESW&gt; s<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here. (flying)<br />
+&lt;BSP&gt; Crispen Ash, Burning Flames of the Blood Sea is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A woman with a bag of groceries is making her way home.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+239H 50V 6581178X 2745C Mem:5 Exits:NESW&gt; c 'flame' orlandu<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Orlandu in a cloak of flames.<br />
+<br />
+239H 50V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:5 Exits:NESW&gt; !<br />
+<br />
+You step aside as Orlandu tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+239H 50V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:5 Exits:NESW&gt; <br />
+Meluvu arrives from the north.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+239H 50V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:5 Exits:NESW&gt; <br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+You miss Orlandu with your drain.<br />
+Orlandu crushes YOU extremely hard.<br />
+<br />
+235H 69V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:5 Exits:NESW&gt; Your casting is disrupted by the fighting!<br />
+<br />
+235H 69V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:6 Exits:NESW&gt; <br />
+Crispen focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+235H 69V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:6 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+235H 69V 6581178X 2745C [Alexis:V.Good] [Orlandu:Fair] Mem:6 Exits:NESW&gt; !<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Orlandu in a cloak of flames.<br />
+<br />
+235H 69V 6581178X 2745C [Alexis:V.Good] [Orlandu:Bad] Mem:7 Exits:NESW&gt; !<br />
+<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+Orlandu crushes YOU extremely hard.<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Seled arrives from the west.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Seled leaves north.<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Crispen focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:7 Exits:NESW&gt; Orlandu stands up.<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Orlandu in a cloak of flames.<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:8 Exits:NESW&gt; !<br />
+<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+217H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:8 Exits:NESW&gt; <br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard slashes Orlandu extremely hard.<br />
+Orlandu crushes YOU extremely hard.<br />
+<br />
+202H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Seled arrives from the north.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+202H 69V 6581178X 2745C [Alexis:Good] [Orlandu:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Seled smites YOU very hard.<br />
+<br />
+190H 69V 6581178X 2745C [Alexis:Fair] [Orlandu:V.Bad] Mem:8 Exits:NESW&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Orlandu in a cloak of flames.<br />
+<br />
+190H 69V 6581178X 2745C [Alexis:Fair] [Orlandu:Awful] Mem:8 Exits:NESW&gt; <br />
+Orlandu panics, and attempts to flee.<br />
+You direct your attention to Seled.<br />
+Orlandu flies south.<br />
+<br />
+190H 69V 6581178X 2745C [Alexis:Fair] [Seled:Perfect] Mem:8 Exits:NESW&gt; <br />
+You miss Seled with your drain.<br />
+Seled smites YOU very hard.<br />
+<br />
+179H 69V 6581178X 2745C [Alexis:Fair] [Seled:Perfect] Mem:8 Exits:NESW&gt; fle<br />
+<br />
+A Kalaman cityguard looks at Seled and yells  'There's the scoundrel!'<br />
+<br />
+179H 69V 6581178X 2745C [Alexis:Fair] [Seled:Perfect] Mem:8 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Seled and yells  'There's the scoundrel!'<br />
+<br />
+179H 69V 6581178X 2745C [Alexis:Fair] [Seled:Perfect] Mem:8 Exits:NESW&gt; You flee head over heels.<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+179H 68V 6581178X 2745C Mem:8 Exits:NESW&gt; w<br />
+The Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A large bulletin board is mounted on a wall here.<br />
+<br />
+179H 67V 6581178X 2745C Mem:8 Exits:E&gt; s<br />
+Alas, you cannot go that way...<br />
+<br />
+179H 67V 6581178X 2745C Mem:8 Exits:E&gt; e<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+179H 66V 6581178X 2745C Mem:8 Exits:NESW&gt; s<br />
+The Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A pile of worn maps sits in the corner, free to adventurers.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A black key with deep grooves on the handle is sitting here.<br />
+A tiny silver key lies almost hidden from sight...it hums softly<br />
+Assorted keys dangle from an iron loop here.<br />
+The jailer's keys have been left here.<br />
+&lt;BSP&gt; Dearon Brasco, Special Undercover Agent is standing here. (flying)<br />
+&lt;BSP&gt; Wahr the Male Minotaur is standing here. (flying) (invisible)<br />
+Syfer the Male Minotaur is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+179H 65V 6581178X 2745C Mem:8 Exits:N&gt; n<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+&lt;BSP&gt; Meluvu, Longtime Battlemaster is standing here.<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Klior the Male Half Elf is standing here. (flying)<br />
+&lt;BSP&gt; Crispen Ash, Burning Flames of the Blood Sea is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+179H 64V 6581178X 2745C Mem:8 Exits:NESW&gt; n<br />
+The Lodge's Cafe<br />
+     The room is filled with small tables. These tables are occupied by<br />
+guests at the lodge who have come here to relax and get a cup of home<br />
+brewed coffee. A small doorway leads south into the entry way of the<br />
+lodge.<br />
+A bottle of spring water has been left.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+<br />
+179H 63V 6581178X 2745C Mem:8 Exits:S&gt; s<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+179H 62V 6581178X 2745C Mem:8 Exits:NESW&gt; kil<br />
+Hit whom?<br />
+<br />
+179H 62V 6581178X 2745C Mem:8 Exits:NESW&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+&lt;BSP&gt; Meluvu, Longtime Battlemaster is standing here.<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Klior the Male Half Elf is standing here. (flying)<br />
+&lt;BSP&gt; Crispen Ash, Burning Flames of the Blood Sea is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here. (flying)<br />
+A woman with a bag of groceries is making her way home.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+Looking south:<br />
+You see nothing special.<br />
+&lt;BSP&gt; Dearon Brasco, Special Undercover Agent is standing here. (flying)<br />
+&lt;BSP&gt; Wahr the Male Minotaur is standing here. (flying) (invisible)<br />
+Syfer the Male Minotaur is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+179H 62V 6581178X 2745C Mem:8 Exits:NESW&gt; e<br />
+Vingaard Avenue South<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, you see the busy town square and bazaar.<br />
+Looking south, you see the poorer part of town, less frequented by the<br />
+general populace. The Traveler's Lodge is to the west and a fine diner is<br />
+to the east.<br />
+&lt;BSP&gt; Meluvu, Longtime Battlemaster is standing here.<br />
+. . . has a metallic luster.<br />
+&lt;BSP&gt; Klior the Male Half Elf is standing here. (flying)<br />
+&lt;BSP&gt; Crispen Ash, Burning Flames of the Blood Sea is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here. (flying)<br />
+A woman with a bag of groceries is making her way home.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+179H 61V 6581178X 2745C Mem:8 Exits:NESW&gt; <br />
+You step aside as Orlandu tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+179H 61V 6581178X 2745C [Alexis:Fair] [Orlandu:Awful] Mem:8 Exits:NESW&gt; <br />
+Seled arrives from the north.<br />
+A Kalaman cityguard looks at Orlandu and yells  'There's the scoundrel!'<br />
+<br />
+179H 61V 6581178X 2745C [Alexis:Fair] [Orlandu:Awful] Mem:8 Exits:NESW&gt; <br />
+Meluvu slashes YOU very hard.<br />
+<br />
+168H 61V 6581178X 2745C [Alexis:Fair] [Orlandu:Awful] Mem:8 Exits:NESW&gt; c '<br />
+Meluvu slashes YOU very hard.<br />
+Meluvu slashes YOU.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+A Kalaman cityguard massacres Orlandu with his slash.<br />
+Orlandu misses you with his crush.<br />
+You miss Orlandu with your drain.<br />
+<br />
+150H 61V 6581178X 2745C [Alexis:Fair] [Orlandu:Awful] Mem:8 Exits:NESW&gt; elem'<br />
+You utter the words, 'elemental fist'<br />
+The stone beneath Orlandu splits and folds, killing him mercilessly.<br />
+You receive 0 experience.<br />
+Orlandu is dead! R.I.P.<br />
+Crispen says 'heal him'<br />
+<br />
+150H 61V 6581178X 2745C [Orlandu:Dying] Mem:9 Exits:NESW&gt; <br />
+The death cry of Orlandu echoes from somewhere nearby...<br />
+Orlandu sinks gently to the ground.<br />
+Crispen stops following Orlandu.<br />
+Orlandu now follows Crispen.<br />
+Crispen is the new leader of Orlandu's group.<br />
+Orlandu stops following Crispen.<br />
+You direct your attention to Meluvu.<br />
+Klior takes aim at you.<br />
+<br />
+150H 61V 6581178X 2745C [Alexis:Fair] [Meluvu:Perfect] Mem:9 Exits:NESW&gt; <br />
+Crispen gets a very large pile of coins from the corpse of Orlandu.<br />
+<br />
+150H 61V 6581178X 2745C [Alexis:Fair] [Meluvu:Perfect] Mem:9 Exits:NESW&gt; <br />
+Klior massacres YOU with a plunk.<br />
+Klior comes out of hiding.<br />
+<br />
+121H 61V 6581178X 2745C [Alexis:Bad] [Meluvu:Perfect] Mem:9 Exits:NESW&gt; <br />
+A Kalaman cityguard looks at Meluvu and yells  'There's the scoundrel!'<br />
+<br />
+121H 61V 6581178X 2745C [Alexis:Bad] [Meluvu:Perfect] Mem:9 Exits:NESW&gt; get all co<br />
+Klior misses you with his shot.<br />
+<br />
+121H 61V 6581178X 2745C [Alexis:Bad] [Meluvu:Perfect] Mem:9 Exits:NESW&gt; rpse<br />
+<br />
+Klior annihilates YOU with a plunk.<br />
+Klior comes out of hiding.<br />
+A Kalaman cityguard slashes Meluvu extremely hard.<br />
+A Kalaman cityguard slashes Meluvu very hard.<br />
+You miss Meluvu with your drain.<br />
+Meluvu slashes YOU very hard.<br />
+Meluvu slashes YOU hard.<br />
+Meluvu hugs himself gleefully for no apparent reason.<br />
+<br />
+65H 61V 6581178X 2745C [Alexis:V.Bad] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; <br />
+Crispen gets a small down feather from the corpse of Orlandu.<br />
+Crispen gets a heavy wooden maul from the corpse of Orlandu.<br />
+Crispen gets a golden tinged shield from the corpse of Orlandu.<br />
+Crispen gets a set of power cuisses from the corpse of Orlandu.<br />
+Crispen gets a plumed purple cap from the corpse of Orlandu.<br />
+Crispen gets a suit of platinum etched solamnic platemail from the corpse of Orlandu.<br />
+Crispen gets a large piece of pork chop from the corpse of Orlandu.<br />
+Crispen gets a large piece of pork chop from the corpse of Orlandu.<br />
+Crispen gets a large piece of pork chop from the corpse of Orlandu.<br />
+Crispen gets a large piece of pork chop from the corpse of Orlandu.<br />
+Crispen gets a milky potion of see invisible from the corpse of Orlandu.<br />
+Crispen gets a milky potion of see invisible from the corpse of Orlandu.<br />
+Crispen gets a glowing scroll of recall from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+Crispen gets a small canteen from the corpse of Orlandu.<br />
+<br />
+65H 61V 6581178X 2745C [Alexis:V.Bad] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; <br />
+Meluvu gets a small canteen from the corpse of Orlandu.<br />
+Meluvu gets a well worn battle club from the corpse of Orlandu.<br />
+Meluvu gets a fine vallenwood chest from the corpse of Orlandu.<br />
+<br />
+65H 61V 6581178X 2745C [Alexis:V.Bad] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+65H 61V 6581178X 2745C [Alexis:V.Bad] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; fThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+65H 61V 6581178X 2745C [Alexis:V.Bad] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; leKlior massacres YOU with a plunk.<br />
+Klior comes out of hiding.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+32H 61V 6581178X 2745C [Alexis:Awful] [Meluvu:V.Good] Mem:9 Exits:NESW&gt; <br />
+You flee head over heels.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1999'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1999">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1999">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

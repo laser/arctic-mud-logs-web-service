@@ -1,0 +1,790 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1125-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1125'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+overkill on ex-garbages</font></b>
+<p>
+POV: 
+Toren<p>
+Log Rating:
+2.2585<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+revenge is sweet</i>
+<p>
+<p>
+
+240H 149V 1X 1594C Mem:4 Exits:NESW&gt; <br />
+Coril flies in from the south.<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; l<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe. (white aura)<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; sa wtf are you doing<br />
+You say 'wtf are you doing'<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; l<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe. (white aura)<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+You freeze in place, unable to move.<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; <br />
+Moto flies in from the south.<br />
+<br />
+149V 1X 1594C Mem:4 Exits:NESW&gt; <br />
+You are sent sprawling as Moto crashes into you.<br />
+<br />
+149V 1X 1594C [Toren:Bad] [Moto:Perfect] Mem:4 Exits:NESW&gt; #10 SECONDS TO TICK<br />
+<br />
+Moto massacres YOU with his stab.<br />
+<br />
+149V 1X 1594C [Toren:Bad] [Moto:Perfect] Mem:4 Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+Coril grabs you.  You scream as you feel your life-force being torn away.<br />
+<br />
+149V 1X 1594C [Toren:V.Bad] [Moto:Perfect] Mem:4 Exits:NESW&gt; <br />
+A knight of the sword looks at Moto and yells  'There's the scoundrel!'<br />
+<br />
+149V 1X 1594C [Toren:V.Bad] [Moto:Perfect] Mem:4 Exits:NESW&gt; <br />
+Moto wavers under a knight of the sword's mighty slash!<br />
+A knight of the sword massacres Moto with his slash.<br />
+Moto massacres YOU with his stab.<br />
+<br />
+149V 1X 1594C [Toren:V.Bad] [Moto:V.Good] Mem:4 Exits:NESW&gt; <br />
+<br />
+149V 1X 1594C [Toren:V.Bad] [Moto:V.Good] Mem:4 Exits:NESW&gt;<br />
+<br />
+You are sent sprawling as Moto crashes into you.<br />
+<br />
+149V 1X 1594C [Toren:V.Bad] [Moto:V.Good] Mem:4 Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+Coril grabs you.  You scream as you feel your life-force being torn away.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+149V 1X 1594C [Toren:Awful] [Moto:V.Good] Mem:4 Exits:NESW&gt; rec recall<br />
+#TICK<br />
+<br />
+A knight of the sword slashes Moto extremely hard.<br />
+Moto massacres YOU with his stab.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You feel the magic bond holding you shatter!<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:V.Good] Mem:4 Exits:NESW&gt; <br />
+A knight of the sword looks at Moto and yells  'There's the scoundrel!'<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:V.Good] Mem:4 Exits:NESW&gt; <br />
+Coril flies south.<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:V.Good] Mem:4 Exits:NESW&gt; <br />
+A knight of the sword misses Moto with his slash.<br />
+A knight of the sword slashes Moto extremely hard.<br />
+Moto massacres YOU with his stab.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You slash Moto extremely hard.<br />
+You slash Moto extremely hard.<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:Good] Mem:4 Exits:NESW&gt; <br />
+Coril flies in from the south.<br />
+A knight of the sword looks at Moto and yells  'There's the scoundrel!'<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:Good] Mem:4 Exits:NESW&gt; rec recall<br />
+<br />
+155V 1X 1594C [Toren:Awful] [Moto:Good] Mem:4 Exits:NESW&gt; <br />
+As someone bashes you mercilessly, you feel life ebb away and everything goes dark.<br />
+You're dead.<br />
+<br />
+-11H 155V 1X 1594C Mem:4 Exits:NESW&gt; You sink gently to the ground.<br />
+You feel your soul has returned.<br />
+You suddenly miss the presence of the darkness within you.<br />
+The shadows cloaking your form suddenly fade away.<br />
+Your eyes sting slightly before going back to normal.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: <br />
+<br />
+ -after failing to loot half of the eq because its evil-<br />
+                  -- 5 minutes later --<br />
+<br />
+<br />
+<br />
+Gargath's Ballroom<br />
+    You have just entered a grand ballroom. It glitters and gleams on all<br />
+surfaces. Giant mirrors surround the marble dance floor while candelabra<br />
+and incense set the mood. You can exit to hallways east and south. There<br />
+are small private booths north and west.<br />
+Korf the Male Hylar Dwarf is standing here. (flying) (white aura)<br />
+Torrente the Male Hylar Dwarf is standing here. (flying) (white aura)<br />
+Machi Mucho Greed, American Mavlad is standing here. (flying) (invisible) (white aura)<br />
+Toronar, Holy Man is standing here. (flying) (invisible) (white aura)<br />
+Elyana Lipetskaya, Chieftain of BSP fighters for the Freedom of Mystic Isles is standing here. (flying)<br />
+Delvar the Male Human is standing here. (flying) (invisible) (white aura)<br />
+. . . is enveloped in flames.<br />
+Bottino the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+Satya Kai, Blackdog is standing here. (flying)<br />
+<br />
+612H 93V 4898585X 0C Exits:NESW&gt; <br />
+You follow Bottino south.<br />
+Servants' Hall<br />
+    This hallway is just wide enough to fit four people abreast. It has no<br />
+paintings on the wall and the floor is stone. It continues south and leads<br />
+north into the ballroom.<br />
+A loaf of rye bread has been discarded here.<br />
+Korf the Male Hylar Dwarf is standing here. (flying) (white aura)<br />
+Torrente the Male Hylar Dwarf is standing here. (flying) (white aura)<br />
+Machi Mucho Greed, American Mavlad is standing here. (flying) (invisible) (white aura)<br />
+Toronar, Holy Man is standing here. (flying) (invisible) (white aura)<br />
+Elyana Lipetskaya, Chieftain of BSP fighters for the Freedom of Mystic Isles is standing here. (flying)<br />
+Delvar the Male Human is standing here. (flying) (invisible) (white aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Bottino the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+Satya Kai, Blackdog is standing here. (flying)<br />
+A lowly servant scurries around, doing his duties.<br />
+Moto Kensaki, Muso Shinden Ryu is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is resting here. (flying)<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Machi focuses harshly on Coril and utters some strange words.<br />
+Machi slowly fades into existence.<br />
+Huge flames burn Coril from above.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Torrente crashes into Moto in a thundering collision, knocking him to the ground!<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Satya appears to be dancing around the room.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Elyana crashes into Moto in a thundering collision, knocking him to the ground!<br />
+Satya appears to be dancing around the room.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Toronar focuses harshly on Moto and utters some strange words.<br />
+Toronar slowly fades into existence.<br />
+Moto cries out in pain as Toronar grabs him.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Coril steps aside as Korf attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; gaze coril<br />
+You gaze at Coril with all the evilness you can muster.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Satya annihilates Moto with her pierce.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Delvar utters some strange words.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Delvar slowly fades into existence.<br />
+A lowly servant is caught in a spray of radiant yellow!<br />
+A lowly servant seems weaker.<br />
+Moto is caught in a spray of shimmering red!<br />
+Coril is blasted by a spray of scintillating blue!<br />
+Coril freezes in place.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Delvar pierces a lowly servant extremely hard.<br />
+A lowly servant misses Delvar and destroys an image instead.<br />
+Satya misses Moto with her pierce.<br />
+Satya misses Moto with her smite.<br />
+Korf obliterates Coril with his cleave.<br />
+Elyana annihilates Moto with her slash.<br />
+Torrente misses Moto with his cleave.<br />
+Moto massacres Torrente with his stab.<br />
+Machi obliterates Coril with her pierce.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Machi focuses harshly on Coril and utters some strange words.<br />
+Huge flames burn Coril from above.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Bottino focuses harshly on Moto and utters the words, 'blindness'.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Toronar focuses harshly on Moto and utters some strange words.<br />
+Toronar slowly fades into existence.<br />
+Moto cries out in pain as Toronar grabs him.<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Satya says 'die faggot'<br />
+<br />
+612H 92V 4898585X 0C Exits:NS&gt; <br />
+Delvar utters some strange words.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+A spray of indigo flows over a lowly servant, ripping out his mind.<br />
+You receive 1031 experience.<br />
+exa corpse<br />
+A lowly servant is dead! R.I.P.<br />
+Moto is caught in a spray of bright orange!<br />
+Moto is struck by a spray of vibrant green!<br />
+Coril is caught in a spray of radiant yellow!<br />
+Satya flies in from the north.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; <br />
+The death cry of a lowly servant echoes from somewhere nearby...<br />
+Satya places a black fang of a shadow beast in the back of Coril, resulting in some strange noises, a lot of blood and a corps<br />
+e.<br />
+You receive 0 experience.<br />
+exa corpse<br />
+Coril is dead! R.I.P.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; <br />
+Elyana obliterates Moto with her slash.<br />
+Torrente obliterates Moto with his cleave.<br />
+Moto massacres Torrente with his stab.<br />
+The death cry of Coril echoes from somewhere nearby...<br />
+Coril stops following Moto.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; <br />
+Moto steps aside as Torrente attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; <br />
+Moto steps aside as Elyana attempts a bash, stumbles, and falls flat on her face.<br />
+Machi annihilates Moto with her pierce.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; <br />
+Korf stands up.<br />
+Bottino gets a very large pile of coins from the corpse of Coril.<br />
+<br />
+612H 92V 4897554X 0C Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a scroll of recall<br />
+an iron gorget<br />
+a small canteen<br />
+a large hide waterskin<br />
+a dark black robe<br />
+a sphere of fire<br />
+a glowing scroll of recall..it glows dimly<br />
+a piece of sweet bread [18]<br />
+Moto steps aside as Korf attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+612H 92V 4897554X 115C Exits:NS&gt; <br />
+Bottino focuses harshly on Moto and utters some strange words.<br />
+Bottino slowly fades into existence.<br />
+Moto collapses and dies as Bottino grabs him.<br />
+You receive 0 experience.<br />
+exa corpse<br />
+Moto is dead! R.I.P.<br />
+<br />
+612H 92V 4897554X 115C Exits:NS&gt; l<br />
+Torrente obliterates Moto with his cleave.<br />
+The death cry of Moto echoes from somewhere nearby...<br />
+Moto sinks gently to the ground.<br />
+Servants' Hall<br />
+    This hallway is just wide enough to fit four people abreast. It has no<br />
+paintings on the wall and the floor is stone. It continues south and leads<br />
+north into the ballroom.<br />
+The corpse of Moto is lying here.<br />
+The corpse of Coril is lying here.<br />
+The corpse of a lowly servant is lying here.<br />
+A loaf of rye bread has been discarded here.<br />
+Satya Kai, Blackdog is standing here. (flying)<br />
+Korf the Male Hylar Dwarf is sitting here. (flying) (white aura)<br />
+Torrente the Male Hylar Dwarf is sitting here. (flying) (white aura)<br />
+Machi Mucho Greed, American Mavlad is standing here. (flying) (white aura)<br />
+Toronar, Holy Man is standing here. (flying) (invisible) (white aura)<br />
+Elyana Lipetskaya, Chieftain of BSP fighters for the Freedom of Mystic Isles is sitting here. (flying)<br />
+Delvar the Male Human is standing here. (flying) (white aura)<br />
+. . . is enveloped in flames.<br />
+Bottino the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+<br />
+612H 92V 4897554X 115C Exits:NS&gt; <br />
+Toronar gets a very large pile of coins from the corpse of Moto.<br />
+<br />
+612H 92V 4897554X 115C Exits:NS&gt; <br />
+Toronar divides 1170 coins equally among the group members present.<br />
+<br />
+612H 92V 4897554X 245C Exits:NS&gt; i<br />
+You are carrying:<br />
+a piece of sweet bread [6]<br />
+a glowing scroll of recall..it glows dimly<br />
+a sphere of fire<br />
+a dark black robe<br />
+a large hide waterskin<br />
+a small canteen<br />
+an iron gorget<br />
+a scroll of recall<br />
+a venom dagger..it glows dimly<br />
+the shroud of Death<br />
+a girdle of storm giant strength<br />
+an engraved emerald knife<br />
+a yellow potion<br />
+a crystal shard necklace..it glows dimly<br />
+a yellow potion<br />
+an aquamarine potion<br />
+a pair of shadowy gloves<br />
+a purple potion<br />
+a bright green potion<br />
+a clear potion<br />
+a staff of high spirits<br />
+a hooded lantern<br />
+a colorful mushroom [2]<br />
+a small canteen<br />
+a torch<br />
+a large sapphire<br />
+a scribed scroll<br />
+<br />
+612H 92V 4897554X 245C Exits:NS&gt; <br />
+Machi gets a fine dueling rapier from the corpse of Moto.<br />
+Machi is zapped by a bracelet of unending flame and instantly drops it.<br />
+Machi gets a gleaming silver scabbard from the corpse of Moto.<br />
+Machi gets a shimmering blue dragon scale cloak from the corpse of Moto.<br />
+Machi gets a wooden shield from the corpse of Moto.<br />
+Machi gets a pair of black silk gloves from the corpse of Moto.<br />
+Machi gets a pair of pearl studded greaves from the corpse of Moto.<br />
+Machi gets a grandiose plate of black steel from the corpse of Moto.<br />
+Machi gets a small feathered talisman from the corpse of Moto.<br />
+Machi gets an amulet of levitation from the corpse of Moto.<br />
+Machi gets a steel ring from the corpse of Moto.<br />
+Machi gets a carved stone seal from the corpse of Moto.<br />
+Machi gets a pathfinder lantern from the corpse of Moto.<br />
+Machi gets a scroll of recall from the corpse of Moto.<br />
+Machi gets a bag of shadows from the corpse of Moto.<br />
+Machi gets a large hide waterskin from the corpse of Moto.<br />
+Machi gets a blue potion of remove poison from the corpse of Moto.<br />
+Machi gets an old gleaming key from the corpse of Moto.<br />
+Machi gets a woodsman's ring from the corpse of Moto.<br />
+Machi gets a glyph-covered ivory scimitar from the corpse of Moto.<br />
+Machi gets a thin longsword with a fiery bloodstone pommel from the corpse of Moto.<br />
+Machi gets a glowing scroll of recall from the corpse of Moto.<br />
+Machi gets a small wooden chest from the corpse of Moto.<br />
+Machi gets a glowing scroll of recall from the corpse of Moto.<br />
+Machi is zapped by a large black mace and instantly drops it.<br />
+Machi gets an iron ration from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+Machi gets a large piece of pork chop from the corpse of Moto.<br />
+Machi gets a large piece of pork chop from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+Machi gets a small canteen from the corpse of Moto.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1125'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1125">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1125">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,790 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 276-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='276'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Forder Helros RIP</font></b>
+<p>
+POV: 
+Elyana<p>
+Log Rating:
+-2.0001<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Forder tells you 'lets fight'</i>
+<p>
+<p>
+
+Bre tells you 'forder and helros just try pk me, basher and barb'<br />
+Forder tells you 'lets fight'<br />
+<br />
+[ a bit later ]<br />
+<br />
+239H 36V 1551X 6083C Mem:4 Exits:NS&gt; <br />
+Bre flies north.<br />
+Dezar flies north.<br />
+You follow Bre north.<br />
+Rinsas flies in from the south.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A tough looking sailor walks casually along the docks.<br />
+<br />
+239H 35V 1551X 6083C Mem:4 Exits:NES&gt; scanLooking north:<br />
+You see nothing special.<br />
+Forder Forest Hunter is resting here.<br />
+Looking east:<br />
+You see nothing special.<br />
+A muscled sailor stand here, guarding the gangplank of the Sea Lady. (red aura)<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+239H 35V 1551X 6083C Mem:4 Exits:NES&gt; <br />
+Bre flies north.<br />
+Dezar flies north.<br />
+You follow Bre north.<br />
+Rinsas flies in from the south.<br />
+The End of the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+Forder Forest Hunter is resting here.<br />
+<br />
+239H 34V 1551X 6083C Mem:4 Exits:ESW&gt; c 'haste' Dezar<br />
+Rinsas slowly fades into existence.<br />
+Rinsas gives his dagger a quick thrust and twist, as he strikes Forder in the back with it.<br />
+<br />
+239H 34V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Rinsas pierces Forder extremely hard.<br />
+Rinsas massacres Forder with his pierce.<br />
+Forder misses Rinsas with his slash.<br />
+<br />
+239H 34V 1551X 6083C Mem:4 Exits:ESW&gt; You utter the words, 'haste'<br />
+Dezar starts to fidget.<br />
+<br />
+239H 34V 1551X 6083C Mem:5 Exits:ESW&gt; <br />
+Bre slowly fades into existence.<br />
+Forder steps aside as Bre attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+239H 34V 1551X 6083C Mem:5 Exits:ESW&gt; <br />
+Dezar slowly fades into existence.<br />
+Forder steps aside as Dezar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+239H 34V 1551X 6083C Mem:5 Exits:ESW&gt; c 'h p' Forder<br />
+Dezar massacres Forder with his pierce.<br />
+Dezar massacres Forder with his pierce.<br />
+Bre slashes Forder extremely hard.<br />
+Rinsas pierces Forder extremely hard.<br />
+Rinsas pierces Forder extremely hard.<br />
+Forder misses Rinsas with his slash.<br />
+You suddenly notice that your body is in focus once again.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; You utter the words, 'hold person'<br />
+Forder freezes in place.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Dezar stands up.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Dezar crashes into Forder in a thundering collision, knocking him to the ground!<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; group<br />
+Dezar pierces Forder extremely hard.<br />
+Dezar massacres Forder with his pierce.<br />
+Bre massacres Forder with his slash.<br />
+Forder is stunned, but will likely regain consciousness again.<br />
+Rinsas massacres Forder with his pierce.<br />
+You receive 0 experience.<br />
+Forder is dead! R.I.P.<br />
+get all corpseThe death cry of Forder echoes from somewhere nearby...<br />
+Helros stops following Forder.<br />
+A horse stops following Forder.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; Your group of 4 members consists of:<br />
+  Bre              perfect   rested    sitting    Y   N    N     0    0<br />
+  Dezar            perfect   fatigued  standing   Y   N    N     0    0<br />
+  Elyana           perfect   fatigued  standing   Y   Y    Y     1    4<br />
+  Rinsas           perfect   rested    standing   Y   N    N     0    0<br />
+Bre stands up.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Rinsas gets a pile of coins from the corpse of Forder.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; You get a longsword from the corpse of Forder.<br />
+You get a bronze shield from the corpse of Forder.<br />
+You get a scroll of recall from the corpse of Forder.<br />
+You get a wand of twisted bands of wood from the corpse of Forder.<br />
+You get a vial of powdered bone from the corpse of Forder.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A weathered fisherman steadies himself on the old pier as he fishes.<br />
+Looking south:<br />
+You see nothing special.<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A tough looking sailor walks casually along the docks.<br />
+Looking west:<br />
+You see nothing special.<br />
+A fisherman stands on the pier, tossing his line into the water.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Dezar snickers softly.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; gt nextYou tell your group 'next'<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; <br />
+Bre kneels down and studies the ground.<br />
+<br />
+239H 62V 1551X 6083C Mem:4 Exits:ESW&gt; gt helros<br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+A tough looking sailor walks casually along the docks.<br />
+<br />
+239H 61V 1551X 6083C Mem:4 Exits:NES&gt; You tell your group 'helros'<br />
+<br />
+239H 61V 1551X 6083C Mem:4 Exits:NES&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+<br />
+239H 60V 1551X 6083C Mem:4 Exits:NS&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+<br />
+239H 59V 1551X 6083C Mem:4 Exits:NS&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+A tough looking sailor walks casually along the docks.<br />
+A tough looking sailor walks casually along the docks.<br />
+A tough looking sailor walks casually along the docks.<br />
+A white winged seagull flaps by overhead, crying out into the wind.<br />
+<br />
+239H 58V 1551X 6083C [0;37mMem:4 Exits:NSW&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Walking Along the Docks<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+<br />
+239H 57V 1551X 6083C Mem:4 Exits:NESW&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+The Docks of Palanthas<br />
+A lantern hangs from the mighty pylons of the docks...it glows dimly<br />
+A tough looking sailor walks casually along the docks.<br />
+<br />
+239H 56V 1551X 6083C Mem:4 Exits:NS&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Waterfront<br />
+A short strip of bark lies in the dust here.<br />
+A badly damaged and twisted metal plate has been left to get rusty.<br />
+A tunic made from black cloth lies here.<br />
+A stained grey pouch has been abandoned on the ground.<br />
+Some orange leather armor is lying here.<br />
+Someone has dropped their light blue denim trousers on the ground here.<br />
+A long rusty iron wagon axle lies here...it glows blue<br />
+A faded map of the western lands lies here.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A sailor, just off the boat, stands here with his hands in his pockets.<br />
+A dockworker is here loading and unloading some large crates.<br />
+A streetsweeper picks up some trash.<br />
+<br />
+239H 55V 1551X 6083C Mem:4 Exits:NES&gt; scan<br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Crown Street<br />
+You sense a life form.<br />
+<br />
+239H 54V 1551X 6083C Mem:4 Exits:NEW&gt; Looking north:<br />
+You see nothing special.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A sailor, just off the boat, stands here with his hands in his pockets.<br />
+A dockworker is here loading and unloading some large crates.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthanian guard is here serving and protecting the citizens of Palanthas.<br />
+A citizen of Palanthas is here going about his business.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+239H 54V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Bre flies east.<br />
+Dezar flies east.<br />
+You follow Bre east.<br />
+Rinsas flies in from the west.<br />
+Crown Street<br />
+A citizen of Palanthas is here going about his business.<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; c 'h p' HelrosWho should the spell be cast upon?<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Bre kneels down and studies the ground.<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Bre kneels down and studies the ground.<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Swama shouts 'hey akhlaur you on?'<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Bre kneels down and studies the ground.<br />
+<br />
+239H 53V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Bre flies east.<br />
+Dezar flies east.<br />
+You follow Bre east.<br />
+Rinsas flies in from the west.<br />
+Intersection: Crown Street and Northern Avenue<br />
+A Palanthanian guard is here serving and protecting the citizens of Palanthas.<br />
+<br />
+239H 52V 1551X 6083C Mem:4 Exits:NESW&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Northern Avenue<br />
+<br />
+239H 51V 1551X 6083C Mem:4 Exits:NS&gt; <br />
+Bre flies south.<br />
+Dezar flies south.<br />
+You follow Bre south.<br />
+Rinsas flies in from the north.<br />
+Intersection: Sword Street and Northern Avenue<br />
+<br />
+239H 50V 1551X 6083C Mem:4 Exits:NESW&gt; <br />
+Bre flies west.<br />
+Dezar flies west.<br />
+You follow Bre west.<br />
+Rinsas flies in from the east.<br />
+Sword Street<br />
+Helros the Male Wild Elf is standing here.<br />
+<br />
+239H 49V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Rinsas places a ruby studded dagger in Helros's back, resulting in some strange noises and some blood.<br />
+<br />
+239H 49V 1551X 6083C Mem:4 Exits:NEW&gt; <br />
+Dezar crashes into Helros in a thundering collision, knocking him to the ground!<br />
+<br />
+239H 49V 1551X 6083C Mem:4 Exits:NEW&gt; c 'h p' Helros<br />
+Dezar pierces Helros extremely hard.<br />
+Dezar pierces Helros extremely hard.<br />
+Rinsas pierces Helros extremely hard.<br />
+Rinsas pierces Helros extremely hard.<br />
+Helros cleaves Rinsas very hard.<br />
+Helros misses Rinsas with his slash.<br />
+<br />
+239H 49V 1551X 6083C Mem:4 Exits:NEW&gt; You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+239H 49V 1551X 6083C Mem:5 Exits:NEW&gt; c 'h p' Helros<br />
+Helros steps aside as Bre attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+239H 49V 1551X 6083C Mem:5 Exits:NEW&gt; <br />
+Dezar crashes into Helros in a thundering collision, knocking him to the ground!<br />
+<br />
+239H 49V 1551X 6083C Mem:5 Exits:NEW&gt; <br />
+Bre slashes Helros extremely hard.<br />
+Dezar pierces Helros extremely hard.<br />
+Rinsas pierces Helros extremely hard.<br />
+Rinsas pierces Helros extremely hard.<br />
+Helros cleaves Rinsas hard.<br />
+Helros misses Rinsas with his slash.<br />
+<br />
+239H 49V 1551X 6083C Mem:5 Exits:NEW&gt; You utter the words, 'hold person'<br />
+Helros freezes in place.<br />
+<br />
+239H 49V 1551X 6083C Mem:6 Exits:NEW&gt; c 'f b' Helros<br />
+Dezar crashes into Helros in a thundering collision, knocking him to the ground!<br />
+<br />
+239H 49V 1551X 6083C Mem:6 Exits:NEW&gt; <br />
+Bre slashes Helros extremely hard.<br />
+Dezar massacres Helros with his pierce.<br />
+Dezar massacres Helros with his pierce.<br />
+Rinsas massacres Helros with his pierce.<br />
+Rinsas massacres Helros with his pierce.<br />
+<br />
+239H 49V 1551X 6083C Mem:6 Exits:NEW&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Helros's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Helros is dead! R.I.P.<br />
+get all corpse<br />
+239H 49V 1551X 6083C Mem:7 Exits:NEW&gt; <br />
+The death cry of Helros echoes from somewhere nearby...<br />
+Rinsas gets a large pile of coins from the corpse of Helros.<br />
+<br />
+239H 49V 1551X 6083C Mem:7 Exits:NEW&gt; <br />
+Bre stands up.<br />
+<br />
+239H 49V 1551X 6083C Mem:7 Exits:NEW&gt; <br />
+Rinsas gets a longsword from the corpse of Helros.<br />
+Rinsas gets an axe with a vallenwood handle from the corpse of Helros.<br />
+Rinsas gets a pair of leather training boots from the corpse of Helros.<br />
+Rinsas gets a leather training cap from the corpse of Helros.<br />
+Rinsas gets some padded leather body armor from the corpse of Helros.<br />
+Rinsas gets a long sword from the corpse of Helros.<br />
+Rinsas gets a waterskin from the corpse of Helros.<br />
+Rinsas gets a loaf of bread from the corpse of Helros.<br />
+Rinsas gets a loaf of bread from the corpse of Helros.<br />
+Rinsas gets a complimentary stable note from the corpse of Helros.<br />
+Rinsas gets a small leather bag from the corpse of Helros.<br />
+Rinsas gets a map of Palanthas from the corpse of Helros.<br />
+Rinsas gets a hooded lantern from the corpse of Helros.<br />
+Rinsas gets a bottle of rotgut from the corpse of Helros.<br />
+<br />
+239H 49V 1551X 6083C Mem:7 Exits:NEW&gt; You get a bottle of rotgut from the corpse of Helros.<br />
+You get a bottle of rotgut from the corpse of Helros.<br />
+You get a bottle of rotgut from the corpse of Helros.<br />
+You get a roasted turkey leg from the corpse of Helros.<br />
+You get a roasted turkey leg from the corpse of Helros.<br />
+You get a roasted turkey leg from the corpse of Helros.<br />
+<br />
+239H 49V 1551X 6083C Mem:7 Exits:NEW&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='276'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=276">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="276">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

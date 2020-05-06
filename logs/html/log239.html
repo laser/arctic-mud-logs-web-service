@@ -1,0 +1,2986 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 239-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='239'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wild uses Zone Features.</font></b>
+<p>
+POV: 
+Rudra<p>
+Log Rating:
+3.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Wild takes on Carnage group in Bluff. Wild uses some interesting pouches to win the battle. </i>
+<p>
+<p>
+
+Nicki flies in from the north.<br />
+Thun flies in from the north.<br />
+Jeremiah flies in from the north.<br />
+Path In the Hills<br />
+    You find yourself amongst the rolling hills. They are covered with both<br />
+spruce and pine trees. You can see the clouds clinging to the windward side<br />
+of the hills as they come off of the ocean. The sandy soil to either side<br />
+of the trail provides fertile ground for berries and other small plants.<br />
+The tall stands of trees waver slightly in the wind.<br />
+A small belt pack of woven cloth lies in a heap on the floor.<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A scroll has carelessly been left here.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A simple wooden ring has been dropped here.<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A large torch. [2]<br />
+A piece of bone attached to a leather thong lies here, fashioned into a charm...it glows dimly<br />
+A small flask has been left here. [2]<br />
+A pair of golden anklets have been dropped on the floor...it glows dimly<br />
+A small flask has been left here.<br />
+A small pouch. [10]<br />
+Jeremiah Wild, The Fireshield Dude is standing here. (flying) (invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Nicki Frost, Winters Wild Dawning is standing here. (flying)<br />
+Ie, Ancient Master of Tai Kwon Leap is standing here. (flying) (invisible) (red aura)<br />
+. . . has a granite appearance.<br />
+Boucard Dee, Rum Soaked Wildman is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Hartman, Wild Gunnery Sergeant is standing here. (flying) (invisible)<br />
+Arnold Layne, Wild is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Kalen the Male Wild Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Juan Valdez is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Enlil, Frontline Assembly Chairman of Carnage is standing here. (flying) (invisible)<br />
+Korly S'kum, Blood Sea Garbage is standing here. (flying) (invisible) (red aura)<br />
+. . . has a granite appearance.<br />
+Iark Sunshine, Holy Light of Carnage is standing here. (flying)<br />
+Anariel Taumariel, Bowman of the Carnage is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain, Treacherous Brother of Carnage is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Dannil Death, Carnage of War is standing here. (flying) (invisible)<br />
+Askle Dragonchild, Carnage Incarnate is standing here. (flying)<br />
+Alissa Carnage is standing here. (flying)<br />
+<br />
+609H 132V 37754401X 317C Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+Enlil is shredded by shards of ice.<br />
+Korly is shredded by shards of ice.<br />
+Iark manages to avoid the brunt of the storm.<br />
+Anariel is shredded by shards of ice.<br />
+Kain is shredded by shards of ice.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+Askle is shredded by shards of ice.<br />
+Alissa is shredded by shards of ice.<br />
+<br />
+609H 132V 37754401X 317C Exits:NS&gt; <br />
+Dannil crashes into Troggs in a thundering collision, knocking him to the ground!<br />
+<br />
+609H 132V 37754401X 317C Exits:NS&gt; bash enlil<br />
+You crash into Enlil in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Perfect] [Enlil:V.Bad] Exits:NS&gt; <br />
+Thun says 'SIT DOWN'<br />
+<br />
+609H 132V 37754401X 317C [Juan:Perfect] [Enlil:V.Bad] Exits:NS&gt; <br />
+Thun crashes into Anariel in a thundering collision, knocking him to the ground!<br />
+<br />
+609H 132V 37754401X 317C [Juan:Perfect] [Enlil:V.Bad] Exits:NS&gt; <br />
+Thun massacres Anariel with his drain.<br />
+Thun massacres Anariel with his drain.<br />
+You cleave Enlil very hard.<br />
+You cleave Enlil extremely hard.<br />
+Troggs misses Dannil with his hit.<br />
+Alissa slashes Juan hard.<br />
+Alissa is burned, as she swings at Juan.<br />
+Alissa is chilled, as she swings at Juan.<br />
+Askle slashes Juan hard.<br />
+Askle is burned, as he swings at Juan.<br />
+Askle is chilled, as he swings at Juan.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Kain slashes Juan hard.<br />
+Kain is burned, as he swings at Juan.<br />
+Kain is chilled, as he swings at Juan.<br />
+Anariel shoots Juan very hard.<br />
+Iark wounds Juan with his slash.<br />
+Korly slowly fades into existence.<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Korly smites Juan hard.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Juan pierces Enlil extremely hard.<br />
+Juan barely pierces Enlil.<br />
+Enlil slashes Juan hard.<br />
+Enlil is burned, as he swings at Juan.<br />
+Enlil is chilled, as he swings at Juan.<br />
+Enlil slashes Juan very hard.<br />
+Enlil is burned, as he swings at Juan.<br />
+Enlil is chilled, as he swings at Juan.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; gt Tick soon<br />
+<br />
+Arnold focuses harshly on Kain and utters some strange words.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen quaffs a yellow potion.<br />
+The voice of Habbakuk, Fisher King thunders around you.<br />
+Habbakuk simply gestures at Kalen...<br />
+Kalen's skin turns grey and granite-like.<br />
+Kalen smiles as the air around him solidifies.<br />
+Kalen's skin thickens into a protective bark.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+Enlil is caught in a spray of shimmering red!<br />
+Korly is struck by a spray of vibrant green!<br />
+Iark is caught in a spray of shimmering red!<br />
+Iark is blasted by a spray of scintillating blue!<br />
+Anariel is caught in a spray of radiant yellow!<br />
+Anariel is mortally wounded, and will die soon, if not aided.<br />
+Kain is caught in a spray of shimmering red!<br />
+Kain is blasted by a spray of scintillating blue!<br />
+Dannil is caught in a spray of radiant yellow!<br />
+Askle is caught in a spray of bright orange!<br />
+Alissa is caught in a spray of radiant yellow!<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Iark quaffs a fiery red potion.<br />
+Iark smiles as the air around him is set ablaze.<br />
+Iark cries out in pain.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Boucard utters some strange words.<br />
+Enlil is shredded by shards of ice.<br />
+Korly is shredded by shards of ice.<br />
+Iark appears to grow stronger.<br />
+Iark manages to avoid the brunt of the storm.<br />
+Anariel is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+Anariel is dead! R.I.P.<br />
+Kain is shredded by shards of ice.<br />
+Kain is stunned, but will likely regain consciousness again.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+Askle is shredded by shards of ice.<br />
+Alissa is shredded by shards of ice.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+The death cry of Anariel echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+Solare tells your group 'Tic in 10!'<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Hartman gets a large pile of coins from the corpse of Anariel.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; st<br />
+<br />
+Iark swings madly at Arnold with a massive sword of divine wrath, cutting him a deep wound.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Kirsten flies in from the south.<br />
+Alesh flies in from the south.<br />
+Leca flies in from the south.<br />
+Waldorf flies in from the south.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Waldorf is blasted by a spray of scintillating blue!<br />
+Leca is caught in a spray of shimmering red!<br />
+Alesh is blasted by a spray of scintillating blue!<br />
+Kirsten is struck by a spray of vibrant green!<br />
+Enlil is caught in a spray of radiant yellow!<br />
+Korly is struck by a spray of murky violet!<br />
+Iark is blasted by a spray of scintillating blue!<br />
+A spray of green strikes Kain and he dies in agony.<br />
+Kain is dead! R.I.P.<br />
+Dannil is caught in a spray of bright orange!<br />
+Askle is struck by a spray of vibrant green!<br />
+Alissa is struck by a spray of vibrant green!<br />
+Alissa is stunned, but will likely regain consciousness again.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; st<br />
+<br />
+Jeremiah focuses harshly on Waldorf and utters some strange words.<br />
+Jeremiah slowly fades into existence.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Waldorf.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+The death cry of Kain echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+Kain sinks gently to the ground.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+Waldorf is shredded by shards of ice.<br />
+Leca manages to avoid the brunt of the storm.<br />
+Alesh is shredded by shards of ice.<br />
+Kirsten is shredded by shards of ice.<br />
+Enlil is shredded by shards of ice.<br />
+Korly is shredded by shards of ice.<br />
+Iark appears to grow stronger.<br />
+Iark manages to avoid the brunt of the storm.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+Askle is shredded by shards of ice.<br />
+Alissa is torn to pieces by hundreds of shards of ice.<br />
+Alissa is dead! R.I.P.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; get all corpse<br />
+The death cry of Alissa echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+Askle now follows Waldorf.<br />
+Dannil now follows Waldorf.<br />
+Iark now follows Waldorf.<br />
+Korly now follows Waldorf.<br />
+Enlil now follows Waldorf.<br />
+You try to bash Enlil, but you miss and tumble forward onto your face.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Leca gets a large pile of coins from the corpse of Alissa.<br />
+<br />
+609H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Leca utters some strange words.<br />
+Jeremiah is shredded by shards of ice.<br />
+Thun is shredded by shards of ice.<br />
+Nicki is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Ie is shredded by shards of ice.<br />
+Boucard is shredded by shards of ice.<br />
+Hartman is shredded by shards of ice.<br />
+Leca destroys Arnold's mirror images.<br />
+Arnold is shredded by shards of ice.<br />
+Kalen is shredded by shards of ice.<br />
+Troggs appears to grow stronger.<br />
+Troggs manages to avoid the brunt of the storm.<br />
+Juan appears to grow stronger.<br />
+Juan manages to avoid the brunt of the storm.<br />
+<br />
+577H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen gets a fine dwarven katar from the corpse of Alissa.<br />
+Kalen gets a spiked ice bracelet from the corpse of Alissa.<br />
+Kalen gets a spiked ice bracelet from the corpse of Alissa.<br />
+Kalen gets a faded green robe from the corpse of Alissa.<br />
+Kalen gets a large golden shield from the corpse of Alissa.<br />
+Kalen gets pearl and onyx bracers from the corpse of Alissa.<br />
+Kalen gets a pair of sterling gauntlets from the corpse of Alissa.<br />
+Kalen gets a pair of barbed wire boots from the corpse of Alissa.<br />
+Kalen gets a black battle kilt from the corpse of Alissa.<br />
+Kalen gets a suit of gold dragonscale battle armor from the corpse of Alissa.<br />
+Kalen gets a medallion of Paladine from the corpse of Alissa.<br />
+Kalen gets an obsidian amulet from the corpse of Alissa.<br />
+Kalen gets a red ring of the Dragon Highlord from the corpse of Alissa.<br />
+Kalen gets a woodsman's ring from the corpse of Alissa.<br />
+Kalen gets a flask of clear liquid from the corpse of Alissa.<br />
+Kalen gets a large piece of pork chop from the corpse of Alissa.<br />
+Kalen gets a scroll of recall from the corpse of Alissa.<br />
+Kalen gets a scroll of recall from the corpse of Alissa.<br />
+<br />
+577H 132V 37754401X 317C [Juan:Good] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen bruises Leca with his slash.<br />
+Kalen is chilled, as he swings at Leca.<br />
+Kalen bruises Leca with his bludgeon.<br />
+Kalen is chilled, as he swings at Leca.<br />
+Hartman slowly fades into existence.<br />
+Hartman bruises Leca with his cleave.<br />
+Hartman is chilled, as he swings at Leca.<br />
+Hartman bruises Leca with his cleave.<br />
+Hartman is chilled, as he swings at Leca.<br />
+Nicki bruises Leca with her shoot.<br />
+Nicki bruises Leca with her shoot.<br />
+Thun massacres Leca with his drain.<br />
+Thun is chilled, as he swings at Leca.<br />
+Thun massacres Leca with his drain.<br />
+Thun is chilled, as he swings at Leca.<br />
+Jeremiah slowly fades into existence.<br />
+Jeremiah crushes Leca extremely hard.<br />
+Jeremiah is chilled, as he swings at Leca.<br />
+Kirsten bruises Ie with her bludgeon.<br />
+Alesh bruises Ie with her smite.<br />
+Waldorf bruises Ie with his stab.<br />
+Waldorf bruises Ie with his stab.<br />
+Arnold pierces Iark extremely hard.<br />
+Arnold is burned, as he swings at Iark.<br />
+Arnold misses Iark with his pierce.<br />
+Boucard misses Enlil with his hit.<br />
+You cleave Enlil extremely hard.<br />
+Enlil is mortally wounded, and will die soon, if not aided.<br />
+Troggs misses Dannil with his hit.<br />
+Askle slashes Juan.<br />
+Askle is burned, as he swings at Juan.<br />
+Askle is chilled, as he swings at Juan.<br />
+Askle barely slashes Juan.<br />
+Askle is burned, as he swings at Juan.<br />
+Askle is chilled, as he swings at Juan.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Thun gets a finely crafted wooden bow from the corpse of Anariel.<br />
+Thun gets a spiked bronze bracer from the corpse of Anariel.<br />
+Thun gets a spiked bronze bracer from the corpse of Anariel.<br />
+Thun gets an indigo leather scabbard from the corpse of Anariel.<br />
+Thun gets a dwarven miner's pack from the corpse of Anariel.<br />
+Thun gets the ancient sleeves of stealth from the corpse of Anariel.<br />
+Thun is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Thun is zapped by a pair of platinum gilt boots and instantly drops it.<br />
+Thun gets a dwarven knee spike from the corpse of Anariel.<br />
+Thun gets a crown of weeds from the corpse of Anariel.<br />
+Thun gets a suit of dragon power from the corpse of Anariel.<br />
+Thun gets a diamond-studded jaguar collar from the corpse of Anariel.<br />
+Thun gets a red demon skin cloak from the corpse of Anariel.<br />
+Thun gets a silver dwarven ring from the corpse of Anariel.<br />
+Thun gets a bowl of Otik's spiced potatoes from the corpse of Anariel.<br />
+Thun gets a bowl of Otik's spiced potatoes from the corpse of Anariel.<br />
+Thun gets a bowl of Otik's spiced potatoes from the corpse of Anariel.<br />
+Thun gets a wooden ring from the corpse of Anariel.<br />
+Thun gets a large waterskin from the corpse of Anariel.<br />
+Thun gets a scroll of recall from the corpse of Anariel.<br />
+Thun gets a scroll of recall from the corpse of Anariel.<br />
+Thun gets a hooded lantern from the corpse of Anariel.<br />
+Thun gets a large waterskin from the corpse of Anariel.<br />
+Thun gets a blue potion of remove poison from the corpse of Anariel.<br />
+Thun gets a blue potion of remove poison from the corpse of Anariel.<br />
+Thun gets a large waterskin from the corpse of Anariel.<br />
+<br />
+577H 132V 37754401X 317C [Enlil:Dying] Exits:NS&gt; <br />
+Hartman crashes into Leca in a thundering collision, knocking him to the ground!<br />
+<br />
+577H 132V 37754401X 317C [Enlil:Dying] Exits:NS&gt; <br />
+Askle quaffs a milky potion of see invisible.<br />
+Askle rubs his eyes and looks about himself with clarity.<br />
+<br />
+577H 132V 37754401X 317C [Enlil:Dying] Exits:NS&gt; <br />
+Thun gets a black stone from the corpse of Kain.<br />
+Thun is zapped by an ancient sword of the morning rose and instantly drops it.<br />
+Thun is zapped by a spiked golden bracelet and instantly drops it.<br />
+Thun is zapped by a spiked golden bracelet and instantly drops it.<br />
+Thun gets an indigo leather scabbard from the corpse of Kain.<br />
+Thun is zapped by a platinum shield of Paladine and instantly drops it.<br />
+Thun gets silver dragon scale armbands from the corpse of Kain.<br />
+Thun is zapped by a pair of silver dragon scale gauntlets and instantly drops it.<br />
+Thun gets a pair of barbed wire boots from the corpse of Kain.<br />
+Thun gets a pair of unfinished mithril legplates from the corpse of Kain.<br />
+Thun gets a massive diamond crown from the corpse of Kain.<br />
+Thun gets a granite asp's tooth from the corpse of Kain.<br />
+Thun gets a white globe and chain from the corpse of Kain.<br />
+Thun gets a frosted tin ring from the corpse of Kain.<br />
+Thun gets dual rings of onyx and pearlst<br />
+ from the corpse of Kain.<br />
+Thun gets a piece of sweet bread from the corpse of Kain.<br />
+Thun gets a piece of sweet bread from the corpse of Kain.<br />
+<br />
+577H 132V 37754401X 317C [Enlil:Dying] Exits:NS&gt; <br />
+Kirsten focuses on Enlil and utters some strange words.<br />
+Kirsten heals Enlil.<br />
+<br />
+577H 132V 37754401X 317C [Enlil:V.Good] Exits:NS&gt; get all corpse<br />
+<br />
+Enlil recites a sealed scroll.<br />
+Enlil heals Enlil.<br />
+<br />
+577H 132V 37754401X 317C [Enlil:Perfect] Exits:NS&gt; st<br />
+<br />
+Boucard utters some strange words.<br />
+Waldorf is shredded by shards of ice.<br />
+Leca manages to avoid the brunt of the storm.<br />
+Alesh is shredded by shards of ice.<br />
+Kirsten is shredded by shards of ice.<br />
+Enlil is shredded by shards of ice.<br />
+Korly is shredded by shards of ice.<br />
+Iark appears to grow stronger.<br />
+Iark manages to avoid the brunt of the storm.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+Askle is shredded by shards of ice.<br />
+Askle is stunned, but will likely regain consciousness again.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Waldorf crashes into Ie in a thundering collision, knocking him to the ground!<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Iark quaffs a vial of holy water and prays for holy intervention.<br />
+Paladine smiles upon Iark...<br />
+Iark heals Iark.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; bash <br />
+<br />
+Iark gets a gnomish backpack from the corpse of Kain.<br />
+Iark gets a crimson dust covered chest from the corpse of Kain.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Jeremiah focuses harshly on Leca and utters some strange words.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Leca.<br />
+Juan gets a vial from his pouch.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Juan quaffs a small vial.<br />
+Juan heals Juan.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; You tell your group 'Tick soon'<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; Dannil gets a potion from his chest.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Dannil quaffs an extra silvery potion.<br />
+Dannil heals Dannil.<br />
+You stand up.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; You are already standing.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; Enlil slowly fades into existence.<br />
+Enlil slashes Boucard extremely hard.<br />
+Kalen annihilates Leca with his slash.<br />
+Kalen is chilled, as he swings at Leca.<br />
+Kalen massacres Leca with his bludgeon.<br />
+Kalen is chilled, as he swings at Leca.<br />
+Hartman cleaves Leca extremely hard.<br />
+Hartman is chilled, as he swings at Leca.<br />
+Hartman cleaves Leca extremely hard.<br />
+Hartman is chilled, as he swings at Leca.<br />
+Nicki massacres Leca with her shoot.<br />
+Thun massacres Leca with his drain.<br />
+Thun is chilled, as he swings at Leca.<br />
+Thun massacres Leca with his drain.<br />
+Thun is chilled, as he swings at Leca.<br />
+Alesh bruises Ie with her smite.<br />
+Leca bruises Ie with his bludgeon.<br />
+Waldorf bruises Ie with his stab.<br />
+Arnold pierces Iark extremely hard.<br />
+Arnold is burned, as he swings at Iark.<br />
+Ie misses Enlil with his pierce.<br />
+Ie misses Enlil with his pierce.<br />
+You cleave Enlil hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark expertly slashes Juan with his sword!<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Juan pierces Enlil hard.<br />
+Juan pierces Enlil very hard.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Troggs tells your group '10 seconds to tick'<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; You are already standing.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; You are already standing.<br />
+You crash into Enlil in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; <br />
+Kalen delivers a quick snap kick to Leca. Leca staggers and tries to recover.<br />
+BASH: Troggs stands up!<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; st<br />
+<br />
+Leca steps aside as Hartman attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; <br />
+Troggs focuses on Juan and utters some strange words.<br />
+Troggs heals Juan.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; <br />
+Troggs steps aside as Korly attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:Good] Exits:NS&gt; <br />
+Alesh focuses on Enlil and utters some strange words.<br />
+Alesh heals Enlil.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Thun crashes into Leca in a thundering collision, knocking him to the ground!<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Boucard gets the corpse of Alissa.<br />
+Boucard gets the corpse of Kain.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Waldorf stops using a small black rose.<br />
+Waldorf grabs a rolled white parchment.<br />
+Waldorf recites a rolled white parchment.<br />
+Waldorf heals Waldorf.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; st<br />
+<br />
+Arnold focuses harshly on Leca and utters some strange words.<br />
+Brains splatter on you as Arnold's force bolt shatters Leca's skull.<br />
+You receive 0 experience.<br />
+Leca is dead! R.I.P.<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+The death cry of Leca echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+<br />
+577H 132V 37754401X 317C [Boucard:Good] [Enlil:V.Good] Exits:NS&gt; <br />
+Waldorf screams as a swarm of insects engulfs him.<br />
+Alesh screams as a swarm of insects engulfs her.<br />
+Kirsten screams as a swarm of insects engulfs her.<br />
+Enlil seems unaffected by Juan's swarm of insects.<br />
+Dannil seems unaffected by Juan's swarm of insects.<br />
+A horrible scream escapes Askle's lips as thousands of swarming insects<br />
+suck his life away.<br />
+Askle is dead! R.I.P.<br />
+Enlil slashes Boucard extremely hard.<br />
+Enlil massacres Boucard with his slash.<br />
+Waldorf massacres Ie with his stab.<br />
+Ie pierces Enlil.<br />
+Ie barely pierces Enlil.<br />
+You cleave Enlil extremely hard.<br />
+You cleave Enlil extremely hard.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark slams the crossguard of his sword into Juan's face!<br />
+Iark lands a masterful blow on Juan!<br />
+Korly smites Juan hard.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Korly misses Juan with his smite.<br />
+The death cry of Askle echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+You feel your strength leave you.<br />
+You feel less righteous.<br />
+Timer now at 60 secs.<br />
+Boucard utters some strange words.<br />
+Waldorf is shredded by shards of ice.<br />
+Alesh is shredded by shards of ice.<br />
+Kirsten is shredded by shards of ice.<br />
+Enlil is shredded by shards of ice.<br />
+Korly is shredded by shards of ice.<br />
+Iark appears to grow stronger.<br />
+Iark manages to avoid the brunt of the storm.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Iark swings madly at Troggs with a massive sword of divine wrath, knocking him to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Nicki gets a blackened chest from the corpse of Anariel.<br />
+Nicki gets a small canteen from the corpse of Anariel.<br />
+Nicki gets a large waterskin from the corpse of Anariel.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Kalen heroically rescues Ie.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Hartman gets a black stone from the corpse of Askle.<br />
+Hartman gets a light glassteel saber from the corpse of Askle.<br />
+Hartman gets an icy white bracelet from the corpse of Askle.<br />
+Hartman gets a copper dragon scale shield from the corpse of Askle.<br />
+Hartman gets a pair of dwarven gloves from the corpse of Askle.<br />
+Hartman gets a royal dwarven cloak from the corpse of Askle.<br />
+Hartman gets a pearl and onyx medallion from the corpse of Askle.<br />
+Hartman gets a wooden ring from the corpse of Askle.<br />
+Hartman gets a solamnic ring from the corpse of Askle.<br />
+Hartman gets a large pile of coins from the corpse of Askle.<br />
+Hartman gets a glowing scroll of recall from the corpse of Askle.<br />
+Hartman gets a scroll of recall from the corpse of Askle.<br />
+Hartman gets a sealed scroll from the corpse of Askle.<br />
+Hartman gets an extra silvery potion from the corpse of Askle.<br />
+Hartman gets Honor's Face from the corpse of Askle.<br />
+Hartman gets a coral sword from the corpse of Askle.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; st<br />
+<br />
+BASH: Hartman stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+Iark wavers under the impact of the lightning bolt sent by Arnold.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Hartman slowly fades into existence.<br />
+Waldorf steps aside as Hartman attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Jeremiah slowly fades into existence.<br />
+Jeremiah crushes Enlil.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+BASH: Enlil stands up!<br />
+Enlil crashes into Thun in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Ie desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Ie's body.<br />
+Nicki takes a long swig from a large waterskin.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; st<br />
+<br />
+BASH: Ie stands up!<br />
+Ie desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Ie's body.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Waldorf crashes into Ie in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Dannil panics, and attempts to flee.<br />
+Dannil flies south.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; bash <br />
+<br />
+Kirsten focuses on Korly and utters some strange words.<br />
+Kirsten heals Korly.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Dannil flies in from the south.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Dannil screams as a swarm of insects engulfs him.<br />
+Waldorf screams as a swarm of insects engulfs him.<br />
+Alesh screams as a swarm of insects engulfs her.<br />
+Kirsten screams as a swarm of insects engulfs her.<br />
+Enlil screams as a swarm of insects engulfs him.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Thun massacres Enlil with his drain.<br />
+Jeremiah crushes Enlil hard.<br />
+Hartman cleaves Waldorf hard.<br />
+Hartman cleaves Waldorf very hard.<br />
+Alesh bruises Kalen with her smite.<br />
+Kalen slashes Alesh extremely hard.<br />
+Kalen bludgeons Alesh hard.<br />
+Enlil massacres Boucard with his slash.<br />
+Waldorf massacres Ie with his stab.<br />
+Waldorf massacres Ie with his stab.<br />
+You cleave Enlil hard.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark slams the crossguard of his sword into Juan's face!<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Korly smites Juan.<br />
+Korly is burned, as he swings at Juan.<br />
+Korly is chilled, as he swings at Juan.<br />
+Juan pierces Enlil.<br />
+Juan's blow is absorbed by Enlil's armor.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; You are already standing.<br />
+Nicki shoots Alesh extremely hard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; You are already standing.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; <br />
+Dannil crashes into Troggs in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; Boucard focuses harshly on Alesh and utters some strange words.<br />
+Boucard sends a chilling blast of air at Alesh, giving her a severe case of frostbite.<br />
+You crash into Enlil in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Kalen heroically rescues Ie.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+BASH: Hartman stands up!<br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+Iark wavers under the impact of the lightning bolt sent by Arnold.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Alesh focuses on Korly and utters some strange words.<br />
+Alesh heals Korly.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Iark tries to barrel into Troggs, but ends up falling flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+BASH: Korly stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Korly gets a scroll from his coffer.<br />
+Jeremiah focuses harshly on Enlil and utters some strange words.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Enlil.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; st<br />
+<br />
+Korly grabs a glowing scroll of recall.<br />
+Korly recites a glowing scroll of recall.<br />
+Korly disappears.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Troggs steps aside as Waldorf attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+BASH: Ie stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; <br />
+Ie desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Ie's body.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Fair] Exits:NS&gt; st<br />
+<br />
+Dannil seems unaffected by Juan's swarm of insects.<br />
+Waldorf screams as a swarm of insects engulfs him.<br />
+Alesh screams as a swarm of insects engulfs her.<br />
+Kirsten screams as a swarm of insects engulfs her.<br />
+Enlil screams as a swarm of insects engulfs him.<br />
+Kirsten bruises Kalen with her bludgeon.<br />
+Kalen bruises Kirsten with his slash.<br />
+Kalen bruises Kirsten with his bludgeon.<br />
+Troggs misses Dannil with his hit.<br />
+Nicki shoots Alesh extremely hard.<br />
+Nicki shoots Alesh very hard.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Thun massacres Enlil with his drain.<br />
+Hartman cleaves Waldorf extremely hard.<br />
+Hartman cleaves Waldorf very hard.<br />
+Enlil massacres Boucard with his slash.<br />
+Enlil massacres Boucard with his slash.<br />
+Waldorf stabs Ie very hard.<br />
+Waldorf stabs Ie extremely hard.<br />
+You cleave Enlil extremely hard.<br />
+Iark solidly slashes Juan.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Juan pierces Enlil hard.<br />
+Juan pierces Enlil hard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Bad] [Enlil:V.Bad] Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Bad] [Enlil:V.Bad] Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Bad] [Enlil:V.Bad] Exits:NS&gt; <br />
+Boucard utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Kalen delivers a quick snap kick to Kirsten. Kirsten staggers and tries to recover.<br />
+Iark gets a globe of vision from the corpse of Leca.<br />
+Iark gets a grey stone bracelet from the corpse of Leca.<br />
+Iark gets some spellcasting gloves from the corpse of Leca.<br />
+Iark gets a very large pile of coins from the corpse of Leca.<br />
+Arnold gets a bottle from his cloak.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+BASH: Iark stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Arnold quaffs a green bottle.<br />
+Arnold heals Arnold.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Hartman crashes into Enlil in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Jeremiah focuses harshly on Enlil and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Arnold utters some strange words.<br />
+Arnold smirks as his fireball explodes into the face of Dannil.<br />
+Arnold smirks as his fireball explodes into the face of Waldorf.<br />
+Arnold smirks as his fireball explodes into the face of Alesh.<br />
+A fireball from Arnold misses Kirsten.<br />
+Arnold smirks as his fireball explodes into the face of Enlil.<br />
+A fireball from Arnold misses Iark.<br />
+The insect swarm is burned up in the intense heat of the fireball.<br />
+DESTROYED: A wooden ring is destroyed.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Iark charges at Ie, but he managed to move away.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Dannil is caught in a spray of radiant yellow!<br />
+Waldorf is caught in a spray of shimmering red!<br />
+Alesh is blasted by a spray of scintillating blue!<br />
+Kirsten is struck by a spray of vibrant green!<br />
+Enlil is caught in a spray of radiant yellow!<br />
+Enlil seems weaker.<br />
+Iark is caught in a spray of radiant yellow!<br />
+Iark seems weaker.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; st<br />
+<br />
+BASH: Waldorf stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; bash <br />
+<br />
+Alesh utters some strange words.<br />
+Alesh heals Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+There is lightning in the sky.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; You crash into Enlil in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Bad] Exits:NS&gt; <br />
+Kirsten bruises Kalen with her bludgeon.<br />
+Kalen bruises Kirsten with his slash.<br />
+Kalen bludgeons Kirsten very hard.<br />
+Troggs misses Dannil with his hit.<br />
+Nicki shoots Alesh extremely hard.<br />
+Nicki shoots Alesh extremely hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Hartman cleaves Waldorf hard.<br />
+Hartman cleaves Waldorf.<br />
+Enlil massacres Boucard with his slash.<br />
+Waldorf stabs Ie extremely hard.<br />
+Waldorf stabs Ie very hard.<br />
+You cleave Enlil extremely hard.<br />
+You cleave Enlil extremely hard.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Juan pierces Enlil extremely hard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Dannil is caught in a spray of shimmering red!<br />
+Waldorf is blasted by a spray of scintillating blue!<br />
+Waldorf freezes in place.<br />
+Alesh is caught in a spray of bright orange!<br />
+Alesh seems to be blinded!<br />
+Kirsten is caught in a spray of shimmering red!<br />
+Enlil is caught in a spray of bright orange!<br />
+Iark is struck by a spray of murky violet!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Arnold utters some strange words.<br />
+Arnold smirks as his fireball explodes into the face of Dannil.<br />
+Arnold smirks as his fireball explodes into the face of Waldorf.<br />
+Arnold smirks as his fireball explodes into the face of Alesh.<br />
+A fireball from Arnold misses Kirsten.<br />
+From out of nowhere, a fireball explodes in the face of Boucard.<br />
+A fireball from Arnold misses Enlil.<br />
+A fireball from Arnold misses Iark.<br />
+DESTROYED: The corpse of Askle is destroyed.<br />
+Some pixie dust is blown away by a gentle breeze.<br />
+DESTROYED: The corpse of Leca is destroyed.<br />
+DESTROYED: A flask of clear liquid is destroyed.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen tells your group 'hold kirseten'<br />
+BASH: Troggs stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Kirsten utters some strange words.<br />
+Kirsten heals Kirsten.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Troggs focuses on Ie and utters some strange words.<br />
+Troggs heals Ie.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of color!<br />
+Solare slowly fades into existence.<br />
+Dannil is caught in a spray of shimmering red!<br />
+Waldorf is caught in a spray of shimmering red!<br />
+Alesh is caught in a spray of radiant yellow!<br />
+Kirsten is caught in a spray of shimmering red!<br />
+Enlil is caught in a spray of radiant yellow!<br />
+Iark is caught in a spray of shimmering red!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+BASH: Thun stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; st<br />
+<br />
+Thun gets a potion from his sack.<br />
+Thun desperately quaffs a blue potion of remove poison.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Enlil steps aside as Thun attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Dannil gets a scroll from his chest.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Awful] Exits:NS&gt; <br />
+Dannil stops using a black stone.<br />
+Dannil grabs a rolled white parchment.<br />
+Dannil recites a rolled white parchment.<br />
+Dannil heals Enlil.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:V.Good] Exits:NS&gt; <br />
+Jeremiah focuses harshly on Enlil and utters some strange words.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Enlil.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; <br />
+The amulet glows red.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Fair] [Enlil:Good] Exits:NS&gt; <br />
+Solare crushes Dannil very hard.<br />
+Kalen slashes Kirsten hard.<br />
+Kalen bludgeons Kirsten hard.<br />
+Nicki shoots Alesh extremely hard.<br />
+Nicki shoots Alesh extremely hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Hartman cleaves Waldorf extremely hard.<br />
+Alesh misses Kalen with her smite.<br />
+Enlil massacres Boucard with his slash.<br />
+Boucard misses Enlil with his hit.<br />
+You miss Enlil with your cleave.<br />
+You massacre Enlil with your cleave.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Juan pierces Enlil very hard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; st<br />
+<br />
+Alesh utters some strange words.<br />
+Alesh heals Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Juan gets a vial from his pouch.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Iark swings madly at Troggs with a massive sword of divine wrath, cutting him a deep wound.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Juan quaffs a vial of holy water and prays for holy intervention.<br />
+Paladine smiles upon Juan...<br />
+Juan heals Juan.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; bash <br />
+<br />
+Kalen panics, and attempts to flee.<br />
+Kalen flies south.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Juan gets a vial from his pouch.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Juan quaffs a small vial.<br />
+Juan heals Juan.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Hartman crashes into Enlil in a thundering collision, knocking him to the ground!<br />
+Juan gets a flask from his pouch.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Good] Exits:NS&gt; <br />
+Kirsten focuses on Enlil and utters some strange words.<br />
+Kirsten heals Enlil.<br />
+Juan desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Juan's body.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Good] Exits:NS&gt; <br />
+Boucard focuses harshly on Enlil and utters some strange words.<br />
+Boucard sends a chilling blast of air at Enlil, giving him a severe case of frostbite.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Good] Exits:NS&gt; <br />
+Solare focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Good] Exits:NS&gt; <br />
+Kalen flies in from the south.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Good] Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Good] Exits:NS&gt; Alesh smites Nicki very hard.<br />
+Troggs misses Dannil with his hit.<br />
+Nicki shoots Alesh extremely hard.<br />
+Dannil misses Juan with his slash.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Jeremiah crushes Enlil extremely hard.<br />
+Hartman cleaves Waldorf extremely hard.<br />
+Hartman cleaves Waldorf very hard.<br />
+Enlil massacres Boucard with his slash.<br />
+You massacre Enlil with your cleave.<br />
+You cleave Enlil extremely hard.<br />
+Iark slashes Juan.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Dannil quaffs an extra silvery potion.<br />
+Dannil heals Dannil.<br />
+You are already standing.<br />
+Jeremiah focuses harshly on Enlil and utters some strange words.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; You try to bash Enlil, but you miss and tumble forward onto your face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; st<br />
+<br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; bash <br />
+st<br />
+<br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Dannil withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Dannil seems to be blinded!<br />
+Waldorf withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Alesh withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Kirsten withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Enlil withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Iark withers as a ray of sunlight sent by Troggs engulfs him!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Iark swings madly at Troggs with a massive sword of divine wrath, knocking him to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Alesh focuses on Iark and utters some strange words.<br />
+Alesh heals Iark.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Solare focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Alesh.<br />
+BASH: Thun stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Enlil steps aside as Thun attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Kalen massacres Waldorf with his slash.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; <br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+The sound of bones cracking echoes as Arnold's force bolt slams into Iark.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; Dannil seems unaffected by Juan's swarm of insects.<br />
+Waldorf screams as a swarm of insects engulfs him.<br />
+Alesh seems unaffected by Juan's swarm of insects.<br />
+Kirsten screams as a swarm of insects engulfs her.<br />
+Enlil screams as a swarm of insects engulfs him.<br />
+You feel slow.<br />
+Kalen massacres Waldorf with his slash.<br />
+Kalen bludgeons Waldorf extremely hard.<br />
+Nicki shoots Alesh extremely hard.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+Thun drains Enlil extremely hard.<br />
+Hartman cleaves Waldorf hard.<br />
+Enlil misses Boucard with his slash.<br />
+Boucard misses Enlil with his hit.<br />
+You should probably stand up!<br />
+You cleave Enlil extremely hard.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark lands a masterful blow on Juan!<br />
+You stand up.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Fair] Exits:NS&gt; You try to bash Enlil, but you miss and tumble forward onto your face.<br />
+Jeremiah focuses harshly on Enlil and utters some strange words.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+Jeremiah aims a magic missile at Enlil, who staggers under the blow.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+The sound of bones cracking echoes as Arnold's force bolt slams into Iark.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Boucard focuses harshly on Enlil and utters some strange words.<br />
+Boucard sends a chilling blast of air at Enlil, giving him a severe case of frostbite.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Enlil steps aside as Hartman attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; gt dannil blind<br />
+gt dannil blind<br />
+gt dannil blind<br />
+<br />
+Juan utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+BASH: Enlil stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Enlil crashes into Thun in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Alesh utters some strange words.<br />
+Alesh heals Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Iark swings madly at Ie with a massive sword of divine wrath, knocking him to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Solare focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Alesh.<br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+The sound of bones cracking echoes as Arnold's force bolt slams into Iark.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+Kirsten focuses on Waldorf and utters some strange words.<br />
+Kirsten heals Waldorf.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:Bad] Exits:NS&gt; <br />
+A small whirlwind crashes into Waldorf, pummeling his entire body.<br />
+A small whirlwind crashes into Alesh, pummeling her entire body.<br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+The force of a tornado's winds scatter the deadly swarm of insects.<br />
+Kalen massacres Waldorf with his slash.<br />
+Kalen bludgeons Waldorf extremely hard.<br />
+Troggs bruises Dannil with his hit.<br />
+Nicki shoots Alesh very hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun drains Enlil extremely hard.<br />
+Thun massacres Enlil with his drain.<br />
+Hartman cleaves Waldorf hard.<br />
+Hartman cleaves Waldorf very hard.<br />
+Enlil misses Boucard with his slash.<br />
+You cleave Enlil hard.<br />
+Iark cuts Juan, leaving a line of blood.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Kalen delivers a vicious kick to Waldorf's face. Blood flies as his head snaps back.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Bad] Exits:NS&gt; <br />
+Jeremiah focuses harshly on Kirsten and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Bad] Exits:NS&gt; gt hold him<br />
+<br />
+Dannil gets a potion from his chest.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Bad] Exits:NS&gt; <br />
+Dannil quaffs a yellow potion.<br />
+The voice of Habbakuk, Fisher King thunders around you.<br />
+Habbakuk simply gestures at Dannil...<br />
+Dannil's skin turns grey and granite-like.<br />
+Dannil smiles as the air around him solidifies.<br />
+Dannil's skin thickens into a protective bark.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Bad] Exits:NS&gt; bash <br />
+<br />
+BASH: Troggs stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Bad] [Enlil:V.Bad] Exits:NS&gt; <br />
+Troggs focuses on Boucard and utters some strange words.<br />
+Troggs heals Boucard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+Arnold focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Arnold's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+Boucard focuses harshly on Enlil and utters some strange words.<br />
+Boucard sends a chilling blast of air at Enlil, giving him a severe case of frostbite.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+BASH: Hartman stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+Solare focuses harshly on Alesh and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:V.Bad] Exits:NS&gt; <br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+A small whirlwind crashes into Iark, pummeling his entire body.<br />
+A small whirlwind crashes into Alesh, pummeling her entire body.<br />
+A small whirlwind crashes into Iark, pummeling his entire body.<br />
+Kalen massacres Waldorf with his slash.<br />
+Kalen massacres Waldorf with his bludgeon.<br />
+Kirsten bludgeons Troggs very hard.<br />
+Alesh smites Nicki very hard.<br />
+Nicki shoots Alesh very hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun drains Enlil extremely hard.<br />
+Thun massacres Enlil with his drain.<br />
+Hartman cleaves Waldorf hard.<br />
+Enlil slashes Boucard extremely hard.<br />
+Ie misses Enlil with his pierce.<br />
+You cleave Enlil extremely hard.<br />
+Iark expertly slashes Juan with his sword!<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; <br />
+Alesh desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Alesh's body.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen panics, and attempts to flee.<br />
+Kalen flies north.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You stand up.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You tell your group 'dannil blind'<br />
+Jeremiah focuses harshly on Kirsten and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You tell your group 'dannil blind'<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; <br />
+Arnold focuses harshly on Alesh and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You tell your group 'dannil blind'<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You tell your group 'hold him'<br />
+<br />
+596H 134V 37754401X 317C [Boucard:V.Good] [Enlil:Awful] Exits:NS&gt; You crash into Enlil in a bone crunching bash, sending him sprawling to the ground.<br />
+Troggs focuses on Boucard and utters some strange words.<br />
+Troggs heals Boucard.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Iark swings madly at Troggs with a massive sword of divine wrath, knocking him to the ground.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen flies in from the north.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Dannil tries to sweep Juan's legs, but misses badly.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+BASH: Ie stands up!<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Arnold focuses harshly on Alesh and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Kalen misses Enlil with his slash.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+Ie focuses harshly on Enlil and utters some strange words.<br />
+Enlil wavers under the impact of the lightning bolt sent by Ie.<br />
+<br />
+596H 134V 37754401X 317C [Boucard:Perfect] [Enlil:Awful] Exits:NS&gt; <br />
+A small whirlwind crashes into Dannil, pummeling his entire body.<br />
+A small whirlwind crashes into Waldorf, pummeling his entire body.<br />
+A small whirlwind crashes into Alesh, pummeling her entire body.<br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+A small whirlwind crashes into Waldorf, pummeling his entire body.<br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+Kalen massacres Enlil with his slash.<br />
+Kalen massacres Enlil with his bludgeon.<br />
+Alesh smites Nicki extremely hard.<br />
+Solare bruises Dannil with his crush.<br />
+Nicki massacres Alesh with her shoot.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Thun massacres Enlil with his drain.<br />
+You receive 0 experience.<br />
+Enlil is dead! R.I.P.<br />
+Hartman cleaves Waldorf very hard.<br />
+Hartman cleaves Waldorf extremely hard.<br />
+Waldorf stabs Ie extremely hard.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+The death cry of Enlil echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+Alesh utters some strange words.<br />
+Alesh heals Alesh.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Waldorf panics, and attempts to flee.<br />
+Waldorf leaves south.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Juan utters some strange words.<br />
+Dannil appears to grow stronger.<br />
+Dannil manages to avoid the brunt of the storm.<br />
+Alesh is shredded by shards of ice.<br />
+Kirsten is shredded by shards of ice.<br />
+Iark appears to grow stronger.<br />
+Iark manages to avoid the brunt of the storm.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Dannil delivers a quick snap kick to Juan. Juan staggers and tries to recover.<br />
+Dannil loses his balance and tumbles to the ground.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; get all corpse<br />
+<br />
+Jeremiah focuses harshly on Kirsten and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Nicki gets Arctic Night from the corpse of Enlil.<br />
+Nicki gets an adamantite bracer from the corpse of Enlil.<br />
+Nicki gets a woodsman's bracer from the corpse of Enlil.<br />
+Nicki gets a belt adorned with black dragon teeth from the corpse of Enlil.<br />
+Nicki gets a shimmering black dragon skin backpack from the corpse of Enlil.<br />
+Nicki gets a wooden shield of dragons from the corpse of Enlil.<br />
+Nicki is zapped by a pair of spiked battle armets and instantly drops it.<br />
+Nicki is zapped by a pair of heavily scratched gauntlets and instantly drops it.<br />
+Nicki gets a pair of archaic boots from the corpse of Enlil.<br />
+Nicki gets a dwarven knee spike from the corpse of Enlil.<br />
+Nicki is zapped by an executioner's hood and instantly drops it.<br />
+Nicki is zapped by a suit of icy adamantite banded mail and instantly drops it.<br />
+Nicki gets a gleaming mithril necklace inlaid with diamonds from the corpse of Enlil.<br />
+Nicki gets a massive collar from the corpse of Enlil.<br />
+Nicki gets a dragon bone ring from the corpse of Enlil.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Solare focuses harshly on Alesh and utters some strange words.<br />
+Alesh is caught in some of Solare's acid!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; st<br />
+<br />
+BASH: Dannil stands up!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+BASH: Thun stands up!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; bash  alesh<br />
+<br />
+Waldorf arrives from the south.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+The violent funnel cloud rips through the area, hitting nothing.<br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+A small whirlwind crashes into Iark, pummeling his entire body.<br />
+Troggs's blow is absorbed by Dannil's armor.<br />
+Nicki massacres Alesh with her shoot.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Kalen massacres Iark with his slash.<br />
+Kalen is burned, as he swings at Iark.<br />
+BASH: Troggs stands up!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Waldorf withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Dannil withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Alesh withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Kirsten withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Iark withers as a ray of sunlight sent by Troggs engulfs him!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Juan gets a flask from his pouch.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Juan desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Juan's body.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Waldorf crashes into Troggs in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+Thun gets a suit of icy adamantite banded mail.<br />
+Thun gets an executioner's hood.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; You are already standing.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Kirsten focuses on Waldorf and utters some strange words.<br />
+Kirsten heals Waldorf.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; You try to bash Alesh, but you miss and tumble forward onto your face.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+Juan gets a flask from his pouch.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+Alesh focuses on Iark and utters some strange words.<br />
+Alesh heals Iark.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+Juan desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Juan's body.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+Jeremiah slowly fades into existence.<br />
+Jeremiah bruises Dannil with his crush.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+A small whirlwind crashes into Dannil, pummeling his entire body.<br />
+A small whirlwind crashes into Alesh, pummeling her entire body.<br />
+A small whirlwind crashes into Kirsten, pummeling her entire body.<br />
+The violent funnel dissipates.<br />
+Jeremiah bruises Dannil with his crush.<br />
+You cleave Alesh.<br />
+Waldorf massacres Troggs with his stab.<br />
+Kalen massacres Iark with his slash.<br />
+Kalen is burned, as he swings at Iark.<br />
+Kalen bludgeons Iark extremely hard.<br />
+Kalen is burned, as he swings at Iark.<br />
+Juan misses Iark with his pierce.<br />
+Solare bruises Dannil with his crush.<br />
+Nicki shoots Alesh extremely hard.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Arnold misses Iark with his pierce.<br />
+Iark wounds Juan with his slash.<br />
+Iark misses Juan with his slash.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; st<br />
+<br />
+Hartman slowly fades into existence.<br />
+Hartman delivers a vicious kick to Alesh's face. Blood flies as her head snaps back.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Fair] Exits:NS&gt; <br />
+Boucard focuses harshly on Alesh and utters some strange words.<br />
+Boucard sends a chilling blast of air at Alesh, giving her a severe case of frostbite.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Bad] Exits:NS&gt; st<br />
+<br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Kalen unsuccessfully tries to save Troggs.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Thun drains Alesh very hard.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Alesh steps aside as Hartman attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; st<br />
+<br />
+Juan focuses harshly on Iark and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Kirsten utters some strange words.<br />
+Kirsten heals Kirsten.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Iark rushes forward and lets fly a barbaric YAWP.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Arnold utters some strange words.<br />
+Arnold is surrounded by 4 duplicate images.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of color!<br />
+Waldorf is caught in a spray of shimmering red!<br />
+Dannil is caught in a spray of radiant yellow!<br />
+Alesh is caught in a spray of radiant yellow!<br />
+Kirsten is caught in a spray of shimmering red!<br />
+Iark is caught in a spray of radiant yellow!<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; <br />
+The violent funnel dissipates.<br />
+Thun drains Alesh very hard.<br />
+Hartman barely cleaves Alesh.<br />
+Jeremiah bruises Dannil with his crush.<br />
+You cleave Alesh very hard.<br />
+Waldorf annihilates Troggs with his stab.<br />
+Kalen massacres Iark with his slash.<br />
+Kalen is burned, as he swings at Iark.<br />
+Kalen bludgeons Iark extremely hard.<br />
+Kalen is burned, as he swings at Iark.<br />
+Troggs's blow is absorbed by Dannil's armor.<br />
+Nicki misses Alesh with her shoot.<br />
+Dannil slashes Juan very hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:V.Bad] Exits:NS&gt; get onyx alesh<br />
+<br />
+Boucard focuses harshly on Alesh and utters some strange words.<br />
+Boucard sends a chilling blast of air at Alesh, giving her a severe case of frostbite.<br />
+Jeremiah focuses harshly on Dannil and utters some strange words.<br />
+Dannil's shield protects him from Jeremiah's magic missiles.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; gt Tick soon<br />
+get onyx alesh<br />
+<br />
+Ie focuses harshly on Alesh and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+The sound of bones cracking echoes as Ie's force bolt slams into Alesh.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; get onyx alesh<br />
+<br />
+Kalen heroically rescues Troggs.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; get onyx alesh<br />
+<br />
+Thun crashes into Iark in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; get onyx alesh<br />
+<br />
+Juan focuses harshly on Dannil and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; get onyx alesh<br />
+You stand up.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; You are already standing.<br />
+Arnold focuses harshly on Alesh and utters some strange words.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; get onyx alesh<br />
+<br />
+Alesh gets a scroll from her pouch.<br />
+<br />
+596H 134V 37754401X 317C [Nicki:Good] [Alesh:Awful] Exits:NS&gt; Alesh stops using a golden orb.<br />
+Alesh grabs a glowing scroll of recall.<br />
+Alesh recites a glowing scroll of recall.<br />
+Alesh disappears.<br />
+Kirsten focuses on Dannil and utters some strange words.<br />
+Kirsten heals Dannil.<br />
+You are already standing.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; get onyx alesh<br />
+Solare tells your group 'Tic in 10!'<br />
+What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; get onyx alesh<br />
+get onyx alesh<br />
+Kalen slashes Kirsten extremely hard.<br />
+Kalen bludgeons Kirsten hard.<br />
+Waldorf annihilates Troggs with his stab.<br />
+Solare barely crushes Dannil.<br />
+Troggs misses Dannil with his hit.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+You tell your group 'Tick soon'<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; get onyx alesh<br />
+What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+BASH: Hartman stands up!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+BASH: Troggs stands up!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+Jeremiah focuses harshly on Dannil and utters some strange words.<br />
+Dannil freezes in place.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Waldorf withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Dannil withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Kirsten withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Iark withers as a ray of sunlight sent by Troggs engulfs him!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Hartman slowly fades into existence.<br />
+Hartman crashes into Iark in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; bash kirsten<br />
+<br />
+Waldorf crashes into Troggs in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; <br />
+Nicki massacres Dannil with her shoot.<br />
+<br />
+596H 134V 37754401X 317C Exits:NS&gt; You try to bash Kirsten, but you miss and tumble forward onto your face.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Good] Exits:NS&gt; <br />
+You cleave Kirsten very hard.<br />
+Nicki shoots Dannil extremely hard.<br />
+Nicki massacres Dannil with her shoot.<br />
+Hartman cleaves Iark very hard.<br />
+Hartman is burned, as he swings at Iark.<br />
+Kirsten bruises Kalen with her bludgeon.<br />
+Kalen slashes Kirsten extremely hard.<br />
+Kalen bludgeons Kirsten hard.<br />
+Waldorf annihilates Troggs with his stab.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; st<br />
+<br />
+Kalen spins and tries to kick Kirsten, but Kirsten dodges out of the way.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Ie focuses harshly on Waldorf and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+Waldorf wavers under the impact of the lightning bolt sent by Ie.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Solare focuses harshly on Dannil and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Dannil.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; resc troggs<br />
+<br />
+Jeremiah focuses harshly on Dannil and utters some strange words.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Dannil.<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Thun crashes into Iark in a thundering collision, knocking him to the ground!<br />
+<br />
+596H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Thun massacres Iark with his drain.<br />
+Thun is burned, as he swings at Iark.<br />
+You cleave Kirsten hard.<br />
+Nicki barely shoots Dannil.<br />
+Nicki shoots Dannil extremely hard.<br />
+Hartman massacres Iark with his cleave.<br />
+Hartman is burned, as he swings at Iark.<br />
+Kalen slashes Kirsten extremely hard.<br />
+Kalen bludgeons Kirsten very hard.<br />
+Waldorf massacres Troggs with his stab.<br />
+Troggs bruises Dannil with his hit.<br />
+Iark slashes Juan hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Kalen delivers a quick snap kick to Kirsten. Kirsten staggers and tries to recover.<br />
+Ie focuses harshly on Kirsten and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+Kirsten wavers under the impact of the lightning bolt sent by Ie.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Kirsten focuses on Dannil and utters some strange words.<br />
+Kirsten heals Dannil.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Arnold focuses harshly on Dannil and utters some strange words.<br />
+Dannil's shield protects him from Arnold's magic missiles.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Iark steps aside as Hartman attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of color!<br />
+Waldorf is caught in a spray of shimmering red!<br />
+Dannil is caught in a spray of radiant yellow!<br />
+Kirsten is caught in a spray of shimmering red!<br />
+Iark is caught in a spray of radiant yellow!<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; <br />
+Troggs steps aside as Waldorf attempts a bash, stumbles, and falls flat on his face.<br />
+Jeremiah focuses harshly on Dannil and utters some strange words.<br />
+The sound of bones cracking echoes as Jeremiah's force bolt slams into Dannil.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; st<br />
+You stand up.<br />
+<br />
+609H 134V 37754401X 317C [Kalen:Fair] [Kirsten:Fair] Exits:NS&gt; What a self-sacrificing act! You're such a hero!<br />
+<br />
+609H 134V 37754401X 317C [Rudra:Perfect] [Waldorf:Good] Exits:NS&gt; <br />
+Waldorf massacres YOU with his stab.<br />
+You massacre Waldorf with your cleave.<br />
+Thun massacres Iark with his drain.<br />
+Thun is burned, as he swings at Iark.<br />
+Nicki massacres Dannil with her shoot.<br />
+Nicki massacres Dannil with her shoot.<br />
+Hartman cleaves Iark extremely hard.<br />
+Hartman is burned, as he swings at Iark.<br />
+Kalen massacres Kirsten with his slash.<br />
+Kalen bludgeons Kirsten hard.<br />
+Troggs's blow is absorbed by Dannil's armor.<br />
+Iark slashes Juan very hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; st<br />
+<br />
+Ie focuses harshly on Iark and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+Iark wavers under the impact of the lightning bolt sent by Ie.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; <br />
+Boucard misses Iark with his hit.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; kick<br />
+<br />
+BASH: Troggs stands up!<br />
+Arnold focuses harshly on Dannil and utters some strange words.<br />
+Dannil's shield protects him from Arnold's magic missiles.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; <br />
+Kirsten utters some strange words.<br />
+Kirsten heals Kirsten.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; <br />
+Troggs utters some strange words.<br />
+Troggs heals Troggs.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; <br />
+Thun crashes into Iark in a thundering collision, knocking him to the ground!<br />
+Jeremiah says 'EAT THAt'<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; st<br />
+<br />
+Jeremiah focuses harshly on Dannil and utters some strange words.<br />
+Dannil's shield protects him from Jeremiah's magic missiles.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; <br />
+Juan focuses harshly on Iark and utters some strange words.<br />
+Iark appears to grow stronger.<br />
+Juan sends a blast of frost wide of Iark.  Iark sighs in relief.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; You are already standing.<br />
+<br />
+579H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Good] Exits:NS&gt; Boucard misses Iark with his hit.<br />
+Waldorf massacres YOU with his stab.<br />
+You cleave Waldorf extremely hard.<br />
+Thun massacres Iark with his drain.<br />
+Thun is burned, as he swings at Iark.<br />
+Nicki massacres Dannil with her shoot.<br />
+Nicki shoots Dannil hard.<br />
+Hartman cleaves Iark hard.<br />
+Hartman is burned, as he swings at Iark.<br />
+Kalen slashes Kirsten extremely hard.<br />
+Kalen bludgeons Kirsten very hard.<br />
+Solare crushes Dannil hard.<br />
+Iark slashes Juan extremely hard.<br />
+Iark is burned, as he swings at Juan.<br />
+Iark appears to grow stronger.<br />
+Juan's iceshield does him little good as Iark takes a swing at him.<br />
+You are already standing.<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; Your vicious kick leaves your boots covered with blood and gore.<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; st<br />
+<br />
+Ie focuses harshly on Iark and utters some strange words.<br />
+Ie slowly fades into existence.<br />
+Ie comes out of hiding.<br />
+Iark wavers under the impact of the lightning bolt sent by Ie.<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; look<br />
+<br />
+Arnold focuses harshly on Iark and utters some strange words.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+Arnold aims a magic missile at Iark, who staggers under the blow.<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; <br />
+BASH: Hartman stands up!<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; <br />
+Solare focuses harshly on Dannil and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Dannil.<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; <br />
+Hartman crashes into Iark in a thundering collision, knocking him to the ground!<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; <br />
+Kalen tells your group 'we winning'<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; get all 1.corpse<br />
+get all 2.corpse<br />
+get all 3.corpse<br />
+get all 4.corpse<br />
+get all 5.corpse<br />
+get all 6.corpse<br />
+<br />
+BASH: Waldorf stands up!<br />
+<br />
+550H 134V 37754401X 317C [Rudra:V.Good] [Waldorf:Fair] Exits:NS&gt; <br />
+Troggs focuses on Juan and utters some strange words.<br />
+Troggs heals Juan.<br />
+Waldorf panics, and attempts to flee.<br />
+Waldorf leaves south.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; <br />
+Juan focuses harshly on Iark and utters some strange words.<br />
+Iark appears to grow stronger.<br />
+Juan sends a blast of frost wide of Iark.  Iark sighs in relief.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; <br />
+Thun massacres Iark with his drain.<br />
+Thun is burned, as he swings at Iark.<br />
+You receive 0 experience.<br />
+Iark is dead! R.I.P.<br />
+Nicki shoots Dannil extremely hard.<br />
+Nicki shoots Dannil very hard.<br />
+Kirsten misses Kalen with her bludgeon.<br />
+Kalen slashes Kirsten very hard.<br />
+Kalen bludgeons Kirsten hard.<br />
+Dannil slashes Juan extremely hard.<br />
+Dannil is burned, as he swings at Juan.<br />
+Dannil appears to grow stronger.<br />
+Juan's iceshield does him little good as Dannil takes a swing at him.<br />
+The death cry of Iark echoes from somewhere nearby...<br />
+get all.pile corpse<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; You are already standing.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; You are already standing.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; <br />
+Kalen panics, and attempts to flee.<br />
+Kalen flies north.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; Path In the Hills<br />
+    You find yourself amongst the rolling hills. They are covered with both<br />
+spruce and pine trees. You can see the clouds clinging to the windward side<br />
+of the hills as they come off of the ocean. The sandy soil to either side<br />
+of the trail provides fertile ground for berries and other small plants.<br />
+The tall stands of trees waver slightly in the wind.<br />
+The corpse of Iark is lying here.<br />
+Deeply scratched gauntlets has been left to lie on the ground.<br />
+A spiked pair of battle armets lies here...it glows dimly<br />
+The corpse of Enlil is lying here.<br />
+A small wooden chest rests here.<br />
+A scroll has carelessly been left here.<br />
+A small flask has been left here.<br />
+An emerald vial lies here.<br />
+A scroll has carelessly been left here.<br />
+A vial of holy water rests here.<br />
+A clear potion is here, frozen solid. [2]<br />
+An emerald vial lies here.<br />
+A piece of granite stone has been left here...it glows dimly<br />
+A ring made from silver lies here.<br />
+A glowing stone on a cord of rope has been discarded here...it glows dimly<br />
+A long necklace with a tarnished symbol lies here.<br />
+A pile of tattered burlap lies here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of thick cloth pants is lying here in a heap.<br />
+A pair of blue shoes are sitting here.<br />
+A pair of crimson colored armbands made from an odd glass rest here.<br />
+Lying in a pile on the floor is a dark grey robe.<br />
+A large iron belt buckle has been foolishly dropped here.<br />
+A mithril bracer is here, with a deep red lustre.<br />
+A staff of warped wood sprouts from the ground.<br />
+A small metallic canteen has been dropped here. [4]<br />
+A simple wooden ring has been dropped here.<br />
+An iron longsword with a sharpened blade lies here.<br />
+A large glaive with the solamnic insignia lies here.<br />
+A potion lies here on the ground.<br />
+A pair of gauntlets made from the hide of a silver dragon lie here.<br />
+A platinum shield emblazoned with a golden dragon lies here.<br />
+A golden bracelet with small spikes is lying here. [2]<br />
+A magnificent sword lies here, its blade engraved with roses.<br />
+You see a pair of engraved platinum boots lying here.<br />
+Some gauntlets made of a non reflective steel lies here.<br />
+The corpse of Anariel is lying here.<br />
+A small belt pack of woven cloth lies in a heap on the floor.<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A scroll has carelessly been left here.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A large torch. [2]<br />
+A piece of bone attached to a leather thong lies here, fashioned into a charm...it glows dimly<br />
+A small flask has been left here. [2]<br />
+A pair of golden anklets have been dropped on the floor...it glows dimly<br />
+A smalbash iark<br />
+l pouch. [10]<br />
+Solare Isolato, the Immalleable is standing here, fighting Dannil. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Dannil Death, Carnage of War is standing here, fighting Juan. (flying)<br />
+. . . has a tough exterior.<br />
+Kirsten Lawn, Carnage Uber Cleric is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Jeremiah Wild, The Fireshield Dude is standing here, fighting Dannil. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Nicki Frost, Winters Wild Dawning is standing here, fighting Dannil. (flying)<br />
+You see the outline of a life form here, carrying: a ring of the dweomer; a palladium ring; the amulet of Kul; an emerald ring; a small charm; a glowing scroll of recall.<br />
+Boucard Dee, Rum Soaked Wildman is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Hartman, Wild Gunnery Sergeant is standing here. (flying) (invisible)<br />
+Arnold Layne, Wild is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here, fighting Dannil. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Juan Valdez is standing here, fighting Dannil. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; <br />
+Kirsten focuses on Dannil and utters some strange words.<br />
+Kirsten heals Dannil.<br />
+<br />
+550H 134V 37754401X 317C Exits:NS&gt; You get a massive sword of divine wrath from the corpse of Iark.<br />
+You get a crystal bracelet from the corpse of Iark.<br />
+You get a grey stone bracelet from the corpse of Iark.<br />
+You get a silver girdle from the corpse of Iark.<br />
+You get a crimson stained silver dragon scale cloak from the corpse of Iark.<br />
+You get some studded leather sleeves from the corpse of Iark.<br />
+You get a pair of fire-red cloth gloves from the corpse of Iark.<br />
+You get a pair of dusty leather moccasins from the corpse of Iark.<br />
+You get a pair of ergothian hunting pants from the corpse of Iark.<br />
+You get an adamantite helmet from the corpse of Iark.<br />
+You get a diamond-studded jaguar collar from the corpse of Iark.<br />
+You get a moonstone pendant from the corpse of Iark.<br />
+You get a ring of ice from the corpse of Iark.<br />
+You get a ring of finest silver from the corpse of Iark.<br />
+You get a very large pile of coins from the corpse of Iark.<br />
+There were 1271 coins.<br />
+split 1271<br />
+You get some spellcasting gloves from the corpse of Iark.<br />
+You get a grey stone bracelet from the corpse of Iark.<br />
+You get a globe of vision from the corpse of Iark.<br />
+Chest : You can't carry that much weight.<br />
+Backpack : You can't carry that much weight.<br />
+Chest : You can't carry thaget all corpse<br />
+t much weight.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; What are you trying to get from?<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; <br />
+Kalen flies in from the north.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; Dannil panics, and attempts to flee.<br />
+Dannil flies north.<br />
+What are you trying to get from?<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+550H 134V 37754401X 1588C Exits:NS&gt; You can't split 1271 evenly among the people in the room; splitting 1260 instead.<br />
+You divide 1260 coins equally among the group members present.<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; <br />
+Arnold gets a crimson dust covered chest from the corpse of Iark.<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; Backpack : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; ass<br />
+Assist whom?<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; <br />
+Troggs tells your group '10 seconds to tick'<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; <br />
+Troggs utters some strange words.<br />
+Troggs heals Troggs.<br />
+<br />
+550H 134V 37754401X 433C Exits:NS&gt; <br />
+Juan flies north.<br />
+Solare flies north.<br />
+Kalen flies north.<br />
+Arnold flies north.<br />
+Hartman flies north.<br />
+Ie flies north.<br />
+You follow Juan north.<br />
+Nicki flies in from the south.<br />
+Thun flies in from the south.<br />
+Jeremiah flies in from the south.<br />
+Path In the Hills<br />
+    You find that the path through the rolling hills has began to get<br />
+steeper. The hillsides around you are covered with thick stands of spruce<br />
+and pine trees. The moisture from a recent rain still clings to the<br />
+branches. You can see many species of small plants lining both sides of the<br />
+trail. Berries provide brief slashes of colour amidst the maze of branches.<br />
+A shiny copper sword lies here.<br />
+A small blue charm has been left behind.<br />
+A long sword has been left here.<br />
+A shield is lying on the ground.<br />
+A small blue charm has been left behind.<br />
+A small dagger lies here covered in the dirt, barely visible.<br />
+a large shield made of rough diamond has been left here.<br />
+A large colorful toadstool grows here.<br />
+A dark green stone lies here. [2]<br />
+A smoke red stone is lying here.<br />
+A crumpled heap of scarlet material lies undisturbed in the corner.<br />
+A single steel coin lies here.<br />
+Jeremiah Wild, The Fireshield Dude is standing here. (flying) (invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Nicki Frost, Winters Wild Dawning is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a ring of the dweomer; a palladium ring; the amulet of Kul; an emerald ring; a small charm; a glowing scroll of recall.<br />
+Hartman, Wild Gunnery Sergeant is standing here. (flying) (invisible)<br />
+Arnold Layne, Wild is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Kalen the Male Wild Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Juan Valdez is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dannil Death, Carnage of War is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+<br />
+550H 132V 37754401X 433C Exits:NS&gt; wear all<br />
+You couldn't find anywhere to use a globe of vision.<br />
+You wear the bracelet around your left wrist.<br />
+You already wear something on your hands.<br />
+You are already wearing something on your fingers.<br />
+You are already wearing something on your fingers.<br />
+You are already wearing something on your fingers.<br />
+You are already wearing something on your fingers.<br />
+You wear a moonstone pendant around your neck.<br />
+You can't wear any more around your neck.<br />
+You can't wear any more around your neck.<br />
+You already wear something on your head.<br />
+You already wear something on your legs.<br />
+You wear a pair of dusty leather moccasins on your feet.<br />
+You already wear something on your hands.<br />
+You already wear something on your arms.<br />
+You already wear something about your body.<br />
+You already wear something about your waist.<br />
+You already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+You couldn't find anywhere to use a massive sword of divine wrath.<br />
+You couldn't find anywhere to use a piece of sweet bread.<br />
+You couldn't find anywhere to use a piece of sweet bread.<br />
+You couldn't find anywhere to use a scroll of recall.<br />
+You couldn't find anywhere to use a portable keg.<br />
+You couldn't find anywhere to use a small wooden chest.<br />
+<br />
+550H 132V 37754401X 433C Exits:NS&gt; <br />
+Dannil flies south.<br />
+<br />
+550H 132V 37754401X 433C Exits:NS&gt; bash dannikl<br />
+<br />
+Jeremiah tells your group 'get dannil'<br />
+<br />
+550H 132V 37754401X 433C Exits:NS&gt; <br />
+Juan flies south.<br />
+Solare flies south.<br />
+Kalen flies south.<br />
+Arnold flies south.<br />
+Hartman flies south.<br />
+Ie flies south.<br />
+You follow Juan south.<br />
+Nicki flies in from the north.<br />
+Thun flies in from the north.<br />
+Jeremiah flies in from the north.<br />
+Path In the Hills<br />
+    You find yourself amongst the rolling hills. They are covered with both<br />
+spruce and pine trees. You can see the clouds clinging to the windward side<br />
+of the hills as they come off of the ocean. The sandy soil to either side<br />
+of the trail provides fertile ground for berries and other small plants.<br />
+The tall stands of trees waver slightly in the wind.<br />
+The corpse of Iark is lying here.<br />
+Deeply scratched gauntlets has been left to lie on the ground.<br />
+A spiked pair of battle armets lies here...it glows dimly<br />
+The corpse of Enlil is lying here.<br />
+A small wooden chest rests here.<br />
+A scroll has carelessly been left here.<br />
+A small flask has been left here.<br />
+An emerald vial lies here.<br />
+A scroll has carelessly been left here.<br />
+A vial of holy water rests here.<br />
+A clear potion is here, frozen solid. [2]<br />
+An emerald vial lies here.<br />
+A piece of granite stone has been left here...it glows dimly<br />
+A ring made from silver lies here.<br />
+A glowing stone on a cord of rope has been discarded here...it glows dimly<br />
+A long necklace with a tarnished symbol lies here.<br />
+A pile of tattered burlap lies here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of thick cloth pants is lying here in a heap.<br />
+A pair of blue shoes are sitting here.<br />
+A pair of crimson colored armbands made from an odd glass rest here.<br />
+Lying in a pile on the floor is a dark grey robe.<br />
+A large iron belt buckle has been foolishly dropped here.<br />
+A mithril bracer is here, with a deep red lustre.<br />
+A staff of warped wood sprouts from the ground.<br />
+A small metallic canteen has been dropped here. [4]<br />
+A simple wooden ring has been dropped here.<br />
+An iron longsword with a sharpened blade lies here.<br />
+A large glaive with the solamnic insignia lies here.<br />
+A potion lies here on the ground.<br />
+A pair of gauntlets made from the hide of a silver dragon lie here.<br />
+A platinum shield emblazoned with a golden dragon lies here.<br />
+A golden bracelet with small spikes is lying here. [2]<br />
+A magnificent sword lies here, its blade engraved with roses.<br />
+You see a pair of engraved platinum boots lying here.<br />
+Some gauntlets made of a non reflective steel lies here.<br />
+The corpse of Anariel is lying here.<br />
+A small belt pack of woven cloth lies in a heap on the floor.<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A scroll has carelessly been left here.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A large torch. [2]<br />
+A piece of bone attached to a leather thong lies here, fashioned into a charm...it glows dimly<br />
+A small flask has been left here. [2]<br />
+A pair of golden anklets have been dropped on the floor...it glows dimly<br />
+A small pouch. [10]<br />
+Jeremiah Wild, The Fireshield Dude is standing here. (flying) (invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Nicki Frost, Winters Wild Dawning is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a ring of the dweomer; a palladium ring; the amulet of Kul; an emerald ring; a small charm; a glowing scroll of recall.<br />
+Hartman, Wild Gunnery Sergeant is standing here. (flying) (invisible)<br />
+Arnold Layne, Wild is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Kalen the Male Wild Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Juan Valdez is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dannil Death, Carnage of War is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Waldorf Astoria, Carnage Chief is standing here, fighting Troggs.<br />
+Kirsten Lawn, Carnage Uber Cleric is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Boucard Dee, Rum Soaked Wildman is bash dannikl<br />
+standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is sitting here, fighting Waldorf. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Hartman slowly fades into existence.<br />
+Hartman spins and tries to kick Dannil, but Dannil dodges out of the way.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Hartman cleaves Dannil very hard.<br />
+Dannil slowly fades into existence.<br />
+Dannil annihilates Hartman with his slash.<br />
+Waldorf massacres Troggs with his stab.<br />
+Troggs misses Waldorf with his hit.<br />
+Kalen slashes Dannil extremely hard.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Solare focuses harshly on Dannil and utters some strange words.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Arnold pierces Waldorf extremely hard.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Nicki shoots Dannil extremely hard.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Juan focuses harshly on Dannil and utters some strange words.<br />
+Dannil winces in pain as Juan shreds him with a spray of thorns.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Jeremiah slowly fades into existence.<br />
+Jeremiah crushes Dannil hard.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; gt hold him<br />
+<br />
+Ie focuses harshly on Waldorf and utters some strange words.<br />
+Waldorf's shield protects him from Ie's magic missiles.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; gt hold him<br />
+You tell your group 'hold him'<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; You tell your group 'hold him'<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Hartman delivers a vicious kick to Dannil's face. Blood flies as his head snaps back.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; st<br />
+<br />
+Jeremiah misses Dannil with his crush.<br />
+Nicki shoots Dannil extremely hard.<br />
+Nicki massacres Dannil with her shoot.<br />
+Arnold pierces Waldorf extremely hard.<br />
+Kalen massacres Dannil with his slash.<br />
+Kalen massacres Dannil with his bludgeon.<br />
+Hartman cleaves Dannil hard.<br />
+Dannil massacres Hartman with his slash.<br />
+Waldorf massacres Troggs with his stab.<br />
+Troggs misses Waldorf with his hit.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; You are already standing.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; look<br />
+<br />
+Solare focuses harshly on Dannil and utters some strange words.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; Path In the Hills<br />
+    You find yourself amongst the rolling hills. They are covered with both<br />
+spruce and pine trees. You can see the clouds clinging to the windward side<br />
+of the hills as they come off of the ocean. The sandy soil to either side<br />
+of the trail provides fertile ground for berries and other small plants.<br />
+The tall stands of trees waver slightly in the wind.<br />
+The corpse of Iark is lying here.<br />
+Deeply scratched gauntlets has been left to lie on the ground.<br />
+A spiked pair of battle armets lies here...it glows dimly<br />
+The corpse of Enlil is lying here.<br />
+A small wooden chest rests here.<br />
+A scroll has carelessly been left here.<br />
+A small flask has been left here.<br />
+An emerald vial lies here.<br />
+A scroll has carelessly been left here.<br />
+A vial of holy water rests here.<br />
+A clear potion is here, frozen solid. [2]<br />
+An emerald vial lies here.<br />
+A piece of granite stone has been left here...it glows dimly<br />
+A ring made from silver lies here.<br />
+A glowing stone on a cord of rope has been discarded here...it glows dimly<br />
+A long necklace with a tarnished symbol lies here.<br />
+A pile of tattered burlap lies here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of thick cloth pants is lying here in a heap.<br />
+A pair of blue shoes are sitting here.<br />
+A pair of crimson colored armbands made from an odd glass rest here.<br />
+Lying in a pile on the floor is a dark grey robe.<br />
+A large iron belt buckle has been foolishly dropped here.<br />
+A mithril bracer is here, with a deep red lustre.<br />
+A staff of warped wood sprouts from the ground.<br />
+A small metallic canteen has been dropped here. [4]<br />
+A simple wooden ring has been dropped here.<br />
+An iron longsword with a sharpened blade lies here.<br />
+A large glaive with the solamnic insignia lies here.<br />
+A potion lies here on the ground.<br />
+A pair of gauntlets made from the hide of a silver dragon lie here.<br />
+A platinum shield emblazoned with a golden dragon lies here.<br />
+A golden bracelet with small spikes is lying here. [2]<br />
+A magnificent sword lies here, its blade engraved with roses.<br />
+You see a pair of engraved platinum boots lying here.<br />
+Some gauntlets made of a non reflective steel lies here.<br />
+The corpse of Anariel is lying here.<br />
+A small belt pack of woven cloth lies in a heap on the floor.<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A scroll has carelessly been left here.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A small vial of blue liquid has been carelessly left here. [3]<br />
+A large torch. [2]<br />
+A piece of bone attached to a leather thong lies here, fashioned into a charm...it glows dimly<br />
+A small flask has been left here. [2]<br />
+A pair of golden anklets have been dropped on the floor...it glows dimly<br />
+A small pouch. [10]<br />
+Jeremiah Wild, The Fireshield Dude is standing here, fighting Dannil. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Nicki Frost, Winters Wild Dawning is standing here, fighting Dannil. (flying)<br />
+You see the outline of a life form here, carrying: a ring of the dweomer; a palladium ring; the amulet of Kul; an emerald ring; a small charm; a glowing scroll of recall.<br />
+Hartman, Wild Gunnery Sergeant is standing here, fighting Dannil. (flying)<br />
+Arnold Layne, Wild is standing here, fighting Waldorf. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Kalen the Male Wild Elf is standing here, fighting Dannil. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Juan Valdez is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dannil Death, Carnage of War is standing here, fighting Hartman. (flying)<br />
+. . . has a tough exterior.<br />
+Waldorf Astoria, Carnage Chief is standing here, fighting Troggs.<br />
+Kirsten Lawn, Carnage Uber Cleric is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Boucard Dee, Rum Soaked Wildman is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is sitting here, fighting Waldorf. (flying)<br />
+. . . is outlined wkill dannil<br />
+ith a dim aura.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Thun massacres Dannil with his drain.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Boucard focuses harshly on Dannil and utters some strange words.<br />
+Boucard lifts his arms and a surge of dirt blasts Dannil!<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Juan focuses harshly on Dannil and utters some strange words.<br />
+Flesh burns as Juan enshrouds Dannil in a cloak of flames.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Kalen tells your group 'hold dannil'<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; You cleave Dannil very hard.<br />
+<br />
+550H 130V 37754401X 433C [Hartman:Fair] [Dannil:Fair] Exits:NS&gt; <br />
+Ie focuses harshly on Dannil and utters some strange words.<br />
+Waldorf panics, and attempts to flee.<br />
+Waldorf leaves south.<br />
+<br />
+550H 130V 37754401X 433C [Hartman:Fair] [Dannil:Fair] Exits:NS&gt; st<br />
+<br />
+You cleave Dannil extremely hard.<br />
+Thun massacres Dannil with his drain.<br />
+Nicki massacres Dannil with her shoot.<br />
+Nicki shoots Dannil extremely hard.<br />
+Kalen massacres Dannil with his slash.<br />
+Kalen bludgeons Dannil hard.<br />
+Hartman cleaves Dannil hard.<br />
+Dannil annihilates Hartman with his slash.<br />
+Hartman delivers a vicious kick to Dannil's face. Blood flies as his head snaps back.<br />
+<br />
+550H 130V 37754401X 433C [Hartman:Fair] [Dannil:V.Bad] Exits:NS&gt; <br />
+Dannil panics, and attempts to flee.<br />
+Dannil flies south.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; st<br />
+<br />
+Kalen flies south.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+BASH: Troggs stands up!<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Thun flies south.<br />
+<br />
+550H 130V 37754401X 433C Exits:NS&gt; <br />
+Juan flies south.<br />
+Arnold flies south.<br />
+Hartman flies south.<br />
+Ie flies south.<br />
+You follow Juan south.<br />
+Nicki flies in from the north.<br />
+Jeremiah flies in from the north.<br />
+Path In the Hills<br />
+    You find yourself amongst the rolling hills. They are covered with both<br />
+spruce and pine trees. You can see the clouds clinging to the windward side<br />
+of the hills as they come off of the ocean. The sandy soil to either side<br />
+of the trail provides fertile ground for berries and other small plants.<br />
+The tall stands of trees waver slightly in the wind.<br />
+Jeremiah Wild, The Fireshield Dude is standing here. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+Nicki Frost, Winters Wild Dawning is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a ring of the dweomer; a palladium ring; the amulet of Kul; an emerald ring; a small charm; a glowing scroll of recall.<br />
+Hartman, Wild Gunnery Sergeant is standing here. (flying)<br />
+Arnold Layne, Wild is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Juan Valdez is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Thun is Greed, Worst Piece of Wild is standing here. (flying)<br />
+Kalen the Male Wild Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dannil Death, Carnage of War is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Waldorf Astoria, Carnage Chief is standing here. (invisible)<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Kalen slashes Dannil extremely hard.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Arnold misses Dannil with his pierce.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; You are already standing.<br />
+Ie focuses harshly on Dannil and utters some strange words.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Jeremiah utters the words, 'qonyusz'.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; You are already standing.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; kill danniil<br />
+<br />
+Nicki massacres Dannil with her shoot.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Jeremiah utters the words, 'canfjge'.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Juan focuses harshly on Dannil and utters some strange words.<br />
+Flesh burns as Juan enshrouds Dannil in a cloak of flames.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; <br />
+Dannil grabs a scroll of recall.<br />
+Dannil recites a scroll of recall.<br />
+Dannil disappears.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; They aren't here.<br />
+<br />
+550H 128V 37754401X 433C Exits:NS&gt; kill dannil<br />
+<br />
+Waldorf grabs a scroll of recall.<br />
+Waldorf recites a scroll of recall.<br />
+Waldorf disappears.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='239'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=239">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="239">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

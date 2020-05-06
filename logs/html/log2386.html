@@ -1,0 +1,753 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What would be the single best change for Arctic?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>Remove sheafs<br>
+<input type=radio value=1 name=voteid>Remove rent decay<br>
+<input type=radio value=2 name=voteid>Add more spells/skills to current classes<br>
+<input type=radio value=3 name=voteid>Add more zones<br>
+<input type=radio value=4 name=voteid>Add a new class<br>
+<input type=radio value=5 name=voteid>Other<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=145><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2386-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='67.202.56.179' and logid='2386'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Dozer and Pixi wanted to battle, so we did.</font></b>
+<p>
+POV: 
+Kylar<p>
+Log Rating:
+3.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+After Dozer's constant request and harrassment to fight, we decided why not!</i>
+<p>
+<p>
+
+357H 164V 913844X 0.88% 11C [**Lokpi:Perfect**] Mem:2 Exits:ESW&gt; <br />
+Dozer tries to bash you, but he passes right through your image.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Perfect] Mem:2 Exits:ESW&gt; <br />
+You stop watching Lokpi.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Perfect] Mem:2 Exits:ESW&gt; o all.giant bash dozer<br />
+a hill giant====================MISSED BASH====================on Dozer<br />
+You issue the order 'bash dozer'.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Perfect] Mem:2 Exits:ESW&gt; c 'h p'<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Perfect] Mem:3 Exits:ESW&gt; <br />
+A Palanthian guard arrives from the east.<br />
+A hill giant hits Dozer very hard.<br />
+A hill giant misses Dozer with its hit.<br />
+Dozer misses you and destroys an image.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:V.Good] Mem:3 Exits:ESW&gt; <br />
+Lokpi focuses harshly on Dozer and utters some strange words.<br />
+The flesh of Dozer begins to decay!<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:V.Good] Mem:3 Exits:ESW&gt; c 'h p'<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:V.Good] Mem:3 Exits:ESW&gt; <br />
+Pixi flies in from the west.<br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;A hill giant STANDS UP&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:V.Good] Mem:3 Exits:ESW&gt; <br />
+Dozer screams as blood pours from his wounds.<br />
+A hill giant hits Dozer extremely hard.<br />
+A hill giant hits Dozer very hard.<br />
+Dozer misses you and destroys an image.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt;<br />
+Pixi focuses harshly on Lokpi and utters the words, 'hold person'.<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Dozer STANDS UP&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br />
+<br />
+357H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+YOU ARE SENT SPRAWLING AS --&gt; Dozer &lt;-- CRASHES INTO YOU!<br />
+<br />
+346H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; o all.giant bash pixi<br />
+<br />
+A hill giant tries in vain to disarm Dozer's weapon.<br />
+<br />
+346H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+A Palanthian guard leaves east.<br />
+<br />
+346H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+Lokpi focuses harshly on Pixi and utters some strange words.<br />
+Lokpi throws a handful of sticks at Pixi, but they turn into snakes in midflight!<br />
+Pixi screams in pain as a snake tears into his flesh.<br />
+Pixi screams in pain as a snake tears into his flesh.<br />
+Pixi screams in pain as a snake tears into his flesh.<br />
+<br />
+346H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; st<br />
+c 'mal'<br />
+<br />
+Dozer screams as blood pours from his wounds.<br />
+Lokpi massacres Pixi with his bludgeon.<br />
+Pixi misses Lokpi with his hit.<br />
+A hill giant misses Dozer with its hit.<br />
+A hill giant hits Dozer very hard.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+Dozer bruises YOU with his stab.<br />
+Dozer burns as he passes through your fire shield.<br />
+You miss Dozer with your bludgeon.<br />
+You miss Dozer with your bludgeon.<br />
+<br />
+345H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+Pixi utters the words, 'malevolent tentacles'.<br />
+Pixi conjures a writhing mass of inky black tentacles!<br />
+Pixi destroys your mirror image.<br />
+The images around you fade out of existance.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+<br />
+338H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+Lokpi focuses harshly on Pixi and utters some strange words.<br />
+The flesh of Pixi begins to decay!<br />
+<br />
+338H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+A hill giant tries to punch Dozer, but he deftly avoids the blow.<br />
+<br />
+338H 164V 913844X 0.88% 11C [Me:V.Good] [Dozer:Good] Mem:3 Exits:ESW&gt; <br />
+Dozer screams as blood pours from his wounds.<br />
+Pixi screams as blood pours from his wounds.<br />
+A hill giant misses Dozer with its hit.<br />
+A hill giant misses Dozer with its hit.<br />
+Dozer stabs YOU very hard.<br />
+Dozer burns as he passes through your fire shield.<br />
+You miss Dozer with your bludgeon.<br />
+You bludgeon Dozer hard.<br />
+The staff seems alive in your hand, as you smite your foe with godlike fury.<br />
+<br />
+327H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Fair] Mem:3 Exits:ESW&gt; <br />
+Dozer====================BASHED====================Lokpi<br />
+<br />
+327H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Fair] Mem:3 Exits:ESW&gt; st<br />
+c 'mal'<br />
+<br />
+Dozer screams as blood pours from his wounds.<br />
+Pixi screams as blood pours from his wounds.<br />
+Lokpi massacres Pixi with his bludgeon.<br />
+Pixi misses Lokpi with his hit.<br />
+A hill giant hits Dozer hard.<br />
+Dozer stabs YOU very hard.<br />
+Dozer burns as he passes through your fire shield.<br />
+You bludgeon Dozer very hard.<br />
+The staff seems alive in your hand, as you smite your foe with godlike fury.<br />
+You miss Dozer with your bludgeon.<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Fair] Mem:3 Exits:ESW&gt; a hill giant====================MISSED BASH============<br />
+========on Pixi<br />
+You issue the order 'bash pixi'.<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Fair] Mem:3 Exits:ESW&gt; You stand up.<br />
+Your casting is disrupted by the fighting!<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Fair] Mem:4 Exits:ESW&gt; You are already standing.<br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+A gargoyle tries to sweep your legs, but you avoid the attack.<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; c 'mal'<br />
+<br />
+Pixi panics, and attempts to flee.<br />
+Pixi flies south.<br />
+<br />
+315H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+Dozer screams as blood pours from his wounds.<br />
+A gargoyle claws YOU very hard.<br />
+A gargoyle burns as it passes through your fire shield.<br />
+A gargoyle panics, and attempts to flee.<br />
+A gargoyle flies south.<br />
+A hill giant misses Dozer with its hit.<br />
+A hill giant misses Dozer with its hit.<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+Pixi flies in from the south.<br />
+A gargoyle flies in from the south.<br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;A hill giant STANDS UP&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; Your casting is disrupted by the fighting!<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+Dozer attempts to break free of the black tentacles, but fails!<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; o all.giant bash<br />
+A hill giant====================BASHED====================Dozer<br />
+You issue the order 'bash'.<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Lokpi STANDS UP&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br />
+<br />
+303H 164V 913844X 0.88% 11C [Me:Good] [Dozer:Bad] Mem:5 Exits:ESW&gt; <br />
+Dozer screams as blood pours from his wounds.<br />
+Pixi screams as blood pours from his wounds.<br />
+A hill giant hits Dozer extremely hard.<br />
+A hill giant hits Dozer extremely hard.<br />
+A hill giant hits Dozer extremely hard.<br />
+Dozer stabs YOU hard.<br />
+Dozer burns as he passes through your fire shield.<br />
+<br />
+294H 164V 913844X 0.88% 11C [Me:Good] [Dozer:V.Bad] Mem:5 Exits:ESW&gt; c '<br />
+Please enclose spells in single quotes: '<br />
+<br />
+294H 164V 913844X 0.88% 11C [Me:Good] [Dozer:V.Bad] Mem:5 Exits:ESW&gt; c 'l b'<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Dozer with full impact.<br />
+<br />
+294H 164V 913844X 0.88% 11C [Me:Good] [Dozer:V.Bad] Mem:6 Exits:ESW&gt; <br />
+Lokpi focuses harshly on Pixi and utters some strange words.<br />
+The flesh of Pixi begins to decay!<br />
+<br />
+294H 164V 913844X 0.88% 11C [Me:Good] [Dozer:V.Bad] Mem:6 Exits:ESW&gt; #10 SECONDS TO TICK<br />
+<br />
+Pixi utters the words, 'malevolent tentacles'.<br />
+Pixi conjures a writhing mass of inky black tentacles!<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+<br />
+286H 164V 913844X 0.88% 11C [Me:Good] [Dozer:V.Bad] Mem:6 Exits:ESW&gt; <br />
+Dozer screams as blood pours from his wounds.<br />
+Pixi screams as blood pours from his wounds.<br />
+Dozer stabs YOU very hard.<br />
+Dozer burns as he passes through your fire shield.<br />
+<br />
+272H 164V 913844X 0.88% 11C [Me:Fair] [Dozer:Awful] Mem:6 Exits:ESW&gt; c 'l b'<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Dozer with full impact.<br />
+<br />
+272H 164V 913844X 0.88% 11C [Me:Fair] [Dozer:Awful] Mem:6 Exits:ESW&gt; <br />
+Lokpi attempts to break free of the black tentacles, but fails!<br />
+<br />
+272H 164V 913844X 0.88% 11C [Me:Fair] [Dozer:Awful] Mem:6 Exits:ESW&gt; <br />
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Dozer STANDS UP&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br />
+<br />
+272H 164V 913844X 0.88% 11C [Me:Fair] [Dozer:Awful] Mem:6 Exits:ESW&gt; <br />
+Dozer panics, and attempts to flee.<br />
+Dozer flies south.<br />
+<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+&lt;PWA&gt; Lokpi the Male Minotaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dozer, Krynn's Specialist in Placement is standing here. (flying)<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+252H 173V 913844X 0.88% 11C Mem:5 Exits:ESW&gt; s<br />
+Anatole's Amazing Artifacts<br />
+    This building smells awful. Probably from all the noxious fumes from<br />
+the lab in the next room. But then again, everybody knows magicians stink.<br />
+The counter is actually a glass case that displays several magical<br />
+trinkets. The only exits are back north to Sword Street, and a small<br />
+archway leading east.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+&lt;PWA&gt; Lokpi the Male Minotaur is standing here, fighting Dozer. (flying)<br />
+. . . enveloped in shadows.<br />
+Dozer, Krynn's Specialist in Placement is lying here, bleeding.<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+252H 172V 913844X 0.88% 11C Mem:5 Exits:NE&gt; ki dozer<br />
+You annihilate Dozer with your bludgeon.<br />
+You receive 0 experience.<br />
+Exam corpse<br />
+get all.coins corpse<br />
+Dozer is dead! R.I.P.<br />
+<br />
+Then Lokpi tried to get Pixi, he relocated away, but his flesh was rotting away to fast for his frail to handle.<br />
+<br />
+I decided to try a few towns in an attempt to find Pixi's corpse.  First town was a success.<br />
+<br />
+289H 100V 913844X 0.88% 76C Mem:2 Exits:EW&gt; Intersection of Market Street and Wall Road<br />
+     You are at the intersection of Market Street and Wall Road. Market<br />
+Street runs east-west through Kalaman, while Wall Road runs along the<br />
+inside of the city wall. Market Street is the busiest street in Kalaman;<br />
+many of the shops and stands are located here.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+289H 99V 913844X 0.88% 76C Mem:2 Exits:NESW&gt; c 'l o' corpse<br />
+You utter the words, 'locate object'<br />
+The corpse of Pixi is in &quot;Master's Office&quot;.<br />
+<br />
+289H 99V 913844X 0.88% 76C Mem:3 Exits:NESW&gt; e<br />
+e<br />
+Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the southeast.<br />
+<br />
+289H 98V 913844X 0.88% 76C Mem:3 Exits:EW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+<br />
+289H 87V 913844X 0.88% 76C Mem:3 Exits:ESW&gt; e<br />
+Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+A rooster walks about while pecking at the ground.<br />
+<br />
+289H 86V 913844X 0.88% 76C Mem:3 Exits:NESW&gt; s<br />
+s<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+289H 85V 913844X 0.88% 76C Mem:3 Exits:NS&gt; Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+<br />
+289H 84V 913844X 0.88% 76C Mem:3 Exits:NU&gt; u<br />
+Master's Office<br />
+     This is Zardonna's office and also the classroom of her small school.<br />
+There are two rows of seats set opposite her desk. A large blackboard and a<br />
+few shelves of old books and scrolls are also located in this rather dark<br />
+room.<br />
+The corpse of Pixi is lying here.<br />
+A sheaf of spellbook pages has been left here...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Zardonna, the elven high sorceress is ready to teach her arts.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+289H 83V 913844X 0.88% 76C Mem:2 Exits:D&gt; take sheaf<br />
+You get a sheaf of spellbook pages.<br />
+<br />
+289H 83V 913844X 0.88% 76C Mem:2 Exits:D&gt; take all pixi<br />
+Crown : You can't carry that much weight.<br />
+You get a large pile of coins from the corpse of Pixi.<br />
+split 117<br />
+There were 117 coins.<br />
+You get a putrid potion from the corpse of Pixi.<br />
+You get a putrid potion from the corpse of Pixi.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+Ration : You can't carry that much weight.<br />
+Bucket : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='67.202.56.179' and logid='2386'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2386">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2386">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="67.202.56.179">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

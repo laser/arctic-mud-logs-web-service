@@ -1,0 +1,637 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1255-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1255'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Herman Munster</font></b>
+<p>
+POV: 
+Me<p>
+Log Rating:
+1.9999<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+You may get clanned...but that doesn't make you any smarter!</i>
+<p>
+<p>
+
+481H 168V 4309902X 1920C Exits:NEW&gt; gt he's<br />
+You tell your group 'he's'<br />
+<br />
+481H 168V 4309902X 1920C Exits:NEW&gt; c<br />
+Herman focuses harshly on you and utters some strange words.<br />
+You freeze in place, unable to move.<br />
+<br />
+481H 168V 4309902X 1920C Exits:NEW&gt; c 'bli'<br />
+You are unable to use your physical form.<br />
+<br />
+481H 168V 4309902X 1920C Exits:NEW&gt; ha<br />
+Za arrives from the south.<br />
+<br />
+481H 168V 4309902X 1920C Exits:NEW&gt; laugh<br />
+You laugh heartily.<br />
+<br />
+481H 168V 4309902X 1920C Exits:NEW&gt; gt <br />
+Herman focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Herman has reached its goal.<br />
+<br />
+428H 168V 4309902X 1920C [Me:Good] [Herman:Perfect] Exits:NEW&gt; gt wait<br />
+You tell your group 'wait'<br />
+<br />
+428H 168V 4309902X 1920C [Me:Good] [Herman:Perfect] Exits:NEW&gt; gt b<br />
+Sanka focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+343H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; gt bash<br />
+Herman whips YOU very hard.<br />
+<br />
+329H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; gt bash it<br />
+You tell your group 'bash it'<br />
+<br />
+329H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; <br />
+Za crashes into Sanka in a thundering collision, knocking him to the ground!<br />
+<br />
+329H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; <br />
+Herman focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Herman has reached its goal.<br />
+<br />
+272H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; dra<br />
+Za slashes Sanka extremely hard.<br />
+Sanka misses Za with his drain.<br />
+<br />
+272H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; drain<br />
+A Balifor watchman arrives from the east.<br />
+<br />
+272H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; drain<br />
+Fuer shouts '20 war lookin for group'<br />
+<br />
+272H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; drain<br />
+Za slashes Sanka hard.<br />
+Sanka misses Za with his drain.<br />
+Herman whips YOU extremely hard.<br />
+<br />
+256H 168V 4309902X 1920C [Me:Fair] [Herman:Perfect] Exits:NEW&gt; drain<br />
+Za crashes into Herman in a thundering collision, knocking him to the ground!<br />
+<br />
+256H 168V 4309902X 1920C [Me:Fair] [Herman:V.Good] Exits:NEW&gt; drain<br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+256H 168V 4309902X 1920C [Me:Fair] [Herman:V.Good] Exits:NEW&gt; drain<br />
+A Balifor watchman massacres Za with his smite.<br />
+A Balifor watchman smites Za very hard.<br />
+Za slashes Sanka hard.<br />
+Sanka drains Za extremely hard.<br />
+Herman whips YOU very hard.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:V.Good] Exits:NEW&gt; drain<br />
+Sanka stands up.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:V.Good] Exits:NEW&gt; drain<br />
+Sanka focuses harshly on Za and utters some strange words.<br />
+Huge flames burn Za from above.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:V.Good] Exits:NEW&gt; c 'bli'sanka<br />
+You feel the magic bond holding you shatter!<br />
+A Balifor watchman smites Za extremely hard.<br />
+A Balifor watchman smites Za extremely hard.<br />
+Za misses Sanka with his slash.<br />
+Herman misses you with his whip.<br />
+You stab Herman very hard.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Exits:NEW&gt; c 'bli'sanka<br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Exits:NEW&gt; c 'bli'sanka<br />
+You utter the words, 'blindness'<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; <br />
+Sanka focuses harshly on Za and utters some strange words.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; <br />
+Herman stands up.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; d<br />
+Za panics, and attempts to flee.<br />
+Za leaves west.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; d<br />
+Herman focuses harshly on you and utters some strange words.<br />
+Luckily for you Herman slept during draining-lessons.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; c <br />
+Za arrives from the west.<br />
+A Balifor watchman looks at Herman and yells  'There's the scoundrel!'<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; drain<br />
+<br />
+A Balifor watchman smites Herman extremely hard.<br />
+A Balifor watchman smites Herman extremely hard.<br />
+<br />
+242H 168V 4309902X 1920C [Me:Fair] [Herman:Good] Mem:3 Exits:NEW&gt; Herman spasms as you place <br />
+your hand on his chest and drain his life-force.<br />
+<br />
+384H 169V 4309902X 1920C [Me:Good] [Herman:Fair] Mem:3 Exits:NEW&gt; <br />
+Za crashes into Herman in a thundering collision, knocking him to the ground!<br />
+<br />
+384H 169V 4309902X 1920C [Me:Good] [Herman:Fair] Mem:3 Exits:NEW&gt; <br />
+Sanka focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+333H 169V 4309902X 1920C [Me:Fair] [Herman:Fair] Mem:3 Exits:NEW&gt; <br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+333H 169V 4309902X 1920C [Me:Fair] [Herman:Fair] Mem:3 Exits:NEW&gt; c 'bl<br />
+Za slashes Herman extremely hard.<br />
+A Balifor watchman massacres Herman with his smite.<br />
+A Balifor watchman massacres Herman with his smite.<br />
+Herman misses you with his whip.<br />
+You stab Herman extremely hard.<br />
+<br />
+333H 169V 4309902X 1920C [Me:Fair] [Herman:V.Bad] Mem:3 Exits:NEW&gt; c 'bli'<br />
+You utter the words, <br />
+'blindness'<br />
+<br />
+333H 169V 4309902X 1920C [Me:Fair] [Herman:V.Bad] Mem:4 Exits:NEW&gt; <br />
+Sanka focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+272H 169V 4309902X 1920C [Me:Fair] [Herman:V.Bad] Mem:4 Exits:NEW&gt; <br />
+Za slashes Herman extremely hard.<br />
+A Balifor watchman smites Herman extremely hard.<br />
+A Balifor watchman massacres Herman with his smite.<br />
+Herman misses you with his whip.<br />
+<br />
+272H 169V 4309902X 1920C [Me:Fair] [Herman:Awful] Mem:4 Exits:NEW&gt; im<br />
+<br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+272H 169V 4309902X 1920C [Me:Fair] [Herman:Awful] Mem:4 Exits:NEW&gt; After lightning fast strikes <br />
+from your rapier, Herman is wheeling to regain his balance.<br />
+<br />
+272H 169V 4309902X 1920C [Me:Fair] [Herman:Awful] Mem:4 Exits:NEW&gt; g <br />
+Za spins and tries to kick Herman, but Herman dodges out of the way.<br />
+<br />
+272H 169V 4309902X 1920C [Me:Fair] [Herman:Awful] Mem:4 Exits:NEW&gt; g all co<br />
+Sanka focuses harshly on you and utters some strange words.<br />
+Sanka hits you with a chilling blast of cold air.  You're numb all over.<br />
+<br />
+226H 169V 4309902X 1920C [Me:Bad] [Herman:Awful] Mem:4 Exits:NEW&gt; g all corpse<br />
+<br />
+Fayre flies in from the south.<br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+226H 169V 4309902X 1920C [Me:Bad] [Herman:Awful] Mem:4 Exits:NEW&gt; <br />
+Fayre flies east.<br />
+<br />
+226H 169V 4309902X 1920C [Me:Bad] [Herman:Awful] Mem:4 Exits:NEW&gt; <br />
+A Balifor watchman looks at Za and yells  'There's the scoundrel!'<br />
+<br />
+226H 169V 4309902X 1920C [Me:Bad] [Herman:Awful] Mem:4 Exits:NEW&gt; <br />
+Za misses Herman with his slash.<br />
+A Balifor watchman massacres Herman with his smite.<br />
+You receive 0 experience.<br />
+Herman is dead! R.I.P.<br />
+The death cry of Herman echoes from somewhere nearby...<br />
+Herman stops following Sanka.<br />
+A fire salamander stops following Herman.<br />
+<br />
+226H 169V 4309902X 1920C Mem:4 Exits:NEW&gt; laugYou get a large first-aid kit from the corpse <br />
+of Herman.<br />
+You get a dragontail whip from the corpse of Herman.<br />
+You get a stark white wrist guard from the corpse of Herman.<br />
+You get a runed bracelet from the corpse of Herman.<br />
+You get a plain component pouch from the corpse of Herman.<br />
+You get an imp skin pouch from the corpse of Herman.<br />
+Pack : You can't carry that much weight.<br />
+You get a wolf's head shield from the corpse of Herman.<br />
+You are zapped by some studded leather sleeves and instantly drop it.<br />
+You are zapped by a pair of leather gloves and instantly drop it.<br />
+You get a pair of bone boots from the corpse of Herman.<br />
+You get a set of silver anklets from the corpse of Herman.<br />
+You get a leather jerkin from the corpse of Herman.<br />
+You get a long black stole, lined with red from the corpse of Herman.<br />
+You get an embroidered black wool cape from the corpse of Herman.<br />
+You get a rune etched mithril ring from the corpse of Herman.<br />
+Ring : You can't carry that many items.<br />
+You get a large pile of coins from the corpse of Herman.<br />
+There were 450 coins.<br />
+Potion : You can't carry that many items.<br />
+Cod : You can't carry that many items.<br />
+Cod : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Bottle : You can't carry that many items.<br />
+Pitcher : You can't carry that many items.<br />
+<br />
+226H 169V 4309902X 2370C Mem:4 Exits:NEW&gt; laugh<br />
+You laugh heartily.<br />
+<br />
+226H 169V 4309902X 2370C Mem:4 Exits:NEW&gt; <br />
+A Balifor watchman leaves south.<br />
+Sanka focuses harshly on you and utters some strange words.<br />
+Sanka hits you with a chilling blast of cold air.  You're numb all over.<br />
+That Really did HURT!<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1255'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1255">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1255">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

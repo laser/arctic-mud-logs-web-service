@@ -1,0 +1,745 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 158-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='158'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Ender says 'LEAVE LYNOL ALONE IDIOTS OR I WILL SLAUGHTER YOUR PUSSIES Lynol'</font></b>
+<p>
+POV: 
+Murgen<p>
+Log Rating:
+3.6000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Heed Ender's warnings!</i>
+<p>
+<p>
+
+581H 37V 13631884X 32C Exits:NS&gt; <br />
+Ender flies north.<br />
+You follow Ender north.<br />
+An Audience Chamber<br />
+bash lynol<br />
+Lynol, Archer of RoT is standing here. (flying)<br />
+Chalupe Gonzales, Running for the Taladasian Border is standing here. (flying)<br />
+. . . is outlined by a pinkish flame.<br />
+Rajel val Jurai, Elfin White Robe is resting here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Runb the Male Gnome is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a pair of magical boots; a blac<br />
+k adamantite shortsword; a glowing scroll of recall; a glowing scroll of recall; a<br />
+ glowing scroll of recall; a glowing scroll of recall.<br />
+A translucent being hovers in the air here. (invisible)<br />
+Lex Luthor, Future Prisming Taladasian Overseer of the Thorn is resting here. (fly<br />
+ing) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Sagara Sousuke, Taladas Full Metal Panic is resting here. (flying)<br />
+<br />
+581H 36V 13631884X 32C Exits:SW&gt; You crash into Lynol in a bone crunching bash, se<br />
+nding him sprawling to the ground.<br />
+<br />
+581H 36V 13631884X 32C [Me:Good] [Lynol:V.Good] Exits:SW&gt; <br />
+Padme slowly fades into existence.<br />
+Lynol steps aside as Padme attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+581H 36V 13631884X 32C [Me:Good] [Lynol:V.Good] Exits:SW&gt; <br />
+Ender says 'LEAVE LYNOL ALONE IDIOTS OR I WILL SLAUGHTER YOUR PUSSIES Lynol'<br />
+<br />
+581H 36V 13631884X 32C [Me:Good] [Lynol:V.Good] Exits:SW&gt; <br />
+Khan crashes into Lynol in a thundering collision, knocking him to the ground!<br />
+<br />
+581H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Khan obliterates Lynol with his stab.<br />
+Padme annihilates Lynol with her stab.<br />
+You massacre Lynol with your slash.<br />
+Lynol bruises YOU with his shoot.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Ender focuses harshly on Lynol and utters some strange words.<br />
+Lynol is paralyzed!<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Runb lights a bright ball of light and holds it.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Hew focuses harshly on Lynol and utters some strange words.<br />
+Flesh burns as Hew enshrouds Lynol in a cloak of flames.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Lex stands up.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Lexi stands up.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Fair] Exits:SW&gt; <br />
+Khan annihilates Lynol with his stab.<br />
+Padme obliterates Lynol with her stab.<br />
+You massacre Lynol with your slash.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:V.Bad] Exits:SW&gt; <br />
+Lexi focuses on Lynol and utters some strange words.<br />
+Lexi heals Lynol.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:V.Good] Exits:SW&gt; <br />
+Hew focuses harshly on Lynol and utters some strange words.<br />
+Flesh burns as Hew enshrouds Lynol in a cloak of flames.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Rajel stands up.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Runb flies west.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Rajel misses you with her pierce.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+<br />
+Ender steps aside as Chalupe attempts a bash, stumbles, and falls flat on his face<br />
+.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; bash lexi<br />
+<br />
+Ender says 'ok die'<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; You crash into Lexi in a b<br />
+one crunching bash, sending him sprawling to the ground.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Padme stands up.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+Ender utters some strange words.<br />
+Lynol is shredded by shards of ice.<br />
+Chalupe is shredded by shards of ice.<br />
+Rajel is shredded by shards of ice.<br />
+Lexi is shredded by shards of ice.<br />
+An invisible stalker is shredded by shards of ice.<br />
+Lex is shredded by shards of ice.<br />
+Sagara is shredded by shards of ice.<br />
+<br />
+580H 36V 13631884X 32C [Me:Good] [Lynol:Good] Exits:SW&gt; <br />
+An invisible stalker attempts to unbalance Ender, but he quickly avoids it.<br />
+Sagara bruises Ender with his slash.<br />
+Sagara is chilled, as he swings at Ender.<br />
+Lex misses Ender with his hit.<br />
+An invisible stalker slowly fades into existence.<br />
+An invisible stalker bruises Ender with its hit.<br />
+An invisible stalker is chilled, as it swings at Ender.<br />
+Lexi slowly fades into existence.<br />
+Lexi comes out of hiding.<br />
+Lexi bruises YOU with his hit.<br />
+Chalupe bruises Ender with his cleave.<br />
+Chalupe is chilled, as he swings at Ender.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+Rajel bruises YOU with her pierce.<br />
+Khan obliterates Lynol with his stab.<br />
+Padme annihilates Lynol with her stab.<br />
+You massacre Lynol with your slash.<br />
+Padme crashes into Lynol in a thundering collision, knocking him to the ground!<br />
+<br />
+578H 36V 13631884X 32C [Me:Good] [Lynol:Bad] Exits:SW&gt; <br />
+Lexi steps aside as Khan attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+578H 36V 13631884X 32C [Me:Good] [Lynol:Bad] Exits:SW&gt; <br />
+Hew utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+578H 36V 13631884X 32C [Me:Good] [Lynol:Bad] Exits:SW&gt; <br />
+Lex focuses harshly on Ender and utters some strange words.<br />
+The sound of bones cracking echoes as Lex's force bolt slams into Ender.<br />
+<br />
+578H 36V 13631884X 32C [Me:Good] [Lynol:Bad] Exits:SW&gt; <br />
+Lynol screams as a swarm of insects engulfs him.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Rajel seems unaffected by Hew's swarm of insects.<br />
+Lexi seems unaffected by Hew's swarm of insects.<br />
+An invisible stalker screams as a swarm of insects engulfs it.<br />
+Lex seems unaffected by Hew's swarm of insects.<br />
+Sagara seems unaffected by Hew's swarm of insects.<br />
+Hew slashes Lynol extremely hard.<br />
+Sagara bruises Ender with his slash.<br />
+Sagara is chilled, as he swings at Ender.<br />
+An invisible stalker bruises Ender with its hit.<br />
+An invisible stalker is chilled, as it swings at Ender.<br />
+Lexi hits YOU.<br />
+Chalupe cleaves Ender hard.<br />
+Chalupe is chilled, as he swings at Ender.<br />
+Ender pierces Chalupe extremely hard.<br />
+Rajel pierces YOU hard.<br />
+Khan annihilates Lynol with his stab.<br />
+Padme annihilates Lynol with her stab.<br />
+You massacre Lynol with your slash.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+Ender utters some strange words.<br />
+Lynol is shredded by shards of ice.<br />
+Chalupe is shredded by shards of ice.<br />
+Rajel is shredded by shards of ice.<br />
+Lexi is shredded by shards of ice.<br />
+An invisible stalker is torn to pieces by hundreds of shards of ice.<br />
+You receive 0 experience.<br />
+An invisible stalker is dead! R.I.P.<br />
+Lex is shredded by shards of ice.<br />
+Sagara is shredded by shards of ice.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+The death cry of an invisible stalker echoes from somewhere nearby...<br />
+An invisible stalker stops following Lex.<br />
+An invisible stalker transcends this world and enters another plane.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+Hew utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+Chalupe stands up.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+Hew steps aside as Chalupe attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; bash lexi<br />
+You crash into Lexi in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+<br />
+564H 36V 13631884X 32C [Me:Good] [Lynol:Awful] Exits:SW&gt; <br />
+Lynol screams as a swarm of insects engulfs him.<br />
+Chalupe seems unaffected by Hew's swarm of insects.<br />
+Rajel seems unaffected by Hew's swarm of insects.<br />
+Lexi screams as a swarm of insects engulfs him.<br />
+Lex screams as a swarm of insects engulfs him.<br />
+Sagara seems unaffected by Hew's swarm of insects.<br />
+A horrible scream escapes Lynol's lips as thousands of swarming insects<br />
+suck his life away.<br />
+You receive 0 experience.<br />
+Lynol is dead! R.I.P.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Rajel screams as a swarm of insects engulfs her.<br />
+Lexi seems unaffected by Hew's swarm of insects.<br />
+Lex screams as a swarm of insects engulfs him.<br />
+Sagara seems unaffected by Hew's swarm of insects.<br />
+Sagara slashes Ender hard.<br />
+Sagara is chilled, as he swings at Ender.<br />
+Lex hits Ender with a black bolt.<br />
+Ender cries out in pain.<br />
+Lexi hits YOU.<br />
+Chalupe cleaves Ender very hard.<br />
+Chalupe is chilled, as he swings at Ender.<br />
+Rajel misses you with her pierce.<br />
+The death cry of Lynol echoes from somewhere nearby...<br />
+Lynol stops following Lexi.<br />
+You direct your attention to Lexi.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:Fair] Exits:SW&gt; <br />
+Lex gets a very large pile of coins from the corpse of Lynol.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:Fair] Exits:SW&gt; <br />
+Padme slowly fades into existence.<br />
+Padme crashes into Lexi in a thundering collision, knocking him to the ground!<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:Bad] Exits:SW&gt; <br />
+Khan stands up.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:Bad] Exits:SW&gt; <br />
+Khan crashes into Lexi in a thundering collision, knocking him to the ground!<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; <br />
+Lex gets a mystic bow from the corpse of Lynol.<br />
+Lex gets an icy white bracelet from the corpse of Lynol.<br />
+Lex is zapped by a sterling bracer and instantly drops it.<br />
+Lex gets a thin red belt from the corpse of Lynol.<br />
+Lex gets a small green quiver from the corpse of Lynol.<br />
+Lex gets a pair of thick green leather armbands from the corpse of Lynol.<br />
+Lex gets a pair of woodsman's gloves from the corpse of Lynol.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; <br />
+Rajel utters some strange words.<br />
+Rajel turns into smoke and is blown away.<br />
+Ender utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; <br />
+Hew utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; <br />
+Sagara stands up.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; <br />
+Lex panics, and attempts to flee.<br />
+Lex flies south.<br />
+<br />
+559H 36V 13631884X 32C [Me:Good] [Lexi:V.Bad] Exits:SW&gt; bash lex<br />
+<br />
+Chalupe seems unaffected by Hew's swarm of insects.<br />
+Lexi screams as a swarm of insects engulfs him.<br />
+Sagara screams as a swarm of insects engulfs him.<br />
+Chalupe seems unaffected by Ender's swarm of insects.<br />
+Lexi screams as a swarm of insects engulfs him.<br />
+Sagara seems unaffected by Ender's swarm of insects.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Lexi seems unaffected by Hew's swarm of insects.<br />
+Sagara screams as a swarm of insects engulfs him.<br />
+Chalupe seems unaffected by Hew's swarm of insects.<br />
+Lexi screams as a swarm of insects engulfs him.<br />
+Sagara seems unaffected by Hew's swarm of insects.<br />
+Hew slashes Chalupe very hard.<br />
+Khan annihilates Lexi with his stab.<br />
+Padme annihilates Lexi with her stab.<br />
+You receive 0 experience.<br />
+Lexi is dead! R.I.P.<br />
+Sagara slashes Ender hard.<br />
+Sagara is chilled, as he swings at Ender.<br />
+Chalupe cleaves Ender very hard.<br />
+Chalupe is chilled, as he swings at Ender.<br />
+The death cry of Lexi echoes from somewhere nearby...<br />
+Lexi sinks gently to the ground.<br />
+Lexi stops following Sagara.<br />
+Runb stops following Lexi.<br />
+Runb now follows Sagara.<br />
+Rajel stops following Lexi.<br />
+Rajel now follows Sagara.<br />
+Chalupe stops following Lexi.<br />
+Chalupe now follows Sagara.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; <br />
+Sagara gets a very large pile of coins from the corpse of Lexi.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; <br />
+Sagara sinks gently to the ground.<br />
+Sagara stops using a runed crimson skull staff.<br />
+Sagara grabs a glowing scroll of recall.<br />
+Sagara recites a glowing scroll of recall.<br />
+Sagara disappears.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; <br />
+Ender utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; l<br />
+<br />
+Hew utters some strange words.<br />
+Chalupe is shredded by shards of ice.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; <br />
+Chalupe stands up.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; Chalupe seems unaffected by Ender's swarm of inse<br />
+cts.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Chalupe seems unaffected by Ender's swarm of insects.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Chalupe screams as a swarm of insects engulfs him.<br />
+Chalupe cleaves Ender very hard.<br />
+Chalupe is chilled, as he swings at Ender.<br />
+You couldn't find what you were looking for.<br />
+<br />
+559H 36V 13631884X 32C Exits:SW&gt; <br />
+Chalupe sinks gently to the ground.<br />
+Chalupe stops using an ancient sphere.<br />
+Chalupe grabs a glowing scroll of recall.<br />
+Chalupe recites a glowing scroll of recall.<br />
+Chalupe disappears.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='158'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=158">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="158">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

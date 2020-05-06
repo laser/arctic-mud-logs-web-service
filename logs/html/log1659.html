@@ -1,0 +1,764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1659-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1659'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Pius piously died</font></b>
+<p>
+POV: 
+Xanatos<p>
+Log Rating:
+1.2941<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+This guy randomed a BSP, then returns gear bc he said he didnt know he was clanned, then the next day kills a titled BSP. I find how he died in the end of the log pretty fun :)</i>
+<p>
+<p>
+
+431H 165V 1X 0C Mem:3 Exits:NS&gt;<br />
+c 'l o' bone.helm<br />
+You utter the words, 'locate object'<br />
+A bone helm equipped by Pius.<br />
+<br />
+431H 165V 1X 0C Mem:4 Exits:NS&gt;<br />
+<br />
+Through your wizard's eye: Pius has arrived from the south exit.<br />
+gt WIZARD EYE: Pius has arrived from the south exit.<br />
+<br />
+431H 165V 1X 0C Mem:4 Exits:NS&gt;<br />
+You tell your group 'WIZARD EYE: Pius has arrived from the south exit.'<br />
+<br />
+431H 165V 1X 0C Mem:4 Exits:NS&gt;<br />
+n<br />
+River of The Dead<br />
+<br />
+431H 163V 1X 0C Mem:4 Exits:NS&gt;<br />
+n<br />
+River of The Dead<br />
+<br />
+431H 161V 1X 0C Mem:4 Exits:NESW&gt;<br />
+e<br />
+e<br />
+River of The Dead<br />
+<br />
+431H 159V 1X 0C Mem:4 Exits:EW&gt;<br />
+River of The Dead<br />
+<br />
+431H 157V 1X 0C Mem:4 Exits:EW&gt;<br />
+e<br />
+River of The Dead<br />
+The corpse of a wizard eye is lying here.<br />
+Pius is standing here. (flying)<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+order all.gargoyle kill pius<br />
+c 'hold person' pius<br />
+A gargoyle spins and tries to kick Pius, but Pius dodges out of the way.<br />
+You issue the order 'kill pius'.<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+<br />
+Susie slowly fades into existence.<br />
+Susie crashes into Pius in a thundering collision, knocking him to the ground!<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+<br />
+Susie annihilates Pius with her drain.<br />
+A gargoyle misses Pius with its claw.<br />
+A gargoyle misses Pius with its claw.<br />
+Pius massacres a gargoyle with his pierce.<br />
+Pius pierces a gargoyle extremely hard.<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+<br />
+A gargoyle spins and tries to kick Pius, but Pius dodges out of the way.<br />
+<br />
+431H 155V 1X 0C Mem:4 Exits:NESW&gt;<br />
+c 'force bolt' pius<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pius.<br />
+<br />
+431H 155V 1X 0C Mem:5 Exits:NESW&gt;<br />
+c 'force bolt' pius<br />
+<br />
+Susie massacres Pius with her drain.<br />
+A gargoyle misses Pius with its claw.<br />
+A gargoyle claws Pius extremely hard.<br />
+Pius massacres a gargoyle with his pierce.<br />
+Pius pierces a gargoyle extremely hard.<br />
+<br />
+431H 155V 1X 0C Mem:5 Exits:NESW&gt;<br />
+<br />
+Simone focuses harshly on Pius and utters some strange words.<br />
+Simone slowly fades into existence.<br />
+Huge flames burn Pius from above.<br />
+<br />
+431H 155V 1X 0C Mem:5 Exits:NESW&gt;<br />
+c 'force bolt' pius<br />
+<br />
+Pius steps aside as Susie attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+431H 155V 1X 0C Mem:5 Exits:NESW&gt;<br />
+Susie misses Pius with her drain.<br />
+A gargoyle misses Pius with its claw.<br />
+A gargoyle claws Pius extremely hard.<br />
+Pius massacres a gargoyle with his pierce.<br />
+Pius massacres a gargoyle with his pierce.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pius.<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+<br />
+A gargoyle delivers a vicious kick to Pius's face. Blood flies as his head snaps back.<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+c 'force bolt' pius<br />
+<br />
+Simone focuses harshly on Pius and utters some strange words.<br />
+Simone slowly fades into existence.<br />
+Huge flames burn Pius from above.<br />
+Pius stops using a dark red dagger.<br />
+Pius grabs a scroll of recall.<br />
+Pius recites a scroll of recall.<br />
+Pius disappears.<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+c 'relocate' pius<br />
+<br />
+Simone says 'fuck i didnt mem'<br />
+<br />
+431H 155V 1X 0C Mem:6 Exits:NESW&gt;<br />
+You utter the words, 'relocate'<br />
+It is pitch black.<br />
+Pius is sitting here. (flying) (invisible)<br />
+<br />
+431H 55V 1X 0C Mem:7 Exits:(N)ES&gt;<br />
+c 'force bolt' pius<br />
+<br />
+Pius starts holding something.<br />
+<br />
+431H 55V 1X 0C Mem:7 Exits:(N)ES&gt;<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pius.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:9 Exits:(N)ES&gt;<br />
+c 'force bolt' pius<br />
+<br />
+You miss Pius with your pierce.<br />
+Pius slowly fades into existence.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+Pius misses you and destroys an image.<br />
+Pius misses you and destroys an image.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:9 Exits:(N)ES&gt;<br />
+<br />
+Pius stops using something.<br />
+Pius grabs something.<br />
+Pius recites something.<br />
+Pius disappears.<br />
+<br />
+431H 55V 1X 0C Mem:9 Exits:(N)ES&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 55V 1X 0C Mem:9 Exits:(N)ES&gt;<br />
+c 'relocate' pius<br />
+You utter the words, 'relocate'<br />
+It is pitch black.<br />
+Pius is sitting here. (flying) (invisible)<br />
+<br />
+431H 55V 1X 0C Mem:10 Exits:EW&gt;<br />
+c 'force bolt' pius<br />
+c 'lightning bolt' pius<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pius.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:11 Exits:EW&gt;<br />
+<br />
+You miss Pius with your pierce.<br />
+Pius slowly fades into existence.<br />
+Pius misses you and destroys an image.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:11 Exits:EW&gt;<br />
+<br />
+Susie tells your group '10 SEC TO TICK'<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:11 Exits:EW&gt;<br />
+<br />
+Pius stands up.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Awful] Mem:11 Exits:EW&gt;<br />
+You utter the words, 'lightning bolt'<br />
+Your lightning bolt shatters Pius to pieces.<br />
+You receive 0 experience.<br />
+get pile.coins corpse<br />
+Pius is dead! R.I.P.<br />
+<br />
+431H 55V 1X 0C [Me:Perfect] [Pius:Dying] Mem:11 Exits:EW&gt;<br />
+<br />
+The death cry of Pius echoes from somewhere nearby...<br />
+<br />
+431H 55V 1X 0C Mem:11 Exits:EW&gt;<br />
+TICK IN 5 SECONDS.<br />
+gt dead<br />
+c 'c l'<br />
+get all corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+431H 55V 1X 0C Mem:11 Exits:EW&gt;<br />
+You tell your group 'dead'<br />
+<br />
+431H 55V 1X 0C Mem:11 Exits:EW&gt;<br />
+<br />
+Drimel flies in from the west.<br />
+<br />
+431H 55V 1X 0C Mem:11 Exits:EW&gt;<br />
+You utter the words, 'continual light'<br />
+You make a sweeping gesture, creating a small ball of light.<br />
+The ball of light begins following you, hovering nearby.<br />
+<br />
+431H 55V 1X 0C Mem:12 Exits:EW&gt;<br />
+<br />
+Susie tells your group 'sux missed 2nd bash'<br />
+<br />
+431H 55V 1X 0C Mem:12 Exits:EW&gt;<br />
+<br />
+Drimel flies east.<br />
+<br />
+431H 55V 1X 0C Mem:12 Exits:EW&gt;<br />
+<br />
+Simone tells your group 'you killed?'<br />
+<br />
+431H 55V 1X 0C Mem:12 Exits:EW&gt;<br />
+<br />
+Susie tells your group 'kewl!'<br />
+<br />
+431H 55V 1X 0C Mem:12 Exits:EW&gt;<br />
+<br />
+You sense the protective magic about you fade away.<br />
+<br />
+431H 122V 1X 0C Mem:11 Exits:EW&gt;<br />
+You get a shard of bone from the corpse of Pius.<br />
+You get an armaboro hide wristguard from the corpse of Pius.<br />
+You get an armaboro hide wristguard from the corpse of Pius.<br />
+You get a dwarven beltpouch from the corpse of Pius.<br />
+You get an impossibly dark shroud from the corpse of Pius.<br />
+You get some armaboro hide vambraces from the corpse of Pius.<br />
+Gauntlets : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Greaves : You can't carry that much weight.<br />
+You get a bone helm from the corpse of Pius.<br />
+Cuirass : You can't carry that much weight.<br />
+Gorget : You can't carry that much weight.<br />
+Gorget : You can't carry that much weight.<br />
+You get the seal of Newport from the corpse of Pius.<br />
+You get a ring of thieves from the corpse of Pius.<br />
+You get a pile of coins from the corpse of Pius.<br />
+There were 99 coins.<br />
+split 99<br />
+Dagger : You can't carry that much weight.<br />
+Gloves : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Girdle : You can't carry that much weight.<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+You divide 99 coins equally among the group members present.<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'str' me<br />
+You utter the words, 'strength'<br />
+You feel stronger.<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+<br />
+Pius arrives from the west.<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'force bolt' pius<br />
+<br />
+Pius leaves west.<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'lightning bolt' pius<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'lightning bolt' pius<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'lightning bolt' pius<br />
+Who should the spell be cast upon?<br />
+<br />
+431H 122V 1X 99C Mem:11 Exits:EW&gt;<br />
+c 'monster summoning'<br />
+You utter the words, 'monster summoning'<br />
+You wave your hand, and nothing happens.<br />
+<br />
+431H 122V 1X 99C Mem:12 Exits:EW&gt;<br />
+c 'conjure elemental'<br />
+gt i cant loot<br />
+You utter the words, 'conjure elemental'<br />
+You gesture, and a cloud of smoke appears!<br />
+Out of the smoke, a fire salamander emerges.<br />
+A fire salamander starts following you.<br />
+<br />
+431H 122V 1X 99C Mem:13 Exits:EW&gt;<br />
+c 'f d'<br />
+o fire get all pius<br />
+You tell your group 'i cant loot'<br />
+<br />
+431H 122V 1X 99C Mem:13 Exits:EW&gt;<br />
+<br />
+Simone tells your group 'pkd' it pablo?'<br />
+<br />
+431H 122V 1X 99C Mem:13 Exits:EW&gt;<br />
+l<br />
+<br />
+Simone tells your group 'where'<br />
+<br />
+431H 122V 1X 99C Mem:13 Exits:EW&gt;<br />
+You utter the words, 'floating disc'<br />
+You conjure a floating disc of magical energy.<br />
+<br />
+431H 122V 1X 99C Mem:14 Exits:EW&gt;<br />
+a fire salamander gets some armaboro hide gauntlets from the corpse of Pius.<br />
+a fire salamander gets some armaboro hide boots from the corpse of Pius.<br />
+a fire salamander gets some armaboro hide greaves from the corpse of Pius.<br />
+a fire salamander gets an armaboro hide cuirass from the corpse of Pius.<br />
+a fire salamander gets an armaboro hide gorget from the corpse of Pius.<br />
+a fire salamander gets an armaboro hide gorget from the corpse of Pius.<br />
+A fire salamander is zapped by a dark red dagger and instantly drops it.<br />
+a fire salamander gets a pair of green swordsman gloves from the corpse of Pius.<br />
+a fire salamander gets a pair of platinum gilt boots from the corpse of Pius.<br />
+a fire salamander gets a girdle of storm giant strength from the corpse of Pius.<br />
+<br />
+431H 122V 1X 99C Mem:14 Exits:EW&gt;<br />
+A Cobbled Lane<br />
+A red dagger lies here.<br />
+A murky black disc floats here.<br />
+The corpse of Pius is lying here.<br />
+Exuding heat, a salamander slithers around here.<br />
+<br />
+431H 122V 1X 99C Mem:14 Exits:EW&gt;<br />
+exa pius<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a crimson dust covered chest
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1659'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1659">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1659">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

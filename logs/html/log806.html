@@ -1,0 +1,974 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 806-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='806'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Dhaliwal + Mookster RIP</font></b>
+<p>
+POV: 
+Scelesta<p>
+Log Rating:
+0.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Wilds come out of the inn and die. Miroku leads me around aimlessly(never following him again!).</i>
+<p>
+<p>
+
+Miroku tells your group 'come'<br />
+<br />
+294H 173V 29992991X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; <br />
+Manny tells your group 'fighting what'<br />
+<br />
+294H 173V 29992991X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; grou<br />
+Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Dain             perfect   rested    standing   Y   Y    N     0    0<br />
+  Waaz             perfect   rested    standing   Y   Y    N     1    2<br />
+  Miroku           fair      rested    standing   Y   N    N     1    4<br />
+  Faelar           good      rested    fighting   Y   N    N     0    0<br />
+  Scelesta         perfect   rested    fighting   Y   N    N     1    6<br />
+  Manny            perfect   rested    standing   Y   N    N     0    1<br />
+  Orbby            perfect   rested    standing   Y   Y    N     1    0<br />
+<br />
+294H 173V 29992991X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; relo miroku<br />
+You can't remember how to cast that spell!<br />
+<br />
+294H 173V 29992991X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; <br />
+A prostitute misses you with her hit.<br />
+A prostitute misses you with her hit.<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; gt no puffs<br />
+You tell your group 'no puffs'<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; grou<br />
+Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Dain             perfect   rested    standing   Y   Y    N     0    0<br />
+  Waaz             perfect   rested    standing   Y   Y    N     1    2<br />
+  Miroku           fair      rested    standing   Y   N    N     1    4<br />
+  Faelar           good      rested    fighting   Y   N    N     0    0<br />
+  Scelesta         perfect   rested    fighting   Y   N    N     1    6<br />
+  Manny            perfect   rested    standing   Y   N    N     0    1<br />
+  Orbby            perfect   rested    standing   Y   Y    N     1    0<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; <br />
+Miroku tells your group 'square'<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; <br />
+Miroku tells your group 'square'<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; grou<br />
+Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Dain             perfect   rested    standing   Y   Y    N     0    0<br />
+  Waaz             perfect   rested    standing   Y   Y    N     1    2<br />
+  Miroku           fair      rested    standing   Y   N    N     1    4<br />
+  Faelar           good      rested    fighting   Y   N    N     0    0<br />
+  Scelesta         perfect   rested    fighting   Y   N    N     1    6<br />
+  Manny            perfect   rested    standing   Y   N    N     0    1<br />
+  Orbby            perfect   rested    standing   Y   Y    N     1    0<br />
+<br />
+294H 173V 29992929X 232C [Scelesta:Perfect] [a prostitute:V.Bad] Mem:6 Exits:SU&gt; <br />
+A prostitute misses you with her hit.<br />
+You miss a prostitute with your stab.<br />
+A prostitute misses you with her hit.<br />
+<br />
+294H 173V 29992805X 232C [Scelesta:Perfect] [a prostitute:Awful] Mem:6 Exits:SU&gt; <br />
+Waaz tells your group 'fighting whaty?'<br />
+<br />
+294H 173V 29992805X 232C [Scelesta:Perfect] [a prostitute:Awful] Mem:6 Exits:SU&gt; c 'tele' petrin<br />
+You utter the words, 'teleport'<br />
+You disappear in a puff of smoke!<br />
+Guild Road<br />
+    The road leads east and west between the buildings and halls. To the<br />
+north is the rangers' guild, while to the south is a large hall occupied by<br />
+druids.<br />
+<br />
+294H 173V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Waaz flies in from the west.<br />
+<br />
+294H 173V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Waaz flies east.<br />
+<br />
+294H 173V 29992805X 232C Mem:7 Exits:NESW&gt; sca<br />
+e<br />
+e<br />
+e<br />
+e<br />
+s<br />
+s<br />
+<br />
+Miroku tells your group 'mookster dhaliwal'<br />
+<br />
+294H 173V 29992805X 232C Mem:7 Exits:NESW&gt; Looking north:<br />
+Green-clad rangers string their bows for a hunt.<br />
+A solemn looking ranger stands here, protecting patrons of the guild.<br />
+The master ranger is kneeling here, examining tracks of a long-gone apprentice.<br />
+Looking east:<br />
+Bulky fighters clog the road.<br />
+Looking south:<br />
+A mongrel flees from the door as his skin turns stone hard.<br />
+A large draconian follows the patrol leader about the city.<br />
+A large draconian follows the patrol leader about the city.<br />
+A slender draconian patrol leader marches about the city here.<br />
+A massive black panther is here, tail swishing from side to side.<br />
+The master druid stands here, looking very somber.<br />
+Looking west:<br />
+Various colored robes glide along the road.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+294H 173V 29992805X 232C Mem:7 Exits:NESW&gt; Guild Road<br />
+    The roads leads east and west between the buildings and halls. To the<br />
+north is the warriors' arena, where sounds of clashing weapons can be<br />
+heard. South of you, followers of Takhisis dressed in dark metal armor and<br />
+wielding dangerous long swords train against one another. Sparks fly from<br />
+bare metal in both directions.<br />
+<br />
+294H 172V 29992805X 232C Mem:7 Exits:NESW&gt; c 'h p' mookster<br />
+Guild Road<br />
+    The road leads both east and west, reaching the famed guild halls and<br />
+also Traders Street. Many young guild members trudge miserably back to<br />
+town.<br />
+A Balifor watchman watches for trouble in the city.<br />
+A wandering preacher stands here, trying to convert the people to his faith.<br />
+<br />
+294H 171V 29992805X 232C Mem:7 Exits:EW&gt; Traders Street<br />
+    The narrow trading street continues to the north, where it leads to the<br />
+docks that provide the town with its revenue. The cry of seabirds is<br />
+carried on the sea breeze. The occasional flash of white in the sky<br />
+confirms the presence of gulls. To the west lies Guild Road, where<br />
+adventurers of many guilds can find training in their arts.<br />
+<br />
+294H 170V 29992805X 232C Mem:7 Exits:NSW&gt; Alas, you cannot go that way...<br />
+<br />
+294H 170V 29992805X 232C Mem:7 Exits:NSW&gt; Traders Street<br />
+    The narrow trading street continues to the north, where it leads to the<br />
+docks that provide the town with its revenue. The cry of seabirds is<br />
+carried on the sea breeze, the occasional flash of white in the sky<br />
+confirms this. The smells and sounds of many horses comes from the east,<br />
+where some wooden stables have been built, while to the west is a<br />
+warehouse.<br />
+Waaz the Male Human is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A feral cat parades her territory and sniffs your leg.<br />
+A feral cat runs in circles chasing its tail.<br />
+<br />
+294H 169V 29992805X 232C Mem:7 Exits:NESW&gt; A feral cat rubs up against your leg.<br />
+Traders Square<br />
+    This is the centre and heart of Port Balifor. All around you tradesmen<br />
+banter for your custom. Their many bright and varied goods hang from wooden<br />
+stalls and mobile barrows. The smell of fresh produce fills the air,<br />
+sea-salt sweet. The hustle and bustle of people coming and going distort<br />
+your view of the many fine houses that occupy the streets that lead away<br />
+from the centre in all directions. A sign stands in the centre of the<br />
+cobbled square.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Manny the Male Wild Elf is standing here, fighting Mookster. (flying)<br />
+A feral cat parades her territory and sniffs your leg.<br />
+Dhaliwal the Dark is standing here, fighting Faelar. (flying)<br />
+. . . is surrounded by 2 duplicate images.<br />
+Dain Ironfoot, Cold Brother of the Trio is sitting here, fighting Mookster. (flying)<br />
+. . . has a tough exterior.<br />
+Faelar Dawn, Bloody Sea Elf is sitting here, fighting Dhaliwal. (flying)<br />
+Mookster the Warmonger is sitting here, fighting Dain. (flying)<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; You can't remember how to cast that spell!<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+A feral cat rubs up against Miroku's leg.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Manny massacres Mookster with his stab.<br />
+Dhaliwal misses Faelar with her claw.<br />
+Faelar misses Dhaliwal and destroys an image instead.<br />
+Mookster slashes Dain very hard.<br />
+Mookster is chilled, as he swings at Dain.<br />
+Dain bludgeons Mookster extremely hard.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Waaz flies in from the north.<br />
+A feral cat purrs contentedly.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; c 'f b' dhaliwal<br />
+<br />
+Waaz focuses harshly on Dhaliwal and utters the words, 'lightning bolt'.<br />
+Waaz slowly fades into existence.<br />
+Dhaliwal wavers under the impact of the lightning bolt sent by Waaz.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; You can't remember how to cast that spell!<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Konix arrives from the north.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Konix leaves east.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; c 'l b' hdaliwal<br />
+<br />
+A feral cat climbs in Dain's lap.<br />
+Dain stands up.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Faelar stands up.<br />
+Dain focuses harshly on Mookster and utters some strange words.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Manny stabs Mookster extremely hard.<br />
+Dhaliwal misses Faelar with her claw.<br />
+Faelar slashes Dhaliwal hard.<br />
+Mookster slashes Dain extremely hard.<br />
+Mookster is chilled, as he swings at Dain.<br />
+Faelar tries to bash Dhaliwal, but he passes right through her image and falls.<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Booya shouts 'emerald tablet engraved with runes for sale. bid starts at 5k '<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; <br />
+Manny crashes into Dhaliwal in a thundering collision, knocking her to the ground!<br />
+<br />
+294H 168V 29992805X 232C Mem:7 Exits:NESW&gt; c 'l b' dhaliwal<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Dhaliwal with full impact.<br />
+<br />
+294H 168V 29992805X 232C Mem:8 Exits:NESW&gt; c 'l b' dhaliwal<br />
+<br />
+Manny massacres Mookster with his stab.<br />
+Dhaliwal misses Faelar with her claw.<br />
+Faelar slashes Dhaliwal extremely hard.<br />
+Mookster slashes Dain extremely hard.<br />
+Mookster is chilled, as he swings at Dain.<br />
+Dain bludgeons Mookster extremely hard.<br />
+Dain utters some strange words.<br />
+A feral cat is torn to pieces by hundreds of shards of ice.<br />
+You receive 7 experience.<br />
+A feral cat is dead! R.I.P.<br />
+Dhaliwal is shredded by shards of ice.<br />
+Mookster is shredded by shards of ice.<br />
+Konix arrives from the east.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+The death cry of a feral cat echoes from somewhere nearby...<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Konix leaves north.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Waaz focuses harshly on Dhaliwal and utters the words, 'lightning bolt'.<br />
+Dhaliwal receives the full blast of a lightning bolt from Waaz ... and is no more.<br />
+You receive 0 experience.<br />
+Dhaliwal is dead! R.I.P.<br />
+Demaleon flies in from the east.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+The death cry of Dhaliwal echoes from somewhere nearby...<br />
+Dhaliwal sinks gently to the ground.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Miroku gets a dragon's selfstone from the corpse of Dhaliwal.<br />
+Miroku gets a set of long obsidian fingernails from the corpse of Dhaliwal.<br />
+Miroku gets an onyx bracelet from the corpse of Dhaliwal.<br />
+Miroku gets a leather traveling pack from the corpse of Dhaliwal.<br />
+Miroku gets a black robe of the Thorn from the corpse of Dhaliwal.<br />
+Miroku gets a pair of pitch black gloves from the corpse of Dhaliwal.<br />
+Miroku gets a pair of dark elven skin boots from the corpse of Dhaliwal.<br />
+Miroku gets some flowing black armor from the corpse of Dhaliwal.<br />
+Miroku gets a skull chain from the corpse of Dhaliwal.<br />
+Miroku gets a skull chain from the corpse of Dhaliwal.<br />
+Miroku gets an ancient jade ring from the corpse of Dhaliwal.<br />
+Miroku gets a glass ring filled with mercury from the corpse of Dhaliwal.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Darva arrives from the east.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; get all dhaliwal<br />
+You get a large waterskin from the corpse of Dhaliwal.<br />
+You get a colorful mushroom from the corpse of Dhaliwal.<br />
+You get a colorful mushroom from the corpse of Dhaliwal.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Manny massacres Mookster with his stab.<br />
+Mookster slashes Dain extremely hard.<br />
+Mookster is chilled, as he swings at Dain.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Faelar stands up.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Mookster grabs a scroll of recall.<br />
+Mookster recites a scroll of recall.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; c 'l b' darva<br />
+<br />
+Dain utters some strange words.<br />
+Darva is shredded by shards of ice.<br />
+Demaleon is shredded by shards of ice.<br />
+Mookster is shredded by shards of ice.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Darva with full impact.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Manny crashes into Demaleon in a thundering collision, knocking him to the ground!<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Darva panics, and attempts to flee.<br />
+Darva leaves south.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; c 'l b' darva<br />
+<br />
+Waaz gets a small pile of coins from the corpse of a feral cat.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Mookster steps aside as Faelar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+294H 168V 29992798X 232C Mem:8 Exits:NESW&gt; <br />
+Miroku flies south.<br />
+You follow Miroku south.<br />
+Traders Street<br />
+    This narrow road runs north-south through the port. Cobbles have been<br />
+hastily laid in the dirt as befits a prosperous town. Narrow but tall<br />
+houses and buildings loom above you, cutting out some of the daylight that<br />
+shows the street traders in their full colours. Small children play in the<br />
+dirt and down small alleys that lead to places of ill-repute. To the north<br />
+lies the main trading square, much banter and joyous laughter are carried<br />
+on the fresh sea breeze.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+294H 167V 29992798X 232C Mem:8 Exits:NS&gt; c 'l b' demaleon<br />
+<br />
+Miroku flies north.<br />
+You follow Miroku north.<br />
+Traders Square<br />
+    This is the centre and heart of Port Balifor. All around you tradesmen<br />
+banter for your custom. Their many bright and varied goods hang from wooden<br />
+stalls and mobile barrows. The smell of fresh produce fills the air,<br />
+sea-salt sweet. The hustle and bustle of people coming and going distort<br />
+your view of the many fine houses that occupy the streets that lead away<br />
+from the centre in all directions. A sign stands in the centre of the<br />
+cobbled square.<br />
+The corpse of Dhaliwal is lying here.<br />
+The corpse of a feral cat is lying here.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Demaleon the Harbinger of Doom is sitting here, fighting Dain. (flying)<br />
+Waaz the Male Human is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Manny the Male Wild Elf is standing here, fighting Mookster. (flying)<br />
+Dain Ironfoot, Cold Brother of the Trio is standing here, fighting Mookster. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Faelar Dawn, Bloody Sea Elf is sitting here, fighting Mookster. (flying)<br />
+Mookster the Warmonger is sitting here, fighting Dain. (flying)<br />
+<br />
+294H 166V 29992798X 232C Mem:8 Exits:NESW&gt; Who should the spell be cast upon?<br />
+<br />
+294H 166V 29992798X 232C Mem:8 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Demaleon with full impact.<br />
+<br />
+294H 166V 29992798X 232C Mem:9 Exits:NESW&gt; <br />
+Waaz flies south.<br />
+Miroku flies south.<br />
+You follow Miroku south.<br />
+Traders Street<br />
+    This narrow road runs north-south through the port. Cobbles have been<br />
+hastily laid in the dirt as befits a prosperous town. Narrow but tall<br />
+houses and buildings loom above you, cutting out some of the daylight that<br />
+shows the street traders in their full colours. Small children play in the<br />
+dirt and down small alleys that lead to places of ill-repute. To the north<br />
+lies the main trading square, much banter and joyous laughter are carried<br />
+on the fresh sea breeze.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Waaz the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+294H 165V 29992798X 232C Mem:9 Exits:NS&gt; <br />
+There is lightning in the sky.<br />
+<br />
+294H 165V 29992798X 232C Mem:9 Exits:NS&gt; <br />
+Waaz flies south.<br />
+Miroku flies south.<br />
+You follow Miroku south.<br />
+Traders Street<br />
+    This narrow road runs north-south through the port. Cobbles have been<br />
+hastily laid in the dirt as befits a prosperous town. Narrow but tall<br />
+houses and buildings loom above you, cutting out some of the daylight that<br />
+shows the street traders in their full colours. Small children play in the<br />
+dirt and down small alleys that lead to places of ill-repute. To the north<br />
+lies the main trading square, much banter and joyous laughter are carried<br />
+on the fresh sea breeze.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Waaz the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+A peasant girl smiles at you and tries to sell you some fruit.<br />
+<br />
+294H 164V 29992798X 232C Mem:9 Exits:NS&gt; n<br />
+<br />
+Miroku flies south.<br />
+You follow Miroku south.<br />
+The South Gate of Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the south gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea of Balifor is reputedly vicious for the<br />
+inexperienced, and this town is defended well to protect it from danger.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Darva the Hand is standing here.<br />
+A bored watchman guards the southern gates of Balifor.<br />
+A bored watchman guards the southern gates of Balifor.<br />
+<br />
+294H 163V 29992798X 232C Mem:9 Exits:NS&gt; c 'l b' demaleon<br />
+<br />
+Miroku flies north.<br />
+You follow Miroku north.<br />
+Traders Street<br />
+    This narrow road runs north-south through the port. Cobbles have been<br />
+hastily laid in the dirt as befits a prosperous town. Narrow but tall<br />
+houses and buildings loom above you, cutting out some of the daylight that<br />
+shows the street traders in their full colours. Small children play in the<br />
+dirt and down small alleys that lead to places of ill-repute. To the north<br />
+lies the main trading square, much banter and joyous laughter are carried<br />
+on the fresh sea breeze.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Waaz the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A peasant girl smiles at you and tries to sell you some fruit.<br />
+<br />
+294H 162V 29992798X 232C Mem:9 Exits:NS&gt; <br />
+Miroku flies north.<br />
+You follow Miroku north.<br />
+Traders Street<br />
+    This narrow road runs north-south through the port. Cobbles have been<br />
+hastily laid in the dirt as befits a prosperous town. Narrow but tall<br />
+houses and buildings loom above you, cutting out some of the daylight that<br />
+shows the street traders in their full colours. Small children play in the<br />
+dirt and down small alleys that lead to places of ill-repute. To the north<br />
+lies the main trading square, much banter and joyous laughter are carried<br />
+on the fresh sea breeze.<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+294H 161V 29992798X 232C Mem:9 Exits:NS&gt; Traders Square<br />
+    This is the centre and heart of Port Balifor. All around you tradesmen<br />
+banter for your custom. Their many bright and varied goods hang from wooden<br />
+stalls and mobile barrows. The smell of fresh produce fills the air,<br />
+sea-salt sweet. The hustle and bustle of people coming and going distort<br />
+your view of the many fine houses that occupy the streets that lead away<br />
+from the centre in all directions. A sign stands in the centre of the<br />
+cobbled square.<br />
+The corpse of Dhaliwal is lying here.<br />
+The corpse of a feral cat is lying here.<br />
+Demaleon the Harbinger of Doom is sitting here, fighting Dain. (flying)<br />
+Manny the Male Wild Elf is standing here, fighting Mookster. (flying)<br />
+Dain Ironfoot, Cold Brother of the Trio is standing here, fighting Mookster. (flying)<br />
+. . . has a tough exterior.<br />
+Faelar Dawn, Bloody Sea Elf is sitting here, fighting Mookster. (flying)<br />
+Mookster the Warmonger is sitting here, fighting Dain. (flying)<br />
+<br />
+294H 160V 29992798X 232C Mem:9 Exits:NESW&gt; n<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Demaleon with full impact.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Miroku flies in from the south.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; s<br />
+<br />
+Dain utters some strange words.<br />
+Dain creates a lightning storm.<br />
+Demaleon screams in pain as the lightning bolts summoned by Dain from the boiling clouds hit him.<br />
+<br />
+His eyes blazing and arms raised to the cloudy sky, Dain brings forth bolts of lightning which el<br />
+ectrocute Mookster where he stands.<br />
+You receive 0 experience.<br />
+Mookster is dead! R.I.P.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; c 'l b' demaleon<br />
+<br />
+Miroku focuses harshly on Mookster and utters the words, 'lightning bolt'.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+The death cry of Mookster echoes from somewhere nearby...<br />
+Mookster stops following Demaleon.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Faelar stands up.<br />
+<br />
+294H 160V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Dain bludgeons Demaleon very hard.<br />
+Demaleon crushes Dain extremely hard.<br />
+Demaleon is chilled, as he swings at Dain.<br />
+Manny puts away his tablets with a content look on his face.<br />
+294H 173V 29992798X 232C Mem:9 Exits:NESW&gt; get all corpse<br />
+Manny flies in from the south.<br />
+Traders Street<br />
+    The narrow trading street continues to the north, where it leads to the<br />
+docks that provide the town with its revenue. The cry of seabirds is<br />
+carried on the sea breeze, the occasional flash of white in the sky<br />
+confirms this. The smells and sounds of many horses comes from the east,<br />
+where some wooden stables have been built, while to the west is a<br />
+warehouse.<br />
+Manny the Male Wild Elf is standing here. (flying)<br />
+A feral cat parades her territory and sniffs your leg.<br />
+<br />
+294H 172V 29992798X 232C Mem:9 Exits:NESW&gt; Manny flies in from the north.<br />
+Traders Square<br />
+    This is the centre and heart of Port Balifor. All around you tradesmen<br />
+banter for your custom. Their many bright and varied goods hang from wooden<br />
+stalls and mobile barrows. The smell of fresh produce fills the air,<br />
+sea-salt sweet. The hustle and bustle of people coming and going distort<br />
+your view of the many fine houses that occupy the streets that lead away<br />
+from the centre in all directions. A sign stands in the centre of the<br />
+cobbled square.<br />
+The corpse of Mookster is lying here.<br />
+The corpse of Dhaliwal is lying here.<br />
+The corpse of a feral cat is lying here.<br />
+Manny the Male Wild Elf is standing here. (flying)<br />
+Miroku the Male Half Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Demaleon the Harbinger of Doom is sitting here, fighting Dain. (flying)<br />
+Dain Ironfoot, Cold Brother of the Trio is standing here, fighting Demaleon. (flying)<br />
+. . . has a tough exterior.<br />
+Faelar Dawn, Bloody Sea Elf is standing here. (flying)<br />
+<br />
+294H 171V 29992798X 232C Mem:9 Exits:NESW&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Demaleon with full impact.<br />
+<br />
+294H 171V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Faelar slashes Demaleon extremely hard.<br />
+<br />
+294H 171V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Dain focuses harshly on Demaleon and utters some strange words.<br />
+Demaleon screams in pain as lightning from Dain penetrates him.<br />
+<br />
+294H 171V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Miroku gets a very large pile of coins from the corpse of Mookster.<br />
+<br />
+294H 171V 29992798X 232C Mem:10 Exits:NESW&gt; c 'l b' demaleon<br />
+<br />
+Faelar slashes Demaleon hard.<br />
+Demaleon crushes Dain extremely hard.<br />
+Demaleon is chilled, as he swings at Dain.<br />
+<br />
+294H 171V 29992798X 232C Mem:10 Exits:NESW&gt; <br />
+Waaz flies in from the south.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='806'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=806">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="806">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

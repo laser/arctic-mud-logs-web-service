@@ -1,0 +1,874 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1402-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1402'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Pterk dies</font></b>
+<p>
+POV: 
+Revs<p>
+Log Rating:
+2.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Daze in PK.</i>
+<p>
+<p>
+
+263H 81V 8413869X 0C Mem:1 Exits:S&gt; w<br />
+Alas, you cannot go that way...<br />
+<br />
+263H 81V 8413869X 0C Mem:1 Exits:S&gt; s<br />
+A Small Crevice<br />
+<br />
+263H 79V 8413869X 0C Mem:1 Exits:ND&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+Pterkf the Male Hylar Dwarf is resting here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+263H 79V 8413869X 0C Mem:1 Exits:ND&gt; d<br />
+A Deep, Dark Cavern<br />
+Pterkf the Male Hylar Dwarf is resting here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+263H 77V 8413869X 0C Mem:1 Exits:EWU&gt; c 'daze' pterkf<br />
+You utter the words, 'daze'<br />
+<br />
+263H 77V 8413869X 0C Mem:3 Exits:EWU&gt; c 'daze' pterkf<br />
+You utter the words, 'daze'<br />
+Pterkf grins stupidly and becomes useless.<br />
+<br />
+263H 77V 8413869X 0C Mem:4 Exits:EWU&gt; look pterkf<br />
+c 'silence' pterkf<br />
+TICK IN 11 SECONDS.<br />
+You see nothing special about him.<br />
+Pterkf the young adult male hylar dwarf has a few scratches (bandaged) (invisible).<br />
+<br />
+Pterkf is using:<br />
+&lt;used as light&gt;            a bright ball of light..it glows dimly<br />
+&lt;worn around neck&gt;         an enchanted rat bone charm<br />
+&lt;worn about body&gt;          a grey silken robe<br />
+<br />
+263H 77V 8413869X 0C Mem:4 Exits:EWU&gt; You utter the words, 'silence'<br />
+<br />
+263H 77V 8413869X 0C Mem:5 Exits:EWU&gt; c 'silence' pterkf<br />
+You utter the words, 'silence'<br />
+<br />
+263H 77V 8413869X 0C Mem:5 Exits:EWU&gt; u<br />
+n<br />
+r<br />
+A Small Crevice<br />
+<br />
+263H 75V 8413869X 0C Mem:5 Exits:ND&gt; A Small Crevice<br />
+<br />
+263H 73V 8413869X 0C Mem:5 Exits:S&gt; You rest your tired bones but stay aloft.<br />
+<br />
+263H 73V 8413869X 0C Mem:2 Exits:S&gt; <br />
+<br />
+263H 73V 8413869X 0C Mem:2 Exits:S&gt; <br />
+<br />
+263H 73V 8413869X 0C Mem:2 Exits:S&gt; <br />
+<br />
+263H 73V 8413869X 0C Mem:2 Exits:S&gt; <br />
+<br />
+263H 73V 8413869X 0C Mem:2 Exits:S&gt; <br />
+<br />
+263H 110V 8413869X 0C Mem:1 Exits:S&gt; <br />
+<br />
+263H 110V 8413869X 0C Mem:1 Exits:S&gt; st<br />
+You stand up.<br />
+<br />
+263H 110V 8413869X 0C Mem:3 Exits:S&gt; s<br />
+A Small Crevice<br />
+<br />
+263H 108V 8413869X 0C Mem:3 Exits:ND&gt; d<br />
+A Deep, Dark Cavern<br />
+Pterkf the Male Hylar Dwarf is resting here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+263H 106V 8413869X 0C Mem:3 Exits:EWU&gt; c 'silence' pterkf<br />
+You utter the words, 'silence'<br />
+Pterkf suddenly becomes very quiet.<br />
+<br />
+263H 106V 8413869X 0C Mem:3 Exits:EWU&gt; c 'weariness' pterkf<br />
+You utter the words, 'weariness'<br />
+<br />
+263H 106V 8413869X 0C Mem:4 Exits:EWU&gt; c 'weariness' pterkf<br />
+You utter the words, 'weariness'<br />
+<br />
+263H 106V 8413869X 0C Mem:5 Exits:EWU&gt; c 'weariness' pterkf<br />
+You utter the words, 'weariness'<br />
+<br />
+263H 106V 8413869X 0C Mem:5 Exits:EWU&gt; c 'weariness' pterkf<br />
+You utter the words, 'weariness'<br />
+<br />
+263H 106V 8413869X 0C Mem:6 Exits:EWU&gt; c 'weariness' pterkf<br />
+<br />
+Wayre shouts 'For simplicity's sake, why not just say non-BSP = Evil?'<br />
+<br />
+263H 106V 8413869X 0C Mem:6 Exits:EWU&gt; You utter the words, 'weariness'<br />
+<br />
+263H 106V 8413869X 0C Mem:7 Exits:EWU&gt; m<br />
+c 'weariness' pterkf<br />
+Spells currently memorized:<br />
+1: [ 1]barkskin             [ 4]feast                [ 2]gust of wind        <br />
+   [ 3]thorn spray         <br />
+2: [ 2]cure light           [ 2]faerie fire          [ 1]silence             <br />
+   [ 1]sustenance          <br />
+3: [ 2]fly                  [ 1]weariness           <br />
+4: [ 9]flame shroud        <br />
+5: [ 3]cure serious        <br />
+<br />
+Spells being memorized:<br />
+2: [ 3]silence              [ 1]sustenance          <br />
+3: [ 1]fly                  [ 5]weariness           <br />
+5: [ 2]daze                <br />
+<br />
+You estimate your studies will complete in 7 (game) hours.<br />
+<br />
+Spells left (level-number): 1-0 2-0 3-0 4-0 5-0 6-4 7-2<br />
+<br />
+263H 106V 8413869X 0C Mem:7 Exits:EWU&gt; You utter the words, 'weariness'<br />
+Pterkf looks very tired.<br />
+<br />
+263H 106V 8413869X 0C Mem:7 Exits:EWU&gt; c 'flame shroud' pterkf<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Pterkf in a cloak of flames.<br />
+<br />
+263H 106V 8413869X 0C [Revs:Perfect] [Pterkf:Good] Mem:8 Exits:EWU&gt; c 'flame shroud' pterkf<br />
+<br />
+You miss Pterkf with your bludgeon.<br />
+Pterkf crushes YOU.<br />
+<br />
+258H 106V 8413869X 0C [Revs:V.Good] [Pterkf:Good] Mem:8 Exits:EWU&gt; <br />
+Pterkf STANDS UP.<br />
+<br />
+258H 106V 8413869X 0C [Revs:V.Good] [Pterkf:Good] Mem:8 Exits:EWU&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+Pterkf flies west.<br />
+<br />
+258H 106V 8413869X 0C Mem:8 Exits:EWU&gt; w<br />
+c 'flame shroud' pterkf<br />
+Who should the spell be cast upon?<br />
+<br />
+258H 106V 8413869X 0C Mem:8 Exits:EWU&gt; A Tunnel<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Pterkf flies south.<br />
+<br />
+258H 104V 8413869X 0C Mem:8 Exits:ES&gt; Who should the spell be cast upon?<br />
+<br />
+258H 104V 8413869X 0C Mem:8 Exits:ES&gt; s<br />
+A Large Cavern<br />
+A burnt and ravaged skeleton comes out of hiding.<br />
+A burnt and ravaged skeleton barely claws YOU.<br />
+<br />
+254H 102V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:Perfect] Mem:8 Exits:NES&gt; c 'flame shroud' pterkf<br />
+Who should the spell be cast upon?<br />
+<br />
+254H 102V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:Perfect] Mem:8 Exits:NES&gt; <br />
+Aristox shouts 'I guess that makes me Evil. Bring it.'<br />
+<br />
+254H 102V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:Perfect] Mem:8 Exits:NES&gt; flee<br />
+You flee head over heels.<br />
+A Large Cavern<br />
+A burnt and ravaged skeleton comes out of hiding.<br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+<br />
+254H 100V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:Perfect] Mem:8 Exits:ESW&gt; flee<br />
+You flee head over heels.<br />
+A Large Cavern<br />
+<br />
+254H 98V 8413869X 0C Mem:8 Exits:NESW&gt; <br />
+Xao shouts 'any1 from lv8 -lv 11 wanna do red thorn thiefs meet me at inn in tarsis'<br />
+<br />
+254H 98V 8413869X 0C Mem:8 Exits:NESW&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+254H 98V 8413869X 0C Mem:8 Exits:NESW&gt; n<br />
+A Large Cavern<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+<br />
+254H 96V 8413869X 0C Mem:8 Exits:ESW&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+254H 96V 8413869X 0C Mem:8 Exits:ESW&gt; w<br />
+A Large Cavern<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+<br />
+254H 94V 8413869X 0C Mem:8 Exits:NES&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+254H 94V 8413869X 0C Mem:8 Exits:NES&gt; s<br />
+A Large Cavern<br />
+A burnt and ravaged skeleton comes out of hiding.<br />
+A burnt and ravaged skeleton claws YOU extremely hard.<br />
+<br />
+239H 92V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:V.Good] Mem:8 Exits:NES&gt; w<br />
+You can't do that while fighting.<br />
+<br />
+239H 92V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:V.Good] Mem:8 Exits:NES&gt; scan<br />
+Looking north:<br />
+You see nothing special.<br />
+A burnt and ravaged skeleton pulls its way out of the debris and attacks.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+239H 92V 8413869X 0C [Revs:V.Good] [a burnt and ravaged skeleton:V.Good] Mem:8 Exits:NES&gt; flee<br />
+You flee head over heels.<br />
+A Large Cavern<br />
+<br />
+239H 90V 8413869X 0C Mem:8 Exits:NESW&gt; s<br />
+North Side of the Old Bridge<br />
+<br />
+239H 88V 8413869X 0C Mem:8 Exits:NESW&gt; s<br />
+On a Rickety Old Bridge<br />
+<br />
+239H 86V 8413869X 0C Mem:8 Exits:NS&gt; w<br />
+Alas, you cannot go that way...<br />
+<br />
+239H 86V 8413869X 0C Mem:8 Exits:NS&gt; n<br />
+North Side of the Old Bridge<br />
+<br />
+239H 84V 8413869X 0C Mem:8 Exits:NESW&gt; w<br />
+A Large Cavern<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+239H 82V 8413869X 0C Mem:8 Exits:NE&gt; c 'flame shroud' pterkf<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Pterkf in a cloak of flames.<br />
+<br />
+239H 82V 8413869X 0C [Revs:V.Good] [Pterkf:Fair] Mem:9 Exits:NE&gt; <br />
+You bludgeon Pterkf hard.<br />
+Pterkf MISSES YOU with his crush.<br />
+<br />
+239H 82V 8413869X 0C [Revs:V.Good] [Pterkf:Fair] Mem:9 Exits:NE&gt; c 'flame shroud' pterkf<br />
+<br />
+Pterkf panics, and attempts to flee.<br />
+Pterkf flies north.<br />
+<br />
+239H 82V 8413869X 0C Mem:9 Exits:NE&gt; TICK IN 11 SECONDS.<br />
+scan<br />
+Who should the spell be cast upon?<br />
+<br />
+239H 82V 8413869X 0C Mem:9 Exits:NE&gt; Looking north:<br />
+You see nothing special.<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+239H 82V 8413869X 0C Mem:9 Exits:NE&gt; n<br />
+A Large Cavern<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+A burnt and ravaged skeleton comes out of hiding.<br />
+A burnt and ravaged skeleton claws YOU extremely hard.<br />
+<br />
+223H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:9 Exits:NES&gt; c 'flame shroud' pterkf<br />
+<br />
+Tippembach shouts 'oh oh oh can i be all of those.................not'<br />
+<br />
+223H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:9 Exits:NES&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Pterkf in a cloak of flames.<br />
+<br />
+223H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:9 Exits:NES&gt; <br />
+Pterkf stops using a bright ball of light.<br />
+<br />
+223H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:9 Exits:NES&gt; c 'flame shroud' pterkf<br />
+<br />
+Pterkf MISSES YOU with his crush.<br />
+A burnt and ravaged skeleton claws YOU very hard.<br />
+<br />
+210H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:9 Exits:NES&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Pterkf in a cloak of flames.<br />
+<br />
+210H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:10 Exits:NES&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+<br />
+210H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:10 Exits:NES&gt; <br />
+A burnt and ravaged skeleton comes out of hiding.<br />
+A burnt and ravaged skeleton claws YOU hard.<br />
+<br />
+202H 80V 8413869X 0C [Revs:Good] [a burnt and ravaged skeleton:Perfect] Mem:10 Exits:NES&gt; c 'flame shroud' pterkf<br />
+<br />
+A burnt and ravaged skeleton claws YOU very hard.<br />
+Pterkf crushes YOU hard.<br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:10 Exits:NES&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Pterkf in a cloak of flames.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; c 'flame shroud' pterkf<br />
+<br />
+Pterkf panics, and attempts to flee.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+<br />
+182H 80V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; <br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+Pterkf MISSES YOU with his crush.<br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+<br />
+193H 110V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; <br />
+Pterkf panics, and attempts to flee.<br />
+Pterkf flies south.<br />
+<br />
+193H 110V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; flee<br />
+<br />
+A burnt and ravaged skeleton attempts to unbalance you, but you quickly avoid him.<br />
+<br />
+193H 110V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; Who should the spell be cast upon?<br />
+<br />
+193H 110V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NES&gt; You flee head over heels.<br />
+A Large Cavern<br />
+Pterkf the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+193H 108V 8413869X 0C Mem:11 Exits:NE&gt; c 'flame shroud' pterkf<br />
+You utter the words, 'flame shroud'<br />
+Pterkf dies a fiery death as you enshroud him in a cloak of burning flames.<br />
+You receive 0 experience.<br />
+Pterkf is dead! R.I.P.<br />
+<br />
+193H 108V 8413869X 0C [Pterkf:Dying] Mem:11 Exits:NE&gt; <br />
+The death cry of Pterkf echoes from somewhere nearby...<br />
+Pterkf sinks gently to the ground.<br />
+<br />
+193H 108V 8413869X 0C Mem:11 Exits:NE&gt; <br />
+Tiax shouts 'lic'<br />
+<br />
+193H 108V 8413869X 0C Mem:11 Exits:NE&gt; <br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+<br />
+193H 108V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NE&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a large black mace..it hums softly<br />
+a small ruby band (invisible)<br />
+a maniple<br />
+a grey silken robe<br />
+a chasuble<br />
+an enchanted rat bone charm<br />
+a ragged leather ring<br />
+a large pile of coins<br />
+a bright ball of light..it glows dimly<br />
+a loaf of waybread<br />
+a glowing scroll of recall..it glows dimly<br />
+a hooked draconian shortsword<br />
+a four-headed dwarven whip..it hums softly<br />
+a portable keg<br />
+a bright ball of light..it glows dimly<br />
+a dwarven backpack<br />
+a crystal shard necklace..it glows dimly<br />
+a bag of shadows<br />
+a glowing scroll of recall..it glows dimly<br />
+<br />
+193H 108V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NE&gt; <br />
+A burnt and ravaged skeleton claws YOU very hard.<br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+A burnt and ravaged skeleton MISSES YOU with its claw.<br />
+You miss a burnt and ravaged skeleton with your bludgeon.<br />
+<br />
+180H 108V 8413869X 0C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NE&gt; get all corpse<br />
+You are zapped by a large black mace and instantly drop it.<br />
+You get a small ruby band from the corpse of Pterkf.<br />
+You get a maniple from the corpse of Pterkf.<br />
+You get a grey silken robe from the corpse of Pterkf.<br />
+You get a chasuble from the corpse of Pterkf.<br />
+You get an enchanted rat bone charm from the corpse of Pterkf.<br />
+You get a ragged leather ring from the corpse of Pterkf.<br />
+You get a large pile of coins from the corpse of Pterkf.<br />
+There were 631 coins.<br />
+You get a bright ball of light from the corpse of Pterkf.<br />
+You get a loaf of waybread from the corpse of Pterkf.<br />
+You get a glowing scroll of recall from the corpse of Pterkf.<br />
+You get a hooked draconian shortsword from the corpse of Pterkf.<br />
+You get a four-headed dwarven whip from the corpse of Pterkf.<br />
+You get a portable keg from the corpse of Pterkf.<br />
+You get a bright ball of light from the corpse of Pterkf.<br />
+You get a dwarven backpack from the corpse of Pterkf.<br />
+You get a crystal shard necklace from the corpse of Pterkf.<br />
+You get a bag of shadows from the corpse of Pterkf.<br />
+You get a glowing scroll of recall from the corpse of Pterkf.<br />
+<br />
+180H 108V 8413869X 631C [Revs:Fair] [a burnt and ravaged skeleton:Perfect] Mem:11 Exits:NE&gt; flee<br />
+You flee head over heels.<br />
+A Large Cavern
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1402'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1402">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1402">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

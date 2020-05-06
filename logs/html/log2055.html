@@ -1,0 +1,591 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2055-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='64.208.172.177' and logid='2055'-->
+
+<!-- PHP Generated Message: IP in db-->
+
+<p>
+<b><font size="3">
+Malice Rip</font></b>
+<p>
+POV: 
+Niupta<p>
+Log Rating:
+2.7647<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Eat it, bitch.</i>
+<p>
+<p>
+
+385H 87V 4998C Mem:2 Exits:NE&gt; n<br />
+The Dragonarmy Training Grounds<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+&lt;Otlw&gt; Aplaenych Klaus, The Pony Express is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Eclipz Hart is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Shootar the Male Kagonesti is standing here, fighting a bozak trainer. (flying)<br />
+Klint the Male Hylar Dwarf is standing here. (flying)<br />
+Kossuth the Male Hylar Dwarf is standing here, fighting a bozak trainer. (flying)<br />
+A bozak trainer is standing here, fighting Kossuth.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; <br />
+Aplaenych focuses harshly on Shootar and utters some strange words.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; sca<br />
+Looking north:<br />
+The side of a makeshift medical barrack is directly north of here.<br />
+A draconian recruit is here practicing swordplay with his peers.<br />
+Looking east:<br />
+The stone wall is dirty and chipped.<br />
+Looking south:<br />
+A few lockers stand to the south.<br />
+Looking west:<br />
+The wooden paneling is split and destroyed from clumsy weapon blows.<br />
+Looking up:<br />
+A bare ceiling.<br />
+Looking down:<br />
+Debris litter the floor.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; o all.giant bash shootar<br />
+A hill giant slowly fades into existence.<br />
+A hill giant crashes into Shootar in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash shootar'.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; cast 'hold person' shootar<br />
+You utter the words, 'hold person'<br />
+Shootar freezes in place.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; <br />
+A hill giant hits Shootar extremely hard.<br />
+Kossuth stabs a bozak trainer extremely hard.<br />
+Kossuth slashes a bozak trainer very hard.<br />
+A bozak trainer massacres Kossuth with his slash.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; o all.giant bash shootar<br />
+<br />
+Kossuth spins and tries to kick a bozak trainer, but a bozak trainer dodges out of the way.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; <br />
+A bozak trainer strikes Kossuth's weapon, nearly disarming it.<br />
+Aplaenych focuses harshly on Shootar and utters some strange words.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; cast 'force bolt' shootar<br />
+<br />
+Eclipz focuses harshly on Shootar and utters the words, 'hold person'.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; A hill giant crashes into Shootar in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash shootar'.<br />
+<br />
+385H 86V 4998C Mem:2 Exits:NS&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Shootar.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+A hill giant hits Shootar extremely hard.<br />
+A hill giant hits Shootar extremely hard.<br />
+Kossuth stabs a bozak trainer very hard.<br />
+Kossuth misses a bozak trainer with his slash.<br />
+A bozak trainer misses Kossuth with his slash.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+Kossuth stops using a grey long sword.<br />
+Kossuth grabs a scroll of recall.<br />
+Kossuth recites a scroll of recall.<br />
+Kossuth disappears.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+Aplaenych focuses harshly on Shootar and utters some strange words.<br />
+Aplaenych slowly fades into existence.<br />
+Aplaenych sends a chilling blast of air at Shootar, giving him a severe case of frostbite.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; o all.giant bash shootar<br />
+<br />
+Eclipz focuses harshly on Shootar and utters the words, 'hold person'.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+A dragonarmy recruit arrives from the north.<br />
+A bozak trainer delivers a vicious kick to Shootar's face. Blood flies as his head snaps back.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; cast 'force bolt' shootar<br />
+<br />
+A hill giant delivers a quick snap kick to Shootar. Shootar staggers and tries to recover.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; You issue the order 'bash shootar'.<br />
+Klint gets a scroll from his chest.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Shootar.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+Klint stops using a bright ball of light.<br />
+Klint grabs a glowing scroll of recall.<br />
+Klint recites a glowing scroll of recall.<br />
+Klint disappears.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+A bozak trainer massacres Shootar with his slash.<br />
+A hill giant hits Shootar extremely hard.<br />
+A hill giant hits Shootar very hard.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; o all.giant bash shootar<br />
+cast 'force bolt' shootar<br />
+<br />
+Aplaenych focuses harshly on Shootar and utters some strange words.<br />
+Aplaenych sends a chilling blast of air at Shootar, giving him a severe case of frostbite.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+Eclipz focuses harshly on Shootar and utters the words, 'force bolt'.<br />
+Eclipz slowly fades into existence.<br />
+Brains splatter on you as Eclipz's force bolt shatters Shootar's skull.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Shootar is dead! R.I.P.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; <br />
+The death cry of Shootar echoes from somewhere nearby...<br />
+Kossuth stops following Shootar.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; You issue the order 'bash shootar'.<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+385H 86V 4998C Mem:3 Exits:NS&gt; exa corpse<br />
+You get a large pile of coins from the corpse of Shootar.<br />
+There were 865 coins.<br />
+<br />
+385H 86V 5863C Mem:3 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a queen's rapier..it glows blue<br />
+a hefty spruce spear..it glows blue<br />
+a thick dwarven bracelet..it glows blue<br />
+a grey hooded cloak<br />
+a black quiver<br />
+a leather archers arm brace<br />
+some green and black archer's gloves..it glows blue<br />
+a leather woven headband..it glows blue..it glows dimly<br />
+some leather training armor<br />
+a brass key<br />
+a short blackenwood bow<br />
+a chain of keys<br />
+a ring of cell keys<br />
+a loop of jailer's keys<br />
+a milky potion of see invisible..it glows blue [2]<br />
+a scroll of recall..it glows blue [2]<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a large pole axe..it glows blue<br />
+a large first-aid kit<br />
+a pair of dark black bracers..it glows blue..it glows dimly<br />
+<br />
+ [return for more, q to stop]<br />
+a bundle of iron-bodkin arrows (36)<br />
+a hooded lantern<br />
+a waterskin<br />
+a loaf of bread<br />
+a small leather bag<br />
+a map of Palanthas<br />
+a hooded lantern<br />
+a waterskin [2]<br />
+a hooded lantern<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='64.208.172.177' and logid='2055'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2055">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2055">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="64.208.172.177">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

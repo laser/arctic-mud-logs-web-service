@@ -1,0 +1,685 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1067-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1067'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Imperial RIP</font></b>
+<p>
+POV: 
+Fira<p>
+Log Rating:
+-1.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+death near que kul</i>
+<p>
+<p>
+
+278H 95V 15164216X 292C [**Vinoa:Perfect**] Mem:2 Exits:NS&gt; nA bozak hatchling arrives from the south.<br />
+A bozak hatchling flies in from the south.<br />
+A bozak hatchling flies in from the south.<br />
+A bozak hatchling kneels down and studies the ground.<br />
+A bozak hatchling points at Breoni.<br />
+A bozak hatchling says 'There they are!'<br />
+Vinoa flies in from the south.<br />
+A Worn Path<br />
+    The aroma of a cook fire is getting much stronger and you can barely<br />
+contain yourself as your taste buds dream of what might be cooking. A small<br />
+cloud of dust floats off the road as your feet pound the hard earth, and<br />
+your legs are covered with the dust of the path. It seems to the west you<br />
+can see a small trail leading deeper into the grasses of the mighty plains.<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (flying)<br />
+A young bozak stands here, learning to become a killer. (flying)<br />
+A young bozak stands here, learning to become a killer. (flying)<br />
+A young bozak stands here, learning to become a killer.<br />
+Pean the Male Human is standing here. (flying)<br />
+Breoni, The Iron Fist of Empire is standing here. (flying)<br />
+Owie the Male Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:Perfect**] Mem:2 Exits:NSW&gt; <br />
+Vinoa crashes into Breoni in a thundering collision, knocking him to the ground!<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:Perfect**] [**Breoni:V.Good**] Mem:2 Exits:NSW&gt; order all.bozak bash breoniA bozak hatchling crashes into Breoni in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Breoni in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash breoni'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:Perfect**] [**Breoni:V.Good**] Mem:2 Exits:NSW&gt; c 'hold person' breoni<br />
+A bozak hatchling misses Breoni with his claw.<br />
+A bozak hatchling misses Breoni with his claw.<br />
+Vinoa massacres Breoni with her pierce.<br />
+Breoni massacres Vinoa with his slash.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Breoni:V.Good**] Mem:2 Exits:NSW&gt; You utter the words, 'hold person'<br />
+Breoni freezes in place.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Breoni:V.Good**] Mem:3 Exits:NSW&gt; order all.bozak st<br />
+A bozak hatchling claws Breoni hard.<br />
+A bozak hatchling claws Breoni hard.<br />
+Vinoa pierces Breoni very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Breoni:Good**] Mem:3 Exits:NSW&gt; order all.bozak bash owieYou issue the order 'st'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Breoni:Good**] Mem:3 Exits:NSW&gt; <br />
+Owie stops using a petrified heart.<br />
+Owie grabs a glowing scroll of recall.<br />
+Owie recites a glowing scroll of recall.<br />
+Breoni disappears.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:3 Exits:NSW&gt; A bozak hatchling crashes into Owie in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash owie'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:3 Exits:NSW&gt; c 'hold person' owieYou utter the words, 'hold person'<br />
+Owie freezes in place.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:3 Exits:NSW&gt; <br />
+Vinoa crashes into Owie in a thundering collision, knocking him to the ground!<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:V.Good**] Mem:3 Exits:NSW&gt; order all.bozak st<br />
+Vinoa pierces Owie extremely hard.<br />
+A bozak hatchling claws Owie hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Good**] Mem:3 Exits:NSW&gt; <br />
+Pean slashes a bozak hatchling very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Good**] Mem:3 Exits:NSW&gt; order all.bozak bash owieYou issue the order 'st'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Good**] Mem:3 Exits:NSW&gt; A bozak hatchling crashes into Owie in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Owie in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash owie'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Good**] Mem:3 Exits:NSW&gt; c 'hold person' peanYou utter the words, 'hold person'<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Good**] Mem:4 Exits:NSW&gt; <br />
+A bozak hatchling claws Owie very hard.<br />
+A bozak hatchling claws Owie hard.<br />
+Pean slashes a bozak hatchling very hard.<br />
+Vinoa massacres Owie with her pierce.<br />
+A bozak hatchling claws Owie very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Fair**] Mem:4 Exits:NSW&gt; order all.bozak storder all.bozak bash owieYou issue the order 'st'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Fair**] Mem:4 Exits:NSW&gt; A bozak hatchling crashes into Owie in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash owie'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Fair**] Mem:4 Exits:NSW&gt; order all.bozak bash owieA bozak hatchling claws Owie hard.<br />
+A bozak hatchling claws Owie very hard.<br />
+Pean slashes a bozak hatchling extremely hard.<br />
+Vinoa pierces Owie extremely hard.<br />
+A bozak hatchling claws Owie very hard.<br />
+You issue the order 'bash owie'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Bad**] Mem:4 Exits:NSW&gt; c 'lightning bolt' owieYou utter the words, 'lightning bolt'<br />
+The lightning bolt hits Owie with full impact.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:V.Bad**] Mem:4 Exits:NSW&gt; <br />
+Vinoa looks at Pean.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:V.Bad**] Mem:4 Exits:NSW&gt; <br />
+A bozak hatchling claws Owie extremely hard.<br />
+A bozak hatchling claws Owie extremely hard.<br />
+Pean slashes a bozak hatchling extremely hard.<br />
+Vinoa pierces Owie extremely hard.<br />
+A bozak hatchling claws Owie very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Awful**] Mem:4 Exits:NSW&gt; <br />
+Vinoa crashes into Pean in a thundering collision, knocking him to the ground!<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Awful**] Mem:4 Exits:NSW&gt; order all.bozak stYou issue the order 'st'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Awful**] Mem:4 Exits:NSW&gt; order all.bozak bash peanPean steps aside as a bozak hatchling attempts a bash, stumbles, and falls flat on his face.<br />
+A bozak hatchling crashes into Pean in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash pean'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Owie:Awful**] Mem:4 Exits:NSW&gt; <br />
+A bozak hatchling claws Owie very hard.<br />
+A bozak hatchling claws Owie very hard.<br />
+Pean slashes a bozak hatchling extremely hard.<br />
+Vinoa pierces Owie extremely hard.<br />
+You receive 0 experience.<br />
+Owie is dead! R.I.P.<br />
+The death cry of Owie echoes from somewhere nearby...<br />
+Breoni stops following Owie.<br />
+Pean stops following Owie.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:4 Exits:NSW&gt; c 'lightning bolt' owieWho should the spell be cast upon?<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:4 Exits:NSW&gt; c 'lightning bolt' peanYou utter the words, 'lightning bolt'<br />
+The lightning bolt hits Pean with full impact.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:5 Exits:NSW&gt; <br />
+A bozak hatchling misses Pean with his claw.<br />
+Pean slashes a bozak hatchling very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:5 Exits:NSW&gt; <br />
+Vinoa gets a very large pile of coins from the corpse of Owie.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:5 Exits:NSW&gt; <br />
+Vinoa gets a hammer of the Rose from the corpse of Owie.<br />
+Vinoa gets a bronze bracelet set with clear stones from the corpse of Owie.<br />
+Vinoa gets a draconian girth from the corpse of Owie.<br />
+Vinoa gets a furry white cloak from the corpse of Owie.<br />
+Vinoa gets a pair of chitinous vambraces from the corpse of Owie.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] Mem:5 Exits:NSW&gt; c 'hold person' pean<br />
+Pean steps aside as Vinoa attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; You utter the words, 'hold person'<br />
+Pean freezes in place.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; order all.bozak st<br />
+Vinoa massacres Pean with her pierce.<br />
+A bozak hatchling claws Pean very hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; order all.bozak bash peanget all corpseA bozak hatchling stands up.<br />
+You issue the order 'st'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; A bozak hatchling crashes into Pean in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Pean in a thundering collision, knocking him to the ground!<br />
+A bozak hatchling crashes into Pean in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bash pean'.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; You get a pair of dwarven boots from the corpse of Owie.<br />
+You get a pair of Solamnic greaves from the corpse of Owie.<br />
+You get a dark green feathered cap from the corpse of Owie.<br />
+You get a dark purple burial shroud from the corpse of Owie.<br />
+You get an enchanted rat bone charm from the corpse of Owie.<br />
+You get a ring of the dweomer from the corpse of Owie.<br />
+You get a petrified heart from the corpse of Owie.<br />
+You get a piece of sweet bread from the corpse of Owie.<br />
+You get a piece of sweet bread from the corpse of Owie.<br />
+You get a crescent moon medallion from the corpse of Owie.<br />
+You get a field scythe from the corpse of Owie.<br />
+You get a glowing yellow stone from the corpse of Owie.<br />
+You get a plainsman longbow from the corpse of Owie.<br />
+Backpack : You can't carry that much weight.<br />
+You get a thick hide apron from the corpse of Owie.<br />
+You get a chipped machete from the corpse of Owie.<br />
+You get a falconer's gauntlet from the corpse of Owie.<br />
+Blade : You can't carry that many items.<br />
+Hammer : You can't carry that many items.<br />
+Vest : You can't carry that many items.<br />
+Pouch : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; <br />
+A bozak hatchling claws Pean hard.<br />
+A bozak hatchling bruises Pean with his claw.<br />
+Vinoa pierces Pean extremely hard.<br />
+A bozak hatchling barely claws Pean.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; <br />
+Vinoa stands up.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Fair**] Mem:5 Exits:NSW&gt; c 'force bolt' peanYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pean.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Bad**] Mem:6 Exits:NSW&gt; <br />
+Vinoa tells your group 'nice eq'<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Bad**] Mem:6 Exits:NSW&gt; c 'force bolt' pean<br />
+A bozak hatchling claws Pean very hard.<br />
+A bozak hatchling claws Pean.<br />
+Vinoa pierces Pean extremely hard.<br />
+A bozak hatchling claws Pean extremely hard.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:V.Bad**] Mem:6 Exits:NSW&gt; <br />
+Vinoa crashes into Pean in a thundering collision, knocking him to the ground!<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:V.Bad**] Mem:6 Exits:NSW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Pean.<br />
+<br />
+278H 93V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Awful**] Mem:7 Exits:NSW&gt; order all.bozak storder all.bozak bash<br />
+A bozak hatchling claws Pean extremely hard.<br />
+A bozak hatchling claws Pean hard.<br />
+Vinoa pierces Pean extremely hard.<br />
+A bozak hatchling claws Pean very hard.<br />
+Pean is incapacitated and will slowly die, if not aided.<br />
+Pean lies immobile on the ground, suffering...<br />
+Pean is mortally wounded, and will die soon, if not aided.<br />
+<br />
+278H 126V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Dying**] Mem:6 Exits:NSW&gt; You issue the order 'st'.<br />
+<br />
+278H 126V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Dying**] Mem:6 Exits:NSW&gt; A bozak hatchling crashes into Pean in a devastating bash, killing him mercilessly.<br />
+You receive 0 experience.<br />
+Pean is dead! R.I.P.<br />
+You issue the order 'bash'.<br />
+<br />
+278H 126V 15164216X 292C [**Vinoa:V.Good**] [**Pean:Dying**] Mem:6 Exits:NSW&gt; <br />
+The death cry of Pean echoes from somewhere nearby...<br />
+<br />
+278H 126V 15164216X 292C [**Vinoa:V.Good**] Mem:6 Exits:NSW&gt; lA Worn Path<br />
+    The aroma of a cook fire is getting much stronger and you can barely<br />
+contain yourself as your taste buds dream of what might be cooking. A small<br />
+cloud of dust floats off the road as your feet pound the hard earth, and<br />
+your legs are covered with the dust of the path. It seems to the west you<br />
+can see a small trail leading deeper into the grasses of the mighty plains.<br />
+The corpse of Pean is lying here.<br />
+The corpse of Owie is lying here.<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (flying)<br />
+A young bozak stands here, learning to become a killer. (flying)<br />
+A young bozak stands here, learning to become a killer. (flying)<br />
+A young bozak stands here, learning to become a killer.<br />
+<br />
+278H 126V 15164216X 292C [**Vinoa:V.Good**] Mem:6 Exits:NSW&gt; get all corpseChest : You can't carry that many items.<br />
+Sword : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Breastplate : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Kit : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Platter : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1067'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1067">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1067">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

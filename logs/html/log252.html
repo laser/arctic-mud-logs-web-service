@@ -1,0 +1,2900 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 252-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='252'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+The four hour war!</font></b>
+<p>
+POV: 
+Murgen<p>
+Log Rating:
+3.3572<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+THE FOUR HOUR WAR! SEE THE WAR THAT NEVER ENDS! GIVE THE GIFT THAT KEEPS ON GIVING! RUN SOLARE RUN! FEAR MY MIGHTY KICK!
+</i>
+<p>
+<p>
+
+550H 65V 8960946X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Inari Mite, Vae Victus Weapon of Choice is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+550H 65V 8960946X 3333C Exits:NS&gt; <br />
+Heo flies south.<br />
+Rellik flies south.<br />
+You follow Heo south.<br />
+Clark flies in from the north.<br />
+Charis flies in from the north.<br />
+Nol flies in from the north.<br />
+Orien flies in from the north.<br />
+Perry flies in from the north.<br />
+Zakinthos flies in from the north.<br />
+Tikk flies in from the north.<br />
+Elizabeth flies in from the north.<br />
+A Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Elizabeth is standing here. (flying) (invisible)<br />
+Tikk Tock, Renshai's Suicidal Timekeeper of Err is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Zakinthos, The Escape Artist of Renshai is standing here. (flying)<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is standing here. (flying)<br />
+Orien the Hunter is standing here. (flying)<br />
+Nol the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Clark, Rusted Lance is standing here. (flying)<br />
+bash inariRellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Inari Mite, Vae Victus Weapon of Choice is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . has a granite appearance.<br />
+<br />
+550H 63V 8960946X 3333C Exits:NSW&gt; <br />
+Rudra tries to bash Nol, but he passes right through his image and falls.<br />
+<br />
+550H 63V 8960946X 3333C Exits:NSW&gt; You crash into Inari in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+550H 63V 8960946X 3333C [Me:Perfect] [Inari:V.Good] Exits:NSW&gt; <br />
+Kain tries to bash Nol, but he passes right through his image and falls.<br />
+<br />
+550H 63V 8960946X 3333C [Me:Perfect] [Inari:V.Good] Exits:NSW&gt; <br />
+Rudra steps aside as Clark attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+550H 63V 8960946X 3333C [Me:Perfect] [Inari:V.Good] Exits:NSW&gt; <br />
+Tikk utters some strange words.<br />
+Tikk creates a lightning storm.<br />
+Flook screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+Kain screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+Inari screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+Tikk destroys Rudra's mirror images.<br />
+Rudra screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+Ender screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+<br />
+550H 63V 8960946X 3333C [Me:Perfect] [Inari:Good] Exits:NSW&gt; <br />
+Ender utters some strange words.<br />
+Elizabeth appears to grow stronger.<br />
+Elizabeth manages to avoid the brunt of the storm.<br />
+Tikk is shredded by shards of ice.<br />
+Zakinthos is shredded by shards of ice.<br />
+Perry is shredded by shards of ice.<br />
+Orien is shredded by shards of ice.<br />
+Ender destroys Nol's mirror images.<br />
+Nol is shredded by shards of ice.<br />
+Charis is shredded by shards of ice.<br />
+Clark is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Ender destroys Rellik's mirror images.<br />
+Rellik is shredded by shards of ice.<br />
+Heo is shredded by shards of ice.<br />
+<br />
+524H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Zakinthos crashes into Kain in a thundering collision, knocking him to the ground!<br />
+<br />
+524H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Heo bruises Ender with his slash.<br />
+Heo is chilled, as he swings at Ender.<br />
+Heo bruises Ender with his slash.<br />
+Heo is chilled, as he swings at Ender.<br />
+Rellik bruises Ender with his cleave.<br />
+Rellik is chilled, as he swings at Ender.<br />
+Rellik bruises Ender with his cleave.<br />
+Rellik is chilled, as he swings at Ender.<br />
+Charis massacres Ender with her slash.<br />
+Charis is chilled, as she swings at Ender.<br />
+Charis massacres Ender with her slash.<br />
+Charis is chilled, as she swings at Ender.<br />
+Orien barely cleaves Ender.<br />
+Orien is chilled, as he swings at Ender.<br />
+Orien cleaves Ender hard.<br />
+Orien is chilled, as he swings at Ender.<br />
+Perry crushes Ender very hard.<br />
+Perry is chilled, as he swings at Ender.<br />
+Perry crushes Ender extremely hard.<br />
+Perry is chilled, as he swings at Ender.<br />
+Zakinthos slashes Ender extremely hard.<br />
+Zakinthos is chilled, as he swings at Ender.<br />
+Zakinthos slashes Ender very hard.<br />
+Zakinthos is chilled, as he swings at Ender.<br />
+Elizabeth slowly fades into existence.<br />
+Elizabeth slashes Ender extremely hard.<br />
+Elizabeth appears to grow stronger.<br />
+Ender's iceshield does him little good as Elizabeth takes a swing at him.<br />
+Tikk's blow is absorbed by Flook's armor.<br />
+Flook massacres Tikk with his crush.<br />
+Flook appears to grow stronger.<br />
+Tikk's fireshield does him little good as Flook takes a swing at him.<br />
+Tikk's iceshield does him little good as Flook takes a swing at him.<br />
+Clark massacres Rudra with his slash.<br />
+Clark massacres Rudra with his slash.<br />
+Kain misses Nol with his stab.<br />
+Kain stabs Nol hard.<br />
+Kain is burned, as he swings at Nol.<br />
+You massacre Inari with your slash.<br />
+You massacre Inari with your slash.<br />
+Inari comes out of hiding.<br />
+Inari cleaves YOU hard.<br />
+Rudra cleaves Nol hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+Rudra cleaves Nol very hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+Nol drains Rudra extremely hard.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol quaffs a potion of liquid brass.<br />
+Nol's skin takes on a brassy, metallic hue.<br />
+Nol's skin begins to shine like steel.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol waves the staff of champion and summons a tall stocky male champion.<br />
+A male champion now follows Nol.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol gives a short sword to a male champion.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Peron flies in from the north.<br />
+Loral flies in from the north.<br />
+Delamar flies in from the north.<br />
+Cecil flies in from the north.<br />
+Benke flies in from the north.<br />
+Lucrimus flies in from the north.<br />
+Paijietng flies in from the north.<br />
+Qynefkyrricp flies in from the north.<br />
+Umbata flies in from the north.<br />
+Purly flies in from the north.<br />
+Rogina flies in from the north.<br />
+Inaris flies in from the north.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Perrin flies in from the west.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; st<br />
+Nol waves the staff of champion and summons a tall stocky male champion.<br />
+A male champion now follows Nol.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Purly focuses on Nol and utters some strange words.<br />
+Purly heals Nol.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Rogina focuses on Heo and utters some strange words.<br />
+Rogina heals Heo.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Perry panics, and attempts to flee.<br />
+Perry flies south.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol gives a short sword to a male champion.<br />
+<br />
+514H 63V 8960946X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol gently cracks open a green dragon's egg. You watch with disgust<br />
+as you see the evil embryo squirm and die in the organic ooze.<br />
+<br />
+There is a bright flash of light, and when it fades Nol looks<br />
+surprised yet somehow enlightened.<br />
+You receive 4825 experience.<br />
+A fine silver dragon now follows Nol.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Rudra stands up.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Rellik panics, and attempts to flee.<br />
+Rellik flies north.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; You are already standing.<br />
+Nol gives a short sword to a fine silver dragon.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Inari stands up.<br />
+Inari crashes into Nol in a thundering collision, knocking him to the ground!<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Ender steps aside as Orien attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Troggs flies in from the west.<br />
+Solare flies in from the west.<br />
+Ie flies in from the west.<br />
+Arnold flies in from the west.<br />
+Flinco flies in from the west.<br />
+Suntz flies in from the west.<br />
+Clark stands up.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Inaris focuses harshly on Arnold and utters some strange words.<br />
+Inaris misses Arnold and destroys an image instead.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Umbata slowly fades into existence.<br />
+Umbata misses Arnold and destroys an image instead.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Arnold steps aside as Benke attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Paijietng utters some strange words.<br />
+There is lightning in the sky.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Ie steps aside as Heo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Delamar focuses harshly on Ie and utters some strange words.<br />
+Delamar comes out of hiding.<br />
+Delamar misses Ie and destroys an image instead.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Charis panics, and attempts to flee.<br />
+Charis flies west.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Rudra steps aside as Clark attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Suntz steps aside as Elizabeth attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol steps aside as Rudra attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Zakinthos panics, and attempts to flee.<br />
+Zakinthos flies south.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Perrin slowly fades into existence.<br />
+Perrin annihilates Elizabeth with his shoot.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Qynefkyrricp focuses harshly on Arnold and utters some strange words.<br />
+Qynefkyrricp misses Arnold and destroys an image instead.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Arnold utters some strange words.<br />
+A fine silver dragon is stunned!<br />
+A male champion is stunned!<br />
+Inaris is stunned momentarily, recovering quickly.<br />
+Rogina is stunned momentarily, recovering quickly.<br />
+Purly is stunned momentarily, recovering quickly.<br />
+Umbata is stunned momentarily, recovering quickly.<br />
+Qynefkyrricp is stunned momentarily, recovering quickly.<br />
+Paijietng is stunned momentarily, recovering quickly.<br />
+Lucrimus is stunned momentarily, recovering quickly.<br />
+Benke is stunned momentarily, recovering quickly.<br />
+Cecil is stunned!<br />
+Delamar is stunned momentarily, recovering quickly.<br />
+Loral is stunned momentarily, recovering quickly.<br />
+Peron is stunned momentarily, recovering quickly.<br />
+A male champion is stunned!<br />
+Elizabeth is stunned!<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Orien is stunned momentarily, recovering quickly.<br />
+Nol is stunned momentarily, recovering quickly.<br />
+Clark is stunned momentarily, recovering quickly.<br />
+You are stunned for a moment, but recover immediately.<br />
+Heo is stunned!<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Nol steps aside as Flook attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+514H 63V 8956121X 3333C [Me:V.Good] [Inari:Good] Exits:NSW&gt; <br />
+Peron shoots Arnold very hard.<br />
+Peron shoots Arnold hard.<br />
+Loral slashes Arnold extremely hard.<br />
+Loral is burned, as he swings at Arnold.<br />
+Lucrimus misses Arnold and destroys an image instead.<br />
+Paijietng bludgeons Arnold hard.<br />
+Paijietng is burned, as she swings at Arnold.<br />
+Qynefkyrricp misses Arnold with his hit.<br />
+Purly misses Arnold with her hit.<br />
+Rogina whips Arnold hard.<br />
+Rogina is burned, as she swings at Arnold.<br />
+Perrin obliterates Elizabeth with his shoot.<br />
+Perrin massacres Elizabeth with his shoot.<br />
+Suntz barely pierces Elizabeth.<br />
+Ie barely hits Heo.<br />
+Benke misses Arnold with her slash.<br />
+Umbata misses Arnold with his bludgeon.<br />
+Inaris bludgeons Arnold hard.<br />
+Inaris is burned, as she swings at Arnold.<br />
+Orien cleaves Ender hard.<br />
+Orien is chilled, as he swings at Ender.<br />
+Ender pierces Tikk very hard.<br />
+Ender is burned, as he swings at Tikk.<br />
+Ender appears to grow stronger.<br />
+Tikk's iceshield does him little good as Ender takes a swing at him.<br />
+Tikk misses Flook with his hit.<br />
+Flook massacres Tikk with his crush.<br />
+Flook appears to grow stronger.<br />
+Tikk's fireshield does him little good as Flook takes a swing at him.<br />
+Tikk's iceshield does him little good as Flook takes a swing at him.<br />
+Clark slashes Rudra very hard.<br />
+Kain stabs Nol very hard.<br />
+Kain is burned, as he swings at Nol.<br />
+Kain stabs Nol hard.<br />
+Kain is burned, as he swings at Nol.<br />
+You massacre Inari with your slash.<br />
+Inari cleaves YOU hard.<br />
+Inari cleaves YOU very hard.<br />
+Rudra cleaves Nol very hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+Rudra cleaves Nol hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+Nol drains Rudra extremely hard.<br />
+<br />
+493H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; <br />
+Troggs focuses on Ender and utters some strange words.<br />
+Troggs heals Ender.<br />
+<br />
+493H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; <br />
+Suntz utters some strange words.<br />
+A fine silver dragon is stunned momentarily, recovering quickly.<br />
+A male champion is stunned momentarily, recovering quickly.<br />
+Inaris is stunned momentarily, recovering quickly.<br />
+Rogina is stunned momentarily, recovering quickly.<br />
+Purly is stunned momentarily, recovering quickly.<br />
+Umbata is stunned momentarily, recovering quickly.<br />
+Qynefkyrricp is stunned momentarily, recovering quickly.<br />
+Paijietng is stunned momentarily, recovering quickly.<br />
+bash inariLucrimus is stunned momentarily, recovering quickly.<br />
+Benke is stunned momentarily, recovering quickly.<br />
+Cecil is stunned!<br />
+Delamar is stunned momentarily, recovering quickly.<br />
+Loral is stunned momentarily, recovering quickly.<br />
+Peron is stunned momentarily, recovering quickly.<br />
+A male champion is stunned momentarily, recovering quickly.<br />
+Elizabeth is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+Orien is stunned momentarily, recovering quickly.<br />
+Nol is stunned!<br />
+Clark is stunned!<br />
+You fall down, your ears ringing.<br />
+<br />
+493H 63V 8956121X 3333C [Me:Good] Exits:NSW&gt; <br />
+You are hit by a spray of gleaming indigo!<br />
+Heo is blasted by a spray of scintillating blue!<br />
+<br />
+447H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; You are completely disoriented.<br />
+<br />
+447H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; st<br />
+Delamar focuses harshly on Ie and utters some strange words.<br />
+Delamar misses Ie and destroys an image instead.<br />
+<br />
+447H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; <br />
+Kain stands up.<br />
+Purly focuses harshly on Inari and utters some strange words.<br />
+<br />
+447H 63V 8956121X 3333C [Me:Good] [Inari:Fair] Exits:NSW&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+A fine silver dragon is caught in a spray of shimmering red!<br />
+A fine silver dragon seems weaker.<br />
+A male champion is struck by a spray of vibrant green!<br />
+Inaris is struck by a spray of vibrant green!<br />
+Rogina is caught in a spray of radiant yellow!<br />
+Purly is struck by a spray of vibrant green!<br />
+Umbata is hit by a spray of gleaming indigo!<br />
+Umbata's face goes blank and he begins to drool.<br />
+Umbata is caught in a spray of bright orange!<br />
+Qynefkyrricp is caught in a spray of bright orange!<br />
+Qynefkyrricp seems to be blinded!<br />
+Paijietng is struck by a spray of murky violet!<br />
+Lucrimus is caught in a spray of shimmering red!<br />
+Benke is struck by a spray of vibrant green!<br />
+Cecil is blasted by a spray of scintillating blue!<br />
+Cecil freezes in place.<br />
+Delamar is caught in a spray of shimmering red!<br />
+Delamar is blasted by a spray of scintillating blue!<br />
+Loral is hit by a spray of gleaming indigo!<br />
+Peron is struck by a spray of vibrant green!<br />
+A male champion is caught in a spray of radiant yellow!<br />
+A male champion seems weaker.<br />
+Elizabeth is hit by a spray of gleaming indigo!<br />
+Tikk is caught in a spray of shimmering red!<br />
+Orien is caught in a spray of radiant yellow!<br />
+Nol is struck by a spray of vibrant green!<br />
+Clark is caught in a spray of radiant yellow!<br />
+You are hit by a spray of gleaming indigo!<br />
+Heo is hit by a spray of gleaming indigo!<br />
+<br />
+408H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Perry flies in from the south.<br />
+<br />
+408H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; You are completely disoriented.<br />
+<br />
+408H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Loral swings madly at Arnold with a two-handed sword, stained black with blood, knocking him to the ground.<br />
+<br />
+408H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Flinco utters some strange words.<br />
+Flinco conjures a writhing mass of inky black tentacles!<br />
+Perry screams in pain as inky black tentacles constrict him.<br />
+A fine silver dragon screams in pain as inky black tentacles constrict him.<br />
+A male champion is strangled to death by the writhing black tentacles.<br />
+A male champion is dead! R.I.P.<br />
+Inaris screams in pain as inky black tentacles constrict her.<br />
+Rogina screams in pain as inky black tentacles constrict her.<br />
+Purly screams in pain as inky black tentacles constrict her.<br />
+Umbata screams in pain as inky black tentacles constrict him.<br />
+Qynefkyrricp screams in pain as inky black tentacles constrict him.<br />
+Paijietng screams in pain as inky black tentacles constrict her.<br />
+Lucrimus screams in pain as inky black tentacles constrict him.<br />
+Benke screams in pain as inky black tentacles constrict her.<br />
+Cecil screams in pain as inky black tentacles constrict him.<br />
+Delamar screams in pain as inky black tentacles constrict him.<br />
+Loral screams in pain as inky black tentacles constrict him.<br />
+Peron screams in pain as inky black tentacles constrict him.<br />
+A male champion is strangled to death by the writhing black tentacles.<br />
+A male champion is dead! R.I.P.<br />
+Elizabeth screams in pain as inky black tentacles constrict her.<br />
+Tikk screams in pain as inky black tentacles constrict him.<br />
+Orien screams in pain as inky black tentacles constrict him.<br />
+Nol screams in pain as inky black tentacles constrict him.<br />
+Clark screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+Heo screams in pain as inky black tentacles constrict him.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Ender gets a potion from his chest.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+The death cry of a male champion echoes from somewhere nearby...<br />
+A male champion transcends this world and enters another plane.<br />
+The death cry of a male champion echoes from somewhere nearby...<br />
+A male champion transcends this world and enters another plane.<br />
+Ender quaffs a jade colored glass vial.<br />
+Ender heals Ender.<br />
+Ender's skin turns grey and granite-like.<br />
+Charis flies in from the west.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; sc<br />
+Kain crashes into Nol in a thundering collision, knocking him to the ground!<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; You are Murgen the Male Hylar Dwarf, a level 30 Warrior.<br />
+You are 50 years old.<br />
+You have 348(550) hit and 63(109) movement points.<br />
+Your behaviour has been Good.<br />
+You have scored 151043879 exp, and have 3333(0) steel coins.<br />
+You need 8956121 more experience to advance.<br />
+You have died 14 horrible deaths.<br />
+You have been connected for 2 hour(s) and 41 minute(s).<br />
+You have been playing for 20 day(s), 2 hour(s) and 52 minute(s).<br />
+You are sitting.<br />
+You are flying.<br />
+You are fighting Inari.<br />
+You are following Heo.<br />
+You are affected by the following:<br />
+    malevolent tentacles<br />
+    power word stun<br />
+    haste<br />
+    blur<br />
+    shield<br />
+    steelskin<br />
+    strength<br />
+    fly<br />
+    detect invisibility<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Qynefkyrricp focuses harshly on Arnold and utters some strange words.<br />
+The sound of bones cracking echoes as Qynefkyrricp's force bolt slams into Arnold.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Orien stands up.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Inaris focuses harshly on Arnold and utters some strange words.<br />
+The sound of bones cracking echoes as Inaris's force bolt slams into Arnold.<br />
+Paijietng focuses harshly on Arnold and utters some strange words.<br />
+Arnold screams in pain as lightning from Paijietng penetrates him.<br />
+Arnold is stunned, but will likely regain consciousness again.<br />
+Delamar focuses harshly on Ie and utters some strange words.<br />
+The sound of bones cracking echoes as Delamar's force bolt slams into Ie.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Perry crashes into Perrin in a thundering collision, knocking him to the ground!<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Orien crashes into Flinco in a thundering collision, knocking him to the ground!<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Rellik flies in from the north.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Rudra stands up.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Rudra crashes into Nol in a thundering collision, knocking him to the ground!<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:Fair] Exits:NSW&gt; <br />
+Inari quaffs a small vial.<br />
+Inari heals Inari.<br />
+Inari goes to sleep.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:V.Good] Exits:NSW&gt; <br />
+Rellik crashes into Arnold in a devastating bash, killing him mercilessly.<br />
+You receive 0 experience.<br />
+Arnold is dead! R.I.P.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:V.Good] Exits:NSW&gt; <br />
+The death cry of Arnold echoes from somewhere nearby...<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:V.Good] Exits:NSW&gt; sc<br />
+Charis gets a very large pile of coins from the corpse of Arnold.<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:V.Good] Exits:NSW&gt; You are Murgen the Male Hylar Dwarf, a level 30 Warrior.<br />
+You are 50 years old.<br />
+You have 348(550) hit and 63(109) movement points.<br />
+Your behaviour has been Good.<br />
+You have scored 151043879 exp, and have 3333(0) steel coins.<br />
+You need 8956121 more experience to advance.<br />
+You have died 14 horrible deaths.<br />
+You have been connected for 2 hour(s) and 41 minute(s).<br />
+You have been playing for 20 day(s), 2 hour(s) and 52 minute(s).<br />
+You are sitting.<br />
+You are flying.<br />
+You are fighting Inari.<br />
+You are following Heo.<br />
+You are affected by the following:<br />
+    malevolent tentacles<br />
+    power word stun<br />
+    haste<br />
+    blur<br />
+    shield<br />
+    steelskin<br />
+    strength<br />
+    fly<br />
+    detect invisibility<br />
+<br />
+348H 63V 8956121X 3333C [Me:Fair] [Inari:V.Good] Exits:NSW&gt; <br />
+Cecil screams in pain as inky black tentacles constrict him.<br />
+A fine silver dragon screams in pain as inky black tentacles constrict him.<br />
+Heo screams in pain as inky black tentacles constrict him.<br />
+Elizabeth screams in pain as inky black tentacles constrict her.<br />
+Clark screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+Nol screams in pain as inky black tentacles constrict him.<br />
+Flinco misses Perry with his pierce.<br />
+Perry annihilates Flinco with his crush.<br />
+Perry is burned, as he swings at Flinco.<br />
+Perry massacres Flinco with his crush.<br />
+Perry is burned, as he swings at Flinco.<br />
+Solare pierces a fine silver dragon extremely hard.<br />
+Perrin massacres Elizabeth with his shoot.<br />
+Perrin massacres Elizabeth with his shoot.<br />
+Orien bruises Ender with his cleave.<br />
+Orien is chilled, as he swings at Ender.<br />
+Orien bruises Ender with his cleave.<br />
+Orien is chilled, as he swings at Ender.<br />
+Ender pierces Tikk hard.<br />
+Ender is burned, as he swings at Tikk.<br />
+Ender appears to grow stronger.<br />
+Tikk's iceshield does him little good as Ender takes a swing at him.<br />
+Tikk misses Flook with his hit.<br />
+Flook massacres Tikk with his crush.<br />
+Flook appears to grow stronger.<br />
+Tikk's fireshield does him little good as Flook takes a swing at him.<br />
+Tikk's iceshield does him little good as Flook takes a swing at him.<br />
+Kain stabs Nol.<br />
+Kain is burned, as he swings at Nol.<br />
+Rudra hits the tentacles constricting Nol instead!<br />
+<br />
+Rudra cleaves Nol hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+The lightning has stopped.<br />
+Peron screams in pain as inky black tentacles constrict him.<br />
+<br />
+353H 87V 8956121X 3333C [Me:Fair] [Inari:Perfect] Exits:NSW&gt; <br />
+Troggs raises the delicate mirror above his head and smashes it into millions of<br />
+tiny pieces. Before you can attempt to stop him, you are enshrouded in intense<br />
+beams of bright light emitting from the shards of mirror lying on the ground.<br />
+Blinded, you close your eyes and hope for the best.<br />
+<br />
+After a time you open your eyes and see a bunny hopping across a dirt road.<br />
+He looks at you quizzically, then hops away.<br />
+Suntz disappears.<br />
+Flinco disappears.<br />
+Ie disappears.<br />
+Solare disappears.<br />
+Troggs disappears.<br />
+Perrin disappears.<br />
+Lucrimus disappears.<br />
+Benke disappears.<br />
+Cecil disappears.<br />
+Flook disappears.<br />
+Kain disappears.<br />
+Inari disappears.<br />
+Rudra disappears.<br />
+Ender disappears.<br />
+<br />
+353H 87V 8956121X 3333C [Me:Fair] [Inari:Perfect] Exits:NSW&gt; <br />
+Zakinthos flies in from the south.<br />
+<br />
+353H 87V 8956121X 3333C [Me:Fair] [Inari:Perfect] Exits:NSW&gt; <br />
+Delamar gets the black staff of shadows from the corpse of Arnold.<br />
+Delamar gets a troll bone ring from the corpse of Arnold.<br />
+Delamar gets a night shadow bracelet from the corpse of Arnold.<br />
+Delamar gets a plain component pouch from the corpse of Arnold.<br />
+Delamar gets a burlap belt pouch from the corpse of Arnold.<br />
+Delamar gets a set of platinum leg plates from the corpse of Arnold.<br />
+Delamar gets a shimmering suit of silver plate from the corpse of Arnold.<br />
+Delamar gets a black pearl amulet from the corpse of Arnold.<br />
+Delamar gets a black ice ring from the corpse of Arnold.<br />
+Delamar gets a lump of beeswax from the corpse of Arnold.<br />
+Delamar gets a black and grey marbled scroll from the corpse of Arnold.<br />
+Delamar gets a black and grey marbled scroll from the corpse of Arnold.<br />
+Delamar gets a powerful piece of cheese from the corpse of Arnold.<br />
+Delamar gets a vial of holy water from the corpse of Arnold.<br />
+<br />
+*********************************************************************<br />
+<br />
+A few minutes pass...<br />
+<br />
+*********************************************************************<br />
+<br />
+**Tikk: COME S<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; You stand up.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; <br />
+Charis flies south.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; <br />
+Rellik flies in from the south.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; <br />
+Orien's blow is absorbed by Heo's armor.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; <br />
+**Elizabeth: stunned<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; <br />
+Perry flies south.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; lA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of Arnold is lying here.<br />
+The corpse of a male champion is lying here. [2]<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+Aieo the Male Human is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Ser Dullblade, Renshai Action Hero is standing here. (flying)<br />
+A beast of the creation is standing here, appraising everything.<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+Zenwah Fanucci, the Black Hand is standing here. (flying)<br />
+A fine silver dragon is sitting here.<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Miss Inaris Incantatrix is standing here. (flying)<br />
+Rogina, Renshai in Pink Satin is standing here. (flying)<br />
+Purly Gleam, Iridescent Sheath of the Rusted Lances is standing here. (flying)<br />
+Umbata, Renshai Thing is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Qynefkyrricp is standing here. (flying)<br />
+Paijietng Renshai, The Last Drop Of Wild Turkey is standing here. (flying)<br />
+Delamar, Death Slaad of The Rusty Lance is standing here. (flying)<br />
+Loral Coral, Deep Sea Fisherman is standing here. (flying)<br />
+Peron Tensity, Renshai Reborn is standing here. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Elizabeth is sitting here. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Orien the Hunter is standing here, fighting Heo. (flying)<br />
+Nol the Male Theiwar Dwarf is sitting here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Clark, Rusted Lance is sitting here. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Orien. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+<br />
+323H 87V 8947363X 3333C Exits:NSW&gt; sAtop a Sharp Decline<br />
+    The road continues to wind through the Khalkist foothills. From your<br />
+position on top of this foothill, you can see a small village off to the<br />
+southeast, with mountains rising all around it. The road heads down a steep<br />
+decline, or towards the west to a crossroads.<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is standing here. (flying)<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Zakinthos, The Escape Artist of Renshai is standing here. (flying)<br />
+Tikk Tock, Renshai's Suicidal Timekeeper of Err is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Lord Elamar The Endbringer, Ve Victus Elite is standing here. (flying) (invisible)<br />
+<br />
+323H 85V 8947363X 3333C Exits:ND&gt; bash elamarYou crash into Elamar in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Good] Exits:ND&gt; <br />
+You massacre Elamar with your slash.<br />
+You massacre Elamar with your slash.<br />
+Elamar slowly fades into existence.<br />
+Elamar misses you with his stab.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Good] Exits:ND&gt; <br />
+Charis obliterates Elamar with her slash.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Fair] Exits:ND&gt; <br />
+**Rellik: wtf are we?<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Fair] Exits:ND&gt; <br />
+**Nol: stunned<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Fair] Exits:ND&gt; <br />
+Tikk misses Elamar with his hit.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Fair] Exits:ND&gt; <br />
+Elamar steps aside as Perry attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Fair] Exits:ND&gt; <br />
+Perry annihilates Elamar with his crush.<br />
+Perry massacres Elamar with his crush.<br />
+Tikk misses Elamar with his hit.<br />
+Charis annihilates Elamar with her slash.<br />
+Charis annihilates Elamar with her slash.<br />
+You massacre Elamar with your slash.<br />
+You massacre Elamar with your slash.<br />
+Elamar misses you with his stab.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Bad] Exits:ND&gt; bash<br />
+Zakinthos crashes into Elamar in a thundering collision, knocking him to the ground!<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Bad] Exits:ND&gt; You crash into Elamar in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Bad] Exits:ND&gt; <br />
+Perry stands up.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Bad] Exits:ND&gt; <br />
+Charis charges at Elamar, but he managed to move away.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:V.Bad] Exits:ND&gt; <br />
+Tikk focuses harshly on Elamar and utters some strange words.<br />
+Flesh burns as Tikk enshrouds Elamar in a cloak of flames.<br />
+<br />
+323H 85V 8947363X 3333C [Me:Fair] [Elamar:Awful] Exits:ND&gt; <br />
+You feel slow.<br />
+Zakinthos massacres Elamar with his slash.<br />
+Perry massacres Elamar with his crush.<br />
+Perry massacres Elamar with his crush.<br />
+Elamar is stunned, but will likely regain consciousness again.<br />
+Charis obliterates Elamar with her slash.<br />
+You receive 0 experience.<br />
+Elamar is dead! R.I.P.<br />
+The death cry of Elamar echoes from somewhere nearby...<br />
+<br />
+*********************************************************************<br />
+<br />
+A few more minutes pass...<br />
+<br />
+*********************************************************************<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Ender flies in from below.<br />
+Kain flies in from below.<br />
+Rudra flies in from below.<br />
+Troggs flies in from below.<br />
+Solare flies in from below.<br />
+Ie flies in from below.<br />
+Flinco flies in from below.<br />
+Suntz flies in from below.<br />
+Perrin flies in from below.<br />
+Flook flies in from below.<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Perry crashes into Perrin in a thundering collision, knocking him to the ground!<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Ie steps aside as Heo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Troggs utters some strange words.<br />
+Troggs is surrounded by a white aura.<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Ender flies north.<br />
+Kain flies north.<br />
+Rudra flies north.<br />
+Troggs flies north.<br />
+Solare flies north.<br />
+Flinco flies north.<br />
+Suntz flies north.<br />
+Flook flies north.<br />
+<br />
+549H 107V 8947363X 3333C Exits:ND&gt; <br />
+Ie utters some strange words.<br />
+Ie's hands issue a spray of prismatic color!<br />
+Elizabeth is caught in a spray of shimmering red!<br />
+Tikk is blasted by a spray of scintillating blue!<br />
+Zakinthos is struck by a spray of murky violet!<br />
+Zakinthos panics, and attempts to flee.<br />
+Zakinthos flies north.<br />
+Perry is struck by a spray of murky violet!<br />
+Orien is caught in a spray of radiant yellow!<br />
+A fine silver dragon is struck by a spray of vibrant green!<br />
+A fine silver dragon is caught in a spray of radiant yellow!<br />
+A fine silver dragon seems weaker.<br />
+A fine silver dragon is caught in a spray of bright orange!<br />
+A fine silver dragon seems to be blinded!<br />
+A beast of the creation is blasted by a spray of scintillating blue!<br />
+Ie misses Nol and destroys an image instead.<br />
+Charis is caught in a spray of shimmering red!<br />
+You are hit by a spray of gleaming indigo!<br />
+Rellik is hit by a spray of gleaming indigo!<br />
+Heo is hit by a spray of gleaming indigo!<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Perfect] Exits:ND&gt; bash inariYou couldn't find what you were looking for.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Perfect] Exits:ND&gt; <br />
+Nol utters some strange words.<br />
+Nol's hands issue a spray of prismatic color!<br />
+Perrin is caught in a spray of radiant yellow!<br />
+Perrin is caught in a spray of shimmering red!<br />
+Nol misses Ie and destroys an image instead.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Perfect] Exits:ND&gt; <br />
+Rellik misses Ie with his hit.<br />
+You miss Ie with your slash.<br />
+Charis slashes Ie extremely hard.<br />
+A beast of the creation misses Ie and destroys an image instead.<br />
+A fine silver dragon misses Ie with his claw.<br />
+A fine silver dragon misses Ie with his claw.<br />
+Orien misses Ie and destroys an image instead.<br />
+Tikk misses Ie and destroys an image instead.<br />
+Elizabeth slowly fades into existence.<br />
+Elizabeth misses Ie with her slash.<br />
+Ie wavers under Heo's mighty slash!<br />
+Heo massacres Ie with his slash.<br />
+Perry annihilates Perrin with his crush.<br />
+Perrin slowly fades into existence.<br />
+Perrin misses Perry with his shoot.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Good] Exits:ND&gt; bash inariYou couldn't find what you were looking for.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Good] Exits:ND&gt; <br />
+Charis panics, and attempts to flee.<br />
+Charis flies down.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Good] Exits:ND&gt; bashYou crash into Ie in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Fair] Exits:ND&gt; <br />
+Ie steps aside as Orien attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Fair] Exits:ND&gt; <br />
+Nol has lost his link.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Fair] Exits:ND&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:Fair] Exits:ND&gt; <br />
+Rellik misses Ie with his hit.<br />
+You slash Ie extremely hard.<br />
+Nol drains Ie very hard.<br />
+A beast of the creation claws Ie very hard.<br />
+A fine silver dragon misses Ie with his claw.<br />
+A fine silver dragon misses Ie with his claw.<br />
+Orien cleaves Ie extremely hard.<br />
+Tikk misses Ie with his hit.<br />
+Elizabeth massacres Ie with her slash.<br />
+Heo massacres Ie with his slash.<br />
+Ie misses Heo with his hit.<br />
+Perry massacres Perrin with his crush.<br />
+Perrin massacres Perry with his shoot.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; <br />
+Heo stands up.<br />
+Perry crashes into Perrin in a thundering collision, knocking him to the ground!<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; <br />
+Nol has reconnected.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; <br />
+Charis flies in from below.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; <br />
+Ie steps aside as Elizabeth attempts a bash, stumbles, and falls flat on her face.<br />
+Tikk utters some strange words.<br />
+Tikk disappears.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; l<br />
+Zenwah flies in from the north.<br />
+<br />
+508H 107V 8947363X 3333C [Me:V.Good] [Heo:Fair] [Ie:V.Bad] Exits:ND&gt; sca<br />
+Rellik misses Ie with his hit.<br />
+You massacre Ie with your slash.<br />
+Nol misses Ie with his drain.<br />
+A beast of the creation claws Ie very hard.<br />
+A fine silver dragon misses Ie with his claw.<br />
+A fine silver dragon misses Ie with his claw.<br />
+Orien misses Ie with his cleave.<br />
+Elizabeth massacres Ie with her slash.<br />
+Ie is mortally wounded, and will die soon, if not aided.<br />
+Heo massacres Ie with his slash.<br />
+You receive 0 experience.<br />
+Ie is dead! R.I.P.<br />
+Perry crushes Perrin extremely hard.<br />
+Perrin massacres Perry with his shoot.<br />
+The death cry of Ie echoes from somewhere nearby...<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+Your blood freezes as you hear someone's death cry.<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+Charis gets a pile of coins from the corpse of Ie.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+**Tzaddi: are both groups there now<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; l<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; stAtop a Sharp Decline<br />
+    The road continues to wind through the Khalkist foothills. From your<br />
+position on top of this foothill, you can see a small village off to the<br />
+southeast, with mountains rising all around it. The road heads down a steep<br />
+decline, or towards the west to a crossroads.<br />
+The corpse of Ie is lying here.<br />
+Zenwah Fanucci, the Black Hand is standing here. (flying)<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Perrin Aybara, the Archer Lola Wants is sitting here, fighting Perry. (flying)<br />
+. . . has a tough exterior.<br />
+Elizabeth is sitting here. (flying) (invisible)<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is standing here, fighting Perrin. (flying)<br />
+Orien the Hunter is sitting here. (flying)<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Nol the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; Nol gets a translucent little wing from the corpse of Ie.<br />
+Nol gets a cloth belt pack from the corpse of Ie.<br />
+Nol gets a black and grey marbled shield from the corpse of Ie.<br />
+Nol gets a leather skullcap from the corpse of Ie.<br />
+Nol is zapped by a black robe of ancient sorcery and instantly drops it.<br />
+Nol gets a black pearl amulet from the corpse of Ie.<br />
+Nol is zapped by a fiery red ring and instantly drops it.<br />
+Nol is zapped by a fiery red ring and instantly drops it.<br />
+Nol gets a powerful piece of cheese from the corpse of Ie.<br />
+Nol gets a flower of Queen Christine's lace from the corpse of Ie.<br />
+Nol gets a blue potion from the corpse of Ie.<br />
+Nol gets a scroll of recall from the corpse of Ie.<br />
+Nol gets a glowing scroll of recall from the corpse of Ie.<br />
+Looking north:<br />
+You see nothing special.<br />
+Zakinthos, The Escape Artist of Renshai is sitting here, fighting Kain. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a crimson cloak inlaid with threads of marble; a glowing adamantite bracelet.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Zakinthos. (flying)<br />
+. . . is enveloped in flames.<br />
+Solare Isolato, the Immalleable is standing here, fighting Zakinthos. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Zakinthos. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Zakinthos. (flying)<br />
+Ender of Lives is standing here, fighting Loral. (flying)<br />
+. . . has a tough exterior.<br />
+Peron Tensity, Renshai Reborn is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Loral Coral, Deep Sea Fisherman is standing here, fighting Ender. (flying)<br />
+Paijietng Renshai, The Last Drop Of Wild Turkey is standing here, fighting Ender. (flying)<br />
+Rogina, Renshai in Pink Satin is standing here, fighting Ender. (flying)<br />
+Looking east:<br />
+A small village nestled between mountains lies off to the southeast.<br />
+Looking south:<br />
+Off to the south you notice towering mountains.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+The road leads down a steep decline.<br />
+Zakhira the Idiot is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Orien stands up.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+**Tzaddi: ?<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; get all corpseAtop a Sharp Decline<br />
+    The road continues to wind through the Khalkist foothills. From your<br />
+position on top of this foothill, you can see a small village off to the<br />
+southeast, with mountains rising all around it. The road heads down a steep<br />
+decline, or towards the west to a crossroads.<br />
+A ring which glows red as flame has been misplaced by its owner...it glows dimly [2]<br />
+A black robe with silver stars and moons is lying here...it glows dimly<br />
+The corpse of Ie is lying here.<br />
+Zenwah Fanucci, the Black Hand is standing here. (flying)<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Perrin Aybara, the Archer Lola Wants is sitting here, fighting Perry. (flying)<br />
+. . . has a tough exterior.<br />
+Elizabeth is sitting here. (flying) (invisible)<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is standing here, fighting Perrin. (flying)<br />
+Orien the Hunter is standing here. (flying)<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Nol the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; You are already standing.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; You get an enchanted barrel from the corpse of Ie.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; scaLooking north:<br />
+You see nothing special.<br />
+Ser Dullblade, Renshai Action Hero is standing here, fighting Flinco. (flying)<br />
+Zakinthos, The Escape Artist of Renshai is sitting here, fighting Kain. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a crimson cloak inlaid with threads of marble; a glowing adamantite bracelet.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Zakinthos. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here, fighting Zakinthos. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Zakinthos. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Zakinthos. (flying)<br />
+Ender of Lives is standing here, fighting Loral. (flying)<br />
+. . . has a granite appearance.<br />
+Peron Tensity, Renshai Reborn is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Loral Coral, Deep Sea Fisherman is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Paijietng Renshai, The Last Drop Of Wild Turkey is lying here, dead.<br />
+Rogina, Renshai in Pink Satin is standing here, fighting Ender. (flying)<br />
+Looking east:<br />
+A small village nestled between mountains lies off to the southeast.<br />
+Looking south:<br />
+Off to the south you notice towering mountains.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+The road leads down a steep decline.<br />
+Zakhira the Idiot is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 107V 8947363X 3333C Exits:ND&gt; <br />
+Heo flies north.<br />
+Rellik flies north.<br />
+You follow Heo north.<br />
+Charis flies in from the south.<br />
+Nol flies in from the south.<br />
+A beast of the creation arrives from the south.<br />
+A fine silver dragon arrives from the south.<br />
+A fine silver dragon arrives from the south.<br />
+Orien flies in from the south.<br />
+A Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Orien the Hunter is standing here. (flying)<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Nol the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+Ser Dullblade, Renshai Action Hero is standing here, fighting Flinco. (flying)<br />
+Zakinthos, The Escape Artist of Renshai is sitting here, fighting Kain. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a crimson cloak inlaid with threads of marble; a glowing adamantite bracelet.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Zakinthos. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here, fighting Zakinthos. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Zakinthos. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Zakinthos. (flying)<br />
+Ender of Lives is standing here, fighting Loral. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Peron Tensity, Renshai Reborn is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Loral Coral, Deep Sea Fisherman is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Rogina, Renshai in Pink Satin is standing here, fighting Ender. (flying)<br />
+<br />
+508H 105V 8947363X 3333C Exits:NSW&gt; <br />
+Ser panics, and attempts to flee.<br />
+Ser flies south.<br />
+<br />
+508H 105V 8947363X 3333C Exits:NSW&gt; <br />
+Zakinthos screams in pain as inky black tentacles constrict him.<br />
+Loral screams in pain as inky black tentacles constrict him.<br />
+Peron screams in pain as inky black tentacles constrict him.<br />
+Solare pierces Zakinthos very hard.<br />
+Ender misses Loral with his pierce.<br />
+Rudra cleaves Zakinthos very hard.<br />
+Kain hits the tentacles constricting Zakinthos instead!<br />
+<br />
+<br />
+508H 105V 8947363X 3333C Exits:NSW&gt; <br />
+Solare steps aside as Rellik attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+508H 105V 8947363X 3333C Exits:NSW&gt; bash inariYou couldn't find what you were looking for.<br />
+<br />
+508H 105V 8947363X 3333C Exits:NSW&gt; <br />
+Heo flies north.<br />
+You follow Heo north.<br />
+Charis flies in from the south.<br />
+Nol flies in from the south.<br />
+A beast of the creation arrives from the south.<br />
+A fine silver dragon arrives from the south.<br />
+A fine silver dragon arrives from the south.<br />
+Orien flies in from the south.<br />
+Moving Through the Khalkist Foothills<br />
+    The road continues to meander through the Khalkist foothills which<br />
+surround you. The Khalkist foothills appear very bleak and barren, with<br />
+only a few patches of plants growing upon them. The road extends to the<br />
+south to an intersection, or north into the foothills.<br />
+Orien the Hunter is standing here. (flying)<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Nol the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is standing here. (flying)<br />
+<br />
+508H 103V 8947363X 3333C Exits:NS&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+508H 103V 8947363X 3333C Exits:NS&gt; <br />
+Orien stands on a podium and begins intoning the virtues of SASS.<br />
+<br />
+508H 103V 8947363X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Ser Dullblade, Renshai Action Hero is standing here. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is sitting here, fighting Solare. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Solare Isolato, the Immalleable is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Ender of Lives is standing here, fighting Loral. (flying)<br />
+. . . has a granite appearance.<br />
+Peron Tensity, Renshai Reborn is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Loral Coral, Deep Sea Fisherman is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Rogina, Renshai in Pink Satin is standing here, fighting Ender. (flying)<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+508H 103V 8947363X 3333C Exits:NS&gt; <br />
+Heo flies south.<br />
+You follow Heo south.<br />
+Charis flies in from the north.<br />
+Nol flies in from the north.<br />
+A beast of the creation arrives from the north.<br />
+A fine silver dragon arrives from the north.<br />
+A fine silver dragon arrives from the north.<br />
+Orien flies in from the north.<br />
+A Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Orien the Hunter is standing here. (flying)<br />
+A fine young silver dragon stands quietly here.<br />
+A fine young silver dragon stands quietly here.<br />
+A beast of the creation is standing here, appraising everything.<br />
+Nol the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Heo Versh, Peon of Renshai is standing here. (flying)<br />
+Ser Dullblade, Renshai Action Hero is standing here. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is sitting here, fighting Solare. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Solare Isolato, the Immalleable is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Ender of Lives is standing here, fighting Loral. (flying)<br />
+. . . has a granite appearance.<br />
+Peron Tensity, Renshai Reborn is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Loral Coral, Deep Sea Fisherman is standing here, fighting Ender. (flying)<br />
+. . . is overwhelmed by inky black tentacles.<br />
+Rogina, Renshai in Pink Satin is standing here, fighting Ender. (flying)<br />
+<br />
+508H 101V 8947363X 3333C Exits:NSW&gt; <br />
+Ender utters some strange words.<br />
+Orien is shredded by shards of ice.<br />
+A fine silver dragon is shredded by shards of ice.<br />
+A fine silver dragon is shredded by shards of ice.<br />
+A beast of the creation is shredded by shards of ice.<br />
+Ender destroys Nol's mirror images.<br />
+Nol is shredded by shards of ice.<br />
+Charis is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Heo is shredded by shards of ice.<br />
+Ser is shredded by shards of ice.<br />
+Rellik is shredded by shards of ice.<br />
+Peron is torn to pieces by hundreds of shards of ice.<br />
+Peron is dead! R.I.P.<br />
+Loral is shredded by shards of ice.<br />
+Rogina is shredded by shards of ice.<br />
+<br />
+482H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+The death cry of Peron echoes from somewhere nearby...<br />
+Peron now follows Loral.<br />
+Loral is the new leader of Peron's group.<br />
+Cecil now follows Loral.<br />
+Benke now follows Loral.<br />
+Lucrimus now follows Loral.<br />
+Ser now follows Loral.<br />
+Purly now follows Loral.<br />
+Rogina now follows Loral.<br />
+Rudra gets a wolf tooth bracelet from the corpse of Peron.<br />
+Rudra gets a pair of small cloth boots from the corpse of Peron.<br />
+Rudra gets a scroll of recall from the corpse of Peron.<br />
+bash inariRudra gets a glowing scroll of recall from the corpse of Peron.<br />
+<br />
+482H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+482H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Kain crashes into Nol in a thundering collision, knocking him to the ground!<br />
+<br />
+482H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Ser gets a leather quiver from the corpse of Peron.<br />
+Ser gets brass dragonscale leggings from the corpse of Peron.<br />
+Ser gets a glowing scroll of recall from the corpse of Peron.<br />
+Ser gets a scroll of recall from the corpse of Peron.<br />
+Ser gets a scroll of recall from the corpse of Peron.<br />
+<br />
+482H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Loral screams in pain as inky black tentacles constrict him.<br />
+Kain stabs Nol hard.<br />
+Kain is burned, as he swings at Nol.<br />
+Ser bruises Ender with his cleave.<br />
+Ser is chilled, as he swings at Ender.<br />
+Heo bruises Ender with his slash.<br />
+Heo is chilled, as he swings at Ender.<br />
+You bruise Ender with your slash.<br />
+You feel a sharp chill as you swing through Ender's freezing aura.<br />
+Charis bruises Ender with her slash.<br />
+Charis is chilled, as she swings at Ender.<br />
+Nol misses Ender with his drain.<br />
+A beast of the creation bruises Ender with his claw.<br />
+A beast of the creation is chilled, as he swings at Ender.<br />
+A fine silver dragon misses Ender with his claw.<br />
+A fine silver dragon bruises Ender with his claw.<br />
+A fine silver dragon is chilled, as he swings at Ender.<br />
+Orien misses Ender with his cleave.<br />
+Solare pierces Rellik extremely hard.<br />
+Suntz misses Rellik with his pierce.<br />
+Rellik misses Solare with his hit.<br />
+<br />
+465H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Rogina panics, and attempts to flee.<br />
+Rogina flies south.<br />
+<br />
+465H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Loral attempts to break free of the black tentacles, but fails!<br />
+<br />
+465H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Solare utters some strange words.<br />
+Solare's hands issue a spray of prismatic color!<br />
+Orien is caught in a spray of shimmering red!<br />
+A fine silver dragon is hit by a spray of gleaming indigo!<br />
+A fine silver dragon is incapacitated and will slowly die, if not aided.<br />
+A fine silver dragon shudders.<br />
+A fine silver dragon is struck by a spray of vibrant green!<br />
+A beast of the creation is caught in a spray of radiant yellow!<br />
+A beast of the creation seems weaker.<br />
+Nol is caught in a spray of radiant yellow!<br />
+Charis is struck by a spray of murky violet!<br />
+You are caught in a spray of shimmering red!<br />
+Heo is blasted by a spray of scintillating blue!<br />
+Ser is struck by a spray of murky violet!<br />
+Rellik is caught in a spray of bright orange!<br />
+Rellik seems to be blinded!<br />
+Loral is blasted by a spray of scintillating blue!<br />
+<br />
+437H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Ser panics, and attempts to flee.<br />
+Ser flies north.<br />
+<br />
+437H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; <br />
+Charis panics, and attempts to flee.<br />
+Charis flies north.<br />
+<br />
+437H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; fl<br />
+Rogina flies in from the south.<br />
+<br />
+437H 101V 8947363X 3333C [Me:Good] [Loral:Awful] [Ender:V.Good] Exits:NSW&gt; You flee head over heels.<br />
+Passing Through the Khalkist Foothills<br />
+    As you scan the landscape around you, you notice little in the way of<br />
+plant life. The foothills of the Khalkists are bleak and barren, bringing a<br />
+shiver down your spine. The road continues to the east to a crossroads, and<br />
+also downwards into the lower foothills of the region.<br />
+<br />
+437H 99V 8947363X 3333C Exits:ED&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+437H 99V 8947363X 3333C Exits:ED&gt; scaLooking north:<br />
+Beyond the hills to the north, you notice the vast plains.<br />
+Looking east:<br />
+The road meets up at a crossroads to the east.<br />
+Orien the Hunter is standing here, fighting Ender. (flying)<br />
+A fine silver dragon is standing here, fighting Ender.<br />
+A beast of the creation is standing here, fighting Ender.<br />
+Nol the Male Theiwar Dwarf is sitting here, fighting Ender. (flying)<br />
+. . . is enveloped in flames.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Ender. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is sitting here, fighting Solare. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Nol. (flying)<br />
+Ender of Lives is standing here, fighting Nol. (flying)<br />
+. . . has a granite appearance.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The Khalkist foothills continue in this direction.<br />
+Looking up:<br />
+The cloud filled sky overhead.<br />
+Looking down:<br />
+The road continues down into the lower foothills.<br />
+<br />
+437H 99V 8947363X 3333C Exits:ED&gt; eA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of a fine silver dragon is lying here.<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Orien the Hunter is standing here, fighting Ender. (flying)<br />
+A fine silver dragon is lying here, bleeding.<br />
+A beast of the creation is standing here, fighting Ender.<br />
+Nol the Male Theiwar Dwarf is sitting here, fighting Ender. (flying)<br />
+. . . has a metallic luster.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Ender. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is sitting here, fighting Solare. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Orien. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rudra the Male Hylar Dwarf is sitting here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Nol. (flying)<br />
+Ender of Lives is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+437H 97V 8947363X 3333C Exits:NSW&gt; bash inariYou couldn't find what you were looking for.<br />
+<br />
+437H 97V 8947363X 3333C Exits:NSW&gt; <br />
+Flinco misses Orien with his pierce.<br />
+Rudra cleaves Nol very hard.<br />
+Rudra is burned, as he swings at Nol.<br />
+Ender pierces Nol hard.<br />
+Ender is burned, as he swings at Nol.<br />
+Flook crushes Nol very hard.<br />
+Flook appears to grow stronger.<br />
+Nol's fireshield does him little good as Flook takes a swing at him.<br />
+Kain stabs Nol very hard.<br />
+Kain is burned, as he swings at Nol.<br />
+Heo bruises Ender with his slash.<br />
+Heo is chilled, as he swings at Ender.<br />
+Nol bruises Ender with his drain.<br />
+Nol is chilled, as he swings at Ender.<br />
+A beast of the creation claws Ender very hard.<br />
+A beast of the creation is chilled, as he swings at Ender.<br />
+Orien cleaves Ender hard.<br />
+Orien is chilled, as he swings at Ender.<br />
+Rellik misses Solare with his hit.<br />
+<br />
+437H 97V 8947363X 3333C Exits:NSW&gt; <br />
+Rellik stands up.<br />
+<br />
+437H 97V 8947363X 3333C Exits:NSW&gt; lA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of a fine silver dragon is lying here.<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Orien the Hunter is standing here, fighting Ender. (flying)<br />
+A fine silver dragon is lying here, bleeding.<br />
+A beast of the creation is standing here, fighting Ender.<br />
+Nol the Male Theiwar Dwarf is sitting here, fighting Ender. (flying)<br />
+. . . has a metallic luster.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Ender. (flying)<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here, fighting Solare. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Orien. (flying)<br />
+. . . has a tough exterior.<br />
+Solare Isolato, the Immalleable is standing here, fighting Rellik. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is sitting here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Nol. (flying)<br />
+Ender of Lives is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+437H 97V 8947363X 3333C Exits:NSW&gt; <br />
+Ender utters some strange words.<br />
+Your body is torn by huge pieces of ice.<br />
+Orien is shredded by shards of ice.<br />
+A fine silver dragon is torn to pieces by hundreds of shards of ice.<br />
+A fine silver dragon is dead! R.I.P.<br />
+A beast of the creation is shredded by shards of ice.<br />
+Nol is shredded by shards of ice.<br />
+Heo is shredded by shards of ice.<br />
+Rellik is shredded by shards of ice.<br />
+<br />
+408H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; <br />
+The death cry of a fine silver dragon echoes from somewhere nearby...<br />
+<br />
+408H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; <br />
+Solare focuses harshly on Rellik and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Rellik.<br />
+<br />
+408H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; <br />
+Orien delivers a vicious kick to Ender's face. Blood flies as his head snaps back.<br />
+<br />
+408H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; <br />
+Suntz utters some strange words.<br />
+Suntz's hands issue a spray of prismatic color!<br />
+You are struck by a spray of murky violet!<br />
+You are struck by a spray of vibrant green!<br />
+Orien is caught in a spray of radiant yellow!<br />
+Orien is hit by a spray of gleaming indigo!<br />
+A beast of the creation is caught in a spray of radiant yellow!<br />
+Nol is struck by a spray of vibrant green!<br />
+Heo is caught in a spray of shimmering red!<br />
+Rellik is caught in a spray of bright orange!<br />
+<br />
+326H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; <br />
+Nol steps aside as Kain attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+326H 97V 8947363X 3333C [Me:Fair] [Nol:V.Bad] [Ender:Good] Exits:NSW&gt; flYou flee head over heels.<br />
+Moving Through the Khalkist Foothills<br />
+    The road continues to meander through the Khalkist foothills which<br />
+surround you. The Khalkist foothills appear very bleak and barren, with<br />
+only a few patches of plants growing upon them. The road extends to the<br />
+south to an intersection, or north into the foothills.<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is standing here. (flying)<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Benke flies south.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is standing here. (flying)<br />
+Orien the Hunter is standing here, fighting Ender. (flying)<br />
+A beast of the creation is standing here, fighting Ender.<br />
+Nol the Male Theiwar Dwarf is sitting here, fighting Ender. (flying)<br />
+. . . has a metallic luster.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Ender. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a crimson cloak inlaid with threads of marble; a glowing adamantite bracelet.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Orien. (flying)<br />
+. . . is enveloped in flames.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is sitting here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is sitting here, fighting Nol. (flying)<br />
+Ender of Lives is standing here, fighting Nol. (flying)<br />
+. . . has a tough exterior.<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+**Rellik: blind<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+**Rellik: blind<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is standing here, fighting Suntz. (flying)<br />
+Orien the Hunter is standing here, fighting Ender. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Benke. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Orien. (flying)<br />
+. . . has a tough exterior.<br />
+You see the outline of a life form here, carrying: a pair of ivory gauntlets; a pair of finely crafted circlets; the robes of darkness; a frosted tin bracer; a potion of golden sap; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is sitting here. (flying)<br />
+Ender of Lives is standing here, fighting Orien. (flying)<br />
+. . . has a tough exterior.<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 32m95V 8947363X 3333C Exits:NS&gt; <br />
+Charis flies north.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Charis flies in from the north.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Rellik flies in from the south.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Rellik flies north.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Rellik Ramiro, Killer Tipsy and Dazed Renshai Rebel is standing here. (flying)<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is standing here, fighting Suntz. (flying)<br />
+Orien the Hunter is sitting here, fighting Ender. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Benke. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here, fighting Orien. (flying)<br />
+. . . is enveloped in flames.<br />
+You see the outline of a life form here, carrying: a pair of ivory gauntlets; a pair of finely crafted circlets; the robes of darkness; a frosted tin bracer; a glowing adamantite bracelet; a glowing adamantite bracelet; a potion of golden sap; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Benke. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is sitting here. (flying)<br />
+Ender of Lives is standing here, fighting Orien. (flying)<br />
+. . . has a tough exterior.<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Charis flies north.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Solare flies in from the south.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; <br />
+Solare flies south.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+Foothills cover the landscape.<br />
+Looking south:<br />
+The road continues through the Khalkist foothills to the south.<br />
+Solare Isolato, the Immalleable is standing here, fighting Elizabeth. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Elizabeth is standing here, fighting Solare. (flying) (invisible)<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is sitting here, fighting Suntz. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Benke. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here, fighting Elizabeth. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Benke. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Looking west:<br />
+Foothills cover the landscape.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+326H 95V 8947363X 3333C Exits:NS&gt; sA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of Orien is lying here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of boots made from some strange, leathery material are sitting on the ground.<br />
+A strange jewel, its color changing with the light, floats here.<br />
+The corpse of Nol is lying here.<br />
+The corpse of a fine silver dragon is lying here. [2]<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Solare Isolato, the Immalleable is standing here, fighting Elizabeth. (flying) (invisible)<br />
+. . . appears duplicated.<br />
+Elizabeth is standing here, fighting Solare. (flying) (invisible)<br />
+Benke Bus, Rusted Lance's Supplier of Snuff is sitting here, fighting Suntz. (flying)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Benke. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here, fighting Elizabeth. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here, fighting Benke. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here. (flying)<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Heo flies in from the west.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Ender focuses harshly on Elizabeth and utters some strange words.<br />
+Ender slowly fades into existence.<br />
+Flesh burns as Ender enshrouds Elizabeth in a cloak of flames.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Flinco pierces Benke hard.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Flook slowly fades into existence.<br />
+Flook crashes into Elizabeth in a thundering collision, knocking her to the ground!<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Flook annihilates Elizabeth with his crush.<br />
+Flinco misses Benke with his pierce.<br />
+Troggs misses Elizabeth with his hit.<br />
+Solare misses Elizabeth with his pierce.<br />
+Elizabeth misses Solare and destroys an image instead.<br />
+Rudra cleaves Benke extremely hard.<br />
+Benke misses Suntz with her hit.<br />
+Perry flies in from the south.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; <br />
+Elizabeth steps aside as Kain attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; kick solare<br />
+Solare focuses harshly on Elizabeth and utters some strange words.<br />
+The sound of bones cracking echoes as Solare's force bolt slams into Elizabeth.<br />
+<br />
+326H 93V 8947363X 3333C Exits:NSW&gt; You try to sweep Solare's legs, but are unable to.<br />
+<br />
+326H 93V 8947363X 3333C [Me:Fair] [Elizabeth:Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+Kain steps aside as Heo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+326H 93V 8947363X 3333C [Me:Fair] [Elizabeth:Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+**Tikk: who won<br />
+<br />
+326H 93V 8947363X 3333C [Me:Fair] [Elizabeth:Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+Zenwah flies in from the south.<br />
+<br />
+326H 93V 8947363X 3333C [Me:Fair] [Elizabeth:Bad] [Solare:Perfect] Exits:NSW&gt; kick<br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Zenwah withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Perry withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Heo withers as a ray of sunlight sent by Troggs engulfs him!<br />
+You wither as a ray of sunlight engulfs you!<br />
+Elizabeth withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Benke withers as a ray of sunlight sent by Troggs engulfs her!<br />
+Benke is stunned, but will likely regain consciousness again.<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+Ender focuses harshly on Elizabeth and utters some strange words.<br />
+Ender slowly fades into existence.<br />
+Flesh burns as Ender enshrouds Elizabeth in a cloak of flames.<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:Perfect] Exits:NSW&gt; quaff blue.potion<br />
+**Rellik: dont know<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+Riko shouts 'high ranger looking for a group'<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:Perfect] Exits:NSW&gt; <br />
+Perry crushes Troggs hard.<br />
+Zenwah bruises Troggs with his slash.<br />
+Heo massacres Kain with his slash.<br />
+You miss Solare with your slash.<br />
+Kain stabs Elizabeth hard.<br />
+Flook massacres Elizabeth with his crush.<br />
+Flinco pierces Benke extremely hard.<br />
+Benke is dead! R.I.P.<br />
+Elizabeth slashes Solare extremely hard.<br />
+The death cry of Benke echoes from somewhere nearby...<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:V.Good] Exits:NSW&gt; <br />
+Elizabeth steps aside as Rudra attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+298H 93V 8947363X 3333C [Me:Fair] [Elizabeth:V.Bad] [Solare:V.Good] Exits:NSW&gt; Solare utters some strange words.<br />
+Solare's hands issue a spray of prismatic color!<br />
+Zenwah is hit by a spray of gleaming indigo!<br />
+Perry is caught in a spray of bright orange!<br />
+Perry is struck by a spray of murky violet!<br />
+Heo is caught in a spray of bright orange!<br />
+You are caught in a spray of shimmering red!<br />
+Elizabeth is struck by a spray of murky violet!<br />
+You deliver a snap kick and hit Solare in the chest.<br />
+<br />
+264H 93V 8947363X 3333C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Perry gets a very large pile of coins from the corpse of Benke.<br />
+<br />
+264H 93V 8947363X 3333C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Perry divides 3272 coins equally among the group members present.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Perry panics, and attempts to flee.<br />
+Perry flies south.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Troggs focuses on Kain and utters some strange words.<br />
+Troggs heals Kain.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Zenwah heroically rescues Elizabeth.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Flinco focuses harshly on Zenwah and utters some strange words.<br />
+The sound of bones cracking echoes as Flinco's force bolt slams into Zenwah.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+**Rellik: im blind as shit<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Ender focuses harshly on Elizabeth and utters some strange words.<br />
+Ender slowly fades into existence.<br />
+Flesh burns as Ender enshrouds Elizabeth in a cloak of flames.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Perry flies in from the south.<br />
+<br />
+264H 93V 8947363X 4151C [Me:Bad] [Elizabeth:Awful] [Solare:V.Good] Exits:NSW&gt; <br />
+Rudra cleaves Zenwah extremely hard.<br />
+Zenwah barely slashes Rudra.<br />
+Heo misses Kain with his slash.<br />
+You miss Solare with your slash.<br />
+Kain misses Elizabeth with his stab.<br />
+Flook massacres Elizabeth with his crush.<br />
+Elizabeth is dead! R.I.P.<br />
+The death cry of Elizabeth echoes from somewhere nearby...<br />
+The rising sun proclaims a new day.<br />
+Flook heroically rescues Solare.<br />
+<br />
+280H 109V 8947363X 4151C [Me:Fair] [Flook:Perfect] Exits:NSW&gt; <br />
+Kain stands up.<br />
+<br />
+280H 109V 8947363X 4151C [Me:Fair] [Flook:Perfect] Exits:NSW&gt; <br />
+Suntz gets a very large pile of coins from the corpse of Elizabeth.<br />
+<br />
+280H 109V 8947363X 4151C [Me:Fair] [Flook:Perfect] Exits:NSW&gt; Solare utters some strange words.<br />
+Solare's hands issue a spray of prismatic color!<br />
+Perry is caught in a spray of radiant yellow!<br />
+Zenwah is caught in a spray of radiant yellow!<br />
+Heo is caught in a spray of shimmering red!<br />
+You are struck by a spray of murky violet!<br />
+You are hit by a spray of gleaming indigo!<br />
+You quaff the evil blue potion.<br />
+You feel the healing hand of Takhisis, the Queen of Darkness invade your<br />
+soul. The chilling touch is like nothing like you have ever felt before.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+Heo steps aside as Kain attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+547H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Suntz steps aside as Perry attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+547H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; lA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of Elizabeth is lying here.<br />
+The corpse of Benke is lying here.<br />
+The corpse of Orien is lying here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of boots made from some strange, leathery material are sitting on the ground.<br />
+A strange jewel, its color changing with the light, floats here.<br />
+The corpse of Nol is lying here.<br />
+The corpse of a fine silver dragon is lying here. [2]<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is sitting here, fighting Solare. (flying)<br />
+Zenwah Fanucci, the Black Hand is standing here, fighting Rudra. (flying)<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Kain. (flying)<br />
+You see the outline of a life form here, carrying: a pair of ivory gauntlets; a pair of finely crafted circlets; the robes of darkness; a frosted tin bracer; a glowing adamantite bracelet; a glowing adamantite bracelet; a potion of golden sap; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting YOU. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Perry. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is sitting here, fighting Zenwah. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is sitting here, fighting Heo. (flying)<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+547H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Flinco focuses harshly on Zenwah and utters some strange words.<br />
+Flinco comes out of hiding.<br />
+The sound of bones cracking echoes as Flinco's force bolt slams into Zenwah.<br />
+Zenwah is incapacitated and will slowly die, if not aided.<br />
+Zenwah suffers from lack of blood, and the lack of a beating heart...<br />
+Zenwah is dead! R.I.P.<br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Perry withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Heo withers as a ray of sunlight sent by Troggs engulfs him!<br />
+You wither as a ray of sunlight engulfs you!<br />
+<br />
+516H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; <br />
+The death cry of Zenwah echoes from somewhere nearby...<br />
+<br />
+516H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; lA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of Zenwah is lying here.<br />
+The corpse of Elizabeth is lying here.<br />
+The corpse of Benke is lying here.<br />
+The corpse of Orien is lying here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of boots made from some strange, leathery material are sitting on the ground.<br />
+A strange jewel, its color changing with the light, floats here.<br />
+The corpse of Nol is lying here.<br />
+The corpse of a fine silver dragon is lying here. [2]<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Perry Fo'Neri Renshai Corpse Production Specialist is sitting here, fighting Solare. (flying)<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Kain. (flying)<br />
+Solare Isolato, the Immalleable is standing here, fighting Perry. (flying) (invisible)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting YOU. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here, fighting Perry. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here, fighting Perry. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is sitting here, fighting Heo. (flying)<br />
+Ender of Lives is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+516H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Troggs misses Perry with his hit.<br />
+Suntz misses Perry with his pierce.<br />
+Solare pierces Perry hard.<br />
+Perry crushes Solare very hard.<br />
+You miss Flook with your slash.<br />
+Flook slowly fades into existence.<br />
+Flook crushes YOU extremely hard.<br />
+Kain misses Heo with his stab.<br />
+Heo misses Kain with his slash.<br />
+Ender gets a small pile of coins from the corpse of Zenwah.<br />
+<br />
+500H 109V 8947363X 4151C [Me:V.Good] [Flook:Perfect] Exits:NSW&gt; <br />
+You are sent sprawling as Flook crashes into you.<br />
+<br />
+466H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Ender flies south.<br />
+<br />
+466H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Rudra stands up.<br />
+<br />
+466H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Solare utters some strange words.<br />
+Solare conjures a writhing mass of inky black tentacles!<br />
+Perry screams in pain as inky black tentacles constrict him.<br />
+Heo screams in pain as inky black tentacles constrict him.<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+Rudra crashes into Perry in a thundering collision, knocking him to the ground!<br />
+<br />
+435H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Ender flies in from the south.<br />
+<br />
+435H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; l<br />
+Suntz focuses harshly on Perry and utters some strange words.<br />
+The sound of bones cracking echoes as Suntz's force bolt slams into Perry.<br />
+<br />
+435H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Ender slowly fades into existence.<br />
+Ender misses you with his pierce.<br />
+<br />
+435H 109V 8947363X 4151C [Me:Good] [Flook:Perfect] Exits:NSW&gt; <br />
+Ender misses you with his pierce.<br />
+Rudra massacres Perry with his cleave.<br />
+Troggs misses Perry with his hit.<br />
+Perry crushes Solare extremely hard.<br />
+You slash Flook extremely hard.<br />
+Flook crushes YOU extremely hard.<br />
+Kain stabs Heo extremely hard.<br />
+Heo slashes Kain extremely hard.<br />
+<br />
+416H 109V 8947363X 4151C [Me:Good] [Flook:V.Good] Exits:NSW&gt; <br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Perry withers as a ray of sunlight sent by Troggs engulfs him!<br />
+Heo withers as a ray of sunlight sent by Troggs engulfs him!<br />
+You wither as a ray of sunlight engulfs you!<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Flinco gets an apple from his chest.<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+CRUUUUNCH!!!!  Flinco bites into his shiny red apple.<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Kain stands up.<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Kain crashes into Heo in a thundering collision, knocking him to the ground!<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Flinco gets a scroll of recall from the corpse of Zenwah.<br />
+Flinco gets a long sword from the corpse of Zenwah.<br />
+Flinco gets a wooden shield from the corpse of Zenwah.<br />
+Flinco gets a smokey red satchel from the corpse of Zenwah.<br />
+Flinco gets a mystic bow from the corpse of Zenwah.<br />
+Flinco gets a torch from the corpse of Zenwah.<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Suntz focuses harshly on Perry and utters some strange words.<br />
+Brains splatter on you as Suntz's force bolt shatters Perry's skull.<br />
+Perry is dead! R.I.P.<br />
+<br />
+381H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Ender misses you with his pierce.<br />
+You miss Flook with your slash.<br />
+Flook crushes YOU extremely hard.<br />
+Kain stabs Heo hard.<br />
+Heo slashes Kain very hard.<br />
+The death cry of Perry echoes from somewhere nearby...<br />
+<br />
+362H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; recite recallA Crossroads in the Khalkist Foothills<br />
+    You arrive upon a three way crossroads in the foothills of the<br />
+Khalkists. As you examine the three different directions, you only notice<br />
+that each passes through the barren Khalkist foothills, which spread all<br />
+around you. Other than these foothills, you are only able to make out some<br />
+large mountains in each direction which further block your view of anything<br />
+beyond them.<br />
+The corpse of Perry is lying here.<br />
+The corpse of Zenwah is lying here.<br />
+The corpse of Elizabeth is lying here.<br />
+The corpse of Benke is lying here.<br />
+The corpse of Orien is lying here.<br />
+A cap made of leather and embroidered in fine silk lies unattended here.<br />
+A pair of boots made from some strange, leathery material are sitting on the ground.<br />
+A strange jewel, its color changing with the light, floats here.<br />
+The corpse of Nol is lying here.<br />
+The corpse of a fine silver dragon is lying here. [2]<br />
+The corpse of Loral is lying here.<br />
+The corpse of Peron is lying here.<br />
+A nasty looking helmet lies here covered in dust...it glows dimly<br />
+The corpse of Zakinthos is lying here.<br />
+A small holy symbol lies here.<br />
+The corpse of Paijietng is lying here.<br />
+The corpse of Delamar is lying here.<br />
+The corpse of Aieo is lying here.<br />
+The corpse of Qynefkyrricp is lying here.<br />
+The corpse of Umbata is lying here.<br />
+The corpse of Inaris is lying here.<br />
+The corpse of a fine silver dragon is lying here.<br />
+A short sword lies here. [2]<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+A small cube of cheese rests here, pulsating with power.<br />
+A large waterskin lies here.<br />
+The corpse of Elamar is lying here.<br />
+An oak-handled mace lies here in the dust.<br />
+The corpse of Arnold is lying here.<br />
+A mountain spring bubbles out of the rocks into a small pool.<br />
+A small sign stands just off the road.<br />
+Ender of Lives is standing here, fighting YOU. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Heo Versh, Peon of Renshai is sitting here, fighting Kain. (flying)<br />
+Solare Isolato, the Immalleable is standing here. (flying) (invisible)<br />
+Flook E. Monster, Wildly Eating Flookies is standing here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+Suntz is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Flinco, Seeker of The Wild Inner Fluffy is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Troggs, Pzar of Wild Slaith Swamp is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rudra the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kain the Male High Elf is standing here, fighting Heo. (flying)<br />
+<br />
+362H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Flook gets a small black rose from the corpse of Elizabeth.<br />
+Flook is zapped by an ancient sword of the morning rose and instantly drops it.<br />
+Flook gets a solid silver girdle from the corpse of Elizabeth.<br />
+Flook gets a thick wool coat from the corpse of Elizabeth.<br />
+Flook gets skull-encased black steel pauldrons from the corpse of Elizabeth.<br />
+Flook gets a pair of gauntlets of abyssal might from the corpse of Elizabeth.<br />
+Flook gets an ancient medallion from the corpse of Elizabeth.<br />
+Flook gets a black ice ring from the corpse of Elizabeth.<br />
+Flook gets a rune etched mithril ring from the corpse of Elizabeth.<br />
+Ender gets a large pile of coins from the corpse of Perry.<br />
+<br />
+362H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Heo steps aside as Rudra attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+362H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Solare says 'gimme an apple flinco'<br />
+<br />
+362H 109V 8947363X 4151C [Me:Fair] [Flook:V.Good] Exits:NSW&gt; <br />
+Ender focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Ender enshrouds you in a cloak of flames.<br />
+<br />
+257H 109V 8947363X 4151C [Me:Bad] [Flook:V.Good] Exits:NSW&gt; <br />
+Rudra massacres Heo with his cleave.<br />
+You should probably stand up!<br />
+You slash Flook extremely hard.<br />
+Flook crushes YOU extremely hard.<br />
+Kain's blow is absorbed by Heo's armor.<br />
+Heo misses Kain with his slash.<br />
+Troggs utters some strange words.<br />
+Troggs's hands send forth blinding rays of sunlight!<br />
+Heo withers as a ray of sunlight sent by Troggs engulfs him!<br />
+You wither as a ray of sunlight engulfs you!<br />
+<br />
+207H 109V 8947363X 4151C [Me:V.Bad] [Flook:V.Good] Exits:NSW&gt; <br />
+Solare focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Solare's force bolt slams into you.<br />
+<br />
+139H 109V 8947363X 4151C [Me:V.Bad] [Flook:V.Good] Exits:NSW&gt; <br />
+Flinco gets a glowing scroll of recall from the corpse of Perry.<br />
+Flinco gets a giant's hammer from the corpse of Perry.<br />
+Flinco is zapped by a gold belt and instantly drops it.<br />
+Flinco gets silvery sleeves of stalking from the corpse of Perry.<br />
+Flinco gets a pair of demon claw gloves from the corpse of Perry.<br />
+Flinco gets an ancient medallion from the corpse of Perry.<br />
+Flinco gets a black ice ring from the corpse of Perry.<br />
+Flinco gets a malachite ring from the corpse of Perry.<br />
+<br />
+139H 109V 8947363X 4151C [Me:V.Bad] [Flook:V.Good] Exits:NSW&gt; <br />
+Kain gets a pair of charred black plate boots from the corpse of Elizabeth.<br />
+Kain gets some black steel legplates from the corpse of Elizabeth.<br />
+Kain gets a red dragonmask from the corpse of Elizabeth.<br />
+<br />
+139H 109V 8947363X 4151C [Me:V.Bad] [Flook:V.Good] Exits:NSW&gt; You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Hamilton Way<br />
+     This small path is mostly traveled by men of the fighting arts. You<br />
+see the Academy of The Fighting Arts located to the northeast corner of<br />
+this road. The cityguard headquarters and a few shops that deal in armour<br />
+and weapons can also be found on this small street.<br />
+<br />
+139H 109V 8947363X 4151C Exits:NESW&gt; st<br />
+**Charis: uh, they're wasn't 25 fighting there<br />
+<br />
+139H 109V 8947363X 4151C Exits:NESW&gt; <br />
+Solare appears before you in a puff of smoke.<br />
+<br />
+139H 109V 8947363X 4151C Exits:NESW&gt; smile<br />
+You stop following Heo.<br />
+You now follow Rellik.<br />
+<br />
+139H 109V 8947363X 4151C Exits:NESW&gt; <br />
+Solare focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Solare has reached its goal.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+82H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; You stand up.<br />
+<br />
+82H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; <br />
+Galad shouts 'Rhath why did you attack me'<br />
+<br />
+82H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; flflYou smile warmly.<br />
+<br />
+82H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; <br />
+Solare misses you with his pierce.<br />
+You slash Solare extremely hard.<br />
+<br />
+82H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; <br />
+Solare focuses harshly on you and utters some strange words.<br />
+You are caught in some of Solare's acid!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+33H 109V 8947363X 4151C [Me:Awful] [Solare:Good] Exits:NESW&gt; flYou flee head over heels.<br />
+Voren's Armoury<br />
+     This large shop is filled with all types of strange armour. Display<br />
+cases fill the walls, showing different types of suits, plates and any<br />
+other protective wear you can think of. Aside from battle armour, there is<br />
+also another section in the store that also sells clothes and some form of<br />
+jewelry. Most of the jewelry are locked in the counter. A sign is here<br />
+showing your options in this shop.<br />
+A small metallic canteen has been dropped here.<br />
+Voren, the armour trader, is here ready to help you.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; flYou're not fighting, why bother fleeing?<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; You're not fighting, why bother fleeing?<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; You're not fighting, why bother fleeing?<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; iYou are carrying:<br />
+an enchanted barrel..it glows dimly<br />
+a small canteen [2]<br />
+Mishakal's White potion<br />
+a large first-aid kit<br />
+a small canteen [2]<br />
+a powerful piece of cheese [7]<br />
+a glass eyedropper<br />
+a scroll of recall [2]<br />
+a small wooden chest<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; <br />
+Troggs shouts 'otsosite'<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; <br />
+Solare flies in from the south.<br />
+A Kalaman cityguard looks at Solare and yells  'There's the scoundrel!'<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; <br />
+A Kalaman cityguard slashes Solare very hard.<br />
+<br />
+33H 108V 8947363X 4151C Exits:S&gt; squaff whiteHamilton Way<br />
+     This small path is mostly traveled by men of the fighting arts. You<br />
+see the Academy of The Fighting Arts located to the northeast corner of<br />
+this road. The cityguard headquarters and a few shops that deal in armour<br />
+and weapons can also be found on this small street.<br />
+<br />
+33H 107V 8947363X 4151C Exits:NESW&gt; You quaff Mishakal's White potion.<br />
+You feel the healing hand of Mishakal upon your body.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+545H 107V 8947363X 4151C Exits:NESW&gt; n<br />
+Solare flies in from the north.<br />
+<br />
+545H 107V 8947363X 4151C Exits:NESW&gt; Voren's Armoury<br />
+     This large shop is filled with all types of strange armour. Display<br />
+cases fill the walls, showing different types of suits, plates and any<br />
+other protective wear you can think of. Aside from battle armour, there is<br />
+also another section in the store that also sells clothes and some form of<br />
+jewelry. Most of the jewelry are locked in the counter. A sign is here<br />
+showing your options in this shop.<br />
+A small metallic canteen has been dropped here.<br />
+Voren, the armour trader, is here ready to help you.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+545H 106V 8947363X 4151C Exits:S&gt; sHamilton Way<br />
+     This small path is mostly traveled by men of the fighting arts. You<br />
+see the Academy of The Fighting Arts located to the northeast corner of<br />
+this road. The cityguard headquarters and a few shops that deal in armour<br />
+and weapons can also be found on this small street.<br />
+Solare Isolato, the Immalleable is standing here. (flying) (invisible)<br />
+<br />
+545H 105V 8947363X 4151C Exits:NESW&gt; <br />
+Flook shouts 'help help there is too much stuff to loot!'<br />
+<br />
+545H 105V 8947363X 4151C Exits:NESW&gt; kick solareYou deliver a snap kick and hit Solare in the chest.<br />
+<br />
+545H 105V 8947363X 4151C [Me:V.Good] [Solare:Good] Exits:NESW&gt; <br />
+Solare focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Solare has reached its goal.<br />
+<br />
+483H 105V 8947363X 4151C [Me:Good] [Solare:Good] Exits:NESW&gt; kickkick<br />
+You slash Solare extremely hard.<br />
+<br />
+483H 105V 8947363X 4151C [Me:Good] [Solare:Fair] Exits:NESW&gt; Your vicious kick leaves your boots covered with blood and gore.<br />
+<br />
+483H 105V 8947363X 4151C [Me:Good] [Solare:Fair] Exits:NESW&gt; <br />
+Lester arrives from the south.<br />
+<br />
+483H 105V 8947363X 4151C [Me:Good] [Solare:Fair] Exits:NESW&gt; <br />
+Lester leaves west.<br />
+<br />
+483H 105V 8947363X 4151C [Me:Good] [Solare:Fair] Exits:NESW&gt; kick<br />
+Solare utters some strange words.<br />
+Solare disappears in a puff of smoke.<br />
+<br />
+*********************************************************************<br />
+<br />
+And I win vs. Solare! :p<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='252'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=252">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="252">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

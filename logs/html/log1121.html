@@ -1,0 +1,2484 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1121-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1121'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Moto leads more garbages to their deaths.</font></b>
+<p>
+POV: 
+Satya<p>
+Log Rating:
+0.1999<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Due to being continually hunted by some Garbage group I set up an ambush, didnt work out completely as expected but the overall mission was a success.</i>
+<p>
+<p>
+
+H 136V 23346127X 4551C Exits:NESW&gt; n<br />
+Market Square of Kalaman<br />
+     This square is the busiest part of the city. People of all kinds walk<br />
+the city square of Kalaman. Shoppers, merchants and wagons go through this<br />
+square non-stop all day long. The air is filled with the smell of food,<br />
+spice and anything else you can think of. It is almost impossible to<br />
+stretch your arms here without hitting something or someone.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+H 135V 23346127X 4551C Exits:NESW&gt; back dragor<br />
+Dragor twists around to see you place a red metallic javelin in his back.<br />
+Dragor appears noticeably weaker.<br />
+<br />
+H 135V 23346127X 4551C [Satya:Perfect] [Dragor:V.Bad] Exits:NESW&gt; <br />
+Dragor gives a sandling an order.<br />
+<br />
+H 135V 23346127X 4551C [Satya:Perfect] [Dragor:V.Bad] Exits:NESW&gt; fade s<br />
+n<br />
+<br />
+You massacre Dragor with your pierce.<br />
+You pierce Dragor very hard.<br />
+Dragor misses you with his hit.<br />
+Dragor panics, and attempts to flee.<br />
+Dragor flies south.<br />
+<br />
+H 135V 23346127X 4551C Exits:NESW&gt; back dragor<br />
+<br />
+Dragor flies in from the south.<br />
+<br />
+H 135V 23346127X 4551C Exits:NESW&gt; s<br />
+back dragor<br />
+<br />
+Dragor flies north.<br />
+A sandling leaves north.<br />
+<br />
+Later<br />
+<br />
+H 129V 23346127X 4551C Exits:NESW&gt; n<br />
+Vingaard Avenue North<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. This part of Vingaard Avenue is quite busy. The city<br />
+square is directly south of here, and the open air bazaars are to the east<br />
+and west.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+n<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A quarter horse is standing here chewing on something.<br />
+<br />
+H 128V 23346127X 4551C Exits:NESW&gt; n<br />
+Dragor focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Dragor has reached its goal.<br />
+You can't do that while fighting.<br />
+<br />
+H 128V 23346127X 4551C [Satya:Good] [Dragor:V.Bad] Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+H 128V 23346127X 4551C [Satya:Good] [Dragor:V.Bad] Exits:NESW&gt; n<br />
+You can't do that while fighting.<br />
+<br />
+H 128V 23346127X 4551C [Satya:Good] [Dragor:V.Bad] Exits:NESW&gt; fle<br />
+You flee head over heels.<br />
+Open Air Bazaar of Kalaman<br />
+Air Bazaar of Kalaman<br />
+     This is the famous open air bazaar of Kalaman. Many merchants travel<br />
+from far away places to do business at the bazaar. It is very crowded here.<br />
+Many of the citizens come here to shop or to just browse around. Some of<br />
+the items being sold are quite interesting, but you can't think of any uses<br />
+you would have for them.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+A merchant is here trying to sell you something.<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; fle<br />
+<br />
+A Kalaman cityguard arrives from the west.<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A quarter horse is standing here chewing on something.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; sneak<br />
+You begin moving quietly.<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; sneak<br />
+w<br />
+back dragor<br />
+You begin moving quietly.<br />
+<br />
+H 127V 23346127X 4551C Exits:SW&gt; Vingaard Avenue North<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. This part of Vingaard Avenue is quite busy. The city<br />
+square is directly south of here, and the open air bazaars are to the east<br />
+and west.<br />
+A quarter horse is standing here chewing on something.<br />
+<br />
+H 126V 23346127X 4551C Exits:NESW&gt; A Kalaman cityguard arrives from the north.<br />
+You couldn't find what you were looking for.<br />
+<br />
+H 126V 23346127X 4551C Exits:NESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A little girl is playing around in the street.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+A merchant is here trying to sell you something.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+H 126V 23346127X 4551C Exits:NESW&gt; sneak<br />
+You begin moving quietly.<br />
+<br />
+H 126V 23346127X 4551C Exits:NESW&gt; n<br />
+back dragor<br />
+Vingaard Avenue North<br />
+  This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, beyond the city gates, lies the harbor of<br />
+Kalaman, where many ships dock daily. To the south you see the busy town<br />
+square and bazaar.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A little girl is playing around in the street.<br />
+<br />
+H 125V 23346127X 4551C Exits:NS&gt; <br />
+Dragor focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Dragor has reached its goal.<br />
+<br />
+H 125V 23346127X 4551C [Satya:Fair] [Dragor:V.Bad] Exits:NS&gt; A bodyguard looks at you and yells 'Th<br />
+ere's the scoundrel!'<br />
+You can't do that while fighting.<br />
+<br />
+H 125V 23346127X 4551C [Satya:Fair] [Dragor:V.Bad] Exits:NS&gt; <br />
+A bodyguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+H 125V 23346127X 4551C [Satya:Fair] [Dragor:V.Bad] Exits:NS&gt; <br />
+A bodyguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+H 125V 23346127X 4551C [Satya:Fair] [Dragor:V.Bad] Exits:NS&gt; fle<br />
+You flee head over heels.<br />
+Vingaard Avenue North<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, beyond the city gates, lies the harbor of<br />
+Kalaman, where many ships dock daily. To the south you see the busy town<br />
+square and bazaar. To the east is Hamilton Way, where the Academy of<br />
+Fighting Arts is located.<br />
+<br />
+H 124V 23346127X 4551C Exits:NES&gt; fle<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+H 124V 23346127X 4551C Exits:NES&gt; fle<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+H 124V 23346127X 4551C Exits:NES&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A little girl is playing around in the street.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+H 124V 23346127X 4551C Exits:NES&gt; sneak<br />
+s<br />
+back dragor<br />
+You begin moving quietly.<br />
+<br />
+H 124V 23346127X 4551C Exits:NES&gt; Vingaard Avenue North<br />
+     This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. To the north, beyond the city gates, lies the harbor of<br />
+Kalaman, where many ships dock daily. To the south you see the busy town<br />
+square and bazaar.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+A pile of sand shifts about in the wind.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Lord Calof is here pondering over some political matters.<br />
+A little girl is playing around in the street.<br />
+<br />
+H 123V 23346127X 4551C Exits:NS&gt; Dragor focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Dragor has reached its goal.<br />
+You can't do that while fighting.<br />
+<br />
+H 123V 23346127X 4551C [Satya:Fair] [Dragor:V.Bad] Exits:NS&gt; fle<br />
+You flee head over heels.<br />
+Vingaard Avenue North<br />
+    This is Vingaard Avenue, a well traveled street that runs north-south<br />
+through Kalaman. This part of Vingaard Avenue is quite busy. The city<br />
+square is directly south of here, and the open air bazaars are to the east<br />
+and west.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A quarter horse is standing here chewing on something.<br />
+<br />
+fle<br />
+H 122V 23346127X 4551C Exits:NESW&gt; <br />
+Lord Calof arrives from the north.<br />
+Dragor flies in from the north.<br />
+A sandling arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+A bodyguard arrives from the north.<br />
+<br />
+H 122V 23346127X 4551C Exits:NESW&gt; fle<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+H 122V 23346127X 4551C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+H 122V 23346127X 4551C Exits:NESW&gt; back dragor<br />
+Dragor reaches behind himself quickly, only to discover your deadly javelin in his back.<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Dragor is dead! R.I.P.<br />
+<br />
+Later<br />
+<br />
+<br />
+H 104V 23264693X 4648C Exits:NS&gt; s<br />
+Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+back leredin<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+H 103V 23264693X 4648C Exits:NU&gt; Leredin twists around to see you place a red metallic javelin in h<br />
+is back.<br />
+Leredin appears noticeably weaker.<br />
+<br />
+H 103V 23264693X 4648C [Satya:Perfect] [Leredin:V.Bad] Exits:NU&gt; <br />
+Tikle tells you 'autofly pants on merchant'<br />
+<br />
+H 103V 23264693X 4648C [Satya:Perfect] [Leredin:V.Bad] Exits:NU&gt; fade n<br />
+s<br />
+<br />
+You massacre Leredin with your pierce.<br />
+You pierce Leredin very hard.<br />
+Leredin misses you with his pierce.<br />
+<br />
+H 103V 23264693X 4648C [Satya:Perfect] [Leredin:V.Bad] Exits:NU&gt; back leredin<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+<br />
+H 102V 23264693X 4648C Exits:NS&gt; Sorcerer's Lounge<br />
+     This lounge area looks almost like a library. Bookshelves line all<br />
+four walls of this room. Many young mages spend their breaks here studying.<br />
+A set of creaky wooden steps lead up into a large classroom.<br />
+back leredin<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+H 101V 23264693X 4648C Exits:NU&gt; <br />
+back leredin<br />
+Leredin flies north.<br />
+<br />
+H 101V 23264693X 4648C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+H 101V 23264693X 4648C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+H 101V 23264693X 4648C Exits:NU&gt; You couldn't find what you were looking for.<br />
+<br />
+H 101V 23264693X 4648C Exits:NU&gt; n<br />
+n<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't cerEntrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+back leredin<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+H 100V 23264693X 4648C Exits:NS&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+<br />
+H 99V 23264693X 4648C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+H 99V 23264693X 4648C Exits:NESW&gt; s<br />
+Entrance to the School<br />
+     The building is not very large and looks quite humble. The master of<br />
+this school is an elven maiden; rumors have it she is a great enchantress.<br />
+But because of the mages' esoteric nature, people really aren't certain.<br />
+back leredin<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+H 98V 23264693X 4648C Exits:NS&gt; Leredin looks behind himself just in time to avoid your poor attemp<br />
+t at a backstab.<br />
+<br />
+<br />
+H 98V 23264693X 4648C [Satya:Perfect] [Leredin:V.Bad] Exits:NS&gt; <br />
+Quri flies in from the south.<br />
+Eadh flies in from the south.<br />
+Venger flies in from the south.<br />
+Beroxi flies in from the south.<br />
+<br />
+H 98V 23264693X 4648C [Satya:Perfect] [Leredin:V.Bad] Exits:NS&gt; <br />
+You pierce Leredin extremely hard.<br />
+You miss Leredin with your pierce.<br />
+Leredin pierces YOU.<br />
+<br />
+H 98V 23264693X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NS&gt; <br />
+Quri flies north.<br />
+Eadh flies north.<br />
+Venger flies north.<br />
+Beroxi flies north.<br />
+<br />
+H 98V 23264693X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NS&gt; <br />
+Rasputin tells your group 'ded=fredy'<br />
+<br />
+H 98V 23264693X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NS&gt; fade n<br />
+s<br />
+<br />
+Leredin panics, and attempts to flee.<br />
+back leredin<br />
+Leredin flies south.<br />
+<br />
+<br />
+<br />
+Then the ambushers get ambushed etc yada yada.<br />
+<br />
+<br />
+H 146V 23262003X 4648C Exits:NSW&gt; s<br />
+A Dark Alley<br />
+     The alley is dark and filthy. Trash is littered all over the place.<br />
+This place is so different from the rest of the town, you would think you<br />
+were in another lesser city. The city really needs to clean up this<br />
+section, but people are afraid of the crime here.<br />
+Tikle Ish, Renshai Hysteria is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+H 145V 23262003X 4648C Exits:NEW&gt; sca<br />
+<br />
+Ded arrives from the west.<br />
+back leredin<br />
+Leredin flies in from the west.<br />
+<br />
+H 145V 23262003X 4648C Exits:NEW&gt; <br />
+Dragor flies north.<br />
+<br />
+H 145V 23262003X 4648C Exits:NEW&gt; Looking north:<br />
+You see nothing special.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+A tired traveller is looking around for the town's inn.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+H 145V 23262003X 4648C Exits:NEW&gt; Leredin twists around to see you place a red metallic javelin in <br />
+his back.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:V.Bad] Exits:NEW&gt; <br />
+You are sent sprawling as Ded crashes into you.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:V.Bad] Exits:NEW&gt; <br />
+Tikle focuses harshly on Ded and utters some strange words.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:V.Bad] Exits:NEW&gt; <br />
+Ded cleaves YOU extremely hard.<br />
+You pierce Leredin extremely hard.<br />
+You pierce Leredin extremely hard.<br />
+Leredin pierces YOU hard.<br />
+<br />
+H 145V 23262003X 4648C [Satya:Good] [Leredin:V.Bad] Exits:NEW&gt; <br />
+Leredin focuses harshly on you and utters some strange words.<br />
+<br />
+H 145V 23262003X 4648C [Satya:Good] [Leredin:V.Bad] Exits:NEW&gt; st<br />
+<br />
+Tikle focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:V.Bad] Exits:NEW&gt; <br />
+Dragor flies in from the north.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:V.Bad] Exits:NEW&gt; fade n<br />
+s<br />
+<br />
+Ded cleaves YOU extremely hard.<br />
+You pierce Leredin extremely hard.<br />
+You miss Leredin with your pierce.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NEW&gt; <br />
+Leredin focuses harshly on you and utters some strange words.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NEW&gt; back leredin<br />
+<br />
+Dragor utters the words, 'qu c'.<br />
+<br />
+451H 145V 23262003X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NEW&gt; <br />
+You step aside as Ded tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Leredin:Awful] Exits:NEW&gt; <br />
+Tikle focuses harshly on Leredin and utters some strange words.<br />
+Tikle slowly fades into existence.<br />
+Tikle comes out of hiding.<br />
+Leredin withers as a ray of sunlight sent by Tikle engulfs him!<br />
+Leredin is mortally wounded, and will die soon, if not aided.<br />
+Leredin suffers from lack of blood, and the lack of a beating heart...<br />
+You receive 0 experience.<br />
+<br />
+Leredin is dead! R.I.P.<br />
+<br />
+H 145V 23262003X 4648C [Leredin:Dying] Exits:NEW&gt; <br />
+A Kalaman cityguard arrives from the east.<br />
+The death cry of Leredin echoes from somewhere nearby...<br />
+Leredin sinks gently to the ground.<br />
+Leredin stops following Ded.<br />
+Dragor stops following Leredin.<br />
+Dragor now follows Ded.<br />
+You direct your attention to Ded.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Ded:Perfect] Exits:NEW&gt; <br />
+You massacre Ded with your pierce.<br />
+You pierce Ded extremely hard.<br />
+Ded misses you with his cleave.<br />
+<br />
+H 145V 23262003X 4648C [Satya:V.Good] [Ded:V.Good] Exits:NEW&gt; <br />
+Dragor focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Dragor has reached its goal.<br />
+<br />
+H 145V 23262003X 4648C [Satya:Good] [Ded:V.Good] Exits:NEW&gt; fade n<br />
+s<br />
+You stand up.<br />
+<br />
+H 145V 23262003X 4648C [Satya:Good] [Ded:V.Good] Exits:NEW&gt; back ded<br />
+A Dark Alley<br />
+     The alley is dark and filthy. Trash is littered all over the place.<br />
+This place is so different from the rest of the town, you would think you<br />
+were in another lesser city. The city really needs to clean up this<br />
+section, but people are afraid of the crime here. There is a small house to<br />
+the west with its doors open, you see a few shady looking characters enter<br />
+but they didn't come back out.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+H 144V 23262003X 4648C Exits:NSW&gt; A Dark Alley<br />
+     The alley is dark and filthy. Trash is littered all over the place.<br />
+This place is so different from the rest of the town, you would think you<br />
+were in another lesser city. The city really needs to clean up this<br />
+section, but people are afraid of the crime here.<br />
+The corpse of Leredin is lying here.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+back ded<br />
+Ded Moroz is sitting here.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+H 143V 23262003X 4648C Exits:NEW&gt; You couldn't find what you were looking for.<br />
+<br />
+H 143V 23262003X 4648C Exits:NEW&gt; It's a pretty ghastly sight! Searching through the remains, you f<br />
+ind:<br />
+corpse (here) : <br />
+a small first-aid kit<br />
+a serrated dagger<br />
+a leather wrist band [2]<br />
+a pair of leather sleeves<br />
+a pair of leather gloves<br />
+a pair of leather pants<br />
+a leather jacket<br />
+an amulet of levitation..it glows dimly<br />
+a very large pile of coins<br />
+a small canteen<br />
+an iron ration [3]<br />
+a salted herring [4]<br />
+an ice wand<br />
+a salted herring [2]<br />
+a great mithril bow<br />
+a waterskin<br />
+a leather shield<br />
+a small canteen [3]<br />
+a tiny, yellow wand<br />
+an intricately carved horn<br />
+<br />
+ [return for more, q to stop]Shaddaric shouts 'I am the greatest newb ever to play this game!'<br />
+Tikle gets a very large pile of coins from the corpse of Leredin.<br />
+XXX tells your group 'leredin off'<br />
+<br />
+H 143V 23262003X 4648C Exits:NEW&gt; Alas, you cannot go that way...<br />
+<br />
+H 143V 23262003X 4648C Exits:NEW&gt; Tikle focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+Ded makes a strange sound, as you place a red metallic javelin in his back.<br />
+<br />
+H 143V 23262003X 4648C [Satya:V.Good] [Ded:Fair] Exits:NEW&gt; <br />
+Dragor gets a small first-aid kit from the corpse of Leredin.<br />
+Dragor gets a serrated dagger from the corpse of Leredin.<br />
+Dragor gets a leather wrist band from the corpse of Leredin.<br />
+Dragor gets a pair of leather sleeves from the corpse of Leredin.<br />
+Dragor gets a pair of leather gloves from the corpse of Leredin.<br />
+Dragor gets a pair of leather pants from the corpse of Leredin.<br />
+Dragor gets a leather jacket from the corpse of Leredin.<br />
+Dragor gets an amulet of levitation from the corpse of Leredin.<br />
+Dragor gets a small canteen from the corpse of Leredin.<br />
+Dragor gets an iron ration from the corpse of Leredin.<br />
+Dragor gets an iron ration from the corpse of Leredin.<br />
+Dragor gets an iron ration from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets an ice wand from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets a salted herring from the corpse of Leredin.<br />
+Dragor gets a great mithril bow from the corpse of Leredin.<br />
+Dragor gets a waterskin from the corpse of Leredin.<br />
+Dragor gets a leather shield from the corpse of Leredin.<br />
+<br />
+H 143V 23262003X 4648C [Satya:V.Good] [Ded:Fair] Exits:NEW&gt; <br />
+Dragor focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Dragor has reached its goal.<br />
+<br />
+H 143V 23262003X 4648C [Satya:Good] [Ded:Fair] Exits:NEW&gt; fade n<br />
+s<br />
+<br />
+A Kalaman cityguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+H 143V 23262003X 4648C [Satya:Good] [Ded:Fair] Exits:NEW&gt; bac ded<br />
+Ded stands up.<br />
+<br />
+H 143V 23262003X 4648C [Satya:Good] [Ded:Fair] Exits:NEW&gt; <br />
+XXX tells your group 'nm'<br />
+<br />
+H 143V 23262003X 4648C [Satya:Good] [Ded:Fair] Exits:NEW&gt; <br />
+You are sent sprawling as Ded crashes into you.<br />
+<br />
+H 143V 23262003X 4648C [Satya:Good] [Ded:Fair] Exits:NEW&gt; <br />
+A Kalaman cityguard massacres YOU with his slash.<br />
+A Kalaman cityguard massacres YOU with his slash.<br />
+You pierce Ded extremely hard.<br />
+You pierce Ded extremely hard.<br />
+Ded massacres YOU with his cleave.<br />
+<br />
+H 143V 23262003X 4648C [Satya:Fair] [Ded:Fair] Exits:NEW&gt; <br />
+Tikle divides 6876 coins equally among the group members present.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Fair] [Ded:Fair] Exits:NEW&gt; <br />
+Tikle focuses harshly on Dragor and utters some strange words.<br />
+Tikle slowly fades into existence.<br />
+Tikle comes out of hiding.<br />
+Dragor withers as a ray of sunlight sent by Tikle engulfs him!<br />
+Dragor seems to be blinded!<br />
+<br />
+H 143V 23262003X 8086C [Satya:Fair] [Ded:Fair] Exits:NEW&gt; st<br />
+<br />
+Dragor panics, and attempts to flee.<br />
+Dragor flies north.<br />
+H 143V 23262003X 8086C [Satya:Fair] [Ded:Fair] Exits:NEW&gt; fade n<br />
+<br />
+A Kalaman cityguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+H 143V 23262003X 8086C [Satya:Fair] [Ded:Fair] Exits:NEW&gt; s<br />
+<br />
+A Kalaman cityguard massacres YOU with his slash.<br />
+You pierce Ded extremely hard.<br />
+You pierce Ded very hard.<br />
+Ded misses you with his cleave.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Fair] [Ded:Bad] Exits:NEW&gt; back ded<br />
+<br />
+Tikle focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+H 143V 23262003X 8086C [Satya:V.Good] [Ded:Bad] Exits:NEW&gt; <br />
+A Kalaman cityguard massacres YOU with his slash.<br />
+You pierce Ded extremely hard.<br />
+You pierce Ded very hard.<br />
+Ded cleaves YOU extremely hard.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Good] [Ded:Bad] Exits:NEW&gt; <br />
+You step aside as Ded tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Good] [Ded:Bad] Exits:NEW&gt; You can't do that while sitting.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Good] [Ded:Bad] Exits:NEW&gt; You can't do that while sitting.<br />
+<br />
+H 143V 23262003X 8086C [Satya:Good] [Ded:Bad] Exits:NEW&gt; You can't do that while sitting<br />
+<br />
+H 143V 23262003X 8086C [Satya:Good] [Ded:Bad] Exits:NEW&gt; A Kalaman cityguard looks at you and yells<br />
+ 'There's the scoundrel!'<br />
+Dragor flies in from the north.<br />
+A Kalaman cityguard looks at you and yells 'There's the scoundrel!'<br />
+A Dark Alley<br />
+     The alley is dark and filthy. Trash is littered all over the place.<br />
+This place is so different from the rest of the town, you would think you<br />
+were in another lesser city. The city really needs to clean up this<br />
+section, but people are afraid of the crime here. There is a small house to<br />
+the west with its doors open, you see a few shady looking characters enter<br />
+but they didn't come back out.<br />
+A tired traveller is looking around for the town's inn.<br />
+<br />
+H 142V 23262003X 8086C Exits:NSW&gt; A Dark Alley<br />
+     The alley is dark and filthy. Trash is littered all over the place.<br />
+This place is so different from the rest of the town, you would think you<br />
+were in another lesser city. The city really needs to clean up this<br />
+section, but people are afraid of the crime here.<br />
+The corpse of Leredin is lying here.<br />
+Dragor, Archmagus of Noromasileak is standing here. (flying)<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+back ded<br />
+Ded Moroz is sitting here.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+H 141V 23262003X 8086C Exits:NEW&gt; Dragor flies west.<br />
+Tikle focuses harshly on Ded and utters some strange words.<br />
+Ded twists around to see you place a red metallic javelin in his back.<br />
+<br />
+H 141V 23262003X 8086C [Satya:Good] [Ded:Awful] Exits:NEW&gt; get all ded<br />
+<br />
+You massacre Ded with your pierce.<br />
+You pierce Ded extremely hard.<br />
+Ded cleaves YOU very hard.<br />
+<br />
+H 141V 23262003X 8086C [Satya:Good] [Ded:Awful] Exits:NEW&gt; get all ded<br />
+<br />
+Yvette shouts 'And you dislike kenders you bigot!'<br />
+<br />
+H 141V 23262003X 8086C [Satya:Good] [Ded:Awful] Exits:NEW&gt; get all ded<br />
+fade n<br />
+s<br />
+Tikle focuses harshly on Ded and utters some strange words.<br />
+Tikle slowly fades into existence.<br />
+Tikle comes out of hiding.<br />
+Ded collapses and dies as Tikle grabs him.<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Ded is dead! R.I.P.<br />
+<br />
+<br />
+H 141V 23262003X 8086C [Ded:Dying] Exits:NEW&gt; The death cry of Ded echoes from somewhere nearby...<br />
+Dragor stops following Ded.<br />
+You get a great war axe from the corpse of Ded.<br />
+You get an icy white bracelet from the corpse of Ded.<br />
+You get an imp skin pouch from the corpse of Ded.<br />
+You get a bronze shield from the corpse of Ded.<br />
+Leggings : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+You get a pile of coins from the corpse of Ded.<br />
+There were 94 coins.<br />
+Lantern : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Longbow : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+<br />
+Later tried to set up some ambush.<br />
+<br />
+Start logging: 11.10.2004 17:03<br />
+<br />
+Leredin flies east.<br />
+back leredin<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Moto Kensaki, Muso Shinden Ryu is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; stYou are already standing.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; groYour group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Indra            perfect   rested    standing   Y   Y    N    N     1    0<br />
+  Satya            perfect   rested    standing   Y   Y    N    Y     0    0<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; enven javelinYou stealthily dip the javelin in a toxic concoction of your own making.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; whoImmortals<br />
+---------<br />
+[      God      ] I once knew a guy named Terk. He was a total jerk.<br />
+<br />
+Heroes<br />
+------<br />
+[      Hero     ] Cinid Lies, Cheats and Steals. (deaf)<br />
+<br />
+Mortals<br />
+-------<br />
+Kangas, Ergothian Battle Clergy<br />
+Leredin, Garbage Mage<br />
+back leredinVenger the Male Gnome<br />
+Tuinas the Male Hill Dwarf<br />
+Korf the Male Hylar Dwarf<br />
+Neith the Male Minotaur<br />
+Kai the Male Hylar Dwarf<br />
+Ansel Ahma, the Outlaw<br />
+Quiron Quicksilver, Father of Storms<br />
+Zarthis the Female Minotaur<br />
+Kalabalik, Outlawed Torturer<br />
+Serega the Male Gnome<br />
+<br />
+ [return for more, q to stop]<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; who caoMortals<br />
+-------<br />
+Cao Cao, King of Wei<br />
+<br />
+Total visible people : 1        Total people online  : 76<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; who caoMortals<br />
+-------<br />
+Cao Cao, King of Wei<br />
+<br />
+Total visible people : 1        Total people online  : 77<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; who caoMortals<br />
+-------<br />
+Cao Cao, King of Wei<br />
+<br />
+Total visible people : 1        Total people online  : 77<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; lThe Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A large bulletin board is mounted on a wall here.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Tikle tells your group 'dragor'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; sca<br />
+Tikle tells your group 'go'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Tikle tells your group 'go'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Tikle tells your group 'go'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Sehr tells your group 'fly'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; sca<br />
+Cao tells your group 'fly'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; sca<br />
+Tuinas tells your group 'GO'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Alis tells your group 'go'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; gt goYou tell your group 'go'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; gt nowYou tell your group 'now'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+Alis tells your group 'shit no fly'<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; You couldn't find what you were looking for.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; csaHuh?!<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; groYour group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Cao              v.good    rested    standing   Y   N    N    N     1    0<br />
+  Alis             v.good    rested    standing   Y   N    N    N     0    0<br />
+  Sehr             v.good    rested    standing   N   N    N    N     0    0<br />
+  Tuinas           good      rested    standing   Y   N    N    N     2    0<br />
+  Indra            perfect   rested    standing   Y   Y    N    N     1    3<br />
+  Satya            perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Tikle            good      rested    standing   Y   Y    N    N     1    3<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Mugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; <br />
+A loud voice is heard booming throughout the town, 'The caravan will be<br />
+leaving in just under an hour,' it announces.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; csaHuh?!<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Mugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+I decide to try to get Garbage group to move back in by stabbing Mugatu after<br />
+they moved south realizing the masslog. Was risky, but it all worked out in<br />
+the end. If people masslogged faster then I woulda lived but oh well!<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; sneakeback mugatuYou begin moving quietly.<br />
+<br />
+XXXH 155V 22088195X 4692C Exits:E&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Mugatu the Male Wild Elf is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:NESW&gt; <br />
+You are sent sprawling as Mugatu crashes into you.<br />
+<br />
+XXXH 154V 22088195X 4692C [Satya:V.Good] [Mugatu:Perfect] Exits:NESW&gt; fade w<br />
+Alis tells your group 'fly sehr'<br />
+<br />
+XXXH 154V 22088195X 4692C [Satya:V.Good] [Mugatu:Perfect] Exits:NESW&gt; <br />
+Mugatu annihilates YOU with his crush.<br />
+You pierce Mugatu very hard.<br />
+Mugatu appears noticeably weaker.<br />
+You pierce Mugatu very hard.<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:V.Good] [Mugatu:V.Good] Exits:NESW&gt; st<br />
+A knight of the sword looks at Mugatu and yells  'There's the scoundrel!'<br />
+Alis tells your group 'indra'<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:V.Good] [Mugatu:V.Good] Exits:NESW&gt; fade w<br />
+Alis tells your group 'fly sehr'<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:V.Good] [Mugatu:V.Good] Exits:NESW&gt; <br />
+A knight of the sword misses Mugatu with his slash.<br />
+Mugatu massacres YOU with his crush.<br />
+You pierce Mugatu extremely hard.<br />
+You pierce Mugatu extremely hard.<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; <br />
+Tuinas tells your group 'lost sehr'<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; st<br />
+Coril flies in from the south.<br />
+A knight of the sword looks at Mugatu and yells  'There's the scoundrel!'<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; fade w<br />
+Indra tells your group 'hes not here'<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; A knight of the sword looks at Mugatu and yells  'There's the scoundrel!'<br />
+You can't do that while sitting.<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; You step aside as Mugatu tries to bash you, causing him to tumble and fall face down.<br />
+You can't do that while sitting.<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; You stand up.<br />
+<br />
+XXXH 155V 22088195X 4692C [Satya:Good] [Mugatu:V.Good] Exits:NESW&gt; The Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A large bulletin board is mounted on a wall here.<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; You are already standing.<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; Alas, you cannot go that way...<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Mugatu the Male Wild Elf is sitting here, fighting a knight of the sword. (flying)<br />
+A knight of the sword is standing here, fighting Mugatu.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; <br />
+Tikle tells your group 'gogogo'<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; <br />
+Tikle tells your group 'gogogo'<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; <br />
+Tuinas tells your group 'keep going'<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; sneakeback mugatuYou begin moving quietly.<br />
+<br />
+XXXH 154V 22088195X 4692C Exits:E&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Coril Reef, Swimming with Sharks is standing here. (flying)<br />
+Mugatu the Male Wild Elf is sitting here, fighting a knight of the sword. (flying)<br />
+A knight of the sword is standing here, fighting Mugatu.<br />
+A knight of the sword utters some strange words.<br />
+<br />
+XXXH 153V 22088195X 4692C Exits:NESW&gt; Mugatu is flailing around too much.  Oh well.<br />
+<br />
+XXXH 153V 22088195X 4692C Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+<br />
+XXXH 153V 22088195X 4692C Exits:NESW&gt; <br />
+Leredin flies in from the south.<br />
+back leredin<br />
+XXXH 153V 22088195X 4692C Exits:NESW&gt; fade wLeredin looks behind himself just in time to avoid your poor attempt at a backstab.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Good] [Leredin:Perfect] Exits:NESW&gt; <br />
+You pierce Leredin extremely hard.<br />
+You pierce Leredin very hard.<br />
+Leredin misses you with his hit.<br />
+Mugatu massacres a knight of the sword with his crush.<br />
+A knight of the sword massacres Mugatu with his slash.<br />
+A knight of the sword misses Mugatu with his slash.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Good] [Leredin:Good] Exits:NESW&gt; fade w<br />
+Leredin focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Leredin has reached its goal.<br />
+That Really did HURT!<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+You freeze in place, unable to move.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; You are unable to use your physical form.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; You are unable to use your physical form.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; <br />
+Mugatu crushes a knight of the sword extremely hard.<br />
+A knight of the sword misses Mugatu with his slash.<br />
+A knight of the sword misses Mugatu with his slash.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; gt comeYou tell your group 'come'<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; gt heal meYou tell your group 'heal me'<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Fair] [Leredin:Good] Exits:NESW&gt; <br />
+Leredin focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Leredin has reached its goal.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Bad] [Leredin:Good] Exits:NESW&gt; scaYou are unable to use your physical form.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Bad] [Leredin:Good] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Bad] [Leredin:Good] Exits:NESW&gt; <br />
+Mugatu stands up.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Bad] [Leredin:Good] Exits:NESW&gt; <br />
+You are sent sprawling as Mugatu crashes into you.<br />
+Coril focuses on Leredin and utters some strange words.<br />
+Coril heals Leredin.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:V.Bad] [Leredin:Perfect] Exits:NESW&gt; <br />
+Mugatu crushes a knight of the sword extremely hard.<br />
+A knight of the sword slashes Mugatu extremely hard.<br />
+A knight of the sword misses Mugatu with his slash.<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:V.Bad] [Leredin:Perfect] Exits:NESW&gt; <br />
+Leredin focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Leredin has reached its goal.<br />
+That Really did HURT!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Awful] [Leredin:Perfect] Exits:NESW&gt; <br />
+Tikle tells your group 'coming'<br />
+<br />
+XXXH 153V 22088195X 4692C [Satya:Awful] [Leredin:Perfect] Exits:NESW&gt; <br />
+Coril focuses harshly on you and utters some strange words.<br />
+Someone grabs you.  You scream as you feel your life-force being torn away.<br />
+You're stunned, but will likely regain consciousness again.<br />
+<br />
+0H 153V 22088195X 4692C Exits:NESW&gt; st<br />
+You feel enlightened by the lightning bolt someone sends and then all is darkness - RIP.<br />
+You're dead.<br />
+<br />
+-11H 153V 22088195X 4692C Exits:NESW&gt; You sink gently to the ground.<br />
+You feel the magic bond holding you shatter!<br />
+Your detect invisibility wears off.<br />
+You stop following someone.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1<br />
+Welcome to the land of Krynn.<br />
+<br />
+The Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A small roll of bread lies here. [49]<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+Aub the Male High Elf is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; bopYou bop to the music.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; csaHuh?!<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; sneakYou begin moving quietly.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+Moto flies in from the north.<br />
+Leredin flies in from the north.<br />
+back leredin<br />
+1H 145V 26378195X 0C Exits:N&gt; scaBut it's so peaceful here!<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; Looking north:<br />
+You see nothing special.<br />
+Tikle Ish, Renshai Hysteria is sitting here, fighting Mugatu. (flying)<br />
+. . . has a metallic luster.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here, fighting Coril. (flying)<br />
+Cao Cao, King of Wei is standing here, fighting Coril. (flying)<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here, fighting a knight of the sword. (flying)<br />
+Coril Reef, Swimming with Sharks is sitting here, fighting Alis. (flying)<br />
+Mugatu the Male Wild Elf is standing here, fighting Tikle. (flying)<br />
+A knight of the sword is standing here, fighting Lachlan.<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; restYou sit down and rest your tired bones.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+Moto flies north.<br />
+Leredin flies north.<br />
+back leredin<br />
+1H 145V 26378195X 0C Exits:N&gt; Come on! I'm relaxing!<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; scaLooking north:<br />
+You see nothing special.<br />
+Leredin, Garbage Mage is standing here. (flying)<br />
+back leredinMoto Kensaki, Muso Shinden Ryu is standing here, fighting Cao. (flying)<br />
+Tikle Ish, Renshai Hysteria is sitting here, fighting Mugatu. (flying)<br />
+. . . has a metallic luster.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here, fighting Coril. (flying)<br />
+Cao Cao, King of Wei is standing here, fighting Moto. (flying)<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here, fighting a knight of the sword. (flying)<br />
+Coril Reef, Swimming with Sharks is sitting here, fighting Alis. (flying)<br />
+Mugatu the Male Wild Elf is standing here, fighting Tikle. (flying)<br />
+A knight of the sword is standing here, fighting Lachlan.<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; Come on! I'm relaxing!<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; scaLooking north:<br />
+You see nothing special.<br />
+Moto Kensaki, Muso Shinden Ryu is standing here, fighting Cao. (flying)<br />
+Tikle Ish, Renshai Hysteria is sitting here, fighting Mugatu. (flying)<br />
+. . . has a metallic luster.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here, fighting Moto. (flying)<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here, fighting a knight of the sword. (flying)<br />
+Mugatu the Male Wild Elf is standing here, fighting Tikle. (flying)<br />
+A knight of the sword is standing here, fighting Lachlan.<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+1H 145V 26378195X 0C Exits:N&gt; scaLooking north:<br />
+You see nothing special.<br />
+Tikle Ish, Renshai Hysteria is sitting here. (flying)<br />
+. . . has a metallic luster.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+Moto flies in from the north.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; <br />
+Lachlan flies in from the north.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; sa hehYou say 'heh'<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; lThe Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A small roll of bread lies here. [49]<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+Moto Kensaki, Muso Shinden Ryu is standing here. (flying)<br />
+Aub the Male High Elf is standing here.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; stYou stand up.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; scaLooking north:<br />
+You see nothing special.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+. . . is outlined with a dim aura.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+1H 145V 26378195X 0C Exits:N&gt; nTraveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+A dark shroud lies piled here.<br />
+The corpse of Satya is lying here.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; <br />
+Cao flies west.<br />
+Alis flies west.<br />
+Tuinas flies west.<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; sa heal meYou say 'heal me'<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; <br />
+Cao flies in from the west.<br />
+Alis flies in from the west.<br />
+Tuinas flies in from the west.<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; sa healYou say 'heal'<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; sa meYou say 'me'<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; <br />
+Someone says 'have flags?'<br />
+<br />
+1H 144V 26378195X 0C Exits:NESW&gt; get all satya<br />
+Someone focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+467H 144V 26378195X 0C Exits:NESW&gt; What are you trying to get from?<br />
+<br />
+467H 144V 26378195X 0C Exits:NESW&gt; get allA knight of the sword closes his prayerbook with a content look on his face.<br />
+You don't see what you are looking for here.<br />
+<br />
+XXXH 145V 26378195X 0C Exits:NESW&gt; <br />
+Someone gives you the shroud of Death.<br />
+<br />
+XXXH 145V 26378195X 0C Exits:NESW&gt; lTraveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+You see the outline of a life form here, carrying: a sapphire shield; a glowing scroll of recall; a glowing scroll of recall.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+XXXH 145V 26378195X 0C Exits:NESW&gt; sa okYou say 'ok'<br />
+<br />
+XXXH 145V 26378195X 0C Exits:NESW&gt; sa using flagsYou say 'using flags'<br />
+<br />
+Some chasing down flagged people.<br />
+ <br />
+You follow Cao north.<br />
+Outside a Small Village<br />
+    You are at the outskirts of a small village. The trees have been<br />
+cleared back and small fields and grasslands occupy the outskirts. To the<br />
+north, massive mountains and glaciers mark the southern end of the Kharolis<br />
+Mountains. This range of mountains is home to many races, most noteably the<br />
+mountain dwarves of Thorbardin. To the south, a village with no gates or<br />
+walls lies peacefully in the valley. The path is well trodden here, leading<br />
+north, west and south from here.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+You see the outline of a life form here, carrying: an alligator scale necklace.<br />
+You see the outline of a life form here, carrying: a large golden shield; a pair of pearl studded greaves; a great bone hook.<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; <br />
+Cao crashes into someone in a thundering collision, knocking them to the ground!<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; <br />
+Tuinas focuses harshly on someone and utters some strange words.<br />
+Someone cries out in pain as Tuinas grabs them.<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; <br />
+Someone focuses harshly on someone and utters some strange words.<br />
+Tikle slowly fades into existence.<br />
+Tikle comes out of hiding.<br />
+Someone withers as a ray of sunlight sent by Tikle engulfs them!<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; <br />
+Someone appears before Cao in a puff of smoke.<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; <br />
+Alis swings madly at Mugatu with a broad bladed two-handed sword, cutting him a deep wound.<br />
+<br />
+XXXH 11V 26342510X 26C Exits:NSW&gt; assYou attempt to assist Cao.<br />
+You miss Mugatu with your hit.<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:V.Bad] Exits:NSW&gt; <br />
+You miss Mugatu with your hit.<br />
+Alis massacres Mugatu with her slash.<br />
+Cao massacres Mugatu with his slash.<br />
+Mugatu massacres Cao with his crush.<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpseget all corpse<br />
+Tuinas focuses harshly on Mugatu and utters some strange words.<br />
+Mugatu withers as a ray of sunlight sent by Tuinas engulfs him!<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpseget all corpseget all corpseWhat are you trying to get from?<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpseWhat are you trying to get from?<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpse<br />
+Ceed shouts 'an old moth-eaten book for sale '<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpseWhat are you trying to get from?<br />
+<br />
+XXXH 11V 26342510X 26C [Cao:V.Good] [Mugatu:Awful] Exits:NSW&gt; get all corpseYou miss Mugatu with your hit.<br />
+Alis massacres Mugatu with her slash.<br />
+Cao massacres Mugatu with his slash.<br />
+You receive 0 experience.<br />
+Mugatu is dead! R.I.P.<br />
+examine corpseThe death cry of Mugatu echoes from somewhere nearby...<br />
+Mugatu sinks gently to the ground.<br />
+You get a giant's hammer from the corpse of Mugatu.<br />
+You get a wrist buckler from the corpse of Mugatu.<br />
+You get a crimson glass bracelet from the corpse of Mugatu.<br />
+You get a white dragonwing cloak from the corpse of Mugatu.<br />
+You get a large golden shield from the corpse of Mugatu.<br />
+You get a pair of bornite dwarven sleeves from the corpse of Mugatu.<br />
+You get a pair of red dragon scale gloves from the corpse of Mugatu.<br />
+You get a set of shiny black boots from the corpse of Mugatu.<br />
+You get a pair of remorhaz hide leg plates from the corpse of Mugatu.<br />
+You get some gnomish body armor from the corpse of Mugatu.<br />
+You get a ragged leather band from the corpse of Mugatu.<br />
+You get a frosted tin ring from the corpse of Mugatu.<br />
+You get a torch from the corpse of Mugatu.<br />
+You get a very large pile of coins from the corpse of Mugatu.<br />
+There were 3714 coins.<br />
+You get a scroll of recall from the corpse of Mugatu.<br />
+You get a scroll of recall from the corpse of Mugatu.<br />
+You get a scroll of recall from the corpse of Mugatu.<br />
+You get a scroll of recall from the corpse of Mugatu.<br />
+You get a scroll of recall from the corpse of Mugatu.<br />
+You get a black and grey marbled scroll from the corpse of Mugatu.<br />
+You get a vibrant volatile crimson potion from the corpse of Mugatu.<br />
+You get a yellow potion from the corpse of Mugatu.<br />
+You get a putrid potion from the corpse of Mugatu.<br />
+You get a putrid potion from the corpse of Mugatu.<br />
+You get a putrid potion from the corpse of Mugatu.<br />
+You get a putrid potion from the corpse of Mugatu.<br />
+You get a putrid potion from the corpse of Mugatu.<br />
+You get a small silver thimble from the corpse of Mugatu.<br />
+You get a steel ring from the corpse of Mugatu.<br />
+You get a wolf skin cloak from the corpse of Mugatu.<br />
+You get a dark black robe from the corpse of Mugatu.<br />
+You get some black breeches from the corpse of Mugatu.<br />
+You get the boots of shadow's whisper from the corpse of Mugatu.<br />
+You get a pair of green swordsman gloves from the corpse of Mugatu.<br />
+You get a backpack of holding from the corpse of Mugatu.<br />
+You get a dwarven belt from the corpse of Mugatu.<br />
+You get a red metallic javelin from the corpse of Mugatu.<br />
+You get a blue hilted dagger from the corpse of Mugatu.<br />
+Ring : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+get all corpseGreaves : You can't carry that many items.<br />
+Crossbow : You can't carry that many items.<br />
+Hook : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Ring : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Greaves : You can't carry that many items.<br />
+Crossbow : You can't carry that many items.<br />
+Hook : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Ring : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Greaves : You can't carry that many items.<br />
+Crossbow : You can't carry that many items.<br />
+Hook : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Ring : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Greaves : You can't carry that many items.<br />
+Crossbow : You can't carry that many items.<br />
+Hook : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Ring : You can't carry that many items.<br />
+Shield : You can't carry that many items.<br />
+Greaves : You can't carry that many items.<br />
+Crossbow : You can't carry that many items.<br />
+Hook : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; gt ok<br />
+someone gets something from the corpse of Mugatu.<br />
+someone gets a wooden ring from the corpse of Mugatu.<br />
+someone gets a large bronze shield from the corpse of Mugatu.<br />
+someone gets a pair of pearl studded greaves from the corpse of Mugatu.<br />
+someone gets a dwarven crossbow from the corpse of Mugatu.<br />
+someone gets a milky potion of see invisible from the corpse of Mugatu.<br />
+someone gets a milky potion of see invisible from the corpse of Mugatu.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Hook : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a great bone hook..it glows dimly<br />
+a backpack<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; Hook : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; You tell your group 'ok'<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; gt mugatu rip<br />
+someone gets a great bone hook from the corpse of Mugatu.<br />
+someone gets a backpack from the corpse of Mugatu.<br />
+<br />
+XXXH 11V 26342510X 3740C Exits:NSW&gt; You tell your group 'mugatu rip'<br />
+<br />
+Back at Kal<br />
+<br />
+XXXH 17V 26342510X 3740C Exits:N&gt; gt comeYou tell your group 'come'<br />
+<br />
+XXXH 17V 26342510X 3740C Exits:N&gt; <br />
+Lachlan looks at you.<br />
+<br />
+XXXH 17V 26342510X 3740C Exits:N&gt; gt going to boot coril outYou tell your group 'going to boot coril out'<br />
+<br />
+XXXH 17V 26342510X 3740C Exits:N&gt; <br />
+Cao tells your group 'we almost there'<br />
+<br />
+XXXH 17V 26342510X 3740C Exits:N&gt; gt and they will come try to defend itYou tell your group 'and they will come try to defend it'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; sa hi<br />
+Alis tells your group 'target lachlan?'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; You say 'hi'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; sa thanksYou say 'thanks'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Cao tells your group 'at junction'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; sa for my gearYou say 'for my gear'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; l attaiYou see nothing special about him.<br />
+Attai the adult male minotaur is in an excellent condition.<br />
+<br />
+Attai is using:<br />
+&lt;worn on finger&gt;           a ring of carved nephrite..it glows dimly<br />
+&lt;worn around neck&gt;         an ancient azurite medallion..it glows dimly<br />
+&lt;worn on body&gt;             a blue and white vest<br />
+&lt;worn on head&gt;             an aged crown<br />
+&lt;worn on legs&gt;             a minotaur battle kilt<br />
+&lt;worn on hands&gt;            some spiked minotaur gauntlets<br />
+&lt;worn on arms&gt;             a pair of flexible red dragon scale sleeves<br />
+&lt;worn as shield&gt;           an apatite encrusted marble shield<br />
+&lt;worn about body&gt;          a pair of huge white wings<br />
+&lt;worn about waist&gt;         a leopard skin sash<br />
+&lt;worn around right wrist&gt;  a sterling bracer<br />
+&lt;worn around left wrist&gt;   a flexible red dragon scale bracer<br />
+&lt;used in primary hand&gt;     a heavy steel battle axe<br />
+You attempt to peek at his inventory:<br />
+a frozen short sword<br />
+a diamond tipped spear (invisible)..it glows dimly<br />
+a small wooden chest<br />
+a large waterskin<br />
+a glowing scroll of recall..it glows dimly<br />
+a glowing scroll of recall..it glows dimly<br />
+a glowing scroll of recall..it glows dimly<br />
+a heavy woolen robe<br />
+a large waterskin<br />
+a long steel elven pike<br />
+a large hide waterskin<br />
+a bronze bottle<br />
+a bronze bottle<br />
+a bronze bottle<br />
+a bronze bottle<br />
+a blue potion of remove poison<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; l lachlanYou see nothing special about him.<br />
+Lachlan the adult male minotaur is in an excellent condition.<br />
+<br />
+Lachlan is using:<br />
+&lt;worn on finger&gt;           a black pearl inlaid ring<br />
+&lt;worn on finger&gt;           a tiger ring<br />
+&lt;worn around neck&gt;         a bloody axe shaped medallion<br />
+&lt;worn around neck&gt;         a shimmering green cloak..it glows dimly<br />
+&lt;worn on body&gt;             a suit of red dragonscale plate<br />
+&lt;worn on head&gt;             a puma skull<br />
+&lt;worn on feet&gt;             a pair of remorhaz hide boots<br />
+&lt;worn on hands&gt;            a pair of demon claw gloves<br />
+&lt;worn about waist&gt;         a heavy black belt<br />
+&lt;worn around right wrist&gt;  a woodsman's bracer<br />
+&lt;worn around left wrist&gt;   a glowing bracer..it glows dimly<br />
+&lt;used in both hands&gt;       an ornate twin-bladed battleaxe<br />
+You attempt to peek at his inventory:<br />
+a small wooden chest<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a small brown bottle<br />
+a glowing scroll of recall..it glows dimly<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Indra tells your group 'want more putrids?'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Ceed flies in from the north.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt lachlan and attai have eqYou tell your group 'lachlan and attai have eq'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; inYou are carrying:<br />
+a milky potion of see invisible<br />
+a steel ring<br />
+a small silver thimble<br />
+a putrid potion [5]<br />
+a yellow potion<br />
+a vibrant volatile crimson potion<br />
+a black and grey marbled scroll<br />
+a scroll of recall [4]<br />
+a torch<br />
+a ragged leather band<br />
+a set of shiny black boots<br />
+a pair of red dragon scale gloves<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Tikle tells your group 'we here'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a frosted tin ring<br />
+&lt;worn around neck&gt;         the shroud of Death<br />
+&lt;worn on body&gt;             a dark black robe<br />
+&lt;worn on legs&gt;             some black breeches<br />
+&lt;worn on feet&gt;             the boots of shadow's whisper<br />
+&lt;worn on hands&gt;            a pair of green swordsman gloves<br />
+&lt;worn about body&gt;          a backpack of holding<br />
+&lt;worn about waist&gt;         a dwarven belt<br />
+&lt;worn around right wrist&gt;  a crimson glass bracelet<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in primary hand&gt;     a red metallic javelin<br />
+&lt;used in secondary hand&gt;   a blue hilted dagger<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+The lodge manager shows Ceed to her room.<br />
+Ceed sinks gently to the ground.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Alis tells your group 'target which'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt ok ready?You tell your group 'ok ready?'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Sosalit has entered the game.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; lThe Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A silver locket lies here, forgotten.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+a staff of polished wood rests here.<br />
+A small roll of bread lies here. [49]<br />
+Sosalit the Male Human is standing here. (flying)<br />
+Attai, Garbage Dreadnaught is standing here.<br />
+Grenade the Male Human is standing here. (flying)<br />
+Coril Reef, Swimming with Sharks is resting here.<br />
+Lachlan Woodblood, Cold and Ruthless Garbage Champion is standing here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Lachlan tries to sip, but fails!<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Tikle tells your group 'who'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Sosalit flies north.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt target whoeverYou tell your group 'target whoever'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt killing corilYou tell your group 'killing coril'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt see who entersYou tell your group 'see who enters'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; scaLooking north:<br />
+You see nothing special.<br />
+Tuinas the Male Hill Dwarf is standing here. (flying)<br />
+Alis Landale, The Phantasy Star of Renshai is standing here. (flying)<br />
+Cao Cao, King of Wei is standing here. (flying)<br />
+Tikle Ish, Renshai Hysteria is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Marbelis has entered the game.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Marbelis leaves north.<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; back corilCoril makes a strange sound, as you place a red metallic javelin in his back.<br />
+<br />
+XXXH 48V 26342510X 3740C [Satya:Perfect] [Coril:Awful] Exits:N&gt; <br />
+Tikle tells your group 'k'<br />
+<br />
+XXXH 48V 26342510X 3740C [Satya:Perfect] [Coril:Awful] Exits:N&gt; <br />
+You massacre Coril with your pierce.<br />
+You receive 0 experience.<br />
+Coril is dead! R.I.P.<br />
+examine corpseThe death cry of Coril echoes from somewhere nearby...<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt nm<br />
+Tuinas tells your group 'hahah'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; You tell your group 'nm'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+Tikle tells your group 'haha'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; gt it died in innYou tell your group 'it died in inn'<br />
+<br />
+XXXH 48V 26342510X 3740C Exits:N&gt; <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1121'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1121">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1121">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,602 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1483-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1483'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+More of the same.</font></b>
+<p>
+POV: 
+Chitzkoi<p>
+Log Rating:
+0.4545<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+He tried to kill me with flags.</i>
+<p>
+<p>
+
+396H 82V 1909982X 1219C Exits:NESW&gt; look<br />
+Droganis flies in from the north.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; Guild Road<br />
+    The road leads east and west between the buildings and halls. To the<br />
+north is the mages' laboratory, while to the south is the clerics' sanctum.<br />
+Droganis Demonstalker is standing here. (flying)<br />
+A young kender stands here, looking about curiously.<br />
+A large draconian follows the patrol leader about the city.<br />
+A large draconian follows the patrol leader about the city.<br />
+A slender draconian patrol leader marches about the city here.<br />
+Yaz, Nowclan's Defender of the Fens is standing here. (flying) (invisible)<br />
+Meekus Mandlebaum, Putting the Magic in Nowclan's Magic Pan is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; look nA rainbow of colors radiate from the doorway.<br />
+A young kender stands here, looking about curiously.<br />
+A wandering preacher stands here, trying to convert the people to his faith.<br />
+An attractive guild guard stands here, watching everyone warily.<br />
+The master mage is standing here, making little balls of light dance around.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Yaz focuses harshly on Droganis and utters some strange words.<br />
+Yaz slowly fades into existence.<br />
+Droganis screams in pain as lightning from Yaz penetrates him.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Yaz slashes Droganis very hard.<br />
+Droganis slashes Yaz very hard.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; gt godYou tell your group 'god'<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Benedict flies in from the south.<br />
+A draconian warrior looks at Yaz and yells  'There's the scoundrel!'<br />
+A draconian warrior looks at Yaz and yells  'There's the scoundrel!'<br />
+A kapak patrol leader looks at Yaz and yells  'There's the scoundrel!'<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; groYour group of 4 members consists of:<br />
+  Chitzkoi         perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Meekus           perfect   rested    standing   Y   N    N    Y     1    0<br />
+  Yaz              v.good    rested    fighting   Y   N    N    Y     0    6<br />
+  Benedict         perfect   rested    standing   Y   N    Y    Y     0    2<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Droganis crashes into Yaz in a thundering collision, knocking him to the ground!<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; gt heal yazYou tell your group 'heal yaz'<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+A kapak patrol leader massacres Yaz with his pierce.<br />
+A kapak patrol leader massacres Yaz with his pierce.<br />
+A kapak patrol leader annihilates Yaz with his pierce.<br />
+A draconian warrior claws Yaz extremely hard.<br />
+A draconian warrior massacres Yaz with its claw.<br />
+A draconian warrior massacres Yaz with its claw.<br />
+A draconian warrior massacres Yaz with its claw.<br />
+Yaz slashes Droganis very hard.<br />
+Droganis slashes Yaz hard.<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; <br />
+A kapak patrol leader looks at Yaz and yells  'There's the scoundrel!'<br />
+<br />
+396H 82V 1909982X 1219C Exits:NESW&gt; rec recall yazYou stop using a sharp dagger.<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Yaz disappears.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Meekus focuses harshly on Droganis and utters some strange words.<br />
+Droganis freezes in place.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; <br />
+**Benedict: ass<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; gro<br />
+**Benedict: i was healing<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Meekus says 'haha'<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; <br />
+A kapak patrol leader flies west.<br />
+A draconian warrior leaves west.<br />
+A draconian warrior leaves west.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; gt roflenv emerald.knifesneak<br />
+**Yaz: lol oh well<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; <br />
+Benedict focuses harshly on Droganis and utters some strange words.<br />
+Droganis cries out in pain as Benedict grabs him.<br />
+Benedict stops watching you.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; Your group of 4 members consists of:<br />
+  Chitzkoi         perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Meekus           perfect   rested    standing   Y   N    N    Y     1    2<br />
+  Yaz              v.bad     rested    sitting    Y   Y    N    N     0    6<br />
+  Benedict         perfect   rested    fighting   Y   N    Y    Y     0    3<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; You tell your group 'rofl'<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; back droganisYou stealthily dip the knife in a toxic concoction of your own making.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; You begin moving quietly.<br />
+<br />
+391H 82V 1909982X 1219C Exits:NESW&gt; Droganis twists around to see you place an engraved emerald knife in his back.<br />
+Droganis appears noticeably weaker.<br />
+<br />
+391H 82V 1909982X 1219C [Me:Perfect] [Benedict:Perfect] [Droganis:Bad] Exits:NESW&gt; gt hes held<br />
+You pierce Droganis extremely hard.<br />
+Benedict barely hits Droganis.<br />
+<br />
+391H 82V 1909982X 1219C [Me:Perfect] [Benedict:Perfect] [Droganis:Bad] Exits:NESW&gt; <br />
+Benedict focuses harshly on Droganis and utters some strange words.<br />
+Droganis cries out in pain as Benedict grabs him.<br />
+<br />
+391H 82V 1909982X 1219C [Me:Perfect] [Benedict:Perfect] [Droganis:V.Bad] Exits:NESW&gt; flYou tell your group 'hes held'<br />
+<br />
+391H 82V 1909982X 1219C [Me:Perfect] [Benedict:Perfect] [Droganis:V.Bad] Exits:NESW&gt; You flee head over heels.<br />
+Guild Road<br />
+    Guild road leads both east and west. To the east are some very large<br />
+buildings and halls, home of apprentices and masters alike. Sounds of<br />
+combat and spell casting are thick in the air.<br />
+<br />
+391H 81V 1909982X 1219C Exits:NEW&gt; env emerald.knifesneakYou stealthily dip the knife in a toxic concoction of your own making.<br />
+<br />
+391H 81V 1909982X 1219C Exits:NEW&gt; You begin moving quietly.<br />
+<br />
+391H 81V 1909982X 1219C Exits:NEW&gt; eGuild Road<br />
+    The road leads east and west between the buildings and halls. To the<br />
+north is the mages' laboratory, while to the south is the clerics' sanctum.<br />
+A young kender stands here, looking about curiously.<br />
+A young kender stands here, looking about curiously.<br />
+Benedict the Male Theiwar Dwarf is standing here, fighting Droganis. (flying)<br />
+Droganis Demonstalker is standing here, fighting Benedict. (flying)<br />
+Meekus Mandlebaum, Putting the Magic in Nowclan's Magic Pan is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; back DroganisDroganis twists around to see you place an engraved emerald knife in his back.<br />
+Droganis is incapacitated and will slowly die, if not aided.<br />
+You feel especially skillful today.<br />
+Droganis appears noticeably weaker.<br />
+Droganis is incapacitated and will slowly die, if not aided.<br />
+<br />
+391H 80V 1909982X 1219C [Me:Perfect] [Droganis:Awful] Exits:NESW&gt; <br />
+You annihilate Droganis with your pierce.<br />
+You receive 0 experience.<br />
+Droganis is dead! R.I.P.<br />
+The death cry of Droganis echoes from somewhere nearby...<br />
+Droganis sinks gently to the ground.<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; <br />
+**Yaz: HAHA nice<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; get all corpsehold sharp<br />
+Benedict gets a lucky bone charm from the corpse of Droganis.<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; <br />
+Meekus says 'owned'<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; gt rofl it's dead<br />
+Benedict gets a feathered bone charm from the corpse of Droganis.<br />
+<br />
+391H 80V 1909982X 1219C Exits:NESW&gt; You get a thin steel sword from the corpse of Droganis.<br />
+You get a bronze shield from the corpse of Droganis.<br />
+You get a pile of coins from the corpse of Droganis.<br />
+There were 23 coins.<br />
+You get a glowing scroll of recall from the corpse of Droganis.<br />
+You get a loaf of waybread from the corpse of Droganis.<br />
+You get a milky potion of see invisible from the corpse of Droganis.<br />
+You get a glowing scroll of recall from the corpse of Droganis.<br />
+<br />
+391H 80V 1909982X 1242C Exits:NESW&gt; You start using the dagger as a secondary weapon.<br />
+<br />
+391H 80V 1909982X 1242C Exits:NESW&gt; gt AGAIN<br />
+Benedict wears a feathered bone charm around his neck.<br />
+<br />
+391H 80V 1909982X 1242C Exits:NESW&gt; You tell your group 'rofl it's dead'<br />
+<br />
+391H 80V 1909982X 1242C Exits:NESW&gt; You tell your group 'AGAIN'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1483'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1483">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1483">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

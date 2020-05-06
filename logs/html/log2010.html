@@ -1,0 +1,623 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2010-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='2010'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+And...another one bites the dust</font></b>
+<p>
+POV: 
+Cameron<p>
+Log Rating:
+3.4001<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+You should probably stand up!!!!</i>
+<p>
+<p>
+
+<br />
+585H 84V 3087368X 1799C Exits:N&gt; <br />
+Orlandu appears in the middle of the room.<br />
+<br />
+585H 84V 3087368X 1799C Exits:N&gt; l<br />
+The Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A pile of worn maps sits in the corner, free to adventurers.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A small pruning knife lies discarded upon the ground.<br />
+&lt;BSP&gt; Orlandu Thunderblade, Death Knight of the Dark Queen is standing here.<br />
+&lt;STD&gt; Zarzaban Kettlepot, Alchemist of Wonder is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;STD&gt; Reglem of the Seal is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+585H 84V 3087368X 1799C Exits:N&gt; st<br />
+You stand up.<br />
+<br />
+585H 84V 3087368X 1799C Exits:N&gt; bash orlandu<br />
+You crash into Orlandu in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+585H 84V 3087368X 1799C [Cameron:Perfect] [Orlandu:Good] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu misses you with his crush.<br />
+<br />
+585H 84V 3087368X 1799C [Cameron:Perfect] [Orlandu:Good] Exits:N&gt; <br />
+Barcel has entered the game.<br />
+<br />
+585H 84V 3087368X 1799C [Cameron:Perfect] [Orlandu:Good] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU very hard.<br />
+<br />
+573H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Good] Exits:N&gt; <br />
+Zarzaban laughs heartily.<br />
+<br />
+573H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Good] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu massacres YOU with his crush.<br />
+<br />
+547H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Fair] Exits:N&gt; <br />
+Zarzaban starts watching you.<br />
+<br />
+547H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Fair] Exits:N&gt; <br />
+Orlandu stops using a giant silver shield.<br />
+<br />
+547H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Fair] Exits:N&gt; <br />
+Orlandu starts holding a club embedded with claws.<br />
+<br />
+547H 84V 3087368X 1799C [Cameron:V.Good] [Orlandu:Fair] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU extremely hard.<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+515H 84V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+Zarzaban patiently twiddles his thumbs.<br />
+<br />
+515H 84V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU very hard.<br />
+Orlandu misses you with his bludgeon.<br />
+<br />
+504H 84V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU extremely hard.<br />
+Orlandu misses you with his bludgeon.<br />
+Zarzaban closes his spellbook with a content look on his face.<br />
+<br />
+499H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+Orlandu stands up.<br />
+<br />
+499H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; You crash into Orlandu in a bone crunching bash, sending h<br />
+im sprawling to the ground.<br />
+<br />
+499H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU extremely hard.<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+469H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU hard.<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+448H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Fair] Exits:N&gt; <br />
+Your mighty cleave almost cuts Orlandu in two!<br />
+You annihilate Orlandu with your cleave.<br />
+Orlandu misses you with his crush.<br />
+Orlandu misses you with his bludgeon.<br />
+<br />
+448H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Bad] Exits:N&gt; <br />
+Zarzaban looks at you.<br />
+<br />
+448H 105V 3087368X 1799C [Cameron:Good] [Orlandu:Bad] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu massacres YOU with his crush.<br />
+Orlandu bludgeons YOU.<br />
+<br />
+421H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; <br />
+You cleave Orlandu extremely hard.<br />
+Orlandu massacres YOU with his crush.<br />
+Orlandu bludgeons YOU extremely hard.<br />
+<br />
+378H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; <br />
+Orlandu stands up.<br />
+<br />
+378H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; You crash into Orlandu in a bone crunching bash, sending <br />
+him sprawling to the ground.<br />
+<br />
+378H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+You move aside quickly as Orlandu attacks!<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+366H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU very hard.<br />
+Orlandu bludgeons YOU.<br />
+<br />
+350H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:V.Bad] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+You move aside quickly as Orlandu attacks!<br />
+Orlandu bludgeons YOU hard.<br />
+<br />
+340H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:Awful] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU very hard.<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+313H 105V 3087368X 1799C [Cameron:Fair] [Orlandu:Awful] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU extremely hard.<br />
+Orlandu bludgeons YOU extremely hard.<br />
+<br />
+278H 105V 3087368X 1799C [Cameron:Bad] [Orlandu:Awful] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu misses you with his crush.<br />
+Orlandu bludgeons YOU very hard.<br />
+<br />
+264H 105V 3087368X 1799C [Cameron:Bad] [Orlandu:Awful] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+Orlandu crushes YOU very hard.<br />
+Orlandu bludgeons YOU hard.<br />
+<br />
+243H 105V 3087368X 1799C [Cameron:Bad] [Orlandu:Awful] Exits:N&gt; <br />
+You cleave Orlandu extremely hard.<br />
+Orlandu misses you with his crush.<br />
+Orlandu bludgeons YOU extremely hard.<br />
+<br />
+225H 105V 3087368X 1799C [Cameron:V.Bad] [Orlandu:Awful] Exits:N&gt; <br />
+You massacre Orlandu with your cleave.<br />
+You receive 0 experience.<br />
+Orlandu is dead! R.I.P.<br />
+The death cry of Orlandu echoes from somewhere nearby...<br />
+<br />
+225H 105V 3087368X 1799C Exits:N&gt; <br />
+Barcel gets a very large pile of coins from the corpse of Orlandu.<br />
+<br />
+225H 105V 3087368X 1799C Exits:N&gt; get all corpse<br />
+You get a club embedded with claws from the corpse of Orlandu.<br />
+You get a large quartz hammer from the corpse of Orlandu.<br />
+You get some dented arm plates from the corpse of Orlandu.<br />
+You get a pair of shining silver gauntlets from the corpse of Orlandu.<br />
+You get a pair of soldier's boots from the corpse of Orlandu.<br />
+You get some black legplates of the Lily from the corpse of Orlandu.<br />
+You get a black helm of the Lily from the corpse of Orlandu.<br />
+You get a heavy black battle armour from the corpse of Orlandu.<br />
+You get a glass eye from the corpse of Orlandu.<br />
+You get a giant silver shield from the corpse of Orlandu.<br />
+You get a glowing scroll of recall from the corpse of Orlandu.<br />
+You get a glowing scroll of recall from the corpse of Orlandu.<br />
+You get some pixie dust from the corpse of Orlandu.<br />
+You get some pixie dust from the corpse of Orlandu.<br />
+You get some pixie dust from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get a small canteen from the corpse of Orlandu.<br />
+You get an iron ration from the corpse of Orlandu.<br />
+You get an iron ration from the corpse of Orlandu.<br />
+You get an iron ration from the corpse of Orlandu.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+Potion : You can't carry that many items.<br />
+<br />
+225H 105V 3087368X 1799C Exits:N&gt; <br />
+Orlandu has entered the game.<br />
+<br />
+225H 105V 3087368X 1799C Exits:N&gt; <br />
+Orlandu gets a glowing scroll of recall from the corpse of Orlandu.<br />
+Orlandu gets a glowing scroll of recall from the corpse of Orlandu.<br />
+Orlandu gets a milky potion of see invisible from the corpse of Orlandu.<br />
+Orlandu gets a milky potion of see invisible from the corpse of Orlandu.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='2010'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2010">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2010">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

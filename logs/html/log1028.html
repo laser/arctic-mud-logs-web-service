@@ -1,0 +1,1828 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1028-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1028'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Tank Tournament</font></b>
+<p>
+POV: 
+Teh<p>
+Log Rating:
+2.5715<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+A round of a tank tournament, with a thief on a lucky streak.</i>
+<p>
+<p>
+
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; <br />
+Sancho says 'GO NOW'<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; <br />
+You are sent sprawling as Salcha crashes into you.<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; <br />
+Olan leaves down.<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; <br />
+Connor leaves north.<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; stYou are already standing.<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; n<br />
+Visara flies north.<br />
+<br />
+463H 124V 1X 0C Exits:NESWUD&gt; You feel much heavier.<br />
+An Abandoned Tunnel<br />
+Visara the Dreadful is standing here. (flying) (red aura)<br />
+Connor O'Connor, Liberation Knight of Honor is standing here. (white aura)<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Visara flies east.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Olan arrives from the west.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Raeth arrives from the south.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Raeth leaves west.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; backstab olanYou couldn't find what you were looking for.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; wbackstab olanAn Abandoned Tunnel<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; You couldn't find what you were looking for.<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; wAn Abandoned Tunnel<br />
+Shorne the Male Kender is standing here. (flying) (invisible) (red aura)<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; <br />
+Tu arrives from the north.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; sneakYou begin moving quietly.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; wAn Abandoned Tunnel<br />
+<br />
+463H 116V 1X 0C Exits:ES&gt; wAlas, you cannot go that way...<br />
+<br />
+463H 116V 1X 0C Exits:ES&gt; backstab olanYou couldn't find what you were looking for.<br />
+<br />
+463H 116V 1X 0C Exits:ES&gt; sAn Abandoned Tunnel<br />
+<br />
+463H 114V 1X 0C Exits:NW&gt; sAlas, you cannot go that way...<br />
+<br />
+463H 114V 1X 0C Exits:NW&gt; <br />
+Raeth arrives from the west.<br />
+<br />
+463H 114V 1X 0C Exits:NW&gt; sneak<br />
+Raeth leaves north.<br />
+<br />
+463H 114V 1X 0C Exits:NW&gt; wYou begin moving quietly.<br />
+<br />
+463H 114V 1X 0C Exits:NW&gt; An Abandoned Tunnel<br />
+<br />
+463H 112V 1X 0C Exits:ES&gt; sAn Abandoned Tunnel<br />
+<br />
+463H 110V 1X 0C Exits:NW&gt; wBefore The Abandoned Tunnels<br />
+<br />
+463H 108V 1X 0C Exits:E&gt; eAn Abandoned Tunnel<br />
+<br />
+463H 106V 1X 0C Exits:NW&gt; eAlas, you cannot go that way...<br />
+<br />
+463H 106V 1X 0C Exits:NW&gt; nAn Abandoned Tunnel<br />
+<br />
+463H 104V 1X 0C Exits:ES&gt; eAn Abandoned Tunnel<br />
+<br />
+463H 102V 1X 0C Exits:NW&gt; <br />
+Raeth arrives from the north.<br />
+<br />
+463H 102V 1X 0C Exits:NW&gt; sneakYou begin moving quietly.<br />
+<br />
+463H 102V 1X 0C Exits:NW&gt; nAn Abandoned Tunnel<br />
+<br />
+463H 100V 1X 0C Exits:ES&gt; eAn Abandoned Tunnel<br />
+<br />
+463H 98V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+<br />
+463H 96V 1X 0C Exits:EW&gt; eAn Abandoned Tunnel<br />
+<br />
+463H 94V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+Hugo Smallo is standing here. (red aura)<br />
+<br />
+463H 92V 1X 0C Exits:EW&gt; sAlas, you cannot go that way...<br />
+Hugo leaves west.<br />
+<br />
+463H 124V 1X 0C Exits:EW&gt; eAn Abandoned Tunnel<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (red aura)<br />
+You sense a life form.<br />
+Visara the Dreadful is standing here. (flying) (red aura)<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Visara flies north.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Hugo arrives from the west.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Tu arrives from the north.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; backstab olanVinoa crashes into Tu in a thundering collision, knocking him to the ground!<br />
+Olan makes a strange sound, as you place a slender jet black javelin in his back.<br />
+<br />
+463H 122V 1X 0C [Me:Perfect] [Olan:Bad] Exits:NEW&gt; <br />
+Hugo leaves east.<br />
+<br />
+463H 122V 1X 0C [Me:Perfect] [Olan:Bad] Exits:NEW&gt; <br />
+Olan panics, and attempts to flee.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Shorne flies in from the west.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; backstab olan<br />
+Olan appears to be dancing around the room.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Vinoa massacres Tu with her crush.<br />
+Tu massacres Vinoa with his shoot.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; sneakwYou couldn't find what you were looking for.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; You begin moving quietly.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; <br />
+Hugo arrives from the east.<br />
+<br />
+463H 122V 1X 0C Exits:NEW&gt; An Abandoned Tunnel<br />
+Olan, Deadly Assassin of the Arts is standing here. (invisible)<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; <br />
+Olan leaves east.<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; <br />
+Hugo arrives from the east.<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; backstab olanYou couldn't find what you were looking for.<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; <br />
+Hugo leaves west.<br />
+<br />
+463H 120V 1X 0C Exits:EW&gt; eAn Abandoned Tunnel<br />
+Olan, Deadly Assassin of the Arts is standing here, fighting Tu.<br />
+Tu Shay, KoT Engarde is sitting here, fighting Vinoa. (white aura)<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here, fighting Tu. (red aura)<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; backstab olanOlan is flailing around too much.  Oh well.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; backstab olanOlan is flailing around too much.  Oh well.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; <br />
+Visara flies in from the north.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; senak<br />
+Tu says 'you cock faces'<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; backstab olanHuh?!<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; <br />
+Visara flies north.<br />
+Tu stands up.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; Olan is flailing around too much.  Oh well.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; <br />
+Tu panics, and attempts to flee.<br />
+Tu leaves east.<br />
+<br />
+463H 118V 1X 0C Exits:NEW&gt; nAn Abandoned Tunnel<br />
+Visara the Dreadful is standing here. (flying) (red aura)<br />
+Raeth Isn't Smarter Compared to Derek is standing here, fighting Connor. (white aura)<br />
+Connor O'Connor, Liberation Knight of Honor is sitting here, fighting Raeth. (white aura)<br />
+Tanglefoot Kickbottom, Solamnic Squire to Lord Nickodemus is standing here. (flying) (white aura)<br />
+<br />
+463H 116V 1X 0C Exits:NS&gt; backstab olan<br />
+Connor steps aside as Visara attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+463H 116V 1X 0C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+463H 116V 1X 0C Exits:NS&gt; <br />
+Visara massacres Connor with her crush.<br />
+Connor slashes Raeth hard.<br />
+Raeth massacres Connor with his smite.<br />
+<br />
+463H 116V 1X 0C Exits:NS&gt; sAn Abandoned Tunnel<br />
+You sense a life form.<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (red aura)<br />
+<br />
+463H 114V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+Olan, Deadly Assassin of the Arts is standing here.<br />
+<br />
+463H 112V 1X 0C Exits:SW&gt; backstab olan<br />
+Vinoa arrives from the west.<br />
+<br />
+463H 112V 1X 0C Exits:SW&gt; Olan makes a strange sound but is suddenly very silent, as you place a slender jet black javelin in his back.<br />
+Twinkling lights surround Olan and he disappears.<br />
+<br />
+463H 112V 1X 0C Exits:SW&gt; env slender.javelin<br />
+Shorne slowly fades into existence.<br />
+Shorne comes out of hiding.<br />
+Shorne lunges at you with a black fang of a shadow beast, but you easily avoid his attempt to backstab you.<br />
+<br />
+463H 112V 1X 0C [Me:Perfect] [Shorne:Perfect] Exits:SW&gt; backstab tu<br />
+Shorne misses you with his pierce.<br />
+Shorne pierces YOU very hard.<br />
+You massacre Shorne with your pierce.<br />
+You miss Shorne with your pierce.<br />
+<br />
+452H 112V 1X 0C [Me:V.Good] [Shorne:V.Good] Exits:SW&gt; You're too busy fighting!<br />
+<br />
+452H 112V 1X 0C [Me:V.Good] [Shorne:V.Good] Exits:SW&gt; You can't do that while fighting.<br />
+<br />
+452H 112V 1X 0C [Me:V.Good] [Shorne:V.Good] Exits:SW&gt; backstab shorneYou can't do that while fighting.<br />
+<br />
+452H 112V 1X 0C [Me:V.Good] [Shorne:V.Good] Exits:SW&gt; <br />
+Vinoa crashes into Shorne in a thundering collision, knocking him to the ground!<br />
+<br />
+452H 112V 1X 0C [Me:V.Good] [Shorne:Good] Exits:SW&gt; fleYou flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+452H 110V 1X 0C Exits:NE&gt; nAn Abandoned Tunnel<br />
+Shorne the Male Kender is sitting here, fighting Vinoa. (flying) (red aura)<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here, fighting Shorne. (red aura)<br />
+<br />
+452H 108V 1X 0C Exits:SW&gt; backstab shorneShorne is flailing around too much.  Oh well.<br />
+<br />
+452H 108V 1X 0C Exits:SW&gt; <br />
+Shorne misses Vinoa with his pierce.<br />
+Shorne pierces Vinoa hard.<br />
+Vinoa massacres Shorne with her crush.<br />
+<br />
+452H 108V 1X 0C Exits:SW&gt; ki shorneYou massacre Shorne with your pierce.<br />
+<br />
+452H 108V 1X 0C [Me:V.Good] [Vinoa:V.Good] [Shorne:Fair] Exits:SW&gt; <br />
+You annihilate Shorne with your pierce.<br />
+You massacre Shorne with your pierce.<br />
+Shorne pierces Vinoa extremely hard.<br />
+Shorne misses Vinoa with his pierce.<br />
+Vinoa massacres Shorne with her crush.<br />
+<br />
+452H 108V 1X 0C [Me:V.Good] [Vinoa:Good] [Shorne:Fair] Exits:SW&gt; <br />
+Vinoa panics, and attempts to flee.<br />
+Vinoa leaves west.<br />
+<br />
+452H 108V 1X 0C [Me:V.Good] [Shorne:Fair] Exits:SW&gt; <br />
+Hugo arrives from the west.<br />
+<br />
+452H 108V 1X 0C [Me:V.Good] [Shorne:Fair] Exits:SW&gt; backstab shorneYou can't do that while fighting.<br />
+<br />
+452H 108V 1X 0C [Me:V.Good] [Shorne:Fair] Exits:SW&gt; fleYou flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+452H 106V 1X 0C Exits:NE&gt; nAn Abandoned Tunnel<br />
+Hugo Smallo is standing here. (invisible) (red aura)<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; backstab shorneYou couldn't find what you were looking for.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Hugo leaves south.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Hugo arrives from the south.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Vinoa arrives from the west.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; backstab hugo<br />
+Hugo slowly fades into existence.<br />
+Hugo quickly thrusts a rusty awl flecked with dried blood at Vinoa from behind, but somehow falls short of his target.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; Hugo is flailing around too much.  Oh well.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Vinoa crashes into Hugo in a thundering collision, knocking him to the ground!<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Hugo misses Vinoa with his pierce.<br />
+Hugo misses Vinoa with his pierce.<br />
+Vinoa massacres Hugo with her crush.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; <br />
+Sancho says 'your betting sucks )!'<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; ki hugoYou annihilate Hugo with your pierce.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:Fair] Exits:SW&gt; <br />
+You massacre Hugo with your pierce.<br />
+You massacre Hugo with your pierce.<br />
+Hugo pierces Vinoa hard.<br />
+Hugo pierces Vinoa very hard.<br />
+Vinoa annihilates Hugo with her crush.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:V.Bad] Exits:SW&gt; backstab hugoYou can't do that while fighting.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:V.Bad] Exits:SW&gt; <br />
+Vinoa says 'i noticed'<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:V.Bad] Exits:SW&gt; <br />
+You massacre Hugo with your pierce.<br />
+You massacre Hugo with your pierce.<br />
+Hugo misses Vinoa with his pierce.<br />
+Hugo misses Vinoa with his pierce.<br />
+Vinoa massacres Hugo with her crush.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:Awful] Exits:SW&gt; <br />
+Hugo stands up.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:Awful] Exits:SW&gt; <br />
+Vinoa crashes into Hugo in a thundering collision, knocking him to the ground!<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Good] [Hugo:Awful] Exits:SW&gt; <br />
+You massacre Hugo with your pierce.<br />
+You massacre Hugo with your pierce.<br />
+Twinkling lights surround Hugo and he disappears.<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; lAn Abandoned Tunnel<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (red aura)<br />
+<br />
+452H 104V 1X 0C Exits:SW&gt; backstab vinoaVinoa makes a strange sound, as you place a slender jet black javelin in her back.<br />
+<br />
+452H 104V 1X 0C [Me:V.Good] [Vinoa:Fair] Exits:SW&gt; <br />
+You massacre Vinoa with your pierce.<br />
+You massacre Vinoa with your pierce.<br />
+Vinoa massacres YOU with her crush.<br />
+<br />
+429H 104V 1X 0C [Me:V.Good] [Vinoa:Bad] Exits:SW&gt; fade sVinoa says 'i fucking hate you teh'<br />
+An Abandoned Tunnel<br />
+<br />
+429H 102V 1X 0C Exits:NE&gt; nAn Abandoned Tunnel<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (red aura)<br />
+<br />
+429H 100V 1X 0C Exits:SW&gt; backstab vinoaVinoa makes a strange sound but is suddenly very silent, as you place a slender jet black javelin in her back.<br />
+Twinkling lights surround Vinoa and she disappears.<br />
+<br />
+429H 100V 1X 0C Exits:SW&gt; env slender.javelinwYou stealthily dip the javelin in a toxic concoction of your own making.<br />
+<br />
+429H 100V 1X 0C Exits:SW&gt; An Abandoned Tunnel<br />
+Tanglefoot Kickbottom, Solamnic Squire to Lord Nickodemus is standing here. (flying) (white aura)<br />
+<br />
+429H 98V 1X 0C Exits:NEW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+429H 98V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+<br />
+429H 96V 1X 0C Exits:SW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+429H 96V 1X 0C Exits:SW&gt; wAn Abandoned Tunnel<br />
+<br />
+429H 94V 1X 0C Exits:NEW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+429H 94V 1X 0C Exits:NEW&gt; n<br />
+You are hungry.<br />
+<br />
+446H 124V 1X 0C Exits:NEW&gt; backstab tanglefootAn Abandoned Tunnel<br />
+<br />
+446H 122V 1X 0C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+446H 122V 1X 0C Exits:NS&gt; nAn Abandoned Tunnel<br />
+<br />
+446H 120V 1X 0C Exits:NSW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 120V 1X 0C Exits:NSW&gt; nAn Abandoned Tunnel<br />
+<br />
+446H 118V 1X 0C Exits:NS&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 118V 1X 0C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+446H 118V 1X 0C Exits:NS&gt; sAn Abandoned Tunnel<br />
+<br />
+446H 116V 1X 0C Exits:NSW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+446H 116V 1X 0C Exits:NSW&gt; sAn Abandoned Tunnel<br />
+<br />
+446H 114V 1X 0C Exits:NS&gt; sAn Abandoned Tunnel<br />
+<br />
+446H 112V 1X 0C Exits:NEW&gt; wAn Abandoned Tunnel<br />
+<br />
+446H 110V 1X 0C Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+446H 110V 1X 0C Exits:EW&gt; wAn Abandoned Tunnel<br />
+<br />
+446H 108V 1X 0C Exits:NEW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+446H 108V 1X 0C Exits:NEW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 108V 1X 0C Exits:NEW&gt; nAn Abandoned Tunnel<br />
+<br />
+446H 106V 1X 0C Exits:NS&gt; scYou are Teh Queen of the Blood Sea, a level 30 Thief.<br />
+You are rank 21.<br />
+You are 27 years old.<br />
+You are hungry.<br />
+You have 446(463) hit and 106(124) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 129999999 exp, and have 0(218614) steel coins.<br />
+You have 3 Rank points to spend.<br />
+You have died 6 horrible deaths.<br />
+You have been connected for 26 minute(s).<br />
+You have been playing for 10 day(s), 4 hour(s) and 58 minute(s).<br />
+Your equipment is currently being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    anti-spam measures<br />
+<br />
+446H 106V 1X 0C Exits:NS&gt; nAn Intersection Of Tunnels<br />
+<br />
+446H 104V 1X 0C Exits:NESW&gt; scYou are Teh Queen of the Blood Sea, a level 30 Thief.<br />
+You are rank 21.<br />
+You are 27 years old.<br />
+You are hungry.<br />
+You have 446(463) hit and 104(124) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 129999999 exp, and have 0(218614) steel coins.<br />
+You have 3 Rank points to spend.<br />
+You have died 6 horrible deaths.<br />
+You have been connected for 26 minute(s).<br />
+You have been playing for 10 day(s), 4 hour(s) and 58 minute(s).<br />
+Your equipment is currently being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    anti-spam measures<br />
+<br />
+446H 104V 1X 0C Exits:NESW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+446H 104V 1X 0C Exits:NESW&gt; sAn Abandoned Tunnel<br />
+<br />
+446H 102V 1X 0C Exits:NS&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 102V 1X 0C Exits:NS&gt; sAn Abandoned Tunnel<br />
+<br />
+446H 100V 1X 0C Exits:NEW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 100V 1X 0C Exits:NEW&gt; wAn Abandoned Tunnel<br />
+<br />
+446H 98V 1X 0C Exits:EW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 98V 1X 0C Exits:EW&gt; wAn Abandoned Tunnel<br />
+Visara the Dreadful is standing here, fighting Raeth. (flying) (red aura)<br />
+Raeth Isn't Smarter Compared to Derek is sitting here, fighting Visara. (white aura)<br />
+<br />
+446H 96V 1X 0C Exits:NEW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+446H 96V 1X 0C Exits:NEW&gt; <br />
+From a small monitor: Sancho says '5 left'<br />
+<br />
+446H 96V 1X 0C Exits:NEW&gt; <br />
+Visara annihilates Raeth with her crush.<br />
+Raeth massacres Visara with his smite.<br />
+<br />
+446H 96V 1X 0C Exits:NEW&gt; <br />
+Raeth stands up.<br />
+<br />
+446H 96V 1X 0C Exits:NEW&gt; <br />
+Raeth panics, and attempts to flee.<br />
+Raeth leaves north.<br />
+You step aside as Visara tries to bash you, causing her to tumble and fall face down.<br />
+<br />
+446H 96V 1X 0C [Me:V.Good] [Visara:Fair] Exits:NEW&gt; fleYou flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+446H 94V 1X 0C Exits:ES&gt; wAlas, you cannot go that way...<br />
+<br />
+446H 94V 1X 0C Exits:ES&gt; backstab raethYou couldn't find what you were looking for.<br />
+<br />
+446H 94V 1X 0C Exits:ES&gt; e<br />
+Raeth arrives from the east.<br />
+<br />
+446H 94V 1X 0C Exits:ES&gt; backstab raethAn Abandoned Tunnel<br />
+Visara the Dreadful is sitting here. (flying) (red aura)<br />
+<br />
+446H 92V 1X 0C Exits:NEW&gt; You couldn't find what you were looking for.<br />
+<br />
+446H 92V 1X 0C Exits:NEW&gt; wAn Abandoned Tunnel<br />
+Raeth Isn't Smarter Compared to Derek is standing here. (white aura)<br />
+<br />
+446H 90V 1X 0C Exits:ES&gt; backstab raeth<br />
+Raeth slowly fades into existence.<br />
+You step aside as Raeth tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+446H 90V 1X 0C [Me:V.Good] [Raeth:Good] Exits:ES&gt; You can't do that while fighting.<br />
+<br />
+446H 90V 1X 0C [Me:V.Good] [Raeth:Good] Exits:ES&gt; fleYou flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+446H 88V 1X 0C Exits:NW&gt; nAn Abandoned Tunnel<br />
+You sense a life form.<br />
+Raeth Isn't Smarter Compared to Derek is sitting here. (white aura)<br />
+<br />
+446H 86V 1X 0C Exits:ES&gt; backstab raethRaeth makes a strange sound, as you place a slender jet black javelin in his back.<br />
+Raeth appears noticeably weaker.<br />
+<br />
+446H 86V 1X 0C [Me:V.Good] [Raeth:Bad] Exits:ES&gt; <br />
+You annihilate Raeth with your pierce.<br />
+You massacre Raeth with your pierce.<br />
+Raeth massacres YOU with his smite.<br />
+<br />
+422H 86V 1X 0C [Me:V.Good] [Raeth:V.Bad] Exits:ES&gt; <br />
+Shorne is continually trying to get behind you.<br />
+Hmmm...i wonder what he's up to?<br />
+<br />
+422H 86V 1X 0C [Me:V.Good] [Raeth:V.Bad] Exits:ES&gt; <br />
+Visara flies in from the east.<br />
+<br />
+422H 86V 1X 0C [Me:V.Good] [Raeth:V.Bad] Exits:ES&gt; <br />
+Visara crashes into Shorne in a thundering collision, knocking him to the ground!<br />
+<br />
+422H 86V 1X 0C [Me:V.Good] [Raeth:V.Bad] Exits:ES&gt; fleeYou flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+422H 84V 1X 0C Exits:NW&gt; nAn Abandoned Tunnel<br />
+Visara the Dreadful is standing here, fighting Shorne. (flying) (red aura)<br />
+Shorne the Male Kender is sitting here, fighting Visara. (flying) (red aura)<br />
+Raeth Isn't Smarter Compared to Derek is sitting here. (white aura)<br />
+<br />
+422H 82V 1X 0C Exits:ES&gt; backstab raethRaeth makes a strange sound but is suddenly very silent, as you place a slender jet black javelin in his back.<br />
+Twinkling lights surround Raeth and he disappears.<br />
+<br />
+422H 82V 1X 0C Exits:ES&gt; backstab shorne<br />
+Visara annihilates Shorne with her crush.<br />
+The darkness flowing from Nightbringer hits Shorne with force!<br />
+Shorne pierces Visara very hard.<br />
+Shorne pierces Visara.<br />
+<br />
+422H 82V 1X 0C Exits:ES&gt; Shorne is flailing around too much.  Oh well.<br />
+<br />
+422H 82V 1X 0C Exits:ES&gt; <br />
+You are sent sprawling as Visara crashes into you.<br />
+Shorne stands up.<br />
+<br />
+397H 82V 1X 0C [Me:Good] [Shorne:Bad] [Visara:Fair] Exits:ES&gt; backstab shorne<br />
+Visara massacres YOU with her crush.<br />
+You massacre Visara with your pierce.<br />
+You massacre Visara with your pierce.<br />
+<br />
+363H 82V 1X 0C [Me:Good] [Visara:Fair] Exits:ES&gt; <br />
+Shorne slowly fades into existence.<br />
+Shorne comes out of hiding.<br />
+Shorne massacres YOU with his pierce.<br />
+<br />
+341H 82V 1X 0C [Me:Fair] [Visara:Fair] Exits:ES&gt; st<br />
+Shorne massacres YOU with his pierce.<br />
+Shorne pierces YOU hard.<br />
+Visara massacres YOU with her crush.<br />
+You massacre Visara with your pierce.<br />
+You massacre Visara with your pierce.<br />
+<br />
+274H 82V 1X 0C [Me:Fair] [Visara:Fair] Exits:ES&gt; flefleYou can't do that while sitting.<br />
+<br />
+274H 82V 1X 0C [Me:Fair] [Visara:Fair] Exits:ES&gt; You stand up.<br />
+You step aside as Visara tries to bash you, causing her to tumble and fall face down.<br />
+<br />
+274H 82V 1X 0C [Me:Fair] [Visara:Fair] Exits:ES&gt; You flee head over heels.<br />
+An Abandoned Tunnel<br />
+<br />
+274H 80V 1X 0C Exits:NW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+274H 80V 1X 0C Exits:NW&gt; nAn Abandoned Tunnel<br />
+Visara the Dreadful is sitting here. (flying) (red aura)<br />
+<br />
+274H 78V 1X 0C Exits:ES&gt; <br />
+The rules committee laughs at your wimpy legs.<br />
+<br />
+You feel less tired.<br />
+You rise up off the ground.<br />
+Visara appears rejuvenated.<br />
+Visara rises up off the ground.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; backstab visaraVisara reaches behind herself quickly, only to discover your deadly javelin in her back.<br />
+Twinkling lights surround Visara and she disappears.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; backstab shornebackstab shorneShorne reaches behind himself quickly, only to discover your deadly javelin in his back.<br />
+Twinkling lights surround Shorne and he disappears.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; backstab shornebackstab shorneYou couldn't find what you were looking for.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; You couldn't find what you were looking for.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; You couldn't find what you were looking for.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; say rofl how many i killedYou say 'rofl how many i killed'<br />
+<br />
+274H 124V 1X 0C Exits:ES&gt; eAn Abandoned Tunnel<br />
+<br />
+274H 122V 1X 0C Exits:NEW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+274H 122V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+<br />
+274H 120V 1X 0C Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+274H 120V 1X 0C Exits:EW&gt; <br />
+You are hungry.<br />
+<br />
+277H 124V 1X 0C Exits:EW&gt; backstab raethYou couldn't find what you were looking for.<br />
+<br />
+277H 124V 1X 0C Exits:EW&gt; <br />
+Hew<br />
+<br />
+277H 124V 1X 0C Exits:EW&gt; say whos aliveYou say 'whos alive'<br />
+<br />
+277H 124V 1X 0C Exits:EW&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 122V 1X 0C Exits:NEW&gt; lAn Abandoned Tunnel<br />
+<br />
+277H 122V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 120V 1X 0C Exits:EW&gt; sAlas, you cannot go that way...<br />
+<br />
+277H 120V 1X 0C Exits:EW&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 118V 1X 0C Exits:NEW&gt; sAlas, you cannot go that way...<br />
+<br />
+277H 118V 1X 0C Exits:NEW&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 116V 1X 0C Exits:SW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 116V 1X 0C Exits:SW&gt; sAn Abandoned Tunnel<br />
+<br />
+277H 114V 1X 0C Exits:NE&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 114V 1X 0C Exits:NE&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 112V 1X 0C Exits:SW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 112V 1X 0C Exits:SW&gt; sAn Abandoned Tunnel<br />
+<br />
+277H 110V 1X 0C Exits:NE&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 110V 1X 0C Exits:NE&gt; eBefore The Abandoned Tunnels<br />
+<br />
+277H 108V 1X 0C Exits:W&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 108V 1X 0C Exits:W&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 106V 1X 0C Exits:NE&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 104V 1X 0C Exits:SW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 102V 1X 0C Exits:NE&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 100V 1X 0C Exits:SW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 98V 1X 0C Exits:NEW&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 96V 1X 0C Exits:NS&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 94V 1X 0C Exits:NSW&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 92V 1X 0C Exits:NS&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 92V 1X 0C Exits:NS&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 90V 1X 0C Exits:SW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 90V 1X 0C Exits:SW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 88V 1X 0C Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 88V 1X 0C Exits:EW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 86V 1X 0C Exits:ESW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 86V 1X 0C Exits:ESW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 84V 1X 0C Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 84V 1X 0C Exits:EW&gt; wAn Abandoned Tunnel<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; wAlas, you cannot go that way...<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 82V 1X 0C Exits:ES&gt; sAn Abandoned Tunnel<br />
+<br />
+277H 80V 1X 0C Exits:NS&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 80V 1X 0C Exits:NS&gt; sAn Abandoned Tunnel<br />
+<br />
+277H 78V 1X 0C Exits:NES&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 78V 1X 0C Exits:NES&gt; sAn Abandoned Tunnel<br />
+<br />
+277H 76V 1X 0C Exits:NS&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 76V 1X 0C Exits:NS&gt; nAn Abandoned Tunnel<br />
+<br />
+277H 74V 1X 0C Exits:NES&gt; eAn Abandoned Tunnel<br />
+<br />
+277H 72V 1X 0C Exits:EW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 72V 1X 0C Exits:EW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+You sense a life form.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 72V 1X 0C Exits:EW&gt; ebackstab tanglefootAn Intersection Of Tunnels<br />
+You sense a life form.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; <br />
+Tanglefoot disappears in a mushroom cloud.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; say ?You say '?'<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; env slender.javelinYou stealthily dip the javelin in a toxic concoction of your own making.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; say wtfYou say 'wtf'<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; lAn Intersection Of Tunnels<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; <br />
+Salcha says 'kill'<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; backstab tanglefootYou couldn't find what you were looking for.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; lAn Intersection Of Tunnels<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; <br />
+Tanglefoot arrives from a puff of smoke.<br />
+<br />
+277H 70V 1X 0C Exits:NESW&gt; backstab tanglefootTanglefoot twists around to see you place a slender jet black javelin in his back.<br />
+Tanglefoot appears noticeably weaker.<br />
+<br />
+277H 70V 1X 0C [Me:Fair] [Tanglefoot:V.Bad] Exits:NESW&gt; sca<br />
+You massacre Tanglefoot with your pierce.<br />
+You massacre Tanglefoot with your pierce.<br />
+Tanglefoot pierces YOU very hard.<br />
+Tanglefoot misses you with his pierce.<br />
+<br />
+266H 70V 1X 0C [Me:Fair] [Tanglefoot:Awful] Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+266H 70V 1X 0C [Me:Fair] [Tanglefoot:Awful] Exits:NESW&gt; fade wAn Abandoned Tunnel<br />
+<br />
+266H 68V 1X 0C Exits:EW&gt; ebackstab tanglefootAn Intersection Of Tunnels<br />
+Tanglefoot Kickbottom, Solamnic Squire to Lord Nickodemus is standing here. (flying) (white aura)<br />
+<br />
+266H 66V 1X 0C Exits:NESW&gt; Tanglefoot makes a strange sound but is suddenly very silent, as you place a slender jet black javelin in his back.<br />
+Record the death of Tanglefoot, a valiant warrior!<br />
+<br />
+<br />
+266H 66V 1X 0C Exits:NESW&gt; <br />
+Sancho has transferred you!<br />
+The Pit Of Shame<br />
+A large stone fountain with a sign on it sits in the middle of the room.<br />
+Sancho Lopez, God of Questors &amp; Gladiators is standing here. (white aura)<br />
+You sense a life form.<br />
+You sense a life form.<br />
+Visara the Dreadful is standing here. (flying) (red aura)<br />
+Raeth Isn't Smarter Compared to Derek is standing here. (flying) (invisible) (white aura)<br />
+Tu Shay, KoT Engarde is standing here. (flying) (white aura)<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (flying) (red aura)<br />
+Hugo Smallo is resting here. (flying) (invisible) (red aura)<br />
+Connor O'Connor, Liberation Knight of Honor is standing here. (flying) (white aura)<br />
+You sense a life form.<br />
+Crysania, Revered Daughter of Paladine, stands here to further instruct you. (white aura)<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Salcha is dead! R.I.P.<br />
+get pile.coins corpse in roomexa corpse in room<br />
+266H 66V 1X 0C Exits:U&gt; What are you trying to get from?<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; Warning: your input 'in room' ignored.<br />
+You do not see that here.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Hugo giggles.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Crysania heals Tanglefoot.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Raeth says '311 hp on me'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; say so i killed like everyone except 1? :PYou say 'so i killed like everyone except 1? :P'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Hew<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Hew sits down and rests.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Salcha says '2'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Crysania heals Vinoa.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Enjoy! Thunky is here!<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Shorne says 'cheater'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; say heheYou say 'hehe'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Sancho says 'man'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Sancho says 'teh owned'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Vinoa says 'man'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; roflYou roll on the floor in a fit of laughter.<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Hugo says 'vinoa got my kill'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+Tanglefoot says 'fucken blind'<br />
+<br />
+266H 66V 1X 0C Exits:U&gt; <br />
+You are hungry.<br />
+get food chesteat foodput all.food chestA piece of sweet bread decays in your hands.<br />
+A piece of sweet bread decays in your hands.<br />
+Raeth says 'screw you teh'<br />
+Shorne says 'i say we go again damn't!'<br />
+Sancho says 'with cheater stabber'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; You get a piece of sweet bread from a small wooden chest.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; You nibble on the sweet magical bread.<br />
+You are full.<br />
+There is nothing left now.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; say owning roundYou can't find whatever you're trying to put into a small wooden chest.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; You say 'owning round'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Vinoa says 'i should get like'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Sancho gets a pile from his pouch.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Salcha says 'raeth got some kills in there'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Vinoa says '5x prize for that!'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Raeth says 'i didnt know you were a thief'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Hew tells you 'i hope you logged it'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Sancho gets a pile from his pouch.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Vinoa says 'since he won so hard!'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Sancho gives some steel coins to Vinoa.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Hugo drops a shadowy shortsword.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Hugo stops using the armor of the gladiator.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Olan says 'how many did he kill'<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Hugo drops the armor of the gladiator.<br />
+The armor of the gladiator disintegrates.<br />
+<br />
+269H 72V 1X 0C Exits:U&gt; <br />
+Sancho gives you 10000 steel coins.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Hugo wears a black leather suit on his body.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Shorne tells you 'sucks, i tried to get stab off to damage you atleast'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; t shorne :)You tell Shorne ':)'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Shorne tells you 'but you saw me come in i guess'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; repl noperepl spammed like hell<br />
+Hugo says 'damn'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; t shorne knew you would come<br />
+Sancho gives some steel coins to Raeth.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Tanglefoot throws up his arms in surrender.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Hugo says 'i guess i have to reload my thief eq'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; You tell Shorne 'nope'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; You tell Shorne 'spammed like hell'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Hugo says 'to compete'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Shorne tells you 'bastard :)'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; You tell Shorne 'knew you would come'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Tu says 'corey bracelet me!'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Sancho says 'woops'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Shorne tells you 'i stacked it even!'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Sancho says 'raeth toss me 6k back'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Tanglefoot says 'shoulda fucken prepped for this hsit'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Raeth gives some steel coins to Sancho.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Vinoa stops using a mithril bracelet.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Tu boggles at Tanglefoot's existence.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Vinoa gives a mithril bracelet to Tu.<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Shorne tells you 'didn't even try to waste time to envenom'<br />
+<br />
+269H 72V 1X 10000C Exits:U&gt; <br />
+Sancho gives you 6000 steel coins.<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+Tu wears a mithril bracelet around his right wrist.<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+Sancho gives some steel coins to Raeth.<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+Tu says 'you can't prep'<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; iYou are carrying:<br />
+a hooded lantern<br />
+a scroll of recall..it glows blue<br />
+a golden nugget [2]<br />
+a black quiver<br />
+an owl beak<br />
+finely drawn catgut<br />
+a handful of fine sand<br />
+a yellow potion..it glows blue<br />
+a black wood staff..it glows blue<br />
+a small golden chalice..it glows blue<br />
+a dragonarmy long bow..it glows blue<br />
+a magical watering can..it glows blue<br />
+a small wooden chest<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+Raeth says '1 more go!'<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+Sancho says 'thats it kids'<br />
+<br />
+269H 72V 1X 16000C Exits:U&gt; <br />
+You are thirsty.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Shorne says 'booo'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'awww'<br />
+Tanglefoot says 'eyesqueezers'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Crysania heals Connor.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Tu stops using a helm of seeing.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; drink can<br />
+Shorne says 'sancho is no fun'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; drink canYou put the hose of the can in your mouth and push down on the pump.<br />
+You do not feel thirsty.<br />
+You are full.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; drink canYou put the hose of the can in your mouth and push down on the pump.<br />
+You do not feel thirsty.<br />
+You are full.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; Your stomach can't contain anymore!<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Tu drops a helm of seeing.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Sancho says 'teh and connor are the champs!'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Vinoa says 'let's do one for fun'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Olan says 'Teh took his revenge of me killing him'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Tu wears a dark black helm on his head.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Vinoa says 'sancho!'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Olan says 'on everyone else'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Sancho nods his head in agreement.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'hah'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Olan says 'yeah'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Vinoa says 'no bets etc. just fun!'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Shorne says 'one for fun! and we lub the sancho?'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'damnit teh'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Tu says 'how do we get outta here!'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Olan says '1 more for fun'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'i didnt know you werew a thief'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; lThe Pit Of Shame<br />
+A helm of seeing is lying here.<br />
+a shadowy shortsword lies here..it glows blue<br />
+A large stone fountain with a sign on it sits in the middle of the room.<br />
+Thun the black robed draconian is standing here. (red aura)<br />
+Hew the Purple Dinosaur is resting here. (white aura)<br />
+Salcha Sterling, the Silver Dragon is standing here. (white aura)<br />
+Sancho Lopez, God of Questors &amp; Gladiators is standing here. (white aura)<br />
+You sense a life form.<br />
+You sense a life form.<br />
+Visara the Dreadful is standing here. (flying) (red aura)<br />
+Raeth Isn't Smarter Compared to Derek is standing here. (flying) (invisible) (white aura)<br />
+Tu Shay, KoT Engarde is standing here. (flying) (white aura)<br />
+Vinoa Dusk, Regal Emperor of the Knights is standing here. (flying) (red aura)<br />
+Hugo Smallo is resting here. (flying) (invisible) (red aura)<br />
+Connor O'Connor, Liberation Knight of Honor is standing here. (flying) (white aura)<br />
+You sense a life form.<br />
+Crysania, Revered Daughter of Paladine, stands here to further instruct you. (white aura)<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'or i woulda hid from u like a sissy'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Thun looks at you.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Vinoa says 'this shit rules'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Hugo says 'i am up for 1 more'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; snickerYou snicker softly.<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Sancho says 'sec'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Hugo says 'i got totally eaten'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'i thought you were ranger'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+A magical portal to your home appears in the room. NOW GET OUT!<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; <br />
+Raeth says 'so i try to bash!'<br />
+<br />
+286H 105V 1X 16000C Exits:U&gt; kneel crysaniaYour entire body tingles for a few seconds.<br />
+Crysania focuses on you and utters the words 'pzar.'<br />
+<br />
+460H 105V 1X 16000C Exits:U&gt; <br />
+Sancho says 'enter portal to go home'<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1028'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1028">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1028">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

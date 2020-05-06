@@ -1,0 +1,935 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1333-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1333'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Some trashes decide to leave inn.</font></b>
+<p>
+POV: 
+Zizou, Anema<p>
+Log Rating:
+2.9333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Well time to collect some equ that Outlaw donated.</i>
+<p>
+<p>
+
+<br />
+A Cobbled Lane<br />
+<br />
+566H 109V 1X 3226C Exits:NESW&gt; <br />
+Isto flies west.<br />
+You follow Isto west.<br />
+A Forest Garden<br />
+Kosmos the Male Human is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Kholos Saint, Vagabond of the Army of Darkness is standing here. (flying)<br />
+(flying) Bugs, Rabbit Without a Cause is here, resting comfortably on a clump of moss.<br />
+A mighty clydesdale stands before you.<br />
+You see a slender elf here, cutting saplings to make them strong.<br />
+<br />
+566H 107V 1X 3226C Exits:E&gt; bash Kholos<br />
+You crash into Kholos in a bone crunching bash, sending him sprawling to the ground.<br />
+Isto focuses harshly on Kholos and utters some strange words.<br />
+Isto slowly fades into existence.<br />
+Isto comes out of hiding.<br />
+The sound of bones cracking echoes as Isto's force bolt slams into Kholos.<br />
+<br />
+566H 107V 1X 3226C [Me:V.Good] [Kholos:Good] Exits:E&gt; <br />
+Bugs stands up.<br />
+<br />
+566H 107V 1X 3226C [Me:V.Good] [Kholos:Good] Exits:E&gt; <br />
+Bugs focuses harshly on you and utters some strange words.<br />
+<br />
+566H 107V 1X 3226C [Me:V.Good] [Kholos:Good] Exits:E&gt; <br />
+You massacre Kholos with your cleave.<br />
+You miss Kholos with your cleave.<br />
+Kholos pierces YOU extremely hard.<br />
+<br />
+547H 107V 1X 3226C [Me:V.Good] [Kholos:Good] Exits:E&gt; <br />
+Isto focuses harshly on Kholos and utters some strange words.<br />
+Isto slowly fades into existence.<br />
+Isto comes out of hiding.<br />
+The sound of bones cracking echoes as Isto's force bolt slams into Kholos.<br />
+<br />
+547H 107V 1X 3226C [Me:V.Good] [Kholos:Fair] Exits:E&gt; <br />
+You massacre Kholos with your cleave.<br />
+You massacre Kholos with your cleave.<br />
+Kholos massacres YOU with his pierce.<br />
+Bugs focuses harshly on you and utters some strange words.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:Fair] Exits:E&gt; bas bugs<br />
+stand<br />
+You crash into Bugs in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:Fair] Exits:E&gt; <br />
+Isto focuses harshly on Kholos and utters some strange words.<br />
+Isto slowly fades into existence.<br />
+Isto comes out of hiding.<br />
+The sound of bones cracking echoes as Isto's force bolt slams into Kholos.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:Bad] Exits:E&gt; <br />
+Kosmos focuses harshly on Bugs and utters some strange words.<br />
+Kosmos slowly fades into existence.<br />
+The sound of bones cracking echoes as Kosmos's force bolt slams into Bugs.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:Bad] Exits:E&gt; <br />
+Kholos stands up.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:Bad] Exits:E&gt; <br />
+Bugs misses you with his bludgeon.<br />
+You cleave Kholos extremely hard.<br />
+You massacre Kholos with your cleave.<br />
+Kholos misses you with his pierce.<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:V.Bad] Exits:E&gt; <br />
+Kholos crashes into Isto in a thundering collision, knocking him to the ground!<br />
+<br />
+521H 107V 1X 3226C [Me:V.Good] [Kholos:V.Bad] Exits:E&gt; bas<br />
+stand<br />
+<br />
+Isto slowly fades into existence.<br />
+Isto comes out of hiding.<br />
+Isto misses Kholos with his pierce.<br />
+Bugs misses you with his bludgeon.<br />
+You massacre Kholos with your cleave.<br />
+You massacre Kholos with your cleave.<br />
+Kholos massacres YOU with his pierce.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:V.Bad] Exits:E&gt; bas<br />
+stand<br />
+You are already standing.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:V.Bad] Exits:E&gt; You crash into Kholos in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:V.Bad] Exits:E&gt; <br />
+Isto pierces Kholos.<br />
+Bugs misses you with his bludgeon.<br />
+You massacre Kholos with your cleave.<br />
+You massacre Kholos with your cleave.<br />
+Kholos misses you with his pierce.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Bugs stands up.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Bugs focuses harshly on Isto and utters some strange words.<br />
+Isto appears to grow stronger.<br />
+Flames appear above Isto, but do him no harm.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Barak flies in from the east.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; You are already standing.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; You try to bash Kholos, but you miss and tumble forward onto your face.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Isto stands up.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Isto utters some strange words.<br />
+Isto's hands issue a spray of prismatic color!<br />
+Barak is caught in a spray of shimmering red!<br />
+Kosmos is caught in a spray of radiant yellow!<br />
+Kosmos seems weaker.<br />
+Kholos is blasted by a spray of scintillating blue!<br />
+Bugs is hit by a spray of gleaming indigo!<br />
+A spray of violet strikes a clydesdale, melting it into a lifeless paste.<br />
+You receive 0 experience.<br />
+A clydesdale is dead! R.I.P.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; get all.coins corpse<br />
+exam corpse<br />
+<br />
+Barak focuses harshly on Kosmos and utters some strange words.<br />
+Flesh burns as Barak enshrouds Kosmos in a cloak of flames.<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+The death cry of a clydesdale echoes from somewhere nearby...<br />
+<br />
+495H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Kosmos misses Isto with his bludgeon.<br />
+You massacre Kholos with your cleave.<br />
+You massacre Kholos with your cleave.<br />
+Kholos massacres YOU with his pierce.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Kosmos focuses harshly on Kholos and utters some strange words.<br />
+Kosmos creates small sparks.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; You stand up.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Kholos:Awful] Exits:E&gt; <br />
+Barak misses Isto with his hit.<br />
+Isto pierces Kholos hard.<br />
+Bugs misses you with his bludgeon.<br />
+You massacre Kholos with your cleave.<br />
+You massacre Kholos with your cleave.<br />
+You receive 0 experience.<br />
+Kholos is dead! R.I.P.<br />
+The death cry of Kholos echoes from somewhere nearby...<br />
+Kholos sinks gently to the ground.<br />
+Kholos stops following Bugs.<br />
+Kosmos stops following Kholos.<br />
+Kosmos now follows Bugs.<br />
+You direct your attention to Bugs.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Bugs:Fair] Exits:E&gt; get all.coins corpse<br />
+exam corpse<br />
+<br />
+Bugs gets a pile of coins from the corpse of Kholos.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Bugs:Fair] Exits:E&gt; bas<br />
+stand<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Bugs:Fair] Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a fierce red and gold barbed spear<br />
+a wolf tooth bracelet<br />
+a jewelled black belt<br />
+a leather shield with metal straps<br />
+a pair of ebony engraved bracers<br />
+a pair of battle gauntlets<br />
+an executioner's hood<br />
+a regal suit of platemail<br />
+an amulet of darkness<br />
+the ring of the forge<br />
+a black pearl inlaid ring<br />
+a viciously serrated mandible<br />
+a glowing scroll of recall..it glows dimly<br />
+a pork pie [2]<br />
+a small canteen<br />
+a rainbow coa rainbow colored shirt<br />
+a bowl of Otik's spiced potatoes<br />
+a hematite pendant<br />
+a crimson dust covered chest<br />
+a hooded lantern<br />
+<br />
+465H 107V 1X 3226C [Me:Good] [Bugs:Fair] Exits:E&gt; <br />
+Barak focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Barak enshrouds you in a cloak of flames.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:Fair] Exits:E&gt; You crash into Bugs in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:Fair] Exits:E&gt; <br />
+Isto gets a wolf tooth bracelet from the corpse of Kholos.<br />
+Isto gets a black pearl inlaid ring from the corpse of Kholos.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:Fair] Exits:E&gt; <br />
+Isto pierces Kosmos hard.<br />
+You massacre Bugs with your cleave.<br />
+You massacre Bugs with your cleave.<br />
+Bugs misses you with his bludgeon.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; You are already standing.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; get all corpse<br />
+You get a fierce red and gold barbed spear from the corpse of Kholos.<br />
+You get a jewelled black belt from the corpse of Kholos.<br />
+You get a leather shield with metal straps from the corpse of Kholos.<br />
+You are zapped by a pair of ebony engraved bracers and instantly drop it.<br />
+You get a pair of battle gauntlets from the corpse of Kholos.<br />
+You are zapped by an executioner's hood and instantly drop it.<br />
+You get a regal suit of platemail from the corpse of Kholos.<br />
+You are zapped by an amulet of darkness and instYou are zapped by an amulet of darkness and instantly drop it.<br />
+You get the ring of the forge from the corpse of Kholos.<br />
+You get a viciously serrated mandible from the corpse of Kholos.<br />
+You get a glowing scroll of recall from the corpse of Kholos.<br />
+You get a pork pie from the corpse of Kholos.<br />
+You get a pork pie from the corpse of Kholos.<br />
+You get a small canteen from the corpse of Kholos.<br />
+Shirt : You can't carry that many items.<br />
+Bowl : You can't carry that many items.<br />
+Pendant : You can't carry that many items.<br />
+Chest : You can't carry that many itChest : You can't carry that many items.<br />
+Lantern : You can't carry that many items.<br />
+Barak gets a rainbow colored shirt from the corpse of Kholos.<br />
+Barak gets a bowl of Otik's spiced potatoes from the corpse of Kholos.<br />
+Barak gets a hematite pendant from the corpse of Kholos.<br />
+Barak gets a crimson dust covered chest from the corpse of Kholos.<br />
+Barak gets a hooded lantern from the corpse of Kholos.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; <br />
+Barak focuses harshly on Isto and utters some strange words.<br />
+Isto appears to grow stronger.<br />
+Barak enshrouds Isto in a cloak of flames, which has no effect.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; <br />
+Kholos arrives from the east.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; <br />
+Kholos leaves east.<br />
+<br />
+381H 107V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; <br />
+You massacre Bugs with your cleave.<br />
+Kosmos misses Isto with his bludgeon.<br />
+Bugs misses you with his bludgeon.<br />
+<br />
+398H 140V 1X 3226C [Me:Fair] [Bugs:V.Bad] Exits:E&gt; <br />
+Isto utters some strange words.<br />
+Isto's hands issue a spray of prismatic color!<br />
+Barak is blasted by a spray of scintillating blue!<br />
+Kosmos is struck by a spray of murky violet!<br />
+Bugs is blasted by a spray of scintillating blue!<br />
+<br />
+398H 140V 1X 3226C [Me:Fair] [Bugs:Awful] Exits:E&gt; <br />
+Bugs stops using a balanced driftwood staff.<br />
+Bugs grabs a glowing scroll of recall.<br />
+Bugs recites a glowing scroll of recall.<br />
+Bugs disappears.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Barak focuses harshly on Isto and utters some strange words.<br />
+Isto appears to grow stronger.<br />
+Barak enshrouds Isto in a cloak of flames, which has no effect.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Kosmos misses Isto with his bludgeon.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Isto utters some strange words.<br />
+Isto's hands issue a spray of prismatic color!<br />
+Barak is caught in a spray of shimmering red!<br />
+Barak seems weaker.<br />
+A spray of yellow shatters Kosmos into hundreds of yellowish pieces.<br />
+You receive 0 experience.<br />
+Kosmos is dead! R.I.P.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; get all.coins corpse<br />
+exam corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+The death cry of Kosmos echoes from somewhere nearby...<br />
+Kosmos sinks gently to the ground.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a gnarled oak staff<br />
+a black mask<br />
+a withered scarlet robe of Lunitari<br />
+a large pile of coins<br />
+a glowing scroll of recall..it glows dimly<br />
+an enormous stone battleaxe<br />
+a loaf of rye bread [3]<br />
+a sharp iron longsword<br />
+a few glittering snake scales<br />
+a bit of tallow<br />
+a salted herring<br />
+a small canteen [2]<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; bas barak<br />
+stand<br />
+<br />
+Barak gets a large pile of coins from the corpse of Kosmos.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; You crash into Barak in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+398H 140V 1X 3226C [Me:Fair] [Isto:Fair] [Barak:V.Bad] Exits:E&gt; <br />
+You massacre Barak with your cleave.<br />
+You massacre Barak with your cleave.<br />
+Isto pierces Barak.<br />
+Barak misses Isto with his hit.<br />
+<br />
+398H 140V 1X 3226C [Me:Fair] [Isto:Fair] [Barak:Awful] Exits:E&gt; <br />
+Bugs flies in from the east.<br />
+<br />
+398H 140V 1X 3226C [Me:Fair] [Isto:Fair] [Barak:Awful] Exits:E&gt; <br />
+You massacre Barak with your cleave.<br />
+You receive 0 experience.<br />
+Barak is dead! R.I.P.<br />
+The death cry of Barak echoes from somewhere nearby...<br />
+A sylph stops following Barak.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; get all.coins corpse<br />
+exam corpse<br />
+<br />
+Bugs gets a large pile of coins from the corpse of Barak.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Bugs focuses harshly on you and utters some strange words.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; You are already standing.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; The corpse doesn't seem to have what you are looking for.<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a brass lamp<br />
+a hooded lantern<br />
+a crimson dust covered chest<br />
+a hematite pendant<br />
+a bowl of Otik's spiced potatoes<br />
+a rainbow colored shirt<br />
+a suit of padded red leather armor<br />
+a brass lamp [2]<br />
+a small wooden chest<br />
+a sextant..it hums softly<br />
+a fine cloth cloak [2]<br />
+a glowing scroll of recall..it glows dimly<br />
+a milky potion of see invisible<br />
+a loaf of waybreada loaf of waybread<br />
+a pork pie<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Bugs flies east.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; bas bugs<br />
+stand<br />
+You couldn't find what you were looking for.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; You are already standing.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Kholos arrives from the east.<br />
+<br />
+Kholos gets the corpse of Barak.<br />
+Kholos gets an amulet of darkness.<br />
+Kholos gets an executioner's hood.<br />
+Kholos gets a pair of ebony engraved bracers.<br />
+Kholos gets the corpse of Kholos.<br />
+398H 140V 1X 3226C Exits:E&gt; get all corpse<br />
+<br />
+Kholos leaves east.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; Staff : You can't carry that many items.<br />
+Mask : You can't carry that many items.<br />
+Robe : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Battleaxe : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Longsword : You can't carry that many items.<br />
+Scales : You can't carry that many items.<br />
+Tallow : You can't carry that many items.<br />
+Herring : You can't carry that many itemsHerring : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+Canteen : You can't carry that many items.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Bugs flies in from the east.<br />
+Nina arrives from the east.<br />
+Merkem arrives from the east.<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Nina says 'im naked'<br />
+<br />
+398H 140V 1X 3226C Exits:E&gt; <br />
+Isto flies east.<br />
+You follow Isto east.<br />
+A Cobbled Lane<br />
+<br />
+<br />
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br />
+Abit later...<br />
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br />
+<br />
+Inside the Gates<br />
+<br />
+284H 180V 13621746X 0C Mem:3 Exits:NS&gt; <br />
+Blaah flies south.<br />
+You follow Blaah south.<br />
+Before the South Gates of Vingaard<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+<br />
+284H 179V 13621746X 0C Mem:3 Exits:NS&gt; <br />
+Blaah flies south.<br />
+You follow Blaah south.<br />
+The Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Sir Bullit Mcqueen, Huerzyd's Impenetrable is standing here. (flying) (invisible)<br />
+Conner McManus, Randomer of the Kender Bard is standing here, fighting Lopie. (flying)<br />
+Lopie the Male Gnome is standing here, fighting Conner. (flying)<br />
+A knight of the crown stands here, surveying the countryside for danger.<br />
+<br />
+284H 178V 13621746X 0C Mem:3 Exits:NESWU&gt; <br />
+Blaah flies south.<br />
+You follow Blaah south.<br />
+Nearing the City of Vingaard<br />
+<br />
+284H 176V 13621746X 0C Mem:3 Exits:NESW&gt; c 'h p' conner<br />
+Who should the spell be cast upon?<br />
+<br />
+284H 176V 13621746X 0C Mem:3 Exits:NESW&gt; c 'h p' conner<br />
+<br />
+Blaah flies north.<br />
+You follow Blaah north.<br />
+The Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Sir Bullit Mcqueen, Huerzyd's Impenetrable is standing here. (flying) (invisible)<br />
+Lopie the Male Gnome is standing here. (flying)<br />
+A knight of the crown stands here, surveying the countryside for danger.<br />
+<br />
+284H 174V 13621746X 0C Mem:3 Exits:NESWU&gt; Who should the spell be cast upon?<br />
+<br />
+284H 174V 13621746X 0C Mem:3 Exits:NESWU&gt; <br />
+Bullit recites a glowing scroll of recall.<br />
+Bullit disappears.<br />
+<br />
+284H 174V 13621746X 0C Mem:3 Exits:NESWU&gt; c 'h p' conner<br />
+You utter the words, 'hold person'<br />
+<br />
+284H 174V 13621746X 0C Mem:4 Exits:NESWU&gt; <br />
+Blaah focuses harshly on Conner and utters the words, 'hold person'.<br />
+Conner freezes in place.<br />
+<br />
+284H 174V 13621746X 0C Mem:4 Exits:NESWU&gt; <br />
+Lopie places a steel dagger with a dragon claw handle in Conner's back, resulting in some strange noises and some blood.<br />
+<br />
+284H 174V 13621746X 0C Mem:4 Exits:NESWU&gt; c 'for b' conner<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Conner.<br />
+<br />
+284H 174V 13621746X 0C Mem:5 Exits:NESWU&gt; <br />
+Lopie pierces Conner extremely hard.<br />
+Conner is mortally wounded, and will die soon, if not aided.<br />
+<br />
+284H 174V 13621746X 0C Mem:5 Exits:NESWU&gt; get all corpse<br />
+get all corpse<br />
+get all corpse<br />
+get all corpse<br />
+<br />
+Blaah focuses harshly on Conner and utters the words, 'lightning bolt'.<br />
+Blaah slowly fades into existence.<br />
+Conner receives the full blast of a lightning bolt from Blaah ... and is no more.<br />
+You receive 0 experience.<br />
+Conner is dead! R.I.P.<br />
+<br />
+284H 174V 13621746X 0C Mem:5 Exits:NESWU&gt; get all.coins corpse<br />
+exam corpse<br />
+get all corpse<br />
+<br />
+The death cry of Conner echoes from somewhere nearby...<br />
+Conner sinks gently to the ground.<br />
+Bullit stops following Conner.<br />
+Lopie gets a pearl-handled knife from the corpse of Conner.<br />
+Lopie gets a barbed sting from the corpse of Conner.<br />
+Lopie gets a set of kender pouches from the corpse of Conner.<br />
+Lopie gets a grey silken robe from the corpse of Conner.<br />
+Lopie gets dark leather sleeves from the corpse of Conner.<br />
+Lopie gets a pair of green swordsman gloves from the corpse of Conner.<br />
+Lopie gets a pairLopie gets a pair of footpads from the corpse of Conner.<br />
+Lopie gets a suit of silent leather armor from the corpse of Conner.<br />
+Lopie gets a bullywug medallion from the corpse of Conner.<br />
+Lopie gets a bullywug medallion from the corpse of Conner.<br />
+Lopie gets a black ice ring from the corpse of Conner.<br />
+Lopie gets a very large pile of coins from the corpse of Conner.<br />
+Lopie gets a scroll of recall from the corpse of Conner.<br />
+Lopie gets a long wooden hoopak from the corpse of Conner.<br />
+Lopie gets a roasted turkey leg from the Lopie gets a roasted turkey leg from the corpse of Conner.<br />
+Lopie gets a roasted turkey leg from the corpse of Conner.<br />
+Lopie gets a roasted turkey leg from the corpse of Conner.<br />
+Lopie gets a roasted turkey leg from the corpse of Conner.<br />
+Lopie gets a roasted turkey leg from the corpse of Conner.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1333'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1333">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1333">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

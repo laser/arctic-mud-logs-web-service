@@ -1,0 +1,723 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 688-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='688'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Atreyu/Poi RIP</font></b>
+<p>
+POV: 
+Dralin<p>
+Log Rating:
+2.3158<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+Aryx leaves east.<br />
+Kaiden leaves east.<br />
+You follow Aryx east.<br />
+Oedipus arrives from the west.<br />
+Ruin arrives from the west.<br />
+The War Room<br />
+The corpse of a Knight of the Rose is lying here.<br />
+Kafilat Tamislav is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Manny the Male Wild Elf is standing here. (flying) (white aura)<br />
+Atreyu Anthyllis Barba-Jovis, Speaker of the Stars is standing here. (flying) (white aura)<br />
+. . . is outlined with. . . is outlined with a dim aura.<br />
+Poi Zin'Yerfood, Bloodthirsty Saboteur is standing here. (flying) (white aura)<br />
+<br />
+133V 74341X 902C Exits:W&gt; <br />
+Kaiden slowly fades into existence.<br />
+Kaiden quickly thrusts a black pronged trident at Atreyu from behind, but somehow falls short of his target.<br />
+<br />
+133V 74341X 902C Exits:W&gt; <br />
+Poi crashes into Aryx in a thundering collision, knocking him to the ground!<br />
+<br />
+133V 74341X 902C Exits:W&gt; <br />
+Atreyu focuses harshly on Oedipus and utters some strange words.<br />
+<br />
+133V 74341X 902C Exits:W&gt; bas poi<br />
+<br />
+Manny crashes into Aryx in a thundering collision, knocking him to the ground!<br />
+<br />
+133V 74341X 902C Exits:W&gt; You crash into Poi in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:V.Good] [Poi:Good] Exits:W&gt; <br />
+Kafilat focuses on Manny and utters some strange words.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:V.Good] [Poi:Good] Exits:W&gt; <br />
+Manny steps aside as Ruin attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:V.Good] [Poi:Good] Exits:W&gt; <br />
+Ruin slashes Manny very hard.<br />
+You massacre Poi with your slash.<br />
+Manny massacres Aryx with his cleave.<br />
+Manny cleaves Aryx extremely hard.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi with his crush.<br />
+Kaiden pierces Atreyu very hard.<br />
+Kaiden massacres Atreyu wKaiden massacres Atreyu with his slash.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; <br />
+Kaiden panics, and attempts to flee.<br />
+Kaiden leaves west.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; <br />
+Kaiden arrives from the west.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; <br />
+Elandria shouts 'sounds polish'<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; <br />
+Kaiden slowly fades into existence.<br />
+Kaiden gives his trident a quick thrust and twist, as he strikes Atreyu in the back with it.<br />
+Atreyu focuses harshly on Oedipus and utters some strange words.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; <br />
+Oedipus focuses harshly on Poi and utters some strange words.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Good] Exits:W&gt; bas poi<br />
+<br />
+Kaiden massacres Atreyu with his pierce.<br />
+Kaiden slashes Atreyu extremely hard.<br />
+Ruin slashes Manny very hard.<br />
+You massacre Poi with your slash.<br />
+Manny cleaves Aryx very hard.<br />
+Manny massacres Aryx with his cleave.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi with his crush.<br />
+Kafilat focuses on Poi and utters some strange words.<br />
+<br />
+133V 74341X 902C [Me:Perfect] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+You are sent sprawling as Manny crashes into you.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+Atreyu utters some strange words.<br />
+Atreyu heals Atreyu.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+Kaiden panics, and attempts to flee.<br />
+Kaiden leaves west.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+Kaiden arrives from the west.<br />
+Oedipus focuses harshly on Poi and utters some strange words.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+Kaiden places a black pronged trident in Atreyu's back, resulting in some strange noises and some blood.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Good] [Poi:Fair] Exits:W&gt; <br />
+Kaiden misses Atreyu with his pierce.<br />
+Kaiden slashes Atreyu very hard.<br />
+Atreyu misses Kaiden with his bludgeon.<br />
+Ruin misses Manny with her slash.<br />
+You massacre Poi with your slash.<br />
+Manny cleaves Aryx very hard.<br />
+Manny cleavManny cleaves Aryx very hard.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi with his crush.<br />
+Ruin stands up.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Ruin crashes into Manny in a thundering collision, knocking him to the ground!<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Kafilat focuses harshly on Oedipus and utters some strange words.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; st<br />
+<br />
+Biaze shouts 'I am Gloove.  I am win.'<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Poi stands up.<br />
+Aryx stands up.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Aryx steps aside as Poi attempts a bash, stumbles, and falls flat on his face.<br />
+Aryx crashes into Atreyu in a thundering collision, knocking him to the ground!<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Kaiden massacres Atreyu with his pierce.<br />
+Kaiden slashes Atreyu extremely hard.<br />
+Atreyu bludgeons Kaiden hard.<br />
+Ruin slashes Manny extremely hard.<br />
+You massacre Poi with your slash.<br />
+Manny cleaves Aryx very hard.<br />
+Poi slashes Aryx very hard.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi with his crush.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Kaiden panics, and attempts to flee.<br />
+Kaiden leaves west.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Kaiden arrives from the west.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Kaiden places a black pronged trident in the back of Atreyu, resulting in some strange noises, a lot of blood and a corpse.<br />
+You receive 0 experience.<br />
+Atreyu is dead! R.I.P.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+The death cry of Atreyu echoes from somewhere nearby...<br />
+Atreyu stops following Poi.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Oedipus gets a large pile of coins from the corpse of Atreyu.<br />
+<br />
+593H 133V 74341X 902C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; bas poi<br />
+<br />
+Oedipus divides 125 coins equally among the group members present.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; Poi stands up.<br />
+You can't do that while sitting.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; <br />
+Poi crashes into Oedipus in a thundering collision, knocking him to the ground!<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; You stand up.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:Fair] Exits:W&gt; You crash into Poi in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:Bad] Exits:W&gt; <br />
+Poi falls back as Oedipus crushes him on the head.<br />
+Oedipus crushes Poi very hard.<br />
+Ruin massacres Manny with her slash.<br />
+You massacre Poi with your slash.<br />
+Manny cleaves Aryx very hard.<br />
+Manny cleaves Aryx extremely hard.<br />
+Poi slashes Aryx extremely hard.<br />
+Poi slashes Aryx extremely hard.<br />
+Aryx massacres Poi with his crush.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Kafilat says 'hay guys'<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Ruin crashes into Manny in a thundering collision, knocking him to the ground!<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Kaiden appears to be dancing around the room.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Kaiden gets a shaman's staff from the corpse of Atreyu.<br />
+Kaiden gets a bracelet of the white owl from the corpse of Atreyu.<br />
+Kaiden gets a plain component pouch from the corpse of Atreyu.<br />
+Kaiden gets a green snake skin from the corpse of Atreyu.<br />
+Kaiden gets a hooded black cloak from the corpse of Atreyu.<br />
+Kaiden gets a fire-blasted shield from the corpse of Atreyu.<br />
+Kaiden gets a pair of black leather boots from the corpse of Atreyu.<br />
+Kaiden gets a black ice visor from the corpse of Atreyu.<br />
+Kaiden gets a black ice breast plate from the corpse of Atreyu.<br />
+Kaiden is zapped by a holy insignia of Paladine and instantly drops it.<br />
+Kaiden gets a necklace made of finger bones from the corpse of Atreyu.<br />
+Kaiden gets a glowing ring-sized orb from the corpse of Atreyu.<br />
+Kaiden is zapped by a platinum dragon signet ring and instantly drops it.<br />
+Kaiden gets a glowing scroll of recall from the corpse of Atreyu.<br />
+Kaiden gets a glowing scroll of recall from the corpse of Atreyu.<br />
+Kaiden gets a glowing scroll of recall from the corpse of Atreyu.<br />
+Kaiden gets a glowing scroll of recall from the corpse of Atreyu.<br />
+Kaiden gets a glowing scroll of recall from the corpse of Atreyu.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Poi has lost his link.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Poi steps aside as Aryx attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Kafilat focuses harshly on Oedipus and utters some strange words.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Fair] [Poi:V.Bad] Exits:W&gt; <br />
+Oedipus crushes Poi very hard.<br />
+Ruin slashes Manny extremely hard.<br />
+You massacre Poi with your slash.<br />
+Manny cleaves Aryx extremely hard.<br />
+Manny cleaves Aryx extremely hard.<br />
+Poi slashes Aryx extremely hard.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi Aryx massacres Poi with his crush.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Bad] [Poi:V.Bad] Exits:W&gt; <br />
+Poi has reconnected.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Bad] [Poi:V.Bad] Exits:W&gt; <br />
+Kaiden slowly fades into existence.<br />
+Kaiden massacres Poi with his pierce.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Bad] [Poi:Awful] Exits:W&gt; <br />
+Manny grabs a glowing scroll of recall.<br />
+Manny recites a glowing scroll of recall.<br />
+Manny disappears.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Bad] [Poi:Awful] Exits:W&gt; bas poi<br />
+You crash into Poi in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+593H 133V 74341X 927C [Me:V.Good] [Aryx:Bad] [Poi:Awful] Exits:W&gt; <br />
+Kaiden massacres Poi with his pierce.<br />
+Kaiden massacres Poi with his slash.<br />
+You slash Poi extremely hard.<br />
+Poi massacres Aryx with his slash.<br />
+Aryx massacres Poi with his crush.<br />
+You receive 0 experience.<br />
+Poi is dead! R.I.P.<br />
+The death cry of Poi echoes from somewhere nearby...<br />
+Poi sinks gently to the ground.<br />
+Manny stops following Poi.<br />
+Oedipus stands up.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; <br />
+Kafilat ponders the meaning of life, love, and the universe.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; <br />
+Oedipus gets a very large pile of coins from the corpse of Poi.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; <br />
+Kafilat flies west.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; <br />
+Aryx stands up.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; g all poi<br />
+<br />
+Kaiden gets a steel halberd from the corpse of Poi.<br />
+Kaiden gets a thieves belt-pouch from the corpse of Poi.<br />
+Kaiden gets a thin, light green robe from the corpse of Poi.<br />
+Kaiden gets a berserker shield from the corpse of Poi.<br />
+Kaiden gets a pair of steel armplates inlaid with ebony from the corpse of Poi.<br />
+Kaiden gets a pair of spiked sterling gauntlets from the corpse of Poi.<br />
+Kaiden gets a sturdy pair of spurred metal boots from the corpse of Poi.<br />
+Kaiden gets a pair of pearl studded greaves from the corpse of Poi.<br />
+Kaiden is zapped by some spiked leather body armor and instantly drops it.<br />
+Kaiden gets a short cloak from the corpse of Poi.<br />
+Kaiden is zapped by a platinum necklace and instantly drops it.<br />
+Kaiden gets a scarlet corsair's badge from the corpse of Poi.<br />
+Kaiden gets a steel ring from the corpse of Poi.<br />
+Kaiden gets a runed crimson skull staff from the corpse of Poi.<br />
+Kaiden gets a dark crystal ball from the corpse of Poi.<br />
+<br />
+593H 133V 74341X 927C Exits:W&gt; <br />
+Aryx gets a large first-aid kit from the corpse of Poi.<br />
+Aryx gets a glowing scroll of recall from the corpse of Poi.<br />
+Aryx gets a waterskin from the corpse of Poi.<br />
+Aryx gets a large waterskin from the corpse of Poi.<br />
+Aryx gets a large waterskin from the corpse of Poi.<br />
+Aryx gets a dented black cudgel from the corpse of Poi.<br />
+Aryx gets a pork pie from the corpse of Poi.<br />
+Aryx gets a pork pie from the corpse of Poi.<br />
+Aryx gets a pork pie from the corpse of Poi.<br />
+Aryx gets a glowing scroll of recall from the corpse of Poi.<br />
+Aryx gets a dented black cudgel from the corpse of Poi.<br />
+Aryx gets a milky potion of see invisible from the corpse of Poi.<br />
+Aryx gets a multiple spear flinger from the corpse of Poi.<br />
+Aryx gets a milky potion of see invisible from the corpse of Poi.<br />
+Aryx gets a milky potion of see invisible from the corpse of Poi.<br />
+Aryx gets a diabolic crimson-stained scimitar from the corpse of Poi.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='688'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=688">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="688">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

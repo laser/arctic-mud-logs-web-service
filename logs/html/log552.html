@@ -1,0 +1,913 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 552-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='552'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Shakar Hane RIP</font></b>
+<p>
+POV: 
+Shakar/Elyana<p>
+Log Rating:
+-0.2632<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+76H 65V 27528X 1881C Exits:ES&gt; backstab deerA red deer makes a strange sound, as you place a red metallic javelin in his back.<br />
+<br />
+76H 65V 27108X 1881C [Shakar:Fair] [a red deer:Fair] Exits:ES&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer very hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+88H 90V 26864X 1881C [Shakar:Fair] [a red deer:Bad] Exits:ES&gt; <br />
+You pierce a red deer very hard.<br />
+You miss a red deer with your pierce.<br />
+A red deer bites YOU hard.<br />
+<br />
+80H 90V 26742X 1881C [Shakar:Fair] [a red deer:V.Bad] Exits:ES&gt; <br />
+You miss a red deer with your pierce.<br />
+You miss a red deer with your pierce.<br />
+A red deer misses you with his bite.<br />
+<br />
+80H 90V 26742X 1881C [Shakar:Fair] [a red deer:V.Bad] Exits:ES&gt; <br />
+Hane arrives from the east.<br />
+A husky gnome warrior arrives from the east.<br />
+<br />
+80H 90V 26742X 1881C [Shakar:Fair] [a red deer:V.Bad] Exits:ES&gt; <br />
+Hane leaves south.<br />
+A husky gnome warrior leaves south.<br />
+<br />
+80H 90V 26742X 1881C [Shakar:Fair] [a red deer:V.Bad] Exits:ES&gt; <br />
+You pierce a red deer extremely hard.<br />
+You pierce a red deer very hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+80H 90V 26490X 1881C [Shakar:Fair] [a red deer:Awful] Exits:ES&gt; <br />
+Hane arrives from the south.<br />
+A husky gnome warrior arrives from the south.<br />
+<br />
+80H 90V 26490X 1881C [Shakar:Fair] [a red deer:Awful] Exits:ES&gt; <br />
+You miss a red deer with your pierce.<br />
+You miss a red deer with your pierce.<br />
+A red deer bites YOU hard.<br />
+<br />
+71H 90V 26490X 1881C [Shakar:Bad] [a red deer:Awful] Exits:ES&gt; <br />
+Hane looks at you.<br />
+<br />
+71H 90V 26490X 1881C [Shakar:Bad] [a red deer:Awful] Exits:ES&gt; <br />
+Hane leaves east.<br />
+A husky gnome warrior leaves east.<br />
+<br />
+71H 90V 26490X 1881C [Shakar:Bad] [a red deer:Awful] Exits:ES&gt; scanLooking north:<br />
+There is little but dense forest.<br />
+Looking east:<br />
+A road travels through the forest.<br />
+A husky gnome warrior wanders the area here.<br />
+Hane the Male Minotaur is standing here.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+Looking south:<br />
+A road travels through the forest.<br />
+Looking west:<br />
+There is little but dense forest.<br />
+Looking up:<br />
+The dense forest canopy allows little light to filter in.<br />
+Looking down:<br />
+Forest debris liters the sides of the road.<br />
+<br />
+71H 90V 26490X 1881C [Shakar:Bad] [a red deer:Awful] Exits:ES&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer hard.<br />
+A red deer is mortally wounded, and will die soon, if not aided.<br />
+<br />
+71H 90V 26284X 1881C [a red deer:Dying] Exits:ES&gt; scanLooking north:<br />
+There is little but dense forest.<br />
+Looking east:<br />
+A road travels through the forest.<br />
+A husky gnome warrior wanders the area here.<br />
+Hane the Male Minotaur is standing here.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+Looking south:<br />
+A road travels through the forest.<br />
+Looking west:<br />
+There is little but dense forest.<br />
+Looking up:<br />
+The dense forest canopy allows little light to filter in.<br />
+Looking down:<br />
+Forest debris liters the sides of the road.<br />
+<br />
+71H 90V 26284X 1881C [a red deer:Dying] Exits:ES&gt; <br />
+You annihilate a red deer with your pierce.<br />
+You receive 5339 experience.<br />
+A red deer is dead! R.I.P.<br />
+get coins corpseexa corpseThe death cry of a red deer echoes from somewhere nearby...<br />
+<br />
+71H 90V 20945X 1881C Exits:ES&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+71H 90V 20945X 1881C Exits:ES&gt; eIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+71H 90V 20945X 1881C Exits:ES&gt; backstab haneA Forest Road<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+A husky gnome warrior wanders the area here.<br />
+Hane the Male Minotaur is standing here.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+<br />
+71H 88V 20945X 1881C Exits:EW&gt; Hane twists around to see you place a red metallic javelin in his back.<br />
+<br />
+71H 88V 20945X 1881C [Shakar:Bad] [Hane:V.Bad] Exits:EW&gt; <br />
+You pierce Hane very hard.<br />
+You pierce Hane very hard.<br />
+Hane massacres YOU with his slash.<br />
+<br />
+50H 88V 20945X 1881C [Shakar:V.Bad] [Hane:V.Bad] Exits:EW&gt; stYou are already standing.<br />
+<br />
+50H 88V 20945X 1881C [Shakar:V.Bad] [Hane:V.Bad] Exits:EW&gt; <br />
+You pierce Hane very hard.<br />
+You pierce Hane hard.<br />
+Hane misses you with his slash.<br />
+<br />
+50H 88V 20945X 1881C [Shakar:V.Bad] [Hane:Awful] Exits:EW&gt; <br />
+Hane stops using a huge bronze two-handed sword.<br />
+Hane grabs a scroll of recall.<br />
+Hane recites a scroll of recall.<br />
+Hane disappears.<br />
+<br />
+50H 88V 20945X 1881C Exits:EW&gt; backstab haneYou couldn't find what you were looking for.<br />
+<br />
+50H 88V 20945X 1881C Exits:EW&gt; t hane dont look at me plsYou tell Hane 'dont look at me pls'<br />
+<br />
+50H 88V 20945X 1881C Exits:EW&gt; wA Forest Road<br />
+The corpse of a red deer is lying here.<br />
+<br />
+50H 86V 20945X 1881C Exits:ES&gt; sA Forest Road<br />
+A great horned owl rests in the trees, looking for prey.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+<br />
+50H 84V 20945X 1881C Exits:NS&gt; <br />
+A great horned owl flies north.<br />
+<br />
+50H 84V 20945X 1881C Exits:NS&gt; backstab deerA red deer quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+50H 84V 20945X 1881C [Shakar:V.Bad] [a red deer:Perfect] Exits:NS&gt; <br />
+You miss a red deer with your pierce.<br />
+You miss a red deer with your pierce.<br />
+A red deer misses you with his bite.<br />
+<br />
+50H 84V 20945X 1881C [Shakar:V.Bad] [a red deer:Perfect] Exits:NS&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer hard.<br />
+A red deer bites YOU hard.<br />
+<br />
+42H 84V 20749X 1881C [Shakar:V.Bad] [a red deer:Good] Exits:NS&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+42H 84V 20562X 1881C [Shakar:V.Bad] [a red deer:Fair] Exits:NS&gt; <br />
+You miss a red deer with your pierce.<br />
+You pierce a red deer very hard.<br />
+A red deer misses you with his bite.<br />
+The cloud-veiled sky becomes even darker as the sun sets.<br />
+<br />
+54H 109V 20440X 1881C [Shakar:V.Bad] [a red deer:Fair] Exits:NS&gt; <br />
+You pierce a red deer extremely hard.<br />
+You miss a red deer with your pierce.<br />
+A red deer misses you with his bite.<br />
+<br />
+54H 109V 20300X 1881C [Shakar:V.Bad] [a red deer:Bad] Exits:NS&gt; <br />
+You miss a red deer with your pierce.<br />
+You pierce a red deer hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+54H 109V 20206X 1881C [Shakar:V.Bad] [a red deer:Bad] Exits:NS&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer very hard.<br />
+A red deer bites YOU hard.<br />
+<br />
+45H 109V 19963X 1881C [Shakar:V.Bad] [a red deer:Awful] Exits:NS&gt; <br />
+You pierce a red deer extremely hard.<br />
+You pierce a red deer very hard.<br />
+A red deer is mortally wounded, and will die soon, if not aided.<br />
+<br />
+45H 109V 19691X 1881C [a red deer:Dying] Exits:NS&gt; <br />
+Someone shouts 'GOOOOOOOOOOOOOOOOOOOOOOOOOOO STAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'<br />
+<br />
+45H 109V 19691X 1881C [a red deer:Dying] Exits:NS&gt; <br />
+You annihilate a red deer with your pierce.<br />
+You receive 5354 experience.<br />
+A red deer is dead! R.I.P.<br />
+get coins corpseexa corpseThe death cry of a red deer echoes from somewhere nearby...<br />
+<br />
+45H 109V 14337X 1881C Exits:NS&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+45H 109V 14337X 1881C Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+45H 109V 14337X 1881C Exits:NS&gt; sA Forest Road<br />
+A small ground squirrel scampers around looking for nuts.<br />
+A small ground squirrel scampers around looking for nuts.<br />
+<br />
+45H 107V 14337X 1881C Exits:NEW&gt; sAlas, you cannot go that way...<br />
+<br />
+45H 107V 14337X 1881C Exits:NEW&gt; nA Forest Road<br />
+The corpse of a red deer is lying here.<br />
+<br />
+45H 105V 14337X 1881C Exits:NS&gt; nA Forest Road<br />
+The corpse of a red deer is lying here.<br />
+<br />
+45H 103V 14337X 1881C Exits:ES&gt; nAlas, you cannot go that way...<br />
+<br />
+45H 103V 14337X 1881C Exits:ES&gt; eA Forest Road<br />
+A silver shortsword lies here. [2]<br />
+Some iron greaves lie here.<br />
+Some studded leather armor is lying on the ground.<br />
+Some iron greaves lie here.<br />
+A tattered robe has been left here.<br />
+A black silken dress lies here.<br />
+A sword with a blunt end has been left here.<br />
+A small shield rests here.<br />
+A chain mail shirt is lying on the ground.<br />
+A simple looking pole lies here.<br />
+A small shield rests here.<br />
+A chain mail shirt is lying on the ground.<br />
+A silver shortsword lies here. [2]<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+A great horned owl rests in the trees, looking for prey.<br />
+<br />
+45H 101V 14337X 1881C Exits:EW&gt; eA Forest Road<br />
+The mutilated corpse of a red deer is lying here.<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+<br />
+45H 99V 14337X 1881C Exits:EW&gt; eA Forest Road<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+<br />
+45H 97V 14337X 1881C Exits:EW&gt; <br />
+Bonham shouts 'omaha toss tell please'<br />
+<br />
+45H 97V 14337X 1881C Exits:EW&gt; eBefore a Mountain Path<br />
+<br />
+45H 95V 14337X 1881C Exits:ESW&gt; wA Forest Road<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+<br />
+45H 93V 14337X 1881C Exits:EW&gt; wA Forest Road<br />
+The mutilated corpse of a red deer is lying here.<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+A beautiful deer with a rusty red coat stands here, munching on some plants.<br />
+<br />
+45H 91V 14337X 1881C Exits:EW&gt; backstab deerA red deer quickly avoids your backstab, and you nearly cut your finger.<br />
+You feel especially skillful today.<br />
+<br />
+45H 91V 14337X 1881C [Shakar:V.Bad] [a red deer:Perfect] Exits:EW&gt; <br />
+You miss a red deer with your pierce.<br />
+You pierce a red deer extremely hard.<br />
+A red deer barely bites YOU.<br />
+<br />
+41H 91V 14197X 1881C [Shakar:V.Bad] [a red deer:Good] Exits:EW&gt; <br />
+You miss a red deer with your pierce.<br />
+You pierce a red deer very hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+41H 91V 14085X 1881C [Shakar:V.Bad] [a red deer:Good] Exits:EW&gt; <br />
+You pierce a red deer very hard.<br />
+You miss a red deer with your pierce.<br />
+A red deer misses you with his bite.<br />
+<br />
+41H 91V 13954X 1881C [Shakar:V.Bad] [a red deer:Fair] Exits:EW&gt; scYou are Shakar the Male Wild Elf, a level 9 Thief.<br />
+You are 17 years old.<br />
+You have 41(147) hit and 91(124) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 352046 exp, and have 1881(0) steel coins.<br />
+You need 13954 more experience to advance.<br />
+You have never died.<br />
+You have been connected for 15 minute(s).<br />
+You have been playing for 0 day(s), 1 hour(s) and 51 minute(s).<br />
+You are standing.<br />
+You are flying.<br />
+You are fighting a red deer.<br />
+<br />
+41H 91V 13954X 1881C [Shakar:V.Bad] [a red deer:Fair] Exits:EW&gt; <br />
+You pierce a red deer very hard.<br />
+You pierce a red deer extremely hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+41H 91V 13692X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; <br />
+You miss a red deer with your pierce.<br />
+You miss a red deer with your pierce.<br />
+A red deer bruises YOU with his bite.<br />
+<br />
+39H 91V 13692X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; <br />
+You pierce a red deer extremely hard.<br />
+You miss a red deer with your pierce.<br />
+A red deer misses you with his bite.<br />
+The darkness marks the end of another day.<br />
+You are thirsty.<br />
+<br />
+51H 116V 13524X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; <br />
+Felix arrives from the east.<br />
+<br />
+51H 116V 13524X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; <br />
+Felix is continually trying to get behind you.<br />
+Hmmm...i wonder what he's up to?<br />
+<br />
+51H 116V 13524X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; lIt is pitch black.<br />
+The mutilated corpse of a red deer is lying here.<br />
+The mutilated corpse of a great horned owl is lying here.<br />
+Felix the Male Wild Elf is standing here.<br />
+A red deer is standing here, fighting YOU.<br />
+<br />
+51H 116V 13524X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; peer<br />
+You miss a red deer with your pierce.<br />
+You pierce a red deer very hard.<br />
+A red deer misses you with his bite.<br />
+<br />
+51H 116V 13402X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; You peer around you.<br />
+<br />
+51H 116V 13402X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; say die nowYou say 'die now'<br />
+<br />
+51H 116V 13402X 1881C [Shakar:V.Bad] [a red deer:V.Bad] Exits:EW&gt; recite recall meget recall chestYou stop using a blue hilted dagger.<br />
+You grab a glowing scroll of recall.<br />
+You recite a glowing scroll of recall which dissolves.<br />
+Clerk's Office<br />
+A short strip of bark lies in the dust here.<br />
+Someone has left a pair of small cloth boots here.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A set of pan pipes lies here.<br />
+A small metallic canteen has been dropped here. [4]<br />
+A plain wooden key lies here.<br />
+A shiny silver key lies here...it glows dimly<br />
+A small iron key lies here.<br />
+Aiji the Male High Elf is standing here.<br />
+A tired looking clerk sits here waiting for you to say something intelligent.<br />
+Smoking a fat cigar, a low ranking guard vigilantly watches the inn.<br />
+<br />
+51H 116V 13402X 1881C Exits:D&gt; wh hane<br />
+Aiji leaves down.<br />
+<br />
+51H 116V 13402X 1881C Exits:D&gt; The chest doesn't seem to have what you are looking for.<br />
+<br />
+51H 116V 13402X 1881C Exits:D&gt; No matches for 'hane'.        Total people online  : 79<br />
+<br />
+51H 116V 13402X 1881C Exits:D&gt; restYou rest your tired bones but stay aloft.<br />
+<br />
+[ ... tick later ... ]<br />
+<br />
+53H 100V 13402X 1881C Exits:N&gt; lThe Practice Room<br />
+A tall man clad in brown leathers walks about as he instructs his students.<br />
+<br />
+67H 124V 13402X 1881C Exits:N&gt; scYou are Shakar the Male Wild Elf, a level 9 Thief.<br />
+You are 17 years old.<br />
+You have 67(147) hit and 124(124) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 352598 exp, and have 1881(0) steel coins.<br />
+You need 13402 more experience to advance.<br />
+You have never died.<br />
+You have been connected for 18 minute(s).<br />
+You have been playing for 0 day(s), 1 hour(s) and 55 minute(s).<br />
+You are resting.<br />
+You are flying.<br />
+<br />
+67H 124V 13402X 1881C Exits:N&gt; whImmortals<br />
+---------<br />
+[Grd  32] Phred Dobbs, Enlightened Slum-Lord<br />
+[Grd  32] Babbling Bertil, Elder of Swords, a R.u.M.<br />
+<br />
+Mortals<br />
+-------<br />
+Thorp the Male Gnome<br />
+Xendo the Male Hill Dwarf<br />
+Lord Holden, Comrades in Arms<br />
+Duulket Dor<br />
+Ganon the Male Half Elf<br />
+Yama the Male Hill Dwarf<br />
+Kyx the Male Human<br />
+Quetzalcoatl the Male Kender<br />
+Gered the Male Wild Elf<br />
+Aiji the Male High Elf<br />
+Felix the Male Wild Elf<br />
+Kafilat Tamislav<br />
+Uberin the Female Minotaur<br />
+Cheylan the Male Human<br />
+Hotsuma the Male Hylar Dwarf<br />
+<br />
+ [return for more, q to stop]qu<br />
+81H 124V 13402X 1881C Exits:N&gt; hideYou crawl into a corner and remain motionless.<br />
+You feel enlightened.<br />
+<br />
+81H 124V 13402X 1881C Exits:N&gt; <br />
+Kaiden flies in from the north.<br />
+<br />
+81H 124V 13402X 1881C Exits:N&gt; <br />
+Suddenly someone stabs you in the back with a crimson dagger, RIP...<br />
+You're dead.<br />
+<br />
+-11H 124V 13402X 1881C Exits:N&gt; You sink gently to the ground.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+[ ... a bit later ... ]<br />
+<br />
+360H 94V 1X 306C Mem:3 Exits:EW&gt; wc 'h p' HaneThe cloud-veiled sky becomes even darker as the sun sets.<br />
+You feel yourself exposed.<br />
+You lose your connection with your wizard's eye.<br />
+A Forest Road<br />
+A silver shortsword lies here. [2]<br />
+Some iron greaves lie here.<br />
+Some studded leather armor is lying on the ground.<br />
+Some iron greaves lie here.<br />
+A tattered robe has been left here.<br />
+A black silken dress lies here.<br />
+A sword with a blunt end has been left here.<br />
+A small shield rests here.<br />
+A chain mail shirt is lying on the ground.<br />
+A simple looking pole lies here.<br />
+A small shield rests here.<br />
+A chain mail shirt is lying on the ground.<br />
+A silver shortsword lies here. [2]<br />
+A great horned owl rests in the trees, looking for prey.<br />
+Hane the Male Minotaur is standing here, fighting a great horned owl.<br />
+A great horned owl is standing here, fighting Hane.<br />
+A great horned owl rests in the trees, looking for prey.<br />
+<br />
+360H 120V 1X 306C Mem:2 Exits:EW&gt; You utter the words, 'hold person'<br />
+Hane freezes in place.<br />
+<br />
+360H 120V 1X 306C Mem:3 Exits:EW&gt; c 'en dr' hane<br />
+A great horned owl claws Hane hard.<br />
+<br />
+360H 120V 1X 306C Mem:3 Exits:EW&gt; You utter the words, 'energy drain'<br />
+You drain Hane of some of his energy.<br />
+<br />
+360H 120V 1X 306C Mem:4 Exits:EW&gt; <br />
+A great horned owl flies west.<br />
+<br />
+360H 120V 1X 306C Mem:4 Exits:EW&gt; gl hane<br />
+A great horned owl claws Hane hard.<br />
+<br />
+360H 120V 1X 306C Mem:4 Exits:EW&gt; c 'en dr' haneHane the young adult male minotaur has quite a few wounds.<br />
+<br />
+360H 120V 1X 306C Mem:4 Exits:EW&gt; You utter the words, 'energy drain'<br />
+You drain Hane of some of his energy.<br />
+<br />
+360H 120V 1X 306C Mem:5 Exits:EW&gt; gl hane<br />
+A great horned owl claws Hane hard.<br />
+<br />
+360H 120V 1X 306C Mem:5 Exits:EW&gt; c 'en dr' haneHane the young adult male minotaur has quite a few wounds.<br />
+<br />
+360H 120V 1X 306C Mem:5 Exits:EW&gt; You utter the words, 'energy drain'<br />
+You drain Hane of some of his energy.<br />
+<br />
+360H 120V 1X 306C Mem:6 Exits:EW&gt; <br />
+A great horned owl claws Hane hard.<br />
+<br />
+360H 120V 1X 306C Mem:6 Exits:EW&gt; c 'f b' haneYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hane.<br />
+<br />
+360H 120V 1X 306C Mem:7 Exits:EW&gt; <br />
+A great horned owl claws Hane.<br />
+<br />
+360H 120V 1X 306C Mem:7 Exits:EW&gt; c 'f b' haneYou utter the words, 'force bolt'<br />
+Your force bolt shatters Hane's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Hane is dead! R.I.P.<br />
+get coins corpseexa corpse<br />
+360H 120V 1X 306C Mem:8 Exits:EW&gt; <br />
+The death cry of Hane echoes from somewhere nearby...<br />
+<br />
+360H 120V 1X 306C Mem:8 Exits:EW&gt; You get a large pile of coins from the corpse of Hane.<br />
+There were 111 coins.<br />
+<br />
+360H 120V 1X 417C Mem:8 Exits:EW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a huge bronze two-handed sword<br />
+a shiny black band<br />
+a red steel bracer<br />
+a thin golden dragonscale belt<br />
+a backpack<br />
+a pair of black ice arm guards<br />
+a pair of wolf's hide gloves<br />
+a gleaming silver pair of boots<br />
+a pair of soft cloth pants<br />
+a red leather facemask covered in silver runes..it glows dimly<br />
+a skeletal breastplate<br />
+a crimson pendant..it hums softly<br />
+an enchanted rat bone charm..it glows dimly<br />
+a black ice ring..it hums softly<br />
+a glowing scroll of recall..it glows dimly<br />
+a large first-aid kit<br />
+a scroll of recall<br />
+a small wooden chest<br />
+a large wooden barrel<br />
+a small wooden chest<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='552'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=552">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="552">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

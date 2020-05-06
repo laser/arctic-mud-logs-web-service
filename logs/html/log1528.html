@@ -1,0 +1,881 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1528-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1528'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Jedah RIP</font></b>
+<p>
+POV: 
+Grauth<p>
+Log Rating:
+0.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+WE NEEDED AN EQ SET FAST AND THIS GUY LOOKED Evil!! or something</i>
+<p>
+<p>
+
+611H 104V 13260085X 615C Exits:ESW&gt; #Error: Unmatched braces!<br />
+#   {^Gregoriy arrives} now triggers {bas gregoriy} @ {5}<br />
+#Error: Unmatched braces!<br />
+#   {^Gregoriy flies in} now triggers {bas gregoriy} @ {5}<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+Jedah Phu, Faction of Hate is standing here. (flying) (white aura)<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; <br />
+Rhaegar tells your group 'i need a weapon christ'<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; <br />
+Tywin starts holding a bloody minotaur hand axe.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; <br />
+A Palanthian guard arrives from the west.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sa jedah spying?<br />
+You say 'jedah spying?'<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sa it was w for an awful long time<br />
+You say 'it was w for an awful long time'<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; <br />
+Tywin tells your group 'corey give him skull flail'<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; bas gregoriy<br />
+You couldn't find what you were looking for.<br />
+<br />
+611H 104V 13260085X 615C Exits:ESW&gt; <br />
+Tywin flies west.<br />
+Rhaegar flies west.<br />
+You follow Tywin west.<br />
+Almanza flies in from the east.<br />
+Yamoto flies in from the east.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+611H 103V 13260085X 615C Exits:ESW&gt; <br />
+Tywin flies south.<br />
+Rhaegar flies south.<br />
+You follow Tywin south.<br />
+Almanza flies in from the north.<br />
+Yamoto flies in from the north.<br />
+Anatole's Amazing Artifacts<br />
+    This building smells awful. Probably from all the noxious fumes from<br />
+the lab in the next room. But then again, everybody knows magicians stink.<br />
+The counter is actually a glass case that displays several magical<br />
+trinkets. The only exits are back north to Sword Street, and a small<br />
+archway leading east.<br />
+A small bag of glowing white stones lies in the dirt.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+An apprentice mage is here watching the store for his master.<br />
+611H 102V 13260085X 615C Exits:NE&gt; <br />
+Tywin flies east.<br />
+Rhaegar flies east.<br />
+You follow Tywin east.<br />
+Almanza flies in from the west.<br />
+Yamoto flies in from the west.<br />
+Alchemical Lab<br />
+    This is where all the noxious fumes are created. There are also many<br />
+items of magic scattered about as this also serves as Anatole's store room.<br />
+There is a small room to the east.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Jedah Phu, Faction of Hate is standing here. (flying) (white aura)<br />
+A sailor, just off the boat, stands here with his hands in his pockets.<br />
+Linus the Alchemist, is here working diligently on a new formula. (white aura)<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; give flail rhaegar<br />
+You give a skull flail to Rhaegar.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Nyzeil Nighthammer is resting here. (flying)<br />
+Anatole the Amazing is here to teach you the ways of magic.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+An apprentice mage is here watching the store for his master.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Rhaegar wields a skull flail.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; l jedah<br />
+You see nothing special about him.<br />
+Jedah the young adult male hylar dwarf has quite a few wounds.<br />
+<br />
+Jedah is using:<br />
+&lt;worn around neck&gt;         an emerald-studded leather collar<br />
+&lt;worn around neck&gt;         an alligator scale necklace..it glows blue..it glows dimly<br />
+&lt;worn on head&gt;             a malachite inlaid mithril helm..it glows blue..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of platinum alloy boots..it glows blue..it glows dimly<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn about body&gt;          a sivak's cloak..it glows blue<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Tywin looks at Jedah.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Almanza looks at Jedah.<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Tywin massacres Jedah with his slash.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; bas jedah<br />
+You crash into Jedah in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Fair] Exits:EW&gt; <br />
+Yamoto looks at Jedah.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Fair] Exits:EW&gt; <br />
+Nyzeil flies in from the east.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Fair] Exits:EW&gt; <br />
+Nyzeil flies west.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Fair] Exits:EW&gt; <br />
+Yamoto boggles at some nebulous concept.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Fair] Exits:EW&gt; <br />
+You massacre Jedah with your crush.<br />
+Tywin massacres Jedah with his slash.<br />
+Tywin cleaves Jedah extremely hard.<br />
+Jedah misses Tywin with his smite.<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Bad] Exits:EW&gt; <br />
+Almanza peers around the room suspiciously.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Bad] Exits:EW&gt; <br />
+Rhaegar looks at Jedah.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Bad] Exits:EW&gt; <br />
+Yamoto massacres Jedah with his slash.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:Bad] Exits:EW&gt; <br />
+Yamoto massacres Jedah with his slash.<br />
+Yamoto misses Jedah with his slash.<br />
+You crush Jedah extremely hard.<br />
+Tywin massacres Jedah with his slash.<br />
+Tywin cleaves Jedah very hard.<br />
+Jedah misses Tywin with his smite.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:V.Bad] Exits:EW&gt; bas jedah<br />
+<br />
+Tywin attacks Jedah with lightning fast series of attacks that leaves him defenseless.<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:V.Bad] Exits:EW&gt; <br />
+Rhaegar misses Jedah with his smite.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:V.Bad] Exits:EW&gt; You try to bash Jedah, but you m<br />
+iss and tumble forward onto your face.<br />
+<br />
+611H 101V 13260085X 615C [Tywin:Perfect] [Jedah:V.Bad] Exits:EW&gt; st<br />
+<br />
+Rhaegar massacres Jedah with his smite.<br />
+Yamoto annihilates Jedah with his slash.<br />
+Yamoto massacres Jedah with his slash.<br />
+You massacre Jedah with your crush.<br />
+Tywin annihilates Jedah with his slash.<br />
+Tywin cleaves Jedah hard.<br />
+Jedah is incapacitated and will slowly die, if not aided.<br />
+<br />
+611H 101V 13260085X 615C [Jedah:Awful] Exits:EW&gt; <br />
+Yamoto panics, and attempts to flee.<br />
+Jedah lies immobile on the ground, suffering...<br />
+Jedah is mortally wounded, and will die soon, if not aided.<br />
+Yamoto flies east.<br />
+<br />
+611H 101V 13260085X 615C [Jedah:Dying] Exits:EW&gt; <br />
+Almanza shrugs helplessly.<br />
+<br />
+611H 101V 13260085X 615C [Jedah:Dying] Exits:EW&gt; <br />
+Rhaegar annihilates Jedah with his smite.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Jedah is dead! R.I.P.<br />
+The death cry of Jedah echoes from somewhere nearby...<br />
+Jedah sinks gently to the ground.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Tywin gets a very large pile of coins from the corpse of Jedah.<br />
+<br />
+611H 101V 13260085X 615C Exits:EW&gt; <br />
+Tywin divides 1064 coins equally among the group members present.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Rhaegar gets a black stone from the corpse of Jedah.<br />
+Rhaegar gets a chain flail from the corpse of Jedah.<br />
+Rhaegar gets a woodsman's bracer from the corpse of Jedah.<br />
+Rhaegar gets a brass dwarven wristplate from the corpse of Jedah.<br />
+Rhaegar gets a ragged leather belt from the corpse of Jedah.<br />
+Rhaegar gets a sivak's cloak from the corpse of Jedah.<br />
+Rhaegar gets a large golden shield from the corpse of Jedah.<br />
+Rhaegar gets a pair of woodsman's sleeves from the corpse of Jedah.<br />
+Rhaegar gets green granite gauntlets from the corpse of Jedah.<br />
+Rhaegar gets a pair of platinum alloy boots from the corpse of Jedah.<br />
+Rhaegar gets some platinum alloy legplates from the corpse of Jedah.<br />
+Rhaegar gets a malachite inlaid mithril helm from the corpse of Jedah.<br />
+Rhaegar is zapped by a sterling breastplate and instantly drops it.<br />
+Rhaegar gets an alligator scale necklace from the corpse of Jedah.<br />
+Rhaegar gets an emerald-studded leather collar from the corpse of Jedah.<br />
+Rhaegar gets a malachite ring from the corpse of Jedah.<br />
+Rhaegar gets a malachite ring from the corpse of Jedah.<br />
+Rhaegar gets a small wooden chest from the corpse of Jedah.<br />
+Rhaegar gets a copper helmet from the corpse of Jedah.<br />
+Rhaegar gets a loaf of waybread from the corpse of Jedah.<br />
+Rhaegar gets a loaf of waybread from the corpse of Jedah.<br />
+Rhaegar gets a loaf of waybread from the corpse of Jedah.<br />
+Rhaegar gets a flask of mineral water from the corpse of Jedah.<br />
+Rhaegar gets a sturdy quarterstaff from the corpse of Jedah.<br />
+Rhaegar gets a glowing scroll of recall from the corpse of Jedah.<br />
+Rhaegar gets a glowing scroll of recall from the corpse of Jedah.<br />
+Rhaegar gets a glowing scroll of recall from the corpse of Jedah.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Yamoto flies in from the east.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; sa rhaegar loot<br />
+sa wear all<br />
+You stand up.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Tywin tells your group 'ok use that gear'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; You say 'rhaegar loot'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; You say 'wear all'<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Tywin says 'mark'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Rhaegar stops using a skull flail.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Almanza tells your group 'nice rings'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Yamoto tells your group 'hahah'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; gt hahhaha<br />
+You tell your group 'hahhaha'<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Rhaegar wears a copper helmet on his head.<br />
+Rhaegar wears a malachite ring on a finger of his right hand.<br />
+Rhaegar wears a malachite ring on a finger of his left hand.<br />
+Rhaegar wears an emerald-studded leather collar around his neck.<br />
+Rhaegar wears an alligator scale necklace around his neck.<br />
+Rhaegar fastens his legplates to his legs, causing them to clink softly.<br />
+Rhaegar pulls his boots onto his feet, seeming to find them comfortable.<br />
+Rhaegar wears green granite gauntlets on his hands.<br />
+Rhaegar wears a pair of woodsman's sleeves on his arms.<br />
+Rhaegar wears a sivak's cloak about his body.<br />
+Rhaegar wears a ragged leather belt about his waist.<br />
+<br />
+611H 101V 13260085X 881C Exits:EW&gt; <br />
+Tywin flies west.<br />
+Rhaegar flies west.<br />
+You follow Tywin west.<br />
+Almanza flies in from the east.<br />
+Yamoto flies in from the east.<br />
+Anatole's Amazing Artifacts<br />
+    This building smells awful. Probably from all the noxious fumes from<br />
+the lab in the next room. But then again, everybody knows magicians stink.<br />
+The counter is actually a glass case that displays several magical<br />
+trinkets. The only exits are back north to Sword Street, and a small<br />
+archway leading east.<br />
+A small bag of glowing white stones lies in the dirt.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+611H 100V 13260085X 881C Exits:NE&gt; <br />
+Tywin flies north.<br />
+Rhaegar flies north.<br />
+You follow Tywin north.<br />
+Almanza flies in from the south.<br />
+Yamoto flies in from the south.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+611H 99V 13260085X 881C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+An apprentice mage is here watching the store for his master.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 99V 13260085X 881C Exits:ESW&gt; <br />
+Tywin flies east.<br />
+Rhaegar flies east.<br />
+You follow Tywin east.<br />
+Almanza flies in from the west.<br />
+Yamoto flies in from the west.<br />
+Sword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Almanza D'Nome, Nowclan is standing here. (flying) (invisible) (white aura)<br />
+Rhaegar Targaryen, Nowclan's Prophet of Ashes is standing here. (flying)<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+<br />
+611H 98V 13260085X 881C Exits:ESW&gt; <br />
+You are thirsty.<br />
+<br />
+611H 101V 13260085X 881C Exits:ESW&gt; <br />
+Jedah arrives from the south.<br />
+<br />
+611H 101V 13260085X 881C Exits:ESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Looking south:<br />
+You see nothing special.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+611H 101V 13260085X 881C Exits:ESW&gt; <br />
+Tywin tells your group 'we can return it later if needbve'<br />
+<br />
+611H 101V 13260085X 881C Exits:ESW&gt;<br />
+<br />
+<br />
+Funny quote added ! - <br />
+&lt;adam|&gt; Redroy stands up.<br />
+&lt;adam|&gt; Redroy says 'grought on me!'<br />
+&lt;adam|&gt; Redroy says 'kro heal me d'<br />
+&lt;adam|&gt; Kro says 'fuckthat'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1528'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1528">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1528">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

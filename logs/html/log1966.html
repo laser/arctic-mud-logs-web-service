@@ -1,0 +1,909 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1966-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1966'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Trash Dies</font></b>
+<p>
+POV: 
+Orlandu<p>
+Log Rating:
+-1.9049<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Trashy Tazork R.I.P.s in deep mine.</i>
+<p>
+<p>
+
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'track it'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+The Captain of the City Guards arrives from the north.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; track tazork<br />
+You kneel down and study the ground.<br />
+Your victim's tracks lead west.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Yerush kneels down and studies the ground.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'dir?'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; You tell your group '********** TRACKS LEAD -west- **********'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Yerush says 'w'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'ok'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Shei tells your clan 'im like a mobile right now'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'kill tack'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Yerush kneels down and studies the ground.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'track'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'kill it'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; track self<br />
+You kneel down and study the ground.<br />
+Your victim's tracks end here.<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt says 'rest stand'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Shei tells your clan 'kill me win relo, get thousands of coins'<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt; ws<br />
+You are already awake...<br />
+<br />
+598H 141V 1X 36.00% 2C Exits:NEW&gt;<br />
+Burzt flies west.<br />
+Salox flies west.<br />
+Yerush flies west.<br />
+You follow Salox west.<br />
+Marauder flies in from the east.<br />
+Deep Mine Main Way<br />
+    Near the ceiling of the tunnel, bright torches are mounted to light the<br />
+area. The central passage of the tunnel is ridden with tread marks for<br />
+mining carts, which pass by: sometimes relaxedly and sometimes with<br />
+reckless abandon. Many dwarves of the village walk on the sides of the<br />
+tunnel. From the west interesting smells of smithing and other manufactured<br />
+goods waft into the room. To the east and south the Main Way continues.<br />
+A heavy mining cart is being pushed along by a young dwarven miner.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+A young dwarf pushes his mining cart along the tracks.<br />
+A gnomish engineer wanders about here, apparently forgetting where his guild is.<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt; You are already standing.<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt;<br />
+Shei tells your clan 'loots'<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 140V 1X 36.00% 2C Exits:ESW&gt;<br />
+Burzt flies south.<br />
+Salox flies south.<br />
+Yerush flies south.<br />
+You follow Salox south.<br />
+Marauder flies in from the north.<br />
+Deep Mine Main Way<br />
+    Dancing orange flames from torches mounted near the ceiling, brightly<br />
+color this tunnel far below the earth. Being the principle tunnel of the<br />
+village, its width and height can easily clear the consciousness of<br />
+thousands of tons of rock above. Deep treads in the ground indicate the<br />
+path of mining carts, which lie only in the center of the tunnel. The sides<br />
+seem to have been given to regular villagers. Miners walk in groups, while<br />
+a little lass with short whiskers can be seen carrying home some groceries.<br />
+Dwarven children, who have not yet begun education in any of the principle<br />
+areas of the town, play in the large tunnel, dodging through the mining<br />
+carts. The path south leads to a junction in the Main Way, while to the<br />
+north the Main Way continues.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+A dwarven miner wanders about Deep Mine while on his break.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 139V 1X 36.00% 2C Exits:NS&gt;<br />
+Burzt flies south.<br />
+Salox flies south.<br />
+Yerush flies south.<br />
+You follow Salox south.<br />
+Marauder flies in from the north.<br />
+Junction Four<br />
+    The Main Way branches in two directions at the Junction. To the west a<br />
+smaller tunnel, too tight for mine carts to pass through, meanders through<br />
+the mountain, while to the south and north the Main Way continues steadily.<br />
+Orange-flamed torches hinged against the western wall light the junction<br />
+and its complimentary sign. The sign consists simply of a large four. A<br />
+loud explosion is heard a good way off to the west.<br />
+A heavy mining cart rolls along the cart tracks.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+A Deep Mine village guard wanders the streets, to maintain the peace.<br />
+A Deep Mine village guard wanders the streets, to maintain the peace.<br />
+A gnomish engineer wanders about here, apparently forgetting where his guild is.<br />
+A young dwarf pushes his mining cart along the tracks.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt;<br />
+A shopping dwarf arrives from the south.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 138V 1X 36.00% 2C Exits:NSW&gt;<br />
+Burzt flies south.<br />
+Salox flies south.<br />
+Cree flies south.<br />
+Yerush flies south.<br />
+You follow Salox south.<br />
+Marauder flies in from the north.<br />
+Deep Mine Main Way<br />
+    Bright torches, mounted near the ceiling, light the regularly used<br />
+tunnel. Huge tread marks have permanently set themselves in the ground,<br />
+indicative of the heavy mine carts regularly traveling through the<br />
+underground village. Avoiding the path of the mine carts, villagers stick<br />
+to the side of the tunnels. There is plenty of room for everyone in the<br />
+region as the tunnel maintains its steady width of at least six minotaurs<br />
+and height of four. The tunnel leads to both the north and east. In both<br />
+directions lie Junctions in the tunnel system of Deep Mine.<br />
+Some well-crafted leather vambraces rest on the floor here.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+A Deep Mine village guard wanders the streets, to maintain the peace.<br />
+<br />
+598H 137V 1X 36.00% 2C Exits:NE&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 137V 1X 36.00% 2C Exits:NE&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 137V 1X 36.00% 2C Exits:NE&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 137V 1X 36.00% 2C Exits:NE&gt;<br />
+Burzt flies east.<br />
+Salox flies east.<br />
+Yerush flies east.<br />
+You follow Salox east.<br />
+Marauder flies in from the west.<br />
+Junction Five<br />
+    The main tunnel of Deep Mine reaches an intersection here. A large sign<br />
+on the northern wall labels the intersection with a large number five. Deep<br />
+treads in the ground act as tracks for mining carts. The tracks go in all<br />
+directions of the tunnel, however the path to the east seems slightly more<br />
+used by mining carts. Hanging heavy lanterns, which give off a pretty<br />
+orange flame, light the intersection.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+A dwarven miner wanders about Deep Mine while on his break.<br />
+A female dwarf shops around the Main Way, buying goods for the family.<br />
+<br />
+598H 136V 1X 36.00% 2C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 136V 1X 36.00% 2C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 136V 1X 36.00% 2C Exits:ESW&gt;<br />
+********** -A dwarven miner- LEFT -west- **********<br />
+<br />
+598H 136V 1X 36.00% 2C Exits:ESW&gt;<br />
+Burzt flies east.<br />
+Salox flies east.<br />
+Yerush flies east.<br />
+You follow Salox east.<br />
+Marauder flies in from the west.<br />
+Path of the Miner's<br />
+    Lit by torches clamped against the walls of the tunnel, the path here<br />
+is not quite as wide or as tall as the Deep Mine Main Way. However, the<br />
+spacing is still ample. Many mining carts wheel past, heading both towards<br />
+and away from the great dwarven mining guild at the end of this tunnel.<br />
+Dwarven mining apprentices in their young years gather in this area,<br />
+chattering excitedly. The path leads north towards the guild and west to<br />
+Junction Five.<br />
+The corpse of a dwarven miner is lying here.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+<br />
+598H 135V 1X 36.00% 2C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 135V 1X 36.00% 2C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 135V 1X 36.00% 2C Exits:NW&gt;<br />
+Burzt flies north.<br />
+Salox flies north.<br />
+Cree flies north.<br />
+Yerush flies north.<br />
+You follow Salox north.<br />
+Marauder flies in from the south.<br />
+Outside the Dwarven Miner's Guild<br />
+    The facade of the Dwarven Mining Guild is quite impressive. Intricately<br />
+carved statues of dwarven miners jut out of the solid rock of which the<br />
+guild is cut from. Emeralds, rubies, amethysts, and topazes are encrusted<br />
+within the rock, dandifying the already flamboyant display. The tunnel<br />
+expands before the guild in almost a large forum. Some miners are visiting<br />
+the variety of food stalls set up outside of the guild, taking a quick<br />
+break in their days work, while others lean against the building chatting<br />
+over new drilling techniques. The guild stands three stories tall, as noted<br />
+by the hollowed out rock holes, which serve as windows. To the east lies<br />
+the entry hall of the prosperous guild, while the path to the south takes<br />
+you away from it.<br />
+The corpse of a veteran miner is lying here.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+<br />
+598H 134V 1X 36.00% 2C Exits:ES&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 134V 1X 36.00% 2C Exits:ES&gt;<br />
+Burzt flies east.<br />
+Salox flies east.<br />
+Cree flies east.<br />
+Yerush flies east.<br />
+You follow Salox east.<br />
+Marauder flies in from the west.<br />
+Entry Hall of the Miner's Guild<br />
+    The entry hall of the guild is much plainer than the gaudy exterior. In<br />
+fact from the look of it, the interior of the guild in general has the more<br />
+traditional severity associated with a group of manual labor workers.<br />
+Propped against the northern wall is a small chair, perfect for dozing.<br />
+Tracks for mining carts lead all the way to the eastern edge of the room,<br />
+where there is a circle, allowing the carts to turn around, once unloading<br />
+or loading supplies and goods. A few dwarves steadily watch the incoming<br />
+and out going carts. The exit of the guild lies directly to the west, while<br />
+in the eastern direction the guild continues.<br />
+The corpse of a sleepy dwarven guard is lying here.<br />
+Some well-crafted leather greaves rest on the floor here.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+<br />
+598H 133V 1X 36.00% 2C Exits:EW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 133V 1X 36.00% 2C Exits:EW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 133V 1X 36.00% 2C Exits:EW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 133V 1X 36.00% 2C Exits:EW&gt;<br />
+Burzt flies east.<br />
+Salox flies east.<br />
+Yerush flies east.<br />
+You follow Salox east.<br />
+Marauder flies in from the west.<br />
+Ore Grade Determination Station<br />
+    Heaps and heaps of rawly mined materials enter from the mining carts to<br />
+the west. Here, they are examined to see if they meet the guilds high<br />
+standard of materials for processing. Over twenty desks are set up as<br />
+examination stations. When a piece is examined properly, the examiners seem<br />
+to pleasantly place them in miniature carts on rollers, which when filled are<br />
+moved south into the processing halls. However, in the rare moments when<br />
+the raw materials are not up to snuff, a snarl can be seen on the examiners<br />
+face as he hurls it against the northern wall. A small pile of the rubble<br />
+lies here, ready to be returned to the depths of the mountain.<br />
+The corpse of an inexperienced dwarven miner is lying here. [2]<br />
+The corpse of an expert ore grade determiner is lying here.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+<br />
+598H 132V 1X 36.00% 2C Exits:SW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 132V 1X 36.00% 2C Exits:SW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 132V 1X 36.00% 2C Exits:SW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 132V 1X 36.00% 2C Exits:SW&gt;<br />
+Burzt flies south.<br />
+Salox flies south.<br />
+Cree flies south.<br />
+Yerush flies south.<br />
+You follow Salox south.<br />
+Marauder flies in from the north.<br />
+Processing Hall<br />
+    The processing hall is split up into three major sections: metals,<br />
+precious metals, and gems. This area must be the metals area. At the many<br />
+processing stations dwarves labor over the extraction of mithril and steel<br />
+alloys, as well as natural metals, namely copper and iron. Processed metals<br />
+seem to end up against the southern wall. To the west the processing hall<br />
+continues, while to the north lies the ore grade determination area.<br />
+The corpse of an experienced dwarven metal processor is lying here.<br />
+The corpse of a novice metal processor is lying here. [2]<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a black veil; a glowing scroll of recall; a glowing scroll of recall; a glowing scroll of recall.<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+<br />
+598H 131V 1X 36.00% 2C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 131V 1X 36.00% 2C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 131V 1X 36.00% 2C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+598H 131V 1X 36.00% 2C Exits:NW&gt;<br />
+Cree tells your group 'Tick in 10'<br />
+<br />
+598H 131V 1X 36.00% 2C Exits:NW&gt;<br />
+Burzt flies west.<br />
+Salox flies west.<br />
+Yerush flies west.<br />
+You follow Salox west.<br />
+Marauder flies in from the east.<br />
+Processing Hall<br />
+    The precious metals region of the processing hall is loaded with veins<br />
+of gold and silver taken directly out of the mines. The processing of the<br />
+precious metals is much more meticulously watched. Tiny hammers with<br />
+blunted heads are strewn all about. Clearly, the processors of precious<br />
+metals do not wish to damage their products at all. To the south lies gem<br />
+processing, while to the east lies metal processing. The western wall nests<br />
+a spectacular collection of precious metals.<br />
+&lt;BG&gt; Marauder da Swashbuckler, Reaping the Rewards of Hate. Hate Inc. is standing here. (flying)<br />
+&lt;BG&gt; Yerush the Male Goblin is standing here. (flying)<br />
+&lt;BG&gt; Cree Avalanche is standing here. (flying)<br />
+&lt;BG&gt; Salox, Angel of Death and Darkness is standing here. (flying) (invisible)<br />
+&lt;BG&gt; Burzt Brazen, Burgundy Barber of Bloodguard is standing here. (flying)<br />
+Achilles Darkness of the Ages is sitting here, fighting a precious metal processor. (flying)<br />
+********** TARGET ON SIGHT: Tazork ********** the Male Goblin is standing here, fighting a precious metal processor. (flying)<br />
+A precious metal processor is sitting here, fighting ********** TARGET ON SIGHT: Tazork **********.<br />
+A dwarven miner tirelessly cleans piles of raw precious metal.<br />
+A precious metal processor stands up.<br />
+<br />
+598H 130V 1X 36.00% 2C Exits:ES&gt; You crash into ********** TARGET ON SIGHT: Tazork ********** in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:Bad] Exits:ES&gt;<br />
+Burzt massacres ********** TARGET ON SIGHT: Tazork ********** with his slash.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:V.Bad] Exits:ES&gt;<br />
+********** TARGET ON SIGHT: Tazork ********** steps aside as Marauder attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:V.Bad] Exits:ES&gt;<br />
+********** TARGET ON SIGHT: Tazork ********** steps aside as Yerush attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:V.Bad] Exits:ES&gt;<br />
+Salox focuses harshly on ********** TARGET ON SIGHT: Tazork ********** and utters some strange words.<br />
+Salox slowly fades into existence.<br />
+********** TARGET ON SIGHT: Tazork ********** cries out in pain as Salox grabs him.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:V.Bad] Exits:ES&gt;<br />
+Cree appears to be dancing around the room.<br />
+<br />
+598H 130V 1X 36.00% 2C [a precious metal processor:Fair] [********** TARGET ON SIGHT: Tazork **********:V.Bad] Exits:ES&gt;<br />
+Yerush massacres ********** TARGET ON SIGHT: Tazork ********** with his bludgeon.<br />
+Marauder misses ********** TARGET ON SIGHT: Tazork ********** with her cleave.<br />
+Burzt massacres ********** TARGET ON SIGHT: Tazork ********** with his slash.<br />
+Burzt cleaves ********** TARGET ON SIGHT: Tazork ********** extremely hard.<br />
+You massacre ********** TARGET ON SIGHT: Tazork ********** with your drain.<br />
+********** TARGET ON SIGHT: Tazork ********** is incapacitated and will slowly die, if not aided.<br />
+Achilles massacres a precious metal processor with his stab.<br />
+A precious metal processor annihilates ********** TARGET ON SIGHT: Tazork ********** with his smite.<br />
+You receive 0 experience.<br />
+********** TARGET ON SIGHT: Tazork ********** is dead! R.I.P.<br />
+The death cry of ********** TARGET ON SIGHT: Tazork ********** echoes from somewhere nearby...<br />
+Achilles stops following ********** TARGET ON SIGHT: Tazork **********.<br />
+********** TARGET ON SIGHT: Tazork ********** now follows Achilles.<br />
+Achilles is the new leader of ********** TARGET ON SIGHT: Tazork **********'s group.<br />
+********** TARGET ON SIGHT: Tazork ********** stops following Achilles.<br />
+<br />
+598H 130V 1X 36.00% 2C Exits:ES&gt;<br />
+Cree gets a very large pile of coins from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+<br />
+598H 130V 1X 36.00% 2C Exits:ES&gt;<br />
+Cree divides 7842 coins equally among the group members present.<br />
+<br />
+598H 130V 1X 36.00% 1309C Exits:ES&gt; cor<br />
+<br />
+A precious metal processor spins and tries to kick Achilles, but Achilles dodges out of the way.<br />
+<br />
+598H 130V 1X 36.00% 1309C Exits:ES&gt;<br />
+A precious metal processor misses Achilles with his smite.<br />
+Achilles stabs a precious metal processor extremely hard.<br />
+<br />
+598H 130V 1X 36.00% 1309C Exits:ES&gt;<br />
+Burzt gets a short hafted spear from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a crimson dragon's spine javelin from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a scorched pyromancer's robe from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets some dryad skin sleeves from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a pair of dwarven gloves from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a pair of charcoal black boots from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a pair of red leggings from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a revenant's skull from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a dark red thieving plate from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a black lily pendant from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a miner's badge from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a heavy dwarven key from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a large bundle of explosives from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a large bundle of explosives from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a miner's badge from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a mining pick from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a mining pick from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a note from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a note from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a note from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a note from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a note from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a putrid potion from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a scorched pyromancer's robe from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a scorched pyromancer's robe from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a scroll of recall from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a scroll of recall from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Burzt gets a shimmering silver cape from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+<br />
+598H 130V 1X 36.00% 1309C Exits:ES&gt;<br />
+Achilles stands up.<br />
+<br />
+598H 130V 1X 36.00% 1309C Exits:ES&gt;<br />
+Salox gets a small canteen from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets a small canteen from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets a small canteen from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets a small canteen from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets a translucent shroud from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets a twisty bit of wire from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets some salted meat from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets some salted meat from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets some salted meat from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+Salox gets some salted meat from the corpse of ********** TARGET ON SIGHT: Tazork **********.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1966'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1966">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1966">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

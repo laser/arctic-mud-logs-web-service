@@ -1,0 +1,990 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1350-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1350'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Knievel + Gad rip</font></b>
+<p>
+POV: 
+Solly<p>
+Log Rating:
+1.1428<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some rushing actions while flagged, poor Gad, we got most loot though</i>
+<p>
+<p>
+
+**Gad: lets kill knievel?<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Terk shouts 'it's a FOLLOW UP question!'<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Thaxina nods her head in agreement.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Serenity shouts 'the plague in the mittle ages'<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Thaxina leaves east.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad flies east.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     0    1<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    0<br />
+  Gad              perfect   rested    standing   Y   Y    N    N     1    3<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+escanGuild Lane<br />
+A medium sized horse is here, awaiting a rider.<br />
+<br />
+382H 136V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+Looking north:<br />
+You see nothing special.<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Knievel Stoneskull, Sharp as a Bowling Ball is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Looking east:<br />
+You see nothing special.<br />
+A lithe woman dances about, practicing her swordplay.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 136V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+<br />
+**Thaxina: hes n of mages<br />
+<br />
+382H 136V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+Gad flies in from the north.<br />
+<br />
+382H 136V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+w<br />
+Gad flies west.<br />
+<br />
+382H 136V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+Room of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Pestik the Male Minotaur is resting here.<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 135V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad utters the words, 'qj c'.<br />
+<br />
+382H 135V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad flies east.<br />
+<br />
+382H 135V 8658301X 5C Mem:1&gt; <br />
+scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 135V 8658301X 5C Mem:1&gt; <br />
+escanwGuild Lane<br />
+A medium sized horse is here, awaiting a rider.<br />
+<br />
+382H 134V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A lithe woman dances about, practicing her swordplay.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 134V 8658301X 5C Mem:1 Exits:NES&gt; <br />
+Room of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Pestik the Male Minotaur is resting here.<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     0    1<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    0<br />
+  Gad              perfect   rested    standing   Y   Y    N    N     1    3<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+scYou are Solly, The First Koskenkorva Mage, a level 30 Mage.<br />
+You are rank 7.<br />
+You are 56 years old.<br />
+You have 382(382) hit and 133(137) movement points.<br />
+You are influenced by the black moon, Nuitari.<br />
+You have scored 141341699 exp, and have 5(13788) steel coins.<br />
+You need 8658301 more experience to advance.<br />
+You have died 43 horrible deaths.<br />
+You have been connected for 22 minute(s).<br />
+You have been playing for 23 day(s), 22 hour(s) and 11 minute(s).<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    improved invisibility<br />
+    antimagic shell<br />
+    mirror image (4 images)<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad flies in from the east.<br />
+<br />
+c 'fires'382H 133V 8658301X 5C Mem:1&gt; <br />
+<br />
+Pestik says 'no rolling weapon?'<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+You utter the words, 'fireshield'<br />
+Cool flames emanate from all parts of your body.<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+gt let's not?You tell your group 'let's not?'<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+lRoom of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Pestik the Male Minotaur is resting here.<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+gt too risky atm imoYou tell your group 'too risky atm imo'<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+lRoom of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Pestik the Male Minotaur is resting here.<br />
+A red robed man sits here, muttering to himself.<br />
+**Gad: huh?<br />
+<br />
+382H 133V 8658301X 5C Mem:1&gt; <br />
+<br />
+Your studies complete, you close your spellbook with a smile.<br />
+You feel yourself exposed.<br />
+<br />
+382H 137V 8658301X 5C &gt; <br />
+<br />
+**Gad: easy kill<br />
+<br />
+382H 137V 8658301X 5C &gt; <br />
+c 'improv'You utter the words, 'improved invisibility'<br />
+You vanish.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Thaxina arrives from the east.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+**Gad: then relo about<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Pestik stands up.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Pestik leaves east.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Terk shouts 'Vice gets it'<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+**Thaxina: hes just e n<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad utters the words, 'locate object'.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+**Gad: he's alone<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+<br />
+Gad flies east.<br />
+<br />
+382H 137V 8658301X 5C Mem:1&gt; <br />
+escanGuild Lane<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Gad flies west.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+Looking north:<br />
+You see nothing special.<br />
+Knievel Stoneskull, Sharp as a Bowling Ball is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Looking east:<br />
+You see nothing special.<br />
+A lithe woman dances about, practicing her swordplay.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+<br />
+Knievel flies in from the north.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+<br />
+Knievel flies north.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+<br />
+Knievel flies in from the north.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+<br />
+Thaxina leaves west.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+Knievel focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+c 'h p' knievelYou utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+look<br />
+Terk shouts 'Salmonella Poisoning in the Dalls, Oregon'<br />
+**Gad: swap?<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+w<br />
+Thaxina arrives from the west.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+<br />
+Knievel flies south.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+Guild Lane<br />
+Thaxina the Female Gnome is standing here.<br />
+<br />
+382H 136V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+Room of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+gt failed hold<br />
+**Thaxina: heh<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+You tell your group 'failed hold'<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+<br />
+Gad flies east.<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    2<br />
+  Thaxina          perfect   rested    standing   N   N    N    Y     0    0<br />
+  Gad              perfect   rested    standing   Y   Y    N    N     1    2<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+escan<br />
+Knievel flies in from the east.<br />
+<br />
+382H 135V 8658301X 5C Mem:2&gt; <br />
+Guild Lane<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+382H 134V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+wLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A lithe woman dances about, practicing her swordplay.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+382H 134V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+Room of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Knievel Stoneskull, Sharp as a Bowling Ball is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 133V 8658301X 5C Mem:2&gt; <br />
+group<br />
+Knievel flies east.<br />
+<br />
+382H 133V 8658301X 5C Mem:2&gt; <br />
+Your group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    2<br />
+  Thaxina          perfect   rested    standing   N   N    N    Y     0    0<br />
+  Gad              perfect   rested    standing   Y   Y    N    Y     1    2<br />
+<br />
+382H 133V 8658301X 5C Mem:2&gt; <br />
+<br />
+Gad flies east.<br />
+<br />
+382H 133V 8658301X 5C Mem:2&gt; <br />
+eGuild Lane<br />
+Gad, Renegade of Daltigoth is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Knievel Stoneskull, Sharp as a Bowling Ball is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+382H 132V 8658301X 5C Mem:2 Exits:NES&gt; <br />
+c 'h p' knievelYou utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+**Gad: come<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+Gad focuses harshly on Knievel and utters the words, 'force bolt'.<br />
+Gad slowly fades into existence.<br />
+The sound of bones cracking echoes as Gad's force bolt slams into Knievel.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+gt is it held ?You tell your group 'is it held ?'<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+**Thaxina: what align are you people<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+c 'for b' knievelYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Knievel.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+Thaxina leaves west.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+c 'for b' knievel<br />
+Gad pierces Knievel.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+Spartakus flies in from the north.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+Gad focuses harshly on Knievel and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Gad's force bolt slams into Knievel.<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+<br />
+Spartakus slowly fades into existence.<br />
+Spartakus crashes into Gad in a thundering collision, knocking him to the ground!<br />
+<br />
+382H 132V 8658301X 5C Mem:3 Exits:NES&gt; <br />
+You utter the words, 'force bolt'<br />
+Your force bolt shatters Knievel's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Knievel is dead! R.I.P.<br />
+get all.coins corpse<br />
+382H 132V 8658301X 5C Mem:4 Exits:NES&gt; <br />
+<br />
+The death cry of Knievel echoes from somewhere nearby...<br />
+<br />
+382H 132V 8658301X 5C Mem:4 Exits:NES&gt; <br />
+<br />
+Thaxina arrives from the west.<br />
+<br />
+382H 132V 8658301X 5C Mem:4 Exits:NES&gt; <br />
+get all corpse<br />
+Gad misses Spartakus with his pierce.<br />
+Spartakus obliterates Gad with his stab.<br />
+Spartakus obliterates Gad with his stab.<br />
+<br />
+382H 132V 8658301X 5C Mem:4 Exits:NES&gt; <br />
+wYou get a small pile of coins from the corpse of Knievel.<br />
+There were 3 coins.<br />
+split 3<br />
+382H 132V 8658301X 8C Mem:4 Exits:NES&gt; <br />
+You get a glowing scroll of recall from the corpse of Knievel.<br />
+You get a runed inscribed vallenwood staff from the corpse of Knievel.<br />
+You get a wood band from the corpse of Knievel.<br />
+You get a plain component pouch from the corpse of Knievel.<br />
+Harness : You can't carry that much weight.<br />
+You get a shield of woven mistletoe from the corpse of Knievel.<br />
+You get a pair of obsidian bracers from the corpse of Knievel.<br />
+You get a pair of studded leather gloves from the corpse of Knievel.<br />
+Boots : You can't carry that much weight.<br />
+You get some studded leather leggings from the corpse of Knievel.<br />
+You get a pair of silver spectacles from the corpse of Knievel.<br />
+Robes : You can't carry that much weight.<br />
+Leaf : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Sleeves : You can't carry that much weight.<br />
+Drape : You can't carry that much weight.<br />
+Splint : You can't carry that much weight.<br />
+You get a scribed scroll from the corpse of Knievel.<br />
+Stone : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+<br />
+382H 132V 8658301X 8C Mem:4 Exits:NES&gt; <br />
+Room of Darkest Silk<br />
+Some red dragon scale sleeves lie here, forgotten...it glows blue<br />
+An orrery is mounted on a stand here...it glows blue<br />
+A red robed man sits here, muttering to himself.<br />
+<br />
+382H 131V 8658301X 8C Mem:3&gt; <br />
+You divide 2 coins equally among the group members present.<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+group<br />
+Thaxina leaves east.<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+Your group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    0<br />
+  Gad              bad       rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    2<br />
+  Gad              v.bad     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    2<br />
+  Gad              v.bad     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    2<br />
+  Gad              v.bad     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          perfect   rested    standing   N   N    N    N     0    2<br />
+  Gad              v.bad     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          good      rested    fighting   N   N    N    N     0    2<br />
+  Gad              awful     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          good      rested    fighting   N   N    N    N     0    2<br />
+  Gad              awful     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          good      rested    fighting   N   N    N    N     0    2<br />
+  Gad              awful     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+groupYour group of 3 members consists of:<br />
+  Solly            perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Thaxina          good      rested    fighting   N   N    N    N     0    2<br />
+  Gad              awful     rested    fighting   Y   N    N    N     1    5<br />
+<br />
+382H 131V 8658301X 7C Mem:3&gt; <br />
+<br />
+Your blood freezes as you hear someone's death cry.<br />
+Gad stops following you.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1350'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1350">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1350">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

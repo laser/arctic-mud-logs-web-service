@@ -1,0 +1,944 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1055-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1055'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Stupidty, Embarrasment and Surprise, elements of Pk on a dusky autumn's day.</font></b>
+<p>
+POV: 
+Swoosh<p>
+Log Rating:
+1.1667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Second POV: Blam</i>
+<p>
+<p>
+
+546H 116V 6278884X 865C Exits:NSW&gt; south<br />
+The Solace Adventurer's Guild<br />
+    The guild is full of adventurers of all types, who are trying to hone<br />
+and perfect their skills. The walls are covered with racks of weapons and<br />
+armour that are used in the training. Huge book cases also fill the room,<br />
+containing numerous spell books and scrolls. There are even chests and<br />
+doors that seem to be made specifically for practice by thieves and their<br />
+lockpicks. One master of all skills oversees all the training and<br />
+progression here. A small stairway leads down out of the tree and to the<br />
+ground below. A hall leads north. The Hall of Justice is to the south.<br />
+Dravin, the Grey Robed Thorn Knight of Takhisis is standing here.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+<br />
+546H 115V 6278884X 865C Exits:NSD&gt; char dravin<br />
+You charge at Dravin, but he managed to move away.<br />
+<br />
+546H 115V 6278884X 865C [Swoosh:Perfect] [Dravin:Perfect] Exits:NSD&gt; <br />
+You slash Dravin extremely hard.<br />
+Dravin bludgeons YOU very hard.<br />
+<br />
+532H 115V 6278884X 865C [Swoosh:V.Good] [Dravin:V.Good] Exits:NSD&gt; <br />
+The guild guard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+532H 115V 6278884X 865C [Swoosh:V.Good] [Dravin:V.Good] Exits:NSD&gt; <br />
+Dravin panics, and attempts to flee.<br />
+You direct your attention to the guild guard.<br />
+Dravin leaves down.<br />
+<br />
+532H 115V 6278884X 865C [Swoosh:V.Good] [the guild guard:Perfect] Exits:NSD&gt; <br />
+Dravin arrives from below.<br />
+char dravin The guild guard utters some strange words.<br />
+The guild guard's skin thickens into a protective bark.<br />
+<br />
+532H 115V 6278884X 865C [Swoosh:V.Good] [the guild guard:Perfect] Exits:NSD&gt; <br />
+You slash the guild guard extremely hard.<br />
+The guild guard massacres YOU with his hit.<br />
+<br />
+502H 115V 6278409X 865C [Swoosh:V.Good] [the guild guard:V.Good] Exits:NSD&gt; flee<br />
+You charge at Dravin, but he managed to move away.<br />
+<br />
+502H 115V 6278409X 865C [Swoosh:V.Good] [the guild guard:V.Good] Exits:NSD&gt; <br />
+The guild guard utters some strange words.<br />
+The guild guard begins to become blurry and hard to see.<br />
+<br />
+502H 115V 6278409X 865C [Swoosh:V.Good] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Dravin misses you with his bludgeon.<br />
+You slash the guild guard extremely hard.<br />
+The guild guard massacres YOU with his hit.<br />
+The guild guard massacres YOU with his hit.<br />
+<br />
+435H 115V 6277875X 865C [Swoosh:Good] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Dravin focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+435H 115V 6277875X 865C [Swoosh:Good] [the guild guard:V.Good] Exits:NSD&gt; flee<br />
+You slash the guild guard extremely hard.<br />
+The guild guard misses you with his hit.<br />
+The guild guard massacres YOU with his hit.<br />
+<br />
+402H 115V 6277400X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Dravin focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+402H 115V 6277400X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; PANIC! You couldn't escape!<br />
+flee<br />
+402H 115V 6277400X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; You flee head over heels.<br />
+envenom sword<br />
+sneak<br />
+The Hall of Justice<br />
+    You stand in a brightly lit hall. Directly before you is a huge desk.<br />
+This appears to be a court of sorts. Many, many wanted posters line the<br />
+walls.<br />
+A large bulletin board is mounted on a wall here...it glows blue<br />
+<br />
+402H 114V 6277400X 865C Exits:N&gt; You're not fighting, why bother fleeing?<br />
+<br />
+402H 114V 6277400X 865C Exits:N&gt; scanorth<br />
+Huh?!<br />
+<br />
+420H 128V 6277400X 865C Exits:N&gt; Huh?!<br />
+<br />
+420H 128V 6277400X 865C Exits:N&gt; Looking north:<br />
+You see nothing special.<br />
+Dravin, the Grey Robed Thorn Knight of Takhisis is standing here.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+. . . has a tough exterior.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+420H 128V 6277400X 865C Exits:N&gt; The Solace Adventurer's Guild<br />
+    The guild is full of adventurers of all types, who are trying to hone<br />
+and perfect their skills. The walls are covered with racks of weapons and<br />
+armour that are used in the training. Huge book cases also fill the room,<br />
+containing numerous spell books and scrolls. There are even chests and<br />
+doors that seem to be made specifically for practice by thieves and their<br />
+lockpicks. One master of all skills oversees all the training and<br />
+progression here. A small stairway leads down out of the tree and to the<br />
+ground below. A hall leads north. The Hall of Justice is to the south.<br />
+Dravin, the Grey Robed Thorn Knight of Takhisis is standing here.<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+. . . has a tough exterior.<br />
+<br />
+420H 127V 6277400X 865C Exits:NSD&gt; char dravin<br />
+You charge at Dravin, but he managed to move away.<br />
+<br />
+420H 127V 6277400X 865C [Swoosh:Good] [Dravin:V.Good] Exits:NSD&gt; <br />
+The guild guard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+420H 127V 6277400X 865C [Swoosh:Good] [Dravin:V.Good] Exits:NSD&gt; <br />
+The guild guard massacres YOU with his hit.<br />
+The guild guard massacres YOU with his hit.<br />
+You slash Dravin extremely hard.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+355H 127V 6277400X 865C [Swoosh:Fair] [Dravin:Good] Exits:NSD&gt; <br />
+Dravin panics, and attempts to flee.<br />
+You direct your attention to the guild guard.<br />
+Dravin leaves north.<br />
+<br />
+355H 127V 6277400X 865C [Swoosh:Fair] [the guild guard:Perfect] Exits:NSD&gt; flee<br />
+Dravin arrives from the north.<br />
+The guild guard tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+355H 127V 6277400X 865C [Swoosh:Fair] [the guild guard:Perfect] Exits:NSD&gt; <br />
+You massacre the guild guard with your slash.<br />
+The guild guard massacres YOU with his hit.<br />
+The guild guard massacres YOU with his hit.<br />
+<br />
+290H 127V 6276688X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Grouch flies in from the north.<br />
+You are sent sprawling as the guild guard crashes into you.<br />
+<br />
+279H 127V 6276688X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Grouch flies down.<br />
+<br />
+279H 127V 6276688X 865C [Swoosh:Fair] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Dravin focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Dravin's force bolt slams into you.<br />
+<br />
+233H 127V 6276688X 865C [Swoosh:Bad] [the guild guard:V.Good] Exits:NSD&gt; <br />
+You slash the guild guard extremely hard.<br />
+The guild guard annihilates YOU with his hit.<br />
+<br />
+193H 127V 6276124X 865C [Swoosh:V.Bad] [the guild guard:V.Good] Exits:NSD&gt; rec recall<br />
+Dravin focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Dravin's force bolt slams into you.<br />
+<br />
+147H 127V 6276124X 865C [Swoosh:V.Bad] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Elroy shouts 'id like to clear soe shit out i only help kot becuse greer was killing me for no reason so plz ppl stop thinking im kot and stop killing me!!'<br />
+<br />
+147H 127V 6276124X 865C [Swoosh:V.Bad] [the guild guard:V.Good] Exits:NSD&gt; <br />
+You slash the guild guard extremely hard.<br />
+The guild guard annihilates YOU with his hit.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+The guild guard annihilates YOU with his hit.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't seem to move yet!<br />
+<br />
+62H 127V 6275590X 865C [Swoosh:Awful] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Grouch flies in from below.<br />
+The guild guard tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+62H 127V 6275590X 865C [Swoosh:Awful] [the guild guard:V.Good] Exits:NSD&gt; You can't do that while sitting.<br />
+<br />
+62H 127V 6275590X 865C [Swoosh:Awful] [the guild guard:V.Good] Exits:NSD&gt; Dravin focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Dravin's force bolt slams into you.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't do that while sitting.<br />
+You do not have that item.<br />
+<br />
+6H 127V 6275590X 865C [Swoosh:Awful] [the guild guard:V.Good] Exits:NSD&gt; <br />
+Grouch says 'fight fight'<br />
+<br />
+6H 127V 6275590X 865C [Swoosh:Awful] [the guild guard:V.Good] Exits:NSD&gt; You should probably stand up!<br />
+staYou slash the guild guard extremely hard.<br />
+The guild guard annihilates YOU with his hit.<br />
+You're dead.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Welcome to Arctic.<br />
+<br />
+Arctic is a heavily modified DIKU with the experienced player in mind.<br />
+Our administration policy is not to interfere with mortal affairs.<br />
+Please bear that in mind when asking for assistance.<br />
+<br />
+*** Press Enter: enter<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1<br />
+Your detect invisibility wears off.<br />
+You ran up charges of 1470 steel in rent.<br />
+<br />
+Welcome to the land of Krynn.<br />
+score<br />
+The Reception<br />
+    The reception contains a small desk. A long hall leads behind the desk<br />
+here and you can tell this is where adventurers rest and take time off from<br />
+their journeys. A small stairway goes down towards what appears to be a<br />
+lively tavern.<br />
+A pair of fur-trimmed breeches lies here.<br />
+A fur-trimmed leather jerkin lies on the ground.<br />
+A large board with numerous wanted posters tacked on it is here.<br />
+A red-haired young lady is wiping down a table here.<br />
+Neeoo, The One, Imperial Guard is standing here. (flying)<br />
+Archilles the Male Hylar Dwarf is resting here.<br />
+A receptionist sits here doing her nails.<br />
+A man wearing heavy armor is standing here.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; <br />
+You are Blam Thunderclap, Torrent Upheaval, a level 30 Ranger.<br />
+You are rank 11.<br />
+You are 28 years old.<br />
+You have 511(511) hit and 127(143) movement points.<br />
+Your behaviour has been Good.<br />
+You have scored 144999999 exp, and have 0(66074) steel coins.<br />
+You need 1 more experience to advance.<br />
+You have died 12 horrible deaths.<br />
+You have been connected for 0 minute(s).<br />
+You have been playing for 13 day(s), 4 hour(s) and 18 minute(s).<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; rem bow<br />
+You stop using a composite metal bow.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; <br />
+Neeoo starts following you.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; wear shield<br />
+You start using a carved marble shield.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; wie axe<br />
+fly<br />
+Neeoo grabs a small black orb.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; grou form<br />
+You do not seem to have what you are looking for.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; You lift your arms skyward and begin to float.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; Neeoo is now a member of your group.<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; grouYour group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Blam             perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Neeoo            perfect   rested    standing   Y   N    N    Y     0    0<br />
+<br />
+511H 127V 1X 0C Exits:D&gt; down<br />
+The wonderful smell of spiced potatoes makes your stomach rumble.<br />
+Neeoo flies in from above.<br />
+The Inn of the Last Home<br />
+    The Inn of the Last Home is a cozy tavern. The smells of rich food and<br />
+the sounds of merry music overflow your senses. A huge fireplace dominates<br />
+one wall and a warm glow emanates from its flames. Small tables fill the<br />
+room. A stairway leads up, further into the tree, while another stairway<br />
+leads down to the forest below.<br />
+Neeoo, The One, Imperial Guard is standing here. (flying)<br />
+A janitor is walking around, cleaning up.<br />
+A small child plays with some colorful objects.<br />
+Otik watches you calmly, while he skillfully mixes a drink.<br />
+<br />
+511H 126V 1X 0C Exits:SWUD&gt; down<br />
+Neeoo flies in from above.<br />
+A Small Side Street<br />
+    You stand before the largest vallenwood you have ever seen. It towers<br />
+up above the rest of the huge vallenwoods and appears to touch the clouds<br />
+above. When you look up into the vallenwood, you see an extravagantly<br />
+decorated tavern that has been built in and among the limbs of the tree.<br />
+The clearing stretches on towards the north and you see Northern Avenue to<br />
+the east. A spiral stairway winds down from the tavern above, reaching the<br />
+ground a short distance away. A small sign is posted next to the stairway.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Neeoo, The One, Imperial Guard is standing here. (flying)<br />
+Dravin, the Grey Robed Thorn Knight of Takhisis is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Enogeb, Commander of KoT is standing here. (flying)<br />
+A singing, happy dwarf stumbles along drunkenly. (flying)<br />
+A singing, happy dwarf stumbles along drunkenly.<br />
+<br />
+511H 125V 1X 0C Exits:NEU&gt; <br />
+Enogeb focuses on Dravin and utters the words, 'refresh'.<br />
+Dravin appears rejuvenated.<br />
+<br />
+511H 125V 1X 0C Exits:NEU&gt; bash dravin<br />
+sta<br />
+You crash into Dravin in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:V.Good] Exits:NEU&gt; <br />
+Dravin steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:V.Good] Exits:NEU&gt; <br />
+Neeoo massacres Dravin with his slash.<br />
+You miss Dravin with your hit.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Good] Exits:NEU&gt; bash enogeb<br />
+sta<br />
+Neeoo slashes Dravin extremely hard.<br />
+You hit Dravin.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+Dravin stands up.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; You are already standing.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+You crash into Enogeb in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+Neeoo stands up.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+Enogeb steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+Enogeb misses you with his whip.<br />
+Neeoo slashes Dravin very hard.<br />
+You miss Dravin with your hit.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; <br />
+Ruffor arrives from the east.<br />
+<br />
+511H 125V 1X 0C [Blam:Perfect] [Dravin:Fair] Exits:NEU&gt; get axe quiver<br />
+Dravin focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Dravin's force bolt slams into you.<br />
+<br />
+452H 125V 1X 0C [Blam:Good] [Dravin:Fair] Exits:NEU&gt; wie axe<br />
+Enogeb misses you with his whip.<br />
+Neeoo slashes Dravin extremely hard.<br />
+You hit Dravin.<br />
+<br />
+468H 135V 1X 0C [Blam:V.Good] [Dravin:Fair] Exits:NEU&gt; bash dravin<br />
+sta<br />
+The janitor arrives from above.<br />
+<br />
+468H 135V 1X 0C [Blam:V.Good] [Dravin:Fair] Exits:NEU&gt; You are already standing.<br />
+Enogeb stands up.<br />
+<br />
+468H 135V 1X 0C [Blam:V.Good] [Dravin:Fair] Exits:NEU&gt; You get a ruby axe from a sandy grey quiver.<br />
+<br />
+468H 135V 1X 0C [Blam:V.Good] [Dravin:Fair] Exits:NEU&gt; <br />
+Enogeb focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Enogeb enshrouds you in a cloak of flames.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Fair] Exits:NEU&gt; You start using the axe.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Fair] Exits:NEU&gt; <br />
+Neeoo stands up.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Fair] Exits:NEU&gt; <br />
+Neeoo crashes into Dravin in a thundering collision, knocking him to the ground!<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Fair] Exits:NEU&gt; <br />
+Neeoo slashes Dravin very hard.<br />
+You cleave Dravin extremely hard.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Bad] Exits:NEU&gt; <br />
+You try to bash Dravin, but you miss and tumble forward onto your face.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Bad] Exits:NEU&gt; <br />
+Enogeb misses you with his whip.<br />
+Neeoo massacres Dravin with his slash.<br />
+You massacre Dravin with your cleave.<br />
+Dravin misses you with his bludgeon.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Dravin:Awful] Exits:NEU&gt; bash enogebsta<br />
+Enogeb grabs a glowing scroll of recall.<br />
+Enogeb recites a glowing scroll of recall.<br />
+Dravin disappears.<br />
+You direct your attention to Enogeb.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:V.Good] Exits:NEU&gt; bashsta<br />
+You cleave Enogeb extremely hard.<br />
+Enogeb misses you with his whip.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:V.Good] Exits:NEU&gt; You stand up.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:V.Good] Exits:NEU&gt; <br />
+Neeoo crashes into Enogeb in a thundering collision, knocking him to the ground!<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Good] Exits:NEU&gt; You try to bash Enogeb, but you miss and tumble forward onto your face.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Good] Exits:NEU&gt; <br />
+Neeoo massacres Enogeb with his slash.<br />
+You massacre Enogeb with your cleave.<br />
+Enogeb misses you with his whip.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Fair] Exits:NEU&gt; bashsta<br />
+Neeoo massacres Enogeb with his slash.<br />
+You massacre Enogeb with your cleave.<br />
+Enogeb misses you with his whip.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Fair] Exits:NEU&gt; <br />
+Enogeb steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Fair] Exits:NEU&gt; You stand up.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Fair] Exits:NEU&gt; A drunken dwarf leaves east.<br />
+You crash into Enogeb in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Bad] Exits:NEU&gt; <br />
+Neeoo slashes Enogeb extremely hard.<br />
+You massacre Enogeb with your cleave.<br />
+You raise a ruby axe high over your head.<br />
+The lightning bolt, discharged from your axe, hits Enogeb with full impact.<br />
+Enogeb misses you with his whip.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; <br />
+Neeoo slashes Enogeb extremely hard.<br />
+You cleave Enogeb extremely hard.<br />
+Enogeb misses you with his whip.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; bashsta<br />
+Neeoo stands up.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; <br />
+Enogeb steps aside as Neeoo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; You are already standing.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; You try to bash Enogeb, but you miss and tumble forward onto your face.<br />
+<br />
+414H 135V 1X 0C [Blam:Good] [Enogeb:Awful] Exits:NEU&gt; <br />
+Neeoo massacres Enogeb with his slash.<br />
+You receive 0 experience.<br />
+Enogeb is dead! R.I.P.<br />
+watch fuzigari<br />
+get all.coins corpse<br />
+The death cry of Enogeb echoes from somewhere nearby...<br />
+Dravin stops following Enogeb.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; get all 1.corpse<br />
+A drunken dwarf arrives from the east.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; <br />
+The janitor leaves east.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; 'okay<br />
+Ruffor gets a pair of lavish silk pants from the corpse of Enogeb.<br />
+Ruffor gets a very large pile of coins from the corpse of Enogeb.<br />
+Ruffor gets a bedsheet from the corpse of Enogeb.<br />
+Ruffor gets a glowing scroll of recall from the corpse of Enogeb.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; <br />
+Neeoo stands up.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; You stand up.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; You couldn't find what you were looking for.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; <br />
+Neeoo tells your group 'gj'<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; You are already standing.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; They don't seem to be here.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; <br />
+Sy shouts 'looking for people to form high lv zoning group'<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; 'now to hide<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; <br />
+Ruffor leaves up.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; You say 'okay'<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; You say 'now to hide'<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; get all 1.corpse<br />
+get all 2.corpse<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; What are you trying to get from?<br />
+<br />
+414H 135V 1X 0C Exits:NEU&gt; east<br />
+Neeoo flies in from the west.<br />
+Northern Avenue<br />
+    You are on Northern Avenue. The road twists and turns here, cutting<br />
+through the dense vallenwood forest. High overhead, the limbs mesh to form<br />
+a thick green canopy. The avenue continues north, while you see and hear<br />
+Solace Square to the south. A small clearing opens to the west. Looking<br />
+east, you see a large vallenwood that has a building nestled among its<br />
+strong limbs. A small stairway spirals down around the trunk, ending at the<br />
+southedge of the road. A small sign is posted next to the stairway.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Neeoo, The One, Imperial Guard is standing here. (flying)<br />
+A janitor is walking around, cleaning up.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1055'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1055">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1055">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

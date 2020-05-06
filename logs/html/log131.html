@@ -1,0 +1,984 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 131-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='131'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wandering Enemies Die</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Enemies decide to wander around and die.</i>
+<p>
+<p>
+
+June 27th, 2002<br />
+***<br />
+<br />
+505H 168V 936230X 1098C Exits:NE&gt; <br />
+Kona arrives from the north.<br />
+kill kona<br />
+<br />
+505H 168V 936230X 1098C Exits:NE&gt; You stab Kona very hard.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:V.Good] Exits:NE&gt; <br />
+Hopkins crashes into Kona in a thundering collision, knocking her to the ground!<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Good] Exits:NE&gt; <br />
+Elyana focuses harshly on Kona and utters some strange words.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Good] Exits:NE&gt; <br />
+Hopkins massacres Kona with his slash.<br />
+You massacre Kona with your stab.<br />
+Kona misses you with her hit.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Fair] Exits:NE&gt; <br />
+Dartavian shouts 'seeking offhand bludgeon'<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Fair] Exits:NE&gt; av h<br />
+Hopkins massacres Kona with his slash.<br />
+You stab Kona extremely hard.<br />
+Kona misses you with her hit.<br />
+You focus your purity on Kona's head!<br />
+Elyana focuses harshly on Kona and utters some strange words.<br />
+Kona freezes in place.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Bad] Exits:NE&gt; <br />
+Syphen arrives from the north.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Bad] Exits:NE&gt; <br />
+Syphen leaves east.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Bad] Exits:NE&gt; <br />
+Hopkins crashes into Kona in a thundering collision, knocking her to the ground!<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:V.Bad] Exits:NE&gt; <br />
+Hopkins massacres Kona with his slash.<br />
+You massacre Kona with your stab.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Awful] Exits:NE&gt; <br />
+Elyana focuses harshly on Kona and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Elyana comes out of hiding.<br />
+Brains splatter on you as Elyana's force bolt shatters Kona's skull.<br />
+You receive 0 experience.<br />
+Kona is dead! R.I.P.<br />
+<br />
+505H 168V 936230X 1098C [Me:Perfect] [Kona:Dying] Exits:NE&gt;<br />
+<br />
+<br />
+***Edward wandering around being dumb so I switched over to thief.<br />
+<br />
+<br />
+388H 137V 26464024X 1042C Exits:EW&gt; Outside the Western Gates of Kalaman<br />
+Edward J. Wedge, KLA Trashmage Elite is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+388H 136V 26464024X 1042C Exits:EW&gt; Edward twists around to see you place a crimson dragon's spine javelin in his back.<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; <br />
+**Grome: no<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; <br />
+You pierce Edward extremely hard.<br />
+You whip Edward extremely hard.<br />
+Edward is stunned, but will likely regain consciousness again.<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; gt edward rip<br />
+<br />
+**Chupubucabra: rofl<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; <br />
+**Rannos: tic in 5<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; You tell your group 'edward rip'<br />
+<br />
+388H 136V 26464024X 1042C [Me:Perfect] [Edward:Awful] Exits:EW&gt; <br />
+You massacre Edward with your pierce.<br />
+You receive 0 experience.<br />
+Edward is dead! R.I.P.<br />
+The death cry of Edward echoes from somewhere nearby...<br />
+A water nymph stops following Edward.<br />
+<br />
+388H 136V 26464024X 1042C Exits:EW&gt; g all corpse<br />
+You get a black walnut quarterstaff from the corpse of Edward.<br />
+You get a tattered old robe from the corpse of Edward.<br />
+You get a very large pile of coins from the corpse of Edward.<br />
+There were 1116 coins.<br />
+You get a pinch of chameleon dust from the corpse of Edward.<br />
+You get a glowing scroll of recall from the corpse of Edward.<br />
+You get a glowing scroll of recall from the corpse of Edward.<br />
+You get a glowing scroll of recall from the corpse of Edward.<br />
+You get a large first-aid kit from the corpse of Edward.<br />
+You get an elixir of health from the corpse of Edward.<br />
+You get a small canteen from the corpse of Edward.<br />
+You get a small canteen from the corpse of Edward.<br />
+You get a small canteen from the corpse of Edward.<br />
+You get an iron ration from the corpse of Edward.<br />
+You get an iron ration from the corpse of Edward.<br />
+You get a hooded lantern from the corpse of Edward.<br />
+<br />
+388H 136V 26464024X 2158C Exits:EW&gt; <br />
+**Chupubucabra: ROFL<br />
+<br />
+388H 136V 26464024X 2158C Exits:EW&gt; <br />
+**Rannos: hahah<br />
+<br />
+388H 136V 26464024X 2158C Exits:EW&gt; <br />
+Elyana flies in from the east.<br />
+<br />
+388H 150V 26464024X 2158C Exits:EW&gt; <br />
+Elyana smiles warmly.<br />
+<br />
+388H 150V 26464024X 2158C Exits:EW&gt; <br />
+Elyana gets the corpse of Edward.<br />
+<br />
+388H 150V 26464024X 2158C Exits:EW&gt; <br />
+**Chupubucabra: n<br />
+<br />
+388H 150V 26464024X 2158C Exits:EW&gt; <br />
+Hopkins flies in from the east.<br />
+<br />
+388H 150V 26464024X 2158C Exits:EW&gt; <br />
+<br />
+<br />
+***<br />
+<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Hopkins flies south.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Medio flies in from the north.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Medio flies south.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; gt elyana go check solace if aran inned?<br />
+You tell your group 'elyana go check solace if aran inned?'<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; gro<br />
+Your group of 6 members consists of:<br />
+  Frederic         perfect   rested    standing   Y   Y    N     0    0<br />
+  Elyana           perfect   rested    standing   Y   Y    N     1    2<br />
+  Grome            perfect   rested    standing   Y   N    N     0    0<br />
+  Hopkins          v.good    rested    fighting   Y   N    N     1    0<br />
+  Chupubucabra     v.good    rested    standing   N   Y    N     1    4<br />
+  Rannos           bad       rested    resting    Y   N    N     0    0<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; s<br />
+Elyana flies in from the north.<br />
+Grome flies in from the north.<br />
+Vingaard Avenue South<br />
+Grome Goretooth, Shining Force Zealot is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a fiery red ring; an obsidian crown; a golden pear; a jade belt; a glowing scroll of recall; a glowing scroll of recall.<br />
+Hopkins, Bringing you a Shiny Apocalypse is standing here, fighting Ser. (flying)<br />
+Ser Dullblade, Renshai Action Hero is sitting here, fighting Hopkins. (flying)<br />
+<br />
+388H 149V 26464024X 2158C Exits:NESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A waitress is here ready to take your order.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+388H 149V 26464024X 2158C Exits:NESW&gt; <br />
+Ser steps aside as Grome attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+388H 149V 26464024X 2158C Exits:NESW&gt; <br />
+Elyana focuses harshly on Ser and utters some strange words.<br />
+Grome massacres Ser with his crush.<br />
+Hopkins slashes Ser extremely hard.<br />
+Ser slashes Hopkins very hard.<br />
+Hopkins crashes into Ser in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 149V 26464024X 2158C Exits:NESW&gt; ass<br />
+You attempt to assist Grome.<br />
+You massacre Ser with your pierce.<br />
+Ser appears noticeably weaker.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:Fair] Exits:NESW&gt; <br />
+You miss Ser with your pierce.<br />
+You whip Ser extremely hard.<br />
+Grome massacres Ser with his crush.<br />
+Hopkins massacres Ser with his slash.<br />
+Ser slashes Hopkins hard.<br />
+Elyana focuses harshly on Ser and utters some strange words.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:Bad] Exits:NESW&gt; <br />
+Grome stands up.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:Bad] Exits:NESW&gt; <br />
+Grome crashes into Ser in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:Bad] Exits:NESW&gt; <br />
+You pierce Ser extremely hard.<br />
+You whip Ser extremely hard.<br />
+Grome misses Ser with his crush.<br />
+Hopkins massacres Ser with his slash.<br />
+Ser slashes Hopkins hard.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:V.Bad] Exits:NESW&gt; <br />
+Hopkins crashes into Ser in a thundering collision, knocking him to the ground!<br />
+Elyana focuses harshly on Ser and utters some strange words.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Ser:V.Bad] Exits:NESW&gt; <br />
+You massacre Ser with your pierce.<br />
+You whip Ser extremely hard.<br />
+Grome crushes Ser extremely hard.<br />
+Hopkins slashes Ser extremely hard.<br />
+Ser slashes Hopkins hard.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:Good] [Ser:Awful] Exits:NESW&gt; <br />
+Elyana focuses harshly on Ser and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Elyana comes out of hiding.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Ser.<br />
+<br />
+388H 149V 26464024X 2158C [Me:Perfect] [Hopkins:Good] [Ser:Awful] Exits:NESW&gt; fl<br />
+You flee head over heels.<br />
+Vingaard Avenue South<br />
+<br />
+388H 148V 26464024X 2158C Exits:NS&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+388H 148V 26464024X 2158C Exits:NS&gt; envenom crimson.javelin<br />
+sneak<br />
+You stealthily dip the spine in a toxic concoction of your own making.<br />
+<br />
+388H 148V 26464024X 2158C Exits:NS&gt; n<br />
+You begin moving quietly.<br />
+<br />
+388H 148V 26464024X 2158C Exits:NS&gt; Vingaard Avenue South<br />
+The corpse of Ser is lying here.<br />
+Grome Goretooth, Shining Force Zealot is standing here. (flying)<br />
+You see the outline of a life form here, carrying: a fiery red ring; an obsidian crown; a golden pear; a jade belt; a glowing scroll of recall; a glowing scroll of recall.<br />
+Hopkins, Bringing you a Shiny Apocalypse is standing here. (flying)<br />
+Hopkins gets a cold steel sword from the corpse of Ser.<br />
+Hopkins gets a glinting blue zircon bracelet from the corpse of Ser.<br />
+Hopkins gets a jagged bracer from the corpse of Ser.<br />
+Hopkins gets a large waterskin from the corpse of Ser.<br />
+Hopkins gets a rusted iron shield from the corpse of Ser.<br />
+Hopkins gets a set of black iron vambraces from the corpse of Ser.<br />
+Hopkins gets a pair of charred black plate boots from the corpse of Ser.<br />
+Hopkins gets a pair of charred platemail legplates from the corpse of Ser.<br />
+Hopkins gets a black helm of the Lily from the corpse of Ser.<br />
+Hopkins gets a small brass ring from the corpse of Ser.<br />
+Hopkins gets a large pile of coins from the corpse of Ser.<br />
+Hopkins gets a hermit's cane from the corpse of Ser.<br />
+Hopkins gets a headpiece of Illyoc from the corpse of Ser.<br />
+Hopkins gets a torch from the corpse of Ser.<br />
+<br />
+<br />
+***<br />
+<br />
+<br />
+88H 150V 26464024X 2158C Exits:NESW&gt; <br />
+steal chest rarakan<br />
+Kulla arrives from the south.<br />
+backstab kulla<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; Klaith flies in from the north.<br />
+Got it.<br />
+Hopkins crashes into Kulla in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Klaith flies south.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+**Rannos: tic in 5<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Wrawce arrives from the west.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; gt dunno<br />
+ass<br />
+<br />
+Elyana stands up.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+**Chupubucabra: and why steal shitty items<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Wrawce leaves south.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Elyana focuses harshly on Kulla and utters some strange words.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Hopkins massacres Kulla with his slash.<br />
+Kulla misses Hopkins with his hit.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; <br />
+Grome crashes into Kulla in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; Kulla is flailing around too much.  Oh well.<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; You tell your group 'dunno'<br />
+<br />
+388H 150V 26464024X 2158C Exits:NESW&gt; You attempt to assist Grome.<br />
+You massacre Kulla with your pierce.<br />
+Kulla appears noticeably weaker.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:V.Bad] Exits:NESW&gt; <br />
+Elyana focuses harshly on Kulla and utters some strange words.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:V.Bad] Exits:NESW&gt; <br />
+**Chupubucabra: at least steal +dam or something<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:V.Bad] Exits:NESW&gt; <br />
+You massacre Kulla with your pierce.<br />
+You whip Kulla extremely hard.<br />
+Grome massacres Kulla with his crush.<br />
+Hopkins massacres Kulla with his slash.<br />
+Kulla misses Hopkins with his hit.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:Awful] Exits:NESW&gt; <br />
+Winwood looks at Kulla.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:Awful] Exits:NESW&gt; <br />
+Bruenghor arrives from the south.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:Awful] Exits:NESW&gt; <br />
+Bruenghor leaves north.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Hopkins:V.Good] [Kulla:Awful] Exits:NESW&gt; <br />
+g all corpse<br />
+Elyana focuses harshly on Kulla and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Brains splatter on you as Elyana's force bolt shatters Kulla's skull.<br />
+You receive 0 experience.<br />
+Kulla is dead! R.I.P.<br />
+<br />
+388H 150V 26464024X 2158C [Me:Perfect] [Kulla:Dying] Exits:NESW&gt;<br />
+<br />
+<br />
+***<br />
+<br />
+88H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Liez arrives from the west.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Elyana focuses harshly on Liez and utters some strange words.<br />
+Liez freezes in place.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+**Rannos: tic in 5<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Chupubucabra sits down and rests.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Chupubucabra stands up.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Liez says 'umm'<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; gt haha liez<br />
+<br />
+Chupubucabra looks at Liez.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; You tell your group 'haha liez'<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Grome crashes into Liez in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+**Winwood: mortus renshai?<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; <br />
+Nimurat shouts 'cant wait to get fired for playing robotag.'<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; l liez<br />
+You see nothing special about him.<br />
+Liez the adult male hylar dwarf has a few scratches (bandaged).<br />
+<br />
+Liez is using:<br />
+&lt;worn on hands&gt;            a pair of studded leather gloves<br />
+&lt;worn on arms&gt;             some studded leather sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a bronze shield<br />
+&lt;used in primary hand&gt;     a large stone axe<br />
+You attempt to peek at his inventory:<br />
+a bowl of Otik's spiced potatoes<br />
+a bowl of Otik's spiced potatoes<br />
+a bowl of Otik's spiced potatoes<br />
+a bowl of Otik's spiced potatoes<br />
+a pouch<br />
+a small canteen<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; backstab liez<br />
+<br />
+Elyana focuses harshly on Liez and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Elyana comes out of hiding.<br />
+Liez wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+388H 141V 26464024X 1058C Exits:NSWU&gt; Liez twists around to see you place a crimson dragon's spine javelin in his back.<br />
+Liez appears noticeably weaker.<br />
+<br />
+388H 141V 26464024X 1058C [Me:Perfect] [Grome:Perfect] [Liez:Fair] Exits:NSWU&gt; <br />
+Chupubucabra says 'CHIEF'<br />
+<br />
+388H 141V 26464024X 1058C [Me:Perfect] [Grome:Perfect] [Liez:Fair] Exits:NSWU&gt; <br />
+Winwood crashes into Liez in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 141V 26464024X 1058C [Me:Perfect] [Grome:Perfect] [Liez:Bad] Exits:NSWU&gt; <br />
+Winwood massacres Liez with his slash.<br />
+You massacre Liez with your pierce.<br />
+You whip Liez extremely hard.<br />
+Grome crushes Liez extremely hard.<br />
+The sky is getting cloudy.<br />
+<br />
+388H 150V 26464024X 1058C [Me:Perfect] [Grome:Perfect] [Liez:V.Bad] Exits:NSWU&gt; <br />
+Hopkins flies south.<br />
+<br />
+388H 150V 26464024X 1058C [Me:Perfect] [Grome:Perfect] [Liez:V.Bad] Exits:NSWU&gt; fl<br />
+You flee head over heels.<br />
+A Small Side Street<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A singing, happy dwarf stumbles along drunkenly.<br />
+A stray dog slowly moves about the area, sniffing the nearby trees.<br />
+A young, strong looking horse stands here stamping his hooves softly.<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; sca<br />
+<br />
+Vaphix appears before you in a puff of smoke.<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Liez the Male Hylar Dwarf is sitting here, fighting Grome.<br />
+Kenstey the Male Hylar Dwarf is standing here.<br />
+Grome Goretooth, Shining Force Zealot is standing here, fighting Liez. (flying)<br />
+Winwood, Grandmaster of Masterminds is standing here, fighting Liez. (flying)<br />
+A citizen of Solace moves quickly about.<br />
+Elyana O'Campas, Rusty Shadow is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Otik watches you calmly, while he skillfully mixes a drink.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; <br />
+A drunken dwarf leaves east.<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; <br />
+Klorpatoo shouts '24 templar seeking groupage'<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; <br />
+Vaphix says 'hi'<br />
+<br />
+388H 149V 26464024X 1058C Exits:NEU&gt; e<br />
+Northern Avenue<br />
+The corpse of Liez is lying here.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A singing, happy dwarf stumbles along drunkenly.<br />
+Kenstey the Male Hylar Dwarf is standing here.<br />
+Grome Goretooth, Shining Force Zealot is standing here. (flying)<br />
+Winwood, Grandmaster of Masterminds is standing here. (flying)<br />
+A citizen of Solace moves quickly about.<br />
+You see the outline of a life form here, carrying: a fiery red ring; an obsidian crown; a glowing scroll of recall.<br />
+<br />
+388H 148V 26464024X 1058C Exits:NSWU&gt; <br />
+Winwood gets a large pile of coins from the corpse of Liez.<br />
+<br />
+388H 148V 26464024X 1058C Exits:NSWU&gt; <br />
+Winwood divides 960 coins equally among the group members present.<br />
+<br />
+388H 148V 26464024X 1298C Exits:NSWU&gt; exa corpse<br />
+<br />
+Chupubucabra arrives from the south.<br />
+<br />
+388H 148V 26464024X 1298C Exits:NSWU&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a large stone axe<br />
+a bronze shield<br />
+some studded leather sleeves..it glows blue<br />
+a pair of studded leather gloves<br />
+a bowl of Otik's spiced potatoes [5]<br />
+a pouch<br />
+a small canteen<br />
+<br />
+<br />
+***<br />
+<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; gt hes inned<br />
+<br />
+Mortus flies in from above.<br />
+backstab mortus<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; You tell your group 'hes inned'<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+**Chupubucabra: lets zone then, whos healing<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+Hopkins slowly fades into existence.<br />
+Hopkins crashes into Mortus in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; Fumes slowly fades into existence.<br />
+Mortus steps aside as Fumes attempts a bash, stumbles, and falls flat on his face.<br />
+Mortus is flailing around too much.  Oh well.<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+Elyana focuses harshly on Mortus and utters some strange words.<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+Winwood slowly fades into existence.<br />
+Winwood crashes into Mortus in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+Grome slowly fades into existence.<br />
+Grome crashes into Mortus in a thundering collision, knocking him to the ground!<br />
+<br />
+388H 120V 26464024X 1298C Exits:NEU&gt; <br />
+Grome crushes Mortus very hard.<br />
+Winwood crushes Mortus extremely hard.<br />
+Fumes massacres Mortus with his slash.<br />
+Hopkins slashes Mortus extremely hard.<br />
+Mortus misses Hopkins with his pierce.<br />
+The rising sun barely lights the dark and cloudy sky.<br />
+You are hungry.<br />
+<br />
+388H 140V 26464024X 1298C Exits:NEU&gt; ass<br />
+You attempt to assist Hopkins.<br />
+You massacre Mortus with your pierce.<br />
+<br />
+388H 140V 26464024X 1298C [Me:Perfect] [Hopkins:Perfect] [Mortus:V.Bad] Exits:NEU&gt; <br />
+Elyana focuses harshly on Mortus and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Elyana comes out of hiding.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Mortus.<br />
+<br />
+388H 140V 26464024X 1298C [Me:Perfect] [Hopkins:Perfect] [Mortus:Awful] Exits:NEU&gt; <br />
+You massacre Mortus with your pierce.<br />
+You receive 0 experience.<br />
+Mortus is dead! R.I.P.<br />
+The death cry of Mortus echoes from somewhere nearby...
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='131'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=131">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="131">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

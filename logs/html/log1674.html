@@ -1,0 +1,625 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1674-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1674'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Fireshield, Relocate, No AMS</font></b>
+<p>
+POV: 
+Matisyahu<p>
+Log Rating:
+0.8461<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Not having one spell just cost you 4 spells!</i>
+<p>
+<p>
+
+68H 72V 1536442X 5185C Mem:1 Exits:S&gt; <br />
+Arden appears before you in a puff of smoke.<br />
+<br />
+268H 72V 1536442X 5185C Mem:1 Exits:S&gt; <br />
+Arden focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Arden has reached its goal.<br />
+<br />
+220H 72V 1536442X 5185C [Matisyahu:Good] [Arden:Fair] Mem:1 Exits:S&gt; st<br />
+You stand up.<br />
+<br />
+220H 72V 1536442X 5185C [Matisyahu:Good] [Arden:Fair] Mem:3 Exits:S&gt; <br />
+Arden misses you with his hit.<br />
+You miss Arden with your hit.<br />
+<br />
+220H 72V 1536442X 5185C [Matisyahu:Good] [Arden:Fair] Mem:3 Exits:S&gt; <br />
+Arden focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Arden has reached its goal.<br />
+That Really did HURT!<br />
+<br />
+133H 72V 1536442X 5185C [Matisyahu:Bad] [Arden:Fair] Mem:3 Exits:S&gt; c 'bli'<br />
+You utter the words, 'blindness'<br />
+Arden seems to be blinded!<br />
+<br />
+133H 72V 1536442X 5185C [Matisyahu:Bad] [Arden:Fair] Mem:4 Exits:S&gt; flee<br />
+You flee head over heels.<br />
+Mushroom Maze<br />
+    You find yourself amongst mushrooms that have girths the size of<br />
+vallenwood trees. The caps reach heights of twenty to thirty feet and are<br />
+in a myriad of colors. A striped one here, a plaid one there, you are<br />
+definitely not on Krynn anymore. As the initial shock wears off, you<br />
+realize that the mushrooms form distinct paths and that it is impossible to<br />
+go between mushroom pallisades.<br />
+A quickling is here ready to slice and dice you. (invisible) (red aura)<br />
+A quickling is here ready to slice and dice you. (invisible) (red aura)<br />
+You notice the quickling eyeing your possessions.<br />
+The quickling slowly fades into existence.<br />
+The quickling thrusts a razor sharp dirk into your back.<br />
+<br />
+115H 70V 1536442X 5185C [Matisyahu:Bad] [the quickling:Perfect] Mem:4 Exits:NE&gt; <br />
+The quickling pierces YOU.<br />
+The quickling pierces YOU.<br />
+You hit the quickling hard.<br />
+<br />
+104H 70V 1536389X 5185C [Matisyahu:V.Bad] [the quickling:V.Good] Mem:4 Exits:NE&gt; c 'cu cr'me<br />
+You utter the words, 'cure critical'<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+177H 70V 1536389X 5185C [Matisyahu:Fair] [the quickling:V.Good] Mem:5 Exits:NE&gt; <br />
+The quickling misses you with his pierce.<br />
+The quickling misses you with his pierce.<br />
+<br />
+177H 70V 1536389X 5185C [Matisyahu:Fair] [the quickling:V.Good] Mem:5 Exits:NE&gt; flee<br />
+You flee head over heels.<br />
+Mushroom Maze<br />
+    You find yourself amongst mushrooms that have girths the size of<br />
+vallenwood trees. The caps reach heights of twenty to thirty feet and are<br />
+in a myriad of colors. A striped one here, a plaid one there, you are<br />
+definitely not on Krynn anymore. As the initial shock wears off, you<br />
+realize that the mushrooms form distinct paths and that it is impossible to<br />
+go between mushroom palisades.<br />
+The corpse of the quickling is lying here. (invisible)<br />
+A quickling is here ready to slice and dice you. (invisible) (red aura)<br />
+Arden the Male Human is standing here. (red aura)<br />
+. . . is enveloped in flames.<br />
+<br />
+177H 68V 1536389X 5185C Mem:5 Exits:S&gt; sa heh<br />
+You say 'heh'<br />
+<br />
+177H 68V 1536389X 5185C Mem:5 Exits:S&gt; r<br />
+You sit down and rest your tired bones.<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; st<br />
+You stand up.<br />
+<br />
+177H 68V 1536389X 5185C Mem:5 Exits:S&gt; l<br />
+Mushroom Maze<br />
+    You find yourself amongst mushrooms that have girths the size of<br />
+vallenwood trees. The caps reach heights of twenty to thirty feet and are<br />
+in a myriad of colors. A striped one here, a plaid one there, you are<br />
+definitely not on Krynn anymore. As the initial shock wears off, you<br />
+realize that the mushrooms form distinct paths and that it is impossible to<br />
+go between mushroom palisades.<br />
+The corpse of the quickling is lying here. (invisible)<br />
+A quickling is here ready to slice and dice you. (invisible) (red aura)<br />
+Arden the Male Human is standing here. (red aura)<br />
+. . . is enveloped in flames.<br />
+<br />
+177H 68V 1536389X 5185C Mem:5 Exits:S&gt; r<br />
+You sit down and rest your tired bones.<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; m<br />
+Spells currently memorized:<br />
+1: [ 1]bless                [ 1]know alignment       [ 1]restore strength    <br />
+2: [ 2]blindness            [ 1]detect evil          [ 1]detect magic        <br />
+   [ 3]silence             <br />
+3: [ 3]cause serious        [ 3]cure serious         [ 1]holy armor          <br />
+4: [ 2]dispel magic         [ 4]hold person          [ 1]sanctuary           <br />
+5: [ 1]cure critical        [ 2]dispel good         <br />
+<br />
+Spells being memorized:<br />
+1: [ 1]create food          [ 1]create water        <br />
+2: [ 2]blindness           <br />
+3: [ 2]cause serious       <br />
+4: [ 1]hold person         <br />
+5: [ 1]cure critical       <br />
+6: [ 2]harm                <br />
+<br />
+You estimate your studies will complete in 2 (game) hours.<br />
+<br />
+Spells left (level-number): 1-4 2-0 3-0 4-0 5-0 6-0<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; med<br />
+You try to ignore everything around you and focus upon your prayers.<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; m stop 'bli'<br />
+blindness: removed from your list<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; <br />
+Arden sits down and rests.<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; m stop 'bli'<br />
+blindness: removed from your list<br />
+<br />
+177H 68V 1536389X 5185C Mem:2 Exits:S&gt; TICK IN 5 SECONDS.<br />
+m stop 'caus s'<br />
+cause serious: removed from your list<br />
+<br />
+177H 68V 1536389X 5185C Mem:1 Exits:S&gt; <br />
+The quickling leaves south.<br />
+<br />
+177H 68V 1536389X 5185C Mem:1 Exits:S&gt; <br />
+Your studies complete, you close your prayerbook with a smile.<br />
+Timer now at 60 secs.<br />
+<br />
+193H 96V 1536389X 5185C Exits:S&gt; st<br />
+c 'harm'arden<br />
+You stop meditating and stand up.<br />
+<br />
+193H 96V 1536389X 5185C Exits:S&gt; You utter the words, 'harm'<br />
+You grab Arden, who screams in pain.<br />
+<br />
+193H 96V 1536389X 5185C [Matisyahu:Fair] [Arden:Bad] Mem:3 Exits:S&gt; <br />
+Arden stands up.<br />
+<br />
+193H 96V 1536389X 5185C [Matisyahu:Fair] [Arden:Bad] Mem:3 Exits:S&gt; <br />
+You hit Arden hard.<br />
+You feel intense pain as you swing through Arden's flaming aura.<br />
+Arden misses you with his hit.<br />
+<br />
+186H 96V 1536389X 5185C [Matisyahu:Fair] [Arden:Bad] Mem:3 Exits:S&gt; c 'harm'<br />
+<br />
+Arden panics, and attempts to flee.<br />
+Arden leaves south.<br />
+<br />
+186H 96V 1536389X 5185C Mem:3 Exits:S&gt; <br />
+Arden arrives from the south.<br />
+<br />
+186H 96V 1536389X 5185C Mem:3 Exits:S&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+186H 96V 1536389X 5185C Mem:3 Exits:S&gt; <br />
+Arden leaves south.<br />
+<br />
+186H 96V 1536389X 5185C Mem:3 Exits:S&gt; <br />
+Arden arrives from the south.<br />
+<br />
+186H 96V 1536389X 5185C Mem:3 Exits:S&gt; s<br />
+c 'harm'arden<br />
+Mushroom Maze<br />
+    You find yourself amongst mushrooms that have girths the size of<br />
+vallenwood trees. The caps reach heights of twenty to thirty feet and are<br />
+in a myriad of colors. A striped one here, a plaid one there, you are<br />
+definitely not on Krynn anymore. As the initial shock wears off, you<br />
+realize that the mushrooms form distinct paths and that it is impossible to<br />
+go between mushroom pallisades.<br />
+A quickling is here ready to slice and dice you. (invisible) (red aura)<br />
+A quickling is here ready to slice and dice you. (red aura)<br />
+<br />
+186H 94V 1536389X 5185C Mem:3 Exits:NE&gt; Who should the spell be cast upon?<br />
+<br />
+186H 94V 1536389X 5185C Mem:3 Exits:NE&gt; n<br />
+c 'harm'arden<br />
+Mushroom Maze<br />
+    You find yourself amongst mushrooms that have girths the size of<br />
+vallenwood trees. The caps reach heights of twenty to thirty feet and are<br />
+in a myriad of colors. A striped one here, a plaid one there, you are<br />
+definitely not on Krynn anymore. As the initial shock wears off, you<br />
+realize that the mushrooms form distinct paths and that it is impossible to<br />
+go between mushroom palisades.<br />
+The corpse of the quickling is lying here. (invisible)<br />
+Arden the Male Human is standing here. (red aura)<br />
+. . . is enveloped in flames.<br />
+<br />
+186H 92V 1536389X 5185C Mem:3 Exits:S&gt; You utter the words, 'harm'<br />
+You grab Arden, who collapses in pain, then dies.<br />
+You receive 0 experience.<br />
+Arden is dead! R.I.P.<br />
+g all.coins corpse<br />
+exa corpse<br />
+<br />
+186H 92V 1536389X 5185C [Arden:Dying] Mem:5 Exits:S&gt; <br />
+The death cry of Arden echoes from somewhere nearby...<br />
+<br />
+186H 92V 1536389X 5185C Mem:5 Exits:S&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1674'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1674">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1674">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

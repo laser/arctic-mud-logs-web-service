@@ -1,0 +1,713 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1265-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1265'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Xapi/Baggie vs. Fe/Kilians/Morbius/Etir</font></b>
+<p>
+POV: 
+Xapi<p>
+Log Rating:
+2.7222<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+687H 99V 1X 9976C Exits:NW&gt; w<br />
+The Tollhouse<br />
+   This small stone building stands at the junction of the roads from<br />
+Palanthas to the west, Kalaman to the east, and Solanthus to the south. A<br />
+road leads north to the gates of the City of Vingaard, and east to the main<br />
+keep atop the hill. Inside the tollhouse there are some long benches for<br />
+those waiting to meet with the tax collector, who sits behind the large<br />
+table toward the back. Behind this table is a large safe mounted in the<br />
+wall, storing the collected taxes waiting to be added to the city's<br />
+coffers. A small staircase leads up to a small hatch in the ceiling.<br />
+Travelers wishing to pass must pay the toll, then head west to Palanthas,<br />
+north through the city and east to Kalaman, or south toward the Newsea.<br />
+A steel breastplate inscribed with crowns is lying here.<br />
+A thin steel sword is lying here.<br />
+A small dagger has been left here. [2]<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+*(white aura) (flying) Morbius Winterwood is stretched out on a wooden<br />
+bench.<br />
+Kilians, Fearless Minotaur Basher is standing here. (flying) (white aura)<br />
+bash Kilians<br />
+Etir is standing here. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+Fe, The Mud Addict is standing here. (flying) (white aura)<br />
+<br />
+687H 98V 1X 9976C Exits:NESWU&gt;<br />
+Fe grabs a black stone.<br />
+<br />
+687H 98V 1X 9976C Exits:NESWU&gt; Baggie slowly fades into existence.<br />
+Baggie comes out of hiding.<br />
+Baggie massacres Kilians with his slash.<br />
+YOU========BASHED========Kilians<br />
+<br />
+687H 98V 1X 9976C [Me:V.Good] [Baggie:Perfect] [Kilians:V.Good] Exits:NESWU&gt;<br />
+===Morbius STANDS UP===<br />
+<br />
+687H 98V 1X 9976C [Me:V.Good] [Baggie:Perfect] [Kilians:V.Good] Exits:NESWU&gt;<br />
+You obliterate Kilians with your smite.<br />
+You annihilate Kilians with your smite.<br />
+Baggie massacres Kilians with his slash.<br />
+Baggie slashes Kilians extremely hard.<br />
+Baggie annihilates Kilians with his slash.<br />
+Kilians cleaves Baggie extremely hard.<br />
+<br />
+687H 98V 1X 9976C [Me:V.Good] [Baggie:V.Good] [Kilians:Fair] Exits:NESWU&gt;<br />
+YOU========ARE BASHED BY========Fe<br />
+<br />
+668H 98V 1X 9976C [Me:Good] [Baggie:V.Good] [Kilians:Fair] Exits:NESWU&gt;<br />
+Baggie attacks Kilians with lightning fast series of attacks that leaves him<br />
+defenseless.<br />
+<br />
+668H 98V 1X 9976C [Me:Good] [Baggie:V.Good] [Kilians:Fair] Exits:NESWU&gt;<br />
+Morbius focuses harshly on you and utters some strange words.<br />
+<br />
+668H 98V 1X 9976C [Me:Good] [Baggie:V.Good] [Kilians:Fair] Exits:NESWU&gt;<br />
+Etir========FAILED BASH ON========YOU<br />
+<br />
+668H 98V 1X 9976C [Me:Good] [Baggie:V.Good] [Kilians:Fair] Exits:NESWU&gt; st<br />
+<br />
+Your skin tingles slightly as feeling and colour return.<br />
+Etir bruises YOU with his cleave.<br />
+Fe massacres YOU with his cleave.<br />
+You obliterate Kilians with your smite.<br />
+Baggie annihilates Kilians with his slash.<br />
+Baggie massacres Kilians with his slash.<br />
+Baggie annihilates Kilians with his slash.<br />
+Kilians cleaves Baggie extremely hard.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Baggie:V.Good] [Kilians:V.Bad] Exits:NESWU&gt;<br />
+Baggie panics, and attempts to flee.<br />
+Baggie flies south.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Bad] Exits:NESWU&gt;<br />
+Morbius focuses on Kilians and utters some strange words.<br />
+Morbius heals Kilians.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt; bash morbius<br />
+=====YOU STAND UP=====<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt;<br />
+YOU========BASHED========Morbius<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt;<br />
+Baggie flies in from the south.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt;<br />
+Baggie slowly fades into existence.<br />
+Baggie massacres Kilians with his slash.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt;<br />
+===Kilians STANDS UP===<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Kilians:V.Good] Exits:NESWU&gt;<br />
+Kilians sinks gently to the ground.<br />
+Kilians stops using a runed crimson skull staff.<br />
+Kilians grabs a glowing scroll of recall.<br />
+Kilians recites a glowing scroll of recall.<br />
+Kilians disappears.<br />
+You direct your attention to Morbius.<br />
+<br />
+646H 98V 1X 9976C [Me:Good] [Morbius:V.Good] Exits:NESWU&gt;<br />
+You massacre Morbius with your smite.<br />
+You massacre Morbius with your smite.<br />
+Morbius slowly fades into existence.<br />
+Morbius misses you with his hit.<br />
+Etir cleaves YOU hard.<br />
+Fe cleaves YOU hard.<br />
+<br />
+628H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt; bash<br />
+<br />
+YOU========ARE BASHED BY========Fe<br />
+<br />
+609H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt;<br />
+Baggie slowly fades into existence.<br />
+Baggie massacres Morbius with his slash.<br />
+<br />
+609H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt; st<br />
+<br />
+===Etir STANDS UP===<br />
+<br />
+609H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt;<br />
+Etir========FAILED BASH ON========YOU<br />
+<br />
+609H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt; bash fe<br />
+<br />
+Baggie attacks Morbius with lightning fast series of attacks that leaves him<br />
+defenseless.<br />
+<br />
+609H 98V 1X 9976C [Me:Good] [Morbius:Fair] Exits:NESWU&gt;<br />
+Baggie annihilates Morbius with his slash.<br />
+Baggie massacres Morbius with his slash.<br />
+Baggie annihilates Morbius with his slash.<br />
+You annihilate Morbius with your smite.<br />
+You annihilate Morbius with your smite.<br />
+Morbius misses you with his hit.<br />
+Etir cleaves YOU very hard.<br />
+Fe cleaves YOU very hard.<br />
+<br />
+583H 98V 1X 9976C [Me:Good] [Morbius:V.Bad] Exits:NESWU&gt;<br />
+Morbius spasms as Baggie places his hand on Morbius's chest.<br />
+Morbius shivers and begins to grow extremely pale.<br />
+<br />
+583H 98V 1X 9976C [Me:Good] [Morbius:Awful] Exits:NESWU&gt; You can't do that<br />
+while SITTING.<br />
+<br />
+583H 98V 1X 9976C [Me:Good] [Morbius:Awful] Exits:NESWU&gt; =====YOU STAND<br />
+UP=====<br />
+<br />
+583H 98V 1X 9976C [Me:Good] [Morbius:Awful] Exits:NESWU&gt;<br />
+YOU========BASHED========Fe<br />
+<br />
+583H 98V 1X 9976C [Me:Good] [Morbius:Awful] Exits:NESWU&gt; bash fe<br />
+<br />
+Baggie massacres Morbius with his slash.<br />
+Baggie slashes Morbius extremely hard.<br />
+Baggie massacres Morbius with his slash.<br />
+You receive 0 experience.<br />
+Morbius is dead! R.I.P.<br />
+Etir cleaves YOU extremely hard.<br />
+Fe cleaves YOU extremely hard.<br />
+The death cry of Morbius echoes from somewhere nearby...<br />
+Fe stops following Morbius.<br />
+Morbius now follows Fe.<br />
+Fe is the new leader of Morbius's group.<br />
+Morbius stops following Fe.<br />
+You direct your attention to Etir.<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+Baggie gets a large pile of coins from the corpse of Morbius.<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+Baggie slowly fades into existence.<br />
+Baggie comes out of hiding.<br />
+Baggie massacres Fe with his slash.<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+Baggie attacks Fe with lightning fast series of attacks that leaves him<br />
+defenseless.<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+===Etir STANDS UP===<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+Etir========FAILED BASH ON========YOU<br />
+<br />
+552H 98V 1X 9976C [Me:Fair] [Etir:Perfect] Exits:NESWU&gt;<br />
+Baggie obliterates Fe with his slash.<br />
+Baggie massacres Fe with his slash.<br />
+Baggie annihilates Fe with his slash.<br />
+You annihilate Etir with your smite.<br />
+You annihilate Etir with your smite.<br />
+Etir cleaves YOU extremely hard.<br />
+Fe cleaves YOU very hard.<br />
+<br />
+524H 98V 1X 9976C [Me:Fair] [Etir:Good] Exits:NESWU&gt;<br />
+Baggie gets a crystal bracelet from the corpse of Morbius.<br />
+Baggie gets a cloth belt pack from the corpse of Morbius.<br />
+Baggie gets a furry white cloak from the corpse of Morbius.<br />
+Baggie gets a pair of dirty grey pants from the corpse of Morbius.<br />
+Baggie gets a small circlet of bronze from the corpse of Morbius.<br />
+Baggie is zapped by a pure white breastplate and instantly drops it.<br />
+Baggie gets a bright ball of light from the corpse of Morbius.<br />
+Baggie gets a renegade's robe from the corpse of Morbius.<br />
+Baggie gets a small first-aid kit from the corpse of Morbius.<br />
+Baggie gets a milky potion of see invisible from the corpse of Morbius.<br />
+Baggie gets a milky potion of see invisible from the corpse of Morbius.<br />
+Baggie gets a glowing scroll of recall from the corpse of Morbius.<br />
+Baggie gets a small canteen from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+Baggie gets a putrid potion from the corpse of Morbius.<br />
+<br />
+524H 98V 1X 9976C [Me:Fair] [Etir:Good] Exits:NESWU&gt; bash etir<br />
+<br />
+Baggie gets a scroll from his chest.<br />
+<br />
+524H 98V 1X 9976C [Me:Fair] [Etir:Good] Exits:NESWU&gt; YOU MISSED<br />
+BASH&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;ON&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Fe<br />
+stand<br />
+<br />
+524H 98V 1X 9976C [Me:Fair] [Etir:Good] Exits:NESWU&gt;<br />
+Baggie gets a scroll from his chest.<br />
+<br />
+524H 98V 1X 9976C [Me:Fair] [Etir:Good] Exits:NESWU&gt;<br />
+Baggie massacres Fe with his slash.<br />
+Baggie annihilates Fe with his slash.<br />
+Baggie annihilates Fe with his slash.<br />
+You obliterate Etir with your smite.<br />
+You annihilate Etir with your smite.<br />
+Etir cleaves YOU extremely hard.<br />
+Fe cleaves YOU extremely hard.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Etir:Fair] Exits:NESWU&gt;<br />
+===Fe STANDS UP===<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Etir:Fair] Exits:NESWU&gt;<br />
+Baggie gets a potion from his chest.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Etir:Fair] Exits:NESWU&gt;<br />
+Baggie gets a potion from his chest.<br />
+Fe gets an engraved gold necklace from the corpse of Morbius.<br />
+Fe gets a putrid potion from the corpse of Morbius.<br />
+Fe gets a putrid potion from the corpse of Morbius.<br />
+Fe gets a putrid potion from the corpse of Morbius.<br />
+Fe gets a putrid potion from the corpse of Morbius.<br />
+Fe gets a putrid potion from the corpse of Morbius.<br />
+Fe gets a small wooden chest from the corpse of Morbius.<br />
+Fe gets a loaf of waybread from the corpse of Morbius.<br />
+Fe gets a loaf of waybread from the corpse of Morbius.<br />
+Fe gets a loaf of waybread from the corpse of Morbius.<br />
+Fe gets a small canteen from the corpse of Morbius.<br />
+Fe gets a small canteen from the corpse of Morbius.<br />
+Fe gets a small canteen from the corpse of Morbius.<br />
+Fe gets a glowing scroll of recall from the corpse of Morbius.<br />
+Fe gets a glowing scroll of recall from the corpse of Morbius.<br />
+Fe gets a red silk ribbon from the corpse of Morbius.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Etir:Fair] Exits:NESWU&gt; bash etir<br />
+<br />
+Baggie panics, and attempts to flee.<br />
+Baggie flies up.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Etir:Fair] Exits:NESWU&gt;<br />
+Etir sinks gently to the ground.<br />
+Etir stops using a small black orb.<br />
+Etir grabs a glowing scroll of recall.<br />
+Etir recites a glowing scroll of recall.<br />
+Etir disappears.<br />
+You direct your attention to Fe.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Fe:Fair] Exits:NESWU&gt; You can't do that while<br />
+SITTING.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Fe:Fair] Exits:NESWU&gt; =====YOU STAND UP=====<br />
+You couldn't find what you were looking for.<br />
+<br />
+486H 98V 1X 9976C [Me:Fair] [Fe:Fair] Exits:NESWU&gt;<br />
+Fe panics, and attempts to flee.<br />
+Fe flies west.<br />
+<br />
+486H 98V 1X 9976C Exits:NESWU&gt;<br />
+Baggie flies in from above.<br />
+<br />
+486H 98V 1X 9976C Exits:NESWU&gt; bash fe<br />
+You couldn't find what you were looking for
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1265'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1265">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1265">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

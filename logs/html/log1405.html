@@ -1,0 +1,3337 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1405-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1405'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+MASSIVE fight in kal</font></b>
+<p>
+POV: 
+Nistur<p>
+Log Rating:
+1.6250<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+I don't know who won, but we got out with orb.</i>
+<p>
+<p>
+
+Looking east:<br />
+You see nothing special.<br />
+Tracer the Female Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Laureen the Male Hylar Dwarf is standing here. (flying)<br />
+Harb the Male Human is standing here. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying) (invisible)<br />
+Pryer Fireforge, Ancient Blood Sea Pirate Captain is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+516H 132V 8490800X 1142C Exits:E&gt; e<br />
+Cicero flies in from the west.<br />
+Mezzanine flies in from the west.<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here. (flying) (invisible) (red aura)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is standing here. (flying) (invisible)<br />
+Tracer the Female Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying) (invisible)<br />
+Pryer Fireforge, Ancient Blood Sea Pirate Captain is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+516H 131V 8490800X 1142C Exits:NESW&gt; ki pryer<br />
+You miss Pryer with your slash.<br />
+<br />
+516H 131V 8490800X 1142C [Nistur:Perfect] [Pryer:Perfect] Exits:NESW&gt; <br />
+Mezzanine slowly fades into existence.<br />
+Pryer steps aside as Mezzanine attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+516H 131V 8490800X 1142C [Nistur:Perfect] [Pryer:Perfect] Exits:NESW&gt; <br />
+Lanttu barrels into you with his charge, but you manage to stay on your feet.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Perfect] Exits:NESW&gt; <br />
+Yuda flies in from the west.<br />
+Dralan flies in from the west.<br />
+Aime flies in from the west.<br />
+Llanth flies in from the west.<br />
+Eleza flies in from the west.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Perfect] Exits:NESW&gt; <br />
+Yuda focuses harshly on Pryer and utters some strange words.<br />
+Yuda slowly fades into existence.<br />
+Pryer cries out in pain as Yuda grabs her.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Aime focuses harshly on Pryer and utters some strange words.<br />
+Aime slowly fades into existence.<br />
+Flesh burns as Aime enshrouds Pryer in a cloak of flames.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Tracer focuses harshly on Cicero and utters some strange words.<br />
+Cicero suddenly becomes very quiet.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Llanth steps aside as Rafal attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Azar focuses harshly on Yuda and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Flesh burns as Azar enshrouds Yuda in a cloak of flames.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Silvia focuses harshly on Yuda and utters some strange words.<br />
+Flesh burns as Silvia enshrouds Yuda in a cloak of flames.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Maxmillian stabs Yuda extremely hard.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Dralan focuses on Cicero and utters some strange words.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Laureen flies in from the west.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Cicero slowly fades into existence.<br />
+Pryer steps aside as Cicero attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Fair] Exits:NESW&gt; <br />
+Eleza focuses harshly on Pryer and utters some strange words.<br />
+Eleza slowly fades into existence.<br />
+The sound of bones cracking echoes as Eleza's force bolt slams into Pryer.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:V.Bad] Exits:NESW&gt; <br />
+Koharo slowly fades into existence.<br />
+Cicero steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:V.Bad] Exits:NESW&gt; st<br />
+<br />
+Kiara focuses harshly on Yuda and utters some strange words.<br />
+Kiara slowly fades into existence.<br />
+Yuda wavers under the impact of the lightning bolt sent by Kiara.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:V.Bad] Exits:NESW&gt; <br />
+Yuda steps aside as Laureen attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:V.Bad] Exits:NESW&gt; <br />
+Revs flies in from the west.<br />
+A knight of the sword looks at Laureen and yells  'There's the scoundrel!'<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:V.Bad] Exits:NESW&gt; <br />
+Revs focuses harshly on Pryer and utters some strange words.<br />
+Revs slowly fades into existence.<br />
+Flesh burns as Revs enshrouds Pryer in a cloak of flames.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Awful] Exits:NESW&gt; <br />
+Buck slowly fades into existence.<br />
+Buck misses Cicero with his cleave.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Awful] Exits:NESW&gt; <br />
+Llanth focuses on Yuda and utters some strange words.<br />
+Llanth heals Yuda.<br />
+<br />
+493H 131V 8490800X 1142C [Nistur:V.Good] [Pryer:Awful] Exits:NESW&gt; <br />
+A knight of the sword looks at Laureen and yells  'There's the scoundrel!'<br />
+Buck misses Cicero with his cleave.<br />
+Laureen slashes Yuda hard.<br />
+Koharo cleaves Cicero very hard.<br />
+Cicero massacres Pryer with his cleave.<br />
+Pryer is mortally wounded, and will die soon, if not aided.<br />
+Cicero obliterates Pryer with his cleave.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Pryer is dead! R.I.P.<br />
+Maxmillian stabs Yuda extremely hard.<br />
+Azar misses Yuda with his hit.<br />
+Yuda whips Azar very hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+A knight of the sword massacres Mezzanine with his slash.<br />
+Lanttu cleaves YOU extremely hard.<br />
+*Whoosh!* Mezzanine's slash almost decapitates Pryer!<br />
+The death cry of Pryer echoes from somewhere nearby...<br />
+Pryer stops following Rold.<br />
+Hakimm stops following Pryer.<br />
+You direct your attention to Lanttu.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; <br />
+Harb gets a small pile of coins from the corpse of Pryer.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; <br />
+Hakimm gets an arm of the marble golem from the corpse of Pryer.<br />
+Hakimm gets a scroll of recall from the corpse of Pryer.<br />
+Hakimm gets a glowing scroll of recall from the corpse of Pryer.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; ki kiara<br />
+You are already standing.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; The corpse doesn't seem to <br />
+have what you are looking for.<br />
+Harb comes out of hiding.<br />
+Harb massacres Yuda with his slash.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; You do the best you can!<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; <br />
+Tracer focuses harshly on Cicero and utters some strange words.<br />
+Flesh burns as Tracer enshrouds Cicero in a cloak of flames.<br />
+Yuda panics, and attempts to flee.<br />
+Yuda flies north.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; av legs<br />
+You focus your purity on Lanttu's leg!<br />
+You focus on Lanttu's legs, but are thwarted.<br />
+Dralan focuses on Mezzanine and utters some strange words.<br />
+Cicero stands up.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; <br />
+Artie flies in from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:Perfect] Exits:NESW&gt; grou<br />
+<br />
+You massacre Lanttu with your slash.<br />
+Cicero cleaves Buck extremely hard.<br />
+Cicero misses Buck with his cleave.<br />
+Mezzanine massacres a knight of the sword with his slash.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Buck misses Cicero with his cleave.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+Llanth bludgeons Rafal extremely hard.<br />
+A knight of the sword annihilates Mezzanine with his slash.<br />
+Lanttu misses you with his cleave.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Rold crashes into Artie in a thundering collision, knocking him to the ground!<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Cicero steps aside as Buck attempts a bash, stumbles, and falls flat on his face.<br />
+Mezzanine stands up.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Aime misses Lanttu with her hit.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Lanttu charges at you, but you manage to move away.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Cicero panics, and attempts to flee.<br />
+Cicero leaves north.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Eleza focuses harshly on Rold and utters some strange words.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Hakimm focuses harshly on Artie and utters some strange words.<br />
+Artie is caught in some of Hakimm's acid!<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Rafal stands up.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; A knight of the sword looks <br />
+at Aime and yells  'There's the scoundrel!'<br />
+Maxmillian misses Artie with his stab.<br />
+Llanth steps aside as Rafal attempts a bash, stumbles, and falls flat on his face.<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Yuda             good      rested    fighting   Y   N    N    N     0   12<br />
+  Dralan           perfect   rested    standing   Y   Y    N    Y     1    2<br />
+  Revs             v.good    rested    standing   Y   Y    N    Y     1    1<br />
+  Aime             perfect   rested    fighting   Y   N    N    Y     0    6<br />
+  Hodor            perfect   rested    standing   Y   Y    N    N     0    0<br />
+  Llanth           v.good    rested    fighting   Y   N    N    Y     1    3<br />
+  Eleza            perfect   rested    standing   Y   N    N    Y     1    2<br />
+  Nistur           v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Cicero           v.good    rested    standing   N   N    N    N     0    0<br />
+  Mezzanine        v.good    rested    fighting   Y   N    N    Y     0    0<br />
+Harb comes out of hiding.<br />
+Harb massacres Artie with his slash.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Cicero arrives from the north.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Tracer focuses harshly on Revs and utters some strange words.<br />
+Flesh burns as Tracer enshrouds Revs in a cloak of flames.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; st<br />
+You are already standing.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Cicero crashes into Rold in a thundering collision, knocking him to the ground!<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Koharo stands up.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; l<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+The corpse of Pryer is lying here.<br />
+Cicero Dume, Ancient Spear of the Blood Seas is standing here, fighting Rold.<br />
+Artie Stormhammer, Blood Sea Tyrant is sitting here, fighting Rold. (flying)<br />
+Revs, Instigating Random Violence is standing here, fighting Tracer. (flying)<br />
+. . . has a tough exterior.<br />
+Laureen the Male Hylar Dwarf is sitting here. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is standing here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting a knight of the sword. (flying) (re<br />
+d aura)<br />
+Tracer the Female Human is standing here, fighting Revs. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying)<br />
+Koharo Maelstrom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Artie. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is sitting here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting YOU. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Mezzanine.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Laureen stands up.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Azar focuses harshly on Artie and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Flesh burns as Azar enshrouds Artie in a cloak of flames.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Dralan slowly fades into existence.<br />
+Dralan misses Lanttu with his pierce.<br />
+<br />
+487H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Dralan misses Lanttu with his pierce.<br />
+Cicero massacres Rold with his cleave.<br />
+Tracer crushes Revs hard.<br />
+Harb massacres Artie with his slash.<br />
+Maxmillian misses Artie with his stab.<br />
+Aime misses Lanttu with her hit.<br />
+Rold massacres Artie with his slash.<br />
+Artie misses Rold with his bludgeon.<br />
+You massacre Lanttu with your slash.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Rafal massacres Llanth with his crush.<br />
+A knight of the sword massacres Mezzanine with his slash.<br />
+A knight of the sword massacres Mezzanine with his slash.<br />
+Lanttu cleaves YOU extremely hard.<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Artie and utters some strange words.<br />
+Artie wavers under the impact of the lightning bolt sent by Kiara.<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Yuda flies in from the north.<br />
+A knight of the sword looks at Cicero and yells  'There's the scoundrel!'<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Artie steps aside as Laureen attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; ki lanttu<br />
+<br />
+Mezzanine crashes into Rold in a thundering collision, knocking him to the ground!<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Silvia focuses harshly on Artie and utters some strange words.<br />
+Flesh burns as Silvia enshrouds Artie in a cloak of flames.<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Marial flies in from the south.<br />
+A knight of the sword looks at Cicero and yells  'There's the scoundrel!'<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; You do the best you can!<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; <br />
+Yuda utters some strange words.<br />
+Yuda heals Yuda.<br />
+<br />
+467H 132V 8490800X 1142C [Nistur:V.Good] [Lanttu:V.Good] Exits:NESW&gt; flee<br />
+You flee head over heels.<br />
+The Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A tasty looking sandwich is here.<br />
+A shovel is lying on the ground.<br />
+flee<br />
+A large bulletin board is mounted on a wall here.<br />
+<br />
+467H 131V 8490800X 1142C Exits:E&gt; You're not fighting, why bother fleeing?<br />
+<br />
+467H 131V 8490800X 1142C Exits:E&gt; sca<br />
+<br />
+Llanth tells your group 'heal &lt;&lt;&lt;&lt; ------- Disrupted!'<br />
+<br />
+467H 131V 8490800X 1142C Exits:E&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Marial, Blood Sea Wench is standing here. (flying)<br />
+Yuda, Blood Sea Emperor is standing here. (flying) (red aura)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is standing here, fighting Rold.<br />
+Artie Stormhammer, Blood Sea Tyrant is sitting here, fighting Rold. (flying)<br />
+Revs, Instigating Random Violence is standing here, fighting Tracer. (flying)<br />
+. . . has a tough exterior.<br />
+Laureen the Male Hylar Dwarf is sitting here, fighting Artie. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is standing here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here, fighting Lanttu. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting a knight of the sword. (flying) (re<br />
+d aura)<br />
+Tracer the Female Human is standing here, fighting Revs. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying) (invisible)<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Artie. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is sitting here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting Dralan. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Mezzanine.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+467H 131V 8490800X 1142C Exits:E&gt; e<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+The corpse of Pryer is lying here.<br />
+Marial, Blood Sea Wench is standing here. (flying)<br />
+Yuda, Blood Sea Emperor is standing here. (flying) (red aura)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is standing here, fighting Rold.<br />
+Artie Stormhammer, Blood Sea Tyrant is sitting here, fighting Rold. (flying)<br />
+Revs, Instigating Random Violence is standing here, fighting Tracer. (flying)<br />
+. . . has a tough exterior.<br />
+Laureen the Male Hylar Dwarf is sitting here, fighting Artie. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is standing here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting a knight of the sword. (flying) (re<br />
+d aura)<br />
+Tracer the Female Human is standing here, fighting Revs. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying) (invisible)<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Artie. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is sitting here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting Dralan. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Artie. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Mezzanine.<br />
+A knight of the sword looks at Cicero and yells  'There's the scoundrel!'<br />
+<br />
+467H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Tracer focuses harshly on Revs and utters some strange words.<br />
+Flesh burns as Tracer enshrouds Revs in a cloak of flames.<br />
+<br />
+467H 130V 8490800X 1142C Exits:NESW&gt; ki rafal<br />
+You massacre Rafal with your slash.<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Maxmillian focuses his purity on Artie's leg!<br />
+Maxmillian forces Artie to the ground.<br />
+Leonard flies in from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Aime focuses harshly on Lanttu and utters some strange words.<br />
+Flesh burns as Aime enshrouds Lanttu in a cloak of flames.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Azar focuses harshly on Artie and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Flesh burns as Azar enshrouds Artie in a cloak of flames.<br />
+Leonard focuses harshly on Yuda and utters some strange words.<br />
+Yuda cries out in pain as Leonard grabs him.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+A knight of the sword looks at Leonard and yells  'There's the scoundrel!'<br />
+Maxmillian deftly steps in front of Leonard, pushing into the frey.<br />
+Maxmillian heroically rescues Leonard.<br />
+Maxmillian deflects part of Yuda's blow with his shield.<br />
+Yuda whips Maxmillian very hard.<br />
+Maxmillian massacres Yuda with his stab.<br />
+You massacre Rafal with your slash.<br />
+Lanttu cleaves Dralan very hard.<br />
+Laureen slashes Artie very hard.<br />
+Dralan misses Lanttu with his pierce.<br />
+Cicero misses Rold with his cleave.<br />
+Cicero massacres Rold with his cleave.<br />
+Harb massacres Artie with his slash.<br />
+Rold annihilates Artie with his slash.<br />
+Artie is stunned, but will likely regain consciousness again.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+A knight of the sword massacres Mezzanine with his slash.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Artie and utters some strange words.<br />
+Artie receives the full blast of a lightning bolt from Kiara ... and is no more.<br />
+get coins corpse<br />
+Artie is dead! R.I.P.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Mezzanine crashes into Tracer in a thundering collision, knocking her to the ground!<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Marial focuses on Cicero and utters some strange words.<br />
+Marial heals Cicero.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+The death cry of Artie echoes from somewhere nearby...<br />
+Dralan focuses harshly on Lanttu and utters some strange words.<br />
+The sound of bones cracking echoes as Dralan's force bolt slams into Lanttu.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Harb gets a large pile of coins from the corpse of Artie.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Buck stands up.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Buck slowly fades into existence.<br />
+Buck crashes into Cicero in a thundering collision, knocking him to the ground!<br />
+Yuda gets a shaman's staff from the corpse of Artie.<br />
+Yuda is zapped by a malachite encrusted bracelet and instantly drops it.<br />
+Yuda gets a maniple from the corpse of Artie.<br />
+Yuda gets a black silk sash from the corpse of Artie.<br />
+Yuda gets an azure silken robe from the corpse of Artie.<br />
+Yuda gets a pair of black leather sleeves from the corpse of Artie.<br />
+Yuda gets a pair of regal elven gauntlets from the corpse of Artie.<br />
+Yuda gets a pair of blue shoes from the corpse of Artie.<br />
+Yuda gets a pair of black cloth pants from the corpse of Artie.<br />
+Yuda is zapped by a platinum gilt helm and instantly drops it.<br />
+Yuda gets tree bark armor from the corpse of Artie.<br />
+Yuda gets an obsidian amulet from the corpse of Artie.<br />
+Yuda gets a small platinum talisman from the corpse of Artie.<br />
+Yuda gets a granite ring from the corpse of Artie.<br />
+Yuda gets a granite ring from the corpse of Artie.<br />
+Yuda gets a glowing scroll of recall from the corpse of Artie.<br />
+Yuda gets a glowing scroll of recall from the corpse of Artie.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Harb gets the starjewel from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a loaf of waybread from the corpse of Artie.<br />
+Harb gets a small canteen from the corpse of Artie.<br />
+Harb gets a small canteen from the corpse of Artie.<br />
+Harb gets a small canteen from the corpse of Artie.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Revs panics, and attempts to flee.<br />
+Revs flies east.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Silvia gets a small canteen from the corpse of Artie.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Yuda utters some strange words.<br />
+Yuda heals Yuda.<br />
+<br />
+467H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Lanttu barrels into you with his charge, but you manage to stay on your feet.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Rafal stands up.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Rafal gets a cuprite sample from the corpse of Artie.<br />
+Rafal gets a small wooden chest from the corpse of Artie.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Llanth focuses on Yuda and utters some strange words.<br />
+Llanth heals Yuda.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Hakimm focuses harshly on Yuda and utters some strange words.<br />
+Yuda is caught in some of Hakimm's acid!<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Fazzy flies in from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; l<br />
+<br />
+Eleza focuses harshly on Rold and utters some strange words.<br />
+The sound of bones cracking echoes as Eleza's force bolt slams into Rold.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Revs flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; The corpse doesn't seem to have w<br />
+hat you are looking for.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Revs, Instigating Random Violence is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Fazzy the Male Wild Elf is standing here. (flying) (red aura)<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Marial, Blood Sea Wench is standing here. (flying)<br />
+Yuda, Blood Sea Emperor is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is sitting here, fighting Rold.<br />
+Laureen the Male Hylar Dwarf is sitting here. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is standing here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here, fighting Lanttu. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting a knight of the sword. (flying) (re<br />
+d aura)<br />
+Tracer the Female Human is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here, fighting Cicero. (flying)<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+You see the outline of a life form here, carrying: an enchanted rat bone charm; the starjewel; a <br />
+glowing scroll of recall; a glowing scroll of recall; a crystal shard necklace; the golden axe.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting Dralan. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Yuda. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Mezzanine.<br />
+Aime focuses harshly on Lanttu and utters some strange words.<br />
+Flesh burns as Aime enshrouds Lanttu in a cloak of flames.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Good] [Rafal:Good] Exits:NESW&gt; <br />
+Buck misses Cicero with his cleave.<br />
+Rold massacres Cicero with his slash.<br />
+Maxmillian massacres Yuda with his stab.<br />
+You slash Rafal extremely hard.<br />
+Lanttu misses Dralan with his cleave.<br />
+Cicero massacres Rold with his cleave.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Mezzanine slashes a knight of the sword extremely hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+A knight of the sword massacres Mezzanine with his slash.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Rafal crashes into Llanth in a thundering collision, knocking him to the ground!<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Laureen stands up.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Dralan focuses harshly on Lanttu and utters some strange words.<br />
+The sound of bones cracking echoes as Dralan's force bolt slams into Lanttu.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; ki<br />
+<br />
+Azar focuses harshly on Marial and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Flesh burns as Azar enshrouds Marial in a cloak of flames.<br />
+Mezzanine panics, and attempts to flee.<br />
+Mezzanine flies east.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; Hit whom?<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Yuda and utters some strange words.<br />
+Yuda wavers under the impact of the lightning bolt sent by Kiara.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; l<br />
+<br />
+Slyther arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Slyther the Male Human is standing here. (red aura)<br />
+Revs, Instigating Random Violence is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Fazzy the Male Wild Elf is standing here. (flying) (red aura)<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Marial, Blood Sea Wench is standing here, fighting Azar. (flying)<br />
+Yuda, Blood Sea Emperor is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is sitting here, fighting Rold.<br />
+Laureen the Male Hylar Dwarf is standing here. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is sitting here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here, fighting Lanttu. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Tracer the Female Human is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here, fighting Cicero. (flying)<br />
+Koharo Maelstrom is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+You see the outline of a life form here, carrying: an enchanted rat bone charm; the starjewel; a <br />
+glowing scroll of recall; a glowing scroll of recall; a crystal shard necklace; the golden axe.<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here, fighting Marial. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting Dralan. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Yuda. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting YOU.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Leonard focuses harshly on Yuda and utters some strange words.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Yuda steps aside as Laureen attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Hodor flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Mezzanine flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Yuda panics, and attempts to flee.<br />
+Yuda flies west.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Koharo slowly fades into existence.<br />
+Cicero steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+444H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Fazzy flies east.<br />
+Hakimm focuses harshly on you and utters some strange words.<br />
+You are caught in some of Hakimm's acid!<br />
+<br />
+406H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Revs focuses harshly on Laureen and utters some strange words.<br />
+Revs slowly fades into existence.<br />
+Flesh burns as Revs enshrouds Laureen in a cloak of flames.<br />
+<br />
+406H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Slyther leaves east.<br />
+<br />
+406H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Maxmillian steps aside as Mezzanine attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+406H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; ki<br />
+<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+Maxmillian massacres Mezzanine with his stab.<br />
+Revs bludgeons Laureen hard.<br />
+Laureen slashes Revs hard.<br />
+Koharo cleaves Cicero extremely hard.<br />
+A knight of the sword slashes YOU very hard.<br />
+Azar misses Marial with his hit.<br />
+Buck misses Cicero with his cleave.<br />
+Rold annihilates Cicero with his slash.<br />
+You slash Rafal extremely hard.<br />
+Lanttu cleaves Dralan extremely hard.<br />
+Cicero massacres Rold with his cleave.<br />
+Cicero misses Rold with his cleave.<br />
+Aime misses Lanttu with her hit.<br />
+Rafal massacres Llanth with his crush.<br />
+Llanth bludgeons Rafal hard.<br />
+Aime focuses harshly on Lanttu and utters some strange words.<br />
+Flesh burns as Aime enshrouds Lanttu in a cloak of flames.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; Hit whom?<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; l<br />
+<br />
+Yuda flies in from the west.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+Harb comes out of hiding.<br />
+Harb misses Yuda with his slash.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Yuda, Blood Sea Emperor is standing here, fighting Harb. (flying) (red aura)<br />
+Mezzanine, Blood Sea Inertia Creep is sitting here, fighting Maxmillian. (flying) (red aura)<br />
+Hodor Hodor is standing here. (flying) (invisible)<br />
+Revs, Instigating Random Violence is standing here, fighting Laureen. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Marial, Blood Sea Wench is standing here, fighting Azar. (flying)<br />
+Cicero Dume, Ancient Spear of the Blood Seas is sitting here, fighting Rold.<br />
+Laureen the Male Hylar Dwarf is sitting here, fighting Revs. (flying)<br />
+Eleza Lipetskaya, Rage of the Great Blood Sea is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Llanth the Male Gnome is sitting here, fighting Rafal. (flying) (red aura)<br />
+Aime the Female Half Elf is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is standing here, fighting Lanttu. (flying)<br />
+. . . has a tough exterior.<br />
+Tracer the Female Human is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here, fighting Cicero. (flying)<br />
+Koharo Maelstrom is sitting here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Yuda. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Azar the Male Half Elf is standing here, fighting Marial. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Lanttu Laatikko is standing here, fighting Dralan. (flying) (red aura)<br />
+Maxmillian the Male Human is standing here, fighting Mezzanine. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting YOU.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Good] Exits:NESW&gt; <br />
+Eleza focuses harshly on Rafal and utters some strange words.<br />
+The sound of bones cracking echoes as Eleza's force bolt slams into Rafal.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; <br />
+Rold stands up.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; <br />
+Cicero stands up.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; st<br />
+<br />
+Silvia focuses harshly on Mezzanine and utters some strange words.<br />
+Flesh burns as Silvia enshrouds Mezzanine in a cloak of flames.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; You are already standing.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; <br />
+Dralan focuses harshly on Lanttu and utters some strange words.<br />
+The sound of bones cracking echoes as Dralan's force bolt slams into Lanttu.<br />
+Rold crashes into Yuda in a thundering collision, knocking him to the ground!<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; flee<br />
+<br />
+Marial panics, and attempts to flee.<br />
+Marial flies east.<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; <br />
+Azar points a sphere towards Yuda and a flurry of snow pours forth.<br />
+<br />
+<br />
+395H 130V 8490800X 1142C [Llanth:Fair] [Rafal:Fair] Exits:NESW&gt; flee<br />
+You flee head over heels.<br />
+The Lodge's Cafe<br />
+     The room is filled with small tables. These tables are occupied by<br />
+guests at the lodge who have come here to relax and get a cup of home<br />
+brewed coffee. A small doorway leads south into the entry way of the<br />
+lodge.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+<br />
+395H 129V 8490800X 1142C Exits:S&gt; You're not fighting, why bother fleeing?<br />
+<br />
+395H 129V 8490800X 1142C Exits:S&gt; sca<br />
+395H 129V 8490800X 1142C Exits:S&gt; grou<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Yuda             v.bad     rested    fighting   Y   N    N    N     0   22<br />
+  Dralan           good      rested    fighting   Y   N    N    N     1    5<br />
+  Revs             fair      rested    fighting   Y   N    N    N     1    2<br />
+  Aime             perfect   rested    fighting   Y   N    N    N     0   12<br />
+  Hodor            perfect   rested    standing   Y   Y    N    N     0    0<br />
+  Llanth           fair      rested    fighting   Y   N    N    N     1    5<br />
+  Eleza            perfect   rested    standing   Y   N    N    N     1    4<br />
+  Nistur           good      rested    standing   Y   N    N    Y     0    0<br />
+  Cicero           good      rested    fighting   N   N    N    N     0    0<br />
+  Mezzanine        fair      rested    fighting   Y   N    N    N     0    0<br />
+<br />
+395H 129V 8490800X 1142C Exits:S&gt; s<br />
+Traveler's Lodge<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+395H 128V 8490800X 1142C Exits:NESW&gt; <br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+You step in front of Yuda and direct your attacks at Harb.<br />
+What a self-sacrificing act! You're such a hero!<br />
+You deflect part of Harb's blow with your shield.<br />
+Harb slashes YOU extremely hard.<br />
+You massacre Harb with your slash.<br />
+Hodor massacres Laureen with his pierce.<br />
+A knight of the sword annihilates Mezzanine with his slash.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+Maxmillian massacres Mezzanine with his stab.<br />
+Laureen slashes Revs hard.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Buck misses Cicero with his cleave.<br />
+Rold slashes Cicero extremely hard.<br />
+Lanttu massacres Dralan with his cleave.<br />
+Cicero misses Rold with his cleave.<br />
+Rafal massacres Llanth with his crush.<br />
+Llanth bludgeons Rafal hard.<br />
+<br />
+380H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Marial flies in from the east.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+380H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Aime focuses harshly on Lanttu and utters some strange words.<br />
+Lanttu dies a fiery death as Aime enshrouds him in a cloak of flame.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Lanttu is dead! R.I.P.<br />
+Hakimm focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Hakimm has reached its goal.<br />
+<br />
+346H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+The death cry of Lanttu echoes from somewhere nearby...<br />
+Lanttu stops following Maxmillian.<br />
+Eleza focuses harshly on Rafal and utters some strange words.<br />
+The sound of bones cracking echoes as Eleza's force bolt slams into Rafal.<br />
+<br />
+346H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Revs focuses harshly on Laureen and utters some strange words.<br />
+Flesh burns as Revs enshrouds Laureen in a cloak of flames.<br />
+<br />
+346H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; lay yuda<br />
+<br />
+Harb charges into you and knocks you to the ground.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Marial flies south.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Silvia focuses harshly on Mezzanine and utters some strange words.<br />
+Flesh burns as Silvia enshrouds Mezzanine in a cloak of flames.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+Tracer stands up.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; get all yuda<br />
+<br />
+Laureen stands up.<br />
+Leonard gets a large pile of coins from the corpse of Lanttu.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Tracer focuses harshly on Yuda and utters some strange words.<br />
+Tracer's spell causes a deafening fist of air to pummel Yuda!<br />
+Azar focuses harshly on Yuda and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Flesh burns as Azar enshrouds Yuda in a cloak of flames.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; st<br />
+<br />
+Dralan slowly fades into existence.<br />
+Dralan barely pierces Tracer.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Llanth stands up.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Artie gets a savage two-handed axe from the corpse of Lanttu.<br />
+Artie gets a large copper pickaxe from the corpse of Lanttu.<br />
+Artie gets a waterskin from the corpse of Lanttu.<br />
+Artie gets a waterskin from the corpse of Lanttu.<br />
+Artie gets a waterskin from the corpse of Lanttu.<br />
+Artie gets a waterskin from the corpse of Lanttu.<br />
+Artie gets a loaf of bread from the corpse of Lanttu.<br />
+Artie gets a loaf of bread from the corpse of Lanttu.<br />
+Artie gets a loaf of bread from the corpse of Lanttu.<br />
+Artie gets a milky potion of see invisible from the corpse of Lanttu.<br />
+Artie gets a glowing scroll of recall from the corpse of Lanttu.<br />
+Artie gets a glowing scroll of recall from the corpse of Lanttu.<br />
+Artie gets a steel ice axe from the corpse of Lanttu.<br />
+Artie gets a pair of rough, fingerless gloves from the corpse of Lanttu.<br />
+Koharo stands up.<br />
+Llanth utters some strange words.<br />
+Llanth heals Llanth.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Hodor and utters some strange words.<br />
+Hodor is caught in some of Kiara's acid!<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Cicero steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+334H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Dralan misses Tracer with his pierce.<br />
+Tracer crushes Yuda hard.<br />
+Yuda tangles Tracer's feet with his whip.<br />
+Yuda pulls his whip back, and Tracer tumbles on the ground!<br />
+Yuda whips Tracer very hard.<br />
+Harb massacres YOU with his slash.<br />
+You massacre Harb with your slash.<br />
+Hodor pierces Laureen extremely hard.<br />
+A knight of the sword annihilates Mezzanine with his slash.<br />
+A knight of the sword annihilates Mezzanine with his slash.<br />
+Mezzanine slashes Maxmillian very hard.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+Maxmillian massacres Mezzanine with his stab.<br />
+Laureen slashes Revs hard.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Buck misses Cicero with his cleave.<br />
+Rold massacres Cicero with his slash.<br />
+Cicero misses Rold with his cleave.<br />
+Rafal crushes Llanth extremely hard.<br />
+Mezzanine stands up.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Mezzanine panics, and attempts to flee.<br />
+Mezzanine flies north.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Revs focuses harshly on Laureen and utters some strange words.<br />
+Flesh burns as Revs enshrouds Laureen in a cloak of flames.<br />
+Eleza focuses harshly on Rafal and utters some strange words.<br />
+The sound of bones cracking echoes as Eleza's force bolt slams into Rafal.<br />
+Aime focuses harshly on Azar and utters some strange words.<br />
+Flesh burns as Aime enshrouds Azar in a cloak of flames.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; st<br />
+<br />
+Hakimm focuses harshly on Hodor and utters some strange words.<br />
+Hodor wavers under the impact of the lightning bolt sent by Hakimm.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Mezzanine flies in from the north.<br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; grou<br />
+<br />
+Buck stands up.<br />
+Mezzanine flies south.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Cicero crashes into Rold in a thundering collision, knocking him to the ground!<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+Cicero steps aside as Buck attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Leonard focuses on Rafal and utters some strange words.<br />
+Leonard heals Rafal.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Rafal panics, and attempts to flee.<br />
+Rafal flies north.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Slyther arrives from the east.<br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Yuda stands up.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Maxmillian misses you with his stab.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Azar focuses harshly on Aime and utters some strange words.<br />
+Flesh burns as Azar enshrouds Aime in a cloak of flames.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Yuda panics, and attempts to flee.<br />
+Yuda flies north.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Slyther leaves south.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt;<br />
+Dralan focuses harshly on Tracer and utters some strange words.<br />
+Tracer wavers under the impact of the lightning bolt sent by Dralan.<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Hodor and utters some strange words.<br />
+Hodor is caught in some of Kiara's acid!<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Rafal flies in from the north.<br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+<br />
+302H 128V 8490800X 1142C [Nistur:Fair] [Harb:V.Good] Exits:NESW&gt; <br />
+Tracer misses Dralan with her crush.<br />
+Maxmillian stabs YOU extremely hard.<br />
+Hodor wavers under a knight of the sword's mighty slash!<br />
+A knight of the sword massacres Hodor with his slash.<br />
+Aime misses Azar with her hit.<br />
+Harb massacres YOU with his slash.<br />
+You slash Harb hard.<br />
+Hodor massacres Laureen with his pierce.<br />
+Laureen slashes Revs hard.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Buck cleaves Cicero.<br />
+Rold massacres Cicero with his slash.<br />
+Cicero misses Rold with his cleave.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Marial flies in from the south.<br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Laureen crashes into Revs in a thundering collision, knocking him to the ground!<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Hodor panics, and attempts to flee.<br />
+Hodor flies south.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; flee<br />
+<br />
+Eleza focuses harshly on Rold and utters some strange words.<br />
+Rold wavers under the impact of the lightning bolt sent by Eleza.<br />
+Aime focuses harshly on Azar and utters some strange words.<br />
+Flesh burns as Aime enshrouds Azar in a cloak of flames.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; flee<br />
+<br />
+Harb tries to charge into you, but ends up falling to the ground himself.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Tracer stands up.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; ass cicero<br />
+<br />
+Leonard focuses harshly on Revs and utters some strange words.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Maxmillian attempts to focus on you and fails horribly.<br />
+<br />
+253H 128V 8490800X 1142C [Nistur:Bad] [Harb:Good] Exits:NESW&gt; <br />
+Marial focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+515H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; <br />
+Tracer focuses harshly on Dralan and utters some strange words.<br />
+Dralan winces in pain as Tracer shreds him with a spray of thorns.<br />
+Llanth focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+516H 128V 8490800X 1142C [Nistur:Perfect] [Harb:Good] Exits:NESW&gt; A knight of the sword looks at <br />
+Revs and yells  'There's the scoundrel!'<br />
+A knight of the sword slashes Revs very hard.<br />
+A knight of the sword massacres Revs with his slash.<br />
+Maxmillian stabs YOU very hard.<br />
+Azar misses Aime with his hit.<br />
+Dralan pierces Tracer very hard.<br />
+Harb misses you with his slash.<br />
+You should probably stand up!<br />
+You massacre Harb with your slash.<br />
+Revs misses Laureen with his bludgeon.<br />
+Laureen slashes Revs very hard.<br />
+Koharo cleaves Cicero hard.<br />
+Buck misses Cicero with his cleave.<br />
+Rold massacres Cicero with his slash.<br />
+Cicero misses Rold with his cleave.<br />
+Cicero misses Rold with his cleave.<br />
+Koharo stands up.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; Azar panics, and attempts to fle<br />
+e.<br />
+Azar flies west.<br />
+You can't do that while sitting.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt;<br />
+Mezzanine flies in from the south.<br />
+A knight of the sword looks at Revs and yells  'There's the scoundrel!'<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; <br />
+Mezzanine crashes into Maxmillian in a thundering collision, knocking him to the ground!<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; Koharo crashes into Cicero in a <br />
+thundering collision, knocking him to the ground!<br />
+What are you trying to get from?<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; You stand up.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; You are already standing.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; sca<br />
+<br />
+Yuda flies in from the north.<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; <br />
+Kiara flies north.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; <br />
+Rafal crashes into Llanth in a thundering collision, knocking him to the ground!<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; Dralan focuses harshly on Tracer<br />
+ and utters some strange words.<br />
+Tracer wavers under the impact of the lightning bolt sent by Dralan.<br />
+Eleza focuses harshly on Rold and utters some strange words.<br />
+Rold wavers under the impact of the lightning bolt sent by Eleza.<br />
+Your group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Yuda             v.good    rested    standing   Y   N    N    Y     0   28<br />
+  Dralan           fair      rested    fighting   Y   N    N    Y     1    6<br />
+  Revs             v.bad     rested    fighting   Y   N    N    Y     1    4<br />
+  Aime             good      rested    standing   Y   N    N    Y     0   18<br />
+  Hodor            fair      rested    standing   Y   N    N    N     0    0<br />
+  Llanth           good      rested    fighting   Y   N    N    Y     1    7<br />
+  Eleza            perfect   rested    standing   Y   N    N    Y     1    7<br />
+  Nistur           v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Cicero           bad       rested    fighting   N   N    N    Y     0    0<br />
+  Mezzanine        awful     rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; <br />
+Yuda flies east.<br />
+Aime flies east.<br />
+Eleza flies east.<br />
+<br />
+503H 128V 8490800X 1142C [Nistur:V.Good] [Harb:Good] Exits:NESW&gt; You flee head over heels.<br />
+The Reception<br />
+     This is the reception of the lodge, where you would sign in for a<br />
+room. This is also a very popular place where adventurers sit around and<br />
+share tales of their journeys. Some stairs in the back lead up to the<br />
+quarters.<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+A small metallic canteen has been dropped here.<br />
+Hodor Hodor is standing here. (flying)<br />
+Slyther the Male Human is standing here. (red aura)<br />
+Artie Stormhammer, Blood Sea Tyrant is standing here.<br />
+Nos the Male Human is standing here.<br />
+Xanatos the Male Human is standing here. (flying) (red aura)<br />
+Dromar the Male Human is standing here. (red aura)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+503H 127V 8490800X 1142C Exits:N&gt; You're not fighting, why bother fleeing?<br />
+<br />
+503H 127V 8490800X 1142C Exits:N&gt; They don't seem to be here.<br />
+<br />
+503H 127V 8490800X 1142C Exits:N&gt; n<br />
+<br />
+Slyther says 'whoa'<br />
+<br />
+503H 127V 8490800X 1142C Exits:N&gt; Looking north:<br />
+You see nothing special.<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Marial, Blood Sea Wench is standing here. (flying)<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Revs, Instigating Random Violence is sitting here, fighting Laureen. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Cicero Dume, Ancient Spear of the Blood Seas is sitting here, fighting Rold.<br />
+Laureen the Male Hylar Dwarf is standing here, fighting Revs. (flying)<br />
+Llanth the Male Gnome is sitting here, fighting Rafal. (flying) (red aura)<br />
+Dralan the Male Human is standing here, fighting Tracer. (flying)<br />
+. . . has a tough exterior.<br />
+Tracer the Female Human is standing here, fighting Dralan. (flying)<br />
+. . . has a tough exterior.<br />
+ass cicero<br />
+Buck the Male Hylar Dwarf is sitting here, fighting Cicero. (flying)<br />
+Koharo Maelstrom is standing here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is sitting here. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is sitting here, fighting Cicero. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is sitting here, fighting Mezzanine. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Revs.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+503H 127V 8490800X 1142C Exits:N&gt; Traveler's Lodge<br />
+A knight of the sword looks at Mezzanine and yells  'There's the scoundrel!'<br />
+<br />
+503H 126V 8490800X 1142C Exits:NESW&gt; You miss Rold with your slash.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:V.Bad] [Rold:V.Bad] Exits:NESW&gt; <br />
+Marial focuses on Revs and utters some strange words.<br />
+Marial heals Revs.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:V.Bad] [Rold:V.Bad] Exits:NESW&gt; <br />
+You miss Rold with your slash.<br />
+Maxmillian stabs Mezzanine extremely hard.<br />
+Rafal massacres Llanth with his crush.<br />
+Llanth misses Rafal with his bludgeon.<br />
+Maxmillian blocks Mezzanine's blow with a quick raise of his shield.<br />
+Maxmillian blocks Mezzanine's blow with a quick raise of his shield.<br />
+A knight of the sword massacres Revs with his slash.<br />
+A knight of the sword massacres Revs with his slash.<br />
+Tracer misses Dralan with her crush.<br />
+Revs misses Laureen with his bludgeon.<br />
+Laureen slashes Revs very hard.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Koharo raises a ruby axe high over his head.<br />
+Cicero wavers under the impact of a lightning bolt discharged by an axe.<br />
+Buck misses Cicero with his cleave.<br />
+Rold massacres Cicero with his slash.<br />
+Cicero annihilates Rold with his cleave.<br />
+Cicero massacres Rold with his cleave.<br />
+Tracer utters some strange words.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Buck stands up.<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Cicero steps aside as Buck attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Hodor comes out of hiding.<br />
+Hodor massacres Laureen with his pierce.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Revs stands up.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Cicero stands up.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Revs panics, and attempts to flee.<br />
+Revs flies east.<br />
+Dralan focuses harshly on Tracer and utters some strange words.<br />
+Tracer wavers under the impact of the lightning bolt sent by Dralan.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Laureen panics, and attempts to flee.<br />
+Laureen flies north.<br />
+<br />
+503H 126V 8490800X 1142C [Cicero:Awful] [Rold:V.Bad] Exits:NESW&gt; <br />
+Cicero panics, and attempts to flee.<br />
+Cicero leaves north.<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Rold quaffs a blue potion.<br />
+Rold shudders slightly and looks uncomfortable.<br />
+Rold heals Rold.<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Rold stands up.<br />
+Harb stands up.<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Marial and utters some strange words.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Revs flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Rold crashes into Marial in a thundering collision, knocking her to the ground!<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Cicero arrives from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; gt HEAL CICERO<br />
+<br />
+Cicero leaves east.<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Aime flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Harb comes out of hiding.<br />
+Harb slashes Mezzanine extremely hard.<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Leonard focuses on Rold and utters some strange words.<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:Perfect] Exits:NESW&gt; grou<br />
+You tell your group 'HEAL CICERO'<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:Perfect] Exits:NESW&gt; Your group of 10 members cons<br />
+ists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Yuda             v.good    rested    standing   Y   N    N    N     0   28<br />
+  Dralan           fair      rested    fighting   Y   N    N    Y     1    6<br />
+  Revs             fair      rested    standing   Y   N    N    Y     1    4<br />
+  Aime             good      rested    standing   Y   N    N    Y     0   18<br />
+  Hodor            fair      fatigued  standing   Y   N    N    Y     0    0<br />
+  Llanth           good      rested    fighting   Y   N    N    Y     1    7<br />
+  Eleza            perfect   rested    standing   Y   N    N    N     1    7<br />
+  Nistur           v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Cicero           awful     rested    standing   N   N    N    N     0    0<br />
+  Mezzanine        awful     rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+503H 126V 8490800X 1142C [Nistur:V.Good] [Rold:Perfect] Exits:NESW&gt; <br />
+Harb misses Mezzanine with his slash.<br />
+Kiara misses Marial with her crush.<br />
+Marial barely hits Kiara.<br />
+A knight of the sword misses you with his slash.<br />
+Rold massacres YOU with his slash.<br />
+You slash Rold very hard.<br />
+Maxmillian stabs Mezzanine extremely hard.<br />
+Rafal massacres Llanth with his crush.<br />
+Llanth bludgeons Rafal hard.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Maxmillian blocks Mezzanine's blow with a quick raise of his shield.<br />
+<br />
+472H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; l<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+The corpse of Lanttu is lying here.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Aime the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Revs, Instigating Random Violence is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Hodor Hodor is standing here. (flying)<br />
+Kiara the Female Gnome is standing here, fighting Marial. (flying)<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Marial, Blood Sea Wench is sitting here, fighting Kiara. (flying)<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Llanth the Male Gnome is sitting here, fighting Rafal. (flying) (red aura)<br />
+Dralan the Male Human is standing here, fighting Tracer. (flying)<br />
+. . . has a tough exterior.<br />
+Tracer the Female Human is standing here, fighting Dralan. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying) (invisible)<br />
+Koharo Maelstrom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Mezzanine. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is sitting here, fighting Mezzanine. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting YOU.<br />
+<br />
+472H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Revs focuses harshly on Rold and utters some strange words.<br />
+Revs slowly fades into existence.<br />
+Rold appears to grow stronger.<br />
+Revs enshrouds Rold in a cloak of flames, which has no effect.<br />
+<br />
+472H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; <br />
+Tracer utters some strange words.<br />
+Mezzanine panics, and attempts to flee.<br />
+Mezzanine flies west.<br />
+<br />
+472H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt;<br />
+Koharo slowly fades into existence.<br />
+Aime steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+472H 126V 8490800X 1142C [Nistur:V.Good] [Rold:V.Good] Exits:NESW&gt; flee<br />
+You flee head over heels.<br />
+The Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A tasty looking sandwich is here.<br />
+A shovel is lying on the ground.<br />
+A large bulletin board is mounted on a wall here.<br />
+Mezzanine, Blood Sea Inertia Creep is standing here. (flying) (red aura)<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+. . . has a tough exterior.<br />
+<br />
+472H 125V 8490800X 1142C Exits:E&gt; flee<br />
+<br />
+Mezzanine flies east.<br />
+<br />
+472H 125V 8490800X 1142C Exits:E&gt;<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+472H 125V 8490800X 1142C Exits:E&gt; <br />
+Eleza tells your group 'we win no?'<br />
+<br />
+472H 125V 8490800X 1142C Exits:E&gt; e<br />
+ki leonard<br />
+Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+The corpse of Tracer is lying here.<br />
+The corpse of Lanttu is lying here.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Hodor Hodor is standing here, fighting Laureen. (flying)<br />
+Xanatos the Male Human is standing here. (flying) (red aura)<br />
+Mezzanine, Blood Sea Inertia Creep is standing here. (flying) (red aura)<br />
+Laureen the Male Hylar Dwarf is standing here, fighting Hodor. (flying)<br />
+Aime the Female Half Elf is standing here, fighting Koharo. (flying)<br />
+. . . has a tough exterior.<br />
+Revs, Instigating Random Violence is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kiara the Female Gnome is standing here, fighting Marial. (flying)<br />
+Marial, Blood Sea Wench is sitting here, fighting Kiara. (flying)<br />
+Rafal the Male Human is sitting here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Lord Leonard the Lean, the Lop-Eared Leper Priest is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Llanth the Male Gnome is standing here, fighting Rafal. (flying) (red aura)<br />
+Dralan the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Buck the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+Koharo Maelstrom is sitting here, fighting Aime. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Marial. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is standing here, fighting Aime. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting Kiara.<br />
+A knight of the sword looks at Hodor and yells  'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C Exits:NESW&gt; You slash Leonard very hard.<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Eleza tells your group 'why run'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Silvia gets a spiked steel mace from the corpse of Tracer.<br />
+Silvia gets a purple robe from the corpse of Tracer.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Cicero tells your group 'no fly'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Artie gets a silver amulet from the corpse of Tracer.<br />
+Artie gets a silver amulet from the corpse of Tracer.<br />
+Artie gets a scroll of recall from the corpse of Tracer.<br />
+Artie gets a collection of herbs and bandages from the corpse of Tracer.<br />
+Artie gets a plain-looking spear from the corpse of Tracer.<br />
+Artie gets a loaf of waybread from the corpse of Tracer.<br />
+Artie gets a loaf of waybread from the corpse of Tracer.<br />
+Artie gets a silver amulet from the corpse of Tracer.<br />
+Artie gets a silver amulet from the corpse of Tracer.<br />
+Artie gets a scroll of recall from the corpse of Tracer.<br />
+Artie gets a milky potion of see invisible from the corpse of Tracer.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt;<br />
+Buck slowly fades into existence.<br />
+Buck misses Aime with his cleave.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Shazam arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:V.Good] Exits:NESW&gt; <br />
+Shazam leaves east.<br />
+Mezzanine slashes Leonard extremely hard.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Marial and utters some strange words.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+Kiara aims a magic missile at Marial, who staggers under the blow.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:Good] Exits:NESW&gt; <br />
+Rold crashes into Marial in a thundering collision, knocking her to the ground!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:Good] Exits:NESW&gt; <br />
+Laureen panics, and attempts to flee.<br />
+Laureen flies south.<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Leonard:Good] Exits:NESW&gt; grou<br />
+<br />
+Maxmillian deftly steps in front of Leonard, pushing into the frey.<br />
+Maxmillian heroically rescues Leonard.<br />
+Maxmillian deftly steps in front of Leonard, pushing into the frey.<br />
+Maxmillian heroically rescues Leonard.<br />
+You slash Maxmillian hard.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Rold massacres Marial with his slash.<br />
+get coins corpse<br />
+Marial is dead! R.I.P.<br />
+Buck misses Aime with his cleave.<br />
+A knight of the sword slashes Kiara extremely hard.<br />
+A knight of the sword slashes Kiara extremely hard.<br />
+Koharo cleaves Aime extremely hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+The death cry of Marial echoes from somewhere nearby...<br />
+Marial sinks gently to the ground.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Silvia gets a very large pile of coins from the corpse of Marial.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Dralan gets a delicate crystal ball from the corpse of Marial.<br />
+Dralan gets a gem studded mithril bracer from the corpse of Marial.<br />
+Dralan gets a charred leather belt from the corpse of Marial.<br />
+Dralan gets a sivak's cloak from the corpse of Marial.<br />
+Dralan gets a platinum gilt helm from the corpse of Marial.<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Aime focuses harshly on Koharo and utters some strange words.<br />
+Aime's spell causes a deafening fist of air to pummel Koharo!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Koharo stands up.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Hakimm focuses harshly on you and utters some strange words.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; ki laureen<br />
+<br />
+Aime steps aside as Koharo attempts a bash, stumbles, and falls flat on his face.<br />
+Harb massacres a knight of the sword with his slash.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Hodor comes out of hiding.<br />
+Hodor gives his dagger a quick thrust and twist, as he strikes Leonard in the back with it.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Leonard gets a thick vest of mulehide from the corpse of Marial.<br />
+Leonard is zapped by the cloak of the Kingfisher and instantly drops it.<br />
+Leonard gets a gold and diamond wedding band from the corpse of Marial.<br />
+Leonard gets a small canteen from the corpse of Marial.<br />
+Leonard gets a small canteen from the corpse of Marial.<br />
+Leonard gets a small canteen from the corpse of Marial.<br />
+Leonard gets a small canteen from the corpse of Marial.<br />
+Leonard gets a small canteen from the corpse of Marial.<br />
+Leonard gets a loaf of waybread from the corpse of Marial.<br />
+Leonard gets a loaf of waybread from the corpse of Marial.<br />
+Leonard gets a loaf of waybread from the corpse of Marial.<br />
+Leonard gets a small wooden chest from the corpse of Marial.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; Your group of 10 members c<br />
+onsists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Yuda             v.good    rested    standing   Y   N    N    N     0   28<br />
+  Dralan           fair      rested    standing   Y   Y    N    Y     1    7<br />
+  Revs             fair      rested    standing   Y   Y    N    Y     1    6<br />
+  Aime             fair      rested    fighting   Y   N    N    Y     0   24<br />
+  Hodor            fair      fatigued  fighting   Y   N    N    Y     0    0<br />
+  Llanth           v.good    rested    fighting   Y   N    N    Y     1    9<br />
+  Eleza            perfect   fatigued  standing   Y   N    N    N     1    7<br />
+  Nistur           v.good    rested    fighting   Y   N    N    Y     0    0<br />
+  Cicero           awful     rested    standing   Y   N    N    N     0    0<br />
+  Mezzanine        awful     rested    fighting   Y   N    N    Y     0    0<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Laureen flies in from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt;<br />
+Dralan slowly fades into existence.<br />
+Dralan misses Leonard with his pierce.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; Rafal stands up.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Revs focuses harshly on Laureen and utters some strange words.<br />
+Revs slowly fades into existence.<br />
+Laureen dies a fiery death as Revs enshrouds him in a cloak of flame.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Laureen is dead! R.I.P.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian wavers under the impact of the lightning bolt sent by Xanatos.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; The death cry of Laureen e<br />
+choes from somewhere nearby...<br />
+Laureen stops following Rold.<br />
+Rafal gets a black stone from the corpse of Laureen.<br />
+Rafal gets a long sword from the corpse of Laureen.<br />
+Rafal gets a narrow iron shield from the corpse of Laureen.<br />
+Rafal gets a large pile of coins from the corpse of Laureen.<br />
+Rafal gets a glowing scroll of recall from the corpse of Laureen.<br />
+Rafal gets a glowing scroll of recall from the corpse of Laureen.<br />
+Rafal gets a milky potion of see invisible from the corpse of Laureen.<br />
+They aren't here.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt;<br />
+Aime steps aside as Buck a<br />
+ttempts a bash, stumbles, and falls flat on his face.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; av head<br />
+Kiara focuses harshly on a knight of the sword and utters some strange words.<br />
+Kiara aims a magic missile at a knight of the sword, who staggers under the blow.<br />
+Kiara aims a magic missile at a knight of the sword, who staggers under the blow.<br />
+Kiara aims a magic missile at a knight of the sword, who staggers under the blow.<br />
+Kiara aims a magic missile at a knight of the sword, who staggers under the blow.<br />
+You attempt to focus on Maxmillian and fail horribly.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Leonard panics, and attempts to flee.<br />
+Leonard flies west.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Shazam arrives from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Harb slashes a knight of the sword extremely hard.<br />
+You miss Maxmillian with your slash.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Buck cleaves Aime very hard.<br />
+A knight of the sword massacres Kiara with his slash.<br />
+Koharo cleaves Aime very hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Rafal crashes into Llanth in a thundering collision, knocking him to the ground!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Aime focuses harshly on Koharo and utters some strange words.<br />
+Aime's spell causes a deafening fist of air to pummel Koharo!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Mezzanine crashes into Maxmillian in a thundering collision, knocking him to the ground!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Artie quaffs a milky potion of see invisible.<br />
+Artie rubs his eyes and looks about himself with clarity.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Shazam leaves west.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Harb panics, and attempts to flee.<br />
+Harb flies east.<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; get all corpse<br />
+get all 2.corpse<br />
+get all 3.corpse<br />
+get all 4.corpse<br />
+get all 5.corpse<br />
+get all 6.corpse<br />
+get all 7.corpse<br />
+get all 8.corpse<br />
+get all 9.corpse<br />
+get all 10.corpse<br />
+<br />
+Revs focuses harshly on Maxmillian and utters some strange words.<br />
+Revs slowly fades into existence.<br />
+Flesh burns as Revs enshrouds Maxmillian in a cloak of flames.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; The corpse doesn't seem to<br />
+ have what you are looking for.<br />
+Rold crashes into Hodor in a thundering collision, knocking him to the ground!<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; The corpse doesn't seem to<br />
+ have what you are looking for.<br />
+<br />
+472H 124V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; A knight of the sword look<br />
+s at you and yells 'There's the scoundrel!'<br />
+Rold massacres Hodor with his slash.<br />
+Hodor comes out of hiding.<br />
+Hodor pierces Rold extremely hard.<br />
+Kiara crushes a knight of the sword hard.<br />
+You miss Maxmillian with your slash.<br />
+You deflect part of Maxmillian's blow with your shield.<br />
+Maxmillian barely stabs YOU.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Buck cleaves Aime extremely hard.<br />
+A knight of the sword massacres Kiara with his slash.<br />
+A knight of the sword massacres Kiara with his slash.<br />
+Koharo cleaves Aime very hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+Kiara panics, and attempts to flee.<br />
+Kiara flies west.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+Hakimm focuses harshly on Aime and utters some strange words.<br />
+Aime looks shocked as Hakimm grasps at her.<br />
+Harb flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; The corpse doesn't seem to<br />
+ have what you are looking for.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt;<br />
+The corpse doesn't seem to<br />
+ have what you are looking for.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; The corpse doesn't seem to<br />
+ have what you are looking for.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; What are you trying to get<br />
+ from?<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; What are you trying to get<br />
+ from?<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; What are you trying to get<br />
+ from?<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; l<br />
+<br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; What are you trying to get<br />
+ from?<br />
+Aime panics, and attempts to flee.<br />
+Aime flies west.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'HEAL ME ENRT'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+The corpse of Laureen is lying here.<br />
+A beautiful cloak lies discarded here.<br />
+The corpse of Marial is lying here.<br />
+The corpse of Tracer is lying here.<br />
+The corpse of Lanttu is lying here.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Artie Stormhammer, Blood Sea Tyrant is standing here.<br />
+Harb the Male Human is standing here. (flying)<br />
+Hodor Hodor is sitting here, fighting Rold. (flying)Xanatos the Male Human is standing here. (flying) (red aura)<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Revs, Instigating Random Violence is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Rafal the Male Human is standing here, fighting Llanth. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Llanth the Male Gnome is sitting here, fighting Rafal. (flying) (red aura)<br />
+Dralan the Male Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying)<br />
+Koharo Maelstrom is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Silvia the Female Human is standing here. (flying)<br />
+Rold the Male Hylar Dwarf is standing here, fighting Hodor. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is sitting here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting YOU.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Artie leaves west.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Fair] Exits:NESW&gt; av head<br />
+<br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian wavers under the impact of the lightning bolt sent by Xanatos.<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; You focus your purity on Ma<br />
+xmillian's head!<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Marial arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Koharo stands up.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Dralan slowly fades into existence.<br />
+Dralan misses Maxmillian with his pierce.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Buck stands up.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Shazam arrives from the west.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; rally<br />
+<br />
+Marial leaves south.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Cicero flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Dralan misses Maxmillian with his pierce.<br />
+A knight of the sword misses you with his slash.<br />
+Rold massacres Hodor with his slash.<br />
+Hodor massacres Rold with his pierce.<br />
+You slash Maxmillian extremely hard.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Rafal crushes Llanth extremely hard.<br />
+Llanth misses Rafal with his bludgeon.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Shazam leaves east.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Llanth tells your group '-- ! no more heal ! --'<br />
+Hakimm focuses harshly on Hodor and utters some strange words.<br />
+Hodor looks shocked as Hakimm grasps at him.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Revs focuses harshly on Maxmillian and utters some strange words.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Llanth stands up.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Llanth tells your group '-- ! no more heal ! --'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Aime flies in from the west.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt;<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Llanth steps aside as Rafal attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Mezzanine tells your group 'i need heal bad'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Koharo slowly fades into existence.<br />
+Koharo crashes into Cicero in a thundering collision, knocking him to the ground!<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Maxmillian gets the cloak of the Kingfisher.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:Bad] Exits:NESW&gt; <br />
+Mezzanine crashes into Maxmillian in a thundering collision, knocking him to the ground!<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Aime utters some strange words.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian wavers under the impact of the lightning bolt sent by Xanatos.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt;<br />
+Llanth tells your group '-- ! no more heal ! --'<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; You yell and inspire your<br />
+ companions to fight harder!<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Buck slowly fades into existence.<br />
+Buck misses Cicero with his cleave.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; grou<br />
+<br />
+Hodor grabs a scroll of recall.<br />
+Hodor recites a scroll of recall.<br />
+Hodor disappears.<br />
+<br />
+480H 132V 8490800X 1142C [Nistur:V.Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Buck misses Cicero with his cleave.<br />
+Koharo cleaves Cicero extremely hard.<br />
+Cicero massacres Koharo with his cleave.<br />
+A knight of the sword massacres YOU with his slash.<br />
+A knight of the sword misses you with his slash.<br />
+You massacre Maxmillian with your slash.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine misses Maxmillian with his slash.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Rafal crushes Llanth extremely hard.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt;<br />
+Rold crashes into Dralan in a thundering collision, knocking him to the ground!<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Revs focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian looks very tired.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Shazam arrives from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Silvia misses you with her hit.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Aime misses Maxmillian with her hit.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; shout holy fucking shit chr<br />
+ist<br />
+<br />
+Kiara flies in from the west.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian is caught in some of Xanatos's acid!<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; <br />
+Shazam leaves west.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt;<br />
+You shout 'holy fucking shi<br />
+t christ'<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Bad] Exits:NESW&gt; str<br />
+Cicero steps aside as Buck attempts a bash, stumbles, and falls flat on his face.<br />
+You attempt to strike at Maxmillian with your sword.<br />
+You slash Maxmillian hard.<br />
+<br />
+456H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+Aime misses Maxmillian with her hit.<br />
+Silvia misses you with her hit.<br />
+Rold slashes Dralan extremely hard.<br />
+Buck cleaves Cicero extremely hard.<br />
+Koharo misses Cicero with his cleave.<br />
+Cicero misses Koharo with his cleave.<br />
+A knight of the sword misses you with his slash.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+You miss Maxmillian with your slash.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+Rafal crushes Llanth extremely hard.<br />
+Llanth bludgeons Rafal extremely hard.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Llanth panics, and attempts to flee.<br />
+Llanth flies north.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Mezzanine crashes into Maxmillian in a thundering collision, knocking him to the ground!<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Revs focuses harshly on Rold and utters some strange words.<br />
+Rold looks very tired.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Rafal stands up.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Cicero stands up.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Llanth flies in from the north.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Cicero panics, and attempts to flee.<br />
+Cicero flies west.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Llanth steps aside as Rafal attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Shazam arrives from the west.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Marial arrives from the south.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt;<br />
+Silvia focuses on Maxmillian and utters some strange words.<br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian is caught in some of Xanatos's acid!<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Cicero flies in from the west.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; str<br />
+<br />
+Artie arrives from the west.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Cicero flies east.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; Llanth panics, and attempts<br />
+ to flee.<br />
+Llanth flies east.<br />
+You attempt to strike at Maxmillian with your sword.<br />
+You slash Maxmillian hard.<br />
+<br />
+438H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Rold massacres Dralan with his slash.<br />
+Dralan misses Maxmillian with his pierce.<br />
+A knight of the sword massacres YOU with his slash.<br />
+You miss Maxmillian with your slash.<br />
+Maxmillian misses you with his stab.<br />
+Mezzanine massacres Maxmillian with his slash.<br />
+Marial leaves south.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Dralan stands up.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Leonard flies in from the west.<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Dralan focuses harshly on Maxmillian and utters some strange words.<br />
+The sound of bones cracking echoes as Dralan's force bolt slams into Maxmillian.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Hakimm misses Dralan with his hit.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:Awful] Exits:NESW&gt; <br />
+Leonard focuses on Maxmillian and utters some strange words.<br />
+Leonard heals Maxmillian.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+Harb comes out of hiding.<br />
+Harb massacres Aime with his slash.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+Shazam sits down and rests.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; flee<br />
+<br />
+Eliza tells you 'you guys fought 2nd time?'<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; flee<br />
+<br />
+Koharo slowly fades into existence.<br />
+Koharo crashes into Aime in a thundering collision, knocking her to the ground!<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+Silvia focuses on Maxmillian and utters some strange words.<br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian is caught in some of Xanatos's acid!<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; <br />
+Buck stands up.<br />
+<br />
+417H 132V 8490800X 1142C [Nistur:Good] [Maxmillian:V.Good] Exits:NESW&gt; Koharo massacres Aime with<br />
+ his cleave.<br />
+Harb misses Aime with his slash.<br />
+Hakimm misses Dralan with his hit.<br />
+Aime misses Maxmillian with her hit.<br />
+Aime makes a strange motion with her hand, then points her wand at Maxmillian.<br />
+A magic missile released from a wand causes Maxmillian to stagger under the blow.<br />
+A magic missile released from a wand causes Maxmillian to stagger under the blow.<br />
+A magic missile released from a wand causes Maxmillian to stagger under the blow.<br />
+A magic missile released from a wand causes Maxmillian to stagger under the blow.<br />
+A magic missile released from a wand causes Maxmillian to stagger under the blow.<br />
+Rold slashes Dralan extremely hard.<br />
+A knight of the sword misses you with his slash.<br />
+You miss Maxmillian with your slash.<br />
+Maxmillian misses you with his stab.<br />
+*Whoosh!* Mezzanine's slash almost decapitates Maxmillian!<br />
+You flee head over heels.<br />
+The Lodge's Cafe<br />
+     The room is filled with small tables. These tables are occupied by<br />
+guests at the lodge who have come here to relax and get a cup of home<br />
+brewed coffee. A small doorway leads south into the entry way of the<br />
+lodge.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+<br />
+417H 131V 8490800X 1142C Exits:S&gt; You're not fighting, why bother fleeing?<br />
+<br />
+417H 131V 8490800X 1142C Exits:S&gt; gt KILL LEONARD<br />
+You tell your group 'KILL LEONARD'<br />
+<br />
+417H 131V 8490800X 1142C Exits:S&gt; gt KILL LEONARD<br />
+You tell your group 'KILL LEONARD'<br />
+<br />
+417H 131V 8490800X 1142C Exits:S&gt; gt KILL LEONARD<br />
+You tell your group 'KILL LEONARD'<br />
+<br />
+417H 131V 8490800X 1142C Exits:S&gt; s<br />
+<br />
+Cicero tells your group 'llanth heal me'<br />
+417H 131V 8490800X 1142C Exits:S&gt; Traveler's Lodge<br />
+A knight of the sword looks at Aime and yells  'There's the scoundrel!'<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; ki leonard<br />
+They aren't here.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Maxmillian stands up.<br />
+Rafal stands up.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Revs utters some strange words.<br />
+Aime stops fighting Maxmillian.<br />
+Harb stops fighting Aime.<br />
+Mezzanine stops fighting Maxmillian.<br />
+Dralan stops fighting Maxmillian.<br />
+Buck stops fighting Aime.<br />
+Koharo stops fighting Aime.<br />
+Hakimm stops fighting Dralan.<br />
+Rold stops fighting Dralan.<br />
+Maxmillian stops fighting Dralan.<br />
+A knight of the sword stops fighting Aime.<br />
+A knight of the sword looks annoyed with Revs.<br />
+A knight of the sword slashes Revs extremely hard.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Kiara focuses harshly on Aime and utters some strange words.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian is caught in some of Xanatos's acid!<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt;<br />
+Silvia misses Xanatos with her hit.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; <br />
+Silvia misses Xanatos with her hit.<br />
+Xanatos misses Maxmillian with his crush.<br />
+Maxmillian stabs Xanatos extremely hard.<br />
+A knight of the sword slashes Revs extremely hard.<br />
+A knight of the sword massacres Revs with his slash.<br />
+Revs slowly fades into existence.<br />
+Revs misses a knight of the sword with his bludgeon.<br />
+<br />
+417H 130V 8490800X 1142C Exits:NESW&gt; ki maxmillian<br />
+You miss Maxmillian with your slash.<br />
+<br />
+417H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Leonard flies in from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+417H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Harb comes out of hiding.<br />
+Harb massacres Aime with his slash.<br />
+<br />
+417H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Leonard flies east.<br />
+<br />
+417H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Hakimm focuses harshly on you and utters some strange words.<br />
+You stagger as a magic missile from Hakimm hits you.<br />
+You stagger as a magic missile from Hakimm hits you.<br />
+You stagger as a magic missile from Hakimm hits you.<br />
+You stagger as a magic missile from Hakimm hits you.<br />
+You stagger as a magic missile from Hakimm hits you.<br />
+<br />
+371H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Koharo slowly fades into existence.<br />
+You step aside as Koharo tries to bash you, causing him to tumble and fall face down.<br />
+Revs panics, and attempts to flee.<br />
+Revs flies south.<br />
+<br />
+371H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Aime stands up.<br />
+<br />
+371H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Buck slowly fades into existence.<br />
+Buck cleaves YOU extremely hard.<br />
+<br />
+356H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Kiara focuses harshly on Aime and utters some strange words.<br />
+Aime panics, and attempts to flee.<br />
+Aime flies east.<br />
+<br />
+356H 130V 8490800X 1142C [Xanatos:V.Good] [Maxmillian:Good] Exits:NESW&gt; <br />
+Buck misses you with his cleave.<br />
+Koharo cleaves YOU very hard.<br />
+You slash Maxmillian hard.<br />
+Silvia misses Xanatos with her hit.<br />
+Maxmillian stabs Xanatos extremely hard.<br />
+Xanatos panics, and attempts to flee.<br />
+Xanatos flies north.<br />
+<br />
+345H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Maxmillian focuses his purity on your leg!<br />
+Maxmillian forces you to the ground.<br />
+<br />
+345H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Rafal crushes YOU extremely hard.<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Mezzanine stands up.<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Xanatos flies in from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Dralan stands up.<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Cicero tells your group 'llanth heal me clerics'<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Shazam looks at Maxmillian.<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+<br />
+328H 130V 8490800X 1142C [Nistur:Fair] [Maxmillian:Good] Exits:NESW&gt; <br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+A knight of the sword misses you with his slash.<br />
+Rafal massacres YOU with his crush.<br />
+Maxmillian stabs YOU very hard.<br />
+Buck cleaves YOU extremely hard.<br />
+Koharo massacres YOU with his cleave.<br />
+You miss Maxmillian with your slash.<br />
+You step aside as Buck tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Rold crashes into Dralan in a thundering collision, knocking him to the ground!<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Revs flies in from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Revs flies east.<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; #   {Buck} is now highlighted<br />
+ red in group [default].<br />
+sca<br />
+<br />
+You step aside as Rafal tries to bash you, causing him to tumble and fall face down.<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Maxmillian yells and leaps into the fray.<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; st<br />
+<br />
+Xanatos focuses harshly on Maxmillian and utters some strange words.<br />
+Maxmillian looks shocked as Xanatos grasps at him.<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Koharo stands up.<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Cicero tells your group 'llanth heal me clerics'<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Hodor tells your group 'are we winning'<br />
+<br />
+230H 130V 8490800X 1142C [Nistur:Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+The rally cry fades.<br />
+Rold massacres Dralan with his slash.<br />
+Dralan misses Rold with his pierce.<br />
+Mezzanine slashes Maxmillian extremely hard.<br />
+A knight of the sword misses you with his slash.<br />
+Rafal massacres YOU with his crush.<br />
+Maxmillian stabs YOU extremely hard.<br />
+Buck misses you with his cleave.<br />
+Koharo cleaves YOU extremely hard.<br />
+You miss Maxmillian with your slash.<br />
+<br />
+171H 130V 8490800X 1142C [Nistur:V.Bad] [Maxmillian:Fair] Exits:NESW&gt;<br />
+171H 130V 8490800X 1142C [Nistur:V.Bad] [Maxmillian:Fair] Exits:NESW&gt; You stand up.<br />
+<br />
+171H 130V 8490800X 1142C [Nistur:V.Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Mezzanine crashes into Maxmillian in a thundering collision, knocking him to the ground!<br />
+<br />
+171H 130V 8490800X 1142C [Nistur:V.Bad] [Maxmillian:Fair] Exits:NESW&gt; <br />
+Eliza flies in from the east.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+171H 130V 8490800X 1142C [Nistur:V.Bad] [Maxmillian:Fair] Exits:NESW&gt; flee<br />
+You flee head over heels.<br />
+The Lounge<br />
+171H 129V 8490800X 1142C Exits:E&gt; lay self<br />
+You lay your hands on him and feel your hands tingle with energy.<br />
+A few of your bruises disappear.<br />
+<br />
+441H 129V 8490800X 1142C Exits:E&gt; <br />
+Cicero tells your group 'Im 60hps'<br />
+<br />
+441H 129V 8490800X 1142C Exits:E&gt; e<br />
+Traveler's Lodge<br />
+The corpse of Laureen is lying here.<br />
+The corpse of Marial is lying here.<br />
+The corpse of Tracer is lying here.<br />
+The corpse of Lanttu is lying here.<br />
+You see a helm of engraved platinum lying here.<br />
+A beautiful bracelet of deep blue and silver rests here...it glows dimly<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Eliza the Female Wild Elf is standing here. (flying)<br />
+Xanatos the Male Human is standing here. (flying) (red aura)<br />
+Shazam the Male Hylar Dwarf is resting here.<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Harb the Male Human is standing here, fighting Mezzanine. (flying)<br />
+Mezzanine, Blood Sea Inertia Creep is standing here, fighting Maxmillian. (flying) (red aura)<br />
+Rafal the Male Human is sitting here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Dralan the Male Human is sitting here, fighting Rold. (flying)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is sitting here. (flying)<br />
+Koharo Maelstrom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Hakimm Zwyrgazhul is standing here. (flying)<br />
+Silvia the Female Human is standing here, fighting Dralan. (flying)<br />
+Rold the Male Hylar Dwarf is standing here, fighting Dralan. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is sitting here, fighting Mezzanine. (flying)<br />
+. . . has a tough exterior.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+A knight of the sword looks at Harb and yells  'There's the scoundrel!'<br />
+441H 128V 8490800X 1142C Exits:NESW&gt; <br />
+Yuda tells your group 'no clue'<br />
+<br />
+441H 128V 8490800X 1142C Exits:NESW&gt; <br />
+A knight of the sword massacres Harb with his slash.<br />
+A knight of the sword slashes Harb extremely hard.<br />
+Silvia misses Dralan with her hit.<br />
+Harb massacres Mezzanine with his slash.<br />
+Maxmillian stabs Mezzanine extremely hard.<br />
+get coins corpse<br />
+Mezzanine is dead! R.I.P.<br />
+Rold massacres Dralan with his slash.<br />
+Dralan misses Rold with his pierce.<br />
+The death cry of Mezzanine echoes from somewhere nearby...<br />
+Mezzanine stops following you.<br />
+Someone tells your group 'did we win'<br />
+Dralan stands up.<br />
+<br />
+441H 128V 8490800X 1142C Exits:NESW&gt; You get a large pile of coins from the corpse of Mezzanine.<br />
+sp 122<br />
+There were 122 coins.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Dralan panics, and attempts to flee.<br />
+Dralan flies west.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; You divide 122 coins equally among the group members present<br />
+.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Someone tells your group 'did we win'<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Buck stands up.<br />
+Rold gets a black stone from the corpse of Mezzanine.<br />
+Rold gets a glyph-covered ivory scimitar from the corpse of Mezzanine.<br />
+Rold gets an ancient iron bracer from the corpse of Mezzanine.<br />
+Rold gets a shield of holy light from the corpse of Mezzanine.<br />
+Rold gets gauntlets of ogre power from the corpse of Mezzanine.<br />
+Rold is zapped by a pair of black steel plated boots and instantly drops it.<br />
+Rold gets a skirt of tasses from the corpse of Mezzanine.<br />
+Rold is zapped by a revenant's skull and instantly drops it.<br />
+Rold gets a suit of crimson banded mail from the corpse of Mezzanine.<br />
+Rold is zapped by a black cloak of the Lily and instantly drops it.<br />
+Rold is zapped by a skull chain and instantly drops it.<br />
+Rold gets a ring of the stone guardian from the corpse of Mezzanine.<br />
+Rold gets an ashen stone ring from the corpse of Mezzanine.<br />
+Rold gets a glowing scroll of recall from the corpse of Mezzanine.<br />
+Rold gets a glowing scroll of recall from the corpse of Mezzanine.<br />
+Rold gets a glowing scroll of recall from the corpse of Mezzanine.<br />
+Rold gets a glowing scroll of recall from the corpse of Mezzanine.<br />
+Rold gets a scroll of recall from the corpse of Mezzanine.<br />
+Rold gets a scroll of recall from the corpse of Mezzanine.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Someone tells your group 'did we win'<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Shazam stops using some leather training armor.<br />
+Shazam stops using a leather training cap.<br />
+Shazam stops using a pair of leather training boots.<br />
+Shazam stops using a training shield.<br />
+Shazam stops using a long training sword.<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; ki max<br />
+<br />
+Eliza focuses harshly on Hakimm and utters some strange words.<br />
+Flesh burns as Eliza enshrouds Hakimm in a cloak of flames.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; They aren't here.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Dralan tells your group 'loot me btw!'<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at Eliza and yells  'There's the scoundrel!'<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Rafal stands up.<br />
+Hakimm focuses harshly on Artie and utters some strange words.<br />
+Hakimm aims a magic missile at Artie, who staggers under the blow.<br />
+Hakimm aims a magic missile at Artie, who staggers under the blow.<br />
+Artie is mortally wounded, and will die soon, if not aided.<br />
+The magic missile sent by Hakimm causes Artie to stagger and collapse in a<br />
+lifeless heap.<br />
+get coins corpse<br />
+Artie is dead! R.I.P.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+Shazam drops a long training sword.<br />
+A long training sword disintegrates.<br />
+Shazam drops a training shield.<br />
+A training shield disintegrates.<br />
+Shazam drops a pair of leather training boots.<br />
+A pair of leather training boots disintegrates.<br />
+Shazam drops a leather training cap.<br />
+A leather training cap disintegrates.<br />
+Shazam drops some leather training armor.<br />
+Some leather training armor disintegrates.<br />
+Shazam drops a map of Kalaman.<br />
+A map of Kalaman disintegrates.<br />
+Shazam drops a short training sword.<br />
+A short training sword disintegrates.<br />
+Shazam drops a small leather bag.<br />
+A small leather bag disintegrates.<br />
+Shazam drops a hooded lantern.<br />
+A hooded lantern disintegrates.<br />
+Shazam drops a complimentary stable note.<br />
+A complimentary stable note disintegrates.<br />
+Shazam drops a loaf of bread.<br />
+A loaf of bread disintegrates.<br />
+Shazam drops a loaf of bread.<br />
+A loaf of bread disintegrates.<br />
+Shazam drops a waterskin.<br />
+A waterskin disintegrates.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; <br />
+The death cry of Artie echoes from somewhere nearby...<br />
+Rafal gets a loaf of waybread from the corpse of Artie.<br />
+Rafal gets a loaf of waybread from the corpse of Artie.<br />
+Rafal gets a plain-looking spear from the corpse of Artie.<br />
+Rafal gets a collection of herbs and bandages from the corpse of Artie.<br />
+Rafal gets a pair of rough, fingerless gloves from the corpse of Artie.<br />
+Rafal gets a steel ice axe from the corpse of Artie.<br />
+Rafal gets a milky potion of see invisible from the corpse of Artie.<br />
+Rafal gets a loaf of bread from the corpse of Artie.<br />
+Rafal gets a loaf of bread from the corpse of Artie.<br />
+Rafal gets a loaf of bread from the corpse of Artie.<br />
+Rafal gets a waterskin from the corpse of Artie.<br />
+Rafal gets a waterskin from the corpse of Artie.<br />
+<br />
+441H 128V 8490800X 1264C Exits:NESW&gt; ki rold<br />
+<br />
+A knight of the sword looks at Eliza and yells  'There's the scoundrel!'<br />
+Kiara focuses harshly on you and utters some strange words.<br />
+You are sent sprawling as Rafal crashes into you.<br />
+You are sent sprawling as Rold crashes into you.<br />
+<br />
+400H 128V 8490800X 1264C [Nistur:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Shazam gets the corpse of Artie.<br />
+Shazam is zapped by a skull chain and instantly drops it.<br />
+Shazam is zapped by a black cloak of the Lily and instantly drops it.<br />
+Shazam is zapped by a revenant's skull and instantly drops it.<br />
+Shazam is zapped by a pair of black steel plated boots and instantly drops it.<br />
+Shazam gets the corpse of Laureen.<br />
+Shazam gets the corpse of Lanttu.<br />
+Shazam gets a platinum gilt helm.<br />
+Shazam gets a malachite encrusted bracelet.<br />
+<br />
+400H 128V 8490800X 1264C [Nistur:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Koharo gets an ivory-colored leather backpack from the corpse of Mezzanine.<br />
+<br />
+400H 128V 8490800X 1264C [Nistur:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+400H 128V 8490800X 1264C [Nistur:Good] [Rafal:V.Good] Exits:NESW&gt; <br />
+Xanatos focuses harshly on Rold and utters some strange words.<br />
+Rold looks shocked as Xanatos grasps at him.<br />
+<br />
+400H 128V 8490800X 1264C [Nistur:Good] [Rafal:V.Good] Exits:NESW&gt; st<br />
+<br />
+Rold massacres YOU with his slash.<br />
+Rafal crushes YOU extremely hard.<br />
+You slash Rafal very hard.<br />
+Eliza misses Hakimm with her hit.<br />
+Harb slashes a knight of the sword extremely hard.<br />
+A knight of the sword massacres Harb with his slash.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Shazam stands up.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Artie gets a small wooden chest from the corpse of Mezzanine.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Shazam leaves south.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Eliza focuses harshly on Hakimm and utters some strange words.<br />
+Flesh burns as Eliza enshrouds Hakimm in a cloak of flames.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Dralan flies in from the west.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Dralan flies north.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Harb panics, and attempts to flee.<br />
+Harb flies north.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Hodor tells your group 'Tic in about 10 seconds.'<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Cicero tells your group 'anyone have heals?'<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Maxmillian stands up.<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt;<br />
+Harb flies in from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Artie arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+353H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Maxmillian stabs YOU extremely hard.<br />
+<br />
+333H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+Dralan flies in from the north.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+333H 128V 8490800X 1264C [Nistur:Fair] [Rafal:V.Good] Exits:NESW&gt; <br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+Maxmillian massacres YOU with his stab.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+Rold massacres YOU with his slash.<br />
+You raise your shield and block Rafal's blow.<br />
+You slash Rafal extremely hard.<br />
+Hakimm misses Eliza with his hit.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Dralan flies east.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Koharo slowly fades into existence.<br />
+You step aside as Koharo tries to bash you, causing him to tumble and fall face down.<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; st<br />
+<br />
+Silvia flies east.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Artie leaves south.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; l<br />
+<br />
+Azar flies in from the west.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Eliza focuses harshly on Hakimm and utters some strange words.<br />
+Flesh burns as Eliza enshrouds Hakimm in a cloak of flames.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Rafal gets a skull chain.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; flee<br />
+flee<br />
+<br />
+You step aside as Rafal tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+242H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Harb massacres YOU with his slash.<br />
+<br />
+210H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+You step aside as Rold tries to bash you, causing him to tumble and fall face down.<br />
+210H 128V 8490800X 1264C [Nistur:Bad] [Rafal:Good] Exits:NESW&gt; <br />
+Harb misses you with his slash.<br />
+Koharo cleaves YOU extremely hard.<br />
+Maxmillian massacres YOU with his stab.<br />
+A knight of the sword massacres YOU with his slash.<br />
+A knight of the sword slashes YOU extremely hard.<br />
+Rold massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You raise your shield and block Rafal's blow.<br />
+You annihilate Rafal with your slash.<br />
+Hakimm misses Eliza with his hit.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; ki maxmillian<br />
+<br />
+Hakimm panics, and attempts to flee.<br />
+Hakimm flies south.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Tarn flies in from the east.<br />
+A knight of the sword looks at Harb and yells  'There's the scoundrel!'<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Buck slowly fades into existence.<br />
+Buck misses you with his cleave.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Tarn flies south.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt;<br />
+Hakimm flies in from the south.<br />
+A knight of the sword looks at Harb and yells  'There's the scoundrel!'<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; A knight of the sword looks at H<br />
+arb and yells  'There's the scoundrel!'<br />
+You can't do that while sitting.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; You stand up.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Eliza focuses harshly on Hakimm and utters some strange words.<br />
+Flesh burns as Eliza enshrouds Hakimm in a cloak of flames.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; You are already standing.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; Traveler's Lodge<br />
+     The lodge is famous for its hospitality and friendly service. The<br />
+lodge also has its own cafe, where they make great tasting coffee. There is<br />
+also a lounge for the guests to rest and relax or do some reading. The<br />
+entrance is quite large and open; you get a feeling you will enjoy your<br />
+stay here already.<br />
+Some steel plated boots lay hidden in the shadows...it glows red<br />
+A bloody skull, covered in rotten flesh is here.<br />
+A small pile of elegant black cloth rests in a heap here.<br />
+The corpse of Mezzanine is lying here.<br />
+The corpse of Marial is lying here.<br />
+The corpse of Tracer is lying here.<br />
+The corpse of Artie is lying here.<br />
+The corpse of Pryer is lying here.<br />
+Hakimm Zwyrgazhul is standing here, fighting Eliza. (flying)<br />
+Azar the Male Half Elf is standing here. (flying) (invisible) (red aura)<br />
+Harb the Male Human is standing here, fighting YOU. (flying)<br />
+Eliza the Female Wild Elf is standing here, fighting Hakimm. (flying)<br />
+Xanatos the Male Human is standing here. (flying) (red aura)<br />
+Kiara the Female Gnome is standing here. (flying)<br />
+Rafal the Male Human is sitting here, fighting YOU. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Buck the Male Hylar Dwarf is standing here, fighting YOU. (flying)<br />
+Koharo Maelstrom is sitting here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+A reptilian, snake-like monster moves about here.<br />
+Rold the Male Hylar Dwarf is sitting here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+Maxmillian the Male Human is standing here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+A knight of the sword is standing here, fighting YOU.<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Cicero tells your group 'aNyone have heals?'<br />
+<br />
+102H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; <br />
+Azar focuses harshly on you and utters some strange words.<br />
+Azar slowly fades into existence.<br />
+Your flesh burns as Azar enshrouds you in a cloak of flames.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+67H 128V 8490800X 1264C [Nistur:Awful] [Rafal:Good] Exits:NESW&gt; You flee head over heels.<br />
+The Lounge<br />
+     The lounge is quite large and very quiet, there is a large fireplace<br />
+making this place an enjoyable spot to relax. There are many comfortable<br />
+couches and sofas where people can rest and read a good book. Hanging on<br />
+the north wall is a bulletin board, where news, gossip and other<br />
+interesting things are posted for the guests' amusement.<br />
+A tasty looking sandwich is here.<br />
+A shovel is lying on the ground.<br />
+A large bulletin board is mounted on a wall here.<br />
+<br />
+67H 127V 8490800X 1264C Exits:E&gt;
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1405'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1405">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1405">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

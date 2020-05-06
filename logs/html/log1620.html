@@ -1,0 +1,972 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1620-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1620'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Jansel vs Balboa Beluga Jaxz</font></b>
+<p>
+POV: 
+Jansel<p>
+Log Rating:
+2.4545<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+This is funny to me.</i>
+<p>
+<p>
+
+ROUND ONE<br />
+<br />
+<br />
+<br />
+419H 126V 7328610X 222C Exits:U&gt; lookIn a Small Shelter<br />
+    Scraps of cloth, small bone fragments and pieces of rotting fish<br />
+scatter the area underneath the crate. The skeletal remains of several<br />
+large rats also lie strewn around.<br />
+A small kitten licks the rubbish from its paws here.<br />
+A feral cat parades her territory and sniffs your leg.<br />
+A small kitten licks the rubbish from its paws here.<br />
+A small kitten licks the rubbish from its paws here.<br />
+<br />
+419H 126V 7328610X 222C Exits:U&gt; stA kitten climbs in your lap.<br />
+You stand up.<br />
+<br />
+419H 126V 7328610X 222C Exits:U&gt; uThe Balifor Dump<br />
+    The dump is littered with piles of disgusting trash and other waste.<br />
+The stench from rotting fish and sewage waste makes you want to vomit.<br />
+Rodents of unusual size meander in and out of the stacks of fish crates<br />
+piled here. One large crate has been turned over and covered with old rags<br />
+here.<br />
+You sense that you are not alone.<br />
+Balboa Ice, Blood Sea Explorer is standing here. (flying)<br />
+Beluga, Blood Sea Monster is standing here. (flying)<br />
+<br />
+419H 125V 7328610X 222C Exits:NESW&gt; n<br />
+You are sent sprawling as Balboa crashes into you.<br />
+<br />
+398H 125V 7328610X 222C [Me:Good] [Balboa:Perfect] Exits:NESW&gt; w<br />
+Balboa massacres YOU with his slash.<br />
+You miss Balboa with your crush.<br />
+<br />
+377H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+Beluga focuses harshly on you and utters some strange words.<br />
+<br />
+377H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+Jaxz comes out of hiding.<br />
+Jaxz massacres YOU with his slash.<br />
+<br />
+349H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+Jaxz massacres YOU with his slash.<br />
+Jaxz cleaves YOU extremely hard.<br />
+Balboa massacres YOU with his slash.<br />
+You miss Balboa with your crush.<br />
+<br />
+286H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+Beluga focuses harshly on you and utters some strange words.<br />
+<br />
+286H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+Jaxz swoops at you, forcing you to the ground.<br />
+<br />
+286H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; <br />
+You step aside as Balboa tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+286H 125V 7328610X 222C [Me:Fair] [Balboa:Perfect] Exits:NESW&gt; 'OH SHIT SON<br />
+Jaxz slashes YOU extremely hard.<br />
+Jaxz cleaves YOU extremely hard.<br />
+Balboa slashes YOU extremely hard.<br />
+You miss Balboa with your crush.<br />
+<br />
+226H 125V 7328610X 222C [Me:Bad] [Balboa:Perfect] Exits:NESW&gt; <br />
+A cockroach arrives from the west.<br />
+<br />
+226H 125V 7328610X 222C [Me:Bad] [Balboa:Perfect] Exits:NESW&gt; <br />
+Beluga focuses harshly on you and utters some strange words.<br />
+Beluga hits you with a chilling blast of cold air.  You're numb all over.<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; You say 'OH SHIT SON'<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; stYou stand up.<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; flAlas, you cannot go that way...<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; flAlas, you cannot go that way...<br />
+<br />
+141H 125V 7328610X 222C [Me:V.Bad] [Balboa:Perfect] Exits:NESW&gt; fl<br />
+Jaxz slashes YOU hard.<br />
+Jaxz cleaves YOU extremely hard.<br />
+Balboa massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Balboa with your crush.<br />
+<br />
+92H 125V 7328610X 222C [Me:Awful] [Balboa:Perfect] Exits:NESW&gt; You flee head over heels.<br />
+The Balifor Dump<br />
+    The dump is littered with piles of disgusting trash and other waste.<br />
+The stench from rotting fish and sewage waste makes you want to vomit.<br />
+Rodents of unusual size meander in and out of the stacks of fish crates<br />
+piled here.<br />
+A rat scampers around the dump here.<br />
+A cockroach skitters through the garbage here.<br />
+<br />
+<br />
+<br />
+ROUND TWO<br />
+<br />
+<br />
+<br />
+92H 112V 7328610X 222C Exits:D&gt; dThe Pig and Whistle<br />
+    You have entered the tavern of the Pig and Whistle. Unusually large, it<br />
+has a full length oak bar against the far wall. Many bottles of spirits<br />
+fill racks on the walls and beer kegs lay stacked and at the ready in the<br />
+corner. Small stools and tables encrusted with grime invite you to sit and<br />
+relax. A small staircase leads upwards to the sleeping quarters, and to the<br />
+west is a meeting room.<br />
+The Tavern owner, William Sweetwater, offers you a drink and a pie.<br />
+<br />
+92H 111V 7328610X 222C Exits:NWU&gt; look nTavern Square, a busier part of Port Balifor.<br />
+Balboa Ice, Blood Sea Explorer is standing here. (flying)<br />
+A Balifor watchman watches for trouble in the city.<br />
+<br />
+92H 111V 7328610X 222C Exits:NWU&gt; look wYou see nothing special.<br />
+<br />
+92H 111V 7328610X 222C Exits:NWU&gt; nThe Tavern Square<br />
+    Before you stands tavern square, a meeting place of many people and<br />
+races. The cobbles have been freshly washed and there is an air of<br />
+peacefulness about the drinkers wandering into the inn to the south. A dark<br />
+alley leads to the north, a cobbled lane to the west. Death row and the<br />
+executioners block lead to the east. Far to the west lies high street and<br />
+the main shops of Balifor. A big painted sign swings from an iron clasp on<br />
+the tavern wall.<br />
+A small leather purse lies on the floor.<br />
+A small hoopak has been stuck in the ground...it hums softly<br />
+A small leather purse lies on the floor.<br />
+A small hoopak has been stuck in the ground...it hums softly<br />
+Balboa Ice, Blood Sea Explorer is standing here. (flying)<br />
+A Balifor watchman watches for trouble in the city.<br />
+<br />
+92H 110V 7328610X 222C Exits:NESW&gt; bash Beluga<br />
+You are sent sprawling as Balboa crashes into you.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+71H 110V 7328610X 222C [Me:Awful] [Balboa:Perfect] Exits:NESW&gt; <br />
+Balboa massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Balboa with your crush.<br />
+<br />
+42H 110V 7328610X 222C [Me:Awful] [Balboa:Perfect] Exits:NESW&gt; <br />
+A Balifor watchman looks at Balboa and yells  'There's the scoundrel!'<br />
+<br />
+42H 110V 7328610X 222C [Me:Awful] [Balboa:Perfect] Exits:NESW&gt; <br />
+A Balifor watchman smites Balboa hard.<br />
+A Balifor watchman smites Balboa very hard.<br />
+Balboa massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Balboa with your crush.<br />
+<br />
+11H 110V 7328610X 222C [Me:Awful] [Balboa:V.Good] Exits:NESW&gt; 'damnit i wanted to bash belugaYou can't do that while sitting.<br />
+<br />
+11H 110V 7328610X 222C [Me:Awful] [Balboa:V.Good] Exits:NESW&gt; You say 'damnit i wanted to bash beluga'<br />
+<br />
+11H 110V 7328610X 222C [Me:Awful] [Balboa:V.Good] Exits:NESW&gt; stYou stand up.<br />
+<br />
+11H 110V 7328610X 222C [Me:Awful] [Balboa:V.Good] Exits:NESW&gt; flYou flee head over heels.<br />
+A Dark Alley<br />
+    The alley runs parallel with traders street, and is really nothing more<br />
+than a gutter between the tall buildings of Cannery Row and High Street.<br />
+The narrow, unlit alley is obviously used as a shortcut between the two.<br />
+You feel unusually nervous as you walk here, and small movements in the<br />
+shadows catch your eye. As you move along, you realize that your ears are<br />
+ringing because you are listening so hard.<br />
+<br />
+<br />
+<br />
+ROUND THREE<br />
+<br />
+<br />
+<br />
+166H 117V 7328251X 211C Exits:NS&gt; sEntryway of the Temple<br />
+    This is the entryway to the temple. It is lit dimly by a few scattered<br />
+torches, which barely reflect off what appears to be the remains of several<br />
+humans. Perhaps now is a good time to turn and head back out the Red Door<br />
+south of here leading back out of this grim place. The path extends to the<br />
+north, while to the east lies a plain wooden door.<br />
+Jaxz is standing here. (flying)<br />
+Balboa Ice, Blood Sea Explorer is standing here. (flying)<br />
+Beluga, Blood Sea Monster is standing here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+166H 116V 7328251X 211C Exits:N(ES)&gt; s<br />
+You are sent sprawling as Balboa crashes into you.<br />
+<br />
+145H 116V 7328251X 211C [Me:V.Bad] [Balboa:V.Good] Exits:N(ES)&gt; <br />
+Balboa massacres YOU with his slash.<br />
+You miss Balboa with your crush.<br />
+Beluga focuses harshly on you and utters some strange words.<br />
+<br />
+121H 116V 7328251X 211C [Me:V.Bad] [Balboa:V.Good] Exits:N(ES)&gt; <br />
+Jaxz studies the area intently.<br />
+<br />
+121H 116V 7328251X 211C [Me:V.Bad] [Balboa:V.Good] Exits:N(ES)&gt; <br />
+Balboa massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Balboa with your crush.<br />
+<br />
+98H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; <br />
+Beluga focuses harshly on you and utters some strange words.<br />
+<br />
+98H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; 'FOUND ME<br />
+Jaxz massacres YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+76H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; stflflflYou can't do that while sitting.<br />
+<br />
+76H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; flYou say 'FOUND ME'<br />
+<br />
+76H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; flYou step aside as Balboa tries to bash you, causing him to tumble and fall face down.<br />
+You stand up.<br />
+<br />
+76H 116V 7328251X 211C [Me:Awful] [Balboa:V.Good] Exits:N(ES)&gt; You flee head over heels.<br />
+The Vestibule<br />
+    The main hall of the temple begins here near the entrance. There are<br />
+torches that line each wall, ensuring a well-lit walkway. Faint sounds of<br />
+footsteps can be heard to the east, but there is nothing there but a wall.<br />
+The walls are red in tint with sigils on each side resembling the God of<br />
+Greed, Hiddukel himself. The path leads north, further into the vestibule<br />
+or south back to the entryway of the temple.<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+<br />
+<br />
+ROUND FOUR<br />
+<br />
+<br />
+<br />
+133H 98V 7328251X 197C Exits:NE(S)&gt; A Dark Hallway<br />
+    Here begins of a long dark hallway. The only lighting is the dull glow<br />
+from a few recently burned out torches. The hallway proceeds east, and to<br />
+the west lies a plain wooden door.<br />
+A small spider skitters away at your approach.<br />
+A large rat stares at you from the shadows.<br />
+<br />
+133H 97V 7328251X 197C Exits:EW&gt; look eThe hallway is darkened by clouds of smoke.<br />
+<br />
+133H 97V 7328251X 197C Exits:EW&gt; elook eA Dark Hallway<br />
+    It is very apparent that this hallway is seldom traveled and even less<br />
+frequently cleaned. The torches that once lit this passage now only<br />
+contribute to its darkness with their smoke. There is a faint stench of<br />
+foulness in the air that causes you to cough. The path continues to the<br />
+east and west.<br />
+Jaxz is standing here. (flying)<br />
+<br />
+133H 96V 7328251X 197C Exits:EW&gt; The foul stench grows stronger.<br />
+<br />
+133H 96V 7328251X 197C Exits:EW&gt; bash jaxzYou try to bash Jaxz, but you miss and tumble forward onto your face.<br />
+<br />
+133H 96V 7328251X 197C [Me:V.Bad] [Jaxz:Perfect] Exits:EW&gt; <br />
+Jaxz swoops at you, forcing you to the ground.<br />
+<br />
+133H 96V 7328251X 197C [Me:V.Bad] [Jaxz:Perfect] Exits:EW&gt; <br />
+You miss Jaxz with your crush.<br />
+Jaxz massacres YOU with his slash.<br />
+Jaxz cleaves YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+97H 96V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:EW&gt; <br />
+You miss Jaxz with your crush.<br />
+Jaxz slashes YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Jaxz massacres YOU with his cleave.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+62H 96V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:EW&gt; stYou stand up.<br />
+<br />
+62H 96V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:EW&gt; flYou flee head over heels.<br />
+A Dark Hallway<br />
+    Here begins of a long dark hallway. The only lighting is the dull glow<br />
+from a few recently burned out torches. The hallway proceeds east, and to<br />
+the west lies a plain wooden door.<br />
+A small spider skitters away at your approach.<br />
+A large rat stares at you from the shadows.<br />
+<br />
+62H 95V 7328251X 197C Exits:EW&gt; flflYou're not fighting, why bother fleeing?<br />
+<br />
+62H 95V 7328251X 197C Exits:EW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+62H 95V 7328251X 197C Exits:EW&gt; w<br />
+You are thirsty.<br />
+Your torch flickers.  You think it might run out soon.<br />
+<br />
+65H 102V 7328251X 197C Exits:EW&gt; Entryway of the Temple<br />
+    This is the entryway to the temple. It is lit dimly by a few scattered<br />
+torches, which barely reflect off what appears to be the remains of several<br />
+humans. Perhaps now is a good time to turn and head back out the Red Door<br />
+south of here leading back out of this grim place. The path extends to the<br />
+north, while to the east lies a plain wooden door.<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; look eA plain wooden door, beginning to rot at its edges.<br />
+The door is open.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; look eA plain wooden door, beginning to rot at its edges.<br />
+The door is open.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; look eA plain wooden door, beginning to rot at its edges.<br />
+The door is open.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; <br />
+Jaxz flies in from the east.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; <br />
+Yamoto flies in from the north.<br />
+Yaz flies in from the north.<br />
+Grauth flies in from the north.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; look eA plain wooden door, beginning to rot at its edges.<br />
+The door is open.<br />
+<br />
+65H 101V 7328251X 197C Exits:NE(S)&gt; <br />
+Jaxz darts at you and makes solid contant, OW.<br />
+Jaxz comes out of hiding.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+46H 101V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:NE(S)&gt; nYou can't do that while fighting.<br />
+<br />
+46H 101V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:NE(S)&gt; <br />
+Jaxz slashes YOU hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Jaxz cleaves YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Jaxz with your crush.<br />
+<br />
+18H 101V 7328251X 197C [Me:Awful] [Jaxz:Perfect] Exits:NE(S)&gt; flYou flee head over heels.<br />
+A Dark Hallway<br />
+    Here begins of a long dark hallway. The only lighting is the dull glow<br />
+from a few recently burned out torches. The hallway proceeds east, and to<br />
+the west lies a plain wooden door.<br />
+A small spider skitters away at your approach.<br />
+A large rat stares at you from the shadows.<br />
+<br />
+18H 100V 7328251X 197C Exits:EW&gt; look wA plain wooden door that is starting to show signs of aging.<br />
+The door is open.<br />
+Grauth Gazer, Nowclan's Sheaf Collector is standing here. (flying)<br />
+Yaz, Nowclan's Defender of the Fens is standing here. (flying) (invisible)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Jaxz is standing here. (flying)<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+18H 100V 7328251X 197C Exits:EW&gt; look wA plain wooden door that is starting to show signs of aging.<br />
+The door is open.<br />
+Grauth Gazer, Nowclan's Sheaf Collector is standing here, fighting Jaxz. (flying)<br />
+Yaz, Nowclan's Defender of the Fens is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Jaxz is sitting here, fighting Grauth. (flying)<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+18H 100V 7328251X 197C Exits:EW&gt; look wA plain wooden door that is starting to show signs of aging.<br />
+The door is open.<br />
+Grauth Gazer, Nowclan's Sheaf Collector is standing here, fighting Jaxz. (flying)<br />
+Yaz, Nowclan's Defender of the Fens is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Jaxz is sitting here, fighting Grauth. (flying)<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+18H 100V 7328251X 197C Exits:EW&gt; look eThe hallway is darkened by clouds of smoke.<br />
+<br />
+18H 100V 7328251X 197C Exits:EW&gt; eA Dark Hallway<br />
+    It is very apparent that this hallway is seldom traveled and even less<br />
+frequently cleaned. The torches that once lit this passage now only<br />
+contribute to its darkness with their smoke. There is a faint stench of<br />
+foulness in the air that causes you to cough. The path continues to the<br />
+east and west.<br />
+<br />
+18H 99V 7328251X 197C Exits:EW&gt; eA Dark Hallway<br />
+    Continuing down the hallway is a disturbing film of smoke that fills<br />
+the air and doesn't seem to move. This comes as no surprise as there are<br />
+both dead and living rodents block the vents. The horrible combination are<br />
+enough to cause anyone to gag. The path extends east and west.<br />
+<br />
+18H 98V 7328251X 197C Exits:EW&gt; look eThe hallway looks to make a turn up ahead.<br />
+<br />
+18H 98V 7328251X 197C Exits:EW&gt; eA Dark Hallway<br />
+    The long hallway takes a turn here. To the north are faint moans, maybe<br />
+this place isn't as abandoned as it looks. Here you can move closer to<br />
+investigate the sounds north or back west through the smoke filled passage.<br />
+The corpse of a young adult warg is lying here.<br />
+<br />
+18H 97V 7328251X 197C Exits:NW&gt; look nFaint moans can be heard from this direction.<br />
+<br />
+18H 97V 7328251X 197C Exits:NW&gt; nA Dark Hallway<br />
+    Though very deprived of light this passage appears to have been a<br />
+practice hall of some kind, oddly enough there has yet to be any evidence<br />
+of a single guard inside the temple. Some strange moans seem to be coming<br />
+from a vent on the west wall. Southward there is a turn in the hallway,<br />
+while north lies a huge wooden door.<br />
+A large rat stares at you from the shadows.<br />
+A small spider skitters away at your approach.<br />
+<br />
+18H 96V 7328251X 197C Exits:NS&gt; look nA huge wooden door with markings carved in it.<br />
+The door is open.<br />
+<br />
+18H 96V 7328251X 197C Exits:NS&gt; nThe Captain's Quarters<br />
+    Plentifully filthy, these quarters are the chambers of the Captain of<br />
+the temple guards. There is a dirty cot in the northeast corner of the<br />
+room. The floor of the room is littered with empty flagons which reek of<br />
+old ale. On the north wall you make out a small hole in the wall. As you<br />
+turn from the hole you get the feeling you are being watched. Your only<br />
+exit appears to be back south through the huge door.<br />
+The captain of the temple guards is here half drunk from all the ale.<br />
+<br />
+18H 95V 7328251X 197C Exits:S&gt; look nYou see nothing special.<br />
+<br />
+18H 95V 7328251X 197C Exits:S&gt; sA Dark Hallway<br />
+    Though very deprived of light this passage appears to have been a<br />
+practice hall of some kind, oddly enough there has yet to be any evidence<br />
+of a single guard inside the temple. Some strange moans seem to be coming<br />
+from a vent on the west wall. Southward there is a turn in the hallway,<br />
+while north lies a huge wooden door.<br />
+A large rat stares at you from the shadows.<br />
+A small spider skitters away at your approach.<br />
+<br />
+18H 94V 7328251X 197C Exits:NS&gt; sA Dark Hallway<br />
+    The long hallway takes a turn here. To the north are faint moans, maybe<br />
+this place isn't as abandoned as it looks. Here you can move closer to<br />
+investigate the sounds north or back west through the smoke filled passage.<br />
+The corpse of a young adult warg is lying here.<br />
+<br />
+18H 93V 7328251X 197C Exits:NW&gt; wA Dark Hallway<br />
+    Continuing down the hallway is a disturbing film of smoke that fills<br />
+the air and doesn't seem to move. This comes as no surprise as there are<br />
+both dead and living rodents block the vents. The horrible combination are<br />
+enough to cause anyone to gag. The path extends east and west.<br />
+<br />
+18H 92V 7328251X 197C Exits:EW&gt; wA Dark Hallway<br />
+    It is very apparent that this hallway is seldom traveled and even less<br />
+frequently cleaned. The torches that once lit this passage now only<br />
+contribute to its darkness with their smoke. There is a faint stench of<br />
+foulness in the air that causes you to cough. The path continues to the<br />
+east and west.<br />
+<br />
+18H 91V 7328251X 197C Exits:EW&gt; wA Dark Hallway<br />
+    Here begins of a long dark hallway. The only lighting is the dull glow<br />
+from a few recently burned out torches. The hallway proceeds east, and to<br />
+the west lies a plain wooden door.<br />
+A small spider skitters away at your approach.<br />
+A large rat stares at you from the shadows.<br />
+<br />
+18H 90V 7328251X 197C Exits:EW&gt; wEntryway of the Temple<br />
+    This is the entryway to the temple. It is lit dimly by a few scattered<br />
+torches, which barely reflect off what appears to be the remains of several<br />
+humans. Perhaps now is a good time to turn and head back out the Red Door<br />
+south of here leading back out of this grim place. The path extends to the<br />
+north, while to the east lies a plain wooden door.<br />
+Grauth Gazer, Nowclan's Sheaf Collector is standing here, fighting Jaxz. (flying)<br />
+Yaz, Nowclan's Defender of the Fens is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here, fighting Jaxz. (flying)<br />
+Jaxz is sitting here, fighting Grauth. (flying)<br />
+One of Hiddukel's newfound faithful followers is here.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yamoto slashes Jaxz extremely hard.<br />
+Yamoto slashes Jaxz hard.<br />
+Grauth massacres Jaxz with his crush.<br />
+Jaxz is mortally wounded, and will die soon, if not aided.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; laugh jaxzYou point at him and fall down laughing.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yamoto panics, and attempts to flee.<br />
+Jaxz lies helplessly on the ground and suffers.<br />
+Jaxz is mortally wounded, and will die soon, if not aided.<br />
+Yamoto flies east.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yaz focuses harshly on Jaxz and utters some strange words.<br />
+Yaz slowly fades into existence.<br />
+Jaxz dies a fiery death as Yaz enshrouds him in a cloak of flame.<br />
+Jaxz is dead! R.I.P.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+The death cry of Jaxz echoes from somewhere nearby...<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yamoto flies in from the east.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; exam corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a bloody minotaur hand axe<br />
+a bladeless sword..it glows dimly<br />
+a long cloak of hunting<br />
+a pair of dragonrider's gloves<br />
+pearl and onyx greaves<br />
+an oakleaf etched cerise plate<br />
+an ancient medallion<br />
+a malachite ring<br />
+a ring of the stone guardian..it hums softly<br />
+a small pile of coins<br />
+a raw cut of filet mignon [4]<br />
+a smoked Tarsis ham [8]<br />
+a bronze bottle [5]<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth gets a small pile of coins from the corpse of Jaxz.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yamoto gets a bloody minotaur hand axe from the corpse of Jaxz.<br />
+Yamoto gets a bladeless sword from the corpse of Jaxz.<br />
+Yamoto is zapped by a long cloak of hunting and instantly drops it.<br />
+Yamoto is zapped by a pair of dragonrider's gloves and instantly drops it.<br />
+Yamoto gets pearl and onyx greaves from the corpse of Jaxz.<br />
+Yamoto is zapped by an oakleaf etched cerise plate and instantly drops it.<br />
+Yamoto gets an ancient medallion from the corpse of Jaxz.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Yaz gets a malachite ring from the corpse of Jaxz.<br />
+Yaz gets a ring of the stone guardian from the corpse of Jaxz.<br />
+Yaz gets a raw cut of filet mignon from the corpse of Jaxz.<br />
+Yaz gets a raw cut of filet mignon from the corpse of Jaxz.<br />
+Yaz gets a raw cut of filet mignon from the corpse of Jaxz.<br />
+Yaz gets a raw cut of filet mignon from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a smoked Tarsis ham from the corpse of Jaxz.<br />
+Yaz gets a bronze bottle from the corpse of Jaxz.<br />
+Yaz gets a bronze bottle from the corpse of Jaxz.<br />
+Yaz gets a bronze bottle from the corpse of Jaxz.<br />
+Yaz gets a bronze bottle from the corpse of Jaxz.<br />
+Yaz gets a bronze bottle from the corpse of Jaxz.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth is zapped by an oakleaf etched cerise plate and instantly drops it.<br />
+Grauth is zapped by a pair of dragonrider's gloves and instantly drops it.<br />
+Grauth is zapped by a long cloak of hunting and instantly drops it.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth says 'loot'<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth says 'now'<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth says 'get all'<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; get allYou are zapped by a long cloak of hunting and instantly drop it.<br />
+You are zapped by a pair of dragonrider's gloves and instantly drop it.<br />
+You get an oakleaf etched cerise plate.<br />
+Corpse : You can't carry that much weight.<br />
+<br />
+18H 89V 7328251X 197C Exits:NE(S)&gt; <br />
+Grauth says 'get all'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1620'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1620">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1620">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

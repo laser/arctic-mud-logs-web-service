@@ -1,0 +1,876 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 460-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='460'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Garbage Day</font></b>
+<p>
+POV: 
+Kodiak<p>
+Log Rating:
+2.3438<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Group of randomers get taken down ghetto style. </i>
+<p>
+<p>
+
+306H 9V 15481501X 34C Exits:NSW&gt; c 'enlar'<br />
+You utter the words, 'enlarge'<br />
+You grow larger.<br />
+<br />
+306H 9V 15481501X 34C Mem:2 Exits:NSW&gt; n<br />
+n<br />
+c 'para'fukutsusei<br />
+An Intersection<br />
+    Heavy traffic flows in all directions through this intersection. Early<br />
+in the morning, fishermen are heading out to pursue the day's catch in the<br />
+Balifor Sea. The fortunate return in the afternoon and head east to the<br />
+cannery offices. The unfortunate wearily trudge south in search of a warm<br />
+fire and a pint. Travellers heading to and from the north think of long<br />
+treks.<br />
+<br />
+306H 8V 15481501X 34C Mem:2 Exits:NESW&gt; The North Gate of Port Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the north gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea off Balifor is reputedly vicious for the<br />
+inexperienced, defending the town well.<br />
+A young kender stands here, looking about curiously.<br />
+Inpaine the Male Theiwar Dwarf is standing here. (flying)<br />
+Slippy the Male Gnome is standing here. (flying) (invisible)<br />
+Fushi the Male High Elf is standing here. (flying)<br />
+Fukutsusei the Male High Elf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+306H 7V 15481501X 34C Mem:2 Exits:NS&gt; You utter the words, 'paralysis'<br />
+The magic fails!<br />
+<br />
+306H 7V 15481501X 34C Mem:3 Exits:NS&gt; c 'para'fukutsusei<br />
+<br />
+Fushi peers around the room suspiciously.<br />
+<br />
+306H 7V 15481501X 34C Mem:3 Exits:NS&gt; <br />
+You step aside as Fushi tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+306H 7V 15481501X 34C [Me:V.Good] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+Inpaine focuses harshly on you and utters some strange words.<br />
+Inpaine shoots webs at you but narrowly misses!<br />
+<br />
+306H 7V 15481501X 34C [Me:V.Good] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+Fukutsusei focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Fukutsusei has reached its goal.<br />
+That Really did HURT!<br />
+<br />
+240H 7V 15481501X 34C [Me:Good] [Fushi:Awful] Mem:3 Exits:NS&gt; You utter the words, 'paralysis'<br />
+Fukutsusei is paralyzed!<br />
+<br />
+240H 7V 15481501X 34C [Me:Good] [Fushi:Awful] Mem:3 Exits:NS&gt; flee<br />
+flee<br />
+<br />
+Fushi slashes YOU hard.<br />
+Fushi is chilled as he passes through your freezing aura.<br />
+<br />
+232H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+There is lightning in the sky.<br />
+<br />
+232H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+Inpaine focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Inpaine has reached its goal.<br />
+<br />
+198H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+A Balifor gateguard looks at Fushi and yells  'There's the scoundrel!'<br />
+<br />
+198H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+Slippy focuses harshly on you and utters some strange words.<br />
+Slippy slowly fades into existence.<br />
+YOU'RE HIT. A lightning bolt from Slippy has reached its goal.<br />
+<br />
+167H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; <br />
+A Balifor gateguard looks at Fushi and yells  'There's the scoundrel!'<br />
+<br />
+167H 7V 15481501X 34C [Me:Fair] [Fushi:Awful] Mem:3 Exits:NS&gt; You flee head over heels.<br />
+An Intersection<br />
+    Heavy traffic flows in all directions through this intersection. Early<br />
+in the morning, fishermen are heading out to pursue the day's catch in the<br />
+Balifor Sea. The fortunate return in the afternoon and head east to the<br />
+cannery offices. The unfortunate wearily trudge south in search of a warm<br />
+fire and a pint. Travellers heading to and from the north think of long<br />
+treks.<br />
+<br />
+167H 6V 15481501X 34C Mem:3 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+167H 6V 15481501X 34C Mem:3 Exits:NESW&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+167H 6V 15481501X 34C Mem:3 Exits:NESW&gt; c 'cur s'me<br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+215H 6V 15481501X 34C Mem:5 Exits:NESW&gt; c 'cur s'me<br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; gt tic in 5<br />
+<br />
+Fushi arrives from the east.<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; <br />
+Fushi leaves north.<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; c 'storm call'<br />
+You are not a member of a group.<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; You utter the words 'storm call'<br />
+There is lightning in the sky.<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; c 'co'fushi<br />
+Who should the spell be cast upon?<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; c 'co'fushi<br />
+Who should the spell be cast upon?<br />
+<br />
+253H 6V 15481501X 34C Mem:6 Exits:NESW&gt; n<br />
+The North Gate of Port Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the north gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea off Balifor is reputedly vicious for the<br />
+inexperienced, defending the town well.<br />
+The corpse of Fushi is lying here.<br />
+A young kender stands here, looking about curiously.<br />
+Fushi the Male High Elf is standing here.<br />
+Inpaine the Male Theiwar Dwarf is standing here. (flying)<br />
+Slippy the Male Gnome is standing here. (flying)<br />
+Fukutsusei the Male High Elf is sitting here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+253H 5V 15481501X 34C Mem:6 Exits:NS&gt; c 'co'fushi<br />
+<br />
+Inpaine gives a luck blade to Fushi.<br />
+<br />
+253H 5V 15481501X 34C Mem:6 Exits:NS&gt; You utter the words, 'cone of cold'<br />
+Your cone of cold freezes Fushi solid, and blasts him into ice cubes.<br />
+You receive 0 experience.<br />
+Fushi is dead! R.I.P.<br />
+get coins corpse<br />
+exa corpse<br />
+<br />
+253H 5V 15481501X 34C [Me:Good] [Fushi:Dying] Mem:6 Exits:NS&gt; <br />
+The death cry of Fushi echoes from somewhere nearby...<br />
+<br />
+253H 5V 15481501X 34C Mem:6 Exits:NS&gt; <br />
+The rising sun barely lights the dark and cloudy sky.<br />
+The lightning has stopped.<br />
+You are hungry.<br />
+You are thirsty.<br />
+<br />
+266H 41V 15481501X 34C Mem:17 Exits:NS&gt; <br />
+Fukutsusei laughs heartily.<br />
+<br />
+266H 41V 15481501X 34C Mem:17 Exits:NS&gt; <br />
+Inpaine focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Inpaine has reached its goal.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Perfect] Mem:17 Exits:NS&gt; c 'call'fukutsusei<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Perfect] Mem:17 Exits:NS&gt; Fushi arrives from the south.<br />
+A Balifor gateguard looks at Inpaine and yells  'There's the scoundrel!'<br />
+A Balifor gateguard looks at Inpaine and yells  'There's the scoundrel!'<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a leather shield<br />
+a luck blade..it glows blue..it glows dimly..it hums softly<br />
+a small functional hammer<br />
+a sextant..it glows blue..it hums softly<br />
+a small functional hammer<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a scroll with a brown ribbon..it glows blue [3]<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Perfect] Mem:17 Exits:NS&gt; You utter the words, 'call lightning'<br />
+You hit Fukutsusei with your lightning -- bullseye!<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Perfect] Mem:21 Exits:NS&gt; <br />
+A Balifor gateguard massacres Inpaine with his smite.<br />
+A Balifor gateguard smites Inpaine extremely hard.<br />
+A Balifor gateguard massacres Inpaine with his smite.<br />
+A Balifor gateguard smites Inpaine extremely hard.<br />
+Inpaine misses you with his hit.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Bad] Mem:21 Exits:NS&gt; <br />
+Fushi gets a leather shield from the corpse of Fushi.<br />
+Fushi gets a luck blade from the corpse of Fushi.<br />
+Fushi gets a small functional hammer from the corpse of Fushi.<br />
+Fushi gets a sextant from the corpse of Fushi.<br />
+Fushi gets a small functional hammer from the corpse of Fushi.<br />
+Fushi gets a glowing scroll of recall from the corpse of Fushi.<br />
+Fushi gets a scroll with a brown ribbon from the corpse of Fushi.<br />
+Fushi gets a scroll with a brown ribbon from the corpse of Fushi.<br />
+Fushi gets a scroll with a brown ribbon from the corpse of Fushi.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Bad] Mem:21 Exits:NS&gt; <br />
+A Balifor gateguard looks at Inpaine and yells  'There's the scoundrel!'<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Bad] Mem:21 Exits:NS&gt; <br />
+A Balifor gateguard looks at Inpaine and yells  'There's the scoundrel!'<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Inpaine:Bad] Mem:21 Exits:NS&gt; c 'call'fukutsusei<br />
+<br />
+Inpaine panics, and attempts to flee.<br />
+You direct your attention to Fukutsusei.<br />
+Inpaine flies south.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Fukutsusei:Awful] Mem:21 Exits:NS&gt; <br />
+Inpaine flies in from the south.<br />
+A Balifor gateguard looks at you and yells 'There's the scoundrel!'<br />
+A Balifor gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Fukutsusei:Awful] Mem:21 Exits:NS&gt; <br />
+Fushi starts using a leather shield as a shield.<br />
+<br />
+242H 41V 15481501X 34C [Me:Good] [Fukutsusei:Awful] Mem:21 Exits:NS&gt; A Balifor gateguard misses you with his smite.<br />
+A Balifor gateguard massacres YOU with his smite.<br />
+A Balifor gateguard is chilled as he passes through your freezing aura.<br />
+A Balifor gateguard smites YOU extremely hard.<br />
+A Balifor gateguard is chilled as he passes through your freezing aura.<br />
+A Balifor gateguard smites YOU extremely hard.<br />
+A Balifor gateguard is chilled as he passes through your freezing aura.<br />
+You massacre Fukutsusei with your smite.<br />
+You receive 0 experience.<br />
+Fukutsusei is dead! R.I.P.<br />
+get coins corpse<br />
+exa corpse<br />
+The death cry of Fukutsusei echoes from somewhere nearby...<br />
+Slippy stops following Fukutsusei.<br />
+Fukutsusei now follows Slippy.<br />
+Slippy is the new leader of Fukutsusei's group.<br />
+Fukutsusei stops following Slippy.<br />
+Inpaine stops following Fukutsusei.<br />
+Inpaine now follows Slippy.<br />
+You direct your attention to a Balifor gateguard.<br />
+Who should the spell be cast upon?<br />
+<br />
+184H 41V 15480391X 34C [Me:Fair] [a Balifor gateguard:V.Good] Mem:21 Exits:NS&gt; You get a pile of coins from the corpse of Fukutsusei.<br />
+There were 31 coins.<br />
+split 31<br />
+<br />
+184H 41V 15480391X 65C [Me:Fair] [a Balifor gateguard:V.Good] Mem:21 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a scroll with a brown ribbon..it glows blue [3]<br />
+<br />
+184H 41V 15480391X 65C [Me:Fair] [a Balifor gateguard:V.Good] Mem:21 Exits:NS&gt; You belong to no group.<br />
+<br />
+184H 41V 15480391X 65C [Me:Fair] [a Balifor gateguard:V.Good] Mem:21 Exits:NS&gt; <br />
+You step aside as Fushi tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+184H 41V 15480391X 65C [Me:Fair] [a Balifor gateguard:V.Good] Mem:21 Exits:NS&gt; flee<br />
+You flee head over heels.<br />
+Before the Gates of Balifor<br />
+    This long and dusty road ends south at the port of Balifor, a busy<br />
+trading centre for Krynn. All travellers are welcome in Port Balifor but<br />
+one must remain wary of the constant flow of smugglers and thieves that<br />
+call this town home. Known for its bawdy taverns, black markets and<br />
+expansive slums, Balifor is not home for the meek.<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; flee<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; <br />
+A clydesdale arrives from the north, carrying Philth.<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; <br />
+A clydesdale leaves south, carrying Philth.<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; <br />
+Fukutsusei arrives from the south.<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; <br />
+Fukutsusei leaves south.<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; c 'fla'fushi<br />
+Who should the spell be cast upon?<br />
+<br />
+184H 39V 15480391X 65C Mem:21 Exits:NS&gt; n<br />
+The Road To Port Balifor<br />
+    This long and dusty road leads south to the port of Balifor, a busy<br />
+trading centre for Krynn. All travellers are welcome in Port Balifor but<br />
+one must remain wary of the constant flow of smugglers and thieves that<br />
+call this town home. Known for its bawdy taverns, black markets and<br />
+expansive slums, Balifor is not home for the meek.<br />
+<br />
+184H 37V 15480391X 65C Mem:21 Exits:NES&gt; c 'fla'fushi<br />
+Who should the spell be cast upon?<br />
+<br />
+184H 37V 15480391X 65C Mem:21 Exits:NES&gt; s<br />
+Before the Gates of Balifor<br />
+    This long and dusty road ends south at the port of Balifor, a busy<br />
+trading centre for Krynn. All travellers are welcome in Port Balifor but<br />
+one must remain wary of the constant flow of smugglers and thieves that<br />
+call this town home. Known for its bawdy taverns, black markets and<br />
+expansive slums, Balifor is not home for the meek.<br />
+<br />
+184H 35V 15480391X 65C Mem:21 Exits:NS&gt; s<br />
+The North Gate of Port Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the north gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea off Balifor is reputedly vicious for the<br />
+inexperienced, defending the town well.<br />
+The corpse of Fukutsusei is lying here.<br />
+The corpse of Fushi is lying here. [2]<br />
+A young kender stands here, looking about curiously.<br />
+Fukutsusei the Male High Elf is standing here.<br />
+Fushi the Male High Elf is sitting here.<br />
+Slippy the Male Gnome is standing here. (flying)<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+184H 33V 15480391X 65C Mem:21 Exits:NS&gt; c 'fla'fushi<br />
+You utter the words, 'flame shroud'<br />
+Fushi dies a fiery death as you enshroud him in a cloak of burning flames.<br />
+You receive 0 experience.<br />
+Fushi is dead! R.I.P.<br />
+get coins corpse<br />
+exa corpse<br />
+<br />
+184H 33V 15480391X 65C [Me:Fair] [Fushi:Dying] Mem:23 Exits:NS&gt; <br />
+The death cry of Fushi echoes from somewhere nearby...<br />
+<br />
+184H 33V 15480391X 65C Mem:23 Exits:NS&gt; <br />
+Slippy flies south.<br />
+<br />
+184H 33V 15480391X 65C Mem:23 Exits:NS&gt; c 'fla'fukutsusei<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+184H 33V 15480391X 65C Mem:23 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a leather shield<br />
+a scroll with a brown ribbon..it glows blue [3]<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a small functional hammer<br />
+a sextant..it glows blue..it hums softly<br />
+a small functional hammer<br />
+a luck blade..it glows blue..it glows dimly..it hums softly<br />
+<br />
+184H 33V 15480391X 65C Mem:23 Exits:NS&gt; You utter the words, 'flame shroud'<br />
+Fukutsusei dies a fiery death as you enshroud him in a cloak of burning flames.<br />
+You receive 0 experience.<br />
+Fukutsusei is dead! R.I.P.<br />
+get coins corpse<br />
+exa corpse<br />
+<br />
+184H 33V 15480391X 65C [Me:Fair] [Fukutsusei:Dying] Mem:25 Exits:NS&gt; <br />
+The death cry of Fukutsusei echoes from somewhere nearby...<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Fushi arrives from the south.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; get all fushi<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; You get a leather shield from the corpse of Fushi.<br />
+You get a scroll with a brown ribbon from the corpse of Fushi.<br />
+You get a scroll with a brown ribbon from the corpse of Fushi.<br />
+You get a scroll with a brown ribbon from the corpse of Fushi.<br />
+You get a glowing scroll of recall from the corpse of Fushi.<br />
+You get a small functional hammer from the corpse of Fushi.<br />
+You get a sextant from the corpse of Fushi.<br />
+You get a small functional hammer from the corpse of Fushi.<br />
+You get a luck blade from the corpse of Fushi.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Ewin flies in from the south.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Ewin flies north.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Fushi pretends to wap the ground with an imaginary walking stick.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Galafidel shouts '20 cleric/thief seekin leader and other groupies fer xak run'<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; get all fukutsusei<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; l<br />
+The North Gate of Port Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the north gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea off Balifor is reputedly vicious for the<br />
+inexperienced, defending the town well.<br />
+The corpse of Fukutsusei is lying here.<br />
+The corpse of Fushi is lying here.<br />
+The corpse of Fukutsusei is lying here.<br />
+The corpse of Fushi is lying here. [2]<br />
+Fushi the Male High Elf is standing here.<br />
+A young kender stands here, looking about curiously.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Fukutsusei arrives from the south.<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; <br />
+Fukutsusei misses you with his hit.<br />
+<br />
+184H 33V 15480391X 65C [Me:Fair] [Fukutsusei:Awful] Mem:25 Exits:NS&gt; <br />
+A Balifor gateguard looks at Fukutsusei and yells  'There's the scoundrel!'<br />
+<br />
+184H 33V 15480391X 65C [Me:Fair] [Fukutsusei:Awful] Mem:25 Exits:NS&gt; <br />
+A Balifor gateguard looks at Fukutsusei and yells  'There's the scoundrel!'<br />
+<br />
+184H 33V 15480391X 65C [Me:Fair] [Fukutsusei:Awful] Mem:25 Exits:NS&gt; <br />
+A Balifor gateguard massacres Fukutsusei with his smite.<br />
+You receive 0 experience.<br />
+Fukutsusei is dead! R.I.P.<br />
+get coins corpse<br />
+exa corpse<br />
+The death cry of Fukutsusei echoes from somewhere nearby...<br />
+<br />
+184H 33V 15480391X 65C Mem:25 Exits:NS&gt; You get a large pile of coins from the corpse of Fukutsusei.<br />
+There were 147 coins.<br />
+split 147<br />
+<br />
+184H 33V 15480391X 212C Mem:25 Exits:NS&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+184H 33V 15480391X 212C Mem:25 Exits:NS&gt; You belong to no group.<br />
+<br />
+184H 33V 15480391X 212C Mem:25 Exits:NS&gt; <br />
+Fushi laughs heartily.<br />
+<br />
+184H 33V 15480391X 212C Mem:25 Exits:NS&gt; l<br />
+The North Gate of Port Balifor<br />
+    Tired and weary, you drag your aching feet along the narrow road that<br />
+passes through the north gate of Balifor. A tall city wall surrounds the<br />
+port on its three open sides, an indication of its trading wealth and<br />
+prosperous people. The sea off Balifor is reputedly vicious for the<br />
+inexperienced, defending the town well.<br />
+The corpse of Fukutsusei is lying here. [2]<br />
+The corpse of Fushi is lying here.<br />
+The corpse of Fukutsusei is lying here.<br />
+The corpse of Fushi is lying here. [2]<br />
+Fushi the Male High Elf is standing here.<br />
+A young kender stands here, looking about curiously.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+A bored watchman guards the northern gates of Balifor.<br />
+<br />
+184H 33V 15480391X 212C Mem:25 Exits:NS&gt; <br />
+A clydesdale arrives from the south, carrying Rolly.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='460'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=460">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="460">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

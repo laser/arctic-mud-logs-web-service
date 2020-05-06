@@ -1,0 +1,4333 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 759-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='759'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Tournament moments I would never forget...</font></b>
+<p>
+POV: 
+Denise<p>
+Log Rating:
+0.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some funky fighting, hope to entertain you.</i>
+<p>
+<p>
+
+340H 219V 1X 3C Mem:1 Exits:ESW&gt; e<br />
+The Tarsis Wastelands<br />
+Mari Jane is standing here.<br />
+Stin Tid, Short Renshai is standing here, fighting Rhuarc.<br />
+Poi, Defender of Goka is standing here.<br />
+Rhuarc, Wild Clan Chief of TeamSpongue is standing here, fighting Stin. (flying)<br />
+<br />
+340H 217V 1X 3C Mem:1 Exits:EW&gt; <br />
+Poi tries to bash Elyana, but he passes right through her image and falls.<br />
+<br />
+340H 217V 1X 3C Mem:1 Exits:EW&gt; <br />
+Rinad slowly fades into existence.<br />
+Rinad crashes into Stin in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 217V 1X 3C Mem:1 Exits:EW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Mari with a spray of vibrant green!<br />
+You catch Mari in a spray of radiant yellow!<br />
+You catch Stin in a spray of bright orange!<br />
+You strike Poi with a spray of murky violet!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Mari:Good] Mem:3 Exits:EW&gt; <br />
+There is lightning in the sky.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Mari:Good] Mem:3 Exits:EW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deflects part of Mari's blow with his shield.<br />
+Mari stabs Rhuarc extremely hard.<br />
+Rhuarc misses Mari with his stab.<br />
+Rinad massacres Stin with his stab.<br />
+Poi misses Elyana with his crush.<br />
+Elyana misses Poi with her hit.<br />
+Stin smites Rhuarc hard.<br />
+<br />
+340H 217V 1X 3C Mem:3 Exits:EW&gt;<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Mari is struck by a spray of vibrant green!<br />
+Someone seems weaker.<br />
+Stin is caught in a spray of radiant yellow!<br />
+Poi is caught in a spray of radiant yellow!<br />
+<br />
+340H 217V 1X 3C Mem:3 Exits:EW&gt; <br />
+Mari tries to bash you, but she passes right through your image.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:V.Good] [Mari:Good] Mem:3 Exits:EW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Mari with a spray of murky violet!<br />
+You strike Stin with a spray of murky violet!<br />
+You strike Poi with a spray of murky violet!<br />
+You strike Poi with a spray of vibrant green!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:V.Good] [Mari:Good] Mem:4 Exits:EW&gt; <br />
+Mari massacres Rhuarc with her stab.<br />
+Rhuarc stabs Mari very hard.<br />
+Rinad stabs Stin extremely hard.<br />
+Poi misses Elyana with his crush.<br />
+Stin smites Rhuarc very hard.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Elyana utters the words, 'cloud kill'.<br />
+A yellowish-green cloud permeates the air.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Rhuarc focuses his purity on Mari's arm!<br />
+Rhuarc forces Mari to drop her weapon.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Poi stands up.<br />
+Stin stands up.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Stin utters some strange words.<br />
+Stin heals Stin.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Poi tries to bash Elyana, but he passes right through her image and falls.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Rinad crashes into Stin in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+You hit Mari.<br />
+Mari misses Rhuarc with her hit.<br />
+Rhuarc stabs Mari extremely hard.<br />
+Rinad massacres Stin with his stab.<br />
+Poi misses Elyana with his crush.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; g all<br />
+You get a steel rapier.<br />
+You can't seem to get that.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Mari is caught in a spray of radiant yellow!<br />
+Stin is blasted by a spray of scintillating blue!<br />
+Poi is struck by a spray of murky violet!<br />
+Poi is struck by a spray of vibrant green!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:4 Exits:EW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Mari in a spray of bright orange!<br />
+You strike Stin with a spray of murky violet!<br />
+You strike Poi with a spray of vibrant green!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; <br />
+Mari misses Rhuarc with her hit.<br />
+Rhuarc stabs Mari very hard.<br />
+Rinad massacres Stin with his stab.<br />
+Poi misses Elyana with his crush.<br />
+Stin smites Rhuarc very hard.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; <br />
+Mari stands up.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; <br />
+Elyana utters the words, 'mirror image'.<br />
+Elyana is surrounded by 4 duplicate images.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; <br />
+Elyana misses Mari with her hit.<br />
+Rhuarc deflects part of Poi's blow with his shield.<br />
+Poi crushes Rhuarc very hard.<br />
+Rhuarc stabs Poi very hard.<br />
+You miss Mari with your hit.<br />
+Mari misses Rhuarc with her hit.<br />
+Rinad massacres Stin with his stab.<br />
+Stin smites Rhuarc very hard.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:5 Exits:EW&gt; CAST 'force bolt' stin<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Stin.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:6 Exits:EW&gt; <br />
+Mari tries to bash you, but she passes right through your image.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:6 Exits:EW&gt; <br />
+Poi stands up.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Fair] Mem:6 Exits:EW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Mari is caught in a spray of radiant yellow!<br />
+Mari is blasted by a spray of scintillating blue!<br />
+Stin is hit by a spray of gleaming indigo!<br />
+Poi is hit by a spray of gleaming indigo!<br />
+Poi is struck by a spray of murky violet!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; <br />
+Rinad crashes into Stin in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; <br />
+Rhuarc focuses harshly on Stin and utters some strange words.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; <br />
+Poi tries to sweep Rhuarc's legs, but misses badly.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; <br />
+Inky blackness flows into the room.<br />
+Poi crushes Rhuarc extremely hard.<br />
+Mari misses Rhuarc with her hit.<br />
+Rinad massacres Stin with his stab.<br />
+Stin misses Rhuarc with his smite.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; gt frag stin<br />
+You tell your group 'frag stin'<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:6 Exits:EW&gt; CAST 'force bolt' stin<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Stin.<br />
+Stin is mortally wounded, and will die soon, if not aided.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:8 Exits:EW&gt; <br />
+Elyana focuses harshly on Stin and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Stin's skull.<br />
+Twinkling lights surround Stin and he disappears.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:8 Exits:EW&gt; <br />
+Rhuarc attempts to strike at Poi with his rapier.<br />
+Rhuarc stabs Poi hard.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:8 Exits:EW&gt; <br />
+Poi misses Rhuarc with his crush.<br />
+Rhuarc stabs Poi very hard.<br />
+Mari misses Rhuarc with her hit.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:8 Exits:EW&gt; <br />
+Mari stands up.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:8 Exits:EW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Mari with a spray of gleaming indigo!<br />
+You blast Mari with a spray of scintillating blue!<br />
+You strike Poi with a spray of murky violet!<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:V.Bad] Mem:9 Exits:EW&gt; <br />
+Elyana focuses harshly on Mari and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Mari.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Awful] Mem:9 Exits:EW&gt; <br />
+Poi panics, and attempts to flee.<br />
+Poi leaves east.<br />
+<br />
+340H 217V 1X 3C [Me:Perfect] [Rhuarc:Good] [Mari:Awful] Mem:9 Exits:EW&gt; <br />
+Mari panics, and attempts to flee.<br />
+Mari leaves east.<br />
+<br />
+340H 217V 1X 3C Mem:9 Exits:EW&gt; <br />
+Mari arrives from the east.<br />
+<br />
+340H 217V 1X 3C Mem:9 Exits:EW&gt; <br />
+Elyana misses Mari with her hit.<br />
+Mari misses Elyana with her hit.<br />
+<br />
+340H 217V 1X 3C Mem:9 Exits:EW&gt; <br />
+Mari panics, and attempts to flee.<br />
+Mari leaves east.<br />
+<br />
+340H 217V 1X 3C Mem:9 Exits:EW&gt; e<br />
+Near the Tarsis Wastelands<br />
+A yellowish, green haze fills the air of the room.<br />
+Mari Jane is standing here.<br />
+<br />
+340H 215V 1X 3C Mem:9 Exits:ESW&gt; <br />
+Rinad crashes into Mari in a thundering collision, knocking her to the ground!<br />
+Mari is stunned, but will likely regain consciousness again.<br />
+<br />
+340H 215V 1X 3C Mem:9 Exits:ESW&gt; <br />
+<br />
+********************************************************************************************<br />
+<br />
+340H 194V 1X 3C Mem:3 Exits:ESW&gt; <br />
+Tinotaur flies in from the west.<br />
+<br />
+340H 194V 1X 3C Mem:3 Exits:ESW&gt; <br />
+Rhuarc burns as he passes through a barrier.<br />
+Rhuarc flies west.<br />
+Rinad burns as he passes through a barrier.<br />
+Elyana burns as she passes through a barrier.<br />
+You burn as you pass through a barrier.<br />
+You follow Rhuarc west.<br />
+The Barren Wastes<br />
+A swarm of insects fills the area.<br />
+A barrier of fire completely blocks off the east exit.<br />
+Riemann the Male Human is standing here, fighting Pti.<br />
+. . . is outlined with a dim aura.<br />
+Anathea, A Legend Reborn is standing here, fighting Rio.<br />
+Thod of Chaos is sitting here, fighting Halgar.<br />
+Sir Siath, Renshai Healing Hand is sitting here, fighting Riemann. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mr. Halgar, Seeking a Purpose is standing here, fighting Thod. (flying)<br />
+. . . has a tough exterior.<br />
+Mr. Pti, Personal Basher of Elyana is standing here, fighting Riemann. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Rio, Dying to Win is sitting here, fighting Anathea. (flying)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; <br />
+Riemann attempts to strike at Pti with his rapier.<br />
+Riemann stabs Pti extremely hard.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; s<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Riemann is caught in a spray of radiant yellow!<br />
+Anathea is caught in a spray of radiant yellow!<br />
+Anathea seems weaker.<br />
+Thod is blasted by a spray of scintillating blue!<br />
+Siath is blasted by a spray of scintillating blue!<br />
+Halgar is blasted by a spray of scintillating blue!<br />
+Pti is struck by a spray of vibrant green!<br />
+Pti is caught in a spray of shimmering red!<br />
+Rio is hit by a spray of gleaming indigo!<br />
+Rio's face goes blank and he begins to drool.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; <br />
+Thod stands up.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; <br />
+Thod panics, and attempts to flee.<br />
+Thod leaves north.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; <br />
+Rio stands up.<br />
+<br />
+296H 192V 1X 3C Mem:3 Exits:NE&gt; n<br />
+The Barren Wastes<br />
+Thod of Chaos is standing here.<br />
+<br />
+296H 190V 1X 3C Mem:3 Exits:NSW&gt; CAST 'prismatic spray' <br />
+sYou utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Thod with a spray of murky violet!<br />
+<br />
+296H 190V 1X 3C [Me:Good] [Thod:Bad] Mem:4 Exits:NSW&gt; <br />
+Thod tries to bash you, but he passes right through your image.<br />
+<br />
+296H 190V 1X 3C [Me:Good] [Thod:Bad] Mem:4 Exits:NSW&gt; <br />
+You miss Thod with your hit.<br />
+Thod stabs YOU very hard.<br />
+Thod burns as he passes through your fire shield.<br />
+<br />
+282H 190V 1X 3C [Me:Good] [Thod:Bad] Mem:4 Exits:NSW&gt; <br />
+Anathea arrives from the south.<br />
+<br />
+282H 190V 1X 3C [Me:Good] [Thod:Bad] Mem:4 Exits:NSW&gt; CAST 'force bolt'<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Thod.<br />
+<br />
+282H 190V 1X 3C [Me:Good] [Thod:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Pti flies in from the south.<br />
+<br />
+282H 190V 1X 3C [Me:Good] [Thod:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Anathea tries to bash you, but she passes right through your image.<br />
+The images around you fade out of existance.<br />
+<br />
+282H 190V 1X 3C [Me:Good] [Thod:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Anathea stabs YOU hard.<br />
+Anathea burns as she passes through your fire shield.<br />
+Thod massacres YOU with his stab.<br />
+Thod burns as he passes through your fire shield.<br />
+<br />
+248H 190V 1X 3C [Me:Fair] [Thod:V.Bad] Mem:5 Exits:NSW&gt; flee<br />
+You flee head over heels.<br />
+A Pathway Out Of The Desert<br />
+<br />
+248H 188V 1X 3C Mem:5 Exits:EW&gt; e<br />
+The Barren Wastes<br />
+Mr. Pti, Personal Basher of Elyana is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Anathea, A Legend Reborn is sitting here.<br />
+Thod of Chaos is standing here.<br />
+<br />
+248H 186V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Pti flies west.<br />
+<br />
+248H 186V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Thod leaves south.<br />
+<br />
+248H 186V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Pti flies in from the west.<br />
+<br />
+248H 186V 1X 3C Mem:5 Exits:NSW&gt; <br />
+You are sent sprawling as Pti crashes into you.<br />
+STAND<br />
+<br />
+223H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Anathea stands up.<br />
+<br />
+223H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+You are sent sprawling as Anathea crashes into you.<br />
+<br />
+200H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Anathea stabs YOU very hard.<br />
+Anathea burns as she passes through your fire shield.<br />
+Pti misses you with his hit.<br />
+You miss Pti with your hit.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Thod arrives from the south.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Rio flies in from the south.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Rhuarc flies in from the south.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of the attack on you.<br />
+Thod crashes into Rhuarc in a thundering collision, knocking him to the ground!<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Elyana flies in from the south.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Rio flies north.<br />
+<br />
+186H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Thod misses Rhuarc with his stab.<br />
+Rhuarc misses Thod with his stab.<br />
+Anathea stabs YOU extremely hard.<br />
+Anathea burns as she passes through your fire shield.<br />
+Pti misses you with his hit.<br />
+You miss Pti with your hit.<br />
+There is lightning in the sky.<br />
+<br />
+170H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Elyana flies north.<br />
+<br />
+170H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Elyana flies in from the north.<br />
+<br />
+170H 186V 1X 3C [Me:Fair] [Pti:Fair] Mem:5 Exits:NSW&gt; <br />
+Elyana focuses harshly on Pti and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Pti.<br />
+<br />
+170H 186V 1X 3C [Me:Fair] [Pti:Bad] Mem:5 Exits:NSW&gt; <br />
+Thod massacres Rhuarc with his stab.<br />
+Rhuarc stabs Thod very hard.<br />
+Anathea stabs YOU very hard.<br />
+Anathea burns as she passes through your fire shield.<br />
+Pti misses you with his hit.<br />
+You miss Pti with your hit.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:Bad] Mem:5 Exits:NSW&gt; <br />
+Pti tries to bash Elyana, but he passes right through her image and falls.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:Bad] Mem:5 Exits:NSW&gt; <br />
+Anathea panics, and attempts to flee.<br />
+Anathea leaves north.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:Bad] Mem:5 Exits:NSW&gt; <br />
+Halgar flies in from the south.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:Bad] Mem:5 Exits:NSW&gt; <br />
+Elyana focuses harshly on Pti and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Pti.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Rhuarc stands up.<br />
+<br />
+157H 186V 1X 3C [Me:Bad] [Pti:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Pti misses Rhuarc with his hit.<br />
+Rhuarc massacres Pti with his stab.<br />
+Thod misses Rhuarc with his stab.<br />
+<br />
+178H 231V 1X 3C Mem:4 Exits:NSW&gt;<br />
+You stand up.<br />
+<br />
+178H 231V 1X 3C Mem:4 Exits:NSW&gt; <br />
+Rinad flies in from the south.<br />
+<br />
+178H 231V 1X 3C Mem:4 Exits:NSW&gt; <br />
+Thod panics, and attempts to flee.<br />
+Thod leaves north.<br />
+<br />
+178H 231V 1X 3C Mem:4 Exits:NSW&gt; <br />
+Rinad massacres Pti with his stab.<br />
+<br />
+178H 231V 1X 3C Mem:4 Exits:NSW&gt; CAST 'mirror image' <br />
+You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Elyana focuses harshly on Pti and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Pti.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Rinad massacres Pti with his stab.<br />
+Pti misses Rhuarc with his hit.<br />
+Rhuarc massacres Pti with his stab.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Halgar now follows Pti.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+[** SYSTEM: Items will start dropping now, the crash mucked that up **]<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Pti stands up.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Tinotaur flies in from the south.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Pti panics, and attempts to flee.<br />
+Pti flies west.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Pti flies in from the west.<br />
+<br />
+178H 231V 1X 3C Mem:5 Exits:NSW&gt; <br />
+Tinotaur utters some strange words.<br />
+Tinotaur's hands send forth blinding rays of sunlight!<br />
+Tinotaur comes out of hiding.<br />
+Pti withers as a ray of sunlight sent by Tinotaur engulfs him!<br />
+Pti seems to be blinded!<br />
+Rinad withers as a ray of sunlight sent by Tinotaur engulfs him!<br />
+Halgar withers as a ray of sunlight sent by Tinotaur engulfs him!<br />
+Tinotaur destroys Elyana's mirror image.<br />
+Elyana withers as a ray of sunlight sent by Tinotaur engulfs her!<br />
+Elyana seems to be blinded!<br />
+Rhuarc withers as a ray of sunlight sent by Tinotaur engulfs him!<br />
+Tinotaur destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+You wither as a ray of sunlight engulfs you!<br />
+<br />
+150H 231V 1X 3C [Me:Bad] [Pti:Awful] [Tinotaur:V.Good] Mem:5 Exits:NSW&gt; <br />
+You miss Tinotaur with your hit.<br />
+Rhuarc stabs Tinotaur very hard.<br />
+Halgar stabs Tinotaur hard.<br />
+Rinad stabs Tinotaur extremely hard.<br />
+Tinotaur smites Pti very hard.<br />
+Pti misses Tinotaur with his hit.<br />
+<br />
+150H 231V 1X 3C [Me:Bad] [Pti:Awful] [Tinotaur:Good] Mem:5 Exits:NSW&gt; <br />
+Pti panics, and attempts to flee.<br />
+Pti flies north.<br />
+<br />
+150H 231V 1X 3C [Me:Bad] [Halgar:Fair] [Tinotaur:Good] Mem:5 Exits:NSW&gt; look<br />
+The Barren Wastes<br />
+Tinotaur Revolutions is standing here, fighting Halgar. (flying)<br />
+. . . has a metallic luster.<br />
+Rinad Q. Thuren, Mythical Black Dragoon is standing here, fighting Tinotaur. (flying)<br />
+Mr. Halgar, Seeking a Purpose is standing here, fighting Tinotaur. (flying)<br />
+. . . has a tough exterior.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here, fighting Tinotaur. (flying)<br />
+. . . is enveloped in flames.<br />
+Rhuarc, Wild Clan Chief of TeamSpongue is standing here, fighting Tinotaur. (flying)<br />
+<br />
+150H 231V 1X 3C [Me:Bad] [Halgar:Fair] [Tinotaur:Good] Mem:5 Exits:NSW&gt; <br />
+Rhuarc attempts to strike at Tinotaur with his rapier.<br />
+Rhuarc stabs Tinotaur extremely hard.<br />
+<br />
+150H 231V 1X 3C [Me:Bad] [Halgar:Fair] [Tinotaur:Good] Mem:5 Exits:NSW&gt; flee<br />
+You flee head over heels.<br />
+The Barren Wastes<br />
+a light wooden shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+A detect invisibility potion is lying here. [2]<br />
+A barrier of fire completely blocks off the east exit.<br />
+Riemann the Male Human is standing here.<br />
+<br />
+150H 229V 1X 3C Mem:5 Exits:NE&gt; <br />
+Riemann leaves north.<br />
+<br />
+150H 229V 1X 3C Mem:5 Exits:NE&gt; <br />
+Tinotaur flies in from the north.<br />
+<br />
+150H 229V 1X 3C Mem:5 Exits:NE&gt; CAST 'mirror image' <br />
+You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+150H 229V 1X 3C Mem:6 Exits:NE&gt; <br />
+Tinotaur flies north.<br />
+<br />
+150H 229V 1X 3C Mem:6 Exits:NE&gt; <br />
+**Elyana: blinded<br />
+<br />
+150H 229V 1X 3C Mem:6 Exits:NE&gt; <br />
+<br />
+**************************************************************************************************<br />
+<br />
+340H 173V 1X 3C Mem:3 Exits:NESW&gt; <br />
+Rhuarc leaves north.<br />
+A bronze dragon leaves north.<br />
+The umber hulk leaves north.<br />
+You follow Rhuarc north.<br />
+A Patch of Dry Ground<br />
+a rapier lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+a small scimitar lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+a small scimitar lies here<br />
+a steel rapier lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a steel rapier lies here<br />
+a turkey sandwich lies here<br />
+a light wooden shield lies here<br />
+A detect invisibility potion is lying here. [2]<br />
+The huge umber hulk lumbers towards you.<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+Mr. Halgar, Seeking a Purpose is standing here, fighting Thod. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Rio, Dying to Win is sitting here, fighting Thod. (flying)<br />
+Thod of Chaos is sitting here, fighting Halgar.<br />
+<br />
+340H 212V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Rhuarc stabs Thod extremely hard.<br />
+<br />
+340H 212V 1X 3C Mem:2 Exits:NESW&gt; ORDER gargoyle KILL rio<br />
+A gargoyle delivers a vicious kick to Rio's face. Blood flies as his head snaps back.<br />
+<br />
+340H 212V 1X 3C Mem:2 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch the umber hulk in a spray of shimmering red!<br />
+You strike a bronze dragon with a spray of murky violet!<br />
+You hit Halgar with a spray of gleaming indigo!<br />
+You hit Rio with a spray of gleaming indigo!<br />
+You dissolve Thod into a pool of ochreous slime with a spray of orange.<br />
+Twinkling lights surround Thod and he disappears.<br />
+A bright ball of light disintegrates.<br />
+A steel bag disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [the umber hulk:Good] Mem:3 Exits:NESW&gt; <br />
+Rio steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [the umber hulk:Good] Mem:3 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+The umber hulk misses Rhuarc with its hit.<br />
+Rhuarc massacres the umber hulk with his stab.<br />
+A bronze dragon hits Rhuarc very hard.<br />
+Rinad stabs Rio extremely hard.<br />
+Rio slashes a gargoyle extremely hard.<br />
+A gargoyle massacres Rio with its claw.<br />
+Rio is mortally wounded, and will die soon, if not aided.<br />
+<br />
+340H 212V 1X 3C Mem:3 Exits:NESW&gt; <br />
+Halgar heroically rescues Rio.<br />
+Rio suffers from lack of blood, and the lack of a beating heart...<br />
+Twinkling lights surround Rio and he disappears.<br />
+A cotton bag disintegrates.<br />
+A bright ball of light disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+<br />
+340H 212V 1X 3C Mem:3 Exits:NESW&gt; <br />
+Ursula flies in from the east.<br />
+Vieri flies in from the east.<br />
+Gill flies in from the east.<br />
+Tort flies in from the east.<br />
+Rhuarc steps aside as the umber hulk attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+340H 212V 1X 3C Mem:3 Exits:NESW&gt; <br />
+Gill utters some strange words.<br />
+The air swirls and a funnel cloud forms.<br />
+<br />
+340H 212V 1X 3C Mem:3 Exits:NESW&gt; <br />
+A small whirlwind crashes into Rinad, pummeling his entire body.<br />
+A small whirlwind crashes into a bronze dragon, pummeling his entire body.<br />
+A small whirlwind crashes into Halgar, pummeling his entire body.<br />
+Gill misses Rinad with her smite.<br />
+Rinad stabs Halgar extremely hard.<br />
+Halgar massacres Rinad with his stab.<br />
+The umber hulk misses Rhuarc with its hit.<br />
+Rhuarc stabs the umber hulk extremely hard.<br />
+A bronze dragon hits Rhuarc very hard.<br />
+<br />
+340H 212V 1X 3C Mem:3 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You miss Tort and destroy an image instead.<br />
+You blast Gill with a spray of scintillating blue!<br />
+Gill freezes in place.<br />
+You catch Vieri in a spray of radiant yellow!<br />
+You blast Ursula with a spray of scintillating blue!<br />
+You catch Ursula in a spray of bright orange!<br />
+You catch the umber hulk in a spray of shimmering red!<br />
+You hit a bronze dragon with a spray of gleaming indigo!<br />
+You catch Halgar in a spray of bright orange!<br />
+You strike Halgar with a spray of vibrant green!<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Tort:Perfect] Mem:4 Exits:NESW&gt; <br />
+Elyana focuses harshly on Gill and utters the words, 'lightning bolt'.<br />
+Gill wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Tort:Perfect] Mem:4 Exits:NESW&gt; <br />
+Halgar panics, and attempts to flee.<br />
+Halgar flies west.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Tort:Perfect] Mem:4 Exits:NESW&gt; <br />
+Ursula tries to focus on you, but she misses and destroys your image.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Tort:Perfect] Mem:4 Exits:NESW&gt; <br />
+The violent funnel cloud rips through the area, hitting nothing.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Ursula deftly steps in front of Tort, pushing into the frey.<br />
+Ursula heroically rescues Tort.<br />
+You miss Ursula with your hit.<br />
+Ursula misses you and destroys an image.<br />
+Rhuarc deflects part of Vieri's blow with his shield.<br />
+Vieri slashes Rhuarc extremely hard.<br />
+Rhuarc stabs Vieri extremely hard.<br />
+Rinad massacres Gill with his stab.<br />
+Rinad is chilled, as he swings at Gill.<br />
+The umber hulk misses Rhuarc with its hit.<br />
+A bronze dragon misses Rhuarc with his hit.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:4 Exits:NESW&gt; <br />
+Tort utters the words, 'prismatic spray'.<br />
+Tort's hands issue a spray of prismatic color!<br />
+A gargoyle is struck by a spray of murky violet!<br />
+A gargoyle bursts into tears.<br />
+A gargoyle panics, and attempts to flee.<br />
+Tort misses you and destroys an image.<br />
+A spray of indigo flows over the umber hulk, ripping out its mind.<br />
+Twinkling lights surround the umber hulk and it disappears.<br />
+Elyana is caught in a spray of bright orange!<br />
+Rinad is blasted by a spray of scintillating blue!<br />
+A bronze dragon is caught in a spray of shimmering red!<br />
+Rhuarc is caught in a spray of radiant yellow!<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:4 Exits:NESW&gt; <br />
+A gargoyle tries to kick Tort but misses and destroys an image.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:4 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Tort in a spray of shimmering red!<br />
+You blast Gill with a spray of scintillating blue!<br />
+You catch Vieri in a spray of bright orange!<br />
+You catch Ursula in a spray of radiant yellow!<br />
+You catch a bronze dragon in a spray of bright orange!<br />
+A bronze dragon is incapacitated and will slowly die, if not aided.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Halgar flies in from the west.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Halgar flies east.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Vieri attacks Rhuarc with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rinad stands up.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Halgar flies in from the east.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Elyana focuses harshly on Gill and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Gill.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Halgar gets a mystical sabre.<br />
+Halgar gets a light wooden shield.<br />
+Halgar gets a bottle of Aquafina mineral water.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a bottle of Aquafina mineral water.<br />
+Halgar gets a steel rapier.<br />
+Halgar gets a heavy steel shield.<br />
+Halgar gets a bottle of Aquafina mineral water.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a small scimitar.<br />
+Halgar gets a rapier.<br />
+Halgar gets a heavy steel shield.<br />
+Halgar gets a bottle of Aquafina mineral water.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a turkey sandwich.<br />
+Halgar gets a light wooden shield.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rinad crashes into Gill in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+The violent funnel cloud rips through the area, hitting nothing.<br />
+Ursula deftly steps in front of Tort, pushing into the frey.<br />
+Ursula heroically rescues Tort.<br />
+A gargoyle misses Ursula with its claw.<br />
+Ursula massacres a gargoyle with her slash.<br />
+Vieri massacres Rhuarc with his slash.<br />
+Rhuarc massacres Vieri with his stab.<br />
+Rinad stabs Gill extremely hard.<br />
+Rinad is chilled, as he swings at Gill.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [a gargoyle:Fair] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Halgar flies west.<br />
+<br />
+340H 212V 1X 3C [Me:Perfect] [a gargoyle:Fair] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Tort utters the words, 'prismatic spray'.<br />
+Tort's hands issue a spray of prismatic color!<br />
+A gargoyle is struck by a spray of murky violet!<br />
+You are blasted by a spray of scintillating blue!<br />
+Tort misses Elyana and destroys an image instead.<br />
+Rinad is caught in a spray of radiant yellow!<br />
+A spray of orange dissolves a bronze dragon into a pool of ochreous slime.<br />
+Twinkling lights surround a bronze dragon and he disappears.<br />
+Rhuarc is caught in a spray of radiant yellow!<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Awful] [Ursula:Fair] Mem:5 Exits:NESW&gt; ORDER gargoyle KILL ursula<br />
+A gargoyle spins and tries to kick Ursula, but Ursula dodges out of the way.<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Awful] [Ursula:Fair] Mem:5 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Tort with a spray of gleaming indigo!<br />
+You hit Gill with a spray of gleaming indigo!<br />
+Gill is mortally wounded, and will die soon, if not aided.<br />
+You catch Vieri in a spray of shimmering red!<br />
+Vieri seems weaker.<br />
+You catch Ursula in a spray of radiant yellow!<br />
+You strike Ursula with a spray of vibrant green!<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Awful] [Ursula:Fair] Mem:6 Exits:NESW&gt; <br />
+Elyana focuses harshly on Gill and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Gill's skull.<br />
+Twinkling lights surround Gill and she disappears.<br />
+A cotton bag disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Awful] [Ursula:Fair] Mem:6 Exits:NESW&gt; <br />
+The violent funnel cloud rips through the area, hitting nothing.<br />
+Tort smites a gargoyle extremely hard.<br />
+A gargoyle claws Ursula hard.<br />
+Ursula slashes a gargoyle extremely hard.<br />
+A gargoyle is mortally wounded, and will die soon, if not aided.<br />
+Rhuarc blocks Vieri's blow with a quick raise of his shield.<br />
+Rhuarc stabs Vieri extremely hard.<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Dying] [Ursula:Fair] Mem:6 Exits:NESW&gt; <br />
+Ursula focuses her purity on a gargoyle's body!<br />
+Ursula focuses on a gargoyle's chest, but is thwarted.<br />
+A gargoyle is mortally wounded, and will die soon, if not aided.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You miss Tort and destroy an image instead.<br />
+You blast Vieri with a spray of scintillating blue!<br />
+You catch Ursula in a spray of shimmering red!<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Dying] [Ursula:Bad] Mem:7 Exits:NESW&gt; <br />
+Vieri focuses harshly on Rhuarc and utters some strange words.<br />
+Rhuarc shudders with agony as pain lashes and clamps down on his soul.<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Dying] [Ursula:Bad] Mem:7 Exits:NESW&gt; <br />
+Elyana focuses harshly on Tort and utters the words, 'force bolt'.<br />
+Elyana misses Tort and destroys an image instead.<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [a gargoyle:Dying] [Ursula:Bad] Mem:7 Exits:NESW&gt; <br />
+The violent funnel dissipates.<br />
+Ursula deftly steps in front of Tort, pushing into the frey.<br />
+Ursula heroically rescues Tort.<br />
+Elyana misses Ursula with her hit.<br />
+Ursula misses Elyana and destroys an image instead.<br />
+Rhuarc massacres Vieri with his stab.<br />
+Rinad crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+<br />
+306H 212V 1X 3C [Me:V.Good] [Elyana:V.Good] [Ursula:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Tort focuses harshly on you and utters the words, 'lightning bolt'.<br />
+YOU'RE HIT. A lightning bolt from Tort has reached its goal.<br />
+<br />
+253H 212V 1X 3C [Me:Fair] [Elyana:V.Good] [Ursula:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+253H 212V 1X 3C [Me:Fair] [Rhuarc:Bad] [Ursula:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Elyana focuses harshly on Tort and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Tort.<br />
+<br />
+253H 212V 1X 3C [Me:Fair] [Rhuarc:Bad] [Ursula:V.Bad] Mem:7 Exits:NESW&gt; <br />
+Ursula slashes Rhuarc very hard.<br />
+Rhuarc misses Ursula with his stab.<br />
+Rinad massacres Ursula with his stab.<br />
+Vieri slashes Rhuarc extremely hard.<br />
+<br />
+253H 212V 1X 3C [Me:Fair] [Rhuarc:Bad] [Ursula:V.Bad] Mem:7 Exits:NESW&gt; CAST 'force bolt' tort<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Tort.<br />
+<br />
+253H 212V 1X 3C [Me:Fair] [Rhuarc:Bad] [Ursula:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Tort focuses harshly on you and utters the words, 'lightning bolt'.<br />
+YOU'RE HIT. A lightning bolt from Tort has reached its goal.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:Bad] [Ursula:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Vieri focuses harshly on Rhuarc and utters some strange words.<br />
+Rhuarc shudders with agony as pain lashes and clamps down on his soul.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Rhuarc deflects part of Ursula's blow with his shield.<br />
+Ursula slashes Rhuarc very hard.<br />
+Rhuarc misses Ursula with his stab.<br />
+Rinad misses Ursula with his stab.<br />
+Elyana focuses harshly on Tort and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Tort.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:8 Exits:NESW&gt; <br />
+Rinad crashes into Tort in a thundering collision, knocking him to the ground!<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:8 Exits:NESW&gt; CAST 'mirror image' <br />
+You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:9 Exits:NESW&gt; <br />
+Rhuarc focuses his purity on Ursula's leg!<br />
+Rhuarc forces Ursula to the ground.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:9 Exits:NESW&gt; <br />
+Vieri gazes at Rhuarc with a look of evilness.<br />
+Rhuarc is paralyzed!<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:9 Exits:NESW&gt; <br />
+Ursula slashes Rhuarc very hard.<br />
+Rinad massacres Ursula with his stab.<br />
+Tort annihilates a gargoyle with his smite.<br />
+Twinkling lights surround a gargoyle and it disappears.<br />
+Vieri slashes Rhuarc extremely hard.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:9 Exits:NESW&gt; <br />
+Elyana focuses harshly on Tort and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Tort's skull.<br />
+Twinkling lights surround Tort and he disappears.<br />
+A cotton bag disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:V.Bad] Mem:9 Exits:NESW&gt; CAST 'force bolt' <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Ursula.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:10 Exits:NESW&gt; <br />
+**Rhuarc: held<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:10 Exits:NESW&gt; <br />
+Ursula slashes Rhuarc extremely hard.<br />
+Rinad stabs Ursula extremely hard.<br />
+Vieri slashes Rhuarc extremely hard.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:10 Exits:NESW&gt; <br />
+Elyana focuses harshly on Vieri and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Vieri.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:10 Exits:NESW&gt; CAST 'force bolt' <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Ursula.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+**Rhuarc: rescue me<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+Ursula steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:V.Bad] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+Ursula slashes Rhuarc very hard.<br />
+Rinad misses Ursula with his stab.<br />
+Vieri massacres Rhuarc with his slash.<br />
+Vieri unsuccessfully tries to save Ursula.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:Awful] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+Elyana focuses harshly on Vieri and utters the words, 'acid blast'.<br />
+Vieri is caught in some of Elyana's acid!<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:Awful] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+Ursula stands up.<br />
+<br />
+199H 212V 1X 3C [Me:Fair] [Rhuarc:Awful] [Ursula:Awful] Mem:11 Exits:NESW&gt; <br />
+Ursula panics, and attempts to flee.<br />
+Ursula flies west.<br />
+<br />
+199H 212V 1X 3C Mem:11 Exits:NESW&gt; <br />
+Vieri slashes Rhuarc extremely hard.<br />
+<br />
+199H 212V 1X 3C Mem:11 Exits:NESW&gt; <br />
+Elyana focuses harshly on Vieri and utters the words, 'acid blast'.<br />
+Vieri is caught in some of Elyana's acid!<br />
+<br />
+199H 212V 1X 3C Mem:11 Exits:NESW&gt; CAST 'force bolt' vieri<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Vieri.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rhuarc panics, and attempts to flee.<br />
+Rhuarc leaves east.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Ursula flies in from the west.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rinad stands up.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rhuarc arrives from the east.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Ursula flies east.<br />
+Vieri flies east.<br />
+<br />
+199H 212V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rhuarc leaves east.<br />
+You follow Rhuarc east.<br />
+Lost Inside A Brackish Swamp<br />
+Vieri, Squadra Azzurri is standing here. (flying)<br />
+Ursula Buendia, the Keeper of Macondo is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+199H 211V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Elyana focuses harshly on Vieri and utters the words, 'magic missile'.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+<br />
+199H 211V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Ursula flies east.<br />
+<br />
+199H 211V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rhuarc leaves east.<br />
+You follow Rhuarc east.<br />
+Lost Inside A Brackish Swamp<br />
+<br />
+199H 210V 1X 3C Mem:12 Exits:NESW&gt; e<br />
+Lost Inside A Brackish Swamp<br />
+<br />
+199H 209V 1X 3C Mem:12 Exits:NESW&gt; w<br />
+Lost Inside A Brackish Swamp<br />
+Rinad Q. Thuren, Mythical Black Dragoon is standing here.<br />
+Rhuarc, Wild Clan Chief of TeamSpongue is standing here.<br />
+<br />
+199H 208V 1X 3C Mem:12 Exits:NESW&gt; w<br />
+Lost Inside A Brackish Swamp<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here, fighting Vieri.<br />
+. . . has a metallic luster.<br />
+Vieri, Squadra Azzurri is standing here, fighting Elyana. (flying)<br />
+<br />
+218H 232V 1X 3C Mem:11 Exits:NESW&gt; CAST 'force bolt' vieri<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Vieri.<br />
+<br />
+218H 232V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Vieri panics, and attempts to flee.<br />
+Vieri flies west.<br />
+<br />
+218H 231V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Ursula flies in from the west.<br />
+Vieri flies in from the west.<br />
+<br />
+218H 231V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Rhuarc misses Ursula with his stab.<br />
+<br />
+218H 231V 1X 3C Mem:12 Exits:NESW&gt; <br />
+Ursula strikes at Rhuarc, but misses completely.<br />
+<br />
+218H 231V 1X 3C Mem:12 Exits:NESW&gt; gt bash vier<br />
+You tell your group 'bash vier'<br />
+<br />
+218H 231V 1X 3C Mem:12 Exits:NESW&gt; CAST 'malevolent tentacles' <br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+Vieri screams in pain as inky black tentacles constrict him.<br />
+Ursula screams in pain as inky black tentacles constrict her.<br />
+<br />
+218H 231V 1X 3C [Me:Fair] [Vieri:V.Bad] Mem:13 Exits:NESW&gt; <br />
+Vieri steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+218H 231V 1X 3C [Me:Fair] [Vieri:V.Bad] Mem:13 Exits:NESW&gt; <br />
+Elyana focuses harshly on Vieri and utters the words, 'magic missile'.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+Elyana aims a magic missile at Vieri, who staggers under the blow.<br />
+<br />
+218H 231V 1X 3C [Me:Fair] [Vieri:V.Bad] Mem:13 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Vieri slashes Rhuarc extremely hard.<br />
+Rhuarc massacres Vieri with his stab.<br />
+Rinad stabs Vieri very hard.<br />
+Ursula slashes Rhuarc very hard.<br />
+<br />
+218H 231V 1X 3C Mem:13 Exits:NESW&gt; <br />
+Vieri panics, and attempts to flee.<br />
+Vieri flies south.<br />
+<br />
+218H 231V 1X 3C Mem:13 Exits:NESW&gt; <br />
+Ursula attempts to strike at Rhuarc with her bastard.<br />
+Ursula slashes Rhuarc hard.<br />
+<br />
+218H 231V 1X 3C Mem:13 Exits:NESW&gt; <br />
+Rhuarc stabs Ursula very hard.<br />
+Ursula misses Rhuarc with her slash.<br />
+<br />
+218H 231V 1X 3C Mem:13 Exits:NESW&gt; <br />
+Rhuarc quaffs a detect invisibility potion.<br />
+<br />
+218H 231V 1X 3C Mem:13 Exits:NESW&gt; CAST 'lightning bolt' ursula<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ursula with full impact.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Elyana misses Ursula with her hit.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Rhuarc attempts to strike at Ursula with his rapier.<br />
+Rhuarc misses Ursula with his stab.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Ursula attempts to strike at Rhuarc with her bastard.<br />
+Ursula slashes Rhuarc hard.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Elyana misses Ursula with her hit.<br />
+Rhuarc misses Ursula with his stab.<br />
+Ursula misses Rhuarc with her slash.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Rinad stands up.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; gt bash ursula<br />
+You tell your group 'bash ursula'<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; CAST 'lightning bolt' ursula<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ursula with full impact.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Kryst arrives from the south.<br />
+Hanne arrives from the south.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Elyana focuses harshly on Ursula and utters the words, 'hold person'.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Ursula attempts to strike at Rhuarc with her bastard.<br />
+Ursula misses Rhuarc with her slash.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Rhuarc panics, and attempts to flee.<br />
+Rhuarc leaves east.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Ursula misses Elyana and destroys an image instead.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; <br />
+Kryst leaves south.<br />
+Hanne leaves south.<br />
+<br />
+218H 231V 1X 3C Mem:14 Exits:NESW&gt; CAST 'lightning bolt' ursula<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ursula with full impact.<br />
+<br />
+218H 231V 1X 3C Mem:15 Exits:NESW&gt; <br />
+Ursula panics, and attempts to flee.<br />
+Ursula flies north.<br />
+<br />
+218H 231V 1X 3C Mem:15 Exits:NESW&gt; <br />
+<br />
+******************************************************************************************************<br />
+<br />
+329H 207V 1X 3C Mem:2 Exits:NES&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Before an Ancient Forest<br />
+Lady Hanne An'Dunir, Blood Sea Dragonrider is standing here. (flying)<br />
+Kryst Le, Blood Sea Dynasty is resting here.<br />
+. . . has a metallic luster.<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; <br />
+Rhuarc slowly fades into existence.<br />
+Rhuarc stabs Kryst extremely hard.<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; <br />
+Elyana focuses harshly on Kryst and utters the words, 'lightning bolt'.<br />
+Kryst wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; <br />
+Hanne begins resting but stays aloft.<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; <br />
+Rhuarc stabs Kryst very hard.<br />
+Rhuarc blocks Kryst's blow with a quick raise of his shield.<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; <br />
+Rinad slowly fades into existence.<br />
+Rinad crashes into Kryst in a thundering collision, knocking her to the ground!<br />
+<br />
+329H 206V 1X 3C Mem:2 Exits:ES&gt; CAST 'force bolt' hanne<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hanne.<br />
+<br />
+329H 206V 1X 3C [Me:V.Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Hanne stands up.<br />
+<br />
+329H 206V 1X 3C [Me:V.Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Elyana focuses harshly on Kryst and utters the words, 'lightning bolt'.<br />
+Kryst wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+329H 206V 1X 3C [Me:V.Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Hanne deftly steps in front of Kryst, pushing into the frey.<br />
+Hanne heroically rescues Kryst.<br />
+Rinad misses Hanne with his stab.<br />
+Hanne massacres Rinad with her cleave.<br />
+You miss Hanne with your smite.<br />
+Rhuarc stabs Kryst very hard.<br />
+Kryst smites Rhuarc very hard.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Rhuarc focuses his purity on Kryst's leg!<br />
+Rhuarc forces Kryst to the ground.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Hanne blocks Rinad's blow with a quick raise of her shield.<br />
+Hanne cleaves Rinad extremely hard.<br />
+Rhuarc stabs Kryst very hard.<br />
+Rhuarc deflects part of Kryst's blow with his shield.<br />
+Kryst smites Rhuarc hard.<br />
+Elyana focuses harshly on Kryst and utters the words, 'lightning bolt'.<br />
+Kryst wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; <br />
+Rinad crashes into Hanne in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:3 Exits:ES&gt; CAST 'force bolt' kryst<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kryst.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:4 Exits:ES&gt; <br />
+Rhuarc strikes at Kryst, but misses completely.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:V.Good] Mem:4 Exits:ES&gt; <br />
+Rinad massacres Hanne with his stab.<br />
+Hanne cleaves Rinad extremely hard.<br />
+Rhuarc stabs Kryst very hard.<br />
+Kryst misses Rhuarc with her smite.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:4 Exits:ES&gt; <br />
+Elyana focuses harshly on Kryst and utters the words, 'lightning bolt'.<br />
+Kryst wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:4 Exits:ES&gt; CAST 'force bolt' kryst<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kryst.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:5 Exits:ES&gt; <br />
+Hanne blocks Rinad's blow with a quick raise of her shield.<br />
+Hanne cleaves Rinad extremely hard.<br />
+Rhuarc stabs Kryst very hard.<br />
+Rhuarc deflects part of Kryst's blow with his shield.<br />
+Kryst smites Rhuarc very hard.<br />
+Kryst stands up.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:5 Exits:ES&gt; <br />
+Hanne stands up.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:5 Exits:ES&gt; <br />
+Hanne focuses harshly on you and utters some strange words.<br />
+Elyana focuses harshly on Kryst and utters the words, 'lightning bolt'.<br />
+Kryst receives the full blast of a lightning bolt from Elyana ... and is no more.<br />
+Twinkling lights surround Kryst and she disappears.<br />
+A steel bag disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:5 Exits:ES&gt; <br />
+Rhuarc stabs Hanne extremely hard.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Good] Mem:5 Exits:ES&gt; CAST 'force bolt' <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hanne.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Fair] Mem:6 Exits:ES&gt; <br />
+Rhuarc stabs Hanne very hard.<br />
+Rinad stabs Hanne extremely hard.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Fair] Mem:6 Exits:ES&gt; <br />
+Rinad crashes into Hanne in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Fair] Mem:6 Exits:ES&gt; <br />
+Elyana focuses harshly on Hanne and utters the words, 'lightning bolt'.<br />
+Hanne wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Fair] Mem:6 Exits:ES&gt; gt bash hanne now<br />
+You tell your group 'bash hanne now'<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Good] [Hanne:Fair] Mem:6 Exits:ES&gt; <br />
+Rhuarc stabs Hanne very hard.<br />
+Rinad misses Hanne with his stab.<br />
+Hanne cleaves Rinad extremely hard.<br />
+You miss Hanne with your smite.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:Fair] Mem:6 Exits:ES&gt; CAST 'force bolt' <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hanne.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:Bad] Mem:7 Exits:ES&gt; <br />
+Elyana focuses harshly on Hanne and utters the words, 'acid blast'.<br />
+Hanne is caught in some of Elyana's acid!<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:V.Bad] Mem:7 Exits:ES&gt; <br />
+Rhuarc stabs Hanne very hard.<br />
+Rinad massacres Hanne with his stab.<br />
+Hanne cleaves Rinad extremely hard.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:V.Bad] Mem:7 Exits:ES&gt; <br />
+Rhuarc focuses his purity on Hanne's leg!<br />
+Rhuarc focuses on Hanne's legs, but is thwarted.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:V.Bad] Mem:7 Exits:ES&gt; CAST 'force bolt' <br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hanne.<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:Awful] Mem:8 Exits:ES&gt; <br />
+Hanne stands up.<br />
+Rinad crashes into Hanne in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 233V 1X 3C [Me:Perfect] [Rinad:Fair] [Hanne:Awful] Mem:8 Exits:ES&gt; <br />
+Elyana focuses harshly on Hanne and utters the words, 'acid blast'.<br />
+Elyana sprays acid all over Hanne, who dies in extreme agony.<br />
+Twinkling lights surround Hanne and she disappears.<br />
+A steel bag disintegrates.<br />
+A bright ball of light disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+<br />
+340H 233V 1X 3C Mem:8 Exits:ES&gt; <br />
+<br />
+*******************************************************************************************************<br />
+<br />
+340H 229V 1X 3C Mem:3 Exits:NES&gt; <br />
+Rhuarc flies south.<br />
+You follow Rhuarc south.<br />
+Old Tarsis Square<br />
+a turkey sandwich lies here [3]<br />
+a heavy steel shield lies here [3]<br />
+a light wooden shield lies here [2]<br />
+a heavy steel shield lies here<br />
+a light wooden shield lies here<br />
+a heavy steel shield lies here [4]<br />
+Darva the Hand is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+Lara Ellypse, Prime Magi of the Fallen Glory is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Goka Ll the Blood Sea Randomers is standing here. (flying)<br />
+Scooter Mali, Kender Buccaneer is standing here. (flying)<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Rhuarc stabs Lara extremely hard.<br />
+Rhuarc is burned, as he swings at Lara.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Lara steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Elyana utters the words, 'cloud kill'.<br />
+A yellowish-green cloud permeates the air.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Darva stands up.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Scooter misses Elyana and destroys an image instead.<br />
+Scooter misses Elyana and destroys an image instead.<br />
+Goka cleaves Elyana extremely hard.<br />
+Elyana misses Darva with her hit.<br />
+Darva misses Elyana with his hit.<br />
+Rinad stabs Lara extremely hard.<br />
+Rinad is burned, as he swings at Lara.<br />
+Rhuarc stabs Lara very hard.<br />
+Rhuarc is burned, as he swings at Lara.<br />
+Lara misses Rhuarc with her smite.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Goka buys a steel handaxe.<br />
+<br />
+340H 228V 1X 3C Mem:2 Exits:NESW&gt; <br />
+Darva utters some strange words.<br />
+Darva creates a lightning storm.<br />
+Darva destroys Elyana's mirror images.<br />
+Elyana screams in pain as the lightning bolts summoned by Darva from the boiling clouds hit her.<br />
+Rinad screams in pain as the lightning bolts summoned by Darva from the boiling clouds hit him.<br />
+Darva destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+You are staggered by the many bolts of lightning which Darva has summoned from the stormy sky.<br />
+Rhuarc screams in pain as the lightning bolts summoned by Darva from the boiling clouds hit him.<br />
+The lightning storm summoned by Darva dances around the official shopkeeper of the tournament, but seem to have no other effect.<br />
+<br />
+303H 228V 1X 3C [Me:Good] [Elyana:Good] [Darva:Perfect] Mem:2 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Darva with a spray of gleaming indigo!<br />
+You strike Lara with a spray of vibrant green!<br />
+You hit Goka with a spray of gleaming indigo!<br />
+You catch Scooter in a spray of bright orange!<br />
+<br />
+303H 228V 1X 3C [Me:Good] [Elyana:Good] [Darva:Good] Mem:2 Exits:NESW&gt; <br />
+Goka crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+303H 228V 1X 3C [Me:Good] [Elyana:Good] [Darva:Good] Mem:2 Exits:NESW&gt; <br />
+Lara utters the words, 'cloud kill'.<br />
+A yellowish-green cloud permeates the air.<br />
+<br />
+303H 228V 1X 3C [Me:Good] [Elyana:Good] [Darva:Good] Mem:2 Exits:NESW&gt; <br />
+You quickly shake off the effects of the foul stench.<br />
+Scooter annihilates Elyana with his shoot.<br />
+Goka massacres Elyana with his cleave.<br />
+Elyana misses Darva with her hit.<br />
+Rinad stabs Lara extremely hard.<br />
+Rinad is burned, as he swings at Lara.<br />
+Rhuarc stabs Lara extremely hard.<br />
+Rhuarc is burned, as he swings at Lara.<br />
+<br />
+303H 228V 1X 3C [Me:Good] [Elyana:Fair] [Darva:Good] Mem:2 Exits:NESW&gt; <br />
+Darva focuses harshly on you and utters some strange words.<br />
+You are hit by lightning by Darva, ouch.<br />
+That Really did HURT!<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:Fair] [Darva:Good] Mem:2 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Darva in a spray of shimmering red!<br />
+You blast Lara with a spray of scintillating blue!<br />
+You catch Goka in a spray of bright orange!<br />
+You catch Scooter in a spray of bright orange!<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:Fair] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Lara panics, and attempts to flee.<br />
+Lara flies east.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:Fair] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Scooter massacres Elyana with his shoot.<br />
+Scooter massacres Elyana with his shoot.<br />
+Goka cleaves Elyana extremely hard.<br />
+Elyana misses Darva with her hit.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Rinad stands up.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; CAST 'mirror image' <br />
+You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Goka crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Darva focuses harshly on you and utters some strange words.<br />
+Darva misses you and destroys an image.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Lara flies in from the east.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:V.Bad] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+You quickly shake off the effects of the foul stench.<br />
+Rhuarc stabs Lara very hard.<br />
+Rhuarc is burned, as he swings at Lara.<br />
+Rinad massacres Lara with his stab.<br />
+Rinad is burned, as he swings at Lara.<br />
+Lara smites Elyana hard.<br />
+Scooter massacres Elyana with his shoot.<br />
+Scooter massacres Elyana with his shoot.<br />
+Goka cleaves Elyana extremely hard.<br />
+Elyana misses Darva with her hit.<br />
+<br />
+229H 228V 1X 3C [Me:Fair] [Elyana:Awful] [Darva:Good] Mem:3 Exits:NESW&gt; <br />
+Lara utters the words, 'prismatic spray'.<br />
+Lara's hands issue a spray of prismatic color!<br />
+A spray of blue engulfs Elyana and she convulses and dies.<br />
+Twinkling lights surround Elyana and she disappears.<br />
+A leather bag disintegrates.<br />
+A leather shirt disintegrates.<br />
+A leather helmet disintegrates.<br />
+A pair of leather pants disintegrates.<br />
+A pair of leather boots disintegrates.<br />
+A pair of leather gloves disintegrates.<br />
+A pair of leather sleeves disintegrates.<br />
+Rinad is caught in a spray of shimmering red!<br />
+You are struck by a spray of vibrant green!<br />
+Rhuarc is caught in a spray of shimmering red!<br />
+Rhuarc is caught in a spray of bright orange!<br />
+<br />
+187H 228V 1X 3C [Me:Fair] [Darva:Good] Mem:3 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Lara with a spray of gleaming indigo!<br />
+You catch Lara in a spray of bright orange!<br />
+Lara is stunned, but will likely regain consciousness again.<br />
+You catch Darva in a spray of bright orange!<br />
+You catch Goka in a spray of shimmering red!<br />
+You catch Scooter in a spray of radiant yellow!<br />
+<br />
+187H 228V 1X 3C [Me:Fair] [Darva:Fair] Mem:4 Exits:NESW&gt; <br />
+Scooter is zapped by a light wooden shield and instantly drops it.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+Scooter gets a steel rapier.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a heavy steel shield.<br />
+Scooter gets a heavy steel shield.<br />
+Scooter gets a heavy steel shield.<br />
+Scooter gets a light wooden shield.<br />
+Scooter gets a light wooden shield.<br />
+Scooter gets a light wooden shield.<br />
+<br />
+187H 228V 1X 3C [Me:Fair] [Darva:Fair] Mem:4 Exits:NESW&gt; <br />
+Darva focuses harshly on you and utters some strange words.<br />
+Darva misses you and destroys an image.<br />
+<br />
+187H 228V 1X 3C [Me:Fair] [Darva:Fair] Mem:4 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Darva misses Rhuarc with his hit.<br />
+Rhuarc stabs Darva extremely hard.<br />
+Scooter massacres Rhuarc with his shoot.<br />
+Scooter shoots Rhuarc extremely hard.<br />
+Scooter massacres Rhuarc with his shoot.<br />
+Goka massacres Rhuarc with his cleave.<br />
+Rinad annihilates Lara with his stab.<br />
+Rinad is burned, as he swings at Lara.<br />
+Twinkling lights surround Lara and she disappears.<br />
+A cotton bag disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A leather bag disintegrates.<br />
+A leather shirt disintegrates.<br />
+A leather helmet disintegrates.<br />
+A pair of leather pants disintegrates.<br />
+A pair of leather boots disintegrates.<br />
+A pair of leather gloves disintegrates.<br />
+A pair of leather sleeves disintegrates.<br />
+<br />
+187H 228V 1X 3C Mem:4 Exits:NESW&gt; <br />
+Rhuarc steps aside as Goka attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+187H 228V 1X 3C Mem:4 Exits:NESW&gt; CAST 'prismatic spray'<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Darva with a spray of vibrant green!<br />
+You hit Darva with a spray of gleaming indigo!<br />
+You catch Goka in a spray of radiant yellow!<br />
+You strike Scooter with a spray of vibrant green!<br />
+<br />
+187H 228V 1X 3C [Me:Fair] [Rhuarc:Awful] [Darva:V.Bad] Mem:5 Exits:NESW&gt; <br />
+You smite Darva very hard.<br />
+Rhuarc stabs Darva extremely hard.<br />
+Scooter massacres Rhuarc with his shoot.<br />
+Scooter massacres Rhuarc with his shoot.<br />
+Twinkling lights surround Rhuarc and he disappears.<br />
+The elixir flashes a silvery glint and twinkles out.<br />
+A cotton bag disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+Scooter puts away his tablets with a content look on his face.<br />
+Your flaming robe dissolves away.<br />
+You relax and stop marching.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:V.Bad] Mem:5 Exits:NESW&gt; <br />
+Darva utters some strange words.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:Fair] Mem:5 Exits:NESW&gt; <br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:Fair] Mem:5 Exits:NESW&gt; CAST 'lightning bolt' <br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Darva with full impact.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a steel rapier.<br />
+Scooter gets a light wooden shield.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a detect invisibility potion.<br />
+Scooter gets a mystical flail.<br />
+Scooter gets a potion of cure blindness.<br />
+Scooter gets a potion of cure blindness.<br />
+Scooter gets a potion of cure blindness.<br />
+Scooter gets a bandage kit.<br />
+Scooter gets a light wooden shield.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter gets a potion of cure blindness.<br />
+Scooter gets a turkey sandwich.<br />
+Scooter is zapped by a light wooden shield and instantly drops it.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Scooter misses you and destroys an image.<br />
+<br />
+206H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Scooter misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Scooter shoots YOU extremely hard.<br />
+<br />
+188H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Rinad crashes into Scooter in a thundering collision, knocking him to the ground!<br />
+<br />
+188H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Goka stands up.<br />
+<br />
+188H 233V 1X 3C [Me:Fair] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+You are sent sprawling as Goka crashes into you.<br />
+STAND<br />
+<br />
+163H 233V 1X 3C [Me:Bad] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Goka cleaves YOU extremely hard.<br />
+Rinad massacres Scooter with his stab.<br />
+Scooter massacres YOU with his shoot.<br />
+Scooter massacres YOU with his shoot.<br />
+You smite Darva.<br />
+<br />
+86H 233V 1X 3C [Me:V.Bad] [Darva:Bad] Mem:5 Exits:NESW&gt; <br />
+Darva focuses harshly on you and utters some strange words.<br />
+You are electrocuted to death by a lightning bolt.<br />
+Twinkling lights surround you and cover your body entirely.<br />
+When they disappear, you find yourself somewhere else.<br />
+Lie still, you are dead.<br />
+<br />
+*******************************************************************************************************<br />
+<br />
+340H 232V 1X 0C Exits:NESW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Lost Inside A Brackish Swamp<br />
+<br />
+340H 231V 1X 0C Exits:NESW&gt; <br />
+Rio utters some strange words.<br />
+Rio comes out of hiding.<br />
+Rio destroys Elyana's mirror images.<br />
+Elyana is shredded by shards of ice.<br />
+Rio destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+Your body is torn by huge pieces of ice.<br />
+Rinad is shredded by shards of ice.<br />
+Rhuarc is shredded by shards of ice.<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Good] [Rio:Perfect] Exits:NESW&gt; <br />
+Pti crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Good] [Rio:Perfect] Exits:NESW&gt; <br />
+Pti massacres Elyana with his stab.<br />
+Pti is burned, as he swings at Elyana.<br />
+Rhuarc slowly fades into existence.<br />
+Rhuarc stabs Rio extremely hard.<br />
+Rhuarc is chilled, as he swings at Rio.<br />
+Rinad slowly fades into existence.<br />
+Rinad massacres Rio with his stab.<br />
+Rinad is chilled, as he swings at Rio.<br />
+You miss Rio with your hit.<br />
+Rio misses Elyana with his slash.<br />
+Elyana misses Rio with her hit.<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:V.Good] Exits:NESW&gt; <br />
+Rinad crashes into Rio in a thundering collision, knocking him to the ground!<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Good] Exits:NESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Good] Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Rio in a spray of bright orange!<br />
+Rio seems to be blinded!<br />
+You strike Siath with a spray of vibrant green!<br />
+You hit Pti with a spray of gleaming indigo!<br />
+You catch Halgar in a spray of bright orange!<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; <br />
+Monalis flies in from the east.<br />
+A fire snake arrives from the east.<br />
+Oy flies in from the east.<br />
+Kung flies in from the east.<br />
+Jesse flies in from the east.<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; <br />
+Halgar crashes into Oy in a thundering collision, knocking him to the ground!<br />
+<br />
+299H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc deflects part of Halgar's blow with his shield.<br />
+Halgar stabs Rhuarc hard.<br />
+Rhuarc stabs Halgar extremely hard.<br />
+Oy stabs Halgar extremely hard.<br />
+Siath smites YOU hard.<br />
+Siath burns as he passes through your fire shield.<br />
+Pti stabs Rhuarc extremely hard.<br />
+Rinad massacres Rio with his stab.<br />
+Rinad is chilled, as he swings at Rio.<br />
+Rio misses Elyana with his slash.<br />
+Elyana misses Rio with her hit.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Monalis flies west.<br />
+A fire snake leaves west.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Elyana stands up.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Elyana:Fair] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies east.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Pti panics, and attempts to flee.<br />
+Pti flies south.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Kung flies west.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Halgar stabs Rhuarc very hard.<br />
+Rhuarc stabs Halgar extremely hard.<br />
+Oy stabs Halgar extremely hard.<br />
+Siath misses you with his smite.<br />
+Rinad massacres Rio with his stab.<br />
+Rinad is chilled, as he swings at Rio.<br />
+You miss Rio with your hit.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:Fair] Mem:3 Exits:NESW&gt; <br />
+Siath focuses on Rio and utters some strange words.<br />
+Siath heals Rio.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Monalis flies in from the west.<br />
+A fire snake arrives from the west.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Elyana flies in from the east.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Rinad crashes into Siath in a thundering collision, knocking him to the ground!<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+A fire snake is caught in a spray of shimmering red!<br />
+A fire snake seems weaker.<br />
+Monalis is caught in a spray of bright orange!<br />
+Jesse is caught in a spray of radiant yellow!<br />
+Oy is caught in a spray of bright orange!<br />
+Rio is caught in a spray of bright orange!<br />
+Siath is struck by a spray of murky violet!<br />
+Halgar is blasted by a spray of scintillating blue!<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Monalis utters the words, 'cloud kill'.<br />
+A yellowish-green cloud permeates the air.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Rio stands up.<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; look<br />
+Lost Inside A Brackish Swamp<br />
+A yellowish, green haze fills the air of the room.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here, fighting a fire snake. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+A fire snake is standing here, fighting Elyana.<br />
+Monalis the Female Hill Dwarf is standing here, fighting Elyana. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+Jesse Barbosa, Captain of the Black Pearl is standing here, fighting Elyana. (flying)<br />
+. . . has a tough exterior.<br />
+Oy, Hammer of the Gods is sitting here, fighting Halgar. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Rio, Dying to Win is standing here, fighting Rinad. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Sir Siath, Renshai Healing Hand is sitting here, fighting YOU. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Mr. Halgar, Seeking a Purpose is standing here, fighting Rhuarc. (flying)<br />
+. . . has a tough exterior.<br />
+Rinad Q. Thuren, Mythical Black Dragoon is standing here, fighting Rio. (flying)<br />
+Rhuarc, Wild Clan Chief of TeamSpongue is standing here, fighting Halgar. (flying)<br />
+<br />
+292H 231V 1X 0C [Me:Good] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Rio utters some strange words.<br />
+Rio creates a lightning storm.<br />
+Elyana screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit her.<br />
+A fire snake screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit it.<br />
+Monalis screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit her.<br />
+Jesse screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit him.<br />
+Oy screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit him.<br />
+You are staggered by the many bolts of lightning which Rio has summoned from the stormy sky.<br />
+Rinad screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit him.<br />
+Rhuarc screams in pain as the lightning bolts summoned by Rio from the boiling clouds hit him.<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; flee<br />
+There is lightning in the sky.<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+Kung flies in from the west.<br />
+A fire snake bites Elyana!<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Good] [Rio:V.Good] Mem:3 Exits:NESW&gt; <br />
+You quickly shake off the effects of the foul stench.<br />
+Kung crushes Monalis extremely hard.<br />
+Kung is chilled, as he swings at Monalis.<br />
+Siath misses Rhuarc with his smite.<br />
+Rhuarc stabs Siath very hard.<br />
+Jesse massacres Elyana with his shoot.<br />
+Jesse shoots Elyana extremely hard.<br />
+Elyana misses a fire snake with her hit.<br />
+A fire snake misses Elyana with its hit.<br />
+Halgar stabs Rhuarc very hard.<br />
+Oy stabs Halgar extremely hard.<br />
+Rinad stabs Rio extremely hard.<br />
+Rinad is chilled, as he swings at Rio.<br />
+You miss Rio with your hit.<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; <br />
+Halgar panics, and attempts to flee.<br />
+Halgar flies east.<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Kung is struck by a spray of murky violet!<br />
+A spray of red rips a fire snake into tiny crimson shreds.<br />
+Twinkling lights surround a fire snake and it disappears.<br />
+Monalis is caught in a spray of bright orange!<br />
+Jesse is struck by a spray of vibrant green!<br />
+Oy is caught in a spray of radiant yellow!<br />
+Rio is caught in a spray of shimmering red!<br />
+Siath is blasted by a spray of scintillating blue!<br />
+<br />
+241H 231V 1X 0C [Me:Fair] [Rinad:Fair] [Rio:Good] Mem:3 Exits:NESW&gt; flee<br />
+You flee head over heels.<br />
+Lost Inside A Brackish Swamp<br />
+A yellowish, green haze fills the air of the room.<br />
+<br />
+241H 230V 1X 0C Mem:3 Exits:NESW&gt; <br />
+Pti flies in from the south.<br />
+<br />
+241H 230V 1X 0C Mem:3 Exits:NESW&gt; <br />
+Blixt flies in from the north.<br />
+Ritz flies in from the north.<br />
+Aryx flies in from the north.<br />
+Woobis flies in from the north.<br />
+<br />
+241H 230V 1X 0C Mem:3 Exits:NESW&gt; <br />
+<br />
+*******************************************************************************************************<br />
+<br />
+323H 144V 1X 0C Mem:2 Exits:NESW&gt; <br />
+Rhuarc flies south.<br />
+You follow Rhuarc south.<br />
+A bronze dragon arrives from the north.<br />
+Southern Road<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here [3]<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+Ildarius the Male Human is standing here.<br />
+Mirenda, Fighting Yam is standing here, fighting Saladin.<br />
+. . . has a metallic luster.<br />
+Saladin Ayubi, Swirling Saracen Storm of Swords is sitting here, fighting Vald. (flying)<br />
+Lord Feroz, Bashing His Way Into Your Soul is sitting here, fighting Vald. (flying)<br />
+Min Farshaw, the Irresistable Force is standing here, fighting Teri. (flying)<br />
+. . . has a metallic luster.<br />
+Ahrimen the Male Wild Elf is standing here, fighting Vald. (flying)<br />
+Teri, Lonesome Wanderer is standing here, fighting Min.<br />
+Vald Katze of the Blood Sea Pirates is standing here, fighting Saladin.<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; <br />
+Rhuarc stabs Min hard.<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; <br />
+Ildarius focuses harshly on Min and utters the words, 'feeblemind'.<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; <br />
+Min focuses on Saladin and utters some strange words.<br />
+Min heals Saladin.<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; <br />
+Feroz stands up.<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; <br />
+Feroz crashes into Mirenda in a thundering collision, knocking her to the ground!<br />
+<br />
+323H 143V 1X 0C Mem:4 Exits:NSW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit a bronze dragon with a spray of gleaming indigo!<br />
+You hit Ildarius with a spray of gleaming indigo!<br />
+You strike Mirenda with a spray of murky violet!<br />
+You blast Saladin with a spray of scintillating blue!<br />
+You catch Feroz in a spray of shimmering red!<br />
+You hit Min with a spray of gleaming indigo!<br />
+You strike Ahrimen with a spray of vibrant green!<br />
+You strike Teri with a spray of vibrant green!<br />
+You blast Vald with a spray of scintillating blue!<br />
+<br />
+323H 143V 1X 0C [Me:V.Good] [a bronze dragon:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Ildarius misses Rhuarc with his hit.<br />
+Rhuarc stabs Ildarius extremely hard.<br />
+You miss a bronze dragon with your hit.<br />
+A bronze dragon hits YOU.<br />
+A bronze dragon burns as he passes through your fire shield.<br />
+Teri misses Min with her shoot.<br />
+Mirenda hits Saladin.<br />
+Feroz crushes Vald extremely hard.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Vald slashes Saladin extremely hard.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Vald crashes into Min in a thundering collision, knocking her to the ground!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:V.Bad] Mem:5 Exits:NSW&gt; <br />
+Ildarius misses Rhuarc with his hit.<br />
+Rhuarc stabs Ildarius extremely hard.<br />
+You miss a bronze dragon with your hit.<br />
+A bronze dragon misses you with his hit.<br />
+Min smites Teri very hard.<br />
+Teri misses Min with her shoot.<br />
+Mirenda misses Saladin with her hit.<br />
+Feroz misses Vald with his crush.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Saladin massacres Vald with his stab.<br />
+Vald massacres Saladin with his slash.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:V.Bad] Mem:5 Exits:NSW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch a bronze dragon in a spray of radiant yellow!<br />
+You catch Ildarius in a spray of shimmering red!<br />
+You blast Mirenda with a spray of scintillating blue!<br />
+You hit Saladin with a spray of gleaming indigo!<br />
+You hit Feroz with a spray of gleaming indigo!<br />
+You catch Min in a spray of radiant yellow!<br />
+You hit Min with a spray of gleaming indigo!<br />
+You strike Ahrimen with a spray of vibrant green!<br />
+You strike Teri with a spray of vibrant green!<br />
+You strike Vald with a spray of vibrant green!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:Awful] Mem:6 Exits:NSW&gt; <br />
+Rhuarc focuses his purity on Ildarius's leg!<br />
+Rhuarc focuses on Ildarius's legs, but is thwarted.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:Awful] Mem:6 Exits:NSW&gt; <br />
+Feroz panics, and attempts to flee.<br />
+Feroz flies west.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:Awful] Mem:6 Exits:NSW&gt; <br />
+Mirenda stands up.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [a bronze dragon:Awful] Mem:6 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+A bronze dragon hits Rhuarc.<br />
+Rhuarc stabs a bronze dragon extremely hard.<br />
+Ildarius misses Rhuarc with his hit.<br />
+Min smites Teri hard.<br />
+Teri massacres Min with her shoot.<br />
+Mirenda misses Saladin with her hit.<br />
+Ahrimen shoots Vald very hard.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Saladin massacres Vald with his stab.<br />
+Vald massacres Saladin with his slash.<br />
+<br />
+318H 143V 1X 0C Mem:6 Exits:NSW&gt; ORDER gargoyle KILL min<br />
+A gargoyle delivers a quick snap kick to Min. Min staggers and tries to recover.<br />
+A gargoyle loses its balance and tumbles to the ground.<br />
+<br />
+318H 143V 1X 0C Mem:6 Exits:NSW&gt; <br />
+Saladin stands up.<br />
+<br />
+318H 143V 1X 0C Mem:6 Exits:NSW&gt; <br />
+Saladin panics, and attempts to flee.<br />
+Saladin flies west.<br />
+<br />
+318H 143V 1X 0C Mem:6 Exits:NSW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+Your spray of violet melts a bronze dragon into a lifeless paste.<br />
+Twinkling lights surround a bronze dragon and he disappears.<br />
+You strike Ildarius with a spray of vibrant green!<br />
+You strike Mirenda with a spray of murky violet!<br />
+You catch Min in a spray of radiant yellow!<br />
+You strike Ahrimen with a spray of murky violet!<br />
+You catch Teri in a spray of radiant yellow!<br />
+You blast Teri with a spray of scintillating blue!<br />
+You hit Vald with a spray of gleaming indigo!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Rhuarc:V.Good] [Ildarius:V.Bad] Mem:7 Exits:NSW&gt; <br />
+Ildarius panics, and attempts to flee.<br />
+You direct your attention to Mirenda.<br />
+Ildarius leaves west.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Mirenda:Bad] Mem:7 Exits:NSW&gt; <br />
+Mirenda panics, and attempts to flee.<br />
+Mirenda leaves north.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Min stands up.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Vald massacres Ahrimen with his slash.<br />
+A gargoyle claws Min hard.<br />
+Min smites Teri extremely hard.<br />
+Teri misses Min with her shoot.<br />
+Ahrimen shoots Vald extremely hard.<br />
+Min panics, and attempts to flee.<br />
+Min flies south.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Saladin flies in from the west.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Teri stops using a longbow.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Feroz flies in from the west.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Teri wields a shortsword.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Feroz flies west.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; <br />
+Saladin stabs Vald extremely hard.<br />
+<br />
+318H 143V 1X 0C Mem:7 Exits:NSW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Saladin with a spray of vibrant green!<br />
+You catch Saladin in a spray of bright orange!<br />
+You blast Ahrimen with a spray of scintillating blue!<br />
+Ahrimen freezes in place.<br />
+You blast Teri with a spray of scintillating blue!<br />
+You hit Vald with a spray of gleaming indigo!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Vald:V.Bad] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Vald panics, and attempts to flee.<br />
+Vald leaves south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Rhuarc blocks Teri's blow with a quick raise of his shield.<br />
+Rhuarc misses Teri with his stab.<br />
+Saladin misses you and destroys an image.<br />
+You miss Saladin with your hit.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Teri starts using a heavy steel shield as a shield.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Min flies in from the south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Min misses you with her smite.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Saladin:Fair] Mem:8 Exits:NSW&gt; <br />
+Saladin panics, and attempts to flee.<br />
+You direct your attention to Min.<br />
+Saladin flies south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+You miss Min with your hit.<br />
+Min misses you with her smite.<br />
+Rhuarc deflects part of Teri's blow with his shield.<br />
+Teri pierces Rhuarc hard.<br />
+Rhuarc stabs Teri very hard.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Feroz flies in from the west.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Feroz flies south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Scooter flies in from the north.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Rhuarc strikes at Teri, but misses completely.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Scooter gets a heavy steel shield.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+Scooter gets a heavy steel shield.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+Scooter gets a bottle of Aquafina mineral water.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Scooter says 'hi'<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Min:V.Good] Mem:8 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Min misses Rhuarc with her smite.<br />
+Rhuarc stabs Min very hard.<br />
+Teri pierces Rhuarc extremely hard.<br />
+<br />
+318H 143V 1X 0C Mem:8 Exits:NSW&gt; CAST 'malevolent tentacles' <br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+Scooter screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Teri screams in pain as inky black tentacles constrict her.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Teri stops using a shortsword.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Teri stops using a heavy steel shield.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Teri wields a longbow with both hands.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Rhuarc hits the tentacles constricting Ahrimen instead!<br />
+<br />
+You miss Scooter with your hit.<br />
+Scooter misses you with his shoot.<br />
+Teri massacres Rhuarc with her shoot.<br />
+Teri shoots Rhuarc extremely hard.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Saladin flies in from the south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+Scooter drops a turkey sandwich.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Teri panics, and attempts to flee.<br />
+Teri leaves south.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Scooter drops a bottle of Aquafina mineral water.<br />
+Scooter drops a bottle of Aquafina mineral water.<br />
+Scooter drops a bottle of Aquafina mineral water.<br />
+Scooter drops a bottle of Aquafina mineral water.<br />
+<br />
+318H 143V 1X 0C [Me:V.Good] [Scooter:V.Good] Mem:9 Exits:NSW&gt; <br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Scooter misses Rhuarc with his shoot.<br />
+Rhuarc stabs Scooter extremely hard.<br />
+<br />
+318H 143V 1X 0C Mem:9 Exits:NSW&gt; <br />
+Saladin misses Rhuarc with his stab.<br />
+<br />
+318H 143V 1X 0C Mem:9 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:9 Exits:NSW&gt; CAST 'force bolt' min<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Min.<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Saladin misses Rhuarc with his stab.<br />
+Scooter massacres Rhuarc with his shoot.<br />
+Rhuarc misses Scooter with his stab.<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; <br />
+Scooter tries to attack Min but stops with a confused look on his face.<br />
+<br />
+318H 143V 1X 0C Mem:10 Exits:NSW&gt; CAST 'force bolt' min<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Min.<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+**Rhuarc: keep casting<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; ORDER gargoyle KILL min<br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Saladin stabs Rhuarc very hard.<br />
+Rhuarc misses Scooter with his stab.<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Saladin strikes at Min, but misses completely.<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Scooter says 'oh elite'<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:11 Exits:NSW&gt; CAST 'force bolt' min<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Min.<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; <br />
+**Rhuarc: keep casting<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Scooter misses Rhuarc with his shoot.<br />
+Saladin stabs Rhuarc very hard.<br />
+Rhuarc stabs Scooter hard.<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Rhuarc looks at Ahrimen.<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:12 Exits:NSW&gt; CAST 'force bolt' min<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Min.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+**Rhuarc: frag ahrimen<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Min attempts to break free of the black tentacles, but fails!<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Rhuarc focuses his purity on Scooter's leg!<br />
+Rhuarc forces Scooter to the ground.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Ahrimen screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Scooter misses Rhuarc with his shoot.<br />
+Saladin misses Rhuarc with his stab.<br />
+Rhuarc stabs Scooter extremely hard.<br />
+Ahrimen massacres Rhuarc with his shoot.<br />
+Ahrimen misses Rhuarc with his shoot.<br />
+Min misses Rhuarc with her smite.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Min panics, and attempts to flee.<br />
+Min flies south.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Saladin focuses his purity on Rhuarc's leg!<br />
+Saladin focuses on Rhuarc's legs, but is thwarted.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Scooter massacres Rhuarc with his shoot.<br />
+Saladin misses Rhuarc with his stab.<br />
+Rhuarc stabs Scooter extremely hard.<br />
+Ahrimen shoots Rhuarc extremely hard.<br />
+Ahrimen shoots Rhuarc extremely hard.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+**Rhuarc: ok get out<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+**Rhuarc: get out<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Saladin attempts to strike at Rhuarc with his rapier.<br />
+Saladin stabs Rhuarc hard.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Min flies in from the south.<br />
+<br />
+318H 143V 1X 0C Mem:13 Exits:NSW&gt; <br />
+Scooter misses Rhuarc with his shoot.<br />
+Saladin stabs Rhuarc hard.<br />
+Rhuarc stabs Scooter very hard.<br />
+Ahrimen shoots Rhuarc extremely hard.<br />
+Ahrimen massacres Rhuarc with his shoot.<br />
+Ahrimen looks really sick, and shivers uncomfortably.<br />
+<br />
+337H 183V 1X 0C Mem:12 Exits:NSW&gt;<br />
+Scooter frowns upon Rhuarc.<br />
+<br />
+337H 183V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Scooter stands up.<br />
+<br />
+337H 183V 1X 0C Mem:12 Exits:NSW&gt; <br />
+Rhuarc panics, and attempts to flee.<br />
+Rhuarc leaves south.<br />
+<br />
+337H 183V 1X 0C Mem:12 Exits:NSW&gt;<br />
+<br />
+**********************************************************************************************************<br />
+<br />
+340H 176V 1X 0C Mem:2 Exits:NEW&gt; <br />
+Rinad crashes into Mynothas in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 176V 1X 0C Mem:2 Exits:NEW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Mynothas.<br />
+<br />
+340H 176V 1X 0C Mem:3 Exits:NEW&gt; <br />
+Elyana focuses harshly on Mynothas and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Mynothas's skull.<br />
+Twinkling lights surround Mynothas and she disappears.<br />
+A leather bag disintegrates.<br />
+A bright ball of light disintegrates.<br />
+A leather shirt disintegrates.<br />
+A leather helmet disintegrates.<br />
+A pair of leather pants disintegrates.<br />
+A pair of leather boots disintegrates.<br />
+A pair of leather gloves disintegrates.<br />
+A pair of leather sleeves disintegrates.<br />
+<br />
+340H 176V 1X 0C Mem:3 Exits:NEW&gt; <br />
+Ahrimen arrives from the east.<br />
+Ahrimen kneels down and studies the ground.<br />
+Min flies in from the east.<br />
+Saladin flies in from the east.<br />
+Feroz flies in from the east.<br />
+<br />
+340H 176V 1X 0C Mem:3 Exits:NEW&gt; <br />
+Rhuarc nods solemnly.<br />
+<br />
+340H 176V 1X 0C Mem:3 Exits:NEW&gt; <br />
+Rhuarc flies east.<br />
+You follow Rhuarc east.<br />
+Before A Parched Wasteland<br />
+<br />
+340H 175V 1X 0C Mem:3 Exits:EW&gt; <br />
+<br />
+**************************************************************************************************<br />
+<br />
+340H 162V 1X 0C Mem:3 Exits:NEW&gt; <br />
+Rhuarc flies west.<br />
+You follow Rhuarc west.<br />
+The Barren Wastes<br />
+Uthgar Fireforge, Forever Bound By Blood is sitting here, fighting Teri. (flying)<br />
+. . . has a metallic luster.<br />
+Ildarius the Male Human is sitting here, fighting Kooz. (flying)<br />
+. . . has a tough exterior.<br />
+Teri, Lonesome Wanderer is sitting here, fighting Kooz. (flying)<br />
+. . . has a tough exterior.<br />
+Vald Katze of the Blood Sea Pirates is standing here, fighting Kooz. (flying)<br />
+. . . has a tough exterior.<br />
+Mirenda, Fighting Yam is sitting here, fighting Kooz. (flying)<br />
+. . . has a metallic luster.<br />
+Woa Nitro, Honorary Blood Sea Dane is standing here, fighting Teri. (flying)<br />
+. . . has a tough exterior.<br />
+Kooz FireForge, Blood Brother is sitting here, fighting Vald. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 161V 1X 0C Mem:3 Exits:NESW&gt; <br />
+Rinad nods solemnly.<br />
+<br />
+340H 161V 1X 0C Mem:3 Exits:NESW&gt; <br />
+Uthgar stands up.<br />
+<br />
+340H 161V 1X 0C Mem:3 Exits:NESW&gt; <br />
+Uthgar panics, and attempts to flee.<br />
+Uthgar flies west.<br />
+<br />
+340H 161V 1X 0C Mem:3 Exits:NESW&gt; <br />
+A yellowish-green cloud billows into the room.<br />
+Ildarius misses Kooz with his hit.<br />
+Mirenda smites Kooz hard.<br />
+Woa massacres Teri with his stab.<br />
+Teri misses Kooz with her pierce.<br />
+Vald slashes Kooz extremely hard.<br />
+Kooz stabs Vald extremely hard.<br />
+<br />
+340H 161V 1X 0C Mem:3 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Ildarius with a spray of vibrant green!<br />
+You strike Teri with a spray of vibrant green!<br />
+You hit Vald with a spray of gleaming indigo!<br />
+You catch Mirenda in a spray of radiant yellow!<br />
+You strike Woa with a spray of vibrant green!<br />
+You catch Kooz in a spray of shimmering red!<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:Bad] [Ildarius:Fair] Mem:4 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Ildarius is struck by a spray of vibrant green!<br />
+Teri is hit by a spray of gleaming indigo!<br />
+Teri's face goes blank and she begins to drool.<br />
+Vald is caught in a spray of bright orange!<br />
+Mirenda is caught in a spray of bright orange!<br />
+Mirenda seems to be blinded!<br />
+Woa is struck by a spray of murky violet!<br />
+Kooz is hit by a spray of gleaming indigo!<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:Bad] Mem:4 Exits:NESW&gt; <br />
+Mirenda stands up.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:Bad] Mem:4 Exits:NESW&gt; <br />
+Mirenda utters some strange words.<br />
+Mirenda heals Mirenda.<br />
+Mirenda looks better.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:Bad] Mem:4 Exits:NESW&gt; <br />
+Elyana misses Ildarius with her sting.<br />
+You sting Ildarius extremely hard.<br />
+Woa massacres Teri with his stab.<br />
+Teri pierces Kooz extremely hard.<br />
+Vald slashes Kooz very hard.<br />
+Kooz misses Vald with his stab.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Mirenda steps aside as Woa attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Vald panics, and attempts to flee.<br />
+Vald flies west.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Teri stands up.<br />
+Ildarius stands up.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Rhuarc stabs Mirenda extremely hard.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Rinad crashes into Ildarius in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; <br />
+Teri panics, and attempts to flee.<br />
+Teri flies east.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:V.Bad] Mem:4 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Ildarius in a spray of bright orange!<br />
+You hit Mirenda with a spray of gleaming indigo!<br />
+You strike Mirenda with a spray of vibrant green!<br />
+You catch Woa in a spray of shimmering red!<br />
+You catch Kooz in a spray of shimmering red!<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Kooz:V.Bad] [Ildarius:Awful] Mem:5 Exits:NESW&gt; <br />
+Kooz stands up.<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+A spray of blue engulfs Ildarius and he convulses and dies.<br />
+Twinkling lights surround Ildarius and he disappears.<br />
+A cotton bag disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+You direct your attention to Woa.<br />
+Mirenda is struck by a spray of vibrant green!<br />
+Woa is caught in a spray of shimmering red!<br />
+Kooz is caught in a spray of radiant yellow!<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Woa:Fair] Mem:5 Exits:NESW&gt; <br />
+Uthgar flies in from the west.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Woa:Fair] Mem:5 Exits:NESW&gt; <br />
+Kooz panics, and attempts to flee.<br />
+Kooz flies east.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Woa:Fair] Mem:5 Exits:NESW&gt; <br />
+Uthgar flies east.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Woa:Fair] Mem:5 Exits:NESW&gt; <br />
+Teri flies in from the east.<br />
+<br />
+340H 161V 1X 0C [Me:Perfect] [Woa:Fair] Mem:5 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Woa stabs Rhuarc extremely hard.<br />
+Rhuarc misses Woa with his stab.<br />
+Teri misses Elyana and destroys an image instead.<br />
+Elyana misses Mirenda with her sting.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Vald flies in from the west.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Vald is struck by a spray of murky violet!<br />
+Teri is struck by a spray of murky violet!<br />
+Mirenda is hit by a spray of gleaming indigo!<br />
+Mirenda is caught in a spray of radiant yellow!<br />
+Woa is caught in a spray of radiant yellow!<br />
+Woa is blasted by a spray of scintillating blue!<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Mirenda panics, and attempts to flee.<br />
+Mirenda flies east.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Teri panics, and attempts to flee.<br />
+Teri flies north.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Vald panics, and attempts to flee.<br />
+Vald flies south.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Elyana misses Woa with her sting.<br />
+Woa massacres Rhuarc with his stab.<br />
+Rhuarc stabs Woa very hard.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Woa stands up.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Woa panics, and attempts to flee.<br />
+Woa flies east.<br />
+<br />
+340H 161V 1X 0C Mem:5 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Vald flies in from the south.<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Rinad crashes into Vald in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Vald is hit by a spray of gleaming indigo!<br />
+Vald is caught in a spray of bright orange!<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Teri flies in from the north.<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Rhuarc massacres Vald with his stab.<br />
+<br />
+340H 161V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Teri misses Elyana with her pierce.<br />
+Rhuarc massacres Vald with his stab.<br />
+Elyana misses Vald with her sting.<br />
+Rinad massacres Vald with his stab.<br />
+Vald slashes Rinad extremely hard.<br />
+Teri looks really sick, and shivers uncomfortably.<br />
+<br />
+340H 201V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Teri panics, and attempts to flee.<br />
+Teri flies east.<br />
+<br />
+340H 201V 1X 0C Mem:5 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Vald is struck by a spray of murky violet!<br />
+<br />
+340H 201V 1X 0C Mem:5 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Vald with a spray of gleaming indigo!<br />
+<br />
+340H 201V 1X 0C [Me:Perfect] [Rinad:V.Good] [Vald:Awful] Mem:6 Exits:NESW&gt; <br />
+Teri flies in from the east.<br />
+<br />
+340H 201V 1X 0C [Me:Perfect] [Rinad:V.Good] [Vald:Awful] Mem:6 Exits:NESW&gt; <br />
+Rhuarc attempts to strike at Vald with his rapier.<br />
+Rhuarc massacres Vald with his stab.<br />
+<br />
+340H 201V 1X 0C [Me:Perfect] [Rinad:V.Good] [Vald:Awful] Mem:6 Exits:NESW&gt; <br />
+Teri pierces Elyana very hard.<br />
+Teri is burned, as she swings at Elyana.<br />
+You sting Vald extremely hard.<br />
+Rhuarc massacres Vald with his stab.<br />
+Twinkling lights surround Vald and he disappears.<br />
+A steel bag disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Teri panics, and attempts to flee.<br />
+Teri flies east.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Teri flies in from the east.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Rinad crashes into Teri in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Rhuarc gets a longsword.<br />
+Rhuarc gets a heavy steel shield.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a bandage kit.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Elyana focuses harshly on Teri and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Teri.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Elyana stings Teri hard.<br />
+Rinad stabs Teri extremely hard.<br />
+Teri misses Rinad with her pierce.<br />
+Rhuarc misses Teri with his stab.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+Rhuarc misses Teri with his stab.<br />
+Elyana misses Teri with her sting.<br />
+Rinad stabs Teri extremely hard.<br />
+Teri pierces Rinad extremely hard.<br />
+Elyana focuses harshly on Teri and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Teri's skull.<br />
+Twinkling lights surround Teri and she disappears.<br />
+A leather bag disintegrates.<br />
+A leather shirt disintegrates.<br />
+A leather helmet disintegrates.<br />
+A pair of leather pants disintegrates.<br />
+A pair of leather boots disintegrates.<br />
+A pair of leather gloves disintegrates.<br />
+A pair of leather sleeves disintegrates.<br />
+<br />
+340H 201V 1X 0C Mem:6 Exits:NESW&gt; <br />
+<br />
+******************************************************************************************************<br />
+<br />
+340H 174V 1X 1C Mem:2 Exits:NS&gt; <br />
+Rhuarc flies south.<br />
+You follow Rhuarc south.<br />
+Before The Ruined Gate<br />
+a bottle of Aquafina mineral water lies here<br />
+Yuhee, Six Wrecks and Forty Disasters is standing here, fighting Anathea. (flying)<br />
+. . . has a tough exterior.<br />
+Anathea, A Legend Reborn is lying here, bleeding.<br />
+<br />
+340H 173V 1X 1C Mem:2 Exits:NEW&gt; <br />
+Yuhee steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 173V 1X 1C Mem:2 Exits:NEW&gt; <br />
+Rhuarc massacres Anathea with his stab.<br />
+Twinkling lights surround Anathea and she disappears.<br />
+A steel bag disintegrates.<br />
+A bright ball of light disintegrates.<br />
+A suit of steel armor disintegrates.<br />
+A steel helm disintegrates.<br />
+A pair of steel greaves disintegrates.<br />
+A pair of steel boots disintegrates.<br />
+A pair of steel gauntlets disintegrates.<br />
+A pair of steel armplates disintegrates.<br />
+<br />
+340H 173V 1X 1C Mem:2 Exits:NEW&gt; <br />
+Rinad stabs Yuhee extremely hard.<br />
+Rinad is chilled, as he swings at Yuhee.<br />
+<br />
+340H 173V 1X 1C Mem:2 Exits:NEW&gt; CAST 'force bolt' yuhee<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Yuhee.<br />
+<br />
+340H 173V 1X 1C Mem:3 Exits:NEW&gt; <br />
+Elyana focuses harshly on Yuhee and utters the words, 'lightning bolt'.<br />
+Yuhee wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 173V 1X 1C Mem:3 Exits:NEW&gt; <br />
+Yuhee panics, and attempts to flee.<br />
+Yuhee flies north.<br />
+<br />
+340H 173V 1X 1C Mem:3 Exits:NEW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+A Shattered Gate<br />
+<br />
+340H 172V 1X 1C Mem:3 Exits:NS&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+A Crossroads<br />
+<br />
+340H 171V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Southern Road<br />
+<br />
+340H 170V 1X 1C Mem:3 Exits:NSW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Old Tarsis Square<br />
+<br />
+340H 169V 1X 1C Mem:2 Exits:NESW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Northern Road<br />
+<br />
+340H 168V 1X 1C Mem:3 Exits:NES&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Northern Road<br />
+<br />
+340H 167V 1X 1C Mem:3 Exits:NES&gt; <br />
+Elyana focuses harshly on Yuhee and utters the words, 'lightning bolt'.<br />
+Yuhee wavers under the impact of the lightning bolt sent by Elyana.<br />
+Yuhee is incapacitated and will slowly die, if not aided.<br />
+<br />
+340H 167V 1X 1C Mem:3 Exits:NES&gt; <br />
+<br />
+**************************************************************************************************<br />
+<br />
+340H 208V 1X 1C Exits:NES&gt; <br />
+Rhuarc flies south.<br />
+You follow Rhuarc south.<br />
+Old Tarsis Square<br />
+Tort Ell'ini, High Noodle of the Swedish Meatball Team is standing here, fighting Saladin. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Gill Bill, Real Noodle of the Swedish Meatball Team is standing here, fighting Saladin. (flying)<br />
+. . . has a tough exterior.<br />
+Ursula Buendia, the Keeper of Macondo is sitting here, fighting Feroz. (flying)<br />
+. . . has a metallic luster.<br />
+Lord Feroz, Bashing His Way Into Your Soul is standing here, fighting Ursula. (flying)<br />
+. . . has a tough exterior.<br />
+Saladin Ayubi, Swirling Saracen Storm of Swords is standing here, fighting Tort. (flying)<br />
+. . . has a tough exterior.<br />
+Min Farshaw, the Irresistable Force is standing here, fighting Ursula. (flying)<br />
+. . . has a tough exterior.<br />
+Ahrimen the Male Wild Elf is standing here, fighting Ursula. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Ursula steps aside as Feroz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Rinad slowly fades into existence.<br />
+Rinad crashes into Min in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Tort is hit by a spray of gleaming indigo!<br />
+Gill is hit by a spray of gleaming indigo!<br />
+Ursula is struck by a spray of murky violet!<br />
+Feroz is struck by a spray of murky violet!<br />
+Saladin is caught in a spray of shimmering red!<br />
+Min is caught in a spray of shimmering red!<br />
+Ahrimen is hit by a spray of gleaming indigo!<br />
+Ahrimen's face goes blank and he begins to drool.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+The sky is now cloudless.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Saladin deftly steps in front of Min, pushing into the frey.<br />
+Saladin heroically rescues Min.<br />
+Saladin blocks Rinad's blow with a quick raise of his shield.<br />
+Saladin misses Rinad with his stab.<br />
+Elyana misses Tort with her sting.<br />
+Ahrimen massacres Ursula with his shoot.<br />
+Feroz misses Ursula with his crush.<br />
+Ursula slashes Feroz extremely hard.<br />
+Ursula stands up.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Gill focuses harshly on Saladin and utters some strange words.<br />
+Flesh burns as Gill enshrouds Saladin in a cloak of flames.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Rhuarc slowly fades into existence.<br />
+Rhuarc stabs Min hard.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; <br />
+Tort panics, and attempts to flee.<br />
+Tort flies north.<br />
+<br />
+340H 207V 1X 1C Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Gill with a spray of murky violet!<br />
+Gill panics, and attempts to flee.<br />
+Gill flies north.<br />
+You catch Ursula in a spray of shimmering red!<br />
+You hit Feroz with a spray of gleaming indigo!<br />
+You catch Saladin in a spray of bright orange!<br />
+Saladin seems to be blinded!<br />
+You catch Min in a spray of bright orange!<br />
+You blast Ahrimen with a spray of scintillating blue!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:Bad] Mem:2 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Ursula is hit by a spray of gleaming indigo!<br />
+Feroz is blasted by a spray of scintillating blue!<br />
+Saladin is caught in a spray of bright orange!<br />
+Min is caught in a spray of bright orange!<br />
+Min is caught in a spray of radiant yellow!<br />
+Ahrimen is caught in a spray of shimmering red!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; <br />
+Elyana misses Ursula with her sting.<br />
+You miss Ursula with your sting.<br />
+Rhuarc stabs Min hard.<br />
+Rinad stabs Saladin very hard.<br />
+Saladin misses Rinad with his stab.<br />
+Ahrimen shoots Ursula extremely hard.<br />
+Ahrimen shoots Ursula extremely hard.<br />
+Min misses Ursula with her smite.<br />
+Feroz misses Ursula with his crush.<br />
+Ursula misses Feroz with her slash.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; <br />
+Habutz flies in from the east.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; <br />
+Habutz does nothing.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; <br />
+Habutz does nothing.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; <br />
+Habutz crashes into Min in a thundering collision, knocking her to the ground!<br />
+Rhuarc strikes at Min, but misses completely.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:Bad] [Ursula:V.Bad] Mem:2 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Habutz in a spray of radiant yellow!<br />
+Habutz seems weaker.<br />
+You catch Ursula in a spray of shimmering red!<br />
+You hit Feroz with a spray of gleaming indigo!<br />
+You hit Saladin with a spray of gleaming indigo!<br />
+You strike Min with a spray of vibrant green!<br />
+You strike Ahrimen with a spray of vibrant green!<br />
+You catch Ahrimen in a spray of bright orange!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:V.Bad] [Ursula:V.Bad] Mem:3 Exits:NESW&gt; <br />
+Feroz stands up.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:V.Bad] [Ursula:V.Bad] Mem:3 Exits:NESW&gt; <br />
+Rinad crashes into Min in a thundering collision, knocking her to the ground!<br />
+Min is mortally wounded, and will die soon, if not aided.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Feroz:V.Bad] [Ursula:V.Bad] Mem:3 Exits:NESW&gt; <br />
+Ursula panics, and attempts to flee.<br />
+Ursula flies south.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Habutz massacres Min with his stab.<br />
+Twinkling lights surround Min and she disappears.<br />
+A steel bag disintegrates.<br />
+A bright ball of light disintegrates.<br />
+A spiritual helmet disintegrates.<br />
+Some spiritual greaves disintegrates.<br />
+Some spiritual boots disintegrates.<br />
+Some spiritual gauntlets disintegrates.<br />
+Some spiritual vambraces disintegrates.<br />
+Rinad stabs Saladin extremely hard.<br />
+Saladin misses Rinad with his stab.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Habutz is struck by a spray of vibrant green!<br />
+Feroz is struck by a spray of murky violet!<br />
+Saladin is caught in a spray of shimmering red!<br />
+Ahrimen is hit by a spray of gleaming indigo!<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill flies in from the north.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Saladin panics, and attempts to flee.<br />
+Saladin flies east.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Ahrimen panics, and attempts to flee.<br />
+Ahrimen flies north.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Gill in a spray of shimmering red!<br />
+Gill seems weaker.<br />
+You catch Habutz in a spray of radiant yellow!<br />
+You strike Feroz with a spray of murky violet!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Gill:Fair] Mem:3 Exits:NESW&gt; <br />
+Gill panics, and attempts to flee.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Gill:Fair] Mem:3 Exits:NESW&gt; <br />
+Feroz panics, and attempts to flee.<br />
+Feroz flies down.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Gill:Fair] Mem:3 Exits:NESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Gill misses Rhuarc with her smite.<br />
+Rhuarc massacres Gill with his stab.<br />
+Rhuarc is chilled, as he swings at Gill.<br />
+Elyana misses Habutz with her sting.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill panics, and attempts to flee.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Gill is caught in a spray of radiant yellow!<br />
+Habutz is struck by a spray of murky violet!<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill panics, and attempts to flee.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Ursula flies in from the south.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Habutz crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill panics, and attempts to flee.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill panics, and attempts to flee.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Ursula heroically rescues Gill.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Gill drops a heavy steel shield.<br />
+Gill drops a handaxe.<br />
+Gill drops a bottle of Aquafina mineral water.<br />
+Gill drops a bottle of Aquafina mineral water.<br />
+Gill drops a bottle of Aquafina mineral water.<br />
+Gill drops a turkey sandwich.<br />
+Gill drops a bottle of Aquafina mineral water.<br />
+Gill drops a detect invisibility potion.<br />
+Gill drops a small knife.<br />
+Gill drops a turkey sandwich.<br />
+Gill drops a bottle of Aquafina mineral water.<br />
+Gill drops a rapier.<br />
+Gill drops a cotton bag.<br />
+A cotton bag disintegrates.<br />
+Gill drops a potion of cure blindness.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Rinad crashes into Gill in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; <br />
+Rinad massacres Gill with his stab.<br />
+Rinad is chilled, as he swings at Gill.<br />
+Gill misses Rinad with her smite.<br />
+Rhuarc misses Ursula with his stab.<br />
+Ursula slashes Rhuarc hard.<br />
+Habutz stabs Elyana extremely hard.<br />
+Habutz is burned, as he swings at Elyana.<br />
+<br />
+340H 207V 1X 1C Mem:3 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Ursula with a spray of gleaming indigo!<br />
+Ursula's face goes blank and she begins to drool.<br />
+You catch Gill in a spray of bright orange!<br />
+Gill seems to be blinded!<br />
+You catch Habutz in a spray of shimmering red!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Good] Mem:4 Exits:NESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Good] Mem:4 Exits:NESW&gt; <br />
+Ursula heroically rescues Gill.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:V.Good] Mem:4 Exits:NESW&gt; <br />
+Rinad stabs Ursula extremely hard.<br />
+Ursula slashes Rinad very hard.<br />
+Habutz stabs Rhuarc very hard.<br />
+Rhuarc stabs Habutz hard.<br />
+You miss Ursula with your sting.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Habutz panics, and attempts to flee.<br />
+Habutz flies east.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Tort flies in from the north.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Tort focuses harshly on Elyana and utters the words, 'force bolt'.<br />
+Tort misses Elyana and destroys an image instead.<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Rinad crashes into Gill in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 207V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Ursula deftly steps in front of Tort, pushing into the frey.<br />
+Ursula heroically rescues Tort.<br />
+Elyana misses Ursula with her sting.<br />
+Ursula misses Elyana and destroys an image instead.<br />
+Gill misses Rinad with her smite.<br />
+Rinad stabs Ursula very hard.<br />
+You miss Ursula with your sting.<br />
+Rhuarc closes his prayerbook with a content look on his face.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Elyana stands up.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; CAST 'force bolt' gill<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Gill.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Rhuarc stabs Ursula hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Rhuarc misses Ursula with his stab.<br />
+Ursula slashes Rinad extremely hard.<br />
+Gill misses Rinad with her smite.<br />
+Rinad stabs Ursula extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Tort flies north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Elyana flies in from the east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; <br />
+Elyana focuses harshly on Gill and utters the words, 'force bolt'.<br />
+Brains splatter on you as Elyana's force bolt shatters Gill's skull.<br />
+Twinkling lights surround Gill and she disappears.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:4 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Ursula with a spray of murky violet!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:5 Exits:NESW&gt; <br />
+Tort flies in from the north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Good] Mem:5 Exits:NESW&gt; <br />
+Rhuarc stabs Ursula very hard.<br />
+Ursula slashes Rinad extremely hard.<br />
+Rinad stabs Ursula extremely hard.<br />
+**Rinad: get ursula<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rhuarc gets a mystical flail.<br />
+Rhuarc gets a potion of cure blindness.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a rapier.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a small knife.<br />
+Rhuarc gets a detect invisibility potion.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a turkey sandwich.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a bottle of Aquafina mineral water.<br />
+Rhuarc gets a handaxe.<br />
+Rhuarc gets a mystical flail.<br />
+Rhuarc gets a turkey sandwich.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Elyana focuses harshly on Tort and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Tort.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Ursula strikes at Rinad, but misses completely.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Habutz flies in from the east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rhuarc drops a turkey sandwich.<br />
+Rhuarc drops a turkey sandwich.<br />
+Rhuarc drops a turkey sandwich.<br />
+Rhuarc drops a turkey sandwich.<br />
+Habutz crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rinad:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Ursula deftly steps in front of Tort, pushing into the frey.<br />
+Ursula heroically rescues Tort.<br />
+Elyana stings Ursula hard.<br />
+Ursula misses Elyana and destroys an image instead.<br />
+Habutz stabs Elyana very hard.<br />
+Habutz is burned, as he swings at Elyana.<br />
+Rhuarc barely stabs Ursula.<br />
+Rinad stabs Ursula extremely hard.<br />
+You miss Ursula with your sting.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rinad crashes into Ursula in a thundering collision, knocking her to the ground!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; CAST 'force bolt' tort<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Tort.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Ahrimen shoots Ursula extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Tort focuses harshly on Elyana and utters the words, 'force bolt'.<br />
+Tort misses Elyana and destroys an image instead.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:Fair] Mem:5 Exits:NESW&gt; <br />
+Elyana misses Tort with her sting.<br />
+Rhuarc blocks Ursula's blow with a quick raise of his shield.<br />
+Rhuarc stabs Ursula hard.<br />
+Ahrimen massacres Ursula with his shoot.<br />
+Ahrimen massacres Ursula with his shoot.<br />
+Habutz stabs Elyana extremely hard.<br />
+Habutz is burned, as he swings at Elyana.<br />
+Rinad stabs Ursula extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:Bad] Mem:5 Exits:NESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:Bad] Mem:5 Exits:NESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Ahrimen with a spray of gleaming indigo!<br />
+You catch Habutz in a spray of bright orange!<br />
+You catch Tort in a spray of shimmering red!<br />
+You hit Ursula with a spray of gleaming indigo!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Tort panics, and attempts to flee.<br />
+Tort flies north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Habutz stabs Rhuarc hard.<br />
+Rhuarc stabs Habutz very hard.<br />
+Ursula slashes Rhuarc very hard.<br />
+Ahrimen massacres Ursula with his shoot.<br />
+Ahrimen shoots Ursula extremely hard.<br />
+Rinad massacres Ursula with his stab.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Habutz panics, and attempts to flee.<br />
+Habutz flies north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Elyana stands up.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Elyana flies west.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Rhuarc stabs Ursula very hard.<br />
+Ursula misses Rhuarc with her slash.<br />
+Ahrimen misses Ursula with his shoot.<br />
+Rinad misses Ursula with his stab.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Rhuarc focuses his purity on Ursula's leg!<br />
+Rhuarc focuses on Ursula's legs, but is thwarted.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Elyana flies in from the west.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Ursula stands up.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Elyana flies north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Elyana flies in from the north.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Ursula:V.Bad] Mem:6 Exits:NESW&gt; <br />
+Ursula panics, and attempts to flee.<br />
+Ursula flies north.<br />
+<br />
+340H 233V 1X 1C Mem:6 Exits:NESW&gt; <br />
+Ahrimen flies north.<br />
+<br />
+340H 233V 1X 1C Mem:6 Exits:NESW&gt; <br />
+Rinad flies north.<br />
+<br />
+340H 233V 1X 1C Mem:6 Exits:NESW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+Northern Road<br />
+Rinad Q. Thuren, Mythical Black Dragoon is standing here. (flying)<br />
+Ahrimen the Male Wild Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+Elyana focuses harshly on Ahrimen and utters the words, 'acid blast'.<br />
+Ahrimen is caught in some of Elyana's acid!<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+Rhuarc stabs Ahrimen very hard.<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+Ahrimen panics, and attempts to flee.<br />
+Ahrimen flies east.<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; gt stick together<br />
+You tell your group 'stick together'<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; gro<br />
+Your group, boobs hunters, of 4 members consists of:<br />
+  Rhuarc           v.good    rested    standing   Y   N    N     1    0<br />
+  Denise           perfect   rested    standing   Y   Y    N     1   10<br />
+  Rinad            v.good    fatigued  standing   Y   N    N     0    0<br />
+  Elyana           good      rested    standing   Y   N    N     1   12<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+**Rhuarc: bash well<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+Rinad nods solemnly.<br />
+<br />
+340H 232V 1X 1C Mem:10 Exits:NES&gt; <br />
+Rhuarc flies east.<br />
+You follow Rhuarc east.<br />
+Before the Courthouse<br />
+<br />
+340H 231V 1X 1C Mem:10 Exits:ESW&gt; <br />
+Rhuarc flies east.<br />
+You follow Rhuarc east.<br />
+The Ruined Market<br />
+Tort Ell'ini, High Noodle of the Swedish Meatball Team is sitting here, fighting Habutz. (flying)<br />
+. . . is enveloped in flames.<br />
+Habutz the Male Human is standing here, fighting Tort. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; gt doing well<br />
+You tell your group 'doing well'<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Tort stands up.<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Habutz crashes into Tort in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Tort steps aside as Rinad attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Rhuarc stabs Habutz very hard.<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Elyana focuses harshly on Tort and utters the words, 'acid blast'.<br />
+Tort is caught in some of Elyana's acid!<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; <br />
+Rhuarc misses Habutz with his stab.<br />
+Rinad stabs Tort extremely hard.<br />
+Rinad is burned, as he swings at Tort.<br />
+Habutz massacres Tort with his stab.<br />
+Habutz is burned, as he swings at Tort.<br />
+Tort misses Habutz with his hit.<br />
+<br />
+340H 230V 1X 1C Mem:10 Exits:NSW&gt; CAST 'force bolt' tort<br />
+You utter the words, 'force bolt'<br />
+Your force bolt shatters Tort's skull into lifeless goo.<br />
+Twinkling lights surround Tort and he disappears.<br />
+A leather bag disintegrates.<br />
+A leather shirt disintegrates.<br />
+A leather helmet disintegrates.<br />
+A pair of leather pants disintegrates.<br />
+A pair of leather boots disintegrates.<br />
+A pair of leather gloves disintegrates.<br />
+A pair of leather sleeves disintegrates.<br />
+<br />
+340H 230V 1X 1C Mem:11 Exits:NSW&gt; <br />
+Rhuarc blocks Habutz's blow with a quick raise of his shield.<br />
+Rhuarc stabs Habutz hard.<br />
+<br />
+340H 230V 1X 1C Mem:11 Exits:NSW&gt; <br />
+Elyana focuses harshly on Habutz and utters the words, 'shocking grasp'.<br />
+Habutz looks shocked as Elyana grasps at him.<br />
+<br />
+340H 230V 1X 1C Mem:11 Exits:NSW&gt; CAST 'lightning bolt' habutz<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Habutz with full impact.<br />
+<br />
+340H 230V 1X 1C Mem:12 Exits:NSW&gt; <br />
+Habutz panics, and attempts to flee.<br />
+Habutz flies north.<br />
+<br />
+340H 230V 1X 1C Mem:12 Exits:NSW&gt; <br />
+Rhuarc flies north.<br />
+You follow Rhuarc north.<br />
+The Ruined Market<br />
+Habutz the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 229V 1X 1C Mem:12 Exits:NESW&gt; <br />
+Habutz flies east.<br />
+<br />
+340H 229V 1X 1C Mem:12 Exits:NESW&gt; <br />
+Rhuarc flies east.<br />
+You follow Rhuarc east.<br />
+Wall Road<br />
+Habutz the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 228V 1X 1C Mem:12 Exits:SW&gt; <br />
+Rhuarc flies west.<br />
+You follow Rhuarc west.<br />
+The Ruined Market<br />
+<br />
+340H 227V 1X 1C Mem:12 Exits:NESW&gt; <br />
+Rhuarc flies east.<br />
+You follow Rhuarc east.<br />
+Wall Road<br />
+<br />
+340H 226V 1X 1C Mem:12 Exits:SW&gt; <br />
+Rhuarc flies south.<br />
+You follow Rhuarc south.<br />
+East Gate<br />
+Habutz the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+340H 225V 1X 1C Mem:12 Exits:NEW&gt; <br />
+Elyana focuses harshly on Habutz and utters the words, 'shocking grasp'.<br />
+Elyana reveals with a shock that Habutz has left his body.<br />
+Twinkling lights surround Habutz and he disappears.<br />
+<br />
+340H 225V 1X 1C Mem:12 Exits:NEW&gt; <br />
+<br />
+*****************************************************************************************************<br />
+<br />
+340H 212V 1X 1C Mem:3 Exits:NEW&gt; <br />
+Rhuarc flies west.<br />
+You follow Rhuarc west.<br />
+Near the Tarsis Wastelands<br />
+a steel rapier lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+A detect invisibility potion is lying here.<br />
+a bow lies here<br />
+A small roll of bread lies here. [17]<br />
+a mystical sabre lies here<br />
+a turkey sandwich lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a small scimitar lies here<br />
+a turkey sandwich lies here [2]<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+Woa Nitro, Honorary Blood Sea Dane is standing here.<br />
+Martinez is standing here, fighting Ritz.<br />
+Sir Woobis of Anfield, Lord Clerist of the Knights of Solamnia is standing here, fighting someone who has already left. (flying)<br />
+. . . has a metallic luster.<br />
+Ritz Reliz, Mythical Deathwatch Guard is standing here, fighting Santino. (flying)<br />
+Aryx, the Mythical Minotaur is sitting here, fighting Helion. (flying)<br />
+Blixt Fireforge, Trio Reject is sitting here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+Helion Wreckor, Leading the Massacor is standing here, fighting Aryx.<br />
+Santino, the Prodigal Son is standing here, fighting Ritz.<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; <br />
+Rhuarc deftly steps in front of the attack on you.<br />
+Santino crashes into Rhuarc in a thundering collision, knocking him to the ground!<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Woa is blasted by a spray of scintillating blue!<br />
+Martinez is caught in a spray of bright orange!<br />
+Woobis is hit by a spray of gleaming indigo!<br />
+Ritz is blasted by a spray of scintillating blue!<br />
+Aryx is caught in a spray of radiant yellow!<br />
+Aryx is caught in a spray of bright orange!<br />
+Blixt is caught in a spray of radiant yellow!<br />
+Helion is struck by a spray of murky violet!<br />
+Helion is caught in a spray of radiant yellow!<br />
+Santino is caught in a spray of shimmering red!<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; <br />
+Aryx stands up.<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; <br />
+Woa panics, and attempts to flee.<br />
+Woa leaves east.<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; <br />
+Blixt stands up.<br />
+<br />
+340H 211V 1X 1C Mem:3 Exits:ESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Martinez in a spray of bright orange!<br />
+You strike Woobis with a spray of murky violet!<br />
+You blast Ritz with a spray of scintillating blue!<br />
+Ritz freezes in place.<br />
+You strike Aryx with a spray of murky violet!<br />
+Aryx panics, and attempts to flee.<br />
+Aryx flies south.<br />
+You hit Blixt with a spray of gleaming indigo!<br />
+You strike Helion with a spray of murky violet!<br />
+Helion panics, and attempts to flee.<br />
+Helion leaves east.<br />
+You blast Santino with a spray of scintillating blue!<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Ritz:Good] [Martinez:Fair] Mem:4 Exits:ESW&gt; <br />
+You sting Martinez hard.<br />
+Elyana misses Blixt with her sting.<br />
+Rhuarc stabs Santino extremely hard.<br />
+Santino stabs Ritz extremely hard.<br />
+Martinez stabs Ritz extremely hard.<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Ritz:Good] [Martinez:Fair] Mem:4 Exits:ESW&gt; <br />
+Martinez panics, and attempts to flee.<br />
+Martinez leaves east.<br />
+<br />
+340H 211V 1X 1C Mem:4 Exits:ESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Woobis is hit by a spray of gleaming indigo!<br />
+Ritz is blasted by a spray of scintillating blue!<br />
+Blixt is struck by a spray of murky violet!<br />
+Santino is struck by a spray of murky violet!<br />
+<br />
+340H 211V 1X 1C Mem:4 Exits:ESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Woobis with a spray of gleaming indigo!<br />
+You catch Woobis in a spray of radiant yellow!<br />
+You strike Ritz with a spray of murky violet!<br />
+You strike Blixt with a spray of murky violet!<br />
+You catch Santino in a spray of shimmering red!<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+Blixt utters some strange words.<br />
+There is lightning in the sky.<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+You miss Woobis with your sting.<br />
+Rhuarc massacres Santino with his stab.<br />
+Santino stabs Ritz extremely hard.<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+Santino crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+Rhuarc stands up.<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+**Rinad: loony is out<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+Rhuarc focuses his purity on Santino's leg!<br />
+Rhuarc focuses on Santino's legs, but is thwarted.<br />
+<br />
+340H 211V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; <br />
+You barely sting Woobis.<br />
+Woobis misses Elyana with his slash.<br />
+Elyana stings Blixt very hard.<br />
+Blixt misses Elyana with his slash.<br />
+Rhuarc stabs Santino extremely hard.<br />
+Santino stabs Ritz extremely hard.<br />
+The rising sun proclaims a new day.<br />
+You feel much heavier.<br />
+Blixt panics, and attempts to flee.<br />
+Blixt flies east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; gt area<br />
+You tell your group 'area'<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:5 Exits:ESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Woobis with a spray of vibrant green!<br />
+You strike Ritz with a spray of vibrant green!<br />
+You blast Santino with a spray of scintillating blue!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:6 Exits:ESW&gt; <br />
+**Rhuarc: area<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:6 Exits:ESW&gt; <br />
+Elyana misses Woobis with her sting.<br />
+Woobis misses Elyana and destroys an image instead.<br />
+Rhuarc stabs Santino extremely hard.<br />
+Santino stabs Ritz extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:Awful] Mem:6 Exits:ESW&gt; <br />
+Woobis utters some strange words.<br />
+Woobis heals Woobis.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:V.Good] Mem:6 Exits:ESW&gt; <br />
+**Rinad: min q<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:V.Good] Mem:6 Exits:ESW&gt; <br />
+Santino panics, and attempts to flee.<br />
+Santino leaves south.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Elyana:Good] [Woobis:V.Good] Mem:6 Exits:ESW&gt; <br />
+Rhuarc heroically rescues Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Good] Mem:6 Exits:ESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Woobis with a spray of vibrant green!<br />
+You catch Woobis in a spray of shimmering red!<br />
+You strike Ritz with a spray of vibrant green!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Good] Mem:7 Exits:ESW&gt; <br />
+Elyana stands up.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Good] Mem:7 Exits:ESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Woobis is hit by a spray of gleaming indigo!<br />
+Ritz is caught in a spray of radiant yellow!<br />
+Ritz is hit by a spray of gleaming indigo!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:7 Exits:ESW&gt; <br />
+Ritz focuses harshly on Elyana and utters some strange words.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:7 Exits:ESW&gt; <br />
+Elyana barely stings Woobis.<br />
+Woobis misses Rhuarc with his slash.<br />
+Rhuarc misses Woobis with his stab.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:7 Exits:ESW&gt; <br />
+**Rinad: tybalt<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:7 Exits:ESW&gt; CAST 'prismatic spray' <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Woobis in a spray of bright orange!<br />
+You blast Ritz with a spray of scintillating blue!<br />
+You catch Ritz in a spray of shimmering red!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Bad] Mem:8 Exits:ESW&gt; <br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Woobis is struck by a spray of murky violet!<br />
+Ritz is blasted by a spray of scintillating blue!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:8 Exits:ESW&gt; <br />
+Aryx flies in from the south.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:8 Exits:ESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Ritz misses Rhuarc with his slash.<br />
+Rhuarc misses Ritz with his stab.<br />
+Woobis misses Rhuarc with his slash.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:8 Exits:ESW&gt; <br />
+Ritz focuses harshly on you and utters some strange words.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:8 Exits:ESW&gt;  <br />
+Woobis utters some strange words.<br />
+Woobis heals Woobis.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Good] Mem:8 Exits:ESW&gt; CAST 'force bolt'<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Woobis.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Good] Mem:9 Exits:ESW&gt; <br />
+Elyana focuses harshly on Woobis and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Woobis.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:9 Exits:ESW&gt; <br />
+Rhuarc stabs Ritz hard.<br />
+Rhuarc focuses his purity on Ritz's leg!<br />
+Rhuarc forces Ritz to the ground.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:9 Exits:ESW&gt; <br />
+Aryx tries to bash you, but he passes right through your image.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:9 Exits:ESW&gt;  <br />
+Blixt flies in from the east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:9 Exits:ESW&gt; CAST 'prismatic spray'<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Blixt in a spray of radiant yellow!<br />
+You strike Aryx with a spray of murky violet!<br />
+You catch Aryx in a spray of shimmering red!<br />
+Aryx seems weaker.<br />
+You hit Woobis with a spray of gleaming indigo!<br />
+You blast Ritz with a spray of scintillating blue!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:10 Exits:ESW&gt; <br />
+Woobis focuses on Blixt and utters some strange words.<br />
+Woobis heals Blixt.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:10 Exits:ESW&gt; <br />
+Elyana focuses harshly on Woobis and utters the words, 'hold person'.<br />
+Woobis freezes in place.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:10 Exits:ESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Aryx misses Rhuarc with his crush.<br />
+Rhuarc massacres Aryx with his stab.<br />
+Blixt misses you with his slash.<br />
+Ritz misses Rhuarc with his slash.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Fair] Mem:10 Exits:ESW&gt; CAST 'malevolent tentacles' <br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+Blixt screams in pain as inky black tentacles constrict him.<br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Woobis screams in pain as inky black tentacles constrict him.<br />
+Ritz screams in pain as inky black tentacles constrict him.<br />
+Ritz is incapacitated and will slowly die, if not aided.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Woobis screams in pain as inky black tentacles constrict him.<br />
+You feel yourself exposed.<br />
+Rhuarc stabs Aryx extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+Rhuarc focuses harshly on Woobis and utters some strange words.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Elyana focuses harshly on Blixt and utters the words, 'lightning bolt'.<br />
+Blixt wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Santino arrives from the south.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Woobis screams in pain as inky black tentacles constrict him.<br />
+Blixt misses Rhuarc with his slash.<br />
+Rhuarc misses Blixt with his stab.<br />
+You sting Woobis hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:V.Bad] Mem:12 Exits:ESW&gt; CAST 'malevolent tentacles' <br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+Santino screams in pain as inky black tentacles constrict him.<br />
+Blixt screams in pain as inky black tentacles constrict him.<br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Woobis screams in pain as inky black tentacles constrict him.<br />
+Ritz is strangled to death by the writhing black tentacles.<br />
+Twinkling lights surround Ritz and he disappears.<br />
+A bright ball of light disintegrates.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:V.Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Blixt focuses harshly on Rhuarc and utters some strange words.<br />
+Rhuarc screams in pain as lightning from Blixt penetrates him.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Elyana focuses harshly on Blixt and utters the words, 'lightning bolt'.<br />
+Blixt wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Rhuarc deftly steps in front of you, pushing you out of the way.<br />
+Rhuarc comes to your rescue! You're thankful, but a bit dazed.<br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Woobis screams in pain as inky black tentacles constrict him.<br />
+Santino stabs Rhuarc extremely hard.<br />
+Rhuarc stabs Santino extremely hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt;  <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Elyana focuses harshly on Blixt and utters the words, 'lightning bolt'.<br />
+Blixt wavers under the impact of the lightning bolt sent by Elyana.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Good] [Woobis:Awful] Mem:13 Exits:ESW&gt; <br />
+Blixt focuses harshly on Rhuarc and utters some strange words.<br />
+A fist of stone and earth slams into Rhuarc's body!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Rhuarc:Fair] [Woobis:Awful] Mem:13 Exits:ESW&gt; CAST 'force bolt'<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Woobis.<br />
+Woobis is mortally wounded, and will die soon, if not aided.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Santino panics, and attempts to flee.<br />
+Santino leaves west.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Rhuarc stabs Blixt very hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Blixt focuses harshly on Rhuarc and utters some strange words.<br />
+A fist of stone and earth slams into Rhuarc's body!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; <br />
+Elyana focuses harshly on Blixt and utters the words, 'acid blast'.<br />
+Blixt is caught in some of Elyana's acid!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:14 Exits:ESW&gt; CAST 'force bolt' blixt<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Blixt.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Aryx attempts to break free of the black tentacles, but fails!<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Aryx screams in pain as inky black tentacles constrict him.<br />
+Aryx crushes Rhuarc very hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Santino arrives from the west.<br />
+Santino kneels down and studies the ground.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Aryx stands up.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Rhuarc attempts to strike at Blixt with his rapier.<br />
+Rhuarc stabs Blixt hard.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Aryx panics, and attempts to flee.<br />
+Aryx flies west.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Elyana focuses harshly on Blixt and utters the words, 'magic missile'.<br />
+Elyana aims a magic missile at Blixt, who staggers under the blow.<br />
+Elyana aims a magic missile at Blixt, who staggers under the blow.<br />
+Elyana aims a magic missile at Blixt, who staggers under the blow.<br />
+Elyana aims a magic missile at Blixt, who staggers under the blow.<br />
+Blixt is incapacitated and will slowly die, if not aided.<br />
+Elyana aims a magic missile at Blixt, who staggers under the blow.<br />
+Blixt is mortally wounded, and will die soon, if not aided.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Santino leaves east.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Dying] Mem:15 Exits:ESW&gt; <br />
+Rhuarc annihilates Blixt with his stab.<br />
+Twinkling lights surround Blixt and he disappears.<br />
+A cotton bag disintegrates.<br />
+A cotton shirt disintegrates.<br />
+A cotton hat disintegrates.<br />
+A pair of cotton pants disintegrates.<br />
+A pair of cotton boots disintegrates.<br />
+A pair of cotton gloves disintegrates.<br />
+A pair of cotton sleeves disintegrates.<br />
+An immense scythe of ice and fire vaporizes into the air around you.<br />
+You massacre Woobis with your sting.<br />
+Twinkling lights surround Woobis and he disappears.<br />
+Some spiritual plate mail disintegrates.<br />
+A spiritual helmet disintegrates.<br />
+Some spiritual greaves disintegrates.<br />
+Some spiritual boots disintegrates.<br />
+Some spiritual gauntlets disintegrates.<br />
+Some spiritual vambraces disintegrates.<br />
+An immense scythe of ice and fire vaporizes into the air around you.<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Awful] Mem:15 Exits:ESW&gt; gt we own<br />
+You tell your group 'we own'<br />
+<br />
+340H 233V 1X 1C [Me:Perfect] [Woobis:Awful] Mem:15 Exits:ESW&gt; look<br />
+Near the Tarsis Wastelands<br />
+A small roll of bread lies here. [7]<br />
+a turkey sandwich lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a mystical sabre lies here<br />
+a light wooden shield lies here<br />
+a giant two handed sword lies here<br />
+a light wooden shield lies here [2]<br />
+a mystical flail lies here<br />
+a bastard sword lies here<br />
+a heavy steel shield lies here<br />
+a steel rapier lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+a heavy steel shield lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+A detect invisibility potion is lying here.<br />
+a bow lies here<br />
+A small roll of bread lies here. [17]<br />
+a mystical sabre lies here<br />
+a turkey sandwich lies here<br />
+a bottle of Aquafina mineral water lies here<br />
+a small scimitar lies here<br />
+a turkey sandwich lies here [2]<br />
+a bottle of Aquafina mineral water lies here<br />
+a turkey sandwich lies here<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here, fighting someone who has already left. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Rhuarc, Wild Clan Chief of TeamSpongue is standing here. (flying)<br />
+<br />
+340H 233V 1X 1C Mem:15 Exits:ESW&gt; <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='759'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=759">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="759">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

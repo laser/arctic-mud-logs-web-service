@@ -1,0 +1,598 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1974-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1974'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Pk of the Ancients</font></b>
+<p>
+POV: 
+Silent Observer<p>
+Log Rating:
+-0.4286<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Tollhouse cookies FTW</i>
+<p>
+<p>
+
+459H 47V 9978994X 3833C Exits:NS&gt; n<br />
+Dra flies in from the south.<br />
+Nearing the City of Vingaard<br />
+    The road here passes through some large fields of grain, a sign that a<br />
+large city is nearby. Looking westward, the towers of Vingaard Keep are<br />
+visible perched atop a hill with the city's walls nearby. The road<br />
+continues north to a junction of roads from other parts of the continent<br />
+and a small tollhouse that stands watch over the intersection. To the<br />
+south, the road crosses the Vingaard River via a ford in the river.<br />
+&lt;Pigs&gt; Dra 'Gonfeet, Eater of Pork Feet is standing here. (flying) (invisible) (white aura)<br />
+<br />
+459H 46V 9978994X 3833C Exits:NESW&gt; n<br />
+Dra flies in from the south.<br />
+The Tollhouse<br />
+    This small stone building stands at the junction of the roads from<br />
+Palanthas to the west, Kalaman to the east, and Solanthus to the south. A<br />
+road leads north to the gates of the City of Vingaard, and east to the main<br />
+keep atop the hill. Inside the tollhouse there are some long benches for<br />
+those waiting to meet with the tax collector, who sits behind the large<br />
+table toward the back. Behind this table is a large safe mounted in the<br />
+wall, storing the collected taxes waiting to be added to the city's<br />
+coffers. A small staircase leads up to a small hatch in the ceiling.<br />
+Travelers wishing to pass must pay the toll, then head west to Palanthas,<br />
+north through the city and east to Kalaman, or south toward the Newsea.<br />
+The corpse of Sedai is lying here.<br />
+A sheaf of spellbook pages has been left here.<br />
+Something metallic has been dropped on the ground.<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+&lt;Pigs&gt; Dra 'Gonfeet, Eater of Pork Feet is standing here. (flying) (invisible) (white aura)<br />
+A small pigmy-like creature stands here. (flying)<br />
+Espylacopa the Male Qualinesti is standing here. (flying) (red aura)<br />
+Muil the Female Hylar Dwarf is standing here. (flying) (white aura)<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Dra tells your group 'captain loading seal'<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Xandra flies in from the east.<br />
+Leknaat flies in from the east.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; march<br />
+You announce for the group to halt.<br />
+You take a deep breath and end your march.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; r<br />
+You walk over to a wooden bench and take a seat.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Espylacopa gives a pech an order.<br />
+A pech delivers a quick snap kick to Muil. Muil staggers and tries to recover.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Espylacopa focuses harshly on Muil and utters some strange words.<br />
+The sound of bones cracking echoes as Espylacopa's force bolt slams into Muil.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; l<br />
+The Tollhouse<br />
+    This small stone building stands at the junction of the roads from<br />
+Palanthas to the west, Kalaman to the east, and Solanthus to the south. A<br />
+road leads north to the gates of the City of Vingaard, and east to the main<br />
+keep atop the hill. Inside the tollhouse there are some long benches for<br />
+those waiting to meet with the tax collector, who sits behind the large<br />
+table toward the back. Behind this table is a large safe mounted in the<br />
+wall, storing the collected taxes waiting to be added to the city's<br />
+coffers. A small staircase leads up to a small hatch in the ceiling.<br />
+Travelers wishing to pass must pay the toll, then head west to Palanthas,<br />
+north through the city and east to Kalaman, or south toward the Newsea.<br />
+The corpse of Sedai is lying here.<br />
+A sheaf of spellbook pages has been left here.<br />
+Something metallic has been dropped on the ground.<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Leknaat, Keeper of Balance is standing here. (flying) (white aura)<br />
+Xandra the Female Kagonesti is standing here. (flying) (red aura)<br />
+&lt;Pigs&gt; Dra 'Gonfeet, Eater of Pork Feet is standing here. (flying) (invisible) (white aura)<br />
+A pech is standing here, fighting Muil. (flying)<br />
+Espylacopa the Male Qualinesti is standing here. (flying) (red aura)<br />
+Muil the Female Hylar Dwarf is standing here, fighting a pech. (flying) (white aura)<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+A pech hits Muil very hard.<br />
+A pech slashes Muil very hard.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; gt nice pk!<br />
+You tell your group 'nice pk!'<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+A pech delivers a vicious kick to Muil's face. Blood flies as her head snaps back.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Espylacopa focuses harshly on Muil and utters some strange words.<br />
+The sound of bones cracking echoes as Espylacopa's force bolt slams into Muil.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Xandra looks at Muil.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+A pech hits Muil extremely hard.<br />
+A pech slashes Muil very hard.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; 'nice pik!<br />
+You say 'nice pik!'<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Leknaat focuses harshly on Espylacopa and utters some strange words.<br />
+Espylacopa cries out in pain as Leknaat grabs him.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Espylacopa focuses harshly on Muil and utters some strange words.<br />
+The sound of bones cracking echoes as Espylacopa's force bolt slams into Muil.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+A pech's skin grows thick as he concentrates a moment.<br />
+Leknaat's skin thickens into a protective bark.<br />
+Xandra's skin thickens into a protective bark.<br />
+Dra's skin thickens into a protective bark.<br />
+Your skin thickens into a protective bark.<br />
+A pech's skin thickens into a protective bark.<br />
+Espylacopa's skin thickens into a protective bark.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Espylacopa gracefully steps aside as Leknaat attacks!<br />
+A pech hits Muil very hard.<br />
+A pech slashes Muil.<br />
+A pech hits Muil very hard.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Leknaat focuses harshly on Espylacopa and utters some strange words.<br />
+Espylacopa cries out in pain as Leknaat grabs him.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Dra says 'gl'<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Xandra swoops at Espylacopa.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; 'for the win<br />
+You say 'for the win'<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Xandra misses Espylacopa with her claw.<br />
+Espylacopa misses Leknaat with his pierce.<br />
+A pech hits Muil very hard.<br />
+A pech slashes Muil very hard.<br />
+A pech hits Muil hard.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Leknaat focuses harshly on Espylacopa and utters some strange words.<br />
+Espylacopa collapses and dies as Leknaat grabs him.<br />
+Espylacopa is dead! R.I.P.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+The death cry of Espylacopa echoes from somewhere nearby...<br />
+A pech stops following Espylacopa.<br />
+A pech transcends this world and enters another plane.<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a jeweled dagger<br />
+a small component pouch<br />
+a scouting pack<br />
+a red satin armguard (invisible)..it glows dimly<br />
+an engraved ring of Nuitari<br />
+a large pile of coins<br />
+a pair of silky black pants<br />
+a cloth belt pack<br />
+a four-headed dwarven whip..it hums softly<br />
+a map of Palanthas<br />
+a scroll of recall<br />
+a roasted turkey leg<br />
+a small canteen [3]<br />
+a waterskin [3]<br />
+<br />
+459H 45V 9978994X 3833C Exits:NESW(U)&gt; <br />
+Muil utters some strange words.<br />
+Muil heals Muil.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1974'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1974">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1974">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

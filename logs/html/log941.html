@@ -1,0 +1,899 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 941-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='941'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+The Legendary Gnoll's Recess</font></b>
+<p>
+POV: 
+Huan<p>
+Log Rating:
+0.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Traverse the legendary Gnoll's Recess with care</i>
+<p>
+<p>
+
+205H 44V 1652172X 168C Mem:1 Exits:ES&gt; <br />
+A Hidden Path<br />
+Kuang the Male Goblin is standing here. (flying)<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt; <br />
+You say 'This place is also known as Gnoll's Recess'<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt; <br />
+You say 'The first room is a bit tricky'<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt; <br />
+You say 'You have to go e e and touch eye'<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt; group<br />
+Your group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Huan             perfect   rested    standing   Y   N    N    Y     1    0<br />
+  Kuang            perfect   rested    standing   Y   N    N    Y     0    0<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt;<br />
+Kuang says 'from here?'<br />
+<br />
+205H 74V 1652172X 168C Exits:ES&gt; <br />
+You say 'yes'<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt;<br />
+Kuang waves happily.<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt; <br />
+You say 'I will para eye for you'<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt; <br />
+You say 'ready?'<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt;<br />
+Kuang nods solemnly.<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt; <br />
+You say 'go'<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt;<br />
+Kuang flies east.<br />
+<br />
+205H 99V 1652172X 168C Exits:ES&gt; A Ravine<br />
+Kuang the Male Goblin is standing here. (flying)<br />
+<br />
+205H 97V 1652172X 168C Exits:EW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A wight floats here, malice in its eyes. (invisible)<br />
+A hell hound prowls about, nostrils flared and breathing fire.<br />
+You sense a life form.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+205H 97V 1652172X 168C Exits:EW&gt;<br />
+Kuang shakes his head.<br />
+<br />
+205H 97V 1652172X 168C Exits:EW&gt;<br />
+Kuang flies west.<br />
+<br />
+205H 97V 1652172X 168C Exits:EW&gt; A Hidden Path<br />
+Kuang the Male Goblin is standing here. (flying)<br />
+<br />
+205H 95V 1652172X 168C Exits:ES&gt; A Ravine<br />
+<br />
+205H 93V 1652172X 168C Exits:EW&gt; Before the Moat<br />
+A wight floats here, malice in its eyes. (invisible)<br />
+A hell hound prowls about, nostrils flared and breathing fire.<br />
+You sense a life form.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A wight focuses harshly on Kuang and utters some strange words.<br />
+Kuang freezes in place.<br />
+A wight slowly fades into existence.<br />
+A wight drains Kuang very hard.<br />
+A hell hound bites YOU.<br />
+A one-eyed beholder focuses harshly on you and utters some strange words.<br />
+A one-eyed beholder comes out of hiding.<br />
+You are caught in some of a one-eyed beholder's acid!<br />
+A one-eyed beholder drains YOU very hard.<br />
+A fire giant delivers a vicious kick to Kuang's face. Blood flies as his head snaps back.<br />
+You step aside as a fire giant tries to bash you, causing him to tumble and fall face down.<br />
+A fire giant crashes into Kuang in a thundering collision, knocking him to the ground!<br />
+A fire giant delivers a vicious kick to Kuang's face. Blood flies as his head snaps back.<br />
+<br />
+159H 91V 1652172X 168C [Huan:Good] [a hell hound:Perfect] Exits:EW&gt; PANIC! You couldn't escape!<br />
+<br />
+159H 90V 1652172X 168C Exits:WD&gt; Before the Moat<br />
+Kuang the Male Goblin is sitting here, fighting a wight. (flying)<br />
+A wight is standing here, fighting Kuang.<br />
+A hell hound prowls about, nostrils flared and breathing fire.<br />
+A beholder with only one eye floats here.<br />
+A fire giant is standing here, fighting Kuang.<br />
+A fire giant is sitting here.<br />
+A fire giant is standing here, fighting Kuang.<br />
+A fire giant is standing here, fighting Kuang.<br />
+<br />
+159H 89V 1652172X 168C Exits:EW&gt; sil<br />
+You utter the words, 'silence'<br />
+<br />
+159H 89V 1652172X 168C Mem:2 Exits:EW&gt;<br />
+A fire giant hits Kuang extremely hard.<br />
+A fire giant hits Kuang extremely hard.<br />
+A fire giant hits Kuang extremely hard.<br />
+A fire giant hits Kuang extremely hard.<br />
+Kuang is dead! R.I.P.<br />
+The death cry of Kuang echoes from somewhere nearby...<br />
+Kuang stops following you.<br />
+<br />
+159H 89V 1652172X 168C Mem:2 Exits:EW&gt;<br />
+You step aside as a fire giant tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+159H 89V 1652172X 168C [Huan:Good] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+You are sent sprawling as a fire giant crashes into you.<br />
+<br />
+151H 89V 1652172X 168C [Huan:Fair] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+You feel ribs crack as you are kicked in the chest by a fire giant.<br />
+<br />
+137H 89V 1652172X 168C [Huan:Fair] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+A one-eyed beholder focuses harshly on you and utters some strange words.<br />
+Your skin softens.<br />
+A one-eyed beholder drains YOU very hard.<br />
+<br />
+125H 89V 1652172X 168C [Huan:Fair] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+A hell hound bites YOU extremely hard.<br />
+<br />
+106H 89V 1652172X 168C [Huan:Fair] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+A hell hound bites YOU hard.<br />
+A one-eyed beholder drains YOU very hard.<br />
+A fire giant hits YOU very hard.<br />
+A fire giant misses you with his hit.<br />
+A fire giant massacres YOU with his hit.<br />
+A fire giant hits YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss a fire giant with your bludgeon.<br />
+<br />
+34H 89V 1652172X 168C [Huan:Awful] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+A wight drains YOU hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+26H 89V 1652172X 168C [Huan:Awful] [a fire giant:Perfect] Mem:2 Exits:EW&gt;<br />
+A fire giant stands up.<br />
+<br />
+26H 89V 1652172X 168C [Huan:Awful] [a fire giant:Perfect] Mem:2 Exits:EW&gt; A fire giant stands up.<br />
+A wight misses you with her drain.<br />
+A hell hound misses you with its bite.<br />
+A one-eyed beholder drains YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+A fire giant massacres YOU with his hit.<br />
+You're dead.<br />
+Your detect invisibility wears off.<br />
+You LOSE a level! You hide your head in shame.<br />
+<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+**************************************************************************<br />
+34H 122V 232172X 0C Exits:D&gt;<br />
+Your body tingles slightly, for a brief moment.<br />
+<br />
+34H 122V 232172X 0C Exits:D&gt;<br />
+The Pig and Whistle<br />
+A chunk of gold lies here.<br />
+A small leather purse lies on the floor.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A beefy bouncer stands near the innkeeper, watching for trouble.<br />
+Ed, the crotchety innkeeper stands here.<br />
+<br />
+34H 122V 232172X 0C Exits:D&gt;<br />
+You are already standing.<br />
+<br />
+34H 122V 232172X 0C Exits:D&gt;<br />
+Ed tells you 'You're not carrying anything!'<br />
+<br />
+45H 122V 232172X 0C Exits:D&gt; A wight has summoned you!<br />
+Before the Moat<br />
+The corpse of Huan is lying here.<br />
+The corpse of Kuang is lying here.<br />
+A wight floats here, malice in its eyes.<br />
+A hell hound prowls about, nostrils flared and breathing fire.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+A fire giant patrols the area, looking for intruders.<br />
+Someone focuses harshly on you and utters some strange words.<br />
+Your courage fails as images of death fill your mind!<br />
+You're not fighting, why bother fleeing?<br />
+A wight slowly fades into existence.<br />
+A wight drains YOU hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+A hell hound bites YOU hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+A one-eyed beholder utters some strange words.<br />
+A one-eyed beholder's hands issue a spray of color!<br />
+A one-eyed beholder comes out of hiding.<br />
+You are caught in a spray of radiant yellow!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You feel weaker.<br />
+A wight is caught in a spray of radiant yellow!<br />
+A one-eyed beholder drains YOU very hard.<br />
+You're stunned, but will likely regain consciousness again.<br />
+Someone kicks you in your chest, causing your ribs to shatter and puncture your lungs. Death is slow and agonizing.<br />
+You're dead.<br />
+You feel healthier!<br />
+Your fear wanes and you suddenly feel braver!<br />
+<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+<br />
+   Make a choice:<br />
+<br />
+**************************************************************************<br />
+198H 36V 645172X 29C Mem:3 Exits:ESW&gt; Grassy Plains<br />
+<br />
+198H 34V 645172X 29C Mem:3 Exits:NES&gt; In View of Castle Crimson<br />
+<br />
+198H 32V 645172X 29C Mem:3 Exits:NS&gt; The Drawbridge<br />
+Paus the Male Hylar Dwarf is standing here. (flying)<br />
+<br />
+198H 31V 645172X 29C Mem:3 Exits:NS&gt; The Entrance to Castle Crimson<br />
+<br />
+198H 30V 645172X 29C Mem:3 Exits:NES&gt; <br />
+#Ok. {target} now equals {paus}.<br />
+The Drawbridge<br />
+Paus the Male Hylar Dwarf is standing here. (flying)<br />
+<br />
+198H 29V 645172X 29C Mem:3 Exits:NS&gt;<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Paus in a cloak of flames.<br />
+<br />
+198H 29V 645172X 29C [Huan:Perfect] [Paus:Fair] Mem:4 Exits:NS&gt; <br />
+You miss Paus with your hit.<br />
+Paus crushes YOU very hard.<br />
+<br />
+184H 29V 645172X 29C [Huan:V.Good] [Paus:Fair] Mem:4 Exits:NS&gt;<br />
+Your casting is disrupted by the fighting!<br />
+<br />
+184H 29V 645172X 29C [Huan:V.Good] [Paus:Fair] Mem:5 Exits:NS&gt; You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Paus in a cloak of flames.<br />
+<br />
+184H 29V 645172X 29C [Huan:V.Good] [Paus:Fair] Mem:5 Exits:NS&gt; <br />
+Paus crushes YOU very hard.<br />
+Paus says 'hi'<br />
+<br />
+181H 50V 645172X 29C [Huan:V.Good] [Paus:Fair] Mem:5 Exits:NS&gt;<br />
+You are sent sprawling as Paus crashes into you.<br />
+<br />
+160H 50V 645172X 29C [Huan:Good] [Paus:Fair] Mem:5 Exits:NS&gt;<br />
+You miss Paus with your hit.<br />
+Paus crushes YOU extremely hard.<br />
+<br />
+140H 50V 645172X 29C [Huan:Fair] [Paus:Fair] Mem:5 Exits:NS&gt;<br />
+You miss Paus with your hit.<br />
+Paus crushes YOU extremely hard.<br />
+<br />
+122H 50V 645172X 29C [Huan:Fair] [Paus:Fair] Mem:5 Exits:NS&gt;<br />
+You step aside as Paus tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+122H 50V 645172X 29C [Huan:Fair] [Paus:Fair] Mem:5 Exits:NS&gt; You should probably stand up!<br />
+Paus massacres YOU with his crush.<br />
+You stand up.<br />
+<br />
+101H 50V 645172X 29C [Huan:Fair] [Paus:Fair] Mem:5 Exits:NS&gt; You flee head over heels.<br />
+In View of Castle Crimson<br />
+<br />
+101H 49V 645172X 29C Mem:5 Exits:NS&gt; Grassy Plains<br />
+<br />
+101H 47V 645172X 29C Mem:5 Exits:NES&gt; Grassy Plains<br />
+<br />
+101H 45V 645172X 29C Mem:5 Exits:NESW&gt; Rolling Hills<br />
+<br />
+101H 43V 645172X 29C Mem:5 Exits:NESW&gt; Rolling Hills<br />
+<br />
+101H 41V 645172X 29C Mem:5 Exits:NE&gt; Rolling Hills<br />
+<br />
+101H 39V 645172X 29C Mem:5 Exits:NESW&gt; Rolling Hills<br />
+<br />
+101H 37V 645172X 29C Mem:5 Exits:NEW&gt; Grassy Plains<br />
+A red robed mage of the Conclave stands here.<br />
+<br />
+101H 35V 645172X 29C Mem:5 Exits:NESW&gt; Grassy Plains<br />
+<br />
+101H 33V 645172X 29C Mem:5 Exits:NES&gt; Emperor's Highway<br />
+<br />
+101H 31V 645172X 29C Mem:5 Exits:NEW&gt; <br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+139H 31V 645172X 29C Mem:7 Exits:NEW&gt; <br />
+You utter the words, 'cure serious'<br />
+Some of your nastier scrapes disappear.<br />
+<br />
+176H 29V 645172X 29C Mem:8 Exits:NES&gt; Grassy Plains<br />
+Paus the Male Hylar Dwarf is standing here. (flying)<br />
+A red robed mage of the Conclave stands here.<br />
+<br />
+176H 27V 645172X 29C Mem:8 Exits:NESW&gt; Grassy Plains<br />
+A black clad thief wanders the plains, looking for people to rob.<br />
+<br />
+176H 25V 645172X 29C Mem:8 Exits:NESW&gt; Grassy Plains<br />
+<br />
+176H 23V 645172X 29C Mem:8 Exits:NESW&gt; Grassy Plains<br />
+A Crimson Guard patrol soldier searches the plains for signs of a village.<br />
+A Crimson Guard patrol soldier searches the plains for signs of a village.<br />
+A wandering paladin of the Crimson Guard patrols the plains.<br />
+<br />
+176H 21V 645172X 29C Mem:8 Exits:NESW&gt; Grassy Plains<br />
+<br />
+176H 19V 645172X 29C Mem:8 Exits:ESW&gt; Grassy Plains<br />
+A tunic made from black cloth lies here.<br />
+<br />
+176H 17V 645172X 29C Mem:8 Exits:ESW&gt; Grassy Plains<br />
+<br />
+176H 15V 645172X 29C Mem:8 Exits:NES&gt; In View of Castle Crimson<br />
+<br />
+176H 13V 645172X 29C Mem:8 Exits:NS&gt; The Drawbridge<br />
+<br />
+176H 12V 645172X 29C Mem:8 Exits:NS&gt; The Entrance to Castle Crimson<br />
+<br />
+176H 11V 645172X 29C Mem:8 Exits:NES&gt; The Great Hall<br />
+<br />
+176H 10V 645172X 29C Mem:8 Exits:NESW&gt; The Great Hall<br />
+A small iron shield lies here.<br />
+A long sword has been left here.<br />
+<br />
+176H 9V 645172X 29C Mem:8 Exits:NESW&gt; The Great Hall<br />
+A small iron shield lies here.<br />
+A long sword has been left here.<br />
+<br />
+176H 8V 645172X 29C Mem:8 Exits:ESW&gt; The Great Hall<br />
+<br />
+176H 7V 645172X 29C Mem:8 Exits:ES&gt; The Great Hall<br />
+<br />
+176H 6V 645172X 29C Mem:8 Exits:NESW&gt; Base of the West Tower<br />
+<br />
+176H 5V 645172X 29C Mem:8 Exits:EU&gt; pan<br />
+You utter the words, 'refresh'<br />
+You feel less tired.<br />
+<br />
+176H 86V 645172X 29C Mem:9 Exits:EU&gt;<br />
+Paus flies in from the east.<br />
+<br />
+176H 86V 645172X 29C Mem:9 Exits:EU&gt; On the Ladder<br />
+<br />
+176H 85V 645172X 29C Mem:9 Exits:UD&gt;<br />
+Paus flies in from below.<br />
+<br />
+176H 85V 645172X 29C Mem:9 Exits:UD&gt; The Mage's Chamber<br />
+The mage of the tower paces about, pondering some magical problem.<br />
+Paus flies in from below.<br />
+<br />
+176H 84V 645172X 29C Mem:9 Exits:NESWD&gt;<br />
+You are sent sprawling as someone crashes into you.<br />
+<br />
+160H 84V 645172X 29C [Huan:Good] Mem:9 Exits:NESWD&gt;<br />
+You are sent sprawling as someone crashes into you.<br />
+<br />
+144H 84V 645172X 29C [Huan:Fair] Mem:9 Exits:NESWD&gt;<br />
+You step aside as someone tries to bash you, causing them to tumble and fall face down.<br />
+<br />
+144H 84V 645172X 29C [Huan:Fair] Mem:9 Exits:NESWD&gt;<br />
+You step aside as Paus tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+144H 84V 645172X 29C [Huan:Fair] Mem:9 Exits:NESWD&gt;<br />
+Paus crushes YOU very hard.<br />
+Someone slashes YOU extremely hard.<br />
+You hit someone.<br />
+<br />
+110H 84V 645172X 29C [Huan:Fair] Mem:9 Exits:NESWD&gt; sta<br />
+<br />
+Paus crushes YOU extremely hard.<br />
+Someone massacres YOU with their slash.<br />
+You miss someone with your hit.<br />
+<br />
+68H 84V 645172X 29C [Huan:V.Bad] Mem:9 Exits:NESWD&gt;<br />
+Paus stands up.<br />
+<br />
+68H 84V 645172X 29C [Huan:V.Bad] Mem:9 Exits:NESWD&gt;<br />
+You step aside as Paus tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+68H 84V 645172X 29C [Huan:V.Bad] Mem:9 Exits:NESWD&gt;<br />
+Paus crushes YOU extremely hard.<br />
+Someone massacres YOU with their slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss someone with your hit.<br />
+<br />
+23H 84V 645172X 29C [Huan:Awful] Mem:9 Exits:NESWD&gt; You stand up.<br />
+<br />
+23H 84V 645172X 29C [Huan:Awful] Mem:9 Exits:NESWD&gt; You flee head over heels.<br />
+Chamber of Teleportation<br />
+A Bend in the Road<br />
+An elven villager wanders aimlessly about here, smiling happily.<br />
+A small dog playfully pounces after a grasshopper here.<br />
+<br />
+23H 83V 645172X 29C Mem:9 Exits:NESW&gt; You recite a glowing scroll of recall which dissolves.<br />
+The Pig and Whistle<br />
+A chunk of gold lies here.<br />
+A small leather purse lies on the floor.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+A beefy bouncer stands near the innkeeper, watching for trouble.<br />
+Ed, the crotchety innkeeper stands here.<br />
+<br />
+23H 83V 645172X 29C Mem:9 Exits:D&gt;<br />
+Balthamos arrives from below.<br />
+<br />
+34H 104V 645172X 29C Mem:3 Exits:D&gt; score<br />
+You are Huan the Male Human, a level 17 Druid.<br />
+You are 17 years old.<br />
+You have 34(198) hit and 104(122) movement points.<br />
+Your behaviour has been Evil.<br />
+The chill of evil pervades your soul.<br />
+You have scored 3854828 exp, and have 29(1500) steel coins.<br />
+You need 645172 more experience to advance.<br />
+You have died 5 horrible deaths.<br />
+You have been connected for 13 minute(s).<br />
+You have been playing for 0 day(s), 17 hour(s) and 9 minute(s).<br />
+Your equipment is currently not being concealed.<br />
+You are resting.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    detect invisibility<br />
+    fly<br />
+<br />
+34H 104V 645172X 29C Mem:3 Exits:D&gt;<br />
+You tell Paus 'that was so cheat'<br />
+<br />
+34H 104V 645172X 29C Mem:3 Exits:D&gt;<br />
+Balthamos leaves down.<br />
+<br />
+34H 104V 645172X 29C Mem:3 Exits:D&gt;<br />
+Paus tells you 'heh wanted to have left you alone but you brought on the probs'<br />
+<br />
+34H 104V 645172X 29C Mem:3 Exits:D&gt; <br />
+You tell Paus 'I am the Leader of Preditor'<br />
+<br />
+47H 122V 645172X 29C Mem:2 Exits:D&gt; <br />
+You tell Paus 'Is there a problem for a preditor to hunt preys?'<br />
+<br />
+47H 122V 645172X 29C Mem:2 Exits:D&gt;<br />
+Paus tells you 'this is one prey you ain't gonna hunt :)'<br />
+<br />
+47H 122V 645172X 29C Mem:2 Exits:D&gt;<br />
+You tell Paus ':)'<br />
+<br />
+60H 122V 645172X 29C Mem:1 Exits:D&gt; <br />
+You tell Paus 'ok I will leave you alone until I am level 30'<br />
+<br />
+60H 122V 645172X 29C Mem:1 Exits:D&gt; <br />
+You tell Paus 'Can you tell your invisible friend there is a summon bug on several mobs'<br />
+<br />
+73H 122V 645172X 29C Exits:D&gt; <br />
+You tell Paus 'It maybe worth looking into'<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='941'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=941">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="941">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

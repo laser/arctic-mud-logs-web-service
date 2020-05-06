@@ -1,0 +1,882 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 428-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='428'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Seq, Dhaliwal, Memin RIP</font></b>
+<p>
+POV: 
+Unknown<p>
+Log Rating:
+0.7274<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Wilds die soloing! Poor Memin dies trying to interupt this soloing!</i>
+<p>
+<p>
+
+Memin leaves down.<br />
+You follow Memin down.<br />
+The Lounge<br />
+(flying) Seq Bloodaxe, High Goblin of Wild Clan rests on one of the couches, looking quite relaxed.<br />
+<br />
+226H 79V 5901280X 804C Exits:NWU&gt;<br />
+Memin focuses harshly on Seq and utters the words, 'hold person'.<br />
+Seq freezes in place.<br />
+<br />
+226H 79V 5901280X 804C Exits:NWU&gt; c 'h p' seq<br />
+c 'h p' seq<br />
+You utter the words, 'hold person'<br />
+<br />
+226H 79V 5901280X 804C Mem:3 Exits:NWU&gt; c 'con e'<br />
+c 'con e'<br />
+<br />
+Memin utters the words, 'conjure elemental'.<br />
+Memin gestures, and a cloud of smoke appears!<br />
+Out of the smoke, a sandling emerges.<br />
+A sandling now follows Memin.<br />
+<br />
+226H 79V 5901280X 804C Mem:3 Exits:NWU&gt; You utter the words, 'conjure elemental'<br />
+You gesture, and a cloud of smoke appears!<br />
+Out of the smoke, an invisible stalker emerges.<br />
+An invisible stalker starts following you.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Dhaliwal flies in from above.<br />
+The demon Marilith arrives from above.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt; 'offy?<br />
+'offy?<br />
+You say 'offy?'<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Dhaliwal focuses harshly on Memin and utters the words, 'yafqz barh'.<br />
+The sound of bones cracking echoes as Dhaliwal's force bolt slams into Memin.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Memin gives a sandling an order.<br />
+A sandling bites Seq extremely hard.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Memin focuses harshly on Seq and utters the words, 'yafqz barh'.<br />
+The sound of bones cracking echoes as Memin's force bolt slams into Seq.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+A sandling massacres Seq with its bite.<br />
+Dhaliwal misses Memin with her bludgeon.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt; o stalker ki seq<br />
+o stalker ki seq<br />
+An invisible stalker massacres Seq with its hit.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+<br />
+226H 79V 5901280X 804C Mem:4 Exits:NWU&gt; c 'l b' seq<br />
+c 'l b' seq<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Seq with full impact.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; c 'l b' seq<br />
+c 'l b' seq<br />
+<br />
+Dhaliwal focuses harshly on Memin and utters the words, 'yafqz barh'.<br />
+The sound of bones cracking echoes as Dhaliwal's force bolt slams into Memin.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+Memin focuses harshly on Seq and utters the words, 'yafqz barh'.<br />
+The sound of bones cracking echoes as Memin's force bolt slams into Seq.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+An invisible stalker massacres Seq with its hit.<br />
+A sandling massacres Seq with its bite.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Seq with full impact.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; c 'l b' seq<br />
+c 'l b' seq<br />
+<br />
+An invisible stalker massacres Seq with its hit.<br />
+A sandling bites Seq hard.<br />
+Dhaliwal bludgeons Memin hard.<br />
+Memin misses Dhaliwal with his claw.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+Memin focuses harshly on Seq and utters the words, 'yafqz barh'.<br />
+Brains splatter on you as Memin's force bolt shatters Seq's skull.<br />
+Seq is dead! R.I.P.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+The death cry of Seq echoes from somewhere nearby...<br />
+Seq sinks gently to the ground.<br />
+Dhaliwal gets a very large pile of coins from the corpse of Seq.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+The demon Marilith crashes into Memin in a thundering collision, knocking him to the ground!<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; get all corpse<br />
+get all corpse<br />
+Who should the spell be cast upon?<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; You are zapped by a revenant's skull and instantly drop it.<br />
+You get a heavy cuprite axe from the corpse of Seq.<br />
+You are zapped by a bracelet of unending flame and instantly drop it.<br />
+You are zapped by a black bracelet of the Lily and instantly drop it.<br />
+You are zapped by a gold belt and instantly drop it.<br />
+You get a long black shield from the corpse of Seq.<br />
+You are zapped by a pair of spiked battle armets and instantly drop it.<br />
+You get a pair of ice cold gauntlets from the corpse of Seq.<br />
+You get some fur-trimmed boots from the corpse of Seq.<br />
+You are zapped by a set of power cuisses and instantly drop it.<br />
+You are zapped by a black and gold dragonmask and instantly drop it.<br />
+You are zapped by the plate of the black lily and instantly drop it.<br />
+You are zapped by a black lily pendant and instantly drop it.<br />
+You are zapped by a bloody axe shaped medallion and instantly drop it.<br />
+You are zapped by a deep black steel ring and instantly drop it.<br />
+You get a ring of white gold from the corpse of Seq.<br />
+You get a large first-aid kit from the corpse of Seq.<br />
+You get a glowing scroll of recall from the corpse of Seq.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+The demon Marilith hits Memin extremely hard.<br />
+The demon Marilith hits Memin extremely hard.<br />
+Dhaliwal misses Memin with her bludgeon.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+Dhaliwal focuses harshly on Memin and utters the words, 'yafqz barh'.<br />
+The sound of bones cracking echoes as Dhaliwal's force bolt slams into Memin.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+The demon Marilith hits Memin extremely hard.<br />
+Memin misses Dhaliwal with his claw.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+Dhaliwal focuses harshly on Memin and utters the words, 'lightning bolt'.<br />
+Memin wavers under the impact of the lightning bolt sent by Dhaliwal.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt;<br />
+The demon Marilith hits Memin very hard.<br />
+Memin is stunned, but will likely regain consciousness again.<br />
+The demon Marilith massacres Memin with its hit.<br />
+Memin is dead! R.I.P.<br />
+The death cry of Memin echoes from somewhere nearby...<br />
+You stop following Memin.<br />
+Memin starts following you.<br />
+You are now the new leader of Memin's group.<br />
+Memin stops following you.<br />
+A sandling stops following Memin.<br />
+A sandling transcends this world and enters another plane.<br />
+<br />
+226H 79V 5901280X 804C Mem:5 Exits:NWU&gt; c 'h p' dhaliwal<br />
+c 'h p' dhaliwal<br />
+You utter the words, 'hold person'<br />
+<br />
+226H 79V 5901280X 804C Mem:6 Exits:NWU&gt;<br />
+Dhaliwal gets a very large pile of coins from the corpse of Memin.<br />
+<br />
+226H 79V 5901280X 804C Mem:6 Exits:NWU&gt;<br />
+Dhaliwal gets a coin of two faces from the corpse of Memin.<br />
+Dhaliwal gets a withered black claw from the corpse of Memin.<br />
+Dhaliwal gets a mithril crimson bracer from the corpse of Memin.<br />
+Dhaliwal gets a bracelet of polished sodalite from the corpse of Memin.<br />
+Dhaliwal gets a plain component pouch from the corpse of Memin.<br />
+Dhaliwal gets a draconian girth from the corpse of Memin.<br />
+Dhaliwal gets a white-trimmed purple robe from the corpse of Memin.<br />
+Dhaliwal gets a pair of dog hair sleeves from the corpse of Memin.<br />
+Dhaliwal gets a pair of rotting boots from the corpse of Memin.<br />
+Dhaliwal gets a pair of black pants from the corpse of Memin.<br />
+Dhaliwal gets a pair of silver spectacles from the corpse of Memin.<br />
+Dhaliwal gets a black robe of shadows from the corpse of Memin.<br />
+Dhaliwal gets a pearl and onyx medallion from the corpse of Memin.<br />
+Dhaliwal gets a black cloak of the Lily from the corpse of Memin.<br />
+Dhaliwal gets a ring of the dweomer from the corpse of Memin.<br />
+Dhaliwal gets a glass ring filled with mercury from the corpse of Memin.<br />
+Dhaliwal gets a black satin robe from the corpse of Memin.<br />
+Dhaliwal gets a scroll of recall from the corpse of Memin.<br />
+Dhaliwal gets a large sack from the corpse of Memin.<br />
+<br />
+Dhaliwal gives the demon Marilith an order.<br />
+<br />
+226H 79V 5901280X 804C Mem:6 Exits:NWU&gt; c 'h p' dhaliwal<br />
+c 'h p' dhaliwal<br />
+You utter the words, 'hold person'<br />
+<br />
+226H 79V 5901280X 804C Mem:7 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+You step aside as the demon Marilith tries to bash you, causing it to tumble and fall face down.<br />
+<br />
+226H 79V 5901280X 804C [Waaz:V.Good] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+c 'l b' dhaliwal<br />
+The demon Marilith hits YOU.<br />
+The demon Marilith misses you with its hit.<br />
+You massacre the demon Marilith with your smite.<br />
+<br />
+220H 79V 5901280X 804C [Waaz:V.Good] [the demon Marilith:Fair] Mem:7 Exits:NWU&gt; c 'l b' dhaliwal<br />
+<br />
+Dhaliwal focuses harshly on you and utters the words, 'lightning bolt'.<br />
+YOU'RE HIT. A lightning bolt from Dhaliwal has reached its goal.<br />
+<br />
+177H 79V 5901280X 804C [Waaz:Good] [the demon Marilith:Fair] Mem:7 Exits:NWU&gt; You utter the words, 'li<br />
+ghtning bolt'<br />
+The lightning bolt hits Dhaliwal with full impact.<br />
+<br />
+177H 79V 5901280X 804C [Waaz:Good] [the demon Marilith:Fair] Mem:7 Exits:NWU&gt; flee<br />
+flee<br />
+flee<br />
+flee<br />
+<br />
+Dhaliwal misses you with her bludgeon.<br />
+The demon Marilith misses you with its hit.<br />
+The demon Marilith hits YOU hard.<br />
+You throw away your bloody bandages.<br />
+<br />
+180H 100V 5901280X 804C [Waaz:Good] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+The demon Marilith STANDS UP.<br />
+<br />
+180H 100V 5901280X 804C [Waaz:Good] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal focuses harshly on you and utters the words, 'hold person'.<br />
+You freeze in place, unable to move.<br />
+<br />
+180H 100V 5901280X 804C [Waaz:Good] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+The demon Marilith kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked<br />
+back.<br />
+<br />
+167H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt; You are unable to use y<br />
+our physical form.<br />
+<br />
+167H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt; You are unable to use y<br />
+our physical form.<br />
+<br />
+167H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+The demon Marilith hits YOU hard.<br />
+<br />
+159H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+<br />
+159H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal gives the demon Marilith an order.<br />
+You are sent sprawling as the demon Marilith crashes into you.<br />
+<br />
+151H 100V 5901280X 804C [Waaz:Fair] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal focuses harshly on you and utters the words, 'lightning bolt'.<br />
+YOU'RE HIT. A lightning bolt from Dhaliwal has reached its goal.<br />
+<br />
+107H 100V 5901280X 804C [Waaz:Bad] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+The demon Marilith hits YOU hard.<br />
+The demon Marilith hits YOU hard.<br />
+<br />
+92H 100V 5901280X 804C [Waaz:V.Bad] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+Dhaliwal bludgeons YOU very hard.<br />
+The demon Marilith hits YOU very hard.<br />
+Dhaliwal focuses harshly on you and utters the words, 'lightning bolt'.<br />
+YOU'RE HIT. A lightning bolt from Dhaliwal has reached its goal.<br />
+That Really did HURT!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+18H 100V 5901280X 804C [Waaz:Awful] [the demon Marilith:Good] Mem:7 Exits:NWU&gt; st<br />
+st<br />
+You are unable to use your physical form.<br />
+<br />
+18H 100V 5901280X 804C [Waaz:Awful] [the demon Marilith:Good] Mem:7 Exits:NWU&gt; rec recall<br />
+rec recall<br />
+You are unable to use your physical form.<br />
+<br />
+18H 100V 5901280X 804C [Waaz:Awful] [the demon Marilith:Good] Mem:7 Exits:NWU&gt;<br />
+You feel the magic bond holding you shatter!<br />
+The demon Marilith hits YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You should probably stand up!<br />
+You smite the demon Marilith very hard.<br />
+<br />
+5H 100V 5901280X 804C [Waaz:Awful] [the demon Marilith:Good] Mem:7 Exits:NWU&gt; rec recall<br />
+rec recall<br />
+You grab a glowing scroll of recall.<br />
+You recite a glowing scroll of recall which dissolves.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Memin looks at the demon Marilith.<br />
+<br />
+234H 66V 5891054X 861C Exits:ES&gt; 'kill it<br />
+'kill it<br />
+You say 'kill it'<br />
+<br />
+234H 66V 5891054X 861C Exits:ES&gt; o stalker ki demon<br />
+o stalker ki demon<br />
+An invisible stalker slowly fades into existence.<br />
+An invisible stalker hits the demon Marilith extremely hard.<br />
+<br />
+234H 66V 5891054X 861C Exits:ES&gt;<br />
+The demon Marilith STANDS UP.<br />
+<br />
+234H 66V 5891054X 861C Exits:ES&gt; c 'mag mi' demon<br />
+<br />
+Memin focuses harshly on the demon Marilith and utters the words, 'lightning bolt'.<br />
+The demon Marilith wavers under the impact of the lightning bolt sent by Memin.<br />
+The demon Marilith panics, and attempts to flee.<br />
+The demon Marilith leaves east.<br />
+<br />
+Memin focuses harshly on the demon Marilith and utters the words, 'lightning bolt'.<br />
+The demon Marilith receives the full blast of a lightning bolt from Memin ... and is no more.<br />
+You receive 0 experience.<br />
+The demon Marilith is dead! R.I.P.<br />
+<br />
+l in corpse<br />
+corpse (here) :<br />
+a bracelet of polished sodalite..it hums softly<br />
+a small wooden chest<br />
+a revenant's skull<br />
+a bracelet of unending flame..it glows dimly<br />
+a black bracelet of the Lily<br />
+a gold belt<br />
+a pair of spiked battle armets..it glows dimly<br />
+a set of power cuisses<br />
+a black and gold dragonmask..it hums softly<br />
+the plate of the black lily..it glows dimly<br />
+a black lily pendant<br />
+a bloody axe shaped medallion<br />
+<br />
+234H 69V 5891054X 861C Mem:3 Exits:NS&gt;<br />
+Memin gets a bracelet of polished sodalite from the corpse of the demon Marilith.<br />
+Memin gets a small wooden chest from the corpse of the demon Marilith.<br />
+Memin gets a revenant's skull from the corpse of the demon Marilith.<br />
+Memin gets a bracelet of unending flame from the corpse of the demon Marilith.<br />
+Memin gets a black bracelet of the Lily from the corpse of the demon Marilith.<br />
+Memin gets a gold belt from the corpse of the demon Marilith.<br />
+Memin gets a pair of spiked battle armets from the corpse of the demon Marilith.<br />
+Memin gets a set of power cuisses from the corpse of the demon Marilith.<br />
+Memin gets a black and gold dragonmask from the corpse of the demon Marilith.<br />
+Memin gets the plate of the black lily from the corpse of the demon Marilith.<br />
+Memin gets a black lily pendant from the corpse of the demon Marilith.<br />
+Memin gets a bloody axe shaped medallion from the corpse of the demon Marilith.<br />
+<br />
+234H 69V 5891054X 861C Mem:3 Exits:NS&gt; nod<br />
+nod<br />
+You nod solemnly.<br />
+<br />
+234H 69V 5891054X 861C Mem:3 Exits:NS&gt; 'i knew it<br />
+'i knew it<br />
+You say 'i knew it'<br />
+<br />
+234H 69V 5891054X 861C Mem:3 Exits:NS&gt;<br />
+Memin nods solemnly.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Dhaliwal the Female High Elf is resting here. (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Iill slowly fades into existence.<br />
+Iill gives her dagger a quick thrust and twist, as she strikes Dhaliwal in the back with it.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Anelexyr lifts a slender dragonlance high over her head and ends Dhaliwal's life.<br />
+Dhaliwal is mortally wounded, and will die soon, if not aided.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Laura crashes into Dhaliwal in a devastating bash, killing her mercilessly.<br />
+You receive 0 experience.<br />
+Dhaliwal is dead! R.I.P.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Memin focuses harshly on Dhaliwal and utters the words, 'yafqz barh'.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+The death cry of Dhaliwal echoes from somewhere nearby...<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Duffin gets a very large pile of coins from the corpse of Dhaliwal.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt; get all corpse<br />
+get all corpse<br />
+You are zapped by a coin of two faces and instantly drop it.<br />
+You get a gem studded mithril bracer from the corpse of Dhaliwal.<br />
+You get a small component pouch from the corpse of Dhaliwal.<br />
+You get a white-trimmed purple robe from the corpse of Dhaliwal.<br />
+You are zapped by a pair of pitch black gloves and instantly drop it.<br />
+You get a pair of black satin boots from the corpse of Dhaliwal.<br />
+You get a pair of black pants from the corpse of Dhaliwal.<br />
+You get a crown of violets from the corpse of Dhaliwal.<br />
+You are zapped by a black mage's robe and instantly drop it.<br />
+You are zapped by a black cloak of the Lily and instantly drop it.<br />
+You get a pearl and onyx medallion from the corpse of Dhaliwal.<br />
+You are zapped by a glass ring filled with mercury and instantly drop it.<br />
+You get a ring of the dweomer from the corpse of Dhaliwal.<br />
+You get a granite ring from the corpse of Dhaliwal.<br />
+You are zapped by a staff of the abyss and instantly drop it.<br />
+You are zapped by a black satin robe and instantly drop it.<br />
+You get a ring of the panther from the corpse of Dhaliwal.<br />
+You get a black skull tabard from the corpse of Dhaliwal.<br />
+You are zapped by a deep black steel ring and instantly drop it.<br />
+You get a pearl and onyx medallion from the corpse of Dhaliwal.<br />
+You are zapped by a black robe of shadows and instantly drop it.<br />
+You get a pair of silver spectacles from the corpse of Dhaliwal.<br />
+You get a pair of rotting boots from the corpse of Dhaliwal.<br />
+You get a pair of dog hair sleeves from the corpse of Dhaliwal.<br />
+You get a draconian girth from the corpse of Dhaliwal.<br />
+You get a plain component pouch from the corpse of Dhaliwal.<br />
+You get a mithril crimson bracer from the corpse of Dhaliwal.<br />
+You get a grilled tuna from the corpse of Dhaliwal.<br />
+You get a grilled tuna from the corpse of Dhaliwal.<br />
+You get a grilled tuna from the corpse of Dhaliwal.<br />
+You get a waterskin from the corpse of Dhaliwal.<br />
+You get a waterskin from the corpse of Dhaliwal.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Iill gets a waterskin from the corpse of Dhaliwal.<br />
+Iill gets a waterskin from the corpse of Dhaliwal.<br />
+Iill gets a waterskin from the corpse of Dhaliwal.<br />
+Iill gets a waterskin from the corpse of Dhaliwal.<br />
+Iill gets a waterskin from the corpse of Dhaliwal.<br />
+Iill gets a small wooden chest from the corpse of Dhaliwal.<br />
+<br />
+234H 85V 5851539X 862C Mem:2 Exits:SU&gt;<br />
+Iill gets a deep black steel ring.<br />
+Iill gets a black satin robe.<br />
+Iill gets a glass ring filled with mercury.<br />
+Iill gets a black cloak of the Lily.<br />
+Iill gets a black mage's robe.<br />
+Iill gets a pair of pitch black gloves.<br />
+Iill gets a coin of two faces.<br />
+Iill gets the corpse of Dhaliwal.<br />
+Iill gets a scroll of recall.<br />
+Iill gets a large sack.<br />
+Iill gets a withered black claw.<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='428'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=428">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="428">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

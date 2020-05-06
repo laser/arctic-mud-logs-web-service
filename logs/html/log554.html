@@ -1,0 +1,777 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 554-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='554'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kaiden RIP</font></b>
+<p>
+POV: 
+Elyana<p>
+Log Rating:
+-2.3999<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+337H 105V 1X 2745C Mem:1 Exits:NESWD&gt; <br />
+Through your wizard's eye: Kaiden has arrived from the east exit.<br />
+Through your wizard's eye: Elkon has arrived from the east exit.<br />
+Through your wizard's eye: Xiana has arrived from the east exit.<br />
+Through your wizard's eye: a dark shadow has arrived from the east exit.<br />
+Through your wizard's eye: a dark shadow has arrived from the east exit.<br />
+Through your wizard's eye: Knamior has arrived from the east exit.<br />
+Through your wizard's eye: Atreyu has arrived from the east exit.<br />
+Through your wizard's eye: Howe has arrived from the east exit.<br />
+Through your wizard's eye: Serramay has arrived from the east exit.<br />
+<br />
+337H 105V 1X 2745C Mem:1 Exits:NESWD&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+337H 105V 1X 2745C Mem:1 Exits:NESWD&gt; dUnder the Bridge<br />
+<br />
+337H 103V 1X 2745C Mem:1 Exits:EW&gt; scanLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Lady Serramay is sitting here, fighting a huge black owl. (flying)<br />
+Howe the Rabbit Slayer is standing here, fighting a black wolf. (flying)<br />
+Atreyu Anthyllis Barba-Jovis, Speaker of the Stars is standing here. (flying) (invisible)<br />
+Knamior Frost'kolt is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A dark shadow is standing here, fighting a black wolf.<br />
+A dark shadow is standing here, fighting a black wolf.<br />
+Lady Xiana, The Arrow Cannon is standing here, fighting a black wolf. (flying)<br />
+. . . has a tough exterior.<br />
+Elkon is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Kaiden the Male Wild Elf is standing here, fighting a black wolf. (flying)<br />
+A black wolf is sitting here, fighting Neros.<br />
+. . . has a granite appearance.<br />
+A huge black owl is standing here, fighting Neros.<br />
+Neros, Holy Knight is standing here, fighting a black wolf. (flying)<br />
+. . . has a tough exterior.<br />
+Trin Phung is standing here, fighting Neros.<br />
+. . . has a tough exterior.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+337H 103V 1X 2745C Mem:1 Exits:EW&gt; wc 'h p' KaidenThrough your wizard's eye: You have arrived from the east exit.<br />
+The Bottom of the Canyon<br />
+Lady Serramay is sitting here, fighting a huge black owl. (flying)<br />
+Howe the Rabbit Slayer is standing here, fighting a black wolf. (flying)<br />
+Atreyu Anthyllis Barba-Jovis, Speaker of the Stars is standing here. (flying) (invisible)<br />
+Knamior Frost'kolt is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+A dark shadow is standing here, fighting a black wolf.<br />
+A dark shadow is standing here, fighting a black wolf.<br />
+Lady Xiana, The Arrow Cannon is standing here, fighting a black wolf. (flying)<br />
+. . . has a tough exterior.<br />
+Elkon is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Kaiden the Male Wild Elf is standing here, fighting a black wolf. (flying)<br />
+A black wolf is sitting here, fighting Neros.<br />
+. . . has a granite appearance.<br />
+A huge black owl is standing here, fighting Neros.<br />
+Neros, Holy Knight is standing here, fighting a black wolf. (flying)<br />
+. . . has a tough exterior.<br />
+Trin Phung is standing here, fighting Neros.<br />
+. . . has a tough exterior.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Kaiden issues the order 'st'.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Neros yells and leaps into the fray.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; You utter the words, 'hold person'<br />
+Kaiden freezes in place.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Knamior focuses harshly on a black wolf and utters some strange words.<br />
+Knamior sends a chilling blast of air at a black wolf, giving him a severe case of frostbite.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Serramay misses a huge black owl with her slash.<br />
+Serramay slashes a huge black owl hard.<br />
+Howe bruises a black wolf with his crush.<br />
+A dark shadow bruises a black wolf with its drain.<br />
+A dark shadow bruises a black wolf with its slash.<br />
+A dark shadow bruises a black wolf with its drain.<br />
+A dark shadow bruises a black wolf with its slash.<br />
+Xiana bruises a black wolf with her shoot.<br />
+Xiana bruises a black wolf with her shoot.<br />
+A cinnabar tipped arrow shoots from Xiana's bow.<br />
+Trin Phung hits Neros extremely hard.<br />
+Trin Phung hits Neros very hard.<br />
+A huge black owl misses Neros with her claw.<br />
+Neros stabs a black wolf very hard.<br />
+A black wolf massacres Neros with his claw.<br />
+Neros blocks a black wolf's blow with a quick raise of his shield.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Kaiden issues the order 'st'.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; c 'f b' Kaiden<br />
+Elkon focuses harshly on a black wolf and utters the words, 'lightning bolt'.<br />
+A black wolf wavers under the impact of the lightning bolt sent by Elkon.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Kaiden issues the order 'st'.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+Serramay stands up.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; <br />
+A huge black owl steps aside as Serramay attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+337H 101V 1X 2745C Mem:1 Exits:E&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kaiden.<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+Neros strikes at a huge black owl, but misses completely.<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+Kaiden says 'mav stop'<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+Kaiden says 'mav stop'<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+Atreyu says 'mavlad'<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+A black wolf stands up.<br />
+Howe delivers a vicious kick to a black wolf's face. Blood flies as his head snaps back.<br />
+<br />
+337H 101V 1X 2745C Mem:2 Exits:E&gt; <br />
+A huge black owl utters some strange words.<br />
+Serramay misses a huge black owl with her slash.<br />
+Serramay slashes a huge black owl hard.<br />
+Howe crushes a black wolf extremely hard.<br />
+A dark shadow misses a black wolf with its drain.<br />
+A dark shadow slashes a black wolf hard.<br />
+A dark shadow misses a black wolf with its drain.<br />
+A dark shadow slashes a black wolf hard.<br />
+Xiana shoots a black wolf extremely hard.<br />
+Xiana shoots a black wolf very hard.<br />
+Trin Phung hits Neros extremely hard.<br />
+A huge black owl misses Neros with her claw.<br />
+Neros misses a black wolf with his stab.<br />
+Neros blocks a black wolf's blow with a quick raise of his shield.<br />
+A black wolf heroically rescues a huge black owl.<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; <br />
+Kaiden says 'mav stop'<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; c 'f b' Kaiden<br />
+Atreyu says 'NO'<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; <br />
+Knamior says 'WFT!'<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; <br />
+Elkon focuses harshly on a black wolf and utters the words, 'lightning bolt'.<br />
+A black wolf wavers under the impact of the lightning bolt sent by Elkon.<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; <br />
+Kaiden issues the order 'bas owl'.<br />
+A dark shadow crashes into a huge black owl in a thundering collision, knocking her to the ground!<br />
+A dark shadow crashes into a huge black owl in a thundering collision, knocking her to the ground!<br />
+<br />
+337H 126V 1X 2745C Mem:1 Exits:E&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kaiden.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Serramay slashes a black wolf hard.<br />
+Serramay misses a black wolf with her slash.<br />
+A black wolf massacres Serramay with his claw.<br />
+A black wolf massacres Serramay with his claw.<br />
+Howe crushes a black wolf extremely hard.<br />
+A dark shadow drains a black wolf very hard.<br />
+A dark shadow slashes a black wolf hard.<br />
+A dark shadow misses a black wolf with its drain.<br />
+A dark shadow slashes a black wolf.<br />
+Xiana shoots a black wolf very hard.<br />
+Xiana shoots a black wolf extremely hard.<br />
+Xiana shoots a black wolf very hard.<br />
+Trin Phung hits Neros extremely hard.<br />
+A huge black owl massacres Neros with her claw.<br />
+Neros stabs a black wolf very hard.<br />
+A black wolf strikes Serramay's weapon, nearly disarming it.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Atreyu focuses on Neros and utters some strange words.<br />
+Atreyu heals Neros.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; c 'f b' Kaiden<br />
+Neros focuses harshly on a huge black owl and utters some strange words.<br />
+With a dumb look on her face, a huge black owl tries to concentrate.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Knamior focuses harshly on a huge black owl and utters the words, 'silence'.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Trin Phung utters some strange words.<br />
+Trin Phung shivers slightly and suddenly becomes pale.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Serramay stands up.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+Serramay crashes into a huge black owl in a thundering collision, knocking her to the ground!<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; <br />
+A huge black owl steps aside as Howe attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+337H 126V 1X 2745C Mem:3 Exits:E&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kaiden.<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; <br />
+Serramay slashes a black wolf hard.<br />
+A black wolf massacres Serramay with his claw.<br />
+Howe crushes a black wolf very hard.<br />
+A dark shadow misses a black wolf with its drain.<br />
+A dark shadow slashes a black wolf.<br />
+A dark shadow drains a black wolf hard.<br />
+A dark shadow slashes a black wolf hard.<br />
+Xiana shoots a black wolf very hard.<br />
+Xiana shoots a black wolf hard.<br />
+Trin Phung hits Neros extremely hard.<br />
+Trin Phung hits Neros very hard.<br />
+A huge black owl misses Neros with her claw.<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; <br />
+Atreyu says 'mavlad'<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; <br />
+Kaiden issues the order 'bas elyana'.<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; c 'f b' Kaiden<br />
+Neros focuses his purity on a black wolf's body!<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; <br />
+Kaiden issues the order 'st'.<br />
+<br />
+337H 126V 1X 2745C Mem:4 Exits:E&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Kaiden's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Kaiden is dead! R.I.P.<br />
+exa corpse<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Serramay is partly made ice, as a black wolf breathes frost.<br />
+The death cry of Kaiden echoes from somewhere nearby...<br />
+Elkon stops following Kaiden.<br />
+Kaiden now follows Elkon.<br />
+Elkon is the new leader of Kaiden's group.<br />
+Kaiden stops following Elkon.<br />
+Xiana stops following Kaiden.<br />
+Xiana now follows Elkon.<br />
+Knamior stops following Kaiden.<br />
+Knamior now follows Elkon.<br />
+Atreyu stops following Kaiden.<br />
+Atreyu now follows Elkon.<br />
+Howe stops following Kaiden.<br />
+Howe now follows Elkon.<br />
+Serramay stops following Kaiden.<br />
+Serramay now follows Elkon.<br />
+Neros stops following Kaiden.<br />
+Neros now follows Elkon.<br />
+A dark shadow stops following Kaiden.<br />
+A dark shadow transcends this world and enters another plane.<br />
+A dark shadow stops following Kaiden.<br />
+A dark shadow transcends this world and enters another plane.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Serramay misses a black wolf with her slash.<br />
+A black wolf claws Serramay extremely hard.<br />
+A black wolf massacres Serramay with his claw.<br />
+Howe crushes a black wolf very hard.<br />
+Xiana shoots a black wolf hard.<br />
+Xiana shoots a black wolf extremely hard.<br />
+Trin Phung massacres Neros with his hit.<br />
+Trin Phung hits Neros extremely hard.<br />
+A huge black owl misses Neros with her claw.<br />
+Neros stabs a black wolf hard.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; get all corpse<br />
+SEEK SHELTER AT ONCE! Serramay has begun to sing.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Neros heroically rescues Serramay.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Knamior gets a light throwing spear from the corpse of Kaiden.<br />
+Knamior gets a transparent bone spear from the corpse of Kaiden.<br />
+Knamior gets a jagged bracer from the corpse of Kaiden.<br />
+Knamior gets a jagged bracer from the corpse of Kaiden.<br />
+Knamior gets a black sword belt from the corpse of Kaiden.<br />
+Knamior gets a dwarven backpack from the corpse of Kaiden.<br />
+Knamior gets a pair of leather sleeves from the corpse of Kaiden.<br />
+Knamior gets a pair of leather gloves from the corpse of Kaiden.<br />
+Knamior gets a pair of leather boots from the corpse of Kaiden.<br />
+Knamior gets a pair of leather pants from the corpse of Kaiden.<br />
+Knamior gets a leather jacket from the corpse of Kaiden.<br />
+Knamior is zapped by a black lily brooch and instantly drops it.<br />
+Knamior gets a very large pile of coins from the corpse of Kaiden.<br />
+Knamior gets a wrist lantern from the corpse of Kaiden.<br />
+Knamior gets a large first-aid kit from the corpse of Kaiden.<br />
+Knamior gets a burlap belt pouch from the corpse of Kaiden.<br />
+Knamior gets a large canteen from the corpse of Kaiden.<br />
+Knamior gets a large canteen from the corpse of Kaiden.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Howe stands up.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Atreyu says 'mav'<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; recite recall meget recall chestA black wolf massacres Neros with his claw.<br />
+Neros blocks a black wolf's blow with a quick raise of his shield.<br />
+Neros stabs a black wolf very hard.<br />
+Howe crushes a black wolf very hard.<br />
+Xiana shoots a black wolf hard.<br />
+Xiana shoots a black wolf very hard.<br />
+Trin Phung hits Neros hard.<br />
+Trin Phung hits Neros extremely hard.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Knamior stops using a carved jade sphere.<br />
+Knamior grabs a glowing scroll of recall.<br />
+Knamior recites a glowing scroll of recall.<br />
+Knamior disappears.<br />
+Through your wizard's eye: Knamior teleports away.<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+Atreyu says 'wtd'<br />
+<br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; <br />
+337H 126V 1X 2745C Mem:5 Exits:E&gt; You recite a glowing scroll of recall which dissolves.<br />
+Through your wizard's eye: You teleport away.<br />
+The Reception<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='554'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=554">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="554">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

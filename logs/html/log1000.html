@@ -1,0 +1,608 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1000-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1000'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wandering Wild</font></b>
+<p>
+POV: 
+Naono<p>
+Log Rating:
+0.7692<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Wild loves wandering</i>
+<p>
+<p>
+
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+Jandor flies in from the west.<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt; <br />
+Ackar focuses harshly on Jandor and utters the words, 'flame shroud'.<br />
+Flesh burns as Ackar enshrouds Jandor in a cloak of flames.<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+Rumbard crashes into Jandor in a thundering collision, knocking him to the ground!<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+Jandor steps aside as Kholos attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+A waitress is here ready to take your order.<br />
+Looking south:<br />
+You see nothing special.<br />
+A solamnic knight is patrolling this area.<br />
+Looking west:<br />
+You see nothing special.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt; <br />
+Your group of 9 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Naono            perfect   rested    standing   Y   Y    N    Y     1    2<br />
+  Rumbard          perfect   rested    fighting   Y   N    N    Y     1    0<br />
+  Kaje             perfect   rested    standing   Y   N    Y    Y     1    0<br />
+  Wakki            perfect   rested    standing   Y   N    N    Y     0    1<br />
+  Tu               perfect   rested    standing   Y   N    Y    Y     0    2<br />
+  Ackar            perfect   rested    fighting   Y   N    N    Y     0    1<br />
+  Kholos           perfect   rested    fighting   Y   N    Y    Y     0    0<br />
+  Savier           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Hayla            perfect   rested    standing   Y   N    N    Y     0    0<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+Tu massacres Jandor with his shoot.<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+Kaje focuses harshly on Jandor and utters the words, 'paralysis'.<br />
+Jandor is paralyzed!<br />
+<br />
+246H 143V 16245042X 4083C Mem:2 Exits:NESW&gt;<br />
+You utter the words, 'paralysis'<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt;<br />
+Savier crashes into Jandor in a thundering collision, knocking him to the ground!<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt;<br />
+Savier massacres Jandor with his cleave.<br />
+Tu massacres Jandor with his shoot.<br />
+Tu annihilates Jandor with his shoot.<br />
+Kholos massacres Jandor with his cleave.<br />
+Rumbard annihilates Jandor with his cleave.<br />
+Ackar bludgeons Jandor extremely hard.<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt;<br />
+Ackar focuses harshly on Jandor and utters the words, 'flame shroud'.<br />
+Flesh burns as Ackar enshrouds Jandor in a cloak of flames.<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt;<br />
+Hayla crashes into Jandor in a thundering collision, knocking him to the ground!<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt;<br />
+Kaje focuses harshly on Jandor and utters the words, 'fire storm'.<br />
+Huge flames burn Jandor from above.<br />
+<br />
+246H 143V 16245042X 4083C Mem:3 Exits:NESW&gt; <br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Jandor in a cloak of flames.<br />
+<br />
+246H 143V 16245042X 4083C Mem:4 Exits:NESW&gt;<br />
+Hayla cleaves Jandor extremely hard.<br />
+Savier cleaves Jandor extremely hard.<br />
+Tu massacres Jandor with his shoot.<br />
+Tu massacres Jandor with his shoot.<br />
+You receive 0 experience.<br />
+Jandor is dead! R.I.P.<br />
+The death cry of Jandor echoes from somewhere nearby...<br />
+Jandor sinks gently to the ground.<br />
+<br />
+246H 143V 16245042X 4083C Mem:4 Exits:NESW&gt;<br />
+Tu gets a pile of coins from the corpse of Jandor.<br />
+<br />
+246H 143V 16245042X 4083C Mem:4 Exits:NESW&gt; <br />
+Tu divides 36 coins equally among the group members present.<br />
+Rumbard gets a light blue ocarina from the corpse of Jandor.<br />
+Rumbard gets a lucern hammer from the corpse of Jandor.<br />
+Rumbard gets a shield of the Black Watch from the corpse of Jandor.<br />
+Rumbard gets a pair of black shadow gauntlets from the corpse of Jandor.<br />
+Rumbard gets a black spiked helm from the corpse of Jandor.<br />
+Rumbard gets a granite armour from the corpse of Jandor.<br />
+Rumbard is zapped by a platinum dragon signet ring and instantly drops it.<br />
+Rumbard gets a silver suit of armor from the corpse of Jandor.<br />
+Rumbard gets a cruely barbed scourge from the corpse of Jandor.<br />
+<br />
+246H 143V 16245042X 4087C Mem:4 Exits:NESW&gt;<br />
+Kholos stands up.<br />
+<br />
+246H 143V 16245042X 4087C Mem:4 Exits:NESW&gt; <br />
+Tu gets a platinum dragon signet ring.<br />
+Tu gets the corpse of Jandor.<br />
+<br />
+--------------------------------------------------------------------------------<br />
+246H 142V 16164234X 4266C Exits:NEW&gt;<br />
+Rumbard flies east.<br />
+You follow Rumbard east.<br />
+The Tavern Square<br />
+Molly the Female Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+246H 141V 16164234X 4266C Exits:NESW&gt;<br />
+Rumbard crashes into Molly in a thundering collision, knocking her to the ground!<br />
+<br />
+246H 141V 16164234X 4266C Exits:NESW&gt;<br />
+Tu massacres Molly with his shoot.<br />
+<br />
+246H 141V 16164234X 4266C Exits:NESW&gt;<br />
+Tu annihilates Molly with his shoot.<br />
+Tu misses Molly with his shoot.<br />
+Rumbard massacres Molly with his cleave.<br />
+Rumbard is chilled, as he swings at Molly.<br />
+Molly slashes Rumbard.<br />
+<br />
+246H 141V 16164234X 4266C Exits:NESW&gt; <br />
+You utter the words, 'fire storm'<br />
+Molly is crushed by a wall of fire.<br />
+A dusty and tattered book in use by Molly is destroyed.<br />
+<br />
+246H 141V 16164234X 4266C Mem:3 Exits:NESW&gt;<br />
+Kaje focuses harshly on Molly and utters the words, 'paralysis'.<br />
+<br />
+246H 141V 16164234X 4266C Mem:3 Exits:NESW&gt;<br />
+Molly steps aside as Hayla attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+246H 141V 16164234X 4266C Mem:3 Exits:NESW&gt; <br />
+Molly steps aside as Savier attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+246H 141V 16164234X 4266C Mem:3 Exits:NESW&gt; <br />
+Savier cleaves Molly extremely hard.<br />
+Savier is chilled, as he swings at Molly.<br />
+Hayla cleaves Molly extremely hard.<br />
+Hayla is chilled, as she swings at Molly.<br />
+Tu massacres Molly with his shoot.<br />
+Tu massacres Molly with his shoot.<br />
+Rumbard massacres Molly with his cleave.<br />
+Rumbard is chilled, as he swings at Molly.<br />
+Molly slashes Rumbard hard.<br />
+<br />
+246H 141V 16164234X 4266C Mem:3 Exits:NESW&gt; <br />
+You utter the words, 'fire storm'<br />
+Your wall of flames crushes Molly, who barely utters a death cry.<br />
+You receive 0 experience.<br />
+Molly is dead! R.I.P.<br />
+Kaje focuses harshly on Molly and utters the words, 'paralysis'.<br />
+Molly is paralyzed!<br />
+<br />
+246H 141V 16164234X 4266C Mem:5 Exits:NESW&gt;<br />
+The death cry of Molly echoes from somewhere nearby...<br />
+A fire snake stops following Molly.<br />
+<br />
+246H 141V 16164234X 4266C Mem:5 Exits:NESW&gt;<br />
+Tu gets a large pile of coins from the corpse of Molly.<br />
+<br />
+246H 141V 16164234X 4266C Mem:5 Exits:NESW&gt;<br />
+Tu divides 520 coins equally among the group members present.<br />
+<br />
+246H 141V 16164234X 4331C Mem:5 Exits:NESW&gt;<br />
+Rumbard gets a long black steel scimitar from the corpse of Molly.<br />
+Rumbard gets a leather traveling pack from the corpse of Molly.<br />
+Rumbard gets an azure silken robe from the corpse of Molly.<br />
+Rumbard gets a pair of bearskin boots from the corpse of Molly.<br />
+Rumbard gets a heavy earthen plate from the corpse of Molly.<br />
+Rumbard gets a red tinged circular medallion from the corpse of Molly.<br />
+Rumbard gets a torch from the corpse of Molly.<br />
+Rumbard gets a copper spade from the corpse of Molly.<br />
+Rumbard gets a glowing scroll of recall from the corpse of Molly.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1000'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1000">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1000">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

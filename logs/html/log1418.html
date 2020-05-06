@@ -1,0 +1,951 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1418-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1418'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+The Neraka Interceptor strikes again.</font></b>
+<p>
+POV: 
+Maxmillian<p>
+Log Rating:
+1.9200<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Only targeted Kuno, but in hindsight should have split up more targets.</i>
+<p>
+<p>
+
+You ran up charges of 1321 steel in rent.<br />
+<br />
+Welcome to the land of Krynn.<br />
+<br />
+The Reception<br />
+    Although this inn does not look very reputable, at least it has warm<br />
+beds and anyhow, it is safer than sleeping in the streets of Neraka. A<br />
+small counter stands here with a little brass bell, although you should not<br />
+use it for fear that the receptionist gets angry. It looks as if she has<br />
+had a hard day already.<br />
+A rough, stringy animal sinew sits here decaying.<br />
+Sambo Ahma, Number Five is standing here. (red aura)<br />
+Khazgul Black, Corrupted By The Beauty Of Death is standing here. (flying) (invisible) (red aura)<br />
+Lady Krasha la Boom, The Redicuklus Outlaw is standing here. (red aura)<br />
+Tuco the Male Human is standing here. (invisible)<br />
+. . . has a tough exterior.<br />
+The receptionist sits here, looking very flustered.<br />
+Chaka Versch, Minion of Feroz Crew is standing here. (flying) (invisible)<br />
+Shargish the Male Minotaur is standing here. (flying) (red aura)<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Standing in shadows, a draconian guard hisses occasionally. (red aura)<br />
+Krasha lifts her arms towards the sky and gracefully floats upward.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; <br />
+Turma has entered the game.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; <br />
+Turma starts following you.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; <br />
+Tuco leaves down.<br />
+Armas has entered the game.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; group form<br />
+<br />
+Krasha starts following you.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Krasha is now a member of your group.<br />
+Turma is now a member of your group.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Maxmillian<br />
+Moranion<br />
+<br />
+Armas starts following you.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; <br />
+Khazgul starts following you.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Huh?!<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Maxmillian<br />
+Moranion<br />
+Huh?!<br />
+Armas lifts his arms towards the sky and gracefully floats upward.<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Huh?!<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; d<br />
+Murcielago starts following you.<br />
+Huh?!<br />
+<br />
+629H 125V 1X 0C Mem:3 Exits:D&gt; Murcielago flies in from above.<br />
+Khazgul flies in from above.<br />
+Armas flies in from above.<br />
+The Seedy Inn<br />
+    The blood stained floor is evident as soon as you enter. No attempt has<br />
+been made to hide last night's brawl. Obviously, such violence is<br />
+commonplace. Looking around, the locals hiss at you and sneer back into<br />
+their watered ale. A long bar, once made from fine oak, stands against the<br />
+far wall. The many ales are displayed in their kegs in a corner. Jeering<br />
+and shouts can be heard from the backroom to the north.<br />
+A large bulletin board is mounted on a wall here.<br />
+Some black dirt is scattered upon the ground.<br />
+Armas Ahma is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Khazgul Black, Corrupted By The Beauty Of Death is standing here. (flying) (invisible) (red aura)<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Pterkf Dephonandres, Nameless Garbage is standing here. (flying)<br />
+Tuco the Male Human is standing here. (invisible)<br />
+. . . has a tough exterior.<br />
+Holly the barwoman is here, flaunting her body and eager to serve.<br />
+<br />
+629H 124V 1X 0C Mem:3 Exits:NEU&gt; e<br />
+Murcielago flies in from the west.<br />
+Khazgul flies in from the west.<br />
+Armas flies in from the west.<br />
+A Cobbled Lane<br />
+    Nearing the town crossroads, the buildings get bigger and seemingly<br />
+better kept. The scorch marks have been replaced with a grubby shade of<br />
+white-wash. The sounds of breaking wood can be heard from the inn to the<br />
+west. The center of town, the crossroads, lies to the south.<br />
+Armas Ahma is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Khazgul Black, Corrupted By The Beauty Of Death is standing here. (flying) (invisible) (red aura)<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Arto Maelstrom is SITTING here, fighting Ciang. (flying)<br />
+Pycelle the Male Gnome is standing here. (flying) (WHITE AURA)<br />
+Arkhon, The Holy Inquisitor is standing here, fighting Vyriamkytiel. (flying) (WHITE AURA)<br />
+. . . has a tough exterior.<br />
+Haanz the Male Minotaur is standing here. (flying) (red aura)<br />
+Kuno the Male Half Elf is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Dagam the Male Gnome is standing here. (flying) (invisible) (WHITE AURA)<br />
+. . . has a tough exterior.<br />
+Yin, Celestial Queen of the Blood Sea is standing here, fighting Vyriamkytiel. (flying) (WHITE AURA)<br />
+Aime the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Zexx Fable, Brother in Arms, Brother at War is standing here. (WHITE AURA)<br />
+Vyriamkytiel the Male Wild Elf is SITTING here, fighting Ciang. (flying) (WHITE AURA)<br />
+Ciang the Female Wild Elf is SITTING here, fighting Vyriamkytiel. (flying)<br />
+Hipho Crates is standing here, fighting Vyriamkytiel. (flying)<br />
+A small and weak looking horse is here awaiting its master.<br />
+A small and weak looking horse is here awaiting its master.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Turma slashes Kuno hard.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Armas focuses on Vyriamkytiel and utters some strange words.<br />
+Armas heals Vyriamkytiel.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Kuno focuses on Ciang and utters some strange words.<br />
+Kuno heals Ciang.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Tuco arrives from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Krasha quaffs a brewed potion.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Khazgul slowly fades into existence.<br />
+Khazgul slashes Kuno very hard.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Kuno steps aside as Krasha attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; ki kuno<br />
+<br />
+Pterkf flies in from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Sambo arrives from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; You massacre Kuno with your stab.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Pterkf focuses on Vyriamkytiel and utters some strange words.<br />
+Pterkf heals Vyriamkytiel.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Vyriamkytiel steps aside as Haanz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Tuco focuses harshly on Kuno and utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+Flesh burns as Tuco enshrouds Kuno in a cloak of flames.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Arkhon attempts to focus on Vyriamkytiel and fails horribly.<br />
+Pterkf steps aside as Hipho attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Arto STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Good] Mem:3 Exits:NSW&gt; <br />
+Pterkf bludgeons Hipho extremely hard.<br />
+Haanz crushes Vyriamkytiel extremely hard.<br />
+You massacre Kuno with your stab.<br />
+Krasha misses Kuno with her stab.<br />
+Krasha stabs Kuno very hard.<br />
+*Whoosh!* Khazgul's slash almost decapitates Kuno!<br />
+Khazgul slashes Kuno hard.<br />
+Turma slashes Kuno very hard.<br />
+Turma stabs Kuno very hard.<br />
+Arto massacres Ciang with his stab.<br />
+Arkhon massacres Vyriamkytiel with his pierce.<br />
+Yin annihilates Vyriamkytiel with her stab.<br />
+Hipho massacres Vyriamkytiel with his smite.<br />
+Ciang misses Vyriamkytiel with her pierce.<br />
+Ciang bruises Vyriamkytiel with her pierce.<br />
+Vyriamkytiel massacres Ciang with his slash.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Fair] Mem:3 Exits:NSW&gt; <br />
+Murcielago focuses harshly on Kuno and utters some strange words.<br />
+Murcielago slowly fades into existence.<br />
+The sound of bones cracking echoes as Murcielago's force bolt slams into Kuno.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Aime flies west.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Pterkf steps aside as Yin attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Turma attacks Kuno with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; av leg<br />
+<br />
+Hipho steps aside as Arto attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Krasha STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Kuno steps aside as Krasha attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Khazgul gazes at Kuno with a look of evilness.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Pterkf focuses harshly on Hipho and utters some strange words.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; You focus your purity on Kuno's leg!<br />
+You focus on Kuno's legs, but are thwarted.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Vyriamkytiel STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Sambo cleaves Kuno extremely hard.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Hipho steps aside as Vyriamkytiel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Arkhon panics, and attempts to flee.<br />
+Arkhon flies south.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Chaka flies in from the west.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Turma:V.Good] [Kuno:Bad] Mem:3 Exits:NSW&gt; <br />
+Sambo cleaves Kuno extremely hard.<br />
+Haanz massacres Vyriamkytiel with his crush.<br />
+You massacre Kuno with your stab.<br />
+Krasha massacres Kuno with her stab.<br />
+Khazgul slashes Kuno extremely hard.<br />
+Khazgul slashes Kuno very hard.<br />
+Turma misses Kuno with his slash.<br />
+Turma misses Kuno with his stab.<br />
+Kuno misses Turma with his bludgeon.<br />
+Arto misses Ciang with his stab.<br />
+Yin massacres Vyriamkytiel with her stab.<br />
+Hipho massacres Vyriamkytiel with his smite.<br />
+Ciang misses Vyriamkytiel with her pierce.<br />
+Ciang pierces Vyriamkytiel hard.<br />
+Vyriamkytiel massacres Ciang with his slash.<br />
+Tuco focuses harshly on Kuno and utters some strange words.<br />
+Tuco slowly fades into existence.<br />
+Flesh burns as Tuco enshrouds Kuno in a cloak of flames.<br />
+Kuno is mortally wounded, and will die soon, if not aided.<br />
+Kuno suffers from lack of blood, and the lack of a beating heart...<br />
+You receive 0 experience.<br />
+Kuno is dead! R.I.P.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Kuno:Dying] Mem:3 Exits:NSW&gt; <br />
+Chaka focuses harshly on Vyriamkytiel and utters some strange words.<br />
+Chaka slowly fades into existence.<br />
+Flesh burns as Chaka enshrouds Vyriamkytiel in a cloak of flames.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Kuno:Dying] Mem:3 Exits:NSW&gt; <br />
+The death cry of Kuno echoes from somewhere nearby...<br />
+Haanz stops following Kuno.<br />
+Chaka stops following Kuno.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Dagam focuses harshly on Tuco and utters some strange words.<br />
+Dagam slowly fades into existence.<br />
+Tuco screams in pain as lightning from Dagam penetrates him.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; get all corpse<br />
+<br />
+Armas gets a dragon orb from the corpse of Kuno.<br />
+Armas gets a staff of meditation from the corpse of Kuno.<br />
+Armas gets a dark mithril bracelet from the corpse of Kuno.<br />
+Armas gets a grey stone bracelet from the corpse of Kuno.<br />
+Armas gets a small component pouch from the corpse of Kuno.<br />
+Armas gets a thick engraved silver belt from the corpse of Kuno.<br />
+Armas gets a robe of the Gargoyle Clans from the corpse of Kuno.<br />
+Armas gets a blackened, dented mithril shield from the corpse of Kuno.<br />
+Armas gets a pair of red dragonscale vambraces from the corpse of Kuno.<br />
+Armas gets some spellcasting gloves from the corpse of Kuno.<br />
+Armas gets a pair of fine leather boots from the corpse of Kuno.<br />
+Armas gets a dragon skull helm from the corpse of Kuno.<br />
+Armas gets a pure black tunic from the corpse of Kuno.<br />
+Armas gets a dragonrider's talisman from the corpse of Kuno.<br />
+Armas gets a wretched medallion from the corpse of Kuno.<br />
+Armas gets a ring of finest silver from the corpse of Kuno.<br />
+Armas gets a ring of pure darkness from the corpse of Kuno.<br />
+Armas gets a very large pile of coins from the corpse of Kuno.<br />
+Armas gets a glowing scroll of recall from the corpse of Kuno.<br />
+Armas gets a bright ball of light from the corpse of Kuno.<br />
+Armas gets a crimson dust covered chest from the corpse of Kuno.<br />
+Armas gets a yellow potion from the corpse of Kuno.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Murcielago focuses on Khazgul and utters some strange words.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Rold arrives from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Krasha STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Aime flies in from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Aime stops using a grey leather pouch.<br />
+Aime grabs a scroll of recall.<br />
+Aime recites a scroll of recall.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Pterkf focuses harshly on Hipho and utters some strange words.<br />
+Hipho cries out in pain as Pterkf grabs him.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; The corpse doesn't seem to have what you are looking for.<br />
+Haanz STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Haanz panics, and attempts to flee.<br />
+Haanz flies north.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Hipho STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Dagam bludgeons Tuco very hard.<br />
+Tuco slowly fades into existence.<br />
+Tuco misses Dagam with his bludgeon.<br />
+Arto massacres Ciang with his stab.<br />
+Yin annihilates Vyriamkytiel with her stab.<br />
+Hipho annihilates Vyriamkytiel with his smite.<br />
+Ciang misses Vyriamkytiel with her pierce.<br />
+Ciang misses Vyriamkytiel with her pierce.<br />
+Vyriamkytiel massacres Ciang with his slash.<br />
+Hipho stops using a feather token.<br />
+Hipho grabs a glowing scroll of recall.<br />
+Hipho recites a glowing scroll of recall.<br />
+Hipho disappears.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Tuco panics, and attempts to flee.<br />
+Tuco leaves south.<br />
+Chaka flies west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Zexx focuses on Vyriamkytiel and utters some strange words.<br />
+Zexx heals Vyriamkytiel.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Sambo takes his time carving the corpse of Kuno.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Yin STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Sambo cleaves Dagam extremely hard.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Yin gets a scroll from her pack.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Yin grabs a glowing scroll of recall.<br />
+Yin recites a glowing scroll of recall.<br />
+Yin disappears.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Arto STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Arto CRASHES into Ciang in a thundering collision, knocking her to the ground!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Turma massacres Dagam with his slash.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Dagam utters some strange words.<br />
+Dagam disappears.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Vyriamkytiel STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Arto massacres Ciang with his stab.<br />
+Ciang barely pierces Vyriamkytiel.<br />
+Ciang misses Vyriamkytiel with her pierce.<br />
+Vyriamkytiel massacres Ciang with his slash.<br />
+Ciang steps aside as Vyriamkytiel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; l<br />
+A Cobbled Lane<br />
+    Nearing the town crossroads, the buildings get bigger and seemingly<br />
+better kept. The scorch marks have been replaced with a grubby shade of<br />
+white-wash. The sounds of breaking wood can be heard from the inn to the<br />
+west. The center of town, the crossroads, lies to the south.<br />
+The mutilated corpse of Kuno is lying here.<br />
+Aime the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Rold the Male Hylar Dwarf is standing here. (WHITE AURA)<br />
+Sambo Ahma, Number Five is standing here. (red aura)<br />
+Pterkf Dephonandres, Nameless Garbage is standing here. (flying)<br />
+Turma Ahma is standing here. (flying) (red aura)<br />
+Lady Krasha la Boom, The Redicuklus Outlaw is standing here. (flying) (red aura)<br />
+Armas Ahma is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Khazgul Black, Corrupted By The Beauty Of Death is standing here. (flying) (invisible) (red aura)<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Arto Maelstrom is standing here, fighting Ciang. (flying)<br />
+Pycelle the Male Gnome is standing here. (flying) (WHITE AURA)<br />
+Lord Zexx Fable, Brother in Arms, Brother at War is standing here. (WHITE AURA)<br />
+Vyriamkytiel the Male Wild Elf is SITTING here, fighting Ciang. (flying) (WHITE AURA)<br />
+Ciang the Female Wild Elf is SITTING here, fighting Vyriamkytiel. (flying)<br />
+A small and weak looking horse is here awaiting its master.<br />
+A small and weak looking horse is here awaiting its master.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Ciang steps aside as Rold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Murcielago focuses harshly on Ciang and utters some strange words.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Tuco arrives from the south.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Sambo cleaves Ciang extremely hard.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; ki aime<br />
+<br />
+Khazgul slowly fades into existence.<br />
+Khazgul massacres Ciang with his slash.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Aime flies west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; They aren't here.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Aime flies in from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; TICK IN 16 SECONDS.<br />
+<br />
+Turma massacres Ciang with his slash.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Turma annihilates Ciang with his slash.<br />
+Turma stabs Ciang extremely hard.<br />
+You receive 0 experience.<br />
+Ciang is dead! R.I.P.<br />
+The death cry of Ciang echoes from somewhere nearby...<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Pycelle gets a pile of coins from the corpse of Ciang.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Aime gets a short sword from the corpse of Ciang.<br />
+Aime gets a short sword from the corpse of Ciang.<br />
+Aime gets some studded leather sleeves from the corpse of Ciang.<br />
+Aime gets some studded leather leggings from the corpse of Ciang.<br />
+Aime gets a leather cap from the corpse of Ciang.<br />
+Aime gets a small canteen from the corpse of Ciang.<br />
+Aime gets a small canteen from the corpse of Ciang.<br />
+Aime gets a small canteen from the corpse of Ciang.<br />
+Aime gets an iron ration from the corpse of Ciang.<br />
+Aime gets an iron ration from the corpse of Ciang.<br />
+Aime gets an iron ration from the corpse of Ciang.<br />
+Aime gets an iron ration from the corpse of Ciang.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; ki aime<br />
+You miss Aime with your stab.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Aime:Perfect] Mem:3 Exits:NSW&gt; <br />
+Pycelle flies west.<br />
+<br />
+629H 123V 1X 0C [Me:Good] [Aime:Perfect] Mem:3 Exits:NSW&gt; <br />
+Aime panics, and attempts to flee.<br />
+Aime flies west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; av leg<br />
+ki aime<br />
+<br />
+Sambo takes his time carving the corpse of Ciang.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Khazgul flies west.<br />
+Vyriamkytiel STANDS UP!!!<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; l<br />
+get all corpse<br />
+get all 2.corpse<br />
+You must focus on the battle close at hand.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; Sambo leaves west.<br />
+They aren't here.<br />
+Turma flies west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Khazgul flies in from the west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; <br />
+Tuco leaves west.<br />
+<br />
+629H 123V 1X 0C Mem:3 Exits:NSW&gt; A Cobbled Lane<br />
+    Nearing the town crossroads, the buildings get bigger and seemingly<br />
+better kept. The scorch marks have been replaced with a grubby shade of<br />
+white-wash. The sounds of breaking wood can be heard from the inn to the<br />
+west. The center of town, the crossroads, lies to the south.<br />
+The mutilated corpse of Ciang is lying here.<br />
+The mutilated corpse of Kuno is lying here.<br />
+Khazgul Black, Corrupted By The Beauty Of Death is standing here. (flying) (invisible) (red aura)<br />
+Rold the Male Hylar Dwarf is SITTING here. (WHITE AURA)<br />
+Pterkf Dephonandres, Nameless Garbage is standing here. (flying)<br />
+Lady Krasha la Boom, The Redicuklus Outlaw is standing here. (flying) (red aura)<br />
+Armas Ahma is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Murcielago Lagartijo is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Arto Maelstrom is standing here. (flying)<br />
+Lord Zexx Fable, Brother in Arms, Brother at War is standing here. (WHITE AURA)<br />
+Vyriamkytiel the Male Wild Elf is standing here. (flying) (WHITE AURA)<br />
+A small and weak looking horse is here awaiting its master.<br />
+A small and weak looking horse is here awaiting its master.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1418'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1418">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1418">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

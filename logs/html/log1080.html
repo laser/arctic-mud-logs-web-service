@@ -1,0 +1,692 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1080-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1080'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Feroz and girl name Jaime rip</font></b>
+<p>
+POV: 
+Fielca<p>
+Log Rating:
+0.2000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Girl name Jaime tries to use flags and they both die. die feroz
+
+die feroz</i>
+<p>
+<p>
+
+451H 135V 1X 542C Exits:N(E)W&gt; <br />
+bac morbius<br />
+Morbius flies in from the north.<br />
+Aspasia arrives from the north.<br />
+Asheak flies in from the north.<br />
+<br />
+451H 135V 1X 542C Exits:N(E)W&gt; Morbius makes a strange sound, as you place a russet hued throwing<br />
+ blade in his back.<br />
+<br />
+451H 135V 1X 542C [Fielca:V.Good] [Morbius:Good] Exits:N(E)W&gt; <br />
+Morbius gives Aspasia an order.<br />
+Aspasia attempts to focus on you and fails horribly.<br />
+<br />
+451H 135V 1X 542C [Fielca:V.Good] [Morbius:Good] Exits:N(E)W&gt; <br />
+Aspasia hits YOU hard.<br />
+You pierce Morbius extremely hard.<br />
+You pierce Morbius very hard.<br />
+Morbius crushes YOU hard.<br />
+<br />
+434H 135V 1X 542C [Fielca:V.Good] [Morbius:Fair] Exits:N(E)W&gt; fade w<br />
+enven blade<br />
+e<br />
+bac morbius<br />
+<br />
+Morbius focuses harshly on you and utters some strange words.<br />
+Morbius grabs you.  You scream as you feel your life-force being torn away.<br />
+That Really did HURT!<br />
+<br />
+334H 135V 1X 542C [Fielca:Fair] [Morbius:Fair] Exits:N(E)W&gt; <br />
+Acleif arrives from the west.<br />
+<br />
+334H 135V 1X 542C [Fielca:Fair] [Morbius:Fair] Exits:N(E)W&gt; <br />
+Acleif focuses harshly on Morbius and utters some strange words.<br />
+Morbius cries out in pain as Acleif grabs him.<br />
+<br />
+334H 135V 1X 542C [Fielca:Fair] [Morbius:V.Bad] Exits:N(E)W&gt; The Reading Room<br />
+     This is like a small library of sorts. There are many books and holy<br />
+scriptures kept here. A small window on the west wall lets in sunlight and<br />
+fresh air. There are a few acolytes sitting at other tables, diligently<br />
+studying and quite oblivious to your presence.<br />
+A large bulletin board is mounted on a wall here.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+334H 134V 1X 542C Exits:E&gt; You stealthily dip the blade in a toxic concoction of your own making.<br />
+<br />
+<br />
+334H 134V 1X 542C Exits:E&gt; The Temple of Kalaman<br />
+     The inside of the temple is nothing less than magnificent. The<br />
+integrity and craftsmanship of the temple is one of the finest you have<br />
+seen. The walls and columns are made of smooth white marble, giving the<br />
+place a clean and pure feel. As you look around, you see the altar just to<br />
+the north, and there is also a small reading room to the west.<br />
+Acleif the Male Hylar Dwarf is standing here.<br />
+Asheak the Female Gnome is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Aspasia, the death celestial, appears as a dark and unyielding void.<br />
+Morbius the Male Hylar Dwarf is standing here. (flying)<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Morbius twists around to see you place a russet hued throwing blad<br />
+e in his back.<br />
+Morbius appears noticeably weaker.<br />
+<br />
+334H 133V 1X 542C [Fielca:Fair] [Morbius:Awful] Exits:N(E)W&gt; <br />
+You pierce Morbius extremely hard.<br />
+Morbius is incapacitated and will slowly die, if not aided.<br />
+You massacre Morbius with your pierce.<br />
+You receive 0 experience.<br />
+Morbius is dead! R.I.P.<br />
+The death cry of Morbius echoes from somewhere nearby...<br />
+Morbius sinks gently to the ground.<br />
+Asheak stops following Morbius.<br />
+Morbius now follows Asheak.<br />
+Asheak is the new leader of Morbius's group.<br />
+Morbius stops following Asheak.<br />
+Aspasia stops following Morbius.<br />
+Aspasia transcends this world and enters another plane.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; <br />
+Asheak focuses harshly on Acleif and utters some strange words.<br />
+The sound of bones cracking echoes as Asheak's force bolt slams into Acleif.<br />
+Acleif stops watching you.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; get all corpse<br />
+bac asheak<br />
+<br />
+Acleif gets a warhammer from the corpse of Morbius.<br />
+Acleif gets a black crystal bracelet from the corpse of Morbius.<br />
+Acleif is zapped by a sivak's cloak and instantly drops it.<br />
+Acleif gets a ruby and diamond necklace from the corpse of Morbius.<br />
+Acleif gets a ruby and diamond necklace from the corpse of Morbius.<br />
+Acleif gets a granite ring from the corpse of Morbius.<br />
+Acleif gets a bright ball of light from the corpse of Morbius.<br />
+Acleif gets a small pile of coins from the corpse of Morbius.<br />
+Acleif gets a small blue-green agate from the corpse of Morbius.<br />
+Acleif gets a putrid potion from the corpse of Morbius.<br />
+Acleif gets a piece of sweet bread from the corpse of Morbius.<br />
+Acleif gets a piece of sweet bread from the corpse of Morbius.<br />
+Acleif gets a piece of sweet bread from the corpse of Morbius.<br />
+Acleif gets a piece of sweet bread from the corpse of Morbius.<br />
+Acleif gets a piece of sweet bread from the corpse of Morbius.<br />
+Acleif gets a milky potion of see invisible from the corpse of Morbius.<br />
+Acleif gets a milky potion of see invisible from the corpse of Morbius.<br />
+Acleif gets a glowing scroll of great escape from the corpse of Morbius.<br />
+Acleif gets a glowing scroll of great escape from the corpse of Morbius.<br />
+Acleif gets a glowing scroll of great escape from the corpse of Morbius.<br />
+Acleif gets a sticky strand from the corpse of Morbius.<br />
+Acleif gets a small wooden chest from the corpse of Morbius.<br />
+Acleif gets a glowing scroll of great escape from the corpse of Morbius.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; <br />
+Acleif focuses harshly on Asheak and utters some strange words.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; You get a portable keg from the corpse of Morbius.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak misses Acleif with her hit.<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; enven blade<br />
+bac asheak<br />
+Asheak focuses harshly on Acleif and utters some strange words.<br />
+The sound of bones cracking echoes as Asheak's force bolt slams into Acleif.<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+bac asheak<br />
+You stealthily dip the blade in a toxic concoction of your own making.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Acleif focuses harshly on Asheak and utters some strange words.<br />
+Asheak cries out in pain as Acleif grabs her.<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak focuses harshly on Acleif and utters some strange words.<br />
+The sound of bones cracking echoes as Asheak's force bolt slams into Acleif.<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+bac asheak<br />
+Asheak is flailing around too much.  Oh well.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+Acleif misses Asheak with his smite.<br />
+Acleif panics, and attempts to flee.<br />
+Acleif leaves north.<br />
+Asheak twists around to see you place a russet hued throwing blade in her back.<br />
+Asheak appears noticeably weaker.<br />
+<br />
+334H 133V 1X 542C [Fielca:Fair] [Asheak:Awful] Exits:N(E)W&gt; bac asheak<br />
+<br />
+Acleif arrives from the north.<br />
+<br />
+334H 133V 1X 542C [Fielca:Fair] [Asheak:Awful] Exits:N(E)W&gt; <br />
+Asheak panics, and attempts to flee.<br />
+Asheak flies west.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; w<br />
+You couldn't find what you were looking for.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; bac asheak<br />
+You couldn't find what you were looking for.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; You couldn't find what you were looking for.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; You couldn't find what you were looking for.<br />
+<br />
+334H 133V 1X 542C Exits:N(E)W&gt; Acleif arrives from the east.<br />
+The Reading Room<br />
+     This is like a small library of sorts. There are many books and holy<br />
+scriptures kept here. A small window on the west wall lets in sunlight and<br />
+fresh air. There are a few acolytes sitting at other tables, diligently<br />
+studying and quite oblivious to your presence.<br />
+A large bulletin board is mounted on a wall here.<br />
+Acleif the Male Hylar Dwarf is standing here.<br />
+Asheak the Female Gnome is resting here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+334H 132V 1X 542C Exits:E&gt; <br />
+Acleif focuses harshly on Asheak and utters some strange words.<br />
+Asheak collapses and dies as Acleif grabs her.<br />
+You receive 0 experience.<br />
+Asheak is dead! R.I.P.<br />
+<br />
+334H 132V 1X 542C Exits:E&gt; The death cry of Asheak echoes from somewhere nearby...<br />
+You couldn't find what you were looking for.<br />
+<br />
+334H 132V 1X 542C Exits:E&gt; get all corpse<br />
+You get a glowing scroll of great escape from the corpse of Asheak.<br />
+You get a small pile of coins from the corpse of Asheak.<br />
+There were 2 coins.<br />
+You get a putrid potion from the corpse of Asheak.<br />
+You get a putrid potion from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get a piece of sweet bread from the corpse of Asheak.<br />
+You get some pixie dust from the corpse of Asheak.<br />
+You get a glowing scroll of great escape from the corpse of Asheak.<br />
+<br />
+334H 132V 1X 544C Exits:E&gt;
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1080'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1080">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1080">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

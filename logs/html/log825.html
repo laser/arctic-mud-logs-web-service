@@ -1,0 +1,951 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 825-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='825'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Priam RIP</font></b>
+<p>
+POV: 
+Scelesta<p>
+Log Rating:
+-0.5263<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Indians lose their temper. FISHERMAN UNITE</i>
+<p>
+<p>
+
+o all.man trac priam<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman says 'They went west.'<br />
+You issue the order 'trac priam'.<br />
+<br />
+333H 140V 8290092X 10527C Mem:2 Exits:SW&gt; w<br />
+Yams flies in from the east.<br />
+An old fisherman arrives from the east.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman arrives from the east.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman says 'They went west.'<br />
+Beside the Vingaard<br />
+    North of you the river flows past toward the sea in the east. The<br />
+shoreline here is sandy with the occasional clump of grass clinging onto<br />
+it. Rocks and small sticks are strewn about, having been deposited here<br />
+during the last flood. The trail here is very sandy.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 138V 8290092X 10527C Mem:2 Exits:EW&gt; sca<br />
+Looking north:<br />
+The river flows past.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+333H 138V 8290092X 10527C Mem:2 Exits:EW&gt; w<br />
+Yams flies in from the east.<br />
+An old fisherman arrives from the east.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman arrives from the east.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman says 'They went south.'<br />
+The Banks of the Vingaard River<br />
+    The road runs to the very edge of the mighty river, before curving away<br />
+to the south and east. A small pier has been built along the bank, used by<br />
+passengers boarding the ferry that will carry them to the other side of the<br />
+river. A small signpost has been hammered into the ground beside the pier.<br />
+The road leads south through the Plains of Estwilde and east towards the<br />
+Lord City of Kalaman.<br />
+A small wooden signpost stands upright at the edge of the road.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 136V 8290092X 10527C Mem:2 Exits:NES&gt; <br />
+Yams tells your group 'hahaha'<br />
+<br />
+333H 136V 8290092X 10527C Mem:2 Exits:NES&gt; sca<br />
+Looking north:<br />
+The Vingaard river.<br />
+Looking east:<br />
+A path through the plains.<br />
+Looking south:<br />
+A road leads away here.<br />
+Looking west:<br />
+Grass blowing in the wind.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+The road here is rocky.<br />
+<br />
+333H 136V 8290092X 10527C Mem:2 Exits:NES&gt; s<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman says 'They went south.'<br />
+An old fisherman arrives from the north.<br />
+An old fisherman kneels down and studies the ground.<br />
+An old fisherman says 'They went south.'<br />
+Near the Mighty Vingaard<br />
+    Here the road leads north to the Vingaard river and Kalaman, and south<br />
+to the Dargaard mountains. The fields around here have slightly ragged<br />
+looking grass, as if the soil in this area is not optimal for plant life.<br />
+The sounds of wildlife present everywhere else in the plains are missing<br />
+here.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; s<br />
+Who should the spell be cast upon?<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+Who should the spell be cast upon?<br />
+<br />
+333H 134V 8290092X 10527C Mem:2 Exits:NS&gt; s<br />
+o all.man bas priam;c 'h p' priam<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman arrives from the north.<br />
+Crossing the Plains<br />
+    The road here leads across the plains to the north and to the east. Far<br />
+to the south you can see the Dargaard Mountains and to the north lies the<br />
+Vingaard river. The road here is made of flat stones carefully placed in<br />
+rows. Closer to the south lie the legendary Nightlund plains.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; Who should the spell be cast upon?<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; sca<br />
+Alas, you cannot go that way...<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; e<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; Who should the spell be cast upon?<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; o all.man bas priam;c 'h p' priam<br />
+Looking north:<br />
+The road leads through the plains.<br />
+Looking east:<br />
+The road leads through the plains.<br />
+Looking south:<br />
+Grass blowing in the wind.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+The road here is made of neatly placed flat rocks.<br />
+<br />
+333H 132V 8290092X 10527C Mem:2 Exits:NEW&gt; Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+Crossing the Plains<br />
+    The road here turns south toward the Dargaard mountains and heads west<br />
+and north to Kalaman and the Vingaard river. Around you, grass in fields<br />
+upon fields blows gently in the breeze. The road at your feet is made up of<br />
+flat stones neatly arranged in rows.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 130V 8290092X 10527C Mem:2 Exits:SW&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 130V 8290092X 10527C Mem:2 Exits:SW&gt; o all.man bas priam;c 'h p' priam<br />
+Who should the spell be cast upon?<br />
+<br />
+333H 130V 8290092X 10527C Mem:2 Exits:SW&gt; s<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 130V 8290092X 10527C Mem:2 Exits:SW&gt; Who should the spell be cast upon?<br />
+<br />
+333H 130V 8290092X 10527C Mem:2 Exits:SW&gt; o all.man bas priam;c 'h p' priam<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman arrives from the north.<br />
+Travelling the Plains of Estwilde<br />
+    The road here extends north and south along a natural dip in the<br />
+plains, perhaps an old river once ran through here. The road is made up of<br />
+flat stones neatly arranged in rows and here it appears someone has made an<br />
+effort to correct for the dip in the land by laying an underlayer of sand<br />
+or gravel. The fields around here are gently blowing in the wind.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 128V 8290092X 10527C Mem:2 Exits:NS&gt; s<br />
+o all.man bas priam;c 'h p' priam<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 128V 8290092X 10527C Mem:2 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+333H 128V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman arrives from the north.<br />
+In Sight of a Small Hamlet<br />
+    Here the road passes through the plains. South of here lies a small<br />
+hamlet, while north of here the road continues to Kalaman and the Vingaard<br />
+river. The road here seems to be made up of gravel laid in a thin layer to<br />
+prevent the grass from growing through, but you can see that in more than a<br />
+few places, grass is peeking through.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; s<br />
+Who should the spell be cast upon?<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+333H 126V 8290092X 10527C Mem:2 Exits:NS&gt; o all.man bas priam;c 'h p' priam<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman arrives from the north.<br />
+Outside A Small Keep<br />
+    The road splits as a side path leads towards a small hamlet. Atop a<br />
+hill to the east, a ruined manor can be seen, its stone charred. To the<br />
+northeast a newer keep can be seen. Close to the southeast, the peaks of<br />
+the Dargaard mountains can be seen. The road leads north through the plains<br />
+and west towards the cursed lands of Nightlund.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; sca<br />
+Who should the spell be cast upon?<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; You issue the order 'bas priam'.<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; Who should the spell be cast upon?<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; Looking north:<br />
+The road cuts through the plains.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+The plains stretch across the horizon, dotted by small woodland areas.<br />
+Looking west:<br />
+The road leads across the plains.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+The path is well trod.<br />
+<br />
+333H 124V 8290092X 10527C Mem:2 Exits:NEW&gt; e<br />
+Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+A Road off the Highway<br />
+     Walking along a more rural path, you can see the highway to your west.<br />
+The path here is covered with leaves, but you see recent signs of wagons<br />
+passing through here. The arid heat of the plains is lessened by the trees<br />
+of a small wooded area covering both sides of the path.<br />
+sca<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 122V 8290092X 10527C Mem:2 Exits:EW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The road moves toward a quaint village.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+The sound of chittering birds fill the air.<br />
+Looking down:<br />
+The dirt of the road is packed down from frequent use.<br />
+<br />
+333H 122V 8290092X 10527C Mem:2 Exits:EW&gt; e<br />
+Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+Moving Towards A Village<br />
+     The rural path continues going an almost straight east west direction,<br />
+occasionally skirting around a tree on the outsets of a wooded area. The<br />
+great highway of the plains can be seen to the west. From the east, the<br />
+smoke of a few cooking fires can be seen, bringing with their wafting<br />
+vapors the smell of fresh cooked mutton.<br />
+A small harp lays here.<br />
+sca<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 120V 8290092X 10527C Mem:2 Exits:EW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The road nears a quaint village.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The road winds its way to the great highway.<br />
+Looking up:<br />
+The sound of chittering birds fill the air.<br />
+Looking down:<br />
+The dirt of the road is packed down from frequent use.<br />
+<br />
+333H 120V 8290092X 10527C Mem:2 Exits:EW&gt; e<br />
+sca<br />
+Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+Before The Village<br />
+     The road continues just outside a small village. To the west, you can<br />
+barely make out the highway. Past the village, two large structures catch<br />
+your attention. One appears to be a manor bearing the kingfisher insignia<br />
+of the Knights of Solamnia. The other appears to be an old keep now laying<br />
+in ruins.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 118V 8290092X 10527C Mem:2 Exits:EW&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The road works its way through a small village.<br />
+A chicken pecks at the ground, searching for food.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The road winds its way to the great highway.<br />
+Looking up:<br />
+The sound of chittering birds fill the air.<br />
+Looking down:<br />
+The dirt of the road is packed down from frequent use.<br />
+<br />
+333H 118V 8290092X 10527C Mem:2 Exits:EW&gt; e<br />
+sca<br />
+Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+A Village Path<br />
+     The village extends to the east. The smell of cooked meat and pastries<br />
+comes from the north. Looking south, you see what appears to be a general<br />
+store. you can continue through the village towards the manor, or return<br />
+back to the highway to the west.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+A chicken pecks at the ground, searching for food.<br />
+<br />
+333H 116V 8290092X 10527C Mem:2 Exits:NESW&gt; Looking north:<br />
+The smell of pastries and mutton floats in from the north.<br />
+Paige looks up and smiles, continuing to sing softly to herself.<br />
+Looking east:<br />
+The road runs through the small village.<br />
+Looking south:<br />
+What appears to be an equipment shop lays to the south.<br />
+Barkley runs around, chasing a bone about the room.<br />
+Mina, the store's owner, is busy taking inventory.<br />
+Looking west:<br />
+The road moves towards the great highway.<br />
+Looking up:<br />
+The sound of chittering birds fill the air.<br />
+Looking down:<br />
+The dirt of the road is packed down from frequent use.<br />
+<br />
+333H 116V 8290092X 10527C Mem:2 Exits:NESW&gt; e<br />
+Yams flies in from the west.<br />
+An old fisherman arrives from the west.<br />
+An old fisherman arrives from the west.<br />
+A Village Path<br />
+     Continuing through the village, you hear two different sounds. To the<br />
+north comes the steady rythmic beat of a forge, while to the east comes<br />
+some strange whirring sounds. You can travel back west, or follow the<br />
+village path south.<br />
+A pile of steel coins. [3]<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+<br />
+333H 115V 8290092X 10527C Mem:2 Exits:NESW&gt; sca<br />
+Looking north:<br />
+The loud sounds of hammer on metal ring through the air.<br />
+A chicken pecks at the ground, searching for food.<br />
+A chicken pecks at the ground, searching for food.<br />
+Looking east:<br />
+Whirring sounds come from a strange looking shop.<br />
+Looking south:<br />
+The road runs through the small village<br />
+Priam, Treehugger King is standing here. (flying)<br />
+A chicken pecks at the ground, searching for food.<br />
+A chicken pecks at the ground, searching for food.<br />
+Looking west:<br />
+The road runs through the small village<br />
+A chicken pecks at the ground, searching for food.<br />
+Looking up:<br />
+The sound of chittering birds fill the air.<br />
+Looking down:<br />
+The dirt of the road is packed down from frequent use.<br />
+<br />
+333H 115V 8290092X 10527C Mem:2 Exits:NESW&gt; s<br />
+o all.man bas priam;c 'h p' priam<br />
+Yams flies in from the north.<br />
+An old fisherman arrives from the north.<br />
+An old fisherman arrives from the north.<br />
+A Village Path<br />
+     Nearing the outskirts of the village, you see to the winding eastward<br />
+the road to the manor. You can also go north into the village or south into<br />
+a store with several items of clothing laid out on display in the window.<br />
+A pile of steel coins.<br />
+A wooden rake is here, covered by a few leaves.<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+An old fisherman politely steps aside to let you pass. (invisible)<br />
+Yams the Male Gnome is standing here. (flying)<br />
+Priam, Treehugger King is standing here. (flying)<br />
+A chicken pecks at the ground, searching for food.<br />
+A chicken pecks at the ground, searching for food.<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; An old fisherman slowly fades into existence.<br />
+An old fisherman crashes into Priam in a thundering collision, knocking him to the ground!<br />
+An old fisherman slowly fades into existence.<br />
+Priam steps aside as an old fisherman attempts a bash, stumbles, and falls flat on his face.<br />
+You issue the order 'bas priam'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; Yams focuses harshly on Priam and utters the words, 'h<br />
+old person'.<br />
+You can't remember how to cast that spell!<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; <br />
+An old fisherman massacres Priam with his hit.<br />
+An old fisherman misses Priam with his hit.<br />
+Priam bludgeons an old fisherman very hard.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; c 'l b' priam<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Priam with full impact.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; <br />
+Yams focuses harshly on Priam and utters the words, 'hold person'.<br />
+Priam freezes in place.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; o all.man st;o all.man bas<br />
+o all.man st;o all.man bas<br />
+<br />
+An old fisherman hits Priam extremely hard.<br />
+An old fisherman massacres Priam with his hit.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; o all.man st;o all.man bas<br />
+o all.man st;o all.man bas<br />
+o all.man st;o all.man bas<br />
+You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; o all.man st;o all.man bas<br />
+An old fisherman crashes into Priam in a thundering collision, knocking him to the ground!<br />
+You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; An old fisherman stands up.<br />
+You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; An old fisherman crashes into Priam in a thundering co<br />
+llision, knocking him to the ground!<br />
+You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; Yams focuses harshly on Priam and utters the words, 'f<br />
+orce bolt'.<br />
+The sound of bones cracking echoes as Yams's force bolt slams into Priam.<br />
+You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You issue the order 'st'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; watch priam<br />
+You issue the order 'bas'.<br />
+<br />
+333H 114V 8290092X 10527C Mem:2 Exits:NES&gt; You now watch Priam.<br />
+<br />
+333H 114V 8290092X 10527C [**Priam:Awful**] [**an old fisherman:V.Good**] Mem:2 Exits:NES&gt; <br />
+A chicken arrives from the east.<br />
+An old fisherman hits Priam extremely hard.<br />
+An old fisherman massacres Priam with his hit.<br />
+Priam is incapacitated and will slowly die, if not aided.<br />
+<br />
+333H 114V 8290092X 10527C [**Priam:Dying**] Mem:2 Exits:NES&gt; c 'f b' priam<br />
+<br />
+A chicken leaves east.<br />
+<br />
+333H 114V 8290092X 10527C [**Priam:Dying**] Mem:2 Exits:NES&gt; <br />
+A chicken leaves south.<br />
+<br />
+333H 114V 8290092X 10527C [**Priam:Dying**] Mem:2 Exits:NES&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Priam's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Priam is dead! R.I.P.<br />
+<br />
+333H 114V 8290092X 10527C [Priam:Dying] Mem:3 Exits:NES&gt; <br />
+You stop watching Priam.<br />
+<br />
+333H 114V 8290092X 10527C [Priam:Dying] Mem:3 Exits:NES&gt; <br />
+The death cry of Priam echoes from somewhere nearby...<br />
+<br />
+333H 114V 8290092X 10527C Mem:3 Exits:NES&gt; get all corpse<br />
+<br />
+Yams gets a black and crooked staff from the corpse of Priam.<br />
+Yams gets a small component pouch from the corpse of Priam.<br />
+Yams gets a long grey robe from the corpse of Priam.<br />
+Yams gets a pallid amulet from the corpse of Priam.<br />
+Yams gets a scaly blue-green cape from the corpse of Priam.<br />
+Yams gets a red dragonscale book from the corpse of Priam.<br />
+Yams gets a very large pile of coins from the corpse of Priam.<br />
+Yams gets a handful of indian teeth from the corpse of Priam.<br />
+<br />
+333H 114V 8290092X 10527C Mem:3 Exits:NES&gt; The corpse doesn't seem to have what you are looking f<br />
+or.<br />
+<br />
+333H 114V 8290092X 10527C Mem:3 Exits:NES&gt; <br />
+Yams divides 4732 coins equally among the group members present.<br />
+<br />
+333H 114V 8290092X 12893C Mem:3 Exits:NES&gt; gt good<br />
+You tell your group 'good'<br />
+<br />
+333H 114V 8290092X 12893C Mem:3 Exits:NES&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='825'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=825">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="825">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

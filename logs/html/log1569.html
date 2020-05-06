@@ -1,0 +1,718 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1569-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1569'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Call Me Houdini</font></b>
+<p>
+POV: 
+Lateef<p>
+Log Rating:
+1.5714<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+People highlighted red for some reason, get assaulted.</i>
+<p>
+<p>
+
+A Forest Garden<br />
+    From the bustle of the town of Neraka you have entered what appears to<br />
+be a slice of an idyllic forest. You can feel the fresh breeze as it runs<br />
+through your hair and finally have the time to relax.<br />
+Assorted keys dangle from an iron loop here.<br />
+The jailer's keys have been left here.<br />
+(flying) Kaldean Barr is here, resting comfortably on a clump of moss.<br />
+Pinkerton the Male Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+You see a slender elf here, cutting saplings to make them strong.<br />
+<br />
+384H 89V 6C Exits:E&gt; <br />
+Pinkerton flies east.<br />
+<br />
+384H 89V 6C Exits:E&gt;<br />
+Kaldean stands up.<br />
+<br />
+384H 89V 6C Exits:E&gt;<br />
+You utter the words, 'hold person'<br />
+<br />
+384H 89V 6C Mem:3 Exits:E<br />
+<br />
+You are sent sprawling as Kaldean crashes into you.<br />
+<br />
+361H 89V 6C [Lateef:V.Good] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+Kaldean cleaves YOU very hard.<br />
+You miss Kaldean with your hit.<br />
+Pinkerton flies in from the east.<br />
+<br />
+363H 113V 6C [Lateef:V.Good] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+317H 113V 6C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:E&gt;<br />
+<br />
+Kaldean cleaves YOU very hard.<br />
+You miss Kaldean with your hit.<br />
+<br />
+306H 113V 6C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:E&gt;<br />
+ You can't do this sitting!<br />
+<br />
+306H 113V 6C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+You stand up.<br />
+<br />
+306H 113V 6C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+259H 113V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+You utter the words, 'hold person'<br />
+Kaldean freezes in place.<br />
+<br />
+259H 113V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:E&gt;<br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+210H 113V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:E&gt; <br />
+Your blow is absorbed by Kaldean's armor.<br />
+You flee head over heels.<br />
+A Cobbled Lane<br />
+    The lane leads north-south, into the quiet and strange town. There is a<br />
+small sign here, making you aware of the inn nearby. To the east lies the<br />
+only stretch of greenery in Neraka - once. What was obviously a small park<br />
+has been ruthlessly burnt, signs of campfires and tent markings suggest<br />
+that a draconian camp has once been here.<br />
+<br />
+210H 111V 6C Mem:3 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+210H 111V 6C Mem:3 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+210H 111V 6C Mem:3 Exits:NESW&gt; A Forest Garden<br />
+    From the bustle of the town of Neraka you have entered what appears to<br />
+be a slice of an idyllic forest. You can feel the fresh breeze as it runs<br />
+through your hair and finally have the time to relax.<br />
+Assorted keys dangle from an iron loop here.<br />
+The jailer's keys have been left here.<br />
+Pinkerton the Male Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kaldean Barr is standing here. (flying)<br />
+You see a slender elf here, cutting saplings to make them strong.<br />
+<br />
+210H 109V 6C Mem:3 Exits:E&gt; c 'heal' me<br />
+You utter the words, 'heal'<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+380H 109V 6C Mem:5 Exits:E&gt; c 'h' pin<br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+336H 109V 6C [Lateef:Good] [Pinkerton:Perfect] Mem:5 Exits:E&gt; c 'h' pinkerton<br />
+You utter the words, 'harm'<br />
+You grab Pinkerton, who screams in pain.<br />
+<br />
+336H 109V 6C [Lateef:Good] [Pinkerton:Fair] Mem:6 Exits:E&gt; !<br />
+<br />
+Birra flies in from the east.<br />
+<br />
+336H 109V 6C [Lateef:Good] [Pinkerton:Fair] Mem:6 Exits:E&gt; <br />
+Pinkerton whips YOU hard.<br />
+<br />
+329H 109V 6C [Lateef:Good] [Pinkerton:Fair] Mem:6 Exits:E&gt; <br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+282H 109V 6C [Lateef:Fair] [Pinkerton:Fair] Mem:6 Exits:E&gt; You utter the words, 'harm'<br />
+You grab Pinkerton, who screams in pain.<br />
+Pinkerton is stunned, but will likely regain consciousness again.<br />
+<br />
+282H 109V 6C [Pinkerton:Awful] Mem:7 Exits:E&gt; c 'h' pinkerton<br />
+You utter the words, 'harm'<br />
+You grab Pinkerton, who collapses in pain, then dies.<br />
+You receive 0 experience.<br />
+Pinkerton is dead! R.I.P.<br />
+<br />
+282H 109V 6C [Pinkerton:Dying] Mem:9 Exits:E&gt; <br />
+The death cry of Pinkerton echoes from somewhere nearby...<br />
+Kaldean stops following Pinkerton.<br />
+Pinkerton now follows Kaldean.<br />
+Kaldean is the new leader of Pinkerton's group.<br />
+Pinkerton stops following Kaldean.<br />
+A pech stops following Pinkerton.<br />
+<br />
+282H 109V 6C Mem:9 Exits:E&gt;<br />
+<br />
+You are sent sprawling as Kaldean crashes into you.<br />
+<br />
+259H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+Kaldean massacres YOU with his cleave.<br />
+You miss Kaldean with your hit.<br />
+<br />
+237H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+<br />
+Kaldean cleaves YOU extremely hard.<br />
+You miss Kaldean with your hit.<br />
+<br />
+217H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+Birra focuses on Kaldean and utters the words, 'heal'.<br />
+Birra heals Kaldean.<br />
+<br />
+217H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt;<br />
+<br />
+Kaldean gets a whip with nine heads from the corpse of Pinkerton.<br />
+Kaldean gets a scouting pack from the corpse of Pinkerton.<br />
+Kaldean gets a pair of green boots from the corpse of Pinkerton.<br />
+Kaldean gets a brassiere of seashells and kelp from the corpse of Pinkerton.<br />
+Kaldean gets a necklace of draconian teeth from the corpse of Pinkerton.<br />
+Kaldean gets a necklace of draconian teeth from the corpse of Pinkerton.<br />
+Kaldean gets a rolled bromeliad leaf from the corpse of Pinkerton.<br />
+Kaldean gets a large pile of coins from the corpse of Pinkerton.<br />
+Kaldean gets a scroll of recall from the corpse of Pinkerton.<br />
+Kaldean gets a scroll of recall from the corpse of Pinkerton.<br />
+Kaldean gets a small wooden chest from the corpse of Pinkerton.<br />
+<br />
+217H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+You can't do this sitting!<br />
+<br />
+217H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+Kaldean cleaves YOU extremely hard.<br />
+You should probably stand up!<br />
+You stand up.<br />
+<br />
+202H 109V 6C [Lateef:Fair] [Kaldean:Perfect] Mem:9 Exits:E&gt; <br />
+You flee head over heels.<br />
+<br />
+************THE GREAT ESCAPE*************<br />
+<br />
+384H 106V 211C Exits:NS&gt; h<br />
+You are sent sprawling as Kaldean crashes into you.<br />
+<br />
+361H 106V 211C [Lateef:V.Good] [Kaldean:Perfect] Exits:NS&gt; <br />
+Kaldean cleaves YOU extremely hard.<br />
+You miss Kaldean with your whip.<br />
+<br />
+342H 106V 211C [Lateef:Good] [Kaldean:Perfect] Exits:NS&gt;<br />
+Kaldean cleaves YOU very hard.<br />
+You miss Kaldean with your whip.<br />
+<br />
+328H 106V 211C [Lateef:Good] [Kaldean:Perfect] Exits:NS&gt; <br />
+You stand up.<br />
+<br />
+328H 106V 211C [Lateef:Good] [Kaldean:Perfect] Exits:NS&gt; <br />
+Your casting is disrupted by the <br />
+fighting!<br />
+<br />
+328H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS<br />
+You utter the words, 'hold <br />
+person'<br />
+<br />
+328H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+You are sent sprawling as Kaldean crashes into you.<br />
+<br />
+305H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Kaldean cleaves YOU very hard.<br />
+<br />
+294H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt;<br />
+Pinkerton flies in from the north.<br />
+Pinkerton notices a thieving kender eyeing his possessions.<br />
+<br />
+294H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt;<br />
+Birra arrives from the south.<br />
+<br />
+294H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Birra leaves north.<br />
+<br />
+294H 106V 211C [Lateef:Good] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Kaldean cleaves YOU extremely hard.<br />
+You miss Kaldean with your whip.<br />
+Birra arrives from the north.<br />
+Birra notices a thieving kender eyeing his possessions.<br />
+<br />
+277H 106V 211C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:NS&gt;<br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+228H 106V 211C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Birra whips YOU.<br />
+<br />
+222H 106V 211C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Pinkerton notices a thieving kender eyeing his possessions.<br />
+<br />
+222H 106V 211C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+You are sent sprawling as Kaldean crashes into you.<br />
+<br />
+199H 106V 211C [Lateef:Fair] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Birra misses you with his whip.<br />
+Kaldean cleaves YOU hard.<br />
+You miss Kaldean with your whip.<br />
+<br />
+189H 106V 211C [Lateef:Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+147H 106V 211C [Lateef:V.Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Birra focuses harshly on you and utters the words, 'hold person'.<br />
+<br />
+147H 106V 211C [Lateef:V.Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Kaldean cleaves YOU extremely hard.<br />
+You miss Kaldean with your whip.<br />
+<br />
+131H 106V 211C [Lateef:V.Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+<br />
+83H 106V 211C [Lateef:V.Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Birra focuses harshly on you and utters the words, 'hold person'.<br />
+<br />
+83H 106V 211C [Lateef:V.Bad] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+Kaldean cleaves YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Kaldean with your whip.<br />
+You step aside as Kaldean tries to bash you, causing him to tumble and fall face <br />
+down.<br />
+<br />
+67H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+<br />
+Pinkerton focuses harshly on you and utters some strange words.<br />
+Your flesh burns as Pinkerton enshrouds you in a cloak of flames.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+23H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+<br />
+Birra focuses harshly on you and utters the words, 'silence'.<br />
+You suddenly lose all feeling of your mouth and tongue.<br />
+<br />
+23H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+A thieving kender tries to <br />
+steal something from Pinkerton.<br />
+You stand up.<br />
+<br />
+23H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; You try your hardest to form <br />
+the magic words.<br />
+Your lips move, but no sound emerges.<br />
+<br />
+23H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; Kaldean cleaves YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You try your hardest to form the magic words.<br />
+Your lips move, but no sound emerges.<br />
+<br />
+11H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt;<br />
+11H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+<br />
+11H 106V 211C [Lateef:Awful] [Kaldean:Perfect] Mem:3 Exits:NS&gt; <br />
+You flee head over heels.<br />
+Before the Northern Gate of Neraka<br />
+    The dark city of Neraka spreads out to the south, the dark minions of<br />
+Takhisis filling the streets. A twisted dark spire rises in the middle of<br />
+the city, the pinnacle of the Queen's temple. The craggy peaks of the<br />
+Khalkist mountains rise around the city, adding their shadows to the film<br />
+of ash that floats through the air.<br />
+<br />
+11H 104V 211C Mem:3 Exits:NS&gt;<br />
+<br />
+***RUN LIKE THE WIND AND ESCAPE SLOW PEOPLE***<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1569'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1569">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1569">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

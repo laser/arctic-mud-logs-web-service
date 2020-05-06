@@ -1,0 +1,575 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2056-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='64.208.172.177' and logid='2056'-->
+
+<!-- PHP Generated Message: IP in db-->
+
+<p>
+<b><font size="3">
+Enemy at the Gates, hoho</font></b>
+<p>
+POV: 
+Kadaj<p>
+Log Rating:
+2.6923<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+To stab, or not to stab, that is the question...</i>
+<p>
+<p>
+
+479H 60V 111C Exits:EW&gt; Staby twists around to see you place a grooved dagger in his back.<br />
+Staby appears noticeably weaker.<br />
+<br />
+479H 60V 111C [Me:Perfect] [Staby:Fair] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+479H 60V 111C [Me:Perfect] [Staby:Fair] Exits:EW&gt; fade e<br />
+w<br />
+backstab staby<br />
+<br />
+A Kalaman gateguard misses you with his slash.<br />
+You pierce Staby extremely hard.<br />
+You pierce Staby extremely hard.<br />
+You move aside quickly as Staby attacks!<br />
+Staby stumbles and accidentally attacks a Kalaman gateguard!<br />
+Staby pierces a Kalaman gateguard very hard.<br />
+Staby misses you with his pierce.<br />
+You step aside as a Kalaman gateguard tries to bash you, causing him to tumble and fall face down.<br />
+You dodge out of the way of a Kalaman gateguard's mistargeted kick.<br />
+A Kalaman gateguard kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+466H 60V 111C [Me:V.Good] [Staby:Fair] Exits:EW&gt; <br />
+Aplaenych flies in from the west.<br />
+A sylph arrives from the west.<br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+466H 60V 111C [Me:V.Good] [Staby:Fair] Exits:EW&gt; You can't seem to escape the battle.<br />
+<br />
+466H 60V 111C [Me:V.Good] [Staby:Fair] Exits:EW&gt; <br />
+Aplaenych focuses harshly on Staby and utters some strange words.<br />
+<br />
+466H 60V 111C [Me:V.Good] [Staby:Fair] Exits:EW&gt; <br />
+A Kalaman gateguard looks at you and yells 'There's the scoundrel!'<br />
+A Kalaman gateguard misses you with his slash.<br />
+A Kalaman gateguard massacres YOU with his slash.<br />
+A Kalaman gateguard slashes YOU extremely hard.<br />
+A Kalaman gateguard misses you with his slash.<br />
+A Kalaman gateguard massacres YOU with his slash.<br />
+Staby misses you with his pierce.<br />
+You move aside quickly as Staby attacks!<br />
+Staby stumbles and accidentally attacks a Kalaman gateguard!<br />
+Staby pierces a Kalaman gateguard extremely hard.<br />
+A Kalaman gateguard slashes YOU extremely hard.<br />
+You pierce Staby extremely hard.<br />
+You pierce Staby extremely hard.<br />
+<br />
+388H 60V 111C [Me:Good] [Staby:Bad] Exits:EW&gt; fade e<br />
+w<br />
+backstab staby<br />
+You can't do that while fighting.<br />
+<br />
+388H 60V 111C [Me:Good] [Staby:Bad] Exits:EW&gt; You can't do that while fighting.<br />
+<br />
+388H 60V 111C [Me:Good] [Staby:Bad] Exits:EW&gt; Intersection of Market Street and Wall Road<br />
+     You are at the intersection of Market Street and Wall Road. Market<br />
+Street runs east-west through Kalaman, while Wall Road runs along the<br />
+inside of the city wall. Market Street is the busiest street in Kalaman;<br />
+many of the shops and stands are located here.<br />
+<br />
+388H 59V 111C Exits:NESW&gt; Western City Gates<br />
+     You are inside the western city gates. The gates are made of thick<br />
+wood, reinforced with iron bars, and are very tough to break. The gateway<br />
+is arched, and above you you can see steel bars that can slide down in case<br />
+of siege or attack.<br />
+Her dragonfly wings flapping lightly, a beautiful woman is here.<br />
+Aplaenych Klaus, The Pony Express is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Staby the Male Hylar Dwarf is standing here. (flying)<br />
+Sol the Male Hylar Dwarf is standing here. (flying)<br />
+Rising the Male Human is standing here. (flying)<br />
+A cityguard of Kalaman stands here, guarding the western gates. (white aura)<br />
+A Kalaman gateguard is sitting here. (white aura)<br />
+A cityguard of Kalaman stands here, guarding the western gates. (white aura)<br />
+A cityguard of Kalaman stands here, guarding the western gates. (white aura)<br />
+A Kalaman gateguard stands up.<br />
+<br />
+388H 58V 111C Exits:EW&gt; Staby quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+388H 58V 111C [Me:Good] [Staby:Bad] Exits:EW&gt; <br />
+You pierce Staby extremely hard.<br />
+You pierce Staby very hard.<br />
+Staby pierces YOU extremely hard.<br />
+You move aside quickly as Staby attacks!<br />
+<br />
+371H 58V 111C [Me:Good] [Staby:V.Bad] Exits:EW&gt; <br />
+Staby gets a scroll from his backpack.<br />
+<br />
+371H 58V 111C [Me:Good] [Staby:V.Bad] Exits:EW&gt;<br />
+Rising stops using a feathered wooden staff.<br />
+Rising grabs a glowing scroll of recall.<br />
+Rising recites a glowing scroll of recall.<br />
+Staby disappears.<br />
+<br />
+371H 58V 111C Exits:EW&gt; l rising<br />
+You see nothing special about him.<br />
+Rising the young adult male human is in an excellent condition.<br />
+<br />
+Rising is using:<br />
+&lt;worn on finger&gt;           a small copper ring<br />
+&lt;worn on body&gt;             a furry white cloak<br />
+&lt;worn on head&gt;             a pair of delicate apatite earrings..it glows dimly<br />
+&lt;worn on legs&gt;             some heavy sand colored pants<br />
+&lt;worn as shield&gt;           a large aspen leaf shield..it hums softly<br />
+&lt;worn about body&gt;          a backpack<br />
+&lt;worn about waist&gt;         a magenta sash<br />
+&lt;worn around right wrist&gt;  a glinting blue zircon bracelet..it glows dimly<br />
+&lt;used in primary hand&gt;     an oak-handled mace<br />
+You attempt to peek at his inventory:<br />
+a feathered wooden staff<br />
+the stringy sinew of a great worm<br />
+a hand crafted leather jerkin<br />
+a glowing yellow stone..it glows dimly<br />
+a glowing yellow stone..it glows dimly<br />
+a large pigskin sack<br />
+a stunning red jewel..it glows dimly<br />
+a jade and turquoise necklace<br />
+a black ice sphere<br />
+a putrid potion<br />
+a pair of grey jouster's chaps<br />
+a complimentary stable note<br />
+a waterskin<br />
+a milky potion of see invisible<br />
+a glowing scroll of recall..it glows dimly<br />
+a pale blue stone<br />
+a stunning red jewel..it glows dimly<br />
+a luxurious fur robe..it glows dimly<br />
+<br />
+371H 58V 111C Exits:EW&gt; <br />
+Aplaenych focuses harshly on Rising and utters some strange words.<br />
+Rising is paralyzed!<br />
+<br />
+371H 58V 111C Exits:EW&gt; backstab rising<br />
+Rising makes a strange sound but is suddenly very silent, as you place a grooved dagger in his back.<br />
+get all.pile corpse<br />
+You receive 0 experience.<br />
+examine corpse<br />
+Rising is dead! R.I.P.<br />
+<br />
+371H 58V 111C [Me:Good] [Rising:Dying] Exits:EW&gt; <br />
+The death cry of Rising echoes from somewhere nearby...<br />
+Sol stops following Rising.<br />
+Rising now follows Sol.<br />
+Sol is the new leader of Rising's group.<br />
+Rising stops following Sol.<br />
+Staby stops following Rising.<br />
+Staby now follows Sol.<br />
+Jeremy stops following Rising.<br />
+Jeremy now follows Sol.<br />
+Diaz stops following Rising.<br />
+Diaz now follows Sol.<br />
+<br />
+371H 58V 111C Exits:EW&gt; <br />
+Aplaenych gets an oak-handled mace from the corpse of Rising.<br />
+Aplaenych gets a glinting blue zircon bracelet from the corpse of Rising
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='64.208.172.177' and logid='2056'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2056">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2056">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="64.208.172.177">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,812 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 983-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='983'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Asterix saves a wild group from Kazbek but dies for it</font></b>
+<p>
+POV: 
+Kazbek<p>
+Log Rating:
+-0.4545<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+wilds gets some luck</i>
+<p>
+<p>
+
+317H 31V 1X 922C Mem:2 Exits:ESD&gt; <br />
+e<br />
+Asterix flies in from the east.<br />
+<br />
+317H 31V 1X 922C Mem:2 Exits:ESD&gt; <br />
+Asterix flies in from the west.<br />
+Aces flies in from the west.<br />
+Flying Toward the Cloud<br />
+<br />
+317H 29V 1X 922C Mem:2 Exits:EW&gt; <br />
+**Jut: tired and have duty soon<br />
+<br />
+317H 29V 1X 922C Mem:2 Exits:EW&gt; <br />
+<br />
+Asterix flies west.<br />
+<br />
+317H 29V 1X 922C Mem:2 Exits:EW&gt; <br />
+c 'wizard eye' You utter the words, 'wizard eye'<br />
+You wave your hand, and a wizard eye appears from the ether!<br />
+<br />
+317H 29V 1X 922C Mem:3 Exits:EW&gt; <br />
+<br />
+Through your wizard's eye: Aces has left through the west exit.<br />
+Aces flies west.<br />
+<br />
+317H 29V 1X 922C Mem:3 Exits:EW&gt; <br />
+A wizard eye levitates up a few feet.<br />
+<br />
+317H 29V 1X 922C Mem:3 Exits:EW&gt; <br />
+wThrough your wizard's eye: You have left through the west exit.<br />
+City View<br />
+<br />
+317H 27V 1X 922C Mem:3 Exits:ESD&gt; <br />
+dA Steep Mountain Path<br />
+Aces the Male Human is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Asterix the Male Human is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+iYou are carrying:<br />
+a yellow potion<br />
+Mishakal's White potion [3]<br />
+a fiery red potion<br />
+a vial of acidic juice..it glows dimly..it hums softly [2]<br />
+a vial of sparkling pink liquid [3]<br />
+a small vial<br />
+a vial of holy water [2]<br />
+an earthen potion<br />
+a tattered purple cloak..it glows dimly<br />
+a small wooden chest<br />
+a shiny red apple<br />
+a glowing scroll of recall..it glows dimly [2]<br />
+a shiny red apple [3]<br />
+a small wooden chest<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+'any freshYou say 'any fresh'<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+exam chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a scribed scroll<br />
+a brewed potion [3]<br />
+a blue potion [2]<br />
+a teal potion<br />
+a flask of clear liquid [7]<br />
+a frozen potion [2]<br />
+an eelskin hood<br />
+a sealed scroll [2]<br />
+an emerald vial<br />
+a misty potion..it glows dimly<br />
+a small spherical lode stone<br />
+a filled vial<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+<br />
+**Asterix: whats plan?<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+<br />
+Asterix gets a cup from his pouch.<br />
+Asterix gets a cup from his pouch.<br />
+Asterix gets a cup from his pouch.<br />
+Asterix gets a cup from his pouch.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+<br />
+**Jut: i rent<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+gt we go in and i prismYou tell your group 'we go in and i prism'<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+<br />
+Asterix gives you a cup.<br />
+Asterix gives you a cup.<br />
+Asterix gives you a cup.<br />
+Asterix gives you a cup.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+<br />
+**Asterix: k<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupIt tastes like tea.<br />
+<br />
+sip cup317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+It tastes like tea.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupsip cupIt tastes like tea.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupIt tastes like tea.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupsip cupIt tastes like tea.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupIt tastes like tea.<br />
+<br />
+sip cup317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+It tastes like tea.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+**Aces: and we frag whoever blind held<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; It tastes like tea.<br />
+You do not feel thirsty.<br />
+As the usefulness of a cup ends, it suddenly disappears.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+It tastes like tea.<br />
+You do not feel thirsty.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+sip cupsip cupIt tastes like tea.<br />
+You do not feel thirsty.<br />
+<br />
+sip cup317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+It tastes like tea.<br />
+You do not feel thirsty.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+It tastes like tea.<br />
+You do not feel thirsty.<br />
+<br />
+317H 25V 1X 922C Mem:3 Exits:NU&gt; <br />
+restYou rest your tired bones but stay aloft.<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+groupYour group of 5 members consists of:<br />
+  Kjama            perfect   rested    standing   Y   N    N    N     1    0<br />
+  Kazbek           v.good    exhausted resting    Y   Y    N    Y     1    1<br />
+  Asterix          perfect   rested    resting    Y   Y    N    Y     1    0<br />
+  Aces             perfect   rested    standing   Y   Y    N    Y     1    0<br />
+  Gaheris          perfect   rested    standing   Y   N    N    N     0    0<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+iYou are carrying:<br />
+a cup [3]<br />
+a yellow potion<br />
+Mishakal's White potion [3]<br />
+a fiery red potion<br />
+a vial of acidic juice..it glows dimly..it hums softly [2]<br />
+a vial of sparkling pink liquid [3]<br />
+a small vial<br />
+a vial of holy water [2]<br />
+an earthen potion<br />
+a tattered purple cloak..it glows dimly<br />
+a small wooden chest<br />
+a shiny red apple<br />
+a glowing scroll of recall..it glows dimly [2]<br />
+a shiny red apple [3]<br />
+a small wooden chest<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+Asterix looks at you.<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+**Asterix: ppl auto fly?<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+gt iamYou tell your group 'iam'<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+**Aces: anyone feel brave<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+**Asterix: i am<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+Hew tells you 'ti ko'<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+exam chest<br />
+**Aces: can run here too<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+The wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a scribed scroll<br />
+a brewed potion [3]<br />
+a blue potion [2]<br />
+a teal potion<br />
+a flask of clear liquid [7]<br />
+a frozen potion [2]<br />
+an eelskin hood<br />
+a sealed scroll [2]<br />
+an emerald vial<br />
+a misty potion..it glows dimly<br />
+a small spherical lode stone<br />
+a filled vial<br />
+<br />
+317H 25V 1X 922C Mem:1 Exits:NU&gt; <br />
+<br />
+Your studies complete, you close your spellbook with a smile.<br />
+memThe metallic luster of your skin fades.<br />
+The warmth protecting your spirit fades.<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+Spells currently memorized:<br />
+1: [ 1]blur                 [ 5]magic missile        [ 1]shield              <br />
+2: [ 1]continual light      [ 1]invisibility         [ 3]shocking grasp      <br />
+   [ 1]sleep                [ 1]strength            <br />
+3: [ 3]color spray          [ 2]fly                  [ 2]lightning bolt      <br />
+4: [ 5]haste                [ 2]teleport            <br />
+5: [ 1]dimension door       [ 4]force bolt           [ 2]locate object       <br />
+6: [ 1]antimagic shell      [ 4]feeblemind           [ 1]fireshield          <br />
+7: [ 1]mass invisibility    [ 9]prismatic spray     <br />
+8: [ 3]cloud kill           [ 1]mass charm           [ 1]wizard eye          <br />
+9: [ 2]energy drain         [ 2]recharge            <br />
+<br />
+<br />
+Spells left: 1-0 2-0 3-0 4-0 5-0 6-0 7-0 8-0 9-0<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+<br />
+You stop following Kjama.<br />
+Kjama starts following you.<br />
+You are now the new leader of Kjama's group.<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+<br />
+**Aces: basher would be great<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+group<br />
+**Kjama: fol kazbek<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+Your group of 5 members consists of:<br />
+  Kazbek           v.good    fatigued  resting    Y   Y    N    Y     1    0<br />
+  Kjama            perfect   rested    standing   Y   N    N    N     1    0<br />
+  Gaheris          perfect   rested    standing   Y   N    N    N     0    0<br />
+  Asterix          perfect   rested    resting    Y   Y    N    Y     1    0<br />
+  Aces             perfect   rested    standing   Y   Y    N    Y     1    0<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+iYou are carrying:<br />
+a cup [3]<br />
+a yellow potion<br />
+Mishakal's White potion [3]<br />
+a fiery red potion<br />
+a vial of acidic juice..it glows dimly..it hums softly [2]<br />
+a vial of sparkling pink liquid [3]<br />
+a small vial<br />
+a vial of holy water [2]<br />
+an earthen potion<br />
+a tattered purple cloak..it glows dimly<br />
+a small wooden chest<br />
+a shiny red apple<br />
+a glowing scroll of recall..it glows dimly [2]<br />
+a shiny red apple [3]<br />
+a small wooden chest<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+<br />
+**Asterix: we are<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+<br />
+Visara flies in from the north.<br />
+Molly flies in from the north.<br />
+Perez flies in from the north.<br />
+Bor flies in from the north.<br />
+Gozer flies in from the north.<br />
+Roak flies in from the north.<br />
+Roak kneels down and studies the ground.<br />
+<br />
+318H 28V 1X 922C Exits:NU&gt; <br />
+<br />
+You step aside as Visara tries to bash you, causing her to tumble and fall face down.<br />
+<br />
+318H 28V 1X 922C [Kazbek:V.Good] [Visara:Perfect] Exits:NU&gt; <br />
+stYou stand up.<br />
+<br />
+318H 28V 1X 922C [Kazbek:V.Good] [Visara:Perfect] Exits:NU&gt; <br />
+c 'prismatic spray' You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Roak in a spray of bright orange!<br />
+Roak seems to be blinded!<br />
+You strike Gozer with a spray of murky violet!<br />
+You strike Bor with a spray of murky violet!<br />
+You catch Perez in a spray of shimmering red!<br />
+You hit Molly with a spray of gleaming indigo!<br />
+You catch Molly in a spray of shimmering red!<br />
+You catch Visara in a spray of radiant yellow!<br />
+You strike Visara with a spray of murky violet!<br />
+<br />
+318H 28V 1X 922C [Kazbek:V.Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+<br />
+Gozer laughs heartily.<br />
+<br />
+318H 28V 1X 922C [Kazbek:V.Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+<br />
+Molly misses you with her slash.<br />
+Perez bruises YOU with his slash.<br />
+Perez burns as he passes through your fire shield.<br />
+Perez bruises YOU with his crush.<br />
+Perez burns as he passes through your fire shield.<br />
+Bor slowly fades into existence.<br />
+Bor bruises YOU with his bludgeon.<br />
+Bor burns as he passes through your fire shield.<br />
+Gozer bruises YOU with his crush.<br />
+Gozer burns as he passes through your fire shield.<br />
+Roak bruises YOU with his whip.<br />
+Roak burns as he passes through your fire shield.<br />
+Visara bruises YOU with her pierce.<br />
+Visara burns as she passes through your fire shield.<br />
+<br />
+312H 28V 1X 922C [Kazbek:Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+<br />
+Asterix stands up.<br />
+<br />
+312H 28V 1X 922C [Kazbek:Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+g holy chestquaf holy<br />
+Gozer utters some strange words.<br />
+Gozer heals Gozer.<br />
+<br />
+312H 28V 1X 922C [Kazbek:Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+<br />
+You step aside as Roak tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+312H 28V 1X 922C [Kazbek:Good] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+Molly focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+246H 28V 1X 922C [Kazbek:Fair] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+You step aside as Perez tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+c 'prismatic spray' 246H 28V 1X 922C [Kazbek:Fair] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+The chest doesn't seem to have what you are looking for.<br />
+<br />
+246H 28V 1X 922C [Kazbek:Fair] [Visara:Good] Mem:4 Exits:NU&gt; <br />
+Asterix grabs a scroll of recall.<br />
+Asterix recites a scroll of recall.<br />
+You disappear.<br />
+Path of the Holy<br />
+You quaff a vial of holy water and pray for holy intervention.<br />
+Mishakal smiles at you...<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+345H 28V 1X 922C Mem:4 Exits:NS&gt; <br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+<br />
+345H 28V 1X 922C Mem:6 Exits:NS&gt; <br />
+gt whyYou tell your group 'why'<br />
+<br />
+345H 28V 1X 922C Mem:6 Exits:NS&gt; <br />
+gt damnitYou tell your group 'damnit'<br />
+<br />
+345H 28V 1X 922C Mem:6 Exits:NS&gt; <br />
+groupYour group of 5 members consists of:<br />
+  Kazbek           v.good    fatigued  standing   Y   Y    N    Y     1    6<br />
+  Kjama            perfect   rested    standing   Y   N    N    N     1    0<br />
+  Gaheris          perfect   rested    resting    Y   N    N    N     0    0<br />
+  Asterix          v.bad     rested    fighting   Y   N    N    N     1    0<br />
+  Aces             perfect   rested    standing   Y   Y    N    N     1    0<br />
+<br />
+345H 28V 1X 922C Mem:6 Exits:NS&gt; <br />
+Asterix stops following you.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='983'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=983">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="983">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

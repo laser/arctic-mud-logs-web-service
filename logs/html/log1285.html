@@ -1,0 +1,636 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1285-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1285'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Vittu vs. 3 mages... later 3 mages vs. BSP</font></b>
+<p>
+POV: 
+Vittu<p>
+Log Rating:
+2.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Poor me was ambushed by 3 evil mages who had a plan... My plan was better though!</i>
+<p>
+<p>
+
+Gad flies in from the north.<br />
+Solly flies in from the north.<br />
+Syre flies in from the north.<br />
+<br />
+xxxH 82V 1X 83C Exits:NESWU&gt; <br />
+Syre focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+xxxH 82V 1X 83C Exits:NESWU&gt; <br />
+Solly focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+xxxH 82V 1X 83C Exits:NESWU&gt; <br />
+Gad focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Gad's force bolt slams into you.<br />
+<br />
+xxxH 82V 1X 83C [Me:V.Good] [Gad:Perfect] Exits:NESWU&gt; gt now! TH no<br />
+You tell your group 'now! TH no'<br />
+<br />
+xxxH 82V 1X 83C [Me:V.Good] [Gad:Perfect] Exits:NESWU&gt; fade east<br />
+It is pitch black.<br />
+<br />
+xxxH 81V 1X 83C Exits:NW&gt; w<br />
+The Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Syre the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Solly, First Mage is standing here. (flying) (invisible) (red aura)<br />
+Gad, Renegade of Daltigoth is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+xxxH 80V 1X 83C Exits:NESWU&gt; backstab syre<br />
+#   $target is now set to {syre} [local]<br />
+Syre quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+xxxH 80V 1X 83C [Me:V.Good] [Syre:Perfect] Exits:NESWU&gt; fade east<br />
+w<br />
+<br />
+You pierce Syre extremely hard.<br />
+You feel intense pain as you swing through Syre's flaming aura.<br />
+You miss Syre with your cleave.<br />
+Syre misses you with his hit.<br />
+<br />
+xxxH 80V 1X 83C [Me:Good] [Syre:V.Good] Exits:NESWU&gt; <br />
+Syre focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+Solly focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+xxxH 80V 1X 83C [Me:Good] [Syre:V.Good] Exits:NESWU&gt; <br />
+Gad focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Gad's force bolt slams into you.<br />
+<br />
+xxxH 80V 1X 83C [Me:Good] [Syre:V.Good] Exits:NESWU&gt; gt gogogoogog<br />
+It is pitch black.<br />
+<br />
+xxxH 79V 1X 83C Exits:NW&gt; The Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Syre the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Solly, First Mage is standing here. (flying) (invisible) (red aura)<br />
+Gad, Renegade of Daltigoth is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+xxxH 78V 1X 83C Exits:NESWU&gt; backstab solly<br />
+#   $target is now set to {solly} [local]<br />
+Solly makes a strange sound, as you place a red metallic javelin in her back.<br />
+<br />
+xxxH 78V 1X 83C [Me:Good] [Solly:Fair] Exits:NESWU&gt; <br />
+Gad focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Gad's force bolt slams into you.<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; <br />
+Solly utters some strange words.<br />
+Solly conjures a writhing mass of inky black tentacles!<br />
+You scream in pain as inky black tentacles constrict you.<br />
+You manage to slip away from the tentacles.<br />
+A wizard eye is strangled to death by the writhing black tentacles.<br />
+A wizard eye is dead! R.I.P.<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; <br />
+The death cry of a wizard eye echoes from somewhere nearby...<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; gt come<br />
+<br />
+You massacre Solly with your pierce.<br />
+You cleave Solly very hard.<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; You tell your group 'come'<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; <br />
+Sailin tells your group 'tick in 10'<br />
+<br />
+xxxH 78V 1X 83C [Me:Fair] [Solly:Fair] Exits:NESWU&gt; <br />
+Gad focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Gad's force bolt slams into you.<br />
+<br />
+xxxH 78V 1X 83C [Me:Bad] [Solly:Fair] Exits:NESWU&gt; fade east<br />
+It is pitch black.<br />
+<br />
+<br />
+xxxH 77V 1X 83C Exits:NW&gt; w<br />
+The Tollhouse<br />
+The corpse of a wizard eye is lying here.<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Syre the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Solly, First Mage is standing here. (flying) (red aura)<br />
+Gad, Renegade of Daltigoth is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+xxxH 76V 1X 83C Exits:NESWU&gt; backstab solly<br />
+#   $target is now set to {solly} [local]<br />
+Solly makes a strange sound, as you place a red metallic javelin in her back.<br />
+<br />
+xxxH 76V 1X 83C [Me:Bad] [Solly:Awful] Exits:NESWU&gt; <br />
+Solly panics, and attempts to flee.<br />
+Solly flies south.<br />
+<br />
+xxxH 76V 1X 83C Exits:NESWU&gt; s<br />
+backstab 2.guardian<br />
+#   $target is now set to {2.guardian} [local]<br />
+backstab solly<br />
+#   $target is now set to {solly} [local]<br />
+backstab solly<br />
+#   $target is now set to {solly} [local]<br />
+<br />
+Elyana flies in from the east.<br />
+<br />
+xxxH 76V 1X 83C Exits:NESWU&gt; backstab solly<br />
+#   $target is now set to {solly} [local]<br />
+<br />
+Kilians crashes into Syre in a thundering collision, knocking him to the ground!<br />
+<br />
+xxxH 76V 1X 83C Exits:NESWU&gt; <br />
+Solly flies in from the south.<br />
+<br />
+xxxH 76V 1X 83C Exits:NESWU&gt; <br />
+Gad focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Gad's force bolt slams into you.<br />
+That Really did HURT!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Solly steps aside as Zohar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; <br />
+Bjork massacres Solly with her slash.<br />
+Fe slowly fades into existence.<br />
+Fe crashes into Solly in a thundering collision, knocking her to the ground!<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; <br />
+Delvar tells your group 'to slow heh'<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; You can't do that while fighting.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; You can't do that while fighting.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; You can't do that while fighting.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; <br />
+Sanka focuses harshly on Solly and utters some strange words.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; You can't do that while fighting.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; You can't do that while fighting.<br />
+<br />
+xxxH 76V 1X 83C [Me:Awful] [Gad:Perfect] Exits:NESWU&gt; fade south<br />
+It is pitch black.<br />
+<br />
+xxxH 74V 1X 83C Exits:NESW&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+xxxH 74V 1X 83C Exits:NESW&gt; <br />
+Su tells your group 'hehe'<br />
+<br />
+xxxH 74V 1X 83C Exits:NESW&gt; s<br />
+It is pitch black.<br />
+<br />
+xxxH 72V 1X 83C Exits:NS&gt; s<br />
+backstab syre<br />
+#   $target is now set to {syre} [local]<br />
+<br />
+xxxH 66V 1X 83C Exits:NESW&gt; n<br />
+The Tollhouse<br />
+The corpse of Solly is lying here.<br />
+The corpse of a wizard eye is lying here.<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Sailin the Seas, Sunflower Explorer is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+(flying) Zohar the Male Hylar Dwarf is here, sitting on a wooden bench.<br />
+Sanka the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Fe Fi Fo Fum, Sunflower Giant is standing here. (flying) (invisible)<br />
+Delvar the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Bjork the Female High Elf is standing here. (flying)<br />
+Kilians by the Millions, Sunflower Butcher is standing here, fighting Syre. (flying)<br />
+Elyana Lipetskaya, Chieftain of BSP fighters for the Freedom of Mystic Isles is standing here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Syre the Male Human is sitting here, fighting Kilians. (flying)<br />
+. . . is enveloped in flames.<br />
+<br />
+xxxH 64V 1X 83C Exits:NESWU&gt; <br />
+Kilians massacres Syre with his crush.<br />
+Kilians is burned, as he swings at Syre.<br />
+Syre misses Kilians with his hit.<br />
+<br />
+xxxH 106V 1X 83C Exits:NESWU&gt; <br />
+Bjork massacres Syre with her slash.<br />
+Bjork is burned, as she swings at Syre.<br />
+<br />
+xxxH 106V 1X 83C Exits:NESWU&gt; <br />
+Syre stops using a large first-aid kit.<br />
+Syre grabs a glowing scroll of recall.<br />
+Syre recites a glowing scroll of recall.<br />
+Syre disappears.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1285'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1285">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1285">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

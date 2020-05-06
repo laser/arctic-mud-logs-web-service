@@ -1,0 +1,589 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1906-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1906'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Dias dies</font></b>
+<p>
+POV: 
+Tubby<p>
+Log Rating:
+0.7692<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Ppl were happy about the 40k in the chest too.</i>
+<p>
+<p>
+
+409H 109V 5657874X 1721C Exits:NESW&gt;<br />
+Lumpe flies south.<br />
+You follow Lumpe south.<br />
+Hax studies the area intently.<br />
+Lost in the Maze<br />
+The corpse of a demon is lying here.<br />
+A pile of steel coins.<br />
+A gargoyle is standing here.<br />
+&lt;BSP&gt; Sir Dias Glory, the Mysterious Swordsman is standing here.  <br />
+(flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+409H 108V 5657874X 1721C Exits:NESW&gt;<br />
+Lumpe gets a pile of coins.<br />
+<br />
+409H 108V 5657874X 1721C Exits:NESW&gt;<br />
+Hax sends a swarm of flying piranha at Dias.<br />
+A piranha tears into Dias's flesh.<br />
+A piranha tears into Dias's flesh.<br />
+A piranha tears into Dias's flesh.<br />
+A piranha tears into Dias's flesh.<br />
+A piranha tears into Dias's flesh.<br />
+<br />
+409H 108V 5657874X 1721C Exits:NESW&gt;<br />
+Lumpe focuses harshly on Dias and utters some strange words.<br />
+<br />
+back dias<br />
+back dias<br />
+409H 108V 5657874X 1721C Exits:NESW&gt; Dias is flailing around too  <br />
+much.  Oh well.<br />
+<br />
+back dias<br />
+409H 108V 5657874X 1721C Exits:NESW&gt;<br />
+Vecci focuses harshly on Dias and utters some strange words.<br />
+***** Dias IS FREEEZED *****<br />
+<br />
+409H 108V 5657874X 1721C Exits:NESW&gt; Dias twists around to see you  <br />
+place an emerald shafted javelin in his back.<br />
+Dias appears noticeably weaker.<br />
+<br />
+back dias<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt;<br />
+You pierce Dias hard.<br />
+You pierce Dias hard.<br />
+Hax massacres Dias with his cleave.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt;<br />
+Zotka gives a gargoyle an order.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt;<br />
+Zotka focuses harshly on Dias and utters some strange words.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt;<br />
+Hax gets a small pile of coins from the corpse of a demon.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+fade north<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt;<br />
+Vecci focuses harshly on Dias and utters some strange words.<br />
+Huge flames burn Dias from above.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+409H 108V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Fair]  <br />
+Exits:NESW&gt; It is pitch black.<br />
+<br />
+envenom javelin<br />
+409H 107V 5657874X 1721C Exits:NESW&gt; You stealthily dip the javelin  <br />
+in a toxic concoction of your own making.<br />
+<br />
+back dias<br />
+409H 107V 5657874X 1721C Exits:NESW&gt; You begin moving quietly.<br />
+<br />
+409H 107V 5657874X 1721C Exits:NESW&gt; Lost in the Maze<br />
+The corpse of a demon is lying here.<br />
+&lt;Newb&gt; Hax E. Dental, Flossing the Competition is standing here,  <br />
+fighting Dias. (flying)<br />
+A gargoyle is standing here.<br />
+Zotka Ezito, Pride of Flook is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+Vecci the Conqueror is standing here. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+&lt;CoP&gt; Lumpe, Dark Mage of Doom is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;BSP&gt; Sir Dias Glory, the Mysterious Swordsman is sitting here,  <br />
+fighting Hax. (flying) (white aura)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+409H 106V 5657874X 1721C Exits:NESW&gt; Dias twists around to see you  <br />
+place an emerald shafted javelin in his back.<br />
+Dias appears noticeably weaker.<br />
+<br />
+409H 106V 5657874X 1721C [Me:Perfect] [Hax:Perfect] [Dias:Awful]  <br />
+Exits:NESW&gt;<br />
+Zotka focuses harshly on Dias and utters some strange words.<br />
+Zotka slowly fades into existence.<br />
+Brains splatter on you as Zotka's force bolt shatters Dias's skull.<br />
+get all.potion corpse<br />
+get all.steel.coins corpse<br />
+exa corpse<br />
+You receive 0 experience.<br />
+---------R----I----P---- Dias ----R----I----P---------<br />
+<br />
+409H 106V 5657874X 1721C [Me:Perfect] [Dias:Dying] Exits:NESW&gt;<br />
+The death cry of Dias echoes from somewhere nearby...<br />
+Dias sinks gently to the ground.<br />
+<br />
+409H 106V 5657874X 1721C Exits:NESW&gt;<br />
+Hax gets an idol carved of green malachite from the corpse of Dias.<br />
+Hax gets a rapier of treated steel from the corpse of Dias.<br />
+Hax gets a pitch black bracer from the corpse of Dias.<br />
+Hax gets a charred leather belt from the corpse of Dias.<br />
+Hax gets a grey silken robe from the corpse of Dias.<br />
+Hax gets a black granite shield from the corpse of Dias.<br />
+Hax gets a pair of charred platemail sleeves from the corpse of Dias.<br />
+Hax gets a pair of draconian gauntlets from the corpse of Dias.<br />
+Hax is zapped by a pair of knight's spurs and instantly drops it.<br />
+Hax gets a pair of steel legplates inlaid with ebony from the corpse  <br />
+of Dias.<br />
+Hax gets a red dragonmask from the corpse of Dias.<br />
+Hax gets an ancient suit of Ergothian armor from the corpse of Dias.<br />
+Hax gets a sapphire inlaid choker from the corpse of Dias.<br />
+Hax gets an officer's insignia from the corpse of Dias.<br />
+Hax gets a ring of white gold from the corpse of Dias.<br />
+Hax gets a pile of coins from the corpse of Dias.<br />
+Hax gets a common scroll from the corpse of Dias.<br />
+<br />
+409H 106V 5657874X 1721C Exits:NESW&gt;<br />
+Hax divides 95 coins equally among the group members present.<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt;<br />
+Vecci is zapped by a gleaming adamantite bastard sword and instantly  <br />
+drops it.<br />
+Vecci gets a silver blade from the corpse of Dias.<br />
+Vecci gets a black bearskin bag from the corpse of Dias.<br />
+Vecci gets an enchanted chest from the corpse of Dias.<br />
+<br />
+get all<br />
+409H 106V 5657874X 1740C Exits:NESW&gt; Lumpe gets a pair of knight's  <br />
+spurs.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt; The corpse doesn't seem to have  <br />
+what you are looking for.<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt; It's a pretty ghastly sight!  <br />
+Searching through the remains, you find:<br />
+corpse (here) :<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt; You tell your clan '-|| Tick  <br />
+Soon ||-'<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt; You are zapped by a gleaming  <br />
+adamantite bastard sword and instantly drop it.<br />
+Corpse : You can't carry that much weight.<br />
+You get the corpse of a demon.<br />
+<br />
+409H 106V 5657874X 1740C Exits:NESW&gt;<br />
+Zotka is zapped by a gleaming adamantite bastard sword and instantly  <br />
+drops it.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1906'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1906">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1906">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,610 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1533-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1533'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Helix RIP</font></b>
+<p>
+POV: 
+Yamoto<p>
+Log Rating:
+2.4000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+No room is safe from NOWCLAN</i>
+<p>
+<p>
+
+503H 6V 182262X 0C Exits:NES&gt; wear shard<br />
+You wear a crystal shard necklace around your neck.<br />
+<br />
+514H 28V 182262X 0C Exits:NES&gt; c 'darkness'<br />
+You utter the words, 'darkness'<br />
+<br />
+514H 28V 182262X 0C Mem:3 Exits:NES&gt; c 'darkness'<br />
+c 'darkness'<br />
+You utter the words, 'darkness'<br />
+<br />
+514H 28V 182262X 0C Mem:3 Exits:NES&gt; You utter the words, 'darkness'<br />
+The room is suddenly enveloped in darkness.<br />
+<br />
+514H 28V 182262X 0C Mem:4 Exits:NES&gt; rem shard<br />
+<br />
+Grauth gives you a small bag of flash powder.<br />
+<br />
+514H 28V 182262X 0C Mem:4 Exits:NES&gt; e<br />
+<br />
+Grauth stops using a torch.<br />
+<br />
+514H 28V 182262X 0C Mem:4 Exits:NES&gt; You stop using a crystal shard necklace.<br />
+<br />
+514H 28V 182262X 0C Mem:4 Exits:NES&gt; Grauth flies in from the west.<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [3]<br />
+Grauth Gazer, Beady-eyed Nowclan is standing here. (flying) (invisible)<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+A Revered Son of Paladine stands here overseeing the chapel. (white aura)<br />
+Grauth grabs a black stone.<br />
+<br />
+514H 27V 182262X 0C Mem:4 Exits:EW&gt; e alone<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [3]<br />
+A steaming bowl of Otik's spiced potatoes rests here.<br />
+A small wooden chest covered in crimson dust is here.<br />
+The hardened carapace of an adult sea turtle is here, sans turtle.<br />
+Helix, the Most Useless Sigil is standing here.<br />
+Crysania, Revered Daughter of Paladine, stands here to further instruct you. (white aura)<br />
+<br />
+514H 26V 182262X 0C Mem:3 Exits:W&gt; use powder<br />
+You stop using a sunburst engraved longsword.<br />
+You grab a small bag of flash powder.<br />
+You wave a small bag of flash powder.<br />
+You are enveloped in flames from a fireball, which appears out of nowhere.<br />
+The fireball discharged by your bag does not seem to affect Helix.<br />
+The fireball discharged by your bag does not seem to affect Crysania.<br />
+A bowl of Otik's spiced potatoes is destroyed.<br />
+As the usefulness of a small bag of flash powder ends, it suddenly disappears.<br />
+<br />
+511H 26V 182262X 0C [Yamoto:V.Good] [Helix:Perfect] Mem:3 Exits:W&gt; <br />
+You slash Helix extremely hard.<br />
+Helix smites YOU extremely hard.<br />
+<br />
+496H 26V 182262X 0C [Yamoto:V.Good] [Helix:V.Good] Mem:3 Exits:W&gt; <br />
+Grauth tells your group 'GO GO WIN WIN'<br />
+<br />
+496H 26V 182262X 0C [Yamoto:V.Good] [Helix:V.Good] Mem:3 Exits:W&gt; <br />
+Helix panics, and attempts to flee.<br />
+Helix leaves west.<br />
+<br />
+496H 26V 182262X 0C Mem:3 Exits:W&gt; hold sunburst<br />
+w<br />
+ass<br />
+You admire the light shining across the sunburst-engraved blade, as you<br />
+heft the light sword.<br />
+<br />
+496H 26V 182262X 0C Mem:3 Exits:W&gt; It is pitch black.<br />
+Inky darkness flows into the area. [3]<br />
+Helix, the Most Useless Sigil is sitting here, fighting Grauth.<br />
+Grauth Gazer, Beady-eyed Nowclan is standing here, fighting Helix. (flying)<br />
+A Revered Son of Paladine stands here overseeing the chapel. (white aura)<br />
+<br />
+496H 25V 182262X 0C Mem:4 Exits:EW&gt; You attempt to assist Grauth.<br />
+You massacre Helix with your slash.<br />
+<br />
+496H 25V 182262X 0C [Grauth:V.Good] [Helix:Good] Mem:4 Exits:EW&gt; <br />
+Helix stands up.<br />
+<br />
+496H 25V 182262X 0C [Grauth:V.Good] [Helix:Good] Mem:4 Exits:EW&gt; <br />
+Grauth crashes into Helix in a thundering collision, knocking him to the ground!<br />
+<br />
+496H 25V 182262X 0C [Grauth:V.Good] [Helix:Fair] Mem:4 Exits:EW&gt; <br />
+Kylar flies in from the west.<br />
+<br />
+496H 25V 182262X 0C [Grauth:V.Good] [Helix:Fair] Mem:4 Exits:EW&gt; <br />
+Kylar flies east.<br />
+<br />
+<br />
+496H 25V 182262X 0C [Grauth:V.Good] [Helix:Fair] Mem:4 Exits:EW&gt; <br />
+You massacre Helix with your slash.<br />
+You slash Helix very hard.<br />
+Grauth crushes Helix extremely hard.<br />
+Helix smites Grauth extremely hard.<br />
+<br />
+496H 25V 182262X 0C [Grauth:Good] [Helix:Fair] Mem:4 Exits:EW&gt; im<br />
+After lightning fast strikes from your sword, Helix is wheeling to regain his balance.<br />
+<br />
+496H 25V 182262X 0C [Grauth:Good] [Helix:Fair] Mem:4 Exits:EW&gt; <br />
+You massacre Helix with your slash.<br />
+You massacre Helix with your slash.<br />
+Grauth massacres Helix with his crush.<br />
+Helix smites Grauth very hard.<br />
+<br />
+496H 25V 182262X 0C [Grauth:Good] [Helix:Bad] Mem:4 Exits:EW&gt; drain<br />
+Helix spasms as you place your hand on his chest and drain his life-force.<br />
+Helix shivers and begins to grow extremely pale.<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:Bad] Mem:4 Exits:EW&gt; <br />
+Helix stands up.<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:Bad] Mem:4 Exits:EW&gt; <br />
+Grauth crashes into Helix in a thundering collision, knocking him to the ground!<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:V.Bad] Mem:4 Exits:EW&gt; <br />
+You massacre Helix with your slash.<br />
+You slash Helix extremely hard.<br />
+Grauth crushes Helix extremely hard.<br />
+Helix massacres Grauth with his smite.<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:V.Bad] Mem:4 Exits:EW&gt; <br />
+You massacre Helix with your slash.<br />
+You slash Helix extremely hard.<br />
+Grauth massacres Helix with his crush.<br />
+Helix smites Grauth extremely hard.<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:Awful] Mem:4 Exits:EW&gt; <br />
+Helix stands up.<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:Awful] Mem:4 Exits:EW&gt; <br />
+Grauth crashes into Helix in a thundering collision, knocking him to the ground!<br />
+<br />
+520H 121V 182262X 0C [Grauth:Good] [Helix:Awful] Mem:4 Exits:EW&gt; <br />
+You return to your normal fighting style.<br />
+You massacre Helix with your slash.<br />
+You slash Helix extremely hard.<br />
+Grauth massacres Helix with his crush.<br />
+You receive 0 experience.<br />
+Helix is dead! R.I.P.<br />
+The death cry of Helix echoes from somewhere nearby...<br />
+<br />
+520H 121V 182262X 0C Mem:4 Exits:EW&gt; <br />
+get all corpse<br />
+You get a black stone from the corpse of Helix.<br />
+You get a chain flail from the corpse of Helix.<br />
+You get a mithril bracelet from the corpse of Helix.<br />
+You get a mithril bracelet from the corpse of Helix.<br />
+You get a dwarven belt from the corpse of Helix.<br />
+Shield : You can't carry that much weight.<br />
+You get a pair of woodsman's sleeves from the corpse of Helix.<br />
+Gauntlets : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Cuisses : You can't carry that much weight.<br />
+Skull : You can't carry that much weight.<br />
+Armor : You can't carry that much weight.<br />
+You get a crystal shard necklace from the corpse of Helix.<br />
+Cape : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get a pile of coins from the corpse of Helix.<br />
+There were 92 coins.<br />
+Bag : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+520H 121V 182262X 92C Mem:4 Exits:EW&gt; split 82<br />
+You divide 82 coins equally among the group members present.<br />
+<br />
+520H 121V 182262X 51C Mem:4 Exits:EW&gt; gt loot<br />
+You tell your group 'loot'<br />
+<br />
+520H 121V 182262X 51C Mem:4 Exits:EW&gt; <br />
+The inky blackness thins out.<br />
+The inky blackness thins out.<br />
+Grauth gets a granite shield from the corpse of Helix.<br />
+Grauth gets a pair of spiked sterling gauntlets from the corpse of Helix.<br />
+Grauth gets a pair of silver dragon scale boots from the corpse of Helix.<br />
+Grauth gets a set of power cuisses from the corpse of Helix.<br />
+Grauth gets a revenant's skull from the corpse of Helix.<br />
+Grauth gets a suit of charred black battle armor from the corpse of Helix.<br />
+Grauth gets a shimmering silver cape from the corpse of Helix.<br />
+Grauth gets a ring of black dragon scales from the corpse of Helix.<br />
+Grauth gets a woodsman's ring from the corpse of Helix.<br />
+<br />
+520H 121V 182262X 51C Mem:4 Exits:EW&gt; l<br />
+It is pitch black.<br />
+The corpse of Helix is lying here.<br />
+Inky darkness flows into the area. [2]<br />
+Grauth Gazer, Beady-eyed Nowclan is standing here. (flying)<br />
+A Revered Son of Paladine stands here overseeing the chapel. (white aura)
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1533'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1533">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1533">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

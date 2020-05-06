@@ -1,0 +1,947 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 629-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='629'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Incoming!</font></b>
+<p>
+POV: 
+Wyand<p>
+Log Rating:
+4.2836<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Some BSP mages steamroll through an assorted group of Wilds and their affiliates.</i>
+<p>
+<p>
+
+380H 105V 1X 12371C Mem:2 Exits:NES&gt;<br />
+Moona flies north.<br />
+You follow Moona north.<br />
+Elyana flies in from the south.<br />
+Draven flies in from the south.<br />
+Tower of the Suns<br />
+Draven the Male Human is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here.<br />
+(flying) (invisible) (red aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Moona the Female Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Oy, Hammer of the Gods is standing here. (flying)<br />
+Min Farshaw, the Irresistable Force is resting here. (flying) (invisible)<br />
+Xellos Mite, Tenken of Vae Victus is standing here. (flying) (red aura)<br />
+Trilleq the Polka Dot Princess is standing here. (flying)<br />
+Arvar, Chekist of the Wild is standing here. (flying)<br />
+Murphy McManus, Master of Malevolence is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Kung of the Wild is standing here. (flying) (red aura)<br />
+Darva, Master of the Elemenets is resting here. (flying) (red aura)<br />
+. . . has a tough exterior.<br />
+Spongue E. Shopht, Absorbant Might of the Cult of Xanitha is standing here.<br />
+(flying)<br />
+<br />
+380H 104V 1X 12371C Mem:1 Exits:ES&gt;<br />
+Moona utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Moona conjures a writhing mass of inky black tentacles!<br />
+Moona slowly fades into existence.<br />
+Moona comes out of hiding.<br />
+Oy screams in pain as inky black tentacles constrict him.<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Xellos screams in pain as inky black tentacles constrict him.<br />
+Trilleq screams in pain as inky black tentacles constrict him.<br />
+Arvar screams in pain as inky black tentacles constrict him.<br />
+Murphy screams in pain as inky black tentacles constrict him.<br />
+Kung screams in pain as inky black tentacles constrict him.<br />
+Darva screams in pain as inky black tentacles constrict him.<br />
+Spongue screams in pain as inky black tentacles constrict her.<br />
+<br />
+380H 104V 1X 12371C Mem:1 Exits:ES&gt;<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Oy is struck by a spray of vibrant green!<br />
+Min is caught in a spray of shimmering red!<br />
+Min is caught in a spray of radiant yellow!<br />
+Xellos is blasted by a spray of scintillating blue!<br />
+Xellos freezes in place.<br />
+Trilleq is struck by a spray of murky violet!<br />
+Trilleq is hit by a spray of gleaming indigo!<br />
+Arvar is caught in a spray of shimmering red!<br />
+Murphy is hit by a spray of gleaming indigo!<br />
+Murphy is struck by a spray of murky violet!<br />
+Kung is caught in a spray of radiant yellow!<br />
+Darva is caught in a spray of bright orange!<br />
+Spongue is struck by a spray of vibrant green!<br />
+<br />
+380H 104V 1X 12371C Mem:1 Exits:ES&gt; c 'prism'<br />
+Murphy stands up.<br />
+<br />
+380H 104V 1X 12371C Mem:1 Exits:ES&gt;<br />
+Draven utters the words, 'prismatic spray'.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Draven slowly fades into existence.<br />
+Oy is caught in a spray of radiant yellow!<br />
+Min is caught in a spray of radiant yellow!<br />
+Xellos is hit by a spray of gleaming indigo!<br />
+Trilleq is struck by a spray of murky violet!<br />
+Arvar is struck by a spray of vibrant green!<br />
+Murphy is hit by a spray of gleaming indigo!<br />
+Kung is caught in a spray of bright orange!<br />
+Kung seems to be blinded!<br />
+Darva is caught in a spray of bright orange!<br />
+Spongue is struck by a spray of murky violet!<br />
+<br />
+380H 104V 1X 12371C Mem:1 Exits:ES&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Oy in a spray of bright orange!<br />
+You strike Min with a spray of vibrant green!<br />
+You strike Xellos with a spray of murky violet!<br />
+You strike Trilleq with a spray of murky violet!<br />
+You strike Trilleq with a spray of vibrant green!<br />
+You strike Arvar with a spray of murky violet!<br />
+You hit Murphy with a spray of gleaming indigo!<br />
+You hit Kung with a spray of gleaming indigo!<br />
+You catch Darva in a spray of radiant yellow!<br />
+You catch Spongue in a spray of shimmering red!<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Perfect] [Oy:Bad] Mem:2 Exits:ES&gt;<br />
+Spongue tries to bash Moona, but she passes right through her image and falls.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Perfect] [Oy:Bad] Mem:2 Exits:ES&gt;<br />
+You miss Oy with your pierce.<br />
+Draven misses Oy with his bludgeon.<br />
+Elyana drains Oy very hard.<br />
+Spongue misses Moona and destroys an image instead.<br />
+Spongue misses Moona and destroys an image instead.<br />
+Darva misses Moona and destroys an image instead.<br />
+Kung misses Moona with his hit.<br />
+Kung smites Moona extremely hard.<br />
+Kung is burned, as he swings at Moona.<br />
+Murphy slowly fades into existence.<br />
+Murphy pierces Moona extremely hard.<br />
+Murphy is burned, as he swings at Moona.<br />
+Arvar massacres Moona with his slash.<br />
+Arvar is burned, as he swings at Moona.<br />
+Arvar slashes Moona extremely hard.<br />
+Arvar is burned, as he swings at Moona.<br />
+Trilleq cleaves Moona very hard.<br />
+Trilleq is burned, as he swings at Moona.<br />
+Trilleq is stunned, but will likely regain consciousness again.<br />
+Min slowly fades into existence.<br />
+Min misses Moona with her hit.<br />
+Moona misses Oy with her pierce.<br />
+Oy pierces Moona extremely hard.<br />
+Oy is burned, as he swings at Moona.<br />
+Oy whips Moona extremely hard.<br />
+Oy is burned, as he swings at Moona.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Fair] [Oy:V.Bad] Mem:2 Exits:ES&gt;<br />
+Murphy grabs a glowing scroll of recall.<br />
+Murphy recites a glowing scroll of recall.<br />
+Murphy disappears.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Fair] [Oy:V.Bad] Mem:2 Exits:ES&gt;<br />
+Darva stands up.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Fair] [Oy:V.Bad] Mem:2 Exits:ES&gt;<br />
+Moona quaffs a vial of holy water and prays for holy intervention.<br />
+Mishakal smiles upon Moona...<br />
+Moona heals Moona.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:V.Good] [Oy:V.Bad] Mem:2 Exits:ES&gt;<br />
+Min stands up.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:V.Good] [Oy:V.Bad] Mem:2 Exits:ES&gt; c<br />
+'prism'<br />
+Darva panics, and attempts to flee.<br />
+Darva flies east.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:V.Good] [Oy:V.Bad] Mem:2 Exits:ES&gt; You<br />
+utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Oy with a spray of murky violet!<br />
+You strike Min with a spray of murky violet!<br />
+You catch Xellos in a spray of bright orange!<br />
+Xellos seems to be blinded!<br />
+You dissolve Trilleq into a pool of ochreous slime with a spray of orange.<br />
+Trilleq is dead! R.I.P.<br />
+You hit Arvar with a spray of gleaming indigo!<br />
+You blast Kung with a spray of scintillating blue!<br />
+Kung freezes in place.<br />
+You catch Spongue in a spray of radiant yellow!<br />
+Draven utters the words, 'prismatic spray'.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Oy is caught in a spray of radiant yellow!<br />
+Oy is hit by a spray of gleaming indigo!<br />
+Min is struck by a spray of vibrant green!<br />
+Xellos is caught in a spray of bright orange!<br />
+Arvar is hit by a spray of gleaming indigo!<br />
+Kung is struck by a spray of vibrant green!<br />
+Spongue is hit by a spray of gleaming indigo!<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:V.Good] [Oy:Awful] Mem:2 Exits:ES&gt;<br />
+**Kuuz: fughting<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:V.Good] [Oy:Awful] Mem:2 Exits:ES&gt;<br />
+Oy stops using a thick, bloodstained chain.<br />
+Oy grabs a glowing scroll of recall.<br />
+Oy recites a glowing scroll of recall.<br />
+Oy disappears.<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Moona utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Moona conjures a writhing mass of inky black tentacles!<br />
+Min screams in pain as inky black tentacles constrict her.<br />
+Xellos screams in pain as inky black tentacles constrict him.<br />
+Arvar screams in pain as inky black tentacles constrict him.<br />
+Kung screams in pain as inky black tentacles constrict him.<br />
+Spongue screams in pain as inky black tentacles constrict her.<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Kung is strangled to death by the writhing black tentacles.<br />
+Kung is dead! R.I.P.<br />
+Arvar screams in pain as inky black tentacles constrict him.<br />
+Xellos screams in pain as inky black tentacles constrict him.<br />
+Spongue misses Moona with her slash.<br />
+Spongue slashes Moona extremely hard.<br />
+Spongue is burned, as she swings at Moona.<br />
+Min misses Moona with her hit.<br />
+The death cry of Kung echoes from somewhere nearby...<br />
+Kung sinks gently to the ground.<br />
+The death cry of Trilleq echoes from somewhere nearby...<br />
+Min utters some strange words.<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt; c 'prism'<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Min is caught in a spray of bright orange!<br />
+A spray of orange dissolves Xellos into a pool of ochreous slime.<br />
+You receive 0 experience.<br />
+Xellos is dead! R.I.P.<br />
+Arvar is struck by a spray of murky violet!<br />
+Spongue is caught in a spray of radiant yellow!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+The death cry of Xellos echoes from somewhere nearby...<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:2 Exits:ES&gt; Arvar screams in pain as inky black<br />
+tentacles constrict him.<br />
+Elyana drains Min hard.<br />
+Elyana drains Min very hard.<br />
+Moona misses Min with her pierce.<br />
+Spongue slashes Moona extremely hard.<br />
+Spongue is burned, as she swings at Moona.<br />
+Spongue slashes Moona very hard.<br />
+Spongue is burned, as she swings at Moona.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Min with a spray of murky violet!<br />
+You catch Arvar in a spray of shimmering red!<br />
+You strike Arvar with a spray of murky violet!<br />
+You catch Spongue in a spray of radiant yellow!<br />
+Moona gets a sturdy black iron mace from the corpse of Xellos.<br />
+Moona gets a honed dwarven battleaxe from the corpse of Xellos.<br />
+Moona is zapped by a bloodstained steel band and instantly drops it.<br />
+Moona gets a spiked ice bracelet from the corpse of Xellos.<br />
+Moona gets a girdle of storm giant strength from the corpse of Xellos.<br />
+Moona gets a dwarven backpack from the corpse of Xellos.<br />
+Moona gets a pair of the weaponsmaster's gloves from the corpse of Xellos.<br />
+Moona gets some rugged bandit's boots from the corpse of Xellos.<br />
+Moona gets pearl and onyx greaves from the corpse of Xellos.<br />
+Moona gets a skull mask from the corpse of Xellos.<br />
+Moona is zapped by the plate of the black lily and instantly drops it.<br />
+Moona gets a sapphire inlaid choker from the corpse of Xellos.<br />
+Moona gets a steel neckchain from the corpse of Xellos.<br />
+Moona is zapped by a loop of darkness and instantly drops it.<br />
+Moona gets a tarnished iron ring of the watch from the corpse of Xellos.<br />
+Moona gets a very large pile of coins from the corpse of Xellos.<br />
+Moona gets a heavy spiked shield from the corpse of Xellos.<br />
+Moona gets a glowing scroll of recall from the corpse of Xellos.<br />
+Moona gets a large waterskin from the corpse of Xellos.<br />
+Spongue stands up.<br />
+Draven utters the words, 'prismatic spray'.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Draven slowly fades into existence.<br />
+Min is blasted by a spray of scintillating blue!<br />
+Arvar is hit by a spray of gleaming indigo!<br />
+Spongue is blasted by a spray of scintillating blue!<br />
+Spongue freezes in place.<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Moona:Good] [Min:Awful] Mem:3 Exits:ES&gt;<br />
+Min sinks gently to the ground.<br />
+Min stops using an onyx sceptre with a pearl handle.<br />
+Min grabs a glowing scroll of recall.<br />
+Min recites a glowing scroll of recall.<br />
+Min disappears.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Moona utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Moona conjures a writhing mass of inky black tentacles!<br />
+Arvar screams in pain as inky black tentacles constrict him.<br />
+Spongue screams in pain as inky black tentacles constrict her.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt; c 'prism'<br />
+Kemian flies in from the east.<br />
+Darva flies in from the east.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Elyana gets a large waterskin from the corpse of Xellos.<br />
+Elyana gets a large waterskin from the corpse of Xellos.<br />
+Elyana gets an entire loaf of bread from the corpse of Xellos.<br />
+Elyana gets an entire loaf of bread from the corpse of Xellos.<br />
+Elyana gets an entire loaf of bread from the corpse of Xellos.<br />
+Elyana gets a cup from the corpse of Xellos.<br />
+Elyana gets a cup from the corpse of Xellos.<br />
+Elyana gets a large first-aid kit from the corpse of Xellos.<br />
+Elyana gets a large first-aid kit from the corpse of Xellos.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Arvar attempts to break free of the black tentacles, but fails!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+Darva is struck by a spray of vibrant green!<br />
+Kemian is hit by a spray of gleaming indigo!<br />
+A spray of violet strikes Arvar, melting him into a lifeless paste.<br />
+You receive 0 experience.<br />
+Arvar is dead! R.I.P.<br />
+Spongue is blasted by a spray of scintillating blue!<br />
+Spongue is struck by a spray of murky violet!<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+The death cry of Arvar echoes from somewhere nearby...<br />
+Arvar stops following Kemian.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Spongue screams in pain as inky black tentacles constrict her.<br />
+Elyana drains Darva very hard.<br />
+Elyana misses Darva with her drain.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You blast Darva with a spray of scintillating blue!<br />
+You hit Kemian with a spray of gleaming indigo!<br />
+You engulf Spongue with a spray of blue and she convulses and dies.<br />
+You receive 0 experience.<br />
+Spongue is dead! R.I.P.<br />
+Draven utters the words, 'prismatic spray'.<br />
+Draven's hands issue a spray of prismatic color!<br />
+Draven slowly fades into existence.<br />
+Darva is caught in a spray of shimmering red!<br />
+Kemian is caught in a spray of radiant yellow!<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Elyana:Perfect] [Darva:Awful] Mem:3 Exits:ES&gt;<br />
+The death cry of Spongue echoes from somewhere nearby...<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Elyana:Perfect] [Darva:Awful] Mem:3 Exits:ES&gt;<br />
+**Mytto: go team gogo<br />
+<br />
+380H 104V 1X 12371C [Me:Perfect] [Elyana:Perfect] [Darva:Awful] Mem:3 Exits:ES&gt;<br />
+Darva grabs a glowing scroll of recall.<br />
+Darva recites a glowing scroll of recall.<br />
+Darva disappears.<br />
+<br />
+380H 104V 1X 12371C Mem:3 Exits:ES&gt;<br />
+Moona divides 1032 coins equally among the group members present.<br />
+<br />
+380H 104V 1X 12629C Mem:3 Exits:ES&gt;<br />
+Moona gets a large pile of coins from the corpse of Spongue.<br />
+<br />
+380H 104V 1X 12629C Mem:3 Exits:ES&gt;<br />
+Kemian panics, and attempts to flee.<br />
+Kemian flies south.<br />
+<br />
+380H 104V 1X 12629C Mem:3 Exits:ES&gt;<br />
+Moona utters the words, 'warzzarunsoh hunsohaqrzg'.<br />
+Moona conjures a writhing mass of inky black tentacles!<br />
+<br />
+380H 104V 1X 12629C Mem:3 Exits:ES&gt; c 'prism'You utter the words, 'prismatic<br />
+spray'<br />
+Your hands issue a spray of prismatic color!<br />
+<br />
+380H 104V 1X 12629C Mem:4 Exits:ES&gt;<br />
+**Sann: gogogog<br />
+<br />
+380H 104V 1X 12629C Mem:4 Exits:ES&gt; gt rofl<br />
+Moona divides 276 coins equally among the group members present.<br />
+<br />
+380H 104V 1X 12698C Mem:4 Exits:ES&gt;<br />
+Moona flies south.<br />
+You follow Moona south.<br />
+Elyana flies in from the north.<br />
+Draven flies in from the north.<br />
+Tower of the Suns<br />
+Draven the Male Human is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here.<br />
+(flying) (invisible) (red aura)<br />
+. . . is enveloped in flames.<br />
+Moona the Female Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A stalwart guard stands here at attention.<br />
+<br />
+380H 103V 1X 12698C Mem:5 Exits:NES&gt;<br />
+Elyana utters the words, 'prismatic spray'.<br />
+Elyana's hands issue a spray of prismatic color!<br />
+A royal guard is caught in a spray of shimmering red!<br />
+<br />
+380H 103V 1X 12698C Mem:5 Exits:NES&gt;<br />
+**Moona: KILL KEMIAN<br />
+<br />
+380H 103V 1X 12698C Mem:5 Exits:NES&gt; c 'hold per' kemian<br />
+Elyana misses a royal guard with her drain.<br />
+Elyana drains a royal guard extremely hard.<br />
+A royal guard hits Elyana extremely hard.<br />
+A royal guard is burned, as he swings at Elyana.<br />
+<br />
+380H 103V 1X 12698C Mem:5 Exits:NES&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch a royal guard in a spray of bright orange!<br />
+<br />
+380H 103V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; 'kemian<br />
+Moona flies north.<br />
+Draven flies north.<br />
+<br />
+380H 103V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt;<br />
+You miss a royal guard with your pierce.<br />
+Elyana misses a royal guard with her drain.<br />
+A royal guard misses Elyana and destroys an image instead.<br />
+You feel yourself exposed.<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; fl<br />
+A royal guard utters the words, 'blur'.<br />
+A royal guard begins to become blurry and hard to see.<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; flTower of the Suns<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here,<br />
+fighting a royal guard. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+A royal guard is standing here, fighting Elyana.<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; You tell your group 'rofl'<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; Who should the spell be cast upon?<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; You say 'kemian'<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; You are already standing.<br />
+<br />
+380H 121V 1X 12698C [Me:Perfect] [Elyana:V.Good] [a royal guard:Good] Mem:6<br />
+Exits:NES&gt; flYou flee head over heels.<br />
+Tower of the Suns<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt; scanYou're not fighting, why bother<br />
+fleeing?<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt; Looking north:<br />
+You see nothing special.<br />
+A stalwart guard stands here at attention.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+A stalwart guard stands here at attention.<br />
+Looking west:<br />
+You see nothing special.<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here,<br />
+fighting a royal guard. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+A royal guard is standing here, fighting Elyana.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+**Moona: LOOT NOW<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt;<br />
+**Moona: LOOT NOW<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt;<br />
+**Moona: LOOT NOW<br />
+<br />
+380H 120V 1X 12698C Mem:6 Exits:NESW&gt; wTower of the Suns<br />
+Elyana Lipetskaya, the Black Standard of the Blood Gangs is standing here,<br />
+fighting a royal guard. (flying) (red aura)<br />
+. . . is enveloped in flames.<br />
+A royal guard is standing here, fighting Elyana.<br />
+Elyana steps aside as a royal guard attempts a bash, stumbles, and falls flat on<br />
+his face.<br />
+<br />
+380H 119V 1X 12698C Mem:6 Exits:NES&gt; scanLooking north:<br />
+You see nothing special.<br />
+Draven the Male Human is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Moona the Female Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+380H 119V 1X 12698C Mem:6 Exits:NES&gt; nTower of the Suns<br />
+The corpse of Spongue is lying here.<br />
+The corpse of Arvar is lying here.<br />
+A small circle of blackness pulsates in the light...it glows dimly<br />
+A dark breastplate embossed with a lily lies here...it glows dimly<br />
+A steel wristband stained with blood lies here.<br />
+The corpse of Xellos is lying here.<br />
+The corpse of Trilleq is lying here.<br />
+The corpse of Kung is lying here.<br />
+Draven the Male Human is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Moona the Female Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+<br />
+380H 118V 1X 12698C Mem:4 Exits:ES&gt;<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='629'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=629">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="629">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

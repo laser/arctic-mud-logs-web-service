@@ -1,0 +1,586 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1656-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1656'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Rgb randomed another peaceful bsp zoner.</font></b>
+<p>
+POV: 
+Shargish<p>
+Log Rating:
+0.4285<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+619H 122V 1X 1090C Exits:NESW&gt; <br />
+<br />
+Tuco flies west.<br />
+Clamp flies west.<br />
+Kholod flies west.<br />
+Ashka flies west.<br />
+Bain flies west.<br />
+You follow Fu west.<br />
+Cromat flies in from the east.<br />
+The Temple of Kalaman<br />
+     The inside of the temple is nothing less than magnificent. The<br />
+integrity and craftsmanship of the temple is one of the finest you have<br />
+seen. The walls and columns are made of smooth white marble, giving the<br />
+place a clean and pure feel. As you look around, you see the altar just to<br />
+the north, and there is also a small reading room to the west.<br />
+Cromat the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+Bain, The Oppressed is standing here. (flying)<br />
+Ashka the Female Minotaur is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Kholod, RGB Harm is standing here. (flying) (invisible)<br />
+Clamp the Male Hill Dwarf is standing here. (flying)<br />
+Fu the Female Kender is standing here. (flying)<br />
+Tuco the Male Human is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Mastiff the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+Morra the Male Half Elf is standing here, fighting a Kalaman cityguard.<br />
+A Kalaman cityguard is standing here, fighting Morra.<br />
+A Kalaman cityguard delivers a quick snap kick to Morra. Morra staggers and tries to recover.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+Fu charges at Morra, but he managed to move away.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+Bain suddenly lunges forward, slamming his skull into Morra's face with a sickening crunch.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+<br />
+Morra delivers a vicious kick to a Kalaman cityguard's face. Blood flies as his head snaps back.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+<br />
+Kholod focuses harshly on Morra and utters some strange words.<br />
+Kholod slowly fades into existence.<br />
+Morra cries out in pain as Kholod grabs him.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+bash morra<br />
+Tuco looks at Morra.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+You crash into Morra in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Fair] Exits:NEW&gt; <br />
+<br />
+Ashka focuses harshly on Morra and utters some strange words.<br />
+Morra freezes in place.<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Fair] Exits:NEW&gt; <br />
+Cromat slowly fades into existence.<br />
+Cromat crashes into Morra in a thundering collision, knocking him to the ground!<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Fair] Exits:NEW&gt; <br />
+<br />
+Tuco flies east.<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Fair] Exits:NEW&gt; <br />
+<br />
+Cromat massacres Morra with his cleave.<br />
+You massacre Morra with your cleave.<br />
+Bain annihilates Morra with his stab.<br />
+Bain cleaves Morra extremely hard.<br />
+Fu massacres Morra with her crush.<br />
+Fu cleaves Morra extremely hard.<br />
+A Kalaman cityguard massacres Morra with his slash.<br />
+A Kalaman cityguard massacres Morra with his slash.<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Awful] Exits:NEW&gt; <br />
+<br />
+Tuco tells your group 'NAKED'<br />
+<br />
+619H 121V 1X 1090C [a Kalaman cityguard:Good] [Morra:Awful] Exits:NEW&gt; <br />
+<br />
+Kholod focuses harshly on Morra and utters some strange words.<br />
+Morra collapses and dies as Kholod grabs him.<br />
+You receive 0 experience.<br />
+Morra is dead! R.I.P.<br />
+<br />
+619H 121V 1X 1090C [Morra:Dying] Exits:NEW&gt; <br />
+<br />
+The death cry of Morra echoes from somewhere nearby...<br />
+Mastiff stops following Morra.<br />
+Morra now follows Mastiff.<br />
+Mastiff is the new leader of Morra's group.<br />
+Morra stops following Mastiff.<br />
+A horse stops following Morra.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+<br />
+Ashka gets a very large pile of coins from the corpse of Morra.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+<br />
+Tuco flies in from the east.<br />
+<br />
+619H 121V 1X 1090C Exits:NEW&gt; <br />
+<br />
+Ashka divides 1152 coins equally among the group members present.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Mastiff flies north.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Ashka gets a bloody minotaur hand axe from the corpse of Morra.<br />
+Ashka gets a large pole axe from the corpse of Morra.<br />
+Ashka gets a thick dwarven bracelet from the corpse of Morra.<br />
+Ashka gets a braided silver bracelet from the corpse of Morra.<br />
+Ashka gets a ceremonial scabbard from the corpse of Morra.<br />
+Ashka gets a black guardian robe from the corpse of Morra.<br />
+Ashka gets a pair of dwarven greaves from the corpse of Morra.<br />
+Ashka gets a brick of cheese from the corpse of Morra.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Fu gets a pair of dwarven arm plates from the corpse of Morra.<br />
+Fu gets a pair of copper boots from the corpse of Morra.<br />
+Fu gets a granite armour from the corpse of Morra.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Bain gets a shiny dwarven ring from the corpse of Morra.<br />
+Bain gets a shiny dwarven ring from the corpse of Morra.<br />
+Bain gets a glowing scroll of recall from the corpse of Morra.<br />
+Bain gets a glowing scroll of recall from the corpse of Morra.<br />
+Bain gets a glowing scroll of recall from the corpse of Morra.<br />
+Bain gets a dark shield from the corpse of Morra.<br />
+Bain gets a thin steel scimitar from the corpse of Morra.<br />
+Bain gets a glowing scroll of recall from the corpse of Morra.<br />
+Bain gets a milky potion of see invisible from the corpse of Morra.<br />
+Bain gets a milky potion of see invisible from the corpse of Morra.<br />
+Bain gets a milky potion of see invisible from the corpse of Morra.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Cromat gets some pixie dust from the corpse of Morra.<br />
+Cromat gets some pixie dust from the corpse of Morra.<br />
+Cromat gets some pixie dust from the corpse of Morra.<br />
+Cromat gets a small first-aid kit from the corpse of Morra.<br />
+Cromat gets a dwarven pike from the corpse of Morra.<br />
+Cromat gets a potion of bat's blood from the corpse of Morra.<br />
+Cromat gets a heavy bearskin cloak from the corpse of Morra.<br />
+Cromat gets a potion of bat's blood from the corpse of Morra.<br />
+Cromat gets a runed bracelet from the corpse of Morra.<br />
+Cromat gets a chain flail from the corpse of Morra.<br />
+Cromat gets an oaken quarterstaff from the corpse of Morra.<br />
+Cromat gets a snow leopard pelt from the corpse of Morra.<br />
+Cromat gets a pair of finely decorated armbands from the corpse of Morra.<br />
+Cromat gets a flimsy gray wand from the corpse of Morra.<br />
+Cromat gets a flimsy gray wand from the corpse of Morra.<br />
+<br />
+619H 121V 1X 1234C Exits:NEW&gt; <br />
+<br />
+Tuco tells your group 'very lame'<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1656'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1656">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1656">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

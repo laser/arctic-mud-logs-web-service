@@ -1,0 +1,836 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 875-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='875'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+some wild mages diediediediedie</font></b>
+<p>
+POV: 
+Hiol<p>
+Log Rating:
+-0.3929<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+bsp trashmage crew shows its power</i>
+<p>
+<p>
+
+<br />
+271H 133V 19757328X 131C Exits:NS&gt; c 'relo' torenth<br />
+Scelesta stands up.<br />
+<br />
+271H 133V 19757328X 131C Exits:NS&gt; You utter the words, 'relocate'<br />
+A Quiet Study<br />
+An orrery is mounted on a stand here.<br />
+Master mage, Torenth Losseim, sits at a table perusing a spellbook.<br />
+<br />
+271H 133V 19757328X 131C Mem:2 Exits:N&gt; gt trying torenthYou tell your group 'trying torenth'<br />
+<br />
+271H 133V 19757328X 131C Mem:2 Exits:N&gt; nA Secret Magic Shop<br />
+An attractive looking woman cloaked in white satin robes sits at a desk.<br />
+<br />
+271H 132V 19757328X 131C Mem:3 Exits:ES&gt; ope wallIt's already open!<br />
+<br />
+271H 132V 19757328X 131C Mem:3 Exits:ES&gt; eAzeth the herbalist tells you 'Welcome to my shop, we have all varieties of<br />
+herbs and spices and plants.'<br />
+The Herbalist's Shop<br />
+Azeth stands here, tending to a row of plants against the wall.<br />
+Azeth lights a stick of incense when you enter his shop.<br />
+<br />
+271H 131V 19757328X 131C Mem:3 Exits:NW&gt; nThe Avenue of the Triumvirate<br />
+A cityguard wanders through the town, keeping the peace.<br />
+A pigeon walks about pecking the ground and running from your feet.<br />
+A pigeon walks about pecking the ground and running from your feet.<br />
+<br />
+271H 130V 19757328X 131C Mem:3 Exits:ESW&gt; esSouthern Avenue and The Avenue of the Triumvirate<br />
+A cityguard wanders through the town, keeping the peace.<br />
+<br />
+271H 129V 19757328X 131C Mem:3 Exits:NESW&gt; sSouthern Avenue<br />
+A pigeon walks about pecking the ground and running from your feet.<br />
+<br />
+271H 128V 19757328X 131C Mem:3 Exits:NS&gt; sSouthern Avenue and Southern Perimeter Road<br />
+A steel falchion with a sharp blade lies here discarded.<br />
+A pigeon walks about pecking the ground and running from your feet.<br />
+<br />
+271H 127V 19757328X 131C Mem:3 Exits:NESW&gt; scanInside the Gates<br />
+<br />
+271H 126V 19757328X 131C Mem:3 Exits:NS&gt; Looking north:<br />
+The cobblestone road leads north into the town of Vingaard.<br />
+A pigeon walks about pecking the ground and running from your feet.<br />
+Looking east:<br />
+A few torches are on the stone wall.<br />
+Looking south:<br />
+A dirt road leads south into the rich farm lands around Vingaard.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+Looking west:<br />
+A few torches are on the stone wall.<br />
+Looking up:<br />
+Smoke from the various chimney's of homeowners can be seen overhead.<br />
+Looking down:<br />
+The cobblestones beneath your feet are well worn from traffic.<br />
+<br />
+271H 126V 19757328X 131C Mem:3 Exits:NS&gt; sBefore the South Gates of Vingaard<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+<br />
+271H 125V 19757328X 131C Mem:3 Exits:NS&gt; scan<br />
+You sense Thrall using you for a magical anchor.<br />
+Thrall appears before you in a puff of smoke.<br />
+<br />
+271H 125V 19757328X 131C Mem:3 Exits:NS&gt; Looking north:<br />
+The road leads through a tunnel carved into the massive walls of Vingaard.<br />
+Looking east:<br />
+Vingaard's walls run off to the east for quite a ways before turning.<br />
+Looking south:<br />
+A small tollhouse lies on the road.<br />
+Looking west:<br />
+Vingaard's walls run off to the west and turn beyond your vision.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+271H 125V 19757328X 131C Mem:3 Exits:NS&gt; sThe Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+<br />
+271H 124V 19757328X 131C Mem:3 Exits:NESWU&gt; scanLooking north:<br />
+The road leads to the south gates of the mighty city of Vingaard.<br />
+You see the outline of a life form here, carrying: an alligator scale necklace; a crimson cloak inlaid with threads of marble; a crimson cloak inlaid with threads of marble.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+Looking east:<br />
+The paved road leads easterly through the Solamnic plains toward Kalaman.<br />
+Mookster the Warmonger is standing here. (flying)<br />
+Looking south:<br />
+The road leads south through the plains of Solamnia.<br />
+Looking west:<br />
+The road becomes paved and leads west through the solamnic plains.<br />
+Looking up:<br />
+A small staircase along the wall leads up to a small hatch in the ceiling.<br />
+The hatch is open.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+271H 124V 19757328X 131C Mem:3 Exits:NESWU&gt; nBefore the South Gates of Vingaard<br />
+You see the outline of a life form here, carrying: an alligator scale necklace; a crimson cloak inlaid with threads of marble; a crimson cloak inlaid with threads of marble.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+An adventurer wanders about Vingaard, looking for excitement.<br />
+<br />
+271H 123V 19757328X 131C Mem:3 Exits:NS&gt; <br />
+Thrall flies south.<br />
+<br />
+271H 123V 19757328X 131C Mem:3 Exits:NS&gt; gt e of tollYou tell your group 'e of toll'<br />
+<br />
+271H 123V 19757328X 131C Mem:3 Exits:NS&gt; sThe Tollhouse<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Thrall the Bloody Known Seal is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+271H 122V 19757328X 131C Mem:3 Exits:NESWU&gt; e<br />
+Thrall flies north.<br />
+<br />
+271H 122V 19757328X 131C Mem:3 Exits:NESWU&gt; Near a Tollhouse<br />
+<br />
+271H 121V 19757328X 131C Mem:3 Exits:NW&gt; nWest Bank of the Vingaard<br />
+<br />
+271H 120V 19757328X 131C Mem:3 Exits:NS&gt; nBefore the Eastern Gates of Vingaard<br />
+<br />
+271H 119V 19757328X 131C Mem:3 Exits:ESW&gt; eWest Bank of the Vingaard<br />
+Mookster the Warmonger is standing here. (flying)<br />
+c 'h p' mookster<br />
+271H 117V 19757328X 131C Mem:3 Exits:NEW&gt; eeYou utter the words, 'hold person'<br />
+Mookster freezes in place.<br />
+<br />
+271H 117V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Scelesta tells your group 'what's e of toll'<br />
+<br />
+271H 117V 19757328X 131C Mem:4 Exits:NEW&gt; gt mookster heldWest Bank of the Vingaard<br />
+<br />
+271H 115V 19757328X 131C Mem:4 Exits:EW&gt; The Ferry Landing<br />
+One of the ferry owners stands here, ready to take you across the river.<br />
+<br />
+271H 113V 19757328X 131C Mem:4 Exits:EW&gt; You tell your group 'mookster held'<br />
+<br />
+271H 113V 19757328X 131C Mem:4 Exits:EW&gt; wWest Bank of the Vingaard<br />
+<br />
+271H 111V 19757328X 131C Mem:4 Exits:EW&gt; wWest Bank of the Vingaard<br />
+Mookster the Warmonger is standing here. (flying)<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; gt popYou tell your group 'pop'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Scelesta tells your group 'tic'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; scanLooking north:<br />
+A dirt road leads off towards some fields of grain.<br />
+Looking east:<br />
+The highway stretches through the Solamnic plains.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+The highway heads towards the eastern gates of Vingaard.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Scelesta tells your group 'no relos'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; lookWest Bank of the Vingaard<br />
+Mookster the Warmonger is standing here. (flying)<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Yams tells your group 'tick'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+You sense Thrall using you for a magical anchor.<br />
+Thrall appears before you in a puff of smoke.<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; meSpells currently memorized:<br />
+1: [ 1]detect magic         [ 6]magic missile       <br />
+2: [ 1]continual light      [ 1]detect invisibility  [ 3]silence             <br />
+   [ 2]strength            <br />
+3: [ 3]color spray          [ 1]dispel magic         [ 1]fly                 <br />
+   [ 1]water breath         [ 1]web                 <br />
+4: [ 2]acid blast           [ 1]free action          [ 1]hold person         <br />
+   [ 1]improved invisibilit [ 1]teleport            <br />
+5: [ 1]dimension door       [ 5]force bolt          <br />
+6: [ 1]feeblemind           [ 2]fireshield           [ 2]relocate            <br />
+7: [ 1]confusion            [ 2]conjure elemental    [ 1]glitterdust         <br />
+   [ 1]mass invisibility   <br />
+8: [ 3]cloud kill           [ 1]detect scry         <br />
+9: [ 2]energy drain        <br />
+<br />
+Spells being memorized:<br />
+4: [ 1]hold person         <br />
+6: [ 1]relocate            <br />
+<br />
+You estimate your studies will complete in 4 (game) hours.<br />
+<br />
+Spells left (level-number): 1-0 2-0 3-0 4-0 5-0 6-0 7-0 8-0 9-0<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Yams tells your group 'keep him for a tick'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; <br />
+Thrall has lost his link.<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; c 'conj el'<br />
+Scelesta tells your group 'don't kill yet!'<br />
+<br />
+271H 109V 19757328X 131C Mem:4 Exits:NEW&gt; You utter the words, 'conjure elemental'<br />
+You gesture, and a cloud of smoke appears!<br />
+Out of the smoke, a pech emerges.<br />
+A pech starts following you.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; <br />
+Thrall has reconnected.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; <br />
+Hocus appears before Mookster in a puff of smoke.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; c 'web' hocus<br />
+Ghorgor flies in from the west.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; You utter the words, 'web'<br />
+Your webbing narrowly misses him.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; <br />
+Ghorgor slowly fades into existence.<br />
+Ghorgor crashes into Mookster in a thundering collision, knocking him to the ground!<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; <br />
+Ghorgor crushes Mookster very hard.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; <br />
+Thrall misses Hocus with his pierce.<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; 'flee'fleeYou say 'flee'<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; 'fleeYou say 'flee'<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; Thrall pierces Hocus extremely hard.<br />
+Thrall is burned, as he swings at Hocus.<br />
+Hocus misses Thrall and destroys an image instead.<br />
+Ghorgor crushes Mookster extremely hard.<br />
+You say 'flee'<br />
+<br />
+271H 109V 19757328X 131C Mem:5 Exits:NEW&gt; c 'force bolt' hocusYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hocus.<br />
+<br />
+271H 109V 19757328X 131C Mem:7 Exits:NEW&gt; c 'force bolt' hocus<br />
+Thrall focuses harshly on Hocus and utters the words, 'web'.<br />
+Thrall shoots webs at Hocus but narrowly misses him!<br />
+<br />
+271H 109V 19757328X 131C Mem:7 Exits:NEW&gt; <br />
+Hocus misses Thrall and destroys an image instead.<br />
+Ghorgor crushes Mookster extremely hard.<br />
+<br />
+271H 109V 19757328X 131C Mem:7 Exits:NEW&gt; <br />
+Ghorgor panics, and attempts to flee.<br />
+Ghorgor flies north.<br />
+<br />
+271H 109V 19757328X 131C Mem:7 Exits:NEW&gt; c 'force bolt' hocusYou utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Hocus.<br />
+<br />
+271H 109V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+Hocus stops using a brass dragonscale battle orb.<br />
+Hocus grabs a glowing scroll of recall.<br />
+Hocus recites a glowing scroll of recall.<br />
+Mookster disappears.<br />
+<br />
+271H 109V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+Thrall focuses harshly on Hocus and utters the words, 'magic missile'.<br />
+Thrall aims a magic missile at Hocus, who staggers under the blow.<br />
+Thrall aims a magic missile at Hocus, who staggers under the blow.<br />
+Thrall aims a magic missile at Hocus, who staggers under the blow.<br />
+Thrall aims a magic missile at Hocus, who staggers under the blow.<br />
+Thrall aims a magic missile at Hocus, who staggers under the blow.<br />
+<br />
+271H 109V 19757328X 131C Mem:8 Exits:NEW&gt; c 'force bolt' hocus<br />
+Hocus misses Thrall with his bludgeon.<br />
+<br />
+271H 109V 19757328X 131C Mem:8 Exits:NEW&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Hocus's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Hocus is dead! R.I.P.<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; <br />
+The death cry of Hocus echoes from somewhere nearby...<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; g all corpse<br />
+Thrall gets a very large pile of coins from the corpse of Hocus.<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; <br />
+Zim tells your group 'killing it?'<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; gt shit<br />
+Thrall tells your group 'fark!'<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; <br />
+Thrall begins resting but stays aloft.<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; Who should the spell be cast upon?<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; You get an ornately carved staff from the corpse of Hocus.<br />
+You get a beaver pelt belt from the corpse of Hocus.<br />
+You get a soft and tattered brown cloak from the corpse of Hocus.<br />
+You get some lightly scorched bark bracers from the corpse of Hocus.<br />
+You get a pair of work gloves from the corpse of Hocus.<br />
+You get a thick woolen kilt from the corpse of Hocus.<br />
+You get a pair of snail shell earrings from the corpse of Hocus.<br />
+You get a soft and tattered brown cloak from the corpse of Hocus.<br />
+You get a small stone symbol from the corpse of Hocus.<br />
+You get a small ring of energy from the corpse of Hocus.<br />
+You get a small quartz ring from the corpse of Hocus.<br />
+You get a brass dragonscale battle orb from the corpse of Hocus.<br />
+You get a pork pie from the corpse of Hocus.<br />
+You get a pork pie from the corpse of Hocus.<br />
+You get a pork pie from the corpse of Hocus.<br />
+You get an iron ration from the corpse of Hocus.<br />
+You get a glowing scroll of recall from the corpse of Hocus.<br />
+You get a small wooden chest from the corpse of Hocus.<br />
+You get a large waterskin from the corpse of Hocus.<br />
+Waterskin : You can't carry that much weight.<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; You tell your group 'shit'<br />
+<br />
+271H 109V 19757328X 131C Mem:9 Exits:NEW&gt; <br />
+Scelesta tells your group 'what'<br />
+<br />
+271H 133V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+Thrall tells your group 'haha'<br />
+<br />
+271H 133V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+Zim tells your group 'we told you to wait'<br />
+<br />
+271H 133V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+You sense Scelesta using you for a magical anchor.<br />
+Scelesta appears before you in a puff of smoke.<br />
+Thrall stands up.<br />
+<br />
+271H 133V 19757328X 131C Mem:8 Exits:NEW&gt; gt laf at least hocus diedYou tell your group 'laf at least hocus died'<br />
+<br />
+271H 133V 19757328X 131C Mem:8 Exits:NEW&gt; <br />
+Scelesta says 'MAGE BRIGADE, HO!'<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+271H 133V 19757328X 1131C Mem:2 Exits:E&gt; c 'relo' ScelestaPublic Meeting Room<br />
+Thrall the Bloody Known Seal is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+271H 132V 19757328X 1131C Mem:2 Exits:NESW&gt; You utter the words, 'relocate'<br />
+Guild Road<br />
+A young kender stands here, looking about curiously.<br />
+Scelesta Citrus, Enraged Lemon Buster of the Solace Sewers is standing here, fighting Rastan. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Ghorgor Bey, Kin of the Blood is standing here, fighting Rastan. (flying)<br />
+. . . has a tough exterior.<br />
+Rastan Wyvernsmane, White Warlock of Ansalon is sitting here, fighting Ghorgor. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+You see the outline of a life form here, carrying: a crystal pendant.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Scelesta annihilates Rastan with her bludgeon.<br />
+Ghorgor crushes Rastan extremely hard.<br />
+Rastan misses Ghorgor with his hit.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Thrall appears before Scelesta in a puff of smoke.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Scelesta focuses harshly on Rastan and utters the words, 'web'.<br />
+Scelesta shoots webs at Rastan but narrowly misses him!<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Yams tells your group 'where'<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Rastan steps aside as Ghorgor attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Zim focuses harshly on Rastan and utters the words, 'lightning bolt'.<br />
+Rastan receives the full blast of a lightning bolt from Zim ... and is no more.<br />
+You receive 0 experience.<br />
+Rastan is dead! R.I.P.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+The death cry of Rastan echoes from somewhere nearby...<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Yams tells your group 'bah im naked'<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; smiYou smile warmly.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Thrall gets a large pile of coins from the corpse of Rastan.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; <br />
+Scelesta gets a thin golden dragonscale cloak from the corpse of Rastan.<br />
+Scelesta gets a scroll of recall from the corpse of Rastan.<br />
+Scelesta gets a scroll of recall from the corpse of Rastan.<br />
+Scelesta gets a milky potion of see invisible from the corpse of Rastan.<br />
+Scelesta gets a milky potion of see invisible from the corpse of Rastan.<br />
+Scelesta gets a leg of lamb from the corpse of Rastan.<br />
+Scelesta gets a leg of lamb from the corpse of Rastan.<br />
+Scelesta gets a leg of lamb from the corpse of Rastan.<br />
+Scelesta gets a leg of lamb from the corpse of Rastan.<br />
+Scelesta gets thin golden dragonscale armplates from the corpse of Rastan.<br />
+Scelesta gets thin golden dragonscale boots from the corpse of Rastan.<br />
+Scelesta gets an entire loaf of bread from the corpse of Rastan.<br />
+<br />
+271H 132V 19757328X 1131C Mem:3 Exits:NESW&gt; exa corpseIt's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='875'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=875">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="875">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

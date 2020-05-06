@@ -1,0 +1,690 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 44-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='44'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wrong target!</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+3.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Two random pkillers found Glorek alone shopping in Kalaman Magic Shop and tries to pick on him. Unknown to them, Glorek is a nobash tank grouped with another 11 Shadows nearby.</i>
+<p>
+<p>
+
+<br />
+336H 102V 11037268X 2903C Mem:1 Exits:N&gt; <br />
+Glorek tells your group 'pkers'<br />
+<br />
+336H 102V 11037268X 2903C Mem:1 Exits:N&gt; <br />
+Glorek tells your group 'come to magic shop'<br />
+<br />
+336H 102V 11037268X 2903C Mem:1 Exits:N&gt; <br />
+Glorek tells your group ':)'<br />
+<br />
+336H 102V 11037268X 2903C Mem:1 Exits:N&gt; <br />
+Glorek tells your group 'come come'<br />
+<br />
+336H 102V 11037268X 2903C Mem:1 Exits:N&gt; stYou stand up.<br />
+<br />
+336H 102V 11037268X 2903C Mem:2 Exits:N&gt; nA Small Clearing in the Park<br />
+     This is an open area in the park. All the small paths converge here in<br />
+front of the entrance to a small shrine. The shrine is dedicated to nature<br />
+and the life it supports. There is a small archway leading into the shrine.<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+dri fountaindri fountainA cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+336H 100V 11037268X 2903C Mem:2 Exits:NESW&gt; Your stomach can't contain anymore!<br />
+<br />
+336H 100V 11037268X 2903C Mem:2 Exits:NESW&gt; wsYour stomach can't contain anymore!<br />
+<br />
+336H 100V 11037268X 2903C Mem:2 Exits:NESW&gt; sVeterans Park<br />
+     The park is green, refreshing and quiet. This is a perfect place to<br />
+get away from the busy and noisy marketplace and come here to relax. You<br />
+look around and see playful chipmunks scurrying about. You can hear birds<br />
+singing. You could stay here and relax for a long time.<br />
+<br />
+336H 98V 11037268X 2903C Mem:3 Exits:NES&gt; ssVeterans Park<br />
+     The park has many healthy trees grown along side the small path you<br />
+are traveling on. It is very quiet and peaceful here, you listen to the<br />
+birds singing instead of the sounds of the marketplace in town.<br />
+<br />
+336H 96V 11037268X 2903C Mem:3 Exits:NS&gt; sVeterans Park<br />
+     The park is green, refreshing and quiet. This is a perfect place to<br />
+get away from the busy and noisy marketplace and come here to relax. You<br />
+look around and see playful chipmunks scurrying about. You can hear birds<br />
+singing. You could stay here and relax for a long time.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+336H 94V 11037268X 2903C Mem:3 Exits:NES&gt; sEntrance to Veterans Park<br />
+     You are at the entrance to Kalaman's park. It was named Veteran's Park<br />
+to commemorate the fallen heroes of Kalaman's past. The park is the place<br />
+where citizens come to take their time off and enjoy the tranquility and<br />
+beauty the park offers. You can head north and enter the park or go south<br />
+towards the temple.<br />
+<br />
+336H 93V 11037268X 2903C Mem:3 Exits:NS&gt; Path of the Holy<br />
+     This is a small north-south path that takes you to the temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The entrance to the temple is just to the west,<br />
+while to the north, you see the entrance to a quiet and peaceful park. You<br />
+can also go a bit south, and reach the busy market street.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+The Lord's personal guard is standing here.<br />
+Lord Calof is here pondering over some political matters.<br />
+<br />
+336H 92V 11037268X 2903C Mem:3 Exits:NSW&gt; ePath of the Holy<br />
+     This is a small north-south path that takes you to the Temple of<br />
+Kalaman. The minute you walk through the city gates, you can see the<br />
+magnificent structure of the temple, an ivory white building standing tall<br />
+and proud in a large city. The temple is just to the northwest, and Market<br />
+Street is to the south.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+s336H 91V 11037268X 2903C Mem:3 Exits:NS&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. A small path<br />
+to the north will take you to the Temple of Kalaman, while to the south you<br />
+see a small building with a sign above the door.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+336H 90V 11037268X 2903C Mem:3 Exits:NESW&gt; Market Street West<br />
+     This is the busy market street, filled with people, shops and stands.<br />
+People from all over Krynn come to this town for trade and other business.<br />
+The town square is not to far to the east through the crowd. Some other<br />
+notable sites are the Temple of Kalaman, which is just to the north of<br />
+Market Street, and Lord Calof's mansion to the south. Directly to the<br />
+south, you see a magic shop of strange and interesting artifacts.<br />
+Hazar, Plague Call is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+336H 89V 11037268X 2903C Mem:3 Exits:NESW&gt; Shop O' Wonder<br />
+     Shelves and cases filled with magical artifacts line the walls and<br />
+fill the room. Scrolls, books, wands, staves, and all sorts of strange and<br />
+magical paraphernalia are for sale here. You can get a whiff of incense in<br />
+the air coming from a small back room behind the counter. A sign is here<br />
+showing a listing of what is for sale.<br />
+Anthon Fireforge, Leader of A Shadow is standing here. (flying)<br />
+Jurthy, Winter Shadow is standing here. (flying) (invisible)<br />
+Andor, Shadow Mastermind is standing here. (flying)<br />
+Reghar Fireforge, Last Dwarf Standing is standing here. (flying)<br />
+Myriel, Angelic Eulogist, Illuminating the Shadows is standing here, fighting Helros. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Padme Amidala is standing here, fighting Helros. (flying)<br />
+Glorek the Male Hylar Dwarf is standing here, fighting Helros. (flying)<br />
+Lezerik, Just Doin' What He Does is standing here, fighting Glorek. (flying)<br />
+. . . is outlined by a pinkish flame.<br />
+Helros the Male Wild Elf is sitting here, fighting Glorek. (flying)<br />
+The old wizard waits impatiently for you to make your purchase.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Andor has lost his link.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Helros stands up.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; opt brief<br />
+Jurthy flies north.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; lBRIEF turned on.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Reghar looks at Helros.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; Shop O' Wonder<br />
+Anthon Fireforge, Leader of A Shadow is standing here. (flying)<br />
+Reghar Fireforge, Last Dwarf Standing is standing here. (flying)<br />
+Myriel, Angelic Eulogist, Illuminating the Shadows is standing here, fighting Helros. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Padme Amidala is standing here, fighting Helros. (flying)<br />
+Glorek the Male Hylar Dwarf is standing here, fighting Helros. (flying)<br />
+Lezerik, Just Doin' What He Does is standing here, fighting Glorek. (flying)<br />
+. . . is outlined by a pinkish flame.<br />
+Helros the Male Wild Elf is standing here, fighting Glorek. (flying)<br />
+The old wizard waits impatiently for you to make your purchase.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Helros stops using a two-handed sword.<br />
+Helros grabs a glowing scroll of recall.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Lezerik unsuccessfully tries to save Helros.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Anthon crashes into Lezerik in a thundering collision, knocking him to the ground!<br />
+Anthon massacres Lezerik with his slash.<br />
+Myriel bludgeons Helros hard.<br />
+Padme massacres Helros with her stab.<br />
+Padme drains Helros extremely hard.<br />
+Lezerik slashes Glorek hard.<br />
+Helros misses Glorek with his hit.<br />
+Glorek misses Helros with his crush.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Glorek crashes into Helros in a thundering collision, knocking him to the ground!<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Padme panics, and attempts to flee.<br />
+Padme flies north.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Myriel says 'heh'<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; n<br />
+Myriel says 'bibi'<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; <br />
+Anthon massacres Lezerik with his slash.<br />
+Myriel massacres Helros with her bludgeon.<br />
+Lezerik slashes Glorek.<br />
+Helros misses Glorek with his hit.<br />
+Helros misses Glorek with his hit.<br />
+Glorek massacres Helros with his crush.<br />
+<br />
+336H 88V 11037268X 2903C Mem:3 Exits:N&gt; Market Street West<br />
+Padme Amidala is standing here. (flying)<br />
+Jurthy, Winter Shadow is standing here. (flying) (invisible)<br />
+You sense a life form.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Leafdancer arrives from the north.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Leafdancer leaves south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; weatherThunder sounds as a streak of blue lightning arches to the ground.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Padme flies south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Jurthy flies south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' helrosWho should the spell be cast upon?<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' helrosWho should the spell be cast upon?<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; l s<br />
+Jurthy flies in from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; You see nothing special.<br />
+Padme Amidala is standing here, fighting Lezerik. (flying)<br />
+Leafdancer the Male Half Elf is standing here.<br />
+Anthon Fireforge, Leader of A Shadow is sitting here, fighting Lezerik. (flying)<br />
+Reghar Fireforge, Last Dwarf Standing is standing here. (flying)<br />
+Myriel, Angelic Eulogist, Illuminating the Shadows is standing here, fighting Lezerik. (flying)<br />
+. . . has a metallic luster.<br />
+Glorek the Male Hylar Dwarf is standing here, fighting Lezerik. (flying)<br />
+Lezerik, Just Doin' What He Does is sitting here, fighting Glorek. (flying)<br />
+. . . is outlined by a pinkish flame.<br />
+The old wizard waits impatiently for you to make your purchase.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Jurthy flies west.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Leafdancer arrives from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' lezerikWho should the spell be cast upon?<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; <br />
+Leafdancer leaves west.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' lezerikWho should the spell be cast upon?<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' lezerik<br />
+Lezerik flies in from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:3 Exits:NESW&gt; cast 'call lightning' lezerikYou utter the words, 'call lightning'<br />
+You feel your bond with nature fade away as combat begins.<br />
+Your lightning bolt kills Lezerik.<br />
+You receive 0 experience.<br />
+Lezerik is dead! R.I.P.<br />
+exa corpse<br />
+336H 87V 11037268X 2903C [Me:Perfect] [Lezerik:Dying] Mem:5 Exits:NESW&gt; <br />
+The death cry of Lezerik echoes from somewhere nearby...<br />
+Kirpykla stops following Lezerik.<br />
+<br />
+336H 87V 11037268X 2903C Mem:5 Exits:NESW&gt; <br />
+Reghar flies in from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:5 Exits:NESW&gt; <br />
+Myriel flies in from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:5 Exits:NESW&gt; <br />
+Andor flies in from the south.<br />
+<br />
+336H 87V 11037268X 2903C Mem:5 Exits:NESW&gt; <br />
+Reghar gets a gleaming steel broadsword from the corpse of Lezerik.<br />
+Reghar gets a ragged leather bracelet from the corpse of Lezerik.<br />
+Reghar gets a backpack from the corpse of Lezerik.<br />
+Reghar gets a kender hide shield from the corpse of Lezerik.<br />
+Reghar gets some studded leather sleeves from the corpse of Lezerik.<br />
+Reghar gets a pair of soft black leather boots from the corpse of Lezerik.<br />
+Reghar gets a pair of dwarven greaves from the corpse of Lezerik.<br />
+Reghar gets a firm piece of colorful twine from the corpse of Lezerik.<br />
+Reghar gets a suit of silver finished plate mail from the corpse of Lezerik.<br />
+Reghar gets a dwarven holy symbol from the corpse of Lezerik.<br />
+Reghar gets a ring of fire from the corpse of Lezerik.<br />
+Reghar gets a wooden ring from the corpse of Lezerik.<br />
+Reghar gets a glowing scroll of recall from the corpse of Lezerik.<br />
+Reghar gets a roasted turkey leg from the corpse of Lezerik.<br />
+Reghar gets a roasted turkey leg from the corpse of Lezerik.<br />
+Reghar gets a hooded lantern from the corpse of Lezerik.<br />
+Reghar gets a companion sword from the corpse of Lezerik.<br />
+<br />
+336H 87V 11037268X 2903C Mem:5 Exits:NESW&gt; <br />
+Padme flies north.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='44'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=44">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="44">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

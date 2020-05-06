@@ -1,0 +1,940 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1902-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1902'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Nyet R.I.P.</font></b>
+<p>
+POV: 
+Krilan/submitted by Frontis<p>
+Log Rating:
+1.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Nyet started trash talking about Frontis and Kirath making personal remarks about oral infatuations. Frontis confronted Nyet in a friendly manner to try to resolve the hostility, but Nyet wouldn't see it rationally.</i>
+<p>
+<p>
+
+<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Frontis yells 'Nyet says 'u said to me' 'spiked demi!' 'then u slapped me' 'then put on a shield' 'and said' 'nyet highlighted''<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Nyet stands up.<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Nyet says 'so yeah'<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Nyet says 'ill fuck you'           &lt;&lt;&lt;&lt;===================== key to this investigation.<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Nyet flies south.<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Frontis says 'k'<br />
+<br />
+434H 145V 1X 3213C Exits:S&gt; <br />
+Frontis leaves south.<br />
+You follow Frontis south.<br />
+Academy Square<br />
+    A thoroughly pleasant spot, this clearing is carpeted in ornamental<br />
+grasses, fragrant herbs, and perennials. A simple but elegant sundial<br />
+occupies a central position in the intersection. Running through the<br />
+greenery are stone footpaths leading to buildings north, east and west.<br />
+The corpse of a Tarsian peasant is lying here. [2]<br />
+The corpse of a mercenary is lying here.<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+A small grey rat scurries for cover as you approach.<br />
+<br />
+<br />
+&gt;&gt;&gt;&gt;&gt;========= SOME RUNNING AROUND TOWN FOR A MINUTE =========&lt;&lt;&lt;&lt;&lt;<br />
+ <br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis arrives from the east.                    &lt;&lt;&lt;================= just arrived to square<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; dr fountain<br />
+You drink the water.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; dr fountain<br />
+You drink the water.<br />
+You do not feel thirsty.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; dr fountain<br />
+Your stomach can't contain anymore!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; dr fountain<br />
+Your stomach can't contain anymore!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; fill all fountain<br />
+You can't put liquids in a small silver thimble!<br />
+You can't put liquids in a silver runed ring!<br />
+You can't put liquids in a shimmering silver cape!<br />
+You can't put liquids in a steel neckchain!<br />
+You can't put liquids in a dark red thieving plate!<br />
+You can't put liquids in a red and white santa hat!<br />
+You can't put liquids in a pair of fur-trimmed leather breeches!<br />
+You can't put liquids in a pair of silk laced boots!<br />
+You can't put liquids in a pair of heavy leather gloves!<br />
+You can't put liquids in a sivak's cloak!<br />
+You can't put liquids in a fur-trimmed girdle!<br />
+You can't put liquids in a spiked wrist buckler!<br />
+You can't put liquids in a black beaded bracelet!<br />
+You can't put liquids in an engraved emerald knife!<br />
+You can't put liquids in a black braided whip!<br />
+A torch can't be refilled.<br />
+There is already another liquid in it!<br />
+You fill a camel pack from a fountain.<br />
+You can't put liquids in a soothing salve!<br />
+You can't put liquids in a soothing salve!<br />
+You can't put liquids in a yellow potion!<br />
+You fill a watering can from a fountain.<br />
+You can't put liquids in a blackened chest!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis tells your group 'too bad you can't clair yet.. haha'<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Nyet flies in from the south.<br />
+Nyet kneels down and studies the ground.          &lt;&lt;&lt;&lt;====================  oh my! what's he doing!?!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!     &lt;&lt;&lt;&lt;====== not a trigger but quality reaction to the hostility<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet very hard.<br />
+Nyet slashes Frontis very hard.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+A Tarsian peasant arrives from the east.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis massacres Nyet with his stab.<br />
+Nyet slashes Frontis extremely hard.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis quaffs a fiery red potion.                      &lt;&lt;&lt;============ uh oh?<br />
+Frontis smiles as the air around him is set ablaze.<br />
+Frontis cries out in pain.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Nyet stands up.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; rofl<br />
+You roll on the floor in a fit of laughter.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet extremely hard.<br />
+Nyet slashes Frontis hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis massacres Nyet with his stab.<br />
+Frontis stabs Nyet extremely hard.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Nyet frowns.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Nyet stands up.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis massacres Nyet with his stab.<br />
+Frontis massacres Nyet with his stab.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Before Nyet can get up, Frontis kicks him hard, leaving him prone to attack.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis misses Nyet with his stab.<br />
+Frontis stabs Nyet extremely hard.<br />
+Nyet slashes Frontis hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+A Tarsian peasant arrives from the south.<br />
+Before Nyet can get up, Frontis kicks him hard, leaving him prone to attack.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet extremely hard.<br />
+Frontis stabs Nyet extremely hard.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; say and the fight is on<br />
+You say 'and the fight is on'<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Waleron arrives from the east.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Waleron leaves west.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet very hard.<br />
+Frontis stabs Nyet.<br />
+Nyet slashes Frontis very hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Before Nyet can get up, Frontis kicks him hard, leaving him prone to attack.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis crashes into Nyet in a thundering collision, knocking him to the ground!<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet extremely hard.<br />
+Frontis misses Nyet with his stab.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Before Nyet can get up, Frontis kicks him hard, leaving him prone to attack.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis misses Nyet with his stab.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Nyet steps aside as Frontis attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;DONT&gt; Sir Nyet Nada, Deleter of Mages, Knight of the Lily is sitting here, fighting Frontis. (flying)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is sitting here, fighting Nyet.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stabs Nyet very hard.<br />
+Nyet slashes Frontis extremely hard.<br />
+Nyet is burned, as he swings at Frontis.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; <br />
+Frontis stands up.<br />
+Nyet steps aside as Frontis attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+434H 18V 1X 3213C Exits:NESW&gt; say uhoh frontis missed<br />
+Frontis stabs Nyet extremely hard.<br />
+Nyet is incapacitated and will slowly die, if not aided.<br />
+Frontis obliterates Nyet with his stab.<br />
+You receive 0 experience.<br />
+Nyet is dead! R.I.P.<br />
+The death cry of Nyet echoes from somewhere nearby...<br />
+Nyet sinks gently to the ground.<br />
+You say 'uhoh frontis missed'<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The corpse of Nyet is lying here.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is sitting here.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+Frontis stands up.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; rofl<br />
+You roll on the floor in a fit of laughter.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+Frontis gets a very large pile of coins from the corpse of Nyet.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+Frontis gets a small down feather from the corpse of Nyet.<br />
+Frontis gets a silver-tinged blade from the corpse of Nyet.<br />
+Frontis gets a brass dwarven wristplate from the corpse of Nyet.<br />
+Frontis gets a black steel bracer from the corpse of Nyet.<br />
+Frontis gets a thick belt layered with quartz from the corpse of Nyet.<br />
+Frontis gets a dwarven backpack from the corpse of Nyet.<br />
+Frontis gets a large golden shield from the corpse of Nyet.<br />
+Frontis gets a set of dwarven brassards from the corpse of Nyet.<br />
+Frontis gets a pair of spiked demi-gauntlets from the corpse of Nyet.<br />
+Frontis gets a pair of black steel-toed boots from the corpse of Nyet.<br />
+Frontis gets a pair of platinum gilt leg plates from the corpse of Nyet.<br />
+Frontis gets an open-faced horned helm from the corpse of Nyet.<br />
+Frontis gets a fine suit of gold-painted armour from the corpse of Nyet.<br />
+Frontis gets a platinum necklace from the corpse of Nyet.<br />
+Frontis gets a golden collar from the corpse of Nyet.<br />
+Frontis gets a golden ring covered in feces from the corpse of Nyet.<br />
+Frontis gets a black ice ring from the corpse of Nyet.<br />
+Frontis gets a smoked Tarsis ham from the corpse of Nyet.<br />
+Frontis gets a smoked Tarsis ham from the corpse of Nyet.<br />
+Frontis gets a blood stained leather whip from the corpse of Nyet.<br />
+Frontis gets a dwarven belt from the corpse of Nyet.<br />
+Frontis gets a shining silver plate from the corpse of Nyet.<br />
+Frontis gets a glowing scroll of recall from the corpse of Nyet.<br />
+Frontis gets a glowing scroll of recall from the corpse of Nyet.<br />
+Frontis gets a carved stone seal from the corpse of Nyet.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+The corpse of Nyet is lying here.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+Frontis drops a smoked Tarsis ham.<br />
+Frontis drops a smoked Tarsis ham.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; examine corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a small wooden chest<br />
+a portable keg<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+A Tarsian peasant picks up some trash.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; l<br />
+New Tarsis Square<br />
+    Here stands the great Fountain of Tarsis, sole remaining artifact of<br />
+the original city. The new pavement has been carefully matched to the few<br />
+pieces of old that surround the fountain. The sounds and smells of city<br />
+life waft in from all directions.<br />
+A smoked Tarsis ham fills the room with a savory aroma.<br />
+The corpse of Nyet is lying here.<br />
+The great fountain of old Tarsis stands here.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian peasant whistles happily on his way to work. (white aura)<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 42V 1X 3213C Exits:NESW&gt; <br />
+Frontis leaves west.<br />
+You follow Frontis west.<br />
+Western Way<br />
+    The bustle of horsecarts, merchants and townspeople moving along this<br />
+wide street marks it as a main arterial to the business areas of Tarsis.<br />
+The great fountain in the central square splashes noisly to the east, while<br />
+from the north come the sounds of tradesmen hawking their wares.<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 41V 1X 3213C Exits:NEW&gt; <br />
+Frontis leaves west.<br />
+You follow Frontis west.<br />
+Western Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean street runs east-west. From the east the unmistakable sounds and<br />
+smells of commerce. The hurly-burly of the city fades out further to the<br />
+west.<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+A small grey rat scurries for cover as you approach.<br />
+A carrion crow scavenges in the rubble, looking for food.<br />
+<br />
+434H 40V 1X 3213C Exits:EW&gt; <br />
+Frontis leaves west.<br />
+You follow Frontis west.<br />
+Western Way<br />
+    In the Troubles, this area was one of the worst damaged. Now a wide,<br />
+clean, straight street runs east and west between the prosperous looking<br />
+buildings on either side.<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+<br />
+434H 39V 1X 3213C Exits:ESW&gt; <br />
+Frontis leaves west.<br />
+You follow Frontis west.<br />
+Western Way<br />
+    In what once was one of the worst areas of destruction, there is now a<br />
+wide, straight, clean street leading west out of the city. To the north is<br />
+Academy Square, a center of learning.<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+A carrion crow scavenges in the rubble, looking for food.<br />
+<br />
+434H 38V 1X 3213C Exits:NE(W)&gt; <br />
+Frontis leaves north.<br />
+You follow Frontis north.<br />
+Academy Square<br />
+    A thoroughly pleasant spot, this clearing is carpeted in ornamental<br />
+grasses, fragrant herbs, and perennials. A simple but elegant sundial<br />
+occupies a central position in the intersection. Running through the<br />
+greenery are stone footpaths leading to buildings north, east and west.<br />
+A pair of high leather boots rest here.<br />
+A long sword has been left here.<br />
+The corpse of a Tarsian peasant is lying here. [2]<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+A Tarsian peasant cleans up the streets. (white aura)<br />
+A Tarsian noblewoman pretends you're not here.<br />
+A carrion crow scavenges in the rubble, looking for food.<br />
+A small grey rat scurries for cover as you approach.<br />
+<br />
+434H 37V 1X 3213C Exits:NESW&gt; gt got that loged<br />
+You tell your group 'got that loged'<br />
+<br />
+434H 37V 1X 3213C Exits:NESW&gt; <br />
+Frontis leaves north.<br />
+You follow Frontis north.<br />
+Academy of Ars Druidicus<br />
+    The room seems less like a room and more like a grove in the forest.<br />
+There are no roof and walls. If there were any, they are hidden by the<br />
+brush and the trees. In a nest in the corner, fox kits wrestle boisterously<br />
+among themselves and an owl blinks from a branch near the door.<br />
+A large shield fashioned from blue sapphire sits here...it glows dimly<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+Virga the Rainmaker eyes the sky carefully.<br />
+<br />
+434H 35V 1X 3213C Exits:S&gt; <br />
+Frontis tells your group 'what a clown'<br />
+<br />
+434H 35V 1X 3213C Exits:S&gt; l<br />
+Academy of Ars Druidicus<br />
+    The room seems less like a room and more like a grove in the forest.<br />
+There are no roof and walls. If there were any, they are hidden by the<br />
+brush and the trees. In a nest in the corner, fox kits wrestle boisterously<br />
+among themselves and an owl blinks from a branch near the door.<br />
+A large shield fashioned from blue sapphire sits here...it glows dimly<br />
+&lt;KRTH&gt; Frontis the Male Hylar Dwarf is standing here.<br />
+. . . is enveloped in flames.<br />
+Virga the Rainmaker eyes the sky carefully.<br />
+<br />
+434H 35V 1X 3213C Exits:S&gt; <br />
+Frontis stops using a glowing scroll of recall.<br />
+<br />
+434H 35V 1X 3213C Exits:S&gt; <br />
+Frontis grabs a small down feather.<br />
+Frontis rises up off the ground.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1902'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1902">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1902">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

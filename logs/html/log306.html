@@ -1,0 +1,945 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 306-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='306'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Napas issues the order 'bash karl'.</font></b>
+<p>
+POV: 
+Karani<p>
+Log Rating:
+2.3157<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Poor RGB has some trouble spelling.
+Napas issues the order 'bash karl'.
+Kirpykla issues the order 'bahs luf'.</i>
+<p>
+<p>
+
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; <br />
+Kirpykla flies in from the north.<br />
+Napas flies in from the north.<br />
+A hill giant flies in from the north.<br />
+Medjub flies in from the north.<br />
+Temuchin flies in from the north.<br />
+<br />
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on Luf and utters some strange words.<br />
+<br />
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; <br />
+Luf ponders the meaning of life, love, and the universe.<br />
+<br />
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; <br />
+Temuchin focuses harshly on Luf and utters some strange words.<br />
+Temuchin slowly fades into existence.<br />
+The sound of bones cracking echoes as Temuchin's force bolt slams into Luf.<br />
+<br />
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; <br />
+Medjub focuses harshly on Luf and utters the words, 'hold monster'.<br />
+<br />
+295H 77V 7867420X 0C Mem:1 Exits:NESWU&gt; c 'co' medjub<br />
+You utter the words, 'cone of cold'<br />
+You miss Medjub and destroy an image instead.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Luf tells your group 'come'<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Arag tries to bash Medjub, but he passes right through his image and falls.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Arag misses Medjub and destroys an image instead.<br />
+You miss Medjub and destroy an image instead.<br />
+Medjub misses you with his smite.<br />
+Temuchin misses Luf with his pierce.<br />
+Luf bludgeons Temuchin very hard.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Luf panics, and attempts to flee.<br />
+Luf flies north.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Napas gives a hill giant an order.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Napas issues the order 'bash luf'.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Napas issues the order 'bash luf'.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Napas issues the order 'st'.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Medjub focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Temuchin flies north.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Perfect] Mem:2 Exits:NESWU&gt; <br />
+Arag slashes Medjub extremely hard.<br />
+You bludgeon Medjub very hard.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Good] Mem:2 Exits:NESWU&gt; c 'co' medjub<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Medjub, freezing him.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Napas issues the order 'bash karl'.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Arag stands up.<br />
+<br />
+295H 77V 7867420X 0C [Me:Perfect] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Medjub focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Medjub's force bolt slams into you.<br />
+<br />
+240H 77V 7867420X 0C [Me:Good] [Medjub:Fair] Mem:3 Exits:NESWU&gt;<br />
+Arag crashes into Medjub in a thundering collision, knocking him to the ground!<br />
+<br />
+240H 77V 7867420X 0C [Me:Good] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Arag massacres Medjub with his slash.<br />
+<br />
+240H 77V 7867420X 0C [Me:Good] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Kirpykla's force bolt slams into you.<br />
+<br />
+198H 77V 7867420X 0C [Me:Fair] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+A Solace peacekeeper arrives from the west.<br />
+<br />
+198H 77V 7867420X 0C [Me:Fair] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Luf flies in from the north.<br />
+A Solace peacekeeper looks at Arag and yells  'There's the scoundrel!'<br />
+<br />
+198H 77V 7867420X 0C [Me:Fair] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+Napas gives a hill giant an order.<br />
+Luf steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+198H 77V 7867420X 0C [Me:Fair] [Medjub:Fair] Mem:3 Exits:NESWU&gt; <br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant cleaves Luf very hard.<br />
+A hill giant pierces Luf extremely hard.<br />
+Luf misses a hill giant with his bludgeon.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+Arag massacres Medjub with his slash.<br />
+You bludgeon Medjub very hard.<br />
+Medjub smites YOU extremely hard.<br />
+Medjub is chilled as he passes through your freezing aura.<br />
+<br />
+183H 77V 7867420X 0C [Me:Fair] [Medjub:V.Bad] Mem:3 Exits:NESWU&gt; c 'co' medjub<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Medjub, freezing him.<br />
+Medjub is mortally wounded, and will die soon, if not aided.<br />
+<br />
+183H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Kirpykla's force bolt slams into you.<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+Napas issues the order 'bash karani'.<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+A drunken dwarf arrives from the east.<br />
+A Solace peacekeeper looks at Arag and yells  'There's the scoundrel!'<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+Luf utters some strange words.<br />
+Luf heals Luf.<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+Napas issues the order 'bash luf'.<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+A Solace peacekeeper looks at Arag and yells  'There's the scoundrel!'<br />
+<br />
+152H 77V 7867420X 0C [Me:Fair] [Medjub:Dying] Mem:4 Exits:NESWU&gt; <br />
+A hill giant misses Luf with its pierce.<br />
+A hill giant cleaves Luf extremely hard.<br />
+A hill giant massacres Luf with its pierce.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+Arag obliterates Medjub with his slash.<br />
+You receive 0 experience.<br />
+<br />
+Medjub is dead! R.I.P.<br />
+The death cry of Medjub echoes from somewhere nearby...<br />
+Medjub stops following Napas.<br />
+Temuchin stops following Medjub.<br />
+Temuchin now follows Napas.<br />
+Napas issues the order 'bash luf'.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt;<br />
+Kirpykla focuses harshly on Luf and utters some strange words.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a ruby-encrusted battle flail..it glows blue..it glows dimly<br />
+a fine silver string (invisible)..it glows blue..it glows dimly<br />
+a glowing adamantite bracelet..it glows dimly<br />
+a plain component pouch..it glows blue<br />
+a length of rope and pouch..it glows blue<br />
+a smokey red satchel..it glows blue<br />
+a small diamond shield..it glows dimly<br />
+a pair of rope sandals..it glows blue<br />
+a pearl and onyx crown..it glows blue<br />
+an embroidered white robe..it glows blue<br />
+a swamp dragontooth medallion<br />
+a lucky bone charm..it glows blue..it glows dimly<br />
+a ring of the dweomer..it glows dimly<br />
+a wooden ring..it glows blue<br />
+a red dragonscale book<br />
+a scroll of recall..it glows blue<br />
+a small canteen [3]<br />
+a crimson dust covered chest<br />
+a scroll of recall..it glows blue [2]<br />
+a small metal cube..it glows blue<br />
+<br />
+ [return for more, q to stop]TICK IN 10 SECONDS.<br />
+<br />
+a scroll of recall..it glows blue<br />
+Napas focuses harshly on Luf and utters some strange words.<br />
+The sound of bones cracking echoes as Napas's force bolt slams into Luf.<br />
+Arag crashes into Napas in a thundering collision, knocking him to the ground!<br />
+A hill giant stands up.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Luf gets a ruby-encrusted battle flail from the corpse of Medjub.<br />
+Luf gets a fine silver string from the corpse of Medjub.<br />
+Luf gets a glowing adamantite bracelet from the corpse of Medjub.<br />
+Luf gets a length of rope and pouch from the corpse of Medjub.<br />
+Luf gets a pair of rope sandals from the corpse of Medjub.<br />
+Luf gets a pearl and onyx crown from the corpse of Medjub.<br />
+Luf gets a lucky bone charm from the corpse of Medjub.<br />
+Luf gets a scroll of recall from the corpse of Medjub.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Napas misses Arag with his hit.<br />
+Arag misses a Solace peacekeeper with his slash.<br />
+A hill giant pierces Luf extremely hard.<br />
+A hill giant cleaves Luf extremely hard.<br />
+A hill giant pierces Luf extremely hard.<br />
+Luf bludgeons a hill giant very hard.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; get all corpse<br />
+You get a plain component pouch from the corpse of Medjub.<br />
+You get a smokey red satchel from the corpse of Medjub.<br />
+You get a small diamond shield from the corpse of Medjub.<br />
+You get an embroidered white robe from the corpse of Medjub.<br />
+You get a swamp dragontooth medallion from the corpse of Medjub.<br />
+You get a ring of the dweomer from the corpse of Medjub.<br />
+You get a wooden ring from the corpse of Medjub.<br />
+You get a red dragonscale book from the corpse of Medjub.<br />
+You get a small canteen from the corpse of Medjub.<br />
+You get a small canteen from the corpse of Medjub.<br />
+You get a small canteen from the corpse of Medjub.<br />
+You get a crimson dust covered chest from the corpse of Medjub.<br />
+You get a scroll of recall from the corpse of Medjub.<br />
+You get a scroll of recall from the corpse of Medjub.<br />
+You get a small metal cube from the corpse of Medjub.<br />
+You get a scroll of recall from the corpse of Medjub.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on Luf and utters some strange words.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A Solace peacekeeper focuses harshly on Arag and utters the words, 'burning hands'.<br />
+Flames leap from a Solace peacekeeper's fingertips and burn Arag.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Valena arrives from the north.<br />
+A hill giant crashes into Luf in a thundering collision, knocking him to the ground!<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Valena leaves west.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; gro<br />
+Your group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Luf              fair      rested    fighting   Y   N    N     1    5<br />
+  Carl             v.good    rested    standing   Y   Y    N     1    5<br />
+  Karani           fair      rested    standing   Y   N    N     0    4<br />
+  Arag             fair      rested    fighting   Y   N    N     1    0<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Carl appears before you in a puff of smoke.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Napas misses Arag with his hit.<br />
+Arag misses a Solace peacekeeper with his slash.<br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant massacres Luf with its cleave.<br />
+A hill giant massacres Luf with its pierce.<br />
+Luf bludgeons a hill giant extremely hard.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+A Solace peacekeeper massacres Arag with his slash.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A drunken dwarf leaves west.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla issues the order 'bahs luf'.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla issues the order 'bahs luf'.<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Carl utters some strange words.<br />
+Carl slowly fades into existence.<br />
+A Solace peacekeeper is stunned momentarily, recovering quickly.<br />
+A hill giant is stunned momentarily, recovering quickly.<br />
+Napas is stunned momentarily, recovering quickly.<br />
+Kirpykla is stunned momentarily, recovering quickly.<br />
+A wizard eye is stunned!<br />
+An old beggar is stunned!<br />
+<br />
+152H 77V 7867420X 0C Mem:4 Exits:NESWU&gt; c 'co' napas<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Napas, freezing him.<br />
+<br />
+152H 77V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+Arag panics, and attempts to flee.<br />
+Arag flies west.<br />
+<br />
+152H 77V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper misses Carl and destroys an image instead.<br />
+Kirpykla misses Carl with her hit.<br />
+Carl misses a Solace peacekeeper with his bludgeon.<br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant massacres Luf with its cleave.<br />
+A hill giant massacres Luf with its pierce.<br />
+Luf bludgeons a hill giant very hard.<br />
+The darkness marks the end of another day.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A hill giant delivers a vicious kick to Luf's face. Blood flies as his head snaps back.<br />
+Luf stands up.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Luf utters some strange words.<br />
+Luf heals Luf.<br />
+Napas stands up.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; c 'co' napas<br />
+You can't remember how to cast that spell!<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt;<br />
+Carl utters some strange words.<br />
+A Solace peacekeeper is stunned momentarily, recovering quickly.<br />
+A hill giant is stunned momentarily, recovering quickly.<br />
+Napas is stunned momentarily, recovering quickly.<br />
+Kirpykla is stunned momentarily, recovering quickly.<br />
+A wizard eye is stunned!<br />
+An old beggar is stunned!<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Napas misses Carl with his hit.<br />
+A Solace peacekeeper misses Carl and destroys an image instead.<br />
+A Solace peacekeeper misses Carl with his slash.<br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant cleaves Luf extremely hard.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Arag flies in from the west.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A Solace peacekeeper focuses harshly on Carl and utters the words, 'burning hands'.<br />
+Flames leap from a Solace peacekeeper's fingertips and burn Carl.<br />
+An amulet of the astral plane in use by Carl is destroyed.<br />
+A wide crimson sash in use by Carl is destroyed.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Arag crashes into Napas in a thundering collision, knocking him to the ground!<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on Carl and utters some strange words.<br />
+Carl wavers under the impact of the lightning bolt sent by Kirpykla.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A hill giant crashes into Luf in a thundering collision, knocking him to the ground!<br />
+Arag massacres Napas with his slash.<br />
+Napas misses Carl with his hit.<br />
+A Solace peacekeeper slashes Carl extremely hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant massacres Luf with its cleave.<br />
+Luf bludgeons a hill giant very hard.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; c 'fl' anpas<br />
+Who should the spell be cast upon?<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Carl utters some strange words.<br />
+A Solace peacekeeper is stunned momentarily, recovering quickly.<br />
+A hill giant is stunned momentarily, recovering quickly.<br />
+Napas is stunned momentarily, recovering quickly.<br />
+Kirpykla is stunned momentarily, recovering quickly.<br />
+A wizard eye is stunned momentarily, recovering quickly.<br />
+An old beggar is stunned momentarily, recovering quickly.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on Carl and utters some strange words.<br />
+Carl wavers under the impact of the lightning bolt sent by Kirpykla.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; c 'fl' napas<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Napas in a cloak of flames.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+A Solace peacekeeper looks at Arag and yells  'There's the scoundrel!'<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Arag massacres Napas with his slash.<br />
+Napas misses Carl with his hit.<br />
+A Solace peacekeeper slashes Carl extremely hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+A hill giant massacres Luf with its pierce.<br />
+A hill giant massacres Luf with its cleave.<br />
+Luf bludgeons a hill giant very hard.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; <br />
+Kirpykla focuses harshly on Carl and utters some strange words.<br />
+Carl wavers under the impact of the lightning bolt sent by Kirpykla.<br />
+Napas stands up.<br />
+<br />
+173H 85V 7867420X 0C Mem:4 Exits:NESWU&gt; c 'fl' napas<br />
+You utter the words, 'flame shroud'<br />
+Napas dies a fiery death as you enshroud him in a cloak of burning flames.<br />
+You receive 0 experience.<br />
+Napas is dead! R.I.P.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+The death cry of Napas echoes from somewhere nearby...<br />
+Napas stops following Kirpykla.<br />
+Temuchin stops following Napas.<br />
+Temuchin now follows Kirpykla.<br />
+A hill giant stops following Napas.<br />
+A hill giant transcends this world and enters another plane.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+A Solace peacekeeper slashes Carl extremely hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+Luf stands up.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper utters the words, 'blur'.<br />
+A Solace peacekeeper begins to become blurry and hard to see.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+Luf focuses on Carl and utters some strange words.<br />
+Luf heals Carl.<br />
+<br />
+173H 85V 7867420X 0C Mem:5 Exits:NESWU&gt; <br />
+Kirpykla grabs a glowing scroll of recall.<br />
+Kirpykla recites a glowing scroll of recall.<br />
+<br />
+173H 85V 7867420X 116C Mem:5 Exits:NESWU&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a merchant's beltpouch<br />
+a grey leather pouch..it glows blue<br />
+some shark skin leggings<br />
+a large first-aid kit<br />
+a leg of lamb [4]<br />
+a warhammer<br />
+an entire loaf of bread [4]<br />
+a cup<br />
+a bronze bottle<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a dull iron broadsword..it hums softly<br />
+a magical trinket..it glows dimly<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a small wooden chest<br />
+<br />
+173H 85V 7867420X 116C Mem:5 Exits:NESWU&gt; get all corpse<br />
+You get a merchant's beltpouch from the corpse of Napas.<br />
+Pouch : You can't carry that much weight.<br />
+Leggings : You can't carry that much weight.<br />
+Kit : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Leg : You can't carry that much weight.<br />
+Warhammer : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Cup : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Broadsword : You can't carry that much weight.<br />
+Trinket : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+173H 85V 7867420X 116C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper misses Carl with his slash.<br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+Kirpykla misses Carl with her hit.<br />
+Carl misses a Solace peacekeeper with his bludgeon.<br />
+You divide 116 coins equally among the group members present.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Carl focuses harshly on Kirpykla and utters some strange words.<br />
+The sound of bones cracking echoes as Carl's force bolt slams into Kirpykla.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Luf utters some strange words.<br />
+Luf heals Luf.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+Kirpykla misses Carl with her hit.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+The janitor arrives from the south.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Kirpykla steps aside as Arag attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; c 'h' kirpykla<br />
+You can't remember how to cast that spell!<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Kirpykla gets a grey leather pouch from the corpse of Napas.<br />
+Kirpykla gets some shark skin leggings from the corpse of Napas.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Arag slashes Kirpykla extremely hard.<br />
+An old beggar misses Carl with his hit.<br />
+A wizard eye misses Carl with its hit.<br />
+A Solace peacekeeper slashes Carl very hard.<br />
+A Solace peacekeeper is burned, as he swings at Carl.<br />
+Kirpykla misses Carl with her hit.<br />
+Carl misses a Solace peacekeeper with his bludgeon.<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; c 'fl' kirpykla<br />
+You can't remember how to cast that spell!<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+A Solace peacekeeper looks at Arag and yells  'There's the scoundrel!'<br />
+<br />
+173H 85V 7867420X 29C Mem:5 Exits:NESWU&gt; <br />
+Kirpykla panics, and attempts to flee.<br />
+Kirpykla flies north.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='306'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=306">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="306">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

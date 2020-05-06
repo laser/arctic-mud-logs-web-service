@@ -1,0 +1,2838 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 734-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='734'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Wilds gets ambushed.</font></b>
+<p>
+POV: 
+Leevi<p>
+Log Rating:
+2.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Finally BSP managed to get some decent gear which hopefully will boost Wild's will to fight them again.</i>
+<p>
+<p>
+
+Start logging: 26.09.2003 11:04<br />
+<br />
+Welcome to Arctic.<br />
+<br />
+Arctic is a heavily modified DIKU with the experienced player in mind.<br />
+Our administration policy is not to interfere with mortal affairs.<br />
+Please bear that in mind when asking for assistance.<br />
+<br />
+<br />
+*** Press Enter: <br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1There is new NEWS; please type 'NEWS' after you enter the game.<br />
+You ran up charges of 1843 steel in rent.<br />
+<br />
+Welcome to the land of Krynn.<br />
+score<br />
+The Reception<br />
+An old hat is here, with colourful flies attached to it.<br />
+A rolled up scroll with a brown ribbon has been left here...it glows blue [2]<br />
+A wooden bulletin board with the heading 'Wanted' is posted on the wall.<br />
+The filthy claw from a harpy lays on the ground, glittering with fresh blood.<br />
+A decrepit tulip blossom is here, withered by the passing of time.<br />
+Troggs, Prophet of Wild Desert Power is resting here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Kel flies in from the north.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; You are Leevi Lod, Juvenile Ahma Dragon, a level 30 Warrior.<br />
+You are rank 17.<br />
+You are 49 years old.<br />
+You have 658(661) hit and 162(162) movement points.<br />
+Your behaviour has been Good.<br />
+You have scored 133314779 exp, and have 0(20446) steel coins.<br />
+You need 11685221 more experience to advance.<br />
+You have died 12 horrible deaths.<br />
+You have been connected for 0 minute(s).<br />
+You have been playing for 14 day(s), 8 hour(s) and 19 minute(s).<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Kuuz has entered the game.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Holmes has entered the game.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Kuuz flies north.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; scanLooking north:<br />
+You see nothing special.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Fisomu has entered the game.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Eodil has entered the game.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Fisomu now follows Holmes.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Holmes leaves north.<br />
+Fisomu leaves north.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Aasi has entered the game.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Aasi leaves north.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; <br />
+Eodil leaves north.<br />
+<br />
+658H 162V 11685221X 0C Exits:N&gt; nTraveler's Lodge<br />
+A shield is lying on the ground.<br />
+Eodil the Male Hill Dwarf is standing here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+658H 161V 11685221X 0C Exits:NESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+Aasi, Riot Starter is standing here, fighting Nasir.<br />
+Zyyr Stargaze is standing here, fighting Nasir. (flying)<br />
+Fisomu the Male Hylar Dwarf is standing here.<br />
+Holmes the Horrible is standing here.<br />
+. . . is surrounded by a white mist.<br />
+Kuuz the Male Minotaur is standing here, fighting Loony. (flying)<br />
+Ankka Meminem, Kind Wife And Mother is standing here, fighting Spongue. (flying)<br />
+. . . has a metallic luster.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Maratus the Female Kender is sitting here, fighting Scooter.<br />
+Scooter Mali, Wild Kendragon is standing here, fighting Ankka. (flying)<br />
+Loony Mukta, Mhwaka Battle Badger is sitting here, fighting Kuuz. (flying)<br />
+Santino, the Prodigal Son is standing here, fighting Maratus. (flying)<br />
+You sense that you are not alone.<br />
+Woopa Deedoo, Emerged from the Wilds is standing here, fighting Kuuz. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here, fighting Spongue.<br />
+Spongue E. Shopht, Last Scion of Kith-Kanan is sitting here, fighting Ankka. (flying)<br />
+Nasir the Original Dumbass is sitting here, fighting Aasi. (flying)<br />
+Looking south:<br />
+You see nothing special.<br />
+Kel, Constantly Running From Daggoraath is standing here. (flying) (invisible)<br />
+Troggs, Prophet of Wild Desert Power is resting here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Jaime the Female Hylar Dwarf is resting here. (flying)<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+658H 161V 11685221X 0C Exits:NESW&gt; ebash woopaVingaard Avenue South<br />
+The corpse of Eodil is lying here.<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying)<br />
+. . . appears duplicated.<br />
+Aasi, Riot Starter is standing here, fighting Nasir.<br />
+Zyyr Stargaze is standing here, fighting Nasir. (flying)<br />
+Fisomu the Male Hylar Dwarf is standing here.<br />
+Holmes the Horrible is standing here.<br />
+. . . has a tough exterior.<br />
+Kuuz the Male Minotaur is standing here, fighting Loony. (flying)<br />
+Ankka Meminem, Kind Wife And Mother is standing here, fighting Spongue. (flying)<br />
+. . . has a metallic luster.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Maratus the Female Kender is sitting here, fighting Scooter.<br />
+Scooter Mali, Wild Kendragon is standing here, fighting Ankka. (flying)<br />
+Loony Mukta, Mhwaka Battle Badger is sitting here, fighting Kuuz. (flying)<br />
+Santino, the Prodigal Son is standing here, fighting Maratus. (flying)<br />
+You sense that you are not alone.<br />
+Woopa Deedoo, Emerged from the Wilds is standing here, fighting Kuuz. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here, fighting Spongue.<br />
+Spongue E. Shopht, Last Scion of Kith-Kanan is sitting here, fighting Ankka. (flying)<br />
+Nasir the Original Dumbass is sitting here, fighting Aasi. (flying)<br />
+<br />
+658H 160V 11685221X 0C Exits:NESW&gt; <br />
+Kerian arrives from the south.<br />
+<br />
+658H 160V 11685221X 0C Exits:NESW&gt; You crash into Woopa in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+658H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:V.Good] Exits:NESW&gt; <br />
+Kives staggers about confused!<br />
+You massacre Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Nasir massacres Aasi with his crush.<br />
+Kives cleaves Spongue extremely hard.<br />
+Aasi massacres Nasir with her crush.<br />
+Zyyr massacres Nasir with her slash.<br />
+Kuuz misses Loony with his crush.<br />
+Loony misses Kuuz with his hit.<br />
+Scooter massacres Ankka with his shoot.<br />
+assScooter massacres Ankka with his shoot.<br />
+Maratus slashes Scooter extremely hard.<br />
+Santino massacres Maratus with his slash.<br />
+Spongue misses Ankka with her hit.<br />
+Ankka misses Spongue with her crush.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Kives stops using a hermit's ring.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Eodil arrives from the west.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Alleq focuses harshly on Nasir and utters some strange words.<br />
+Alleq slowly fades into existence.<br />
+The sound of bones cracking echoes as Alleq's force bolt slams into Nasir.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Eodil gets a black wood staff from the corpse of Eodil.<br />
+Eodil gets a dirty apron from the corpse of Eodil.<br />
+Eodil gets a pair of studded leather gloves from the corpse of Eodil.<br />
+Eodil gets a steel breastplate from the corpse of Eodil.<br />
+Eodil gets a milky potion of see invisible from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a piece of sweet bread from the corpse of Eodil.<br />
+Eodil gets a glowing scroll of recall from the corpse of Eodil.<br />
+Eodil gets a small canteen from the corpse of Eodil.<br />
+Eodil gets a small canteen from the corpse of Eodil.<br />
+Eodil gets a small canteen from the corpse of Eodil.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Zyyr crashes into Loony in a thundering collision, knocking him to the ground!<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Kuuz now follows Alleq.<br />
+Nasir steps aside as Aasi attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Eodil leaves west.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Kives barrels into Spongue, knocking her to the ground.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Kerian leaves north.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Maratus stands up.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Holmes focuses harshly on Nasir and utters some strange words.<br />
+Holmes slowly fades into existence.<br />
+Flesh burns as Holmes enshrouds Nasir in a cloak of flames.<br />
+<br />
+638H 160V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; fol holmes<br />
+You massacre Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Nasir annihilates Aasi with his crush.<br />
+Kives annihilates Spongue with his cleave.<br />
+Aasi massacres Nasir with her crush.<br />
+Woopa pierces Kuuz very hard.<br />
+Zyyr massacres Nasir with her slash.<br />
+Kuuz annihilates Loony with his crush.<br />
+Loony misses Kuuz with his hit.<br />
+Scooter massacres Ankka with his shoot.<br />
+Scooter massacres Ankka with his shoot.<br />
+Maratus slashes Scooter extremely hard.<br />
+Santino slashes Maratus extremely hard.<br />
+Maratus is mortally wounded, and will die soon, if not aided.<br />
+Spongue misses Ankka with her hit.<br />
+Ankka misses Spongue with her crush.<br />
+Fisomu focuses on Ankka and utters some strange words.<br />
+Fisomu heals Ankka.<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Alleq focuses harshly on Nasir and utters some strange words.<br />
+Alleq slowly fades into existence.<br />
+The sound of bones cracking echoes as Alleq's force bolt slams into Nasir.<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Nasir stands up.<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; <br />
+Nasir tries to bash Alleq, but he passes right through his image and falls.<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; bash<br />
+Kuuz crashes into Loony in a thundering collision, knocking him to the ground!<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; You can't do that while fighting.<br />
+<br />
+639H 162V 11685221X 0C [Kuuz:V.Good] [Woopa:Good] Exits:NESW&gt; Alleq slowly fades into existence.<br />
+Alleq massacres Nasir with his drain.<br />
+You massacre Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Nasir annihilates Aasi with his crush.<br />
+Kives massacres Spongue with his cleave.<br />
+Aasi annihilates Nasir with her crush.<br />
+Woopa pierces Kuuz extremely hard.<br />
+Zyyr massacres Nasir with her slash.<br />
+Kuuz annihilates Loony with his crush.<br />
+Loony misses Kuuz with his hit.<br />
+Scooter massacres Ankka with his shoot.<br />
+Scooter annihilates Ankka with his shoot.<br />
+Santino obliterates Maratus with his slash.<br />
+Maratus is dead! R.I.P.<br />
+get all.pile corpseSpongue misses Ankka with her hit.<br />
+Ankka crushes Spongue hard.<br />
+The death cry of Maratus echoes from somewhere nearby...<br />
+You now follow Holmes.<br />
+<br />
+619H 162V 11685221X 0C [Kuuz:Good] [Woopa:Fair] Exits:NESW&gt; You crash into Woopa in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+619H 162V 11685221X 0C [Kuuz:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Ankka gets a very large pile of coins from the corpse of Maratus.<br />
+<br />
+619H 162V 11685221X 0C [Kuuz:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+You are sent sprawling as Santino crashes into you.<br />
+<br />
+604H 162V 11685221X 0C [Kuuz:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Eodil arrives from the west.<br />
+<br />
+604H 162V 11685221X 0C [Kuuz:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Eodil gets a sleek wooden wand from the corpse of Maratus.<br />
+Eodil gets a silver blade from the corpse of Maratus.<br />
+Eodil gets a green dragonscale wrist band from the corpse of Maratus.<br />
+Eodil gets an ancient shield of the silver serpent from the corpse of Maratus.<br />
+Eodil gets some green dragonscale arm guards from the corpse of Maratus.<br />
+Eodil gets some metal cleats from the corpse of Maratus.<br />
+Eodil gets a pair of ebony legplates from the corpse of Maratus.<br />
+Eodil gets a black suit of spiked chainmail armor from the corpse of Maratus.<br />
+Eodil gets a shimmering silver cape from the corpse of Maratus.<br />
+Eodil gets a massive collar from the corpse of Maratus.<br />
+Eodil gets an emerald ring from the corpse of Maratus.<br />
+Eodil gets the Queen's diamond wedding ring from the corpse of Maratus.<br />
+Eodil gets a piece of sweet bread from the corpse of Maratus.<br />
+Eodil gets a glowing scroll of recall from the corpse of Maratus.<br />
+Eodil gets a glowing scroll of recall from the corpse of Maratus.<br />
+Eodil gets a glowing scroll of recall from the corpse of Maratus.<br />
+Eodil gets a glowing scroll of recall from the corpse of Maratus.<br />
+Eodil gets a glowing scroll of recall from the corpse of Maratus.<br />
+Eodil gets a small paraffin candle from the corpse of Maratus.<br />
+Eodil gets a small canteen from the corpse of Maratus.<br />
+Eodil gets a small canteen from the corpse of Maratus.<br />
+Eodil gets a small canteen from the corpse of Maratus.<br />
+Eodil gets a small canteen from the corpse of Maratus.<br />
+Eodil gets a scroll of recall from the corpse of Maratus.<br />
+Eodil gets a scroll of recall from the corpse of Maratus.<br />
+Eodil gets gnomish workman's leather armor from the corpse of Maratus.<br />
+Ankka heroically rescues Kuuz.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Alleq panics, and attempts to flee.<br />
+Alleq flies east.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Eodil leaves west.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Fisomu stops following Holmes.<br />
+Fisomu now follows Kuuz.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Aasi stands up.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Aasi crashes into Nasir in a thundering collision, knocking him to the ground!<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Kives tries to barrel into Spongue, but ends up falling flat on his face.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Fisomu gets a silver girdle from the corpse of Maratus.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Kerian arrives from the north.<br />
+<br />
+604H 162V 11685221X 0C [Ankka:Good] [Woopa:Fair] Exits:NESW&gt; <br />
+Ankka deflects part of Woopa's blow with her shield.<br />
+Woopa pierces Ankka.<br />
+Ankka crushes Woopa very hard.<br />
+Ankka is chilled, as she swings at Woopa.<br />
+Santino massacres YOU with his slash.<br />
+You annihilate Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Nasir massacres Aasi with his crush.<br />
+Kives massacres Spongue with his cleave.<br />
+Aasi massacres Nasir with her crush.<br />
+Zyyr massacres Nasir with her slash.<br />
+Kuuz annihilates Loony with his crush.<br />
+Loony misses Kuuz with his hit.<br />
+Scooter massacres Ankka with his shoot.<br />
+assScooter annihilates Ankka with his shoot.<br />
+Spongue misses Ankka with her hit.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Kerian leaves west.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Nasir steps aside as Zyyr attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Ankka gets a crimson dust covered chest from the corpse of Maratus.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Spongue stands up.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Spongue starts using a wooden shield of dragons as a shield.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; bash<br />
+Ankka focuses her purity on Woopa's leg!<br />
+Ankka forces Woopa to the ground.<br />
+<br />
+551H 162V 11685221X 0C [Ankka:Good] [Woopa:Bad] Exits:NESW&gt; <br />
+Ankka blocks Woopa's blow with a quick raise of her shield.<br />
+Ankka crushes Woopa extremely hard.<br />
+Ankka is chilled, as she swings at Woopa.<br />
+Santino massacres YOU with his slash.<br />
+You massacre Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Nasir massacres Aasi with his crush.<br />
+Kives massacres Spongue with his cleave.<br />
+Aasi annihilates Nasir with her crush.<br />
+Zyyr massacres Nasir with her slash.<br />
+Nasir is dead! R.I.P.<br />
+get all.pile corpseKuuz annihilates Loony with his crush.<br />
+Loony misses Kuuz with his hit.<br />
+Scooter massacres Ankka with his shoot.<br />
+assSpongue misses Ankka with her hit.<br />
+The death cry of Nasir echoes from somewhere nearby...<br />
+Nasir stops following Woopa.<br />
+<br />
+498H 162V 11685221X 0C [Ankka:Fair] [Woopa:V.Bad] Exits:NESW&gt; <br />
+Kuuz gets a large pile of coins from the corpse of Nasir.<br />
+<br />
+498H 162V 11685221X 0C [Ankka:Fair] [Woopa:V.Bad] Exits:NESW&gt; <br />
+A little girl arrives from the north.<br />
+Alleq flies in from the east.<br />
+<br />
+498H 162V 11685221X 0C [Ankka:Fair] [Woopa:V.Bad] Exits:NESW&gt; st<br />
+Santino heroically rescues Woopa.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; bash<br />
+Alleq gets Nightbringer from the corpse of Nasir.<br />
+Alleq gets a black bracelet of the Lily from the corpse of Nasir.<br />
+Alleq gets a spiked bronze bracer from the corpse of Nasir.<br />
+Alleq is zapped by a girdle with a human skull buckle and instantly drops it.<br />
+Alleq gets a thick wool coat from the corpse of Nasir.<br />
+Alleq gets a nasty looking dented shield from the corpse of Nasir.<br />
+Alleq gets silver dragon scale armbands from the corpse of Nasir.<br />
+Alleq gets a pair of silver dragon scale gauntlets from the corpse of Nasir.<br />
+Alleq gets anklets of woven palladium from the corpse of Nasir.<br />
+Alleq gets an ancient medallion from the corpse of Nasir.<br />
+Alleq is zapped by a deep black steel ring and instantly drops it.<br />
+Alleq gets a scroll of improved transport from the corpse of Nasir.<br />
+Alleq gets a vial of eagle eye oil from the corpse of Nasir.<br />
+Alleq gets a web shaped pendant from the corpse of Nasir.<br />
+Alleq gets some clean bandages from the corpse of Nasir.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Loony steps aside as Kuuz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Fisomu focuses on Ankka and utters some strange words.<br />
+Fisomu heals Ankka.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Aasi gets a pair of green elven boots from the corpse of Nasir.<br />
+Aasi gets a dragonshelm from the corpse of Nasir.<br />
+Aasi gets a suit of platinum chainmail from the corpse of Nasir.<br />
+Aasi gets a badge of the dragonarmies from the corpse of Nasir.<br />
+Aasi gets a frosted tin blade from the corpse of Nasir.<br />
+Aasi gets a tall candle stand from the corpse of Nasir.<br />
+Aasi gets a magical watering can from the corpse of Nasir.<br />
+Aasi gets an iron ration from the corpse of Nasir.<br />
+Aasi gets an iron ration from the corpse of Nasir.<br />
+Aasi gets a small white die from the corpse of Nasir.<br />
+Aasi gets a hematite pendant from the corpse of Nasir.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Aasi crashes into Spongue in a thundering collision, knocking her to the ground!<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Scooter gets a weatherbeaten rucksack from the corpse of Nasir.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Kives stands up.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; bash woopa<br />
+Loony stands up.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Alleq flies west.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Kives tries to barrel into Spongue, but ends up falling flat on his face.<br />
+Loony utters some strange words.<br />
+Loony disappears.<br />
+<br />
+498H 162V 11685221X 0C [Woopa:V.Bad] Exits:NESW&gt; <br />
+Aasi misses Spongue with her crush.<br />
+Ankka misses Santino with her crush.<br />
+Ankka deflects part of Santino's blow with her shield.<br />
+Santino slashes Ankka very hard.<br />
+You massacre Woopa with your cleave.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Kives massacres Spongue with his cleave.<br />
+Scooter annihilates Ankka with his shoot.<br />
+Scooter annihilates Ankka with his shoot.<br />
+Spongue misses Ankka with her hit.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; You can't do that while sitting.<br />
+Zyyr stands up.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+Santino crashes into Ankka in a thundering collision, knocking her to the ground!<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; You can't do that while sitting.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; You stand up.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; You crash into Woopa in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; <br />
+Dra gets a scroll from his girdle.<br />
+<br />
+478H 162V 11685221X 0C [Leevi:Fair] [Woopa:V.Bad] Exits:NESW&gt; <br />
+Woopa pierces YOU very hard.<br />
+Aasi massacres Spongue with her crush.<br />
+Ankka crushes Santino very hard.<br />
+Santino slashes Ankka extremely hard.<br />
+You cleave Woopa extremely hard.<br />
+You feel a sharp chill as you swing through Woopa's freezing aura.<br />
+Kives massacres Spongue with his cleave.<br />
+Scooter annihilates Ankka with his shoot.<br />
+Scooter annihilates Ankka with his shoot.<br />
+Spongue misses Ankka with her hit.<br />
+<br />
+447H 162V 11685221X 0C [Leevi:Fair] [Woopa:Awful] Exits:NESW&gt; <br />
+Dra stops using a red hilted longsword.<br />
+Dra grabs a glowing scroll of recall.<br />
+Dra recites a glowing scroll of recall.<br />
+Dra disappears.<br />
+<br />
+447H 162V 11685221X 0C [Leevi:Fair] [Woopa:Awful] Exits:NESW&gt; <br />
+Holmes focuses harshly on Spongue and utters some strange words.<br />
+<br />
+447H 162V 11685221X 0C [Leevi:Fair] [Woopa:Awful] Exits:NESW&gt; <br />
+Scooter stops using a fine silver bow.<br />
+Scooter grabs a scroll of recall.<br />
+Scooter recites a scroll of recall.<br />
+Woopa disappears.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Heraglion flies in from the west.<br />
+Kuuz stands up.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Kuuz crashes into Spongue in a thundering collision, knocking her to the ground!<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Heraglion flies west.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Fisomu stops following Kuuz.<br />
+Fisomu now follows Ankka.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Aasi crashes into Spongue in a thundering collision, knocking her to the ground!<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Araya shouts 'giant mithril two-handed sword, pair of elfin gauntlets for trade'<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Kuuz annihilates Spongue with his crush.<br />
+Aasi massacres Spongue with her crush.<br />
+Ankka misses Santino with her crush.<br />
+Ankka blocks Santino's blow with a quick raise of her shield.<br />
+Kives massacres Spongue with his cleave.<br />
+Scooter misses Ankka with his hit.<br />
+Spongue misses Ankka with her hit.<br />
+Kives stands up.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Zyyr crashes into Spongue in a thundering collision, knocking her to the ground!<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Kives tries to barrel into Spongue, but ends up falling flat on his face.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Santino gets a scroll from his chest.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Santino grabs a glowing scroll of recall.<br />
+Santino recites a glowing scroll of recall.<br />
+Santino disappears.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Holmes focuses harshly on Spongue and utters some strange words.<br />
+Holmes slowly fades into existence.<br />
+Holmes sends a chilling blast of air at Spongue, giving her a severe case of frostbite.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Fisomu focuses on Ankka and utters some strange words.<br />
+Fisomu heals Ankka.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; bash woopb scooterYou couldn't find what you were looking for.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Dhameon arrives from the west.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Ankka misses Spongue with her crush.<br />
+Zyyr massacres Spongue with her slash.<br />
+Kuuz annihilates Spongue with his crush.<br />
+Spongue is stunned, but will likely regain consciousness again.<br />
+Aasi annihilates Spongue with her crush.<br />
+Spongue is dead! R.I.P.<br />
+get all.pile corpseScooter misses Ankka with his hit.<br />
+The death cry of Spongue echoes from somewhere nearby...<br />
+Ankka gets a spiked bronze bracer from the corpse of Spongue.<br />
+Ankka gets a mithril bracelet from the corpse of Spongue.<br />
+Ankka gets a heavy cloak from the corpse of Spongue.<br />
+Ankka gets an amulet of lightning from the corpse of Spongue.<br />
+Ankka gets a gold trimmed burgundy cape from the corpse of Spongue.<br />
+Ankka gets a large pile of coins from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Ankka gets a colorful mushroom from the corpse of Spongue.<br />
+Dhameon leaves north.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; <br />
+Dhameon arrives from the north.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; bash scooterYou crash into Scooter in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+Kuuz gets an ancient leather scabbard from the corpse of Spongue.<br />
+Kuuz gets a wooden shield of dragons from the corpse of Spongue.<br />
+Kuuz gets silver dragon scale armbands from the corpse of Spongue.<br />
+Kuuz gets a pair of barbed wire boots from the corpse of Spongue.<br />
+Kuuz gets a set of pitch black greaves from the corpse of Spongue.<br />
+Kuuz gets a frosted tin helm from the corpse of Spongue.<br />
+Kuuz gets a remorhaz hide breastplate from the corpse of Spongue.<br />
+Kuuz gets a cryptic ring from the corpse of Spongue.<br />
+Kuuz gets a slick blade from the corpse of Spongue.<br />
+Kuuz gets a piece of sweet bread from the corpse of Spongue.<br />
+Kuuz gets a piece of sweet bread from the corpse of Spongue.<br />
+Kuuz gets a colorful mushroom from the corpse of Spongue.<br />
+Kuuz gets a colorful mushroom from the corpse of Spongue.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+Dhameon is zapped by Wyrmslayer and instantly drops it.<br />
+Dhameon gets a piece of sweet bread from the corpse of Spongue.<br />
+Dhameon gets a portable keg from the corpse of Spongue.<br />
+Dhameon gets a fine vallenwood chest from the corpse of Spongue.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+Dhameon leaves west.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+You massacre Scooter with your cleave.<br />
+Ankka crushes Scooter hard.<br />
+Scooter misses Ankka with his hit.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Good] Exits:NESW&gt; <br />
+Aasi crashes into Scooter in a thundering collision, knocking him to the ground!<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Holmes focuses harshly on Scooter and utters some strange words.<br />
+Holmes slowly fades into existence.<br />
+Holmes sends a chilling blast of air at Scooter, giving him a severe case of frostbite.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Kives stands up.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Scooter steps aside as Zyyr attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Scooter steps aside as Kuuz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Kives annihilates Scooter with his cleave.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Fisomu focuses on Aasi and utters some strange words.<br />
+Fisomu heals Aasi.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Maratus arrives from the west.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Maratus gets Wyrmslayer.<br />
+Maratus gets the corpse of Spongue.<br />
+Maratus is zapped by a deep black steel ring and instantly drops it.<br />
+Maratus is zapped by a girdle with a human skull buckle and instantly drops it.<br />
+Maratus gets the corpse of Maratus.<br />
+Maratus gets the corpse of Eodil.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Maratus leaves west.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:Fair] Exits:NESW&gt; <br />
+Kives massacres Scooter with his cleave.<br />
+Kuuz annihilates Scooter with his crush.<br />
+Zyyr annihilates Scooter with her slash.<br />
+Aasi annihilates Scooter with her crush.<br />
+You massacre Scooter with your cleave.<br />
+Ankka misses Scooter with her crush.<br />
+Scooter misses Ankka with his hit.<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:V.Bad] Exits:NESW&gt; <br />
+Ankka stands up.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:V.Bad] Exits:NESW&gt; <br />
+Holmes focuses harshly on Scooter and utters some strange words.<br />
+Holmes slowly fades into existence.<br />
+Holmes sends a chilling blast of air at Scooter, giving him a severe case of frostbite.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:V.Bad] Exits:NESW&gt; <br />
+Ankka focuses her purity on Scooter's leg!<br />
+Ankka forces Scooter to the ground.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:V.Bad] Exits:NESW&gt; <br />
+Kives charges at Scooter, but he managed to move away.<br />
+<br />
+447H 162V 11685221X 0C [Ankka:V.Good] [Scooter:V.Bad] Exits:NESW&gt; <br />
+Kives massacres Scooter with his cleave.<br />
+Kuuz annihilates Scooter with his crush.<br />
+Zyyr massacres Scooter with her slash.<br />
+Aasi annihilates Scooter with her crush.<br />
+Scooter is incapacitated and will slowly die, if not aided.<br />
+You annihilate Scooter with your cleave.<br />
+You receive 0 experience.<br />
+Scooter is dead! R.I.P.<br />
+get all.pile corpseThe death cry of Scooter echoes from somewhere nearby...<br />
+Scooter sinks gently to the ground.<br />
+<br />
+447H 162V 11685221X 0C Exits:NESW&gt; You get a large pile of coins from the corpse of Scooter.<br />
+There were 800 coins.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; get all corpseYou get a diamond bracelet from the corpse of Scooter.<br />
+You get a diamond bracelet from the corpse of Scooter.<br />
+You get a gleaming silver scabbard from the corpse of Scooter.<br />
+You get a white dragonwing cloak from the corpse of Scooter.<br />
+You get the ancient sleeves of stealth from the corpse of Scooter.<br />
+You get a pair of dragonrider's gloves from the corpse of Scooter.<br />
+You get a pair of combat sollerets from the corpse of Scooter.<br />
+You get a silver tuille from the corpse of Scooter.<br />
+You get a sea elven headband from the corpse of Scooter.<br />
+You get a plate of pure mithril from the corpse of Scooter.<br />
+You get a white globe and chain from the corpse of Scooter.<br />
+You get a cryptic ring from the corpse of Scooter.<br />
+You get a platinum dragon signet ring from the corpse of Scooter.<br />
+You get a fine silver bow from the corpse of Scooter.<br />
+You get a weatherbeaten rucksack from the corpse of Scooter.<br />
+You get a scroll of recall from the corpse of Scooter.<br />
+You get a scroll of recall from the corpse of Scooter.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Aasi gets a fine vallenwood chest from the corpse of Scooter.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz stands up.<br />
+Zyyr stands up.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; wear braceletYou already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Aasi says 'FOL ANKKA'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; wear bracelet<br />
+Zyyr now follows Ankka.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Aasi says 'FOL ANKKA'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; You already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Holmes is zapped by a girdle with a human skull buckle and instantly drops it.<br />
+Holmes is zapped by a deep black steel ring and instantly drops it.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Ankka beckons for everyone to follow her.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; fol ankka<br />
+Ankka beckons for everyone to follow her.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; You stop following Holmes.<br />
+You now follow Ankka.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz now follows Ankka.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Ankka beckons for everyone to follow her.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+You are now a member of Ankka's group.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Scooter arrives from the west.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Holmes says 'loot'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Zyyr gets a deep black steel ring.<br />
+Zyyr gets a girdle with a human skull buckle.<br />
+Zyyr gets the corpse of Scooter.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz says 'loot'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Scooter leaves west.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz says 'loot'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         a black neckguard<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn about waist&gt;         a dwarven mining belt<br />
+&lt;worn around right wrist&gt;  a runed brass wristguard..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'more died around'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; rem leather<br />
+A Kalaman cityguard arrives from the north.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; You unclip and remove a dwarven mining belt.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'more died around'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'LOOT LETS GO'<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; rem guard<br />
+Ankka gets a bag from her chest.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; You stop using a black neckguard.<br />
+<br />
+447H 162V 11685221X 800C Exits:NESW&gt; <br />
+Scooter shouts 'nice.'<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; <br />
+Aasi lifts her arms towards the sky and gracefully floats upward.<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; <br />
+A Kalaman cityguard leaves south.<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'use flags w s'<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'use flags w s'<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'use flags w s'<br />
+<br />
+468H 162V 11685221X 800C Exits:NESW&gt; wear neck<br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue South<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+468H 161V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Market Square of Kalaman<br />
+<br />
+468H 160V 11685221X 800C Exits:NESW&gt; You do not seem to have what you are looking for.<br />
+<br />
+468H 160V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+468H 159V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+<br />
+468H 158V 11685221X 800C Exits:NS&gt; i<br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+468H 157V 11685221X 800C Exits:NES&gt; You are carrying:<br />
+a black neckguard<br />
+a dwarven mining belt<br />
+a scroll of recall..it glows blue [2]<br />
+a weatherbeaten rucksack (invisible)<br />
+a fine silver bow<br />
+a platinum dragon signet ring..it glows blue<br />
+a cryptic ring..it glows blue<br />
+a white globe and chain<br />
+a plate of pure mithril..it glows blue<br />
+a sea elven headband..it glows blue<br />
+a silver tuille..it glows blue<br />
+a pair of combat sollerets..it glows blue<br />
+a pair of dragonrider's gloves..it glows blue<br />
+the ancient sleeves of stealth..it glows blue<br />
+a white dragonwing cloak..it glows blue<br />
+a gleaming silver scabbard<br />
+a diamond bracelet..it glows blue [2]<br />
+a small canteen [5]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+a small wooden chest<br />
+<br />
+468H 157V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+<br />
+468H 156V 11685221X 800C Exits:NSW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+Holmes lifts his arms towards the sky and gracefully floats upward.<br />
+<br />
+468H 155V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+<br />
+468H 154V 11685221X 800C Exits:NS&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+468H 153V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Market Square of Kalaman<br />
+<br />
+468H 152V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue South<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+468H 151V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+A little girl is playing around in the street.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+468H 150V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+Traveler's Lodge<br />
+A long, slender staff has been carelessly left on the ground.<br />
+The corpse of Nasir is lying here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'we had a death'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'we had a death'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use frags'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'more died surrpounding rooms'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a runed brass wristguard..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'now'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Jaime flies in from the south.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Jaime flies south.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes focuses on Kives and utters some strange words.<br />
+Kives rises up off the ground.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Jaime flies in from the south.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'use flags now?'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes focuses on Fisomu and utters some strange words.<br />
+Fisomu rises up off the ground.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Jaime gets a black wood staff.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Jaime flies south.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'now'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'yes'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; wear sollerets<br />
+Aasi tells your group 'i need milky'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'NOW'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; You wear a pair of combat sollerets on your feet.<br />
+The sollerets feels too uncomfortable to wear.<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'do it'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'dont wait'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'fast'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'give me milky'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'dont wait'<br />
+<br />
+468H 149V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+A little girl is playing around in the street.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Holmes gets a potion from his chest.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Malk arrives from the east.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Holmes gives a milky potion of see invisible to Aasi.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Malk leaves east.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Aasi quaffs a milky potion of see invisible.<br />
+Aasi rubs her eyes and looks about herself with clarity.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; iYou are carrying:<br />
+a pair of combat sollerets..it glows blue<br />
+a black neckguard<br />
+a dwarven mining belt<br />
+a scroll of recall..it glows blue [2]<br />
+a weatherbeaten rucksack (invisible)<br />
+a fine silver bow<br />
+a platinum dragon signet ring..it glows blue<br />
+a cryptic ring..it glows blue<br />
+a white globe and chain<br />
+a plate of pure mithril..it glows blue<br />
+a sea elven headband..it glows blue<br />
+a silver tuille..it glows blue<br />
+a pair of dragonrider's gloves..it glows blue<br />
+the ancient sleeves of stealth..it glows blue<br />
+a white dragonwing cloak..it glows blue<br />
+a gleaming silver scabbard<br />
+a diamond bracelet..it glows blue [2]<br />
+a small canteen [5]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+a small wooden chest<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Aasi says 'thank you'<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags?'<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Holmes utters some strange words.<br />
+Holmes smiles as a veil of icy mist surrounds him.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; eq<br />
+Fisomu tells your group 'out of heals'<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; You are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a runed brass wristguard..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'move out ?'<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; wear diamondYou already wear something around both of your wrists.<br />
+You already wear something around both of your wrists.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz stops using a pair of black steel-toed boots.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'YES'<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a runed brass wristguard..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz drops a pair of black steel-toed boots.<br />
+<br />
+468H 148V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue South<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+468H 147V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Market Square of Kalaman<br />
+<br />
+468H 146V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'USE FLAGS NOW'<br />
+<br />
+468H 146V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+<br />
+468H 145V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+A street cleaner is walking about, cleaning up the trash.<br />
+<br />
+468H 144V 11685221X 800C Exits:NS&gt; <br />
+Holmes tells your group 'USE FLAGS NOWu'<br />
+<br />
+468H 144V 11685221X 800C Exits:NS&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+<br />
+468H 143V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue North<br />
+<br />
+468H 142V 11685221X 800C Exits:NSW&gt; <br />
+Kuuz gets a boots from his backpack.<br />
+<br />
+468H 142V 11685221X 800C Exits:NSW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+Entrance to Veterans Park<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+468H 141V 11685221X 800C Exits:EW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+Veterans Park<br />
+<br />
+468H 140V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Veterans Park<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+468H 138V 11685221X 800C Exits:NSW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+A Small Clearing in the Park<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+A little girl is playing around in the street.<br />
+<br />
+468H 136V 11685221X 800C Exits:NESW&gt; ren bracer<br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Shrine of Nature<br />
+The master druid is here in a deep meditation.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; Warning: your input 'bracer' ignored.<br />
+Sorry, but you cannot do that here!<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; eq<br />
+Kuuz wears a pair of barbed wire boots on his feet.<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; You are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a runed brass wristguard..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Aasi tells your group 'eodil died'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Aasi tells your group 'use flags no?'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'mika?'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'they killed eodil and hab?'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Aasi tells your group 'or hide'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; rem writguardYou are not wearing anything with that description.<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'use flags now'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'use flags now'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; rem wristguardYou sigh, feeling the power leave your body as you unclamp the thick<br />
+runed brass wristguard and slip it off your wrist.<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'they killed maratuzs'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'or run'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'use flags ?'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around left wrist&gt;   a three-strap leather bracer..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Alleq appears before Ankka in a puff of smoke.<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'we can win'<br />
+<br />
+468H 134V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'USE FLAGS WE HASTED'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'they killed maratus'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Alleq now follows Ankka.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; rem bracerYou stop using a three-strap leather bracer.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; wear diamond<br />
+Holmes says 'haste us again use flags NOW'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; wear diamondYou wear the bracelet around your right wrist.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; You wear the bracelet around your left wrist.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Alleq holds Nightbringer high so everyone can see it.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'haste us'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'guys'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; lookShrine of Nature<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is standing here. (flying)<br />
+Fisomu the Male Hylar Dwarf is standing here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Kuuz the Male Minotaur is standing here. (flying)<br />
+Ankka Meminem, Kind Wife And Mother is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+The master druid is here in a deep meditation.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Aasi snickers softly.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Alleq utters some strange words.<br />
+Alleq is surrounded by 4 duplicate images.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Maratus arrives from the north.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'now or we die'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; groYour group of 9 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Ankka            perfect   rested    standing   Y   N    N     1    0<br />
+  Alleq            perfect   rested    standing   Y   Y    N     2    2<br />
+  Kuuz             v.good    rested    standing   Y   N    N     0    0<br />
+  Holmes           perfect   rested    standing   Y   Y    N     1    3<br />
+  Leevi            fair      rested    standing   Y   N    N     0    0<br />
+  Zyyr             perfect   rested    standing   Y   N    N     1    0<br />
+  Fisomu           perfect   rested    standing   Y   N    N     0   15<br />
+  Aasi             perfect   rested    standing   Y   N    N     1    0<br />
+  Kives            perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'haste us'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Alleq tells your group 'who need haste?'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'can i tic?'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Maratus now follows Ankka.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; raiseYou raise your hand.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Maratus holds a small canteen high so everyone can see it.<br />
+Maratus holds a small canteen high so everyone can see it.<br />
+Maratus holds a small canteen high so everyone can see it.<br />
+Maratus holds a glowing scroll of recall high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a piece of sweet bread high so everyone can see it.<br />
+Maratus holds a milky potion of see invisible high so everyone can see it.<br />
+Maratus holds a long flowing robe crafted of oak leaves high so everyone can see it.<br />
+Maratus holds an ancient sword of the knight of the rose high so everyone can see it.<br />
+Maratus holds Wyrmslayer high so everyone can see it.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Kives raises his hand.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'haste me'<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Holmes begins resting but stays aloft.<br />
+<br />
+489H 162V 11685221X 800C Exits:N&gt; <br />
+Alleq focuses on you and utters some strange words.<br />
+You suddenly feel FAST!<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'heal maratus'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'tic'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'tic'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Maratus tries to give you sword, but it is too heavy.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'at tic'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Fisomu focuses on Maratus and utters some strange words.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq focuses on Kuuz and utters some strange words.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; groYour group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Ankka            perfect   rested    standing   Y   N    N     1    0<br />
+  Maratus          v.bad     rested    standing   N   N    N     0    0<br />
+  Alleq            perfect   rested    standing   Y   Y    N     2    3<br />
+  Kuuz             v.good    rested    standing   Y   N    N     0    0<br />
+  Holmes           perfect   rested    resting    Y   Y    N     1    1<br />
+  Leevi            good      rested    standing   Y   N    N     0    0<br />
+  Zyyr             perfect   rested    standing   Y   N    N     1    0<br />
+  Fisomu           perfect   rested    standing   Y   N    N     0   16<br />
+  Aasi             perfect   rested    standing   Y   N    N     1    0<br />
+  Kives            perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Maratus says 'ROP CRAP'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'lets use flags on'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'ok hasted'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq begins resting but stays aloft.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'them'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; look<br />
+Holmes tells your group 'TIC'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'moving'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; Shrine of Nature<br />
+Maratus the Female Kender is standing here.<br />
+Alleq Ismine, Weaver O' the Art is resting here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is standing here. (flying)<br />
+Fisomu the Male Hylar Dwarf is standing here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Holmes the Horrible is resting here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kuuz the Male Minotaur is standing here. (flying)<br />
+Ankka Meminem, Kind Wife And Mother is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+The master druid is here in a deep meditation.<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'use flags now'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Maratus says 'DROP CRAP'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq stands up.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq begins resting but stays aloft.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; stYou are already standing.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz drops a small canteen.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz drops a small canteen.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq tells your group 'tick in 22'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'heal maratus'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Fisomu tells your group 'OUT OF HEALS'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Holmes tells your group 'go fight them ill come'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a diamond bracelet..it glows blue<br />
+&lt;worn around left wrist&gt;   a diamond bracelet..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka tells your group 'STAND'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; iYou are carrying:<br />
+a three-strap leather bracer..it glows blue<br />
+a runed brass wristguard..it glows blue..it glows dimly<br />
+a pair of combat sollerets..it glows blue<br />
+a black neckguard<br />
+a dwarven mining belt<br />
+a scroll of recall..it glows blue [2]<br />
+a weatherbeaten rucksack (invisible)<br />
+a fine silver bow<br />
+a platinum dragon signet ring..it glows blue<br />
+a cryptic ring..it glows blue<br />
+a white globe and chain<br />
+a plate of pure mithril..it glows blue<br />
+a sea elven headband..it glows blue<br />
+a silver tuille..it glows blue<br />
+a pair of dragonrider's gloves..it glows blue<br />
+the ancient sleeves of stealth..it glows blue<br />
+a white dragonwing cloak..it glows blue<br />
+a gleaming silver scabbard<br />
+a small canteen [5]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a milky potion of see invisible..it glows blue<br />
+a small wooden chest<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; stYou are already standing.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Aasi gets a pile from her chest.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Alleq stands up.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Aasi gets a pile from her chest.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Kuuz tells your group 'go go'<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Aasi gets a pile from her chest.<br />
+<br />
+489H 158V 11685221X 800C Exits:N&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+A Small Clearing in the Park<br />
+A white marble fountain spring is in the middle of the clearing.<br />
+<br />
+489H 156V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'go go'<br />
+<br />
+489H 156V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Veterans Park<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+Aasi gets a pile from her chest.<br />
+<br />
+489H 154V 11685221X 800C Exits:NSW&gt; <br />
+Maratus leaves north.<br />
+<br />
+489H 154V 11685221X 800C Exits:NSW&gt; <br />
+Kuuz tells your group 'go go'<br />
+<br />
+489H 154V 11685221X 800C Exits:NSW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Veterans Park<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+<br />
+489H 152V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Entrance to Veterans Park<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+489H 151V 11685221X 800C Exits:EW&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Vingaard Avenue North<br />
+A cityguard of Kalaman looks about for signs of trouble.<br />
+A sailor fresh off the boat is looking for a good time in town.<br />
+<br />
+489H 150V 11685221X 800C Exits:NSW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+<br />
+489H 149V 11685221X 800C Exits:NES&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+<br />
+489H 148V 11685221X 800C Exits:NS&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue North<br />
+<br />
+489H 147V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Market Square of Kalaman<br />
+<br />
+489H 146V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue South<br />
+<br />
+489H 145V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+A little girl is playing around in the street.<br />
+<br />
+489H 144V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+Traveler's Lodge<br />
+The corpse of Nasir is lying here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+489H 143V 11685221X 800C Exits:NESW&gt; wear ringYou are already wearing something on your fingers.<br />
+You are already wearing something on your fingers.<br />
+<br />
+489H 143V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags'<br />
+<br />
+489H 143V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'now'<br />
+<br />
+489H 143V 11685221X 800C Exits:NESW&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a platinum dragon signet ring..it glows blue<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a diamond bracelet..it glows blue<br />
+&lt;worn around left wrist&gt;   a diamond bracelet..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'martua s'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'santino'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Alleq utters some strange words.<br />
+Alleq smiles as the air around him is set ablaze.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'now'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'maratus s'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Fisomu tells your group 'memming tick at guild is ok?'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'KILL EM'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'use flags'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; rem ringYou stop using a platinum dragon signet ring.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Maratus arrives from the east.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Maratus leaves south.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'loony'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Maratus the Female Kender is standing here.<br />
+Santino, the Prodigal Son is standing here. (flying)<br />
+Spongue E. Shopht, Last Scion of Kith-Kanan is resting here.<br />
+Jaime the Female Hylar Dwarf is standing here. (flying)<br />
+Scooter Mali, Wild Kendragon is standing here.<br />
+Loony Mukta, Mhwaka Battle Badger is resting here. (flying)<br />
+Eodil the Male Hill Dwarf is standing here.<br />
+You sense that you are not alone.<br />
+Troggs, Prophet of Wild Desert Power is resting here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Dhameon, Evil Beyond Control is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Maratus tells your group 'im at inn'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Maratus tells your group 'come?'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Maratus the Female Kender is standing here.<br />
+Santino, the Prodigal Son is standing here. (flying)<br />
+Spongue E. Shopht, Last Scion of Kith-Kanan is resting here.<br />
+Jaime the Female Hylar Dwarf is standing here. (flying)<br />
+Scooter Mali, Wild Kendragon is standing here.<br />
+Loony Mukta, Mhwaka Battle Badger is resting here. (flying)<br />
+Eodil the Male Hill Dwarf is standing here.<br />
+You sense that you are not alone.<br />
+Troggs, Prophet of Wild Desert Power is resting here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Dhameon, Evil Beyond Control is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'we are here'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'killem'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'killem'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'killem'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'kill them!'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'killem'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Alleq tells your group 'we're n'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; scanLooking north:<br />
+You see nothing special.<br />
+The waitress sits behind the counter waiting to serve you a drink.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Maratus the Female Kender is standing here.<br />
+Santino, the Prodigal Son is standing here. (flying)<br />
+Spongue E. Shopht, Last Scion of Kith-Kanan is resting here.<br />
+Jaime the Female Hylar Dwarf is standing here. (flying)<br />
+Scooter Mali, Wild Kendragon is standing here.<br />
+Loony Mukta, Mhwaka Battle Badger is resting here. (flying)<br />
+Eodil the Male Hill Dwarf is standing here.<br />
+You sense that you are not alone.<br />
+Troggs, Prophet of Wild Desert Power is resting here. (flying)<br />
+The manager of Traveler's Lodge stands here ready to sign you in.<br />
+A tall and strong bouncer, hired to protect the lodge's customers, stands here.<br />
+Looking west:<br />
+You see nothing special.<br />
+Dhameon, Evil Beyond Control is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; look<br />
+Kuuz tells your group 'attack them'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; Traveler's Lodge<br />
+The corpse of Nasir is lying here.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is standing here. (flying)<br />
+Fisomu the Male Hylar Dwarf is standing here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Kuuz the Male Minotaur is standing here. (flying)<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Ankka Meminem, Kind Wife And Mother is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'attack them'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'attack them'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'attack them'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'NOW'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; eq<br />
+Maratus tells your group 'santino'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; You are using:<br />
+&lt;worn on finger&gt;           a solamnic ring..it glows blue..it glows dimly<br />
+&lt;worn around neck&gt;         an alchemist's cloak<br />
+&lt;worn on body&gt;             a suit of brushed steel platemail<br />
+&lt;worn on head&gt;             an open-faced horned helm..it glows blue..it glows dimly<br />
+&lt;worn on legs&gt;             brass dragonscale leggings..it glows blue<br />
+&lt;worn on hands&gt;            a pair of golden dwarven gauntlets..it glows blue<br />
+&lt;worn on arms&gt;             some red dragon scale sleeves..it glows blue<br />
+&lt;worn as shield&gt;           a large golden shield..it glows blue..it glows dimly<br />
+&lt;worn around right wrist&gt;  a diamond bracelet..it glows blue<br />
+&lt;worn around left wrist&gt;   a diamond bracelet..it glows blue<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows blue..it glows dimly<br />
+&lt;held in secondary hand&gt;   a white snowy eagle feather<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'try kill all'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'try to hit all of them maratus'<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; rem ringYou stop using a solamnic ring.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; <br />
+Maratus comes tumbling into the room, as if tossed from somewhere else.<br />
+Santino comes tumbling into the room, as if tossed from somewhere else.<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; wear cryptic<br />
+Aasi crashes into Santino in a thundering collision, knocking him to the ground!<br />
+<br />
+507H 158V 11685221X 800C Exits:NESW&gt; You wear the ring on a finger of your right hand.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kives massacres Santino with his cleave.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kives massacres Santino with his cleave.<br />
+Aasi massacres Santino with her crush.<br />
+Santino misses Aasi with his slash.<br />
+Santino drains Aasi extremely hard.<br />
+Fisomu tells your group 'incoming'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+A knight of the sword looks at Kives and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Santino steps aside as Kuuz attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; bash santinoYou crash into Santino in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Good] Exits:NESW&gt; <br />
+Ankka crushes Santino extremely hard.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Good] Exits:NESW&gt; <br />
+Ankka crushes Santino extremely hard.<br />
+You massacre Santino with your cleave.<br />
+Kuuz annihilates Santino with his crush.<br />
+A knight of the sword slashes Kives extremely hard.<br />
+Kives massacres Santino with his cleave.<br />
+Aasi massacres Santino with her crush.<br />
+Santino massacres Aasi with his slash.<br />
+Santino drains Aasi very hard.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Fair] Exits:NESW&gt; <br />
+Fisomu tells your group 'ticking at guild'<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Fair] Exits:NESW&gt; <br />
+Kuuz stands up.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Fair] Exits:NESW&gt; <br />
+Fisomu flies east.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Fair] Exits:NESW&gt; <br />
+Santino steps aside as Zyyr attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Fair] Exits:NESW&gt; <br />
+Alleq focuses harshly on Santino and utters some strange words.<br />
+The sound of bones cracking echoes as Alleq's force bolt slams into Santino.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Bad] Exits:NESW&gt; <br />
+A knight of the sword looks at Kives and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Bad] Exits:NESW&gt; <br />
+Santino steps aside as Aasi attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Bad] Exits:NESW&gt; <br />
+Ankka attempts to focus on Santino and fails horribly.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:V.Good] [Santino:Bad] Exits:NESW&gt; <br />
+Zyyr slashes Santino extremely hard.<br />
+Ankka misses Santino with her crush.<br />
+You massacre Santino with your cleave.<br />
+Kuuz annihilates Santino with his crush.<br />
+Kuuz annihilates Santino with his crush.<br />
+A knight of the sword slashes Kives extremely hard.<br />
+Kives annihilates Santino with his cleave.<br />
+Aasi massacres Santino with her crush.<br />
+Santino massacres Aasi with his slash.<br />
+Santino massacres Aasi with his drain.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:Good] [Santino:Awful] Exits:NESW&gt; <br />
+Kuuz crashes into Santino in a thundering collision, knocking him to the ground!<br />
+<br />
+507H 142V 11685221X 800C [Aasi:Good] [Santino:Awful] Exits:NESW&gt; <br />
+Loony flies in from the south.<br />
+A knight of the sword looks at Kives and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C [Aasi:Good] [Santino:Awful] Exits:NESW&gt; <br />
+Loony flies east.<br />
+<br />
+507H 142V 11685221X 800C [Aasi:Good] [Santino:Awful] Exits:NESW&gt; <br />
+Spongue arrives from the south.<br />
+A knight of the sword looks at Kives and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C [Aasi:Good] [Santino:Awful] Exits:NESW&gt; bash spongueZyyr massacres Santino with her slash.<br />
+Ankka crushes Santino extremely hard.<br />
+You massacre Santino with your cleave.<br />
+You massacre Santino with your cleave.<br />
+You receive 0 experience.<br />
+Santino is dead! R.I.P.<br />
+get all.pile corpseA knight of the sword massacres Kives with his slash.<br />
+A knight of the sword misses Kives with his slash.<br />
+The death cry of Santino echoes from somewhere nearby...<br />
+Santino sinks gently to the ground.<br />
+Santino stops following Spongue.<br />
+You crash into Spongue in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Ankka gets a pile of coins from the corpse of Santino.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Kuuz gets a gleaming ironwood staff from the corpse of Santino.<br />
+Kuuz gets a fine dwarven katar from the corpse of Santino.<br />
+Kuuz is zapped by an etched cobalt bracer and instantly drops it.<br />
+Kuuz is zapped by a bracelet of unending flame and instantly drops it.<br />
+Kuuz is zapped by a black leather belt with dangling bones and instantly drops it.<br />
+Kuuz gets a white dragonwing cloak from the corpse of Santino.<br />
+Kuuz gets silver dragon scale armbands from the corpse of Santino.<br />
+Kuuz gets a pair of dragonrider's gloves from the corpse of Santino.<br />
+Kuuz gets a pair of barbed wire boots from the corpse of Santino.<br />
+Kuuz gets an ancient medallion from the corpse of Santino.<br />
+Kuuz gets a tattered purple cloak from the corpse of Santino.<br />
+Kuuz gets a colorful mushroom from the corpse of Santino.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Scooter arrives from the south.<br />
+A knight of the sword looks at you and yells 'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Ankka crushes a knight of the sword hard.<br />
+Scooter gets a pair of silver dragon scale leggings from the corpse of Santino.<br />
+Scooter gets a golden dragon helmet from the corpse of Santino.<br />
+Scooter is zapped by a suit of icy adamantite banded mail and instantly drops it.<br />
+Scooter is zapped by a ring of the Skull and instantly drops it.<br />
+Scooter gets a frosted tin ring from the corpse of Santino.<br />
+Scooter gets a small wooden chest from the corpse of Santino.<br />
+Scooter gets a bottle from the corpse of Santino.<br />
+Scooter gets a bottle from the corpse of Santino.<br />
+Scooter gets a bottle from the corpse of Santino.<br />
+Scooter gets a bottle from the corpse of Santino.<br />
+Scooter gets a bottle from the corpse of Santino.<br />
+Scooter gets a small wooden chest from the corpse of Santino.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Maratus crashes into Scooter in a thundering collision, knocking him to the ground!<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+A knight of the sword looks at Scooter and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Holmes tells your group 'winning?'<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Zyyr stands up.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Zyyr gets a ring of the Skull.<br />
+Zyyr gets a suit of icy adamantite banded mail.<br />
+Zyyr gets a black leather belt with dangling bones.<br />
+Zyyr gets a bracelet of unending flame.<br />
+Zyyr gets an etched cobalt bracer.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Holmes tells your group 'inn?'<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Kives panics, and attempts to flee.<br />
+Kives flies south.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; <br />
+Scooter steps aside as Zyyr attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+507H 142V 11685221X 800C [Leevi:Good] [Spongue:Awful] Exits:NESW&gt; Zyyr massacres Scooter with her slash.<br />
+A knight of the sword misses Ankka with his slash.<br />
+A knight of the sword slashes Ankka very hard.<br />
+Maratus misses Scooter with her hit.<br />
+Scooter misses Maratus with his hit.<br />
+Ankka crushes a knight of the sword very hard.<br />
+You massacre Spongue with your cleave.<br />
+You annihilate Spongue with your cleave.<br />
+You receive 0 experience.<br />
+Spongue is dead! R.I.P.<br />
+get all.pile corpseThe death cry of Spongue echoes from somewhere nearby...<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Aasi stands up.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Dhameon arrives from the west.<br />
+A knight of the sword looks at Scooter and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kives flies in from the south.<br />
+A knight of the sword looks at Scooter and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kettu arrives from the south.<br />
+A knight of the sword looks at Scooter and yells  'There's the scoundrel!'<br />
+Dhameon leaves west.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kettu focuses on Maratus and utters some strange words.<br />
+Kettu heals Maratus.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Scooter steps aside as Aasi attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Fisomu tells your group 'heals at tick'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+A knight of the sword looks at Scooter and yells  'There's the scoundrel!'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz crashes into Scooter in a thundering collision, knocking him to the ground!<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz annihilates Scooter with his crush.<br />
+You receive 0 experience.<br />
+Scooter is dead! R.I.P.<br />
+get all.pile corpseA knight of the sword slashes Ankka.<br />
+A knight of the sword slashes Ankka hard.<br />
+Ankka crushes a knight of the sword hard.<br />
+The death cry of Scooter echoes from somewhere nearby...<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Alleq gets a bottle from the corpse of Scooter.<br />
+Alleq gets a bottle from the corpse of Scooter.<br />
+Alleq gets a bottle from the corpse of Scooter.<br />
+Alleq gets a bottle from the corpse of Scooter.<br />
+Alleq gets a bottle from the corpse of Scooter.<br />
+Alleq gets a frosted tin ring from the corpse of Scooter.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Maratus gets a small wooden chest from the corpse of Scooter.<br />
+Maratus gets a small wooden chest from the corpse of Scooter.<br />
+Maratus gets a golden dragon helmet from the corpse of Scooter.<br />
+Maratus gets a pair of silver dragon scale leggings from the corpse of Scooter.<br />
+Ankka panics, and attempts to flee.<br />
+Ankka flies west.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Maratus leaves west.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; bash scooter<br />
+Kettu leaves south.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies in from the west.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Maratus leaves east.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'wtf no tic forever?'<br />
+<br />
+507H 142V 11685221X 800C Exits:NESW&gt; <br />
+Zyyr stands up.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz flies east.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; lookTraveler's Lodge<br />
+The corpse of Scooter is lying here.<br />
+The corpse of Spongue is lying here.<br />
+The corpse of Santino is lying here.<br />
+The corpse of Nasir is lying here.<br />
+Ankka Meminem, Kind Wife And Mother is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is sitting here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+A knight of the sword slashes Ankka hard.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Aasi stands up.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'LOONY?'<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz flies in from the east.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Ankka panics, and attempts to flee.<br />
+Ankka flies north.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Maratus arrives from the east.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; <br />
+Maratus leaves south.<br />
+<br />
+523H 142V 11685221X 800C Exits:NESW&gt; eVingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+<br />
+523H 141V 11685221X 800C Exits:NESW&gt; <br />
+Holmes flies in from the north.<br />
+Fisomu flies in from the north.<br />
+<br />
+523H 141V 11685221X 800C Exits:NESW&gt; <br />
+Fisomu flies west.<br />
+<br />
+523H 141V 11685221X 800C Exits:NESW&gt; wTraveler's Lodge<br />
+The corpse of Scooter is lying here.<br />
+The corpse of Spongue is lying here.<br />
+The corpse of Santino is lying here.<br />
+The corpse of Nasir is lying here.<br />
+Maratus the Female Kender is standing here.<br />
+Fisomu the Male Hylar Dwarf is standing here. (flying)<br />
+Kuuz the Male Minotaur is standing here. (flying)<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is standing here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Fisomu focuses on Maratus and utters some strange words.<br />
+Fisomu heals Maratus.<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies in from the north.<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Maratus tells your group 'no flags troggs'<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; 'heal me<br />
+Aasi tells your group 'try loony'<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; You say 'heal me'<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Holmes flies in from the east.<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'track llooony'<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Hegon arrives from the south.<br />
+<br />
+523H 140V 11685221X 800C Exits:NESW&gt; <br />
+Fisomu focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'troggs nobash anyway'<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; boeHuh?!<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; <br />
+Maratus gets a violent shock as she attempts to wield the sword.<br />
+Maratus cries out in pain.<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; <br />
+Alleq tells your group 'loony ran'<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; lookTraveler's Lodge<br />
+The corpse of Scooter is lying here.<br />
+The corpse of Spongue is lying here.<br />
+The corpse of Santino is lying here.<br />
+The corpse of Nasir is lying here.<br />
+Hegon the Male High Elf is standing here.<br />
+Holmes the Horrible is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Ankka Meminem, Kind Wife And Mother is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Maratus the Female Kender is standing here.<br />
+Fisomu the Male Hylar Dwarf is standing here. (flying)<br />
+Kuuz the Male Minotaur is standing here. (flying)<br />
+Kives, Ridiculous Seeker of Knowledge is standing here. (flying)<br />
+Aasi, Riot Starter is standing here. (flying)<br />
+Zyyr Stargaze is standing here. (flying)<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz kneels down and studies the ground.<br />
+<br />
+578H 140V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Maratus leaves east.<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Aasi kneels down and studies the ground.<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'track loony'<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'track loony'<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'track loony'<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; track loonyYou kneel down and study the ground.<br />
+You can't seem to find any tracks.<br />
+<br />
+578H 139V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies north.<br />
+You follow Ankka north.<br />
+Vingaard Avenue South<br />
+<br />
+578H 138V 11685221X 800C Exits:NESW&gt; <br />
+Holmes tells your group 'looted all?'<br />
+<br />
+578H 138V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'fly maratus'<br />
+<br />
+578H 138V 11685221X 800C Exits:NESW&gt; gt looted spongue?You tell your group 'looted spongue?'<br />
+<br />
+578H 138V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'path loony mark'<br />
+<br />
+578H 138V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies south.<br />
+You follow Ankka south.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+<br />
+578H 137V 11685221X 800C Exits:NESW&gt; <br />
+Aasi tells your group 'no tracks'<br />
+<br />
+578H 137V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies west.<br />
+You follow Ankka west.<br />
+Traveler's Lodge<br />
+The corpse of Scooter is lying here.<br />
+The corpse of Spongue is lying here.<br />
+The corpse of Santino is lying here.<br />
+The corpse of Nasir is lying here.<br />
+Hegon the Male High Elf is standing here.<br />
+A Knight of Solamnia walks about the inn, keeping it safe.<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'relo loony'<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'relo loony'<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'relo loony'<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Kuuz tells your group 'relo loony'<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Hegon gasps in astonishment.<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Ankka tells your group 'yes '<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Hegon says 'wow'<br />
+<br />
+578H 136V 11685221X 800C Exits:NESW&gt; <br />
+Ankka flies east.<br />
+You follow Ankka east.<br />
+Vingaard Avenue South<br />
+The corpse of Nasir is lying here.<br />
+<br />
+578H 135V 11685221X 800C Exits:NESW&gt; <br />
+Alleq utters some strange words.<br />
+Alleq disappears in a puff of smoke.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='734'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=734">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="734">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

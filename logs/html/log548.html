@@ -1,0 +1,743 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 548-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='548'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Casanova RIP</font></b>
+<p>
+POV: 
+Yuhee<p>
+Log Rating:
+2.4092<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+More trash mages come to screw up peaceful zoning.</i>
+<p>
+<p>
+
+<br />
+<br />
+314H 125V 1821683X 1155C Mem:4 Exits:NW&gt; <br />
+gro<br />
+Your group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Yuhee            perfect   rested    standing   Y   Y    N     1    4<br />
+  Selena           perfect   rested    standing   Y   Y    N     1    2<br />
+<br />
+314H 125V 1821683X 1155C Mem:4 Exits:NW&gt; <br />
+Elyana flies in from the west.<br />
+Casanova flies in from the west.<br />
+Mona flies in from the west.<br />
+<br />
+cast 'fire s' Elyana<br />
+314H 125V 1821683X 1155C Mem:4 Exits:NW&gt; <br />
+Mona focuses harshly on you and utters the words, 'hold monster'.<br />
+You feel a slight chill.<br />
+<br />
+314H 125V 1821683X 1155C Mem:4 Exits:NW&gt; <br />
+You utter the words, 'fire storm'<br />
+You miss Elyana and destroy an image instead.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+Casanova focuses harshly on Selena and utters some strange words.<br />
+Selena wavers under the impact of the lightning bolt sent by Casanova.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+Elyana focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+weat<br />
+Casanova pierces Selena hard.<br />
+Casanova is burned, as he swings at Selena.<br />
+Selena pierces Casanova extremely hard.<br />
+You miss Elyana and destroy an image instead.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+The sky is clear and the air is calm.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+A large gnat flies west.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+Mona focuses harshly on Selena and utters some strange words.<br />
+The sound of bones cracking echoes as Mona's force bolt slams into Selena.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+A large gnat misses Elyana with its bite.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+cast 'cone'   <br />
+Elyana utters some strange words.<br />
+Elyana is surrounded by 4 duplicate images.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+Casanova focuses harshly on Selena and utters some strange words.<br />
+Selena wavers under the impact of the lightning bolt sent by Casanova.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:5 Exits:NW&gt; <br />
+You utter the words, 'cone of cold'<br />
+You miss Elyana and destroy an image instead.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:6 Exits:NW&gt; <br />
+A large gnat misses Elyana with its bite.<br />
+A large gnat misses Elyana with its bite.<br />
+Selena pierces Casanova extremely hard.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:6 Exits:NW&gt; <br />
+Selena desparately quaffs a flask of clear liquid.<br />
+Large gashes and wounds disappear on Selena's body.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:6 Exits:NW&gt; <br />
+Mona focuses harshly on Selena and utters some strange words.<br />
+The sound of bones cracking echoes as Mona's force bolt slams into Selena.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:6 Exits:NW&gt; <br />
+Selena utters some strange words.<br />
+Selena turns into smoke and is blown away.<br />
+<br />
+314H 125V 1821683X 1155C [Yuhee:Perfect] [Elyana:Perfect] Mem:6 Exits:NW&gt; <br />
+cast 'cone' elyana  <br />
+A large gnat misses Elyana with its bite.<br />
+You miss Elyana and destroy an image instead.<br />
+Elyana pierces YOU very hard.<br />
+Elyana is chilled as she passes through your freezing aura.<br />
+Elyana focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:6 Exits:NW&gt; <br />
+You utter the words, 'cone of cold'<br />
+You miss Elyana and destroy an image instead.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+A large gnat misses Elyana with its bite.<br />
+Selena tells your group 'ne-a'<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+Elyana focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+Casanova misses you with his pierce.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+cast 'storm call'  <br />
+You utter the words, 'storm call'<br />
+There is lightning in the sky.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+Mona focuses harshly on you and utters the words, 'hold monster'.<br />
+You feel a slight chill.<br />
+<br />
+303H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+Casanova pierces YOU hard.<br />
+Casanova is chilled as he passes through your freezing aura.<br />
+A large gnat misses Elyana with its bite.<br />
+<br />
+294H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+cast 'lightning storm'  <br />
+Elyana focuses harshly on you and utters the words, 'silence'.<br />
+You feel a slight chill.<br />
+<br />
+294H 125V 1821683X 1155C [Yuhee:V.Good] [Elyana:V.Good] Mem:7 Exits:NW&gt; <br />
+You utter the words, 'lightning storm'<br />
+Mona staggers under the assault of the lightning bolts you have summoned from the cloud filled sky.<br />
+Casanova staggers under the assault of the lightning bolts you have summoned from the cloud filled sky.<br />
+You destroy Elyana's mirror image.<br />
+Elyana staggers under the assault of the lightning bolts you have summoned from the cloud filled sky.<br />
+Storm clouds boil, and numerous bolts of lightning flash from the sky, frying a large gnat to a cinder.<br />
+You receive 610 experience.<br />
+A large gnat is dead! R.I.P.<br />
+<br />
+294H 125V 1820266X 1155C [Yuhee:V.Good] [Elyana:Fair] Mem:9 Exits:NW&gt; <br />
+The death cry of a large gnat echoes from somewhere nearby...<br />
+Casanova focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Casanova has reached its goal.<br />
+<br />
+263H 125V 1820266X 1155C [Yuhee:Good] [Elyana:Fair] Mem:9 Exits:NW&gt; <br />
+cast 'lightning storm'  <br />
+Elyana focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Elyana's force bolt slams into you.<br />
+<br />
+212H 125V 1820266X 1155C [Yuhee:Fair] [Elyana:Fair] Mem:9 Exits:NW&gt; <br />
+Your casting is disrupted by the fighting!<br />
+<br />
+212H 125V 1820266X 1155C [Yuhee:Fair] [Elyana:Fair] Mem:10 Exits:NW&gt; <br />
+Casanova focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+212H 125V 1820266X 1155C [Yuhee:Fair] [Elyana:Fair] Mem:10 Exits:NW&gt; <br />
+get flask traveling<br />
+qua flask<br />
+You get a flask of clear liquid from a leather traveling pack.<br />
+<br />
+212H 125V 1820266X 1155C [Yuhee:Fair] [Elyana:Fair] Mem:10 Exits:NW&gt; <br />
+You desparately quaff a flask of clear liquid.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:Fair] Mem:10 Exits:NW&gt; <br />
+Mona focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:Fair] Mem:10 Exits:NW&gt; <br />
+cast 'cone'<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Elyana, freezing her.<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+Elyana focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Elyana's force bolt slams into you.<br />
+That Really did HURT!<br />
+<br />
+235H 125V 1820266X 1155C [Yuhee:Good] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+Casanova focuses harshly on you and utters some strange words.<br />
+You feel a slight chill.<br />
+<br />
+235H 125V 1820266X 1155C [Yuhee:Good] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+get flask traveling<br />
+qua flask<br />
+Mona misses you with her pierce.<br />
+<br />
+235H 125V 1820266X 1155C [Yuhee:Good] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+You get a flask of clear liquid from a leather traveling pack.<br />
+<br />
+235H 125V 1820266X 1155C [Yuhee:Good] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+cast 'call lig'<br />
+You desparately quaff a flask of clear liquid.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:Fair] Mem:11 Exits:NW&gt; <br />
+You utter the words, 'call lightning'<br />
+You hit Elyana with your lightning -- bullseye!<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:V.Bad] Mem:12 Exits:NW&gt; <br />
+Elyana gets a potion from her chest.<br />
+<br />
+314H 125V 1820266X 1155C [Yuhee:Perfect] [Elyana:V.Bad] Mem:12 Exits:NW&gt; <br />
+Mona focuses harshly on you and utters some strange words.<br />
+You feel ribs shatter as Mona's force bolt slams into you.<br />
+<br />
+258H 125V 1820266X 1155C [Yuhee:Good] [Elyana:V.Bad] Mem:12 Exits:NW&gt; <br />
+Elyana desperately quaffs a blue potion of remove poison.<br />
+<br />
+258H 125V 1820266X 1155C [Yuhee:Good] [Elyana:V.Bad] Mem:12 Exits:NW&gt; <br />
+cast 'call lig'  <br />
+Elyana pierces YOU extremely hard.<br />
+Elyana is chilled as she passes through your freezing aura.<br />
+You are thirsty.<br />
+<br />
+259H 142V 1820266X 1155C [Yuhee:Good] [Elyana:V.Bad] Mem:35 Exits:NW&gt; <br />
+Casanova focuses harshly on you and utters some strange words.<br />
+You get a shock as Casanova gets too close to you.<br />
+<br />
+227H 142V 1820266X 1155C [Yuhee:Fair] [Elyana:V.Bad] Mem:35 Exits:NW&gt; <br />
+Elyana gets a potion from her chest.<br />
+<br />
+227H 142V 1820266X 1155C [Yuhee:Fair] [Elyana:V.Bad] Mem:35 Exits:NW&gt; <br />
+Elyana slowly quaffs a potion of golden sap, getting every drop.<br />
+Elyana begins to become blurry and hard to see.<br />
+<br />
+227H 142V 1820266X 1155C [Yuhee:Fair] [Elyana:Bad] Mem:35 Exits:NW&gt; <br />
+You utter the words, 'call lightning'<br />
+You hit Elyana with your lightning -- bullseye!<br />
+<br />
+227H 142V 1820266X 1155C [Yuhee:Fair] [Elyana:Awful] Mem:39 Exits:NW&gt; <br />
+Mona focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Mona has reached its goal.<br />
+<br />
+161H 142V 1820266X 1155C [Yuhee:Fair] [Elyana:Awful] Mem:39 Exits:NW&gt; <br />
+Elyana grabs a glowing scroll of recall.<br />
+Elyana recites a glowing scroll of recall.<br />
+Elyana disappears.<br />
+You direct your attention to Mona.<br />
+<br />
+161H 142V 1820266X 1155C [Yuhee:Fair] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+Casanova grabs a scroll of recall.<br />
+<br />
+161H 142V 1820266X 1155C [Yuhee:Fair] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+get blue.potion traveling<br />
+quaff potion<br />
+You get a blue potion from a leather traveling pack.<br />
+<br />
+161H 142V 1820266X 1155C [Yuhee:Fair] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+You quaff a blue potion.<br />
+You feel the healing hand of Mishakal upon you.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+313H 142V 1820266X 1155C [Yuhee:V.Good] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+cpme<br />
+Mona focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Mona has reached its goal.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+Huh?!<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+You miss Mona with your slash.<br />
+Casanova misses you with his pierce.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Mona:Good] Mem:39 Exits:NW&gt; <br />
+cast 'cone'<br />
+You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Mona, freezing her.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Mona:Fair] Mem:41 Exits:NW&gt; <br />
+Mona grabs a glowing scroll of recall.<br />
+Mona recites a glowing scroll of recall.<br />
+Mona disappears.<br />
+You direct your attention to Casanova.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Casanova:V.Bad] Mem:41 Exits:NW&gt; <br />
+A large gnat flies in from the west.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Casanova:V.Bad] Mem:41 Exits:NW&gt; <br />
+You slash Casanova extremely hard.<br />
+Casanova misses you with his pierce.<br />
+<br />
+266H 142V 1820266X 1155C [Yuhee:Good] [Casanova:V.Bad] Mem:41 Exits:NW&gt; <br />
+Casanova panics, and attempts to flee.<br />
+Casanova flies north.<br />
+<br />
+266H 142V 1820266X 1155C Mem:41 Exits:NW&gt; <br />
+n<br />
+Skirting the Edge of a Menacing Swamp<br />
+Casanova the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+cast 'fire s' Casanova<br />
+266H 140V 1820266X 1155C Mem:41 Exits:ES&gt; <br />
+You utter the words, 'fire storm'<br />
+Your wall of flames crushes Casanova, who barely utters a death cry.<br />
+You receive 0 experience.<br />
+Casanova is dead! R.I.P.<br />
+<br />
+266H 140V 1820266X 1155C [Casanova:Dying] Mem:45 Exits:ES&gt; <br />
+The death cry of Casanova echoes from somewhere nearby...<br />
+<br />
+266H 140V 1820266X 1155C Mem:45 Exits:ES&gt; <br />
+r<br />
+You rest your tired bones but stay aloft.<br />
+<br />
+266H 140V 1820266X 1155C Mem:12 Exits:ES&gt; <br />
+look in 1.corpse<br />
+corpse (here) : <br />
+a scroll of recall..it glows blue<br />
+a short sword<br />
+a large pile of coins<br />
+a large first-aid kit<br />
+a scroll with a brown ribbon..it glows blue<br />
+a piece of sweet bread..it glows blue [2]<br />
+a small keg [3]<br />
+a smoked Tarsis ham [9]<br />
+a plate of bacon and eggs [3]<br />
+a small sack<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='548'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=548">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="548">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

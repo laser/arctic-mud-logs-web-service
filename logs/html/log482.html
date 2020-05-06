@@ -1,0 +1,863 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 482-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='482'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Verde R.I.P.</font></b>
+<p>
+POV: 
+Mercator<p>
+Log Rating:
+0.2500<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Randomer Verde dies.</i>
+<p>
+<p>
+
+<br />
+382H 138V 1X 2050C Mem:3 Exits:NWU&gt; <br />
+Verde yells 'losers'<br />
+<br />
+382H 140V 1X 2050C Exits:NWU&gt; <br />
+The captain of the watch arrives from the west.<br />
+Verde arrives from the west.<br />
+A hardened watchman arrives from the west.<br />
+A hardened watchman arrives from the west.<br />
+<br />
+382H 140V 1X 2050C [**Verde:Fair**] Exits:NWU&gt; <br />
+Verde slowly fades into existence.<br />
+Verde misses you with his slash.<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Exits:NWU&gt; <br />
+You stop watching Verde.<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Exits:NWU&gt; <br />
+Goka slowly fades into existence.<br />
+--&lt;&lt;Goka BASHES Verde&gt;&gt;--382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Exits:NWU&gt; ne<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+Schmendrick tells your group 'nod'<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+Schmendrick flies in from the north.<br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Verde and yells  'There's the scoundrel!'<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; flee<br />
+<br />
+Verde steps aside as Manny attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+Schmendrick focuses harshly on Verde and utters the words, 'hold person'.<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+Jarkel arrives from above.<br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+A hardened watchman looks at Verde and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Verde and yells  'There's the scoundrel!'<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:Fair] Mem:3 Exits:NWU&gt; <br />
+Jarkel focuses on Verde and utters the words, 'heal'.<br />
+Jarkel heals Verde.<br />
+<br />
+382H 140V 1X 2050C [Mercator:Perfect] [Verde:V.Good] Mem:3 Exits:NWU&gt; <br />
+Manny misses Verde with his stab.<br />
+The captain of the watch massacres Verde with his bludgeon.<br />
+The captain of the watch massacres Verde with his bludgeon.<br />
+The captain of the watch annihilates Verde with his bludgeon.<br />
+A hardened watchman misses Verde with his slash.<br />
+A hardened watchman massacres Verde with his slash.<br />
+A hardened watchman annihilates Verde with his slash.<br />
+A hardened watchman massacres Verde with his slash.<br />
+A hardened watchman massacres Verde with his slash.<br />
+Goka slashes Verde extremely hard.<br />
+Verde slashes YOU hard.<br />
+A hardened watchman delivers a vicious kick to Verde's face. Blood flies as his head snaps back.<br />
+<br />
+373H 140V 1X 2050C [Mercator:V.Good] [Verde:Bad] Mem:3 Exits:NWU&gt; flee<br />
+You flee head over heels.<br />
+The Pig and Whistle<br />
+    A small brass bell sits on a rosewood table along with a guest book.<br />
+There is no need to ring for attention, however; you are getting plenty of<br />
+that already. A brass sign assures you of the quarters' legendary comfort.<br />
+A small crystalline vial full of bright green liquid lies here...it glows blue<br />
+A potion of thick black tar has been dropped here.<br />
+A silver war medal has been dropped here.<br />
+Fragments of dull grey rock litter the ground.<br />
+An impressive medal has been discarded here.<br />
+A yellow colored piece of glass lies on the ground here.<br />
+A bottle of elfin wine lies here. [3]<br />
+A few keys with a thin metal chain looped through are lying here.<br />
+A potion has been left here...it glows blue [2]<br />
+The jailer's keys have been left here. [2]<br />
+A well preserved humanoid skull stares at you with empty sockets.<br />
+A bulletin board with the heading 'Wanted' has been posted on the far wall.<br />
+Dogan the Male Human is standing here. (flying) (red aura)<br />
+Delzanin the Male Minotaur is resting here.<br />
+A beefy bouncer stands near the innkeeper, watching for trouble.<br />
+Ed, the crotchety innkeeper stands here.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; st<br />
+You are already standing.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; l d<br />
+You see nothing special.<br />
+Jarkel the Male Hylar Dwarf is standing here.<br />
+Schmendrick the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+Verde, The Very Nice Apostle of Flame is sitting here, fighting a hardened watchman.<br />
+The captain of the watch is standing here, fighting Verde.<br />
+Aries the Male Wild Elf is standing here, fighting Verde. (flying)<br />
+Goka the Male Minotaur is standing here, fighting Verde.<br />
+Sir Morbius Winterwood, Wacky Zealot is standing here.<br />
+. . . is outlined with a dim aura.<br />
+Manny the Male Wild Elf is sitting here, fighting Verde. (flying)<br />
+Silmarillion the Male Gnome is standing here. (flying) (invisible)<br />
+Dominie the Female Theiwar Dwarf is standing here. (red aura)<br />
+Mora the Male High Elf is sleeping here. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+The Tavern owner, William Sweetwater, offers you a drink and a pie.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; <br />
+Delzanin gets a vial filled with green liquid.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; get vial<br />
+You don't see what you are looking for here.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; <br />
+Jarkel arrives from below.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; l d<br />
+You see nothing special.<br />
+Schmendrick the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+Verde, The Very Nice Apostle of Flame is sitting here, fighting a hardened watchman.<br />
+The captain of the watch is standing here, fighting Verde.<br />
+Aries the Male Wild Elf is standing here, fighting Verde. (flying)<br />
+Goka the Male Minotaur is standing here, fighting Verde.<br />
+Sir Morbius Winterwood, Wacky Zealot is standing here.<br />
+. . . is outlined with a dim aura.<br />
+Manny the Male Wild Elf is sitting here, fighting Verde. (flying)<br />
+Silmarillion the Male Gnome is standing here. (flying) (invisible)<br />
+Dominie the Female Theiwar Dwarf is standing here. (red aura)<br />
+Mora the Male High Elf is sleeping here. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+The Tavern owner, William Sweetwater, offers you a drink and a pie.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; <br />
+Jarkel leaves down.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; group<br />
+Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Mercator         v.good    rested    standing   N   N    N     0    3<br />
+  Manny            perfect   rested    fighting   Y   N    N     0    2<br />
+  Morbius          perfect   rested    standing   N   N    N     1    0<br />
+  Dominie          perfect   rested    standing   N   N    N     1    0<br />
+  Schmendrick      perfect   rested    standing   Y   N    N     1    2<br />
+  Goka             v.good    rested    fighting   N   N    N     0    0<br />
+  Aries            perfect   rested    fighting   Y   N    N     0    0<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; l d<br />
+You see nothing special.<br />
+Jarkel the Male Hylar Dwarf is sitting here, fighting Goka.<br />
+Schmendrick the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+Verde, The Very Nice Apostle of Flame is sitting here, fighting a hardened watchman.<br />
+The captain of the watch is standing here, fighting Verde.<br />
+Aries the Male Wild Elf is standing here, fighting Verde. (flying)<br />
+Goka the Male Minotaur is standing here, fighting Verde.<br />
+Sir Morbius Winterwood, Wacky Zealot is standing here.<br />
+. . . is outlined with a dim aura.<br />
+Manny the Male Wild Elf is sitting here, fighting Verde. (flying)<br />
+Silmarillion the Male Gnome is standing here. (flying) (invisible)<br />
+Dominie the Female Theiwar Dwarf is standing here. (red aura)<br />
+Mora the Male High Elf is sleeping here. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+The Tavern owner, William Sweetwater, offers you a drink and a pie.<br />
+<br />
+373H 139V 1X 2050C Mem:3 Exits:D&gt; d<br />
+The Pig and Whistle<br />
+    You have entered the tavern of the Pig and Whistle. Unusually large, it<br />
+has a full length oak bar against the far wall. Many bottles of spirits<br />
+fill racks on the walls and beer kegs lay stacked and at the ready in the<br />
+corner. Small stools and tables encrusted with grime invite you to sit and<br />
+relax. A small staircase leads upwards to the sleeping quarters, and to the<br />
+west is a meeting room.<br />
+Jarkel the Male Hylar Dwarf is sitting here, fighting Goka.<br />
+Schmendrick the Male Human is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+A hardened watchman is standing here, fighting Verde.<br />
+Verde, The Very Nice Apostle of Flame is sitting here, fighting a hardened watchman.<br />
+The captain of the watch is standing here, fighting Verde.<br />
+Aries the Male Wild Elf is standing here, fighting Verde. (flying)<br />
+Goka the Male Minotaur is standing here, fighting Verde.<br />
+Sir Morbius Winterwood, Wacky Zealot is standing here.<br />
+. . . is outlined with a dim aura.<br />
+Manny the Male Wild Elf is sitting here, fighting Verde. (flying)<br />
+Silmarillion the Male Gnome is standing here. (flying) (invisible)<br />
+Dominie the Female Theiwar Dwarf is standing here. (red aura)<br />
+Mora the Male High Elf is sleeping here. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+The Tavern owner, William Sweetwater, offers you a drink and a pie.<br />
+A hardened watchman looks at Aries and yells  'There's the scoundrel!'<br />
+A hardened watchman looks at Aries and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Aries and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2050C Mem:3 Exits:NWU&gt; <br />
+Manny &gt;&gt; &gt;&gt; _-=~`STANDS`~=-_                                                                                                <br />
+                                                                                                                   373H 138V<br />
+ 1X 2050C Mem:3 Exits:NWU&gt; <br />
+Schmendrick focuses harshly on Verde and utters some strange words.<br />
+The sound of bones cracking echoes as Schmendrick's force bolt slams into Verde.<br />
+<br />
+373H 138V 1X 2050C Mem:3 Exits:NWU&gt; <br />
+Morbius says 'tata'<br />
+<br />
+373H 138V 1X 2050C Mem:3 Exits:NWU&gt; <br />
+The captain of the watch looks at Aries and yells  'There's the scoundrel!'<br />
+Jarkel misses Goka with his hit.<br />
+Aries misses Verde with his cleave.<br />
+Aries misses Verde with his slash.<br />
+Verde misses a hardened watchman with his slash.<br />
+Manny stabs Verde very hard.<br />
+Verde is stunned, but will likely regain consciousness again.<br />
+The captain of the watch obliterates Verde with his bludgeon.<br />
+You receive 0 experience.<br />
+Verde is dead! R.I.P.<br />
+The death cry of Verde echoes from somewhere nearby...<br />
+A griffon stops following Verde.<br />
+Verde stops following the captain of the watch.<br />
+<br />
+373H 138V 1X 2050C Mem:3 Exits:NWU&gt; get pile corpse<br />
+<br />
+exa corpse<br />
+You get a large pile of coins from the corpse of Verde.<br />
+There were 332 coins.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; wat verde<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a magical watering can..it glows blue<br />
+a steel finger ring sword<br />
+a cloth belt pack<br />
+a black bandit's pack<br />
+an opal shield..it glows dimly<br />
+a pair of rabbit fur boots<br />
+a pair of hardened leather greaves<br />
+a heavy steel helm<br />
+the grey robes of the Thorn..it glows blue..it hums softly<br />
+a multi-coloured goat skin cloak<br />
+a ruined medal..it glows blue<br />
+a blue nephaline ring<br />
+a silver runed ring..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a silver wand..it glows blue..it glows dimly<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+Manny gets a magical watering can from the corpse of Verde.<br />
+Manny gets a steel finger ring sword from the corpse of Verde.<br />
+Manny gets a cloth belt pack from the corpse of Verde.<br />
+Manny gets a black bandit's pack from the corpse of Verde.<br />
+Manny gets a pair of rabbit fur boots from the corpse of Verde.<br />
+Manny gets a pair of hardened leather greaves from the corpse of Verde.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; They don't seem to be here.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; get all corpse<br />
+You get an opal shield from the corpse of Verde.<br />
+You get a heavy steel helm from the corpse of Verde.<br />
+You get the grey robes of the Thorn from the corpse of Verde.<br />
+You get a multi-coloured goat skin cloak from the corpse of Verde.<br />
+You get a ruined medal from the corpse of Verde.<br />
+You get a blue nephaline ring from the corpse of Verde.<br />
+You get a silver runed ring from the corpse of Verde.<br />
+You get a glowing scroll of recall from the corpse of Verde.<br />
+You get a glowing scroll of recall from the corpse of Verde.<br />
+You get a silver wand from the corpse of Verde.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+Verde arrives from above.<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+The captain of the watch bludgeons Goka extremely hard.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+A hardened watchman slashes Goka extremely hard.<br />
+A hardened watchman massacres Goka with his slash.<br />
+Goka slashes Jarkel extremely hard.<br />
+Jarkel misses Goka with his hit.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; wat goka<br />
+<br />
+Morbius laughs heartily.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+Jarkel &gt;&gt; &gt;&gt; _-=~`STANDS`~=-_                                                                                               <br />
+                                                                                                                    373H 138<br />
+V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+Verde leaves west.<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+--&lt;&lt;Goka BASHES Jarkel&gt;&gt;--373H 138V 1X 2382C Mem:3 Exits:NWU&gt; <br />
+Verde arrives from the west.<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2382C Mem:3 Exits:NWU&gt; The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+You now watch Goka.<br />
+<br />
+373H 138V 1X 2382C [**Goka:Good**] [**Jarkel:Good**] Mem:3 Exits:NWU&gt; <br />
+Morbius cheers loudly.<br />
+<br />
+373H 138V 1X 2382C [**Goka:Good**] [**Jarkel:Good**] Mem:3 Exits:NWU&gt; st<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+373H 138V 1X 2382C [**Goka:Good**] [**Jarkel:Good**] Mem:4 Exits:NWU&gt; <br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2382C [**Goka:Good**] [**Jarkel:Good**] Mem:4 Exits:NWU&gt; group<br />
+<br />
+Dominie focuses harshly on Verde and utters the words, 'hold person'.<br />
+<br />
+373H 138V 1X 2382C [**Goka:Good**] [**Jarkel:Good**] Mem:4 Exits:NWU&gt; <br />
+Verde misses you with his hit.<br />
+<br />
+373H 138V 1X 2382C [Mercator:V.Good] [Verde:Awful] Mem:4 Exits:NWU&gt; <br />
+You stop watching Goka.<br />
+<br />
+373H 138V 1X 2382C [Mercator:V.Good] [Verde:Awful] Mem:4 Exits:NWU&gt; <br />
+Verde misses you with his hit.<br />
+You crush Verde very hard.<br />
+You receive 0 experience.<br />
+Verde is dead! R.I.P.<br />
+A hardened watchman slashes Goka hard.<br />
+A hardened watchman slashes Goka extremely hard.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+A hardened watchman massacres Goka with his slash.<br />
+A hardened watchman slashes Goka very hard.<br />
+Goka massacres Jarkel with his slash.<br />
+The death cry of Verde echoes from somewhere nearby...<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; get pile corpse<br />
+<br />
+exa corpse<br />
+<br />
+Schmendrick focuses harshly on Jarkel and utters some strange words.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Morbius looks at Jarkel.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Illilliilij arrives from the west.<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+A hardened watchman looks at Goka and yells  'There's the scoundrel!'<br />
+The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; You are already standing.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Mercator         v.good    rested    standing   N   N    N     0    4<br />
+  Manny            perfect   rested    standing   Y   N    N     0    2<br />
+  Morbius          perfect   rested    standing   N   N    N     1    0<br />
+  Dominie          perfect   rested    standing   N   N    N     1    3<br />
+  Schmendrick      perfect   rested    standing   Y   N    N     1    4<br />
+  Goka             fair      rested    fighting   N   N    N     0    0<br />
+  Aries            perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+A hardened watchman massacres Goka with his slash.<br />
+A hardened watchman slashes Goka extremely hard.<br />
+A hardened watchman massacres Goka with his slash.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+The captain of the watch massacres Goka with his bludgeon.<br />
+A hardened watchman massacres Goka with his slash.<br />
+A hardened watchman slashes Goka extremely hard.<br />
+A hardened watchman massacres Goka with his slash.<br />
+Goka massacres Jarkel with his slash.<br />
+Jarkel misses Goka with his hit.<br />
+A hardened watchman delivers a vicious kick to Goka's face. Blood flies as his head snaps back.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Verde arrives from above.<br />
+The captain of the watch looks at Goka and yells  'There's the scoundrel!'<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; group<br />
+Your group of 7 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Mercator         v.good    rested    standing   N   N    N     0    4<br />
+  Manny            perfect   rested    standing   Y   N    N     0    2<br />
+  Morbius          perfect   rested    standing   N   N    N     1    0<br />
+  Dominie          perfect   rested    standing   N   N    N     1    3<br />
+  Schmendrick      perfect   rested    standing   Y   N    N     1    4<br />
+  Goka             awful     rested    fighting   N   N    N     0    0<br />
+  Aries            perfect   rested    standing   Y   N    N     0    0<br />
+ <br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Schmendrick focuses harshly on Verde and utters some strange words.<br />
+Brains splatter on you as Schmendrick's force bolt shatters Verde's skull.<br />
+You receive 0 experience.<br />
+Verde is dead! R.I.P.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+The death cry of Verde echoes from somewhere nearby...<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Jarkel stands up.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; <br />
+Jarkel panics, and attempts to flee.<br />
+Jarkel leaves west.<br />
+<br />
+373H 138V 1X 2382C Mem:4 Exits:NWU&gt; cast 'heal' goka<br />
+You utter the words, 'heal'<br />
+You heal Goka.<br />
+<br />
+373H 138V 1X 2382C Mem:5 Exits:NWU&gt; <br />
+Goka panics, and attempts to flee.<br />
+Goka leaves west.<br />
+ <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='482'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=482">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="482">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

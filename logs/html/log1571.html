@@ -1,0 +1,913 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1571-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1571'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Various deaths :)</font></b>
+<p>
+POV: 
+Bezinka<p>
+Log Rating:
+1.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Had Bam and Zhero right where we wanted them! nearly ...good thing mh didn't wanna use flags for some reason ...guess crystal sphere makes them happy! :))</i>
+<p>
+<p>
+
+Semper flies east.<br />
+You follow Semper east.<br />
+Maze Entrance<br />
+     The path leads to a formation of rocks with an entrance carved on<br />
+the face.  There is a gate closing the entrance.  This is the entrance to<br />
+the maze. Students come to here in groups to take on the challenges below.<br />
+Zhero PK, Peaceful Zoning Clan is standing here.<br />
+Bam Bam is standing here.<br />
+c 'fire storm' Bam<br />
+A ranger with a red sash tied to his waist is standing here.<br />
+<br />
+386H 130V 1X 12558C Mem:3 Exits:WD&gt; <br />
+Zhero charges at you, but you manage to move away.<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Perfect] Mem:3 Exits:WD&gt; You utter the words, 'fire storm'<br />
+Bam is crushed by a wall of fire.<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Perfect] Mem:4 Exits:WD&gt; <br />
+Joharran focuses harshly on Zhero and utters some strange words.<br />
+Zhero cries out in pain as Joharran grabs him.<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Helena CRASHES into Bam in a thundering collision, knocking him to the ground!<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Semper massacres Bam with her whip.<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Tramm slowly fades into existence.<br />
+Tramm massacres Bam with his slash.<br />
+<br />
+386H 130V 1X 12558C [Me:Perfect] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Tramm massacres Bam with his slash.<br />
+Tramm slashes Bam extremely hard.<br />
+Semper whips Bam extremely hard.<br />
+Semper massacres Bam with her slash.<br />
+Helena massacres Bam with her stab.<br />
+Bam slashes YOU extremely hard.<br />
+Bam is chilled as he passes through your freezing aura.<br />
+Zhero misses you with his slash.<br />
+Zhero misses you with his slash.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; c 'paralysis' bam<br />
+You utter the words, 'paralysis'<br />
+The magic fails!<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Ruhinris comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; c 'paralysis' bam<br />
+<br />
+Bam misses Ruhinris with his slash.<br />
+Ruhinris misses Bam with his crush.<br />
+Tramm slashes Bam extremely hard.<br />
+Tramm massacres Bam with his slash.<br />
+Semper whips Bam extremely hard.<br />
+Semper massacres Bam with her slash.<br />
+Helena massacres Bam with her stab.<br />
+Zhero misses you with his slash.<br />
+Zhero misses you with his slash.<br />
+Semper growls.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Semper ravages Bam hard.<br />
+Tramm attacks Bam with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; <br />
+Joharran focuses harshly on Bam and utters some strange words.<br />
+Bam cries out in pain as Joharran grabs him.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; Immortals<br />
+---------<br />
+[      God      ] Kam Molleh, Apple Pie and Genocide<br />
+[      God      ] Vert, Noir, Blanc, Colors of Hate, Hate Inc.<br />
+<br />
+Heroes<br />
+------<br />
+[      Hero     ] Cinid had his title pruned<br />
+[    Retired    ] Gyp says 'Real men drink Jagermeister'<br />
+<br />
+Mortals<br />
+-------<br />
+Sampson              Nix                        Mastozimaza                <br />
+Horgon               Palom                      Delias                     <br />
+Van                  Ogion                      Lothos                     <br />
+Lighke               Vinh                       Fuu                        <br />
+Lyze                 Edea                       Dekunobo                   <br />
+Sapphon              Charon                     Oppai                      <br />
+Qyne                 Alkoholik                  Mithos                     <br />
+Algernon             Zhero                      Gash                       <br />
+Shingo               Karta                      Linto                      <br />
+Ima                  Skroob                     Galwin                     <br />
+Clive                Quintana                   Jocasta                    <br />
+Semper               Augustus                   Cabare                     <br />
+Vasquez              Bam                        Joharran                   <br />
+Bezinka              Tramm                      Bravo                      <br />
+Uktar                Regar                      Helena                     <br />
+Renton               Mustav                     Ruhinris                   <br />
+Digit                Emberlorn                  Kyro                       <br />
+Rojany                                                                     <br />
+<br />
+Total visible people : 61        Total people online  : 61<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:4 Exits:WD&gt; TICK IN 10 SECONDS.<br />
+You utter the words, 'paralysis'<br />
+The magic fails!<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Bam steps aside as Helena attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Ruhinris CRASHES into Zhero in a thundering collision, knocking him to the ground!<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Bam bleeds profusely from his wounds.<br />
+Bam is incapacitated and will slowly die, if not aided.<br />
+Ruhinris massacres Bam with his crush.<br />
+You receive 0 experience.<br />
+Bam is dead! R.I.P.<br />
+Zhero misses you with his slash.<br />
+Zhero misses you with his slash.<br />
+The death cry of Bam echoes from somewhere nearby...<br />
+Zhero stops following Bam.<br />
+Bam now follows Zhero.<br />
+Zhero is the new leader of Bam's group.<br />
+Bam stops following Zhero.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Karta gets a steel longsword from the corpse of Bam.<br />
+Karta gets a wrist buckler from the corpse of Bam.<br />
+Karta gets a pitch black bracer from the corpse of Bam.<br />
+Karta gets a ceremonial scabbard from the corpse of Bam.<br />
+Karta gets a dark black shield from the corpse of Bam.<br />
+Karta gets some red dragon scale sleeves from the corpse of Bam.<br />
+Karta gets a pair of silver dwarven gauntlets from the corpse of Bam.<br />
+Karta gets a pair of silver dragon scale boots from the corpse of Bam.<br />
+Karta is zapped by a set of power cuisses and instantly drops it.<br />
+Karta gets a diamond inlaid choker from the corpse of Bam.<br />
+Karta gets a rune etched mithril ring from the corpse of Bam.<br />
+Karta gets a silver dwarven ring from the corpse of Bam.<br />
+Karta gets a torch from the corpse of Bam.<br />
+Karta gets a silver blade from the corpse of Bam.<br />
+Karta gets a black stone from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a colorful mushroom from the corpse of Bam.<br />
+Karta gets a pair of draconian gauntlets from the corpse of Bam.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Joharran flies west.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Semper gets a suit of golden dwarven plate mail from the corpse of Bam.<br />
+Semper gets a glowing scroll of recall from the corpse of Bam.<br />
+Semper gets a glowing scroll of recall from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a blue potion of remove poison from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a milky potion of see invisible from the corpse of Bam.<br />
+Semper gets a glowing scroll of recall from the corpse of Bam.<br />
+Semper gets a colorful mushroom from the corpse of Bam.<br />
+Semper gets a milky potion of see invisible from the corpse of Bam.<br />
+Semper gets a small canteen from the corpse of Bam.<br />
+Semper gets a small canteen from the corpse of Bam.<br />
+Semper gets a small canteen from the corpse of Bam.<br />
+Semper gets a small canteen from the corpse of Bam.<br />
+Semper gets a small canteen from the corpse of Bam.<br />
+Semper gets an enchanted rat bone charm from the corpse of Bam.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; gt MASS LOG<br />
+<br />
+Semper massacres Zhero with her whip.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; You tell your group 'MASS LOG'<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Good] Mem:5 Exits:WD&gt; <br />
+Tramm slowly fades into existence.<br />
+Tramm massacres Zhero with his slash.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; gt MASS LOG<br />
+You tell your group 'MASS LOG'<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; gt MASS LOG<br />
+You tell your group 'MASS LOG'<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; l<br />
+<br />
+Joharran flies in from the west.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; Maze Entrance<br />
+     The path leads to a formation of rocks with an entrance carved on<br />
+the face.  There is a gate closing the entrance.  This is the entrance to<br />
+the maze. Students come to here in groups to take on the challenges below.<br />
+A set of crimson red cuisses has been placed here...it glows blue<br />
+The corpse of Bam is lying here.<br />
+Joharran van der Noogle, Science Artist of the Outlaws is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Helena, Rosy Cheeks is SITTING here. (flying)<br />
+Karta the Male Hylar Dwarf is standing here. (flying)<br />
+Ruhinris is standing here. (flying)<br />
+Tramm the Male Half Elf is standing here, fighting Zhero. (flying)<br />
+Semper Fi, Outlaw Mountain Ranger is standing here, fighting Zhero. (flying)<br />
+Zhero PK, Peaceful Zoning Clan is SITTING here, fighting YOU.<br />
+A ranger with a red sash tied to his waist is standing here.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; <br />
+Joharran focuses harshly on Zhero and utters some strange words.<br />
+Zhero cries out in pain as Joharran grabs him.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Fair] Mem:5 Exits:WD&gt; <br />
+Tramm massacres Zhero with his slash.<br />
+Tramm massacres Zhero with his slash.<br />
+Semper annihilates Zhero with her whip.<br />
+Semper annihilates Zhero with her slash.<br />
+Zhero misses you with his slash.<br />
+Zhero misses you with his slash.<br />
+You miss Zhero with your pierce.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Bad] Mem:5 Exits:WD&gt; <br />
+Zhero &lt;=== STANDS UP<br />
+Helena gets a set of power cuisses.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Bad] Mem:5 Exits:WD&gt; <br />
+Tramm attacks Zhero with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Bad] Mem:5 Exits:WD&gt; <br />
+Ruhinris CRASHES into Zhero in a thundering collision, knocking him to the ground!<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:V.Bad] Mem:5 Exits:WD&gt; <br />
+Helena tells your group 'recall?'<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:V.Bad] Mem:5 Exits:WD&gt; c 'paralysis'<br />
+You can't remember how to cast that spell!<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:V.Bad] Mem:5 Exits:WD&gt; <br />
+Joharran focuses harshly on Zhero and utters some strange words.<br />
+Zhero cries out in pain as Joharran grabs him.<br />
+<br />
+368H 130V 1X 12558C [Me:V.Good] [Zhero:Awful] Mem:5 Exits:WD&gt; <br />
+Ruhinris misses Zhero with his crush.<br />
+Tramm massacres Zhero with his slash.<br />
+Tramm slashes Zhero extremely hard.<br />
+Semper annihilates Zhero with her whip.<br />
+You receive 0 experience.<br />
+Zhero is dead! R.I.P.<br />
+The death cry of Zhero echoes from somewhere nearby...<br />
+The clouds disappear.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Karta gets a pile of coins from the corpse of Zhero.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; who b<br />
+Immortals<br />
+---------<br />
+[      God      ] Kam Molleh, Apple Pie and Genocide<br />
+[      God      ] Vert, Noir, Blanc, Colors of Hate, Hate Inc.<br />
+<br />
+Heroes<br />
+------<br />
+[      Hero     ] Cinid had his title pruned<br />
+[    Retired    ] Gyp says 'Real men drink Jagermeister'<br />
+<br />
+Mortals<br />
+-------<br />
+Sampson              Helena                     Joharran                   <br />
+Renton               Emberlorn                  Karta                      <br />
+Galwin               Uktar                      Sapphon                    <br />
+Skroob               Tramm                      Clive                      <br />
+Horgon               Oppai                      Gash                       <br />
+Van                  Algernon                   Kyro                       <br />
+Vinh                 Quintana                   Vasquez                    <br />
+Regar                Linto                      Rojany                     <br />
+Xanatos              Ogion                      Alkoholik                  <br />
+Delias               Ima                        Jocasta                    <br />
+Semper               Bezinka                    Fioricet                   <br />
+Charon               Lighke                     Edea                       <br />
+Bravo                Qyne                       Lyze                       <br />
+Mastozimaza          Dekunobo                   Cabare                     <br />
+Fuu                  Ahmed                      Kital                      <br />
+Augustus             Ecko                       Palom                      <br />
+Ri                   Balboa                     Mithos                     <br />
+Lothos               Shingo                     Nix                        <br />
+Ruhinris             Digit                                                 <br />
+<br />
+Total visible people : 65        Total people online  : 65<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Semper gets a long sword from the corpse of Zhero.<br />
+Semper gets a long sword from the corpse of Zhero.<br />
+Semper gets a small brown bottle from the corpse of Zhero.<br />
+Semper gets a small brown bottle from the corpse of Zhero.<br />
+Semper gets a small brown bottle from the corpse of Zhero.<br />
+Semper gets a small brown bottle from the corpse of Zhero.<br />
+Semper gets a small brown bottle from the corpse of Zhero.<br />
+Semper gets a loaf of waybread from the corpse of Zhero.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Helena gets a small brown bottle from the corpse of Zhero.<br />
+Helena gets a small brown bottle from the corpse of Zhero.<br />
+Helena gets a small brown bottle from the corpse of Zhero.<br />
+Helena gets a bottle from the corpse of Zhero.<br />
+Helena gets a club sandwich from the corpse of Zhero.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; l<br />
+Maze Entrance<br />
+     The path leads to a formation of rocks with an entrance carved on<br />
+the face.  There is a gate closing the entrance.  This is the entrance to<br />
+the maze. Students come to here in groups to take on the challenges below.<br />
+The corpse of Zhero is lying here.<br />
+The corpse of Bam is lying here.<br />
+Joharran van der Noogle, Science Artist of the Outlaws is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Helena, Rosy Cheeks is SITTING here. (flying)<br />
+Karta the Male Hylar Dwarf is standing here. (flying)<br />
+Ruhinris is standing here. (flying)<br />
+Tramm the Male Half Elf is standing here. (flying) (invisible)<br />
+Semper Fi, Outlaw Mountain Ranger is standing here. (flying)<br />
+A ranger with a red sash tied to his waist is standing here.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Helena &lt;=== STANDS UP<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Joharran gets a scroll from his chest.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Karta tells your group 'ruuuun'<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Joharran stops using a red dragonscale book.<br />
+Joharran grabs a glowing scroll of recall.<br />
+Joharran recites a glowing scroll of recall.<br />
+Joharran disappears.<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Semper says 'st'<br />
+<br />
+386H 172V 1X 12558C Mem:4 Exits:WD&gt; <br />
+Semper flies west.<br />
+You follow Semper west.<br />
+A Grassy Field<br />
+     A field extends behind the building starting just off the porch.<br />
+There is path through the middle of the field where grass has been trampled<br />
+down to the dirt.<br />
+A warrior with a green sash tied to his waist is standing here.<br />
+A druid with a red sash tied to his waist is standing here.<br />
+<br />
+386H 170V 1X 12558C Mem:4 Exits:EW&gt; <br />
+Kam tells you 'aww you missed it'<br />
+<br />
+386H 170V 1X 12558C Mem:4 Exits:EW&gt; <br />
+Semper flies west.<br />
+You follow Semper west.<br />
+The Banquet Porch<br />
+     A fresh pig is being roasted over a metal pit.  It looks as if you<br />
+serve yourself to food and drink.  It is a very festive atmosphere.  All<br />
+the students who are not in training at the moment appear to be here if not<br />
+to eat just to socialize and drink an ale.<br />
+Rojany the Male Wild Elf is standing here. (flying)<br />
+Kital the Female High Elf is standing here. (flying)<br />
+Balboa Ice, Blood Sea Explorer is standing here. (flying)<br />
+Fioricet, A Blood Sea Pirate is standing here. (invisible)<br />
+Charon the Male Hylar Dwarf is standing here. (flying)<br />
+Ecko Echo, Resounding Doom of the Blood Sea is standing here. (flying)<br />
+Ri P. Roarin', Blood Sea Pirate is standing here. (flying)<br />
+Xanatos A'Kul, Blood Sea Champion of the Abyss is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Ahmed Lipetskiy, Wind of the War from the Coast of Blood Sea is standing here. (flying) (invisible)<br />
+<br />
+386H 168V 1X 12558C Mem:4 Exits:EW&gt; <br />
+You are sent sprawling as Rojany CRASHES into you.<br />
+<br />
+364H 168V 1X 12558C [Me:V.Good] [Rojany:Perfect] Mem:4 Exits:EW&gt; <br />
+Ahmed flies east.<br />
+Xanatos flies east.<br />
+Ri flies east.<br />
+Ecko flies east.<br />
+Charon flies east.<br />
+Fioricet leaves east.<br />
+Balboa flies east.<br />
+Kital flies east.<br />
+<br />
+364H 168V 1X 12558C [Me:V.Good] [Rojany:Perfect] Mem:4 Exits:EW&gt; <br />
+Rojany slashes YOU extremely hard.<br />
+Rojany is chilled as he passes through your freezing aura.<br />
+You miss Rojany with your pierce.<br />
+<br />
+344H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Ruhinris CRASHES into Rojany in a thundering collision, knocking him to the ground!<br />
+<br />
+344H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Ahmed flies in from the east.<br />
+Ecko flies in from the east.<br />
+Xanatos flies in from the east.<br />
+Ri flies in from the east.<br />
+Charon flies in from the east.<br />
+Fioricet arrives from the east.<br />
+Balboa flies in from the east.<br />
+Kital flies in from the east.<br />
+Fioricet slowly fades into existence.<br />
+Karta steps aside as Fioricet attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+344H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+You are sent sprawling as Balboa CRASHES into you.<br />
+<br />
+329H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Ri unsuccessfully tries to save Rojany.<br />
+<br />
+329H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Ecko cleaves YOU extremely hard.<br />
+Ecko is chilled as he passes through your freezing aura.<br />
+<br />
+309H 168V 1X 12558C [Me:Good] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Ahmed focuses harshly on you and utters the words, 'fire storm'.<br />
+Ahmed slowly fades into existence.<br />
+Huge flames scorch you from above.<br />
+Kital misses you with her stab.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Helena flies west.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Xanatos focuses on Rojany and utters some strange words.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Semper flies east.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+You step aside as Charon tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Digit shouts 'looking for high evil groups!'<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Karta panics, and attempts to flee.<br />
+Karta flies west.<br />
+<br />
+264H 168V 1X 12558C [Me:Fair] [Rojany:V.Good] Mem:4 Exits:EW&gt; <br />
+Charon massacres YOU with his pierce.<br />
+Charon is chilled as he passes through your freezing aura.<br />
+Kital annihilates YOU with her stab.<br />
+Kital is chilled as she passes through your freezing aura.<br />
+Kital pierces YOU extremely hard.<br />
+Kital is chilled as she passes through your freezing aura.<br />
+Ecko massacres YOU with his cleave.<br />
+Ecko is chilled as he passes through your freezing aura.<br />
+Balboa slashes YOU extremely hard.<br />
+Balboa is chilled as he passes through your freezing aura.<br />
+Ruhinris misses Rojany with his crush.<br />
+Rojany massacres YOU with his slash.<br />
+Rojany is chilled as he passes through your freezing aura.<br />
+Rojany massacres YOU with his slash.<br />
+Rojany is chilled as he passes through your freezing aura.<br />
+You miss Rojany with your pierce.<br />
+<br />
+96H 168V 1X 12558C [Me:V.Bad] [Rojany:Good] Mem:4 Exits:EW&gt; <br />
+Ri barrels into you with his charge, but you manage to stay on your feet.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+70H 168V 1X 12558C [Me:Awful] [Rojany:Good] Mem:4 Exits:EW&gt; <br />
+Ahmed focuses harshly on you and utters the words, 'fire storm'.<br />
+Ahmed slowly fades into existence.<br />
+Flames suddenly appear above you, crushing and burning you to death!<br />
+You're dead.<br />
+A blood red cape is destroyed.<br />
+A scroll of recall is destroyed.<br />
+<br />
+-11H 168V 1X 12558C Mem:4 Exits:EW&gt; gt recall<br />
+You feel less righteous.<br />
+The freezing mist surrounding you disappears.<br />
+Your skin softens.<br />
+You feel less aware of your surroundings.<br />
+As your body falls to the ground, several pages are torn from your spellbooks.<br />
+You stop following someone.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: <br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1571'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1571">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1571">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

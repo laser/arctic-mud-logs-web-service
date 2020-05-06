@@ -1,0 +1,774 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 187-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='187'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+KoS vs Sinn+Hazzy</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+The thief and Hazzy tries to score some more kills on KoS, but it ends 0-0</i>
+<p>
+<p>
+
+344H 48V 8101371X 2680C Exits:EW&gt; <br />
+backstab Dimvar<br />
+Dimvar flies in from the west.<br />
+backstab Wint<br />
+Wint flies in from the west.<br />
+Andromedia flies in from the west.<br />
+<br />
+344H 48V 8101371X 2680C Exits:EW&gt; group<br />
+Dimvar makes a strange sound, as you place a jagged-backed curved dagger in his back.<br />
+<br />
+344H 48V 8101371X 2680C [Me:Perfect] [Dimvar:Good] Exits:EW&gt; <br />
+Hazzy gives the umber hulk an order.<br />
+<br />
+344H 48V 8101371X 2680C [Me:Perfect] [Dimvar:Good] Exits:EW&gt; <br />
+You miss Dimvar with your pierce.<br />
+Dimvar slowly fades into existence.<br />
+Dimvar slashes YOU extremely hard.<br />
+<br />
+326H 48V 8101371X 2680C [Me:V.Good] [Dimvar:Good] Exits:EW&gt; <br />
+Dimvar focuses his purity on your leg!<br />
+Dimvar forces you to the ground.<br />
+326H 48V 8101371X 2680C [Me:V.Good] [Dimvar:Good] Exits:EW&gt; <br />
+Hazzy gives the umber hulk an order.<br />
+<br />
+326H 48V 8101371X 2680C [Me:V.Good] [Dimvar:Good] Exits:EW&gt; st<br />
+<br />
+Hazzy gives the umber hulk an order.<br />
+<br />
+326H 48V 8101371X 2680C [Me:V.Good] [Dimvar:Good] Exits:EW&gt; <br />
+Wint strikes at you, but misses completely.<br />
+Wint slowly fades into existence.<br />
+<br />
+326H 48V 8101371X 2680C [Me:V.Good] [Dimvar:Good] Exits:EW&gt; flee<br />
+flee<br />
+flee<br />
+<br />
+Wint massacres YOU with his crush.<br />
+You miss Dimvar with your pierce.<br />
+Dimvar slashes YOU extremely hard.<br />
+<br />
+284H 48V 8101371X 2680C [Me:Good] [Dimvar:Good] Exits:EW&gt; <br />
+Dimvar focuses harshly on you and utters some strange words.<br />
+Dimvar makes your soul hurt and suffer!<br />
+That Really did HURT!<br />
+<br />
+170H 48V 8101371X 2680C [Me:Bad] [Dimvar:Good] Exits:EW&gt; <br />
+Wint focuses his purity on your leg!<br />
+Wint focuses on your legs, but is thwarted by your quickness.<br />
+<br />
+170H 48V 8101371X 2680C [Me:Bad] [Dimvar:Good] Exits:EW&gt; <br />
+Wint massacres YOU with his crush.<br />
+You pierce Dimvar very hard.<br />
+<br />
+148H 48V 8101371X 2680C [Me:Bad] [Dimvar:Good] Exits:EW&gt; <br />
+Dimvar focuses harshly on you and utters some strange words.<br />
+Dimvar makes your soul hurt and suffer!<br />
+That Really did HURT!<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+32H 48V 8101371X 2680C [Me:Awful] [Dimvar:Good] Exits:EW&gt; You can't do that while sitting.<br />
+<br />
+32H 48V 8101371X 2680C [Me:Awful] [Dimvar:Good] Exits:EW&gt;<br />
+#10 SECONDS TO TICK<br />
+Your group of 2 members consists of:<br />
+  Sinn             awful     fatigued  fighting   Y   N    N     0    0<br />
+  Hazzy            perfect   exhausted standing   Y   N    N     1    4<br />
+<br />
+32H 48V 8101371X 2680C [Me:Awful] [Dimvar:Good] Exits:EW&gt; get silvery.potion chest<br />
+quaff silvery.potion<br />
+You stand up.<br />
+<br />
+32H 48V 8101371X 2680C [Me:Awful] [Dimvar:Good] Exits:EW&gt; You flee head over heels.<br />
+Outside the Eastern Gate<br />
+    The road beneath your feet is made of cobblestones and is in good<br />
+shape. The cobblestone path leads west through one of the main gates into<br />
+Caergoth and east into the farm lands surrounding the city. To the south a<br />
+heavily trodden path leads to a lumber mill and the forest that are being<br />
+cut. To the north a small path leads toward the dock.<br />
+32H 46V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+32H 46V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+32H 46V 8101371X 2680C Exits:NESW&gt; You get an extra silvery potion from a small wooden chest.<br />
+<br />
+32H 46V 8101371X 2680C Exits:NESW&gt; You quaff an extra silvery potion which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+341H 46V 8101371X 2680C Exits:NESW&gt; e<br />
+A Highway to Caergoth<br />
+    Heavily worn cobblestones lay side by side here, making for a solid<br />
+paved path that leads west towards a busy citadel. To the east the highway<br />
+runs off towards moor grass covered plains and farmland. A stones throw to<br />
+the south, a recently clearcut track of land appears to have been reseeded<br />
+with small pine trees. Several detachments of Solamnic Knights patrol this<br />
+highway protecting the steady flow of travellers and merchant caravans. A<br />
+small sign has been nailed into the ground here.<br />
+Andromedia, M.D. is standing here. (flying) (invisible)<br />
+backstab Wint<br />
+Wint, Drunken Innsitter is standing here. (flying)<br />
+Sir Dimvar uth Icyus, Glacial Knight of the Crown is standing here, fighting Hazzy. (flying)<br />
+. . . is outlined with a dim aura.<br />
+The huge umber hulk lumbers towards you. (flying)<br />
+Hazzy the Male Theiwar Dwarf is standing here, fighting Dimvar. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Dimvar massacres Hazzy with his slash.<br />
+Dimvar is burned, as he swings at Hazzy.<br />
+<br />
+341H 44V 8101371X 2680C Exits:EW&gt; Wint twists around to see you place a jagged-backed curved dagger in his back.<br />
+<br />
+341H 44V 8101371X 2680C [Me:V.Good] [Wint:Good] Exits:EW&gt; <br />
+Dimvar focuses harshly on Hazzy and utters some strange words.<br />
+Dimvar makes Hazzy's evil spirit shiver and suffer!<br />
+<br />
+341H 44V 8101371X 2680C [Me:V.Good] [Wint:Good] Exits:EW&gt; <br />
+Wint attempts to strike at Hazzy with his hammer.<br />
+Wint crushes Hazzy extremely hard.<br />
+Wint is burned, as he swings at Hazzy.<br />
+<br />
+341H 44V 8101371X 2680C [Me:V.Good] [Wint:Good] Exits:EW&gt; <br />
+Hazzy gives the umber hulk an order.<br />
+Andromedia steps aside as the umber hulk attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+341H 44V 8101371X 2680C [Me:V.Good] [Wint:Good] Exits:EW&gt; <br />
+The umber hulk crushes Andromedia hard.<br />
+The umber hulk barely crushes Andromedia.<br />
+Andromedia slowly fades into existence.<br />
+Wint deflects part of Sinn's with his shield.<br />
+You pierce Wint very hard.<br />
+Wint crushes YOU extremely hard.<br />
+<br />
+324H 44V 8101371X 2680C [Me:V.Good] [Wint:Fair] Exits:EW&gt; flee<br />
+flee<br />
+flee<br />
+You flee head over heels.<br />
+A Highway to Caergoth<br />
+    Worn cobblestones pave this portion of the main throughfare to the<br />
+citadel of Caergoth, which can be seen on the western horizon. The highway<br />
+bends towards the north and west here. While facing the north, you can feel<br />
+the moisture saturated wind blowing in from the cape chilling your face.<br />
+Traveling across these moor grass plains could very easily get boring if it<br />
+wasn't for the continual flow of merchants on their way to or from<br />
+Caergoth.<br />
+A Knight of the Crown stands here, watching for signs of trouble.<br />
+<br />
+324H 42V 8101371X 2680C Exits:ESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+324H 42V 8101371X 2680C Exits:ESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+324H 42V 8101371X 2680C Exits:ESW&gt; w<br />
+A Highway to Caergoth<br />
+    Heavily worn cobblestones lay side by side here, making for a solid<br />
+paved path that leads west towards a busy citadel. To the east the highway<br />
+runs off towards moor grass covered plains and farmland. A stones throw to<br />
+the south, a recently clearcut track of land appears to have been reseeded<br />
+with small pine trees. Several detachments of Solamnic Knights patrol this<br />
+highway protecting the steady flow of travellers and merchant caravans. A<br />
+small sign has been nailed into the ground here.<br />
+Andromedia, M.D. is standing here, fighting the umber hulk. (flying)<br />
+backstab Wint<br />
+Wint, Drunken Innsitter is standing here. (flying)<br />
+backstab Dimvar<br />
+Sir Dimvar uth Icyus, Glacial Knight of the Crown is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+The umber hulk is sitting here, fighting Andromedia. (flying)<br />
+<br />
+324H 40V 8101371X 2680C Exits:EW&gt; Wint twists around to see you place a jagged-backed curved dagger in his back.<br />
+You feel especially skillful today.<br />
+<br />
+324H 40V 8101371X 2680C [Me:V.Good] [Wint:Fair] Exits:EW&gt; <br />
+Dimvar focuses harshly on you and utters some strange words.<br />
+Dimvar makes your soul hurt and suffer!<br />
+<br />
+266H 40V 8101371X 2680C [Me:Good] [Wint:Fair] Exits:EW&gt; #TICK<br />
+<br />
+Andromedia recites a scroll of recall.<br />
+<br />
+266H 40V 8101371X 2680C [Me:Good] [Wint:Fair] Exits:EW&gt; <br />
+Wint raise his shield and blocks your blow.<br />
+Wint crushes YOU extremely hard.<br />
+The umber hulk crushes Andromedia hard.<br />
+Andromedia bludgeons the umber hulk extremely hard.<br />
+<br />
+272H 68V 8101371X 2680C [Me:Good] [Wint:Fair] Exits:EW&gt; flee<br />
+flee<br />
+flee<br />
+<br />
+Hazzy flies in from the west.<br />
+272H 68V 8101371X 2680C [Me:Good] [Wint:Fair] Exits:EW&gt; You can't do that while fighting.<br />
+<br />
+272H 68V 8101371X 2680C [Me:Good] [Wint:Fair] Exits:EW&gt; You flee head over heels.<br />
+Outside the Eastern Gate<br />
+    The road beneath your feet is made of cobblestones and is in good<br />
+shape. The cobblestone path leads west through one of the main gates into<br />
+Caergoth and east into the farm lands surrounding the city. To the south a<br />
+heavily trodden path leads to a lumber mill and the forest that are being<br />
+cut. To the north a small path leads toward the dock.<br />
+One of Caergoth's humble citizens is out on some business today.<br />
+<br />
+272H 66V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+272H 66V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+272H 66V 8101371X 2680C Exits:NESW&gt; w<br />
+The Eastern Gate<br />
+    You are passing through stone walls at least twenty feet thick. The<br />
+stones above you look worn by the winds of ages gone by. A heavy iron<br />
+portcullis is raised against the walls here, ready to be lowered to bar<br />
+passage from this end of the tunnel. The salty air coming from the east end<br />
+of the tunnel smells of freshly milled lumber. To the west the tunnel leads<br />
+into the city.<br />
+A member of the Caergothian guard stands sentry at this gate.<br />
+A member of the Caergothian guard stands sentry at this gate.<br />
+<br />
+272H 65V 8101371X 2680C Exits:EW&gt; e<br />
+A humble citizen arrives from the east.<br />
+    The road beneath your feet is made of cobblestones and is in good<br />
+shape. The cobblestone path leads west through one of the main gates into<br />
+Caergoth and east into the farm lands surrounding the city. To the south a<br />
+heavily trodden path leads to a lumber mill and the forest that are being<br />
+cut. To the north a small path leads toward the dock.<br />
+<br />
+e<br />
+272H 64V 8101371X 2680C Exits:NESW&gt; A Highway to Caergoth<br />
+    Heavily worn cobblestones lay side by side here, making for a solid<br />
+paved path that leads west towards a busy citadel. To the east the highway<br />
+runs off towards moor grass covered plains and farmland. A stones throw to<br />
+the south, a recently clearcut track of land appears to have been reseeded<br />
+with small pine trees. Several detachments of Solamnic Knights patrol this<br />
+highway protecting the steady flow of travellers and merchant caravans. A<br />
+small sign has been nailed into the ground here.<br />
+Hazzy the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Andromedia, M.D. is standing here, fighting the umber hulk. (flying)<br />
+backstab Wint<br />
+Wint, Drunken Innsitter is standing here. (flying)<br />
+backstab Dimvar<br />
+Sir Dimvar uth Icyus, Glacial Knight of the Crown is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+The umber hulk is sitting here, fighting Andromedia. (flying)<br />
+******* The umber hulk STANDS UP!<br />
+<br />
+272H 62V 8101371X 2680C Exits:EW&gt; The umber hulk strikes Andromedia's weapon, nearly disarming it.<br />
+Wint makes a strange sound, as you place a jagged-backed curved dagger in his back.<br />
+272H 62V 8101371X 2680C [Me:Good] [Wint:V.Bad] Exits:EW&gt; <br />
+Dimvar massacres YOU with his slash.<br />
+<br />
+251H 62V 8101371X 2680C [Me:Fair] [Wint:V.Bad] Exits:EW&gt; <br />
+Hazzy focuses harshly on Dimvar and utters some strange words.<br />
+Dimvar wavers under the impact of the lightning bolt sent by Hazzy.<br />
+<br />
+251H 62V 8101371X 2680C [Me:Fair] [Wint:V.Bad] Exits:EW&gt; <br />
+Dimvar slashes YOU extremely hard.<br />
+Wint deflects part of Sinn's with his shield.<br />
+You pierce Wint hard.<br />
+Wint crushes YOU extremely hard.<br />
+The umber hulk crushes Andromedia extremely hard.<br />
+The umber hulk crushes Andromedia hard.<br />
+<br />
+214H 62V 8101371X 2680C [Me:Fair] [Wint:V.Bad] Exits:EW&gt; You can't do that while fighting.<br />
+<br />
+214H 62V 8101371X 2680C [Me:Fair] [Wint:V.Bad] Exits:EW&gt; flee<br />
+flee<br />
+flee<br />
+You flee head over heels.<br />
+Outside the Eastern Gate<br />
+    The road beneath your feet is made of cobblestones and is in good<br />
+shape. The cobblestone path leads west through one of the main gates into<br />
+Caergoth and east into the farm lands surrounding the city. To the south a<br />
+heavily trodden path leads to a lumber mill and the forest that are being<br />
+cut. To the north a small path leads toward the dock.<br />
+<br />
+214H 60V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+214H 60V 8101371X 2680C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+214H 60V 8101371X 2680C Exits:NESW&gt; w<br />
+The Eastern Gate<br />
+    You are passing through stone walls at least twenty feet thick. The<br />
+stones above you look worn by the winds of ages gone by. A heavy iron<br />
+portcullis is raised against the walls here, ready to be lowered to bar<br />
+passage from this end of the tunnel. The salty air coming from the east end<br />
+of the tunnel smells of freshly milled lumber. To the west the tunnel leads<br />
+into the city.<br />
+A member of the Caergothian guard stands sentry at this gate.<br />
+A member of the Caergothian guard stands sentry at this gate.<br />
+<br />
+214H 59V 8101371X 2680C Exits:EW&gt; e<br />
+Outside the Eastern Gate<br />
+    The road beneath your feet is made of cobblestones and is in good<br />
+shape. The cobblestone path leads west through one of the main gates into<br />
+Caergoth and east into the farm lands surrounding the city. To the south a<br />
+heavily trodden path leads to a lumber mill and the forest that are being<br />
+cut. To the north a small path leads toward the dock.<br />
+<br />
+214H 58V 8101371X 2680C Exits:NESW&gt; e<br />
+A Highway to Caergoth<br />
+    Heavily worn cobblestones lay side by side here, making for a solid<br />
+paved path that leads west towards a busy citadel. To the east the highway<br />
+runs off towards moor grass covered plains and farmland. A stones throw to<br />
+the south, a recently clearcut track of land appears to have been reseeded<br />
+with small pine trees. Several detachments of Solamnic Knights patrol this<br />
+highway protecting the steady flow of travellers and merchant caravans. A<br />
+small sign has been nailed into the ground here.<br />
+Hazzy the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Andromedia, M.D. is standing here, fighting the umber hulk. (flying)<br />
+backstab Wint<br />
+Wint, Drunken Innsitter is standing here. (flying)<br />
+backstab Dimvar<br />
+Sir Dimvar uth Icyus, Glacial Knight of the Crown is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+The umber hulk is standing here, fighting Andromedia. (flying)<br />
+<br />
+214H 56V 8101371X 2680C Exits:EW&gt; Wint quickly avoids your backstab, and you nearly cut your finger.<br />
+<br />
+214H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; <br />
+Hazzy focuses harshly on Dimvar and utters some strange words.<br />
+Dimvar wavers under the impact of the lightning bolt sent by Hazzy.<br />
+<br />
+214H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; <br />
+Dimvar massacres Hazzy with his slash.<br />
+Dimvar is burned, as he swings at Hazzy.<br />
+You pierce Wint extremely hard.<br />
+Wint crushes YOU extremely hard.<br />
+The umber hulk crushes Andromedia extremely hard.<br />
+The umber hulk barely crushes Andromedia.<br />
+<br />
+198H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; <br />
+Dimvar panics, and attempts to flee.<br />
+Dimvar flies east.<br />
+<br />
+198H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; gt pis<br />
+get glowing.recall chest <br />
+rec glowing.recall<br />
+<br />
+backstab Dimvar<br />
+Dimvar flies in from the east.<br />
+The umber hulk delivers a quick snap kick to Andromedia. Andromedia staggers and tries to recover.<br />
+<br />
+198H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; You can't do that while fighting.<br />
+<br />
+198H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; You pierce Wint extremely hard.<br />
+Wint crushes YOU extremely hard.<br />
+The umber hulk crushes Andromedia extremely hard.<br />
+The umber hulk crushes Andromedia hard.<br />
+You tell your group 'pis' &lt;--- damn<br />
+<br />
+178H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; You get a glowing scroll of recall from a small wooden chest.<br />
+<br />
+178H 56V 8101371X 2680C [Me:Fair] [Wint:V.Good] Exits:EW&gt; You stop using a large first-aid kit.<br />
+You grab a glowing scroll of recall.<br />
+You recite a glowing scroll of recall which dissolves.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='187'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=187">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="187">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

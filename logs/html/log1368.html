@@ -1,0 +1,830 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1368-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1368'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Vjio RIP</font></b>
+<p>
+POV: 
+Exclar<p>
+Log Rating:
+-1.1333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+I'll show you weakest humabearer ever, stupid karatmike</i>
+<p>
+<p>
+
+676H 86V 1X 1888C Exits:ESW&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+The door is open.<br />
+Pierce the Male Wild Elf is standing here. (flying)<br />
+Sir Norril Wyrmslayer, Solamnic Knight of the Sword is standing here, fighting an elite sivak guard. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+Xavier The Savior is standing here. (flying)<br />
+Ziro Lyfe, Cringing from the Sun is standing here, fighting an elite sivak guard. (flying) (red aura)<br />
+Sir Vjio, Lady Clem's Personal Page is standing here. (flying)<br />
+Nabuc, Jackal of all Trades, Master of None is sitting here, fighting an elite sivak guard. (flying)<br />
+A bozak guard is standing here, fighting Nabuc. (red aura)<br />
+An elite sivak guard is standing here, fighting Nabuc. (red aura)<br />
+An elite sivak guard is sitting here, fighting Nabuc. (red aura)<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+676H 86V 1X 1888C Exits:ESW&gt; <br />
+Knievel nods solemnly.<br />
+<br />
+676H 86V 1X 1888C Exits:ESW&gt; sbas vjioRavage flies in from the north.<br />
+Knievel flies in from the north.<br />
+Ghim flies in from the north.<br />
+Elyana flies in from the north.<br />
+Entrance to the Government Building<br />
+     A large and busy hall greets you as you walk in.  There are people and<br />
+draconians running around, running tasks for whomever is in charge.  Most<br />
+of the people don't pay attention to you, thinking you are only mercenaries<br />
+that have come to cast your lot with the armies of the Dark Queen.  The<br />
+draconians, on the other hand, stare at you with contempt and hatred.<br />
+There are two doors leading east and west.  Near the southern end of the<br />
+hall, there is a small, spiral staircase that leads up.  Though this<br />
+building was once used as a city hall, it has been converted to the<br />
+headquarters of the Highlord's rear flank.<br />
+The corpse of Xavier The Savior is lying here.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying) (red aura)<br />
+. . . has a metallic luster.<br />
+Ghim M'Dec Rown, Sunflower Heir to the Throne is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Knievel Stoneskull, Sharp as a Bowling Ball is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Ravage, Nature of Threat is standing here. (flying) (red aura)<br />
+. . . is outlined with a dim aura.<br />
+Pierce the Male Wild Elf is standing here, fighting an elite sivak guard. (flying)<br />
+Sir Norril Wyrmslayer, Solamnic Knight of the Sword is standing here, fighting an elite sivak guard. (flying)<br />
+A bronze dragon with glistening scales awaits a rider.<br />
+Xavier The Savior is standing here, fighting an elite sivak guard. (flying)<br />
+Ziro Lyfe, Cringing from the Sun is standing here, fighting an elite sivak guard. (flying) (red aura)<br />
+Sir Vjio, Lady Clem's Personal Page is standing here. (flying)<br />
+Nabuc, Jackal of all Trades, Master of None is sitting here, fighting an elite sivak guard. (flying)<br />
+A bozak guard is standing here, fighting Nabuc. (red aura)<br />
+An elite sivak guard is standing here, fighting Nabuc. (red aura)<br />
+An elite sivak guard is sitting here, fighting Nabuc. (red aura)<br />
+<br />
+676H 85V 1X 1888C Exits:N(W)U&gt; You crash into Vjio in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Good] Exits:N(W)U&gt; <br />
+Vjio steps aside as Elyana attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Good] Exits:N(W)U&gt; <br />
+Knievel focuses harshly on Vjio and utters some strange words.<br />
+Knievel slowly fades into existence.<br />
+Flesh burns as Knievel enshrouds Vjio in a cloak of flames.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:Good] Exits:N(W)U&gt; <br />
+Ravage focuses harshly on Vjio and utters some strange words.<br />
+Vjio cries out in pain as Ravage grabs him.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:Fair] Exits:N(W)U&gt; <br />
+Elyana misses Vjio with her smite.<br />
+You obliterate Vjio with your stab.<br />
+You obliterate Vjio with your stab.<br />
+Vjio misses you with his smite.<br />
+Xavier massacres an elite sivak guard with his cleave.<br />
+Pierce pierces an elite sivak guard very hard.<br />
+Pierce pierces an elite sivak guard hard.<br />
+Ziro massacres an elite sivak guard with his pierce.<br />
+Ziro massacres an elite sivak guard with his stab.<br />
+Norril shoots an elite sivak guard extremely hard.<br />
+Norril massacres an elite sivak guard with his shoot.<br />
+Nabuc massacres an elite sivak guard with his stab.<br />
+A bozak guard massacres Nabuc with his claw.<br />
+A bozak guard claws Nabuc extremely hard.<br />
+An elite sivak guard claws Nabuc hard.<br />
+An elite sivak guard claws Nabuc extremely hard.<br />
+An elite sivak guard claws Nabuc extremely hard.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Bad] Exits:N(W)U&gt; <br />
+Hanna tells your group 'following self for march'<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Bad] Exits:N(W)U&gt; <br />
+Ziro stops using an adamantite rapier.<br />
+Ziro grabs a scroll of recall.<br />
+Ziro recites a scroll of recall.<br />
+Ziro disappears.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Bad] Exits:N(W)U&gt; <br />
+An elite sivak guard stands up.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Bad] Exits:N(W)U&gt; <br />
+Norril focuses on Vjio and utters some strange words.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:V.Bad] Exits:N(W)U&gt; <br />
+Ghim massacres Vjio with his slash.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:Awful] Exits:N(W)U&gt; <br />
+Hanna stops following you.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:Awful] Exits:N(W)U&gt; <br />
+Xavier attempts to strike at an elite sivak guard with his goad.<br />
+Xavier massacres an elite sivak guard with his cleave.<br />
+<br />
+676H 85V 1X 1888C [Exclar:Perfect] [Vjio:Awful] Exits:N(W)U&gt; get all vjio<br />
+Knievel focuses harshly on Vjio and utters some strange words.<br />
+Knievel slowly fades into existence.<br />
+Flesh burns as Knievel enshrouds Vjio in a cloak of flames.<br />
+Vjio is stunned, but will likely regain consciousness again.<br />
+<br />
+676H 85V 1X 1888C [Vjio:Awful] Exits:N(W)U&gt; What are you trying to get from?<br />
+<br />
+676H 85V 1X 1888C [Vjio:Awful] Exits:N(W)U&gt; get all vjio<br />
+Ravage focuses harshly on Vjio and utters some strange words.<br />
+Vjio collapses and dies as Ravage grabs him.<br />
+You receive 0 experience.<br />
+Vjio is dead! R.I.P.<br />
+get coins corpse<br />
+676H 85V 1X 1888C [Vjio:Dying] Exits:N(W)U&gt; What are you trying to get from?<br />
+<br />
+676H 85V 1X 1888C [Vjio:Dying] Exits:N(W)U&gt; get all vjioXavier massacres an elite sivak guard with his cleave.<br />
+Pierce pierces an elite sivak guard very hard.<br />
+An elite sivak guard's image blurs before you...<br />
+  then sharpens to reveal Pierce!<br />
+Pierce the Male Wild Elf is dead! R.I.P.<br />
+get coins corpseA bozak guard claws Nabuc extremely hard.<br />
+An elite sivak guard misses Nabuc with his claw.<br />
+The death cry of Vjio echoes from somewhere nearby...<br />
+Vjio sinks gently to the ground.<br />
+Ziro stops following Vjio.<br />
+Nabuc stops following Vjio.<br />
+Xavier stops following Vjio.<br />
+Norril stops following Vjio.<br />
+Pierce stops following Vjio.<br />
+The death cry of Pierce the Male Wild Elf echoes from somewhere nearby...<br />
+You get a pile of coins from the corpse of Pierce the Male Wild Elf.<br />
+There were 59 coins.<br />
+sp 59<br />
+676H 85V 1X 1947C Exits:N(W)U&gt; You get a necromancer's stone from the corpse of Vjio.<br />
+You get a ruby-encrusted battle flail from the corpse of Vjio.<br />
+Bracelet : You can't carry that much weight.<br />
+Belt : You can't carry that much weight.<br />
+Alb : You can't carry that much weight.<br />
+Sleeves : You can't carry that much weight.<br />
+Pair : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Pants : You can't carry that much weight.<br />
+Crown : You can't carry that much weight.<br />
+Cloak : You can't carry that much weight.<br />
+Insignia : You can't carry that much weight.<br />
+Feather : You can't carry that much weight.<br />
+Hair : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get a very large pile of coins from the corpse of Vjio.<br />
+There were 2219 coins.<br />
+sp 2219Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+676H 85V 1X 4166C Exits:N(W)U&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+676H 85V 1X 4166C Exits:N(W)U&gt; You can't split 59 evenly among the people in the room; splitting 55 instead.<br />
+You divide 55 coins equally among the group members present.<br />
+<br />
+676H 85V 1X 4122C Exits:N(W)U&gt; You can't split 2219 evenly among the people in the room; splitting 2215 instead.<br />
+You divide 2215 coins equally among the group members present.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ghim misses Nabuc with his slash.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; sa goodbye danYou say 'goodbye dan'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ghim slashes Nabuc extremely hard.<br />
+Nabuc massacres a bozak guard with his stab.<br />
+A bozak guard misses Nabuc with his claw.<br />
+A bozak guard misses Nabuc with his claw.<br />
+An elite sivak guard misses Nabuc with his claw.<br />
+An elite sivak guard misses Nabuc with his claw.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Elyana looks at Nabuc.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; wap ghimYou wap Ghim with your staff. Looks like war!<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ghim slashes Nabuc extremely hard.<br />
+Nabuc massacres a bozak guard with his stab.<br />
+A bozak guard misses Nabuc with his claw.<br />
+Nabuc blocks a bozak guard's blow with a quick raise of his shield.<br />
+An elite sivak guard claws Nabuc very hard.<br />
+An elite sivak guard claws Nabuc very hard.<br />
+Ghim focuses his purity on Nabuc's arm!<br />
+Ghim focuses on Nabuc's arm, but is thwarted.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Norril says 'wtf'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Trump tells your group 'im in kal clerics dont know where yall went:)'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; grouYour group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Exclar           perfect   rested    standing   Y   Y    N    Y     0    0<br />
+  Trump            good      rested    standing   Y   N    N    N     0    4<br />
+  Ravage           v.good    rested    standing   Y   N    N    Y     0    6<br />
+  Knievel          v.good    rested    standing   Y   Y    N    Y     1    4<br />
+  Ghim             good      rested    fighting   Y   N    N    Y     1    2<br />
+  Elyana           good      rested    sitting    Y   N    N    Y     0    0<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; bogYou boggle at some nebulous concept.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ravage gets a jade bracelet from the corpse of Vjio.<br />
+Ravage gets an ivory belt from the corpse of Vjio.<br />
+Ravage gets an alb from the corpse of Vjio.<br />
+Ravage gets a pair of black cloth sleeves from the corpse of Vjio.<br />
+Ravage gets a pair of wood and leather grips from the corpse of Vjio.<br />
+Ravage gets a pair of silver dragon scale boots from the corpse of Vjio.<br />
+Ravage gets a pair of worn snakeskin pants from the corpse of Vjio.<br />
+Ravage is zapped by the royal crown of Lemuria and instantly drops it.<br />
+Ravage gets a furry white cloak from the corpse of Vjio.<br />
+Ravage is zapped by a holy insignia of Paladine and instantly drops it.<br />
+Ravage gets an amulet of levitation from the corpse of Vjio.<br />
+Ravage gets a braided lock of werewolf hair from the corpse of Vjio.<br />
+Ravage is zapped by a blue tourmaline ring and instantly drops it.<br />
+Ravage gets a glowing scroll of recall from the corpse of Vjio.<br />
+Ravage gets a glowing scroll of recall from the corpse of Vjio.<br />
+Ravage gets a glowing scroll of recall from the corpse of Vjio.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ghim slashes Nabuc extremely hard.<br />
+Nabuc massacres a bozak guard with his stab.<br />
+A bozak guard misses Nabuc with his claw.<br />
+An elite sivak guard claws Nabuc very hard.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Nabuc says 'hey ghim'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; gt nabuc evil?You tell your group 'nabuc evil?'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Norril gets a glowing scroll of recall from the corpse of Vjio.<br />
+Norril gets a glowing scroll of recall from the corpse of Vjio.<br />
+Norril gets a chest made of bones from the corpse of Vjio.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ghim says 'nabuc is hunted also'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; bas nabucYou try to bash Nabuc, but you miss and tumble forward onto your face.<br />
+<br />
+676H 85V 1X 2350C [a bozak guard:Good] [Nabuc:Fair] Exits:N(W)U&gt; <br />
+Knievel gets a blue tourmaline ring.<br />
+Knievel gets a holy insignia of Paladine.<br />
+Knievel gets the royal crown of Lemuria.<br />
+<br />
+676H 85V 1X 2350C [a bozak guard:Good] [Nabuc:Fair] Exits:N(W)U&gt; <br />
+Nabuc grabs a glowing scroll of recall.<br />
+Nabuc recites a glowing scroll of recall.<br />
+Nabuc disappears.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Vjio tells you 'so, i was waiting to talk to andrew'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+An elite sivak guard crashes into a bronze dragon in a thundering collision, knocking him to the ground!<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+An elite sivak guard claws a bronze dragon extremely hard.<br />
+An elite sivak guard claws a bronze dragon extremely hard.<br />
+A bronze dragon hits an elite sivak guard hard.<br />
+A bozak guard claws a bronze dragon extremely hard.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Ravage says 'lol'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Trump tells your group 'you in pala?'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+A bozak guard misses a bronze dragon with his claw.<br />
+A bozak guard massacres a bronze dragon with his claw.<br />
+An elite sivak guard misses a bronze dragon with his claw.<br />
+An elite sivak guard misses a bronze dragon with his claw.<br />
+A bronze dragon's powerful hit makes an elite sivak guard double over in pain.<br />
+A bronze dragon massacres an elite sivak guard with his hit.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; stYou stand up.<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Norril says 'wtf'<br />
+<br />
+676H 85V 1X 2350C Exits:N(W)U&gt; bas guardYou crash into a bozak guard in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+676H 85V 1X 2350C [a bronze dragon:Fair] [a bozak guard:Good] Exits:N(W)U&gt; <br />
+Xavier utters some strange words.<br />
+A bronze dragon suddenly appears!<br />
+<br />
+676H 85V 1X 2350C [Exclar:Perfect] [a bozak guard:Good] Exits:N(W)U&gt; <br />
+Ghim massacres a bozak guard with his slash.<br />
+<br />
+676H 85V 1X 2350C [Exclar:Perfect] [a bozak guard:Fair] Exits:N(W)U&gt; <br />
+Ghim annihilates a bozak guard with his slash.<br />
+A bozak guard claws YOU extremely hard.<br />
+A bozak guard claws YOU extremely hard.<br />
+You obliterate a bozak guard with your stab.<br />
+You obliterate a bozak guard with your stab.<br />
+You are sent sprawling as an elite sivak guard crashes into you.<br />
+<br />
+634H 85V 1X 2350C [Exclar:V.Good] [a bozak guard:V.Bad] Exits:N(W)U&gt; <br />
+Knievel slowly fades into existence.<br />
+Knievel pierces a bozak guard extremely hard.<br />
+<br />
+634H 85V 1X 2350C [Exclar:V.Good] [a bozak guard:V.Bad] Exits:N(W)U&gt; <br />
+Xavier gives a bronze dragon an order.<br />
+A bronze dragon begins resting but stays aloft.<br />
+<br />
+634H 85V 1X 2350C [Exclar:V.Good] [a bozak guard:V.Bad] Exits:N(W)U&gt; <br />
+Elyana shouts 'our rank mob'<br />
+<br />
+634H 85V 1X 2350C [Exclar:V.Good] [a bozak guard:V.Bad] Exits:N(W)U&gt; st<br />
+Knievel pierces a bozak guard extremely hard.<br />
+An elite sivak guard claws YOU extremely hard.<br />
+An elite sivak guard claws YOU very hard.<br />
+Ghim massacres a bozak guard with his slash.<br />
+A bozak guard massacres YOU with his claw.<br />
+A bozak guard massacres YOU with his claw.<br />
+You obliterate a bozak guard with your stab.<br />
+A bozak guard is mortally wounded, and will die soon, if not aided.<br />
+You obliterate a bozak guard with your stab.<br />
+You receive 0 experience.<br />
+A bozak guard is dead! R.I.P.<br />
+get coins corpseA bozak guard's bones explode, sending shrapnel flying through the room!<br />
+The death cry of a bozak guard echoes from somewhere nearby...<br />
+You direct your attention to an elite sivak guard.<br />
+Ghim comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Elyana stands up.<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; You stand up.<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; The corpse doesn't seem to have what you are looking for.<br />
+Knievel applies bandages to a bronze dragon's wounds.<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Elyana massacres an elite sivak guard with her smite.<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; sa hahhaYou say 'hahha'<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; <br />
+Norril says 'elyana'<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; bas guardYou crash into an elite sivak guard in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Fair] Exits:N(W)U&gt; <br />
+You obliterate an elite sivak guard with your stab.<br />
+You obliterate an elite sivak guard with your stab.<br />
+Elyana massacres an elite sivak guard with her smite.<br />
+An elite sivak guard misses Ghim with his claw.<br />
+Ghim massacres an elite sivak guard with his slash.<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Awful] Exits:N(W)U&gt; <br />
+Ghim says 'they can have rank ahhaha'<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Awful] Exits:N(W)U&gt; <br />
+Ghim attempts to strike at an elite sivak guard with his sword.<br />
+Ghim massacres an elite sivak guard with his slash.<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Awful] Exits:N(W)U&gt; <br />
+Trump tells your group 'are you in palanthas?'<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Awful] Exits:N(W)U&gt; <br />
+Vjio tells you 'Thanks corey'<br />
+<br />
+560H 85V 1X 2350C [Ghim:Good] [an elite sivak guard:Awful] Exits:N(W)U&gt; <br />
+You obliterate an elite sivak guard with your stab.<br />
+You receive 0 experience.<br />
+An elite sivak guard's body goes through a strange transformation...<br />
+You see yourself!<br />
+Lord Exclar, Paladine's Champion is dead! R.I.P.<br />
+get coins corpseThe death cry of Lord Exclar, Paladine's Champion echoes from somewhere nearby...<br />
+<br />
+560H 85V 1X 2350C Exits:N(W)U&gt; You get a pile of coins from the corpse of Lord Exclar, Paladine's Champion.<br />
+There were 62 coins.<br />
+sp 62<br />
+560H 85V 1X 2412C Exits:N(W)U&gt; You can't split 62 evenly among the people in the room; splitting 60 instead.<br />
+You divide 60 coins equally among the group members present.<br />
+<br />
+560H 85V 1X 2364C Exits:N(W)U&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1368'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1368">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1368">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,1824 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 385-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='385'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Why wont Ahmas play with Krovax?</font></b>
+<p>
+POV: 
+Krovax/Chon<p>
+Log Rating:
+1.2632<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Felt like stabbing someone. To bad they wouldnt let me stab them twice. 
+We pulled a quick log and hit up Glorek and co while they where supposedly ambushing whoever left solace inn.</i>
+<p>
+<p>
+
+<br />
+463H 162V 1399802X 30552C Exits:E&gt; eElhana flies in from the west.<br />
+A hill giant arrives from the west.<br />
+The Bayshore Restaurant<br />
+    The smells of good home cooked food fills the air, it makes you hungry.<br />
+In fact, it would make you hungry any time of the day it smells so good. The<br />
+smells are coming from the kitchen which is over to the east. Tables and<br />
+chairs are placed in the southern part of this restaurant and a waitress is<br />
+seating and taking orders from other customers. She looks up at you and<br />
+signals that she'll be right with you. A small quiet room is to the west of<br />
+here.<br />
+A hill giant is roaming around looking for something to kill.<br />
+Mistress Elhana, Naked Songstress is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+One of Newport's soldiers of the watch patrols here.<br />
+Fumes, Pouring from Shadow of Ahma is standing here. (flying) (invisible)<br />
+Larna is hurrying about the inn, seeing to the needs of her guests.<br />
+<br />
+463H 161V 1399802X 30552C Exits:NWU&gt; <br />
+Fumes slowly fades into existence.<br />
+You are sent sprawling as Fumes crashes into you.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; peer<br />
+Staffshier tells you 'hey'<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Sartel flies in from above.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Rosen flies in from the north.<br />
+A hill giant arrives from the north.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; st<br />
+Rosen gives a hill giant an order.<br />
+A hill giant crashes into Sartel in a thundering collision, knocking him to the ground!<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+**Elhana: come<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+A hill giant has an indifferent look.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+A hill giant tries to bash Rosen, but it passes right through his image and falls.<br />
+<br />
+449H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:V.Good] Exits:NWU&gt; <br />
+A hill giant misses Rosen and destroys an image instead.<br />
+A hill giant pierces Rosen extremely hard.<br />
+Rosen slowly fades into existence.<br />
+A hill giant is burned, as it swings at Rosen.<br />
+Rosen pierces a hill giant extremely hard.<br />
+A hill giant massacres Sartel with its hit.<br />
+A hill giant pierces Sartel extremely hard.<br />
+Sartel massacres a hill giant with his slash.<br />
+Fumes massacres YOU with his slash.<br />
+Fumes slashes YOU extremely hard.<br />
+The sword flashes green in your hands as you jam it between his ribs.<br />
+You massacre Fumes with your pierce.<br />
+You massacre Fumes with your pierce.<br />
+You massacre Fumes with your pierce.<br />
+<br />
+401H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:Good] Exits:NWU&gt; You peer around you.<br />
+<br />
+401H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:Good] Exits:NWU&gt; stYou stand up.<br />
+<br />
+401H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:Good] Exits:NWU&gt; You are already standing.<br />
+<br />
+401H 161V 1399802X 30552C [Krovax:V.Good] [Fumes:Good] Exits:NWU&gt; fleYou flee head over heels.<br />
+The Bayview Inn<br />
+    A few rooms lie down the hallway to the north. Directly in front of you<br />
+is a table where the clerk sits to issue out room keys to the inn's patrons.<br />
+There is a rack on the wall from which the keys hang and from the looks of<br />
+it there are a few rooms available.<br />
+A very ugly thug guards the inn, watching for unruly customers.<br />
+Desiree is standing behind the counter, smiling shyly at you.<br />
+<br />
+401H 160V 1399802X 30552C Exits:D&gt; sneakYou begin moving quietly.<br />
+<br />
+401H 160V 1399802X 30552C Exits:D&gt; dThe Bayshore Restaurant<br />
+    The smells of good home cooked food fills the air, it makes you hungry.<br />
+In fact, it would make you hungry any time of the day it smells so good. The<br />
+smells are coming from the kitchen which is over to the east. Tables and<br />
+chairs are placed in the southern part of this restaurant and a waitress is<br />
+seating and taking orders from other customers. She looks up at you and<br />
+signals that she'll be right with you. A small quiet room is to the west of<br />
+here.<br />
+A hill giant is standing here, fighting Sartel.<br />
+Sartel KD, Bringing Down the Beast with Elite Barb Style is sitting here, fighting a hill giant. (flying)<br />
+A hill giant is sitting here.<br />
+Mistress Elhana, Naked Songstress is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+One of Newport's soldiers of the watch patrols here.<br />
+Fumes, Pouring from Shadow of Ahma is standing here. (flying)<br />
+Larna is hurrying about the inn, seeing to the needs of her guests.<br />
+<br />
+401H 159V 1399802X 30552C Exits:NWU&gt; back fumesThe sword flashes green in your hands as you jam it between his ribs.<br />
+Fumes twists around to see you place an emerald short sword in his back.<br />
+<br />
+401H 159V 1399802X 30552C [Krovax:V.Good] [Fumes:Bad] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+A hill giant has an indifferent look.<br />
+<br />
+401H 159V 1399802X 30552C [Krovax:V.Good] [Fumes:Bad] Exits:NWU&gt; <br />
+Rosen flies in from the north.<br />
+<br />
+401H 159V 1399802X 30552C [Krovax:V.Good] [Fumes:Bad] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+<br />
+401H 159V 1399802X 30552C [Krovax:V.Good] [Fumes:Bad] Exits:NWU&gt; <br />
+Rosen flies west.<br />
+<br />
+401H 159V 1399802X 30552C [Krovax:V.Good] [Fumes:Bad] Exits:NWU&gt; <br />
+You massacre Fumes with your pierce.<br />
+You massacre Fumes with your pierce.<br />
+Fumes slashes YOU extremely hard.<br />
+Fumes massacres YOU with his slash.<br />
+A hill giant massacres Sartel with its hit.<br />
+A hill giant massacres Sartel with its pierce.<br />
+Sartel massacres a hill giant with his slash.<br />
+<br />
+fle358H 159V 1399802X 30552C [Krovax:Good] [Fumes:V.Bad] Exits:NWU&gt; st<br />
+Elhana gives a hill giant an order.<br />
+A hill giant has an indifferent look.<br />
+<br />
+358H 159V 1399802X 30552C [Krovax:Good] [Fumes:V.Bad] Exits:NWU&gt; fle<br />
+Elhana gives a hill giant an order.<br />
+<br />
+358H 159V 1399802X 30552C [Krovax:Good] [Fumes:V.Bad] Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+A hill giant has an indifferent look.<br />
+Fumes panics, and attempts to flee.<br />
+Fumes flies up.<br />
+<br />
+358H 159V 1399802X 30552C Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+<br />
+358H 159V 1399802X 30552C Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+A hill giant has an indifferent look.<br />
+<br />
+358H 159V 1399802X 30552C Exits:NWU&gt; <br />
+Elhana gives a hill giant an order.<br />
+<br />
+358H 159V 1399802X 30552C Exits:NWU&gt; <br />
+Sartel stands up.<br />
+<br />
+358H 159V 1399802X 30552C Exits:NWU&gt; back fumesYou're not fighting, why bother fleeing?<br />
+Sartel panics, and attempts to flee.<br />
+Sartel flies up.<br />
+<br />
+<br />
+Later<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Rastavious has entered the game.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Fluff has entered the game.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Zearin tells your group 'wasnt myth fighting ahma?'<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Ardinghelli has entered the game.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; stYou stand up.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Fluff now follows Ardinghelli.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Zearin stops following you.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Sartel stops following you.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Rastavious now follows Ardinghelli.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; fol ardinghelliYou now follow Ardinghelli.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; sa goYou say 'go'<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Rastavious lifts his arms towards the sky and gracefully floats upward.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; sa go<br />
+Ardinghelli orders his group to march.<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; You say 'go'<br />
+<br />
+274H 95V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Ardinghelli flies down.<br />
+You follow Ardinghelli down.<br />
+Rastavious flies in from above.<br />
+The Bayshore Restaurant<br />
+    The smells of good home cooked food fills the air, it makes you hungry.<br />
+In fact, it would make you hungry any time of the day it smells so good. The<br />
+smells are coming from the kitchen which is over to the east. Tables and<br />
+chairs are placed in the southern part of this restaurant and a waitress is<br />
+seating and taking orders from other customers. She looks up at you and<br />
+signals that she'll be right with you. A small quiet room is to the west of<br />
+here.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Larna is hurrying about the inn, seeing to the needs of her guests.<br />
+<br />
+274H 94V 8006452X 9C Mem:1 Exits:NWU&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Bubbling Brook Street<br />
+    Bubbling Brook continues its west and east path through the center of<br />
+Newport. To the west is the town square, bustling with activity. South of<br />
+here is a large building with a sign hung off of it, reading &quot;The Bayshore<br />
+Inn.&quot; To the east, a large wharf can be made out, the expanse of the bay<br />
+stretching far out of sight. To the north, the sound of metal clashing<br />
+against metal can be heard.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 93V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Fluff says 'go go go'<br />
+<br />
+274H 93V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+Rastavious flies in from the east.<br />
+Town Square<br />
+    A long stone pool collects the water from the pump, bringing in the<br />
+city's clean water source. Merchant Lane extends to the north and south<br />
+here, while Bubbling Brook continues its way east and west. The cobblestones<br />
+from all the streets meet here and form a wonderful circular pattern around<br />
+the water pump.<br />
+A large pump and catchment basin is here.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 92V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+Rastavious flies in from the east.<br />
+Bubbling Brook Street<br />
+    The cobbled Bubbling Brook extends east and west here. To the west, the<br />
+western gates made of vallenwood can be clearly seen. There are sounds of<br />
+horses neighing coming from the north, while the sounds of swordplay emanate<br />
+from the south. To the east is the town square.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 91V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+Rastavious flies in from the east.<br />
+Rapid's Drive at Bubbling Brook<br />
+    The street curves out to align itself north-south here. The gates to<br />
+your west are constructed of mighty vallenwoods imported from the northern<br />
+forests. A pair of small lookouts have been contructed on each side of the<br />
+gate to provide an early warning to any attack that may arise. The road<br />
+curves off to the northeast and southwest of here.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A sailor walks quickly, hurrying to get supplies for his ship.<br />
+A sailor walks quickly, hurrying to get supplies for his ship.<br />
+<br />
+274H 90V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+Rastavious flies in from the east.<br />
+Fluff flies in from the east.<br />
+Western Gates of Newport<br />
+    The gates of this village are constructed of mighty vallenwoods imported<br />
+from the northern forests. A pair of lanterns hang from each side and are<br />
+continually maintained by the local guards for continuous light. The danger<br />
+of attack from the dragon armies is always a threat in these parts. A sea<br />
+breeze blows softly from the east and the smells and sounds of Newport<br />
+invite you in.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 89V 8006452X 9C Mem:1 Exits:ESW&gt; c 'm s'You utter the words, 'monster summoning'<br />
+You wave your hand, and a gargoyle appears!<br />
+A gargoyle starts following you.<br />
+<br />
+274H 89V 8006452X 9C Mem:2 Exits:ESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+A gargoyle arrives from the east.<br />
+Rastavious flies in from the east.<br />
+Fluff flies in from the east.<br />
+The Outskirts of Newport<br />
+    The Old Road is intersected here by the cobblestone road leading to the<br />
+small fishing community, Newport. Beyond Newport is a bay of the New Sea,<br />
+its waters stretching out across the horizon. The cobblestone continues to<br />
+the north, signifying the beginnings of a major trade route to the towns of<br />
+Solace and Haven further to the north. The majestic forests of the fabled<br />
+elven capitol of Qualinost deepen to the southwest. If you travel south you<br />
+can also come upon Pax Tharkas. If you travel north, you will hit the River<br />
+White Rage.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 87V 8006452X 9C Mem:2 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road to the Bay<br />
+    The smell of salty air is carried by a warming breeze to the north and<br />
+east. To the southeast, the fishing community of Newport can be clearly<br />
+seen, surrounded on three sides by a bay of the New Sea. Fishing boats dot<br />
+the waters of the bay, as Newport citizens toil away in their trade. The<br />
+forested hills grow west of the bay, filling the view with tall oaks and<br />
+maples. Far to the south, the peace of the Kharolis Mountains rise in<br />
+majestic shadow.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 85V 8006452X 9C Mem:2 Exits:SW&gt; <br />
+Fluff stops using a sunburst engraved longsword.<br />
+<br />
+274H 85V 8006452X 9C Mem:2 Exits:SW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+A gargoyle arrives from the east.<br />
+Rastavious flies in from the east.<br />
+A Cobbled Road<br />
+    The road is wide here and paved with cobblestone in spots. You see the<br />
+marks of a wagon in the dirt spots of the road, left by the increasing<br />
+number of merchants travelling between Newport and the towns of Solace and<br />
+Haven. Around you the landscape is dotted with trees and the area is hilly.<br />
+In the air you can faintly smell salt, carried by a breeze blowing from the<br />
+northeast. The road leads to the north and east from here. Southeast you can<br />
+hear the sounds of a bustling town and to the north you hear a low rumbling.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 83V 8006452X 9C Mem:2 Exits:NE&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+A Cobbled Road<br />
+    The road leads to the north and south from here. Some spots of the road<br />
+are paved with cobblestone, and some parts are plain dirt and mud. You can<br />
+smell salt in the air, drifting in with a breeze blowing in from the<br />
+northeast. The land around you is hilly and the forest is growing along the<br />
+roadside. You hear a rumbling sound to the north of here.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 81V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Approaching a Major River<br />
+    You hear the sound of rushing water to the north of you, through the<br />
+trees you can see a large river known as White-Rage. You are in a small<br />
+clearing, the clearing is not natural as you can see many tree stumps. You<br />
+assume that villagers from Newport have cut them down for their fires and to<br />
+create farm land. The forest is beginning to take back the land it has lost,<br />
+you can see some small saplings already growing from the trunks of the cut<br />
+trees.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 79V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+South Bank of the River White-Rage<br />
+     You stand at the south end of a mighty stone bridge.  Below, a very<br />
+large and swift flowing river roars down towards the New Sea.  The river<br />
+is quite dangerous and only the largest of ferries are capable of being<br />
+able to properly navigate it.  The bridge itself is wide and is one of<br />
+the most impressive feats of dwarven craftsmanship that you have ever<br />
+seen.  You can also just make out a path that leads down to a stone dock<br />
+from here.<br />
+A heavy wooden sign has been firmly planted into the soil here.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 77V 8006452X 9C Mem:2 Exits:NSD&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Crossing the River White-Rage<br />
+     Looking around as you cross the immense stone bridge, you gaze in<br />
+awe at a pair of huge pillars of stone.  The pillars seem to be the<br />
+main foundation of the structure, keeping it a safe distance from the<br />
+raging waters below.  Even from here, you can hear the roar from the<br />
+river below as it crashes into the pillars and is forced around them.<br />
+The stone bridge stretches northward, high about the river, but the<br />
+southern bank is still reassuringly nearby.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 75V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+Fluff starts using a black leather buckler as a shield.<br />
+<br />
+274H 75V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Crossing the River White-Rage<br />
+     Looking around as you cross the immense stone bridge, you gaze in<br />
+awe at a pair of huge pillars of stone.  The pillars seem to be the<br />
+main foundation of the structure, keeping it a safe distance from the<br />
+raging waters below.  Even from here, you can hear the roar from the<br />
+river below as it crashes into the pillars and is forced around them.<br />
+The stone bridge stretches southward, high about the river, but the<br />
+northern bank is still reassuringly nearby.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 74V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+You are now a member of Ardinghelli's group.<br />
+<br />
+274H 74V 8006452X 9C Mem:2 Exits:NS&gt; <br />
+The lightning has stopped.<br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+North Bank of the River White-Rage<br />
+     You stand at the south end of a mighty stone bridge.  Below, a very<br />
+large and swift flowing river roars down towards the New Sea.  The river<br />
+is quite dangerous and only the largest of ferries are capable of being<br />
+able to properly navigate it.  The bridge itself is wide and is one of<br />
+the most impressive feats of dwarven craftsmanship that you have ever<br />
+seen.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 100V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Approaching a Major River<br />
+    You hear the sound of rushing water to the south of you, through the<br />
+trees you can see the mighty River White-Rage. The road leads north through<br />
+the plains to the towns of Haven and Solace. The road you are travelling on<br />
+is made of cobblestones in spots but in other spots it is just plain dirt.<br />
+Growing on the sides of the road are trees and the landscape is dotted with<br />
+hills.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 98V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    The land around you is very flat, the plains of Abanasinia stretch for<br />
+miles around you. To the south you hear a low rumbling noise, to the east<br />
+the road leads into the plains. Looking south you can see forested<br />
+foothills, and a smell of salt is carried on a breeze blowing in from the<br />
+southeast.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A cheerful kender wanders about, enjoying the sights.<br />
+<br />
+274H 96V 8006452X 9C Mem:1 Exits:ES&gt; <br />
+Ardinghelli flies east.<br />
+You follow Ardinghelli east.<br />
+A gargoyle arrives from the west.<br />
+Rastavious flies in from the west.<br />
+A Road on the Plains of Abanasinia<br />
+    Around you are the plains of Abanasinia. The land is very flat and you<br />
+can see for miles and miles around. A few trees are growing here and there,<br />
+along with other kinds of short vegetation bushes, brush and other assorted<br />
+plants. Small animals scavenge for food around you and farther away you can<br />
+see larger animals doing likewise.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 94V 8006452X 9C Mem:1 Exits:NW&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    Around you are the plains of Abanasinia. The land is very flat and you<br />
+can see for miles and miles around. A few trees are growing here and there,<br />
+along with other kinds of short vegetation bushes, brush and other assorted<br />
+plants. Small animals scavenge for food around you and farther away you can<br />
+see larger animals doing likewise.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A fellow traveller is here, weary from many days on the road.<br />
+<br />
+274H 92V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    Off to the distant north is the town of Solace and a bit futher on, the<br />
+road to Haven. The plains stretch for miles and miles around you on all sides.<br />
+South of here is the port city of Newport and further south the forest of<br />
+the Qualinesti elves. Looking around you, a few trees are growing here and<br />
+there along with other assorted vegetation. In the distance you see many<br />
+different kinds of small and large animals. In the distant west you can see<br />
+a mountain range.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A fellow traveller is here, weary from many days on the road.<br />
+<br />
+274H 90V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    Around you are the plains of Abanasinia. The land is very flat and you<br />
+can see for miles and miles around. A few trees are growing here and there,<br />
+along with other kinds of short vegetation bushes, brush and other assorted<br />
+plants. Small animals scavenge for food around you and farther away you can<br />
+see larger animals doing likewise.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+An elf wanders about the area here.<br />
+<br />
+274H 88V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    Around you are the plains of Abanasinia. The land is very flat and you<br />
+can see for miles and miles around. A few trees are growing here and there,<br />
+along with other kinds of short vegetation bushes, brush and other assorted<br />
+plants. Small animals scavenge for food around you and farther away you can<br />
+see larger animals doing likewise. In the distant west you can see a<br />
+mountain range and a cool breeze is blowing in from the east.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 86V 8006452X 9C Mem:1 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+A Road on the Plains of Abanasinia<br />
+    Around you are the plains of Abanasinia. The land is very flat and you<br />
+can see for miles and miles around. A few trees are growing here and there,<br />
+along with other kinds of short vegetation bushes, brush and other assorted<br />
+plants. In the distant west you can see a mountain range and a cool breeze<br />
+is blowing in from the east. Looking to the east you can see the lands of<br />
+the Que-teh tribe, their cooking fires trailing smoke up into the sky.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 84V 8006452X 9C Mem:1 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+A Bend in the Road<br />
+    To the north the plains turn into forested lands. Northwest of here is<br />
+the Darkenwood forest and the village of Gateway. Travelling south will take<br />
+you through the plains of Abanasinia and further on to the port town of<br />
+Newport. The plains continue onward south from this point.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+An elf wanders about the area here.<br />
+A fellow traveller is here, weary from many days on the road.<br />
+A stout dwarf marches about here.<br />
+<br />
+274H 82V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+On a Road<br />
+    The road continues, now heading to the south. The general terrain seems<br />
+to be getting drier and dustier, and there are fewer trees. In addition,<br />
+the air seems to be getting somewhat colder. From a nearby hill, a deer<br />
+notices you, and bolts into the woods. From here, the road continues to the<br />
+south and west.<br />
+gt fightFluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+An elf wanders about the area here.<br />
+<br />
+274H 80V 8006452X 9C Mem:1 Exits:ESW&gt; You tell your group 'fight'<br />
+<br />
+274H 80V 8006452X 9C Mem:1 Exits:ESW&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+A gargoyle arrives from the east.<br />
+Rastavious flies in from the east.<br />
+By a Small Hovel<br />
+    Wearily, you come to stop outside a small hovel. It looks like it has<br />
+been built as a rest stop to provide a safe haven for travellers. The hovel<br />
+sits off to the west of the main road here. The road itself stretches out<br />
+to the north and east. The terrain to the east is becomes dry and dusty,<br />
+while you can see what appears to be a forest on the edge of the plains to<br />
+the north.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 78V 8006452X 9C Mem:1 Exits:NEW&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+On a Road<br />
+    The road continues, snaking through the rocky wilderness. It makes a<br />
+large curve to avoid a big boulder, jutting out from the surrounding hills.<br />
+You have heard tales of bandits surviving off of travellers on the roadways<br />
+of Krynn, and it occurs to you that this would be an excellent spot for an<br />
+ambush. The road continues to the north and south.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 76V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+On a Long Road<br />
+    Various animals and insects inspect you as you wearily tread this rocky<br />
+and dusty road. Bushes to the side provide ample cover for man or beast and<br />
+it would be wise to carefully watch your possessions. The road continues in<br />
+a north-south direction.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 74V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+On a Long Road<br />
+    The tiredness in your legs suggest you have been travelling far too<br />
+long and a rest is in order. This road could go on forever. To the south<br />
+can be seen a small wooden shack by the side of the road. To the north, the<br />
+great vallenwoods of Solace can just be made out. Darkenwood extends out to<br />
+to your west and rumors of exotic woodland spirits excite you somewhat.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 72V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+On a Long Road<br />
+    Various animals and insects inspect you as you wearily tread this rocky<br />
+and dusty road. Bushes to the side provide ample cover for man or beast and<br />
+it would be wise to carefully watch your possessions. The road continues in<br />
+a north-south direction.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 70V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+On a Long Road<br />
+    The long road stretches before you, wide and flat. To the south it<br />
+becomes open and dusty, while to the north large vallenwood trees make up<br />
+the tree village of Solace.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 68V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+On a Long Road<br />
+    The dense forest around you occasionally places obstacles in your path,<br />
+you cannot help but trip and fall. Fortunately the soft cushion of dead<br />
+leaves offers much help. Weak sounds of the hustle and bustle of town life<br />
+can be heard from the north. The road continues to the south, it seems as<br />
+c 'm m' rosenif it could go on forever.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 66V 8006452X 9C Mem:1 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+274H 66V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+The Road to Solace<br />
+    The trees that line the route give a good indication of the ways to<br />
+travel. To the north the huge vallenwood trees of Solace are visible,<br />
+clearly marking the southern entrance to the town. The road to the south<br />
+becomes wild and rocky as it leads through a wilder section of forest.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 64V 8006452X 9C Mem:1 Exits:NES&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 64V 8006452X 9C Mem:1 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+The Southern Gate<br />
+    This gate protects Solace from invaders from the south. Two huge<br />
+vallenwoods stand on either side of the road and the gate is placed between<br />
+these. The forest to the south looks much wilder and dangerous than the<br />
+forest that houses Solace. Southern Avenue leads north into Solace itself.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A large notice demanding your attention is posted on the city gates.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A Solace peacekeeper stands here, vigilantly guarding the town gates.<br />
+A Solace peacekeeper stands here, vigilantly guarding the town gates.<br />
+<br />
+c 'm m' rosen274H 63V 8006452X 9C Mem:1 Exits:NS&gt; Who should the spell be cast upon?<br />
+<br />
+274H 63V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Southern Avenue<br />
+    The avenue leads north and south through the huge vallenwoods. The<br />
+trees loom high above you. Their limbs form a canopy that protects you from<br />
+the harsh outside world. The forest here teems with life. You notice a<br />
+small path leading east into what appears to be a park.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+A young minotaur strolls by, seeking adventure.<br />
+A citizen of Solace moves quickly about.<br />
+<br />
+274H 62V 8006452X 9C Mem:1 Exits:NES&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 62V 8006452X 9C Mem:1 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Southern Avenue<br />
+    You are on a rather wide road. This avenue leads south and north<br />
+through the town. To the north, you see buildings built up in the limbs of<br />
+the huge vallenwoods. This view of Solace shows you how much the village<br />
+depends on the ancient trees for life and sustenance. The avenue leads<br />
+north and south.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 61V 8006452X 9C Mem:1 Exits:NS&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 61V 8006452X 9C Mem:1 Exits:NS&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+The Intersection<br />
+    You are at a huge intersection in the forest. Southern Avenue meets<br />
+with Park Road and Forest Lane here. There is a small opening in the trees<br />
+above that allows a view of the sky above. A small breeze blows through<br />
+here and you inhale deeply. Southern Avenue leads north and south from the<br />
+intersection, while Forest Lane leads off west and Park Road exits to the<br />
+east.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 60V 8006452X 9C Mem:1 Exits:NESW&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 60V 8006452X 9C Mem:1 Exits:NESW&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 60V 8006452X 9C Mem:1 Exits:NESW&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Southern Avenue<br />
+    The avenue twists and turns among the huge vallenwoods. Sounds of life<br />
+are all around you. Looking up, you see the sun peeking through the dense<br />
+canopy of the forest. As you walk among the forest life, you feel safe and<br />
+at ease. You see a large stone building to the east. The avenue continues<br />
+to the north and south. A small sign is posted here.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 59V 8006452X 9C Mem:1 Exits:NES&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 59V 8006452X 9C Mem:1 Exits:NES&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 59V 8006452X 9C Mem:1 Exits:NES&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Fluff flies in from the south.<br />
+Southern Avenue<br />
+    Southern Avenue is a road cut among the huge vallenwoods. It twists and<br />
+turns between the giant trunks and beneath the thick green canopy of<br />
+foliage above. From high in a vallenwood above you, you hear sounds of<br />
+partying and singing. Looking up to investigate, you notice a tavern has<br />
+been built into the huge limbs of the vallenwood. You also notice a small<br />
+stairway which spirals down around the trunk of the vallenwood. The avenue<br />
+also leads north and south into other parts of Solace.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+c 'm m' rosenArdinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 58V 8006452X 9C Mem:1 Exits:NSU&gt; Who should the spell be cast upon?<br />
+<br />
+274H 58V 8006452X 9C Mem:1 Exits:NSU&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 58V 8006452X 9C Mem:1 Exits:NSU&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Solace Square<br />
+    Solace Square is a large clearing that is surrounded on all sides by<br />
+huge vallenwood trees. These trees stretch far above the ground and their<br />
+limbs provide cover and shelter to the inhabitants of Solace. The clearing<br />
+here rises slightly towards the center of the square, providing a high spot<br />
+in the center. Small roads have been cut into the dense forest to the<br />
+north, south, east, and west. On one edge of the square, there is a huge<br />
+vallenwood which is home to what appears to be a guild hall of some sorts.<br />
+A small spiral stairway leads up around the trunk of the tree and into the<br />
+thick limbs which house the guild hall.<br />
+A large fountain sits in the middle of the road, taking up space.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+<br />
+274H 57V 8006452X 9C Mem:1 Exits:NESWU&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 57V 8006452X 9C Mem:1 Exits:NESWU&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 57V 8006452X 9C Mem:1 Exits:NESWU&gt; <br />
+Ardinghelli flies north.<br />
+You follow Ardinghelli north.<br />
+A gargoyle arrives from the south.<br />
+Rastavious flies in from the south.<br />
+Northern Avenue<br />
+    You are on Northern Avenue. The road twists and turns here, cutting<br />
+through the dense vallenwood forest. High overhead, the limbs mesh to form<br />
+a thick green canopy. The avenue continues north, while you see and hear<br />
+Solace Square to the south. A small clearing opens to the west. Looking<br />
+east, you see a large vallenwood that has a building nestled among its<br />
+strong limbs. A small stairway spirals down around the trunk, ending at the<br />
+edge of the road. A small sign is posted next to the stairway.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Binz the Male Minotaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+274H 56V 8006452X 9C Mem:1 Exits:NSWU&gt; <br />
+Ardinghelli flies west.<br />
+You follow Ardinghelli west.<br />
+A gargoyle arrives from the east.<br />
+Rastavious flies in from the east.<br />
+Fluff flies in from the east.<br />
+A Small Side Street<br />
+    You stand before the largest vallenwood you have ever seen. It towers<br />
+up above the rest of the huge vallenwoods and appears to touch the clouds<br />
+above. When you look up into the vallenwood, you see an extravagantly<br />
+decorated tavern that has been built in and among the limbs of the tree.<br />
+The clearing stretches on towards the north and you see Northern Avenue to<br />
+the east. A spiral stairway winds down from the tavern above, reaching the<br />
+ground a short distance away. A small sign is posted next to the stairway.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Rosen Ahma is standing here. (flying) (invisible)<br />
+Rosen. . . is enveloped in flames.<br />
+A stray dog slowly moves about the area, sniffing the nearby trees.<br />
+<br />
+274H 55V 8006452X 9C Mem:1 Exits:NEU&gt; c 'm m' rosen<br />
+Rosen gets an apple from his bag.<br />
+<br />
+274H 55V 8006452X 9C Mem:1 Exits:NEU&gt; <br />
+Ardinghelli flies up.<br />
+You follow Ardinghelli up.<br />
+The wonderful smell of spiced potatoes makes your stomach rumble.<br />
+A gargoyle arrives from below.<br />
+Rastavious flies in from below.<br />
+Fluff flies in from below.<br />
+The Inn of the Last Home<br />
+    The Inn of the Last Home is a cozy tavern. The smells of rich food and<br />
+the sounds of merry music overflow your senses. A huge fireplace dominates<br />
+one wall and a warm glow emanates from its flames. Small tables fill the<br />
+room. A stairway leads up, further into the tree, while another stairway<br />
+leads down to the forest below.<br />
+Fluff Nhess, Damaged Artillery of Team Fluff is standing here. (flying) (invisible)<br />
+Rastavious Mon, Ye Ole Befuddled WildRunner is standing here. (flying) (invisible)<br />
+A gargoyle is standing here.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Toronar the Holy Hand is standing here. (flying) (invisible)<br />
+o giant bash toronar ToronarGlorek the Male Hylar Dwarf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Lord Zearin, the Deft Hand is standing here.<br />
+. . . is surrounded by 4 duplicate images.<br />
+Fumes, Pouring from Shadow of Ahma is standing here, fighting Parnigar. (flying)<br />
+Lord Parnigar, General of the Qualinestian Armies is sitting here, fighting Fumes. (flying)<br />
+A hill giant is sitting here.<br />
+Otik watches you calmly, while he skillfully mixes a drink.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; Who should the spell be cast upon?<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; A hill giant has an indifferent look.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Fluff slowly fades into existence.<br />
+Fluff crashes into Toronar in a thundering collision, knocking him to the ground!<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; c 'm m' rosenWho should the spell be cast upon?<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Rosen flies in from below.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Parnigar steps aside as Glorek attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Zearin leaves down.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Rosen gives a hill giant an order.<br />
+A hill giant stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Sabin flies in from above.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Rosen flies up.<br />
+A hill giant leaves up.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Glorek massacres Parnigar with his cleave.<br />
+Fluff massacres Toronar with her crush.<br />
+Toronar slowly fades into existence.<br />
+Toronar bludgeons Fluff extremely hard.<br />
+Parnigar misses Fumes with his slash.<br />
+Fumes misses Parnigar with his slash.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Parnigar stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Ardinghelli crashes into Fumes in a thundering collision, knocking him to the ground!<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; c 'm m' rosen<br />
+Fumes steps aside as Parnigar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; Who should the spell be cast upon?<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Zearin arrives from below.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Sabin flies up.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; c 'f b' rosenWho should the spell be cast upon?<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Ardinghelli bludgeons Fumes very hard.<br />
+Glorek massacres Parnigar with his cleave.<br />
+Fluff massacres Toronar with her crush.<br />
+Toronar bludgeons Fluff very hard.<br />
+Parnigar massacres Fumes with his slash.<br />
+Fumes misses Parnigar with his slash.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; <br />
+Sabin flies in from above.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; c 'f b' fumes<br />
+Zearin focuses harshly on Fumes and utters the words, 'hold person'.<br />
+<br />
+274H 54V 8006452X 9C Mem:1 Exits:UD&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Fumes.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; c 'f b' fumes<br />
+Rastavious focuses harshly on Fumes and utters the words, 'hold person'.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Sabin crashes into Glorek in a thundering collision, knocking him to the ground!<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Toronar stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Toronar panics, and attempts to flee.<br />
+Toronar flies down.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Sabin massacres Glorek with his cleave.<br />
+Ardinghelli bludgeons Fumes very hard.<br />
+Glorek misses Parnigar with his cleave.<br />
+Parnigar massacres Fumes with his slash.<br />
+Fumes massacres Parnigar with his slash.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Fumes stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Rosen flies in from above.<br />
+A hill giant arrives from above.<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; <br />
+Ardinghelli crashes into Fumes in a thundering collision, knocking him to the ground!<br />
+<br />
+274H 54V 8006452X 9C Mem:2 Exits:UD&gt; Zearin focuses harshly on Fumes and utters the words, 'hold person'.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Fumes.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; <br />
+Parnigar stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; <br />
+Rosen flies up.<br />
+A hill giant leaves up.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; <br />
+Fluff flies down.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; get all fumesget all fumesget all fumesget all fumesget all fumes<br />
+Sabin massacres Glorek with his cleave.<br />
+Ardinghelli bludgeons Fumes hard.<br />
+Glorek cleaves Parnigar extremely hard.<br />
+Parnigar massacres Fumes with his slash.<br />
+Fumes massacres Parnigar with his slash.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; <br />
+Parnigar panics, and attempts to flee.<br />
+Parnigar flies up.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; get all fumesget all fumes<br />
+Rastavious focuses harshly on Fumes and utters the words, 'hold person'.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; <br />
+Parnigar flies in from above.<br />
+Sartel flies in from above.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; Parnigar flies down.<br />
+Sartel flies down.<br />
+Zearin leaves down.<br />
+What are you trying to get from?<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; c 'f b' fumesWhat are you trying to get from?<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; What are you trying to get from?<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; What are you trying to get from?<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; What are you trying to get from?<br />
+Glorek stands up.<br />
+<br />
+274H 54V 8006452X 9C Mem:3 Exits:UD&gt; Sabin crashes into Glorek in a thundering collision, knocking him to the ground!<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Fumes.<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; <br />
+Rosen flies in from above.<br />
+A hill giant arrives from above.<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; <br />
+Rosen stops using a sleek wooden wand.<br />
+Rosen grabs a scroll of recall.<br />
+Rosen recites a scroll of recall.<br />
+Fumes disappears.<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; <br />
+Glorek cleaves Sabin very hard.<br />
+Sabin cleaves Glorek extremely hard.<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; get all fumesc 'f b' rosen<br />
+Ardinghelli crashes into Glorek in a thundering collision, knocking him to the ground!<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; What are you trying to get from?<br />
+<br />
+274H 54V 8006452X 9C Mem:4 Exits:UD&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Rosen.<br />
+<br />
+274H 54V 8006452X 9C [Chon:Perfect] [Rosen:Good] Mem:5 Exits:UD&gt; <br />
+You miss Rosen with your bludgeon.<br />
+Rosen pierces YOU very hard.<br />
+Ardinghelli bludgeons Glorek very hard.<br />
+Glorek cleaves Sabin extremely hard.<br />
+Sabin massacres Glorek with his cleave.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Good] Mem:5 Exits:UD&gt; c 'f b' rosengt bash rosen<br />
+Parnigar flies in from below.<br />
+Sartel flies in from below.<br />
+Zearin arrives from below.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Good] Mem:5 Exits:UD&gt; <br />
+Sabin crashes into Rosen in a thundering collision, knocking him to the ground!<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:5 Exits:UD&gt; <br />
+Rastavious focuses harshly on Glorek and utters the words, 'hold person'.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:5 Exits:UD&gt; <br />
+Glorek steps aside as Parnigar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:5 Exits:UD&gt; Parnigar massacres Glorek with his slash.<br />
+You miss Rosen with your bludgeon.<br />
+Rosen misses you and destroys an image.<br />
+Ardinghelli bludgeons Glorek very hard.<br />
+Glorek cleaves Sabin extremely hard.<br />
+Sabin massacres Glorek with his cleave.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Rosen.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:6 Exits:UD&gt; c 'f b' rosen<br />
+Zearin leaves up.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:6 Exits:UD&gt; <br />
+Zearin arrives from above.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:6 Exits:UD&gt; <br />
+Ardinghelli gets a vial from his locket.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:6 Exits:UD&gt; <br />
+Ardinghelli quaffs a vial of orange flame.<br />
+Ardinghelli smiles as the air around him solidifies.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Fair] Mem:6 Exits:UD&gt; <br />
+Zearin focuses harshly on Rosen and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Zearin's force bolt slams into Rosen.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:V.Bad] Mem:6 Exits:UD&gt; <br />
+Glorek steps aside as Ardinghelli attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:V.Bad] Mem:6 Exits:UD&gt; <br />
+Parnigar misses Glorek with his slash.<br />
+Rosen misses you and destroys an image.<br />
+Ardinghelli bludgeons Glorek very hard.<br />
+Glorek cleaves Sabin extremely hard.<br />
+Sabin massacres Glorek with his cleave.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:V.Bad] Mem:6 Exits:UD&gt; <br />
+Sartel charges at Glorek, but he managed to move away.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:V.Bad] Mem:6 Exits:UD&gt; You tell your group 'bash rosen'<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:V.Bad] Mem:6 Exits:UD&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Rosen.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; c 'f b' rosenget all rosen<br />
+Glorek stands up.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Sabin crashes into Glorek in a thundering collision, knocking him to the ground!<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Parnigar stands up.<br />
+Zearin focuses harshly on Rosen and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Zearin's force bolt slams into Rosen.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Sartel massacres Glorek with his slash.<br />
+Parnigar massacres Glorek with his slash.<br />
+Rosen misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Ardinghelli bludgeons Glorek very hard.<br />
+Glorek massacres Sabin with his cleave.<br />
+Sabin massacres Glorek with his cleave.<br />
+Glorek steps aside as Parnigar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+c 'f b' glorek261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Fluff flies in from below.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Fluff flies up.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; You can't remember how to cast that spell!<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; What are you trying to get from?<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; You can't remember how to cast that spell!<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Fluff flies in from above.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Rosen gets a scroll from his bag.<br />
+<br />
+261H 54V 8006452X 9C [Chon:V.Good] [Rosen:Awful] Mem:7 Exits:UD&gt; <br />
+Rosen grabs a glowing scroll of recall.<br />
+Rosen recites a glowing scroll of recall.<br />
+Rosen disappears.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Rastavious says 'form'<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Ticca flies in from above.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Fluff slowly fades into existence.<br />
+Glorek steps aside as Fluff attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Ticca flies down.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Ardinghelli crashes into Glorek in a thundering collision, knocking him to the ground!<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Fluff massacres Glorek with her crush.<br />
+Sartel annihilates Glorek with his slash.<br />
+Parnigar massacres Glorek with his slash.<br />
+Ardinghelli bludgeons Glorek very hard.<br />
+Glorek massacres Sabin with his cleave.<br />
+Sabin massacres Glorek with his cleave.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Sartel unsuccessfully tries to save Sabin.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; c 'm m' glorekYou utter the words, 'magic missile'<br />
+You watch with selfpride as the magic missile hits Glorek.<br />
+You watch with selfpride as the magic missile hits Glorek.<br />
+You watch with selfpride as the magic missile hits Glorek.<br />
+You watch with selfpride as the magic missile hits Glorek.<br />
+You watch with selfpride as the magic missile hits Glorek.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Zearin focuses harshly on Glorek and utters the words, 'hold person'.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; c 'm m' glorek<br />
+Rastavious slowly fades into existence.<br />
+Rastavious bludgeons Glorek extremely hard.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Glorek steps aside as Sabin attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Rastavious bludgeons Glorek extremely hard.<br />
+Glorek is stunned, but will likely regain consciousness again.<br />
+Fluff massacres Glorek with her crush.<br />
+You receive 0 experience.<br />
+Glorek is dead! R.I.P.<br />
+get pile.coins corpseexa corpseThe death cry of Glorek echoes from somewhere nearby...<br />
+Glorek sinks gently to the ground.<br />
+Toronar stops following Glorek.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Parnigar stands up.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; <br />
+Parnigar gets a condor feather from the corpse of Glorek.<br />
+Parnigar gets a heavy rune-inscribed battle axe from the corpse of Glorek.<br />
+Parnigar gets a griffon's mane circlet from the corpse of Glorek.<br />
+Parnigar gets a hermit's pack from the corpse of Glorek.<br />
+Parnigar gets a wooden shield from the corpse of Glorek.<br />
+Parnigar gets gleaming scaled armbands from the corpse of Glorek.<br />
+Parnigar gets a pair of sterling gauntlets from the corpse of Glorek.<br />
+Parnigar gets a horned helmet from the corpse of Glorek.<br />
+Parnigar gets the amulet of Kul from the corpse of Glorek.<br />
+Parnigar gets a lucky bone charm from the corpse of Glorek.<br />
+Parnigar gets a wooden ring from the corpse of Glorek.<br />
+Parnigar gets an elemental ring from the corpse of Glorek.<br />
+Parnigar gets a pile of coins from the corpse of Glorek.<br />
+Parnigar gets a glowing scroll of recall from the corpse of Glorek.<br />
+Parnigar gets a glowing scroll of recall from the corpse of Glorek.<br />
+Parnigar gets a small green scroll from the corpse of Glorek.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; Who should the spell be cast upon?<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a fulgurite plate..it glows dimly<br />
+a small green scroll [2]<br />
+a bound scroll<br />
+a portable keg<br />
+a colorful mushroom<br />
+a long sword<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; get all corpseYou get a fulgurite plate from the corpse of Glorek.<br />
+You get a small green scroll from the corpse of Glorek.<br />
+You get a small green scroll from the corpse of Glorek.<br />
+You get a bound scroll from the corpse of Glorek.<br />
+You get a portable keg from the corpse of Glorek.<br />
+You get a colorful mushroom from the corpse of Glorek.<br />
+You get a long sword from the corpse of Glorek.<br />
+<br />
+261H 54V 8006452X 9C Mem:7 Exits:UD&gt; gt niceYou tell your group 'nice'<br />
+<br />
+<br />
+274H 140V 8006452X 9C Mem:1 Exits:D&gt; <br />
+Parnigar tells your group 'they'll die'<br />
+<br />
+274H 140V 8006452X 9C Mem:1 Exits:D&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='385'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=385">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="385">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

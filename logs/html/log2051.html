@@ -1,0 +1,940 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2051-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='64.208.172.177' and logid='2051'-->
+
+<!-- PHP Generated Message: IP in db-->
+
+<p>
+<b><font size="3">
+Avery + Avelyn RIP</font></b>
+<p>
+POV: 
+Hilary<p>
+Log Rating:
+2.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Avery should have gone to a 1-man or at least untrackable room. At the end he was probably hoping his (poor) hide would work.</i>
+<p>
+<p>
+
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Avery arrives from the north.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Feroz looks at Avery.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Staby flies in from the north.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Staby places a crystal dagger in Avery's back, resulting in some strange noises and some blood.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Staby MASSACRES Avery with his pierce.<br />
+Avery pierces Staby very hard.<br />
+Avery pierces Staby hard.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Kralum flies in from above.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Lucius leaves north.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Kralum says 'hi!'<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; bash avery<br />
+You couldn't find what you were looking for.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Takaia stops following Espylacopa.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; <br />
+Kralum flies up.<br />
+<br />
+614H 149V 9337337X 0.00% 78C Exits:NU&gt; n<br />
+Sword Street<br />
+Lucius is STANDING here, fighting Avery.<br />
+Avery &quot;The Hand&quot; Nai, Fiddly Fiddle Fingers is STANDING here, fighting Lucius.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+<br />
+614H 148V 9337337X 0.00% 78C Exits:ESW&gt; <br />
+Lucius misses Avery with his pierce.<br />
+Lucius misses Avery with his pierce.<br />
+Avery pierces Lucius hard.<br />
+Avery pierces Lucius hard.<br />
+<br />
+614H 148V 9337337X 0.00% 78C Exits:ESW&gt; bash avery<br />
+You couldn't find what you were looking for.<br />
+<br />
+614H 148V 9337337X 0.00% 78C Exits:ESW&gt; bash avery<br />
+You &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 148V 9337337X 0.00% 78C [Hilary:Perfect] [Avery:Bad] Exits:ESW&gt; <br />
+You smite Avery EXTREMELY hard.<br />
+Avery pierces YOU very hard.<br />
+Avery pierces YOU hard.<br />
+<br />
+594H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:Bad] Exits:ESW&gt; <br />
+Lucius slowly fades into existence.<br />
+Lucius misses Avery with his pierce.<br />
+<br />
+594H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:Bad] Exits:ESW&gt; <br />
+A Palanthian guard leaves east.<br />
+Lucius pierces Avery EXTREMELY hard.<br />
+Lucius pierces Avery hard.<br />
+You MASSACRE Avery with your smite.<br />
+Avery pierces YOU very hard.<br />
+Avery pierces YOU hard.<br />
+<br />
+571H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; bash<br />
+<br />
+Lucius attempts to unbalance Avery, but he quickly avoids him.<br />
+<br />
+571H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; <br />
+Heables yells 'hahaha'<br />
+<br />
+571H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; <br />
+Avery gets a scroll from his chest.<br />
+<br />
+571H 148V 9337337X 0.00% 78C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; Avery stops using a blackened blade.<br />
+Avery grabs a glowing scroll of recall.<br />
+Avery recites a glowing scroll of recall.<br />
+Avery disappears.<br />
+You couldn't find what you were looking for.<br />
+<br />
+----------------------------------------------------------------<br />
+Some tracking...<br />
+<br />
+<br />
+614H 28V 9337285X 0.00% 88C Exits:NE(W)&gt; <br />
+Feroz flies north.<br />
+You follow Feroz north.<br />
+Academy Square<br />
+A small pile of grey cloth is here.<br />
+A strange cape has been discarded here.<br />
+Avery &quot;The Hand&quot; Nai, Fiddly Fiddle Fingers is STANDING here. (flying)<br />
+bas avery<br />
+A mercenary stands here, protecting New Tarsis under orders from the Thane.<br />
+<br />
+614H 27V 9337285X 0.00% 88C Exits:NESW&gt; <br />
+Feroz &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 27V 9337285X 0.00% 88C Exits:NESW&gt; sca<br />
+You &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Good] Exits:NESW&gt; <br />
+A mercenary looks at you and yells 'There's the scoundrel!'<br />
+<br />
+614H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Good] Exits:NESW&gt; <br />
+Lucius appears to be dancing around the room.<br />
+<br />
+614H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Good] Exits:NESW&gt; <br />
+A mercenary slashes YOU hard.<br />
+Batt MASSACRES Avery with his cleave.<br />
+You MASSACRE Avery with your smite.<br />
+Feroz slashes Avery EXTREMELY hard.<br />
+Avery pierces Feroz EXTREMELY hard.<br />
+Avery pierces Feroz hard.<br />
+<br />
+607H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Fair] Exits:NESW&gt; <br />
+Lucius appears to be dancing around the room.<br />
+<br />
+607H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Fair] Exits:NESW&gt; bas<br />
+<br />
+Lucius slowly fades into existence.<br />
+Lucius pierces Avery EXTREMELY hard.<br />
+<br />
+607H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Fair] Exits:NESW&gt; <br />
+Avelyn flies in from the north.<br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+607H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Fair] Exits:NESW&gt; <br />
+Lucius misses Avery with his pierce.<br />
+Lucius pierces Avery hard.<br />
+A mercenary slashes YOU hard.<br />
+Batt MASSACRES Avery with his cleave.<br />
+You smite Avery EXTREMELY hard.<br />
+Feroz MASSACRES Avery with his slash.<br />
+Avery pierces Feroz very hard.<br />
+Avery pierces Feroz hard.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:Fair] Exits:NESW&gt; <br />
+Avelyn focuses on Avery and utters some strange words.<br />
+Avelyn heals Avery.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; Feroz looks at Avery.<br />
+Looking north:<br />
+You see nothing special.<br />
+Virga the Rainmaker eyes the sky carefully.<br />
+Looking east:<br />
+You see nothing special.<br />
+Darvinus the master mage is here, looking for students.<br />
+Looking south:<br />
+A gap between two burned out buildings opens onto a narrow path.<br />
+Looking west:<br />
+You see nothing special.<br />
+Ubex, Good Shepherd of the Dusty Road, smiles beautifully.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; You try to bash Avery, but you miss and tumble forward onto your face.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+Feroz &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+Lucius panics, and attempts to flee.<br />
+Lucius flies south.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:V.Good] [Avery:V.Good] Exits:NESW&gt; <br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary misses you with his slash.<br />
+Batt MASSACRES Avery with his cleave.<br />
+You smite Avery EXTREMELY hard.<br />
+Feroz MASSACRES Avery with his slash.<br />
+Avery pierces Feroz EXTREMELY hard.<br />
+Avery pierces Feroz very hard.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Good] Exits:NESW&gt; <br />
+A mercenary looks at you and yells 'There's the scoundrel!'<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Good] Exits:NESW&gt; <br />
+Lucius flies in from the south.<br />
+A mercenary looks at you and yells 'There's the scoundrel!'<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Good] Exits:NESW&gt; <br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary misses you with his slash.<br />
+Batt MASSACRES Avery with his cleave.<br />
+You MASSACRE Avery with your smite.<br />
+Feroz slashes Avery EXTREMELY hard.<br />
+Avery pierces Feroz EXTREMELY hard.<br />
+Avery pierces Feroz hard.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; st<br />
+bash avelyn<br />
+<br />
+Lucius slowly fades into existence.<br />
+Lucius pierces Avelyn EXTREMELY hard.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; You stand up.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; You try to bash Avelyn, but you miss and tumble forward onto your face.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+Feroz &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;MISSED bash on&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+599H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+Lucius misses Avelyn with his pierce.<br />
+Lucius misses Avelyn with his pierce.<br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary slashes YOU hard.<br />
+Batt cleaves Avery EXTREMELY hard.<br />
+You MASSACRE Avery with your smite.<br />
+Feroz slashes Avery hard.<br />
+Avery pierces Feroz EXTREMELY hard.<br />
+Avery pierces Feroz.<br />
+<br />
+590H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+590H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+A loud voice is heard booming throughout the town, 'The caravan has<br />
+arrived, we will be leaving in about four hours.'<br />
+<br />
+590H 27V 9337285X 0.00% 88C [Feroz:Good] [Avery:Fair] Exits:NESW&gt; <br />
+Lucius pierces Avelyn EXTREMELY hard.<br />
+Lucius pierces Avelyn very hard.<br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary slashes YOU EXTREMELY hard.<br />
+Batt MASSACRES Avery with his cleave.<br />
+You MASSACRE Avery with your smite.<br />
+Feroz MASSACRES Avery with his slash.<br />
+Avery pierces Feroz EXTREMELY hard.<br />
+Avery pierces Feroz very hard.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Feroz:Fair] [Avery:V.Bad] Exits:NESW&gt; <br />
+Avery STANDS UP!<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Feroz:Fair] [Avery:V.Bad] Exits:NESW&gt; <br />
+Avery panics, and attempts to flee.<br />
+You direct your attention to a mercenary.<br />
+Avery flies east.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; <br />
+With blinding speed, Lucius manages to unbalance Avelyn.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; stand<br />
+<br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; <br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; You stand up.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; <br />
+Feroz tells your group 'TIK IN 10'<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; bash avelyn<br />
+<br />
+Feroz &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; You &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+573H 27V 9337285X 0.00% 88C [Hilary:V.Good] [a mercenary:Perfect] Exits:NESW&gt; <br />
+Feroz slashes Avelyn very hard.<br />
+You smite a mercenary EXTREMELY hard.<br />
+Lucius misses Avelyn with his pierce.<br />
+Lucius pierces Avelyn hard.<br />
+You move aside quickly as a mercenary attacks!<br />
+Batt STANDS UP!<br />
+<br />
+573H 27V 9336993X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;MISSED bash on&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+573H 27V 9336993X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Lucius attempts to unbalance Avelyn, but he quickly avoids him.<br />
+<br />
+573H 27V 9336993X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt cleaves Avelyn EXTREMELY hard.<br />
+Feroz slashes Avelyn very hard.<br />
+You smite a mercenary EXTREMELY hard.<br />
+Lucius pierces Avelyn EXTREMELY hard.<br />
+Lucius pierces Avelyn very hard.<br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary misses you with his slash.<br />
+A mercenary slashes YOU very hard.<br />
+<br />
+560H 27V 9336732X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+560H 27V 9336732X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Lucius attempts to unbalance Avelyn, but he quickly avoids him.<br />
+<br />
+560H 27V 9336732X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; bash avelyn<br />
+Batt MASSACRES Avelyn with his cleave.<br />
+Feroz MASSACRES Avelyn with his slash.<br />
+You smite a mercenary very hard.<br />
+Lucius misses Avelyn with his pierce.<br />
+Lucius pierces Avelyn hard.<br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary misses you with his slash.<br />
+You &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt STANDS UP!<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;MISSED bash on&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Lucius attempts to unbalance Avelyn, but he quickly avoids him.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Feroz looks at Avelyn.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt MASSACRES Avelyn with his cleave.<br />
+Feroz misses Avelyn with his slash.<br />
+A mercenary dodges your attack!<br />
+Lucius misses Avelyn with his pierce.<br />
+Lucius pierces Avelyn very hard.<br />
+Avelyn misses Feroz with his hit.<br />
+A mercenary misses you with his slash.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Feroz &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avelyn.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Lucius attempts to unbalance Avelyn, but he quickly avoids him.<br />
+<br />
+580H 61V 9336532X 0.00% 88C [Hilary:V.Good] [a mercenary:Good] Exits:NESW&gt; <br />
+Batt cleaves Avelyn EXTREMELY hard.<br />
+Feroz MASSACRES Avelyn with his slash.<br />
+You MASSACRE a mercenary with your smite.<br />
+Lucius pierces Avelyn very hard.<br />
+Lucius pierces Avelyn hard.<br />
+Avelyn is incapacitated and will slowly die, if not aided.<br />
+A mercenary misses you with his slash.<br />
+<br />
+580H 61V 9336194X 0.00% 88C [Hilary:V.Good] [a mercenary:Fair] Exits:NESW&gt; flee<br />
+<br />
+A mercenary looks at Lucius and yells  'There's the scoundrel!'<br />
+<br />
+580H 61V 9336194X 0.00% 88C [Hilary:V.Good] [a mercenary:Fair] Exits:NESW&gt; You flee head over heels.<br />
+Academy of Ars Arcana<br />
+A long, hooded cloak has been left here.<br />
+A bottle of hammered bronze has been discarded here.<br />
+An orrery is mounted on a stand here.<br />
+Darvinus the master mage is here, looking for students.<br />
+<br />
+580H 60V 9336194X 0.00% 88C Exits:W&gt; <br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+580H 60V 9336194X 0.00% 88C Exits:W&gt; w<br />
+Academy Square<br />
+The corpse of Avelyn is lying here.<br />
+A small pile of grey cloth is here.<br />
+A strange cape has been discarded here.<br />
+Lucius is STANDING here. (flying)<br />
+&lt;PZC&gt; Batt the Male Hylar Dwarf is STANDING here. (flying)<br />
+&lt;BSP&gt; Feroz, The Fierce is STANDING here. (flying)<br />
+A mercenary stands here, protecting New Tarsis under orders from the Thane.<br />
+<br />
+580H 59V 9336194X 0.00% 88C Exits:NESW&gt; <br />
+Lucius gets a griffon feather from the corpse of Avelyn.<br />
+Lucius gets a bracelet of the white owl from the corpse of Avelyn.<br />
+Lucius gets a plain component pouch from the corpse of Avelyn.<br />
+Lucius gets an alb from the corpse of Avelyn.<br />
+Lucius gets a leather shield with metal straps from the corpse of Avelyn.<br />
+Lucius gets a pair of white feathered armbands from the corpse of Avelyn.<br />
+Lucius gets a pair of supple leather gloves from the corpse of Avelyn.<br />
+Lucius gets a pair of worn leather boots from the corpse of Avelyn.<br />
+Lucius gets a chasuble from the corpse of Avelyn.<br />
+Lucius gets a demon skin cloak from the corpse of Avelyn.<br />
+Lucius gets a pearl and onyx medallion from the corpse of Avelyn.<br />
+Lucius gets a pink diamond ring from the corpse of Avelyn.<br />
+Lucius gets a sheaf of spellbook pages from the corpse of Avelyn.<br />
+Lucius gets the corpse of Espylacopa from the corpse of Avelyn.<br />
+Lucius gets a fur-trimmed, gray cape from the corpse of Avelyn.<br />
+Lucius gets a scribed scroll from the corpse of Avelyn.<br />
+<br />
+580H 59V 9336194X 0.00% 88C Exits:NESW&gt; Get all corpse<br />
+You get a green marble chest from the corpse of Avelyn.<br />
+<br />
+--------------------------------------------------------------------------<br />
+Some more tracking...<br />
+<br />
+<br />
+614H 92V 9326546X 0.00% 108C Exits:NESW&gt; n<br />
+A Snowy Spruce Stand<br />
+Avery &quot;The Hand&quot; Nai, Fiddly Fiddle Fingers is resting here. (flying)<br />
+bas avery<br />
+<br />
+614H 90V 9326546X 0.00% 108C Exits:ESW&gt; <br />
+Staby drops a flaming dagger.<br />
+<br />
+614H 90V 9326546X 0.00% 108C Exits:ESW&gt; bas avery<br />
+You &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 90V 9326546X 0.00% 108C [Hilary:Perfect] [Avery:Fair] Exits:ESW&gt; <br />
+Staby starts holding a dagger.<br />
+<br />
+614H 90V 9326546X 0.00% 108C [Hilary:Perfect] [Avery:Fair] Exits:ESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+614H 90V 9326546X 0.00% 108C [Hilary:Perfect] [Avery:Fair] Exits:ESW&gt; <br />
+Batt MASSACRES Avery with his cleave.<br />
+You smite Avery EXTREMELY hard.<br />
+Avery MASSACRES YOU with his pierce.<br />
+Avery pierces YOU hard.<br />
+<br />
+584H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:Bad] Exits:ESW&gt; <br />
+Lucius slowly fades into existence.<br />
+Lucius misses Avery with his pierce.<br />
+<br />
+584H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:Bad] Exits:ESW&gt; <br />
+Staby appears to be dancing around the room.<br />
+<br />
+584H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:Bad] Exits:ESW&gt; <br />
+Staby MASSACRES Avery with his pierce.<br />
+<br />
+584H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; <br />
+Staby MASSACRES Avery with his pierce.<br />
+Staby pierces Avery hard.<br />
+Lucius misses Avery with his pierce.<br />
+Lucius pierces Avery hard.<br />
+Batt cleaves Avery EXTREMELY hard.<br />
+You MASSACRE Avery with your smite.<br />
+Avery misses you with his pierce.<br />
+Avery pierces YOU hard.<br />
+<br />
+575H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; <br />
+Lucius attempts to unbalance Avery, but he quickly avoids him.<br />
+<br />
+575H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; You try to bash Avery, but you miss and tumble forward onto your face.<br />
+<br />
+575H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:V.Bad] Exits:ESW&gt; <br />
+Batt &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Avery.<br />
+<br />
+575H 90V 9326546X 0.00% 108C [Hilary:V.Good] [Avery:Awful] Exits:ESW&gt; <br />
+Staby MASSACRES Avery with his pierce.<br />
+Staby pierces Avery.<br />
+Lucius pierces Avery hard.<br />
+Lucius pierces Avery hard.<br />
+Batt MASSACRES Avery with his cleave.<br />
+Avery is incapacitated and will slowly die, if not aided.<br />
+You ANNIHILATE Avery with your smite.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+exa corpse<br />
+Avery is dead! R.I.P.<br />
+The death cry of Avery echoes from somewhere nearby...<br />
+<br />
+575H 90V 9326546X 0.00% 108C Exits:ESW&gt; <br />
+Staby gets a very large pile of coins from the corpse of Avery.<br />
+<br />
+575H 90V 9326546X 0.00% 108C Exits:ESW&gt; <br />
+Staby gets a blackened blade from the corpse of Avery.<br />
+Staby gets a transparent bone spear from the corpse of Avery.<br />
+Staby gets a glowing scroll of recall from the corpse of Avery.<br />
+Staby gets a loaf of bread from the corpse of Avery.<br />
+Staby gets a pitch black robe from the corpse of Avery.<br />
+Staby gets a gold bracelet from the corpse of Avery.<br />
+Staby gets a large sack from the corpse of Avery.<br />
+Staby gets a suit of ringmail armor from the corpse of Avery.<br />
+Staby gets a pewter ringlet from the corpse of Avery.<br />
+Staby gets a jug of oil from the corpse of Avery.<br />
+Staby gets a clay pot from the corpse of Avery.<br />
+Staby gets a green robe from the corpse of Avery.<br />
+Staby gets a small copper ring from the corpse of Avery.<br />
+Staby gets a gold and diamond wedding band from the corpse of Avery.<br />
+Staby gets a crescent moon medallion from the corpse of Avery.<br />
+Staby gets a crescent moon medallion from the corpse of Avery.<br />
+Staby gets an embroidered white robe from the corpse of Avery.<br />
+Staby gets a pair of black leather pants from the corpse of Avery.<br />
+Staby gets a pair of magi boots from the corpse of Avery.<br />
+Staby gets some scarlet leather gloves from the corpse of Avery.<br />
+Staby gets wicked cloak of wizardry from the corpse of Avery.<br />
+Staby gets a black leather beltpouch from the corpse of Avery.<br />
+Staby gets a gem studded mithril bracer from the corpse of Avery.<br />
+Staby gets a lucky captain's charm from the corpse of Avery.<br />
+<br />
+575H 90V 9326546X 0.00% 108C Exits:ESW&gt; Get all corpse<br />
+<br />
+Staby cheers loudly.<br />
+<br />
+575H 90V 9326546X 0.00% 108C Exits:ESW&gt; st<br />
+<br />
+Lucius gets the black staff of shadows from the corpse of Avery.<br />
+Lucius gets a short sword from the corpse of Avery.<br />
+Lucius gets a crimson dagger from the corpse of Avery.<br />
+Lucius gets a putrid potion from the corpse of Avery.<br />
+Lucius gets a putrid potion from the corpse of Avery.<br />
+Lucius gets a putrid potion from the corpse of Avery.<br />
+Lucius gets a putrid potion from the corpse of Avery.<br />
+Lucius gets a small wooden chest from the corpse of Avery.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='64.208.172.177' and logid='2051'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2051">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2051">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="64.208.172.177">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

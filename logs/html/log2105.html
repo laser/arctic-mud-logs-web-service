@@ -1,0 +1,994 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2105-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='64.208.172.177' and logid='2105'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Ahlez Sorinel</font></b>
+<p>
+POV: 
+Moop<p>
+Log Rating:
+1.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+Logged quick and walked in to see what Otlw was doing in dmine.  Got scared.  Left.<br />
+But apparently a lot of us were rented in here.<br />
+<br />
+u<br />
+Practical Applications Department<br />
+A pile of steel coins.<br />
+<br />
+309H 117V 6677446X 0.00% 87C Mem:3 Exits:ND&gt;<br />
+PK is off -- Scanning<br />
+scan<br />
+Looking --------- NORTH<br />
+A set of doors leads to the Master Inventors Laboratory.<br />
+The doors is open.<br />
+&lt;Otlw&gt; Sorinel the Male Qualinesti is standing here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+&lt;Otlw&gt; Aplaenych Aire is sitting here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . has a granite appearance.<br />
+Blaaah Mlaah is standing here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Ahlez the Male Minotaur is sitting here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . has a tough exterior.<br />
+Huang He, the Headmaster of the Engineering Guild is standing here, fighting Aplaenych.<br />
+Looking --------- EAST<br />
+Some gnomes test out recently created equipment for practicality.<br />
+Looking --------- SOUTH<br />
+A staircase leads down to the lower level of the guild.<br />
+Looking --------- WEST<br />
+Gnomes watch the success of their contraptions eagerly.<br />
+Looking --------- UP<br />
+The ceiling is well-lit.<br />
+Looking --------- DOWN<br />
+The ground here is in amazingly good condition.<br />
+<br />
+309H 117V 6677446X 0.00% 87C Mem:3 Exits:ND&gt;<br />
+d<br />
+Hallway Through the Guild<br />
+<br />
+309H 116V 6677446X 0.00% 87C Mem:3 Exits:NEU&gt;<br />
+u<br />
+Practical Applications Department<br />
+A pile of steel coins.<br />
+<br />
+309H 115V 6677446X 0.00% 87C Mem:3 Exits:ND&gt;<br />
+d<br />
+Hallway Through the Guild<br />
+<br />
+309H 114V 6677446X 0.00% 87C Mem:3 Exits:NEU&gt;<br />
+u<br />
+Practical Applications Department<br />
+A pile of steel coins.<br />
+<br />
+309H 113V 6677446X 0.00% 87C Mem:3 Exits:ND&gt;<br />
+n<br />
+The Head Inventor's Laboratory<br />
+The corpse of a nereid is lying here.<br />
+A swarm of insects fills the area. [2]<br />
+&lt;Otlw&gt; Sorinel the Male Qualinesti is standing here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+&lt;Otlw&gt; Aplaenych Aire is sitting here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . has a granite appearance.<br />
+Blaaah Mlaah is standing here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Ahlez the Male Minotaur is sitting here, fighting Huang He, the Headmaster of the Engineering Guild. (flying)<br />
+. . . is surrounded by a shimmering light.<br />
+Huang He, the Headmaster of the Engineering Guild is standing here, fighting Aplaenych.<br />
+Huang raises a small crystal into a sharp beam of light!<br />
+Huang He, the Headmaster of the Engineering Guild --()-- PRISMATIC SPRAY --()--<br />
+Huang He, the Headmaster of the Engineering Guild misses you and destroys an image.<br />
+<br />
+309H 112V 6677446X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:V.Bad] Mem:2 Exits:S&gt;<br />
+<br />
+Aplaenych stands up.<br />
+<br />
+309H 112V 6677446X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:V.Bad] Mem:2 Exits:S&gt;<br />
+<br />
+Sorinel stands up.<br />
+<br />
+309H 112V 6677446X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:V.Bad] Mem:2 Exits:S&gt;<br />
+<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+The swarm of insects dissipates.<br />
+You should probably stand up!<br />
+You bludgeon Huang He, the Headmaster of the Engineering Guild.<br />
+Huang He, the Headmaster of the Engineering Guild misses Aplaenych with his crush.<br />
+Huang He, the Headmaster of the Engineering Guild bruises Aplaenych with his crush.<br />
+Huang He, the Headmaster of the Engineering Guild is chilled, as he swings at Aplaenych.<br />
+Blaaah misses Huang He, the Headmaster of the Engineering Guild with his smite.<br />
+Blaaah stands up.<br />
+<br />
+309H 112V 6677248X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:V.Bad] Mem:2 Exits:S&gt;<br />
+st<br />
+You stand up.<br />
+Blaaah focuses harshly on Huang He, the Headmaster of the Engineering Guild and utters the words, 'lightning bolt'.<br />
+Huang He, the Headmaster of the Engineering Guild wavers under the impact of the lightning bolt sent by Blaaah.<br />
+<br />
+309H 112V 6677248X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Sorinel utters some strange words.<br />
+<br />
+309H 112V 6677248X 0.00% 87C [Me:Good] [Aplaenych:V.Bad] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+fle<br />
+<br />
+Huang raises a small crystal into a sharp beam of light!<br />
+Huang He, the Headmaster of the Engineering Guild --()-- PRISMATIC SPRAY --()--<br />
+You are struck by a spray of murky violet!<br />
+You feel a slight chill.<br />
+Huang He, the Headmaster of the Engineering Guild misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+<br />
+265H 112V 6677248X 0.00% 87C [Me:Fair] [Aplaenych:Awful] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+You can't do that while sitting.<br />
+<br />
+265H 112V 6677248X 0.00% 87C [Me:Fair] [Aplaenych:Awful] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Aplaenych stands up.<br />
+<br />
+265H 112V 6677248X 0.00% 87C [Me:Fair] [Aplaenych:Awful] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+st<br />
+You stand up.<br />
+<br />
+265H 112V 6677248X 0.00% 87C [Me:Fair] [Aplaenych:Awful] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Aplaenych panics, and attempts to flee.<br />
+Aplaenych flies south.<br />
+<br />
+265H 112V 6677248X 0.00% 87C [Me:Fair] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Huang He, the Headmaster of the Engineering Guild massacres YOU with his crush.<br />
+You move aside quickly as Huang He, the Headmaster of the Engineering Guild attacks!<br />
+Huang He, the Headmaster of the Engineering Guild stumbles and accidentally attacks Blaaah!<br />
+Huang He, the Headmaster of the Engineering Guild annihilates Blaaah with his crush.<br />
+You miss Huang He, the Headmaster of the Engineering Guild with your bludgeon.<br />
+<br />
+242H 112V 6677248X 0.00% 87C [Me:Fair] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+st<br />
+You are already standing.<br />
+<br />
+242H 112V 6677248X 0.00% 87C [Me:Fair] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Blaaah stands up.<br />
+Sorinel stands up.<br />
+<br />
+242H 112V 6677248X 0.00% 87C [Me:Fair] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+<br />
+Blaaah focuses harshly on Huang He, the Headmaster of the Engineering Guild and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Blaaah's force bolt slams into Huang He, the Headmaster of the Engineering Guild.<br />
+<br />
+242H 112V 6677248X 0.00% 87C [Me:Fair] [Huang He, the Headmaster of the Engineering Guild:Awful] Mem:2 Exits:S&gt;<br />
+CAST 'relocate'  petrin<br />
+You utter the words, 'relocate'<br />
+The Master Mages Laboratory<br />
+An orrery is mounted on a stand here...it glows blue<br />
+Vallon the Male Silvanesti is resting here. (flying) (invisible)<br />
+. . . is surrounded by 3 shimmering spheres.<br />
+&lt;BST&gt; Lark the Dark, Beast of Shadows is resting here. (invisible)<br />
+An attractive guild guard stands here, watching everyone warily.<br />
+The master mage is standing here, making little balls of light dance around.<br />
+<br />
+242H 112V 6677248X 0.00% 87C Mem:3 Exits:S&gt;<br />
+PK is off -- Scanning<br />
+scan<br />
+<br />
+4-5 minutes later, seeing that they hadn't left.<br />
+---------------------<br />
+<br />
+Looking --------- UP<br />
+Captured lightning bolts light the room.<br />
+&lt;Otlw&gt; Ahlez the Male Minotaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Aplaenych Aire is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Sorinel the Male Qualinesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Blaaah Mlaah is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Looking --------- DOWN<br />
+The floor has a few scrape marks on it.<br />
+<br />
+390H 126V 6677248X 0.00% 87C Mem:1 Exits:NEU&gt;<br />
+u<br />
+Practical Applications Department<br />
+&lt;MAEL&gt; Ragan Smash, Dragonslayer of the Blood Sea Maelstrom is standing here. (flying) (invisible)<br />
+&lt;MAEL&gt; Hiph Op, Blinding Speed of the Maelstrom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;MAEL&gt; Ilmarin Ll'we'llyn is standing here. (flying)<br />
+&lt;Otlw&gt; Ahlez the Male Minotaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Aplaenych Aire is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Otlw&gt; Sorinel the Male Qualinesti is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Blaaah Mlaah is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+390H 125V 6677248X 0.00% 87C Mem:1 Exits:ND&gt;<br />
+<br />
+Hiph comes out of hiding.<br />
+Hiph crashes into Sorinel in a thundering collision, knocking him to the ground!<br />
+<br />
+390H 125V 6677248X 0.00% 87C Mem:1 Exits:ND&gt;<br />
+cast 'malevolent tentacles'<br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+You feel less powerful.<br />
+<br />
+390H 125V 6677248X 0.00% 87C [Me:Perfect] [Ahlez:V.Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Ilmarin crashes into Ahlez in a thundering collision, knocking him to the ground!<br />
+<br />
+390H 125V 6677248X 0.00% 87C [Me:Perfect] [Ahlez:V.Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Ilmarin massacres Ahlez with his crush.<br />
+Blaaah misses you with his smite.<br />
+Aplaenych misses you with his hit.<br />
+You bludgeon Ahlez hard.<br />
+Ahlez misses you with his hit.<br />
+Hiph hits the tentacles constricting Sorinel instead!<br />
+<br />
+Hiph bruises Sorinel with his slash.<br />
+<br />
+390H 125V 6677248X 0.00% 87C [Me:Perfect] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Ragan slowly fades into existence.<br />
+Ragan massacres Ahlez with his pierce.<br />
+<br />
+390H 125V 6677248X 0.00% 87C [Me:Perfect] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Aplaenych stands up.<br />
+<br />
+390H 125V 6677248X 0.00% 87C [Me:Perfect] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Aplaenych utters some strange words.<br />
+Aplaenych   Icestorms<br />
+Aplaenych destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+Your body is torn by huge pieces of ice.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Hiph crashes into Sorinel in a thundering collision, knocking him to the ground!<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+<br />
+Blaaah focuses harshly on you and utters the words, 'web'.<br />
+Blaaah shoots webs at you but narrowly misses!<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Good] Mem:1 Exits:ND&gt;<br />
+cast 'malevolent tentacles'<br />
+You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Ragan hits the tentacles constricting Ahlez instead!<br />
+<br />
+Ilmarin misses Ahlez with his crush.<br />
+Hiph bruises Sorinel with his slash.<br />
+Hiph massacres Sorinel with his slash.<br />
+Sorinel misses Hiph with his hit.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Ross appears before Hiph in a puff of smoke.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Sotofa appears before Hiph in a puff of smoke.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Ragan focuses harshly on Ahlez and utters some strange words.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Aplaenych focuses harshly on Ross and utters some strange words.<br />
+Aplaenych sends a chilling blast of air at Ross, giving him a severe case of frostbite.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Ahlez steps aside as Hiph attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+tick is now<br />
+<br />
+Ilmarin crashes into Ahlez in a thundering collision, knocking him to the ground!<br />
+Blaaah attempts to break free of the black tentacles, but fails!<br />
+<br />
+368H 125V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+<br />
+Ross slowly fades into existence.<br />
+Ross misses Aplaenych with his bludgeon.<br />
+Ilmarin hits the tentacles constricting Ahlez instead!<br />
+<br />
+You bludgeon Ahlez.<br />
+Hiph annihilates Sorinel with his slash.<br />
+Hiph annihilates Sorinel with his slash.<br />
+Sorinel misses Hiph with his hit.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Fair] Mem:2 Exits:ND&gt;<br />
+CAST 'lightning bolt' <br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ahlez with full impact.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Sotofa now follows Hiph.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Sotofa focuses harshly on Sorinel and utters the words, 'hold person'.<br />
+Sorinel freezes in place.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Aplaenych utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+gro form<br />
+<br />
+Ragan attempts to strike at Ahlez with his lance.<br />
+Ragan pierces Ahlez extremely hard.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Ross focuses harshly on Aplaenych and utters the words, 'lightning bolt'.<br />
+Aplaenych wavers under the impact of the lightning bolt sent by Ross.<br />
+Hiph stands up.<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Hiph crashes into Sorinel in a thundering collision, knocking him to the ground!<br />
+<br />
+382H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Bad] Mem:2 Exits:ND&gt;<br />
+<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+You feel a slight chill.<br />
+Sotofa misses Aplaenych with her bludgeon.<br />
+Ragan massacres Ahlez with his pierce.<br />
+Ilmarin crushes Ahlez extremely hard.<br />
+Ahlez misses you with his hit.<br />
+Hiph annihilates Sorinel with his slash.<br />
+Hiph annihilates Sorinel with his slash.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:V.Bad] Mem:2 Exits:ND&gt;<br />
+CAST 'lightning bolt' <br />
+Sotofa is now a member of your group.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:V.Bad] Mem:2 Exits:ND&gt;<br />
+Your clanmate Xen has entered the game.<br />
+You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Ahlez with full impact.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Awful] Mem:3 Exits:ND&gt;<br />
+<br />
+Blaaah attempts to break free of the black tentacles, but fails!<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Awful] Mem:3 Exits:ND&gt;<br />
+<br />
+Ragan attempts to strike at Ahlez with his lance.<br />
+Ragan pierces Ahlez extremely hard.<br />
+Ahlez is stunned, but will likely regain consciousness again.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Awful] Mem:3 Exits:ND&gt;<br />
+<br />
+Blaaah attempts to break free of the black tentacles, but fails!<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Awful] Mem:3 Exits:ND&gt;<br />
+<br />
+Ross focuses harshly on Aplaenych and utters the words, 'hold person'.<br />
+Hiph crashes into Ahlez in a devastating bash, killing him mercilessly.<br />
+You receive 0 experience.<br />
+Ahlez is dead! R.I.P.<br />
+get all.coins corpse<br />
+exa corpse<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Dying] Mem:3 Exits:ND&gt;<br />
+<br />
+Sotofa focuses harshly on Aplaenych and utters the words, 'hold person'.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Ahlez:Dying] Mem:3 Exits:ND&gt;<br />
+<br />
+The death cry of Ahlez echoes from somewhere nearby...<br />
+Blaaah stops following Ahlez.<br />
+Ahlez now follows Blaaah.<br />
+Blaaah is the new leader of Ahlez's group.<br />
+Ahlez stops following Blaaah.<br />
+Aplaenych stops following Ahlez.<br />
+Aplaenych now follows Blaaah.<br />
+Sorinel stops following Ahlez.<br />
+Sorinel now follows Blaaah.<br />
+You direct your attention to Blaaah.<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Blaaah attempts to break free of the black tentacles, but fails!<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Talia shouts 'mage looking for rank group'<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Blaaah attempts to break free of the black tentacles, but fails!<br />
+<br />
+358H 139V 6677248X 0.00% 87C [Me:V.Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+Ilmarin crushes Aplaenych extremely hard.<br />
+Ragan massacres Aplaenych with his pierce.<br />
+You barely bludgeon Blaaah.<br />
+Blaaah smites YOU extremely hard.<br />
+Aplaenych misses you with his hit.<br />
+Hiph annihilates Sorinel with his slash.<br />
+You receive 0 experience.<br />
+Sorinel is dead! R.I.P.<br />
+get all.coins corpse<br />
+exa corpse<br />
+The death cry of Sorinel echoes from somewhere nearby...<br />
+Sorinel stops following Blaaah.<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Ilmarin gets a large pile of coins from the corpse of Sorinel.<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Blaaah:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Blaaah stops using a large first-aid kit.<br />
+Blaaah grabs a glowing scroll of recall.<br />
+Blaaah recites a glowing scroll of recall.<br />
+Blaaah disappears.<br />
+You direct your attention to Aplaenych.<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+g all ahlez<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a plain component pouch..it glows blue<br />
+a dwarven beltpouch<br />
+some sickly yellow robes..it glows blue<br />
+a wolf's head shield<br />
+a pair of finely crafted circlets..it glows blue..it glows dimly<br />
+a pair of blue gloves..it glows blue<br />
+a pair of worn snakeskin pants..it glows blue<br />
+a pair of inventor's glasses<br />
+a furry white cloak..it glows blue<br />
+a shark tooth necklace..it glows blue<br />
+a cat's eye agate ring<br />
+a small coral ring..it glows blue<br />
+a watered steel sickle..it glows blue<br />
+a petrified cannabis clavariaceae..it glows blue<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a plain component pouch..it glows blue<br />
+a dwarven beltpouch<br />
+some sickly yellow robes..it glows blue<br />
+a wolf's head shield<br />
+a pair of finely crafted circlets..it glows blue..it glows dimly<br />
+a pair of blue gloves..it glows blue<br />
+a pair of worn snakeskin pants..it glows blue<br />
+a pair of inventor's glasses<br />
+a furry white cloak..it glows blue<br />
+a shark tooth necklace..it glows blue<br />
+a cat's eye agate ring<br />
+a small coral ring..it glows blue<br />
+a watered steel sickle..it glows blue<br />
+a petrified cannabis clavariaceae..it glows blue<br />
+<br />
+341H 139V 6677248X 0.00% 87C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+You are zapped by a wristband made from tiny bones and skulls and instantly drop it.<br />
+You get a gem studded mithril bracer from the corpse of Ahlez.<br />
+You get a snakeskin belt from the corpse of Ahlez.<br />
+You get a monstrous robe of slime from the corpse of Ahlez.<br />
+You get a pair of draconian gauntlets from the corpse of Ahlez.<br />
+You get a pair of purple silk boots from the corpse of Ahlez.<br />
+You get pearl and onyx greaves from the corpse of Ahlez.<br />
+You get the chieftain's headdress from the corpse of Ahlez.<br />
+You get an embroidered black wool cape from the corpse of Ahlez.<br />
+You get a thin gold necklace with an ornate charm from the corpse of Ahlez.<br />
+You get a copper band inscribed with wasps from the corpse of Ahlez.<br />
+You get a very large pile of coins from the corpse of Ahlez.<br />
+There were 2967 coins.<br />
+You get a stunted spruce tree from the corpse of Ahlez.<br />
+You get a hunk of raw armaboro meat from the corpse of Ahlez.<br />
+You get a glowing scroll of recall from the corpse of Ahlez.<br />
+You get a leather pouch from the corpse of Ahlez.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+l<br />
+<br />
+Ilmarin gets a wristband made from tiny bones and skulls.<br />
+Ilmarin gets the corpse of Sorinel.<br />
+Ilmarin gets a quartz crystal sphere.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+Practical Applications Department<br />
+The corpse of Ahlez is lying here.<br />
+A swarm of insects fills the area.<br />
+&lt;MAEL&gt; Lady Sotofa Hanemer, Natural Born Witch is standing here, fighting Aplaenych. (flying)<br />
+&lt;MAEL&gt; Ross Dume, Ancient Bearer of the Blood Sea Banner is standing here, fighting Aplaenych.<br />
+&lt;MAEL&gt; Ragan Smash, Dragonslayer of the Blood Sea Maelstrom is standing here, fighting Aplaenych. (flying)<br />
+&lt;MAEL&gt; Hiph Op, Blinding Speed of the Maelstrom is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;MAEL&gt; Ilmarin Ll'we'llyn is standing here, fighting Aplaenych. (flying)<br />
+&lt;Otlw&gt; Aplaenych Aire is standing here, fighting YOU. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Ilmarin drops the corpse of Sorinel.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Hiph gets the corpse of Sorinel.<br />
+Ragan attempts to strike at Aplaenych with his lance.<br />
+Ragan massacres Aplaenych with his pierce.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Hiph gets a scroll from his corpse.<br />
+Hiph is zapped by some sickly yellow robes and instantly drops it.<br />
+Hiph gets a shield from his corpse.<br />
+Hiph gets a circlet from his corpse.<br />
+Hiph gets a gloves from his corpse.<br />
+Hiph gets a pants from his corpse.<br />
+Hiph gets a glasses from his corpse.<br />
+Hiph gets a cloak from his corpse.<br />
+Hiph gets a necklace from his corpse.<br />
+Hiph gets a ring from his corpse.<br />
+Hiph gets a ring from his corpse.<br />
+Hiph gets a sickle from his corpse.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+cast 'malevolent tentacles'<br />
+You can't remember how to cast that spell!<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Fair] Mem:3 Exits:ND&gt;<br />
+<br />
+Hiph comes out of hiding.<br />
+Hiph massacres Aplaenych with his slash.<br />
+<br />
+341H 139V 6677248X 0.00% 682C [Me:Good] [Aplaenych:Bad] Mem:3 Exits:ND&gt;<br />
+<br />
+Aplaenych utters some strange words.<br />
+Aplaenych disappears.<br />
+<br />
+341H 139V 6677248X 0.00% 682C Mem:3 Exits:ND&gt;<br />
+<br />
+Ilmarin gets some sickly yellow robes.<br />
+Ilmarin gets the corpse of Ahlez.<br />
+<br />
+341H 139V 6677248X 0.00% 682C Mem:3 Exits:ND&gt;<br />
+<br />
+Ilmarin drops the corpse of Ahlez.<br />
+<br />
+341H 139V 6677248X 0.00% 682C Mem:3 Exits:ND&gt;<br />
+l<br />
+Practical Applications Department<br />
+The corpse of Ahlez is lying here.<br />
+A swarm of insects fills the area.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='64.208.172.177' and logid='2105'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2105">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2105">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="64.208.172.177">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

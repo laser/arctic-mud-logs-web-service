@@ -1,0 +1,774 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 668-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='668'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kir rip</font></b>
+<p>
+POV: 
+Iill<p>
+Log Rating:
+2.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+The day prior to this, Kir had led an ambush attempt on us in sanction. But apparently, he was "just leading a zone".</i>
+<p>
+<p>
+
+Start logging: 27.07.2003 20:43<br />
+<br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+The Road to Solace<br />
+    The trees that line the route give a good indication of the ways to<br />
+travel. To the north the huge vallenwood trees of Solace are visible,<br />
+clearly marking the southern entrance to the town. The road to the south<br />
+becomes wild and rocky as it leads through a wilder section of forest.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 122V 1X 8530C Exits:NES&gt; <br />
+Alleq tells your group 'can't clair yet'<br />
+<br />
+435H 122V 1X 8530C Exits:NES&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Long Road<br />
+    The dense forest around you occasionally places obstacles in your path,<br />
+you cannot help but trip and fall. Fortunately the soft cushion of dead<br />
+leaves offers much help. Weak sounds of the hustle and bustle of town life<br />
+can be heard from the north. The road continues to the south, it seems as<br />
+if it could go on forever.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+Morin the Male Hylar Dwarf is standing here, fighting a sneaky thief.<br />
+A young, strong looking horse stands here stamping his hooves softly.<br />
+A sneaky thief is standing here, fighting Morin.<br />
+<br />
+435H 120V 1X 8530C Exits:NS&gt; <br />
+Morin slashes a sneaky thief very hard.<br />
+A sneaky thief bruises Morin with his hit.<br />
+<br />
+435H 120V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Long Road<br />
+    The long road stretches before you, wide and flat. To the south it<br />
+becomes open and dusty, while to the north large vallenwood trees make up<br />
+the tree village of Solace.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 118V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Long Road<br />
+    Various animals and insects inspect you as you wearily tread this rocky<br />
+and dusty road. Bushes to the side provide ample cover for man or beast and<br />
+it would be wise to carefully watch your possessions. The road continues in<br />
+a north-south direction.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 116V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Long Road<br />
+    The tiredness in your legs suggest you have been travelling far too<br />
+long and a rest is in order. This road could go on forever. To the south<br />
+can be seen a small wooden shack by the side of the road. To the north, the<br />
+great vallenwoods of Solace can just be made out. Darkenwood extends out to<br />
+to your west and rumors of exotic woodland spirits excite you somewhat.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 114V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 114V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Long Road<br />
+    Various animals and insects inspect you as you wearily tread this rocky<br />
+and dusty road. Bushes to the side provide ample cover for man or beast and<br />
+it would be wise to carefully watch your possessions. The road continues in<br />
+a north-south direction.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 112V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 112V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 112V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 112V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+On a Road<br />
+    The road continues, snaking through the rocky wilderness. It makes a<br />
+large curve to avoid a big boulder, jutting out from the surrounding hills.<br />
+You have heard tales of bandits surviving off of travellers on the roadways<br />
+of Krynn, and it occurs to you that this would be an excellent spot for an<br />
+ambush. The road continues to the north and south.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Zuhlique shouts 'looking for Dk eq (the good stuff)  have trades and coins'<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 110V 1X 8530C Exits:NS&gt; <br />
+Capa flies south.<br />
+You follow Capa south.<br />
+A hill giant arrives from the north.<br />
+By a Small Hovel<br />
+    Wearily, you come to stop outside a small hovel. It looks like it has<br />
+been built as a rest stop to provide a safe haven for travellers. The hovel<br />
+sits off to the west of the main road here. The road itself stretches out<br />
+to the north and east. The terrain to the east is becomes dry and dusty,<br />
+while you can see what appears to be a forest on the edge of the plains to<br />
+the north.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+A fellow traveller is here, weary from many days on the road.<br />
+<br />
+435H 108V 1X 8530C Exits:NE(W)&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 108V 1X 8530C Exits:NE(W)&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 108V 1X 8530C Exits:NE(W)&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 108V 1X 8530C Exits:NE(W)&gt; <br />
+Capa opens the door.<br />
+<br />
+435H 108V 1X 8530C Exits:NEW&gt; <br />
+Alleq tells your group 'check recup'<br />
+<br />
+435H 108V 1X 8530C Exits:NEW&gt; <br />
+Capa tells your group 'tick in about 10'<br />
+<br />
+435H 108V 1X 8530C Exits:NEW&gt; l wYou see nothing special.<br />
+The door is open.<br />
+Capa flies west.<br />
+You follow Capa west.<br />
+A hill giant arrives from the east.<br />
+A Small Hovel<br />
+    This is the interior of a small hovel. There are a few crude bunks and<br />
+a small table. A firepit is in the center of the hovel, presumably used for<br />
+cooking. Wooden shutters cover the small windows and there is a small bar<br />
+used to lock the door to the hovel. These appear to be the only precautions<br />
+taken against highway robbers and other assorted bandits. The small door<br />
+exits to the east.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+<br />
+435H 106V 1X 8530C Exits:E&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 106V 1X 8530C Exits:E&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 106V 1X 8530C Exits:E&gt; <br />
+Capa flies east.<br />
+You follow Capa east.<br />
+A hill giant arrives from the west.<br />
+By a Small Hovel<br />
+    Wearily, you come to stop outside a small hovel. It looks like it has<br />
+been built as a rest stop to provide a safe haven for travellers. The hovel<br />
+sits off to the west of the main road here. The road itself stretches out<br />
+to the north and east. The terrain to the east is becomes dry and dusty,<br />
+while you can see what appears to be a forest on the edge of the plains to<br />
+the north.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+A fellow traveller is here, weary from many days on the road.<br />
+<br />
+435H 104V 1X 8530C Exits:NEW&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+<br />
+435H 104V 1X 8530C Exits:NEW&gt; <br />
+Capa flies east.<br />
+You follow Capa east.<br />
+A hill giant arrives from the west.<br />
+On a Road<br />
+    The road continues, now heading to the south. The general terrain seems<br />
+to be getting drier and dustier, and there are fewer trees. In addition,<br />
+the air seems to be getting somewhat colder. From a nearby hill, a deer<br />
+notices you, and bolts into the woods. From here, the road continues to the<br />
+south and west.<br />
+A hill giant is roaming around looking for something to kill. (invisible)<br />
+Kir, the Lionheart is standing here. (flying)<br />
+back kir. . . is outlined with a dim aura.<br />
+<br />
+435H 102V 1X 8530C Exits:ESW&gt; Kir looks behind himself just in time to avoid your poor attempt at a backstab.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:V.Good] Exits:ESW&gt; <br />
+Trabzon appears to be dancing around the room.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:V.Good] Exits:ESW&gt; <br />
+Mads focuses harshly on Kir and utters some strange words.<br />
+Kir freezes in place.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:V.Good] Exits:ESW&gt; <br />
+Rikimaru focuses harshly on Kir and utters some strange words.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:V.Good] Exits:ESW&gt; <br />
+Alleq issues the order 'bash kir'.<br />
+A hill giant slowly fades into existence.<br />
+A hill giant crashes into Kir in a thundering collision, knocking him to the ground!<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:V.Good] Exits:ESW&gt; <br />
+Trabzon slowly fades into existence.<br />
+Trabzon places a jagged-backed curved dagger in Kir's back, resulting in some strange noises and some blood.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:Fair] Exits:ESW&gt; <br />
+Trabzon massacres Kir with his pierce.<br />
+Trabzon pierces Kir extremely hard.<br />
+A hill giant hits Kir extremely hard.<br />
+A hill giant hits Kir extremely hard.<br />
+You massacre Kir with your pierce.<br />
+You pierce Kir extremely hard.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:Bad] Exits:ESW&gt; flflfl<br />
+Capa focuses harshly on Kir and utters some strange words.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:Bad] Exits:ESW&gt; <br />
+Alleq looks at Kir.<br />
+<br />
+435H 102V 1X 8530C [Me:Perfect] [Kir:Bad] Exits:ESW&gt; You flee head over heels.<br />
+It is pitch black.<br />
+You sense that you are not alone.<br />
+<br />
+435H 100V 1X 8530C Exits:NEW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+435H 100V 1X 8530C Exits:NEW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+435H 100V 1X 8530C Exits:NEW&gt; scanLooking north:<br />
+It is pitch black.<br />
+Looking east:<br />
+It is pitch black.<br />
+Trabzon Trabzoff, Crimson Maw Assassin is standing here, fighting Kir. (flying)<br />
+Leevi Lod, Juvenile Ahma Dragon is standing here. (flying) (invisible)<br />
+Mads the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Rikimaru Noodle, Blood Sea's Wrath of Heaven is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A hill giant is standing here, fighting Kir.<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Capa Diem, Inspiration From Above is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Kir, the Lionheart is sitting here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Looking south:<br />
+It is pitch black.<br />
+Looking west:<br />
+It is pitch black.<br />
+Looking up:<br />
+It is pitch black.<br />
+Looking down:<br />
+It is pitch black.<br />
+<br />
+435H 100V 1X 8530C Exits:NEW&gt; <br />
+The lightning has stopped.<br />
+<br />
+435H 139V 1X 8530C Exits:NEW&gt; sneakYou begin moving quietly.<br />
+<br />
+435H 139V 1X 8530C Exits:NEW&gt; eOn a Road<br />
+    The road continues, now heading to the south. The general terrain seems<br />
+to be getting drier and dustier, and there are fewer trees. In addition,<br />
+the air seems to be getting somewhat colder. From a nearby hill, a deer<br />
+notices you, and bolts into the woods. From here, the road continues to the<br />
+south and west.<br />
+An elf wanders about the area here.<br />
+Leevi Lod, Juvenile Ahma Dragon is standing here, fighting Kir. (flying)<br />
+Mads the Male Hylar Dwarf is standing here. (flying) (invisible)<br />
+backstab thief. . . has a metallic luster.<br />
+Rikimaru Noodle, Blood Sea's Wrath of Heaven is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+A hill giant is standing here, fighting Kir.<br />
+Alleq Ismine, Weaver O' the Art is standing here. (flying)<br />
+. . . is enveloped in flames.<br />
+Capa Diem, Inspiration From Above is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Kir, the Lionheart is sitting here, fighting Leevi. (flying)<br />
+back kir. . . is outlined with a dim aura.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; You couldn't find what you were looking for.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; Kir reaches behind himself quickly, only to discover your deadly sword in his back.<br />
+You receive 0 experience.<br />
+Kir is dead! R.I.P.<br />
+Capa flies west.<br />
+<br />
+435H 137V 1X 8530C [Me:Perfect] [Kir:Dying] Exits:ESW&gt; <br />
+The death cry of Kir echoes from somewhere nearby...<br />
+Kir sinks gently to the ground.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+Trabzon flies in from the south.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+Capa flies in from the west.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+There is lightning in the sky.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+Alleq gets a small down feather from the corpse of Kir.<br />
+Alleq gets a gleaming steel broadsword from the corpse of Kir.<br />
+Alleq gets a blue ochre bracer from the corpse of Kir.<br />
+Alleq gets a backpack from the corpse of Kir.<br />
+Alleq gets a silver etched solamnic shield from the corpse of Kir.<br />
+Alleq gets a pair of leather gloves from the corpse of Kir.<br />
+Alleq gets a pair of leather boots from the corpse of Kir.<br />
+Alleq gets a pair of leather pants from the corpse of Kir.<br />
+Alleq gets a fluted helm from the corpse of Kir.<br />
+Alleq gets a leather jacket from the corpse of Kir.<br />
+Alleq gets a fragile coral amulet from the corpse of Kir.<br />
+Alleq gets a sea elven necklace from the corpse of Kir.<br />
+Alleq gets a brimstone ring from the corpse of Kir.<br />
+Alleq gets a fragile coral ring from the corpse of Kir.<br />
+Alleq gets a very large pile of coins from the corpse of Kir.<br />
+Alleq gets a vile black potion from the corpse of Kir.<br />
+Alleq gets a bag of dust from the corpse of Kir.<br />
+Alleq gets a bag of dust from the corpse of Kir.<br />
+Alleq gets a large bronze shield from the corpse of Kir.<br />
+Alleq gets a steel shortsword from the corpse of Kir.<br />
+Alleq gets a clear cube from the corpse of Kir.<br />
+Alleq gets a lynx skin cape from the corpse of Kir.<br />
+Alleq gets a distorted potion from the corpse of Kir.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+Rikimaru tells your group 'doh no haxe'<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt; <br />
+An elven wanderer leaves south.<br />
+<br />
+435H 137V 1X 8530C Exits:ESW&gt;<br />
+ <br />
+----------------------------------------------------------------<br />
+<br />
+20:46:09 &gt; Alleq tells your group 'Kir tells you 'excuse me but what was that about''<br />
+20:47:31 &gt; Alleq tells your group 'Kir tells you 'I was leading a zone''<br />
+20:49:34 &gt; Alleq tells your group 'Kir tells you 'now that I have your little homo asses highlighted don't expect to get an<br />
+ymore cheap ones''
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='668'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=668">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="668">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

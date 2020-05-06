@@ -1,0 +1,2835 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1767-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1767'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+ruley.sphonx</font></b>
+<p>
+POV: 
+ Mourg<p>
+Log Rating:
+3.1110<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+ragtag group of hobos vs. ranked + equipped chars.</i>
+<p>
+<p>
+
+You are Mourg the Male Goblin, a level 28 Scout.<br />
+You are a Chieftain in Centurians.<br />
+You are 23 years old.<br />
+You have 342(440) hit and 120(120) movement points.<br />
+Your behaviour has been Evil.<br />
+You are traversing the path of the Mountain.<br />
+You have scored 46783777 exp, and have 0(6518) steel coins.<br />
+You need 7216223 more experience to advance.<br />
+You have died 5 horrible deaths.<br />
+You have been connected for 0 minute(s).<br />
+You have been playing for 3 day(s), 1 hour(s) and 14 minute(s).<br />
+You are currently not hunting.<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+You are flying.<br />
+Available Instincts:<br />
+    goat: endurance<br />
+You are affected by the following:<br />
+    fly<br />
+<br />
+<br />
+Your skills:<br />
+ 1:  axes          (excellent)      bludgeons     (excellent)    <br />
+     long blades   (awful)          miscellaneous (awful)        <br />
+     piercers      (awful)          short blades  (awful)        <br />
+<br />
+     bandage       (excellent)      hide          (very poor)    <br />
+     shoot         (awful)        <br />
+     instinct      (very good)    <br />
+     hunt          (bad)            sneak         (very good)    <br />
+     target        (awful)        <br />
+     camp          (very good)      fence         (poor)         <br />
+     scout         (bad)          <br />
+     fade          (poor)           rescue        (average)      <br />
+     evade         (poor)           riposte       (awful)        <br />
+<br />
+<br />
+<br />
+<br />
+***The aggression begins with Grimbold+Caryn attacking Sharky<br />
+***3v2<br />
+<br />
+<br />
+431H 64V 5122691X 1584C Exits:NS&gt; Sword Street<br />
+    This is the southeastern corner of Sword Street. This corner of the<br />
+city is virtually dominated by large homes, obviously the owners are of<br />
+Palanthas's nobility. Sword Street continues to the north and west.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;CHS&gt; Futbel Hamma, Solamnic Plainsman is standing here. (flying)<br />
+&lt;SLAY&gt; Grimbold the Fierce, Funeral Fires' Fiery Furnace is standing here. (flying)<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+<br />
+431H 63V 5122691X 1584C Exits:NW&gt; <br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+<br />
+393H 63V 5122691X 1584C [Me:Good] [Caryn:Perfect] Exits:NW&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+393H 63V 5122691X 1584C [Me:Good] [Caryn:Good] Exits:NW&gt; head<br />
+Mourg suddenly lunges forward, slamming his skull into Caryn's face with a sickening crunch.<br />
+<br />
+393H 63V 5122691X 1584C [Me:Good] [Caryn:Good] Exits:NW&gt; <br />
+Futbel charges at Caryn, but he managed to move away.<br />
+<br />
+393H 63V 5122691X 1584C [Me:Good] [Caryn:Good] Exits:NW&gt; <br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+354H 63V 5122691X 1584C [Me:Good] [Caryn:Good] Exits:NW&gt; <br />
+Grimbold massacres YOU with his crush.<br />
+A darkness flows from Nightbringer, sending a chill through your bones.<br />
+Futbel cleaves Caryn very hard.<br />
+Futbel misses Caryn with his cleave.<br />
+Caryn misses you with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You smite Caryn extremely hard.<br />
+You bludgeon Caryn very hard.<br />
+<br />
+299H 63V 5122691X 1584C [Me:Fair] [Caryn:Good] Exits:NW&gt; <br />
+Caryn growls.<br />
+<br />
+299H 63V 5122691X 1584C [Me:Fair] [Caryn:Good] Exits:NW&gt; <br />
+Caryn roars.<br />
+Futbel shrieks in terror!<br />
+Futbel panics, and attempts to flee.<br />
+Futbel flies north.<br />
+<br />
+299H 63V 5122691X 1584C [Me:Fair] [Caryn:Good] Exits:NW&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+299H 63V 5122691X 1584C [Me:Fair] [Caryn:Fair] Exits:NW&gt; <br />
+Grimbold annihilates YOU with his crush.<br />
+Caryn annihilates YOU with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You smite Caryn extremely hard.<br />
+You bludgeon Caryn very hard.<br />
+<br />
+189H 63V 5122691X 1584C [Me:Bad] [Caryn:Fair] Exits:NW&gt; anger<br />
+<br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+189H 63V 5122691X 1584C [Me:Bad] [Caryn:Bad] Exits:NW&gt; st<br />
+flee<br />
+<br />
+Futbel flies in from the north.<br />
+<br />
+189H 63V 5122691X 1584C [Me:Bad] [Caryn:Bad] Exits:NW&gt; <br />
+Grimbold crashes into Sharky in a thundering collision, knocking him to the ground!<br />
+<br />
+189H 63V 5122691X 1584C [Me:Bad] [Caryn:Bad] Exits:NW&gt; <br />
+You feel up to using headbutt again.<br />
+Sharky bludgeons Grimbold very hard.<br />
+Grimbold misses you with his crush.<br />
+Caryn annihilates YOU with his bludgeon.<br />
+Caryn annihilates YOU with his cleave.<br />
+You massacre Caryn with your smite.<br />
+You bludgeon Caryn very hard.<br />
+The cloud-veiled sky becomes even darker as the sun sets.<br />
+<br />
+125H 87V 5122691X 1584C [Me:V.Bad] [Caryn:Bad] Exits:NW&gt; <br />
+Futbel comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+125H 87V 5122691X 1584C Exits:NW&gt; You can't do that while sitting.<br />
+<br />
+125H 87V 5122691X 1584C Exits:NW&gt; You stand up.<br />
+<br />
+125H 87V 5122691X 1584C Exits:NW&gt; ki caryn<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+125H 87V 5122691X 1584C Exits:NW&gt; You barely smite Caryn.<br />
+<br />
+125H 87V 5122691X 1584C [Me:V.Bad] [Futbel:Perfect] [Caryn:Bad] Exits:NW&gt; <br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+78H 87V 5122691X 1584C [Me:Awful] [Futbel:Perfect] [Caryn:Bad] Exits:NW&gt; <br />
+You miss Caryn with your smite.<br />
+You bludgeon Caryn very hard.<br />
+Caryn massacres Futbel with his bludgeon.<br />
+Caryn annihilates Futbel with his cleave.<br />
+Futbel cleaves Caryn very hard.<br />
+Futbel misses Caryn with his cleave.<br />
+Sharky misses Grimbold with his bludgeon.<br />
+Grimbold massacres YOU with his crush.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't seem to move yet!<br />
+A darkness flows from Nightbringer, sending a chill through your bones.<br />
+<br />
+51H 87V 5122691X 1584C [Me:Awful] [Futbel:V.Good] [Caryn:V.Bad] Exits:NW&gt; flee<br />
+<br />
+Futbel yells a battle cry and fights like a madman!<br />
+<br />
+51H 87V 5122691X 1584C [Me:Awful] [Futbel:V.Good] [Caryn:V.Bad] Exits:NW&gt; You flee head over heels.<br />
+Intersection: Sword Street and Southeastern Avenue<br />
+    Sword Street and Southeastern Avenue cross here. Sword Street continues<br />
+to the east and west. Southeastern Avenue lies to the north and south.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+<br />
+51H 86V 5122691X 1584C Exits:NESW&gt; flee<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+51H 86V 5122691X 1584C Exits:NESW&gt; gt get out<br />
+w<br />
+You tell your group 'get out'<br />
+<br />
+<br />
+***3v3<br />
+<br />
+<br />
+448H 116V 5116223X 1484C Exits:NESW&gt; s<br />
+head grimbold<br />
+Path to Palanthas<br />
+     This wide dirt path is the frequently traveled road used by farmers<br />
+and peasants to get into and out of the city of Palanthas. Surrounded by<br />
+natural barriers, this valley is an excellent and safe place to farm and<br />
+raise live stocks. As you travel along this road, you see many farms along<br />
+the way.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;CHS&gt; Futbel Hamma, Solamnic Plainsman is sitting here, fighting Caryn. (flying)<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here, fighting Futbel. (flying)<br />
+&lt;SLAY&gt; Caryn is standing here, fighting Futbel. (flying)<br />
+. . . has a granite appearance.<br />
+<br />
+448H 116V 5116223X 1484C Exits:NESW&gt; Mourg suddenly lunges forward, slamming his skull into Grimbold's face with a sickening crunch.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Good] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Good] [Grimbold:V.Good] Exits:NESW&gt; <br />
+You smite Grimbold extremely hard.<br />
+You miss Grimbold with your cleave.<br />
+Grimbold annihilates Futbel with his crush.<br />
+Futbel bruises Caryn with his cleave.<br />
+Futbel bruises Caryn with his cleave.<br />
+Caryn massacres Futbel with his bludgeon.<br />
+Caryn cleaves Futbel extremely hard.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Fair] [Grimbold:V.Good] Exits:NESW&gt; anger<br />
+<br />
+Caryn growls.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Fair] [Grimbold:V.Good] Exits:NESW&gt; Your anger builds to a boil.<br />
+Caryn roars.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Fair] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Fair] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Teca flies in from the south.<br />
+<br />
+448H 116V 5116223X 1484C [Me:Perfect] [Futbel:Fair] [Grimbold:V.Good] Exits:NESW&gt; <br />
+You smite Grimbold extremely hard.<br />
+You cleave Grimbold extremely hard.<br />
+Grimbold annihilates Futbel with his crush.<br />
+Futbel bruises Caryn with his cleave.<br />
+Futbel bruises Caryn with his cleave.<br />
+Caryn annihilates Futbel with his bludgeon.<br />
+Caryn annihilates Futbel with his cleave.<br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+409H 116V 5116223X 1484C [Me:V.Good] [Futbel:Bad] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+Sharky slowly fades into existence.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+409H 116V 5116223X 1484C [Me:V.Good] [Futbel:Bad] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Teca twists hers ring nervously.<br />
+There is lightning in the sky.<br />
+Teca shudders slightly and begins to glow from within.<br />
+<br />
+409H 116V 5116223X 1484C [Me:V.Good] [Futbel:Bad] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Teca utters some strange words.<br />
+Teca creates a lightning storm.<br />
+Sharky screams in pain as the lightning bolts summoned by Teca from the boiling clouds hit him.<br />
+You are staggered by the many bolts of lightning which Teca has summoned from the stormy sky.<br />
+Futbel screams in pain as the lightning bolts summoned by Teca from the boiling clouds hit him.<br />
+<br />
+357H 116V 5116223X 1484C [Me:Good] [Futbel:V.Bad] [Grimbold:V.Good] Exits:NESW&gt; <br />
+Futbel stands up.<br />
+<br />
+357H 116V 5116223X 1484C [Me:Good] [Futbel:V.Bad] [Grimbold:V.Good] Exits:NESW&gt; <br />
+You feel up to using headbutt again.<br />
+Teca crushes Sharky hard.<br />
+Sharky misses Teca with his hit.<br />
+You massacre Grimbold with your smite.<br />
+You massacre Grimbold with your cleave.<br />
+Grimbold massacres Futbel with his crush.<br />
+Futbel cleaves Caryn very hard.<br />
+Futbel misses Caryn with his cleave.<br />
+Caryn annihilates Futbel with his bludgeon.<br />
+Caryn massacres Futbel with his cleave.<br />
+Futbel yells a battle cry and fights like a madman!<br />
+Caryn suddenly lunges forward, slamming his skull into Futbel's face with a sickening crunch.<br />
+<br />
+357H 116V 5116223X 1484C [Me:Good] [Futbel:Awful] [Grimbold:Good] Exits:NESW&gt; 'god<br />
+<br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+357H 116V 5116223X 1484C [Me:Good] [Futbel:Awful] [Grimbold:Good] Exits:NESW&gt; recite recall<br />
+<br />
+Teca utters some strange words.<br />
+Teca creates a lightning storm.<br />
+Sharky screams in pain as the lightning bolts summoned by Teca from the boiling clouds hit him.<br />
+You are staggered by the many bolts of lightning which Teca has summoned from the stormy sky.<br />
+That Really did HURT!<br />
+Futbel screams in pain as the lightning bolts summoned by Teca from the boiling clouds hit him.<br />
+<br />
+231H 116V 5116223X 1484C [Me:Fair] [Futbel:Awful] [Grimbold:Good] Exits:NESW&gt; Futbel heroically rescues Sharky.<br />
+Teca crushes Futbel hard.<br />
+Futbel bruises Teca with his cleave.<br />
+Futbel is chilled, as he swings at Teca.<br />
+Futbel bruises Teca with his cleave.<br />
+Futbel is chilled, as he swings at Teca.<br />
+Futbel bruises Teca with his cleave.<br />
+Futbel is chilled, as he swings at Teca.<br />
+Futbel is mortally wounded, and will die soon, if not aided.<br />
+You should probably stand up!<br />
+You miss Grimbold with your smite.<br />
+You cleave Grimbold extremely hard.<br />
+Grimbold obliterates Futbel with his crush.<br />
+Futbel is dead! R.I.P.<br />
+The death cry of Futbel echoes from somewhere nearby...<br />
+Futbel sinks gently to the ground.<br />
+Futbel stops following you.<br />
+Your clanmate Futbel has left the game.<br />
+You say 'god'<br />
+<br />
+231H 116V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NESW&gt; You stop using a bloody minotaur hand axe.<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+Ballroom<br />
+    This large room is where many galas are held. You can almost smell the<br />
+wealth that has traipsed across this floor. Hallways lie to the east and<br />
+west. There is a balcony to the south.<br />
+The royal butler is standing here, making sure all is in its proper place.<br />
+<br />
+<br />
+***5v3<br />
+<br />
+<br />
+411H 116V 5116223X 1484C Exits:NS&gt; s<br />
+Gul studies the area intently.<br />
+The Bottom of a Narrow Chute<br />
+    This part of the passageway is slightly wider than in other places. As<br />
+you look up, you notice a dark chute rising off into the distance. The wall<br />
+has many scuffs marks on it where people seem to have sailed out of the<br />
+chute, but not landing quite right. Small patches of moss grow in different<br />
+areas here, providing some sort of florescent illumination. A fair amount<br />
+of trash is piled up in the area, reminding you of the streets of some less<br />
+pleasant towns of Ansalon. It seems that rats would be abundant here, but<br />
+none are present, making you wonder if someone or something has run them<br />
+off.<br />
+A small turquoise seal rests here.<br />
+Tapesh, Denizen of the Deep is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here. (flying)<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+<br />
+411H 114V 5116223X 1484C Exits:NS&gt; ope alcove<br />
+<br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+<br />
+367H 114V 5116223X 1484C [Me:Good] [Caryn:Perfect] Exits:NS&gt; <br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+328H 114V 5116223X 1484C [Me:Fair] [Caryn:Perfect] Exits:NS&gt; <br />
+Teca slides down the chute, and drops on the ground next to<br />
+you, looking quite confused and a bit unsettled.<br />
+<br />
+328H 114V 5116223X 1484C [Me:Fair] [Caryn:Perfect] Exits:NS&gt; <br />
+Kohka utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+<br />
+328H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+Tapesh utters some strange words.<br />
+Tapesh's hands send forth blinding rays of sunlight!<br />
+Teca withers as a ray of sunlight sent by Tapesh engulfs her!<br />
+Grimbold withers as a ray of sunlight sent by Tapesh engulfs him!<br />
+Caryn ducks out of the way of Tapesh's attack.<br />
+<br />
+328H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+Sharky tells your group 'relo now?'<br />
+<br />
+328H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+Teca utters some strange words.<br />
+Tapesh is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Gul ducks out of the way of Teca's attack.<br />
+Your body is torn by huge pieces of ice.<br />
+<br />
+276H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+Tapesh bruises Teca with his bludgeon.<br />
+Kohka bruises Teca with his smite.<br />
+Kohka clonks Teca hard with his gavel and yells 'Quiet!'<br />
+Grimbold bruises YOU with his crush.<br />
+Caryn bruises YOU with his bludgeon.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+Caryn bruises YOU with his cleave.<br />
+You smite Caryn very hard.<br />
+You cleave Caryn extremely hard.<br />
+<br />
+273H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Gul studies the area intently.<br />
+<br />
+273H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; ct relo now<br />
+<br />
+Kohka utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+<br />
+273H 114V 5116223X 1484C [Me:Fair] [Caryn:Fair] Exits:NS&gt; <br />
+Caryn growls.<br />
+<br />
+273H 114V 5116223X 1484C [Me:Fair] [Caryn:Fair] Exits:NS&gt; <br />
+Caryn roars.<br />
+Tapesh shrieks in terror!<br />
+Tapesh panics, and attempts to flee.<br />
+Tapesh flies north.<br />
+<br />
+273H 114V 5116223X 1484C [Me:Fair] [Caryn:Fair] Exits:NS&gt; anger<br />
+<br />
+Teca bruises Kohka with her crush.<br />
+Teca is chilled, as she swings at Kohka.<br />
+Grimbold massacres YOU with his crush.<br />
+Caryn annihilates YOU with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You smite Caryn extremely hard.<br />
+You cleave Caryn very hard.<br />
+Gul dives into Grimbold and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; I see no alcove here.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; You tell your clan 'relo now'<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; st<br />
+You can't do that while sitting.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; head<br />
+You stand up.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; Mourg suddenly lunges forward, slamming his skull into Caryn's face with a sickening crunch.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Teca focuses harshly on Kohka and utters some strange words.<br />
+Huge flames burn Kohka from above.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; anger<br />
+<br />
+Tapesh flies in from the north.<br />
+<br />
+171H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Grimbold bleeds profusely from his wounds.<br />
+Gul slashes Grimbold extremely hard.<br />
+Gul slashes Grimbold extremely hard.<br />
+Grimbold massacres YOU with his crush.<br />
+Caryn massacres YOU with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You massacre Caryn with your smite.<br />
+You cleave Caryn extremely hard.<br />
+<br />
+90H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Sharky appears before you in a puff of smoke.<br />
+<br />
+90H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Gul sends a swarm of flying piranha at Grimbold.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+<br />
+90H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't seem to move yet!<br />
+<br />
+53H 114V 5116223X 1484C [Me:Awful] [Caryn:Fair] Exits:NS&gt; <br />
+Tapesh focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+446H 114V 5116223X 1484C [Me:V.Good] [Caryn:Fair] Exits:NS&gt; Your anger builds to a boil.<br />
+<br />
+446H 114V 5116223X 1484C [Me:V.Good] [Caryn:Fair] Exits:NS&gt; <br />
+Grimbold crashes into Kohka in a thundering collision, knocking him to the ground!<br />
+<br />
+446H 114V 5116223X 1484C [Me:V.Good] [Caryn:Fair] Exits:NS&gt; <br />
+Grimbold bleeds profusely from his wounds.<br />
+Gul slashes Grimbold extremely hard.<br />
+Gul slashes Grimbold very hard.<br />
+Kohka smites Teca very hard.<br />
+Grimbold massacres YOU with his crush.<br />
+A darkness flows from Nightbringer, sending a chill through your bones.<br />
+Caryn massacres YOU with his bludgeon.<br />
+Caryn cleaves YOU extremely hard.<br />
+You massacre Caryn with your smite.<br />
+You cleave Caryn extremely hard.<br />
+<br />
+373H 114V 5116223X 1484C [Me:Good] [Caryn:Bad] Exits:NS&gt; st<br />
+<br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+373H 114V 5116223X 1484C [Me:Good] [Caryn:V.Bad] Exits:NS&gt; You are already standing.<br />
+<br />
+373H 114V 5116223X 1484C [Me:Good] [Caryn:V.Bad] Exits:NS&gt; <br />
+Teca utters some strange words.<br />
+Sharky is shredded by shards of ice.<br />
+Tapesh is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Gul is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+<br />
+322H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Bad] Exits:NS&gt; head<br />
+<br />
+Tapesh focuses on Kohka and utters some strange words.<br />
+Tapesh heals Kohka.<br />
+<br />
+322H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Bad] Exits:NS&gt; You can not use headbutt just yet.<br />
+<br />
+322H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Bad] Exits:NS&gt; <br />
+Caryn quaffs Mishakal's White potion.<br />
+Caryn smiles suddenly and has never looked better.<br />
+Caryn heals Caryn.<br />
+<br />
+322H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+Gul leaps past Grimbold, unbalancing them.<br />
+<br />
+322H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; <br />
+You feel up to using headbutt again.<br />
+Grimbold bleeds profusely from his wounds.<br />
+Sharky misses Teca with his hit.<br />
+Gul slashes Grimbold very hard.<br />
+Gul slashes Grimbold very hard.<br />
+Kohka smites Teca hard.<br />
+Grimbold massacres YOU with his crush.<br />
+Caryn massacres YOU with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You massacre Caryn with your smite.<br />
+You miss Caryn with your cleave.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:V.Good] Exits:NS&gt; head<br />
+<br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; Mourg suddenly lunges forward, slamming his skull into Caryn's face with a sickening crunch.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Tapesh utters some strange words.<br />
+Tapesh heals Tapesh.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Gul dives into Grimbold and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Teca utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Grimbold gets a potion from his pouch.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Grimbold quaffs Mishakal's White potion.<br />
+Grimbold smiles suddenly and has never looked better.<br />
+Grimbold heals Grimbold.<br />
+<br />
+246H 114V 5116223X 1484C [Me:Fair] [Caryn:Good] Exits:NS&gt; <br />
+Sharky screams as a swarm of insects engulfs him.<br />
+Tapesh screams as a swarm of insects engulfs him.<br />
+Gul deftly ducks out of the way of the attack.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Grimbold bleeds profusely from his wounds.<br />
+Gul slashes Grimbold very hard.<br />
+Gul slashes Grimbold extremely hard.<br />
+Grimbold massacres YOU with his crush.<br />
+Caryn bludgeons YOU extremely hard.<br />
+Caryn massacres YOU with his cleave.<br />
+You smite Caryn very hard.<br />
+You miss Caryn with your cleave.<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Kohka stands up.<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Kohka utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Tapesh utters some strange words.<br />
+Tapesh's hands send forth blinding rays of sunlight!<br />
+Teca withers as a ray of sunlight sent by Tapesh engulfs her!<br />
+Grimbold withers as a ray of sunlight sent by Tapesh engulfs him!<br />
+Caryn withers as a ray of sunlight sent by Tapesh engulfs him!<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; gt heal me<br />
+<br />
+Teca stops using an ancient sphere.<br />
+Teca grabs a glowing scroll of recall.<br />
+Teca recites a glowing scroll of recall.<br />
+Teca disappears.<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; You tell your group 'heal me'<br />
+<br />
+178H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+139H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Gul sends a swarm of flying piranha at Grimbold.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+<br />
+139H 114V 5116223X 1484C [Me:V.Bad] [Caryn:Fair] Exits:NS&gt; <br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Grimbold bleeds profusely from his wounds.<br />
+Kohka misses Grimbold with his smite.<br />
+Gul massacres Grimbold with his slash.<br />
+Gul massacres Grimbold with his slash.<br />
+Grimbold annihilates YOU with his crush.<br />
+Caryn massacres YOU with his bludgeon.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Caryn massacres YOU with his cleave.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't seem to move yet!<br />
+You massacre Caryn with your smite.<br />
+You massacre Caryn with your cleave.<br />
+<br />
+51H 114V 5116223X 1484C [Me:Awful] [Caryn:Fair] Exits:NS&gt; <br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+You can't seem to move yet!<br />
+<br />
+15H 114V 5116223X 1484C [Me:Awful] [Caryn:Fair] Exits:NS&gt; <br />
+Kohka utters some strange words.<br />
+Grimbold is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+Sharky focuses harshly on Caryn and utters some strange words.<br />
+The sound of bones cracking echoes as Sharky's force bolt slams into Caryn.<br />
+<br />
+15H 114V 5116223X 1484C [Me:Awful] [Caryn:V.Bad] Exits:NS&gt; <br />
+Tapesh focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+447H 114V 5116223X 1484C [Me:V.Good] [Caryn:V.Bad] Exits:NS&gt; <br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+You feel up to using headbutt again.<br />
+Grimbold bleeds profusely from his wounds.<br />
+Gul massacres Grimbold with his slash.<br />
+Gul slashes Grimbold extremely hard.<br />
+Grimbold annihilates YOU with his crush.<br />
+Caryn massacres YOU with his bludgeon.<br />
+Caryn massacres YOU with his cleave.<br />
+You smite Caryn extremely hard.<br />
+You cleave Caryn very hard.<br />
+Gul dives into Grimbold and savagely bites him, tearing a huge chunk from his flesh.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Caryn:V.Bad] Exits:NS&gt; st<br />
+<br />
+Kohka utters some strange words.<br />
+Grimbold is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+Caryn stops using a hearthguard's axe.<br />
+Caryn grabs a glowing scroll of recall.<br />
+Caryn recites a glowing scroll of recall.<br />
+Caryn disappears.<br />
+You direct your attention to Grimbold.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Grimbold:V.Bad] Exits:NS&gt; <br />
+Tapesh focuses on Sharky and utters some strange words.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Grimbold:V.Bad] Exits:NS&gt; head<br />
+You stand up.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Grimbold:V.Bad] Exits:NS&gt; Mourg suddenly lunges forward, slamming his skull into Grimbold's face with a sickening crunch.<br />
+Eyes streaming, Grimbold reels about in a daze.<br />
+Grimbold gets a scroll from his backpack.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Grimbold:V.Bad] Exits:NS&gt; <br />
+Grimbold gets a scroll from his backpack.<br />
+<br />
+356H 114V 5116223X 1484C [Me:Good] [Grimbold:V.Bad] Exits:NS&gt; <br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Grimbold bleeds profusely from his wounds.<br />
+You massacre Grimbold with your smite.<br />
+You cleave Grimbold very hard.<br />
+Gul massacres Grimbold with his slash.<br />
+Gul slashes Grimbold extremely hard.<br />
+Grimbold massacres YOU with his crush.<br />
+<br />
+326H 114V 5116223X 1484C [Me:Fair] [Grimbold:Awful] Exits:NS&gt; <br />
+Gul sends a swarm of flying piranha at Grimbold.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+<br />
+326H 114V 5116223X 1484C [Me:Fair] [Grimbold:Awful] Exits:NS&gt; <br />
+Sharky focuses harshly on Grimbold and utters some strange words.<br />
+Brains splatter on you as Sharky's force bolt shatters Grimbold's skull.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Grimbold is dead! R.I.P.<br />
+&gt; PK Mode ENABLED set to HEAD<br />
+&gt; PK List: <br />
+get all grimbold<br />
+<br />
+326H 114V 5116223X 1484C [Me:Fair] [Grimbold:Dying] Exits:NS&gt; <br />
+The death cry of Grimbold echoes from somewhere nearby...<br />
+Grimbold sinks gently to the ground.<br />
+<br />
+326H 114V 5116223X 1484C Exits:NS&gt; g all corpse<br />
+<br />
+Tapesh is zapped by Nightbringer and instantly drops it.<br />
+Tapesh gets a glowing bracer from the corpse of Grimbold.<br />
+Tapesh gets a wrist buckler from the corpse of Grimbold.<br />
+Tapesh gets a dwarven belt from the corpse of Grimbold.<br />
+Tapesh gets a long golden cloak from the corpse of Grimbold.<br />
+Tapesh is zapped by a spider shaped shield and instantly drops it.<br />
+Tapesh gets a set of pitch black vambraces from the corpse of Grimbold.<br />
+Tapesh gets a pair of silver dwarven gauntlets from the corpse of Grimbold.<br />
+Tapesh gets a pair of charred black plate boots from the corpse of Grimbold.<br />
+Tapesh gets a set of treated steel legplates from the corpse of Grimbold.<br />
+Tapesh gets an iron eyepatch inlaid with emeralds from the corpse of Grimbold.<br />
+Tapesh gets a gazer's eye from the corpse of Grimbold.<br />
+Tapesh gets a small copper ring from the corpse of Grimbold.<br />
+Tapesh gets a ring of the avian coven from the corpse of Grimbold.<br />
+Tapesh gets a pile of coins from the corpse of Grimbold.<br />
+Tapesh gets a glowing scroll of recall from the corpse of Grimbold.<br />
+Tapesh gets a glowing scroll of recall from the corpse of Grimbold.<br />
+Tapesh gets an entire loaf of bread from the corpse of Grimbold.<br />
+Tapesh gets an enchanted barrel from the corpse of Grimbold.<br />
+Tapesh gets a scroll of recall from the corpse of Grimbold.<br />
+Tapesh gets a scroll of recall from the corpse of Grimbold.<br />
+Tapesh gets a scroll of recall from the corpse of Grimbold.<br />
+Tapesh gets a large roll of gauze from the corpse of Grimbold.<br />
+<br />
+326H 114V 5116223X 1484C Exits:NS&gt; <br />
+Kohka gets a blood red cape from the corpse of Grimbold.<br />
+Kohka gets some black breeches from the corpse of Grimbold.<br />
+Kohka is zapped by a staff of the abyss and instantly drops it.<br />
+Kohka gets a putrid potion from the corpse of Grimbold.<br />
+Kohka gets a putrid potion from the corpse of Grimbold.<br />
+Kohka gets a putrid potion from the corpse of Grimbold.<br />
+Kohka gets a putrid potion from the corpse of Grimbold.<br />
+Kohka gets an entire loaf of bread from the corpse of Grimbold.<br />
+Kohka gets a fine silk belt-pouch from the corpse of Grimbold.<br />
+Kohka gets a portable keg from the corpse of Grimbold.<br />
+<br />
+<br />
+***6v5<br />
+<br />
+<br />
+457H 115V 5116223X 1484C Exits:NESW&gt; Sword Street<br />
+Tapesh, Denizen of the Deep is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here. (flying)<br />
+Barnums Animal Crackers is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+&lt;afkr&gt; Teca Teca, Relentless Time Bomb is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;afkr&gt; Haifat, The Last with Pagan Blood is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here. (flying) (invisible)<br />
+<br />
+457H 114V 5116223X 1484C Exits:NES&gt; s<br />
+<br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+457H 114V 5116223X 1484C Exits:NES&gt; <br />
+Teca utters some strange words.<br />
+Teca's form grows in height and mass, becoming huge.<br />
+<br />
+457H 114V 5116223X 1484C Exits:NES&gt; Sword Street<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here. (flying)<br />
+Barnums Animal Crackers is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+457H 113V 5116223X 1484C Exits:NES&gt; n<br />
+Sword Street<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here. (flying)<br />
+Barnums Animal Crackers is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+A Palanthian guard is here serving and protecting the citizens of Palanthas.<br />
+Tapesh, Denizen of the Deep is standing here, fighting Caryn. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;SLAY&gt; Caryn is standing here, fighting Tapesh. (flying)<br />
+&lt;afkr&gt; Teca Teca, Relentless Time Bomb is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;afkr&gt; Haifat, The Last with Pagan Blood is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here. (flying) (invisible)<br />
+<br />
+457H 112V 5116223X 1484C Exits:NES&gt; <br />
+Sharky focuses harshly on Teca and utters some strange words.<br />
+Teca wavers under the impact of the lightning bolt sent by Sharky.<br />
+<br />
+457H 112V 5116223X 1484C Exits:NES&gt; head teca<br />
+Mourg suddenly lunges forward, slamming his skull into Teca's face with a sickening crunch.<br />
+<br />
+457H 112V 5116223X 1484C [Me:Perfect] [Sharky:Perfect] [Teca:Good] Exits:NES&gt; <br />
+Haifat focuses on Grimbold and utters some strange words.<br />
+Grimbold's skin turns grey and granite-like.<br />
+<br />
+457H 112V 5116223X 1484C [Me:Perfect] [Sharky:Perfect] [Teca:Good] Exits:NES&gt; <br />
+Gigantor slowly fades into existence.<br />
+Gigantor crashes into Tapesh in a thundering collision, knocking him to the ground!<br />
+<br />
+457H 112V 5116223X 1484C [Me:Perfect] [Sharky:Perfect] [Teca:Good] Exits:NES&gt; <br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Good] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+A Palanthian guard is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+Teca is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Fair] Exits:NES&gt; <br />
+Gul leaps past Teca, unbalancing them.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Fair] Exits:NES&gt; <br />
+Gul dives into Teca and savagely bites her, tearing a huge chunk from her flesh.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Fair] Exits:NES&gt; <br />
+Teca utters some strange words.<br />
+Caryn growls.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Fair] Exits:NES&gt; <br />
+Caryn roars.<br />
+A Palanthian guard shrieks in terror!<br />
+A Palanthian guard panics, and attempts to flee.<br />
+A Palanthian guard leaves south.<br />
+<br />
+441H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Fair] Exits:NES&gt; <br />
+Teca bleeds profusely from her wounds.<br />
+Gul bruises Teca with his slash.<br />
+Gul bruises Teca with his slash.<br />
+Haifat slowly fades into existence.<br />
+Haifat bruises Kohka with his bludgeon.<br />
+Haifat is chilled, as he swings at Kohka.<br />
+Grimbold massacres YOU with his slash.<br />
+Gigantor massacres Tapesh with his slash.<br />
+You smite Teca hard.<br />
+You cleave Teca extremely hard.<br />
+Sharky misses Teca with his bludgeon.<br />
+Caryn massacres Tapesh with his bludgeon.<br />
+Caryn massacres Tapesh with his cleave.<br />
+Tapesh bludgeons Caryn hard.<br />
+<br />
+415H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Bad] Exits:NES&gt; <br />
+Darwi appears before Caryn in a puff of smoke.<br />
+<br />
+415H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:Bad] Exits:NES&gt; <br />
+Sharky focuses harshly on Teca and utters some strange words.<br />
+Teca wavers under the impact of the lightning bolt sent by Sharky.<br />
+<br />
+415H 112V 5116223X 1484C [Me:V.Good] [Sharky:Perfect] [Teca:V.Bad] Exits:NES&gt; <br />
+Haifat utters some strange words.<br />
+Darwi is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Sharky is shredded by shards of ice.<br />
+Gul is shredded by shards of ice.<br />
+Barnums is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Tapesh is shredded by shards of ice.<br />
+<br />
+372H 112V 5116223X 1484C [Me:Good] [Sharky:Good] [Teca:V.Bad] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Darwi is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+Teca is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+372H 112V 5116223X 1484C [Me:Good] [Sharky:Good] [Teca:V.Bad] Exits:NES&gt; st<br />
+<br />
+Gul sends a swarm of flying piranha at Teca.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+<br />
+372H 112V 5116223X 1484C [Me:Good] [Sharky:Good] [Teca:Awful] Exits:NES&gt; anger<br />
+<br />
+Teca bleeds profusely from her wounds.<br />
+Teca panics, and attempts to flee.<br />
+You direct your attention to Grimbold.<br />
+Teca flies north.<br />
+You bruise Grimbold with your smite.<br />
+You bruise Grimbold with your cleave.<br />
+Barnums pierces Haifat hard.<br />
+Grimbold massacres YOU with his slash.<br />
+Gigantor massacres Tapesh with his slash.<br />
+Caryn massacres Tapesh with his bludgeon.<br />
+Caryn cleaves Tapesh extremely hard.<br />
+Tapesh bludgeons Caryn hard.<br />
+<br />
+347H 112V 5116223X 1484C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Haifat utters some strange words.<br />
+Darwi is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Sharky is shredded by shards of ice.<br />
+Gul ducks out of the way of Haifat's attack.<br />
+Barnums is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Tapesh is shredded by shards of ice.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Caryn says 'flee darwi'<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Darwi panics, and attempts to flee.<br />
+Darwi flies south.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+*Tapesh stands up.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Barnums focuses harshly on Gigantor and utters some strange words.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Tapesh stands up.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Tapesh utters some strange words.<br />
+Tapesh heals Tapesh.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Caryn is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+306H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+You feel up to using headbutt again.<br />
+You bruise Grimbold with your smite.<br />
+You bruise Grimbold with your cleave.<br />
+Grimbold slashes YOU extremely hard.<br />
+Gigantor slashes Tapesh extremely hard.<br />
+Caryn bludgeons Tapesh very hard.<br />
+Caryn massacres Tapesh with his cleave.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Gul bruises Grimbold with his slash.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Gigantor crashes into Tapesh in a thundering collision, knocking him to the ground!<br />
+Tapesh steps aside as Grimbold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; You stand up.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; <br />
+Sharky focuses harshly on Haifat and utters some strange words.<br />
+Haifat wavers under the impact of the lightning bolt sent by Sharky.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; Your anger builds to a boil.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; flee<br />
+<br />
+Haifat utters some strange words.<br />
+Haifat's form grows in height and mass, becoming huge.<br />
+<br />
+286H 112V 5116223X 1484C [Me:Fair] [Grimbold:Good] Exits:NES&gt; You flee head over heels.<br />
+Knights' Post<br />
+<br />
+286H 111V 5116223X 1484C Exits:NESW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+A Knight of Solamnia, who is a warrior, is here to further instruct you.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+Looking east:<br />
+You see nothing special.<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+Looking south:<br />
+You see nothing special.<br />
+A Knight of Solamnia clad in brown leather instructs fellow scouts here.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+Looking west:<br />
+You see nothing special.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here, fighting Haifat. (flying)<br />
+. . . is surrounded by a white mist.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here, fighting Haifat. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here, fighting Grimbold. (flying)<br />
+Barnums Animal Crackers is standing here, fighting Haifat. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Tapesh, Denizen of the Deep is sitting here, fighting Caryn. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;SLAY&gt; Caryn is standing here, fighting Tapesh. (flying)<br />
+&lt;afkr&gt; Haifat, The Last with Pagan Blood is standing here, fighting Kohka. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;SLAY&gt; Grimbold the Fierce is sitting here, fighting Gul. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here, fighting Tapesh. (flying)<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+286H 111V 5116223X 1484C Exits:NESW&gt; w<br />
+Sword Street<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here, fighting Haifat. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;CHS&gt; Sharky the Male Theiwar Dwarf is standing here, fighting Haifat. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here, fighting Grimbold. (flying)<br />
+Barnums Animal Crackers is standing here, fighting Haifat. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Tapesh, Denizen of the Deep is sitting here, fighting Caryn. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;SLAY&gt; Caryn is standing here, fighting Tapesh. (flying)<br />
+&lt;afkr&gt; Haifat, The Last with Pagan Blood is standing here, fighting Kohka. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;SLAY&gt; Grimbold the Fierce is sitting here, fighting Gul. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here, fighting Tapesh. (flying)<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki teca<br />
+<br />
+Grimbold massacres Gul with his slash.<br />
+Gul bruises Grimbold with his slash.<br />
+Gul bruises Grimbold with his slash.<br />
+Barnums pierces Haifat very hard.<br />
+Kohka smites Haifat very hard.<br />
+Gigantor slashes Tapesh very hard.<br />
+Caryn massacres Tapesh with his bludgeon.<br />
+Caryn massacres Tapesh with his cleave.<br />
+Tapesh bludgeons Caryn hard.<br />
+Kohka utters some strange words.<br />
+Caryn is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki teca<br />
+They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki teca<br />
+They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki teca<br />
+ki teca<br />
+<br />
+Barnums utters some strange words.<br />
+Caryn is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki teca<br />
+They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; Gul dives into Grimbold and savagely bites him, tearing a huge chunk from his flesh.<br />
+They aren't here.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; <br />
+Sharky focuses harshly on Haifat and utters some strange words.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; <br />
+Haifat focuses harshly on Sharky and utters some strange words.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; <br />
+Grimbold bleeds profusely from his wounds.<br />
+Grimbold massacres Gul with his slash.<br />
+Gul bruises Grimbold with his slash.<br />
+Gul slashes Grimbold extremely hard.<br />
+Gigantor massacres Tapesh with his slash.<br />
+Caryn bludgeons Tapesh extremely hard.<br />
+Caryn cleaves Tapesh extremely hard.<br />
+Tapesh bludgeons Caryn hard.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Caryn is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; <br />
+Grimbold stands up.<br />
+<br />
+286H 110V 5116223X 1484C Exits:NES&gt; ki gigantor<br />
+You smite Gigantor extremely hard.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:V.Bad] [Gigantor:Fair] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Caryn is shredded by shards of ice.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:V.Bad] [Gigantor:Fair] Exits:NES&gt; <br />
+Gul sends a swarm of flying piranha at Grimbold.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+A piranha tears into Grimbold's flesh.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:V.Bad] [Gigantor:Fair] Exits:NES&gt; <br />
+Sharky focuses harshly on Haifat and utters some strange words.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:V.Bad] [Gigantor:Fair] Exits:NES&gt; <br />
+Haifat utters some strange words.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:V.Bad] [Gigantor:Fair] Exits:NES&gt; <br />
+Grimbold bleeds profusely from his wounds.<br />
+You massacre Gigantor with your smite.<br />
+You massacre Gigantor with your cleave.<br />
+Grimbold massacres Gul with his slash.<br />
+Gul slashes Grimbold extremely hard.<br />
+Gul slashes Grimbold extremely hard.<br />
+Gigantor slashes Tapesh extremely hard.<br />
+Caryn massacres Tapesh with his bludgeon.<br />
+Caryn massacres Tapesh with his cleave.<br />
+Tapesh bludgeons Caryn hard.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:Awful] [Gigantor:Fair] Exits:NES&gt; head<br />
+<br />
+Tapesh stands up.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Tapesh:Awful] [Gigantor:Fair] Exits:NES&gt; <br />
+Tapesh panics, and attempts to flee.<br />
+Tapesh flies south.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Fair] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Caryn ducks out of the way of Barnums's attack.<br />
+Haifat is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; Mourg suddenly lunges forward, slamming his skull into Gigantor's face with a sickening crunch.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; <br />
+Sharky utters the words, 'yeb'.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; <br />
+Sharky focuses harshly on Haifat and utters some strange words.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; <br />
+Grimbold panics, and attempts to flee.<br />
+Grimbold flies north.<br />
+<br />
+286H 110V 5116223X 1484C [Me:Fair] [Gigantor:Bad] Exits:NES&gt; <br />
+Haifat utters some strange words.<br />
+Your body is torn by huge pieces of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Sharky is shredded by shards of ice.<br />
+Gul ducks out of the way of Haifat's attack.<br />
+Barnums is shredded by shards of ice.<br />
+<br />
+225H 110V 5116223X 1484C [Me:Bad] [Gigantor:Bad] Exits:NES&gt; <br />
+Caryn deftly ducks out of the way of the attack.<br />
+Haifat screams as a swarm of insects engulfs him.<br />
+Gigantor seems unaffected by Kohka's swarm of insects.<br />
+Gigantor massacres YOU with his slash.<br />
+You massacre Gigantor with your smite.<br />
+You miss Gigantor with your cleave.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; <br />
+Gul massacres Haifat with his slash.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; gt heal me<br />
+<br />
+Grimbold flies in from the north.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; <br />
+Kohka steps aside as Grimbold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+203H 110V 5116223X 1484C [Me:Bad] [Gigantor:V.Bad] Exits:NES&gt; <br />
+Gigantor stops using a jar with a finger in it. The finger<br />
+slowly stops spinning and settles to the bottom of the jar.<br />
+Gigantor grabs a glowing scroll of recall.<br />
+Gigantor recites a glowing scroll of recall.<br />
+Gigantor disappears.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; You tell your group 'heal me'<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; <br />
+Sharky focuses harshly on Haifat and utters some strange words.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+Sharky aims a magic missile at Haifat, who staggers under the blow.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; <br />
+Haifat utters some strange words.<br />
+A sudden wind rushes by you.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; <br />
+The insect swarm has been dissipated by the wind.<br />
+Grimbold bleeds profusely from his wounds.<br />
+Grimbold bruises Kohka with his slash.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+Gul slashes Haifat extremely hard.<br />
+Gul slashes Haifat extremely hard.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; decipher runes<br />
+<br />
+Gul dives into Haifat and savagely bites him, tearing a huge chunk from his flesh.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Haifat is dead! R.I.P.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; ass<br />
+<br />
+Tapesh flies in from the south.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; Huh?!<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; <br />
+The death cry of Haifat echoes from somewhere nearby...<br />
+Haifat stops following Grimbold.<br />
+<br />
+203H 110V 5116223X 1484C Exits:NES&gt; You get a very large pile of coins from the corpse of Haifat.<br />
+There were 7462 coins.<br />
+<br />
+203H 110V 5116223X 8946C Exits:NES&gt; <br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+203H 110V 5116223X 8946C Exits:NES&gt; You attempt to assist Kohka.<br />
+You massacre Grimbold with your smite.<br />
+<br />
+203H 110V 5116223X 8946C [Me:Bad] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Kohka focuses harshly on Grimbold and utters some strange words.<br />
+Flesh burns as Kohka enshrouds Grimbold in a cloak of flames.<br />
+<br />
+203H 110V 5116223X 8946C [Me:Bad] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Tapesh focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+452H 110V 5116223X 8946C [Me:V.Good] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Grimbold bleeds profusely from his wounds.<br />
+You feel up to using headbutt again.<br />
+You massacre Grimbold with your smite.<br />
+You massacre Grimbold with your cleave.<br />
+Caryn bludgeons Tapesh very hard.<br />
+Caryn cleaves Tapesh very hard.<br />
+Grimbold bruises Kohka with his slash.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+<br />
+452H 110V 5116223X 8946C [Me:V.Good] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Barnums gets a warped staff from the corpse of Haifat.<br />
+Barnums gets a black bracelet of the Lily from the corpse of Haifat.<br />
+Barnums gets a grey stone bracelet from the corpse of Haifat.<br />
+Barnums gets a thick white belt from the corpse of Haifat.<br />
+Barnums gets a large aspen leaf shield from the corpse of Haifat.<br />
+Barnums gets a pair of crystal crimson armbands from the corpse of Haifat.<br />
+Barnums gets a pair of pitch black gloves from the corpse of Haifat.<br />
+Barnums gets a pair of magic shoes from the corpse of Haifat.<br />
+Barnums gets a pair of rabbit-fur pants from the corpse of Haifat.<br />
+Barnums gets a torc inlaid with fire-jewels from the corpse of Haifat.<br />
+Barnums gets some frayed and bloodstained burlap wrappings from the corpse of Haifat.<br />
+Barnums is zapped by a dragon necklace of Takhisis and instantly drops it.<br />
+Barnums gets a deep purple prism from the corpse of Haifat.<br />
+Barnums gets a granite ring from the corpse of Haifat.<br />
+Barnums gets a granite ring from the corpse of Haifat.<br />
+Barnums gets a red dragonscale book from the corpse of Haifat.<br />
+Barnums is zapped by a chunk of elven flesh and instantly drops it.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+Barnums gets a milky potion of see invisible from the corpse of Haifat.<br />
+<br />
+452H 110V 5116223X 8946C [Me:V.Good] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Gul gets a dwarven miner's pack from the corpse of Haifat.<br />
+<br />
+452H 110V 5116223X 8946C [Me:V.Good] [Kohka:Good] [Grimbold:Awful] Exits:NES&gt; <br />
+Gul massacres Grimbold with his slash.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Grimbold is dead! R.I.P.<br />
+get all grimbold<br />
+<br />
+452H 110V 5116223X 8946C [Me:V.Good] [Grimbold:Dying] Exits:NES&gt; <br />
+The death cry of Grimbold echoes from somewhere nearby...<br />
+Grimbold sinks gently to the ground.<br />
+Grimbold stops following Caryn.<br />
+Caryn stops using a hearthguard's axe.<br />
+Caryn grabs a glowing scroll of recall.<br />
+Caryn recites a glowing scroll of recall.<br />
+Caryn disappears.<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; <br />
+Barnums gets a bladeless sword from the corpse of Grimbold.<br />
+Barnums gets a woodsman's bracer from the corpse of Grimbold.<br />
+Barnums gets a large pile of coins from the corpse of Grimbold.<br />
+Barnums gets a glowing scroll of recall from the corpse of Grimbold.<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; decipher robe.runes<br />
+Barnums gets a black dragonarmy shield from the corpse of Grimbold.<br />
+Barnums gets a thick leopard skin jerkin from the corpse of Grimbold.<br />
+Barnums gets a feathered bone charm from the corpse of Grimbold.<br />
+Barnums gets a pair of pitch black gloves from the corpse of Grimbold.<br />
+Barnums gets a milky potion of see invisible from the corpse of Grimbold.<br />
+Barnums gets a milky potion of see invisible from the corpse of Grimbold.<br />
+You get a weatherbeaten rucksack from the corpse of Grimbold.<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; Huh?!<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; ass<br />
+Assist whom?<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Barnums creates an icicle.<br />
+<br />
+452H 110V 5116223X 8946C Exits:NES&gt; g all<br />
+Corpse : You can't carry that much weight.<br />
+You get a chunk of elven flesh.<br />
+You get a dragon necklace of Takhisis.<br />
+Corpse : You can't carry that much weight.<br />
+You get a quartz crystal sphere.<br />
+You can't seem to get that.<br />
+<br />
+<br />
+***6v7<br />
+<br />
+<br />
+457H 115V 5116223X 18146C Exits:NESW&gt; Sword Street<br />
+Tapesh, Denizen of the Deep is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Barnums Animal Crackers is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Yaz Trzemski, Nowclan MVP is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;afkr&gt; Teca Teca, Relentless Time Bomb is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here. (flying) (invisible)<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;KRTH&gt; Darwi Mother Superior of Krynn is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+&lt;afkr&gt; Sadi, Relentlessly Hunting the Fluffy Bunny is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Ragnarok, the Doom of Gods and Men is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+A citizen of Palanthas is here going about his business.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Sadi starts to sweat.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Gul heroically rescues Tapesh.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Sadi gets a crazed look.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Gigantor slowly fades into existence.<br />
+Gigantor crashes into Tapesh in a thundering collision, knocking him to the ground!<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+The sky is now cloudless.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Ragnarok focuses harshly on Tapesh and utters some strange words.<br />
+<br />
+457H 114V 5116223X 18146C Exits:NES&gt; <br />
+Teca utters some strange words.<br />
+Tapesh is shredded by shards of ice.<br />
+Gul is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Barnums is shredded by shards of ice.<br />
+Yaz is shredded by shards of ice.<br />
+You feel new life flow within you.<br />
+You weather the storm, not much worse for wear.<br />
+A citizen is torn to pieces by hundreds of shards of ice.<br />
+A citizen is dead! R.I.P.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Good] [Teca:Perfect] Exits:NES&gt; <br />
+The death cry of a citizen echoes from somewhere nearby...<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Good] [Teca:Perfect] Exits:NES&gt; head caryn<br />
+<br />
+Kohka utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Darwi is shredded by shards of ice.<br />
+Sadi ducks out of the way of Kohka's attack.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn is shredded by shards of ice.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Good] [Teca:V.Good] Exits:NES&gt; Mourg suddenly lunges forward, slamming his skull into Caryn's face with a sickening crunch.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Good] [Teca:V.Good] Exits:NES&gt; <br />
+You step aside as Grimbold tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Good] [Teca:V.Good] Exits:NES&gt; <br />
+Darwi focuses harshly on Tapesh and utters some strange words.<br />
+The sound of bones cracking echoes as Darwi's force bolt slams into Tapesh.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Ragnarok misses Kohka with his hit.<br />
+Grimbold bruises Kohka with his smite.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+You bruise Teca with your smite.<br />
+You bruise Teca with your cleave.<br />
+Barnums bruises Teca with her bludgeon.<br />
+Teca bruises Tapesh with her crush.<br />
+Gigantor bruises Tapesh with his slash.<br />
+Tapesh bludgeons Gigantor hard.<br />
+Caryn bruises Gul with his bludgeon.<br />
+Caryn bruises Gul with his cleave.<br />
+Gul slashes Caryn extremely hard.<br />
+Gul slashes Caryn hard.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Yaz utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Sadi roars.<br />
+Gul shrieks in terror!<br />
+Gul panics, and attempts to flee.<br />
+Gul flies south.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Caryn gets a small pile of coins from the corpse of a citizen.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Caryn growls.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; anger<br />
+<br />
+Caryn starts to sweat.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Caryn roars.<br />
+Tapesh shrieks in terror!<br />
+Yaz shrieks in terror!<br />
+Yaz panics, and attempts to flee.<br />
+Yaz flies east.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:V.Good] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Darwi is shredded by shards of ice.<br />
+Sadi ducks out of the way of Barnums's attack.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn appears to grow stronger.<br />
+Caryn manages to avoid the brunt of the storm.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:Good] Exits:NES&gt; <br />
+Kohka focuses on Tapesh and utters some strange words.<br />
+Tapesh's skin turns grey and granite-like.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:Good] Exits:NES&gt; Your anger builds to a boil.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:Fair] [Teca:Good] Exits:NES&gt; <br />
+Darwi focuses harshly on Tapesh and utters some strange words.<br />
+The sound of bones cracking echoes as Darwi's force bolt slams into Tapesh.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Sadi bruises Kohka with her pierce.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Gul flies in from the south.<br />
+<br />
+457H 114V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Sadi bruises Kohka with her pierce.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Sadi bruises Kohka with her cleave.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Caryn bruises Tapesh with his bludgeon.<br />
+Caryn bruises Tapesh with his cleave.<br />
+Grimbold bruises Kohka with his smite.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+You bruise Teca with your smite.<br />
+You miss Teca with your cleave.<br />
+Gigantor bruises Tapesh with his slash.<br />
+Tapesh misses Gigantor with his bludgeon.<br />
+You feel up to using headbutt again.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Teca utters some strange words.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Gul slashes Teca very hard.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Good] Exits:NES&gt; <br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Good] Exits:NES&gt; head<br />
+<br />
+Tapesh stands up.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Good] Exits:NES&gt; Mourg suddenly lunges forward, slamming his skull into Teca's face with a sickening crunch.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Fair] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Darwi is shredded by shards of ice.<br />
+Sadi appears to grow stronger.<br />
+Sadi manages to avoid the brunt of the storm.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn appears to grow stronger.<br />
+Caryn manages to avoid the brunt of the storm.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Fair] Exits:NES&gt; <br />
+Gigantor crashes into Tapesh in a thundering collision, knocking him to the ground!<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Fair] Exits:NES&gt; <br />
+Kohka focuses on Tapesh and utters some strange words.<br />
+Grimbold stands up.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Fair] Exits:NES&gt; <br />
+Ragnarok focuses on Grimbold and utters some strange words.<br />
+Ragnarok heals Grimbold.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Fair] Exits:NES&gt; <br />
+Gul slashes Teca extremely hard.<br />
+Gul slashes Teca very hard.<br />
+Sadi massacres Kohka with her pierce.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Sadi massacres Kohka with her cleave.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Caryn bruises Tapesh with his bludgeon.<br />
+Caryn bruises Tapesh with his cleave.<br />
+Grimbold smites Kohka extremely hard.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+You massacre Teca with your smite.<br />
+You cleave Teca extremely hard.<br />
+Gigantor bruises Tapesh with his slash.<br />
+Darwi panics, and attempts to flee.<br />
+Darwi flies north.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Bad] Exits:NES&gt; <br />
+Sadi suddenly lunges forward, slamming her skull into Kohka's face with a sickening crunch.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Teca utters some strange words.<br />
+Gul is shredded by shards of ice.<br />
+Tapesh is shredded by shards of ice.<br />
+Kohka is shredded by shards of ice.<br />
+Barnums is shredded by shards of ice.<br />
+You feel new life flow within you.<br />
+You weather the storm, not much worse for wear.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Bad] Exits:NES&gt; resc tapesh<br />
+<br />
+Gul sends a swarm of flying piranha at Teca.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:V.Bad] Exits:NES&gt; Your feeble rescue efforts end in failure.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:V.Bad] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Sadi appears to grow stronger.<br />
+Sadi manages to avoid the brunt of the storm.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn appears to grow stronger.<br />
+Caryn manages to avoid the brunt of the storm.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:Awful] Exits:NES&gt; <br />
+Ragnarok focuses on Teca and utters some strange words.<br />
+Ragnarok heals Teca.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:V.Bad] [Teca:V.Good] Exits:NES&gt; <br />
+Gul slashes Teca extremely hard.<br />
+Gul slashes Teca very hard.<br />
+Sadi massacres Kohka with her pierce.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Sadi massacres Kohka with her cleave.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Caryn bruises Tapesh with his bludgeon.<br />
+Caryn bruises Tapesh with his cleave.<br />
+Grimbold smites Kohka extremely hard.<br />
+Grimbold is chilled, as he swings at Kohka.<br />
+You massacre Teca with your smite.<br />
+You cleave Teca extremely hard.<br />
+Gigantor slashes Tapesh extremely hard.<br />
+Tapesh misses Gigantor with his bludgeon.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Good] Exits:NES&gt; <br />
+Yaz flies in from the east.<br />
+<br />
+457H 120V 5116223X 18146C [Me:Perfect] [Tapesh:Awful] [Teca:Good] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Gul stops fighting Teca.<br />
+Tapesh stops fighting Gigantor.<br />
+Kohka stops fighting Teca.<br />
+Barnums stops fighting Teca.<br />
+You stop fighting Teca.<br />
+Teca stops fighting Tapesh.<br />
+Gigantor stops fighting Tapesh.<br />
+Grimbold stops fighting Kohka.<br />
+Sadi stops fighting Kohka.<br />
+Ragnarok stops fighting Kohka.<br />
+Caryn stops fighting Tapesh.<br />
+<br />
+457H 120V 5116223X 18146C Exits:NES&gt; <br />
+Teca utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+457H 120V 5116223X 18146C Exits:NES&gt; head ragnorak<br />
+You can not use headbutt just yet.<br />
+<br />
+457H 120V 5116223X 18146C Exits:NES&gt; <br />
+Tapesh stands up.<br />
+<br />
+457H 120V 5116223X 18146C Exits:NES&gt; <br />
+Tapesh utters some strange words.<br />
+Tapesh heals Tapesh.<br />
+<br />
+457H 120V 5116223X 18146C Exits:NES&gt; <br />
+You are sent sprawling as Grimbold crashes into you.<br />
+<br />
+440H 120V 5116223X 18146C [Me:V.Good] [Grimbold:Good] Exits:NES&gt; ass<br />
+<br />
+Yaz seems unaffected by Teca's swarm of insects.<br />
+Gul deftly ducks out of the way of the attack.<br />
+Tapesh screams as a swarm of insects engulfs him.<br />
+Barnums seems unaffected by Teca's swarm of insects.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Teca seems unaffected by Yaz's swarm of insects.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+You feel up to using headbutt again.<br />
+Ragnarok misses Yaz with his hit.<br />
+Barnums misses Teca with her bludgeon.<br />
+Tapesh slowly fades into existence.<br />
+Tapesh barely bludgeons Teca.<br />
+Teca bruises Yaz with her crush.<br />
+Yaz misses Teca with his hit.<br />
+Grimbold massacres YOU with his smite.<br />
+You miss Grimbold with your smite.<br />
+You cleave Grimbold extremely hard.<br />
+<br />
+386H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Gul dives into Teca and savagely bites her, tearing a huge chunk from her flesh.<br />
+<br />
+386H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Caryn bludgeons Tapesh extremely hard.<br />
+<br />
+386H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Gigantor slowly fades into existence.<br />
+Gigantor crashes into Tapesh in a thundering collision, knocking him to the ground!<br />
+<br />
+386H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Sadi massacres YOU with her pierce.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Darwi flies in from the north.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Ragnarok utters some strange words.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Good] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Darwi is shredded by shards of ice.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Sadi appears to grow stronger.<br />
+Sadi manages to avoid the brunt of the storm.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn appears to grow stronger.<br />
+Caryn manages to avoid the brunt of the storm.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Fair] Exits:NES&gt; <br />
+Barnums utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Fair] Exits:NES&gt; <br />
+Teca focuses harshly on Yaz and utters some strange words.<br />
+Huge flames burn Yaz from above.<br />
+<br />
+356H 120V 5116223X 18146C [Me:Good] [Grimbold:Fair] Exits:NES&gt; <br />
+Darwi screams as a swarm of insects engulfs her.<br />
+Teca screams as a swarm of insects engulfs her.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold seems unaffected by Barnums's swarm of insects.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Darwi seems unaffected by Teca's swarm of insects.<br />
+Yaz screams as a swarm of insects engulfs him.<br />
+Gul deftly ducks out of the way of the attack.<br />
+Tapesh screams as a swarm of insects engulfs him.<br />
+Barnums screams as a swarm of insects engulfs her.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+The swarm of insects dissipates.<br />
+Teca bleeds profusely from her wounds.<br />
+Kohka bruises Darwi with his smite.<br />
+Sadi misses you with her pierce.<br />
+Sadi misses you with her cleave.<br />
+Gigantor massacres Tapesh with his slash.<br />
+Caryn bludgeons Tapesh extremely hard.<br />
+Caryn massacres Tapesh with his cleave.<br />
+Gul slashes Teca very hard.<br />
+Gul slashes Teca extremely hard.<br />
+Tapesh barely bludgeons Teca.<br />
+Grimbold massacres YOU with his smite.<br />
+You smite Grimbold extremely hard.<br />
+You cleave Grimbold hard.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Yaz focuses harshly on Teca and utters some strange words.<br />
+Flesh burns as Yaz enshrouds Teca in a cloak of flames.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Gul sends a swarm of flying piranha at Teca.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+A piranha tears into Teca's flesh.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Caryn suddenly lunges forward, slamming his skull into Tapesh's face with a sickening crunch.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Sadi suddenly lunges forward, slamming her skull into Kohka's face with a sickening crunch.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Ragnarok focuses on Teca and utters some strange words.<br />
+Ragnarok heals Teca.<br />
+Barnums utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+Kohka giggles as he quickly quaffs a vial of sparkling pink liquid.<br />
+Kohka heals Kohka.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; st<br />
+flee<br />
+You can't do that while sitting.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+Darwi is shredded by shards of ice.<br />
+Darwi is mortally wounded, and will die soon, if not aided.<br />
+Teca is shredded by shards of ice.<br />
+Gigantor is shredded by shards of ice.<br />
+Grimbold is shredded by shards of ice.<br />
+Sadi appears to grow stronger.<br />
+Sadi manages to avoid the brunt of the storm.<br />
+Ragnarok is shredded by shards of ice.<br />
+Caryn appears to grow stronger.<br />
+Caryn manages to avoid the brunt of the storm.<br />
+<br />
+308H 120V 5116223X 18146C [Me:Fair] [Grimbold:Fair] Exits:NES&gt; Darwi seems unaffected by Barnums's swarm of insects.<br />
+Darwi is mortally wounded, and will die soon, if not aided.<br />
+Teca screams as a swarm of insects engulfs her.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok seems unaffected by Barnums's swarm of insects.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+A horrible scream escapes Darwi's lips as thousands of swarming insects<br />
+suck her life away.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Darwi is dead! R.I.P.<br />
+Teca seems unaffected by Barnums's swarm of insects.<br />
+Gigantor seems unaffected by Barnums's swarm of insects.<br />
+Grimbold seems unaffected by Barnums's swarm of insects.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Yaz screams as a swarm of insects engulfs him.<br />
+Gul deftly ducks out of the way of the attack.<br />
+Tapesh screams as a swarm of insects engulfs him.<br />
+Barnums screams as a swarm of insects engulfs her.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Teca bleeds profusely from her wounds.<br />
+Sadi annihilates YOU with her pierce.<br />
+Sadi massacres YOU with her cleave.<br />
+Gigantor massacres Tapesh with his slash.<br />
+Caryn massacres Tapesh with his bludgeon.<br />
+Caryn massacres Tapesh with his cleave.<br />
+Gul slashes Teca very hard.<br />
+Gul slashes Teca very hard.<br />
+Tapesh misses Teca with his bludgeon.<br />
+Teca bruises Yaz with her crush.<br />
+Grimbold massacres YOU with his smite.<br />
+You should probably stand up!<br />
+You miss Grimbold with your smite.<br />
+You cleave Grimbold extremely hard.<br />
+The death cry of Darwi echoes from somewhere nearby...<br />
+Darwi stops following Caryn.<br />
+Teca focuses harshly on Yaz and utters some strange words.<br />
+Huge flames burn Yaz from above.<br />
+You stand up.<br />
+<br />
+221H 120V 5116223X 18146C [Me:Bad] [Grimbold:Bad] Exits:NES&gt; You flee head over heels.<br />
+Sword Street<br />
+<br />
+221H 119V 5116223X 18146C Exits:SW&gt; What are you trying to get from?<br />
+<br />
+221H 119V 5116223X 18146C Exits:SW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Yaz Trzemski, Nowclan MVP is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+Tapesh, Denizen of the Deep is sitting here, fighting Teca. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is standing here.<br />
+. . . is surrounded by a white mist.<br />
+Barnums Animal Crackers is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;afkr&gt; Teca Teca, Relentless Time Bomb is standing here, fighting Yaz. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is standing here, fighting Tapesh. (flying)<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+&lt;afkr&gt; Sadi, Relentlessly Hunting the Fluffy Bunny is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Ragnarok, the Doom of Gods and Men is standing here, fighting Yaz. (flying)<br />
+. . . has a metallic luster.<br />
+&lt;SLAY&gt; Caryn is standing here, fighting Tapesh. (flying)<br />
+Looking west:<br />
+You see nothing special.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+A sailor, just off the boat, stands here with his hands in his pockets.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+221H 119V 5116223X 18146C Exits:SW&gt; s<br />
+ki ragnorak<br />
+<br />
+Your blood freezes as you hear someone's death cry.<br />
+Tapesh stops following you.<br />
+<br />
+221H 119V 5116223X 18146C Exits:SW&gt; Sword Street<br />
+The corpse of Tapesh is lying here.<br />
+A swarm of insects fills the area.<br />
+The corpse of Darwi is lying here.<br />
+A sheaf of spellbook pages has been left here.<br />
+A swarm of insects fills the area. [3]<br />
+The corpse of a citizen is lying here.<br />
+Yaz Trzemski, Nowclan MVP is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;Wush&gt; Gul the Male Kagonesti is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;CHS&gt; Kohka, Beatified Soul of Krynn is sitting here, fighting Sadi.<br />
+. . . is surrounded by a white mist.<br />
+Barnums Animal Crackers is standing here, fighting Teca. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;afkr&gt; Teca Teca, Relentless Time Bomb is standing here, fighting Yaz. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;KAS&gt; Gigantor, Runt of Clan Wimp is sitting here. (flying)<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here, fighting Barnums. (flying)<br />
+&lt;afkr&gt; Sadi, Relentlessly Hunting the Fluffy Bunny is standing here, fighting Kohka. (flying)<br />
+. . . has a granite appearance.<br />
+Ragnarok, the Doom of Gods and Men is standing here, fighting Yaz. (flying)<br />
+. . . has a granite appearance.<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Grimbold crashes into Gul in a thundering collision, knocking him to the ground!<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Caryn gets a pile of coins from the corpse of Tapesh.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; Teca utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+They aren't here.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Kohka stands up.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Yaz focuses harshly on Teca and utters some strange words.<br />
+Flesh burns as Yaz enshrouds Teca in a cloak of flames.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Caryn bruises Barnums with his bludgeon.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; <br />
+Kohka utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+221H 118V 5116223X 18146C Exits:NES&gt; ki teca<br />
+You smite Teca extremely hard.<br />
+<br />
+221H 118V 5116223X 18146C [Me:Bad] [Yaz:Awful] [Teca:V.Bad] Exits:NES&gt; <br />
+Barnums gets a staff of rank from the corpse of Tapesh.<br />
+Barnums gets a glowing bracer from the corpse of Tapesh.<br />
+Barnums gets a thick white belt from the corpse of Tapesh.<br />
+Barnums gets a pair of pitch black gloves from the corpse of Tapesh.<br />
+Barnums gets a pair of blue shoes from the corpse of Tapesh.<br />
+Barnums gets a torc inlaid with fire-jewels from the corpse of Tapesh.<br />
+Barnums gets some frayed and bloodstained burlap wrappings from the corpse of Tapesh.<br />
+<br />
+221H 118V 5116223X 18146C [Me:Bad] [Yaz:Awful] [Teca:V.Bad] Exits:NES&gt; <br />
+Teca seems unaffected by Kohka's swarm of insects.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold seems unaffected by Kohka's swarm of insects.<br />
+Sadi seems unaffected by Kohka's swarm of insects.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+A writhing mass of insects swarm toward you but disappear as your mind<br />
+overcomes the illusion.<br />
+Yaz screams as a swarm of insects engulfs him.<br />
+Yaz is mortally wounded, and will die soon, if not aided.<br />
+Gul deftly ducks out of the way of the attack.<br />
+Barnums screams as a swarm of insects engulfs her.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Teca screams as a swarm of insects engulfs her.<br />
+Gigantor seems unaffected by Barnums's swarm of insects.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Teca screams as a swarm of insects engulfs her.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn seems unaffected by Barnums's swarm of insects.<br />
+Teca screams as a swarm of insects engulfs her.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok seems unaffected by Barnums's swarm of insects.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Yaz seems unaffected by Teca's swarm of insects.<br />
+Yaz is mortally wounded, and will die soon, if not aided.<br />
+Gul deftly ducks out of the way of the attack.<br />
+Barnums seems unaffected by Teca's swarm of insects.<br />
+Teca bleeds profusely from her wounds.<br />
+Gigantor slowly fades into existence.<br />
+Gigantor massacres Kohka with his slash.<br />
+Gigantor is chilled, as he swings at Kohka.<br />
+You smite Teca very hard.<br />
+You cleave Teca extremely hard.<br />
+Teca is mortally wounded, and will die soon, if not aided.<br />
+Caryn bruises Barnums with his bludgeon.<br />
+Caryn bruises Barnums with his cleave.<br />
+Grimbold bruises Barnums with his smite.<br />
+Kohka gracefully steps aside as Sadi attacks!<br />
+Sadi stumbles and accidentally attacks Gigantor!<br />
+Sadi misses Gigantor with her pierce.<br />
+Sadi massacres Kohka with her cleave.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Sadi thrashes Kohka good, forcing them to the ground.<br />
+Gul annihilates Teca with his slash.<br />
+You receive 0 experience.<br />
+g all.coins corpse<br />
+Teca is dead! R.I.P.<br />
+Ragnarok bruises Yaz with his hit.<br />
+Yaz is dead! R.I.P.<br />
+The death cry of Yaz echoes from somewhere nearby...<br />
+Yaz sinks gently to the ground.<br />
+Yaz stops following you.<br />
+The death cry of Teca echoes from somewhere nearby...<br />
+Teca stops following Caryn.<br />
+<br />
+195H 118V 5116223X 18146C Exits:NES&gt; <br />
+Barnums gets a pile of coins from the corpse of Yaz.<br />
+<br />
+195H 118V 5116223X 18146C Exits:NES&gt; <br />
+Your clanmate Inoa has entered the game.<br />
+Barnums gets a large pile of coins from the corpse of Teca.<br />
+Barnums gets a strip of armaboro jerky from the corpse of Teca.<br />
+Barnums gets a strip of armaboro jerky from the corpse of Teca.<br />
+Barnums gets a strip of armaboro jerky from the corpse of Teca.<br />
+<br />
+195H 118V 5116223X 18146C Exits:NES&gt; <br />
+Sadi suddenly lunges forward, slamming her skull into Kohka's face with a sickening crunch.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+<br />
+195H 118V 5116223X 18146C Exits:NES&gt; ass<br />
+Ragnarok focuses on Grimbold and utters some strange words.<br />
+Ragnarok heals Grimbold.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Caryn suddenly lunges forward, slamming his skull into Barnums's face with a sickening crunch.<br />
+<br />
+195H 118V 5116223X 18146C Exits:NES&gt; Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold screams as a swarm of insects engulfs him.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok seems unaffected by Kohka's swarm of insects.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+You feel enlightened.<br />
+Insects fill the room. Gul screams as he is bitten repeatedly.<br />
+Insects fill the room. Barnums screams as she is bitten repeatedly.<br />
+Disgusting black insects crawl over your flesh and buzz around your face,<br />
+leaving bloody bites on your skin.<br />
+Gigantor screams as a swarm of insects engulfs him.<br />
+Grimbold seems unaffected by Barnums's swarm of insects.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Gigantor seems unaffected by Barnums's swarm of insects.<br />
+Grimbold seems unaffected by Barnums's swarm of insects.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok screams as a swarm of insects engulfs him.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+Gigantor seems unaffected by Barnums's swarm of insects.<br />
+Grimbold seems unaffected by Barnums's swarm of insects.<br />
+Sadi deftly ducks out of the way of the attack.<br />
+Ragnarok seems unaffected by Barnums's swarm of insects.<br />
+Caryn deftly ducks out of the way of the attack.<br />
+The swarm of insects dissipates.<br />
+You miss Barnums with your smite.<br />
+You bruise Barnums with your cleave.<br />
+Ragnarok misses Kohka with his hit.<br />
+Barnums misses Caryn with her bludgeon.<br />
+Sadi annihilates Kohka with her pierce.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Sadi massacres Kohka with her cleave.<br />
+Sadi appears to grow stronger.<br />
+Kohka's iceshield does him little good as Sadi takes a swing at him.<br />
+Gigantor massacres Kohka with his slash.<br />
+Gigantor is chilled, as he swings at Kohka.<br />
+Caryn bruises Barnums with his bludgeon.<br />
+Caryn cleaves Barnums extremely hard.<br />
+Grimbold smites Barnums extremely hard.<br />
+Kohka misses Sadi with his smite.<br />
+You can't do that while fighting.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Caryn:Good] [Barnums:Awful] Exits:NES&gt; <br />
+Gul stands up.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Caryn:Good] [Barnums:Awful] Exits:NES&gt; <br />
+Grimbold gets an ancient sphere from the corpse of Teca.<br />
+Grimbold gets a heavy flanged mace from the corpse of Teca.<br />
+Grimbold gets a navel ring from the corpse of Teca.<br />
+Grimbold gets some fingerless gloves studded with diamonds from the corpse of Teca.<br />
+Grimbold gets a pair of purple silk boots from the corpse of Teca.<br />
+Grimbold gets some black breeches from the corpse of Teca.<br />
+Grimbold gets a robe of dirt and grass from the corpse of Teca.<br />
+Grimbold gets a blood red cape from the corpse of Teca.<br />
+Grimbold gets a blood red cape from the corpse of Teca.<br />
+Grimbold gets a green nephaline ring from the corpse of Teca.<br />
+Grimbold is zapped by a ring of lightning and instantly drops it.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Teca.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Teca.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Teca.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Teca.<br />
+Grimbold gets a glowing scroll of recall from the corpse of Teca.<br />
+Grimbold gets a sheaf of spellbook pages from the corpse of Teca.<br />
+Grimbold gets a small wooden chest from the corpse of Teca.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Caryn:Good] [Barnums:Awful] Exits:NES&gt; <br />
+Barnums panics, and attempts to flee.<br />
+Barnums flies east.<br />
+<br />
+163H 118V 5116223X 18146C Exits:NES&gt; <br />
+Gul's blow is absorbed by Sadi's armor.<br />
+<br />
+163H 118V 5116223X 18146C Exits:NES&gt; st<br />
+You are already standing.<br />
+<br />
+163H 118V 5116223X 18146C Exits:NES&gt; ass<br />
+You attempt to assist Kohka.<br />
+You bruise Sadi with your smite.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Kohka:Awful] [Sadi:V.Good] Exits:NES&gt; <br />
+Kohka stands up.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Kohka:Awful] [Sadi:V.Good] Exits:NES&gt; <br />
+Grimbold gets a glowing scroll of recall from the corpse of Yaz.<br />
+Grimbold gets a black bracelet of the Lily from the corpse of Yaz.<br />
+Grimbold gets a woodsman's bracer from the corpse of Yaz.<br />
+Grimbold gets a pair of rabbit-fur pants from the corpse of Yaz.<br />
+Grimbold gets a thick leopard skin jerkin from the corpse of Yaz.<br />
+Grimbold gets a feathered bone charm from the corpse of Yaz.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Kohka:Awful] [Sadi:V.Good] Exits:NES&gt; <br />
+Kohka panics, and attempts to flee.<br />
+Kohka leaves east.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:V.Good] Exits:NES&gt; <br />
+With a quick weave, you slip out of the way of the attack.<br />
+Gul fends off a swarm of insects by flapping his arms wildly.<br />
+The swarm of insects dissipates.<br />
+Sadi bruises Gul with her pierce.<br />
+Sadi thrashes Gul good, forcing them to the ground.<br />
+Sadi bruises Gul with her cleave.<br />
+You smite Sadi very hard.<br />
+You cleave Sadi.<br />
+Gul slashes Sadi extremely hard.<br />
+Gul misses Sadi with his slash.<br />
+Ragnarok focuses on Gigantor and utters some strange words.<br />
+Ragnarok heals Gigantor.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; <br />
+Inoa arrives from the south.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; <br />
+Caryn bruises Gul with his bludgeon.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; st<br />
+<br />
+Gigantor stops using a jar with a finger in it. The finger<br />
+slowly stops spinning and settles to the bottom of the jar.<br />
+Gigantor grabs a glowing scroll of recall.<br />
+Gigantor recites a glowing scroll of recall.<br />
+Gigantor disappears.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; g all corpse<br />
+<br />
+Inoa massacres Caryn with her slash.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; <br />
+Gul steps aside as Grimbold attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; You are already standing.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+163H 118V 5116223X 18146C [Me:V.Bad] [Gul:Fair] [Sadi:Good] Exits:NES&gt; <br />
+Inoa deftly ducks out of the way of the attack.<br />
+A loud buzzing fills your ears as a swarm of insects bites at your skin.<br />
+Insects fill the room. Gul screams as he is bitten repeatedly.<br />
+The swarm of insects dissipates.<br />
+Grimbold bruises Gul with his smite.<br />
+Inoa misses Caryn with her slash.<br />
+Inoa cleaves Caryn extremely hard.<br />
+Caryn annihilates Gul with his bludgeon.<br />
+Caryn annihilates Gul with his cleave.<br />
+Sadi annihilates Gul with her pierce.<br />
+Sadi annihilates Gul with her cleave.<br />
+You smite Sadi extremely hard.<br />
+You cleave Sadi very hard.<br />
+Gul slashes Sadi hard.<br />
+Sadi gracefully steps aside as Gul attacks!<br />
+Gul stumbles and accidentally attacks Grimbold!<br />
+Gul massacres Grimbold with his slash.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; g all.sphere<br />
+<br />
+Ragnarok utters some strange words.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; You get a quartz crystal sphere.<br />
+You get a quartz crystal sphere.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; <br />
+Sadi suddenly lunges forward, slamming her skull into Gul's face with a sickening crunch.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; head<br />
+<br />
+Gul drops a white gold ring.<br />
+Gul drops a gaudy silver ring.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; Mourg suddenly lunges forward, slamming his skull into Sadi's face with a sickening crunch.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Gul:Awful] [Sadi:Good] Exits:NES&gt; <br />
+Gul stops using a jeweled long sword.<br />
+Gul grabs a glowing scroll of recall.<br />
+Gul recites a glowing scroll of recall.<br />
+Gul disappears.<br />
+Caryn suddenly lunges forward, slamming his skull into Inoa's face with a sickening crunch.<br />
+<br />
+143H 118V 5116223X 18146C [Me:V.Bad] [Sadi:Good] Exits:NES&gt; <br />
+The swarm of insects dissipates.<br />
+Caryn massacres Inoa with his bludgeon.<br />
+Caryn cleaves Inoa.<br />
+Sadi misses you with her pierce.<br />
+Sadi massacres YOU with her cleave.<br />
+Inoa massacres Caryn with her slash.<br />
+Inoa massacres Caryn with her cleave.<br />
+You massacre Sadi with your smite.<br />
+You cleave Sadi very hard.<br />
+<br />
+121H 118V 5116223X 18146C [Me:V.Bad] [Sadi:Fair] Exits:NES&gt; flee<br />
+flee<br />
+<br />
+Inoa ravages Caryn hard.<br />
+<br />
+121H 118V 5116223X 18146C [Me:V.Bad] [Sadi:Fair] Exits:NES&gt; You flee head over heels.<br />
+Knights' Post<br />
+<br />
+121H 117V 5116223X 18146C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+121H 117V 5116223X 18146C Exits:NESW&gt; s<br />
+Scouts' Hall<br />
+A firebreather has been left here.<br />
+A odd looking gadget lies on the ground, doing whatever it does.<br />
+A silver spade lies on the ground.<br />
+An iron shield rests here.<br />
+A thick hide apron lies in a crumpled pile on the ground.<br />
+A small ring lies here, its copper surface gleaming softly.<br />
+A Knight of Solamnia clad in brown leather instructs fellow scouts here.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+<br />
+121H 116V 5116223X 18146C Exits:N&gt; n<br />
+w<br />
+Knights' Post<br />
+&lt;SLAY&gt; Grimbold the Fierce is standing here. (flying)<br />
+<br />
+121H 115V 5116223X 18146C Exits:NESW&gt; s<br />
+Sword Street<br />
+A bulky silver ring lies here, indented in the ground.<br />
+A small silvery ring has been left upon the ground.<br />
+A nondescript ring lies here.<br />
+The corpse of Teca is lying here.<br />
+The corpse of Yaz is lying here.<br />
+The corpse of Tapesh is lying here.<br />
+The corpse of Darwi is lying here.<br />
+A sheaf of spellbook pages has been left here.<br />
+The corpse of a citizen is lying here.<br />
+&lt;CHS&gt; Inoa, Violent by Design is standing here.<br />
+&lt;afkr&gt; Sadi, Relentlessly Hunting the Fluffy Bunny is standing here. (flying)<br />
+Ragnarok, the Doom of Gods and Men is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+<br />
+121H 114V 5116223X 18146C Exits:NES&gt; s<br />
+Inoa says 'die!'<br />
+Sword Street<br />
+&lt;SLAY&gt; Caryn is standing here. (flying)<br />
+<br />
+121H 113V 5116223X 18146C Exits:NES&gt; s<br />
+<br />
+Caryn flies north.<br />
+&gt; PK Mode ENABLED set to HEAD<br />
+&gt; PK List: Caryn<br />
+----------&gt; TARGET Caryn LEAVES THE ROOM &lt;----------<br />
+<br />
+121H 113V 5116223X 18146C Exits:NES&gt; s<br />
+Inoa arrives from the north.<br />
+Intersection: Sword Street and Eastern Avenue<br />
+<br />
+<br />
+***the end<br />
+<br />
+<br />
+457H 120V 5116223X 18146C Exits:ND&gt; <br />
+Caryn flies in from the north.<br />
+head Caryn<br />
+----------&gt; TARGET Caryn ON SIGHT &lt;----------<br />
+Caryn studies the area intently.<br />
+Darwi flies in from the north.<br />
+Teca flies in from the north.<br />
+Ragnarok flies in from the north.<br />
+Sadi flies in from the north.<br />
+Grimbold flies in from the north.<br />
+Gigantor flies in from the north.<br />
+<br />
+457H 120V 5116223X 18146C Exits:ND&gt; Come on! I'm relaxing!<br />
+<br />
+457H 120V 5116223X 18146C Exits:ND&gt; <br />
+Teca twitches her finger and a quartz crystal sphere flies to her hand from Mourg.<br />
+<br />
+457H 120V 5116223X 18146C Exits:ND&gt; <br />
+Caryn annihilates YOU with his bludgeon.<br />
+<br />
+417H 120V 5116223X 18146C [Me:V.Good] [Caryn:Perfect] Exits:ND&gt; <br />
+Sadi viciously rams her skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+<br />
+384H 120V 5116223X 18146C [Me:Good] [Caryn:Perfect] Exits:ND&gt; <br />
+Grimbold massacres YOU with his smite.<br />
+<br />
+359H 120V 5116223X 18146C [Me:Good] [Caryn:Perfect] Exits:ND&gt; <br />
+Gigantor slowly fades into existence.<br />
+You step aside as Gigantor tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+359H 120V 5116223X 18146C [Me:Good] [Caryn:Perfect] Exits:ND&gt; <br />
+Gigantor massacres YOU with his slash.<br />
+Grimbold annihilates YOU with his smite.<br />
+Sadi obliterates YOU with her pierce.<br />
+Sadi annihilates YOU with her cleave.<br />
+Caryn misses you with his bludgeon.<br />
+Caryn cleaves YOU extremely hard.<br />
+You should probably stand up!<br />
+You smite Caryn extremely hard.<br />
+You cleave Caryn very hard.<br />
+<br />
+179H 120V 5116223X 18146C [Me:V.Bad] [Caryn:V.Good] Exits:ND&gt; <br />
+Teca focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+128H 120V 5116223X 18146C [Me:V.Bad] [Caryn:V.Good] Exits:ND&gt; <br />
+Ragnarok focuses harshly on you and utters some strange words.<br />
+<br />
+128H 120V 5116223X 18146C [Me:V.Bad] [Caryn:V.Good] Exits:ND&gt; <br />
+Caryn growls.<br />
+<br />
+128H 120V 5116223X 18146C [Me:V.Bad] [Caryn:V.Good] Exits:ND&gt; <br />
+Caryn viciously rams his skull into your face, knocking you backward and breaking your nose with a sickening crunch.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+Come on! I'm relaxing!<br />
+<br />
+74H 120V 5116223X 18146C [Me:Awful] [Caryn:V.Good] Exits:ND&gt; <br />
+Darwi focuses harshly on you and utters some strange words.<br />
+<br />
+74H 120V 5116223X 18146C [Me:Awful] [Caryn:V.Good] Exits:ND&gt; <br />
+Sadi roars.<br />
+<br />
+74H 120V 5116223X 18146C [Me:Awful] [Caryn:V.Good] Exits:ND&gt; Gigantor annihilates YOU with his slash.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Wimpy mode activated!<br />
+Come on! I'm relaxing!<br />
+Grimbold massacres YOU with his smite.<br />
+You're stunned, but will likely regain consciousness again.<br />
+Someone obliterates YOU with their pierce.<br />
+You're dead.<br />
+You sink gently to the ground.<br />
+You lose your connection to the spirit of the yeti.<br />
+Your detect invisibility wears off.<br />
+You lose your connection to the spirit of the goat.<br />
+You lose your connection to the spirit of the wolverine.<br />
+You lose your connection to the spirit of the ram.<br />
+You now follow someone.<br />
+You stop following someone.<br />
+<br />
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1767'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1767">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1767">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

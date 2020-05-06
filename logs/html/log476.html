@@ -1,0 +1,824 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 476-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='476'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Alynthia RIP</font></b>
+<p>
+POV: 
+Rurh<p>
+Log Rating:
+-1.8824<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+If you are going to random someone, Lesson 1: Don't attack someone higher level than you.  Lesson 2: Don't go afk in guild rooms when you fail.  Cryax later told me that "he didn't mean to".  Yes, you mustof fell on your keyboard and smashed a bunch of keys that resulted in "c 'l b' ruhr", all just coincidentally at the same time the thief tried to backstab me.  Uhhuh.</i>
+<p>
+<p>
+
+[The incident]<br />
+<br />
+306H 126V 5171902X 1393C Mem:2 Exits:ES&gt; ord all.horse kill balia<br />
+Cyrax arrives from the east.<br />
+Alynthia flies in from the east.<br />
+<br />
+306H 126V 5171902X 1393C Mem:2 Exits:ES&gt; A white pegasus misses Balia with her hit.<br />
+You issue the order 'kill balia'.<br />
+<br />
+306H 126V 5171902X 1393C Mem:2 Exits:ES&gt; ass horse<br />
+You stab Balia extremely hard.<br />
+<br />
+306H 126V 5171573X 1393C [a white pegasus:Perfect] [Balia:V.Good] Mem:2 Exits:ES&gt; <br />
+Cyrax looks at you.<br />
+<br />
+306H 126V 5171573X 1393C [a white pegasus:Perfect] [Balia:V.Good] Mem:2 Exits:ES&gt; <br />
+Cyrax bows deeply.<br />
+<br />
+306H 126V 5171573X 1393C [a white pegasus:Perfect] [Balia:V.Good] Mem:2 Exits:ES&gt; <br />
+The rally cry fades.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+Balia pierces a white pegasus hard.<br />
+<br />
+306H 126V 5171203X 1393C [a white pegasus:V.Good] [Balia:V.Good] Mem:2 Exits:ES&gt; ral<br />
+You yell and inspire your companions to fight harder!<br />
+<br />
+306H 126V 5171203X 1393C [a white pegasus:V.Good] [Balia:V.Good] Mem:2 Exits:ES&gt; <br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia very hard.<br />
+Balia barely pierces YOU.<br />
+<br />
+302H 126V 5170812X 1393C [Rurh:Fair] [Balia:Good] Mem:2 Exits:ES&gt; av leg<br />
+You attempt to focus on Balia and fail horribly.<br />
+<br />
+302H 126V 5170812X 1393C [Rurh:Fair] [Balia:Good] Mem:2 Exits:ES&gt; <br />
+Cyrax says 'shes urs huh'<br />
+<br />
+302H 126V 5170812X 1393C [Rurh:Fair] [Balia:Good] Mem:2 Exits:ES&gt; <br />
+Balia pierces YOU hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia very hard.<br />
+<br />
+293H 126V 5170462X 1393C [Rurh:Fair] [Balia:Good] Mem:2 Exits:ES&gt; av leg<br />
+You attempt to focus on Balia and fail horribly.<br />
+<br />
+293H 126V 5170462X 1393C [Rurh:Fair] [Balia:Good] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia hard.<br />
+<br />
+293H 126V 5170051X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; 'who?<br />
+You say 'who?'<br />
+<br />
+293H 126V 5170051X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+You raise your shield and block Balia's blow.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia hard.<br />
+<br />
+293H 126V 5169681X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+Cyrax says 'balia'<br />
+<br />
+293H 126V 5169681X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; av leg<br />
+You focus your purity on Balia's leg!<br />
+<br />
+293H 126V 5169681X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+Cyrax says 'need help?'<br />
+<br />
+293H 126V 5169681X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia hard.<br />
+<br />
+293H 126V 5169331X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; 'balia is male<br />
+You say 'balia is male'<br />
+<br />
+293H 126V 5169331X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+Cyrax looks at you.<br />
+<br />
+293H 126V 5169331X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; <br />
+Balia pierces YOU hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+284H 126V 5169002X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; 'Im fi ne<br />
+Balia pierces YOU very hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia hard.<br />
+Cyrax closes his spellbook with a content look on his face.<br />
+The rally cry fades.<br />
+You throw away your bloody bandages.<br />
+band selfYou say 'Im fi ne'<br />
+<br />
+284H 142V 5168673X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; You're too busy fighting!<br />
+<br />
+284H 142V 5168673X 1393C [Rurh:Fair] [Balia:Fair] Mem:2 Exits:ES&gt; str<br />
+You attempt to strike at Balia with your pike.<br />
+You stab Balia very hard.<br />
+<br />
+284H 142V 5168447X 1393C [Rurh:Fair] [Balia:Bad] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+284H 142V 5168097X 1393C [Rurh:Fair] [Balia:Bad] Mem:2 Exits:ES&gt; ral<br />
+You yell and inspire your companions to fight harder!<br />
+<br />
+284H 142V 5168097X 1393C [Rurh:Fair] [Balia:Bad] Mem:2 Exits:ES&gt; str<br />
+Balia pierces YOU hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+277H 142V 5167706X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; You attempt to strike at Balia with your pike.<br />
+You stab Balia very hard.<br />
+<br />
+277H 142V 5167439X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; <br />
+Cyrax says 'k'<br />
+<br />
+277H 142V 5167439X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+277H 142V 5167028X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; str<br />
+You strike at Balia, but miss him completely.<br />
+<br />
+277H 142V 5167028X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia hard.<br />
+<br />
+277H 142V 5166658X 1393C [Rurh:Fair] [Balia:V.Bad] Mem:2 Exits:ES&gt; str<br />
+You raise your shield and block Balia's blow.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+You attempt to strike at Balia with your pike.<br />
+You stab Balia very hard.<br />
+<br />
+277H 142V 5166021X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; <br />
+You hear gears grinding as Cyrax thinks.<br />
+<br />
+277H 142V 5166021X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; str<br />
+Balia pierces YOU hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+268H 142V 5165651X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; You strike at Balia, but miss him completely.<br />
+<br />
+268H 142V 5165651X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; str<br />
+Balia pierces YOU hard.<br />
+You stab Balia extremely hard.<br />
+A white pegasus misses Balia with her hit.<br />
+<br />
+259H 142V 5165322X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; You strike at Balia, but miss him completely.<br />
+<br />
+259H 142V 5165322X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; <br />
+Cyrax says 'well, wat else'<br />
+<br />
+259H 142V 5165322X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; str<br />
+You hear gears grinding as Cyrax thinks.<br />
+<br />
+259H 142V 5165322X 1393C [Rurh:Fair] [Balia:Awful] Mem:2 Exits:ES&gt; <br />
+Balia misses you with his pierce.<br />
+You stab Balia extremely hard.<br />
+A white pegasus hits Balia very hard.<br />
+Balia is stunned, but will likely regain consciousness again.<br />
+<br />
+259H 142V 5164931X 1393C [Balia:Awful] Mem:2 Exits:ES&gt; You hear gears grinding as Cyrax thinks.<br />
+You attempt to strike at Balia with your pike.<br />
+You massacre Balia with your stab.<br />
+You receive 93297 experience.<br />
+Balia is dead! R.I.P.<br />
+watch lexmarkget all.coins corpse<br />
+<br />
+259H 142V 5071634X 1393C [Balia:Dying] Mem:2 Exits:ES&gt; <br />
+The death cry of Balia echoes from somewhere nearby...<br />
+<br />
+259H 142V 5071634X 1393C Mem:2 Exits:ES&gt; <br />
+Alynthia gets a large pile of coins from the corpse of Balia.<br />
+<br />
+259H 142V 5071634X 1393C Mem:2 Exits:ES&gt; <br />
+Alynthia tried to backstab you, but you avoid her.<br />
+<br />
+259H 142V 5071634X 1393C [Rurh:Fair] [Alynthia:Perfect] Mem:2 Exits:ES&gt; <br />
+Cyrax focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Cyrax has reached its goal.<br />
+<br />
+230H 142V 5071634X 1393C [Rurh:Fair] [Alynthia:Perfect] Mem:2 Exits:ES&gt; <br />
+The rally cry fades.<br />
+Alynthia misses you with her pierce.<br />
+Alynthia misses you with her pierce.<br />
+You find an opening in Alynthia's armor and drive your pike there.<br />
+You massacre Alynthia with your stab.<br />
+<br />
+230H 142V 5071634X 1393C [Rurh:Fair] [Alynthia:Good] Mem:2 Exits:ES&gt; flee<br />
+They don't seem to be here.<br />
+<br />
+230H 142V 5071634X 1393C [Rurh:Fair] [Alynthia:Good] Mem:2 Exits:ES&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+230H 142V 5071634X 1393C [Rurh:Fair] [Alynthia:Good] Mem:2 Exits:ES&gt; flee<br />
+You flee head over heels.<br />
+The Backroom<br />
+    Less smoke-filled than the main bar, you at last have a chance to<br />
+recuperate your breath. Several evil-looking elves are seated around a<br />
+small round table, gambling and betting. They seem to scorn your entrance.<br />
+The conversation in this room is limited to what is going on at the table.<br />
+<br />
+230H 141V 5071634X 1393C Mem:2 Exits:N&gt; flee<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+230H 141V 5071634X 1393C Mem:2 Exits:N&gt; You're not fighting, why bother fleeing?<br />
+<br />
+230H 141V 5071634X 1393C Mem:2 Exits:N&gt; <br />
+Cyrax arrives from the north.<br />
+Alynthia flies in from the north.<br />
+<br />
+230H 141V 5071634X 1393C Mem:2 Exits:N&gt; <br />
+Cyrax focuses harshly on you and utters some strange words.<br />
+YOU'RE HIT. A lightning bolt from Cyrax has reached its goal.<br />
+<br />
+169H 141V 5071634X 1393C [Rurh:Bad] [Cyrax:Perfect] Mem:2 Exits:N&gt; flee<br />
+You flee head over heels.<br />
+<br />
+<br />
+[The result]<br />
+<br />
+<br />
+421H 45V 5071634X 1133C Exits:NEW&gt; <br />
+Kimozabi leaves west.<br />
+You follow Kimozabi west.<br />
+A white pegasus flies in from the east.<br />
+At the Balifor Jail<br />
+A beautiful white horse with majestic wings roams the area.<br />
+Kimozabi the Male Human is standing here. (invisible)<br />
+A member of the Balifor town watch patrols the outside of the jailhouse.<br />
+A member of the Balifor town watch patrols the outside of the jailhouse.<br />
+<br />
+421H 44V 5071634X 1133C Exits:NEW&gt; <br />
+Kimozabi leaves north.<br />
+You follow Kimozabi north.<br />
+A white pegasus flies in from the south.<br />
+Corner of a Building<br />
+A beautiful white horse with majestic wings roams the area.<br />
+Kimozabi the Male Human is standing here. (invisible)<br />
+Alynthia the Female Wild Elf is resting here. (red aura)<br />
+<br />
+421H 43V 5071634X 1133C Exits:ES&gt; ord horse kill Alynthia<br />
+kill Alynthia<br />
+A white pegasus massacres Alynthia with her hit.<br />
+<br />
+421H 43V 5071634X 1133C Exits:ES&gt; You massacre Alynthia with your stab.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Good] Exits:ES&gt; <br />
+Kimozabi leaves east.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Good] Exits:ES&gt; <br />
+Mosxari shouts '24 ranger lookin for group'<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Good] Exits:ES&gt; <br />
+You massacre Alynthia with your stab.<br />
+A white pegasus hits Alynthia extremely hard.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Fair] Exits:ES&gt; av prim<br />
+Kimozabi arrives from the east.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Fair] Exits:ES&gt; You attempt to focus on Alynthia and fail horribly.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Fair] Exits:ES&gt; <br />
+Kimozabi utters some strange words.<br />
+A shimmering light fills the room, somehow tickling your nose.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Fair] Exits:ES&gt; av prim<br />
+You massacre Alynthia with your stab.<br />
+A white pegasus hits Alynthia extremely hard.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+Alynthia pierces a white pegasus hard.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:V.Good] [Alynthia:Bad] Exits:ES&gt; You focus your purity on Alynthia's arm!<br />
+You force Alynthia to drop her weapon.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:V.Good] [Alynthia:Bad] Exits:ES&gt; <br />
+Kimozabi leaves south.<br />
+<br />
+421H 43V 5071634X 1133C [a white pegasus:V.Good] [Alynthia:Bad] Exits:ES&gt; <br />
+You massacre Alynthia with your stab.<br />
+A white pegasus hits Alynthia extremely hard.<br />
+Alynthia misses a white pegasus with her hit.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+A flash of lightning announces the storm's arrival.<br />
+The elixir flashes a silvery glint and twinkles out.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:V.Bad] Exits:ES&gt; get all<br />
+Sword : You can't carry that much weight.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:V.Bad] Exits:ES&gt; <br />
+Kimozabi arrives from the south.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:V.Bad] Exits:ES&gt; <br />
+You massacre Alynthia with your stab.<br />
+A white pegasus hits Alynthia very hard.<br />
+Alynthia misses a white pegasus with her hit.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; drop brass<br />
+You drop a brass voulge.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; get all<br />
+You get a brass voulge.<br />
+Sword : You can't carry that much weight.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; <br />
+You massacre Alynthia with your stab.<br />
+A white pegasus hits Alynthia very hard.<br />
+Alynthia misses a white pegasus with her hit.<br />
+Alynthia misses a white pegasus with her pierce.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; drop bras<br />
+You can't seem to find that!<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; drop brass<br />
+You drop a brass voulge.<br />
+<br />
+421H 64V 5071634X 1133C [a white pegasus:Perfect] [Alynthia:Awful] Exits:ES&gt; <br />
+You massacre Alynthia with your stab.<br />
+You receive 0 experience.<br />
+Alynthia is dead! R.I.P.<br />
+The death cry of Alynthia echoes from somewhere nearby...<br />
+<br />
+421H 64V 5071634X 1133C Exits:ES&gt; They don't seem to be here.<br />
+<br />
+421H 64V 5071634X 1133C Exits:ES&gt; You get a pile of coins from the corpse of Alynthia.<br />
+There were 45 coins.<br />
+split 45<br />
+421H 64V 5071634X 1178C Exits:ES&gt; You can't split 45 evenly among the people in the room; splitting 44 instead.<br />
+You divide 44 coins equally among the group members present.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; get swordYou get a slightly tarnished short sword.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; l<br />
+Corner of a Building<br />
+The corpse of Alynthia is lying here.<br />
+A long brass voulge is here.<br />
+Kimozabi the Male Human is standing here. (invisible)<br />
+. . . is surrounded by a shimmering light.<br />
+A beautiful white horse with majestic wings roams the area.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; inv<br />
+You are carrying:<br />
+a slightly tarnished short sword<br />
+a scroll of recall [5]<br />
+a small first-aid kit<br />
+a milky potion of see invisible<br />
+a huge green emerald<br />
+a teakwood helm<br />
+a suit of bronze field plate<br />
+a tarnished silver key<br />
+a small white ring<br />
+a scroll of recall<br />
+a bone-handled mace<br />
+a shimmering blue potion [2]<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; drop all.plate<br />
+You drop a suit of bronze field plate.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; <br />
+Kimozabi rolls on the floor in a fit of laughter.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; drop all.key<br />
+You drop a tarnished silver key.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; lCorner of a Building<br />
+A key made of silver lays upon the floor.<br />
+A suit of bronze field plate sits forgotten upon the floor.<br />
+The corpse of Alynthia is lying here.<br />
+A long brass voulge is here.<br />
+Kimozabi the Male Human is standing here. (invisible)<br />
+. . . is surrounded by a shimmering light.<br />
+A beautiful white horse with majestic wings roams the area.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; get all corpse<br />
+You get a short sword from the corpse of Alynthia.<br />
+You get a white sailor's shirt from the corpse of Alynthia.<br />
+You get a wicked draconian dagger from the corpse of Alynthia.<br />
+You get a scroll of recall from the corpse of Alynthia.<br />
+You get a waterskin from the corpse of Alynthia.<br />
+You get a waterskin from the corpse of Alynthia.<br />
+You get a waterskin from the corpse of Alynthia.<br />
+You get a leather purse from the corpse of Alynthia.<br />
+You get a hoopak from the corpse of Alynthia.<br />
+You get a smoked sausage from the corpse of Alynthia.<br />
+You get a smoked sausage from the corpse of Alynthia.<br />
+You get a smoked sausage from the corpse of Alynthia.<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; <br />
+Kimozabi says 'did they kill u'<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; 'no<br />
+You say 'no'<br />
+<br />
+421H 64V 5071634X 1156C Exits:ES&gt; 'too low hehe<br />
+You say 'too low hehe'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='476'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=476">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="476">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

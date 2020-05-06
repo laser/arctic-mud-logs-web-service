@@ -1,0 +1,4265 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 407-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='407'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Raud says farewell</font></b>
+<p>
+POV: 
+Revo<p>
+Log Rating:
+2.5946<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Ive been wanting to quit this game for a while. Finally found the right oprotunity, thanks Dave for sticking with me to the end. A little goodbye is included at the end of the log. Enjoy.</i>
+<p>
+<p>
+
+Start logging: 28.10.2002 23:33<br />
+<br />
+<br />
+610H 72V 33882888X 17677C Exits:NW&gt; wAn elemental golem arrives from the east.<br />
+An elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+Inside the Gates<br />
+    As you step through the gates you see the two plain towers which you<br />
+assume serve as guard towers, however you can't make out any openings or<br />
+windows in the sides of them. A small courtyard opens up in front of you,<br />
+ending at the side of the mountain, in which you can make out the opening<br />
+leading on into darkness.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+Looking up at the towers which stand besides the gates you can't help but<br />
+get the feeling that you are being watched.<br />
+<br />
+As you pass between the towers to either side of the gates you hear a shrill<br />
+whistle as an arrow passes through the air and hits you in the chest.<br />
+<br />
+585H 70V 33882888X 17677C Exits:EW&gt; <br />
+Herc focuses on you and utters some strange words.<br />
+You suddenly feel FAST!<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; quaff metallicYou quaff a metallic silver potion which dissolves.<br />
+You feel righteous.<br />
+Your skin tightens and begins to shine like steel.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; scaLooking north:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gates is open.<br />
+Looking south:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking west:<br />
+A large courtyard begins here.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking up:<br />
+A small group of vultures circles overhead.<br />
+Looking down:<br />
+The small dirt path you are standing on seems to be quite frequently used.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; scaLooking north:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gates is open.<br />
+Looking south:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking west:<br />
+A large courtyard begins here.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking up:<br />
+A small group of vultures circles overhead.<br />
+Looking down:<br />
+The small dirt path you are standing on seems to be quite frequently used.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; <br />
+Herc utters some strange words.<br />
+Herc appears to grow stronger.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; lInside the Gates<br />
+    As you step through the gates you see the two plain towers which you<br />
+assume serve as guard towers, however you can't make out any openings or<br />
+windows in the sides of them. A small courtyard opens up in front of you,<br />
+ending at the side of the mountain, in which you can make out the opening<br />
+leading on into darkness.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; scaLooking north:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gates is open.<br />
+Looking south:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking west:<br />
+A large courtyard begins here.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking up:<br />
+A small group of vultures circles overhead.<br />
+Looking down:<br />
+The small dirt path you are standing on seems to be quite frequently used.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; gt hmm a knight wYou tell your group 'hmm a knight w'<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; scaLooking north:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gates is open.<br />
+Looking south:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking west:<br />
+A large courtyard begins here.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking up:<br />
+A small group of vultures circles overhead.<br />
+Looking down:<br />
+The small dirt path you are standing on seems to be quite frequently used.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; gt move passed itYou tell your group 'move passed it'<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; scaLooking north:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gates is open.<br />
+Looking south:<br />
+A large tower, with no apparent windows, stands here.<br />
+Looking west:<br />
+A large courtyard begins here.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking up:<br />
+A small group of vultures circles overhead.<br />
+Looking down:<br />
+The small dirt path you are standing on seems to be quite frequently used.<br />
+<br />
+530H 70V 33882888X 17677C Exits:EW&gt; wAs you attempt to stagger out of the hidden archer's view from the tower, you<br />
+feel a sharp pain as another arrow strikes you from behind.<br />
+An elemental golem arrives from the east.<br />
+An elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+In the Courtyard<br />
+    You are standing before a small courtyard. All around are young Knights<br />
+of the Lily engaging in their training exercises, many of which are so<br />
+involved in it that they do not seem to notice your presence. The courtyard<br />
+extends in all directions.<br />
+A long, hooded cloak has been left here.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+A young Knight of the order of the Lily is training here.<br />
+A Knight of the Lily delivers a quick snap kick to an elemental golem. an elemental golem staggers and tries to recover.<br />
+<br />
+509H 68V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+The courtyard extends in this direction.<br />
+A Knight of the Skull watches over the knights in training.<br />
+Looking east:<br />
+You can see the large entry gates nearby.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+The courtyard extends in this direction.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 68V 33882888X 17677C Exits:NESW&gt; wAn elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+In the Courtyard<br />
+    Young Knights of the Lily tumble about here as they practice bashing<br />
+techniques on each other here. The Clerical Skull Knights watch on, shaking<br />
+their heads sadly at the thought of the work ahead of them. Only a few of<br />
+the Knights seem to notice you, and most disregard you as spies or the like.<br />
+A breast plate is lying on the ground.<br />
+A hideous skull grins evilly at you.<br />
+Wicked looking black leg plates rest in a heap here.<br />
+A black long sword has been left here.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; <br />
+Morgion tells you 'have a pleasant evening'<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+The courtyard extends in this direction.<br />
+Looking east:<br />
+The courtyard extends in this direction.<br />
+An elemental golem is standing here, fighting a Knight of the Lily.<br />
+A Knight of the Lily is standing here, fighting an elemental golem.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+The courtyard extends in this direction.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; <br />
+Herc groans loudly.<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; <br />
+Herc tells your group 'left the thing'<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+The courtyard extends in this direction.<br />
+Looking east:<br />
+The courtyard extends in this direction.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+The courtyard extends in this direction.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; <br />
+Herc tells your group 'go back'<br />
+<br />
+509H 66V 33882888X 17677C Exits:NESW&gt; nAn elemental golem arrives from the south.<br />
+A hill giant arrives from the south.<br />
+In the Courtyard<br />
+    The Knights here are training with quarterstaffs composed of tree limbs and<br />
+cloth wrapping to help prevent painful splinters. Scattered around the floor<br />
+are the shattered remains of staffs that have served their purpose, not even<br />
+tossed into a pile. Picking up the remains of one of the staffs, you come<br />
+to the conclusion that there is a reason these are only used for training,<br />
+and that reason is: They're junk.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+<br />
+509H 64V 33882888X 17677C Exits:NES&gt; scaLooking north:<br />
+The courtyard extends in this direction.<br />
+A Knight of the Skull watches over the knights in training.<br />
+A young Knight of the order of the Lily is training here.<br />
+A Knight of the Skull watches over the knights in training.<br />
+An old mage dressed in the grey robes of the Thorn Knights wanders about here.<br />
+Looking east:<br />
+The courtyard extends in this direction.<br />
+A Knight of the Skull watches over the knights in training.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+You see the sheer rock face of the mountain.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 64V 33882888X 17677C Exits:NES&gt; sAn elemental golem arrives from the north.<br />
+A hill giant arrives from the north.<br />
+In the Courtyard<br />
+    Young Knights of the Lily tumble about here as they practice bashing<br />
+techniques on each other here. The Clerical Skull Knights watch on, shaking<br />
+their heads sadly at the thought of the work ahead of them. Only a few of<br />
+the Knights seem to notice you, and most disregard you as spies or the like.<br />
+A breast plate is lying on the ground.<br />
+A hideous skull grins evilly at you.<br />
+Wicked looking black leg plates rest in a heap here.<br />
+A black long sword has been left here.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+509H 62V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+The courtyard extends in this direction.<br />
+Looking east:<br />
+The courtyard extends in this direction.<br />
+A young Knight of the order of the Lily is training here.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+The courtyard extends in this direction.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 62V 33882888X 17677C Exits:NESW&gt; wAn elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+In the Courtyard<br />
+    You stand before a large opening in the side of the mountain. You notice<br />
+that there is little activity in the area near the opening, perhaps to avoid<br />
+an accidental collision between a training knight and one just emerging<br />
+from the tunnel.<br />
+A hideous skull grins evilly at you.<br />
+A black long sword has been left here.<br />
+A hideous skull grins evilly at you.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+A hill giant gets a black helm of the Lily.<br />
+<br />
+509H 60V 33882888X 17677C Exits:ESW&gt; scaLooking north:<br />
+You see the sheer rock face of the mountain.<br />
+Looking east:<br />
+The courtyard extends in this direction.<br />
+Looking south:<br />
+The courtyard extends in this direction.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+Your view of the sky is obscured by a thick fog.<br />
+Looking down:<br />
+The dirt here is very hard and compact due to extensive use.<br />
+<br />
+509H 60V 33882888X 17677C Exits:ESW&gt; gt coutyard repoppedYou tell your group 'coutyard repopped'<br />
+<br />
+509H 60V 33882888X 17677C Exits:ESW&gt; wAn elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+The Entrance to the Outpost<br />
+     Carved out of the mountain is the Dark Knight's outpost, hidden from<br />
+the outside world. The floor is rough, with dirt and pebbles lying about.<br />
+The lighting is poor, causing you to strain as you search about for guards.<br />
+Dark shadows dance across the walls, making you nervous as you set out<br />
+searching the area. The smell of food drifts from the north, while darkness<br />
+only allures your attention to the west.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; scaLooking north:<br />
+You see nothing special.<br />
+A hungry knight dressed in Lily armor waits eagerly for his meal.<br />
+A hungry knight dressed in Lily armor waits eagerly for his meal.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; scYou are Revo the Destroyer, a level 29 Warrior.<br />
+You are 53 years old.<br />
+You have 509(530) hit and 59(102) movement points.<br />
+Your behaviour has been Evil.<br />
+You have scored 91117112 exp, and have 17677(61911) steel coins.<br />
+You need 33882888 more experience to advance.<br />
+You have died 30 horrible deaths.<br />
+You have been connected for 7 minute(s).<br />
+You have been playing for 17 day(s), 1 hour(s) and 28 minute(s).<br />
+You are standing.<br />
+You are flying.<br />
+You are affected by the following:<br />
+    steelskin<br />
+    bless<br />
+    haste<br />
+    invisibility<br />
+    detect invisibility<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; <br />
+Herc tells your group 'laf didnt mem mass invis'<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; lThe Entrance to the Outpost<br />
+     Carved out of the mountain is the Dark Knight's outpost, hidden from<br />
+the outside world. The floor is rough, with dirt and pebbles lying about.<br />
+The lighting is poor, causing you to strain as you search about for guards.<br />
+Dark shadows dance across the walls, making you nervous as you set out<br />
+searching the area. The smell of food drifts from the north, while darkness<br />
+only allures your attention to the west.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; scaLooking north:<br />
+You see nothing special.<br />
+A hungry knight dressed in Lily armor waits eagerly for his meal.<br />
+A hungry knight dressed in Lily armor waits eagerly for his meal.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; gt goingYou tell your group 'going'<br />
+<br />
+509H 59V 33882888X 17677C Exits:NEW&gt; wAn elemental golem arrives from the east.<br />
+A hill giant arrives from the east.<br />
+An Intersection<br />
+    You have come to an intersection in the tunnels. Something seems strange<br />
+about this room, but you can't seem to determine what that is. From the west<br />
+you hear the sounds of snoring and occasionally the high pitched sound of<br />
+metal meeting metal rings out. The southern tunnel is draped in a darkness<br />
+that your torches cannot penetrate. You can hear a low, chant coming from<br />
+that direction. Oddly there is a small grate set into the floor here, with<br />
+no trace of any liquid having ever flowed through it.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; scaLooking north:<br />
+The wall to the north seems strange. There is a small inscription on it.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+A thick, cold darkness emanates from these tunnels.<br />
+Looking west:<br />
+You can see a faint light at the end of the tunnel.<br />
+Looking up:<br />
+The top of the cavern is hidden behind a curtain of shadows.<br />
+Looking down:<br />
+The condition of the ground indicates signs of heavy traffic.<br />
+The grate is open.<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; gt ready?You tell your group 'ready?'<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; eqYou are using:<br />
+&lt;used as light&gt;            a battle banner of the dragonarmies..it glows dimly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a thick purple cloak with a silver draconian brooch<br />
+&lt;worn around neck&gt;         the Gargoyle chieftain's cloak<br />
+&lt;worn on body&gt;             a heavy plate of the Lily<br />
+&lt;worn on head&gt;             a death helmet..it glows dimly<br />
+&lt;worn on legs&gt;             anklets of woven palladium..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of wicked black boots<br />
+&lt;worn on hands&gt;            a pair of silver dwarven gauntlets<br />
+&lt;worn on arms&gt;             a pair of spiked battle armets..it glows dimly<br />
+&lt;worn as shield&gt;           a heavy spiked shield<br />
+&lt;worn about body&gt;          a large backpack<br />
+&lt;worn about waist&gt;         an indigo leather scabbard<br />
+&lt;worn around right wrist&gt;  a wrist buckler<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows dimly<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a bloody minotaur hand axe<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears [2]<br />
+a glowing scroll of recall..it glows dimly<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; <br />
+Herc tells your group 'go'<br />
+<br />
+509H 58V 33882888X 17677C Exits:ESWD&gt; sAn elemental golem arrives from the north.<br />
+A hill giant arrives from the north.<br />
+A Dark Tunnel<br />
+    Hardly any light illuminates the tunnels as you attempt to feel your way<br />
+through them. Stale air fill your nostrils as you take a deep breath, hoping<br />
+not to alert any of the knights to your position. You can hear a low chanting<br />
+sound coming from all directions here except to the north.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+<br />
+509H 57V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+You can see the main intersection of the tunnels.<br />
+Looking east:<br />
+A dark chamber lies in this direction.<br />
+Looking south:<br />
+The tunnels continues into darkness.<br />
+Looking west:<br />
+A dark chamber lies in this direction.<br />
+Looking up:<br />
+The top of the tunnel is hidden in shadows.<br />
+Looking down:<br />
+The condition of the stone floor indicates heavy traffic.<br />
+<br />
+509H 57V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+You can see the main intersection of the tunnels.<br />
+Looking east:<br />
+A dark chamber lies in this direction.<br />
+Looking south:<br />
+The tunnels continues into darkness.<br />
+Looking west:<br />
+A dark chamber lies in this direction.<br />
+Looking up:<br />
+The top of the tunnel is hidden in shadows.<br />
+Looking down:<br />
+The condition of the stone floor indicates heavy traffic.<br />
+<br />
+509H 57V 33882888X 17677C Exits:NESW&gt; sAn elemental golem arrives from the north.<br />
+A hill giant arrives from the north.<br />
+A Dark Tunnel<br />
+    The tunnel here ends in a sharp wall, with a small opening in it from<br />
+which light streams forth. You can hear a low murmur coming from the east<br />
+and west, while you hear only silence from the south. You feel a sudden<br />
+chill and cannot escape the feeling that you are being watched.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+<br />
+509H 56V 33882888X 17677C Exits:NESW&gt; scaLooking north:<br />
+The tunnel continues into darkness.<br />
+Looking east:<br />
+A dark chamber lies in this direction.<br />
+Looking south:<br />
+A faint light is visible through an opening in this wall.<br />
+Hopkins, Darkness of Death is standing here.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Lite Frost, Winters Wild Dawning is resting here. (flying) (invisible)<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassArdinghelli the Wildrunner is resting here. (flying)<br />
+A dark paladin kneels here before a small altar, praying to his dark queen.<br />
+Looking west:<br />
+A dark chamber lies in this direction.<br />
+Looking up:<br />
+The top of the tunnel is hidden in shadows.<br />
+Looking down:<br />
+The condition of the stone floor indicates heavy traffic.<br />
+<br />
+509H 56V 33882888X 17677C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+509H 56V 33882888X 17677C Exits:NESW&gt; sAn elemental golem arrives from the north.<br />
+A hill giant arrives from the north.<br />
+The Skull Champion's Chamber<br />
+    The chamber of the Skull Champion is plain and undecorative, save the<br />
+symbols to his dark queen. A dark stone altar is against the southern wall,<br />
+polished to a delicate shine. Two black wax candles are placed on either end of<br />
+the altar, casting two dark shadows of the knight on opposite ends of the room.<br />
+A plain bed also adds no glamour to the room, with its bedding undisturbed for<br />
+ages. The exit only lies towards the north.<br />
+A hill giant is roaming around looking for something to kill.<br />
+A large golem made from four different stones looms over you.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Hopkins, Darkness of Death is standing here.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Lite Frost, Winters Wild Dawning is resting here. (flying) (invisible)<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassArdinghelli the Wildrunner is resting here. (flying)<br />
+A dark paladin kneels here before a small altar, praying to his dark queen.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; The Champion of the Skull glares at you for disturbing his prayers with a<br />
+feeble attempt at an attack, then utters a strange incantation with his eyes<br />
+fixxed on the symbol of Takhisis on the altar. Suddenly the shadows of the<br />
+dark paladin, cast by the black candles on the altar come to life, and leap to<br />
+the aid of the Skull Knight!<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; stYou are already standing.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; <br />
+Herc gives a hill giant an order.<br />
+A hill giant crashes into Cass in a thundering collision, knocking her to the ground!<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; <br />
+Herc issues the order 'kick cass'.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; <br />
+Herc focuses harshly on Cass and utters some strange words.<br />
+Herc slowly fades into existence.<br />
+Cass wavers under the impact of the lightning bolt sent by Herc.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; <br />
+A hill giant massacres Cass with its hit.<br />
+A hill giant massacres Cass with its pierce.<br />
+A hill giant hits Cass extremely hard.<br />
+Cass slowly fades into existence.<br />
+Cass misses a hill giant with her hit.<br />
+<br />
+509H 55V 33882888X 17677C Exits:N&gt; bash cassYou crash into Cass in a bone crunching bash, sending her sprawling to the ground.<br />
+<br />
+509H 55V 33882888X 17677C [a hill giant:Good] [Cass:V.Bad] Exits:N&gt; stbashst<br />
+Ronin slowly fades into existence.<br />
+Ronin pierces a hill giant very hard.<br />
+<br />
+509H 55V 33882888X 17677C [a hill giant:Fair] [Cass:V.Bad] Exits:N&gt; bashst<br />
+A dark shadow kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+491H 55V 33882888X 17677C [a hill giant:Fair] [Cass:V.Bad] Exits:N&gt; <br />
+A dark shadow spins and tries to kick Ardinghelli, but Ardinghelli dodges out of the way.<br />
+Herc focuses harshly on Cass and utters some strange words.<br />
+Herc slowly fades into existence.<br />
+Cass wavers under the impact of the lightning bolt sent by Herc.<br />
+<br />
+491H 55V 33882888X 17677C [a hill giant:Fair] [Cass:Awful] Exits:N&gt; <br />
+Lite stands up.<br />
+<br />
+491H 55V 33882888X 17677C [a hill giant:Fair] [Cass:Awful] Exits:N&gt; <br />
+Ardinghelli sinks gently to the ground.<br />
+Ardinghelli stops using a condor feather.<br />
+Ardinghelli grabs a glowing scroll of recall.<br />
+Ardinghelli recites a glowing scroll of recall.<br />
+Cass disappears.<br />
+You direct your attention to a dark shadow.<br />
+<br />
+491H 55V 33882888X 17677C [Revo:V.Good] [a dark shadow:Perfect] Exits:N&gt; <br />
+You cleave a dark shadow extremely hard.<br />
+A hill giant hits Ronin extremely hard.<br />
+A hill giant pierces Ronin extremely hard.<br />
+A dark shadow massacres Ardinghelli with its drain.<br />
+Ardinghelli massacres a dark shadow with his smite.<br />
+A dark shadow drains YOU hard.<br />
+A dark shadow misses you with its drain.<br />
+Ronin pierces a hill giant extremely hard.<br />
+Ronin pierces a hill giant hard.<br />
+The Champion of the Skull gazes at you with a look of evilness.<br />
+The Champion of the Skull hits YOU very hard.<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; bash ardinghelli<br />
+Lite gets a scroll from her pants.<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; st<br />
+A hill giant delivers a vicious kick to Ronin's face. Blood flies as his head snaps back.<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; flefles<br />
+Lite grabs a glowing scroll of recall.<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+Ronin panics, and attempts to flee.<br />
+Ronin flies north.<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+Herc tells your group 'Tick in 10'<br />
+<br />
+469H 55V 33882528X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; The Champion of the Skull massacres YOU with his hit.<br />
+You massacre a dark shadow with your cleave.<br />
+A dark shadow drains Ardinghelli extremely hard.<br />
+Ardinghelli massacres a dark shadow with his smite.<br />
+A dark shadow drains YOU very hard.<br />
+A dark shadow drains YOU hard.<br />
+You are already standing.<br />
+Herc gives a hill giant an order.<br />
+Ardinghelli steps aside as a hill giant attempts a bash, stumbles, and falls flat on its face.<br />
+<br />
+429H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; You try to bash a dark shadow, but you miss and tumble forward onto your face.<br />
+Herc issues the order 'kick ardinghelli'.<br />
+An elemental golem delivers a quick snap kick to Ardinghelli. Ardinghelli staggers and tries to recover.<br />
+An elemental golem loses its balance and tumbles to the ground.<br />
+<br />
+429H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; bash ardinghelli<br />
+A dark shadow strikes your weapon, but you maintain your grip on it.<br />
+<br />
+429H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+A dark shadow crashes into Ardinghelli in a thundering collision, knocking him to the ground!<br />
+<br />
+429H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+You feel ribs crack as you are kicked in the chest by the Champion of the Skull.<br />
+<br />
+404H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+Herc focuses harshly on Ardinghelli and utters some strange words.<br />
+Herc slowly fades into existence.<br />
+Ardinghelli wavers under the impact of the lightning bolt sent by Herc.<br />
+<br />
+404H 55V 33882132X 17677C [Revo:Good] [a dark shadow:V.Good] Exits:N&gt; <br />
+A hill giant stands up.<br />
+An elemental golem massacres Ardinghelli with its hit.<br />
+A hill giant massacres Ardinghelli with its hit.<br />
+A hill giant massacres Ardinghelli with its pierce.<br />
+A hill giant massacres Ardinghelli with its hit.<br />
+The Champion of the Skull massacres YOU with his hit.<br />
+You massacre a dark shadow with your cleave.<br />
+A dark shadow massacres Ardinghelli with its drain.<br />
+A dark shadow drains Ardinghelli extremely hard.<br />
+Ardinghelli massacres a dark shadow with his smite.<br />
+A dark shadow drains YOU very hard.<br />
+A dark shadow drains YOU hard.<br />
+A dark shadow strikes your weapon, but you maintain your grip on it.<br />
+A hill giant looks really sick, and shivers uncomfortably.<br />
+<br />
+375H 76V 33881754X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; You stand up.<br />
+<br />
+375H 76V 33881754X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; get vial packquaff small.vialYou try to bash a dark shadow, but you miss and tumble forward onto your face.<br />
+<br />
+375H 76V 33881754X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; st<br />
+A dark shadow delivers a vicious kick to Ardinghelli's face. Blood flies as his head snaps back.<br />
+<br />
+375H 76V 33881754X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; <br />
+The Champion of the Skull utters some strange words.<br />
+Herc focuses harshly on Ardinghelli and utters some strange words.<br />
+Herc slowly fades into existence.<br />
+Ardinghelli receives the full blast of a lightning bolt from Herc ... and is no more.<br />
+You receive 0 experience.<br />
+Ardinghelli is dead! R.I.P.<br />
+get pile.coins corpseexa corpse<br />
+375H 76V 33881754X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; <br />
+The Champion of the Skull hits YOU extremely hard.<br />
+The Champion of the Skull massacres YOU with his hit.<br />
+You massacre a dark shadow with your cleave.<br />
+A dark shadow misses you with its drain.<br />
+You feel ribs crack as you are kicked in the chest by a dark shadow.<br />
+You dodge out of the way of a dark shadow's mistargeted kick.<br />
+The death cry of Ardinghelli echoes from somewhere nearby...<br />
+Cass stops following Ardinghelli.<br />
+Lite stops following Ardinghelli.<br />
+Ronin stops following Ardinghelli.<br />
+Hopkins stops following Ardinghelli.<br />
+<br />
+322H 76V 33881340X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; st<br />
+Hopkins gets the quester rod from the corpse of Ardinghelli.<br />
+Hopkins gets a spiked ice bracelet from the corpse of Ardinghelli.<br />
+Hopkins gets a spiked ice bracelet from the corpse of Ardinghelli.<br />
+Hopkins gets a white and gold sash of rank from the corpse of Ardinghelli.<br />
+Hopkins gets a weatherbeaten rucksack from the corpse of Ardinghelli.<br />
+Hopkins gets a wooden shield of dragons from the corpse of Ardinghelli.<br />
+Hopkins gets a pair of black leather sleeves from the corpse of Ardinghelli.<br />
+Hopkins is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Hopkins gets a pair of barbed wire boots from the corpse of Ardinghelli.<br />
+Hopkins gets a leather battle kilt from the corpse of Ardinghelli.<br />
+Hopkins gets a black domino from the corpse of Ardinghelli.<br />
+Hopkins is zapped by a suit of brushed steel platemail and instantly drops it.<br />
+Hopkins gets a black steel locket from the corpse of Ardinghelli.<br />
+Hopkins gets a malachite ring from the corpse of Ardinghelli.<br />
+Hopkins gets a very large pile of coins from the corpse of Ardinghelli.<br />
+Hopkins gets a condor feather from the corpse of Ardinghelli.<br />
+Hopkins gets a small black key from the corpse of Ardinghelli.<br />
+Hopkins gets a handful of gummy bears from the corpse of Ardinghelli.<br />
+Hopkins gets a handful of gummy bears from the corpse of Ardinghelli.<br />
+<br />
+322H 76V 37m33881340X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; fle<br />
+Lite gets the amulet of Kul from the corpse of Ardinghelli.<br />
+Lite gets a small leather pouch from the corpse of Ardinghelli.<br />
+Lite gets a silver pitcher from the corpse of Ardinghelli.<br />
+<br />
+322H 76V 33881340X 17677C [Revo:Fair] [a dark shadow:Good] Exits:N&gt; fle<br />
+The Champion of the Skull massacres YOU with his hit.<br />
+The Champion of the Skull massacres YOU with his hit.<br />
+You massacre a dark shadow with your cleave.<br />
+A dark shadow drains YOU hard.<br />
+You feel ribs crack as you are kicked in the chest by a dark shadow.<br />
+<br />
+245H 76V 33880890X 17677C [Revo:Bad] [a dark shadow:Good] Exits:N&gt; <br />
+Lite gets a suit of brushed steel platemail.<br />
+Lite gets some brushed steel gauntlets.<br />
+Lite gets the corpse of Ardinghelli.<br />
+<br />
+245H 76V 33880890X 17677C [Revo:Bad] [a dark shadow:Good] Exits:N&gt; stfleYou stand up.<br />
+<br />
+245H 76V 33880890X 17677C [Revo:Bad] [a dark shadow:Good] Exits:N&gt; You couldn't find what you were looking for.<br />
+You are already standing.<br />
+<br />
+245H 76V 33880890X 17677C [Revo:Bad] [a dark shadow:Good] Exits:N&gt; PANIC! You couldn't escape!<br />
+<br />
+245H 76V 33880890X 17677C [Revo:Bad] [a dark shadow:Good] Exits:N&gt; You flee head over heels.<br />
+A Dark Tunnel<br />
+    The tunnel here ends in a sharp wall, with a small opening in it from<br />
+which light streams forth. You can hear a low murmur coming from the east<br />
+and west, while you hear only silence from the south. You feel a sudden<br />
+chill and cannot escape the feeling that you are being watched.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+<br />
+245H 75V 33881709X 17677C Exits:NESW&gt; The Skull Champion's Chamber<br />
+    The chamber of the Skull Champion is plain and undecorative, save the<br />
+symbols to his dark queen. A dark stone altar is against the southern wall,<br />
+polished to a delicate shine. Two black wax candles are placed on either end of<br />
+the altar, casting two dark shadows of the knight on opposite ends of the room.<br />
+A plain bed also adds no glamour to the room, with its bedding undisturbed for<br />
+ages. The exit only lies towards the north.<br />
+A dark shadow stretches across the floor.<br />
+A dark shadow stretches across the floor.<br />
+A hill giant is roaming around looking for something to kill.<br />
+An elemental golem is sitting here.<br />
+Herc Ules is standing here. (flying) (invisible)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Hopkins, Darkness of Death is standing here.<br />
+Lite Frost, Winters Wild Dawning is standing here. (flying) (invisible)<br />
+A dark paladin kneels here before a small altar, praying to his dark queen.<br />
+You couldn't find what you were looking for.<br />
+<br />
+245H 74V 33881709X 17677C Exits:N&gt; <br />
+Herc gives a hill giant an order.<br />
+<br />
+245H 74V 33881709X 17677C Exits:N&gt; You get a small vial from a large backpack.<br />
+<br />
+245H 74V 33881709X 17677C Exits:N&gt; You quaff a small vial which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+<br />
+<br />
+Later I decided to just fight off to the death, I knew I would last a while and<br />
+planned on deleteing afterwards. Was very surprised to see BSP come to my aid<br />
+but hey, if these havnt been the strangest passed couple weeks on mud then I <br />
+dunno, its like mudding on acid!<br />
+<br />
+530H 70V 33880773X 16677C Exits:D&gt; Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass Cass. . . is outlined with a dim aura.<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+530H 70V 33880773X 16677C Exits:D&gt; You couldn't find what you were looking for.<br />
+<br />
+530H 70V 33880773X 16677C Exits:D&gt; <br />
+Ardinghelli flies in from below.<br />
+Randival flies in from below.<br />
+Effren flies in from below.<br />
+Cass flies in from below.<br />
+bash cass CassRonin flies in from below.<br />
+<br />
+530H 70V 33880773X 16677C Exits:D&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+530H 70V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:D&gt; dBut it's so peaceful here!<br />
+<br />
+530H 70V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:D&gt; nYou can't do that while fighting.<br />
+<br />
+530H 70V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:D&gt; eYou can't do that while fighting.<br />
+<br />
+530H 70V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:D&gt; You can't do that while fighting.<br />
+<br />
+530H 70V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:D&gt; fleYou flee head over heels.<br />
+The Ebullient Elephant Inn<br />
+    This spacious tavern is full of customers. This is obviously a favorite<br />
+hangout of many of Palanthas's middle class citizens. There is a bar<br />
+against one wall and a staircase leading upstairs to the room clerk's<br />
+office. The only exit is back north to Sword Street.<br />
+Floyd, the barkeep, idly whistles a merry tune while polishing the bar.<br />
+<br />
+530H 69V 33880773X 16677C Exits:NU&gt; stYou are already standing.<br />
+<br />
+530H 69V 33880773X 16677C Exits:NU&gt; nSword Street<br />
+    This block of Sword Street is in the southwestern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+<br />
+530H 68V 33880773X 16677C Exits:ESW&gt; eIntersection: Sword Street and Southern Avenue<br />
+    Sword Street and Southern Avenue intersect here. Sword Street continues<br />
+to the east and west. Southern Avenue leads south towards the Old City wall<br />
+and north towards the central plaza.<br />
+<br />
+530H 67V 33880773X 16677C Exits:NESW&gt; eSword Street<br />
+    This block of Sword Street is in the southeastern part of the city. The<br />
+back of a large building can be seen to the north. The entrance is probably<br />
+on Rose Street. There is a small store to the south emitting a strange<br />
+light. Sword Street continues to the east and west.<br />
+<br />
+530H 66V 33880773X 16677C Exits:ESW&gt; eSword Street<br />
+    This block of Sword Street is in the southeastern part of the city. A<br />
+sign hangs in front of one of the buildings to the south. Sword Street<br />
+continues to the east and west.<br />
+<br />
+530H 65V 33880773X 16677C Exits:ESW&gt; eIntersection: Sword Street and Southeastern Avenue<br />
+    Sword Street and Southeastern Avenue cross here. Sword Street continues<br />
+to the east and west. Southeastern Avenue lies to the north and south.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+530H 64V 33880773X 16677C Exits:NESW&gt; eeSword Street<br />
+    This is the southeastern corner of Sword Street. This corner of the<br />
+city is virtually dominated by large homes, obviously the owners are of<br />
+Palanthas's nobility. Sword Street continues to the north and west.<br />
+A Palanthanian guard is here serving and protecting the citizens of Palanthas.<br />
+A young adventurer newly arrived in town is looking for the tavern.<br />
+<br />
+530H 63V 33880773X 16677C Exits:NW&gt; eeAlas, you cannot go that way...<br />
+<br />
+530H 63V 33880773X 16677C Exits:NW&gt; Alas, you cannot go that way...<br />
+<br />
+530H 63V 33880773X 16677C Exits:NW&gt; nnAlas, you cannot go that way...<br />
+<br />
+530H 63V 33880773X 16677C Exits:NW&gt; Sword Street<br />
+    This block of Sword Street is in the southeastern part of the city.<br />
+More, less than modest, mansions can be seen along the street. Further<br />
+attesting to Palanthas's notoriety as a home for the rich and powerful.<br />
+Sword Street continues to the north and south.<br />
+A large pigeon is here pecking at some bread crumbs.<br />
+<br />
+530H 62V 33880773X 16677C Exits:NS&gt; Sword Street<br />
+    This block of Sword Street is in the southeastern part of the city. The<br />
+houses, mansions really, are slowly increasing in size and opulence. Sword<br />
+Street continues to the north and south.<br />
+<br />
+530H 61V 33880773X 16677C Exits:NS&gt; nIntersection: Sword Street and Eastern Avenue<br />
+    This is where Sword Street and Eastern Avenue meet. Sword Street<br />
+continues to the north and south and Eastern Avenue extends east towards<br />
+the Old City wall and west towards the central plaza.<br />
+<br />
+530H 60V 33880773X 16677C Exits:NESW&gt; nSword Street<br />
+    This block of Sword Street is in the northeastern part of the city.<br />
+This is the southern part of the infamous Noble's Hill. Huge estates,<br />
+crafted from marble and gilded with gold, can be seen from the street.<br />
+Sword Street continues to the north and south.<br />
+<br />
+530H 59V 33880773X 16677C Exits:NS&gt; nSword Street<br />
+    This block of Sword Street is in the northeastern part of the city.<br />
+This is the northern part of the infamous Noble's Hill. Here can be seen<br />
+the largest estates of all Ansalon. The only things larger are probably the<br />
+egos of the owners. A large, stately building lies immediately to the east<br />
+of the street. Sword Street continues to the north and south.<br />
+A streetsweeper is here keeping Palanthas tidy.<br />
+<br />
+530H 58V 33880773X 16677C Exits:NES&gt; eKnights' Post<br />
+    This building is for warriors of all ilk. Here they can fine tune their<br />
+skills and perhaps petition to join the Knights of Solamnia. The halls for<br />
+warriors, rangers, and paladins, lie to the north, south, and east,<br />
+respectively.<br />
+<br />
+530H 57V 33880773X 16677C Exits:NESW&gt; ePaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+530H 56V 33880773X 16677C Exits:W&gt; eAlas, you cannot go that way...<br />
+<br />
+530H 56V 33880773X 16677C Exits:W&gt; eAlas, you cannot go that way...<br />
+<br />
+530H 56V 33880773X 16677C Exits:W&gt; inYou are carrying:<br />
+a bloody minotaur hand axe<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+530H 56V 33880773X 16677C Exits:W&gt; grab axeYou start using the axe as a secondary weapon.<br />
+<br />
+530H 56V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a thick purple cloak with a silver draconian brooch<br />
+&lt;worn around neck&gt;         the Gargoyle chieftain's cloak<br />
+&lt;worn on body&gt;             a heavy plate of the Lily<br />
+&lt;worn on head&gt;             a death helmet..it glows dimly<br />
+&lt;worn on legs&gt;             anklets of woven palladium..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of wicked black boots<br />
+&lt;worn on hands&gt;            a pair of silver dwarven gauntlets<br />
+&lt;worn on arms&gt;             a pair of spiked battle armets..it glows dimly<br />
+&lt;worn about body&gt;          a large backpack<br />
+&lt;worn about waist&gt;         an indigo leather scabbard<br />
+&lt;worn around right wrist&gt;  a wrist buckler<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in primary hand&gt;     a heavy rune-inscribed battle axe..it glows dimly<br />
+&lt;used in secondary hand&gt;   a bloody minotaur hand axe<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; exa packThe backpack appears rough and in perfect condition.<br />
+backpack (used) : <br />
+a thick wool coat<br />
+a scribed scroll<br />
+a sealed scroll<br />
+a rolled white parchment [2]<br />
+a swirling black potion [2]<br />
+a small vial<br />
+a grooved dagger<br />
+a brewed potion<br />
+a waterskin<br />
+a brewed potion<br />
+a small canteen<br />
+a milky potion of see invisible<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Lady Charity Wroth kneels and speaks a prayer to Paladine.<br />
+Lady Charity Wroth utters some strange words.<br />
+Lady Charity Wroth is surrounded by a white aura.<br />
+Lady Charity Wroth opens her prayerbook and begins reading it intently.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; whoImmortals<br />
+---------<br />
+[      God      ] Kael Kegtapper<br />
+[      God      ] Qued Troglodyte, Scribe of Darkness<br />
+<br />
+Mortals<br />
+-------<br />
+Tarab Lee, Bad<br />
+Rothenburg the Male Human<br />
+Lady Oneex Pearle, Second Lieutenant of the Dark Wing<br />
+Denday, Sheep Amongst the Wolves<br />
+Pohaku the Female Hill Dwarf<br />
+Hima the Male Gnome<br />
+Helga the Female Kender<br />
+Samander the Male Gnome<br />
+Sytho Mir, Religious Swordsman of the Kirath<br />
+Kaynin the Male Half Elf<br />
+Ajhe the Male Kender<br />
+Makabi the Male Human<br />
+Hotar the Male Human<br />
+Baldaar the Male Hill Dwarf<br />
+Yang the Male Hylar Dwarf<br />
+<br />
+ [return for more, q to stop]l<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Hotar appears before you in a puff of smoke.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; peerYou peer around you.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Hotar says 'dude?'<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Hotar says 'whats going on?'<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Hotar begins resting but stays aloft.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; sa fighting wildsYou say 'fighting wilds'<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Hotar the Male Human is resting here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; tel denday run to pal fastHe can't hear you.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Hotar says 'huh?'<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Hotar the Male Human is resting here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli flies in from the west.<br />
+Cass flies in from the west.<br />
+bash cass Cass<br />
+530H 76V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+530H 76V 33880773X 16677C Exits:W&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+530H 76V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Perfect] Exits:W&gt; <br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+515H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Hotar says 'now your fightning everyone!'<br />
+<br />
+515H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; peerYou peer around you.<br />
+<br />
+515H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassArdinghelli the Wildrunner is sitting here, fighting YOU. (flying)<br />
+Hotar the Male Human is resting here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+515H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; But it's so peaceful here!<br />
+<br />
+515H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; sa yup<br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; You say 'yup'<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Kram shouts 'looking for a l.blade offy'<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+498H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axe<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday tells you 'what u doin'<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli looks at you.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+Cass looks at you.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday tells you 'u comin newport or what'<br />
+<br />
+481H 76V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; tel denday fightingYou tell Denday 'fighting'<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Hotar stands up.<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Hotar looks at you.<br />
+<br />
+465H 76V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; get axeThe Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+Lady Charity Wroth closes her prayerbook with a content look on her face.<br />
+You don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli strikes your weapon, but you maintain your grip on it.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axe<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+471H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+454H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeThe Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli very hard.<br />
+You don't see what you are looking for here.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Cass glances at you.<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; tel hotar str meYou tell Hotar 'str me'<br />
+<br />
+429H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axe<br />
+Denday tells you 'coming'<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+414H 96V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; get axeThe Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+You don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday tells you 'i got scrolsl running'<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli strikes your weapon, but you maintain your grip on it.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Hotar tells you 'non memed!'<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+396H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli hard.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+373H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli hard.<br />
+Ardinghelli slashes YOU very hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+362H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axe<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Suntz now follows Ardinghelli.<br />
+Ardinghelli is the new leader of Suntz's group.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+335H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; get axeDenday tells you 'can u last 2tic?'<br />
+You don't see what you are looking for here.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; reply yahYou tell Denday 'yah'<br />
+<br />
+318H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass utters some strange words.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper appears before you in a puff of smoke.<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; exa packThe backpack appears rough and in perfect condition.<br />
+backpack (used) : <br />
+a thick wool coat<br />
+a scribed scroll<br />
+a sealed scroll<br />
+a rolled white parchment [2]<br />
+a swirling black potion [2]<br />
+a small vial<br />
+a grooved dagger<br />
+a brewed potion<br />
+a waterskin<br />
+a brewed potion<br />
+a small canteen<br />
+a milky potion of see invisible<br />
+<br />
+303H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+288H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+288H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+288H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+Ardinghelli strikes your weapon, but you maintain your grip on it.<br />
+<br />
+267H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Limper glances at you.<br />
+<br />
+267H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; snickerYou snicker softly.<br />
+<br />
+267H 96V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+249H 96V 33880773X 16677C [Revo:Bad] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+249H 96V 33880773X 16677C [Revo:Bad] [Ardinghelli:Bad] Exits:W&gt; get axeCass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+You don't see what you are looking for here.<br />
+<br />
+249H 96V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU very hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli disarms your weapon.<br />
+get emerald.shortget axe<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; You get a heavy rune-inscribed battle axe.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper glances at Ardinghelli.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; wield axeYou start using the axe.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass looks at Limper.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+231H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+231H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; get axe<br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli disarms your weapon.<br />
+get emerald.shortget axe<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+212H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; You get a heavy rune-inscribed battle axe.<br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+193H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+193H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+<br />
+Sulie stops following Limper.<br />
+<br />
+193H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+193H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+193H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+174H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; inYou are carrying:<br />
+a heavy rune-inscribed battle axe..it glows dimly<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+174H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; wield axeYou start using the axe.<br />
+<br />
+174H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+174H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli strikes your weapon, but you maintain your grip on it.<br />
+<br />
+174H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; get axe<br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+159H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Bad] Exits:W&gt; get axe<br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+159H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Bad] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+159H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Bad] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+159H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Bad] Exits:W&gt; get axeThe Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli extremely hard.<br />
+You don't see what you are looking for here.<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Good] Exits:W&gt; get vial packquaff small.vialYou get a swirling black potion from a large backpack.<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Good] Exits:W&gt; Unable to find the item you wish to quaff.<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+139H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:V.Good] Exits:W&gt; quaff swirlingYou quaff a swirling black potion which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axe<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Sulie appears before Limper in a puff of smoke.<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; get axe<br />
+Hotar rolls on the floor in a fit of laughter.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You cleave Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You massacre Ardinghelli with your cleave.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; sa revos last standYou say 'revos last stand'<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; get axeget axest<br />
+                               Welcome to<br />
+     ___<br />
+    (___)     @@@@@ @@@@@@@@@   @@@@@@@@ @@@@@@@@@@@ @@@@@@@ @@@@@@@@<br />
+     ==_     @@@@@@ @@@   @@@@ @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     =/.   @@@@@@@ @@@    @@@ @@@    @@@    @@@       @@@  @@@    @@@<br />
+     //-&quot;  @@@@ @@@ @@@   @@@@ @@@           @@@       @@@  @@@<br />
+ /--//==---@@  @@@ @@@@@@@@@  @@@           @@@       @@@  @@@<br />
+    \ | @@@@   @@@ @@@ @@@@   @@@    @@@    @@@       @@@  @@@    @@@<br />
+     \|@@@@@@@@@@@ @@@  @@@@  @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     |\@@@     @@@ @@@   @@@@  @@@@@@@@     @@@     @@@@@@@ @@@@@@@@<br />
+     | \<br />
+     | |/ O==========================================================O<br />
+     | |  | Based on DikuMUD I by Michael Seifert, Sebastian Hammer, |<br />
+    /| |  |   Hans Henrik Staerfeldt, Katja Nyboe, and Tom Madsen.   |<br />
+    \ |  |                                                          |<br />
+     \|  |        Mail may be directed to gods@mud.arctic.org       |<br />
+     |\  |                                                          |<br />
+     | \ |           ** Be sure to visit our web page! **           |<br />
+     | |/ |                 http://mud.arctic.org                    |<br />
+      |  O==========================================================O<br />
+      |<br />
+<br />
+Type 'start' to create a new character.<br />
+What is your character's name? revoPassword: iruleyouall<br />
+<br />
+<br />
+You were last connected Mon Oct 28 23:51:53 2002 EST from 64.128.175.37.<br />
+Reconnecting.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; st<br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; You are already standing.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Ronin No Name is standing here. (flying)<br />
+Lilly, Pure as the Driven Snow is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassArdinghelli the Wildrunner is sitting here, fighting YOU. (flying)<br />
+Hotar the Male Human is standing here. (flying)<br />
+The Knight of Solamnia is standing here, fighting Ardinghelli.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; But it's so peaceful here!<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; snickerYou snicker softly.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; sa im still aliveYou say 'im still alive'<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly begins resting but stays aloft.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; get axeYou don't see what you are looking for here.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly says 'geezus'<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ronin looks at you.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly says 'dude'<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Elyana begins resting but stays aloft.<br />
+<br />
+290H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+266H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+266H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; exa chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a blue potion of remove poison [2]<br />
+a demonic cape<br />
+a little blue wand..it glows dimly..it hums softly [2]<br />
+a milky potion of see invisible<br />
+a wooden ring<br />
+<br />
+266H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli slashes YOU very hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+Elyana closes her spellbook with a content look on her face.<br />
+Hotar closes his spellbook with a content look on his face.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Ronin tilts back a portable keg and swallows a few mouthfuls.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Lilly looks at Ardinghelli.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; tel htoar get me a axe<br />
+Elyana looks at Ardinghelli.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; No such person around.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is resting here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ronin No Name is standing here. (flying)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassArdinghelli the Wildrunner is sitting here, fighting YOU. (flying)<br />
+Hotar the Male Human is standing here. (flying)<br />
+The Knight of Solamnia is standing here, fighting Ardinghelli.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Oscarr flies in from the west.<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; But it's so peaceful here!<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Cass gets a bears from her chest.<br />
+Ardinghelli stands up.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Cass tosses a handful of gummy bears in her mouth and smiles.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Limper gets a scroll from its robe.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ronin looks at you.<br />
+<br />
+250H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+Oscarr gives a glowing scroll of recall to Limper.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Elyana looks at you.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; get vial chestThe chest doesn't seem to have what you are looking for.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Lilly looks at Limper.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Lilly stands up.<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; exa packThe backpack appears rough and in perfect condition.<br />
+backpack (used) : <br />
+a thick wool coat<br />
+a scribed scroll<br />
+a sealed scroll<br />
+a rolled white parchment [2]<br />
+a swirling black potion<br />
+a small vial<br />
+a grooved dagger<br />
+a brewed potion<br />
+a waterskin<br />
+a brewed potion<br />
+a small canteen<br />
+a milky potion of see invisible<br />
+<br />
+215H 113V 33880773X 16677C [Revo:Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+195H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Ronin glances at you.<br />
+<br />
+195H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+195H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; get vial packquaff small.vialYou get a swirling black potion from a large backpack.<br />
+<br />
+195H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; Unable to find the item you wish to quaff.<br />
+<br />
+195H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+Cass utters some strange words.<br />
+<br />
+176H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Elyana stands up.<br />
+<br />
+176H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+You step aside as Ardinghelli tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+176H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+176H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+Hotar glances at you.<br />
+<br />
+176H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+167H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+167H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+Denday tells you 'where at?'<br />
+<br />
+167H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hotar sighs loudly.<br />
+<br />
+167H 113V 33880773X 16677C [Revo:V.Bad] [Ardinghelli:Fair] Exits:W&gt; quaff swirlingYou quaff a swirling black potion which dissolves.<br />
+You heal yourself.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Elyana utters some strange words.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; tel denday paladinsYou tell Denday 'paladins'<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hotar rolls on the floor in a fit of laughter.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli panics, and attempts to flee.<br />
+Ardinghelli flies west.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli flies in from the west.<br />
+Suntz flies in from the west.<br />
+Effren flies in from the west.<br />
+Randival flies in from the west.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin gets a scroll from his chest.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin grabs a glowing scroll of recall.<br />
+Ronin recites a glowing scroll of recall.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; tel hotar get me a weapYou tell Hotar 'get me a weap'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; You are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday flies in from the west.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly looks at Ronin.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at you.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gives a glowing scroll of recall to Lilly.<br />
+Suntz gives a glowing scroll of recall to Lilly.<br />
+Suntz gives a glowing scroll of recall to Lilly.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli looks at you.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; beck denday<br />
+Oscarr utters some strange words.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; You beckon him to follow.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana begins resting but stays aloft.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly begins resting but stays aloft.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday starts following you.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; gro dendayDenday is now a member of your group.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Effren rolls on the floor in a fit of laughter.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly tells you 'man what are you doing'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday begins resting but stays aloft.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Denday.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz looks at Denday.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tells you 'wanna truce to slay em just?'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday ponders the meaning of life, love, and the universe.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly tells you 'quitting?'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Randival looks at Denday.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; tel lilly this is me saying good byeYou tell Lilly 'this is me saying good bye'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz says 'interesting'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Ardinghelli.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly tells you 'heh man your my friend'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass begins resting but stays aloft.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday says 'what i sgoing on!'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli stops using an ancient shield of the silver serpent.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass stands up.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass begins resting but stays aloft.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz says 'you've aligned yourself against us'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli starts using an ancient shield of the silver serpent as a shield.<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; tel lilly you will always be mineYou tell Lilly 'you will always be mine'<br />
+<br />
+526H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana closes her spellbook with a content look on her face.<br />
+Lilly closes her spellbook with a content look on her face.<br />
+Effren closes his prayerbook with a content look on his face.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz says 'is what you've just done'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a massive stone club<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana looks at Suntz.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; exa chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a blue potion of remove poison [2]<br />
+a demonic cape<br />
+a little blue wand..it glows dimly..it hums softly [2]<br />
+a milky potion of see invisible<br />
+a wooden ring<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; wield clubYou start using the club.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz looks at Elyana.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly tells you 'nod. i don't want to bepart of this.'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Oscarr the Male Theiwar Dwarf is standing here. (flying)<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is resting here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ronin No Name is standing here. (flying)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday tells you 'why is shadow here'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Randival utters some strange words.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gets a ham from his chest.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gets a ham from his chest.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass gets a bears from her chest.<br />
+Cass gets a bears from her chest.<br />
+Cass gets a bears from her chest.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gives a smoked Tarsis ham to Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass gives a handful of gummy bears to Ardinghelli.<br />
+Cass gives a handful of gummy bears to Ardinghelli.<br />
+Cass gives a handful of gummy bears to Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gives a smoked Tarsis ham to Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz gives a smoked Tarsis ham to Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli tosses a handful of gummy bears in his mouth and smiles.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Oscarr the Male Theiwar Dwarf is standing here. (flying)<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Ronin No Name is standing here. (flying)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday tells you 'for you?'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly looks at you.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly rolls her eyes.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin wears a translucent black ring on a finger of his right hand.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Ronin.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli looks at Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Limper now follows Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Limper sits down and rests.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tells you 'hrm need to get you in kala someway'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin starts holding an ice pick.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin looks at Oscarr.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr now follows Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tells you 'got group there'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana now follows Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday tells you 'or for them to help get gear heh'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Cass.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ronin looks at Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; tel sulie why not run group here?<br />
+Lilly tells you 'you gave bracers to dave? laf, mannn ok i guess do what you want'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli says 'sulie didn't koi warn you about using yourself as a trash pkill char?'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly looks at Sulie.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli says 'or are you looking to be deleted'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli snickers softly.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; tel lilly I got them stillYou tell Lilly 'I got them still'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tells you 'ya maybe'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana looks at Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Limper says 'who is pkilling'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Hreat arrives from the west.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Hreat the Male Hylar Dwarf is standing here.<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Oscarr the Male Theiwar Dwarf is standing here. (flying)<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is resting here.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Hreat.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a thick purple cloak with a silver draconian brooch<br />
+&lt;worn around neck&gt;         the Gargoyle chieftain's cloak<br />
+&lt;worn on body&gt;             a heavy plate of the Lily<br />
+&lt;worn on head&gt;             a death helmet..it glows dimly<br />
+&lt;worn on legs&gt;             anklets of woven palladium..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of wicked black boots<br />
+&lt;worn on hands&gt;            a pair of silver dwarven gauntlets<br />
+&lt;worn on arms&gt;             a pair of spiked battle armets..it glows dimly<br />
+&lt;worn about body&gt;          a large backpack<br />
+&lt;worn about waist&gt;         an indigo leather scabbard<br />
+&lt;worn around right wrist&gt;  a wrist buckler<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in primary hand&gt;     a massive stone club<br />
+&lt;used in secondary hand&gt;   a bloody minotaur hand axe<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Elyana says 'Ardinghelli so naked like trash !'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+You hear gears grinding as Hreat thinks.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz looks at Hreat.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie says 'ill tell you once i pkill somone'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Effren.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tickles Ardinghelli.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Randival looks at Oscarr.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz utters some strange words.<br />
+Suntz slowly fades out of sight.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Hreat looks at you.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz closes his spellbook with a content look on his face.<br />
+Cass closes her prayerbook with a content look on her face.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr looks at Randival.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Sulie tells you 'how many you got'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Oscarr begins resting but stays aloft.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass boggles at Effren's existence.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Randival tips his hat to Oscarr.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli misses you with his slash.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hreat looks at Randival.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; tel sulie just me and denday<br />
+Limper stands up.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; You tell Sulie 'just me and denday'<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; snickerYou snicker softly.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Suntz rolls his eyes.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Denday starts watching you.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+Effren rolls on the floor in a fit of laughter.<br />
+<br />
+530H 113V 33880773X 16677C [Revo:Perfect] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+507H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Oscarr stands up.<br />
+<br />
+507H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ardinghelli strikes your weapon, but you maintain your grip on it.<br />
+<br />
+507H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Cass stands up.<br />
+<br />
+507H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+507H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; l<br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You bludgeon Ardinghelli extremely hard.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; Paladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Hreat the Male Hylar Dwarf is standing here.<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ardinghelli the Wildrunner is standing here, fighting YOU. (flying)<br />
+Oscarr the Male Theiwar Dwarf is standing here. (flying)<br />
+Lady Elyana Lipetskaya, Legacy of New Sea Pirates is resting here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sulie the Female Gnome is standing here. (flying)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+The Knight of Solamnia is standing here, fighting Ardinghelli.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; But it's so peaceful here!<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Elyana stands up.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Randival sighs loudly.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Oscarr utters some strange words.<br />
+Oscarr disappears in a puff of smoke.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; whoImmortals<br />
+---------<br />
+[      God      ] Qued Troglodyte, Scribe of Darkness<br />
+<br />
+Mortals<br />
+-------<br />
+Eve the Female Theiwar Dwarf<br />
+Lerana the Female Human<br />
+Hreat the Male Hylar Dwarf<br />
+Ratan Skol<br />
+Milamber the Male High Elf<br />
+Revo the Destroyer<br />
+Phicust Treegrove, Gentle Wayfarer of Kirath<br />
+Oscarr the Male Theiwar Dwarf<br />
+Lilly, Pure as the Driven Snow<br />
+Arkyn the Male Human<br />
+Sanguar the Lad, Friend of Windu<br />
+Sulie the Female Gnome<br />
+Orphan, Unwanted Shot Glass of R.u.M.<br />
+Druss the Male Human<br />
+Merisent the Female Kender<br />
+Whispre the Female Half Elf<br />
+<br />
+ [return for more, q to stop]l<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Lilly looks at Randival.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; inYou are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+491H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+476H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Elyana utters some strange words.<br />
+<br />
+476H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; exa chestThe wooden surface of the chest is in perfect condition.<br />
+chest (carried) : <br />
+a blue potion of remove poison [2]<br />
+a demonic cape<br />
+a little blue wand..it glows dimly..it hums softly [2]<br />
+a milky potion of see invisible<br />
+a wooden ring<br />
+<br />
+476H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Randival looks at Lilly.<br />
+<br />
+476H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+Limper grabs a glowing scroll of recall.<br />
+Limper recites a glowing scroll of recall.<br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; exa packThe backpack appears rough and in perfect condition.<br />
+backpack (used) : <br />
+a thick wool coat<br />
+a scribed scroll<br />
+a sealed scroll<br />
+a rolled white parchment [2]<br />
+a small vial<br />
+a grooved dagger<br />
+a brewed potion<br />
+a waterskin<br />
+a brewed potion<br />
+a small canteen<br />
+a milky potion of see invisible<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Elyana stops using a shimmering alexandrite.<br />
+Elyana grabs a glowing scroll of recall.<br />
+Elyana recites a glowing scroll of recall.<br />
+Elyana disappears.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Sulie glances at you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Limper grabs a scroll of recall.<br />
+Limper recites a scroll of recall.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hreat glances at you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Sulie utters some strange words.<br />
+Sulie disappears in a puff of smoke.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; tel sulie get someone to poof me an axeYou tell Sulie 'get someone to poof me an axe'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Randival glances at you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Effren lays his hands on Ardinghelli and utters a prayer.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Perfect] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Hreat the Male Hylar Dwarf is standing here.<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Ardinghelli the Wildrunner is standing here, fighting YOU. (flying)<br />
+Ronin No Name is standing here. (flying) (invisible)<br />
+Lilly, Pure as the Driven Snow is resting here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Limper, Servant of Koi is standing here.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+The Knight of Solamnia is standing here, fighting Ardinghelli.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; But it's so peaceful here!<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli tries to disarm your weapon, but you deftly avoid him.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ronin glances at you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Limper looks at you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Cass sighs loudly.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU very hard.<br />
+You miss Ardinghelli with your bludgeon.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli disarms your weapon.<br />
+get emerald.shortget axe<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper utters some strange words.<br />
+Limper disappears in a puff of smoke.<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass gets a massive stone club.<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Suntz says 'where do you want me, sean?'<br />
+<br />
+447H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU very hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+434H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; get clubYou don't see what you are looking for here.<br />
+<br />
+434H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+434H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; oohYou ooh and ahh, as if extremely impressed.<br />
+<br />
+434H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+Randival closes his prayerbook with a content look on his face.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; kickBut it's so peaceful here!<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass gives a massive stone club to Ardinghelli.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Limper stops watching you.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ardinghelli opens his prayerbook and begins reading it intently.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Randival utters some strange words.<br />
+A brilliant aura surrounds Randival.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass mutters under her breath.<br />
+<br />
+440H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli hard.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; exa packThe backpack appears rough and in perfect condition.<br />
+backpack (used) : <br />
+a thick wool coat<br />
+a scribed scroll<br />
+a sealed scroll<br />
+a rolled white parchment [2]<br />
+a small vial<br />
+a grooved dagger<br />
+a brewed potion<br />
+a waterskin<br />
+a brewed potion<br />
+a small canteen<br />
+a milky potion of see invisible<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ronin looks at you.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Cass glances at you.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli panics, and attempts to flee.<br />
+Ardinghelli flies west.<br />
+<br />
+425H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli flies in from the west.<br />
+<br />
+425H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli begins resting but stays aloft.<br />
+<br />
+425H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+425H 113V 33880773X 16677C Exits:W&gt; <br />
+Suntz looks at you.<br />
+<br />
+425H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli misses you with his slash.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ronin looks at you.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Randival looks at Ardinghelli.<br />
+<br />
+425H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You massacre Ardinghelli with your cleave.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Suntz utters some strange words.<br />
+Suntz appears to grow stronger.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ronin flies west.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hotar looks at you.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hotar giggles.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a thick purple cloak with a silver draconian brooch<br />
+&lt;worn around neck&gt;         the Gargoyle chieftain's cloak<br />
+&lt;worn on body&gt;             a heavy plate of the Lily<br />
+&lt;worn on head&gt;             a death helmet..it glows dimly<br />
+&lt;worn on legs&gt;             anklets of woven palladium..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of wicked black boots<br />
+&lt;worn on hands&gt;            a pair of silver dwarven gauntlets<br />
+&lt;worn on arms&gt;             a pair of spiked battle armets..it glows dimly<br />
+&lt;worn about body&gt;          a large backpack<br />
+&lt;worn about waist&gt;         an indigo leather scabbard<br />
+&lt;worn around right wrist&gt;  a wrist buckler<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in secondary hand&gt;   a bloody minotaur hand axe<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hreat has left the game.<br />
+A map of Palanthas disintegrates.<br />
+A short training sword disintegrates.<br />
+A small leather bag disintegrates.<br />
+A hooded lantern disintegrates.<br />
+A complimentary stable note disintegrates.<br />
+A loaf of bread disintegrates.<br />
+A loaf of bread disintegrates.<br />
+A waterskin disintegrates.<br />
+Some leather training armor disintegrates.<br />
+A leather training cap disintegrates.<br />
+A pair of leather training boots disintegrates.<br />
+A training shield disintegrates.<br />
+A long training sword disintegrates.<br />
+<br />
+416H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+406H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Suntz focuses on Ardinghelli and utters some strange words.<br />
+Ardinghelli begins to become blurry and hard to see.<br />
+<br />
+406H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+406H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+406H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+Cass begins resting but stays aloft.<br />
+<br />
+406H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+391H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+391H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ronin flies in from the west.<br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+391H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Hotar glances at you.<br />
+<br />
+391H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Ardinghelli stops using an ancient shield of the silver serpent.<br />
+<br />
+391H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass stands up.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday stands up.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ronin gives a longsword to Ardinghelli.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+382H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+525H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli panics, and attempts to flee.<br />
+Ardinghelli flies west.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli flies in from the west.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli begins resting but stays aloft.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; l<br />
+Lilly says 'its laggy'<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; Paladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Ardinghelli the Wildrunner is resting here. (flying)<br />
+Ronin No Name is standing here. (flying)<br />
+Denday, Sheep Amongst the Wolves is standing here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Lilly, Pure as the Driven Snow is resting here.<br />
+. . . is surrounded by 4 duplicate images.<br />
+Cass Clay, WildRunner's Contender is standing here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli starts holding a longsword.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday begins resting but stays aloft.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; scaLooking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Cass begins resting but stays aloft.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Ardinghelli the Wildrunner is resting here. (flying)<br />
+Ronin No Name is standing here. (flying)<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Lilly, Pure as the Driven Snow is resting here.<br />
+. . . is surrounded by 4 duplicate images.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli looks at you.<br />
+<br />
+525H 113V 33880773X 16677C Exits:W&gt; <br />
+Denday closes his prayerbook with a content look on his face.<br />
+Randival closes his prayerbook with a content look on his face.<br />
+Ardinghelli closes his prayerbook with a content look on his face.<br />
+Cass closes her prayerbook with a content look on her face.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly looks at Hotar.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli hums to himself.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli stands up.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Klaith tells you 'tell me if they leave'<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Lilly hums a tuneless melody.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli focuses harshly on you and utters some strange words.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli focuses harshly on you and utters some strange words.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Randival looks at you.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; lPaladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Ardinghelli the Wildrunner is standing here. (flying)<br />
+Ronin No Name is standing here. (flying)<br />
+Denday, Sheep Amongst the Wolves is resting here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is standing here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Lilly, Pure as the Driven Snow is resting here.<br />
+. . . is surrounded by 4 duplicate images.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+A Knight of Solamnia stands guard here.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; But it's so peaceful here!<br />
+<br />
+530H 113V 33880773X 16677C Exits:W&gt; <br />
+Ardinghelli slashes YOU very hard.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+501H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+501H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli's blow is absorbed by your armor.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday tells you 'why dont they just recall you'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Randival says 'hrm got enuf hardbash?'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You avoid Ardinghelli's lame parry attempt.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ronin glances at you.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; tel denday they failed alotYou tell Denday 'they failed alot'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You avoid Ardinghelli's lame parry attempt.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Suntz looks at you.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Randival glances at you.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Hima shouts 'seeking good wep .blug/peicer/misc/s.blade  selling suit of ergothian battle armor or will trade for wep'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Ronin looks at you.<br />
+<br />
+486H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli slashes YOU.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+464H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Denday tells you 'there stupid'<br />
+<br />
+464H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Denday tells you 'where you recall?'<br />
+<br />
+464H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli very hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli slashes YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+435H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+435H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; tel suntz btw, this is nothing personal to you and your broYou tell Suntz 'btw, this is nothing personal to you and your bro'<br />
+<br />
+435H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Hotar tells you 'how/why did you kill him?'<br />
+<br />
+435H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; tel suntz or the rest of u guysYou tell Suntz 'or the rest of u guys'<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Randival looks at Ardinghelli.<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli stops using a longsword.<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Suntz tells you 'indeed'<br />
+<br />
+418H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+399H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+399H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly stands up.<br />
+<br />
+399H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly focuses on Ardinghelli and utters some strange words.<br />
+Ardinghelli appears to grow stronger.<br />
+<br />
+399H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Ardinghelli starts holding a massive stone club.<br />
+<br />
+399H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli massacres YOU with his slash.<br />
+Ardinghelli bludgeons YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli hard.<br />
+<br />
+359H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+359H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lilly sits down and rests.<br />
+<br />
+359H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli bludgeons YOU very hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+331H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; tel suntz nod, take it as you mustYou tell Suntz 'nod, take it as you must'<br />
+<br />
+331H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli hard.<br />
+Ardinghelli misses you with his slash.<br />
+Ardinghelli bludgeons YOU very hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+317H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at Ardinghelli and yells  'There's the scoundrel!'<br />
+<br />
+317H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Denday tells you 'gues lilly isnt so cool heh'<br />
+<br />
+317H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli bludgeons YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+Lilly closes her spellbook with a content look on her face.<br />
+Suntz closes his spellbook with a content look on his face.<br />
+You are thirsty.<br />
+<br />
+297H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Denday stands up.<br />
+<br />
+297H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Rothenburg shouts 'ok is it impossable to get 6 spells at level 2'<br />
+<br />
+297H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+297H 113V 33880773X 16677C [Revo:Fair] [Ardinghelli:Bad] Exits:W&gt; <br />
+Denday focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+526H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Bad] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU very hard.<br />
+Ardinghelli bludgeons YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Bad] Exits:W&gt; in<br />
+Cass stands up.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Bad] Exits:W&gt; You are carrying:<br />
+a glowing scroll of recall..it glows dimly<br />
+a battle banner of the dragonarmies..it glows dimly<br />
+a heavy spiked shield<br />
+a small wooden chest<br />
+a handful of gummy bears<br />
+a milky potion of see invisible [5]<br />
+a small leather pouch<br />
+a large jug<br />
+a waterskin [2]<br />
+a bottle [2]<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Bad] Exits:W&gt; <br />
+Cass focuses on Ardinghelli and utters some strange words.<br />
+Cass heals Ardinghelli.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Effren rolls on the floor in a fit of laughter.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Suntz tells you 'shrug i'm just pissy cause i got called from writing a paper'<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Klaith flies in from the west.<br />
+steal sack Klaith KlaithNol flies in from the west.<br />
+Vassago flies in from the west.<br />
+Murgen flies in from the west.<br />
+Renio flies in from the west.<br />
+Reykas flies in from the west.<br />
+Kintessa flies in from the west.<br />
+Lliven flies in from the west.<br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; You can't do that while fighting.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Lilly says 'we prep for days'<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday begins resting but stays aloft.<br />
+<br />
+500H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+Ardinghelli bludgeons YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+468H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+468H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; bopYou bop to the music.<br />
+<br />
+468H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Klaith beckons you to follow.<br />
+<br />
+468H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Klaith focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+527H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Suntz says 'so many of you evils'<br />
+<br />
+527H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Effren says 'haha'<br />
+<br />
+527H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+Ardinghelli bludgeons YOU hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Murgen looks at Ardinghelli.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Nol looks at Suntz.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Lilly says 'and all were doing is wasting it on eachother?'<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Suntz looks at Nol.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; sa never thought I would be happy to see you guysYou say 'never thought I would be happy to see you guys'<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Klaith says 'bye wilds'<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Effren takes a seat in mid-air.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Ardinghelli stops using a massive stone club.<br />
+Ardinghelli grabs a glowing scroll of recall.<br />
+Ardinghelli recites a glowing scroll of recall.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; fol klaithYou now follow Klaith.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Suntz tuts Nol disapprovingly: Tsk! Tsk!<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+Denday stands up.<br />
+<br />
+519H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:V.Good] Exits:W&gt; <br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli very hard.<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; gro<br />
+Klaith tells you 'fol me fast'<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; Your group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Revo             v.good    rested    fighting   Y   N    N     0    0<br />
+  Denday           perfect   rested    standing   Y   N    N     0    2<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Nol looks at Ardinghelli.<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+You are now a member of Klaith's group.<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Cass begins resting but stays aloft.<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Lilly peers into Klaith's pockets.<br />
+<br />
+499H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; tel klaith am<br />
+The Knight of Solamnia massacres Ardinghelli with his hit.<br />
+Ardinghelli massacres YOU with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You cleave Ardinghelli extremely hard.<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Suntz stretches his stiff and tired muscles.<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; You tell Klaith 'am'<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+Randival looks at Klaith.<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; groYour group of 10 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Klaith           v.good    rested    standing   Y   N    N     1    2<br />
+  Revo             v.good    rested    fighting   Y   N    N     0    0<br />
+  Denday           perfect   rested    standing   Y   N    N     0    2<br />
+  Nol              v.good    rested    standing   Y   Y    N     1    3<br />
+  Vassago          perfect   rested    standing   Y   N    N     0    0<br />
+  Murgen           good      rested    standing   Y   N    Y     0    0<br />
+  Renio            perfect   rested    standing   Y   N    N     0    0<br />
+  Reykas           v.good    rested    standing   Y   Y    N     0    5<br />
+  Kintessa         v.good    rested    standing   Y   N    N     1    1<br />
+  37mLliven           perfect   rested    standing   Y   N    Y     0    0<br />
+<br />
+478H 113V 33880773X 16677C [Revo:V.Good] [Ardinghelli:Good] Exits:W&gt; <br />
+The Knight of Solamnia hits Ardinghelli extremely hard.<br />
+Ardinghelli slashes YOU extremely hard.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Klaith flies west.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; gt howdy evilsYou tell your group 'howdy evils'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; l<br />
+Klaith tells your group 'flee revo'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; Paladins' Hall<br />
+    This spartan room contains an altar to Paladine where paladins may<br />
+reaffirm their cause to good. Upon the walls are murals of each of the<br />
+orders of knighthood. Some of the most noble knights were paladins. Huma<br />
+being foremost among them.<br />
+Ardinghelli the Wildrunner is standing here, fighting YOU. (flying)<br />
+Ronin No Name is standing here. (flying)<br />
+Denday, Sheep Amongst the Wolves is standing here. (flying)<br />
+Lord Randival Dulac, Regent of the Wild Kingdom is standing here. (flying)<br />
+Effren Dren, WildRunning Manic is sitting here. (flying)<br />
+Suntz the Sheep is standing here. (flying) (invisible)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Lilly, Pure as the Driven Snow is resting here.<br />
+. . . is surrounded by 4 duplicate images.<br />
+Cass Clay, WildRunner's Contender is resting here. (flying) (invisible)<br />
+bash cass CassHotar the Male Human is standing here. (flying)<br />
+The Knight of Solamnia is standing here, fighting Ardinghelli.<br />
+Lady Charity Wroth, Knight of the Rose, is here to further instruct you.<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; The Knight of Solamnia misses Ardinghelli with his hit.<br />
+Ardinghelli misses you with his slash.<br />
+You miss Ardinghelli with your hit.<br />
+You miss Ardinghelli with your cleave.<br />
+But it's so peaceful here!<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+Lliven tells your group 'haha lame pamana in my group wtf'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; <br />
+The Knight of Solamnia looks at you and yells 'There's the scoundrel!'<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; flePANIC! You couldn't escape!<br />
+<br />
+459H 113V 33880773X 16677C [Revo:Good] [Ardinghelli:Fair] Exits:W&gt; fleYou flee head over heels.<br />
+Knights' Post<br />
+    This building is for warriors of all ilk. Here they can fine tune their<br />
+skills and perhaps petition to join the Knights of Solamnia. The halls for<br />
+warriors, rangers, and paladins, lie to the north, south, and east,<br />
+respectively.<br />
+Lliven the Female Hylar Dwarf is standing here. (flying)<br />
+steal chest lliven LlivenKintessa, Legacy Avenger is standing here. (flying)<br />
+Reykas O'Campas, Legacy Stormtroopers is standing here. (flying) (invisible)<br />
+. . . is surrounded by a white mist.<br />
+Renio, Small Guy with Big Fingers is standing here. (flying)<br />
+Murgen the Male Hylar Dwarf is standing here. (flying)<br />
+Vassago Faceless, Demon of the Light is standing here. (flying)<br />
+Nol is standing here. (flying) (invisible)<br />
+. . . is enveloped in flames.<br />
+Klaith the Male Theiwar Dwarf is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; fleHuh?!<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; You're not fighting, why bother fleeing?<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; <br />
+Nol focuses on you and utters some strange words.<br />
+You feel stronger.<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; eqYou are using:<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn on finger&gt;           a ring of finest silver..it hums softly<br />
+&lt;worn around neck&gt;         a thick purple cloak with a silver draconian brooch<br />
+&lt;worn around neck&gt;         the Gargoyle chieftain's cloak<br />
+&lt;worn on body&gt;             a heavy plate of the Lily<br />
+&lt;worn on head&gt;             a death helmet..it glows dimly<br />
+&lt;worn on legs&gt;             anklets of woven palladium..it glows dimly<br />
+&lt;worn on feet&gt;             a pair of wicked black boots<br />
+&lt;worn on hands&gt;            a pair of silver dwarven gauntlets<br />
+&lt;worn on arms&gt;             a pair of spiked battle armets..it glows dimly<br />
+&lt;worn about body&gt;          a large backpack<br />
+&lt;worn about waist&gt;         an indigo leather scabbard<br />
+&lt;worn around right wrist&gt;  a wrist buckler<br />
+&lt;worn around left wrist&gt;   a wrist buckler<br />
+&lt;used in secondary hand&gt;   a bloody minotaur hand axe<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; rem axeYou stop using a bloody minotaur hand axe.<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; <br />
+Hotar flies in from the east.<br />
+<br />
+459H 112V 33880773X 16677C Exits:NESW&gt; wear shieldYou start using a heavy spiked shield.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; grab banner<br />
+Nol begins resting but stays aloft.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; wield axe<br />
+Hotar now follows Klaith.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Murgen looks at Hotar.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Reykas looks at Hotar.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Klaith beckons secretively to Hotar.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Nol stands up.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Lilly tells you 'omg lol'<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Lliven looks at Hotar.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Denday flies in from the east.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; You light a battle banner of the dragonarmies and hold it.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+You hear gears grinding as Reykas thinks.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; You start using the axe.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Lliven looks at Denday.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; tel lilly rofl<br />
+Nol looks at you.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; You tell Lilly 'rofl'<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Klaith utters some strange words.<br />
+Klaith's skin begins to shine like steel.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; tel lilly this is hilariousYou tell Lilly 'this is hilarious'<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Nol focuses on you and utters some strange words.<br />
+You watch your body become blurry and unfocused.<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Murgen says 'need one to rent'<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Vassago tells your group 'laf semiyellow group :)'<br />
+<br />
+459H 102V 33880773X 16677C Exits:NESW&gt; <br />
+Denday says 'mud is crazy mud'<br />
+<br />
+<br />
+Well I deleted all my characters so I guess this is where I get to say goodbye. I know it seems<br />
+that I have betrayed alot of people but in my mind I just did what I had to do to kill people<br />
+who tried to opress me or my close friends. I dont have enough time to waste on mud to be opressed<br />
+in any way shape or form so that is just a little reason why I acted the way I did. Anyways, I realise<br />
+I have caused alot of warfare and deaths of late, sorry to all who did not benefit in any way from<br />
+this, would like to apologize to wild for what would seem like a betrayal, but my guys wont be<br />
+used as fodder for anyone, especially Sean. Best of luck to all you fools, all my old friends from<br />
+BSP, especially Charlie, Klint, the rest of the Danes, finns, the coolest evil finn around (Ddog), <br />
+martin, lee, Johan,Suf, Ak,Thanos and Michi, all the russians who made the first 3/4th of this wipe so fun, you guys have always <br />
+been very worthy opponents. Peace to renshai, my favorite members, Aran,Matt,Rick and Patt, best get rid of<br />
+that fool Isaac before he gets you guys in more trouble. Lastly I would like to thank my immediate<br />
+crew who have stuck around me for most of this wipe despite whoever I was warring, this includes<br />
+Brandon, Tim, Dave,Kd, Greg, Alex, Mike, Ed, Dru, Nate(yourule), and even you Sid. Thanks also Zearin, and the<br />
+group from wild, especially Will, Curtis, Chris, and Marq. I know this is becoming lengthy, so I would like<br />
+to end by thanking Tripp and Dave the thief masters, for not knowing it but being my inspiration to make Krovax what he<br />
+was. Sorry to any of you I forgot, Im sure there are many more to thank.<br />
+If never taking crap from anyone and killing everyone that I have ever wanted to kill is a crime then<br />
+I am guilty.<br />
+-Raud Doom<br />
+And a special thanks to Tino, for helping me quit this game, peace im out of here!
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='407'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=407">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="407">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

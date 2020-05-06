@@ -1,0 +1,652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1679-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1679'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+1 death 3 corpses</font></b>
+<p>
+POV: 
+Sxaz<p>
+Log Rating:
+1.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+697H 102V 1X 9562C Exits:(N)E(S)W&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+The door is closed.<br />
+Looking east:<br />
+You see nothing special.<br />
+Tiptop the Coyote, Warmth of Battle is standing here. (flying)<br />
+bash Tiptop<br />
+A stout elven guard stands here, protecting the King.<br />
+A stout elven guard stands here, protecting the King.<br />
+A stout elven guard stands here, protecting the King.<br />
+The elven king paces around, pondering some unknown problem.<br />
+Looking south:<br />
+You see nothing special.<br />
+The door is closed.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You spy a small trap door.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+697H 102V 1X 9562C Exits:(N)E(S)W&gt; You couldn't find what you were looking for.<br />
+<br />
+697H 102V 1X 9562C Exits:(N)E(S)W&gt; e<br />
+The King's Room<br />
+     You have entered the King of Sorinthalas's room. Present are many<br />
+silken fineries and artistic works, sent to the king for his approval. Also<br />
+present are many baskets of food and sweets. From what you are able to<br />
+deduce, the king is either widowed or the children are inherited, as there<br />
+are no female belongings in the room. Laid out on the bed are many silken<br />
+robes and clothes. The bed itself is in fine shape, with bedposts and head<br />
+rest made of carved oak. The only exit lies to the west.<br />
+The corpse of Shu is lying here.<br />
+The corpse of Putano is lying here.<br />
+Tiptop the Coyote, Warmth of Battle is standing here. (flying)<br />
+bash Tiptop<br />
+A stout elven guard stands here, protecting the King.<br />
+A stout elven guard stands here, protecting the King.<br />
+A stout elven guard stands here, protecting the King.<br />
+The elven king paces around, pondering some unknown problem.<br />
+<br />
+697H 101V 1X 9562C Exits:W&gt; YOU&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+697H 101V 1X 9562C [Me:Perfect] [Tiptop:V.Good] Exits:W&gt; <br />
+Mustafa&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+697H 101V 1X 9562C [Me:Perfect] [Tiptop:V.Good] Exits:W&gt; <br />
+Aune tells your group 'where is it?'<br />
+<br />
+697H 101V 1X 9562C [Me:Perfect] [Tiptop:V.Good] Exits:W&gt; <br />
+Mustafa massacres Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop massacres YOU with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+647H 101V 1X 9562C [Me:V.Good] [Tiptop:Good] Exits:W&gt; bash<br />
+<br />
+Mustafa massacres Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop misses you with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+626H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; YOU&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;MISSED BASH ON&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+stand<br />
+<br />
+626H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; <br />
+Mustafa tells your group 'BRANCHALA KING'<br />
+<br />
+626H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; <br />
+Mustafa&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+626H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; <br />
+Mustafa annihilates Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop massacres YOU with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+576H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; bash<br />
+<br />
+Aune tells your group 'im neut'<br />
+<br />
+576H 101V 1X 9562C [Me:Good] [Tiptop:Fair] Exits:W&gt; <br />
+Mustafa massacres Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop massacres YOU with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+511H 101V 1X 9562C [Me:Fair] [Tiptop:V.Bad] Exits:W&gt; =====YOU STAND UP=====<br />
+<br />
+511H 101V 1X 9562C [Me:Fair] [Tiptop:V.Bad] Exits:W&gt; YOU&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;MISSED BASH ON&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+stand<br />
+<br />
+511H 101V 1X 9562C [Me:Fair] [Tiptop:V.Bad] Exits:W&gt; <br />
+Mustafa&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+511H 101V 1X 9562C [Me:Fair] [Tiptop:V.Bad] Exits:W&gt; <br />
+Mustafa massacres Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop annihilates YOU with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+452H 101V 1X 9562C [Me:Fair] [Tiptop:V.Bad] Exits:W&gt; <br />
+Mustafa massacres Tiptop with his crush.<br />
+You massacre Tiptop with your slash.<br />
+Tiptop massacres YOU with his crush.<br />
+Tiptop massacres YOU with his stab.<br />
+<br />
+398H 101V 1X 9562C [Me:Fair] [Tiptop:Awful] Exits:W&gt; bash<br />
+=====YOU STAND UP=====<br />
+<br />
+398H 101V 1X 9562C [Me:Fair] [Tiptop:Awful] Exits:W&gt; YOU&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+398H 101V 1X 9562C [Me:Fair] [Tiptop:Awful] Exits:W&gt; <br />
+Mustafa&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;BASHED&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Tiptop<br />
+<br />
+398H 101V 1X 9562C [Me:Fair] [Tiptop:Awful] Exits:W&gt; <br />
+Mustafa massacres Tiptop with his crush.<br />
+You receive 0 experience.<br />
+Tiptop is dead! R.I.P.<br />
+get sheaf<br />
+get sphere<br />
+The death cry of Tiptop echoes from somewhere nearby...<br />
+<br />
+398H 101V 1X 9562C Exits:W&gt; TICK IN 5 SECONDS.<br />
+You don't see what you are looking for here.<br />
+<br />
+398H 101V 1X 9562C Exits:W&gt; You don't see what you are looking for here.<br />
+<br />
+398H 101V 1X 9562C Exits:W&gt; <br />
+Mustafa gets a very large pile of coins from the corpse of Tiptop.<br />
+<br />
+398H 101V 1X 9562C Exits:W&gt; <br />
+Mustafa divides 1240 coins equally among the group members present.<br />
+<br />
+398H 101V 1X 10182C Exits:W&gt; get all corpse<br />
+get all 2.corpse<br />
+get all 3.corpse<br />
+get all 4.corpse<br />
+get all 5.corpse<br />
+get all 6.corpse<br />
+You get a leather handled foil from the corpse of Tiptop.<br />
+You are zapped by a dwarven morningstar and instantly drop it.<br />
+You are zapped by a granite bracer and instantly drop it.<br />
+You are zapped by a granite bracer and instantly drop it.<br />
+You get a gleaming silver scabbard from the corpse of Tiptop.<br />
+You get a cloak made of old, black cloth from the corpse of Tiptop.<br />
+You get silvery sleeves of stalking from the corpse of Tiptop.<br />
+You get a pair of the weaponsmaster's gloves from the corpse of Tiptop.<br />
+You get a pair of charred platemail legplates from the corpse of Tiptop.<br />
+You get a belly skewer from the corpse of Tiptop.<br />
+You get a suit of dwarven plate mail from the corpse of Tiptop.<br />
+You get a silver banded locket from the corpse of Tiptop.<br />
+You get a crystal shard necklace from the corpse of Tiptop.<br />
+You get a golden dwarven ring from the corpse of Tiptop.<br />
+You get a scarlet corsair's badge from the corpse of Tiptop.<br />
+Hammer : You can't carry that much weight.<br />
+You get a glowing scroll of recall from the corpse of Tiptop.<br />
+Skull : You can't carry that much weight.<br />
+You get some spiked minotaur gauntlets from the corpse of Tiptop.<br />
+Axe : You can't carry that much weight.<br />
+You get some pixie dust from the corpse of Tiptop.<br />
+You get some pixie dust from the corpse of Tiptop.<br />
+You get a milky potion of see invisible from the corpse of Tiptop.<br />
+You get a glowing scroll of recall from the corpse of Tiptop.<br />
+You get a glowing scroll of recall from the corpse of Tiptop.<br />
+You get a small silver thimble from the corpse of Tiptop.<br />
+Sleeves : You can't carry that much weight.<br />
+Necklace : You can't carry that much weight.<br />
+You get a red dragonscale head band from the corpse of Tiptop.<br />
+Crystal : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Wand : You can't carry that much weight.<br />
+Wand : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+398H 101V 1X 10182C Exits:W&gt; Lantern : You can't carry that much weight.<br />
+Boots : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+398H 101V 1X 10182C Exits:W&gt; Bracelet : You can't carry that much weight.<br />
+Belt : You can't carry that much weight.<br />
+Sandals : You can't carry that much weight.<br />
+Cowl : You can't carry that much weight.<br />
+Pendant : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+You get a large pile of coins from the corpse of Putano.<br />
+There were 215 coins.<br />
+Ring : You can't carry that much weight.<br />
+Hood : You can't carry that much weight.<br />
+Ball : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Greaves : You can't carry that much weight.<br />
+Hoopak : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Quill : You can't carry that much weight.<br />
+Torch : You can't carry that much weight.<br />
+Jerkin : You can't carry that much weight.<br />
+Hoopak : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+Ring : You can't carry that much weight.<br />
+Waterskin : You can't carry that much weight.<br />
+You get a clump of damp mulch from the corpse of Putano.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Crystal : You can't carry that much weight.<br />
+Ball : You can't carry that much weight.<br />
+Medallion : You can't carry that much weight.<br />
+Bag : You can't carry that much weight.<br />
+Tablet : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1679'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1679">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1679">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

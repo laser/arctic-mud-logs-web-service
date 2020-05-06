@@ -1,0 +1,4446 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1392-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1392'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Tournament Round 2</font></b>
+<p>
+POV: 
+Aldur<p>
+Log Rating:
+-1.6667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+In this round we kinda sucked, died too early, wasted area on low number of targets and i died way too early</i>
+<p>
+<p>
+
+Vespin shouts 'round 2'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            perfect   rested    standing   Y   Y    N    Y     1    0<br />
+  Ravage           perfect   rested    standing   Y   N    N    Y     2    2<br />
+  Daniel           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           perfect   rested    standing   Y   Y    N    Y     1    3<br />
+  Oe               perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Grant            perfect   rested    standing   Y   N    Y    Y     1    0<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+<br />
+Ravage tells your group 'we're going now'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+<br />
+Vespin shouts 'in 3'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+<br />
+Vespin shouts '2'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+<br />
+Vespin shouts '1'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+<br />
+Vespin shouts 'go down'<br />
+<br />
+413H 158V 10196673X 1173C Exits:D&gt;<br />
+d<br />
+The Courthouse<br />
+    The open shell of this building is all that remains of the former<br />
+courthouse. The ceiling has long since caved in, leaving the interior of<br />
+the building exposed to the environment. The attached jail cells have been<br />
+crushed by the building, but you see no signs of their former occupants.<br />
+Most likely they fled during the chaos of whatever ravaged this city.<br />
+<br />
+413H 157V 10196673X 1173C Exits:N&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 157V 10196673X 1173C Exits:N&gt;<br />
+n<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 156V 10196673X 1173C Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 156V 10196673X 1173C Exits:ESW&gt;<br />
+w<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 155V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 155V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 154V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 154V 10196673X 1173C Exits:NES&gt;<br />
+s<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 153V 10196673X 1173C Exits:NES&gt;<br />
+e<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 152V 10196673X 1173C Exits:ESW&gt;<br />
+s<br />
+The Courthouse<br />
+    The open shell of this building is all that remains of the former<br />
+courthouse. The ceiling has long since caved in, leaving the interior of<br />
+the building exposed to the environment. The attached jail cells have been<br />
+crushed by the building, but you see no signs of their former occupants.<br />
+Most likely they fled during the chaos of whatever ravaged this city.<br />
+<br />
+413H 151V 10196673X 1173C Exits:N&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 151V 10196673X 1173C Exits:N&gt;<br />
+say lets wait a sec<br />
+You say 'lets wait a sec'<br />
+<br />
+413H 151V 10196673X 1173C Exits:N&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 151V 10196673X 1173C Exits:N&gt;<br />
+n<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 150V 10196673X 1173C Exits:ESW&gt;<br />
+sca<br />
+<br />
+Ravage nods solemnly.<br />
+<br />
+413H 150V 10196673X 1173C Exits:ESW&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 150V 10196673X 1173C Exits:ESW&gt;<br />
+w<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 149V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 149V 10196673X 1173C Exits:NES&gt;<br />
+e<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 148V 10196673X 1173C Exits:ESW&gt;<br />
+s<br />
+The Courthouse<br />
+    The open shell of this building is all that remains of the former<br />
+courthouse. The ceiling has long since caved in, leaving the interior of<br />
+the building exposed to the environment. The attached jail cells have been<br />
+crushed by the building, but you see no signs of their former occupants.<br />
+Most likely they fled during the chaos of whatever ravaged this city.<br />
+<br />
+413H 147V 10196673X 1173C Exits:N&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 147V 10196673X 1173C Exits:N&gt;<br />
+n<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 146V 10196673X 1173C Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 146V 10196673X 1173C Exits:ESW&gt;<br />
+e<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 145V 10196673X 1173C Exits:NSW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 145V 10196673X 1173C Exits:NSW&gt;<br />
+w<br />
+w<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 144V 10196673X 1173C Exits:ESW&gt;<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 143V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 143V 10196673X 1173C Exits:NES&gt;<br />
+s<br />
+Old Tarsis Square<br />
+    Dead, dry moss fills the cracks near the remains of the old Tarsis<br />
+fountain. The ruined fountain has long since dried up and is a broken shell<br />
+of its former glory. The stone tiles that made up this square are shattered<br />
+and broken; weeds have broken through some of the tiles and misplaced<br />
+others, but even those are long-since dead, much like the rest of the city.<br />
+<br />
+413H 142V 10196673X 1173C Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 142V 10196673X 1173C Exits:NEW&gt;<br />
+n<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 141V 10196673X 1173C Exits:NES&gt;<br />
+e<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 140V 10196673X 1173C Exits:ESW&gt;<br />
+s<br />
+The Courthouse<br />
+    The open shell of this building is all that remains of the former<br />
+courthouse. The ceiling has long since caved in, leaving the interior of<br />
+the building exposed to the environment. The attached jail cells have been<br />
+crushed by the building, but you see no signs of their former occupants.<br />
+Most likely they fled during the chaos of whatever ravaged this city.<br />
+<br />
+413H 139V 10196673X 1173C Exits:N&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 139V 10196673X 1173C Exits:N&gt;<br />
+n<br />
+e<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 138V 10196673X 1173C Exits:ESW&gt;<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 137V 10196673X 1173C Exits:NSW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 137V 10196673X 1173C Exits:NSW&gt;<br />
+s<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 136V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 136V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 135V 10196673X 1173C Exits:NSW&gt;<br />
+s<br />
+s<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 134V 10196673X 1173C Exits:NES&gt;<br />
+Eastern Road<br />
+    Weeds separated and broken through the stone tiles that once made up<br />
+this road, but even those weeds have long since died away. Each footfall<br />
+echoes through the shattered, skeletal remains of the buildings to the<br />
+north. All that remains of the southeastern corner of the city is a huge,<br />
+ominous crater.<br />
+<br />
+413H 133V 10196673X 1173C Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Sharmaine De'Goss, The Utterly Useless is standing here. (flying)<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Lady Lashe, Malevolent Priestess of Sedition is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is standing here. (flying)<br />
+Epso Stormhammer, the Passion of Mishakal is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Zug Zug is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 133V 10196673X 1173C Exits:NEW&gt;<br />
+<br />
+Ravage tells your group 'set alias to rescue me please'<br />
+<br />
+413H 133V 10196673X 1173C Exits:NEW&gt;<br />
+n<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 132V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 131V 10196673X 1173C Exits:NSW&gt;<br />
+w<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 130V 10196673X 1173C Exits:ESW&gt;<br />
+s<br />
+The Courthouse<br />
+    The open shell of this building is all that remains of the former<br />
+courthouse. The ceiling has long since caved in, leaving the interior of<br />
+the building exposed to the environment. The attached jail cells have been<br />
+crushed by the building, but you see no signs of their former occupants.<br />
+Most likely they fled during the chaos of whatever ravaged this city.<br />
+<br />
+413H 129V 10196673X 1173C Exits:N&gt;<br />
+say epso group<br />
+You say 'epso group'<br />
+<br />
+413H 129V 10196673X 1173C Exits:N&gt;<br />
+n<br />
+w<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 128V 10196673X 1173C Exits:ESW&gt;<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 127V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 127V 10196673X 1173C Exits:NES&gt;<br />
+frown<br />
+What's bothering you?<br />
+<br />
+413H 127V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 127V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 126V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 126V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 126V 10196673X 1173C Exits:NES&gt;<br />
+e<br />
+Before the Bank<br />
+    The broken road leading to the cities bank crunches and cracks beneath<br />
+your feet. Having survived the chaos and destruction that took this city to<br />
+ruin, then withstanding the gradual decay of time has left this road in a<br />
+dismal state of ruin. Small chips of stone and gravel crunch beneath your<br />
+feet and the floor is cracked and broken in several places, leaving the<br />
+floor very uneven and difficult to traverse.<br />
+<br />
+413H 125V 10196673X 1173C Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 125V 10196673X 1173C Exits:NEW&gt;<br />
+TICK IN 7 SECONDS.<br />
+w<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 124V 10196673X 1173C Exits:NES&gt;<br />
+s<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 123V 10196673X 1173C Exits:NES&gt;<br />
+e<br />
+<br />
+Ravage says 'tic coming'<br />
+<br />
+413H 123V 10196673X 1173C Exits:NES&gt;<br />
+sca<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 122V 10196673X 1173C Exits:ESW&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 122V 10196673X 1173C Exits:ESW&gt;<br />
+e<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 121V 10196673X 1173C Exits:NSW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Snick van der Snack, The Executor is standing here. (flying) (invisible)<br />
+Eqir Dark-Elven is standing here. (invisible)<br />
+Furcifer, Scoundrel of Silvanost is standing here. (flying)<br />
+A griffon is standing here, carrying Cathal (flying).<br />
+Camilla the Female Half Elf is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 121V 10196673X 1173C Exits:NSW&gt;<br />
+s<br />
+<br />
+Ravage says 'lemme get it'<br />
+<br />
+413H 121V 10196673X 1173C Exits:NSW&gt;<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 120V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+Snick van der Snack, The Executor is standing here. (flying) (invisible)<br />
+Eqir Dark-Elven is standing here. (invisible)<br />
+Furcifer, Scoundrel of Silvanost is standing here. (flying)<br />
+A griffon is standing here, carrying Cathal (flying).<br />
+Camilla the Female Half Elf is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+<br />
+413H 119V 10196673X 1173C Exits:NSW&gt;<br />
+s<br />
+<br />
+Furcifer comes out of hiding.<br />
+Furcifer places a ruby-hilted knife in Ravage's back, resulting in some strange noises and some blood.<br />
+<br />
+413H 119V 10196673X 1173C Exits:NSW&gt;<br />
+<br />
+Snick heroically rescues Furcifer.<br />
+<br />
+413H 119V 10196673X 1173C Exits:NSW&gt;<br />
+<br />
+Camilla laughs heartily.<br />
+<br />
+413H 119V 10196673X 1173C Exits:NSW&gt;<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 118V 10196673X 1173C Exits:NES&gt;<br />
+n<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+Eqir Dark-Elven is standing here. (invisible)<br />
+Furcifer, Scoundrel of Silvanost is standing here. (flying)<br />
+A griffon is standing here, carrying Cathal (flying).<br />
+Camilla the Female Half Elf is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Ravage, Nature of Threat is standing here, fighting Snick. (flying)<br />
+. . . has a metallic luster.<br />
+Snick van der Snack, The Executor is standing here, fighting Ravage. (flying) (invisible)<br />
+<br />
+413H 117V 10196673X 1173C Exits:NSW&gt;<br />
+<br />
+Ravage utters some strange words.<br />
+Ravage's hands send forth blinding rays of sunlight!<br />
+Eqir withers as a ray of sunlight sent by Ravage engulfs her!<br />
+Furcifer withers as a ray of sunlight sent by Ravage engulfs him!<br />
+Cathal dismounts from a griffon.<br />
+Cathal withers as a ray of sunlight sent by Ravage engulfs him!<br />
+A griffon withers as a ray of sunlight sent by Ravage engulfs him!<br />
+A griffon seems to be blinded!<br />
+Camilla withers as a ray of sunlight sent by Ravage engulfs her!<br />
+Elyana withers as a ray of sunlight sent by Ravage engulfs her!<br />
+Snick withers as a ray of sunlight sent by Ravage engulfs him!<br />
+Snick seems to be blinded!<br />
+<br />
+413H 117V 10196673X 1173C Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Eqir in a spray of shimmering red!<br />
+You hit Furcifer with a spray of gleaming indigo!<br />
+You catch Cathal in a spray of bright orange!<br />
+You catch Cathal in a spray of shimmering red!<br />
+You catch a griffon in a spray of bright orange!<br />
+You blast Camilla with a spray of scintillating blue!<br />
+You strike Camilla with a spray of murky violet!<br />
+You strike Elyana with a spray of vibrant green!<br />
+You strike Snick with a spray of vibrant green!<br />
+<br />
+413H 117V 10196673X 1173C [Me:Perfect] [Ravage:Good] [Eqir:V.Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Snick steps aside as Daniel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+413H 117V 10196673X 1173C [Me:Perfect] [Ravage:Good] [Eqir:V.Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Delvar slowly fades into existence.<br />
+Eqir is caught in a spray of bright orange!<br />
+Eqir seems to be blinded!<br />
+Furcifer is caught in a spray of radiant yellow!<br />
+Cathal is blasted by a spray of scintillating blue!<br />
+A griffon is hit by a spray of gleaming indigo!<br />
+Camilla is caught in a spray of bright orange!<br />
+Elyana is hit by a spray of gleaming indigo!<br />
+Snick is caught in a spray of shimmering red!<br />
+<br />
+413H 117V 10196673X 1173C [Me:Perfect] [Ravage:Good] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Delvar pierces Eqir extremely hard.<br />
+Daniel massacres Snick with his slash.<br />
+You pierce Eqir.<br />
+Elyana smites Ravage.<br />
+Camilla misses Ravage with her claw.<br />
+A griffon misses Ravage with his claw.<br />
+Cathal stabs Ravage extremely hard.<br />
+Furcifer pierces Ravage extremely hard.<br />
+Furcifer pierces Ravage.<br />
+Eqir massacres Ravage with her slash.<br />
+Eqir slashes Ravage extremely hard.<br />
+Snick slashes Ravage very hard.<br />
+You feel your strength leave you.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Snick yells a battle cry and fights like a madman!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+c 'p w s'<br />
+<br />
+Elyana crashes into Ravage in a thundering collision, knocking him to the ground!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Camilla utters some strange words.<br />
+Camilla heals Camilla.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Furcifer flies in from the west.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+<br />
+Cathal gives a griffon an order.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:3 Exits:NSW&gt;<br />
+You utter the words, 'power word stun'<br />
+Furcifer is stunned!<br />
+Eqir is stunned momentarily, recovering quickly.<br />
+Cathal is stunned momentarily, recovering quickly.<br />
+A griffon is stunned!<br />
+Camilla is stunned momentarily, recovering quickly.<br />
+Elyana is stunned!<br />
+Snick is stunned momentarily, recovering quickly.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:5 Exits:NSW&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe massacres Snick with his shoot.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Good] Mem:5 Exits:NSW&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Furcifer is struck by a spray of murky violet!<br />
+Eqir is struck by a spray of murky violet!<br />
+Eqir is blasted by a spray of scintillating blue!<br />
+Cathal is caught in a spray of radiant yellow!<br />
+A griffon is caught in a spray of shimmering red!<br />
+Camilla is struck by a spray of vibrant green!<br />
+Elyana is blasted by a spray of scintillating blue!<br />
+Snick is caught in a spray of shimmering red!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Fair] [Eqir:Fair] Mem:5 Exits:NSW&gt;<br />
+<br />
+Oe massacres Snick with his shoot.<br />
+Oe annihilates Snick with his shoot.<br />
+Daniel massacres Snick with his slash.<br />
+Cathal massacres Ravage with his stab.<br />
+Eqir massacres Ravage with her slash.<br />
+Eqir massacres Ravage with her slash.<br />
+Ravage bludgeons Snick very hard.<br />
+Snick misses Ravage with his slash.<br />
+Snick slashes Ravage extremely hard.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:5 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Grant heroically rescues Ravage.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:5 Exits:NSW&gt;<br />
+<br />
+Snick yells a battle cry and fights like a madman!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:5 Exits:NSW&gt;<br />
+Daniel stands up.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You hit Furcifer with a spray of gleaming indigo!<br />
+You strike Eqir with a spray of vibrant green!<br />
+You catch Cathal in a spray of shimmering red!<br />
+Cathal seems weaker.<br />
+You strike a griffon with a spray of vibrant green!<br />
+Your spray of violet melts a griffon into a lifeless paste.<br />
+Twinkling lights surround a griffon and he disappears.<br />
+You catch Camilla in a spray of radiant yellow!<br />
+You catch Elyana in a spray of radiant yellow!<br />
+You catch Snick in a spray of shimmering red!<br />
+Snick seems weaker.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Camilla focuses on Elyana and utters some strange words.<br />
+Camilla heals Elyana.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Daniel crashes into Snick in a thundering collision, knocking him to the ground!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:V.Bad] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Snick massacres Grant with his slash.<br />
+Snick misses Grant with his slash.<br />
+Grant massacres Snick with his slash.<br />
+Oe obliterates Snick with his shoot.<br />
+Oe obliterates Snick with his shoot.<br />
+Delvar pierces Eqir extremely hard.<br />
+Daniel massacres Snick with his slash.<br />
+Cathal stabs Ravage extremely hard.<br />
+Eqir massacres Ravage with her slash.<br />
+Eqir massacres Ravage with her slash.<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Furcifer is caught in a spray of bright orange!<br />
+Eqir is blasted by a spray of scintillating blue!<br />
+Cathal is struck by a spray of vibrant green!<br />
+Camilla is blasted by a spray of scintillating blue!<br />
+Camilla is caught in a spray of bright orange!<br />
+Elyana is caught in a spray of shimmering red!<br />
+Snick is caught in a spray of shimmering red!<br />
+Snick seems weaker.<br />
+Snick is hit by a spray of gleaming indigo!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Awful] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Elyana says 'blah'<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Ravage:Awful] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Grant heroically rescues Ravage.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Grant:V.Good] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Cathal yells and leaps into the fray.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Grant:V.Good] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Ravage stands up.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Grant:V.Good] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+<br />
+Ravage utters some strange words.<br />
+Ravage heals Ravage.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Grant:V.Good] [Eqir:Fair] Mem:6 Exits:NSW&gt;<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Furcifer with a spray of murky violet!<br />
+You strike Eqir with a spray of vibrant green!<br />
+You catch Cathal in a spray of radiant yellow!<br />
+You strike Camilla with a spray of vibrant green!<br />
+You catch Elyana in a spray of shimmering red!<br />
+You hit Snick with a spray of gleaming indigo!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Grant:V.Good] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+<br />
+Snick heroically rescues Eqir.<br />
+Grant massacres Snick with his slash.<br />
+Snick slowly fades into existence.<br />
+Snick slashes Grant extremely hard.<br />
+Oe annihilates Snick with his shoot.<br />
+Snick is incapacitated and will slowly die, if not aided.<br />
+Oe obliterates Snick with his shoot.<br />
+Twinkling lights surround Snick and he disappears.<br />
+Camilla barely claws Ravage.<br />
+Cathal stabs Ravage very hard.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Furcifer is hit by a spray of gleaming indigo!<br />
+Furcifer's face goes blank and he begins to drool.<br />
+Eqir is blasted by a spray of scintillating blue!<br />
+Cathal is struck by a spray of murky violet!<br />
+Camilla is blasted by a spray of scintillating blue!<br />
+Elyana is struck by a spray of murky violet!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe massacres Cathal with his shoot.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+<br />
+Grant heroically rescues Ravage.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+<br />
+Cathal panics, and attempts to flee.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+<br />
+Camilla utters some strange words.<br />
+Camilla heals Camilla.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Bad] Mem:7 Exits:NSW&gt;<br />
+Grant massacres Elyana with his slash.<br />
+Oe massacres Cathal with his shoot.<br />
+Oe massacres Cathal with his shoot.<br />
+Eqir misses Delvar and destroys an image instead.<br />
+Eqir misses Delvar with her slash.<br />
+Ravage misses Cathal with his bludgeon.<br />
+You pierce Eqir very hard.<br />
+Cathal stabs Ravage hard.<br />
+Daniel crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You blast Furcifer with a spray of scintillating blue!<br />
+You catch Eqir in a spray of radiant yellow!<br />
+Eqir seems weaker.<br />
+You strike Cathal with a spray of murky violet!<br />
+You strike Camilla with a spray of murky violet!<br />
+You catch Elyana in a spray of bright orange!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+A spray of violet strikes Furcifer, melting him into a lifeless paste.<br />
+Twinkling lights surround Furcifer and he disappears.<br />
+Eqir is caught in a spray of radiant yellow!<br />
+Eqir seems weaker.<br />
+Cathal is caught in a spray of radiant yellow!<br />
+Cathal is mortally wounded, and will die soon, if not aided.<br />
+Camilla is blasted by a spray of scintillating blue!<br />
+Elyana is struck by a spray of vibrant green!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Ravage panics, and attempts to flee.<br />
+Cathal lies immobile on the ground, suffering...<br />
+Cathal is mortally wounded, and will die soon, if not aided.<br />
+Ravage flies south.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+<br />
+Ravage flies in from the south.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+<br />
+Grant crashes into Elyana in a thundering collision, knocking her to the ground!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+<br />
+Daniel slashes Elyana very hard.<br />
+Grant slashes Elyana extremely hard.<br />
+Oe obliterates Cathal with his shoot.<br />
+Twinkling lights surround Cathal and he disappears.<br />
+Eqir misses Delvar and destroys an image instead.<br />
+Eqir misses Delvar and destroys an image instead.<br />
+Cathal stops following Elyana.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:V.Bad] Mem:8 Exits:NSW&gt;<br />
+Ravage utters some strange words.<br />
+Ravage's hands send forth blinding rays of sunlight!<br />
+Eqir withers as a ray of sunlight sent by Ravage engulfs her!<br />
+Camilla withers as a ray of sunlight sent by Ravage engulfs her!<br />
+Elyana withers as a ray of sunlight sent by Ravage engulfs her!<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You blast Eqir with a spray of scintillating blue!<br />
+You strike Camilla with a spray of vibrant green!<br />
+You catch Elyana in a spray of bright orange!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Delvar:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe annihilates Eqir with his shoot.<br />
+Eqir is stunned, but will likely regain consciousness again.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+A spray of indigo flows over Eqir, ripping out her mind.<br />
+Twinkling lights surround Eqir and she disappears.<br />
+Camilla is caught in a spray of radiant yellow!<br />
+Elyana is blasted by a spray of scintillating blue!<br />
+Elyana is caught in a spray of shimmering red!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Camilla focuses on Elyana and utters some strange words.<br />
+Camilla heals Elyana.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+<br />
+Daniel slashes Elyana extremely hard.<br />
+Elyana massacres Grant with her smite.<br />
+Grant slashes Elyana extremely hard.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+<br />
+Daniel crashes into Camilla in a thundering collision, knocking her to the ground!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:9 Exits:NSW&gt;<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Camilla with a spray of vibrant green!<br />
+You catch Elyana in a spray of shimmering red!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:10 Exits:NSW&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe annihilates Camilla with his shoot.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:10 Exits:NSW&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Camilla is hit by a spray of gleaming indigo!<br />
+Elyana is caught in a spray of bright orange!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:10 Exits:NSW&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Camilla steps aside as Grant attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:10 Exits:NSW&gt;<br />
+<br />
+Oe annihilates Camilla with his shoot.<br />
+Twinkling lights surround Camilla and she disappears.<br />
+Daniel slashes Elyana extremely hard.<br />
+Elyana massacres Grant with her smite.<br />
+Grant slashes Elyana extremely hard.<br />
+Camilla stops following Elyana.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:10 Exits:NSW&gt;<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You strike Elyana with a spray of vibrant green!<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+<br />
+Oe annihilates Elyana with his shoot.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+<br />
+Elyana stands up.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+<br />
+Ravage tells your group 'ok'<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+<br />
+Grant steps aside as Elyana attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+c 'p w s'<br />
+<br />
+Oe annihilates Elyana with his shoot.<br />
+Oe annihilates Elyana with his shoot.<br />
+Daniel slashes Elyana very hard.<br />
+Elyana massacres Grant with her smite.<br />
+Grant slashes Elyana extremely hard.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+<br />
+Elyana steps aside as Daniel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:11 Exits:NSW&gt;<br />
+You utter the words, 'power word stun'<br />
+Elyana is stunned momentarily, recovering quickly.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+<br />
+Ravage focuses harshly on Elyana and utters some strange words.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+<br />
+Grant stands up.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+c 'force bolt'<br />
+<br />
+Oe annihilates Elyana with his shoot.<br />
+Oe misses Elyana with his shoot.<br />
+Daniel slashes Elyana extremely hard.<br />
+Elyana smites Grant extremely hard.<br />
+Grant slashes Elyana extremely hard.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+<br />
+Oe tells your group 'save spells'<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:12 Exits:NSW&gt;<br />
+c 'force bolt' elyana<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Elyana.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+<br />
+Elyana stands up.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+<br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies west.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+c 'force bolt' elyana<br />
+<br />
+Daniel stands up.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+<br />
+Ravage utters some strange words.<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            perfect   rested    fighting   Y   N    N    Y     1   13<br />
+  Ravage           perfect   rested    standing   Y   N    N    Y     2    9<br />
+  Daniel           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           perfect   fatigued  standing   Y   Y    N    Y     1   23<br />
+  Oe               perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Grant            good      rested    standing   Y   N    Y    Y     1    0<br />
+<br />
+413H 127V 10196673X 1173C [Me:Perfect] [Eqir:Awful] Mem:13 Exits:NSW&gt;<br />
+flee<br />
+You flee head over heels.<br />
+The Ruined Market<br />
+    Large, burned out craters speckle the marketplace here serving as an<br />
+indication as to what happened to this mighty city. It is likely this area<br />
+was heavily targetted when the city was attacked because of the dense<br />
+population of a crowded marketplace. The surrounding buildings are hollowed<br />
+shells of their former glory: walls are filled with large holes, roofs have<br />
+collapsed into several of the buildings, entryways have filled with rubble.<br />
+<br />
+413H 126V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            perfect   rested    standing   Y   Y    N    Y     1   13<br />
+  Ravage           perfect   rested    standing   Y   N    N    N     2    9<br />
+  Daniel           perfect   rested    standing   Y   N    N    N     0    0<br />
+  Delvar           perfect   fatigued  standing   Y   Y    N    N     1   23<br />
+  Oe               perfect   rested    standing   Y   N    N    N     0    0<br />
+  Grant            good      rested    standing   Y   N    Y    N     1    0<br />
+<br />
+413H 126V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+e<br />
+Wall Road<br />
+    All that is left of the road to the north is a huge pile of rubble. The<br />
+outer city wall has fallen inward, blocking the path to the north. A small<br />
+road leads west, into the marketplace, and the cities east gate is just a<br />
+short distance south from here.<br />
+<br />
+413H 125V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+w<br />
+The Ruined Market<br />
+    Large, burned out craters speckle the marketplace here serving as an<br />
+indication as to what happened to this mighty city. It is likely this area<br />
+was heavily targetted when the city was attacked because of the dense<br />
+population of a crowded marketplace. The surrounding buildings are hollowed<br />
+shells of their former glory: walls are filled with large holes, roofs have<br />
+collapsed into several of the buildings, entryways have filled with rubble.<br />
+<br />
+413H 124V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+n<br />
+Wall Road<br />
+    Once there was an immense lookout tower at the northeast corner of<br />
+Tarsis that provided city guards with a vantage point to survey the<br />
+surrounding landscape. That tower collapsed inward, into the city, bringing<br />
+a large section of the city wall with it. The entire road leading east is<br />
+blocked by the fallen stone and rubble now, the only exits are a road<br />
+leading south into the market, and west towards the northern gate.<br />
+<br />
+413H 123V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+s<br />
+s<br />
+The Ruined Market<br />
+    Large, burned out craters speckle the marketplace here serving as an<br />
+indication as to what happened to this mighty city. It is likely this area<br />
+was heavily targetted when the city was attacked because of the dense<br />
+population of a crowded marketplace. The surrounding buildings are hollowed<br />
+shells of their former glory: walls are filled with large holes, roofs have<br />
+collapsed into several of the buildings, entryways have filled with rubble.<br />
+<br />
+413H 122V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+Ravage, Nature of Threat is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Grant the Male Hylar Dwarf is standing here. (flying)<br />
+Oe Thunderfoot, Standing Atop Exclar's Corpse is standing here. (flying)<br />
+Delvar the Male Human is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+Daniel is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+<br />
+413H 121V 10196673X 1173C Mem:13 Exits:NSW&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            perfect   rested    standing   Y   Y    N    Y     1   13<br />
+  Ravage           perfect   rested    standing   Y   N    N    Y     2    9<br />
+  Daniel           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           perfect   fatigued  standing   Y   Y    N    Y     1    8<br />
+  Oe               perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Grant            good      rested    standing   Y   N    Y    Y     1    0<br />
+<br />
+413H 121V 10196673X 1173C Mem:13 Exits:NSW&gt;<br />
+w<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 120V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 120V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+w<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 119V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+<br />
+Delvar tells your group 'get elyana!'<br />
+<br />
+413H 119V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 119V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+<br />
+Oe focuses on Delvar and utters some strange words.<br />
+Delvar appears rejuvenated.<br />
+<br />
+413H 119V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+n<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 118V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 118V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+413H 118V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+<br />
+Grant tells your group 'fun'<br />
+<br />
+413H 118V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+s<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 117V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+n<br />
+n<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 116V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+North Gate<br />
+    The northern gate of Tarsis once stood as an inpenetrable boundary to<br />
+would-be attackers from the Plains of Dust. Guards would patrol this area<br />
+and often and protected the cities inhabitants from the nomads and common<br />
+criminals that dwelled within the Plains. Now the shattered gate stands as<br />
+an eternal testament to their failure: the gate itself has long been torn<br />
+out of its frame and shattered onto the stone road of the city.<br />
+<br />
+413H 115V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+TICK IN 7 SECONDS.<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 115V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+e<br />
+Wall Road<br />
+    Once there was an immense lookout tower at the northeast corner of<br />
+Tarsis that provided city guards with a vantage point to survey the<br />
+surrounding landscape. That tower collapsed inward, into the city, bringing<br />
+a large section of the city wall with it. The entire road leading east is<br />
+blocked by the fallen stone and rubble now, the only exits are a road<br />
+leading south into the market, and west towards the northern gate.<br />
+<br />
+413H 114V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 114V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+413H 114V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+s<br />
+The Ruined Market<br />
+    Large, burned out craters speckle the marketplace here serving as an<br />
+indication as to what happened to this mighty city. It is likely this area<br />
+was heavily targetted when the city was attacked because of the dense<br />
+population of a crowded marketplace. The surrounding buildings are hollowed<br />
+shells of their former glory: walls are filled with large holes, roofs have<br />
+collapsed into several of the buildings, entryways have filled with rubble.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+<br />
+Elyana flies east.<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+<br />
+Ravage tells your group 'man i came close to rip lol'<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NESW&gt;<br />
+e<br />
+Wall Road<br />
+    All that is left of the road to the north is a huge pile of rubble. The<br />
+outer city wall has fallen inward, blocking the path to the north. A small<br />
+road leads west, into the marketplace, and the cities east gate is just a<br />
+short distance south from here.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is standing here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+<br />
+413H 112V 10196673X 1173C Mem:13 Exits:SW&gt;<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Elyana.<br />
+<br />
+413H 112V 10196673X 1173C [Me:Perfect] [Elyana:V.Bad] Mem:14 Exits:SW&gt;<br />
+<br />
+Elyana steps aside as Grant attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+413H 112V 10196673X 1173C [Me:Perfect] [Elyana:V.Bad] Mem:14 Exits:SW&gt;<br />
+<br />
+Oe massacres Elyana with his shoot.<br />
+<br />
+413H 112V 10196673X 1173C [Me:Perfect] [Elyana:V.Bad] Mem:14 Exits:SW&gt;<br />
+<br />
+Delvar focuses harshly on Elyana and utters the words, 'force bolt'.<br />
+Delvar slowly fades into existence.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Elyana.<br />
+<br />
+413H 112V 10196673X 1173C [Me:Perfect] [Elyana:V.Bad] Mem:14 Exits:SW&gt;<br />
+<br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies south.<br />
+<br />
+413H 112V 10196673X 1173C Mem:14 Exits:SW&gt;<br />
+s<br />
+East Gate<br />
+    All that remains of this once great gate are splinters of wood and<br />
+broken stone. Portions of the archway that once framed the gate have<br />
+collapsed and there are gaping holes in the thick city walls. These gates<br />
+once repelled swarms of attackers, but the slow decay of time has broken it<br />
+down. The path that once lead to the southeastern portion of town ends in a<br />
+sudden drop-off; only a gaping crater remains where the buildings once<br />
+stood tall.<br />
+<br />
+413H 121V 10196673X 1173C Mem:13 Exits:NW&gt;<br />
+w<br />
+Eastern Road<br />
+    Weeds separated and broken through the stone tiles that once made up<br />
+this road, but even those weeds have long since died away. Each footfall<br />
+echoes through the shattered, skeletal remains of the buildings to the<br />
+north. All that remains of the southeastern corner of the city is a huge,<br />
+ominous crater.<br />
+<br />
+413H 120V 10196673X 1173C Mem:13 Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 120V 10196673X 1173C Mem:13 Exits:NEW&gt;<br />
+w<br />
+Old Tarsis Square<br />
+    Dead, dry moss fills the cracks near the remains of the old Tarsis<br />
+fountain. The ruined fountain has long since dried up and is a broken shell<br />
+of its former glory. The stone tiles that made up this square are shattered<br />
+and broken; weeds have broken through some of the tiles and misplaced<br />
+others, but even those are long-since dead, much like the rest of the city.<br />
+<br />
+413H 119V 10196673X 1173C Mem:9 Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 119V 10196673X 1173C Mem:9 Exits:NEW&gt;<br />
+e<br />
+n<br />
+Eastern Road<br />
+    Weeds separated and broken through the stone tiles that once made up<br />
+this road, but even those weeds have long since died away. Each footfall<br />
+echoes through the shattered, skeletal remains of the buildings to the<br />
+north. All that remains of the southeastern corner of the city is a huge,<br />
+ominous crater.<br />
+<br />
+413H 118V 10196673X 1173C Mem:13 Exits:NEW&gt;<br />
+A Shattered Road<br />
+    The state of the road has long since fallen from its former grace. This<br />
+once busy, bustling market road has seen few travelers in recent times.<br />
+Skeletons of the buildings that once bordered the road are all that is<br />
+left, save the restaurant to the east that has somehow, miraculously<br />
+survived all this time.<br />
+<br />
+413H 117V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+<br />
+Oe tells your group 'he was rested'<br />
+<br />
+413H 117V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 117V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+<br />
+Oe tells your group 'he was rested'<br />
+<br />
+413H 117V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+n<br />
+The Ruined Market<br />
+    Broken stone tiles crunch under your feet; the massive stone tiles that<br />
+once endured the footfalls of men and horses alike lie shattered and broken<br />
+here. The surrounding buildings are in the same condition: several have<br />
+missing walls and roofs while others have entirely collapsed onto<br />
+themselves.<br />
+<br />
+413H 116V 10196673X 1173C Mem:13 Exits:NSW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 116V 10196673X 1173C Mem:13 Exits:NSW&gt;<br />
+w<br />
+Before the Courthouse<br />
+    The building to the south once served as the city hall and courthouse<br />
+for Tarsis. Even now, in its dilapidated state, the building still has an<br />
+air of importance and authority. One of the main city roads lies to the<br />
+west, while the road leads eastward, towards the cities former markets.<br />
+<br />
+413H 115V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 115V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+w<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 114V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 114V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+n<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 113V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+n<br />
+North Gate<br />
+    The northern gate of Tarsis once stood as an inpenetrable boundary to<br />
+would-be attackers from the Plains of Dust. Guards would patrol this area<br />
+and often and protected the cities inhabitants from the nomads and common<br />
+criminals that dwelled within the Plains. Now the shattered gate stands as<br />
+an eternal testament to their failure: the gate itself has long been torn<br />
+out of its frame and shattered onto the stone road of the city.<br />
+<br />
+413H 112V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 112V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+w<br />
+A Fallen Guardpost<br />
+    Remnants of the guard tower still sit atop the walls of the city here,<br />
+although not nearly enough to remain usable. Splinters of wood are all that<br />
+remains of the supporting beams and the ladder that were once used to gain<br />
+access to the tower.<br />
+<br />
+413H 111V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+sca<br />
+<br />
+Oe tells your group 'grant'<br />
+<br />
+413H 111V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 111V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+w<br />
+The Northern Park Entrance<br />
+    Twisted, crushed iron, painted in rust, is all that remains of the<br />
+fence and gate that used to separate the park from the city. The grass that<br />
+once bordered the path into the park has been replaced by dust while the<br />
+path itself has been broken by weeds.<br />
+<br />
+413H 110V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+<br />
+Grant tells your group 'left me'<br />
+<br />
+413H 110V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Luze, Master of Losses is standing here.<br />
+. . . has a tough exterior.<br />
+Lord Ashira, Mythical Movement Specialist is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Jvails Kindheart, Shifty-Eyed Saint is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Creel is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Breaker the Quaker Baker, Sunflower Troublemaker is standing here. (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Lord Elrik of Melnibone, Albino Prince is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 110V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+<br />
+Daniel tells your group 'lost grant'<br />
+<br />
+413H 110V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+<br />
+Oe kneels down and studies the ground.<br />
+<br />
+413H 110V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+e<br />
+Oe kneels down and studies the ground.<br />
+A Fallen Guardpost<br />
+    Remnants of the guard tower still sit atop the walls of the city here,<br />
+although not nearly enough to remain usable. Splinters of wood are all that<br />
+remains of the supporting beams and the ladder that were once used to gain<br />
+access to the tower.<br />
+<br />
+413H 109V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+e<br />
+Oe kneels down and studies the ground.<br />
+North Gate<br />
+    The northern gate of Tarsis once stood as an inpenetrable boundary to<br />
+would-be attackers from the Plains of Dust. Guards would patrol this area<br />
+and often and protected the cities inhabitants from the nomads and common<br />
+criminals that dwelled within the Plains. Now the shattered gate stands as<br />
+an eternal testament to their failure: the gate itself has long been torn<br />
+out of its frame and shattered onto the stone road of the city.<br />
+<br />
+413H 108V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+s<br />
+Oe kneels down and studies the ground.<br />
+Northern Road<br />
+    The stone tiles of this road have long since lost their form and<br />
+structure: the road here is uneven and cracked, even missing in some parts.<br />
+Broken stone and gravel speckle the road, causing each footfall to create<br />
+an eery &quot;crunching&quot; sound. The main road runs north, towards the city<br />
+gates, and south, towards the fountain and city square. A smaller road<br />
+leads eastward towards the market.<br />
+<br />
+413H 107V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            perfect   rested    standing   Y   Y    N    Y     1   13<br />
+  Ravage           perfect   rested    standing   Y   N    N    Y     2    8<br />
+  Daniel           perfect   rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           perfect   rested    standing   Y   Y    N    Y     1    8<br />
+  Oe               perfect   rested    standing   Y   N    N    Y     0    1<br />
+  Grant            good      rested    standing   Y   N    Y    N     1    0<br />
+<br />
+413H 107V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+<br />
+Oe tells your group 's'<br />
+<br />
+413H 107V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+gt stop resting<br />
+You tell your group 'stop resting'<br />
+<br />
+413H 107V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+s<br />
+Oe kneels down and studies the ground.<br />
+Northern Road<br />
+    The city square lies just to the south, where the sounds of children<br />
+laughing and other familiar city sounds filled the air. Now there is an<br />
+eery silence, save for the noises that you make. This road runs<br />
+north-south, joining the cities fountain with the it's northern gate, while<br />
+a narrow street leads east, towards the remains of an important looking<br />
+building.<br />
+<br />
+413H 106V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 106V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+<br />
+Ravage utters some strange words.<br />
+Ravage's skin begins to shine like steel.<br />
+<br />
+413H 106V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+s<br />
+<br />
+Oe tells your group 's'<br />
+<br />
+413H 106V 10196673X 1173C Mem:13 Exits:NES&gt;<br />
+Oe kneels down and studies the ground.<br />
+Old Tarsis Square<br />
+    Dead, dry moss fills the cracks near the remains of the old Tarsis<br />
+fountain. The ruined fountain has long since dried up and is a broken shell<br />
+of its former glory. The stone tiles that made up this square are shattered<br />
+and broken; weeds have broken through some of the tiles and misplaced<br />
+others, but even those are long-since dead, much like the rest of the city.<br />
+Grant the Male Hylar Dwarf is standing here. (flying)<br />
+<br />
+413H 105V 10196673X 1173C Mem:9 Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 105V 10196673X 1173C Mem:9 Exits:NEW&gt;<br />
+<br />
+Grant tells your group 'it's called bashing'<br />
+<br />
+413H 105V 10196673X 1173C Mem:9 Exits:NEW&gt;<br />
+w<br />
+Grant kneels down and studies the ground.<br />
+Western Road<br />
+    Large cracks in the stone tiles of the road indicate that the<br />
+foundation this road was set on has shifted and changed over time. This<br />
+road leads east to the cities fountain, and westwards towards the Tarsis<br />
+wastelands.<br />
+<br />
+413H 104V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 104V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+<br />
+Daniel snickers softly.<br />
+<br />
+413H 104V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+g tok!<br />
+You don't see what you are looking for here.<br />
+<br />
+413H 104V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 104V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+w<br />
+Western Road<br />
+    This road runs east-west, from the Tarsis fountain towards the<br />
+wastelands. A small road leads north from here, past the old Tarsis temple<br />
+and towards the park. Immediately to the south is a row of broken<br />
+buildings, most of them empty shells or heaps of rubble.<br />
+<br />
+413H 103V 10196673X 1173C Mem:13 Exits:NEW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 103V 10196673X 1173C Mem:13 Exits:NEW&gt;<br />
+w<br />
+Near the Tarsis Wastelands<br />
+    The broken road continues westward, towards the Tarsis Wastelands which<br />
+was once known for the vagrants and criminals that occupied the area. Now<br />
+it, like the rest of the city, is barren and desolate. A road branches off<br />
+to the south, leading towards the cities inn, while the main road leads<br />
+eastward, towards the city square.<br />
+<br />
+413H 102V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+A bronze dragon is sitting here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 102V 10196673X 1173C Mem:13 Exits:ESW&gt;<br />
+w<br />
+The Tarsis Wastelands<br />
+    Once, these Wastelands served as a walking ground for muggers,<br />
+prostitutes, thieves and the like, but now it is dead and barren. The<br />
+remains of a large ship that was grounded here can be seen to the south,<br />
+but it had collapsed onto itself a long time ago, destroying whatever might<br />
+have been in it.<br />
+A bronze dragon is sitting here.<br />
+<br />
+413H 100V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+sca<br />
+Oe tells your group 'go go'<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is sitting here, fighting Kogi. (flying)<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here, fighting Elyana. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here, fighting Lashe.<br />
+. . . is outlined with a dim aura.<br />
+Kjama the Female Human is sitting here, fighting Zug. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is sitting here, fighting Vittu. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+Javi Vonzani, Holy Swami is standing here, fighting Zug.<br />
+. . . is outlined with a dim aura.<br />
+Kogi the Male Minitaur is standing here, fighting Zug. (flying)<br />
+. . . has a metallic luster.<br />
+Fernar, Myth with a Big Shield and a Hacky is standing here, fighting Zug.<br />
+Sharmaine De'Goss, The Utterly Useless is standing here, fighting Kogi. (flying)<br />
+Lady Lashe, Malevolent Priestess of Sedition is sitting here, fighting Fernar. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Epso Stormhammer, the Passion of Mishakal is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Zug Zug is sitting here, fighting Kjama. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+413H 100V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+Who should the spell be cast upon?<br />
+<br />
+413H 100V 10196673X 1173C Mem:13 Exits:EW&gt;<br />
+w<br />
+The Tarsis Wastelands<br />
+    Clouds of dry dust and sand fill the air, stirred up from every<br />
+footstep, making it difficult to breath. There is almost nothing to see in<br />
+this area, save the fallen city of Tarsis to the east.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is sitting here. (flying)<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here, fighting Lashe.<br />
+. . . is outlined with a dim aura.<br />
+Kjama the Female Human is sitting here, fighting Zug. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Javi Vonzani, Holy Swami is standing here, fighting Zug.<br />
+. . . is outlined with a dim aura.<br />
+Kogi the Male Minitaur is standing here, fighting Zug. (flying)<br />
+. . . has a metallic luster.<br />
+Fernar, Myth with a Big Shield and a Hacky is standing here, fighting Zug.<br />
+Sharmaine De'Goss, The Utterly Useless is standing here, fighting Kogi. (flying)<br />
+Lady Lashe, Malevolent Priestess of Sedition is standing here, fighting Fernar. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Epso Stormhammer, the Passion of Mishakal is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Zug Zug is sitting here, fighting someone who has already left. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+413H 98V 10196673X 1173C Mem:13 Exits:ES&gt;<br />
+<br />
+Kjama stands up.<br />
+<br />
+413H 98V 10196673X 1173C Mem:13 Exits:ES&gt;<br />
+<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies south.<br />
+<br />
+413H 98V 10196673X 1173C Mem:13 Exits:ES&gt;<br />
+<br />
+Promina panics, and attempts to flee.<br />
+Promina leaves south.<br />
+<br />
+413H 98V 10196673X 1173C Mem:13 Exits:ES&gt;<br />
+c 'prismatic spray'<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You blast Kilians with a spray of scintillating blue!<br />
+You blast Vittu with a spray of scintillating blue!<br />
+You strike Javi with a spray of vibrant green!<br />
+You blast Kogi with a spray of scintillating blue!<br />
+Kogi freezes in place.<br />
+You catch Kogi in a spray of radiant yellow!<br />
+You hit Fernar with a spray of gleaming indigo!<br />
+Fernar's face goes blank and he begins to drool.<br />
+You blast Sharmaine with a spray of scintillating blue!<br />
+Sharmaine freezes in place.<br />
+You catch Lashe in a spray of radiant yellow!<br />
+You blast Lashe with a spray of scintillating blue!<br />
+Lashe freezes in place.<br />
+You catch Epso in a spray of bright orange!<br />
+You strike Zug with a spray of vibrant green!<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Fair] Mem:14 Exits:ES&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe annihilates Kilians with his shoot.<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Kjama flies in from the south.<br />
+Promina arrives from the south.<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama stabs Epso extremely hard.<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Javi steps aside as Daniel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Zug stands up.<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Grant crashes into Lashe in a thundering collision, knocking her to the ground!<br />
+<br />
+413H 98V 10196673X 1173C [Me:Perfect] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Kilians.<br />
+Zug misses you and destroys an image.<br />
+Javi deftly steps in front of Kogi, pushing into the frey.<br />
+Javi heroically rescues Kogi.<br />
+Javi stabs Sharmaine extremely hard.<br />
+Oe annihilates Zug with his shoot.<br />
+Oe annihilates Zug with his shoot.<br />
+Zug slashes YOU very hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Zug misses you and destroys an image.<br />
+Zug slashes YOU very hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Grant massacres Lashe with his slash.<br />
+Daniel slashes Javi very hard.<br />
+Kjama massacres Epso with her stab.<br />
+Epso misses you with his hit.<br />
+You miss Kilians with your pierce.<br />
+Kilians misses you and destroys an image.<br />
+Fernar massacres Zug with his crush.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Delvar utters the words, 'power word stun'.<br />
+Delvar slowly fades into existence.<br />
+Promina is stunned momentarily, recovering quickly.<br />
+Kjama is stunned momentarily, recovering quickly.<br />
+Kilians is stunned momentarily, recovering quickly.<br />
+Javi is stunned momentarily, recovering quickly.<br />
+Kogi is stunned momentarily, recovering quickly.<br />
+Fernar is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned!<br />
+Lashe is stunned momentarily, recovering quickly.<br />
+Epso is stunned momentarily, recovering quickly.<br />
+Zug is stunned momentarily, recovering quickly.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Vittu flies in from the south.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Promina panics, and attempts to flee.<br />
+Promina leaves east.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Vittu flies east.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Fernar panics, and attempts to flee.<br />
+Fernar leaves east.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Bad] Mem:14 Exits:ES&gt;<br />
+<br />
+Epso focuses on Kilians and utters some strange words.<br />
+Epso heals Kilians.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:V.Good] Mem:14 Exits:ES&gt;<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Kjama in a spray of radiant yellow!<br />
+You catch Kilians in a spray of shimmering red!<br />
+Kilians seems weaker.<br />
+You blast Kilians with a spray of scintillating blue!<br />
+Kilians freezes in place.<br />
+You strike Javi with a spray of vibrant green!<br />
+You strike Javi with a spray of murky violet!<br />
+You hit Kogi with a spray of gleaming indigo!<br />
+You strike Kogi with a spray of vibrant green!<br />
+You catch Sharmaine in a spray of shimmering red!<br />
+You blast Lashe with a spray of scintillating blue!<br />
+You strike Epso with a spray of vibrant green!<br />
+You catch Zug in a spray of radiant yellow!<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Kilians:Good] Mem:15 Exits:ES&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Zug heroically rescues Kilians.<br />
+Zug slashes Javi very hard.<br />
+You miss Zug with your pierce.<br />
+Zug slashes Javi extremely hard.<br />
+Zug pierces Javi extremely hard.<br />
+Zug slashes Javi extremely hard.<br />
+Javi stabs Sharmaine extremely hard.<br />
+Oe annihilates Zug with his shoot.<br />
+Oe massacres Zug with his shoot.<br />
+Grant massacres Lashe with his slash.<br />
+Daniel massacres Javi with his slash.<br />
+Kjama massacres Epso with her stab.<br />
+Kjama massacres Epso with her stab.<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies east.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:15 Exits:ES&gt;<br />
+<br />
+Delvar utters the words, 'power word stun'.<br />
+Delvar slowly fades into existence.<br />
+Kilians is stunned momentarily, recovering quickly.<br />
+Javi is stunned momentarily, recovering quickly.<br />
+Kogi is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned!<br />
+Lashe is stunned momentarily, recovering quickly.<br />
+Epso is stunned momentarily, recovering quickly.<br />
+Zug is stunned momentarily, recovering quickly.<br />
+Javi attempts to strike at Sharmaine with his rapier.<br />
+Javi massacres Sharmaine with his stab.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:15 Exits:ES&gt;<br />
+<br />
+Oe stops fighting his opponent and turns to Epso instead.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:15 Exits:ES&gt;<br />
+<br />
+Epso utters some strange words.<br />
+Epso heals Epso.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:15 Exits:ES&gt;<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Kilians in a spray of bright orange!<br />
+You catch Javi in a spray of radiant yellow!<br />
+You strike Kogi with a spray of murky violet!<br />
+You catch Sharmaine in a spray of shimmering red!<br />
+Sharmaine seems weaker.<br />
+You blast Lashe with a spray of scintillating blue!<br />
+You catch Epso in a spray of bright orange!<br />
+You catch Epso in a spray of radiant yellow!<br />
+You catch Zug in a spray of shimmering red!<br />
+Zug seems weaker.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:16 Exits:ES&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Daniel stands up.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:Fair] [Zug:Bad] Mem:16 Exits:ES&gt;<br />
+<br />
+Zug slams into Kilians and pushes him out of the way of battle.<br />
+Zug slashes Javi extremely hard.<br />
+Delvar misses Zug with his pierce.<br />
+Zug slashes Javi very hard.<br />
+Zug pierces Javi very hard.<br />
+Zug slashes Javi hard.<br />
+Oe massacres Epso with his shoot.<br />
+Oe annihilates Epso with his shoot.<br />
+Javi massacres Sharmaine with his stab.<br />
+Grant slashes Lashe extremely hard.<br />
+Daniel massacres Javi with his slash.<br />
+Daniel crashes into Lashe in a thundering collision, knocking her to the ground!<br />
+Javi steps aside as Grant attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:V.Bad] [Zug:Bad] Mem:16 Exits:ES&gt;<br />
+<br />
+Delvar utters the words, 'prismatic spray'.<br />
+Delvar's hands issue a spray of prismatic color!<br />
+Kilians is caught in a spray of shimmering red!<br />
+Javi is caught in a spray of bright orange!<br />
+Javi is caught in a spray of shimmering red!<br />
+Kogi is struck by a spray of murky violet!<br />
+Sharmaine is struck by a spray of vibrant green!<br />
+Lashe is caught in a spray of radiant yellow!<br />
+Lashe is caught in a spray of shimmering red!<br />
+Epso is struck by a spray of vibrant green!<br />
+Zug is caught in a spray of shimmering red!<br />
+Javi attempts to strike at Sharmaine with his rapier.<br />
+Javi massacres Sharmaine with his stab.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:V.Bad] [Zug:V.Bad] Mem:16 Exits:ES&gt;<br />
+<br />
+Kjama flies in from the east.<br />
+<br />
+387H 98V 10196673X 1173C [Me:V.Good] [Javi:V.Bad] [Zug:V.Bad] Mem:16 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+<br />
+357H 98V 10196673X 1173C [Me:Good] [Javi:V.Bad] [Zug:V.Bad] Mem:16 Exits:ES&gt;<br />
+<br />
+Epso focuses on Zug and utters some strange words.<br />
+Epso heals Zug.<br />
+<br />
+357H 98V 10196673X 1173C [Me:Good] [Javi:V.Bad] [Zug:V.Good] Mem:16 Exits:ES&gt;<br />
+You can't remember how to cast that spell!<br />
+<br />
+357H 98V 10196673X 1173C [Me:Good] [Javi:V.Bad] [Zug:V.Good] Mem:16 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Sharmaine.<br />
+<br />
+357H 98V 10196673X 1173C [Me:Good] [Javi:V.Bad] [Zug:V.Good] Mem:16 Exits:ES&gt;<br />
+<br />
+Javi misses Zug with his stab.<br />
+Javi blocks Zug's blow with a quick raise of his shield.<br />
+Zug pierces Javi very hard.<br />
+Kjama misses you and destroys an image.<br />
+The images around you fade out of existance.<br />
+Kjama annihilates YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Oe annihilates Epso with his shoot.<br />
+Oe massacres Epso with his shoot.<br />
+Grant massacres Lashe with his slash.<br />
+Twinkling lights surround Lashe and she disappears.<br />
+Daniel slashes Javi extremely hard.<br />
+<br />
+321H 98V 10196673X 1173C [Me:Good] [Javi:Awful] [Zug:V.Good] Mem:16 Exits:ES&gt;<br />
+flee<br />
+You flee head over heels.<br />
+The Tarsis Wastelands<br />
+    Once, these Wastelands served as a walking ground for muggers,<br />
+prostitutes, thieves and the like, but now it is dead and barren. The<br />
+remains of a large ship that was grounded here can be seen to the south,<br />
+but it had collapsed onto itself a long time ago, destroying whatever might<br />
+have been in it.<br />
+Fernar, Myth with a Big Shield and a Hacky is standing here, fighting Vittu.<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is sitting here, fighting Fernar. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here, fighting Vittu.<br />
+. . . is outlined with a dim aura.<br />
+A bronze dragon is sitting here.<br />
+<br />
+321H 96V 10196673X 1173C Mem:16 Exits:EW&gt;<br />
+w<br />
+The Tarsis Wastelands<br />
+    Clouds of dry dust and sand fill the air, stirred up from every<br />
+footstep, making it difficult to breath. There is almost nothing to see in<br />
+this area, save the fallen city of Tarsis to the east.<br />
+Kjama the Female Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Grant the Male Hylar Dwarf is sitting here. (flying)<br />
+Oe Thunderfoot, Standing Atop Exclar's Corpse is standing here, fighting Epso. (flying)<br />
+Delvar the Male Human is standing here, fighting Zug. (flying)<br />
+. . . is enveloped in flames.<br />
+Daniel is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Ravage, Nature of Threat is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is sitting here, fighting Delvar. (flying)<br />
+Kogi the Male Minitaur is standing here, fighting Zug. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Sharmaine De'Goss, The Utterly Useless is sitting here. (flying)<br />
+Epso Stormhammer, the Passion of Mishakal is standing here, fighting Oe. (flying)<br />
+. . . has a metallic luster.<br />
+Zug Zug is standing here, fighting Kogi. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+321H 94V 10196673X 1173C Mem:16 Exits:ES&gt;<br />
+<br />
+Kjama flies east.<br />
+<br />
+321H 94V 10196673X 1173C Mem:16 Exits:ES&gt;<br />
+c 'p w s'<br />
+You utter the words, 'power word stun'<br />
+Kilians is stunned momentarily, recovering quickly.<br />
+Kogi is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned!<br />
+Epso is stunned!<br />
+Zug is stunned momentarily, recovering quickly.<br />
+<br />
+321H 94V 10196673X 1173C [Me:Good] [Delvar:Perfect] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Delvar utters the words, 'power word stun'.<br />
+Kilians is stunned momentarily, recovering quickly.<br />
+Kogi is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned momentarily, recovering quickly.<br />
+Epso is stunned momentarily, recovering quickly.<br />
+Zug is stunned momentarily, recovering quickly.<br />
+<br />
+321H 94V 10196673X 1173C [Me:Good] [Delvar:Perfect] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Kjama flies in from the east.<br />
+<br />
+321H 94V 10196673X 1173C [Me:Good] [Delvar:Perfect] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+<br />
+300H 94V 10196673X 1173C [Me:Fair] [Delvar:Perfect] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Epso.<br />
+Oe annihilates Zug with his shoot.<br />
+Zug slashes Oe extremely hard.<br />
+Zug pierces Oe hard.<br />
+Zug slashes Oe extremely hard.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+You massacre Kilians with your pierce.<br />
+<br />
+241H 94V 10196673X 1173C [Me:Fair] [Delvar:Perfect] [Kilians:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Grant stands up.<br />
+<br />
+241H 94V 10196673X 1173C [Me:Fair] [Delvar:Perfect] [Kilians:Fair] Mem:18 Exits:ES&gt;<br />
+flee<br />
+<br />
+Daniel crashes into Kjama in a thundering collision, knocking her to the ground!<br />
+<br />
+241H 94V 10196673X 1173C [Me:Fair] [Delvar:Perfect] [Kilians:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Ravage focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+412H 94V 10196673X 1173C [Me:V.Good] [Delvar:Perfect] [Kilians:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Grant crashes into Zug in a thundering collision, knocking him to the ground!<br />
+<br />
+412H 94V 10196673X 1173C [Me:V.Good] [Delvar:Perfect] [Kilians:Fair] Mem:18 Exits:ES&gt;<br />
+You flee head over heels.<br />
+The Tarsis Wastelands<br />
+    Once, these Wastelands served as a walking ground for muggers,<br />
+prostitutes, thieves and the like, but now it is dead and barren. The<br />
+remains of a large ship that was grounded here can be seen to the south,<br />
+but it had collapsed onto itself a long time ago, destroying whatever might<br />
+have been in it.<br />
+Fernar, Myth with a Big Shield and a Hacky is standing here.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here.<br />
+. . . has a tough exterior.<br />
+A bronze dragon is sitting here.<br />
+<br />
+412H 92V 10196673X 1173C Mem:18 Exits:EW&gt;<br />
+w<br />
+The Tarsis Wastelands<br />
+    Clouds of dry dust and sand fill the air, stirred up from every<br />
+footstep, making it difficult to breath. There is almost nothing to see in<br />
+this area, save the fallen city of Tarsis to the east.<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here, fighting Delvar. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Kjama the Female Human is sitting here, fighting Daniel. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Grant the Male Hylar Dwarf is standing here, fighting Zug. (flying)<br />
+Oe Thunderfoot, Standing Atop Exclar's Corpse is standing here, fighting Zug. (flying)<br />
+Delvar the Male Human is standing here, fighting Zug. (flying)<br />
+. . . is enveloped in flames.<br />
+Daniel is standing here, fighting Kjama. (flying)<br />
+. . . has a tough exterior.<br />
+Ravage, Nature of Threat is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is sitting here, fighting Delvar. (flying)<br />
+Kogi the Male Minitaur is standing here, fighting Zug. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Sharmaine De'Goss, The Utterly Useless is sitting here, fighting Delvar. (flying)<br />
+Epso Stormhammer, the Passion of Mishakal is sitting here, fighting Delvar. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Zug Zug is sitting here, fighting Oe. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+c 'prismatic spray'<br />
+<br />
+Vittu slowly fades into existence.<br />
+Vittu pierces Delvar very hard.<br />
+Vittu is burned, as he swings at Delvar.<br />
+Kjama annihilates Daniel with her stab.<br />
+Grant massacres Zug with his slash.<br />
+Kjama blocks Daniel's blow with a quick raise of her shield.<br />
+Oe misses Zug with his shoot.<br />
+Zug massacres Oe with his slash.<br />
+Zug pierces Oe hard.<br />
+Zug massacres Oe with his slash.<br />
+Kogi misses Zug with his bludgeon.<br />
+Kogi panics, and attempts to flee.<br />
+Kogi flies east.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+TICK IN 7 SECONDS.<br />
+You can't remember how to cast that spell!<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+ass<br />
+You attempt to assist Daniel.<br />
+You miss Kjama with your pierce.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:V.Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+c 'force bolt'<br />
+<br />
+Zug stands up.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:V.Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Promina massacres Vittu with her shoot.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:V.Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Promina massacres Vittu with her shoot.<br />
+Promina massacres Vittu with her shoot.<br />
+Twinkling lights surround Vittu and he disappears.<br />
+You miss Kjama with your pierce.<br />
+Kjama massacres Daniel with her stab.<br />
+Grant slashes Zug extremely hard.<br />
+Daniel misses Kjama with his slash.<br />
+Oe misses Zug with his shoot.<br />
+Zug slashes Oe extremely hard.<br />
+Zug misses Oe with his pierce.<br />
+Zug massacres Oe with his slash.<br />
+Delvar falls back as Kilians crushes him on the head.<br />
+Kilians crushes Delvar very hard.<br />
+Kilians is burned, as he swings at Delvar.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Kilians stands up.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Oe stops fighting his opponent and turns to Epso instead.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Ravage focuses on Oe and utters some strange words.<br />
+Ravage heals Oe.<br />
+<br />
+412H 90V 10196673X 1173C [Me:V.Good] [Daniel:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Kjama stands up.<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies south.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+<br />
+Kilians panics, and attempts to flee.<br />
+Kilians flies east.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+<br />
+Kjama flies in from the south.<br />
+<br />
+412H 90V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+<br />
+389H 90V 10196673X 1173C [Me:V.Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Epso.<br />
+<br />
+389H 90V 10196673X 1173C [Me:V.Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Oe annihilates Zug with his shoot.<br />
+Zug slashes Oe extremely hard.<br />
+Zug pierces Oe extremely hard.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+You miss Kjama with your pierce.<br />
+Epso misses Delvar with his hit.<br />
+Sharmaine slashes Delvar hard.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+Grant misses Zug with his slash.<br />
+Delvar misses Zug with his pierce.<br />
+Delvar utters the words, 'power word stun'.<br />
+Kjama is stunned momentarily, recovering quickly.<br />
+Promina is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned!<br />
+Epso is stunned momentarily, recovering quickly.<br />
+Zug is stunned momentarily, recovering quickly.<br />
+Epso stands up.<br />
+<br />
+341H 100V 10196673X 1173C [Me:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+flee<br />
+<br />
+Daniel crashes into Kjama in a thundering collision, knocking her to the ground!<br />
+<br />
+341H 100V 10196673X 1173C [Me:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Kilians flies in from the east.<br />
+<br />
+341H 100V 10196673X 1173C [Me:Good] [Kjama:Fair] Mem:18 Exits:ES&gt;<br />
+You flee head over heels.<br />
+The Tarsis Wastelands<br />
+    Once, these Wastelands served as a walking ground for muggers,<br />
+prostitutes, thieves and the like, but now it is dead and barren. The<br />
+remains of a large ship that was grounded here can be seen to the south,<br />
+but it had collapsed onto itself a long time ago, destroying whatever might<br />
+have been in it.<br />
+Kogi the Male Minitaur is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Fernar, Myth with a Big Shield and a Hacky is standing here.<br />
+A bronze dragon is sitting here.<br />
+<br />
+341H 98V 10196673X 1173C Mem:18 Exits:EW&gt;<br />
+<br />
+Kogi flies west.<br />
+<br />
+341H 98V 10196673X 1173C Mem:18 Exits:EW&gt;<br />
+w<br />
+The Tarsis Wastelands<br />
+    Clouds of dry dust and sand fill the air, stirred up from every<br />
+footstep, making it difficult to breath. There is almost nothing to see in<br />
+this area, save the fallen city of Tarsis to the east.<br />
+Kogi the Male Minitaur is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is standing here. (flying)<br />
+Kjama the Female Human is sitting here, fighting Daniel. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here, fighting Delvar.<br />
+. . . has a tough exterior.<br />
+Grant the Male Hylar Dwarf is standing here, fighting Zug. (flying)<br />
+Oe Thunderfoot, Standing Atop Exclar's Corpse is standing here, fighting Zug. (flying)<br />
+Delvar the Male Human is standing here, fighting Zug. (flying)<br />
+. . . is enveloped in flames.<br />
+Daniel is standing here, fighting Kjama. (flying)<br />
+. . . has a tough exterior.<br />
+Ravage, Nature of Threat is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Sharmaine De'Goss, The Utterly Useless is lying here, stunned. (flying)<br />
+Epso Stormhammer, the Passion of Mishakal is standing here, fighting Delvar. (flying)<br />
+. . . has a metallic luster.<br />
+Zug Zug is standing here, fighting Oe. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+341H 96V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+<br />
+Zug yells a battle cry and fights like a madman!<br />
+<br />
+341H 96V 10196673X 1173C Mem:18 Exits:ES&gt;<br />
+<br />
+You are sent sprawling as Kilians crashes into you.<br />
+<br />
+328H 96V 10196673X 1173C [Me:Good] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Oe stops fighting his opponent and turns to Epso instead.<br />
+<br />
+328H 96V 10196673X 1173C [Me:Good] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Fernar arrives from the east.<br />
+<br />
+328H 96V 10196673X 1173C [Me:Good] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Promina stops fighting her opponent and turns to you instead.<br />
+<br />
+328H 96V 10196673X 1173C [Me:Good] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+st<br />
+<br />
+Fernar stops following Kjama.<br />
+Fernar now follows Kogi.<br />
+<br />
+328H 96V 10196673X 1173C [Me:Good] [Kilians:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Kilians.<br />
+You miss Zug with your pierce.<br />
+Zug slashes YOU extremely hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Zug pierces YOU very hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Zug massacres YOU with his slash.<br />
+Zug burns as he passes through your fire shield.<br />
+Promina massacres YOU with her shoot.<br />
+Promina shoots YOU extremely hard.<br />
+Oe massacres Epso with his shoot.<br />
+Oe massacres Epso with his shoot.<br />
+Kjama annihilates Daniel with her stab.<br />
+Kjama annihilates Daniel with her stab.<br />
+Daniel massacres Kjama with his slash.<br />
+Grant slashes Zug extremely hard.<br />
+<br />
+230H 96V 10196673X 1173C [Me:Fair] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Ravage focuses on you and utters some strange words.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Delvar utters the words, 'power word stun'.<br />
+Fernar is stunned momentarily, recovering quickly.<br />
+Kogi is stunned momentarily, recovering quickly.<br />
+Kilians is stunned momentarily, recovering quickly.<br />
+Kjama is stunned momentarily, recovering quickly.<br />
+Promina is stunned momentarily, recovering quickly.<br />
+Sharmaine is stunned momentarily, recovering quickly.<br />
+Epso is stunned momentarily, recovering quickly.<br />
+Zug is stunned momentarily, recovering quickly.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Kogi focuses on Fernar and utters some strange words.<br />
+Kogi heals Fernar.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Epso utters some strange words.<br />
+Epso heals Epso.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+c 'mirror image'<br />
+<br />
+Kjama stands up.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Grant comes to your aid, but fails miserably.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Javi arrives from the south.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Fernar stops following Kogi.<br />
+Fernar now follows Kjama.<br />
+<br />
+319H 96V 10196673X 1173C [Me:Good] [Zug:Good] Mem:18 Exits:ES&gt;<br />
+<br />
+Kilians crushes Delvar hard.<br />
+Kilians is burned, as he swings at Delvar.<br />
+Fernar crushes Delvar.<br />
+Fernar is burned, as he swings at Delvar.<br />
+You miss Zug with your pierce.<br />
+Zug slashes YOU extremely hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Zug pierces YOU hard.<br />
+Zug burns as he passes through your fire shield.<br />
+Promina massacres YOU with her shoot.<br />
+Promina shoots YOU extremely hard.<br />
+Oe massacres Epso with his shoot.<br />
+Oe massacres Epso with his shoot.<br />
+Kjama annihilates Daniel with her stab.<br />
+Kjama massacres Daniel with her stab.<br />
+Kjama blocks Daniel's blow with a quick raise of her shield.<br />
+Grant slashes Zug extremely hard.<br />
+<br />
+254H 96V 10196673X 1173C [Me:Fair] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Daniel comes to your aid, but fails miserably.<br />
+<br />
+254H 96V 10196673X 1173C [Me:Fair] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Javi stabs YOU very hard.<br />
+Javi burns as he passes through your fire shield.<br />
+<br />
+240H 96V 10196673X 1173C [Me:Fair] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Epso.<br />
+<br />
+240H 96V 10196673X 1173C [Me:Fair] [Oe:V.Good] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Ravage focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+<br />
+Epso focuses on Sharmaine and utters some strange words.<br />
+Epso heals Sharmaine.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+You stand up.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:18 Exits:ES&gt;<br />
+You utter the words, 'mirror image'<br />
+You are surrounded by 4 duplicate images.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Kilians panics, and attempts to flee.<br />
+Kilians flies east.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies south.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Fernar tries to bash you, but he passes right through your image.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Grant comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Zug yells a battle cry and fights like a madman!<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Kjama flies in from the south.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres Epso with her stab.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:V.Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+flee<br />
+<br />
+Kjama massacres Epso with her stab.<br />
+Kjama massacres Epso with her stab.<br />
+Javi stabs Grant hard.<br />
+Grant slashes Javi extremely hard.<br />
+Oe misses Zug with his shoot.<br />
+Zug slashes Oe extremely hard.<br />
+Zug pierces Oe extremely hard.<br />
+Zug massacres Oe with his slash.<br />
+Kogi misses Delvar with his bludgeon.<br />
+Fernar misses Delvar and destroys an image instead.<br />
+Promina misses you and destroys an image.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Promina panics, and attempts to flee.<br />
+Promina leaves south.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Ravage focuses on Daniel and utters some strange words.<br />
+Ravage heals Daniel.<br />
+Javi focuses his purity on Grant's leg!<br />
+Javi forces Grant to the ground.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+<br />
+Kilians flies in from the east.<br />
+<br />
+409H 96V 10196673X 1173C [Me:V.Good] [Oe:Good] [Zug:Fair] Mem:19 Exits:ES&gt;<br />
+You flee head over heels.<br />
+The Tarsis Wastelands<br />
+    The smell of filth still lingers in the air here, a remnant of the<br />
+cities dump that rests just a short distance to the south. A short distance<br />
+to the northeast, you can make out a wagon in this desert wasteland.<br />
+Promina, Goda Vosian Shadow of the Kagonesti is standing here.<br />
+. . . is outlined with a dim aura.<br />
+<br />
+409H 94V 10196673X 1173C Mem:19 Exits:NES&gt;<br />
+n<br />
+The Tarsis Wastelands<br />
+    Clouds of dry dust and sand fill the air, stirred up from every<br />
+footstep, making it difficult to breath. There is almost nothing to see in<br />
+this area, save the fallen city of Tarsis to the east.<br />
+Jvails Kindheart, Shifty-Eyed Saint is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kilians Stormblade, Dark Tide of the Blood Sea Pirates is standing here. (flying)<br />
+Kjama the Female Human is standing here, fighting Epso. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Javi Vonzani, Holy Swami is standing here, fighting Grant.<br />
+. . . is outlined with a dim aura.<br />
+Fernar, Myth with a Big Shield and a Hacky is sitting here, fighting Delvar.<br />
+Kogi the Male Minitaur is standing here, fighting Delvar. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Grant the Male Hylar Dwarf is sitting here, fighting Javi. (flying)<br />
+Oe Thunderfoot, Standing Atop Exclar's Corpse is standing here, fighting Kogi. (flying)<br />
+Delvar the Male Human is standing here, fighting Zug. (flying)<br />
+. . . has a metallic luster.<br />
+Daniel is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Ravage, Nature of Threat is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+Sharmaine De'Goss, The Utterly Useless is sitting here, fighting Delvar. (flying)<br />
+Epso Stormhammer, the Passion of Mishakal is standing here, fighting Delvar. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Zug Zug is standing here, fighting Oe. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Epso.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Elrik flies in from the east.<br />
+Breaker arrives from the east.<br />
+Creel flies in from the east.<br />
+Ashira flies in from the east.<br />
+Luze arrives from the east.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Kilians crashes into Kogi in a thundering collision, knocking him to the ground!<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Ashira focuses harshly on Kilians and utters some strange words.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Daniel crashes into Kjama in a thundering collision, knocking her to the ground!<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Javi deftly steps in front of Kogi, pushing into the frey.<br />
+Javi heroically rescues Kogi.<br />
+Javi blocks Oe's blow with a quick raise of his shield.<br />
+Javi misses Oe with his stab.<br />
+Daniel massacres Kjama with his slash.<br />
+Kilians misses Kogi with his crush.<br />
+Kjama massacres Zug with her stab.<br />
+Kjama massacres Zug with her stab.<br />
+Zug massacres Kjama with his slash.<br />
+Zug pierces Kjama very hard.<br />
+Grant slashes Javi extremely hard.<br />
+Kogi misses Delvar with his bludgeon.<br />
+Fernar crushes Delvar hard.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Epso misses Delvar with his hit.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+ass<br />
+<br />
+Elrik flies east.<br />
+Breaker leaves east.<br />
+Creel flies east.<br />
+Jvails flies east.<br />
+Ashira flies east.<br />
+Luze leaves east.<br />
+<br />
+409H 92V 10196673X 1173C Mem:19 Exits:ES&gt;<br />
+<br />
+Epso utters some strange words.<br />
+Epso's hands send forth blinding rays of sunlight!<br />
+Promina withers as a ray of sunlight sent by Epso engulfs her!<br />
+Promina seems to be blinded!<br />
+Epso destroys your mirror images.<br />
+The images around you fade out of existance.<br />
+You wither as a ray of sunlight engulfs you!<br />
+You have been blinded!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+Someone withers as a ray of sunlight sent by someone engulfs them!<br />
+<br />
+385H 92V 10196673X 1173C [Me:V.Good] Mem:19&gt;<br />
+You can't do that while fighting.<br />
+<br />
+385H 92V 10196673X 1173C [Me:V.Good] Mem:19&gt;<br />
+<br />
+Someone stops fighting their opponent and turns to someone instead.<br />
+Someone yells a battle cry and fights like a madman!<br />
+<br />
+385H 92V 10196673X 1173C [Me:V.Good] Mem:19&gt;<br />
+gt blind<br />
+You tell your group 'blind'<br />
+<br />
+385H 92V 10196673X 1173C [Me:V.Good] Mem:19&gt;<br />
+<br />
+You are sent sprawling as someone crashes into you.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] Mem:19&gt;<br />
+<br />
+Someone annihilates someone with their shoot.<br />
+Someone bludgeons someone.<br />
+You miss someone with your pierce.<br />
+Someone massacres someone with their shoot.<br />
+Someone massacres someone with their shoot.<br />
+Someone misses someone with their stab.<br />
+Someone massacres someone with their slash.<br />
+Someone annihilates someone with their crush.<br />
+Someone massacres someone with their stab.<br />
+Someone blocks someone's blow with a quick raise of their shield.<br />
+Someone pierces someone extremely hard.<br />
+Someone slashes someone extremely hard.<br />
+Someone misses someone with their bludgeon.<br />
+Someone crushes someone hard.<br />
+Someone is burned, as they swings at someone.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] Mem:19&gt;<br />
+<br />
+Someone utters some strange words.<br />
+Someone heals someone.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] Mem:19&gt;<br />
+<br />
+Someone focuses on you and utters some strange words.<br />
+You feel a cloak of blindness dissolve.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:V.Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:V.Good] Mem:19 Exits:ES&gt;<br />
+st<br />
+<br />
+Zug heroically rescues Epso.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:V.Good] Mem:19 Exits:ES&gt;<br />
+gro<br />
+<br />
+Grant stands up.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:V.Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Javi deftly steps in front of Kogi, pushing into the frey.<br />
+Javi heroically rescues Kogi.<br />
+Javi deflects part of Kilians's blow with his shield.<br />
+Kilians crushes Javi extremely hard.<br />
+Javi stabs Kilians.<br />
+Ravage misses Zug with his bludgeon.<br />
+Zug slashes Ravage very hard.<br />
+Zug pierces Ravage.<br />
+Oe massacres Epso with his shoot.<br />
+Oe massacres Epso with his shoot.<br />
+You miss Epso with your pierce.<br />
+Promina misses Epso with her shoot.<br />
+Promina shoots Epso extremely hard.<br />
+Daniel misses Kjama with his slash.<br />
+Kjama massacres Zug with her stab.<br />
+Kjama misses Zug with her stab.<br />
+Grant slashes Javi extremely hard.<br />
+Kogi bludgeons Delvar.<br />
+Kogi is burned, as he swings at Delvar.<br />
+Fernar crushes Delvar hard.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine slashes Delvar.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Daniel tells your group 'blind'<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Kjama stands up.<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies south.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Daniel tells your group 'blind'<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Epso focuses on Zug and utters some strange words.<br />
+Epso heals Zug.<br />
+Zug heroically rescues Epso.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Kogi stands up.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Ravage focuses harshly on Zug and utters some strange words.<br />
+Zug cries out in pain as Ravage grabs him.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+c 'force bolt' kjama<br />
+<br />
+Kogi steps aside as Kilians attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Daniel tells your group 'cure blind daniel'<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Grant heroically rescues Oe.<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Sharmaine stands up.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+c 'force bolt' kjama<br />
+<br />
+Kjama flies in from the south.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres Epso with her stab.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+You stand up.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            good      rested    fighting   Y   N    N    Y     1   19<br />
+  Ravage           good      rested    fighting   Y   N    N    Y     2   15<br />
+  Daniel           v.good    rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           good      rested    fighting   Y   N    N    Y     1   21<br />
+  Oe               good      rested    standing   Y   N    N    Y     0    1<br />
+  Grant            good      rested    fighting   Y   N    Y    Y     1    0<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Good] Mem:19 Exits:ES&gt;<br />
+Kjama massacres Epso with her stab.<br />
+Kjama massacres Epso with her stab.<br />
+Zug massacres Grant with his slash.<br />
+Zug pierces Grant hard.<br />
+Grant slashes Zug extremely hard.<br />
+Javi blocks Kilians's blow with a quick raise of his shield.<br />
+Javi stabs Kilians hard.<br />
+You miss Epso with your pierce.<br />
+Promina massacres Epso with her shoot.<br />
+Promina massacres Epso with her shoot.<br />
+Fernar crushes Delvar hard.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine slashes Delvar.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kjama.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Fair] Mem:20 Exits:ES&gt;<br />
+<br />
+Oe comes out of hiding.<br />
+Oe massacres Epso with his shoot.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Sharmaine crashes into Kjama in a thundering collision, knocking her to the ground!<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Kogi focuses on Kjama and utters some strange words.<br />
+Kogi heals Kjama.<br />
+<br />
+371H 92V 10196673X 1173C [Me:Good] [Delvar:Good] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Epso utters some strange words.<br />
+Epso's hands send forth blinding rays of sunlight!<br />
+Kjama withers as a ray of sunlight sent by Epso engulfs her!<br />
+Promina withers as a ray of sunlight sent by Epso engulfs her!<br />
+You wither as a ray of sunlight engulfs you!<br />
+You feel a slight chill.<br />
+Javi withers as a ray of sunlight sent by Epso engulfs him!<br />
+Fernar withers as a ray of sunlight sent by Epso engulfs him!<br />
+Fernar seems to be blinded!<br />
+Kogi withers as a ray of sunlight sent by Epso engulfs him!<br />
+Grant withers as a ray of sunlight sent by Epso engulfs him!<br />
+Oe withers as a ray of sunlight sent by Epso engulfs him!<br />
+Delvar withers as a ray of sunlight sent by Epso engulfs him!<br />
+Daniel withers as a ray of sunlight sent by Epso engulfs him!<br />
+Ravage withers as a ray of sunlight sent by Epso engulfs him!<br />
+Zug heroically rescues Epso.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Jvails flies in from the east.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Jvails pierces Ravage.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+c 'a b'<br />
+<br />
+Grant heroically rescues Ravage.<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Ravage utters some strange words.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Bad] Mem:20 Exits:ES&gt;<br />
+<br />
+Jvails pierces Grant extremely hard.<br />
+Jvails pierces Grant extremely hard.<br />
+Grant slashes Jvails extremely hard.<br />
+Kjama massacres Zug with her stab.<br />
+Kjama misses Zug with her stab.<br />
+Zug slashes Kjama very hard.<br />
+Zug misses Kjama with his pierce.<br />
+Daniel slashes Epso extremely hard.<br />
+Oe massacres Epso with his shoot.<br />
+Kilians massacres Javi with his crush.<br />
+Javi misses Kilians with his stab.<br />
+Promina misses Epso with her shoot.<br />
+Promina massacres Epso with her shoot.<br />
+Fernar crushes Delvar hard.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine misses Delvar with her slash.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:20 Exits:ES&gt;<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Kjama.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:21 Exits:ES&gt;<br />
+<br />
+Daniel tells your group 'im blind'<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:21 Exits:ES&gt;<br />
+<br />
+Kilians stands up.<br />
+Zug yells a battle cry and fights like a madman!<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:21 Exits:ES&gt;<br />
+gt TARGET EPSO<br />
+<br />
+Kogi focuses on Javi and utters some strange words.<br />
+Kogi heals Javi.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:21 Exits:ES&gt;<br />
+gt TARGET EPSO<br />
+gt TARGET EPSO<br />
+<br />
+Kilians crashes into Javi in a thundering collision, knocking him to the ground!<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:V.Bad] Mem:21 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Epso and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Epso.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Awful] Mem:21 Exits:ES&gt;<br />
+<br />
+Jvails panics, and attempts to flee.<br />
+Jvails flies east.<br />
+<br />
+353H 92V 10196673X 1173C [Me:Good] [Delvar:Fair] [Epso:Awful] Mem:21 Exits:ES&gt;<br />
+<br />
+Epso panics, and attempts to flee.<br />
+Epso flies east.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Ravage focuses on Daniel and utters some strange words.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Zug heroically rescues Kilians.<br />
+Javi stabs Zug.<br />
+Javi deflects part of Zug's blow with his shield.<br />
+Zug slashes Javi very hard.<br />
+Zug pierces Javi extremely hard.<br />
+Javi blocks Zug's blow with a quick raise of his shield.<br />
+Kjama misses Zug with her stab.<br />
+Kjama massacres Zug with her stab.<br />
+Fernar crushes Delvar.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine misses Delvar with her slash.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Elrik flies in from the east.<br />
+Breaker arrives from the east.<br />
+Jvails flies in from the east.<br />
+Ashira flies in from the east.<br />
+Luze arrives from the east.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Promina leaves east.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Jvails pierces Ravage extremely hard.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+Grant crashes into Jvails in a thundering collision, knocking him to the ground!<br />
+You tell your group 'TARGET EPSO'<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+Oe annihilates Zug with his shoot.<br />
+You tell your group 'TARGET EPSO'<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Luze crashes into Ravage in a thundering collision, knocking him to the ground!<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+You tell your group 'TARGET EPSO'<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Ravage steps aside as Elrik attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Kjama stands up.<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies east.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Creel cleaves Ravage extremely hard.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'force bolt'.<br />
+The sound of bones cracking echoes as Delvar's force bolt slams into Zug.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Ashira focuses harshly on Ravage and utters some strange words.<br />
+Ravage screams in pain as lightning from Ashira penetrates him.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Creel cleaves Ravage extremely hard.<br />
+Elrik annihilates Ravage with his stab.<br />
+Luze massacres Ravage with his cleave.<br />
+Oe annihilates Zug with his shoot.<br />
+Oe annihilates Zug with his shoot.<br />
+Grant massacres Jvails with his slash.<br />
+Jvails pierces Ravage very hard.<br />
+Jvails massacres Ravage with his pierce.<br />
+Javi barely stabs Zug.<br />
+Zug slashes Javi extremely hard.<br />
+Zug pierces Javi extremely hard.<br />
+Zug massacres Javi with his slash.<br />
+Ravage misses Zug with his bludgeon.<br />
+Kogi barely bludgeons Delvar.<br />
+Kogi is burned, as he swings at Delvar.<br />
+Fernar barely crushes Delvar.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine slashes Delvar hard.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+Kjama flies in from the east.<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Breaker focuses harshly on Ravage and utters some strange words.<br />
+Breaker slowly fades into existence.<br />
+Ravage withers as a ray of sunlight sent by Breaker engulfs him!<br />
+<br />
+353H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Epso flies in from the east.<br />
+c 'force bolt' epso<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+gro<br />
+Everything becomes clear as you prepare to cast.<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Epso.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Epso panics, and attempts to flee.<br />
+Epso flies east.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Kjama focuses her purity on your head!<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Kogi steps aside as Kilians attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Creel heroically rescues Jvails.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Epso flies in from the east.<br />
+c 'force bolt' epso<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Sharmaine delivers a low kick to Delvar, knocking him off balance.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Ashira focuses harshly on Ravage and utters some strange words.<br />
+Ravage screams in pain as lightning from Ashira penetrates him.<br />
+Ravage is stunned, but will likely regain consciousness again.<br />
+<br />
+325H 92V 10196673X 1173C [Me:Good] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+glance epso<br />
+<br />
+Grant slashes Creel extremely hard.<br />
+Creel cleaves Grant extremely hard.<br />
+Kilians massacres Kogi with his crush.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Elrik annihilates Ravage with his stab.<br />
+Twinkling lights surround Ravage and he disappears.<br />
+Oe massacres Zug with his shoot.<br />
+Oe annihilates Zug with his shoot.<br />
+Oe annihilates Zug with his shoot.<br />
+Javi misses Zug with his stab.<br />
+Zug massacres Javi with his slash.<br />
+Zug pierces Javi extremely hard.<br />
+Zug massacres Javi with his slash.<br />
+Kogi misses Delvar with his bludgeon.<br />
+Fernar crushes Delvar very hard.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine bruises Delvar with her slash.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+<br />
+276H 92V 10196673X 1173C [Me:Fair] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Epso flies south.<br />
+<br />
+276H 92V 10196673X 1173C [Me:Fair] [Kjama:Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Kjama panics, and attempts to flee.<br />
+Kjama flies south.<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'magic missile'.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            fair      rested    standing   Y   N    N    Y     1   21<br />
+  Ravage           awful     rested    standing   Y   N    N    N     2   17<br />
+  Daniel           good      rested    standing   Y   N    N    Y     0    0<br />
+  Delvar           fair      rested    fighting   Y   N    N    Y     1   24<br />
+  Oe               good      rested    fighting   Y   N    N    Y     0    1<br />
+  Grant            fair      rested    fighting   Y   N    Y    Y     1    0<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+You cannot concentrate enough to cast!<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Daniel crashes into Zug in a thundering collision, knocking him to the ground!<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+You see no such person.<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Elrik stands up.<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+Javi stands up.<br />
+<br />
+276H 92V 10196673X 1173C Mem:21 Exits:ES&gt;<br />
+<br />
+You are sent sprawling as Elrik crashes into you.<br />
+<br />
+262H 92V 10196673X 1173C [Me:Fair] [Elrik:Perfect] Mem:21 Exits:ES&gt;<br />
+<br />
+Kjama flies in from the south.<br />
+<br />
+262H 92V 10196673X 1173C [Me:Fair] [Elrik:Perfect] Mem:21 Exits:ES&gt;<br />
+s<br />
+<br />
+Kjama slowly fades into existence.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+<br />
+230H 92V 10196673X 1173C [Me:Fair] [Elrik:Perfect] Mem:21 Exits:ES&gt;<br />
+<br />
+You step aside as Luze tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+230H 92V 10196673X 1173C [Me:Fair] [Elrik:Perfect] Mem:21 Exits:ES&gt;<br />
+flee<br />
+<br />
+Javi attempts to strike at Zug with his rapier.<br />
+Javi stabs Zug hard.<br />
+<br />
+230H 92V 10196673X 1173C [Me:Fair] [Elrik:Perfect] Mem:21 Exits:ES&gt;<br />
+<br />
+Javi deftly steps in front of Kogi, pushing into the frey.<br />
+Javi heroically rescues Kogi.<br />
+Zug heroically rescues Kilians.<br />
+Javi misses Zug with his stab.<br />
+Zug slashes Javi extremely hard.<br />
+Javi blocks Zug's blow with a quick raise of his shield.<br />
+Zug slashes Javi extremely hard.<br />
+Luze massacres YOU with his cleave.<br />
+Luze burns as he passes through your fire shield.<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Kjama annihilates YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Elrik massacres YOU with his stab.<br />
+Elrik burns as he passes through your fire shield.<br />
+You pierce Elrik very hard.<br />
+Daniel misses Zug with his slash.<br />
+Grant slashes Creel extremely hard.<br />
+Creel misses Grant with his cleave.<br />
+Oe obliterates Zug with his shoot.<br />
+Oe annihilates Zug with his shoot.<br />
+Kogi bludgeons Delvar.<br />
+Kogi is burned, as he swings at Delvar.<br />
+Fernar crushes Delvar.<br />
+Fernar is burned, as he swings at Delvar.<br />
+Sharmaine slashes Delvar.<br />
+Sharmaine is burned, as she swings at Delvar.<br />
+<br />
+112H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+sca<br />
+<br />
+Jvails stands up.<br />
+<br />
+112H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Delvar focuses harshly on Zug and utters the words, 'magic missile'.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Delvar aims a magic missile at Zug, who staggers under the blow.<br />
+Zug is stunned, but will likely regain consciousness again.<br />
+The magic missile sent by Delvar causes Zug to stagger and collapse in a<br />
+lifeless heap.<br />
+Twinkling lights surround Zug and he disappears.<br />
+<br />
+112H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+flee<br />
+<br />
+Breaker focuses harshly on Daniel and utters some strange words.<br />
+Breaker slowly fades into existence.<br />
+Daniel withers as a ray of sunlight sent by Breaker engulfs him!<br />
+Daniel seems to be blinded!<br />
+<br />
+112H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Jvails appears to be dancing around the room.<br />
+<br />
+112H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Jvails pierces YOU hard.<br />
+Jvails burns as he passes through your fire shield.<br />
+You feel a sharp pain in your chest, as Jvails's spear breaks skin, creating a small flesh wound.<br />
+<br />
+103H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+flee<br />
+<br />
+Kilians stands up.<br />
+<br />
+103H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Sharmaine panics, and attempts to flee.<br />
+Sharmaine flies south.<br />
+<br />
+103H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+TICK IN 7 SECONDS.<br />
+st<br />
+flee<br />
+<br />
+Ashira focuses harshly on Delvar and utters some strange words.<br />
+Delvar screams in pain as lightning from Ashira penetrates him.<br />
+<br />
+103H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Kogi steps aside as Kilians attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+103H 92V 10196673X 1173C [Me:V.Bad] [Elrik:V.Good] Mem:21 Exits:ES&gt;<br />
+<br />
+Javi deftly steps in front of Kogi, pushing into the frey.<br />
+Javi heroically rescues Kogi.<br />
+Javi blocks Kilians's blow with a quick raise of his shield.<br />
+Javi stabs Kilians very hard.<br />
+Jvails pierces YOU extremely hard.<br />
+Jvails burns as he passes through your fire shield.<br />
+Jvails pierces YOU extremely hard.<br />
+Jvails burns as he passes through your fire shield.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Luze massacres YOU with his cleave.<br />
+Luze burns as he passes through your fire shield.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Kjama massacres YOU with her stab.<br />
+Kjama appears to grow stronger.<br />
+Kjama passes through your fireshield, as though it were not there.<br />
+Twinkling lights surround you and cover your body entirely.<br />
+When they disappear, you find yourself somewhere else.<br />
+Lie still, you are dead.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Grant tells your group 'we're healer less'<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Ravage tells your group 'fucking hell'<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+look<br />
+Alas, you cannot go that way...<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Daniel tells your group 'blinded '<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Ravage begins resting but stays aloft.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Zug tries to apply bandages to Ravage but only makes it worse.<br />
+Ravage grimaces with pain from his wounds.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+You see nothing special.<br />
+Looking south:<br />
+You see nothing special.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Lashe stands up.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+gt sux<br />
+You are already standing.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Lashe focuses on Zug and utters some strange words.<br />
+Lashe heals Zug.<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+You're not fighting, why bother fleeing?<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+The Mid Level Pit Of Shame<br />
+    You find yourself in a large pit of shame, probably because you lost<br />
+this round. Please wait here until the round is over. The fountain will<br />
+provide food and water.<br />
+Something that looks vaguely like a shirt lies here...it glows blue..it glows dimly<br />
+A golden pair of thin boots stand on the ground.<br />
+A set of thin golden legplates lie here, collecting dust.<br />
+An ornate, golden diadem is resting here...it glows blue<br />
+A thin golden cloak of dragonscale lies in the dirt.<br />
+Zug Zug is resting here.<br />
+. . . is followed by a hovering ball of light.<br />
+Ravage, Nature of Threat is resting here. (flying)<br />
+. . . has a metallic luster.<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Lady Lashe, Malevolent Priestess of Sedition is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is resting here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+Enogeb the Male Hill Dwarf is resting here.<br />
+. . . has a tough exterior.<br />
+Eqir Dark-Elven is resting here. (invisible)<br />
+You sense that you are not alone.<br />
+Snick van der Snack, The Executor is resting here. (flying) (invisible)<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+You tell your group 'sux'<br />
+<br />
+13H 92V 10196673X 1173C Mem:13&gt;<br />
+<br />
+13H 92V 10196673X 1173C Mem:14&gt;<br />
+<br />
+Daniel tells your group 'blind'<br />
+<br />
+13H 92V 10196673X 1173C Mem:14&gt;<br />
+<br />
+Daniel tells your group 'blind'<br />
+<br />
+13H 92V 10196673X 1173C Mem:14&gt;<br />
+<br />
+Zug applies bandages to Ravage's wounds.<br />
+<br />
+13H 92V 10196673X 1173C Mem:14&gt;<br />
+<br />
+You feel hollow and weakened as the prayer surrounding you fades.<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+<br />
+Lashe begins resting but stays aloft.<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+say this round we sucked!<br />
+You say 'this round we sucked!'<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+look<br />
+The Mid Level Pit Of Shame<br />
+    You find yourself in a large pit of shame, probably because you lost<br />
+this round. Please wait here until the round is over. The fountain will<br />
+provide food and water.<br />
+Something that looks vaguely like a shirt lies here...it glows blue..it glows dimly<br />
+A golden pair of thin boots stand on the ground.<br />
+A set of thin golden legplates lie here, collecting dust.<br />
+An ornate, golden diadem is resting here...it glows blue<br />
+A thin golden cloak of dragonscale lies in the dirt.<br />
+Zug Zug is resting here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Ravage, Nature of Threat is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+Vittu N. Hullu, Crimson Maw Brothers of Doom is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Lady Lashe, Malevolent Priestess of Sedition is resting here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Elyana Lipetskaya, The Queen of Blood Sea Hordes is resting here. (flying)<br />
+c 'force bolt' elyana<br />
+. . . has a metallic luster.<br />
+Enogeb the Male Hill Dwarf is resting here.<br />
+. . . has a tough exterior.<br />
+Eqir Dark-Elven is resting here. (invisible)<br />
+You sense that you are not alone.<br />
+Snick van der Snack, The Executor is resting here. (flying) (invisible)<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+Everything becomes clear as you prepare to cast.<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+say who killed u mav<br />
+You say 'who killed u mav'<br />
+<br />
+9H 83V 10196673X 1173C Mem:13&gt;<br />
+r<br />
+You sit down and rest your tired bones.<br />
+<br />
+9H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Despite the pain, you are briefly comforted by Zug's nurturing hands.<br />
+<br />
+9H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Oe tells your group 'rescue'<br />
+<br />
+9H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Elyana says 'damn pab'<br />
+<br />
+9H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Zug applies bandages to your wounds.<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Elyana says 'entry stun'<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+say it was our pk!<br />
+You say 'it was our pk!'<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+gro<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            awful     rested    resting    N   Y    N    Y     1    5<br />
+  Ravage           perfect   rested    resting    Y   N    N    Y     2   11<br />
+  Daniel           fair      rested    fighting   Y   N    N    N     0    0<br />
+  Delvar           awful     rested    standing   Y   N    N    N     1   26<br />
+  Oe               good      rested    fighting   Y   N    N    N     0    1<br />
+  Grant            fair      rested    fighting   Y   N    Y    N     1    0<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Lashe says 'Pab owned my ass too'<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+gro<br />
+<br />
+Snick says 'heal if u can'<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+Your group of 6 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Aldur            awful     rested    resting    N   Y    N    Y     1    5<br />
+  Ravage           perfect   rested    resting    Y   N    N    Y     2   11<br />
+  Daniel           fair      rested    fighting   Y   N    N    N     0    0<br />
+  Delvar           awful     rested    fighting   Y   N    N    N     1   26<br />
+  Oe               good      rested    fighting   Y   N    N    N     0    1<br />
+  Grant            fair      rested    fighting   Y   N    Y    N     1    0<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+<br />
+Lashe stands up.<br />
+<br />
+24H 83V 10196673X 1173C Mem:5&gt;<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1392'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1392">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1392">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

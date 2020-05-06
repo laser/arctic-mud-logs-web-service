@@ -1,0 +1,761 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1516-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1516'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Teranga + Khoran rip</font></b>
+<p>
+POV: 
+Grauth<p>
+Log Rating:
+-1.9091<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Dk goodness.</i>
+<p>
+<p>
+
+611H 127V 16284559X 210C Exits:EUD&gt; gt going<br />
+grou<br />
+You tell your group 'going'<br />
+<br />
+611H 127V 16284559X 210C Exits:EUD&gt; Your group of 3 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Grauth           perfect   rested    standing   Y   Y    Y    Y     0    0<br />
+  Yamoto           fair      rested    standing   Y   N    N    Y     1    3<br />
+  Tywin            perfect   rested    standing   Y   N    N    Y     0    3<br />
+<br />
+611H 127V 16284559X 210C Exits:EUD&gt; d<br />
+Yamoto flies in from above.<br />
+Tywin flies in from above.<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [4]<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+611H 125V 16284559X 210C Exits:NUD&gt; sca<br />
+Looking north:<br />
+It is pitch black.<br />
+Looking east:<br />
+It is pitch black.<br />
+Looking south:<br />
+It is pitch black.<br />
+Looking west:<br />
+It is pitch black.<br />
+Looking up:<br />
+It is pitch black.<br />
+Looking down:<br />
+It is pitch black.<br />
+<br />
+611H 125V 16284559X 210C Exits:NUD&gt; <br />
+Yamoto stops using a crystal shard necklace.<br />
+<br />
+611H 125V 16284559X 210C Exits:NUD&gt; d<br />
+bas khoran<br />
+Yamoto flies in from above.<br />
+Tywin flies in from above.<br />
+It is pitch black.<br />
+Inky darkness flows into the area. [2]<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+611H 123V 16284559X 210C Exits:SUD&gt; You couldn't find what you were looking for.<br />
+<br />
+611H 123V 16284559X 210C Exits:SUD&gt; d<br />
+Yamoto flies in from above.<br />
+Tywin flies in from above.<br />
+Bottom of a Mineshaft<br />
+    A long, dark shaft which disappears into the darkness far overhead. The<br />
+walls are smoothly worked except for a few holes in the side where ladders<br />
+were once mounted. To the west, a smoothly hewn tunnel leads off into the<br />
+unknown.<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Khoran Dragonslayer, Questing Squire of Solamnia is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+611H 121V 16284559X 210C Exits:WU&gt; bas khoran<br />
+<br />
+Yamoto massacres Khoran with his slash.<br />
+<br />
+611H 121V 16284559X 210C Exits:WU&gt; You crash into Khoran in a bone crunching bash, sending him sp<br />
+rawling to the ground.<br />
+<br />
+611H 121V 16284559X 210C [Yamoto:Fair] [Khoran:Good] Exits:WU&gt; <br />
+Inky blackness flows into the room.<br />
+Inky blackness flows into the room.<br />
+You massacre Khoran with your crush.<br />
+Khoran wavers under Yamoto's mighty slash!<br />
+Yamoto obliterates Khoran with his slash.<br />
+Yamoto slashes Khoran very hard.<br />
+Khoran misses Yamoto with his crush.<br />
+<br />
+611H 121V 16284559X 210C [Yamoto:Fair] [Khoran:Fair] Exits:WU&gt; <br />
+Tywin massacres Khoran with his slash.<br />
+<br />
+611H 121V 16284559X 210C [Yamoto:Fair] [Khoran:Bad] Exits:WU&gt; <br />
+Yamoto attacks Khoran with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+611H 121V 16284559X 210C [Yamoto:Fair] [Khoran:Bad] Exits:WU&gt; <br />
+Inky blackness flows into the room.<br />
+Inky blackness flows into the room.<br />
+Tywin massacres Khoran with his slash.<br />
+Tywin massacres Khoran with his cleave.<br />
+You annihilate Khoran with your crush.<br />
+Yamoto annihilates Khoran with his slash.<br />
+Yamoto massacres Khoran with his slash.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Khoran is dead! R.I.P.<br />
+The death cry of Khoran echoes from somewhere nearby...<br />
+Teranga stops following Khoran.<br />
+<br />
+611H 121V 16284559X 210C Exits:WU&gt; get all corpse<br />
+<br />
+Tywin gets a very large pile of coins from the corpse of Khoran.<br />
+<br />
+611H 121V 16284559X 210C Exits:WU&gt; w<br />
+<br />
+Tywin divides 9087 coins equally among the group members present.<br />
+<br />
+611H 121V 16284559X 3239C Exits:WU&gt; bas teranga<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+611H 121V 16284559X 3239C Exits:WU&gt; You are zapped by the Khalkhist Heartstone and instantly drop<br />
+ it.<br />
+You get a ceremonial crystal mace from the corpse of Khoran.<br />
+You get a shiny marble wristband from the corpse of Khoran.<br />
+You get a shiny marble wristband from the corpse of Khoran.<br />
+You get a ruby encrusted belt from the corpse of Khoran.<br />
+You get a furry white cloak from the corpse of Khoran.<br />
+You get a dark shield from the corpse of Khoran.<br />
+You get a pair of obsidian bracers from the corpse of Khoran.<br />
+You get thin golden dragonscale boots from the corpse of Khoran.<br />
+You get a ragged pair of leather braies from the corpse of Khoran.<br />
+You get a furry white cloak from the corpse of Khoran.<br />
+You get a thick white cloth cape from the corpse of Khoran.<br />
+Stole : You can't carry that many items.<br />
+Band : You can't carry that many items.<br />
+Charm : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Staff : You can't carry that many items.<br />
+Bird : You can't carry that many items.<br />
+Staff : You can't carry that many items.<br />
+Pendant : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Staff : You can't carry that many items.<br />
+Quarterstaff : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+611H 121V 16284559X 3239C Exits:WU&gt; Yamoto flies in from the east.<br />
+Tywin flies in from the east.<br />
+A Dark and Chilly Tunnel<br />
+    The walls of this dark tunnel are smoothly worked to the east and<br />
+appear to have once been part of a mine. Small veins of shining metals<br />
+stand out in the walls and you realize this tunnel was abandoned before its<br />
+ore was depleted. To the west, the wall of the tunnel appears to have been<br />
+broken through and a rough tunnel leading into yet more darkness leads off<br />
+in that direction.<br />
+Inky darkness flows into the area. [2]<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+Teranga the Male Minotaur is standing here. (white aura)<br />
+<br />
+611H 119V 16284559X 3239C Exits:EW&gt; Inky blackness flows into the room.<br />
+Inky blackness flows into the room.<br />
+You crash into Teranga in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+611H 119V 16284559X 3239C [Grauth:Perfect] [Teranga:V.Good] Exits:EW&gt; <br />
+Yamoto tells your group 'track teranga'<br />
+<br />
+611H 119V 16284559X 3239C [Grauth:Perfect] [Teranga:V.Good] Exits:EW&gt; <br />
+Yamoto annihilates Teranga with his slash.<br />
+<br />
+611H 119V 16284559X 3239C [Grauth:Perfect] [Teranga:Good] Exits:EW&gt; <br />
+Tywin massacres Teranga with his slash.<br />
+<br />
+611H 119V 16284559X 3239C [Grauth:Perfect] [Teranga:Good] Exits:EW&gt; <br />
+Tywin massacres Teranga with his slash.<br />
+Tywin cleaves Teranga extremely hard.<br />
+Yamoto massacres Teranga with his slash.<br />
+Yamoto slashes Teranga extremely hard.<br />
+You annihilate Teranga with your crush.<br />
+Teranga slashes YOU extremely hard.<br />
+<br />
+595H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:Fair] Exits:EW&gt; <br />
+Yamoto attacks Teranga with lightning fast series of attacks that leaves him defenseless.<br />
+Tywin attacks Teranga with lightning fast series of attacks that leaves him defenseless.<br />
+<br />
+595H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:Fair] Exits:EW&gt; #   {^Teranga stands} now trig<br />
+gers {bas} @ {5}<br />
+<br />
+Tywin annihilates Teranga with his slash.<br />
+Tywin massacres Teranga with his cleave.<br />
+Yamoto annihilates Teranga with his slash.<br />
+Yamoto misses Teranga with his slash.<br />
+You annihilate Teranga with your crush.<br />
+Teranga slashes YOU extremely hard.<br />
+<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:V.Bad] Exits:EW&gt; <br />
+Teranga spasms as Yamoto places his hand on Teranga's chest.<br />
+<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:V.Bad] Exits:EW&gt; <br />
+Tywin starts dancing around the room with an imaginary partner.<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:V.Bad] Exits:EW&gt; <br />
+Tywin annihilates Teranga with his slash.<br />
+Tywin cleaves Teranga very hard.<br />
+Yamoto annihilates Teranga with his slash.<br />
+Yamoto massacres Teranga with his slash.<br />
+You massacre Teranga with your crush.<br />
+Teranga misses you with his slash.<br />
+<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:Awful] Exits:EW&gt; <br />
+Teranga spasms as Tywin places his hand on Teranga's chest.<br />
+<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:Awful] Exits:EW&gt; <br />
+Yamoto says 'DIEeeeeeeee'<br />
+<br />
+576H 119V 16284559X 3239C [Grauth:V.Good] [Teranga:Awful] Exits:EW&gt; <br />
+Tywin massacres Teranga with his slash.<br />
+Tywin cleaves Teranga extremely hard.<br />
+Yamoto massacres Teranga with his slash.<br />
+Teranga is incapacitated and will slowly die, if not aided.<br />
+Yamoto obliterates Teranga with his slash.<br />
+You receive 0 experience.<br />
+get coins corpse<br />
+Teranga is dead! R.I.P.<br />
+The death cry of Teranga echoes from somewhere nearby...<br />
+<br />
+576H 119V 16284559X 3239C Exits:EW&gt; You get a large pile of coins from the corpse of Teranga.<br />
+sp 362<br />
+There were 362 coins.<br />
+<br />
+576H 119V 16284559X 3601C Exits:EW&gt; You can't split 362 evenly among the people in the room; spli<br />
+tting 360 instead.<br />
+You divide 360 coins equally among the group members present.<br />
+<br />
+576H 119V 16284559X 3361C Exits:EW&gt; <br />
+Yamoto gets an electrum bastard sword from the corpse of Teranga.<br />
+Yamoto gets a gold bracelet from the corpse of Teranga.<br />
+Yamoto gets a jagged bracer from the corpse of Teranga.<br />
+Yamoto gets a jewelled black belt from the corpse of Teranga.<br />
+Yamoto gets a snow leopard pelt from the corpse of Teranga.<br />
+Yamoto gets thin golden dragonscale armplates from the corpse of Teranga.<br />
+Yamoto gets a pair of draconian gauntlets from the corpse of Teranga.<br />
+Yamoto gets thin golden dragonscale boots from the corpse of Teranga.<br />
+Yamoto gets a malachite inlaid mithril helm from the corpse of Teranga.<br />
+Yamoto gets a golden dragonscale plate from the corpse of Teranga.<br />
+<br />
+576H 119V 16284559X 3361C Exits:EW&gt;<br />
+You tell your group 'god'<br />
+<br />
+576H 115V 16284559X 3361C Exits:EW&gt; gt that ruled<br />
+<br />
+Yamoto tells your group 'haha'<br />
+<br />
+576H 115V 16284559X 3361C Exits:EW&gt; You tell your group 'that ruled'<br />
+<br />
+576H 115V 16284559X 3361C Exits:EW&gt; e<br />
+Yamoto flies in from the west.<br />
+Tywin flies in from the west.<br />
+It is pitch black.<br />
+A granite stone, about the size of a fist is lying here...it glows blue..it glows dimly<br />
+The corpse of Khoran is lying here.<br />
+Inky darkness flows into the area. [4]<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; <br />
+Tywin gets a long black stole, lined with red from the corpse of Khoran.<br />
+Tywin gets a ragged leather band from the corpse of Khoran.<br />
+Tywin gets a silver charm from the corpse of Khoran.<br />
+Tywin gets a moist blue-green scroll from the corpse of Khoran.<br />
+Tywin gets a staff of champions from the corpse of Khoran.<br />
+Tywin gets a wooden statue of bird from the corpse of Khoran.<br />
+Tywin gets a staff of power from the corpse of Khoran.<br />
+Tywin gets a jade pendant from the corpse of Khoran.<br />
+Tywin gets a glowing scroll of recall from the corpse of Khoran.<br />
+Tywin gets a staff of power from the corpse of Khoran.<br />
+Tywin gets an oaken quarterstaff from the corpse of Khoran.<br />
+Tywin gets a green marble chest from the corpse of Khoran.<br />
+Tywin gets a blackened chest from the corpse of Khoran.<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; #Please, specify a logfile name.<br />
+i<br />
+You are carrying:<br />
+a thick white cloth cape..it glows blue<br />
+a furry white cloak..it glows blue<br />
+a ragged pair of leather braies..it glows blue<br />
+thin golden dragonscale boots<br />
+a pair of obsidian bracers..it glows blue<br />
+a dark shield..it glows blue..it hums softly<br />
+a furry white cloak..it glows blue<br />
+a ruby encrusted belt..it glows blue<br />
+a shiny marble wristband..it glows blue..it glows dimly..it hums softly [2]<br />
+a ceremonial crystal mace..it glows blue<br />
+a torch<br />
+a tattered brown scroll..it glows blue [7]<br />
+a small vial of blood red water<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a loaf of waybread [3]<br />
+a raw cod [2]<br />
+a raw salmon<br />
+a raw sea bass [3]<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a scroll of create fish..it glows blue<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; <br />
+Yamoto drops a snow leopard pelt.<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; <br />
+Tywin says 'w more gear'<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; drop shield<br />
+<br />
+Yamoto drops a jagged bracer.<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; You drop a dark shield.<br />
+<br />
+576H 113V 16284559X 3361C Exits:WU&gt; w<br />
+Yamoto flies in from the east.<br />
+Tywin flies in from the east.<br />
+It is pitch black.<br />
+The corpse of Teranga is lying here.<br />
+Inky darkness flows into the area. [4]<br />
+Tywin the Male Half Elf is standing here. (flying)<br />
+Yamoto the Male Half Elf is standing here. (flying)<br />
+<br />
+576H 111V 16284559X 3361C Exits:EW&gt; exa corpse<br />
+<br />
+Yamoto drops a gold bracelet.<br />
+<br />
+576H 111V 16284559X 3361C Exits:EW&gt; It's a pretty ghastly sight! Searching through the remains, y<br />
+ou find:<br />
+corpse (here) : <br />
+a snakeskin cape<br />
+a golden collar..it glows blue..it glows dimly..it hums softly<br />
+a marble ring (invisible)<br />
+a blue tourmaline ring..it glows blue..it glows dimly<br />
+a small down feather..it glows blue<br />
+the bloody key<br />
+a large amount of gold<br />
+a runed breast plate..it glows blue..it glows dimly<br />
+a putrid potion [4]<br />
+a useless looking gadget<br />
+a loaf of waybread [2]<br />
+a glowing scroll of recall..it glows blue..it glows dimly [3]<br />
+a loaf of waybread<br />
+a magical dwarven stein..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a sturdy wooden barrel<br />
+an aquamarine potion..it glows blue<br />
+a blue potion of remove poison..it glows blue<br />
+a small wooden chest<br />
+a silver pitcher<br />
+<br />
+576H 111V 16284559X 3361C Exits:EW&gt; 
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1516'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1516">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1516">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

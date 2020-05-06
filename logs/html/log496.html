@@ -1,0 +1,764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 496-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='496'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Another brave looting attempt.</font></b>
+<p>
+POV: 
+Yuhee<p>
+Log Rating:
+-0.3750<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+sca<br />
+Ansolism gets a scroll from his satchel.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Looking north:<br />
+You see nothing special.<br />
+The door is open.<br />
+Looking east:<br />
+To the east you see the gate to the courtyard.<br />
+Feal-Thas the Dragon Highlord orders his dragon-steed to attack! (red aura)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Sleet spreads her powerful wings, scales pure as new fallen snow. (red aura)<br />
+Looking south:<br />
+The fountain flows strongly with unnatural strength considering its age.<br />
+Beyond the fountain slightly to the east a watchtower stands in danger<br />
+of crumbling.<br />
+Looking west:<br />
+You see nothing special.<br />
+A castle watchman patrols the courtyard in search of intruders. (red aura)<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Ansolism grabs a glowing scroll of recall.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Martinez flies in from above.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+lookNorthern End of Courtyard<br />
+A brewed potion lies discarded here.<br />
+A small wooden chest rests here.<br />
+A radiant chalice made of crystal lies here, reflecting light.<br />
+A glowing scroll has carelessly been left here...it glows dimly<br />
+A rapier made of mithril lies here...it glows dimly<br />
+An ancient iron bracer.<br />
+A sword scabbard of indigo leather is lying here.<br />
+A cloak tailored from some strange type of white leather is floating here.<br />
+A large black granite shield lies here.<br />
+A set of glimmering silver armbands lies here.<br />
+A pair of gauntlets are here, radiating evil.<br />
+A pair of fine metal boots lie here.<br />
+Some black steel legplates rest in a heap here.<br />
+A finely crafted suit of armour lies here.<br />
+A necklace made from dragon teeth lies here. [2]<br />
+An ancient ring is here on the ground.<br />
+A large helmet with horns protruding from the sides sits here.<br />
+A small roll of bread lies here. [4]<br />
+An ice crystal lies here, glowing brightly...it glows dimly<br />
+A large colorful toadstool grows here.<br />
+A backpack has been discarded here.<br />
+A small roll of bread lies here. [25]<br />
+Martinez, King of the Weasels is standing here. (flying)<br />
+Azzi, Marsh Angel is resting here. (flying)<br />
+Ola La is resting here. (flying)<br />
+Loburd Aburda, Conciliator of Friendly Goblin Brigade is resting here. (red aura)<br />
+Dribelbus Cantankerous, Wild Willy is resting here. (red aura)<br />
+Ansolism the Male Hylar Dwarf is resting here. (flying)<br />
+<br />
+gro252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Martinez says 'waaz puffed'<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Your group of 8 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Martinez         v.bad     rested    standing   Y   N    N     1    0<br />
+  Ola              perfect   rested    resting    Y   N    N     1    0<br />
+  Dezann           good      rested    standing   Y   N    N     0    0<br />
+  Azzi             fair      rested    resting    Y   N    N     0    0<br />
+  Loburd           fair      rested    resting    N   N    N     1    1<br />
+  Yuhee            good      rested    resting    Y   N    N     0    2<br />
+  Dribelbus        perfect   rested    resting    N   N    N     0    1<br />
+  Ansolism         v.good    rested    resting    Y   N    N     0    0<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Waaz flies in from above.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Waaz focuses harshly on Martinez and utters some strange words.<br />
+Martinez wavers under the impact of the lightning bolt sent by Waaz.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+Azzi gets a scroll from his backpack.<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+stand<br />
+Martinez crashes into Waaz in a thundering collision, knocking him to the ground!<br />
+<br />
+252H 138V 16636464X 1904C Mem:2 Exits:NESW&gt; <br />
+You stand up.<br />
+<br />
+252H 138V 16636464X 1904C Mem:5 Exits:NESW&gt; <br />
+Ola stands up.<br />
+<br />
+252H 138V 16636464X 1904C Mem:5 Exits:NESW&gt; <br />
+cast 'call lig' waaz <br />
+Waaz misses Martinez with his pierce.<br />
+Martinez annihilates Waaz with his crush.<br />
+<br />
+252H 138V 16636464X 1904C Mem:5 Exits:NESW&gt; <br />
+You utter the words, 'call lightning'<br />
+You hit Waaz with your lightning -- bullseye!<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Dribelbus stands up.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Azzi stands up.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Ansolism stands up.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Azzi massacres Waaz with his crush.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Ola focuses harshly on Waaz and utters some strange words.<br />
+Waaz withers as a ray of sunlight sent by Ola engulfs him!<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Dribelbus focuses on Martinez and utters some strange words.<br />
+Dribelbus heals Martinez.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Ansolism crashes into Waaz in a thundering collision, knocking him to the ground!<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Ansolism annihilates Waaz with his slash.<br />
+Azzi crushes Waaz extremely hard.<br />
+Waaz misses Martinez with his pierce.<br />
+Waaz misses Martinez with his pierce.<br />
+Martinez massacres Waaz with his crush.<br />
+You receive 0 experience.<br />
+Waaz is dead! R.I.P.<br />
+The death cry of Waaz echoes from somewhere nearby...<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Loburd gets a large pile of coins from the corpse of Waaz.<br />
+<br />
+252H 138V 16636464X 1904C Mem:6 Exits:NESW&gt; <br />
+Loburd divides 259 coins equally among the group members present.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Velhuus flies in from above.<br />
+Lara flies in from above.<br />
+Samppi flies in from above.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Lara utters some strange words.<br />
+Lara disappears in a puff of smoke.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Velhuus utters some strange words.<br />
+Velhuus sweeps her hands and glittering particles of dust fill the air.<br />
+Martinez is covered with glittering dust.<br />
+Azzi is covered with glittering dust.<br />
+Ola is covered with glittering dust.<br />
+Loburd is covered with glittering dust.<br />
+Loburd is blinded by the glitterdust in the air.<br />
+Dribelbus is covered with glittering dust.<br />
+Dribelbus is blinded by the glitterdust in the air.<br />
+Ansolism is covered with glittering dust.<br />
+You are covered with glittering dust.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Samppi gets the corpse of Waaz.<br />
+Samppi gets a brewed potion.<br />
+Samppi gets a small wooden chest.<br />
+Samppi gets a crystal chalice.<br />
+Samppi gets a glowing scroll of recall.<br />
+Samppi gets a mithril rapier.<br />
+Samppi gets an ancient iron bracer.<br />
+Samppi gets an indigo leather scabbard.<br />
+Samppi gets a white dragonwing cloak.<br />
+Samppi gets a black granite shield.<br />
+Samppi gets silver dragon scale armbands.<br />
+Samppi gets a piece of sweet bread.<br />
+Samppi gets a piece of sweet bread.<br />
+Samppi gets a colorful mushroom.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+cast 'call lig' lara Who should the spell be cast upon?<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Dribelbus utters some strange words.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Samppi gets a scroll from his corpse.<br />
+Samppi gets a dagger from his corpse.<br />
+Samppi is zapped by a blue ochre bracer and instantly drops it.<br />
+Samppi is zapped by a blue ochre bracer and instantly drops it.<br />
+Samppi gets a backpack from his corpse.<br />
+Samppi gets a kit from his corpse.<br />
+Samppi gets a flask from his corpse.<br />
+Samppi gets a flask from his corpse.<br />
+Samppi gets a bowl from his corpse.<br />
+Samppi gets a potion from his corpse.<br />
+Samppi gets a canteen from his corpse.<br />
+Samppi gets a dagger from his corpse.<br />
+Samppi gets a chest from his corpse.<br />
+Samppi gets a scroll from his corpse.<br />
+Samppi gets a canteen from his corpse.<br />
+Samppi gets a canteen from his corpse.<br />
+Samppi gets a canteen from his corpse.<br />
+<br />
+252H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+cast 'fire s' velhuus <br />
+You feel less righteous.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+You can't remember how to cast that spell!<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Martinez crashes into Samppi in a thundering collision, knocking him to the ground!<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+get allYou get a blue ochre bracer.<br />
+You get a blue ochre bracer.<br />
+You can't seem to get a floating disc.<br />
+You can't seem to get a floating disc.<br />
+You get a pair of gauntlets of abyssal might.<br />
+You get a pair of fine metal boots.<br />
+You get some black steel legplates.<br />
+You get a regal suit of platemail.<br />
+You get a dragon tooth necklace.<br />
+You get a dragon tooth necklace.<br />
+You get a cryptic ring.<br />
+You get a horned helmet.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a glowing ice crystal.<br />
+You get a backpack.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+You get a piece of sweet bread.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Velhuus focuses harshly on Dribelbus and utters some strange words.<br />
+The sound of bones cracking echoes as Velhuus's force bolt slams into Dribelbus.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Ansolism crashes into Samppi in a thundering collision, knocking him to the ground!<br />
+Ola misses Velhuus with her crush.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Ola crushes Velhuus extremely hard.<br />
+Ansolism annihilates Samppi with his slash.<br />
+Velhuus whips Dribelbus very hard.<br />
+Velhuus misses Dribelbus with her whip.<br />
+Dribelbus bludgeons Velhuus extremely hard.<br />
+Martinez massacres Samppi with his crush.<br />
+Samppi bludgeons Martinez hard.<br />
+Samppi misses Martinez with his bludgeon.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Azzi massacres Samppi with his crush.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+cast 'flame' samppi You can't remember how to cast that spell!<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Loburd gets a potion from his chest.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Loburd quaffs a milky potion of see invisible.<br />
+Loburd rubs his eyes and looks about himself with clarity.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Azzi massacres Samppi with his crush.<br />
+Ola crushes Velhuus extremely hard.<br />
+Ansolism annihilates Samppi with his slash.<br />
+Velhuus misses Dribelbus with her whip.<br />
+Dribelbus bludgeons Velhuus very hard.<br />
+Martinez annihilates Samppi with his crush.<br />
+You receive 0 experience.<br />
+Samppi is dead! R.I.P.<br />
+The death cry of Samppi echoes from somewhere nearby...<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+cast 'cone' samppi  <br />
+Ola gets a large pile of coins from the corpse of Samppi.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Who should the spell be cast upon?<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Ola focuses harshly on Velhuus and utters some strange words.<br />
+Velhuus withers as a ray of sunlight sent by Ola engulfs her!<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Loburd stands up.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+Martinez is zapped by a moon staff and instantly drops it.<br />
+Martinez gets a black dragonscale band from the corpse of Samppi.<br />
+Martinez gets an obsidian bracelet from the corpse of Samppi.<br />
+Martinez gets a plain component pouch from the corpse of Samppi.<br />
+Martinez gets a white guardian robe from the corpse of Samppi.<br />
+Martinez gets a white gold ring from the corpse of Samppi.<br />
+<br />
+266H 138V 16636464X 1941C Mem:5 Exits:NESW&gt; <br />
+cast 'cone' velhuus  You utter the words, 'cone of cold'<br />
+You grin evilly as a cone of intense cold engulfs Velhuus, freezing her.<br />
+<br />
+266H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Velhuus slowly quaffs a potion of golden sap, getting every drop.<br />
+Velhuus begins to become blurry and hard to see.<br />
+Velhuus gets a green marble chest from the corpse of Samppi.<br />
+Velhuus gets a leather traveling pack from the corpse of Samppi.<br />
+Velhuus is zapped by a gargoyle ring and instantly drops it.<br />
+<br />
+266H 138V 16636464X 1941C Mem:6 Exits:NESW&gt; <br />
+Velhuus recites a scroll of recall.<br />
+Velhuus disappears.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='496'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=496">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="496">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

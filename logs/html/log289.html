@@ -1,0 +1,827 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 289-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='289'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Renshai Chickenshits</font></b>
+<p>
+POV: 
+Inari<p>
+Log Rating:
+1.0589<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+3 Shadows had been camping solace and renshai werent sure if they were camping for them. Gameplan was to haste Warnul and Izy and walk passed them and see what would happen and if something did I would quick log and run in. Elhana and Izy leave Warnul to die like, because they are still to attached to their cowardly ways.</i>
+<p>
+<p>
+
+0) Leave Arctic.<br />
+1) Enter the game.<br />
+2) Change your description.<br />
+3) Change your password.<br />
+4) Delete this character.<br />
+<br />
+   Make a choice: 1<br />
+d<br />
+You ran up charges of 127 steel in rent.<br />
+<br />
+Welcome to the land of Krynn.<br />
+<br />
+The Reception<br />
+A large board with numerous wanted posters tacked on it is here.<br />
+Izy Insane, Renshai's Champion of the Lunatic Fringe is standing here.<br />
+Zoido the Male Hill Dwarf is resting here.<br />
+A receptionist sits here doing her nails.<br />
+A man wearing heavy armor is standing here.<br />
+<br />
+628H 120V 30860306X 5784C Exits:D&gt; d<br />
+The wonderful smell of spiced potatoes makes your stomach rumble.<br />
+The Inn of the Last Home<br />
+Otik watches you calmly, while he skillfully mixes a drink.<br />
+<br />
+628H 119V 30860306X 5784C Exits:UD&gt; e<br />
+A Small Side Street<br />
+A smoked Tarsis ham fills the room with a savory aroma. [8]<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+<br />
+628H 118V 30860306X 5784C Exits:NEU&gt; s<br />
+Northern Avenue<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A stray dog slowly moves about the area, sniffing the nearby trees.<br />
+<br />
+628H 117V 30860306X 5784C Exits:NSWU&gt; Solace Square<br />
+A large fountain sits in the middle of the road, taking up space.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A singing, happy dwarf stumbles along drunkenly.<br />
+Shoota Long, Bowing in the Shadows is standing here, fighting Warnul. (flying)<br />
+. . . has a tough exterior.<br />
+Diddy Kong is sitting here, fighting Warnul. (flying)<br />
+Neirel Le'Grande, Torturer from the Shadows is standing here, fighting Warnul.<br />
+. . . has a tough exterior.<br />
+Warnul Wimp, Renshai's Fraction of Hate is standing here, fighting Neirel.<br />
+An old beggar hobbles along here looking for handouts.<br />
+<br />
+628H 116V 30860306X 5784C Exits:NESWU&gt; u<br />
+<br />
+Warnul crashes into Neirel in a thundering collision, knocking him to the ground!<br />
+<br />
+628H 116V 30860306X 5784C Exits:NESWU&gt; The Solace Adventurer's Guild<br />
+The guild guard stands here guarding the adventurer's guild.<br />
+<br />
+628H 115V 30860306X 5784C Exits:NSD&gt; d<br />
+Solace Square<br />
+A large fountain sits in the middle of the road, taking up space.<br />
+A long torch functions as a street lamp here...it glows dimly<br />
+A singing, happy dwarf stumbles along drunkenly.<br />
+Shoota Long, Bowing in the Shadows is standing here, fighting Warnul. (flying)<br />
+. . . has a tough exterior.<br />
+Diddy Kong is sitting here, fighting Warnul. (flying)<br />
+Neirel Le'Grande, Torturer from the Shadows is sitting here, fighting Warnul.<br />
+. . . has a tough exterior.<br />
+Warnul Wimp, Renshai's Fraction of Hate is standing here, fighting Neirel.<br />
+An old beggar hobbles along here looking for handouts.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; You crash into Diddy in a bone crunching bash, sending <br />
+him sprawling to the ground.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; <br />
+A drunken dwarf leaves north.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; <br />
+You annihilate Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota shoots Warnul hard.<br />
+Shoota shoots Warnul very hard.<br />
+Neirel slashes Warnul extremely hard.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; give blue warnul<br />
+You miss Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota misses Warnul with his shoot.<br />
+Shoota misses Warnul with his shoot.<br />
+Neirel slashes Warnul very hard.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; You give a blue potion to <br />
+Warnul.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; Neirel steps aside as Warn<br />
+ul attempts a bash, stumbles, and falls flat on his face.<br />
+Neirel stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:V.Good] Exits:NESWU&gt; You crash into Diddy in a <br />
+bone crunching bash, sending him sprawling to the ground.<br />
+Warnul steps aside as Neirel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Good] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul massacres Neirel with his slash.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Good] Exits:NESWU&gt; st<br />
+<br />
+Tikk flies in from the east.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Good] Exits:NESWU&gt; <br />
+Tikk flies up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Good] Exits:NESWU&gt; <br />
+<br />
+Tikk flies in from above.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Good] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul slashes Neirel extremely hard.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Good] Exits:NESWU&gt; <br />
+Warnul stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Good] Exits:NESWU&gt; <br />
+Warnul quaffs a blue potion.<br />
+Warnul shudders slightly and looks uncomfortable.<br />
+Warnul heals Warnul.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Good] [Diddy:Good] Exits:NESWU&gt; <br />
+<br />
+Tikk ponders the meaning of life, love, and the universe.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Good] [Diddy:Good] Exits:NESWU&gt; You are already standing.<br />
+Neirel stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Good] [Diddy:Good] Exits:NESWU&gt; You crash into Diddy in a <br />
+bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Good] [Diddy:Good] Exits:NESWU&gt; <br />
+Neirel crashes into Warnul in a thundering collision, knocking him to the ground!<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Good] [Diddy:Good] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Shoota massacres Warnul with his shoot.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul slashes Neirel extremely hard.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Good] [Diddy:Fair] Exits:NESWU&gt; <br />
+Warnul stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Good] [Diddy:Fair] Exits:NESWU&gt; <br />
+Tikk says 'play nice ppl'<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Good] [Diddy:Fair] Exits:NESWU&gt; <br />
+You miss Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota misses Warnul with his shoot.<br />
+Shoota shoots Warnul very hard.<br />
+Neirel slashes Warnul extremely hard.<br />
+Warnul slashes Neirel extremely hard.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+<br />
+Warnul crashes into Neirel in a thundering collision, knocking him to the ground!<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; You try to bash Diddy, but y<br />
+ou miss and tumble forward onto your face.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+Diddy stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+A drunken dwarf arrives from the east.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+Diddy crashes into Warnul in a thundering collision, knocking him to the ground!<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Shoota massacres Warnul with his shoot.<br />
+Neirel slashes Warnul extremely hard.<br />
+Warnul massacres Neirel with his slash.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; st<br />
+<br />
+Diddy has lost his link.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Fair] [Diddy:Fair] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy massacres Warnul with his cleave.<br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Warnul stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Diddy has reconnected.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Tikk says 'nice hitting'<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+A drunken dwarf leaves north.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Neirel steps aside as Warnul attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; You stand up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; You crash into Diddy in a bon<br />
+e crunching bash, sending him sprawling to the ground.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+A drunken dwarf arrives from the east.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul slashes Neirel extremely hard.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Neirel stands up.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Neirel crashes into Warnul in a thundering collision, knocking him to the ground!<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Fair] Exits:NESWU&gt; <br />
+Tikk says 'uh oh diddy is fucked'<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:V.Bad] [Diddy:Fair] Exits:NESWU&gt; give blue warnul<br />
+<br />
+You massacre Diddy with your cleave.<br />
+Diddy cleaves Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota shoots Warnul extremely hard.<br />
+Neirel massacres Warnul with his slash.<br />
+Warnul massacres Neirel with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Awful] [Diddy:Bad] Exits:NESWU&gt; You give a blue potion to Wa<br />
+rnul.<br />
+<br />
+628H 114V 30860306X 5784C [Warnul:Awful] [Diddy:Bad] Exits:NESWU&gt; <br />
+Diddy stops using an ancient sphere.<br />
+Diddy grabs a glowing scroll of recall.<br />
+Diddy recites a glowing scroll of recall.<br />
+Diddy disappears.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; <br />
+Shoota massacres Warnul with his shoot.<br />
+Shoota shoots Warnul extremely hard.<br />
+Neirel slashes Warnul extremely hard.<br />
+Warnul slashes Neirel extremely hard.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; <br />
+Tikk says 'or not'<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; <br />
+Warnul steps aside as Neirel attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; <br />
+Shoota shoots Warnul extremely hard.<br />
+Shoota massacres Warnul with his shoot.<br />
+Warnul is dead! R.I.P.<br />
+The death cry of Warnul echoes from somewhere nearby...<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; <br />
+Shoota gets a bladeless sword from the corpse of Warnul.<br />
+Shoota gets a spiked wrist buckler from the corpse of Warnul.<br />
+Shoota is zapped by a bloodstained steel band and instantly drops it.<br />
+Shoota is zapped by a demonic cape and instantly drops it.<br />
+Shoota is zapped by the dark shield of Kharolis and instantly drops it.<br />
+Shoota is zapped by a pair of spiked battle armets and instantly drops it.<br />
+Shoota is zapped by a pair of spider shaped braces and instantly drops it.<br />
+Shoota gets a pair of green elven boots from the corpse of Warnul.<br />
+Shoota gets a forest green helm and visor from the corpse of Warnul.<br />
+Shoota gets a suit of marble plate from the corpse of Warnul.<br />
+Shoota is zapped by a bloody axe shaped medallion and instantly drops it.<br />
+Shoota gets a hematite pendant from the corpse of Warnul.<br />
+Shoota gets a ring of the stone guardian from the corpse of Warnul.<br />
+Shoota is zapped by a battle banner of the dragonarmies and instantly drops it.<br />
+Shoota gets a large pile of coins from the corpse of Warnul.<br />
+Shoota gets a blue potion from the corpse of Warnul.<br />
+Shoota gets an entire loaf of bread from the corpse of Warnul.<br />
+Shoota gets an entire loaf of bread from the corpse of Warnul.<br />
+Shoota is zapped by a darkened iron long sword and instantly drops it.<br />
+Shoota gets a scribed scroll from the corpse of Warnul.<br />
+Shoota gets some pixie dust from the corpse of Warnul.<br />
+Shoota gets a small wooden chest from the corpse of Warnul.<br />
+Shoota gets an enchanted barrel from the corpse of Warnul.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; The corpse doesn't seem to have what you are looking fo<br />
+r.<br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; It's a pretty ghastly sight! Searching through the rema<br />
+ins, you find:<br />
+corpse (here) : <br />
+<br />
+628H 114V 30860306X 5784C Exits:NESWU&gt; bash neirel<br />
+You crash into Neirel in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+628H 114V 30860306X 5784C [Inari:V.Good] [Neirel:V.Bad] Exits:NESWU&gt; get <br />
+<br />
+Tikk gets a darkened iron long sword.<br />
+Tikk is zapped by a battle banner of the dragonarmies and instantly drops it.<br />
+Tikk gets a bloody axe shaped medallion.<br />
+Tikk gets a pair of spider shaped braces.<br />
+Tikk gets a pair of spiked battle armets.<br />
+Tikk is zapped by the dark shield of Kharolis and instantly drops it.<br />
+Tikk is zapped by a demonic cape and instantly drops it.<br />
+Tikk gets a bloodstained steel band.<br />
+<br />
+628H 114V 30860306X 5784C [Inari:V.Good] [Neirel:V.Bad] Exits:NESWU&gt; <br />
+628H 114V 30860306X 5784C [Inari:V.Good] [Neirel:V.Bad] Exits:NESWU&gt; <br />
+You annihilate Neirel with your cleave.<br />
+Neirel misses you with his slash.<br />
+<br />
+628H 114V 30860306X 5784C [Inari:V.Good] [Neirel:Awful] Exits:NESWU&gt; <br />
+Shoota shoots YOU extremely hard.<br />
+<br />
+612H 114V 30860306X 5784C [Inari:V.Good] [Neirel:Awful] Exits:NESWU&gt; bash<br />
+<br />
+Shoota massacres YOU with his shoot.<br />
+Shoota shoots YOU extremely hard.<br />
+Shoota shoots YOU very hard.<br />
+You massacre Neirel with your cleave.<br />
+Neirel slashes YOU extremely hard.<br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Neirel:Awful] Exits:NESWU&gt; <br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Neirel:Awful] Exits:NESWU&gt; <br />
+Tikk oohs and ahhs, as if he is really, really impressed.<br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Neirel:Awful] Exits:NESWU&gt; You crash into Neirel in a <br />
+bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Neirel:Awful] Exits:NESWU&gt; <br />
+A drunken dwarf leaves east.<br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Neirel:Awful] Exits:NESWU&gt; <br />
+Shoota heroically rescues Neirel.<br />
+<br />
+551H 120V 30860306X 5784C [Inari:Good] [Shoota:Perfect] Exits:NESWU&gt; <br />
+You massacre Shoota with your cleave.<br />
+Shoota shoots YOU extremely hard.<br />
+<br />
+532H 120V 30860306X 5784C [Inari:Good] [Shoota:V.Good] Exits:NESWU&gt; bash shoota<br />
+<br />
+532H 120V 30860306X 5784C [Inari:Good] [Shoota:V.Good] Exits:NESWU&gt; <br />
+You massacre Shoota with your cleave.<br />
+Shoota shoots YOU very hard.<br />
+<br />
+518H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; You try to bash Shoota, but <br />
+you miss and tumble forward onto your face.<br />
+<br />
+518H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+Lukipela focuses harshly on Neirel and utters some strange words.<br />
+<br />
+518H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+You massacre Shoota with your cleave.<br />
+<br />
+496H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+Neirel stands up.<br />
+<br />
+496H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+Neirel is zapped by a demonic cape and instantly drops it.<br />
+Neirel is zapped by the dark shield of Kharolis and instantly drops it.<br />
+Neirel is zapped by a battle banner of the dragonarmies and instantly drops it.<br />
+<br />
+496H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; st<br />
+<br />
+Tikk ponders the meaning of life, love, and the universe.<br />
+<br />
+496H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+Neirel grabs a glowing scroll of recall.<br />
+Neirel recites a glowing scroll of recall.<br />
+Neirel disappears.<br />
+<br />
+496H 120V 30860306X 5784C [Inari:Good] [Shoota:Good] Exits:NESWU&gt; <br />
+You massacre Shoota with your cleave.<br />
+Shoota massacres YOU with his shoot.<br />
+<br />
+466H 120V 30860306X 5784C [Inari:Fair] [Shoota:Good] Exits:NESWU&gt; <br />
+Shoota stops using a fine long bow.<br />
+Shoota grabs a glowing scroll of recall.<br />
+Shoota recites a glowing scroll of recall.<br />
+Shoota disappears.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='289'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=289">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="289">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

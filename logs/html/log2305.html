@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>How many times have you been spooned by another Arctic player?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>0<br>
+<input type=radio value=1 name=voteid>1<br>
+<input type=radio value=2 name=voteid>2-5<br>
+<input type=radio value=3 name=voteid>5-10<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=144><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 2305-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='209.234.171.41' and logid='2305'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+...it happened so fast</font></b>
+<p>
+POV: 
+Chiggles<p>
+Log Rating:
+4.3332<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+we didn't even see brandon there he rip'd so fastlike</i>
+<p>
+<p>
+
+[9:57:47 PM] Darick Drake says: 521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; l<br />
+On a Path Through the Woods<br />
+A small campfire fills the area with a warm, comfortable glow.<br />
+A wild berry is lying on the ground. [3]<br />
+A fearsome blue dragon, Dikc, is standing here, ignoring you.<br />
+&lt;FURY&gt; Nolan the Male Kagonesti is resting here.<br />
+. . . is surrounded by a shimmering light.<br />
+&lt;ttoc&gt; Kayna, Beautiful Princess of Darkness is standing here.<br />
+Cabre's apprentice is here, laden with many bags.<br />
+&lt;FURY&gt; Vikha ahkiV, Releasing Your Inner Fury is resting here.<br />
+&lt;FURY&gt; Riv Uhr, Wide, Wet and Wonderful is standing here. (flying)<br />
+&lt;FURY&gt; Kamaswami the Merchant, Furious Spirit Guide is standing here. (flying)<br />
+&lt;FURY&gt; Lucia Lucianna, The Instiller of Heliophobia is standing here. (flying)<br />
+Cabre Tohz is standing here.<br />
+. . . is surrounded by 3 duplicate images.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Vikha turns Dikc the fearsome blue dragon's head to the side and sink his fangs <br />
+into his neck.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Kamaswami utters some strange words.<br />
+Kamaswami's features are hideously distorted as his true form is revealed!<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Apostle flies in from the south.<br />
+Borz flies in from the south.<br />
+Snakstinator flies in from the south.<br />
+Snakstinator kneels down and studies the ground.<br />
+Clarence flies in from the south.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Clarence focuses harshly on Lucia and utters some strange words.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Apostle utters some strange words.<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; <br />
+Dikc the fearsome blue dragon screams as a swarm of insects engulfs him.<br />
+Nolan seems unaffected by Apostle's swarm of insects.<br />
+Kayna seems unaffected by Apostle's swarm of insects.<br />
+Cabre's apprentice screams as a swarm of insects engulfs him.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Vikha deftly ducks out of the way of the attack.<br />
+Riv screams as a swarm of insects engulfs him.<br />
+Kamaswami seems unaffected by Apostle's swarm of insects.<br />
+Lucia screams as a swarm of insects engulfs her.<br />
+Cabre Tohz seems unaffected by Apostle's swarm of insects.<br />
+Cabre Tohz obliterates Apostle with his pierce.<br />
+Cabre Tohz obliterates Apostle with his pierce.<br />
+Lucia misses Apostle with her crush.<br />
+Kamaswami massacres Apostle with his cleave.<br />
+Riv massacres Apostle with his slash.<br />
+Cabre's apprentice hits Apostle extremely hard.<br />
+Kayna slashes Apostle hard.<br />
+Nolan bludgeons Apostle extremely hard.<br />
+Nolan bludgeons Apostle extremely hard.<br />
+Apostle misses Dikc the fearsome blue dragon with his hit.<br />
+Dikc the fearsome blue dragon claws Apostle very hard.<br />
+Snakstinator crashes into Lucia in a thundering collision, knocking her to the <br />
+ground!<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] [**Apostle:V.Bad**] Exits:NS&gt; <br />
+Nolan stands up.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] [**Apostle:V.Bad**] Exits:NS&gt; <br />
+Cabre Tohz raises his hands and black bolt of force hits Apostle!<br />
+You receive 0 experience.<br />
+Apostle is dead! R.I.P.<br />
+The death cry of Apostle echoes from somewhere nearby...<br />
+Borz stops following Apostle.<br />
+Apostle now follows Borz.<br />
+Borz is the new leader of Apostle's group.<br />
+Apostle stops following Borz.<br />
+Snakstinator stops following Apostle.<br />
+Snakstinator now follows Borz.<br />
+Clarence stops following Apostle.<br />
+Clarence now follows Borz.<br />
+<br />
+521H 89V 1X 26.98% 5666C [**Riv:V.Good**] Exits:NS&gt; You get a very large pile of <br />
+coins from the corpse of Apostle.<br />
+There were 1482 coins.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; corpse (here) : <br />
+some sickly yellow robes<br />
+an embroidered purple scarf..it glows dimly<br />
+a glowing scroll of recall..it glows dimly [2]<br />
+a roasted turkey leg [3]<br />
+a crimson steel lance<br />
+a slender long sword<br />
+a black sword of the Grimguard..it glows dimly<br />
+a black morion helm<br />
+a milky potion of see invisible<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; The corpse doesn't seem to <br />
+have what you are looking for.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; j<br />
+Insects fill the room. Dikc the fearsome blue dragon screams as he is bitten <br />
+repeatedly.<br />
+Nolan fends off a swarm of insects by flapping his arms wildly.<br />
+Insects fill the room. Kayna screams as she is bitten repeatedly.<br />
+Insects fill the room. Cabre's apprentice screams as he is bitten repeatedly.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Vikha deftly ducks out of the way of the attack.<br />
+Insects fill the room. Riv screams as he is bitten repeatedly.<br />
+Kamaswami fends off a swarm of insects by flapping his arms wildly.<br />
+Lucia fends off a swarm of insects by flapping her arms wildly.<br />
+Insects fill the room. Cabre Tohz screams as he is bitten repeatedly.<br />
+Lucia crushes Snakstinator extremely hard.<br />
+Snakstinator slashes Lucia extremely hard.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; j b<br />
+Borz gets some sickly yellow robes from the corpse of Apostle.<br />
+Borz gets an embroidered purple scarf from the corpse of Apostle.<br />
+Borz gets a glowing scroll of recall from the corpse of Apostle.<br />
+Borz gets a glowing scroll of recall from the corpse of Apostle.<br />
+Borz gets a roasted turkey leg from the corpse of Apostle.<br />
+Borz gets a roasted turkey leg from the corpse of Apostle.<br />
+Borz gets a roasted turkey leg from the corpse of Apostle.<br />
+Borz gets a crimson steel lance from the corpse of Apostle.<br />
+Borz gets a slender long sword from the corpse of Apostle.<br />
+Borz gets a black sword of the Grimguard from the corpse of Apostle.<br />
+Borz gets a black morion helm from the corpse of Apostle.<br />
+Borz gets a milky potion of see invisible from the corpse of Apostle.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; j bor<br />
+Kamaswami focuses harshly on Snakstinator and utters some strange words.<br />
+Kamaswami throws a handful of sticks at Snakstinator, but they turn into snakes <br />
+in midflight!<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; j borz<br />
+You aim at Borz.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; You start shooting like mad.<br />
+You massacre Borz with a plunk.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; <br />
+Borz heroically rescues Snakstinator.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; <br />
+Nolan tells your group 'tic in 10'<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; <br />
+You massacre Borz with a plunk.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; <br />
+Kayna leaves south.<br />
+Dikc the fearsome blue dragon flies south.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] Exits:NS&gt; <br />
+Riv slashes Borz extremely hard.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:V.Good**] [**Borz:Good**] Exits:NS&gt; <br />
+Nolan fends off a swarm of insects by flapping his arms wildly.<br />
+Insects fill the room. Cabre's apprentice screams as he is bitten repeatedly.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Insects fill the room. Vikha screams as he is bitten repeatedly.<br />
+Insects fill the room. Riv screams as he is bitten repeatedly.<br />
+Kamaswami fends off a swarm of insects by flapping his arms wildly.<br />
+Lucia fends off a swarm of insects by flapping her arms wildly.<br />
+Cabre Tohz fends off a swarm of insects by flapping his arms wildly.<br />
+Riv massacres Borz with his slash.<br />
+Lucia crushes Borz very hard.<br />
+Borz misses Lucia with his slash.<br />
+Clarence focuses harshly on you and utters some strange words.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Borz:Good**] Exits:NS&gt; <br />
+You massacre Borz with a plunk.<br />
+Snakstinator crashes into Lucia in a thundering collision, knocking her to the <br />
+ground!<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Borz:Good**] Exits:NS&gt; <br />
+Kamaswami focuses harshly on Snakstinator and utters some strange words.<br />
+Kamaswami throws a handful of sticks at Snakstinator, but they turn into snakes <br />
+in midflight!<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Borz:Good**] Exits:NS&gt; <br />
+You massacre Borz with a plunk.<br />
+Borz panics, and attempts to flee.<br />
+Borz flies south.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] Exits:NS&gt; <br />
+You stop aiming at Borz.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] Exits:NS&gt; <br />
+Nolan fends off a swarm of insects by flapping his arms wildly.<br />
+Insects fill the room. Cabre's apprentice screams as he is bitten repeatedly.<br />
+With a quick weave, you slip out of the way of the attack.<br />
+Vikha deftly ducks out of the way of the attack.<br />
+Riv fends off a swarm of insects by flapping his arms wildly.<br />
+Kamaswami fends off a swarm of insects by flapping his arms wildly.<br />
+Insects fill the room. Lucia screams as she is bitten repeatedly.<br />
+Cabre Tohz fends off a swarm of insects by flapping his arms wildly.<br />
+Lucia crushes Snakstinator extremely hard.<br />
+Snakstinator slashes Lucia extremely hard.<br />
+Riv heroically rescues Lucia.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:Fair**] Exits:NS&gt; <br />
+Clarence flies south.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:Fair**] Exits:NS&gt; hj<br />
+Kamaswami focuses on Lucia and utters some strange words.<br />
+Lucia's wounds begin to heal.<br />
+<br />
+521H 89V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snaksti<br />
+The swarm of insects dissipates.<br />
+Snakstinator slashes Riv very hard.<br />
+Riv massacres Snakstinator with his slash.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snakstin<br />
+Riv swings madly at Snakstinator with a broad bladed two-handed sword, cutting <br />
+him a deep wound.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snakstinat<br />
+Lucia stands up.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snakstinator<br />
+Lucia utters some strange words.<br />
+Lucia's hands send forth blinding rays of sunlight!<br />
+Snakstinator withers as a ray of sunlight sent by Lucia engulfs him!<br />
+Cabre's apprentice withers as a ray of sunlight sent by Lucia engulfs him!<br />
+Cabre's apprentice panics, and attempts to flee.<br />
+Cabre's apprentice leaves north.<br />
+Lucia destroys Cabre Tohz's mirror images.<br />
+Cabre Tohz withers as a ray of sunlight sent by Lucia engulfs him!<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snakstinator<br />
+<br />
+Snakstinator crashes into Lucia in a thundering collision, knocking her to the <br />
+ground!<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; You <br />
+aim at Snakstinator.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; You <br />
+start shooting like mad.<br />
+You massacre Snakstinator with a plunk.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; <br />
+Nolan bludgeons Snakstinator extremely hard.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; <br />
+Cabre Tohz raises his hands and black bolt of force hits Lucia!<br />
+You massacre Snakstinator with a plunk.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:V.Good**] [**Snakstinator:Fair**] Exits:NS&gt; j snakstinator<br />
+You massacre Snakstinator with a plunk.<br />
+Nolan massacres Snakstinator with his bludgeon.<br />
+Cabre Tohz obliterates Lucia with his pierce.<br />
+Cabre Tohz obliterates Lucia with his pierce.<br />
+Lucia crushes Snakstinator extremely hard.<br />
+Snakstinator slashes Riv very hard.<br />
+Riv slashes Snakstinator extremely hard.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:V.Bad**] Exits:NS&gt; j snakstinator<br />
+Kamaswami focuses harshly on Snakstinator and utters some strange words.<br />
+Kamaswami throws a handful of sticks at Snakstinator, but they turn into snakes <br />
+in midflight!<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:V.Bad**] Exits:NS&gt; j snakstinator<br />
+You massacre Snakstinator with a plunk.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:V.Bad**] Exits:NS&gt; j snakstinator<br />
+Nolan wiggles his fingers as he outlines Snakstinator's head in the air.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:V.Bad**] Exits:NS&gt; j snakstinator<br />
+Your clanmate Anita has entered the game.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:V.Bad**] Exits:NS&gt; j snakstinato<br />
+You massacre Snakstinator with a plunk.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:Awful**] Exits:NS&gt; <br />
+Nolan bludgeons Snakstinator extremely hard.<br />
+Nolan bludgeons Snakstinator extremely hard.<br />
+Cabre Tohz obliterates Lucia with his pierce.<br />
+Lucia is dead! R.I.P.<br />
+Snakstinator slashes Riv extremely hard.<br />
+Riv misses Snakstinator with his slash.<br />
+The death cry of Lucia echoes from somewhere nearby...<br />
+Lucia sinks gently to the ground.<br />
+Kamaswami stops following Lucia.<br />
+Kamaswami now follows Cabre Tohz.<br />
+Lucia stops following Cabre Tohz.<br />
+Lucia now follows Kamaswami.<br />
+Kamaswami is the new leader of Lucia's group.<br />
+Lucia stops following Kamaswami.<br />
+Riv stops following Lucia.<br />
+Riv now follows Kamaswami.<br />
+Vikha stops following Lucia.<br />
+Vikha now follows Kamaswami.<br />
+You stop following Lucia.<br />
+You now follow Kamaswami.<br />
+Kayna stops following Lucia.<br />
+Your clanmate Lucia has left the game.<br />
+<br />
+521H 113V 1X 26.98% 7148C [**Riv:Good**] [**Snakstinator:Awful**] Exits:NS&gt; You <br />
+get a pile of coins from the corpse of Lucia.<br />
+There were 99 coins.<br />
+<br />
+521H 113V 1X 26.98% 7247C [**Riv:Good**] [**Snakstinator:Awful**] Exits:NS&gt; getcorps<br />
+e (here) : <br />
+a black mace of the Skull<br />
+a rhodochrosite bracelet..it glows dimly<br />
+a set of light blue prayer beads<br />
+a vine belt<br />
+a black priest's gown<br />
+a carved marble shield<br />
+a pair of black silk sleeves<br />
+a pair of clear crystal gauntlets<br />
+a pair of ivory legplates<br />
+a runed brown hood<br />
+a flowing white chasuble<br />
+a long black stole, lined with red<br />
+a gleaming mithril necklace inlaid with diamonds<br />
+a ring of the Skull<br />
+a ring of twisted ice..it glows dimly..it hums softly<br />
+a clear crystal sceptre<br />
+an alchemist's cloak<br />
+a milky potion of see invisible [4]<br />
+Kamaswami focuses harshly on Snakstinator and utters some strange words.<br />
+Kamaswami throws a handful of sticks at Snakstinator, but they turn into snakes <br />
+in midflight!<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+Snakstinator screams in pain as a snake tears into his flesh.<br />
+<br />
+521H 113V 1X 26.98% 7247C [**Riv:Good**] [**Snakstinator:Awful**] Exits:NS&gt; get aYou <br />
+massacre Snakstinator with a plunk.<br />
+Snakstinator is dead! R.I.P.<br />
+The death cry of Snakstinator echoes from somewhere nearby...<br />
+You stop aiming at Snakstinator.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+521H 113V 1X 26.98% 7247C [**Riv:Good**] Exits:NS&gt; get alYou get a large pile of coins <br />
+from the corpse of Snakstinator.<br />
+There were 989 coins.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; get all cocorpse (here) : <br />
+a swordfish's sword<br />
+a kender hide shield..it glows dimly<br />
+a pair of silver dragon scale boots<br />
+a pair of platinum gilt leg plates<br />
+a glass eye<br />
+a milky potion of see invisible [2]<br />
+a gleaming bronze sword<br />
+a bronze shield<br />
+a piece of sweet bread<br />
+a steel falchion<br />
+a black crystal pendant (invisible)<br />
+a milky potion of see invisible<br />
+a glowing scroll of recall..it glows dimly [3]<br />
+a piece of sweet bread<br />
+a longsword<br />
+a steel falchion<br />
+a jug of oil [3]<br />
+a scroll of recall<br />
+a milky potion of see invisible [2]<br />
+a glowing scroll of recall..it glows dimly<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; get all corpThe corpse doesn't seem to <br />
+have what you are looking for.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; get all corpse<br />
+You get a swordfish's sword <br />
+from the corpse of Snakstinator.<br />
+You get a kender hide shield from the corpse of Snakstinator.<br />
+You get a pair of silver dragon scale boots from the corpse of Snakstinator.<br />
+You get a pair of platinum gilt leg plates from the corpse of Snakstinator.<br />
+You get a glass eye from the corpse of Snakstinator.<br />
+You get a milky potion of see invisible from the corpse of Snakstinator.<br />
+You get a milky potion of see invisible from the corpse of Snakstinator.<br />
+You get a gleaming bronze sword from the corpse of Snakstinator.<br />
+You get a bronze shield from the corpse of Snakstinator.<br />
+You get a piece of sweet bread from the corpse of Snakstinator.<br />
+You get a steel falchion from the corpse of Snakstinator.<br />
+You get a black crystal pendant from the corpse of Snakstinator.<br />
+You get a milky potion of see invisible from the corpse of Snakstinator.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Bread : You can't carry that much weight.<br />
+Sword : You can't carry that much weight.<br />
+Falchion : You can't carry that much weight.<br />
+Jug : You can't carry that much weight.<br />
+Jug : You can't carry that much weight.<br />
+Jug : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Scroll : You can't carry that much weight.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; j <br />
+Nolan gets a glowing scroll of recall from the corpse of Snakstinator.<br />
+Nolan gets a glowing scroll of recall from the corpse of Snakstinator.<br />
+Nolan gets a glowing scroll of recall from the corpse of Snakstinator.<br />
+Nolan gets a piece of sweet bread from the corpse of Snakstinator.<br />
+Nolan gets a longsword from the corpse of Snakstinator.<br />
+Nolan gets a steel falchion from the corpse of Snakstinator.<br />
+Nolan gets a jug of oil from the corpse of Snakstinator.<br />
+Nolan gets a jug of oil from the corpse of Snakstinator.<br />
+Nolan gets a jug of oil from the corpse of Snakstinator.<br />
+Nolan gets a scroll of recall from the corpse of Snakstinator.<br />
+Nolan gets a milky potion of see invisible from the corpse of Snakstinator.<br />
+Nolan gets a milky potion of see invisible from the corpse of Snakstinator.<br />
+Nolan gets a glowing scroll of recall from the corpse of Snakstinator.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; j<br />
+Kamaswami gets a black mace of the Skull from the corpse of Lucia.<br />
+Kamaswami gets a rhodochrosite bracelet from the corpse of Lucia.<br />
+Kamaswami gets a set of light blue prayer beads from the corpse of Lucia.<br />
+Kamaswami gets a vine belt from the corpse of Lucia.<br />
+Kamaswami gets a black priest's gown from the corpse of Lucia.<br />
+Kamaswami gets a carved marble shield from the corpse of Lucia.<br />
+Kamaswami gets a pair of black silk sleeves from the corpse of Lucia.<br />
+Kamaswami gets a pair of clear crystal gauntlets from the corpse of Lucia.<br />
+Kamaswami gets a pair of ivory legplates from the corpse of Lucia.<br />
+Kamaswami gets a runed brown hood from the corpse of Lucia.<br />
+Kamaswami gets a flowing white chasuble from the corpse of Lucia.<br />
+Kamaswami gets a long black stole, lined with red from the corpse of Lucia.<br />
+Kamaswami gets a gleaming mithril necklace inlaid with diamonds from the corpse <br />
+of Lucia.<br />
+Kamaswami gets a ring of the Skull from the corpse of Lucia.<br />
+Kamaswami gets a ring of twisted ice from the corpse of Lucia.<br />
+Kamaswami gets a clear crystal sceptre from the corpse of Lucia.<br />
+Kamaswami gets an alchemist's cloak from the corpse of Lucia.<br />
+Kamaswami gets a milky potion of see invisible from the corpse of Lucia.<br />
+Kamaswami gets a milky potion of see invisible from the corpse of Lucia.<br />
+Kamaswami gets a milky potion of see invisible from the corpse of Lucia.<br />
+Kamaswami gets a milky potion of see invisible from the corpse of Lucia.<br />
+<br />
+j521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt;rof<br />
+You roll on the floor in a <br />
+fit of laughter.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; say id<br />
+Anita tells your clan 'swaaaaaaami'<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; say idiot<br />
+Your clanmate Lucia has entered the game.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; say idiots<br />
+You say 'idiots'<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; l<br />
+On a Path Through the Woods<br />
+The corpse of Snakstinator is lying here.<br />
+The corpse of Lucia is lying here.<br />
+The corpse of Apostle is lying here.<br />
+A quartz crystal sphere has been dropped here.<br />
+A small campfire fills the area with a warm, comfortable glow.<br />
+A wild berry is lying on the ground. [3]<br />
+&lt;FURY&gt; Nolan the Male Kagonesti is standing here.<br />
+. . . is surrounded by a shimmering light.<br />
+&lt;FURY&gt; Vikha ahkiV, Releasing Your Inner Fury is resting here.<br />
+&lt;FURY&gt; Riv Uhr, Wide, Wet and Wonderful is standing here. (flying)<br />
+&lt;FURY&gt; Kamaswami the Merchant, Furious Spirit Guide is standing here. (flying)<br />
+Cabre Tohz is standing here.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; yell<br />
+Anita tells your clan 'you guys doing anything?'<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; yell t<br />
+Vikha shouts 'thanks'<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; shout thanks guys been great<br />
+Kayna arrives from the south.<br />
+Dikc the fearsome blue dragon flies in from the south.<br />
+<br />
+521H 113V 1X 26.98% 8236C [**Riv:Good**] Exits:NS&gt; shout thanks guys been great day<br />
+You shout 'thanks guys been <br />
+great day'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='209.234.171.41' and logid='2305'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=2305">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="2305">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="209.234.171.41">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

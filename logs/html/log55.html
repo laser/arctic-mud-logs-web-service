@@ -1,0 +1,774 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 55-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='55'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Revenge!</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+5.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Had claired Renshai in storms, and found out that Tikk, Cecil and Zakinthos was in Solace, I ambushed them on the way to storms. Couldn't have done it w/o Arcanum!</i>
+<p>
+<p>
+
+Tikk flies in from the south.<br />
+Zakinthos flies in from the south.<br />
+<br />
+284H 37V 12590463X 47C Mem:6 Exits:SW&gt; c 'power word stun'<br />
+You utter the words, 'power word stun'<br />
+Cecil is stunned momentarily, recovering quickly.<br />
+Zakinthos is stunned momentarily, recovering quickly.<br />
+Tikk is stunned momentarily, recovering quickly.<br />
+<br />
+284H 37V 12590463X 47C [Me:Perfect] [Cecil:Awful] Mem:9 Exits:SW&gt; <br />
+Cecil stops using a hooked blood dagger.<br />
+Cecil grabs a glowing scroll of recall.<br />
+Cecil recites a glowing scroll of recall.<br />
+Tikk disappears.<br />
+<br />
+284H 37V 12590463X 47C [Me:Perfect] [Cecil:Awful] Mem:9 Exits:SW&gt; <br />
+Arcanum flies in from the west.<br />
+<br />
+284H 37V 12590463X 47C [Me:Perfect] [Cecil:Awful] Mem:9 Exits:SW&gt; c 'magic missile'<br />
+<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+You miss Cecil with your hit.<br />
+Cecil misses you with his pierce.<br />
+<br />
+277H 37V 12590463X 47C [Me:V.Good] [Cecil:Awful] Mem:9 Exits:SW&gt; <br />
+You are sent sprawling as Zakinthos crashes into you.<br />
+<br />
+263H 37V 12590463X 47C [Me:V.Good] [Cecil:Awful] Mem:9 Exits:SW&gt; <br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+You miss Cecil with your hit.<br />
+You miss Cecil with your hit.<br />
+Cecil drives his knife to an opening in your armor.<br />
+Cecil massacres YOU with his pierce.<br />
+Cecil burns as he passes through your fire shield.<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Cecil:Awful] Mem:9 Exits:SW&gt; You can't do this sitting!<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Cecil:Awful] Mem:9 Exits:SW&gt; st<br />
+YOU STAND UP!<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Cecil:Awful] Mem:9 Exits:SW&gt; c 'force bolt'<br />
+<br />
+Arcanum focuses harshly on Cecil and utters the words, 'lightning bolt'.<br />
+Arcanum slowly fades into existence.<br />
+Cecil wavers under the impact of the lightning bolt sent by Arcanum.<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Cecil:Awful] Mem:9 Exits:SW&gt; You utter the words, 'force bolt'<br />
+Your force bolt shatters Cecil's skull into lifeless goo.<br />
+You receive 0 experience.<br />
+Cecil is dead! R.I.P.<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Cecil:Dying] Mem:10 Exits:SW&gt; <br />
+The death cry of Cecil echoes from somewhere nearby...<br />
+You direct your attention to Zakinthos.<br />
+<br />
+225H 37V 12590463X 47C [Me:Good] [Zakinthos:V.Good] Mem:10 Exits:SW&gt; <br />
+You miss Zakinthos with your hit.<br />
+You miss Zakinthos with your hit.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+218H 37V 12590463X 47C [Me:Good] [Zakinthos:V.Good] Mem:10 Exits:SW&gt; get all corpse<br />
+Arcanum gets an engraved emerald knife from the corpse of Cecil.<br />
+Arcanum gets a black beaded bracelet from the corpse of Cecil.<br />
+Arcanum gets a granite bracer from the corpse of Cecil.<br />
+Arcanum gets a small sheath shaped like a viper from the corpse of Cecil.<br />
+Arcanum gets a fiery red cloak from the corpse of Cecil.<br />
+Arcanum gets a pair of black leather sleeves from the corpse of Cecil.<br />
+Arcanum gets a pair of bloody butcher's gloves from the corpse of Cecil.<br />
+Arcanum gets the boots of shadow's whisper from the corpse of Cecil.<br />
+Arcanum gets a black bolero from the corpse of Cecil.<br />
+Arcanum gets a granite asp's tooth from the corpse of Cecil.<br />
+Arcanum gets a dark cloak of bloody scalps from the corpse of Cecil.<br />
+Arcanum gets a ring of black dragon scales from the corpse of Cecil.<br />
+Arcanum gets a very large pile of coins from the corpse of Cecil.<br />
+Arcanum gets a hooked blood dagger from the corpse of Cecil.<br />
+You get a large waterskin from the corpse of Cecil.<br />
+You get a fig from the corpse of Cecil.<br />
+You get a large waterskin from the corpse of Cecil.<br />
+You get a large waterskin from the corpse of Cecil.<br />
+You get a large waterskin from the corpse of Cecil.<br />
+You get a large waterskin from the corpse of Cecil.<br />
+Chest : You can't carry that much weight.<br />
+You get a colorful mushroom from the corpse of Cecil.<br />
+Corpse : You can't carry that much weight.<br />
+<br />
+st<br />
+218H 37V 12590463X 47C [Me:Good] [Zakinthos:V.Good] Mem:10 Exits:SW&gt; You are already standing.<br />
+<br />
+218H 37V 12590463X 47C [Me:Good] [Zakinthos:V.Good] Mem:10 Exits:SW&gt; c 'power word stun'<br />
+You utter the words, 'power word stun'<br />
+Zakinthos is stunned momentarily, recovering quickly.<br />
+<br />
+218H 37V 12590463X 47C [Me:Good] [Zakinthos:V.Good] Mem:13 Exits:SW&gt; <br />
+You are sent sprawling as Zakinthos crashes into you.<br />
+<br />
+204H 37V 12590463X 47C [Me:Fair] [Zakinthos:V.Good] Mem:13 Exits:SW&gt; <br />
+You wince in pain as your wounds bleed.<br />
+Zakinthos crushes YOU very hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+189H 37V 12590463X 47C [Me:Fair] [Zakinthos:V.Good] Mem:13 Exits:SW&gt; st<br />
+<br />
+Arcanum misses Zakinthos with his hit.<br />
+<br />
+189H 37V 12590463X 47C [Me:Fair] [Zakinthos:V.Good] Mem:13 Exits:SW&gt; c 'power word stun'<br />
+<br />
+Arcanum misses Zakinthos with his hit.<br />
+You miss Zakinthos with your hit.<br />
+You miss Zakinthos with your hit.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+180H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; YOU STAND UP!<br />
+<br />
+180H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; You can't remember how to cast that spell!<br />
+<br />
+180H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'lightning bolt'.<br />
+Zakinthos wavers under the impact of the lightning bolt sent by Arcanum.<br />
+<br />
+180H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; c 'hold person'<br />
+<br />
+You wince in pain as your wounds bleed.<br />
+Zakinthos crushes YOU.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+You are sent sprawling as Zakinthos crashes into you.<br />
+<br />
+159H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; st<br />
+Arcanum misses Zakinthos with his hit.<br />
+You should probably stand up!<br />
+You miss Zakinthos with your hit.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+You can't do this sitting!<br />
+<br />
+149H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; YOU STAND UP!<br />
+<br />
+149H 37V 12590463X 47C [Me:Fair] [Zakinthos:Good] Mem:13 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'lightning bolt'.<br />
+Zakinthos wavers under the impact of the lightning bolt sent by Arcanum.<br />
+<br />
+149H 37V 12590463X 47C [Me:Fair] [Zakinthos:Fair] Mem:13 Exits:SW&gt; c 'hold person'<br />
+Your casting is disrupted by the fighting!<br />
+<br />
+149H 37V 12590463X 47C [Me:Fair] [Zakinthos:Fair] Mem:14 Exits:SW&gt; c 'hold person'<br />
+You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+149H 37V 12590463X 47C [Me:Fair] [Zakinthos:Fair] Mem:15 Exits:SW&gt; <br />
+You wince in pain as your wounds bleed.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+138H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:15 Exits:SW&gt; <br />
+You are sent sprawling as Zakinthos crashes into you.<br />
+<br />
+125H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:15 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'hold person'.<br />
+<br />
+125H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:15 Exits:SW&gt; st<br />
+c 'force bolt'<br />
+TICK IN 16 SECONDS.<br />
+<br />
+You miss Zakinthos with your hit.<br />
+You miss Zakinthos with your hit.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+115H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:15 Exits:SW&gt; YOU STAND UP!<br />
+<br />
+115H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:15 Exits:SW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Zakinthos.<br />
+<br />
+115H 37V 12590463X 47C [Me:Bad] [Zakinthos:Fair] Mem:17 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'magic missile'.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+<br />
+115H 37V 12590463X 47C [Me:Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; <br />
+You wince in pain as your wounds bleed.<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+105H 37V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; <br />
+You are sent sprawling as Zakinthos crashes into you.<br />
+<br />
+95H 37V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; <br />
+WIZARD EYE: a free roaming horse has arrived from the south exit.<br />
+WIZARD EYE: Sheol has arrived from the south exit.<br />
+<br />
+95H 37V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; <br />
+WIZARD EYE: a free roaming horse has left through the north exit.<br />
+<br />
+95H 37V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; <br />
+Arcanum misses Zakinthos with his hit.<br />
+You miss Zakinthos with your hit.<br />
+You miss Zakinthos with your hit.<br />
+Zakinthos crushes YOU.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+You feel slow.<br />
+<br />
+94H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; st<br />
+c 'hold person'<br />
+YOU STAND UP!<br />
+<br />
+94H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; You utter the words, 'hold person'<br />
+Zakinthos FREEZES in place.<br />
+<br />
+94H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; c 'force bolt'<br />
+<br />
+You wince in pain as your wounds bleed.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Bad] Mem:17 Exits:SW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Zakinthos.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:V.Bad] Mem:19 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'magic missile'.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:V.Bad] Mem:19 Exits:SW&gt; c 'force bolt'<br />
+You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Zakinthos.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:V.Bad] Mem:21 Exits:SW&gt; <br />
+Arcanum barely hits Zakinthos.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:V.Bad] Mem:21 Exits:SW&gt; c 'force bolt'<br />
+<br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'magic missile'.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:21 Exits:SW&gt; You utter the words, 'force bolt'<br />
+You hear bones crack as your force bolt slams into Zakinthos.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:23 Exits:SW&gt; <br />
+Arcanum focuses harshly on Zakinthos and utters the words, 'magic missile'.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+Arcanum aims a magic missile at Zakinthos, who staggers under the blow.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:23 Exits:SW&gt; c 'force bolt'<br />
+You can't remember how to cast that spell!<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:23 Exits:SW&gt; <br />
+WIZARD EYE: Sheol has arrived from the north exit.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:23 Exits:SW&gt; c 'invisibility' me<br />
+<br />
+WIZARD EYE: Sheol has left through the south exit.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:23 Exits:SW&gt; You utter the words, 'invisibility'<br />
+You vanish.<br />
+<br />
+93H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:24 Exits:SW&gt; c 'magic missile'<br />
+<br />
+Zakinthos crushes YOU hard.<br />
+Zakinthos burns as he passes through your fire shield.<br />
+<br />
+85H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:24 Exits:SW&gt; <br />
+WIZARD EYE: Sheol has arrived from the south exit.<br />
+<br />
+85H 47V 12590463X 47C [Me:V.Bad] [Zakinthos:Awful] Mem:24 Exits:SW&gt; <br />
+Zakinthos panics, and attempts to flee.<br />
+Zakinthos flies south.<br />
+<br />
+85H 47V 12590463X 47C Mem:24 Exits:SW&gt; <br />
+WIZARD EYE: Sheol has left through the north exit.<br />
+<br />
+85H 47V 12590463X 47C Mem:24 Exits:SW&gt; Unexpected end of input:<br />
+You must specify a character to perform that action on.<br />
+<br />
+85H 47V 12590463X 47C Mem:24 Exits:SW&gt; <br />
+WIZARD EYE: Sheol has arrived from the north exit.<br />
+<br />
+85H 47V 12590463X 47C Mem:24 Exits:SW&gt; s<br />
+<br />
+WIZARD EYE: Sheol has left through the south exit.<br />
+<br />
+85H 47V 12590463X 47C Mem:24 Exits:SW&gt; A Hilly Trail<br />
+    This trail branches off from the main road and twists its way through<br />
+the hilly and beautiful lands of Krynn. Large trees line the trail, their<br />
+leaves providing protection against the intense wind that sometimes blows<br />
+through here. The trees are vibrant and healthy, echoing the general state<br />
+of the area. In the distance, birds tweet and the occasional rabbit runs<br />
+across the path.<br />
+Arcanum the Male Gnome is standing here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Zakinthos Zagoure, Renshai Peacekeeper is standing here. (flying)<br />
+<br />
+85H 45V 12590463X 47C Mem:24 Exits:NS&gt; c 'color spray'<br />
+You utter the words, 'color spray'<br />
+Your hands issue a spray of color!<br />
+You catch Zakinthos in a spray of shimmering red!<br />
+Zakinthos is mortally wounded, and will die soon, if not aided.<br />
+<br />
+85H 45V 12590463X 47C [Me:V.Bad] [Zakinthos:Dying] Mem:25 Exits:NS&gt; <br />
+You hit Zakinthos.<br />
+You receive 0 experience.<br />
+Zakinthos is dead! R.I.P.<br />
+The death cry of Zakinthos echoes from somewhere nearby...<br />
+<br />
+85H 45V 12590463X 47C Mem:25 Exits:NS&gt; <br />
+WIZARD EYE: Sheol has arrived from the south exit.<br />
+<br />
+85H 45V 12590463X 47C Mem:25 Exits:NS&gt; <br />
+WIZARD EYE: Sheol has left through the north exit.<br />
+<br />
+85H 45V 12590463X 47C Mem:25 Exits:NS&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a tinsmith's hammer<br />
+the silver band of the kingfisher..it glows blue<br />
+a large dwarven shield<br />
+a pair of plain leather sleeves<br />
+a large pile of coins<br />
+a milky potion of see invisible..it glows blue [3]<br />
+a mincemeat pie<br />
+a small canteen [2]<br />
+a large first-aid kit<br />
+a large roll of white bandages<br />
+a milky potion of see invisible..it glows blue<br />
+<br />
+85H 45V 12590463X 47C Mem:25 Exits:NS&gt; <br />
+Arcanum gets a large pile of coins from the corpse of Zakinthos.<br />
+<br />
+85H 45V 12590463X 47C Mem:25 Exits:NS&gt; get all corpse<br />
+Hammer : You can't carry that much weight.<br />
+You get the silver band of the kingfisher from the corpse of Zakinthos.<br />
+Shield : You can't carry that much weight.<br />
+Sleeves : You can't carry that much weight.<br />
+You get a milky potion of see invisible from the corpse of Zakinthos.<br />
+You get a milky potion of see invisible from the corpse of Zakinthos.<br />
+You get a milky potion of see invisible from the corpse of Zakinthos.<br />
+Pie : You can't carry that much weight.<br />
+Canteen : You can't carry that much weight.<br />
+Canteen : You can't carry that much weight.<br />
+Kit : You can't carry that much weight.<br />
+Bandages : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='55'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=55">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="55">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

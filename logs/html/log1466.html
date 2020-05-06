@@ -1,0 +1,2363 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1466-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1466'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Falling asleep at keyboard can be fun.</font></b>
+<p>
+POV: 
+Sempre<p>
+Log Rating:
+1.3636<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+piip.</i>
+<p>
+<p>
+
+For the second day in a row, bsp catch me in some scout guild.<br />
+This very day however, i wasnt dead-tired and acting idiotic due<br />
+to fatigue...<br />
+No no, today I actually fell asleep AT the keyboard *laughs at the situation*<br />
+Had I been awake however, I would probably have had the greatest laugh ever,<br />
+cause this is just too funny, I logged on from work not having checked my computer<br />
+first, and i see i'm at 1hp, so I somewhat add 2 and 2 together and ask mavlad if <br />
+they killed me last night heh.<br />
+He confirms my suspicioun, so I ask for a log of it, would like to see how it had<br />
+looked... But he refuses to give.<br />
+I then come home and realise i've been logging all day with my own client, so I go<br />
+through the log and find this beauty at the end, I wasnt gonna put this on the net,<br />
+but hey... I havent laughed this hard in ages :), and figured i'd share the joy with<br />
+the rest of you who would like to read :).<br />
+Notice my polished long sword and awful weaponskill :P, falling asleep rules.<br />
+<br />
+The storyline begins:<br />
+<br />
+412H 114V 3343539X 2154C Exits:W&gt; <br />
+Ahmed flies in from the west.<br />
+<br />
+412H 114V 3343539X 2154C Exits:W&gt; <br />
+Ahmed stops using a brass lamp.<br />
+Ahmed grabs an obscure ruby.<br />
+Ahmed smashes an obscure looking ruby between his fingers, showering the room with acid.<br />
+Ahmed slowly fades into existence.<br />
+You are suddenly covered in acid, discharged by a ruby.<br />
+Acid sprays from a ruby, which nearly gets all over Tantys Wildblade, the Scout Guildmaster.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed stops using a leather jacket.<br />
+Ahmed stops using some studded leather leggings.<br />
+Ahmed stops using a pair of leather boots.<br />
+Ahmed stops using a pair of studded leather gloves.<br />
+Ahmed stops using some studded leather sleeves.<br />
+Ahmed stops using a leather wrist band.<br />
+Ahmed stops using a leather wrist band.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+394H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed pulls a small copper ring off of his finger.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+405H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You barely slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+402H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+402H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+402H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed bludgeons YOU.<br />
+You miss Ahmed with your slash.<br />
+<br />
+396H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+396H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+396H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+396H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed bludgeons YOU hard.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+385H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+385H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+385H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+377H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+377H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You feel especially skillful today. &lt;---- Thanks guys!!!! :), never could find a mob with so much hps and personal healer that would last long enough! :P<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Evian shouts 'we need a grave or monument for the unknown mob. We have killed billions of mobs and nobody think of their feelings :)'<br />
+<br />
+408H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You feel especially skillful today.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed ponders the meaning of life, love, and the universe.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Uruk shouts 'I feel bad sometimes when I kill little girls'<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam now follows Ahmed.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Xaliumei shouts '....sometimes....'<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Jecht shouts 'i dont'<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Mys shouts 'I enjoy it. I touch them first.'<br />
+<br />
+401H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+A small fire flickers as it burns itself out.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Kalagara shouts 'do we have graves for known mobs?? and that is sick'<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+412H 114V 3343539X 2154C [Me:Perfect] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed very hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam gives a hermit's cane to Ahmed.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed stops using an obscure ruby.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed stops using a shaman's staff.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed wields a hermit's cane.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+403H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+392H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+392H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+392H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+392H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed says 'i bet you here laughting'    &lt;---- Had I been awake, you can be damn sure i woulda laughed, I'm guessing this is mavlad due to spelling issues<br />
+<br />
+392H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+385H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+385H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+372H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+393H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+393H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+393H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+393H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+393H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+387H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+381H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+381H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Dagam looks at you.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+374H 114V 3343539X 2154C [Me:V.Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+366H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+366H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+361H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You barely slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Broch shouts 'how do i show the map of where i am?'<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+371H 114V 3343539X 2154C [Me:V.Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+Ahmed wavers under your mighty slash!<br />
+You slash Ahmed very hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+364H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+364H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+364H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU.<br />
+You miss Ahmed with your slash.<br />
+<br />
+359H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+346H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+346H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+346H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+336H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+325H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed bludgeons YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+318H 114V 3343539X 2154C [Me:Good] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his bludgeon.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed stops using a hermit's cane.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed wields an immense scythe of ice and fire with both hands.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+331H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed slashes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+317H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+309H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+309H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+309H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+309H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+322H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+322H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+318H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+318H 114V 3343539X 2154C [Me:Good] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed slashes YOU.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+305H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+305H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+305H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+298H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+293H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed slashes YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+284H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+284H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+284H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+284H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+284H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+276H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+289H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+289H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed slashes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+275H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+275H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed slashes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You feel especially skillful today.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed slashes YOU hard.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Voran shouts 'seeking high main tank to exp with, can lead well.'<br />
+<br />
+243H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+244H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+244H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+237H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+228H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Pelko shouts 'LOCATE spell for sale!'<br />
+<br />
+228H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+228H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed slashes YOU hard.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+214H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Nihilism RELOCATED TO ===&gt; Ahmed &lt;===.<br />
+<br />
+214H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+207H 114V 3343539X 2154C [Me:Fair] [Ahmed:Fair] Exits:W&gt; <br />
+Nihilism gives a black pearl to Ahmed.<br />
+<br />
+207H 114V 3343539X 2154C [Me:Fair] [Ahmed:Fair] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You feel especially skillful today.<br />
+You miss Ahmed with your slash.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed stops using an immense scythe of ice and fire.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Jeo arrives from the west.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed grabs a black pearl.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Jeo leaves west.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Dagam looks at you.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Jeo flies in from the west.<br />
+<br />
+231H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his hit.<br />
+You slash Ahmed hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:Fair] Exits:W&gt; <br />
+Dagam starts watching you.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:Fair] Exits:W&gt; <br />
+Jeo focuses on Ahmed and utters some strange words.<br />
+Jeo heals Ahmed.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Nihilism flies west.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Jeo.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed very hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+216H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo whistles innocently.<br />
+<br />
+216H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+211H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his hit.<br />
+You miss Ahmed with your slash.<br />
+<br />
+211H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+211H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo looks at Ahmed.<br />
+<br />
+211H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed very hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+<br />
+202H 114V 3343539X 2154C [Me:Bad] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+202H 114V 3343539X 2154C [Me:Bad] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+202H 114V 3343539X 2154C [Me:Bad] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his hit.<br />
+You miss Ahmed with your slash.<br />
+<br />
+202H 114V 3343539X 2154C [Me:Bad] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his hit.<br />
+You slash Ahmed very hard.<br />
+You feel a sharp chill as you swing through Ahmed's freezing aura.<br />
+Jeo closes his prayerbook with a content look on his face.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Nihilism flies in from the west.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo looks at you.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; STANDS UP Jeo<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed stops using a black pearl.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his hit.<br />
+You slash Ahmed very hard.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed wields an immense scythe of ice and fire with both hands.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed slashes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:Good] Exits:W&gt; <br />
+Jeo focuses on Ahmed and utters some strange words.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You slash Ahmed hard.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed wears a leather wrist band around his right wrist.<br />
+Ahmed wears a leather wrist band around his left wrist.<br />
+Ahmed wears some studded leather sleeves on his arms.<br />
+Ahmed wears a pair of studded leather gloves on his hands.<br />
+Ahmed wears a pair of leather boots on his feet.<br />
+Ahmed wears some studded leather leggings on his legs.<br />
+Ahmed wears a leather jacket on his body.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Nihilism flies west.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo now follows Ahmed.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Jeo.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dias shouts 'need a scout and a healer for a quick load'<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; STANDS UP Jeo<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo flies west.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed barely slashes YOU.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo flies in from the west.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo utters some strange words.<br />
+Jeo prays.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Birgitte pants heavily.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed says 'ono nebos' sidit i rget'<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Birgitte blinks.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Nihilism RELOCATED TO ===&gt; Ahmed &lt;===.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Birgitte.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo smiles warmly.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Jeo.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Nihilism looks at Birgitte.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Illithian shouts 'whos selling locate'<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo looks at Ahmed.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; STANDS UP Birgitte<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Birgitte.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Nihilism gives a wand of twisted bands of wood to Ahmed.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Nihilism.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo looks at Ahmed.<br />
+<br />
+240H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+Nihilism closes his spellbook with a content look on his face.<br />
+Jeo closes his prayerbook with a content look on his face.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; STANDS UP Birgitte<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; STANDS UP Nihilism<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo stops using a ceremonial crystal mace.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Birgitte flies west.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed gives a wand of twisted bands of wood to Dagam.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo gives a ceremonial crystal mace to Ahmed.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Dagam ponders the meaning of life, love, and the universe.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Nihilism flies west.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Dagam utters some strange words.<br />
+Dagam smiles as a veil of icy mist surrounds him.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his slash.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed stops using an immense scythe of ice and fire.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed wields a ceremonial crystal mace.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Dagam says 'toss scythe'<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed gives an immense scythe of ice and fire to Dagam.<br />
+<br />
+271H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+You hear gears grinding as Dagam thinks.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; STANDS UP Jeo<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo flies west.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:Perfect] Exits:W&gt; <br />
+Dagam stops using a red dragonscale book.<br />
+Dagam grabs a wand of twisted bands of wood.<br />
+Dagam waves a wand of twisted bands of wood.<br />
+From out of nowhere, a fireball explodes in the face of Dagam.<br />
+From out of nowhere, a fireball explodes in the face of Ahmed.<br />
+With a quick weave, you slip out of the way of Dagam's attack. &lt;---- this is goddamn funny, fragging clannies and missing target rocks ;)<br />
+Dagam slowly fades into existence.<br />
+A fireball discharged by a wand does not seem to affect Tantys Wildblade, the Scout Guildmaster.<br />
+<br />
+259H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+248H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+248H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam snaps his fingers.<br />
+<br />
+248H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam waves a wand of twisted bands of wood.<br />
+<br />
+248H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo flies in from the west.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Nihilism flies in from the west.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Nihilism utters some strange words.<br />
+Nihilism disappears in a puff of smoke.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam stops using a wand of twisted bands of wood.<br />
+Dagam drops a wand of twisted bands of wood.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+Dagam lights a red dragonscale book and holds it.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies in from the west.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Dagam.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+Dagam puts away his tablets with a content look on his face.<br />
+<br />
+267H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; STANDS UP Dagam<br />
+<br />
+267H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Dagam flies west.<br />
+<br />
+267H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+267H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+267H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+253H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+253H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+253H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+246H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo looks at Ahmed.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+236H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed stops using a ceremonial crystal mace.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed wields a ceremonial crystal mace with both hands.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+225H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+238H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+238H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+238H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo stares at the sky.<br />
+<br />
+238H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+224H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed gives an obscure ruby to someone.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo looks at you.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Someone lights a red dragonscale book and holds it.<br />
+<br />
+213H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+226H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+226H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+214H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo utters some strange words.<br />
+Jeo prays.<br />
+<br />
+214H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin arrives from the west.<br />
+<br />
+214H 114V 3343539X 2154C [Me:Fair] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+199H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+-----&gt; BEGINS RESTING Jeo.<br />
+<br />
+199H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin is zapped by a granite spear and instantly drops it.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin gets a large dark-wood bow.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin gets a wand of twisted bands of wood.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin is zapped by a granite spear and instantly drops it.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin sighs loudly.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin gets a black adamantite shortsword.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin jumps in surprise!<br />
+<br />
+183H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+169H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin stops using a large first-aid kit.<br />
+<br />
+169H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin starts holding a black adamantite shortsword.<br />
+<br />
+169H 114V 3343539X 2154C [Me:Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Someone RELOCATED TO ===&gt; Ahmed &lt;===.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Wodin stops using a transparent bone spear.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Someone focuses on Ahmed and utters some strange words.<br />
+Ahmed appears to grow stronger.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Uruk shouts 'what does health do?'<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+153H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+Jeo closes his prayerbook with a content look on his face.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Wodin wields a black ice raith.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+You miss Ahmed with your slash.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Waillan shouts 'wow was that really asked??'<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Someone focuses on Ahmed and utters some strange words.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+166H 114V 3343539X 2154C [Me:Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+154H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+154H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Wodin shrugs helplessly.<br />
+<br />
+154H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Wodin leaves west.<br />
+<br />
+154H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Guerra shouts 'Yeah it was... whats the problem? There was a timewhen you didnt know either'<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Mauser shouts 'any casters 20+ want to group?'<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Gumble shouts 'yeah, I don't even know what health does'<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+139H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+129H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Thos shouts 'Yeah, so stfu or something'<br />
+<br />
+129H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+142H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Xaliumei shouts 'health = how much beer you can chug before dying.'<br />
+<br />
+142H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Trio shouts 'any ppl grouping around 20ish. also looking for a good 2hander and gear'<br />
+<br />
+142H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Thorin shouts 'Anyone got one of the new Acer Ferrari 4000 laptops? Im curious to see if they are as fast as claimed..'<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+127H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed massacres YOU with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+106H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+106H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+119H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Afixa shouts 'get mac'<br />
+<br />
+119H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+119H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed crushes YOU very hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+106H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU extremely hard.<br />
+You miss Ahmed with your slash.<br />
+<br />
+91H 114V 3343539X 2154C [Me:V.Bad] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed crushes YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Jeo looks at you.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+72H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+You feel especially skillful today.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+-----&gt; STANDS UP Jeo<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed drops a small canteen.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+74H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+74H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed drops a large hide waterskin.<br />
+<br />
+74H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed drops a large hide waterskin.<br />
+<br />
+74H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed drops a black pearl.<br />
+<br />
+74H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You barely slash Ahmed.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed slips a small copper ring onto his finger.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+61H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+42H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo waves goodbye to you. Have a good journey.<br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+42H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Jeo sighs loudly.<br />
+<br />
+42H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed crushes YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+28H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You feel especially skillful today.<br />
+You miss Ahmed with your slash.<br />
+<br />
+28H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+28H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You slash Ahmed hard.<br />
+<br />
+28H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU extremely hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+9H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+9H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+9H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed is dazzled by your dexterity, as you parry his feeble swing.<br />
+You miss Ahmed with your slash.<br />
+<br />
+9H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+9H 114V 3343539X 2154C [Me:Awful] [Ahmed:V.Good] Exits:W&gt; <br />
+Ahmed misses you with his crush.<br />
+You miss Ahmed with your slash.<br />
+<br />
+22H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU very hard.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+You miss Ahmed with your slash.<br />
+<br />
+8H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Someone utters some strange words.<br />
+<br />
+8H 114V 3343539X 2154C [Me:Awful] [Ahmed:Perfect] Exits:W&gt; <br />
+Ahmed deftly avoids your parry.<br />
+Ahmed crushes YOU extremely hard.<br />
+You are mortally wounded, and will die soon, if not aided.<br />
+<br />
+-10H 114V 3343539X 2154C Exits:W&gt; Someone annihilates YOU with their crush.<br />
+You're dead.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1466'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1466">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1466">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

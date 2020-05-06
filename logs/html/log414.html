@@ -1,0 +1,639 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 414-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='414'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Porthios's Revenge!</font></b>
+<p>
+POV: 
+Someone<p>
+Log Rating:
+-1.7143<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Poor Porthios dies, but gets revenged.</i>
+<p>
+<p>
+
+235H 107V 1621916X 1191C Mem:2 Exits:NES&gt; n<br />
+Tower of the Suns<br />
+A key wrought of mithril lies here in the dirt.<br />
+A small key on a string lies here.<br />
+A burger with cheese placed on a bun is sitting here. [14]<br />
+Oliul the Male Human is resting here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Jane the Female Kender is standing here. (flying)<br />
+Celest the Female Wild Elf is standing here.<br />
+c 'h p' Troggs<br />
+Troggs the Male Human is resting here. (flying)<br />
+Psyc the Male Human is resting here. (flying) (invisible)<br />
+Pietro the Female Human is resting here. (flying)<br />
+<br />
+235H 106V 1621916X 1191C Mem:1 Exits:ES&gt; You utter the words, 'hold person'<br />
+******* Troggs IS HELD! *******<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Thun  BASHED Troggs<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Jane steps aside as Laura attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Manco slowly fades into existence.<br />
+Manco comes out of hiding.<br />
+Manco places a crystal dagger in Pietro's back, resulting in some strange noises and some blood.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Ilyacus slowly fades into existence.<br />
+Pietro steps aside as Ilyacus attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Canny  BASHED Oliul<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Cypher focuses harshly on Pietro and utters the words, 'hold person'.<br />
+******* Pietro IS HELD! *******<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Bejoza focuses harshly on Jane and utters the words, 'hold person'.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Tyrol shouts 'tell us how you really feel moron'<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Draven focuses harshly on Troggs and utters some strange words.<br />
+Draven slowly fades into existence.<br />
+Draven comes out of hiding.<br />
+The sound of bones cracking echoes as Draven's force bolt slams into Troggs.<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Kena focuses harshly on Jane and utters the words, 'hold person'.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Blake  BASHED Pietro<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Belegorn bludgeons Jane extremely hard.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+******* Psyc STANDS UP!<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Belegorn bludgeons Jane extremely hard.<br />
+Belegorn claws Jane very hard.<br />
+Blake slashes Pietro extremely hard.<br />
+Canny massacres Oliul with his crush.<br />
+Ilyacus massacres Pietro with his cleave.<br />
+Manco massacres Pietro with his pierce.<br />
+Laura massacres Jane with her slash.<br />
+Jane pierces Laura extremely hard.<br />
+Jane pierces Laura very hard.<br />
+Thun massacres Troggs with his pierce.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; c 'ho per' pietro<br />
+<br />
+Jane stops using a black ice knife.<br />
+Jane grabs a glowing scroll of recall.<br />
+Jane recites a glowing scroll of recall.<br />
+Jane disappears.<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; You utter the words, 'hold person'<br />
+The magic fails!<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Manco panics, and attempts to flee.<br />
+Manco flies south.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; c 'ho per' pietro<br />
+<br />
+Celest gets a scroll from her sack.<br />
+Draven focuses harshly on Troggs and utters some strange words.<br />
+Draven comes out of hiding.<br />
+The sound of bones cracking echoes as Draven's force bolt slams into Troggs.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Manco flies in from the south.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Psyc stops using a black ice spear.<br />
+Psyc grabs a glowing scroll of recall.<br />
+Psyc recites a glowing scroll of recall.<br />
+Pietro disappears.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Belegorn massacres Troggs with his bludgeon.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Belegorn massacres Troggs with his bludgeon.<br />
+Belegorn claws Troggs extremely hard.<br />
+Canny massacres Oliul with his crush.<br />
+Thun pierces Troggs extremely hard.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Bejoza focuses harshly on Troggs and utters the words, 'hold person'.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Manco slowly fades into existence.<br />
+Manco comes out of hiding.<br />
+Manco tried to backstab Psyc, but nearly cut his own finger.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; ******* Laura STANDS UP!<br />
+Oliul gets a scroll from his coveralls.<br />
+Who should the spell be cast upon?<br />
+Thun  BASHED Troggs<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Oliul grabs a glowing scroll of recall.<br />
+Oliul recites a glowing scroll of recall.<br />
+Oliul disappears.<br />
+******* Ilyacus STANDS UP!<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Kena focuses harshly on Troggs and utters the words, 'hold person'.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Ilyacus slowly fades into existence.<br />
+Ilyacus  BASHED Psyc<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; <br />
+Draven focuses harshly on Troggs and utters some strange words.<br />
+Draven comes out of hiding.<br />
+Brains splatter on you as Draven's force bolt shatters Troggs's skull.<br />
+You receive 0 experience.<br />
+get pile corpse<br />
+Troggs is dead! R.I.P.<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; c 'ho per' pscy<br />
+<br />
+The death cry of Troggs echoes from somewhere nearby...<br />
+<br />
+235H 106V 1621916X 1191C Mem:2 Exits:ES&gt; You get a very large pile of coins from the corpse of Troggs.<br />
+split 1676<br />
+There were 1676 coins.<br />
+<br />
+235H 106V 1621916X 2867C Mem:2 Exits:ES&gt; Who should the spell be cast upon?<br />
+<br />
+235H 106V 1621916X 2867C Mem:2 Exits:ES&gt; Ilyacus massacres Psyc with his cleave.<br />
+Manco massacres Psyc with his pierce.<br />
+You can't split 1676 evenly among the people in the room; splitting 1668 instead.<br />
+You divide 1668 coins equally among the group members present.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Belegorn massacres Psyc with his bludgeon.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Bejoza gets a glowing scroll of recall from the corpse of Troggs.<br />
+Bejoza gets a large waterskin from the corpse of Troggs.<br />
+Bejoza gets a cup from the corpse of Troggs.<br />
+Bejoza gets a cup from the corpse of Troggs.<br />
+Bejoza gets a glowing scroll of recall from the corpse of Troggs.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Blake massacres Psyc with his slash.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Canny  BASHED Psyc<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; c 'ho per' psyc<br />
+<br />
+Kena says 'loot'<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; You utter the words, 'hold person'<br />
+******* Psyc IS HELD! *******<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Cypher focuses harshly on Psyc and utters the words, 'hold person'.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Draven comes out of hiding.<br />
+Draven crushes Psyc very hard.<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Draven crushes Psyc extremely hard.<br />
+Canny crushes Psyc extremely hard.<br />
+Psyc is stunned, but will likely regain consciousness again.<br />
+Blake annihilates Psyc with his slash.<br />
+You receive 0 experience.<br />
+get pile corpse<br />
+Psyc is dead! R.I.P.<br />
+The death cry of Psyc echoes from somewhere nearby...<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; <br />
+Manco gets a very large pile of coins from the corpse of Psyc.<br />
+Manco gets a rainbow cloak from the corpse of Psyc.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; get all corpse<br />
+<br />
+Kena gets a transparent fish skin robe from the corpse of Psyc.<br />
+Kena gets a pretty pink satin gown from the corpse of Psyc.<br />
+Kena gets a black ice spear from the corpse of Psyc.<br />
+Kena gets a cheeseburger from the corpse of Psyc.<br />
+Kena gets a sergeant's cape from the corpse of Psyc.<br />
+Kena gets a bullseye lantern from the corpse of Psyc.<br />
+Kena gets a vial of spinal fluid from the corpse of Psyc.<br />
+<br />
+235H 106V 1621916X 1338C Mem:2 Exits:ES&gt; l<br />
+<br />
+Laura gets a bullseye lantern from the corpse of Psyc.<br />
+Manco boggles at some nebulous concept.
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='414'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=414">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="414">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

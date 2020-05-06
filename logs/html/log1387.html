@@ -1,0 +1,616 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1387-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1387'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Killing a pair of enemies.</font></b>
+<p>
+POV: 
+Fidlas<p>
+Log Rating:
+2.2667<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Nice entry ensured victory.</i>
+<p>
+<p>
+
+w<br />
+Near the Slums<br />
+    The road turns here leading north through the dwellings of the<br />
+residents of Port o'Call. Most of the homes look rundown and old. You guess<br />
+that most of the residents here are fishing families who make their livings<br />
+from what they pull from the sea or the dock workers who don't get paid as<br />
+much as they should for the use of their muscles.<br />
+The corpse of a dapple-gray war-horse is lying here.<br />
+The corpse of a Silver Circle Guardsman is lying here.<br />
+A trident type weapon has been left here to rot...it glows blue<br />
+Nic, Blackened by Takhisis is standing here. (flying)<br />
+Broedius the Male Human is standing here. (invisible)<br />
+<br />
+316H 41V 1X 4851C Exits:NE&gt; c 'power word stun'<br />
+You utter the words, 'power word stun'<br />
+Nic is STUNNED!!!<br />
+Broedius is STUNNED!!!<br />
+<br />
+316H 41V 1X 4851C Mem:4 Exits:NE&gt; <br />
+Fistul CRASHES into Nic in a thundering collision, knocking him to the ground!<br />
+<br />
+316H 41V 1X 4851C Mem:4 Exits:NE&gt; <br />
+Broedius starts moaning.<br />
+<br />
+316H 41V 1X 4851C Mem:4 Exits:NE&gt; <br />
+Broedius says 'owned'<br />
+<br />
+316H 41V 1X 4851C Mem:4 Exits:NE&gt; c 'prismatic spray'<br />
+Fistul massacres Nic with his drain.<br />
+You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Nic in a spray of shimmering red!<br />
+You hit Broedius with a spray of gleaming indigo!<br />
+Broedius's face goes BLANK AND BEGINS TO DROOL!!<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Good] Mem:5 Exits:NE&gt; c 'prismatic spray'<br />
+<br />
+You claw Nic extremely hard.<br />
+Fistul massacres Nic with his drain.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Fair] Mem:5 Exits:NE&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+You catch Nic in a spray of bright orange!<br />
+You catch Nic in a spray of shimmering red!<br />
+Nic SEEMS WEAKER<br />
+You catch Broedius in a spray of radiant yellow!<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Bad] Mem:7 Exits:NE&gt; c 'malevolent tentacles'<br />
+<br />
+Fistul massacres Nic with his drain.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:V.Bad] Mem:7 Exits:NE&gt; You utter the words, 'malevolent tentacles'<br />
+You conjure a writhing mass of inky black tentacles!<br />
+Nic screams in pain as inky black tentacles constrict him.<br />
+Broedius screams in pain as inky black tentacles constrict him.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Awful] Mem:9 Exits:NE&gt; <br />
+Fistul CRASHES into Broedius in a thundering collision, knocking him to the ground!<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Awful] Mem:9 Exits:NE&gt; c 'prismatic spray'<br />
+<br />
+Broedius screams in pain as inky black tentacles constrict him.<br />
+Nic screams in pain as inky black tentacles constrict him.<br />
+Fistul massacres Nic with his drain.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Fistul:V.Good] [Nic:Awful] Mem:9 Exits:NE&gt; You utter the words, 'prismatic spray'<br />
+Your hands issue a spray of prismatic color!<br />
+Your spray of violet melts Nic into a lifeless paste.<br />
+You receive 0 experience.<br />
+Nic is dead! R.I.P.<br />
+You hit Broedius with a spray of gleaming indigo!<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Nic:Dying] Mem:10 Exits:NE&gt; <br />
+The death cry of Nic echoes from somewhere nearby...<br />
+Nic sinks gently to the ground.<br />
+Nic stops following Broedius.<br />
+You direct your attention to Broedius.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Broedius:Fair] Mem:10 Exits:NE&gt; get all corpse<br />
+<br />
+Broedius screams in pain as inky black tentacles constrict him.<br />
+You claw Broedius extremely hard.<br />
+<br />
+316H 41V 1X 4851C [Me:V.Good] [Broedius:Bad] Mem:10 Exits:NE&gt; c 'lightning bolt'<br />
+You get a rotted academic tome from the corpse of Nic.<br />
+You get a ceremonial elven slingstaff from the corpse of Nic.<br />
+You get a red draconian bracelet from the corpse of Nic.<br />
+You get a brown robe from the corpse of Nic.<br />
+You get a small diamond shield from the corpse of Nic.<br />
+You get a pair of obsidian bracers from the corpse of Nic.<br />
+You get a pair of ivory gauntlets from the corpse of Nic.<br />
+You get a pair of worn snakeskin pants from the corpse of Nic.<br />
+You get a pair of electrum hair braid tassels from the corpse of Nic.<br />
+You are zapped by a hooded black chasuble and instantly drop it.<br />
+You get a necklace of gnomish ears from the corpse of Nic.<br />
+Pendant : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+You get a large pile of coins from the corpse of Nic.<br />
+There were 870 coins.<br />
+Ball : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+316H 41V 1X 5721C [Me:V.Good] [Broedius:Bad] Mem:10 Exits:NE&gt; <br />
+Fistul CRASHES into Broedius in a thundering collision, knocking him to the ground!<br />
+<br />
+316H 41V 1X 5721C [Me:V.Good] [Broedius:Bad] Mem:10 Exits:NE&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Broedius with full impact.<br />
+<br />
+316H 41V 1X 5721C [Me:V.Good] [Broedius:V.Bad] Mem:10 Exits:NE&gt; c 'lightning bolt'<br />
+<br />
+Broedius screams in pain as inky black tentacles constrict him.<br />
+Fistul massacres Broedius with his drain.<br />
+Broedius misses you and destroys an image.<br />
+Broedius misses you and destroys an image.<br />
+<br />
+316H 41V 1X 5721C [Me:V.Good] [Broedius:V.Bad] Mem:10 Exits:NE&gt; You utter the words, 'lightning bolt'<br />
+The lightning bolt hits Broedius with full impact.<br />
+<br />
+316H 41V 1X 5721C [Me:V.Good] [Broedius:Awful] Mem:11 Exits:NE&gt; c 'lightning bolt'<br />
+<br />
+Fistul massacres Broedius with his drain.<br />
+Broedius slashes YOU hard.<br />
+Broedius burns as he passes through your fire shield.<br />
+Broedius misses you and destroys an image.<br />
+<br />
+307H 41V 1X 5721C [Me:V.Good] [Broedius:Awful] Mem:11 Exits:NE&gt; repl no<br />
+<br />
+Broedius gets a crystal pendant from the corpse of Nic.<br />
+Broedius gets a ring of the Skull from the corpse of Nic.<br />
+Broedius gets a ring made of human bone from the corpse of Nic.<br />
+Broedius gets a bright ball of light from the corpse of Nic.<br />
+Broedius gets a glowing scroll of recall from the corpse of Nic.<br />
+Broedius gets a glowing scroll of recall from the corpse of Nic.<br />
+Broedius gets a glowing scroll of recall from the corpse of Nic.<br />
+Broedius gets a small wooden chest from the corpse of Nic.<br />
+<br />
+307H 41V 1X 5721C [Me:V.Good] [Broedius:Awful] Mem:11 Exits:NE&gt; <br />
+Broedius STANDS UP!!!<br />
+<br />
+307H 41V 1X 5721C [Me:V.Good] [Broedius:Awful] Mem:11 Exits:NE&gt; You utter the words, 'lightning bolt'<br />
+Your lightning bolt shatters Broedius to pieces.<br />
+You receive 0 experience.<br />
+Broedius is dead! R.I.P.<br />
+<br />
+307H 41V 1X 5721C [Me:V.Good] [Broedius:Dying] Mem:12 Exits:NE&gt; <br />
+The death cry of Broedius echoes from somewhere nearby...<br />
+<br />
+307H 41V 1X 5721C Mem:12 Exits:NE&gt; <br />
+Fistul gets an inky black dagger from the corpse of Broedius.<br />
+Fistul gets a splendidly sharp red longsword from the corpse of Broedius.<br />
+Fistul gets a polished mithril bracer from the corpse of Broedius.<br />
+Fistul gets a pair of foreman's mining gloves from the corpse of Broedius.<br />
+Fistul gets a deeply scratched red dragonarmy helm from the corpse of Broedius.<br />
+Fistul gets a short black cape from the corpse of Broedius.<br />
+Fistul gets a large pile of coins from the corpse of Broedius.<br />
+Fistul gets a small wooden chest from the corpse of Broedius.<br />
+Fistul gets a glowing scroll of recall from the corpse of Broedius.<br />
+Fistul gets a glowing scroll of recall from the corpse of Broedius.<br />
+Fistul gets a glowing scroll of recall from the corpse of Broedius.<br />
+Fistul gets a bright ball of light from the corpse of Broedius.<br />
+Fistul is zapped by a ring made of human bone and instantly drops it.<br />
+Fistul is zapped by a ring of the Skull and instantly drops it.<br />
+Fistul gets a crystal pendant from the corpse of Broedius.<br />
+Fistul gets a small down feather from the corpse of Broedius.<br />
+Fistul gets a loaf of waybread from the corpse of Broedius.<br />
+Fistul gets a loaf of waybread from the corpse of Broedius.<br />
+Fistul gets a loaf of waybread from the corpse of Broedius.<br />
+Fistul gets a runed scimitar from the corpse of Broedius.<br />
+Fistul gets a dark red visor from the corpse of Broedius.<br />
+Fistul gets a bottle from the corpse of Broedius.<br />
+<br />
+307H 41V 1X 5721C Mem:12 Exits:NE&gt; You tell Kharl 'no'<br />
+<br />
+307H 41V 1X 5721C Mem:12 Exits:NE&gt; l<br />
+Near the Slums<br />
+    The road turns here leading north through the dwellings of the<br />
+residents of Port o'Call. Most of the homes look rundown and old. You guess<br />
+that most of the residents here are fishing families who make their livings<br />
+from what they pull from the sea or the dock workers who don't get paid as<br />
+much as they should for the use of their muscles.<br />
+A black ring of the Skull lies here, forgotten...it glows blue<br />
+A yellowish white ring made of human bone lies here...it glows blue<br />
+The corpse of Broedius is lying here.<br />
+A black chasuble rests here, crumpled in a heap...it glows blue<br />
+The corpse of Nic is lying here.<br />
+The corpse of a dapple-gray war-horse is lying here.<br />
+The corpse of a Silver Circle Guardsman is lying here.<br />
+A trident type weapon has been left here to rot...it glows blue<br />
+Fistul Outlawed Zvyrgazuhll is standing here. (flying)<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1387'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1387">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1387">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 39-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='39'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Tourney1</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+First fight in the tourney, my team was Lugnut and Acrimis</i>
+<p>
+<p>
+
+Your group of 3 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Tylle            perfect   rested    standing   Y   N    N     0    0<br />
+  Acrimis          perfect   rested    standing   Y   N    N     0    0<br />
+  Lugnut           perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Ayeka says 'Stand up'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Ayeka says '3'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; st<br />
+You are already standing.<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Ayeka says '2'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Ayeka says '1'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Lugnut tells your group 'go gog og'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Ayeka says 'START'<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Tikk flies east.<br />
+Shimoza flies east.<br />
+Charis flies east.<br />
+<br />
+350H 160V 86C Exits:NESW&gt; <br />
+Sancho crawls back into his hole.<br />
+<br />
+350H 160V 86C Exits:NESW&gt; n<br />
+c 'icesh'<br />
+c 'enlar'<br />
+The Arena Floor<br />
+Charis Avallach, Renshai's Lady of the Lake is standing here. (flying)<br />
+Shimoza the Twiddlemaster, Assigning Numbers to his Days is standing here. (flying)<br />
+Tikk Tock, Hope's Timekeeper is standing here. (flying)<br />
+<br />
+350H 159V 86C Exits:NSW&gt; You utter the words, 'iceshield'<br />
+A veil of icy mist surrounds your entire body.<br />
+<br />
+350H 159V 86C Mem:5 Exits:NSW&gt; <br />
+Shimoza utters the words, 'barkskin'.<br />
+Shimoza's skin thickens into a protective bark.<br />
+<br />
+350H 159V 86C Mem:5 Exits:NSW&gt; <br />
+Lugnut crashes into Tikk in a thundering collision, knocking him to the ground!<br />
+<br />
+350H 159V 86C Mem:5 Exits:NSW&gt; <br />
+Lugnut slashes Tikk extremely hard.<br />
+Tikk bludgeons Lugnut very hard.<br />
+<br />
+350H 159V 86C Mem:5 Exits:NSW&gt; You utter the words, 'enlarge'<br />
+You grow larger.<br />
+<br />
+350H 80V 86C Mem:6 Exits:NSW&gt; <br />
+You step aside as Shimoza tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+350H 80V 86C [Tylle:V.Good] [Shimoza:Perfect] Mem:6 Exits:NSW&gt; <br />
+Acrimis focuses harshly on Shimoza and utters some strange words.<br />
+Shimoza briefly reveals a white aura!<br />
+Acrimis makes Shimoza's good spirit shiver and suffer!<br />
+<br />
+350H 80V 86C [Tylle:V.Good] [Shimoza:V.Good] Mem:6 Exits:NSW&gt; <br />
+Charis charges into you and knocks you to the ground.<br />
+<br />
+337H 80V 86C [Tylle:Good] [Shimoza:V.Good] Mem:6 Exits:NSW&gt; st<br />
+<br />
+Charis massacres YOU with her slash.<br />
+Charis is chilled as she passes through your freezing aura.<br />
+Shimoza cleaves YOU extremely hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You bludgeon Shimoza extremely hard.<br />
+Lugnut slashes Tikk extremely hard.<br />
+Tikk bludgeons Lugnut very hard.<br />
+<br />
+293H 80V 86C [Tylle:Good] [Shimoza:Good] Mem:6 Exits:NSW&gt; c 'insec'<br />
+<br />
+Tikk stands up.<br />
+<br />
+293H 80V 86C [Tylle:Good] [Shimoza:Good] Mem:6 Exits:NSW&gt; <br />
+Lugnut crashes into Tikk in a thundering collision, knocking him to the ground!<br />
+<br />
+293H 80V 86C [Tylle:Good] [Shimoza:Good] Mem:6 Exits:NSW&gt; <br />
+Acrimis focuses harshly on Shimoza and utters some strange words.<br />
+Shimoza briefly reveals a white aura!<br />
+Acrimis makes Shimoza's good spirit shiver and suffer!<br />
+<br />
+293H 80V 86C [Tylle:Good] [Shimoza:Good] Mem:6 Exits:NSW&gt; <br />
+Charis slashes YOU very hard.<br />
+Charis is chilled as she passes through your freezing aura.<br />
+Shimoza cleaves YOU extremely hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You bludgeon Shimoza extremely hard.<br />
+Lugnut massacres Tikk with his slash.<br />
+Tikk bludgeons Lugnut very hard.<br />
+<br />
+262H 80V 86C [Tylle:Fair] [Shimoza:Fair] Mem:6 Exits:NSW&gt; st<br />
+c 'insec'<br />
+<br />
+Shimoza stands up.<br />
+<br />
+262H 80V 86C [Tylle:Fair] [Shimoza:Fair] Mem:6 Exits:NSW&gt; <br />
+You step aside as Shimoza tries to bash you, causing him to tumble and fall face down.<br />
+Charis yells a battle cry and fights like a madman!<br />
+<br />
+262H 80V 86C [Tylle:Fair] [Shimoza:Fair] Mem:6 Exits:NSW&gt; <br />
+Acrimis focuses harshly on Shimoza and utters some strange words.<br />
+Shimoza briefly reveals a white aura!<br />
+Acrimis makes Shimoza's good spirit shiver and suffer!<br />
+<br />
+262H 80V 86C [Tylle:Fair] [Shimoza:Fair] Mem:6 Exits:NSW&gt; <br />
+Charis heroically rescues Shimoza.<br />
+Charis slashes Lugnut extremely hard.<br />
+You bludgeon Charis extremely hard.<br />
+Charis slashes Lugnut extremely hard.<br />
+Charis slashes Lugnut extremely hard.<br />
+Lugnut massacres Tikk with his slash.<br />
+Tikk bludgeons Lugnut extremely hard.<br />
+<br />
+262H 80V 86C [Lugnut:Good] [Charis:V.Good] Mem:6 Exits:NSW&gt; You stand up.<br />
+<br />
+262H 80V 86C [Lugnut:Good] [Charis:V.Good] Mem:6 Exits:NSW&gt; You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+262H 80V 86C [Lugnut:Good] [Charis:V.Good] Mem:8 Exits:NSW&gt; <br />
+Lugnut crashes into Tikk in a thundering collision, knocking him to the ground!<br />
+<br />
+262H 80V 86C [Lugnut:Good] [Charis:V.Good] Mem:8 Exits:NSW&gt; c 'cu c' me<br />
+<br />
+Charis seems unaffected by your swarm of insects.<br />
+Shimoza seems unaffected by your swarm of insects.<br />
+Tikk seems unaffected by your swarm of insects.<br />
+Charis heroically rescues Tikk.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis slashes Lugnut very hard.<br />
+Charis slashes Lugnut extremely hard.<br />
+Shimoza cleaves YOU very hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:8 Exits:NSW&gt; c 'insec'<br />
+<br />
+Acrimis bludgeons Charis very hard.<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:8 Exits:NSW&gt; You are already standing.<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:8 Exits:NSW&gt; You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:9 Exits:NSW&gt; <br />
+Shimoza stands up.<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:9 Exits:NSW&gt; <br />
+Shimoza crashes into Acrimis in a thundering collision, knocking him to the ground!<br />
+<br />
+248H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:9 Exits:NSW&gt; <br />
+Your swarm of insects covers Charis, leaving bloody bites over her flesh.<br />
+Your swarm of insects covers Shimoza, leaving bloody bites over his flesh.<br />
+Tikk seems unaffected by your swarm of insects.<br />
+Charis seems unaffected by your swarm of insects.<br />
+Shimoza seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Tikk, leaving bloody bites over his flesh.<br />
+Tikk bludgeons YOU very hard.<br />
+Tikk is chilled as he passes through your freezing aura.<br />
+Acrimis bludgeons Charis extremely hard.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis slashes Lugnut extremely hard.<br />
+Charis slashes Lugnut very hard.<br />
+Shimoza cleaves YOU very hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+221H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:9 Exits:NSW&gt; st<br />
+You utter the words, 'cure critical'<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+304H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:11 Exits:NSW&gt; <br />
+Tikk steps aside as Lugnut attempts a bash, stumbles, and falls flat on his face.<br />
+*Tikk stands up<br />
+<br />
+304H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:11 Exits:NSW&gt; <br />
+Tikk stands up.<br />
+<br />
+304H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:11 Exits:NSW&gt; <br />
+Tikk utters the words, 'iceshield'.<br />
+Tikk smiles as a veil of icy mist surrounds him.<br />
+<br />
+304H 80V 86C [Lugnut:Fair] [Charis:Good] Mem:11 Exits:NSW&gt; <br />
+Your swarm of insects covers Charis, leaving bloody bites over her flesh.<br />
+Shimoza seems unaffected by your swarm of insects.<br />
+Your swarm of insects covers Charis, leaving bloody bites over her flesh.<br />
+Your swarm of insects covers Shimoza, leaving bloody bites over his flesh.<br />
+Acrimis bludgeons Charis very hard.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis slashes Lugnut extremely hard.<br />
+Charis massacres Lugnut with her slash.<br />
+Shimoza cleaves YOU very hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+291H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:11 Exits:NSW&gt; c 'insec'<br />
+You utter the words, 'insect swarm'<br />
+A huge swarm of biting, stinging insects fills the air.<br />
+<br />
+291H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+You are sent sprawling as Shimoza crashes into you.<br />
+<br />
+272H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk utters the words, 'gust of wind'.<br />
+A sudden wind rushes by you.<br />
+<br />
+272H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+The insect swarm has been dissipated by the wind.<br />
+Acrimis misses Charis with his bludgeon.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis slashes Lugnut very hard.<br />
+Charis massacres Lugnut with her slash.<br />
+Shimoza cleaves YOU extremely hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+254H 80V 86C [Lugnut:Bad] [Charis:Fair] Mem:13 Exits:NSW&gt; c 'sto ca'<br />
+<br />
+Acrimis stands up.<br />
+<br />
+254H 80V 86C [Lugnut:Bad] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Acrimis focuses on Lugnut and utters the words, 'cure critical'.<br />
+<br />
+254H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Lugnut stands up.<br />
+<br />
+254H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Lugnut crashes into Tikk in a thundering collision, knocking him to the ground!<br />
+<br />
+254H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk bludgeons YOU very hard.<br />
+Tikk is chilled as he passes through your freezing aura.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis massacres Lugnut with her slash.<br />
+Charis slashes Lugnut extremely hard.<br />
+Shimoza massacres YOU with his cleave.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You bludgeon Charis very hard.<br />
+<br />
+220H 80V 86C [Lugnut:Fair] [Charis:Fair] Mem:13 Exits:NSW&gt; c 'ca l' tikk<br />
+<br />
+Acrimis focuses on Lugnut and utters some strange words.<br />
+Acrimis heals Lugnut.<br />
+<br />
+220H 80V 86C [Lugnut:V.Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+You step aside as Shimoza tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+220H 80V 86C [Lugnut:V.Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk bludgeons YOU extremely hard.<br />
+Tikk is chilled as he passes through your freezing aura.<br />
+Lugnut misses Charis with his slash.<br />
+Charis slashes Lugnut extremely hard.<br />
+Lugnut wavers under Charis's mighty slash!<br />
+Charis massacres Lugnut with her slash.<br />
+Shimoza massacres YOU with his cleave.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You miss Charis with your bludgeon.<br />
+<br />
+179H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; You stand up.<br />
+<br />
+179H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; You can't remember how to cast that spell!<br />
+<br />
+179H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; You utter the words, 'storm call'<br />
+There is lightning in the sky.<br />
+<br />
+179H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk steps aside as Lugnut attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+179H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk bludgeons YOU very hard.<br />
+Tikk is chilled as he passes through your freezing aura.<br />
+Acrimis misses Charis with his bludgeon.<br />
+Lugnut slashes Charis extremely hard.<br />
+Charis massacres Lugnut with her slash.<br />
+Shimoza cleaves YOU very hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+Tikk stands up.<br />
+<br />
+155H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Tikk panics, and attempts to flee.<br />
+Tikk flies north.<br />
+<br />
+155H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; <br />
+Acrimis focuses harshly on Charis and utters some strange words.<br />
+Charis freezes in place.<br />
+<br />
+155H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; Shimoza stands up.<br />
+Who should the spell be cast upon?<br />
+<br />
+155H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:13 Exits:NSW&gt; c 'cu c' me<br />
+Acrimis steps aside as Shimoza attempts a bash, stumbles, and falls flat on his face.<br />
+You utter the words, 'cure critical'<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+249H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:15 Exits:NSW&gt; <br />
+Lugnut slashes Charis extremely hard.<br />
+Shimoza cleaves YOU very hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+The lightning has stopped.<br />
+<br />
+249H 80V 86C [Lugnut:Good] [Charis:Fair] Mem:15 Exits:NSW&gt; c 'ca l'<br />
+Acrimis bludgeons Charis extremely hard.<br />
+Lugnut slashes Charis extremely hard.<br />
+Shimoza cleaves YOU extremely hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You bludgeon Charis hard.<br />
+Lugnut stands up.<br />
+You utter the words, 'call lightning'<br />
+You hit Charis with your lightning -- bullseye!<br />
+<br />
+234H 80V 86C [Lugnut:Good] [Charis:V.Bad] Mem:17 Exits:NSW&gt; c 'ca l'<br />
+<br />
+Acrimis focuses harshly on Shimoza and utters some strange words.<br />
+<br />
+234H 80V 86C [Lugnut:Good] [Charis:V.Bad] Mem:17 Exits:NSW&gt; <br />
+Lugnut slashes Charis very hard.<br />
+Shimoza cleaves YOU extremely hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+Shimoza stands up.<br />
+<br />
+215H 80V 86C [Lugnut:Good] [Charis:V.Bad] Mem:17 Exits:NSW&gt; You utter the words, 'call lightning'<br />
+You hit Charis with your lightning -- bullseye!<br />
+<br />
+215H 80V 86C [Lugnut:Good] [Charis:Awful] Mem:18 Exits:NSW&gt; <br />
+Shimoza panics, and attempts to flee.<br />
+Shimoza flies south.<br />
+<br />
+215H 80V 86C [Lugnut:Good] [Charis:Awful] Mem:18 Exits:NSW&gt; c 'ca l' tikk<br />
+<br />
+The air suddenly ceases its violent rush.<br />
+Acrimis bludgeons Charis very hard.<br />
+Lugnut slashes Charis extremely hard.<br />
+<br />
+215H 80V 86C [Lugnut:Good] [Charis:Awful] Mem:18 Exits:NSW&gt; Who should the spell be cast upon?<br />
+<br />
+215H 80V 86C [Lugnut:Good] [Charis:Awful] Mem:18 Exits:NSW&gt; c 'ca l'<br />
+You utter the words, 'call lightning'<br />
+Your lightning bolt kills Charis.<br />
+Paladine decides to spare Charis and takes her away.<br />
+<br />
+215H 80V 86C Mem:20 Exits:NSW&gt; l<br />
+The Arena Floor<br />
+Lugnut, Highbulp of the Kender Familia is standing here. (flying)<br />
+Acrimis Elderius, Dark Illuminati is standing here. (flying)<br />
+<br />
+215H 80V 86C Mem:20 Exits:NSW&gt; c 'cu c' me<br />
+You utter the words, 'cure critical'<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+300H 80V 86C Mem:22 Exits:NSW&gt; sca<br />
+Looking north:<br />
+You see nothing special.<br />
+Looking east:<br />
+The grandstand is filled with spectators and is covered with flags<br />
+and pennants depicting all of the various combatants.<br />
+Looking south:<br />
+You see nothing special.<br />
+Shimoza the Twiddlemaster, Assigning Numbers to his Days is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+Tikk Tock, Hope's Timekeeper is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Looking west:<br />
+You see nothing special.<br />
+Looking up:<br />
+Bright colored streamers flutter in the breeze.<br />
+Looking down:<br />
+Recent rains have left the arena floor covered with water puddles.<br />
+<br />
+300H 80V 86C Mem:22 Exits:NSW&gt; s<br />
+Ladder to the Platform<br />
+Shimoza the Twiddlemaster, Assigning Numbers to his Days is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+Tikk Tock, Hope's Timekeeper is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+<br />
+300H 78V 86C Mem:22 Exits:NESWU&gt; <br />
+Tikk---&gt;L.Storms&lt;<br />
+Tikk creates a lightning storm.<br />
+Lugnut screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+Acrimis screams in pain as the lightning bolts summoned by Tikk from the boiling clouds hit him.<br />
+You are staggered by the many bolts of lightning which Tikk has summoned from the stormy sky.<br />
+<br />
+232H 78V 86C [Lugnut:Fair] [Tikk:Fair] Mem:22 Exits:NESWU&gt; <br />
+Lugnut crashes into Tikk in a thundering collision, knocking him to the ground!<br />
+<br />
+232H 78V 86C [Lugnut:Fair] [Tikk:Bad] Mem:22 Exits:NESWU&gt; st<br />
+<br />
+Shimoza stands up.<br />
+<br />
+232H 78V 86C [Lugnut:Fair] [Tikk:Bad] Mem:22 Exits:NESWU&gt; You are already standing.<br />
+<br />
+232H 78V 86C [Lugnut:Fair] [Tikk:Bad] Mem:22 Exits:NESWU&gt; <br />
+You bludgeon Tikk extremely hard.<br />
+You feel a sharp chill as you swing through Tikk's freezing aura.<br />
+Acrimis misses Tikk with his bludgeon.<br />
+Tikk bludgeons Lugnut extremely hard.<br />
+Lugnut massacres Tikk with his slash.<br />
+Lugnut is chilled, as he swings at Tikk.<br />
+You are sent sprawling as Shimoza crashes into you.<br />
+<br />
+195H 78V 86C [Lugnut:Fair] [Tikk:V.Bad] Mem:22 Exits:NESWU&gt; c 'ca l'<br />
+<br />
+Acrimis focuses harshly on Tikk and utters some strange words.<br />
+<br />
+195H 78V 86C [Lugnut:Fair] [Tikk:V.Bad] Mem:22 Exits:NESWU&gt; st<br />
+<br />
+Shimoza massacres YOU with his cleave.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You miss Tikk with your bludgeon.<br />
+Tikk bludgeons Lugnut very hard.<br />
+Lugnut massacres Tikk with his slash.<br />
+Lugnut is chilled, as he swings at Tikk.<br />
+<br />
+173H 78V 86C [Lugnut:Fair] [Tikk:V.Bad] Mem:22 Exits:NESWU&gt; c 'ca l'<br />
+Shimoza massacres YOU with his cleave.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+You should probably stand up!<br />
+You bludgeon Tikk extremely hard.<br />
+You feel a sharp chill as you swing through Tikk's freezing aura.<br />
+Tikk misses Lugnut with his bludgeon.<br />
+Lugnut slashes Tikk very hard.<br />
+Lugnut is chilled, as he swings at Tikk.<br />
+You can't do this sitting!<br />
+<br />
+136H 78V 86C [Lugnut:Fair] [Tikk:Awful] Mem:22 Exits:NESWU&gt; Shimoza crashes into Acrimis in a thundering collision, knocking him to the ground!<br />
+You stand up.<br />
+<br />
+136H 78V 86C [Lugnut:Fair] [Tikk:Awful] Mem:22 Exits:NESWU&gt; You utter the words, 'call lightning'<br />
+Your lightning bolt kills Tikk.<br />
+Paladine decides to spare Tikk and takes him away.<br />
+You direct your attention to Shimoza.<br />
+<br />
+136H 78V 86C [Tylle:V.Bad] [Shimoza:V.Bad] Mem:24 Exits:NESWU&gt; c 'ca l'<br />
+<br />
+You miss Shimoza with your bludgeon.<br />
+Shimoza's cleave cuts you deep.<br />
+Shimoza massacres YOU with his cleave.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+110H 78V 86C [Tylle:V.Bad] [Shimoza:V.Bad] Mem:24 Exits:NESWU&gt; <br />
+Lugnut slashes Shimoza very hard.<br />
+<br />
+110H 78V 86C [Tylle:V.Bad] [Shimoza:V.Bad] Mem:24 Exits:NESWU&gt; You can't remember how to cast that spell!<br />
+<br />
+110H 78V 86C [Tylle:V.Bad] [Shimoza:V.Bad] Mem:24 Exits:NESWU&gt; c 'flam'<br />
+You utter the words, 'flame shroud'<br />
+You smell charred flesh as you enshroud Shimoza in a cloak of flames.<br />
+<br />
+110H 78V 86C [Tylle:V.Bad] [Shimoza:Awful] Mem:25 Exits:NESWU&gt; c 'cone'<br />
+<br />
+Lugnut slashes Shimoza very hard.<br />
+Shimoza cleaves YOU hard.<br />
+Shimoza is chilled as he passes through your freezing aura.<br />
+<br />
+100H 78V 86C [Tylle:V.Bad] [Shimoza:Awful] Mem:25 Exits:NESWU&gt; <br />
+Acrimis stands up.<br />
+<br />
+100H 78V 86C [Tylle:V.Bad] [Shimoza:Awful] Mem:25 Exits:NESWU&gt; <br />
+Shimoza crashes into Acrimis in a thundering collision, knocking him to the ground!<br />
+<br />
+100H 78V 86C [Tylle:V.Bad] [Shimoza:Awful] Mem:25 Exits:NESWU&gt; <br />
+Lugnut crashes into Shimoza in a thundering collision, knocking him to the ground!<br />
+<br />
+100H 78V 86C [Tylle:V.Bad] [Shimoza:Awful] Mem:25 Exits:NESWU&gt; You utter the words, 'cone of cold'<br />
+Your cone of cold freezes Shimoza solid, and blasts him into ice cubes.<br />
+Paladine decides to spare Shimoza and takes him away.<br />
+<br />
+100H 78V 86C Mem:25 Exits:NESWU&gt; gt ruled guys<br />
+You tell your group 'ruled guys'<br />
+<br />
+100H 78V 86C Mem:25 Exits:NESWU&gt; l<br />
+Ladder to the Platform<br />
+Lugnut, Highbulp of the Kender Familia is standing here. (flying)<br />
+Acrimis Elderius, Dark Illuminati is sitting here. (flying)<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='39'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=39">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="39">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

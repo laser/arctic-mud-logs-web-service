@@ -1,0 +1,684 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 855-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='855'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Akiwa/Mandel dies</font></b>
+<p>
+POV: 
+Terl<p>
+Log Rating:
+-1.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Evil goblins caught Guggi but did not go far</i>
+<p>
+<p>
+
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+groupYour group of 5 members consists of:<br />
+  Terl             perfect   rested    standing   Y   N    N     0    4<br />
+  Hippocrates      perfect   rested    standing   Y   N    N     1    0<br />
+  Guggi            perfect   rested    standing   Y   N    N     0    0<br />
+  Voras            perfect   rested    standing   Y   N    N     1    0<br />
+  Blutharsch       perfect   rested    standing   Y   N    N     0    0<br />
+<br />
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+gt s flee someone<br />
+Guggi stops following Hippocrates.<br />
+Guggi starts following you.<br />
+Guggi remains part of your group.<br />
+<br />
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+You tell your group 's flee someone'<br />
+<br />
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+<br />
+**Hippocrates: JUST GO<br />
+<br />
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+<br />
+Voras flies south.<br />
+<br />
+303H 153V 1X 346C Mem:4 Exits:NS&gt; <br />
+sGuggi kneels down and studies the ground.<br />
+A Warm Coral Reef<br />
+A tall muscular sea elf swims toward you.<br />
+Voras, Dancing into the Future with Ghosts of the Past is standing here. (flying)<br />
+Jargin the Warleader focuses harshly on Blutharsch and utters some strange words.<br />
+Blutharsch is caught in some of Jargin the Warleader's acid!<br />
+<br />
+303H 151V 1X 346C Mem:4 Exits:NE&gt; <br />
+eGuggi kneels down and studies the ground.<br />
+A Warm Coral Reef<br />
+Akiwa the Male Wild Elf is sitting here, fighting a water elemental. (flying)<br />
+A water elemental is standing here, fighting Akiwa.<br />
+A water elemental is standing here, fighting Akiwa.<br />
+A water elemental delivers a vicious kick to Akiwa's face. Blood flies as his head snaps back.<br />
+<br />
+303H 149V 1X 346C Mem:4 Exits:EW&gt; <br />
+<br />
+A water elemental massacres Akiwa with its bludgeon.<br />
+A water elemental massacres Akiwa with its bludgeon.<br />
+Akiwa massacres a water elemental with his cleave.<br />
+<br />
+303H 149V 1X 346C Mem:4 Exits:EW&gt; <br />
+c 'fire storm' AkiwaYou utter the words, 'fire storm'<br />
+Akiwa is crushed by a wall of fire.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Blutharsch flies in from the west.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Mandel flies in from the east.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Hippocrates focuses harshly on Akiwa and utters some strange words.<br />
+Akiwa withers as a ray of sunlight sent by Hippocrates engulfs him!<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Akiwa steps aside as Guggi attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Guggi slashes Akiwa extremely hard.<br />
+A water elemental bludgeons Akiwa extremely hard.<br />
+A water elemental massacres Akiwa with its bludgeon.<br />
+Akiwa is mortally wounded, and will die soon, if not aided.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+c 'fire storm' Akiwa<br />
+A water elemental kicks Akiwa in the head, splattering bones and brain tissue everywhere -- he dies quickly.<br />
+You receive 0 experience.<br />
+Akiwa is dead! R.I.P.<br />
+get coins corpseexa corpseA water elemental loses its balance and tumbles to the ground.<br />
+The death cry of Akiwa echoes from somewhere nearby...<br />
+Mandel stops following Akiwa.<br />
+Akiwa now follows Mandel.<br />
+Mandel is the new leader of Akiwa's group.<br />
+Akiwa stops following Mandel.<br />
+Mandel utters some strange words.<br />
+Mandel heals Mandel.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+Blutharsch kneels down and studies the ground.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+c 'h p' MandelWho should the spell be cast upon?<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a spiked war axe..it glows blue<br />
+a ceremonial elven cloak..it glows blue<br />
+a black leather buckler (invisible)<br />
+a pair of woodsman's boots..it glows blue<br />
+a suit of adamantite mesh (invisible)..it glows blue<br />
+a necklace of dirty gnome-teeth<br />
+a smokey red satchel..it glows blue<br />
+a glowing scroll of recall..it glows blue..it glows dimly [2]<br />
+a long black shield..it glows blue..it glows dimly<br />
+a glowing scroll of recall..it glows blue..it glows dimly<br />
+a bright ball of light..it glows dimly<br />
+an aquamarine potion..it glows blue<br />
+a scroll of recall..it glows blue<br />
+a blackened chest..it glows blue<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+Blutharsch charges into Mandel, but he manages to stay standing.<br />
+<br />
+c 'h p' Mandel303H 149V 1X 346C Mem:5 Exits:EW&gt; You utter the words, 'p p'<br />
+You've never heard of such a spell.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; You get a spiked war axe from the corpse of Akiwa.<br />
+You get a ceremonial elven cloak from the corpse of Akiwa.<br />
+You get a black leather buckler from the corpse of Akiwa.<br />
+You get a pair of woodsman's boots from the corpse of Akiwa.<br />
+You get a suit of adamantite mesh from the corpse of Akiwa.<br />
+You get a necklace of dirty gnome-teeth from the corpse of Akiwa.<br />
+You get a smokey red satchel from the corpse of Akiwa.<br />
+You get a glowing scroll of recall from the corpse of Akiwa.<br />
+You get a glowing scroll of recall from the corpse of Akiwa.<br />
+You get a long black shield from the corpse of Akiwa.<br />
+You get a glowing scroll of recall from the corpse of Akiwa.<br />
+You get a bright ball of light from the corpse of Akiwa.<br />
+You get an aquamarine potion from the corpse of Akiwa.<br />
+You get a scroll of recall from the corpse of Akiwa.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; You utter the words, 'p s'<br />
+You've never heard of such a spell.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Voras gets a blackened chest from the corpse of Akiwa.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+<br />
+Blutharsch cleaves Mandel extremely hard.<br />
+Mandel misses Blutharsch with his hit.<br />
+<br />
+303H 149V 1X 346C Mem:5 Exits:EW&gt; <br />
+assistYou attempt to assist Blutharsch.<br />
+You bruise Mandel with your whip.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Good] Mem:5 Exits:EW&gt; <br />
+<br />
+A water elemental stands up.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Good] Mem:5 Exits:EW&gt; <br />
+<br />
+Voras swings madly at Mandel with a spear of the hunter, knocking him to the ground.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Good] Mem:5 Exits:EW&gt; <br />
+A water elemental delivers a vicious kick to Voras's face. Blood flies as his head snaps back.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Good] Mem:5 Exits:EW&gt; <br />
+<br />
+Guggi stands up.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Good] Mem:5 Exits:EW&gt; <br />
+gt COME<br />
+A water elemental bludgeons Voras extremely hard.<br />
+Voras massacres Mandel with his pierce.<br />
+You miss Mandel with your whip.<br />
+Blutharsch massacres Mandel with his cleave.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Fair] Mem:5 Exits:EW&gt; <br />
+<br />
+Hippocrates focuses harshly on Mandel and utters some strange words.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Fair] Mem:5 Exits:EW&gt; <br />
+c 'fire storm' You tell your group 'COME'<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Fair] Mem:5 Exits:EW&gt; <br />
+You utter the words, 'fire storm'<br />
+Mandel is crushed by a wall of fire.<br />
+Blutharsch tries to barrel into Mandel, but ends up falling flat on his face.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Bad] Mem:6 Exits:EW&gt; <br />
+c 'fire storm' <br />
+A water elemental misses Voras with its bludgeon.<br />
+Voras pierces Mandel extremely hard.<br />
+Blutharsch annihilates Mandel with his cleave.<br />
+Mandel misses Blutharsch with his hit.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:V.Bad] Mem:6 Exits:EW&gt; <br />
+<br />
+A water elemental tries to sweep Mandel's legs, but misses badly.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:V.Bad] Mem:6 Exits:EW&gt; <br />
+A water elemental tries in vain to disarm Voras's weapon.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:V.Bad] Mem:6 Exits:EW&gt; <br />
+You utter the words, 'fire storm'<br />
+Mandel is crushed by a wall of fire.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Awful] Mem:8 Exits:EW&gt; <br />
+<br />
+Voras tries to barrel into Mandel, but ends up falling flat on his face.<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Awful] Mem:8 Exits:EW&gt; <br />
+<br />
+Hippocrates focuses harshly on Mandel and utters some strange words.<br />
+Mandel seems to be blinded!<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Awful] Mem:8 Exits:EW&gt; <br />
+<br />
+Guggi crashes into Mandel in a thundering collision, knocking him to the ground!<br />
+<br />
+303H 149V 1X 346C [Me:Perfect] [Blutharsch:V.Good] [Mandel:Awful] Mem:8 Exits:EW&gt; <br />
+<br />
+Guggi slashes Mandel hard.<br />
+A water elemental massacres Mandel with its bludgeon.<br />
+Mandel is mortally wounded, and will die soon, if not aided.<br />
+A water elemental massacres Voras with its bludgeon.<br />
+Voras obliterates Mandel with his pierce.<br />
+You receive 0 experience.<br />
+Mandel is dead! R.I.P.<br />
+get coins corpseexa corpseThe death cry of Mandel echoes from somewhere nearby...<br />
+<br />
+303H 149V 1X 346C Mem:8 Exits:EW&gt; <br />
+c 'fire storm' get all corpse<br />
+A water elemental delivers a quick snap kick to Guggi. Guggi staggers and tries to recover.<br />
+A water elemental loses its balance and tumbles to the ground.<br />
+Blutharsch stands up.<br />
+<br />
+303H 149V 1X 346C Mem:8 Exits:EW&gt; <br />
+A water elemental spins and tries to kick Voras, but Voras dodges out of the way.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+303H 149V 1X 346C Mem:8 Exits:EW&gt; <br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+some spiritual vambraces..it glows blue..it glows dimly<br />
+some spiritual gauntlets..it glows blue..it glows dimly<br />
+some spiritual boots..it glows blue..it glows dimly<br />
+some spiritual greaves..it glows blue..it glows dimly<br />
+a spiritual helmet..it glows blue..it glows dimly<br />
+some spiritual plate mail..it glows blue..it glows dimly<br />
+a bright ball of light..it glows dimly<br />
+Blutharsch is zapped by some spiritual vambraces and instantly drops it.<br />
+Some spiritual vambraces disintegrates.<br />
+Blutharsch is zapped by some spiritual gauntlets and instantly drops it.<br />
+Some spiritual gauntlets disintegrates.<br />
+Blutharsch is zapped by some spiritual boots and instantly drops it.<br />
+Some spiritual boots disintegrates.<br />
+Blutharsch is zapped by some spiritual greaves and instantly drops it.<br />
+Some spiritual greaves disintegrates.<br />
+Blutharsch is zapped by a spiritual helmet and instantly drops it.<br />
+A spiritual helmet disintegrates.<br />
+Blutharsch is zapped by some spiritual plate mail and instantly drops it.<br />
+Some spiritual plate mail disintegrates.<br />
+Blutharsch gets a bright ball of light from the corpse of Mandel.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='855'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=855">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="855">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

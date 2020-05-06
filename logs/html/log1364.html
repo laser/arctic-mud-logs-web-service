@@ -1,0 +1,997 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1364-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1364'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+When Rumbard attacks!</font></b>
+<p>
+POV: 
+Attai<p>
+Log Rating:
+-0.2857<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Rumbard tried to suprise</i>
+<p>
+<p>
+
+bash paus<br />
+You crash into Paus in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:Bad] [Paus:Good] Exits:NESW&gt; <br />
+<br />
+Malicious tells your group 'auto fly like 30 cold ressit'<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:Bad] [Paus:Good] Exits:NESW&gt; <br />
+<br />
+A knight of the crown looks at you and yells 'There's the scoundrel!'<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:Bad] [Paus:Good] Exits:NESW&gt; <br />
+<br />
+Riaa crashes into Rumbard in a thundering collision, knocking him to the ground!<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:Bad] [Paus:Good] Exits:NESW&gt; <br />
+<br />
+Riaa misses Rumbard with his hit.<br />
+You annihilate Paus with your slash.<br />
+A knight of the crown annihilates Rumbard with his slash.<br />
+A knight of the crown is burned, as he swings at Rumbard.<br />
+Paus massacres Machi with his pierce.<br />
+Paus is chilled, as he swings at Machi.<br />
+Rumbard massacres Machi with his cleave.<br />
+Rumbard is chilled, as he swings at Machi.<br />
+Rumbard massacres Machi with his cleave.<br />
+Rumbard is chilled, as he swings at Machi.<br />
+Machi massacres Rumbard with her pierce.<br />
+Machi is burned, as she swings at Rumbard.<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:V.Bad] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Bjork annihilates Rumbard with her pierce.<br />
+Bjork is burned, as she swings at Rumbard.<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:V.Bad] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Fe flies in from the south.<br />
+A knight of the crown looks at Bjork and yells  'There's the scoundrel!'<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:V.Bad] [Paus:Fair] Exits:NESW&gt; <br />
+reci recall machi<br />
+<br />
+Machi stands up.<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Machi:V.Bad] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Machi panics, and attempts to flee.<br />
+Machi flies west.<br />
+Rumbard heals Rumbard.<br />
+<br />
+742H 151V 1X 780C [Me:Perfect] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Paus massacres YOU with his pierce.<br />
+Rumbard cleaves a knight of the crown extremely hard.<br />
+Rumbard massacres a knight of the crown with his cleave.<br />
+Bjork massacres Rumbard with her pierce.<br />
+Bjork is burned, as she swings at Rumbard.<br />
+Riaa misses Rumbard with his hit.<br />
+You annihilate Paus with your slash.<br />
+A knight of the crown massacres Rumbard with his slash.<br />
+A knight of the crown is burned, as he swings at Rumbard.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Rumbard stands up.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Fe looks at Bjork.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+A knight of the crown looks at Bjork and yells  'There's the scoundrel!'<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Exclar flies in from the south.<br />
+Taps flies in from the south.<br />
+Kilians arrives from the south.<br />
+A knight of the crown looks at Bjork and yells  'There's the scoundrel!'<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Paus sinks gently to the ground.<br />
+Paus stops using a small down feather.<br />
+Paus grabs a sealed scroll.<br />
+Paus recites a sealed scroll.<br />
+Paus heals Rumbard.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+bash paus<br />
+st<br />
+You grab a glowing scroll of recall.<br />
+You are unable to recite a glowing scroll of recall on that.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+Rumbard panics, and attempts to flee.<br />
+Rumbard leaves north.<br />
+<br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+719H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Paus massacres YOU with his pierce.<br />
+You obliterate Paus with your slash.<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Machi flies in from the west.<br />
+A knight of the crown looks at you and yells 'There's the scoundrel!'<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Malicious tells your group 'very nice'<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Fe flies south.<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+A knight of the crown looks at you and yells 'There's the scoundrel!'<br />
+Exclar slowly fades into existence.<br />
+Paus steps aside as Exclar attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Bjork misses Paus with her pierce.<br />
+<br />
+695H 151V 1X 780C [Me:V.Good] [Paus:Fair] Exits:NESW&gt; <br />
+<br />
+Bjork misses Paus with her pierce.<br />
+Exclar massacres Paus with his stab.<br />
+A knight of the crown slashes YOU extremely hard.<br />
+A knight of the crown misses you with his slash.<br />
+Paus pierces YOU extremely hard.<br />
+You annihilate Paus with your slash.<br />
+<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:Bad] Exits:NESW&gt; <br />
+<br />
+Forseti flies in from the south.<br />
+A knight of the crown looks at Exclar and yells  'There's the scoundrel!'<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:Bad] Exits:NESW&gt; <br />
+Paus steps aside as Riaa attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:Bad] Exits:NESW&gt; <br />
+<br />
+Machi focuses harshly on Paus and utters some strange words.<br />
+Machi slowly fades into existence.<br />
+Machi sends a chilling blast of air at Paus, giving him a severe case of frostbite.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Rumbard arrives from the north.<br />
+A knight of the crown looks at Exclar and yells  'There's the scoundrel!'<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Taps focuses harshly on Paus and utters some strange words.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Tinta flies in from the south.<br />
+A knight of the crown looks at Exclar and yells  'There's the scoundrel!'<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Taps steps aside as Rumbard attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+Paus stands up.<br />
+You crash into Paus in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Exclar stands up.<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Exclar crashes into Paus in a thundering collision, knocking him to the ground!<br />
+<br />
+659H 151V 1X 780C [Me:Good] [Paus:V.Bad] Exits:NESW&gt; <br />
+<br />
+Rumbard cleaves Taps hard.<br />
+Rumbard cleaves Taps hard.<br />
+Taps slowly fades into existence.<br />
+Taps bludgeons Rumbard hard.<br />
+Taps is burned, as he swings at Rumbard.<br />
+Riaa misses Paus with his hit.<br />
+Bjork massacres Paus with her pierce.<br />
+Exclar misses Paus with his stab.<br />
+Exclar misses Paus with his stab.<br />
+A knight of the crown slashes YOU extremely hard.<br />
+Paus pierces YOU extremely hard.<br />
+You annihilate Paus with your slash.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Machi focuses harshly on Paus and utters some strange words.<br />
+Machi slowly fades into existence.<br />
+Machi sends a chilling blast of air at Paus, giving him a severe case of frostbite.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+A knight of the crown looks at Rumbard and yells  'There's the scoundrel!'<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Kilians annihilates Paus with his slash.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Rumbard steps aside as Forseti attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Rumbard stands up.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt;<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Taps focuses harshly on Rumbard and utters some strange words.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Taps steps aside as Rumbard attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+619H 151V 1X 780C [Me:Good] [Paus:Awful] Exits:NESW&gt; <br />
+<br />
+Forseti annihilates Rumbard with his crush.<br />
+Forseti appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Forseti takes a swing at him.<br />
+Kilians massacres Paus with his slash.<br />
+Paus is incapacitated and will slowly die, if not aided.<br />
+Rumbard cleaves Taps hard.<br />
+Rumbard cleaves Taps hard.<br />
+Riaa hits Paus extremely hard.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Paus is dead! R.I.P.<br />
+A knight of the crown slashes YOU very hard.<br />
+The death cry of Paus echoes from somewhere nearby...<br />
+Paus stops following Rumbard.<br />
+You direct your attention to a knight of the crown.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Bjork gets a ceremonial trident from the corpse of Paus.<br />
+Bjork gets a band of power from the corpse of Paus.<br />
+Bjork gets a blue ochre bracer from the corpse of Paus.<br />
+Bjork gets a blacksmith's apron from the corpse of Paus.<br />
+Bjork gets a fishing net from the corpse of Paus.<br />
+Bjork gets a crimson shield of the wyrmgaard from the corpse of Paus.<br />
+Bjork gets a set of silver arm plates from the corpse of Paus.<br />
+Bjork gets a pair of green swordsman gloves from the corpse of Paus.<br />
+Bjork gets a pair of charred black plate boots from the corpse of Paus.<br />
+Bjork gets brass dragonscale leggings from the corpse of Paus.<br />
+Bjork gets a brass dragonscale helm from the corpse of Paus.<br />
+Bjork gets a suit of black plate mail from the corpse of Paus.<br />
+Bjork gets a thin steel gorget from the corpse of Paus.<br />
+Bjork gets a holy talisman from the corpse of Paus.<br />
+Bjork gets a shiny dwarven ring from the corpse of Paus.<br />
+Bjork gets a shiny dwarven ring from the corpse of Paus.<br />
+Bjork gets a small down feather from the corpse of Paus.<br />
+Bjork gets a flask of clear liquid from the corpse of Paus.<br />
+Bjork gets a sealed scroll from the corpse of Paus.<br />
+Bjork gets a glowing scroll of recall from the corpse of Paus.<br />
+Bjork gets a glowing scroll of recall from the corpse of Paus.<br />
+bash rumbard<br />
+Bjork gets a large first-aid kit from the corpse of Paus.<br />
+Bjork gets a milky potion of see invisible from the corpse of Paus.<br />
+Bjork gets a milky potion of see invisible from the corpse of Paus.<br />
+Bjork gets a small wooden chest from the corpse of Paus.<br />
+Bjork gets a small wooden chest from the corpse of Paus.<br />
+Bjork gets a large waterskin from the corpse of Paus.<br />
+Bjork gets a misty potion from the corpse of Paus.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Riaa stands up.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Rumbard steps aside as Riaa attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Rumbard steps aside as Riaa attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Rumbard steps aside as Kilians attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Bjork annihilates Rumbard with her pierce.<br />
+Bjork is burned, as she swings at Rumbard.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+A knight of the crown looks at Rumbard and yells  'There's the scoundrel!'<br />
+Rumbard stands up.<br />
+You are already standing.<br />
+<br />
+Exclar slowly fades into existence.<br />
+Exclar crashes into Rumbard in a thundering collision, knocking him to the ground!<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Machi focuses harshly on Rumbard and utters some strange words.<br />
+Machi slowly fades into existence.<br />
+Rumbard screams in pain as lightning from Machi penetrates him.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; The corpse doesn't seem to <br />
+have what you are looking for.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Taps taps the staff on the ground three times.<br />
+There is lightning in the sky.<br />
+<br />
+607H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt;<br />
+Exclar massacres Rumbard with his stab.<br />
+Exclar appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Exclar takes a swing at him.<br />
+Exclar annihilates Rumbard with his stab.<br />
+Exclar appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Exclar takes a swing at him.<br />
+Bjork massacres Rumbard with her pierce.<br />
+Bjork is burned, as she swings at Rumbard.<br />
+Kilians annihilates Rumbard with his slash.<br />
+Kilians is burned, as he swings at Rumbard.<br />
+Riaa misses Rumbard with his hit.<br />
+You massacre a knight of the crown with your slash.<br />
+Forseti obliterates Rumbard with his crush.<br />
+Forseti appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Forseti takes a swing at him.<br />
+The darkness flowing from Nightbringer hits Rumbard with force!<br />
+Rumbard seems to be blinded!<br />
+Rumbard cleaves Taps very hard.<br />
+Taps bludgeons Rumbard hard.<br />
+Taps is burned, as he swings at Rumbard.<br />
+A knight of the crown slashes YOU extremely hard.<br />
+A knight of the crown slashes YOU extremely hard.<br />
+You crash into Rumbard in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Taps focuses harshly on Rumbard and utters some strange words.<br />
+Rumbard screams in pain as lightning from Taps penetrates him.<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Malicious tells you 'what was old leg wear b4 archaic ?'<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Clank arrives from the east.<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Clank arrives from the east.<br />
+A knight of the crown looks at Rumbard and yells  'There's the scoundrel!'<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Fe flies in from the south.<br />
+A knight of the crown looks at Rumbard and yells  'There's the scoundrel!'<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Clank leaves north.<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Forseti stands up.<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Qapmoc flies in from the west.<br />
+A knight of the crown looks at Rumbard and yells  'There's the scoundrel!'<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Machi focuses harshly on Rumbard and utters some strange words.<br />
+Machi slowly fades into existence.<br />
+Rumbard screams in pain as lightning from Machi penetrates him.<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Exclar crashes into Rumbard in a thundering collision, knocking him to the ground!<br />
+<br />
+571H 151V 1X 780C [Me:Good] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+Exclar massacres Rumbard with his stab.<br />
+Exclar appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Exclar takes a swing at him.<br />
+Exclar massacres Rumbard with his stab.<br />
+Exclar appears to grow stronger.<br />
+Rumbard's fireshield does him little good as Exclar takes a swing at him.<br />
+Bjork massacres Rumbard with her pierce.<br />
+Bjork is burned, as she swings at Rumbard.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Rumbard is dead! R.I.P.<br />
+You annihilate a knight of the crown with your slash.<br />
+A knight of the crown massacres YOU with his slash.<br />
+A knight of the crown slashes YOU very hard.<br />
+The death cry of Rumbard echoes from somewhere nearby...<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Qyne gets a black granite axe from the corpse of Rumbard.<br />
+Qyne gets a granite shield from the corpse of Rumbard.<br />
+Qyne gets vambraces of the night from the corpse of Rumbard.<br />
+Qyne gets a suit of charred black battle armor from the corpse of Rumbard.<br />
+Qyne gets a large pile of coins from the corpse of Rumbard.<br />
+Qyne gets a glowing scroll of recall from the corpse of Rumbard.<br />
+Qyne gets a glowing scroll of recall from the corpse of Rumbard.<br />
+Qyne gets some pixie dust from the corpse of Rumbard.<br />
+Qyne gets a small wooden chest from the corpse of Rumbard.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Clank arrives from the north.<br />
+A knight of the crown utters some strange words.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Riaa stands up.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Clank boggles at some nebulous concept.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Clank leaves south.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+Kilians stands up.<br />
+<br />
+535H 151V 1X 780C [Me:Fair] [a knight of the crown:Fair] Exits:NESW&gt; <br />
+<br />
+You annihilate a knight of the crown with your slash.<br />
+A knight of the crown slashes YOU extremely hard.<br />
+A knight of the crown massacres YOU with his slash.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+Exclar slowly fades into existence.<br />
+Exclar crashes into Qyne in a thundering collision, knocking him to the ground!<br />
+Malicious arrives from the south.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+<br />
+Malicious leaves north.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+Qapmoc now follows Kilians.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+<br />
+Malicious arrives from the north.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+bash qyne<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+<br />
+Qyne steps aside as Riaa attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+<br />
+Malicious massacres a knight of the crown with his slash.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:Bad] Exits:NESW&gt; <br />
+<br />
+Forseti annihilates a knight of the crown with his crush.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+st<br />
+<br />
+Machi now follows Taps.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+<br />
+Bjork flies south.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+<br />
+Kilians annihilates Qyne with his slash.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+Qyne is dead! R.I.P.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+The death cry of Qyne echoes from somewhere nearby...<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+<br />
+Qapmoc gets a very large pile of coins from the corpse of Qyne.<br />
+<br />
+496H 151V 1X 780C [Me:Fair] [a knight of the crown:V.Bad] Exits:NESW&gt; <br />
+<br />
+Forseti annihilates a knight of the crown with his crush.<br />
+Malicious massacres a knight of the crown with his slash.<br />
+You massacre a knight of the crown with your slash.<br />
+A knight of the crown misses you with his slash.<br />
+A knight of the crown massacres YOU with his slash.<br />
+<br />
+474H 151V 1X 780C [Me:Fair] [a knight of the crown:Awful] Exits:NESW&gt; <br />
+<br />
+Taps gets a cruely barbed scourge from the corpse of Qyne.<br />
+Taps gets a gate guard's robe from the corpse of Qyne.<br />
+Taps gets a pair of leather training boots from the corpse of Qyne.<br />
+Taps gets a leather training cap from the corpse of Qyne.<br />
+Taps gets some leather training armor from the corpse of Qyne.<br />
+Taps gets a small wooden chest from the corpse of Qyne.<br />
+Taps gets some pixie dust from the corpse of Qyne.<br />
+Taps gets a glowing scroll of recall from the corpse of Qyne.<br />
+<br />
+474H 151V 1X 780C [Me:Fair] [a knight of the crown:Awful] Exits:NESW&gt; <br />
+<br />
+Bottino flies in from the south.<br />
+<br />
+474H 151V 1X 780C [Me:Fair] [a knight of the crown:Awful] Exits:NESW&gt; <br />
+<br />
+Exclar slowly fades into existence.<br />
+Exclar crashes into a knight of the crown in a thundering collision, knocking him to the ground!<br />
+<br />
+<br />
+474H 151V 1X 780C [Me:Fair] [a knight of the crown:Awful] Exits:NESW&gt; <br />
+get all corpse<br />
+<br />
+Exclar massacres a knight of the crown with his stab.<br />
+Exclar misses a knight of the crown with his stab.<br />
+Forseti obliterates a knight of the crown with his crush.<br />
+You receive 0 experience.<br />
+get all.coins corpse<br />
+A knight of the crown is dead! R.I.P.<br />
+The death cry of a knight of the crown echoes from somewhere nearby...<br />
+Taps clicks his heels three times and says &quot;There's no place like home!&quot;<br />
+<br />
+474H 151V 1X 780C Exits:NESW&gt; <br />
+Forseti rolls on the floor in a fit of laughter.<br />
+<br />
+474H 151V 1X 780C Exits:NESW&gt; <br />
+<br />
+Bottino focuses on you and utters some strange words.<br />
+Your entire body tingles for a few seconds.<br />
+<br />
+739H 151V 1X 780C Exits:NESW&gt; <br />
+Riaa stands up.<br />
+You stand up.<br />
+739H 151V 1X 780C Exits:NESW&gt; <br />
+get all 2.corpse<br />
+You get a glowing scroll of recall from the corpse of Qyne.<br />
+You are zapped by a suit of charred black battle armor and instantly drop it.<br />
+You get vambraces of the night from the corpse of Qyne.<br />
+You are zapped by a granite shield and instantly drop it.<br />
+You get a black granite axe from the corpse of Qyne.<br />
+You get a scroll of recall from the corpse of Qyne.<br />
+You get a small wooden chest from the corpse of Qyne.<br />
+You get a small canteen from the corpse of Qyne.<br />
+You get a small canteen from the corpse of Qyne.<br />
+You get an iron ration from the corpse of Qyne.<br />
+You get a hooded lantern from the corpse of Qyne.<br />
+<br />
+739H 151V 1X 780C Exits:NESW&gt; <br />
+<br />
+Riaa ponders the meaning of life, love, and the universe.<br />
+Riaa says 'way to suicide'<br />
+<br />
+739H 151V 1X 780C Exits:NESW&gt; <br />
+<br />
+Machi says 'they bashed me'<br />
+<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1364'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1364">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1364">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

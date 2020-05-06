@@ -1,0 +1,883 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1508-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1508'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+A bit of continue of the battle in kal</font></b>
+<p>
+POV: 
+Hipho<p>
+Log Rating:
+1.4444<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+die maraouders</i>
+<p>
+<p>
+
+Market Street West<br />
+A blackened chest lies here.<br />
+Some old boots lie here in the dust.<br />
+Kaf 'Lac, Mountain Climber is standing here. (flying)<br />
+<br />
+626H 140V 4818245X 6337C Exits:ESW&gt; <br />
+You crash into Kaf in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:V.Good] Exits:ESW&gt; <br />
+<br />
+Concrete massacres Kaf with his cleave.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Good] Exits:ESW&gt; <br />
+<br />
+Nihilism focuses harshly on Kaf and utters some strange words.<br />
+Kaf wavers under the impact of the lightning bolt sent by Nihilism.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Good] Exits:ESW&gt; <br />
+<br />
+Kaf steps aside as Rojany attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Good] Exits:ESW&gt; <br />
+<br />
+Kaf steps aside as Fioricet attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Good] Exits:ESW&gt; <br />
+Kaf steps aside as Charon attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Good] Exits:ESW&gt; <br />
+<br />
+Xanatos focuses harshly on Kaf and utters some strange words.<br />
+Xanatos slowly fades into existence.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+<br />
+626H 140V 4818245X 6337C [Hipho:Perfect] [Kaf:Fair] Exits:ESW&gt; <br />
+<br />
+Charon misses Kaf with his hit.<br />
+Fioricet massacres Kaf with his cleave.<br />
+Rojany misses Kaf with his hit.<br />
+Concrete's mightly cleave almost cuts Kaf in two.<br />
+Concrete annihilates Kaf with his cleave.<br />
+Concrete misses Kaf with his cleave.<br />
+You annihilate Kaf with your smite.<br />
+You massacre Kaf with your smite.<br />
+Kaf cleaves YOU extremely hard.<br />
+Kaf massacres YOU with his cleave.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:Bad] Exits:ESW&gt; <br />
+stYou are already standing.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:Bad] Exits:ESW&gt; <br />
+abs<br />
+Nihilism focuses harshly on Kaf and utters some strange words.<br />
+Kaf wavers under the impact of the lightning bolt sent by Nihilism.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:V.Bad] Exits:ESW&gt; <br />
+<br />
+Sepnir arrives from the east.<br />
+Concrete suddenly lunges forward, slamming his skull into Kaf's face with a sickening crunch.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:V.Bad] Exits:ESW&gt; Huh?!<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:V.Bad] Exits:ESW&gt; <br />
+<br />
+Sepnir leaves west.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:V.Bad] Exits:ESW&gt; <br />
+<br />
+Xanatos focuses harshly on Kaf and utters some strange words.<br />
+Xanatos slowly fades into existence.<br />
+Xanatos comes out of hiding.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+Xanatos aims a magic missile at Kaf, who staggers under the blow.<br />
+<br />
+st585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:Awful] Exits:ESW&gt; <br />
+You are already standing.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Kaf:Awful] Exits:ESW&gt; <br />
+bas<br />
+Charon misses Kaf with his hit.<br />
+Fioricet massacres Kaf with his cleave.<br />
+Rojany misses Kaf with his hit.<br />
+Concrete massacres Kaf with his cleave.<br />
+Concrete massacres Kaf with his cleave.<br />
+You receive 0 experience.<br />
+Kaf is dead! R.I.P.<br />
+The death cry of Kaf echoes from somewhere nearby...<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+You couldn't find what you were looking for.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+lMarket Street West<br />
+The corpse of Kaf is lying here.<br />
+A blackened chest lies here.<br />
+Some old boots lie here in the dust.<br />
+You see the outline of a life form here, carrying: an obsidian crown.<br />
+Concrete Shoes, BSP Mascott is standing here. (flying)<br />
+Fioricet, A Blood Sea Pirate is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Moxie the Male Human is standing here. (flying)<br />
+Rojany the Male Wild Elf is sitting here.<br />
+Nihilism the Male Human is standing here. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Charon the Male Hylar Dwarf is sitting here.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+<br />
+Moxie is zapped by a leather cap and instantly drops it.<br />
+Moxie gets a lucky bone charm from the corpse of Kaf.<br />
+Moxie gets a very large pile of coins from the corpse of Kaf.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+<br />
+Concrete gets a bloody minotaur hand axe from the corpse of Kaf.<br />
+Concrete gets a spiked war axe from the corpse of Kaf.<br />
+Concrete gets a wrist buckler from the corpse of Kaf.<br />
+Concrete gets a wrist buckler from the corpse of Kaf.<br />
+Concrete gets a ceremonial scabbard from the corpse of Kaf.<br />
+Rojany stands up.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+Cap : You can't carry that much weight.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+Fioricet stands up.<br />
+Nihilism gets a shimmering green robe from the corpse of Kaf.<br />
+Nihilism gets a pair of silver engraved arm bands from the corpse of Kaf.<br />
+Nihilism gets a pair of woodsman's gloves from the corpse of Kaf.<br />
+Nihilism gets a pair of green boots from the corpse of Kaf.<br />
+Nihilism gets a set of power cuisses from the corpse of Kaf.<br />
+Nihilism gets a large reinforced double bandolier from the corpse of Kaf.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+Charon stands up.<br />
+<br />
+w585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+<br />
+Fioricet gets a gargoyle ring from the corpse of Kaf.<br />
+Fioricet gets a set of goblin skin armbands from the corpse of Kaf.<br />
+Fioricet gets a thick white belt from the corpse of Kaf.<br />
+Fioricet gets a black granite shield from the corpse of Kaf.<br />
+Fioricet gets some lightly scorched bark bracers from the corpse of Kaf.<br />
+Fioricet gets a pair of pitch black gloves from the corpse of Kaf.<br />
+Fioricet gets some soft white velvet boots from the corpse of Kaf.<br />
+Fioricet gets a white globe and chain from the corpse of Kaf.<br />
+Fioricet gets a black pearl amulet from the corpse of Kaf.<br />
+Fioricet gets a ring of finest silver from the corpse of Kaf.<br />
+Fioricet gets a glowing scroll of recall from the corpse of Kaf.<br />
+**Charon: no shield even <br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+Rojany gets a small wooden chest from the corpse of Kaf.<br />
+Rojany gets a pair of segmented black adamantite shin guards from the corpse of Kaf.<br />
+Rojany gets a watering can from the corpse of Kaf.<br />
+Rojany gets a wooden ring from the corpse of Kaf.<br />
+Rojany is zapped by the plate of the black lily and instantly drops it.<br />
+Rojany gets a pair of segmented black adamantite shin guards from the corpse of Kaf.<br />
+Rojany gets a pair of black steel-toed boots from the corpse of Kaf.<br />
+Rojany gets a glowing scroll of recall from the corpse of Kaf.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; Market Street West<br />
+wA small metallic canteen has been dropped here. [2]<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+Nihilism drops a putrid potion.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; You don't see what you are looking for here.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; Intersection of Market Street and Wall Road<br />
+<br />
+585H 140V 4818245X 6337C Exits:NESW&gt; <br />
+<br />
+Xanatos says '12v'<br />
+<br />
+585H 140V 4818245X 6337C Exits:NESW&gt; <br />
+wWestern City Gates<br />
+A tired traveller is looking around for the town's inn.<br />
+A woman with a bag of groceries is making her way home.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+wOutside the Western Gates of Kalaman<br />
+<br />
+scan585H 140V 4818245X 6337C Exits:EW&gt; <br />
+<br />
+**Xanatos: FRESH ME<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+Looking north:<br />
+The fields run along the walls of Kalaman.<br />
+Looking east:<br />
+You see nothing special.<br />
+The gate is open.<br />
+A tired traveller is looking around for the town's inn.<br />
+A woman with a bag of groceries is making her way home.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+A cityguard of Kalaman stands here, guarding the western gates.<br />
+Looking south:<br />
+The fields run along the walls of Kalaman.<br />
+Looking west:<br />
+A trail leads through the fields.<br />
+Rold Knold is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kyro Practor, Taking Appointments is resting here. (flying)<br />
+A gargoyle is standing here.<br />
+Looking up:<br />
+You see nothing special.<br />
+Looking down:<br />
+You see grass.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+Rojany wears a pair of black steel-toed boots on his feet.<br />
+Rojany wears a pair of segmented black adamantite shin guards on his legs.<br />
+Rojany wears a wooden ring on a finger of his right hand.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+Nihilism says 'get kaf corpse'<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+<br />
+Concrete drops a loaf of waybread.<br />
+<br />
+585H 140V 4818245X 6337C Exits:EW&gt; <br />
+wBeyond the City of Kalaman<br />
+The corpse of Charon is lying here.<br />
+A potion has been left here.<br />
+A bottle with a strange looking person on its label lies here.<br />
+An ornate headdress is lying here.<br />
+A long leather cape colored dark and gold lies here.<br />
+The corpse of Tramm is lying here.<br />
+The corpse of Rath is lying here.<br />
+The corpse of Susie is lying here.<br />
+The corpse of Rojany is lying here.<br />
+The corpse of Zanjo is lying here.<br />
+The corpse of Obeah is lying here.<br />
+The corpse of Armas is lying here.<br />
+Rold Knold is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Kyro Practor, Taking Appointments is resting here. (flying)<br />
+A gargoyle is standing here.<br />
+<br />
+585H 140V 4818245X 6337C Exits:ESW&gt; <br />
+bas roldYou crash into Rold in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Fair] Exits:ESW&gt; <br />
+<br />
+Xanatos focuses harshly on Rold and utters some strange words.<br />
+Xanatos slowly fades into existence.<br />
+Xanatos comes out of hiding.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Fair] Exits:ESW&gt; <br />
+<br />
+Concrete spits on Xanatos. Xanatos appears envigorated.<br />
+<br />
+585H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Fair] Exits:ESW&gt; <br />
+<br />
+You massacre Rold with your smite.<br />
+You massacre Rold with your smite.<br />
+Rold slashes YOU very hard.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Fair] Exits:ESW&gt; <br />
+<br />
+Nihilism focuses harshly on Rold and utters some strange words.<br />
+The sound of bones cracking echoes as Nihilism's force bolt slams into Rold.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Bad] Exits:ESW&gt; <br />
+<br />
+Moxie focuses harshly on Rold and utters some strange words.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Bad] Exits:ESW&gt; <br />
+<br />
+Fioricet crashes into Rold in a thundering collision, knocking him to the ground!<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Bad] Exits:ESW&gt; <br />
+<br />
+Rold steps aside as Rojany attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Bad] Exits:ESW&gt; <br />
+<br />
+Charon delivers a quick snap kick to Rold. Rold staggers and tries to recover.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:Bad] Exits:ESW&gt; <br />
+<br />
+Xanatos focuses harshly on Rold and utters some strange words.<br />
+Xanatos slowly fades into existence.<br />
+Xanatos comes out of hiding.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+Xanatos aims a magic missile at Rold, who staggers under the blow.<br />
+<br />
+571H 140V 4818245X 6337C [Hipho:V.Good] [Rold:V.Bad] Exits:ESW&gt; <br />
+<br />
+Charon misses Rold with his hit.<br />
+Rojany misses Rold with his hit.<br />
+Fioricet massacres Rold with his cleave.<br />
+You massacre Rold with your smite.<br />
+You massacre Rold with your smite.<br />
+Rold slashes YOU hard.<br />
+<br />
+561H 140V 4818245X 6337C [Hipho:Good] [Rold:Awful] Exits:ESW&gt; <br />
+<br />
+Nihilism focuses harshly on Rold and utters some strange words.<br />
+The sound of bones cracking echoes as Nihilism's force bolt slams into Rold.<br />
+<br />
+561H 140V 4818245X 6337C [Hipho:Good] [Rold:Awful] Exits:ESW&gt; <br />
+<br />
+Kyro stands up.<br />
+<br />
+561H 140V 4818245X 6337C [Hipho:Good] [Rold:Awful] Exits:ESW&gt; <br />
+kick<br />
+Moxie focuses harshly on Rold and utters some strange words.<br />
+<br />
+561H 140V 4818245X 6337C [Hipho:Good] [Rold:Awful] Exits:ESW&gt; <br />
+You deliver a snap kick and hit Rold in the chest.<br />
+<br />
+561H 140V 4818245X 6337C [Hipho:Good] [Rold:Awful] Exits:ESW&gt; <br />
+<br />
+Before Rold can get up, Charon kicks him hard, leaving him prone to attack.<br />
+You receive 0 experience.<br />
+Rold is dead! R.I.P.<br />
+<br />
+561H 140V 4818245X 6337C [Rold:Dying] Exits:ESW&gt; <br />
+<br />
+The death cry of Rold echoes from somewhere nearby...<br />
+Rold sinks gently to the ground.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+g all<br />
+Xanatos gets a sunburst engraved longsword from the corpse of Rold.<br />
+Xanatos gets a protective leather apron from the corpse of Rold.<br />
+Xanatos gets a bronze shield from the corpse of Rold.<br />
+Xanatos gets an open-faced horned helm from the corpse of Rold.<br />
+Xanatos gets an amulet of levitation from the corpse of Rold.<br />
+Xanatos is zapped by a sapphire heart pendant and instantly drops it.<br />
+Xanatos gets an elemental ring from the corpse of Rold.<br />
+Xanatos gets a bright ball of light from the corpse of Rold.<br />
+Xanatos gets a scroll of recall from the corpse of Rold.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+get all 2.corpse<br />
+Nihilism gets a dark red thieving plate from the corpse of Rold.<br />
+Nihilism gets a small wooden chest from the corpse of Rold.<br />
+Nihilism gets a copper flask from the corpse of Rold.<br />
+Nihilism gets a copper flask from the corpse of Rold.<br />
+Nihilism gets a flask of whiskey from the corpse of Rold.<br />
+Nihilism gets a leg of lamb from the corpse of Rold.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Rold.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Rold.<br />
+Nihilism gets a pouch from the corpse of Rold.<br />
+Nihilism gets a waterskin from the corpse of Rold.<br />
+Nihilism gets a waterskin from the corpse of Rold.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+put all handkerchiefSapphire : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Potion : You can't carry that much weight.<br />
+Bottle : You can't carry that much weight.<br />
+Headdress : You can't carry that much weight.<br />
+Cape : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Fioricet says 'eat it'<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+Sapphire : You can't carry that much weight.<br />
+Rojany stands up.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; You cover a pair of rope sandals with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a pair of rope sandals is gone!<br />
+You cover a headband adorned with eagle's feathers with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a headband adorned with eagle's feathers is gone!<br />
+You cover a fine cloth cloak with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a fine cloth cloak is gone!<br />
+You cover an enchanted barrel with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and an enchanted barrel is gone!<br />
+You cover a solid steel vest with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a solid steel vest is gone!<br />
+You cover a sheaf of spellbook pages with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a sheaf of spellbook pages is gone!<br />
+You cover an old mandolin with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and an old mandolin is gone!<br />
+The corpse of Bezinka won't fit.<br />
+You cover a holy symbol made of oak with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a holy symbol made of oak is gone!<br />
+The corpse of Rojany won't fit.<br />
+A long flowing robe crafted of oak leaves won't fit.<br />
+A bracelet of threaded rose petals won't fit.<br />
+A faded green robe won't fit.<br />
+A crown of turtle scales won't fit.<br />
+A suit of spun mithril armour won't fit.<br />
+You cover a gold and platinum streaked ring with a plain white handkerchief.<br />
+You snatch away a plain white handkerchief and a gold and platinum streaked ring is gone!<br />
+A glowing scroll of recall won't fit.<br />
+A milky potion of see invisible won't fit.<br />
+A blue potion won't fit.<br />
+g allA set of demon wings won't fit.<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+**Rojany: tic in 10<br />
+<br />
+561H 140V 4818245X 6337C Exits:ESW&gt; <br />
+<br />
+Rojany gets a sapphire heart pendant.<br />
+Rojany gets the corpse of Rold.<br />
+Rojany gets an empty potion bottle.<br />
+Rojany gets a small brown bottle.<br />
+Rojany is zapped by a black and gold cape and instantly drops it.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1508'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1508">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1508">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

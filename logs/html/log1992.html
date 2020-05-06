@@ -1,0 +1,859 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1992-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1992'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+You get an enchanted barrel from the corpse of Bocho.</font></b>
+<p>
+POV: 
+Dast<p>
+Log Rating:
+0.3333<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+When will ppl learn not to carry those barrels around?</i>
+<p>
+<p>
+
+At the Altar<br />
+     You are at the altar of the temple. A feeling of goodness overcomes<br />
+you as you look around and see nothing but artifacts of great gods of<br />
+Krynn. There is a huge pipe organ built into the north wall and on each<br />
+side is displayed large medallions of each god. The large stained glass<br />
+window high above the organ lets in soothing light that gives an added feel<br />
+of goodness.<br />
+A piece of dried red clay has been dropped here...it glows blue<br />
+&lt;BIA&gt; Davy Cassidy, Pretty Little Partridge is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;BIA&gt; Lumpe, Dark Mage of Doom is standing here.<br />
+. . . is enveloped in flames.<br />
+The high priestess of Kalaman bids you a warm welcome to her church.<br />
+&lt;BSP&gt; Bocho rno, The Bloody Healer is RESTING here. (flying)<br />
+A cityguard stands here, keeping a wary eye out for troublemakers.<br />
+<br />
+378H 91V 1X 0.00% 2011C Exits:S&gt; use wand<br />
+You stop using a black ice sphere.<br />
+You grab a twisted wand.<br />
+You wave a twisted wand.<br />
+The high priestess of Kalaman manages to avoid the brunt of the storm.<br />
+Bocho is shredded by shards of ice.<br />
+A Kalaman cityguard is shredded by shards of ice.<br />
+<br />
+378H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:V.Good] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard misses you and destroys an image.<br />
+You pierce Bocho extremely hard.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+377H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; rem wand<br />
+<br />
+A Kalaman cityguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+377H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; Your skin tingles slightly as feeling and colour return.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard misses you and destroys an image.<br />
+You miss Bocho with your pierce.<br />
+Bocho misses you and destroys an image.<br />
+You stop using a twisted wand.<br />
+<br />
+376H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; give wand lumpe<br />
+You give a twisted wand to Lumpe.<br />
+<br />
+376H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; gt area<br />
+You tell your group 'area'<br />
+<br />
+376H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; <br />
+A Kalaman cityguard looks at you and yells 'There's the scoundrel!'<br />
+<br />
+376H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; <br />
+A Kalaman cityguard misses you and destroys an image.<br />
+===&gt; LOST MIRROR IMAGE &lt;===<br />
+You pierce Bocho very hard.<br />
+Bocho bludgeons YOU.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+371H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; <br />
+Lumpe stops using an ancient sphere.<br />
+Lumpe grabs a twisted wand.<br />
+Lumpe waves a twisted wand.<br />
+The high priestess of Kalaman manages to avoid the brunt of the storm.<br />
+Bocho is shredded by shards of ice, discharged by a wand.<br />
+A Kalaman cityguard is shredded by shards of ice, discharged by a wand.<br />
+<br />
+371H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; <br />
+Davy focuses on you and utters some strange words.<br />
+Your skin hardens into a stone-like substance.<br />
+<br />
+371H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Good] Exits:S&gt; <br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard misses you with his slash.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bruises YOU with his bludgeon.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+369H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+369H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+Lumpe bludgeons Bocho hard.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bruises YOU with his bludgeon.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+366H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+366H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You pierce Bocho extremely hard.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+364H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard arrives from the south.<br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+364H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+Lumpe misses Bocho with his bludgeon.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bludgeons YOU.<br />
+Bocho burns as he passes through your fire shield.<br />
+A Kalaman cityguard kicks you in the face, breaking teeth and bone. Blood flies as your head is rocked back.<br />
+<br />
+348H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+348H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+Davy focuses on you and utters some strange words.<br />
+Your skin hardens into a stone-like substance.<br />
+<br />
+348H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+348H 91V 1X 0.00% 2011C [Me:V.Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe bludgeons Bocho very hard.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You massacre Bocho with your pierce.<br />
+Bocho bruises YOU with his bludgeon.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+345H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+345H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Fair] Exits:S&gt; <br />
+A Kalaman cityguard misses you with his slash.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You massacre Bocho with your pierce.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+343H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+343H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; l bocho<br />
+You see nothing special about him.<br />
+&lt;BSP&gt; Bocho the elder male silvanesti has some big nasty wounds and scratches.<br />
+Clansman of Blood Sea Pirates.<br />
+<br />
+Bocho is using:<br />
+&lt;worn on finger&gt;           a fairy skull ring<br />
+&lt;worn on finger&gt;           a ring of twisted ice..it glows blue..it glows dimly..it hums softly<br />
+&lt;worn around neck&gt;         a deep vermilion colored cloak<br />
+&lt;worn around neck&gt;         a gold trimmed burgundy cape..it glows blue<br />
+&lt;worn on head&gt;             a plumed helm and visor<br />
+&lt;worn on feet&gt;             a pair of magical boots..it glows blue..it glows dimly<br />
+&lt;worn on hands&gt;            a pair of pitch black gloves<br />
+&lt;worn on arms&gt;             some burnt steel bracers..it glows blue<br />
+&lt;worn as shield&gt;           a frosted tin shield..it glows blue<br />
+&lt;worn about body&gt;          a light black robe..it glows blue<br />
+&lt;worn around right wrist&gt;  a glowing bracer..it glows blue..it glows dimly<br />
+&lt;used in primary hand&gt;     a tamarack staff..it glows blue<br />
+&lt;held in secondary hand&gt;   a rotted academic tome<br />
+<br />
+343H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bludgeons YOU.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+323H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+Davy focuses on you and utters some strange words.<br />
+Your skin hardens into a stone-like substance.<br />
+<br />
+323H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+323H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; gla guard<br />
+<br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+323H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; A Kalaman cityguard has some small wounds and bruises.<br />
+<br />
+323H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+A Kalaman cityguard misses you with his slash.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bruises YOU with his bludgeon.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+320H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; TICK IN 16 SECONDS.<br />
+<br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+320H 91V 1X 0.00% 2011C [Me:Good] [Bocho:Bad] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You massacre Bocho with your pierce.<br />
+Bocho bruises YOU with his bludgeon.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+316H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+316H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+Davy focuses on you and utters some strange words.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+386H 91V 1X 0.00% 2011C [Me:Perfect] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard misses you with his slash.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard slashes YOU extremely hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard slashes YOU extremely hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho bludgeons YOU.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+347H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+347H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+Davy begins RESTING but stays aloft.<br />
+<br />
+347H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+347H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard slashes YOU extremely hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe bludgeons Bocho very hard.<br />
+A Kalaman cityguard slashes YOU extremely hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You pierce Bocho hard.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+305H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+Davy glances at a Kalaman cityguard.<br />
+<br />
+305H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+305H 91V 1X 0.00% 2011C [Me:Good] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard misses you with his slash.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You miss Bocho with your pierce.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+286H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+286H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:V.Bad] Exits:S&gt; <br />
+Davy STANDS UP!!!<br />
+<br />
+286H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:V.Bad] Exits:S&gt; <br />
+Davy focuses on you and utters some strange words.<br />
+Your skin hardens into a stone-like substance.<br />
+<br />
+286H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:V.Bad] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+You massacre Bocho with your pierce.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+284H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+284H 106V 1X 0.00% 2011C [Me:Fair] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+Davy focuses on you and utters some strange words.<br />
+Large open gashes on your body stop bleeding and heal.<br />
+<br />
+364H 106V 1X 0.00% 2011C [Me:V.Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+Your skin tingles slightly as feeling and colour return.<br />
+A Kalaman cityguard bruises YOU with his slash.<br />
+A Kalaman cityguard is burned to death by your fire shield.<br />
+You lost 16315 experience for being a part of that!<br />
+A Kalaman cityguard is dead! R.I.P.<br />
+You miss Bocho with your pierce.<br />
+Bocho misses you with his bludgeon.<br />
+The death cry of a Kalaman cityguard echoes from somewhere nearby...<br />
+<br />
+361H 106V 16316X 0.00% 2011C [Me:V.Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard misses you with his slash.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+You pierce Bocho extremely hard.<br />
+Bocho misses you with his bludgeon.<br />
+<br />
+361H 106V 16316X 0.00% 2011C [Me:V.Good] [Bocho:Awful] Exits:S&gt; l<br />
+At the Altar<br />
+     You are at the altar of the temple. A feeling of goodness overcomes<br />
+you as you look around and see nothing but artifacts of great gods of<br />
+Krynn. There is a huge pipe organ built into the north wall and on each<br />
+side is displayed large medallions of each god. The large stained glass<br />
+window high above the organ lets in soothing light that gives an added feel<br />
+of goodness.<br />
+The corpse of a Kalaman cityguard is lying here.<br />
+A piece of dried red clay has been dropped here...it glows blue<br />
+A Kalaman cityguard is standing here, fighting YOU.<br />
+&lt;BIA&gt; Davy Cassidy, Pretty Little Partridge is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+&lt;BIA&gt; Lumpe, Dark Mage of Doom is standing here, fighting Bocho.<br />
+. . . is surrounded by 4 duplicate images.<br />
+The high priestess of Kalaman bids you a warm welcome to her church.<br />
+&lt;BSP&gt; Bocho rno, The Bloody Healer is RESTING here, fighting YOU. (flying)<br />
+<br />
+361H 106V 16316X 0.00% 2011C [Me:V.Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+361H 106V 16316X 0.00% 2011C [Me:V.Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard slashes YOU extremely hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+You pierce Bocho extremely hard.<br />
+Bocho bludgeons YOU.<br />
+Bocho burns as he passes through your fire shield.<br />
+<br />
+330H 106V 15260X 0.00% 2011C [Me:Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard looks at Lumpe and yells  'There's the scoundrel!'<br />
+<br />
+330H 106V 15260X 0.00% 2011C [Me:Good] [Bocho:Awful] Exits:S&gt; <br />
+A Kalaman cityguard slashes YOU very hard.<br />
+A Kalaman cityguard burns as he passes through your fire shield.<br />
+A Kalaman cityguard misses you with his slash.<br />
+Lumpe misses Bocho with his bludgeon.<br />
+You massacre Bocho with your pierce.<br />
+You receive 0 experience.<br />
+Bocho is dead! R.I.P.<br />
+The death cry of Bocho echoes from somewhere nearby...<br />
+Bocho sinks gently to the ground.<br />
+<br />
+316H 106V 14759X 0.00% 2011C Exits:S&gt; <br />
+Davy gets a very large pile of coins from the corpse of Bocho.<br />
+<br />
+316H 106V 14759X 0.00% 2011C Exits:S&gt; <br />
+Davy divides 1296 coins equally among the group members present.<br />
+<br />
+316H 106V 14759X 0.00% 2443C Exits:S&gt; <br />
+Lumpe gets a rotted academic tome from the corpse of Bocho.<br />
+Lumpe gets a tamarack staff from the corpse of Bocho.<br />
+Lumpe gets a glowing bracer from the corpse of Bocho.<br />
+Lumpe gets a light black robe from the corpse of Bocho.<br />
+Lumpe gets a pair of pitch black gloves from the corpse of Bocho.<br />
+Lumpe gets a gold trimmed burgundy cape from the corpse of Bocho.<br />
+Lumpe gets a ring of twisted ice from the corpse of Bocho.<br />
+Lumpe gets a scribed scroll from the corpse of Bocho.<br />
+Lumpe gets a scribed scroll from the corpse of Bocho.<br />
+<br />
+316H 106V 14759X 0.00% 2443C Exits:S&gt; get all corpse<br />
+You get a plain component pouch from the corpse of Bocho.<br />
+You get a frosted tin shield from the corpse of Bocho.<br />
+You are zapped by some burnt steel bracers and instantly drop it.<br />
+You get a pair of magical boots from the corpse of Bocho.<br />
+You get a pair of ivory anklets from the corpse of Bocho.<br />
+You get a plumed helm and visor from the corpse of Bocho.<br />
+You are zapped by a hooded red chasuble and instantly drop it.<br />
+You get a deep vermilion colored cloak from the corpse of Bocho.<br />
+You get a fairy skull ring from the corpse of Bocho.<br />
+You get a brewed potion from the corpse of Bocho.<br />
+You get a flawless black diamond from the corpse of Bocho.<br />
+You are zapped by a ring of the Skull and instantly drop it.<br />
+You get a faded green robe from the corpse of Bocho.<br />
+You are zapped by some spiked black gauntlets of the Lily and instantly drop it.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get an empty potion bottle from the corpse of Bocho.<br />
+You get a blank scroll from the corpse of Bocho.<br />
+You get a blank scroll from the corpse of Bocho.<br />
+You get a blank scroll from the corpse of Bocho.<br />
+You get a blank scroll from the corpse of Bocho.<br />
+You get a plain component pouch from the corpse of Bocho.<br />
+You get an enchanted barrel from the corpse of Bocho.<br />
+You get a milky potion of see invisible from the corpse of Bocho.<br />
+You get a milky potion of see invisible from the corpse of Bocho.<br />
+You get a milky potion of see invisible from the corpse of Bocho.<br />
+You get a milky potion of see invisible from the corpse of Bocho.<br />
+You get a green hag's ring from the corpse of Bocho.<br />
+You get a furry white cloak from the corpse of Bocho.<br />
+You get cloak of meditation from the corpse of Bocho.<br />
+You are zapped by a pair of pitch black gloves and instantly drop it.<br />
+You get a glowing scroll of recall from the corpse of Bocho.<br />
+You get a glowing scroll of recall from the corpse of Bocho.<br />
+You get a glowing scroll of recall from the corpse of Bocho.<br />
+You get a glowing scroll of recall from the corpse of Bocho.<br />
+You get a glowing scroll of recall from the corpse of Bocho.<br />
+<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1992'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1992">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1992">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

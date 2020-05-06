@@ -1,0 +1,864 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1531-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1531'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Felix, Tusca, and Kaldean RIP</font></b>
+<p>
+POV: 
+Newton<p>
+Log Rating:
+1.5000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Me and some friends skirmish with Sigil.</i>
+<p>
+<p>
+
+659H 120V 4249205X 296C Exits:EW&gt; w<br />
+bash jedah<br />
+Basilia flies in from the east.<br />
+A feral cat rubs up against your leg.<br />
+Traders Square<br />
+Basilia, Message in Blood is standing here. (flying)<br />
+Jedah Phu, Itchy Trigga Finga Killa is standing here. (flying) (invisible)<br />
+A mouse scampers about, scavenging for food and carefully avoiding the<br />
+feral cats.<br />
+A drunken sailor steadies himself as he tries to stagger back to his boat.<br />
+A feral cat parades her territory and sniffs your leg.<br />
+A feral cat parades her territory and sniffs your leg.<br />
+A feral cat chases a piece of dust around the room.<br />
+A feral cat runs in circles chasing its tail.<br />
+<br />
+659H 119V 4249205X 296C Exits:NESW&gt; You crash into Jedah in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+659H 119V 4249205X 296C [Newton:Perfect] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+<br />
+659H 119V 4249205X 296C [Newton:Perfect] [Jedah:V.Good] Exits:NESW&gt; <br />
+You massacre Jedah with your smite.<br />
+Jedah massacres YOU with his slash.<br />
+<br />
+637H 119V 4249205X 296C [Newton:V.Good] [Jedah:V.Good] Exits:NESW&gt; bash <br />
+You massacre Jedah with your smite.<br />
+Jedah slashes YOU extremely hard.<br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+<br />
+622H 119V 4249205X 296C [Newton:V.Good] [Jedah:Good] Exits:NESW&gt; You crash into Jedah in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+622H 119V 4249205X 296C [Newton:V.Good] [Jedah:Good] Exits:NESW&gt; <br />
+You miss Jedah with your smite.<br />
+Jedah slashes YOU extremely hard.<br />
+<br />
+605H 119V 4249205X 296C [Newton:V.Good] [Jedah:Good] Exits:NESW&gt; <br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+The sound of bones cracking echoes as Basilia's force bolt slams into Jedah.<br />
+<br />
+605H 119V 4249205X 296C [Newton:V.Good] [Jedah:Good] Exits:NESW&gt; bash <br />
+You smite Jedah extremely hard.<br />
+Jedah slashes YOU extremely hard.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+The sound of bones cracking echoes as Basilia's force bolt slams into Jedah.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+Jedah stands up.<br />
+bash jedah<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; You crash into Jedah in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+Tusca flies in from the north.<br />
+bash tusca<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+Tusca flies east.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+You massacre Jedah with your smite.<br />
+Jedah misses you with his slash.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Fair] Exits:NESW&gt; <br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+The sound of bones cracking echoes as Basilia's force bolt slams into Jedah.<br />
+<br />
+589H 119V 4249205X 296C [Newton:Good] [Jedah:Bad] Exits:NESW&gt; <br />
+<br />
+Connected to host mud.arctic.orgGood] [Jedah:Bad] Exits:NESW&gt; <br />
+<br />
+                               Welcome to<br />
+     ___<br />
+    (___)     @@@@@ @@@@@@@@@   @@@@@@@@ @@@@@@@@@@@ @@@@@@@ @@@@@@@@<br />
+     ==_     @@@@@@ @@@   @@@@ @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     =/.   @@@@@@@ @@@    @@@ @@@    @@@    @@@       @@@  @@@    @@@<br />
+     //-&quot;  @@@@ @@@ @@@   @@@@ @@@           @@@       @@@  @@@<br />
+ /--//==---@@  @@@ @@@@@@@@@  @@@           @@@       @@@  @@@<br />
+    \ | @@@@   @@@ @@@ @@@@   @@@    @@@    @@@       @@@  @@@    @@@<br />
+     \|@@@@@@@@@@@ @@@  @@@@  @@@@  @@@@    @@@       @@@  @@@@  @@@@<br />
+     |\@@@     @@@ @@@   @@@@  @@@@@@@@     @@@     @@@@@@@ @@@@@@@@<br />
+     | \<br />
+     | |/ O==========================================================O<br />
+     | |  | Based on DikuMUD I by Michael Seifert, Sebastian Hammer, |<br />
+    /| |  |   Hans Henrik Staerfeldt, Katja Nyboe, and Tom Madsen.   |<br />
+    \ |  |                                                          |<br />
+     \|  |        Mail may be directed to gods@mud.arctic.org       |<br />
+     |\  |                                                          |<br />
+     | \ |        ** Dont forget to visit our web page! **          |<br />
+     | |/ |                 http://mud.arctic.org                    |<br />
+      |  O==========================================================O<br />
+      |<br />
+<br />
+Type 'start' to create a new character.<br />
+What is your character's name? Newton<br />
+Password: <br />
+<br />
+<br />
+<br />
+Reconnecting.<br />
+<br />
+568H 119V 4249205X 296C [Newton:Good] [Jedah:V.Bad] Exits:NESW&gt; bash <br />
+<br />
+Basilia focuses harshly on Jedah and utters some strange words.<br />
+The sound of bones cracking echoes as Basilia's force bolt slams into Jedah.<br />
+<br />
+568H 119V 4249205X 296C [Newton:Good] [Jedah:V.Bad] Exits:NESW&gt; <br />
+Tusca flies in from the east.<br />
+bash tusca<br />
+<br />
+568H 119V 4249205X 296C [Newton:Good] [Jedah:V.Bad] Exits:NESW&gt; <br />
+Jedah sinks gently to the ground.<br />
+Jedah stops using a griffon feather.<br />
+Jedah grabs a scroll of recall.<br />
+Jedah recites a scroll of recall.<br />
+Jedah disappears.<br />
+<br />
+568H 119V 4249205X 296C Exits:NESW&gt; <br />
+You couldn't find what you were looking for.<br />
+<br />
+568H 119V 4249205X 296C Exits:NESW&gt; You crash into Tusca in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+568H 119V 4249205X 296C [Newton:Good] [Tusca:V.Good] Exits:NESW&gt; <br />
+You massacre Tusca with your smite.<br />
+Tusca slowly fades into existence.<br />
+Tusca massacres YOU with his bludgeon.<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Good] Exits:NESW&gt; <br />
+Basilia focuses harshly on Tusca and utters some strange words.<br />
+Tusca wavers under the impact of the lightning bolt sent by Basilia.<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Fair] Exits:NESW&gt; <br />
+You massacre Tusca with your smite.<br />
+Tusca misses you with his bludgeon.<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Fair] Exits:NESW&gt; bash <br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Fair] Exits:NESW&gt; <br />
+Tusca stands up.<br />
+bash tusca<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Fair] Exits:NESW&gt; You crash into Tusca in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Bad] Exits:NESW&gt; <br />
+Jedah tells you 'basilia highlighted too'<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Bad] Exits:NESW&gt; <br />
+Basilia focuses harshly on Tusca and utters some strange words.<br />
+Tusca wavers under the impact of the lightning bolt sent by Basilia.<br />
+A thin gold necklace in use by Tusca is destroyed.<br />
+<br />
+547H 119V 4249205X 296C [Newton:Good] [Tusca:Awful] Exits:NESW&gt; <br />
+You massacre Tusca with your smite.<br />
+You receive 0 experience.<br />
+Tusca is dead! R.I.P.<br />
+The death cry of Tusca echoes from somewhere nearby...<br />
+Tusca sinks gently to the ground.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; gt yesssss<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; <br />
+Basilia gets a large pile of coins from the corpse of Tusca.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; get all corpse<br />
+<br />
+Basilia gets a striated green marble staff from the corpse of Tusca.<br />
+Basilia gets a solid steel wrist guard from the corpse of Tusca.<br />
+Basilia gets a thick dwarven bracelet from the corpse of Tusca.<br />
+Basilia gets a vine belt from the corpse of Tusca.<br />
+Basilia gets a pair of dwarven gloves from the corpse of Tusca.<br />
+Basilia gets some river runner's boots from the corpse of Tusca.<br />
+Basilia gets a ring of fiery light from the corpse of Tusca.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; You couldn't find what you were looking for.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; You tell your group 'yesssss'<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; You get a set of voluminous robes from the corpse of Tusca.<br />
+You get a priestly diadem from the corpse of Tusca.<br />
+You get a suit of golden dwarven plate mail from the corpse of Tusca.<br />
+You get a feathered bone charm from the corpse of Tusca.<br />
+You get a translucent black ring from the corpse of Tusca.<br />
+You get a set of tortoise shell combs from the corpse of Tusca.<br />
+You get a waterskin from the corpse of Tusca.<br />
+You get a waterskin from the corpse of Tusca.<br />
+You get a waterskin from the corpse of Tusca.<br />
+You get a waterskin from the corpse of Tusca.<br />
+You get a waterskin from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+You get a loaf of waybread from the corpse of Tusca.<br />
+Bread : You can't carry that many items.<br />
+Bread : You can't carry that many items.<br />
+Cup : You can't carry that many items.<br />
+Plate : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+Crystal : You can't carry that many items.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; gt WIN<br />
+You tell your group 'WIN'<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; <br />
+Basilia laughs heartily.<br />
+<br />
+547H 119V 4249205X 296C Exits:NESW&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a loaf of waybread [2]<br />
+a small granite shot cup<br />
+a solid steel plate<br />
+a crystal shard necklace..it glows dimly [4]<br />
+<br />
+<br />
+<br />
+10 minutes later.. Tusca logs on as Kaldean and demands equip. Some backup arrives for both parties. Here?s how it went down?<br />
+<br />
+<br />
+The Dark Knights' Academy<br />
+A waterskin lies discarded on the ground. [5]<br />
+A set of tortoise shell combs lies here...it glows blue<br />
+Lord Alario Vekk, Enchanted Fable is resting here. (flying)<br />
+Kaldean Barr is standing here. (flying)<br />
+Tiax Rules All is standing here. (flying)<br />
+Cila the Female Minotaur is resting here. (flying)<br />
+. . . has a tough exterior.<br />
+Rianna, the dark knight guildmaster, sneers as she fences with a student.<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; <br />
+Kaldean flies north.<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; <br />
+Tiax tells your group 'basilia stay there'<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; Your group of 4 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Here Light Mem<br />
+-----------------------------------------------------------------------------<br />
+  Cila             perfect   rested    resting    Y   N    N    Y     0    0<br />
+  Newton           v.good    rested    standing   N   N    N    Y     0    0<br />
+  Basilia          perfect   rested    standing   Y   N    Y    N     0    0<br />
+  Tiax             perfect   rested    standing   Y   N    N    Y     0    3<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; <br />
+Tiax flies north.<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; <br />
+Cila stands up.<br />
+<br />
+649H 131V 4249205X 296C Exits:N&gt; <br />
+Cila flies north.<br />
+You follow Cila north.<br />
+Guild Road<br />
+Cila the Female Minotaur is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Felix, The Sigil of Krynn is standing here. (flying)<br />
+Jedah Phu, Itchy Trigga Finga Killa is standing here. (flying)<br />
+Kylar, The Sigil of The Hylars is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Tiax Rules All is standing here. (flying)<br />
+Kaldean Barr is standing here, fighting Basilia. (flying)<br />
+Basilia, Message in Blood is sitting here, fighting Kaldean. (flying)<br />
+A feral cat parades her territory and sniffs your leg.<br />
+A feral cat purrs contentedly.<br />
+<br />
+649H 130V 4249205X 296C Exits:NESW&gt; <br />
+Felix focuses harshly on you and utters some strange words.<br />
+Your limbs freeze in place!<br />
+<br />
+649H 130V 4249205X 296C Exits:NESW&gt; <br />
+You are sent sprawling as Jedah crashes into you.<br />
+<br />
+633H 130V 4249205X 296C [Newton:V.Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Tiax focuses harshly on Kaldean and utters some strange words.<br />
+Flesh burns as Tiax enshrouds Kaldean in a cloak of flames.<br />
+<br />
+633H 130V 4249205X 296C [Newton:V.Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Kylar focuses harshly on you and utters some strange words.<br />
+Kylar grabs you.  You scream as you feel your life-force being torn away.<br />
+<br />
+535H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia stands up.<br />
+<br />
+535H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia tells your group 'come n.'<br />
+<br />
+535H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Jedah massacres YOU with his slash.<br />
+Cila massacres Kaldean with her crush.<br />
+Kaldean massacres Basilia with his cleave.<br />
+Basilia misses Kaldean with her hit.<br />
+<br />
+514H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia panics, and attempts to flee.<br />
+Basilia flies east.<br />
+<br />
+514H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; recite recall<br />
+<br />
+Basilia flies in from the east.<br />
+<br />
+514H 130V 4249205X 296C [Newton:Good] [Jedah:V.Good] Exits:NESW&gt; <br />
+Felix focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+451H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia flies south.<br />
+<br />
+451H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Tiax focuses harshly on Kaldean and utters some strange words.<br />
+Flesh burns as Tiax enshrouds Kaldean in a cloak of flames.<br />
+Kylar focuses harshly on you and utters some strange words.<br />
+Kylar grabs you.  You scream as you feel your life-force being torn away.<br />
+<br />
+354H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Cila stands up.<br />
+<br />
+354H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Cila crashes into Kaldean in a thundering collision, knocking him to the ground!<br />
+<br />
+354H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia flies in from the south.<br />
+<br />
+354H 130V 4249205X 296C [Newton:Fair] [Jedah:V.Good] Exits:NESW&gt; <br />
+Kaldean misses Cila with his cleave.<br />
+Jedah massacres YOU with his slash.<br />
+Cila annihilates Kaldean with her crush.<br />
+<br />
+326H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; You can't feel anything from the neck down.<br />
+<br />
+326H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Alario flies in from the south.<br />
+<br />
+326H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+<br />
+Felix focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+264H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Tiax focuses harshly on Kaldean and utters some strange words.<br />
+Flesh burns as Tiax enshrouds Kaldean in a cloak of flames.<br />
+<br />
+264H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia focuses harshly on Kaldean and utters some strange words.<br />
+The sound of bones cracking echoes as Basilia's force bolt slams into Kaldean.<br />
+<br />
+264H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; recite recall<br />
+You can't feel anything from the neck down.<br />
+<br />
+264H 130V 4249205X 296C [Newton:Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+You are sent sprawling as Jedah crashes into you.<br />
+<br />
+248H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; recite recall<br />
+<br />
+248H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+You regain control of your body.<br />
+Kaldean cleaves Cila very hard.<br />
+Jedah massacres YOU with his slash.<br />
+You smite Jedah extremely hard.<br />
+Cila annihilates Kaldean with her crush.<br />
+<br />
+220H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; recite recall<br />
+<br />
+Felix focuses harshly on you and utters some strange words.<br />
+Huge flames scorch you from above.<br />
+<br />
+171H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Tiax focuses harshly on Kaldean and utters some strange words.<br />
+Flesh burns as Tiax enshrouds Kaldean in a cloak of flames.<br />
+<br />
+171H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Basilia focuses harshly on Kaldean and utters some strange words.<br />
+Brains splatter on you as Basilia's force bolt shatters Kaldean's skull.<br />
+You receive 0 experience.<br />
+Kaldean is dead! R.I.P.<br />
+<br />
+171H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+The death cry of Kaldean echoes from somewhere nearby...<br />
+Kaldean sinks gently to the ground.<br />
+Kaldean stops following Kylar.<br />
+<br />
+171H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Cila gets a very large pile of coins from the corpse of Kaldean.<br />
+<br />
+171H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Jedah massacres YOU with his slash.<br />
+You smite Jedah extremely hard.<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Alario flies west.<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Farzaugh flies in from the east.<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Kylar gets a black stone from the corpse of Kaldean.<br />
+Kylar gets a woodsman's axe from the corpse of Kaldean.<br />
+Kylar gets a pair of copper armbands from the corpse of Kaldean.<br />
+Kylar gets a pair of dwarven gloves from the corpse of Kaldean.<br />
+Kylar gets a pair of woodsman's boots from the corpse of Kaldean.<br />
+Kylar gets a bullywug medallion from the corpse of Kaldean.<br />
+Kylar gets a small granite shot cup from the corpse of Kaldean.<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:V.Good] Exits:NESW&gt; <br />
+Cila crashes into Jedah in a thundering collision, knocking him to the ground!<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:Good] Exits:NESW&gt; <br />
+Farzaugh flies west.<br />
+<br />
+147H 130V 4249205X 296C [Newton:V.Bad] [Jedah:Good] Exits:NESW&gt; <br />
+Felix utters some strange words.<br />
+A priest of Hiddukel is torn to pieces by hundreds of shards of ice.<br />
+A priest of Hiddukel is dead! R.I.P.<br />
+Basilia is shredded by shards of ice.<br />
+A drunken sailor is torn to pieces by hundreds of shards of ice.<br />
+A drunken sailor is dead! R.I.P.<br />
+Your body is torn by huge pieces of ice.<br />
+You wish your wounds would stop BLEEDING so much!<br />
+Cila is shredded by shards of ice.<br />
+Tiax is shredded by shards of ice.<br />
+A feral cat is torn to pieces by hundreds of shards of ice.<br />
+A feral cat is dead! R.I.P.<br />
+<br />
+99H 130V 4249205X 296C [Newton:Awful] [Jedah:Good] Exits:NESW&gt; <br />
+The death cry of a drunken sailor echoes from somewhere nearby...<br />
+The death cry of a priest of Hiddukel echoes from somewhere nearby...<br />
+The death cry of a feral cat echoes from somewhere nearby...<br />
+<br />
+99H 130V 4249205X 296C [Newton:Awful] [Jedah:Good] Exits:NESW&gt; <br />
+Tiax gets a small pile of coins from the corpse of a feral cat.<br />
+<br />
+99H 130V 4249205X 296C [Newton:Awful] [Jedah:Good] Exits:NESW&gt; <br />
+Kylar flies west.<br />
+<br />
+99H 130V 4249205X 296C [Newton:Awful] [Jedah:Good] Exits:NESW&gt; You stop using a black stone.<br />
+You grab a glowing scroll of recall.<br />
+You recite a glowing scroll of recall which dissolves.<br />
+<br />
+Unfortunately, I had to bail at 99hp. Kaldean (1x basher) died, and I was lucky to escape alive because Kylar was spamming loots. The other guys weren?t logging, but Felix died shortly after. Somehow, they took out Tiax 20 minutes later too.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1531'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1531">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1531">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

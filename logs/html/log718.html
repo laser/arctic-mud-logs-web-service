@@ -1,0 +1,648 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 718-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='718'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Kyzer RIP</font></b>
+<p>
+POV: 
+Sa<p>
+Log Rating:
+1.9231<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Kyzer dies.  Scelesta gets away :(  What a shame...</i>
+<p>
+<p>
+
+367H 160V 10059955X 656C Mem:1 Exits:NE&gt; scYou are Sa 'Sa, Pretty Pretty Princess, a level 29 Cleric.<br />
+You are 38 years old.<br />
+You have 367(367) hit and 160(160) movement points.<br />
+Your behaviour has been Good.<br />
+The warmth of good envelopes your soul.<br />
+You have scored 97940045 exp, and have 656(42704) steel coins.<br />
+You need 10059955 more experience to advance.<br />
+You have died 13 horrible deaths.<br />
+You have been connected for 58 minute(s).<br />
+You have been playing for 9 day(s), 13 hour(s) and 5 minute(s).<br />
+Your equipment is currently not being concealed.<br />
+You are standing.<br />
+You are affected by the following:<br />
+    bless<br />
+    protection from evil<br />
+    detect invisibility<br />
+<br />
+367H 160V 10059955X 656C Mem:1 Exits:NE&gt; c 'aid' meYou utter the words, 'aid'<br />
+You feel aided by a divine source!<br />
+<br />
+383H 160V 10059955X 656C Mem:1 Exits:NE&gt; c 'sanc' meYou utter the words, 'sanctuary'<br />
+You start glowing.<br />
+<br />
+383H 160V 10059955X 656C Mem:2 Exits:NE&gt; <br />
+Scelesta flies in from the east.<br />
+Myte arrives from the east.<br />
+<br />
+383H 160V 10059955X 656C Mem:2 Exits:NE&gt; <br />
+Scelesta focuses harshly on you and utters some strange words.<br />
+Luckily for you Scelesta slept during draining-lessons.<br />
+<br />
+383H 160V 10059955X 656C [Sa:Perfect] [Scelesta:Perfect] Mem:2 Exits:NE&gt; <br />
+Olup shouts 'Succubus 1 Olup 0 that bastard'<br />
+<br />
+383H 160V 10059955X 656C [Sa:Perfect] [Scelesta:Perfect] Mem:2 Exits:NE&gt; <br />
+Myte heroically rescues Scelesta.<br />
+<br />
+383H 160V 10059955X 656C [Sa:Perfect] [Myte:Perfect] Mem:2 Exits:NE&gt; o aspasia ki scelestaYou drain Myte hard.<br />
+Myte crushes YOU hard.<br />
+Aspasia misses Scelesta and destroys an image instead.<br />
+<br />
+375H 160V 10059955X 656C [Sa:V.Good] [Myte:V.Good] Mem:2 Exits:NE&gt; <br />
+Scelesta focuses harshly on you and utters some strange words.<br />
+Luckily for you Scelesta slept during draining-lessons.<br />
+<br />
+375H 160V 10059955X 656C [Sa:V.Good] [Myte:V.Good] Mem:2 Exits:NE&gt; flYou flee head over heels.<br />
+Alchemical Lab<br />
+    This is where all the noxious fumes are created. There are also many<br />
+items of magic scattered about as this also serves as Anatole's store room.<br />
+There is a small room to the east.<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+375H 159V 10059955X 656C Mem:2 Exits:EW&gt; gt come!You tell your group 'come!'<br />
+<br />
+375H 159V 10059955X 656C Mem:2 Exits:EW&gt; gt godYou tell your group 'god'<br />
+<br />
+375H 159V 10059955X 656C Mem:2 Exits:EW&gt; eMages' Study<br />
+    An accomplished red-robed mage, Anatole was given the prestigious<br />
+responsibility of teaching in Palanthas. He has started a school of his own<br />
+for budding magicians, who will eventually complete their studies at the<br />
+Tower at Wayreth.<br />
+A small roll of bread lies here. [31]<br />
+An orrery is mounted on a stand here.<br />
+Symn Maa Doun, Ghastly DarkMoon is resting here. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+Zuesis the Male Minotaur is standing here.<br />
+. . . has a tough exterior.<br />
+Her dragonfly wings flapping lightly, a beautiful woman is here.<br />
+Toshiro the Male Hill Dwarf is standing here. (flying)<br />
+Anatole the Amazing is here to teach you the ways of magic.<br />
+A Palanthian guard stands here, watching warily for troublemakers.<br />
+<br />
+375H 158V 10059955X 656C Mem:2 Exits:W&gt; <br />
+Toshiro flies west.<br />
+A sylph leaves west.<br />
+<br />
+375H 158V 10059955X 656C Mem:2 Exits:W&gt; <br />
+Zuesis leaves west.<br />
+<br />
+375H 158V 10059955X 656C Mem:2 Exits:W&gt; wAlchemical Lab<br />
+    This is where all the noxious fumes are created. There are also many<br />
+items of magic scattered about as this also serves as Anatole's store room.<br />
+There is a small room to the east.<br />
+Scelesta Fiesta, Vagrant Randomer is standing here. (flying)<br />
+. . . is surrounded by 2 duplicate images.<br />
+Her dragonfly wings flapping lightly, a beautiful woman is here.<br />
+Toshiro the Male Hill Dwarf is standing here. (flying)<br />
+Linus the Alchemist, is here working diligently on a new formula.<br />
+<br />
+375H 157V 10059955X 656C Mem:2 Exits:EW&gt; wToshiro flies in from the east.<br />
+A sylph arrives from the east.<br />
+Anatole's Amazing Artifacts<br />
+    This building smells awful. Probably from all the noxious fumes from<br />
+the lab in the next room. But then again, everybody knows magicians stink.<br />
+The counter is actually a glass case that displays several magical<br />
+trinkets. The only exits are back north to Sword Street, and a small<br />
+archway leading east.<br />
+Her dragonfly wings flapping lightly, a beautiful woman is here.<br />
+Toshiro the Male Hill Dwarf is standing here. (flying)<br />
+Kyzer Reborn is standing here. (flying)<br />
+Zuesis the Male Minotaur is standing here.<br />
+. . . has a tough exterior.<br />
+Myte Luze is standing here.<br />
+Aspasia, the death celestial, appears as a dark and unyielding void.<br />
+An apprentice mage is here watching the store for his master.<br />
+<br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; <br />
+Myte leaves east.<br />
+<br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; o aspasia ki scelesta<br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; o aspasia ki scelesta<br />
+Kazak shouts 'quick, loot olup!'<br />
+<br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; <br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; o aspasia ki scelesta<br />
+375H 156V 10059955X 656C Mem:2 Exits:NE&gt; <br />
+You are sent sprawling as Kyzer crashes into you.<br />
+<br />
+361H 156V 10059955X 656C [Sa:V.Good] [Kyzer:Perfect] Mem:2 Exits:NE&gt; <br />
+Toshiro gives a sylph an order.<br />
+<br />
+361H 156V 10059955X 656C [Sa:V.Good] [Kyzer:Perfect] Mem:2 Exits:NE&gt; <br />
+Kyzer massacres YOU with his slash.<br />
+You miss Kyzer with your drain.<br />
+<br />
+336H 156V 10059955X 656C [Sa:Good] [Kyzer:Perfect] Mem:2 Exits:NE&gt; <br />
+Kyzer slashes YOU extremely hard.<br />
+You miss Kyzer with your drain.<br />
+<br />
+320H 156V 10059955X 656C [Sa:Good] [Kyzer:Perfect] Mem:2 Exits:NE&gt; <br />
+You step aside as Kyzer tries to bash you, causing him to tumble and fall face down.<br />
+<br />
+320H 156V 10059955X 656C [Sa:Good] [Kyzer:Perfect] Mem:2 Exits:NE&gt; gt kill kyzer<br />
+Zuesis comes to your rescue! You're thankful, but a bit dazed.<br />
+<br />
+320H 156V 10059955X 656C Mem:2 Exits:NE&gt; You tell your group 'kill kyzer'<br />
+<br />
+320H 156V 10059955X 656C Mem:2 Exits:NE&gt; stKyzer slashes Zuesis very hard.<br />
+Zuesis cleaves Kyzer extremely hard.<br />
+You stand up.<br />
+<br />
+342H 160V 10059955X 656C Mem:1 Exits:NE&gt; cast 'harm' kyzerYou utter the words, 'harm'<br />
+You grab Kyzer, who screams in pain.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; <br />
+Zuesis crashes into Kyzer in a thundering collision, knocking him to the ground!<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; cast 'hold person' kyzer<br />
+Kyzer slashes Zuesis very hard.<br />
+Zuesis cleaves Kyzer extremely hard.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; <br />
+Toshiro focuses harshly on Kyzer and utters some strange words.<br />
+Flesh burns as Toshiro enshrouds Kyzer in a cloak of flames.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; You utter the words, 'hold person'<br />
+Kyzer freezes in place.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; <br />
+Zuesis massacres Kyzer with his cleave.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; cast 'harm' kyzer<br />
+Toshiro focuses harshly on Kyzer and utters some strange words.<br />
+Flesh burns as Toshiro enshrouds Kyzer in a cloak of flames.<br />
+<br />
+342H 160V 10059955X 656C Mem:3 Exits:NE&gt; You utter the words, 'harm'<br />
+You grab Kyzer, who screams in pain.<br />
+<br />
+342H 160V 10059955X 656C Mem:5 Exits:NE&gt; <br />
+Zuesis crashes into Kyzer in a thundering collision, knocking him to the ground!<br />
+<br />
+342H 160V 10059955X 656C Mem:5 Exits:NE&gt; cast 'harm' kyzer<br />
+Zuesis massacres Kyzer with his cleave.<br />
+<br />
+342H 160V 10059955X 656C Mem:5 Exits:NE&gt; <br />
+Toshiro focuses harshly on Kyzer and utters some strange words.<br />
+Flesh burns as Toshiro enshrouds Kyzer in a cloak of flames.<br />
+<br />
+342H 160V 10059955X 656C Mem:5 Exits:NE&gt; You utter the words, 'harm'<br />
+You grab Kyzer, who screams in pain.<br />
+<br />
+342H 160V 10059955X 656C Mem:6 Exits:NE&gt; <br />
+Zuesis massacres Kyzer with his cleave.<br />
+<br />
+342H 160V 10059955X 656C Mem:6 Exits:NE&gt; cast 'cause critical' kyzer<br />
+Toshiro focuses harshly on Kyzer and utters some strange words.<br />
+Flesh burns as Toshiro enshrouds Kyzer in a cloak of flames.<br />
+<br />
+342H 160V 10059955X 656C Mem:6 Exits:NE&gt; You utter the words, 'cause critical'<br />
+You grab Kyzer, who collapses in pain, then dies.<br />
+You receive 0 experience.<br />
+Kyzer is dead! R.I.P.<br />
+get all.coins corpse<br />
+342H 160V 10059955X 656C Mem:8 Exits:NE&gt; <br />
+The death cry of Kyzer echoes from somewhere nearby...<br />
+Scelesta stops following Kyzer.<br />
+<br />
+342H 160V 10059955X 656C Mem:8 Exits:NE&gt; g all corpseYou get a pile of coins from the corpse of Kyzer.<br />
+There were 46 coins.<br />
+<br />
+342H 160V 10059955X 702C Mem:8 Exits:NE&gt; You are zapped by a slender draconian blade and instantly drop it.<br />
+You get a charred leather apron from the corpse of Kyzer.<br />
+You get an iron shield from the corpse of Kyzer.<br />
+You get a pair of fine metal boots from the corpse of Kyzer.<br />
+You get a set of pitch black greaves from the corpse of Kyzer.<br />
+You get a suit of sea elf scale mail from the corpse of Kyzer.<br />
+You are zapped by the medallion of Hiddukel and instantly drop it.<br />
+You are zapped by the medallion of Hiddukel and instantly drop it.<br />
+You get a green metal ring from the corpse of Kyzer.<br />
+You get a scroll of recall from the corpse of Kyzer.<br />
+You get a dark cudgel from the corpse of Kyzer.<br />
+You get a bowl of Otik's spiced potatoes from the corpse of Kyzer.<br />
+You get a glowing scroll of recall from the corpse of Kyzer.<br />
+You get a sticky strand from the corpse of Kyzer.<br />
+You get a black bearskin bag from the corpse of Kyzer.<br />
+You get a backpack from the corpse of Kyzer.<br />
+You get a leather traveling pack from the corpse of Kyzer.<br />
+You get a piece of sweet bread from the corpse of Kyzer.<br />
+You get a piece of sweet bread from the corpse of Kyzer.<br />
+You get an entire loaf of bread from the corpse of Kyzer.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+342H 160V 10059955X 702C Mem:8 Exits:NE&gt; <br />
+Toshiro flies east.<br />
+A sylph leaves east.<br />
+<br />
+342H 160V 10059955X 702C Mem:8 Exits:NE&gt; gt lootYou tell your group 'loot'
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='718'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=718">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="718">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,673 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 51-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='51'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+gilmere bites it</font></b>
+<p>
+POV: 
+<p>
+Log Rating:
+0.0000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+Gilmere wanders to his death in np.</i>
+<p>
+<p>
+
+618H 53V 2638X 5888C Exits:W&gt; <br />
+Mlaah grabs a glowing scroll of recall.<br />
+<br />
+618H 53V 2638X 5888C Exits:W&gt; <br />
+Gilmere flies in from the west.<br />
+bash Gilmere<br />
+<br />
+618H 53V 2638X 5888C Exits:W&gt; <br />
+=====Aigin STANDS UP=====<br />
+<br />
+618H 53V 2638X 5888C Exits:W&gt; =====YOU BASHED Gilmere=====<br />
+<br />
+618H 53V 2638X 5888C [Me:Perfect] [Gilmere:V.Good] Exits:W&gt; <br />
+Aigin flies west.<br />
+<br />
+618H 53V 2638X 5888C [Me:Perfect] [Gilmere:V.Good] Exits:W&gt; <br />
+You massacre Gilmere with your slash.<br />
+Gilmere slashes YOU extremely hard.<br />
+<br />
+601H 53V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; <br />
+=====Mlaah STANDS UP=====<br />
+<br />
+601H 53V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; bash<br />
+<br />
+Mlaah focuses harshly on Gilmere and utters some strange words.<br />
+<br />
+601H 53V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; <br />
+Mlaah flies west.<br />
+<br />
+601H 53V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; <br />
+You massacre Gilmere with your slash.<br />
+Gilmere slashes YOU very hard.<br />
+<br />
+612H 81V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; <br />
+=====Gilmere STANDS UP=====<br />
+<br />
+612H 81V 2638X 5888C [Me:V.Good] [Gilmere:V.Good] Exits:W&gt; =====YOU BASHED Gilmere=====<br />
+<br />
+612H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; <br />
+You massacre Gilmere with your slash.<br />
+Gilmere slashes YOU extremely hard.<br />
+<br />
+594H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; bash<br />
+<br />
+You massacre Gilmere with your slash.<br />
+Gilmere slashes YOU extremely hard.<br />
+<br />
+576H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; =====YOU MISSED BASH ON Gilmere=====<br />
+stand<br />
+<br />
+576H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; <br />
+*Gilmere stands up<br />
+<br />
+576H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; <br />
+=====Gilmere STANDS UP=====<br />
+<br />
+576H 81V 2638X 5888C [Me:V.Good] [Gilmere:Good] Exits:W&gt; <br />
+You slash Gilmere very hard.<br />
+Gilmere massacres YOU with his slash.<br />
+<br />
+554H 81V 2638X 5888C [Me:Good] [Gilmere:Good] Exits:W&gt; <br />
+Gilmere panics, and attempts to flee.<br />
+Gilmere flies west.<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; sta<br />
+<br />
+Gilmere flies in from the west.<br />
+bash Gilmere<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; w<br />
+<br />
+Gilmere flies west.<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; b salve<br />
+=====YOU STAND UP====<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; You are already standing.<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; You couldn't find what you were looking for.<br />
+<br />
+554H 81V 2638X 5888C Exits:W&gt; Merchant's Lane<br />
+    Merchant's Lane continues north to the square and south to intersect<br />
+with Rapid's Drive and the beginning of a platform to the southern pier.<br />
+There are two large buildings at this point in the road. The one to the west<br />
+is the Newport bank, while the eastern warehouse bears the arcane symbols of<br />
+magic along its walls.<br />
+Gilmere the Male Hill Dwarf is standing here, fighting Aigin. (flying)<br />
+bash Gilmere<br />
+Mlaah the Furry Pink Armadillo is standing here. (flying) (invisible) (red aura)<br />
+. . . is surrounded by 3 duplicate images.<br />
+Aigin Greencloak, Shadow Weaver O' the Art is standing here, fighting Gilmere. (flying)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+554H 80V 2638X 5888C Exits:NESW&gt; Warning: your input 'salve' ignored.<br />
+Sorry, but you cannot do that here!<br />
+<br />
+554H 80V 2638X 5888C Exits:NESW&gt; w<br />
+=====YOU BASHED Gilmere=====<br />
+<br />
+554H 80V 2638X 5888C [Me:Good] [Aigin:V.Good] [Gilmere:V.Bad] Exits:NESW&gt; <br />
+Aigin focuses harshly on Gilmere and utters some strange words.<br />
+The sound of bones cracking echoes as Aigin's force bolt slams into Gilmere.<br />
+<br />
+554H 80V 2638X 5888C [Me:Good] [Aigin:V.Good] [Gilmere:Awful] Exits:NESW&gt; <br />
+You massacre Gilmere with your slash.<br />
+<br />
+554H 80V 2638X 5888C [Me:Good] [Aigin:V.Good] [Gilmere:Awful] Exits:NESW&gt; <br />
+Mlaah focuses harshly on Gilmere and utters some strange words.<br />
+Mlaah slowly fades into existence.<br />
+Brains splatter on you as Mlaah's force bolt shatters Gilmere's skull.<br />
+You receive 0 experience.<br />
+Gilmere is dead! R.I.P.<br />
+<br />
+554H 80V 2638X 5888C [Me:Good] [Gilmere:Dying] Exits:NESW&gt; <br />
+The death cry of Gilmere echoes from somewhere nearby...<br />
+<br />
+554H 80V 2638X 5888C Exits:NESW&gt; get all corpse<br />
+First Bank of Newport<br />
+    This is one of the nicer building in Newport. Its made of fine oak<br />
+wood, and has a stone floor. Upon closer inspection it seems to be<br />
+cobblestone. This bank seems to do a good amount of business. It's very<br />
+clean and brightly lit. There is a counter in front of you with bars<br />
+extending from the top of the counter to the ceiling, it doesn't look like<br />
+they have anything to fear from robbery from the way this bank is<br />
+constructed.<br />
+Talim is sitting behind a desk, waiting for you to make a transaction.<br />
+<br />
+554H 79V 2638X 5888C Exits:E&gt; What are you trying to get from?<br />
+<br />
+554H 79V 2638X 5888C Exits:E&gt; e<br />
+get all corpse<br />
+Merchant's Lane<br />
+    Merchant's Lane continues north to the square and south to intersect<br />
+with Rapid's Drive and the beginning of a platform to the southern pier.<br />
+There are two large buildings at this point in the road. The one to the west<br />
+is the Newport bank, while the eastern warehouse bears the arcane symbols of<br />
+magic along its walls.<br />
+The corpse of Gilmere is lying here.<br />
+Mlaah the Furry Pink Armadillo is standing here. (flying) (red aura)<br />
+. . . is followed by a hovering ball of light.<br />
+Aigin Greencloak, Shadow Weaver O' the Art is standing here. (flying) (invisible)<br />
+. . . is followed by a hovering ball of light.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; You get a fiery red cloak from the corpse of Gilmere.<br />
+You are ZAPPED by a set of power brassards and instantly drop it.<br />
+You get a pair of dwarven gloves from the corpse of Gilmere.<br />
+You get a pair of mithril leg braces from the corpse of Gilmere.<br />
+You get some gnomish body armor from the corpse of Gilmere.<br />
+You get a light medallion from the corpse of Gilmere.<br />
+Ring : You can't carry that many items.<br />
+Ring : You can't carry that many items.<br />
+Axe : You can't carry that many items.<br />
+Lens : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Lantern : You can't carry that many items.<br />
+Backpack : You can't carry that many items.<br />
+Scroll : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Waterskin : You can't carry that many items.<br />
+Chest : You can't carry that many items.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Mlaah says 'me rule'<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; put all pack<br />
+get all corpse<br />
+You put a light medallion in a dwarven miner's pack.<br />
+You put some gnomish body armor in a dwarven miner's pack.<br />
+You put a pair of mithril leg braces in a dwarven miner's pack.<br />
+You put a pair of dwarven gloves in a dwarven miner's pack.<br />
+You put a fiery red cloak in a dwarven miner's pack.<br />
+You put a soothing salve in a dwarven miner's pack.<br />
+You put a soothing salve in a dwarven miner's pack.<br />
+You put a large waterskin in a dwarven miner's pack.<br />
+A large waterskin won't fit.<br />
+You put a bowl of tasty wheat in a dwarven miner's pack.<br />
+You put a bowl of tasty wheat in a dwarven miner's pack.<br />
+You put a wand of paralyzation in a dwarven miner's pack.<br />
+A cold steel sword won't fit.<br />
+You put a bright ball of light in a dwarven miner's pack.<br />
+You put a lucky bone charm in a dwarven miner's pack.<br />
+A pair of blue coveralls won't fit.<br />
+You put a leather buckler in a dwarven miner's pack.<br />
+You put a thick black robe in a dwarven miner's pack.<br />
+You put a hooded lantern in a dwarven miner's pack.<br />
+You put a hooded lantern in a dwarven miner's pack.<br />
+You put a glowing blue orb in a dwarven miner's pack.<br />
+A small glowing amulet won't fit.<br />
+A pork pie won't fit.<br />
+A large first-aid kit won't fit.<br />
+A small wooden chest won't fit.<br />
+A small wooden chest won't fit.<br />
+A small canteen won't fit.<br />
+A small canteen won't fit.<br />
+A small canteen won't fit.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; You are ZAPPED by a ring of black dragon scales and instantly drop it.<br />
+You get a black ice ring from the corpse of Gilmere.<br />
+You get a bloodstained steel battleaxe from the corpse of Gilmere.<br />
+You get a scratched glass lens from the corpse of Gilmere.<br />
+You get a large waterskin from the corpse of Gilmere.<br />
+You get a hooded lantern from the corpse of Gilmere.<br />
+Backpack : You can't carry that much weight.<br />
+You get a colorful scroll from the corpse of Gilmere.<br />
+You get a large waterskin from the corpse of Gilmere.<br />
+Waterskin : You can't carry that much weight.<br />
+Chest : You can't carry that much weight.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Aigin focuses on you and utters some strange words.<br />
+You feel stronger.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Mlaah gets a ring of black dragon scales.<br />
+Mlaah gets a set of power brassards.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Mlaah gets a large waterskin from the corpse of Gilmere.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; 'nice<br />
+You say 'nice'<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; exa corpse<br />
+It's a pretty ghastly sight! Searching through the remains, you find:<br />
+corpse (here) : <br />
+a large backpack<br />
+a small wooden chest<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; 'loot all<br />
+<br />
+Mlaah utters some strange words.<br />
+Mlaah appears to grow stronger.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; You say 'loot all'<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Aigin says 'get pack'<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Mlaah gets a small wooden chest from the corpse of Gilmere.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; <br />
+Aigin focuses on you and utters some strange words.<br />
+You feel stronger.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; get all corpse<br />
+You get a large backpack from the corpse of Gilmere.<br />
+<br />
+554H 78V 2638X 5888C Exits:NESW&gt; get glowing.recall dwarven.miner's.pack<br />
+rec recall<br />
+You get a glowing scroll of recall from a dwarven miner's pack.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='51'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=51">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="51">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

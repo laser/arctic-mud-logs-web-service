@@ -1,0 +1,750 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 214-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='214'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+Varia rip</font></b>
+<p>
+POV: 
+Adrianna<p>
+Log Rating:
+0.2857<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+</i>
+<p>
+<p>
+
+247H 74V 3410115X 0C Mem:5 Exits:NS&gt; s<br />
+The Tollhouse<br />
+    This small stone building stands at the junction of the roads from<br />
+Palanthas to the west, Kalaman to the east, and Solanthus to the south. A<br />
+road leads north to the gates of the City of Vingaard, and east to the main<br />
+keep atop the hill. Inside the tollhouse there are some long benches for<br />
+those waiting to meet with the tax collector, who sits behind the large<br />
+table toward the back. Behind this table is a large safe mounted in the<br />
+wall, storing the collected taxes waiting to be added to the city's<br />
+coffers. A small staircase leads up to a small hatch in the ceiling.<br />
+Travelers wishing to pass must pay the toll, then head west to Palanthas,<br />
+north through the city and east to Kalaman, or south toward the Newsea.<br />
+A wooden sign on a pole directs travellers to their destinations.<br />
+Elyana Lipetskaya, Rusty Shadow is standing here, fighting Kraz. (flying)<br />
+. . . is surrounded by 4 duplicate images.<br />
+Kraz E. Man is sitting here, fighting Elyana. (flying)<br />
+You sense that you are not alone.<br />
+<br />
+247H 73V 3410115X 0C Mem:5 Exits:NESWU&gt; cast 'blindness' varia<br />
+You utter the words, 'blindness'<br />
+Varia seems to be blinded!<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; <br />
+Elyana panics, and attempts to flee.<br />
+Elyana flies north.<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; <br />
+Elyana flies in from the north.<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; <br />
+Varia says 'hrm'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; <br />
+Kraz says 'wtf?'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; gt ready for varia?<br />
+<br />
+Elyana says 'u not renshai'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; You tell your group 'ready for varia?'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; <br />
+Varia says 'why elyana'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; fol varia<br />
+You now follow Varia.<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; gro<br />
+Your group of 2 members consists of:<br />
+  Member           Hits      Move      Position  Fly Inv Water Light Mem<br />
+------------------------------------------------------------------------<br />
+  Adrianna         v.good    rested    standing   Y   Y    N     0    6<br />
+  Elyana           perfect   rested    standing   Y   Y    Y     2    7<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; say your not rensah<br />
+You say 'your not rensah'<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; l varia<br />
+<br />
+A Knight of the Sword arrives from the south.<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; You see nothing special about him.<br />
+Varia the adult male half elf is in an excellent condition (invisible).<br />
+<br />
+Varia is using:<br />
+&lt;worn around neck&gt;         a burned black cloak<br />
+&lt;worn on body&gt;             a suit of tanned leather armor<br />
+&lt;worn on feet&gt;             thin golden dragonscale boots<br />
+&lt;worn on hands&gt;            a pair of supple leather gloves<br />
+&lt;worn on arms&gt;             a pair of dog hair sleeves<br />
+&lt;worn about body&gt;          a cloak of fog and shadows<br />
+&lt;worn about waist&gt;         a merchant's beltpouch<br />
+&lt;used in primary hand&gt;     a jagged black spear..it hums softly<br />
+&lt;used in secondary hand&gt;   a short crimson blade<br />
+<br />
+247H 73V 3410115X 0C Mem:6 Exits:NESWU&gt; watch varia<br />
+You now watch Varia.<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; <br />
+Varia says 'no i'm not'<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; gt ready to go on varia?<br />
+You tell your group 'ready to go on varia?'<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; <br />
+Elyana tells your group 'ready'<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; <br />
+A Knight of the Sword arrives from the west.<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; <br />
+A Knight of the Sword leaves west.<br />
+<br />
+247H 73V 3410115X 0C [**Varia:Perfect**] Mem:6 Exits:NESWU&gt; cast 'harm' varia<br />
+You utter the words, 'harm'<br />
+You grab Varia, who screams in pain.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Good] Mem:8 Exits:NESWU&gt; <br />
+You stop watching Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Good] Mem:8 Exits:NESWU&gt; <br />
+Elyana focuses harshly on Varia and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Fair] Mem:8 Exits:NESWU&gt; <br />
+You barely hit Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Fair] Mem:8 Exits:NESWU&gt; <br />
+A Knight of the Sword leaves south.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Fair] Mem:8 Exits:NESWU&gt; <br />
+Elyana focuses harshly on Varia and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:V.Bad] Mem:8 Exits:NESWU&gt; <br />
+You barely hit Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:V.Bad] Mem:8 Exits:NESWU&gt; c 'h p' varia<br />
+You utter the words, 'hold person'<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:V.Bad] Mem:9 Exits:NESWU&gt; c 'h p' varia<br />
+<br />
+Elyana focuses harshly on Varia and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+The sound of bones cracking echoes as Elyana's force bolt slams into Varia.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Awful] Mem:9 Exits:NESWU&gt; You utter the words, 'hold person'<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Awful] Mem:9 Exits:NESWU&gt; g all varia<br />
+<br />
+Elyana focuses harshly on Varia and utters some strange words.<br />
+Elyana slowly fades into existence.<br />
+Brains splatter on you as Elyana's force bolt shatters Varia's skull.<br />
+You receive 0 experience.<br />
+Varia is dead! R.I.P.<br />
+<br />
+247H 73V 3410115X 0C [Me:V.Good] [Varia:Dying] Mem:9 Exits:NESWU&gt; <br />
+The death cry of Varia echoes from somewhere nearby...<br />
+Kraz stops following Varia.<br />
+Varia now follows Kraz.<br />
+Kraz is the new leader of Varia's group.<br />
+Varia stops following Kraz.<br />
+You stop following Varia.<br />
+You now follow Kraz.<br />
+<br />
+247H 73V 3410115X 0C Mem:9 Exits:NESWU&gt; You get a short crimson blade from the corpse of Varia.<br />
+You are zapped by a jagged black spear and instantly drop it.<br />
+You get a merchant's beltpouch from the corpse of Varia.<br />
+You get a cloak of fog and shadows from the corpse of Varia.<br />
+You get a pair of dog hair sleeves from the corpse of Varia.<br />
+You get a pair of supple leather gloves from the corpse of Varia.<br />
+You get thin golden dragonscale boots from the corpse of Varia.<br />
+You get a suit of tanned leather armor from the corpse of Varia.<br />
+You get a burned black cloak from the corpse of Varia.<br />
+You get a large pile of coins from the corpse of Varia.<br />
+There were 213 coins.<br />
+You get a small canteen from the corpse of Varia.<br />
+You get a small canteen from the corpse of Varia.<br />
+You get a small canteen from the corpse of Varia.<br />
+You get a large piece of pork chop from the corpse of Varia.<br />
+You get a large piece of pork chop from the corpse of Varia.<br />
+You get a scroll of recall from the corpse of Varia.<br />
+You get a small canteen from the corpse of Varia.<br />
+You get a small canteen from the corpse of Varia.<br />
+You get a strip of dik-dik jerky from the corpse of Varia.<br />
+You get a strip of dik-dik jerky from the corpse of Varia.<br />
+You get a scroll of recall from the corpse of Varia.<br />
+You get a transparent bone spear from the corpse of Varia.<br />
+You get a scroll of recall from the corpse of Varia.<br />
+You get a small wooden chest from the corpse of Varia.<br />
+Chest : You can't carry that much weight.<br />
+You get a large hide waterskin from the corpse of Varia.<br />
+<br />
+247H 73V 3410115X 213C Mem:9 Exits:NESWU&gt; <br />
+Elyana focuses harshly on Kraz and utters the words, 'silence'.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; <br />
+Kraz recites a glowing scroll of recall.<br />
+Kraz disappears.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; <br />
+Elyana spits over her left shoulder.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; say str<br />
+You say 'str'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; droa pll.cant<br />
+Huh?!<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; drop all.canteen<br />
+You drop a small canteen.<br />
+You drop a small canteen.<br />
+You drop a small canteen.<br />
+You drop a small canteen.<br />
+You drop a small canteen.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; <br />
+Elyana focuses on you and utters some strange words.<br />
+You feel stronger.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; get all corpse<br />
+You get a chest made of bones from the corpse of Varia.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; l in che<br />
+You do not see that item here.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; l in chest<br />
+chest (carried) : <br />
+a small diamond shield..it glows dimly<br />
+a small canteen<br />
+a hooded lantern<br />
+a portable keg<br />
+a blue potion of remove poison<br />
+a crystal shard necklace..it glows dimly<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; say good<br />
+You say 'good'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; say i got half my stuff<br />
+i<br />
+You say 'i got half my stuff'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; You are carrying:<br />
+a chest made of bones<br />
+a large hide waterskin<br />
+a small wooden chest<br />
+a scroll of recall<br />
+a transparent bone spear<br />
+a scroll of recall<br />
+a strip of dik-dik jerky [2]<br />
+a scroll of recall<br />
+a large piece of pork chop [2]<br />
+a burned black cloak<br />
+a suit of tanned leather armor<br />
+thin golden dragonscale boots<br />
+a pair of supple leather gloves<br />
+a pair of dog hair sleeves<br />
+a cloak of fog and shadows<br />
+a merchant's beltpouch<br />
+a short crimson blade<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; put all chest<br />
+You put a large hide waterskin in a chest made of bones.<br />
+You put a small wooden chest in a chest made of bones.<br />
+You put a scroll of recall in a chest made of bones.<br />
+You put a transparent bone spear in a chest made of bones.<br />
+You put a scroll of recall in a chest made of bones.<br />
+You put a strip of dik-dik jerky in a chest made of bones.<br />
+You put a strip of dik-dik jerky in a chest made of bones.<br />
+You put a scroll of recall in a chest made of bones.<br />
+You put a large piece of pork chop in a chest made of bones.<br />
+You put a large piece of pork chop in a chest made of bones.<br />
+You put a burned black cloak in a chest made of bones.<br />
+You put a suit of tanned leather armor in a chest made of bones.<br />
+You put thin golden dragonscale boots in a chest made of bones.<br />
+You put a pair of supple leather gloves in a chest made of bones.<br />
+You put a pair of dog hair sleeves in a chest made of bones.<br />
+You put a cloak of fog and shadows in a chest made of bones.<br />
+A merchant's beltpouch won't fit.<br />
+You put a short crimson blade in a chest made of bones.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; g glowing.recall chest<br />
+The chest doesn't seem to have what you are looking for.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; gt ok<br />
+You tell your group 'ok'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; rec recall<br />
+You do not have that item.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; g recall chest<br />
+You get a scroll of recall from a chest made of bones.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; gt lets<br />
+You tell your group 'lets'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; gt go to<br />
+You tell your group 'go to'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; scan<br />
+Looking north:<br />
+The road leads to the south gates of the mighty city of Vingaard.<br />
+Looking east:<br />
+The paved road leads easterly through the Solamnic plains toward Kalaman.<br />
+Looking south:<br />
+The road leads south through the plains of Solamnia.<br />
+Looking west:<br />
+The road becomes paved and leads west through the solamnic plains.<br />
+Looking up:<br />
+A small staircase along the wall leads up to a small hatch in the ceiling.<br />
+The hatch is open.<br />
+Looking down:<br />
+You see nothing special.<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; who<br />
+Immortals<br />
+---------<br />
+[    Retired    ] Hekler<br />
+[    Guardian   ] Queen Asuka Yameda<br />
+[  Greater God  ] Phenglei Kai, Greater God of Morons<br />
+<br />
+Heroes<br />
+------<br />
+[      Hero     ] Who the Hal are you?<br />
+[    Retired    ] Skoraeus the Male Hylar Dwarf<br />
+[    Retired    ] Gahris<br />
+<br />
+Mortals<br />
+-------<br />
+Xioa the Male Hylar Dwarf<br />
+Zardok the Male Half Elf<br />
+Aier, Crown'd with the Golden Sun<br />
+Azrael the Male High Elf<br />
+Kakalith the Male High Elf<br />
+Aramiil Even'Flow<br />
+Galafidel the Male Theiwar Dwarf<br />
+Ender Got A Temper, Legacy of Attitude<br />
+<br />
+ [return for more, q to stop]q<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; <br />
+Elyana tells your group 'where'<br />
+<br />
+258H 96V 3410115X 213C Mem:8 Exits:NESWU&gt; rec recall<br />
+You grab a scroll of recall.<br />
+You recite a scroll of recall which dissolves.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='214'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=214">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="214">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

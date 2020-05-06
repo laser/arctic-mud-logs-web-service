@@ -1,0 +1,1633 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><head>
+<title>&lt;yAir&gt; he walks down the street, picks something up and sells it for $30</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {background-color: #ffffff;}
+
+	#content {
+		background-color: #ffffff;
+		margin-right:1%;
+		margin-left:1%;
+		margin-top:5px;
+		padding-bottom:10px;
+		border:1px solid #000;
+		text-align:left;
+		min-width:500px;
+		}
+		
+	#menufooter  {
+		margin-bottom:20px;
+		}
+		
+	.titles {
+		font-size:14px;
+		}
+	
+	.menus {
+		border-left:1px solid #000; 
+		border-bottom:1px solid #000;
+		border-top:1px solid #000;
+		border-right:10px solid #000;
+		background:;
+		color:#000;
+		padding:10px;
+		margin-bottom:10px;
+		text-align:left;
+		font-size:12px;
+		}
+	
+	#menu {
+		width:200px;
+		padding:0px;
+		margin-left:10px;
+		margin-right:-3px;
+		float:right;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override out bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		}
+	html>body #menu {
+		margin-right:-3px;
+		}
+		
+	p,h1,h2 {
+		margin-top:0px;
+		margin-bottom:10px;padding:0px 20px 0px 20px;
+		}
+		
+	h2 {
+		font-size:16px;
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+		
+	#title h1 {
+		font-size:18px;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
+		border-right:10px solid #000;
+		border-left:10px solid #000;
+		margin-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+		
+	#title {
+		background-color:;
+		padding:0px;
+		margin-right:-6px;
+		margin-left:-6px;
+		width:100%; /* I have to specify a width for IE5 PC, or else it ignores the top-margin of the H1 element therein. But 100% is different in browsers without IE5x PC's broken box model, so I have to use the CSS2 selector trick to set the width to auto for those browsers*/
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		width:auto;
+		}
+	html>body #title {
+		width:auto;
+		}
+			
+	a.sitelinksred { color:#c00; }
+	a.sitelinksredorange { color:#f60; }
+	a.sitelinksorange { color:#f90; }
+	a.sitelinksyellow { color:#fc0; }
+		
+	a.anchor {
+		font-size:12px;
+		font-weight:normal;
+		}
+		
+	p.anchor {
+		text-align:right;
+		}
+	
+	.links {
+		margin-left:50px;
+		margin-right:30px;
+		}
+	
+	#layouts {
+		font-size:12px;
+		margin-left:10px;
+		}
+
+
+.comment {padding : 3px;
+	margin : 5px 210px 5px 20px;
+	border : 1px solid rgb(160,160,160);
+	background-color:rgb(255,255,255);
+	color:rgb(0,0,0);}
+
+
+.comment .title {border-bottom :1px solid rgb(120,120,120);
+	padding : 6px;}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="title"><h1>&lt;VeWtiFuL&gt; yea but now i started a garden center out of my driveway</h1></div>
+<div id="menu">
+
+<div id="login" class="menus">
+<form action="/index.php" method=post>
+<div id="logintitle" class="titles"><strong>Login</strong></div>
+
+
+	<table>
+	<tr><td>Username: </td><td><input type="text" name="username" size="10"></td></tr>
+	<tr><td>Password: </td><td><input type="password" name="password" size="10"></td></tr>
+	<tr><td><td><input type="submit" value="Login" name="Login"></td></tr>
+	</table>
+	<a href="/index.php?option=forgot">Forgot your password?</a><br/>
+	<a href="/index.php?option=register">Register for a Login</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+<div id="logs" class="menus">
+<div id="logstitle" class="titles"><strong>Mud Logs</strong></div>
+
+
+<!-- PHP Generated Message: Authlevel: 0-->
+
+	<a href="/index.php?option=recentlogs">Recent Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=10">Older Logs</a><br/>
+	<a href="/index.php?option=recentlogs&lognbr=0">Newer Logs</a><br/>
+	<a href="/index.php?option=toplogs">Top Rated Logs</a><br/>
+	<a href="/index.php?option=mostviewedlogs">Most Viewed Logs</a><br/>
+	<a href="/index.php?option=uploadlog">Upload A Log</a><br/>
+	<a href="/index.php?option=collections">Log Collections</a><br/>
+	<a href="/index.php?option=quicklist">Log Quicklist</a><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="links" class="menus">
+<div id="linkstitle" class="titles"><strong>Mud Links</strong></div>
+
+<a href="http://arcticmud.blogspot.com/">Arcticmud Blog!</a><br><br>
+<a href="http://mudlogs.foghaven.net/">Xanitha's Mud Log Page</a><br>
+<a href="http://pollux.ldz.lv/~punk/upload/index.php">RGB Mud Log Page</a><br>
+<a href="http://tirannon.tky.hut.fi/arctic/">Lasse's Logs (not current)</a><br>
+<a href="http://normstorm.com/template/m-news.html">Oligo's Logs (not current)</a><br><br>
+<a href="http://mud.arctic.org/forum/">Arctic Mud Forums</a><br>
+<a href="http://mud.arctic.org/">Arctic Mud Homepage</a><br><br>
+<a href="http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just">Vote for Arctic<br>on Top Mud Sites</a></div>
+
+<div id="logs" class="menus">
+
+
+<!-- PHP Generated Message: MENU AUTHLEVEL 1-->
+
+<!-- PHP Generated Message: SQL: SELECT * FROM poll_desc ORDER BY pollID DESC-->
+<p><b><i>What is the worst change this wipe?</i></b><p><form><p>
+<input type=radio value=0 name=voteid>hp gain randomness<br>
+<input type=radio value=1 name=voteid>+heal items<br>
+<input type=radio value=2 name=voteid>every high level zone bugged<br>
+<input type=radio value=3 name=voteid>road shortening<br>
+<input type=radio value=4 name=voteid>rolling system<br>
+<input type=radio value=5 name=voteid>nosummon items<br>
+<input type=radio value=6 name=voteid>all of the above<br>
+<input type=submit name=action value='Vote'>
+ <input type=submit name=action value='Results'>
+<input type=hidden name=pollid value=137><input type=hidden name=option value=poll></form><p><a href="/index.php?option=poll&action=new">Submit a Poll</a><br><a href="/index.php?option=poll&action=listpolls">List Previous Polls</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+<!-- normal content -->
+
+<p>
+
+
+<!-- PHP Generated Message: OPTION IS: viewlog-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_db where id = 1615-->
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_view where viewersIP='207.241.232.16' and logid='1615'-->
+
+<!-- PHP Generated Message: IP not in db-->
+
+<p>
+<b><font size="3">
+BSP vs Wildlaws</font></b>
+<p>
+POV: 
+Rojany<p>
+Log Rating:
+1.1000<!-- pull log rating from db -->
+<!-- display logos + portion of logos for rating -->
+<p>
+<i>
+We return to the ever popular fight spot Que Kul</i>
+<p>
+<p>
+
+<br />
+<br />
+**Nihilism: i'll clair?<br />
+<br />
+597H 140V 5380323X 193C Exits:EW&gt; <br />
+<br />
+Hipho flies east.<br />
+Warp flies east.<br />
+Nihilism flies east.<br />
+Llanth flies east.<br />
+Dro flies east.<br />
+Dagam flies east.<br />
+Kaje flies east.<br />
+You follow Hipho east.<br />
+Bastich flies in from the west.<br />
+Susie flies in from the west.<br />
+A Path into the Mountains<br />
+    The mountain path turns to the north here, and continues on towards the<br />
+mountainside path that you noted earlier. The path doesn't appear to be<br />
+very steep, and leads up to a huge flat stone that extends over a ledge.<br />
+A solid iron crossbow rests on the ground here.<br />
+A dwarven pike has been left lying here.<br />
+A sharp, bladelike shard of ice lies here.<br />
+A pale yellow root that looks like a carrot lies here.<br />
+A throwing spear has been tossed point first into the dirt.<br />
+A plain component pouch is lying on the ground...it glows blue<br />
+A delicious loaf of bread rests upon the ground.<br />
+Some shiny sleeves of blue dragon scales have been placed here.<br />
+A pork pie lies on the floor here. [2]<br />
+A small white die lies here.<br />
+Susie Kai, BSP Brute Cavewoman is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Bastich, Avatar of Greed is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Kaje the Female Half Elf is standing here. (flying) (invisible)<br />
+. . . has a metallic luster.<br />
+Dagam, Heavyhanded BSP Inquisitor is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Dro, BSP is standing here. (flying) (invis<br />
+ible)<br />
+. . . has a tough exterior.<br />
+Llanth E'Lot, Blood Sea Silent Watcher is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Nihilism the Male Human is standing here. (flying) (invisible)<br />
+. . . is outlined with a dim aura.<br />
+Warp, Swimming in the Blood Sea is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Hipho Crates, The Ancient Patriarch of the Blood Sea Hordes is standing here. (flying) (invisible)<br />
+. . . is outlined by a pinkish flame.<br />
+Semper Fi, Outlaw Mountaineer is standing here. (flying) (invisible)<br />
+Zader the Male Wild Elf is standing here. (flying) (invisible)<br />
+Chappa Outlaw, the Redicuklus Interceptor is standing here. (flying) (invisible)<br />
+Helena, Rosy Cheeks is standing here. (flying) (invisible)<br />
+Jaxis Fireforge, Outlaw Brother in Blood is standing here. (flying) (invisible)<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+Zader slowly fades into existence.<br />
+Llanth steps aside as Zader attempts a bash, stumbles, and falls flat on his face.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Chappa slowly fades into existence.<br />
+Chappa crashes into Bastich in a thundering collision, knocking him to the ground!<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+Warp leaps past Jaxis, unbalancing them.<br />
+Warp slowly fades into existence.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Helena slowly fades into existence.<br />
+Helena crashes into Dro in a thundering collision, knocking him to the ground!<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Semper growls.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+Semper gets a crazed look.<br />
+Semper slowly fades into existence.<br />
+Semper bruises Llanth with her cleave.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Warp whispers something, and suddenly a funnel of air erupts around him!<br />
+A sudden wind rushes by you.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Maxmillian flies in from the north.<br />
+Zanjo flies in from the north.<br />
+Aelorin flies in from the north.<br />
+Armas flies in from the north.<br />
+bash armas<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+Llanth panics, and attempts to flee.<br />
+Llanth flies north.<br />
+<br />
+597H 138V 5380323X 193C Exits:NW&gt; <br />
+You crash into Armas in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+597H 138V 5380323X 193C [Me:V.Good] [Armas:V.Good] Exits:NW&gt; <br />
+<br />
+Warp panics, and attempts to flee.<br />
+Warp flies west.<br />
+<br />
+597H 138V 5380323X 193C [Me:V.Good] [Armas:V.Good] Exits:NW&gt; <br />
+A black light shoots forth from Susie's mace at Aelorin!<br />
+Susie slowly fades into existence.<br />
+Susie massacres Aelorin with her crush.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+<br />
+597H 138V 5380323X 193C [Me:V.Good] [Armas:V.Good] Exits:NW&gt; <br />
+Maxmillian deftly steps in front of Armas, pushing into the frey.<br />
+Maxmillian heroically rescues Armas.<br />
+Maxmillian raise his shield and blocks your blow.<br />
+Maxmillian raise his shield and blocks your blow.<br />
+Maxmillian bruises YOU with his stab.<br />
+Susie massacres Aelorin with her crush.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+Susie slashes Aelorin extremely hard.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+Susie massacres Aelorin with her crush.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+Aelorin bruises Susie with his smite.<br />
+Helena bruises Dro with her stab.<br />
+Dro slowly fades into existence.<br />
+Helena is chilled, as she swings at Dro.<br />
+Helena bruises Dro with her stab.<br />
+Helena is chilled, as she swings at Dro.<br />
+Dro bludgeons Helena hard.<br />
+Dro bludgeons Helena hard.<br />
+Chappa bruises Bastich with her slash.<br />
+Chappa slashes Bastich very hard.<br />
+Bastich massacres Chappa with his slash.<br />
+<br />
+596H <br />
+m138V 5380323X 193C [Me:V.Good] [Maxmillian:Perfect] Exits:NW&gt; <br />
+Hipho heroically rescues Dro.<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Perfect] Exits:NW&gt; <br />
+<br />
+Dagam twists his ring nervously.<br />
+There is lightning in the sky.<br />
+Dagam shudders slightly and begins to glow from within.<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Perfect] Exits:NW&gt; <br />
+<br />
+Dagam utters some strange words.<br />
+Dagam creates a lightning storm.<br />
+Dagam slowly fades into existence.<br />
+Armas screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+bash armasAelorin screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Dagam destroys Zanjo's mirror images.<br />
+Zanjo screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Maxmillian screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Semper ducks out of the way of Dagam's attack.<br />
+Zader screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Chappa screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Helena screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Jaxis screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:V.Good] Exits:NW&gt; <br />
+Nihilism lifts his staff into the air, releasing the magic inside.<br />
+Nihilism's hands issue a spray of prismatic color!<br />
+Nihilism slowly fades into existence.<br />
+Armas is blasted by a spray of scintillating blue!<br />
+Aelorin is caught in a spray of radiant yellow!<br />
+Zanjo is caught in a spray of bright orange!<br />
+Maxmillian is caught in a spray of shimmering red!<br />
+Semper ducks out of the way of Nihilism's attack.<br />
+Zader is struck by a spray of vibrant green!<br />
+Chappa is hit by a spray of gleaming indigo!<br />
+Helena is struck by a spray of murky violet!<br />
+Helena is hit by a spray of gleaming indigo!<br />
+Jaxis is struck by a spray of vibrant green!<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Nihilism utters some strange words.<br />
+Nihilism's hands issue a spray of color!<br />
+Armas is caught in a spray of shimmering red!<br />
+bash armasAelorin is caught in a spray of shimmering red!<br />
+Zanjo is caught in a spray of shimmering red!<br />
+Maxmillian is caught in a spray of shimmering red!<br />
+Semper ducks out of the way of Nihilism's attack.<br />
+Zader is caught in a spray of radiant yellow!<br />
+Chappa is caught in a spray of shimmering red!<br />
+Helena is caught in a spray of shimmering red!<br />
+Jaxis is caught in a spray of radiant yellow!<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Warp flies in from the west.<br />
+Warp studies the area intently.<br />
+<br />
+596H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Aelorin utters some strange words.<br />
+Warp ducks out of the way of Aelorin's attack.<br />
+Susie is shredded by shards of ice.<br />
+Bastich is shredded by shards of ice.<br />
+Your body is torn by huge pieces of ice.<br />
+Kaje appears to grow stronger.<br />
+Kaje manages to avoid the brunt of the storm.<br />
+Dagam is shredded by shards of ice.<br />
+Dro is shredded by shards of ice.<br />
+Aelorin destroys Nihilism's mirror images.<br />
+Nihilism is shredded by shards of ice.<br />
+Hipho is shredded by shards of ice.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Warp slashes Maxmillian extremely hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Bastich stands up.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Bastich panics, and attempts to flee.<br />
+Bastich flies west.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Llanth flies in from the north.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Chappa stops using a glowing scroll of recall.<br />
+Chappa grabs a packet of white dust.<br />
+   Chappa rips open a small packet and scatters white dust around<br />
+herself.  The dust quickly swirls and surrounds you, covering you and<br />
+all nearby with a thin coating...the dust begins to get into your eyes,<br />
+stinging painfully!<br />
+You feel a slight chill.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Dro stands up.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Zanjo panics, and attempts to flee.<br />
+Zanjo flies west.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Jaxis panics, and attempts to flee.<br />
+Jaxis flies north.<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+Dro utters some strange words.<br />
+Armas is shredded by shards of ice.<br />
+Aelorin is shredded by shards of ice.<br />
+Maxmillian is shredded by shards of ice.<br />
+Semper is shredded by shards of ice.<br />
+Zader is shredded by shards of ice.<br />
+Chappa is shredded by shards of ice.<br />
+Helena is shredded by shards of ice.<br />
+<br />
+bas aelorin569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Good] Exits:NW&gt; <br />
+<br />
+Llanth utters some strange words.<br />
+Llanth's hands send forth blinding rays of sunlight!<br />
+Llanth slowly fades into existence.<br />
+Armas withers as a ray of sunlight sent by Llanth engulfs him!<br />
+Aelorin withers as a ray of sunlight sent by Llanth engulfs him!<br />
+Maxmillian withers as a ray of sunlight sent by Llanth engulfs him!<br />
+Semper withers as a ray of sunlight sent by Llanth engulfs her!<br />
+Zader withers as a ray of sunlight sent by Llanth engulfs him!<br />
+Zader seems to be blinded!<br />
+Chappa withers as a ray of sunlight sent by Llanth engulfs her!<br />
+Helena withers as a ray of sunlight sent by Llanth engulfs her!<br />
+<br />
+569H 138V 5380323X 193C [Me:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Maxmillian deftly steps in front of Armas, pushing into the frey.<br />
+Maxmillian heroically rescues Armas.<br />
+Maxmillian deftly steps in front of Armas, pushing into the frey.<br />
+Maxmillian heroically rescues Armas.<br />
+Llanth misses Maxmillian with his bludgeon.<br />
+Llanth bludgeons Maxmillian very hard.<br />
+Maxmillian's fireshield does him little good as Llanth takes a swing at him.<br />
+Maxmillian bruises Llanth with his stab.<br />
+Nihilism misses Maxmillian with his bludgeon.<br />
+Chappa slashes Dro extremely hard.<br />
+Chappa is chilled, as she swings at Dro.<br />
+Chappa slashes Dro very hard.<br />
+Chappa is chilled, as she swings at Dro.<br />
+Semper misses Dro with her cleave.<br />
+Semper barely whips Dro.<br />
+Semper is chilled, as she swings at Dro.<br />
+Warp slashes Maxmillian extremely hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Warp slashes Maxmillian very hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Warp massacres Maxmillian with his slash.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Kaje massacres Aelorin with her slash.<br />
+Kaje appears to grow stronger.<br />
+Aelorin's iceshield does him little good as Kaje takes a swing at him.<br />
+Kaje massacres Aelorin with her slash.<br />
+Kaje appears to grow stronger.<br />
+Aelorin's iceshield does him little good as Kaje takes a swing at him.<br />
+Zader misses Dagam with his cleave.<br />
+Dagam bruises Armas with his pierce.<br />
+Armas bruises Dagam with his crush.<br />
+Armas is burned, as he swings at Dagam.<br />
+Armas is chilled, as he swings at Dagam.<br />
+Helena bruises Hipho with her stab.<br />
+Hipho slowly fades into existence.<br />
+Helena is burned, as she swings at Hipho.<br />
+Helena is chilled, as she swings at Hipho.<br />
+Helena bruises Hipho with her stab.<br />
+Helena is burned, as she swings at Hipho.<br />
+Helena is chilled, as she swings at Hipho.<br />
+Hipho massacres Helena with his drain.<br />
+Hipho slashes Helena extremely hard.<br />
+You crush Maxmillian extremely hard.<br />
+You feel intense pain as you swing through Maxmillian's flaming aura.<br />
+Susie crushes Aelorin extremely hard.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+Aelorin is stunned, but will likely regain consciousness again.<br />
+Susie massacres Aelorin with her slash.<br />
+Susie is chilled, as she swings at Aelorin.<br />
+You receive 0 experience.<br />
+Aelorin is dead! R.I.P.<br />
+get all.coins corpseThe death cry of Aelorin echoes from somewhere nearby...<br />
+Aelorin sinks gently to the ground.<br />
+Aelorin stops following Maxmillian.<br />
+You try to bash Armas, but you miss and tumble forward onto your face.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Llanth:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Jaxis flies in from the north.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Llanth:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Hipho heroically rescues Llanth.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Maxmillian steps aside as Susie attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Semper gets a large pile of coins from the corpse of Aelorin.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+Helena gets a mithril flail from the corpse of Aelorin.<br />
+Helena gets a maniple from the corpse of Aelorin.<br />
+Helena gets a plain component pouch from the corpse of Aelorin.<br />
+Helena gets a silver waist chain from the corpse of Aelorin.<br />
+Helena gets a black robe of the Thorn from the corpse of Aelorin.<br />
+Helena gets a shield of woven mistletoe from the corpse of Aelorin.<br />
+Helena gets some oakenwood gloves from the corpse of Aelorin.<br />
+Helena gets a peaked canvas cap from the corpse of Aelorin.<br />
+Helena gets a chasuble from the corpse of Aelorin.<br />
+Helena gets a smokey glass charm from the corpse of Aelorin.<br />
+Helena gets a spherical diamond pendant from the corpse of Aelorin.<br />
+Helena gets a ring of protection from the corpse of Aelorin.<br />
+Helena gets a blood red crystal ring from the corpse of Aelorin.<br />
+Helena gets the eye of Valiance from the corpse of Aelorin.<br />
+Helena gets a blank scroll from the corpse of Aelorin.<br />
+Helena gets a black suede backpack from the corpse of Aelorin.<br />
+Helena gets a vine belt from the corpse of Aelorin.<br />
+Helena gets a furry white cloak from the corpse of Aelorin.<br />
+Helena gets a white silk robe from the corpse of Aelorin.<br />
+<br />
+st559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+<br />
+Dagam utters some strange words.<br />
+Dagam creates a lightning storm.<br />
+Jaxis screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+A carved ivory ring in use by Jaxis is destroyed.<br />
+Armas screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+bash armasMaxmillian screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Semper ducks out of the way of Dagam's attack.<br />
+Zader screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Chappa screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Helena screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+<br />
+Helena panics, and attempts to flee.<br />
+Helena flies north.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+<br />
+Zader gets a vial from his knapsack.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+<br />
+Zader quaffs a vial of orange flame.<br />
+Zader smiles as the air around him solidifies.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Fair] Exits:NW&gt; <br />
+<br />
+Hipho heroically rescues Dro.<br />
+Zader stands up.<br />
+Dro utters some strange words.<br />
+Dro slowly fades into existence.<br />
+Jaxis is shredded by shards of ice.<br />
+Armas is shredded by shards of ice.<br />
+Maxmillian is shredded by shards of ice.<br />
+Semper ducks out of the way of Dro's attack.<br />
+Zader is shredded by shards of ice.<br />
+Chappa is shredded by shards of ice.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Bad] Exits:NW&gt; <br />
+   Zader rips open a small packet and scatters white dust around<br />
+himself.  The dust quickly swirls and surrounds you, covering you and<br />
+all nearby with a thin coating...the dust begins to get into your eyes,<br />
+stinging painfully!<br />
+You feel a slight chill.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Bad] Exits:NW&gt; <br />
+<br />
+Llanth focuses on Hipho and utters some strange words.<br />
+Llanth heals Hipho.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; <br />
+<br />
+Jaxis panics, and attempts to flee.<br />
+Jaxis flies west.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; <br />
+<br />
+Kaje crashes into Semper in a thundering collision, knocking her to the ground!<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; <br />
+Nihilism focuses harshly on Armas and utters some strange words.<br />
+Brains splatter on you as Nihilism's force bolt shatters Armas's skull.<br />
+You receive 0 experience.<br />
+Armas is dead! R.I.P.<br />
+get all.coins corpse<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; <br />
+The death cry of Armas echoes from somewhere nearby...<br />
+Armas stops following Maxmillian.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; <br />
+Warp gets a large pile of coins from the corpse of Armas.<br />
+<br />
+559H 138V 5380323X 193C [Me:Good] [Hipho:Perfect] [Maxmillian:Bad] Exits:NW&gt; Dagam misses Zader with his pierce.<br />
+Kaje massacres Semper with her slash.<br />
+Dro bludgeons Semper extremely hard.<br />
+Dro bludgeons Semper extremely hard.<br />
+Chappa bruises Hipho with her slash.<br />
+Chappa is burned, as she swings at Hipho.<br />
+Chappa is chilled, as she swings at Hipho.<br />
+Chappa bruises Hipho with her slash.<br />
+Chappa is burned, as she swings at Hipho.<br />
+Chappa is chilled, as she swings at Hipho.<br />
+Hipho misses Chappa with his drain.<br />
+Hipho slashes Chappa hard.<br />
+A black light shoots forth from Susie's mace at Maxmillian!<br />
+Susie crushes Maxmillian extremely hard.<br />
+Susie is burned, as she swings at Maxmillian.<br />
+Susie slashes Maxmillian extremely hard.<br />
+Susie is burned, as she swings at Maxmillian.<br />
+Maxmillian bruises Hipho with his stab.<br />
+Maxmillian is burned, as he swings at Hipho.<br />
+Maxmillian is chilled, as he swings at Hipho.<br />
+Semper cleaves Dro extremely hard.<br />
+Semper is chilled, as she swings at Dro.<br />
+Semper whips Dro very hard.<br />
+Semper is chilled, as she swings at Dro.<br />
+Semper thrashes Dro good, forcing them to the ground.<br />
+Semper massacres Dro with her cleave.<br />
+Semper is chilled, as she swings at Dro.<br />
+Warp slashes Maxmillian extremely hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Warp massacres Maxmillian with his slash.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Warp slashes Maxmillian extremely hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Zader bruises Dagam with his cleave.<br />
+Zader is burned, as he swings at Dagam.<br />
+Zader is chilled, as he swings at Dagam.<br />
+Zader cleaves Dagam extremely hard.<br />
+Zader is burned, as he swings at Dagam.<br />
+Zader is chilled, as he swings at Dagam.<br />
+You should probably stand up!<br />
+You crush Maxmillian extremely hard.<br />
+You feel intense pain as you swing through Maxmillian's flaming aura.<br />
+You can't do that while sitting.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; You can't do that while sitting.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+bash armasst547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+You stand up.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; You couldn't find what you were looking for.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+Chappa panics, and attempts to flee.<br />
+Chappa flies west.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+Susie stands up.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+You are already standing.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+Jaxis flies in from the west.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+Warp dives into Maxmillian and savagely bites him, tearing a huge chunk from his flesh.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+<br />
+Helena flies in from the north.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+<br />
+Dro steps aside as Helena attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:V.Bad] Exits:NW&gt; <br />
+<br />
+Dagam utters some strange words.<br />
+Dagam creates a lightning storm.<br />
+Helena screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Jaxis screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Maxmillian screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+Semper screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit her.<br />
+Zader screams in pain as the lightning bolts summoned by Dagam from the boiling clouds hit him.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+Maxmillian steps aside as Susie attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+   Maxmillian rips open a small packet and scatters white dust around<br />
+himself.  The dust quickly swirls and surrounds you, covering you and<br />
+all nearby with a thin coating...the dust begins to get into your eyes,<br />
+stinging painfully!<br />
+You feel a slight chill.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+Zanjo flies in from the west.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+Hipho gets a diseased and perverse tome from the corpse of Armas.<br />
+Hipho gets a heavy wooden maul from the corpse of Armas.<br />
+Hipho gets a plain component pouch from the corpse of Armas.<br />
+Hipho gets some dark purple robes from the corpse of Armas.<br />
+Hipho gets a pair of pitch black gloves from the corpse of Armas.<br />
+Hipho gets a pair of elven boots from the corpse of Armas.<br />
+Hipho gets a frosted tin plate from the corpse of Armas.<br />
+Hipho gets a loaf of waybread from the corpse of Armas.<br />
+Hipho gets a loaf of waybread from the corpse of Armas.<br />
+Hipho gets a loaf of waybread from the corpse of Armas.<br />
+Hipho gets a loaf of waybread from the corpse of Armas.<br />
+Hipho gets a loaf of waybread from the corpse of Armas.<br />
+Hipho gets a vial of acidic juice from the corpse of Armas.<br />
+Hipho gets a mortar and pestle from the corpse of Armas.<br />
+Hipho gets a blackened chest from the corpse of Armas.<br />
+Hipho gets a waterskin from the corpse of Armas.<br />
+Hipho gets a yellow potion from the corpse of Armas.<br />
+Hipho gets a yellow potion from the corpse of Armas.<br />
+Hipho gets a roll of thick-woven cloth from the corpse of Armas.<br />
+Hipho gets a waterskin from the corpse of Armas.<br />
+Hipho gets a waterskin from the corpse of Armas.<br />
+Hipho gets a waterskin from the corpse of Armas.<br />
+<br />
+bash547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+You try to bash Maxmillian, but you miss and tumble forward onto your face.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+Hipho heroically rescues Dro.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+Zanjo flies north.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+<br />
+Nihilism gets a waterskin from the corpse of Armas.<br />
+Nihilism gets a waterskin from the corpse of Armas.<br />
+<br />
+547H 138V 5380323X 193C [Me:Good] [Hipho:V.Good] [Maxmillian:Awful] Exits:NW&gt; <br />
+st<br />
+Maxmillian bleeds profusely from his wounds.<br />
+Semper bruises Hipho with her cleave.<br />
+Semper is burned, as she swings at Hipho.<br />
+Semper is chilled, as she swings at Hipho.<br />
+Semper thrashes Hipho good, forcing them to the ground.<br />
+Semper whips Hipho very hard.<br />
+Semper is burned, as she swings at Hipho.<br />
+Semper is chilled, as she swings at Hipho.<br />
+Semper massacres Hipho with her cleave.<br />
+Semper is burned, as she swings at Hipho.<br />
+Semper is chilled, as she swings at Hipho.<br />
+Hipho massacres Semper with his drain.<br />
+Hipho slashes Semper extremely hard.<br />
+Jaxis slowly fades into existence.<br />
+Jaxis slashes Dagam extremely hard.<br />
+Jaxis is burned, as he swings at Dagam.<br />
+Jaxis is chilled, as he swings at Dagam.<br />
+Jaxis slashes Dagam extremely hard.<br />
+Jaxis is burned, as he swings at Dagam.<br />
+Jaxis is chilled, as he swings at Dagam.<br />
+Helena massacres Dro with her stab.<br />
+Helena is chilled, as she swings at Dro.<br />
+Helena stabs Dro extremely hard.<br />
+Helena is chilled, as she swings at Dro.<br />
+Kaje massacres Semper with her slash.<br />
+Kaje annihilates Semper with her slash.<br />
+Susie massacres Maxmillian with her crush.<br />
+Susie is burned, as she swings at Maxmillian.<br />
+Susie misses Maxmillian with her slash.<br />
+Susie crushes Maxmillian extremely hard.<br />
+Susie is burned, as she swings at Maxmillian.<br />
+Maxmillian massacres Hipho with his stab.<br />
+Maxmillian is burned, as he swings at Hipho.<br />
+Maxmillian is chilled, as he swings at Hipho.<br />
+Nihilism misses Maxmillian with his bludgeon.<br />
+Warp massacres Maxmillian with his slash.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Warp slashes Maxmillian extremely hard.<br />
+Warp is burned, as he swings at Maxmillian.<br />
+Zader cleaves Dagam very hard.<br />
+Zader is burned, as he swings at Dagam.<br />
+Zader is chilled, as he swings at Dagam.<br />
+You massacre Maxmillian with your crush.<br />
+You feel intense pain as you swing through Maxmillian's flaming aura.<br />
+You receive 0 experience.<br />
+Maxmillian is dead! R.I.P.<br />
+get all.coins corpseThe death cry of Maxmillian echoes from somewhere nearby...<br />
+Maxmillian stops following Helena.<br />
+Zanjo stops following Maxmillian.<br />
+Zanjo now follows Helena.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Bastich flies in from the west.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Kaje gets a charred adamantite spetum from the corpse of Maxmillian.<br />
+Kaje gets a spiked golden bracelet from the corpse of Maxmillian.<br />
+Kaje gets a spiked golden bracelet from the corpse of Maxmillian.<br />
+Kaje gets a silver fauld from the corpse of Maxmillian.<br />
+Kaje gets a weatherbeaten rucksack from the corpse of Maxmillian.<br />
+Kaje is zapped by a platinum shield of Paladine and instantly drops it.<br />
+Kaje gets some red dragon scale sleeves from the corpse of Maxmillian.<br />
+Kaje is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Kaje gets a malachite inlaid mithril helm from the corpse of Maxmillian.<br />
+Kaje gets a shirt of shiny bronze dragon scales from the corpse of Maxmillian.<br />
+Kaje gets a spherical diamond pendant from the corpse of Maxmillian.<br />
+Kaje gets a wolf skin cloak from the corpse of Maxmillian.<br />
+Kaje gets a ring of ice from the corpse of Maxmillian.<br />
+Kaje gets a vile black potion from the corpse of Maxmillian.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Dro stands up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Jaxis gets a quartz crystal sphere.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Dro utters some strange words.<br />
+Helena is shredded by shards of ice.<br />
+Jaxis is shredded by shards of ice.<br />
+Semper is shredded by shards of ice.<br />
+Zader is shredded by shards of ice.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Helena stands up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Susie stands up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Dagam panics, and attempts to flee.<br />
+Dagam flies west.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Helena crashes into Dro in a thundering collision, knocking him to the ground!<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Nihilism utters some strange words.<br />
+Nihilism's hands issue a spray of color!<br />
+Helena is caught in a spray of radiant yellow!<br />
+Helena is caught in a spray of radiant yellow!<br />
+Jaxis is caught in a spray of radiant yellow!<br />
+Jaxis seems weaker.<br />
+Semper is caught in a spray of radiant yellow!<br />
+Zader is caught in a spray of radiant yellow!<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+bash jaxisstYou stand up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; The corpse doesn't seem to have what you are looking for.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; You crash into Jaxis in a bone crunching bash, sending him sprawling to the ground.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+<br />
+Dagam flies in from the west.<br />
+Llanth utters some strange words.<br />
+Llanth's hands send forth blinding rays of sunlight!<br />
+Helena withers as a ray of sunlight sent by Llanth engulfs her!<br />
+Jaxis withers as a ray of sunlight sent by Llanth engulfs him!<br />
+Jaxis seems to be blinded!<br />
+Llanth turns Semper to ashes with brilliant rays of sunlight.<br />
+You receive 0 experience.<br />
+Semper is dead! R.I.P.<br />
+get all.coins corpseZader withers as a ray of sunlight sent by Llanth engulfs him!<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+<br />
+The death cry of Semper echoes from somewhere nearby...<br />
+Semper stops following Helena.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+<br />
+Warp gets a thick, bloodstained chain from the corpse of Semper.<br />
+Warp gets a chipped ice reaver from the corpse of Semper.<br />
+Warp gets a dwarven belt from the corpse of Semper.<br />
+Warp gets a rugged elven backpack from the corpse of Semper.<br />
+Warp gets a green leather quiver from the corpse of Semper.<br />
+Warp gets a pair of pearl studded greaves from the corpse of Semper.<br />
+Warp gets a dark red visor from the corpse of Semper.<br />
+Warp gets a large reinforced double bandolier from the corpse of Semper.<br />
+Warp gets a spherical diamond pendant from the corpse of Semper.<br />
+Warp gets a very large pile of coins from the corpse of Semper.<br />
+Warp gets a glowing scroll of recall from the corpse of Semper.<br />
+Warp gets a blackened chest from the corpse of Semper.<br />
+Zader steps aside as Susie attempts a bash, stumbles, and falls flat on her face.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+Dagam utters some strange words.<br />
+Helena is shredded by shards of ice.<br />
+Jaxis is shredded by shards of ice.<br />
+Zader is shredded by shards of ice.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+Warp massacres Jaxis with his slash.<br />
+<br />
+535H 138V 5380323X 193C [Me:<br />
+7mGood] [Nihilism:V.Good] [Jaxis:V.Bad] Exits:NW&gt; <br />
+<br />
+The air suddenly ceases its violent rush.<br />
+Warp slashes Jaxis extremely hard.<br />
+Warp massacres Jaxis with his slash.<br />
+Dagam misses Helena with his pierce.<br />
+Susie crushes Zader extremely hard.<br />
+Susie slashes Zader very hard.<br />
+Llanth bludgeons Helena hard.<br />
+Llanth bludgeons Helena very hard.<br />
+You massacre Jaxis with your crush.<br />
+You massacre Jaxis with your crush.<br />
+Zader bruises Nihilism with his cleave.<br />
+Zader bruises Nihilism with his cleave.<br />
+Jaxis slashes Nihilism extremely hard.<br />
+Nihilism wavers under Jaxis's mighty slash!<br />
+Jaxis massacres Nihilism with his slash.<br />
+Nihilism misses Helena with his bludgeon.<br />
+Helena massacres Dro with her stab.<br />
+Helena is chilled, as she swings at Dro.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+<br />
+Bastich massacres Jaxis with his slash.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+<br />
+Kaje is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Kaje is zapped by a platinum shield of Paladine and instantly drops it.<br />
+Kaje gets a dwarven crossbow.<br />
+Kaje gets a dwarven pike.<br />
+Kaje gets some ginseng root.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+<br />
+Hipho is zapped by a platinum shield of Paladine and instantly drops it.<br />
+Hipho is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Hipho gets a shard of ice.<br />
+Hipho gets a light throwing spear.<br />
+Hipho gets a plain component pouch.<br />
+Hipho gets a loaf of waybread.<br />
+Hipho gets a pair of blue dragon scale sleeves.<br />
+Hipho gets a pork pie.<br />
+Hipho gets a pork pie.<br />
+Hipho gets a small white die.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+<br />
+Hipho is zapped by a platinum shield of Paladine and instantly drops it.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+You are already standing.<br />
+<br />
+535H 138V 5380323X 193C [Me:Good] [Nihilism:Good] [Jaxis:Awful] Exits:NW&gt; <br />
+Jaxis stands up.<br />
+The corpse doesn't seem to have what you are looking for.<br />
+Jaxis panics, and attempts to flee.<br />
+Jaxis flies north.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+bas<br />
+Zader panics, and attempts to flee.<br />
+Zader flies north.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+You couldn't find what you were looking for.<br />
+Dagam utters some strange words.<br />
+Helena is shredded by shards of ice.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Susie stands up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+gtell tic in 10<br />
+Llanth bludgeons Helena very hard.<br />
+Llanth misses Helena with his bludgeon.<br />
+Nihilism misses Helena with his bludgeon.<br />
+Dro bludgeons Helena hard.<br />
+Dro misses Helena with his bludgeon.<br />
+Helena massacres Dro with her stab.<br />
+Helena is chilled, as she swings at Dro.<br />
+Helena massacres Dro with her stab.<br />
+Helena is chilled, as she swings at Dro.<br />
+Llanth focuses on Dro and utters some strange words.<br />
+Llanth heals Dro.<br />
+Dro stands up.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Dro panics, and attempts to flee.<br />
+Dro flies north.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; You tell your group 'tic in 10'<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+Nihilism focuses harshly on Helena and utters some strange words.<br />
+The sound of bones cracking echoes as Nihilism's force bolt slams into Helena.<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+**Susie: 10 SEC TO TICK<br />
+<br />
+535H 138V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho is zapped by a platinum shield of Paladine and instantly drops it.<br />
+Hipho is zapped by some brushed steel gauntlets and instantly drops it.<br />
+<br />
+n535H 138V 5380323X 193C Exits:NW&gt; A Path into the Mountains<br />
+    From here, you can only continue up the trail. The mountains rise high,<br />
+and you strain to see the peaks. The mighty Khalkists extend far above the<br />
+line your line of sight, and even farther above the layer of clouds in the<br />
+heavens.<br />
+Dro, BSP is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Zader the Male Wild Elf is standing here. (flying)<br />
+Jaxis Fireforge, Outlaw Brother in Blood is standing here. (flying)<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Zader flies south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Bastich flies in from the south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Bastich crashes into Jaxis in a thundering collision, knocking him to the ground!<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Helena flies in from the south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+bash jaxisJaxis doesn't recover as you deliver the bash -- he is dead.<br />
+You receive 0 experience.<br />
+Jaxis is dead! R.I.P.<br />
+get all.coins corpse<br />
+535H 136V 5380323X 193C [Me:Good] [Jaxis:Dying] Exits:SU&gt; <br />
+The death cry of Jaxis echoes from somewhere nearby...<br />
+Jaxis stops following Helena.<br />
+Sambo stops following Jaxis.<br />
+Sambo now follows Helena.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Helena gets a black stone from the corpse of Jaxis.<br />
+Helena gets a thick malachite inlaid blade from the corpse of Jaxis.<br />
+Helena gets a glowing bracer from the corpse of Jaxis.<br />
+Helena gets a pitch black bracer from the corpse of Jaxis.<br />
+Helena gets a cloak of sea dragon scales from the corpse of Jaxis.<br />
+Helena gets a very large pile of coins from the corpse of Jaxis.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+get all corpse<br />
+Llanth flies in from the south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Helena flies south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+bash helena<br />
+**Hipho: loot shield<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Llanth flies south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Bastich flies south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+s<br />
+Dro gets a worn beltpouch from the corpse of Jaxis.<br />
+Dro gets a crystalline shield from the corpse of Jaxis.<br />
+Dro gets a pair of red dragonscale vambraces from the corpse of Jaxis.<br />
+Dro gets a pair of ergothian hunting gloves from the corpse of Jaxis.<br />
+Dro gets a pair of black climbing talons from the corpse of Jaxis.<br />
+Dro gets some silver-fused steel legplates from the corpse of Jaxis.<br />
+Dro gets a great steel helm from the corpse of Jaxis.<br />
+Dro gets a regal suit of platemail from the corpse of Jaxis.<br />
+Dro is zapped by a medallion of Paladine and instantly drops it.<br />
+Dro gets a gleaming mithril necklace inlaid with diamonds from the corpse of Jaxis.<br />
+Dro gets a frosted tin ring from the corpse of Jaxis.<br />
+Dro gets a quartz crystal sphere from the corpse of Jaxis.<br />
+Dro gets a vial of acidic juice from the corpse of Jaxis.<br />
+Dro is zapped by a silver medallion of Mishakal and instantly drops it.<br />
+Dro gets a yellow potion from the corpse of Jaxis.<br />
+Dro gets a loaf of waybread from the corpse of Jaxis.<br />
+Dro gets a loaf of waybread from the corpse of Jaxis.<br />
+Dro gets a loaf of waybread from the corpse of Jaxis.<br />
+Dro gets a loaf of waybread from the corpse of Jaxis.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+**Llanth: -- ! no more sunray ! --<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Dro flies south.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Your blood freezes as you hear someone's death cry.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+The corpse doesn't seem to have what you are looking for.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; <br />
+bash helenaYou get a loaf of waybread from the corpse of Jaxis.<br />
+You get a loaf of waybread from the corpse of Jaxis.<br />
+You get a loaf of waybread from the corpse of Jaxis.<br />
+You get a dragon skull sceptre from the corpse of Jaxis.<br />
+You get a bloody minotaur hand axe from the corpse of Jaxis.<br />
+You get a bright ball of light from the corpse of Jaxis.<br />
+You get a bright ball of light from the corpse of Jaxis.<br />
+You couldn't find what you were looking for.<br />
+<br />
+535H 136V 5380323X 193C Exits:SU&gt; A Path into the Mountains<br />
+    The mountain path turns to the north here, and continues on towards the<br />
+mountainside path that you noted earlier. The path doesn't appear to be<br />
+very steep, and leads up to a huge flat stone that extends over a ledge.<br />
+The corpse of Helena is lying here.<br />
+Some gauntlets made of a non reflective steel lies here.<br />
+A platinum shield emblazoned with a golden dragon lies here...it glows blue<br />
+The corpse of Maxmillian is lying here.<br />
+The corpse of Armas is lying here.<br />
+Dro, BSP is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Bastich, Avatar of Greed is sitting here. (flying)<br />
+. . . has a tough exterior.<br />
+Llanth E'Lot, Blood Sea Silent Watcher is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Dagam, Heavyhanded BSP Inquisitor is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Warp, Swimming in the Blood Sea is standing here. (flying)<br />
+. . . has a granite appearance.<br />
+Susie Kai, BSP Brute Cavewoman is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Kaje the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Nihilism the Male Human is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+Hipho Crates, The Ancient Patriarch of the Blood Sea Hordes is standing here. (flying)<br />
+. . . is outlined with a dim aura.<br />
+<br />
+535H 134V 5380323X 193C Exits:NW&gt; You couldn't find what you were looking for.<br />
+<br />
+535H 134V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Bastich stands up.<br />
+<br />
+535H 134V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Bastich gets a black stone from the corpse of Helena.<br />
+Bastich gets a rapier of treated steel from the corpse of Helena.<br />
+Bastich is zapped by a red draconian bracelet and instantly drops it.<br />
+Bastich is zapped by a bracelet of dragon teeth and instantly drops it.<br />
+Bastich gets a silver fauld from the corpse of Helena.<br />
+Bastich gets a pair of huge white wings from the corpse of Helena.<br />
+Bastich gets a shield of holy light from the corpse of Helena.<br />
+Bastich gets gleaming scaled armbands from the corpse of Helena.<br />
+Bastich is zapped by a pair of heavily scratched gauntlets and instantly drops it.<br />
+Bastich is zapped by a pair of black steel boots and instantly drops it.<br />
+Bastich gets a pair of silver dragon scale leggings from the corpse of Helena.<br />
+Bastich gets a malachite inlaid mithril helm from the corpse of Helena.<br />
+Bastich gets a suit of royal silver armour from the corpse of Helena.<br />
+Bastich is zapped by a badge of the dragonarmies and instantly drops it.<br />
+Bastich gets a red ring of the Dragon Highlord from the corpse of Helena.<br />
+Bastich gets a heavily corroded jade ring from the corpse of Helena.<br />
+Bastich gets a cloak of sea dragon scales from the corpse of Helena.<br />
+Bastich gets a pitch black bracer from the corpse of Helena.<br />
+Bastich gets a glowing bracer from the corpse of Helena.<br />
+Bastich gets a thick malachite inlaid blade from the corpse of Helena.<br />
+Bastich gets a black stone from the corpse of Helena.<br />
+Bastich gets a white silk robe from the corpse of Helena.<br />
+Bastich gets a furry white cloak from the corpse of Helena.<br />
+Bastich gets a vine belt from the corpse of Helena.<br />
+Bastich gets a black suede backpack from the corpse of Helena.<br />
+Bastich gets a blank scroll from the corpse of Helena.<br />
+<br />
+535H 134V 5380323X 193C Exits:NW&gt; <br />
+<br />
+The lightning has stopped.<br />
+You are no longer resistant to heat.<br />
+Nihilism gets the eye of Valiance from the corpse of Helena.<br />
+Nihilism gets a blood red crystal ring from the corpse of Helena.<br />
+Nihilism gets a ring of protection from the corpse of Helena.<br />
+Nihilism gets a spherical diamond pendant from the corpse of Helena.<br />
+Nihilism gets a chasuble from the corpse of Helena.<br />
+Nihilism gets a peaked canvas cap from the corpse of Helena.<br />
+Nihilism is zapped by some oakenwood gloves and instantly drops it.<br />
+Nihilism gets a shield of woven mistletoe from the corpse of Helena.<br />
+Nihilism gets a black robe of the Thorn from the corpse of Helena.<br />
+Nihilism gets a silver waist chain from the corpse of Helena.<br />
+Nihilism gets a plain component pouch from the corpse of Helena.<br />
+Nihilism gets a maniple from the corpse of Helena.<br />
+Nihilism gets a mithril flail from the corpse of Helena.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Helena.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Helena.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Helena.<br />
+Nihilism gets a black stone from the corpse of Helena.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Helena.<br />
+Nihilism gets a glowing scroll of recall from the corpse of Helena.<br />
+Nihilism gets a pouch from the corpse of Helena.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+get all corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+**Hipho: loot<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho gets a red draconian bracelet.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho gets a bracelet of dragon teeth.<br />
+Dro utters some strange words.<br />
+Dro creates an icicle.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+**Hipho: loot<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho gets a pair of heavily scratched gauntlets.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho gets a pair of black steel boots.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho gets some oakenwood gloves.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Nihilism gets a badge of the dragonarmies.<br />
+Nihilism is zapped by some brushed steel gauntlets and instantly drops it.<br />
+Nihilism is zapped by a platinum shield of Paladine and instantly drops it.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho is zapped by some brushed steel gauntlets and instantly drops it.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+**Bastich: hehe so easy<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Nihilism utters some strange words.<br />
+Nihilism appears to grow stronger.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+get allYou get some brushed steel gauntlets.<br />
+You get a platinum shield of Paladine.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+Corpse : You can't carry that much weight.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+**Hipho: any goodie<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Warp gets the corpse of Helena.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Dagam says 'hmm'<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+**Hipho: loot<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Llanth flies north.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+g all 2.corpseThe corpse doesn't seem to have what you are looking for.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Llanth flies in from the north.<br />
+<br />
+541H 144V 5380323X 193C Exits:NW&gt; <br />
+<br />
+Hipho flies north.<br />
+Warp flies north.<br />
+Nihilism flies north.<br />
+Llanth flies north.<br />
+Dro flies north.<br />
+Dagam flies north.<br />
+Kaje flies north.<br />
+You follow Hipho north.<br />
+Bastich flies in from the south.<br />
+Susie flies in from the south.<br />
+A Path into the Mountains<br />
+    From here, you can only continue up the trail. The mountains rise high,<br />
+and you strain to see the peaks. The mighty Khalkists extend far above the<br />
+line your line of sight, and even farther above the layer of clouds in the<br />
+heavens.<br />
+A shiny silver medallion is gleaming brightly on the ground...it glows blue..it glows dimly<br />
+An engraved platinum medallion lies here upon the floor.<br />
+The corpse of Jaxis is lying here.<br />
+Susie Kai, BSP Brute Cavewoman is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Bastich, Avatar of Greed is standing here. (flying)<br />
+Kaje the Female Half Elf is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Dagam, Heavyhanded BSP Inquisitor is standing here. (flying)<br />
+. . . is surrounded by a white mist.<br />
+Dro, BSP is standing here. (flying) (invisible)<br />
+. . . has a tough exterior.<br />
+Llanth E'Lot, Blood Sea Silent Watcher is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Nihilism the Male Human is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Warp, Swimming in the Blood Sea is standing here. (flying)<br />
+. . . has a tough exterior.<br />
+Hipho Crates, The Ancient Patriarch of the Blood Sea Hordes is standing here. (flying)<br />
+. . . has a metallic luster.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+g all 3.corpseWhat are you trying to get from?<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Warp drops the corpse of Helena.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Dagam gets the corpse of Helena.<br />
+Dagam gets a silver medallion of Mishakal.<br />
+Dagam gets a medallion of Paladine.<br />
+Dagam gets the corpse of Jaxis.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+g all<br />
+Nihilism says 'get stuff'<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; You don't see what you are looking for here.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+<br />
+**Hipho: anyone of them blinded<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+exa corpseYou do not see that here.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Susie drops the corpse of Aelorin.<br />
+<br />
+541H 142V 5380323X 193C Exits:SU&gt; <br />
+<br />
+Susie drops the corpse of Semper.<br />
+
+<p>
+
+
+<!-- PHP Generated Message: SQL QUERY: SELECT * FROM logs_vote where votersIP='207.241.232.16' and logid='1615'-->
+
+<!-- PHP Generated Message: NOT VOTED-->
+<form method="POST" action="/index.php?option=viewlog&logid=1615">
+<input type="hidden" name="rate" value="true">
+<table border="1" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+
+    <td>
+      <table border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr>
+          <td rowspan="2" valign="top" align="center"><img src="../images/rate.gif" border="1" alt="Vote On This Log"></td>
+          <td align="center"><input type="radio" value="-5" name="score"></td>
+          <td align="center"><input type="radio" value="-4" name="score"></td>
+          <td align="center"><input type="radio" value="-3" name="score"></td>
+          <td align="center"><input type="radio" value="-2" name="score"></td>
+          <td align="center"><input type="radio" value="-1" name="score"></td>
+          <td align="center"><input type="radio" value="0" name="score" checked></td>
+          <td align="center"><input type="radio" value="1" name="score"></td>
+          <td align="center"><input type="radio" value="2" name="score"></td>
+          <td align="center"><input type="radio" value="3" name="score"></td>
+          <td align="center"><input type="radio" value="4" name="score"></td>
+          <td align="center"><input type="radio" value="5" name="score"></td>
+        </tr>
+        <tr>
+          <td align="center"><font class="VoteNumber">-5</font></td>
+          <td align="center"><font class="VoteNumber">-4</font></td>
+          <td align="center"><font class="VoteNumber">-3</font></td>
+          <td align="center"><font class="VoteNumber">-2</font></td>
+          <td align="center"><font class="VoteNumber">-1</font></td>
+          <td align="center"><font class="VoteNumber">0</font></td>
+          <td align="center"><font class="VoteNumber">1</font></td>
+          <td align="center"><font class="VoteNumber">2</font></td>
+          <td align="center"><font class="VoteNumber">3</font></td>
+          <td align="center"><font class="VoteNumber">4</font></td>
+          <td align="center"><font class="VoteNumber">5</font></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Vote" name="votelog"></td>
+
+          <td align="center" colspan="5">
+            <p align="left"><font class="VoteText">Hated It</font></td>
+          <td align="center">&nbsp;</td>
+          <td align="center" colspan="5">
+            <p align="right"><font class="VoteText">Loved It</font></td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<input type="hidden" name="ratelogid" value="1615">
+<input type="hidden" name="rateuser" value="">
+<input type="hidden" name="rateip" value="207.241.232.16">
+</form>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
