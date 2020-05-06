@@ -2,8 +2,9 @@ package main
 
 import (
 	"bufio"
-	"fmt"
+	"encoding/json"
 	"os"
+	"regexp"
 )
 
 func check(e error) {
@@ -12,11 +13,118 @@ func check(e error) {
 	}
 }
 
+var compiled = []*regexp.Regexp{
+	// communication / emotes
+	regexp.MustCompile(`^(\w+) issues the order .*\.`),
+	regexp.MustCompile(`^(\w+) kneels down and studies the ground`),
+	regexp.MustCompile(`^(\w+) looks at .*\.`),
+	regexp.MustCompile(`^(\w+) puts away .* tablets with a content`),
+	regexp.MustCompile(`^(\w+) recites a`),
+	regexp.MustCompile(`^(\w+) reluctantly stands up`),
+	regexp.MustCompile(`^(\w+) says .*`),
+	regexp.MustCompile(`^(\w+) tells you .*`),
+	regexp.MustCompile(`^(\w+) tells your group.*`),
+	regexp.MustCompile(`^(\w+) utters some strange words`),
+	regexp.MustCompile(`^You tell (\w+) .*`),
+	// moving around
+	regexp.MustCompile(`^You follow (\w+) \w+\.`),
+	regexp.MustCompile(`^(\w+) flies in from .*\.`),
+	regexp.MustCompile(`^(\w+) dismounts\.`),
+	regexp.MustCompile(`^(\w+) flies (up|down|west|east|south|north)\.`),
+	regexp.MustCompile(`^(\w+) arrives from the (west|east|south|north)\.`),
+	regexp.MustCompile(`^(\w+) arrives from (below|above)\.`),
+	regexp.MustCompile(`^(\w+) leaves .*\.`),
+	regexp.MustCompile(`^(\w+) stands up.*\.`),
+	regexp.MustCompile(`^(\w+) panics, and attempts to flee\.`),
+	// status
+	regexp.MustCompile(`^(\w+) is dead`),
+	regexp.MustCompile(`^(\w+) seems to be blinded`),
+	regexp.MustCompile(`^(\w+) is paralyzed`),
+	regexp.MustCompile(`^(\w+) freezes in place`),
+	regexp.MustCompile(`^(\w+) comes out of hiding`),
+	regexp.MustCompile(`^(\w+) slowly fades into existence`),
+	regexp.MustCompile(`^(\w+) sinks gently to the ground`),
+	// miscellaneous combat
+	regexp.MustCompile(`^(\w+) aims a magic missile at .*, who `),
+	regexp.MustCompile(`^(\w+) barrels into .*, knocking`),
+	regexp.MustCompile(`^(\w+) charges at .*\.`),
+	regexp.MustCompile(`^(\w+) crashes into .*`),
+	regexp.MustCompile(`^(\w+) forces .* to the ground`),
+	regexp.MustCompile(`^(\w+) kneels with a look of humility and prays to the gods`),
+	regexp.MustCompile(`^(\w+) yells and leaps into the fray`),
+	regexp.MustCompile(`^(\w+) cries out in pain as .* grabs .*\.`),
+	regexp.MustCompile(`^(\w+) focuses harshly .*`),
+	regexp.MustCompile(`^(\w+) forces .* to the ground harshly\.`),
+	regexp.MustCompile(`^(\w+) is crushed by a wall of fire`),
+	regexp.MustCompile(`^(\w+) is shredded by shards of ice`),
+	regexp.MustCompile(`^(\w+) is stunned momentarily, recovering quickly`),
+	regexp.MustCompile(`^(\w+) steps aside as .*`),
+	regexp.MustCompile(`^(\w+) stops fighting .*\.`),
+	regexp.MustCompile(`^(\w+) tries to barrel into .*`),
+	regexp.MustCompile(`^cries out in pain as (\w+) grabs .*\.`),
+	regexp.MustCompile(`^forces (\w+) to the ground harshly\.`),
+	regexp.MustCompile(`^You attempt to assist (\w+)\.`),
+	regexp.MustCompile(`^You crash into (\w+) in a bone.*`),
+	regexp.MustCompile(`^You miss (\w+) and destroy an image instead`),
+	regexp.MustCompile(`^You stop fighting (\w+)\.`),
+	regexp.MustCompile(`^You try to bash (\w+), but.*`),
+	regexp.MustCompile(`^Huge flames burn (\w+) from above`),
+	// melee damage
+	regexp.MustCompile(`^(\w+) .* .* (?:very|extremely) hard\.`),
+	regexp.MustCompile(`^(\w+) (?:misses|massacres|obliterates|annihilates) .*\.`),
+	regexp.MustCompile(`^(\w+) bludgeons .*`),
+	regexp.MustCompile(`barely (?:crushes|cleaves|stabs|slashes|pierces) (\w+)\.`),
+	regexp.MustCompile(`(?:massacres|obliterates|annihilates) (\w+) with .*\.`),
+	regexp.MustCompile(`(?:crushes|cleaves|stabs|slashes|pierces) (\w+) very hard\.`),
+	regexp.MustCompile(`You (?:crush|cleave|stab|slash|pierce) (\w+) very hard\.`),
+	regexp.MustCompile(`You (?:crush|cleave|stab|slash|pierce) (\w+) hard\.`),
+	regexp.MustCompile(`You (?:crush|cleave|stab|slash|pierce) (\w+)\.`),
+	regexp.MustCompile(`You (?:miss|massacre|obliterate|annihilate) (\w+) with .*\.`),
+	// looting
+	regexp.MustCompile(`^(\w+) gets .* from the corpse of`),
+	regexp.MustCompile(`^(\w+) is zapped`),
+	regexp.MustCompile(`gets a .* from the corpse of (\w+)\.`),
+	regexp.MustCompile(`gets an .* from the corpse of (\w+)\.`),
+	regexp.MustCompile(`You get a .* from the corpse of (\w+)\.`),
+	regexp.MustCompile(`You get an .* from the corpse of (\w+)\.`),
+}
+
+var excluded = map[string]interface{}{
+	"A":       struct{}{},
+	"someone": struct{}{},
+	"Someone": struct{}{},
+	"YOU":     struct{}{},
+	"you":     struct{}{},
+	"You":     struct{}{},
+}
+
 func main() {
+	x := make(map[string]interface{})
+
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
-		fmt.Println(scanner.Text())
+		line := scanner.Text()
+
+		for idx := range compiled {
+			submatch := compiled[idx].FindStringSubmatch(line)
+			if len(submatch) > 0 {
+				if _, ok := excluded[submatch[1]]; !ok {
+					x[submatch[1]] = struct{}{}
+				}
+			}
+		}
 	}
 
 	check(scanner.Err())
+
+	var y []string
+	for idx := range x {
+		y = append(y, idx)
+	}
+
+	b, err := json.Marshal(y)
+	check(err)
+
+	_, err = os.Stdout.Write(b)
+	check(err)
 }
