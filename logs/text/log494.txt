@@ -1,206 +1,206 @@
 <VeWtiFuL> yea but now i started a garden center out of my driveway
 
-   Login
-   Username: __________
-   Password: __________
-             Login
-   [1]Forgot your password?
-   [2]Register for a Login
-   Mud Logs
-   [3]Recent Logs
-   [4]Older Logs
-   [5]Newer Logs
-   [6]Top Rated Logs
-   [7]Most Viewed Logs
-   [8]Upload A Log
-   [9]Log Collections
-   [10]Log Quicklist
-   Mud Links
-   [11]Arcticmud Blog!
-   [12]Xanitha's Mud Log Page
-   [13]RGB Mud Log Page
-   [14]Lasse's Logs (not current)
-   [15]Oligo's Logs (not current)
-   [16]Arctic Mud Forums
-   [17]Arctic Mud Homepage
-   [18]Vote for Arctic
-   on Top Mud Sites
+Login
+Username: __________
+Password: __________
+Login
+[1]Forgot your password?
+[2]Register for a Login
+Mud Logs
+[3]Recent Logs
+[4]Older Logs
+[5]Newer Logs
+[6]Top Rated Logs
+[7]Most Viewed Logs
+[8]Upload A Log
+[9]Log Collections
+[10]Log Quicklist
+Mud Links
+[11]Arcticmud Blog!
+[12]Xanitha's Mud Log Page
+[13]RGB Mud Log Page
+[14]Lasse's Logs (not current)
+[15]Oligo's Logs (not current)
+[16]Arctic Mud Forums
+[17]Arctic Mud Homepage
+[18]Vote for Arctic
+on Top Mud Sites
 
-   What is the worst change this wipe?
+What is the worst change this wipe?
 
-   (*) hp gain randomness
-   ( ) +heal items
-   ( ) every high level zone bugged
-   ( ) road shortening
-   ( ) rolling system
-   ( ) nosummon items
-   ( ) all of the above
-   Vote Results
+(*) hp gain randomness
+( ) +heal items
+( ) every high level zone bugged
+( ) road shortening
+( ) rolling system
+( ) nosummon items
+( ) all of the above
+Vote Results
 
-   [19]Submit a Poll
-   [20]List Previous Polls
+[19]Submit a Poll
+[20]List Previous Polls
 
-   JMC ActiveScripting Tutorial
+JMC ActiveScripting Tutorial
 
-   POV: N/A
+POV: N/A
 
-   Log Rating: 3.0000
+Log Rating: 3.0000
 
-   This implements a basic mem-counter using Perl ActiveScripting. NOTE:
-   The last submission lost some chars which screwed up some of the
-   code... hopefully this one will work better.
+This implements a basic mem-counter using Perl ActiveScripting. NOTE:
+The last submission lost some chars which screwed up some of the
+code... hopefully this one will work better.
 
-   Version 3.26 of Jaba Mud Client (JMC) has a nifty little feature called
-   ActiveScripting built into it. Basically, this lets you use an
-   ActiveScript language within JMC, which means you can use languages
-   (such as JavaScript, Visual Basic, or even Perl) on the stuff your
-   client receives. Some of you might not realise the potential of this,
-   or how powerful these scripts can be, so I'm going to give a quick
-   tutorial on how to build a mem-counter.
-   I bet most of you have seen the tintin version of a mem-counter, which
-   requires dozens of #var and #sub commands, which can make your
-   environment pretty messy and cluttered if you type in a "#var" command.
-   This is (I think) a much more elegant, and easily maintained way of
-   doing the same thing.
-   This tute requires at least a reasonable knowledge of Perl (or
-   programming), and I'm not going to just give you the script... I'm
-   going to teach you how to make your own scripts.
-   STEP 1
-   If you don't have it, install Perl (ActivePerl). This can be downloaded
-   from www.activestate.com. The next step is to use Perl in your JMC.
-   After rebooting, simply choose Options->Options->Scripting in JMC, and
-   then select PerlScript from the Script language choice box, and you're
-   ready to use Perl on your MUD data.
-   The most important file that JMC uses is settings\commonlib.scr. This
-   is the file that is loaded and contains the script(s) that will be
-   parsed by JMC.
-   So, what to do first: install an Event Handler. This sounds pretty
-   complicated, but don't worry about it - it's easy. Simply add the
-   following line to your commonlib.scr file:
-   jmc.registerhandler("Incoming", "OnIncoming()");
-   This command makes JMC call the function "OnIncoming()" whenever text
-   arrives from the mud. This would be a good time to check if it's
-   working properly, so type in the following below the "registerhandler"
-   line:
-   sub OnIncoming
-   {
-   jmc.showme(main::Event);
-   }
-   "jmc.showme" is a function that ActiveScripting uses to put text on the
-   screen. You can use it with variables, or just plain text. Here, we've
-   passed it the variable main::Event, which actually contains the line
-   from the mud, which triggered the event. Confused? Don't be. All this
-   should do is produce a duplicate line for everything you see from the
-   mud. Fire up JMC (or restart the script engine if it's already open)
-   and connect to a mud. If you see a copy of each line, then it's
-   working. If not, then recheck that you've done everything (including
-   saving the commonlib.scr file) and restart JMC. If it's still not
-   working, then too bad, because I can't help you =)
-   So we have a working PerlScript function. Now, the mem-counter. First
-   off, choose how you're going to store the mem data. A perl hash is what
-   I chose, and I think it's probably the best, and easiest data structure
-   to use. This means that we can have a unique spellname, with a number
-   representing how many of that spell are memed, like so:
-   'magic missile' => 4
-   'lightning bolt' => 2
-   Now, to parse the mem data from the mud, and use it to build the hash.
-   Add the following vars, but make sure these are GLOBAL vars - to make
-   sure they're global, DO NOT put them within the "OnIncoming" function.
-   You must put them outside of any other functions (I usually put all my
-   variable declarations at the start of the file, before any functions or
-   any other scripts):
-   my %memcount; # The hash
-   my $spell; # Temp var to store the spellname
-   my $count; # Temp var to store the number
-   Next, we parse the line from the mud (main::Event) and use it to
-   extract the spellnames and numbers (these must go INSIDE the
-   "OnIncoming" function):
-   while (main::Event =~ /\[\s*(\d+)\](\w+ ?\w+ ?\w+)/g) {
-   $count = $1;
-   $spell = $2;
-   $memcount{$spell} = $count;
-   jmc.showme("Added $count types of $spell.");
-   }
-   If you don't understand the regular expression, then perhaps you should
-   go read a regexp tutorial. This function will construct the hash, and
-   you'll notice the showme function, that will display on your screen
-   every time it's added. If you dont like (I just put it in for
-   debugging/testing purposes really) then remove it. But keep it in and
-   run it through the mud, just to check that it's working properly.
-   Uh oh, a small bug. You might have noticed that it even adds stuff
-   currently being memed (ie. that's not ready to cast). No problem, we'll
-   just use a variable to turn it on and off. Add another var called
-   $continue (again, make sure it's global and NOT within any other
-   functions). We'll set this var to 1 if we're to build the hash, and to
-   0 if we want to ignore the text from the mud.
-   if (main::Event =~ /Spells currently memorized:/) {$continue=1;}
-   if (main::Event =~ /Spells being memorized:/) {$continue=0;}
-   if (main::Event =~ /Spells left/) {$continue=0;}
-   These 3 regexps turn on the variable, and turn it off when we no longer
-   want/need the data. Now, we add this $continue bit to the code (the
-   original text is indented to make it easier to understand what to add):
-   <PRE>
-   if ($continue==1) { # If $continue is 1, then add the data to the hash
-   while (main::Event =~ /\[\s*(\d+)\](\w+ ?\w+ ?\w+)/g) {
-   $count = $1;
-   $spell = $2;
-   $memcount{$spell} = $count;
-   jmc.showme("Added $count types of $spell.");
-   }
-   } # This closes off the "continue" bit
-   </PRE>
-   Hopefully this will now only load your real mem data. At this point, we
-   should have the hash with all the proper data, so now we make it show
-   us the count. To do this, we match on the line "You utter the words":
-   if (main::Event =~ /You utter the words, '(.+)'/) {
-   $spell = $1;
-   $memcount{$spell}--; # Subtract one from the table
-   jmc.showme("You have $memcount{$spell} $spell\'s left!");
-   }
-   Remember to keep this little bit of code within the OnIncoming
-   function, otherwise it wont work. So fire it up, get a mem listing, and
-   cast a spell. Hopefully, everything works perfectly, and you should see
-   a count of how many spells you have left. If it doesn't... well, I
-   can't help you. The stuff that I've listed above works fine for me, but
-   you have to put everything in the right place (ie. script code within
-   the OnIncoming function, variables not in any functions) and you have
-   to have at least a small knowledge of programming or scripting.
-   So there you have it, a pretty basic mem counter for ActivePerl/JMC.
-   The next step is up to you, you might wanna fancy it up, make it all
-   into one line, put in warnings for group members, or anything else you
-   want.
-   Contacting me:
-   Bleh... I dunno... write a message on the board or something. *shrug*
-   Hope this has been helpful.
+Version 3.26 of Jaba Mud Client (JMC) has a nifty little feature called
+ActiveScripting built into it. Basically, this lets you use an
+ActiveScript language within JMC, which means you can use languages
+(such as JavaScript, Visual Basic, or even Perl) on the stuff your
+client receives. Some of you might not realise the potential of this,
+or how powerful these scripts can be, so I'm going to give a quick
+tutorial on how to build a mem-counter.
+I bet most of you have seen the tintin version of a mem-counter, which
+requires dozens of #var and #sub commands, which can make your
+environment pretty messy and cluttered if you type in a "#var" command.
+This is (I think) a much more elegant, and easily maintained way of
+doing the same thing.
+This tute requires at least a reasonable knowledge of Perl (or
+programming), and I'm not going to just give you the script... I'm
+going to teach you how to make your own scripts.
+STEP 1
+If you don't have it, install Perl (ActivePerl). This can be downloaded
+from www.activestate.com. The next step is to use Perl in your JMC.
+After rebooting, simply choose Options->Options->Scripting in JMC, and
+then select PerlScript from the Script language choice box, and you're
+ready to use Perl on your MUD data.
+The most important file that JMC uses is settings\commonlib.scr. This
+is the file that is loaded and contains the script(s) that will be
+parsed by JMC.
+So, what to do first: install an Event Handler. This sounds pretty
+complicated, but don't worry about it - it's easy. Simply add the
+following line to your commonlib.scr file:
+jmc.registerhandler("Incoming", "OnIncoming()");
+This command makes JMC call the function "OnIncoming()" whenever text
+arrives from the mud. This would be a good time to check if it's
+working properly, so type in the following below the "registerhandler"
+line:
+sub OnIncoming
+{
+jmc.showme(main::Event);
+}
+"jmc.showme" is a function that ActiveScripting uses to put text on the
+screen. You can use it with variables, or just plain text. Here, we've
+passed it the variable main::Event, which actually contains the line
+from the mud, which triggered the event. Confused? Don't be. All this
+should do is produce a duplicate line for everything you see from the
+mud. Fire up JMC (or restart the script engine if it's already open)
+and connect to a mud. If you see a copy of each line, then it's
+working. If not, then recheck that you've done everything (including
+saving the commonlib.scr file) and restart JMC. If it's still not
+working, then too bad, because I can't help you =)
+So we have a working PerlScript function. Now, the mem-counter. First
+off, choose how you're going to store the mem data. A perl hash is what
+I chose, and I think it's probably the best, and easiest data structure
+to use. This means that we can have a unique spellname, with a number
+representing how many of that spell are memed, like so:
+'magic missile' => 4
+'lightning bolt' => 2
+Now, to parse the mem data from the mud, and use it to build the hash.
+Add the following vars, but make sure these are GLOBAL vars - to make
+sure they're global, DO NOT put them within the "OnIncoming" function.
+You must put them outside of any other functions (I usually put all my
+variable declarations at the start of the file, before any functions or
+any other scripts):
+my %memcount; # The hash
+my $spell; # Temp var to store the spellname
+my $count; # Temp var to store the number
+Next, we parse the line from the mud (main::Event) and use it to
+extract the spellnames and numbers (these must go INSIDE the
+"OnIncoming" function):
+while (main::Event =~ /\[\s*(\d+)\](\w+ ?\w+ ?\w+)/g) {
+$count = $1;
+$spell = $2;
+$memcount{$spell} = $count;
+jmc.showme("Added $count types of $spell.");
+}
+If you don't understand the regular expression, then perhaps you should
+go read a regexp tutorial. This function will construct the hash, and
+you'll notice the showme function, that will display on your screen
+every time it's added. If you dont like (I just put it in for
+debugging/testing purposes really) then remove it. But keep it in and
+run it through the mud, just to check that it's working properly.
+Uh oh, a small bug. You might have noticed that it even adds stuff
+currently being memed (ie. that's not ready to cast). No problem, we'll
+just use a variable to turn it on and off. Add another var called
+$continue (again, make sure it's global and NOT within any other
+functions). We'll set this var to 1 if we're to build the hash, and to
+0 if we want to ignore the text from the mud.
+if (main::Event =~ /Spells currently memorized:/) {$continue=1;}
+if (main::Event =~ /Spells being memorized:/) {$continue=0;}
+if (main::Event =~ /Spells left/) {$continue=0;}
+These 3 regexps turn on the variable, and turn it off when we no longer
+want/need the data. Now, we add this $continue bit to the code (the
+original text is indented to make it easier to understand what to add):
+<PRE>
+if ($continue==1) { # If $continue is 1, then add the data to the hash
+while (main::Event =~ /\[\s*(\d+)\](\w+ ?\w+ ?\w+)/g) {
+$count = $1;
+$spell = $2;
+$memcount{$spell} = $count;
+jmc.showme("Added $count types of $spell.");
+}
+} # This closes off the "continue" bit
+</PRE>
+Hopefully this will now only load your real mem data. At this point, we
+should have the hash with all the proper data, so now we make it show
+us the count. To do this, we match on the line "You utter the words":
+if (main::Event =~ /You utter the words, '(.+)'/) {
+$spell = $1;
+$memcount{$spell}--; # Subtract one from the table
+jmc.showme("You have $memcount{$spell} $spell\'s left!");
+}
+Remember to keep this little bit of code within the OnIncoming
+function, otherwise it wont work. So fire it up, get a mem listing, and
+cast a spell. Hopefully, everything works perfectly, and you should see
+a count of how many spells you have left. If it doesn't... well, I
+can't help you. The stuff that I've listed above works fine for me, but
+you have to put everything in the right place (ie. script code within
+the OnIncoming function, variables not in any functions) and you have
+to have at least a small knowledge of programming or scripting.
+So there you have it, a pretty basic mem counter for ActivePerl/JMC.
+The next step is up to you, you might wanna fancy it up, make it all
+into one line, put in warnings for group members, or anything else you
+want.
+Contacting me:
+Bleh... I dunno... write a message on the board or something. *shrug*
+Hope this has been helpful.
 
-        Vote On This Log ( ) ( ) ( ) ( ) ( ) (*) ( ) ( ) ( ) ( ) ( )
-                          -5  -4  -3  -2  -1  0   1   2   3   4   5
-              Vote
+Vote On This Log ( ) ( ) ( ) ( ) ( ) (*) ( ) ( ) ( ) ( ) ( )
+-5  -4  -3  -2  -1  0   1   2   3   4   5
+Vote
 
-   Hated It
+Hated It
 
 
-                                                                  Loved It
+Loved It
 
 References
 
-   1. file:///index.php?option=forgot
-   2. file:///index.php?option=register
-   3. file:///index.php?option=recentlogs
-   4. file:///index.php?option=recentlogs&lognbr=10
-   5. file:///index.php?option=recentlogs&lognbr=0
-   6. file:///index.php?option=toplogs
-   7. file:///index.php?option=mostviewedlogs
-   8. file:///index.php?option=uploadlog
-   9. file:///index.php?option=collections
-  10. file:///index.php?option=quicklist
-  11. http://arcticmud.blogspot.com/
-  12. http://mudlogs.foghaven.net/
-  13. http://pollux.ldz.lv/~punk/upload/index.php
-  14. http://tirannon.tky.hut.fi/arctic/
-  15. http://normstorm.com/template/m-news.html
-  16. http://mud.arctic.org/forum/
-  17. http://mud.arctic.org/
-  18. http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just
-  19. file:///index.php?option=poll&action=new
-  20. file:///index.php?option=poll&action=listpolls
+1. file:///index.php?option=forgot
+2. file:///index.php?option=register
+3. file:///index.php?option=recentlogs
+4. file:///index.php?option=recentlogs&lognbr=10
+5. file:///index.php?option=recentlogs&lognbr=0
+6. file:///index.php?option=toplogs
+7. file:///index.php?option=mostviewedlogs
+8. file:///index.php?option=uploadlog
+9. file:///index.php?option=collections
+10. file:///index.php?option=quicklist
+11. http://arcticmud.blogspot.com/
+12. http://mudlogs.foghaven.net/
+13. http://pollux.ldz.lv/~punk/upload/index.php
+14. http://tirannon.tky.hut.fi/arctic/
+15. http://normstorm.com/template/m-news.html
+16. http://mud.arctic.org/forum/
+17. http://mud.arctic.org/
+18. http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=just
+19. file:///index.php?option=poll&action=new
+20. file:///index.php?option=poll&action=listpolls
