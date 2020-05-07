@@ -87,13 +87,13 @@ var compiled = []*regexp.Regexp{
 
 var clan = regexp.MustCompile(`<(\w+)> .*here`)
 
-var excluded = map[string]interface{}{
-	"A":       struct{}{},
-	"someone": struct{}{},
-	"Someone": struct{}{},
-	"YOU":     struct{}{},
-	"you":     struct{}{},
-	"You":     struct{}{},
+var blacklist = []*regexp.Regexp{
+	regexp.MustCompile(`^A$`),
+	regexp.MustCompile(`^someone$`),
+	regexp.MustCompile(`^Someone$`),
+	regexp.MustCompile(`^YOU$`),
+	regexp.MustCompile(`^You$`),
+	regexp.MustCompile(`\d`),
 }
 
 func main() {
@@ -112,7 +112,15 @@ func main() {
 		for idx := range compiled {
 			m2 := compiled[idx].FindStringSubmatch(line)
 			if len(m2) > 0 {
-				if _, ok := excluded[m2[1]]; !ok {
+				ok := true
+				for idx := range blacklist {
+					m3 := blacklist[idx].FindStringSubmatch(m2[1])
+					if !ok || len(m3) != 0 {
+						ok = false
+					}
+				}
+
+				if ok {
 					charNamesSet[m2[1]] = struct{}{}
 				}
 			}
