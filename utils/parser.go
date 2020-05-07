@@ -94,6 +94,7 @@ var blacklist = []*regexp.Regexp{
 	regexp.MustCompile(`^Someone$`),
 	regexp.MustCompile(`^YOU$`),
 	regexp.MustCompile(`^You$`),
+	regexp.MustCompile(`^your$`),
 	regexp.MustCompile(`\d`),
 }
 
