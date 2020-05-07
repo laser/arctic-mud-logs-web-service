@@ -24,22 +24,6 @@
 <body>
 <div class="row">
     <div class="column">
-        <u>Clans</u>
-        <ul>
-            {{ range .Clans}}
-                <li><a href={{ .Url }}>{{ .Label }}</a></li>
-            {{ end }}
-        </ul>
-    </div>
-    <div class="column">
-        <u>Players</u>
-        <ul>
-            {{ range .Players}}
-                <li><a href={{ .Url }}>{{ .Label }}</a></li>
-            {{ end }}
-        </ul>
-    </div>
-    <div class="column">
         <u>Logs</u>
         <ul>
             {{ range .Logs}}

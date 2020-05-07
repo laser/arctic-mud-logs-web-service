@@ -5,13 +5,9 @@ import (
 	"encoding/json"
 	"os"
 	"regexp"
-)
 
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
+	"github.com/laser/davidwees-arctic-logs/types"
+)
 
 var compiled = []*regexp.Regexp{
 	// communication / emotes
@@ -100,11 +96,6 @@ var excluded = map[string]interface{}{
 	"You":     struct{}{},
 }
 
-type Meta struct {
-	CharNames []string `json:"character_names"`
-	ClanNames []string `json:"clan_names"`
-}
-
 func main() {
 	charNamesSet := make(map[string]interface{})
 	clanNamesSet := make(map[string]interface{})
@@ -130,7 +121,7 @@ func main() {
 
 	check(scanner.Err())
 
-	m := Meta{
+	m := types.Meta{
 		CharNames: []string{},
 		ClanNames: []string{},
 	}
@@ -148,4 +139,10 @@ func main() {
 
 	_, err = os.Stdout.Write(b)
 	check(err)
+}
+
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
 }
