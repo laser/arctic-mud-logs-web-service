@@ -86,7 +86,7 @@ var compiled = []*regexp.Regexp{
 	regexp.MustCompile(`You get an .* from the corpse of (\w+)\.`),
 }
 
-var clan = regexp.MustCompile(`<(\w+)> .*here`)
+var clan = regexp.MustCompile(`^<(\w+)> .*here`)
 
 var blacklist = []*regexp.Regexp{
 	regexp.MustCompile(`^A$`),
