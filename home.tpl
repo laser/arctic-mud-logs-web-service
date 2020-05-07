@@ -15,8 +15,13 @@
             clear: both;
         }
 
-        .issues {
+        .issues, .upload {
             font-size: 10pt;
+        }
+
+        .upload span {
+            background: #eaeaea;
+            color: #000000;
         }
 
         body {
@@ -27,6 +32,7 @@
 </head>
 <body>
 <p class="issues">See something that looks broken? Clan that shouldn't exist (etc.)? Go <a href="https://github.com/laser/arctic-logs-webservice/issues">here</a> and file an issue.</p>
+<p class="upload">Have a log file you'd like added? Message <span>@matashiwa</span> on Discord.</p>
 <div class="row">
     <div class="column">
         <u>Clans</u>
