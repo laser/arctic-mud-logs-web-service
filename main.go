@@ -56,11 +56,11 @@ func init() {
 		orig := strings.Split(file, ".meta")[0]
 		orig = filepath.Base(orig)
 
-		for idx := range m.CharNames {
-			if _, ok := playerLogs[m.CharNames[idx]]; !ok {
-				playerLogs[m.CharNames[idx]] = []string{orig}
+		for idx := range m.PlayerNames {
+			if _, ok := playerLogs[m.PlayerNames[idx]]; !ok {
+				playerLogs[m.PlayerNames[idx]] = []string{orig}
 			} else {
-				playerLogs[m.CharNames[idx]] = append(playerLogs[m.CharNames[idx]], orig)
+				playerLogs[m.PlayerNames[idx]] = append(playerLogs[m.PlayerNames[idx]], orig)
 			}
 		}
 

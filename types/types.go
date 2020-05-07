@@ -1,8 +1,8 @@
 package types
 
 type Meta struct {
-	CharNames []string `json:"character_names"`
-	ClanNames []string `json:"clan_names"`
+	PlayerNames []string `json:"player_names"`
+	ClanNames   []string `json:"clan_names"`
 }
 
 type Link struct {

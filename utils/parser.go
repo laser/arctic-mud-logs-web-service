@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"os"
 	"regexp"
+	"sort"
 
 	"github.com/laser/davidwees-arctic-logs/types"
 )
@@ -97,7 +98,7 @@ var blacklist = []*regexp.Regexp{
 }
 
 func main() {
-	charNamesSet := make(map[string]interface{})
+	playerNamesSet := make(map[string]interface{})
 	clanNamesSet := make(map[string]interface{})
 
 	scanner := bufio.NewScanner(os.Stdin)
@@ -121,7 +122,7 @@ func main() {
 				}
 
 				if ok {
-					charNamesSet[m2[1]] = struct{}{}
+					playerNamesSet[m2[1]] = struct{}{}
 				}
 			}
 		}
@@ -130,17 +131,26 @@ func main() {
 	check(scanner.Err())
 
 	m := types.Meta{
-		CharNames: []string{},
-		ClanNames: []string{},
+		PlayerNames: []string{},
+		ClanNames:   []string{},
 	}
+
+	playerNamesSorted := make([]string, 0)
+	clanNamesSorted := make([]string, 0)
 
 	for idx := range clanNamesSet {
-		m.ClanNames = append(m.ClanNames, idx)
+		clanNamesSorted = append(clanNamesSorted, idx)
 	}
 
-	for idx := range charNamesSet {
-		m.CharNames = append(m.CharNames, idx)
+	for idx := range playerNamesSet {
+		playerNamesSorted = append(playerNamesSorted, idx)
 	}
+
+	sort.Strings(clanNamesSorted)
+	sort.Strings(playerNamesSorted)
+
+	m.ClanNames = clanNamesSorted
+	m.PlayerNames = playerNamesSorted
 
 	b, err := json.Marshal(&m)
 	check(err)
