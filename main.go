@@ -15,7 +15,7 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/laser/davidwees-arctic-logs/types"
+	"github.com/laser/arctic-logs-webservice/types"
 )
 
 var playerLogs = make(map[string][]string)

@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"sort"
 
-	"github.com/laser/davidwees-arctic-logs/types"
+	"github.com/laser/arctic-logs-webservice/types"
 )
 
 var compiled = []*regexp.Regexp{

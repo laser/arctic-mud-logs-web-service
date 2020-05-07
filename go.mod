@@ -1,4 +1,4 @@
-module github.com/laser/davidwees-arctic-logs
+module github.com/laser/arctic-logs-webservice
 
 go 1.13
 
