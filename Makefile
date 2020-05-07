@@ -9,3 +9,7 @@ parse:
 clean:
 	rm -f ./target/parser
 .PHONY: clean
+
+server:
+	go run ./main.go
+.PHONY: server
