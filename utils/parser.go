@@ -96,6 +96,7 @@ var blacklist = []*regexp.Regexp{
 	regexp.MustCompile(`^You$`),
 	regexp.MustCompile(`^your$`),
 	regexp.MustCompile(`\d`),
+	regexp.MustCompile(`^[a-z].*`),
 }
 
 func main() {
