@@ -2,7 +2,26 @@
 
 > An ArcticMUD log parser and server
 
-## Full Usage
+This project contains the log parser and web service for [https://arctic-mud-logs.com/](https://arctic-mud-logs.com/).
+
+## About
+
+These logs were collected from a variety of places:
+
+- [http://www.angelfire.com/az/jdawg/clan.html](http://web.archive.org/web/20020328062804/http://www.angelfire.com/az/jdawg/clan.html)
+- [http://tirannon.tky.hut.fi/arctic/](http://web.archive.org/web/20061214213442/http://tirannon.tky.hut.fi/arctic/)
+- [http://davidwees.com/arcticlogs/](http://davidwees.com/arcticlogs/)
+- [http://www.normstorm.com/arctic/](http://web.archive.org/web/20061216125832/http://www.normstorm.com/arctic/)
+
+## Contributing
+
+If you have a log file which you'd like added, create a GitHub issue and attach
+said log file to the issue. Same goes for UX or bug reports - just create an
+issue and I'll review at some point in the future.
+
+## Development
+
+### Full Usage
 
 1. Drop logs into the `logs` directory
 2. `make build` to build the parser (requires Go)
@@ -10,7 +29,7 @@
 4. `make server` to run the web server
 5. `open localhost:5555` to view your handywork
 
-## Log Parser
+### Log Parser
 
 ```txt
 The Planning Room
