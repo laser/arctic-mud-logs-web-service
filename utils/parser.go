@@ -85,7 +85,7 @@ var compiled = []*regexp.Regexp{
 	regexp.MustCompile(`You get a .* from the corpse of (\w+)\.`),
 	regexp.MustCompile(`You get an .* from the corpse of (\w+)\.`),
 	// manual add
-	regexp.MustCompile(`Manual add: (\w+)\.`),
+	regexp.MustCompile(`Manually added player: (\w+)`),
 }
 
 var clan = regexp.MustCompile(`^<(\w+)> .*here`)
