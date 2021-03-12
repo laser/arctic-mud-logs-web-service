@@ -88,7 +88,10 @@ var compiled = []*regexp.Regexp{
 	regexp.MustCompile(`Manually added player: (\w+)`),
 }
 
-var clan = regexp.MustCompile(`^<(\w+)> .*here`)
+var clan = []*regexp.Regexp{
+	regexp.MustCompile(`^<(\w+)> .*here`),
+	regexp.MustCompile(`^Manually added clan: ([A-Za-z \s]+)`),
+}
 
 var blacklist = []*regexp.Regexp{
 	regexp.MustCompile(`^A$`),
@@ -109,9 +112,11 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		m1 := clan.FindStringSubmatch(line)
-		if len(m1) > 0 {
-			clanNamesSet[m1[1]] = struct{}{}
+		for idx := range clan {
+			m1 := clan[idx].FindStringSubmatch(line)
+			if len(m1) > 0 {
+				clanNamesSet[m1[1]] = struct{}{}
+			}
 		}
 
 		for idx := range compiled {
