@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Arctic Logs</title>
+    <title>ArcticMUD Logs</title>
     <style>
         .column {
             float: left;
