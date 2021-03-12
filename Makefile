@@ -3,7 +3,7 @@ all:
 .PHONY: all
 
 parse:
-	find logs/ -name "*.txt" -type f | xargs -I {} sh -c "cat {} | ./target/parser > {}.meta"
+	find logs/ -name "*.txt" -type f | xargs -n 1 -P 8 -I {} sh -c "cat {} | ./target/parser > {}.meta"
 .PHONY: parse
 
 clean:
