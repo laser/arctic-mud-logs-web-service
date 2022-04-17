@@ -1,6 +1,6 @@
-# arctic-logs-webservice
+# arctic-mud-logs-web-service
 
-> An ArcticMUD log parser and server
+> An ArcticMud log parser and server
 
 This project contains the log parser and web service for [https://arctic-mud-logs.com/](https://arctic-mud-logs.com/).
 
